@@ -77,7 +77,8 @@
   "images": [
    "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-1.webp",
    "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-2.webp",
-   "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-3.webp"
+   "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-3.webp",
+   "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-9.webp"
   ]
  },
  "100021-100x25-mm-festett-szegecselheto-deszkatarto-zseb": {
@@ -105,7 +106,8 @@
   "sourceDescription": "",
   "matchedCode": "45070110",
   "specs": {
-   "Kiszerelés": "100 db"
+   "Kiszerelés": "100 db",
+   "Tömeg": "0,145 kg"
   },
   "images": [
    "/termekkepek/100110-seprutarto-80-mm-1.webp",
@@ -139,7 +141,8 @@
   },
   "images": [
    "/termekkepek/100516-100x25-dugo-zartszelvenyhez-1.webp",
-   "/termekkepek/100516-100x25-dugo-zartszelvenyhez-2.webp"
+   "/termekkepek/100516-100x25-dugo-zartszelvenyhez-2.webp",
+   "/termekkepek/100516-100x25-dugo-zartszelvenyhez-9.webp"
   ]
  },
  "100591-ives-alafutasgatlo-vegzaro-pvc": {
@@ -204,6 +207,19 @@
    "/termekkepek/103055-100-x-30-mm-dugo-alafutasgatlohoz-1.webp",
    "/termekkepek/103055-100-x-30-mm-dugo-alafutasgatlohoz-2.webp",
    "/termekkepek/103055-100-x-30-mm-dugo-alafutasgatlohoz-3.webp"
+  ]
+ },
+ "103925-sarok-elem-35-35-r-profilhoz": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=4",
+  "sourceTitle": "RE-ALL katalógus 21.pdf",
+  "matchedCode": "3900125",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T6",
+   "Tömeg [kg/fm]": "0,330"
+  },
+  "images": [
+   "/termekkepek/103925-sarok-elem-35-35-r-profilhoz-1.webp"
   ]
  },
  "104130-100x25-mm-horganyzott-szegecselheto-deszkatarto-zseb": {
@@ -978,6 +994,15 @@
    "/termekkepek/142304-billencs-nyitokar-b-2.webp"
   ]
  },
+ "145010-50-mm-es-gombcsuklo-keszlet-3-5t": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=111",
+  "matchedCode": "25350100",
+  "specs": {
+   "Tömeg": "10,300 kg"
+  },
+  "images": []
+ },
  "145170-szelep1-2": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/411/",
@@ -1015,13 +1040,27 @@
    "/termekkepek/146012-szivattyu-12v-1.webp"
   ]
  },
+ "152711-menetes-lapka-30mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=72",
+  "matchedCode": "15270110",
+  "specs": {
+   "Tömeg": "0,040 kg"
+  },
+  "images": [
+   "/termekkepek/152711-menetes-lapka-30mm-9.webp"
+  ]
+ },
  "152760-tir-zsaner-apa-resz-alu-hoz": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/15276110-perno-in-lamiera-stampata-zincato-o12/",
   "sourceTitle": "15276110 – Perno in Lamiera Stampata Zincato Ø12",
   "sourceDescription": "",
   "matchedCode": "15276110",
-  "specs": {},
+  "specs": {
+   "Tömeg": "0,200 kg",
+   "Kiszerelés": "50 db/doboz"
+  },
   "images": [
    "/termekkepek/152760-tir-zsaner-apa-resz-alu-hoz-1.webp",
    "/termekkepek/152760-tir-zsaner-apa-resz-alu-hoz-2.webp",
@@ -1055,6 +1094,15 @@
    "/termekkepek/152791-tir-zsaner-lapka-50mm-1.webp",
    "/termekkepek/152791-tir-zsaner-lapka-50mm-2.webp"
   ]
+ },
+ "152811-tir-zsaner-garnitura-horg": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=76",
+  "matchedCode": "15279110",
+  "specs": {
+   "Tömeg": "0,075 kg"
+  },
+  "images": []
  },
  "152814-tir-zsaner-garnitura-th": {
   "source": "FTS",
@@ -1132,6 +1180,19 @@
   },
   "images": [
    "/termekkepek/201094-targonca-utkozo-profil-1.webp"
+  ]
+ },
+ "203004-30-mm-keretprofil-elox": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/18.pdf#page=5",
+  "sourceTitle": "RE-ALL katalógus 18.pdf",
+  "matchedCode": "1800004",
+  "specs": {
+   "Tömeg [kg/fm]": "2,249",
+   "Gyári szálhossz [mm]": "7500"
+  },
+  "images": [
+   "/termekkepek/203004-30-mm-keretprofil-elox-1.webp"
   ]
  },
  "203492-autoszallito-padlo-keret-profil-30-mm": {
@@ -1593,6 +1654,17 @@
    "/termekkepek/216003-adaico-rakonca-zseb-festett-3.webp"
   ]
  },
+ "221902-bordazott-padlo-profil-200-40-mm": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/19.pdf#page=3",
+  "sourceTitle": "RE-ALL katalógus 19.pdf",
+  "matchedCode": "1900002",
+  "specs": {
+   "Tömeg [kg/fm]": "5,950",
+   "Gyári szálhossz [mm]": "5000"
+  },
+  "images": []
+ },
  "222233-rampa-szego-g-profil": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000050_aluminium-overruns/70000028_mounting-ramp-side-profile-g-al",
@@ -1643,6 +1715,20 @@
   },
   "images": [
    "/termekkepek/223563-tomites-also-zaroprofilhoz-1.webp"
+  ]
+ },
+ "226915-30-mm-szego-profil-elox": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/16-17.pdf#page=15",
+  "sourceTitle": "RE-ALL katalógus 16-17.pdf",
+  "matchedCode": "1700120",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T6",
+   "Tömeg [kg/fm]": "1,035",
+   "Gyári szálhossz [mm]": "6000"
+  },
+  "images": [
+   "/termekkepek/226915-30-mm-szego-profil-elox-1.webp"
   ]
  },
  "227785-koztes-100-mm-elox-profil": {
@@ -1734,6 +1820,18 @@
   "images": [
    "/termekkepek/231791-15-3x26-mm-l-profil-elox-1.webp"
   ]
+ },
+ "232125-dobozos-keret-elox-or-130-mm-nyitott": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=5",
+  "sourceTitle": "RE-ALL katalógus 21.pdf",
+  "matchedCode": "2100025",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T6",
+   "Tömeg [kg/fm]": "1,390",
+   "Gyári szálhossz [mm]": "7500"
+  },
+  "images": []
  },
  "236817-n-r50-ives-felso-profil": {
   "source": "Alu-SV",
@@ -1855,6 +1953,19 @@
    "/termekkepek/238043-kalap-profil-natur-35-87-mm-1.webp"
   ]
  },
+ "238170-or-ajto-keret-elox-70x30x65-25mm": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/18.pdf#page=9",
+  "sourceTitle": "RE-ALL katalógus 18.pdf",
+  "matchedCode": "1800170",
+  "specs": {
+   "Tömeg [kg/fm]": "1,944",
+   "Gyári szálhossz [mm]": "7600"
+  },
+  "images": [
+   "/termekkepek/238170-or-ajto-keret-elox-70x30x65-25mm-1.webp"
+  ]
+ },
  "243240-billencs-kozepso-200x40-mm": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000010_al-dropsides-dropside-prof.-30-40-60-65/38000482_tipper-profile-middle-200x40-mm",
@@ -1887,6 +1998,76 @@
    "/termekkepek/245240-billencs-also-200x40-mm-1.webp"
   ]
  },
+ "247152-bill-felso-profil-200-30-mm-elox": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/16-17.pdf#page=16",
+  "sourceTitle": "RE-ALL katalógus 16-17.pdf",
+  "matchedCode": "17-00152",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T6",
+   "Tömeg [kg/fm]": "3,050",
+   "Gyári szálhossz [mm]": "6100 / 7650"
+  },
+  "images": [
+   "/termekkepek/247152-bill-felso-profil-200-30-mm-elox-1.webp"
+  ]
+ },
+ "247158-billencs-kozepso-200x30-mm-profil": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/16-17.pdf#page=16",
+  "sourceTitle": "RE-ALL katalógus 16-17.pdf",
+  "matchedCode": "17-00158",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T6",
+   "Tömeg [kg/fm]": "3,030",
+   "Gyári szálhossz [mm]": "6100 / 7650"
+  },
+  "images": [
+   "/termekkepek/247158-billencs-kozepso-200x30-mm-profil-1.webp"
+  ]
+ },
+ "247162-bill-koztes-profil-100-30-mm-elox": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/16-17.pdf#page=16",
+  "sourceTitle": "RE-ALL katalógus 16-17.pdf",
+  "matchedCode": "17-00162",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T6",
+   "Tömeg [kg/fm]": "1,660",
+   "Gyári szálhossz [mm]": "7650"
+  },
+  "images": [
+   "/termekkepek/247162-bill-koztes-profil-100-30-mm-elox-1.webp"
+  ]
+ },
+ "247174-bill-also-hosszu-szakalas-profil-150-30-elox": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/16-17.pdf#page=17",
+  "sourceTitle": "RE-ALL katalógus 16-17.pdf",
+  "matchedCode": "17-00174",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T6",
+   "Tömeg [kg/fm]": "2,505",
+   "Gyári szálhossz [mm]": "6100 / 7650"
+  },
+  "images": [
+   "/termekkepek/247174-bill-also-hosszu-szakalas-profil-150-30-elox-1.webp"
+  ]
+ },
+ "247180-billencs-also-profil-200-45-mm-30-mm-elox": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/16-17.pdf#page=17",
+  "sourceTitle": "RE-ALL katalógus 16-17.pdf",
+  "matchedCode": "17-00180",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T6",
+   "Tömeg [kg/fm]": "5,018",
+   "Gyári szálhossz [mm]": "7650"
+  },
+  "images": [
+   "/termekkepek/247180-billencs-also-profil-200-45-mm-30-mm-elox-1.webp"
+  ]
+ },
  "247243-billencs-felso-200x40-mm": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000010_al-dropsides-dropside-prof.-30-40-60-65/31000511_tipper-top-profile-200x40-mm",
@@ -1904,6 +2085,40 @@
   "images": [
    "/termekkepek/247243-billencs-felso-200x40-mm-1.webp"
   ]
+ },
+ "250403-40x40x3-alu-l-profil": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19",
+  "sourceTitle": "RE-ALL katalógus 13-15.pdf",
+  "matchedCode": "1304605",
+  "specs": {},
+  "images": []
+ },
+ "251160-40x20-mm-alu-lapos-profil": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=11",
+  "sourceTitle": "RE-ALL katalógus 13-15.pdf",
+  "matchedCode": "15-01160",
+  "specs": {
+   "Tömeg [kg/fm]": "2,176"
+  },
+  "images": []
+ },
+ "252502-25x25x2-alu-l-profil": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19",
+  "sourceTitle": "RE-ALL katalógus 13-15.pdf",
+  "matchedCode": "1304540",
+  "specs": {},
+  "images": []
+ },
+ "254508-20x20x2-alu-l-profil": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19",
+  "sourceTitle": "RE-ALL katalógus 13-15.pdf",
+  "matchedCode": "1304510",
+  "specs": {},
+  "images": []
  },
  "260ft-csapott-teteju-sarvedo": {
   "source": "JONESCO",
@@ -1941,6 +2156,16 @@
    "/termekkepek/303005-alafutasgatlo-konzol-700-mm-uj-2.webp"
   ]
  },
+ "307155-alafutasgatlo-konzol-572-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=268",
+  "matchedCode": "57700155",
+  "specs": {
+   "Tömeg": "1,500 kg",
+   "Kivitel": "tűzihorganyzott"
+  },
+  "images": []
+ },
  "307955-alafutasgatlo-konzol-550-mm-horg": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/parabiciclette-ribaltabile-h-550/",
@@ -1972,6 +2197,13 @@
    "/termekkepek/307955-th-alafutasgatlo-konzol-550-mm-1.webp",
    "/termekkepek/307955-th-alafutasgatlo-konzol-550-mm-2.webp"
   ]
+ },
+ "308155-th-alafutasgatlo-konzol-710-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=268",
+  "matchedCode": "58800155",
+  "specs": {},
+  "images": []
  },
  "309055-alafutasgatlo-konzol-700-mm-horg": {
   "source": "FTS",
@@ -2065,7 +2297,8 @@
   "sourceDescription": "",
   "matchedCode": "35900402",
   "specs": {
-   "Kivitel": "Frontale Singolo Sinistro"
+   "Kivitel": "Frontale Singolo Sinistro",
+   "Tömeg": "3,000 kg"
   },
   "images": [
    "/termekkepek/35014251-2-400-as-billencs-elso-rakonca-r-l-1.webp"
@@ -2102,11 +2335,41 @@
   "sourceDescription": "",
   "matchedCode": "35144300",
   "specs": {
-   "Kivitel": "Testata Laterale"
+   "Kivitel": "Testata Laterale",
+   "Tömeg": "0,777 kg"
   },
   "images": [
    "/termekkepek/3514430-1-billencs-rakonca-szego-egyenes-r-l-1.webp"
   ]
+ },
+ "351501-z-zar-ellendarab-csavarozhato": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=140",
+  "matchedCode": "35150100",
+  "specs": {
+   "Tömeg": "0,050 kg"
+  },
+  "images": [
+   "/termekkepek/351501-z-zar-ellendarab-csavarozhato-9.webp"
+  ]
+ },
+ "351502-z-zar-ellendarab-hegesztheto-nagy-30": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=140",
+  "matchedCode": "35150200",
+  "specs": {
+   "Tömeg": "0,030 kg"
+  },
+  "images": []
+ },
+ "351503-z-zar-ellendarab-hegesztheto-kicsi-20": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=144",
+  "matchedCode": "35150250",
+  "specs": {
+   "Tömeg": "0,025 kg"
+  },
+  "images": []
  },
  "351775-bill-rakonca-csap": {
   "source": "Ital Accessori",
@@ -2179,6 +2442,15 @@
    "H (mm)": "35",
    "Tömeg": "1,660 kg"
   }
+ },
+ "352202-egymasbazarodo-zar-ellendarab": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=139",
+  "matchedCode": "35220002",
+  "specs": {
+   "Tömeg": "0,060 kg"
+  },
+  "images": []
  },
  "352240-ellendarabos-szego-400mm-r-l": {
   "source": "FTS",
@@ -2301,7 +2573,8 @@
   "matchedCode": "35442401",
   "specs": {
    "Kivitel": "nyers",
-   "Kiszerelés": "100 db."
+   "Kiszerelés": "100 db.",
+   "Tömeg": "0,130 kg"
   },
   "images": []
  },
@@ -2474,7 +2747,8 @@
   "sourceDescription": "",
   "matchedCode": "34480011",
   "specs": {
-   "Kiszerelés": "50 db"
+   "Kiszerelés": "50 db",
+   "Tömeg": "0,250 kg"
   },
   "images": [
    "/termekkepek/380011-felso-adapter-34-es-csohoz-1.webp",
@@ -2555,6 +2829,62 @@
    "/termekkepek/380021-ss-also-adapter-27-es-csohoz-1.webp",
    "/termekkepek/380021-ss-also-adapter-27-es-csohoz-2.webp",
    "/termekkepek/380021-ss-also-adapter-27-es-csohoz-3.webp"
+  ]
+ },
+ "380033-ponyvabeakaszto-alu-profil-60-mm-elox": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=7",
+  "sourceTitle": "RE-ALL katalógus 21.pdf",
+  "matchedCode": "2100033",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T6",
+   "Tömeg [kg/fm]": "0,953",
+   "Gyári szálhossz [mm]": "5200 / 6300"
+  },
+  "images": [
+   "/termekkepek/380033-ponyvabeakaszto-alu-profil-60-mm-elox-1.webp"
+  ]
+ },
+ "380034-ponyvabeakaszto-alu-profil-80-mm-elox": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=7",
+  "sourceTitle": "RE-ALL katalógus 21.pdf",
+  "matchedCode": "2100034",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T6",
+   "Tömeg [kg/fm]": "2,200",
+   "Gyári szálhossz [mm]": "7500"
+  },
+  "images": [
+   "/termekkepek/380034-ponyvabeakaszto-alu-profil-80-mm-elox-1.webp"
+  ]
+ },
+ "380035-ponyvabeakaszto-alu-profil-55-mm-elox": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=7",
+  "sourceTitle": "RE-ALL katalógus 21.pdf",
+  "matchedCode": "2100035",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T6",
+   "Tömeg [kg/fm]": "1,007",
+   "Gyári szálhossz [mm]": "7500"
+  },
+  "images": [
+   "/termekkepek/380035-ponyvabeakaszto-alu-profil-55-mm-elox-1.webp"
+  ]
+ },
+ "380045-34mm-feszito-cso-alu-profil": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=8",
+  "sourceTitle": "RE-ALL katalógus 21.pdf",
+  "matchedCode": "2100045",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T6",
+   "Tömeg [kg/fm]": "1,141",
+   "Gyári szálhossz [mm]": "6300"
+  },
+  "images": [
+   "/termekkepek/380045-34mm-feszito-cso-alu-profil-1.webp"
   ]
  },
  "380060-racsnis-feszito-r": {
@@ -2689,7 +3019,9 @@
   "sourceTitle": "34480010 – Tenditore zincato doppio attacco a taglio Ø25",
   "sourceDescription": "",
   "matchedCode": "34480010",
-  "specs": {},
+  "specs": {
+   "Tömeg": "1,250 kg"
+  },
   "images": [
    "/termekkepek/380810-tts-racsnis-feszito-ketoldalas-1.webp",
    "/termekkepek/380810-tts-racsnis-feszito-ketoldalas-2.webp"
@@ -2853,7 +3185,8 @@
   },
   "images": [
    "/termekkepek/451871-alvaz-rogzito-konzol-10-12-14-16-1.webp",
-   "/termekkepek/451871-alvaz-rogzito-konzol-10-12-14-16-2.webp"
+   "/termekkepek/451871-alvaz-rogzito-konzol-10-12-14-16-2.webp",
+   "/termekkepek/451871-alvaz-rogzito-konzol-10-12-14-16-9.webp"
   ]
  },
  "452871-alvaz-rogzito-konzol-4-5-5-6": {
@@ -2868,7 +3201,8 @@
   },
   "images": [
    "/termekkepek/452871-alvaz-rogzito-konzol-4-5-5-6-1.webp",
-   "/termekkepek/452871-alvaz-rogzito-konzol-4-5-5-6-2.webp"
+   "/termekkepek/452871-alvaz-rogzito-konzol-4-5-5-6-2.webp",
+   "/termekkepek/452871-alvaz-rogzito-konzol-4-5-5-6-9.webp"
   ]
  },
  "452921-alvaz-rogzito-konzol-7-8-10-12": {
@@ -2883,7 +3217,8 @@
   },
   "images": [
    "/termekkepek/452921-alvaz-rogzito-konzol-7-8-10-12-1.webp",
-   "/termekkepek/452921-alvaz-rogzito-konzol-7-8-10-12-2.webp"
+   "/termekkepek/452921-alvaz-rogzito-konzol-7-8-10-12-2.webp",
+   "/termekkepek/452921-alvaz-rogzito-konzol-7-8-10-12-9.webp"
   ]
  },
  "453881-nyers-alvaz-konzol-5-mm": {
@@ -2956,7 +3291,8 @@
   "matchedCode": "45165110",
   "specs": {
    "Tömeg": "0,630 kg",
-   "Kiszerelés": "100 db"
+   "Kiszerelés": "100 db",
+   "Kivitel": "horganyzott"
   },
   "images": [
    "/termekkepek/456511-horganyzott-eurocargo-konzol-1.webp",
@@ -3385,7 +3721,8 @@
   },
   "images": [
    "/termekkepek/552080-utkozogumi-200x80x80-1.webp",
-   "/termekkepek/552080-utkozogumi-200x80x80-2.webp"
+   "/termekkepek/552080-utkozogumi-200x80x80-2.webp",
+   "/termekkepek/552080-utkozogumi-200x80x80-9.webp"
   ]
  },
  "552118-utkozogumi-150x60x60": {
@@ -3415,7 +3752,8 @@
   },
   "images": [
    "/termekkepek/552155-utkozogumi-215x50x55-1.webp",
-   "/termekkepek/552155-utkozogumi-215x50x55-2.webp"
+   "/termekkepek/552155-utkozogumi-215x50x55-2.webp",
+   "/termekkepek/552155-utkozogumi-215x50x55-9.webp"
   ]
  },
  "552280-gumi-utkozogyuru-d21-5x7-5-mm": {
@@ -3445,7 +3783,8 @@
   },
   "images": [
    "/termekkepek/552594-utkozogumi-400x65x70-1.webp",
-   "/termekkepek/552594-utkozogumi-400x65x70-2.webp"
+   "/termekkepek/552594-utkozogumi-400x65x70-2.webp",
+   "/termekkepek/552594-utkozogumi-400x65x70-9.webp"
   ]
  },
  "552825-kupos-utkozogumi-27-5-25": {
@@ -3490,7 +3829,8 @@
   },
   "images": [
    "/termekkepek/553541-kupos-utkozogumi-45-60-35-1.webp",
-   "/termekkepek/553541-kupos-utkozogumi-45-60-35-2.webp"
+   "/termekkepek/553541-kupos-utkozogumi-45-60-35-2.webp",
+   "/termekkepek/553541-kupos-utkozogumi-45-60-35-9.webp"
   ]
  },
  "554540-utkozogumi-450x40x60": {
@@ -3520,7 +3860,8 @@
   },
   "images": [
    "/termekkepek/555490-utkozogumi-490x45x40-1.webp",
-   "/termekkepek/555490-utkozogumi-490x45x40-2.webp"
+   "/termekkepek/555490-utkozogumi-490x45x40-2.webp",
+   "/termekkepek/555490-utkozogumi-490x45x40-9.webp"
   ]
  },
  "555575-kupos-utkozogumi-55-75-40": {
@@ -3535,7 +3876,8 @@
   },
   "images": [
    "/termekkepek/555575-kupos-utkozogumi-55-75-40-1.webp",
-   "/termekkepek/555575-kupos-utkozogumi-55-75-40-2.webp"
+   "/termekkepek/555575-kupos-utkozogumi-55-75-40-2.webp",
+   "/termekkepek/555575-kupos-utkozogumi-55-75-40-9.webp"
   ]
  },
  "556575-kupos-utkozogumi-65-75-50": {
@@ -3813,6 +4155,32 @@
   },
   "images": [
    "/termekkepek/662000-midi-hatso-lift-oszlop-elox-1.webp"
+  ]
+ },
+ "6621620-or-midi-elso-oszlop-alu-elox": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=12",
+  "sourceTitle": "RE-ALL katalógus 21.pdf",
+  "matchedCode": "2100062",
+  "specs": {
+   "Tömeg [kg/fm]": "3,981",
+   "Gyári szálhossz [mm]": "5500"
+  },
+  "images": [
+   "/termekkepek/6621620-or-midi-elso-oszlop-alu-elox-1.webp"
+  ]
+ },
+ "6621640-or-midi-hatso-oszlop-alu-elox": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=12",
+  "sourceTitle": "RE-ALL katalógus 21.pdf",
+  "matchedCode": "2100064",
+  "specs": {
+   "Tömeg [kg/fm]": "3,782",
+   "Gyári szálhossz [mm]": "5500"
+  },
+  "images": [
+   "/termekkepek/6621640-or-midi-hatso-oszlop-alu-elox-1.webp"
   ]
  },
  "6635255-max-os-hatso-elox-oszlop-3150-mm": {
@@ -4304,7 +4672,8 @@
   },
   "images": [
    "/termekkepek/806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm-1.webp",
-   "/termekkepek/806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm-2.webp"
+   "/termekkepek/806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm-2.webp",
+   "/termekkepek/806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm-9.webp"
   ]
  },
  "806287-inox-oldalajto-zsaner-184-65-zsirzos": {
@@ -4365,7 +4734,8 @@
   "matchedCode": "80600407",
   "specs": {
    "Kivitel": "rozsdamentes",
-   "Tömeg": "0,610 kg"
+   "Tömeg": "0,610 kg",
+   "Kiszerelés": "50 db/doboz"
   },
   "images": [
    "/termekkepek/806407-rm-oldalajto-zsaner-lepcsos-183-mm-1.webp"
@@ -4396,7 +4766,8 @@
   },
   "images": [
    "/termekkepek/810164-negyszog-kulcs-1.webp",
-   "/termekkepek/810164-negyszog-kulcs-2.webp"
+   "/termekkepek/810164-negyszog-kulcs-2.webp",
+   "/termekkepek/810164-negyszog-kulcs-9.webp"
   ]
  },
  "810489-rm-lapos-zsaner-140-4-mm-pl": {
@@ -4481,7 +4852,8 @@
   "matchedCode": "20128610",
   "specs": {
    "Tömeg": "0,530",
-   "Kiszerelés": "25 db"
+   "Kiszerelés": "25 db",
+   "Kivitel": "rozsdamentes acél"
   },
   "images": [
    "/termekkepek/820128-l-210-mm-rugos-rigli-rm-1.webp",
@@ -4496,7 +4868,8 @@
   "matchedCode": "20128210",
   "specs": {
    "Tömeg": "0,360",
-   "Kiszerelés": "50 db"
+   "Kiszerelés": "50 db",
+   "Kivitel": "rozsdamentes acél"
   },
   "images": [
    "/termekkepek/820128-rugos-rigli-rm-1.webp",
@@ -4511,7 +4884,8 @@
   "matchedCode": "20128510",
   "specs": {
    "Tömeg": "0,530",
-   "Kiszerelés": "25 db"
+   "Kiszerelés": "25 db",
+   "Kivitel": "horganyzott"
   },
   "images": [
    "/termekkepek/820129-l-247-mm-rugos-rigli-horg-1.webp",
@@ -4526,7 +4900,8 @@
   "matchedCode": "20128110",
   "specs": {
    "Tömeg": "0,360",
-   "Kiszerelés": "50 db"
+   "Kiszerelés": "50 db",
+   "Kivitel": "horganyzott"
   },
   "images": [
    "/termekkepek/820129-rugos-rigli-horg-1.webp",
@@ -4551,6 +4926,15 @@
    "/termekkepek/822225-haub-csatoszar-ellendarabbal-horg-ts-3.webp"
   ]
  },
+ "828010-nyers-zsaner-bak-csavar": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=315",
+  "matchedCode": "80280100",
+  "specs": {
+   "Tömeg": "0,160 kg"
+  },
+  "images": []
+ },
  "829611-rugos-ajtokitamaszto-500-270mm-ts": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/80296110-ferma-porta-sottotelaio-con-attacco-in-piano-zincato/",
@@ -4559,7 +4943,8 @@
   "matchedCode": "80296110",
   "specs": {
    "Tömeg": "2,40 Kg",
-   "Kiszerelés": "10 db"
+   "Kiszerelés": "10 db",
+   "Kivitel": "horganyzott"
   },
   "images": [
    "/termekkepek/829611-rugos-ajtokitamaszto-500-270mm-ts-1.webp",
@@ -4580,7 +4965,8 @@
   "images": [
    "/termekkepek/829631-rugos-ajtorogzito-horg-440-270mm-ts-1.webp",
    "/termekkepek/829631-rugos-ajtorogzito-horg-440-270mm-ts-2.webp",
-   "/termekkepek/829631-rugos-ajtorogzito-horg-440-270mm-ts-3.webp"
+   "/termekkepek/829631-rugos-ajtorogzito-horg-440-270mm-ts-3.webp",
+   "/termekkepek/829631-rugos-ajtorogzito-horg-440-270mm-ts-9.webp"
   ]
  },
  "829681-rugos-ajtorogzito-horg-545-410mm-ts": {
@@ -4606,7 +4992,9 @@
   "sourceDescription": "",
   "matchedCode": "80296910",
   "specs": {
-   "Tömeg": "2,40 Kg"
+   "Tömeg": "2,40 Kg",
+   "Kiszerelés": "10 db/doboz",
+   "Kivitel": "rozsdamentes acél"
   },
   "images": [
    "/termekkepek/829691-rugos-ajtokitamaszto-500-280-inox-ts-1.webp",
@@ -4621,7 +5009,9 @@
   "sourceDescription": "",
   "matchedCode": "54631430",
   "specs": {
-   "Kivitel": "L=3000"
+   "Kivitel": "L=3000",
+   "Tömeg": "3,550 kg",
+   "Kiszerelés": "10 db/doboz"
   },
   "images": [
    "/termekkepek/831230-gumis-zsaner-l-3000-mm-1.webp"
@@ -4634,7 +5024,9 @@
   "sourceDescription": "",
   "matchedCode": "54631245",
   "specs": {
-   "Kivitel": "L=2500"
+   "Kivitel": "L=2500",
+   "Tömeg": "2,960 kg",
+   "Kiszerelés": "10 db/doboz"
   },
   "images": [
    "/termekkepek/831245-gumis-zsaner-l-2500-mm-1.webp"
@@ -4647,7 +5039,9 @@
   "sourceDescription": "",
   "matchedCode": "54631440",
   "specs": {
-   "Kivitel": "L=4000"
+   "Kivitel": "L=4000",
+   "Tömeg": "3,700 kg",
+   "Kiszerelés": "10 db/doboz"
   },
   "images": [
    "/termekkepek/831440-gumis-zsaner-l-4000-mm-1.webp"
@@ -4726,7 +5120,8 @@
   "sourceDescription": "",
   "matchedCode": "80368210",
   "specs": {
-   "Kiszerelés": "2 db"
+   "Kiszerelés": "2 db",
+   "Tömeg": "2,430 kg"
   },
   "images": [
    "/termekkepek/836821-l-d22-kontener-rudzar-rm-kit-ts-1.webp"
@@ -4739,7 +5134,8 @@
   "sourceDescription": "",
   "matchedCode": "80368210",
   "specs": {
-   "Kiszerelés": "2 db"
+   "Kiszerelés": "2 db",
+   "Tömeg": "2,430 kg"
   },
   "images": [
    "/termekkepek/836821-r-d22-kontener-rudzar-rm-kit-ts-1.webp"
@@ -4779,7 +5175,8 @@
   "sourceDescription": "",
   "matchedCode": "80901200",
   "specs": {
-   "Tömeg": "0,04 kg"
+   "Tömeg": "0,04 kg",
+   "Kiszerelés": "50 db/doboz"
   },
   "images": [
    "/termekkepek/891200-kis-kapaszkodo-1.webp",
@@ -4793,7 +5190,8 @@
   "sourceDescription": "",
   "matchedCode": "80901235",
   "specs": {
-   "Tömeg": "0,17 kg"
+   "Tömeg": "0,17 kg",
+   "Kiszerelés": "25 db/doboz"
   },
   "images": [
    "/termekkepek/891235-nagy-kapaszkodo-1.webp",
@@ -4861,7 +5259,8 @@
   "images": [
    "/termekkepek/895280-nagy-oldalso-ladazar-1.webp",
    "/termekkepek/895280-nagy-oldalso-ladazar-2.webp",
-   "/termekkepek/895280-nagy-oldalso-ladazar-3.webp"
+   "/termekkepek/895280-nagy-oldalso-ladazar-3.webp",
+   "/termekkepek/895280-nagy-oldalso-ladazar-9.webp"
   ]
  },
  "896966-a-rm-hatsoajto-zsanerlap-280-4-mm-pl": {
@@ -4903,7 +5302,9 @@
   "sourceDescription": "",
   "matchedCode": "80399210",
   "specs": {
-   "Tömeg": "0,750 kg"
+   "Tömeg": "0,750 kg",
+   "Kiszerelés": "25 db/doboz",
+   "Kivitel": "rozsdamentes acél"
   },
   "images": [
    "/termekkepek/899210-c-rm-hatsoajto-zsanerbak-ts-1.webp",
@@ -4917,7 +5318,9 @@
   "sourceDescription": "",
   "matchedCode": "80399210",
   "specs": {
-   "Tömeg": "0,750 kg"
+   "Tömeg": "0,750 kg",
+   "Kiszerelés": "25 db/doboz",
+   "Kivitel": "rozsdamentes acél"
   },
   "images": [
    "/termekkepek/899210-rm-hatsoajto-zsanerlap-bak-280-3-ts-1.webp",
@@ -6699,7 +7102,8 @@
   "matchedCode": "60167110",
   "specs": {
    "Tömeg": "0,510kg",
-   "Kiszerelés": "30 db"
+   "Kiszerelés": "30 db",
+   "Kivitel": "horganyzott"
   },
   "images": [
    "/termekkepek/j617110-42-es-horg-acel-csotarto-bilincs-f-1.webp",
@@ -7238,6 +7642,14 @@
   "images": [
    "/termekkepek/q8040-kefe-40-mm-elox-profillal-1.webp"
   ]
+ },
+ "s-2-7x2500x6800-mm-rizs-mintas-alu-lemez-en-aw-5086-h32": {
+  "source": "RE-ALL",
+  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/02-12.pdf#page=10",
+  "sourceTitle": "RE-ALL katalógus 02-12.pdf",
+  "matchedCode": "0800003",
+  "specs": {},
+  "images": []
  },
  "szerszamos-lada": {
   "source": "JONESCO",
