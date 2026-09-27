@@ -1,43 +1,73 @@
-// Logó generálása: npm run logo  (a Michroma betűtípust görbékké alakítja, így a logó bárhol ugyanúgy jelenik meg)
+// Logó generálása: npm run logo
+// Szöveges logó (Russo One betűkből, görbékké alakítva). A betűkön átfutó vízszintes
+// horony az alumínium felépítmény-profilokat idézi. Kimenet: public/brand/ és public/favicon.svg
 const opentype = require('opentype.js');
 const fs = require('fs');
 const path = require('path');
-const ROOT = path.join(__dirname, '..');
-const font = opentype.loadSync(ROOT + '/node_modules/@fontsource/michroma/files/michroma-latin-400-normal.woff');
-const out = ROOT + '/public/brand/';
 
-// Wordmark as paths (letter-spaced)
-function word(text, size, x, y, spacing) {
-  let d = '', cx = x;
+const ROOT = path.join(__dirname, '..');
+const OUT = path.join(ROOT, 'public/brand');
+const RUSSO = opentype.loadSync(path.join(ROOT, 'node_modules/@fontsource/russo-one/files/russo-one-latin-400-normal.woff'));
+const SAIRA = opentype.loadSync(path.join(ROOT, 'node_modules/@fontsource/saira/files/saira-latin-700-normal.woff'));
+
+function word(font, text, size, x, y, spacing) {
+  let d = '';
+  let cx = x;
   for (const ch of text) {
     const g = font.charToGlyph(ch);
     d += g.getPath(cx, y, size).toPathData(2);
-    cx += g.advanceWidth * size / font.unitsPerEm + spacing;
+    cx += (g.advanceWidth * size) / font.unitsPerEm + spacing;
   }
   return { d, width: cx - spacing - x };
 }
 
-// Emblem: four corner brackets (the "quad") forming a Q, with a diagonal tail.
-// Drawn in a 64x64 box.
-function emblem(stroke) {
-  return `
-  <g fill="none" stroke="${stroke}" stroke-width="7" stroke-linecap="butt" stroke-linejoin="miter">
-    <path d="M4 26V4h22"/>
-    <path d="M38 4h22v34"/>
-    <path d="M4 38v22h34"/>
-  </g>
-  <path d="M32 32 L64 64" stroke="url(#qa)" stroke-width="8" stroke-linecap="butt"/>`;
-}
-const defs = `<defs><linearGradient id="qa" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3ee0ff"/><stop offset="1" stop-color="#2f6bff"/></linearGradient></defs>`;
+const SIZE = 100;
+const BASE = 100; // alapvonal
+const CAP = (RUSSO.tables.os2.sCapHeight || 700) * SIZE / RUSSO.unitsPerEm; // nagybetű magasság
+const main = word(RUSSO, 'QUADRIS', SIZE, 0, BASE, 5);
+const W = main.width;
+// horony a nagybetűk 58%-ánál
+const grooveY = BASE - CAP * 0.42;
+const grooveH = CAP * 0.085;
 
-function full(textColor, strokeColor, subColor) {
-  const w = word('QUADRIS', 34, 84, 45, 6);
-  const sub = word('FELÉPÍTMÉNY ALKATRÉSZEK', 9.2, 86, 62, 2.35);
-  const width = Math.ceil(84 + Math.max(w.width, sub.width) + 4);
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} 66" role="img" aria-label="Quadris Kft.">${defs}${emblem(strokeColor)}<path d="${w.d}" fill="${textColor}"/><path d="${sub.d}" fill="${subColor}"/></svg>\n`;
+function tagline() {
+  const text = 'FELÉPÍTMÉNY ALKATRÉSZEK';
+  const size = 17;
+  const probe = word(SAIRA, text, size, 0, 0, 0);
+  const letters = [...text].length;
+  const spacing = (W - probe.width) / (letters - 1);
+  return word(SAIRA, text, size, 0, BASE + 34, spacing);
 }
-fs.writeFileSync(out + 'quadris-logo-light.svg', full('#ffffff', '#ffffff', '#8fb3d9'));
-fs.writeFileSync(out + 'quadris-logo-dark.svg', full('#0b1726', '#0b1726', '#4a6380'));
-const mark = (bg) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 80 80">${defs}${bg ? '<rect x="-8" y="-8" width="80" height="80" rx="16" fill="#0b1726"/>' : ''}${emblem('#ffffff')}</svg>\n`;
-fs.writeFileSync(out + 'quadris-jel.svg', mark(true));
-fs.writeFileSync(ROOT + '/public/favicon.svg', mark(true));
+
+const colors = {
+  color: { fill: 'url(#qg)', sub: '#5b7089', defs: '<linearGradient id="qg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0b3a8c"/><stop offset="1" stop-color="#0a7cff"/></linearGradient>' },
+  white: { fill: '#ffffff', sub: '#b9cde6', defs: '' },
+  dark: { fill: '#0b1f3a', sub: '#5b7089', defs: '' },
+};
+
+function logo(scheme, withTag) {
+  const c = colors[scheme];
+  const top = BASE - CAP - 4;
+  const bottom = withTag ? BASE + 40 : BASE + 22; // a Q farka lelóg
+  const mask = `<mask id="groove" maskUnits="userSpaceOnUse"><rect x="-10" y="${top - 10}" width="${W + 20}" height="${bottom - top + 20}" fill="#fff"/><rect x="-10" y="${grooveY.toFixed(1)}" width="${W + 20}" height="${grooveH.toFixed(1)}" fill="#000"/></mask>`;
+  const tag = withTag ? `<path d="${tagline().d}" fill="${c.sub}"/>` : '';
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 ${top.toFixed(1)} ${(W + 4).toFixed(1)} ${(bottom - top).toFixed(1)}" role="img" aria-label="Quadris Kft."><defs>${c.defs}${mask}</defs><path d="${main.d}" fill="${c.fill}" mask="url(#groove)"/>${tag}</svg>\n`;
+}
+
+fs.mkdirSync(OUT, { recursive: true });
+for (const f of fs.readdirSync(OUT)) if (f.endsWith('.svg')) fs.unlinkSync(path.join(OUT, f));
+fs.writeFileSync(path.join(OUT, 'quadris-logo.svg'), logo('color', true));
+fs.writeFileSync(path.join(OUT, 'quadris-logo-feher.svg'), logo('white', true));
+fs.writeFileSync(path.join(OUT, 'quadris-logo-sotet.svg'), logo('dark', true));
+fs.writeFileSync(path.join(OUT, 'quadris-felirat.svg'), logo('color', false));
+fs.writeFileSync(path.join(OUT, 'quadris-felirat-feher.svg'), logo('white', false));
+
+// ikon: "Q" betű kék lekerekített négyzetben, ugyanazzal a horonnyal
+const q = word(RUSSO, 'Q', 76, 0, 0, 0);
+const qx = (100 - q.width) / 2;
+const qPath = word(RUSSO, 'Q', 76, qx, 78, 0).d;
+const qCap = (RUSSO.tables.os2.sCapHeight || 700) * 76 / RUSSO.unitsPerEm;
+const icon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="ig" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b3a8c"/><stop offset="1" stop-color="#0a7cff"/></linearGradient><mask id="ig2" maskUnits="userSpaceOnUse"><rect width="100" height="100" fill="#fff"/><rect x="0" y="${(78 - qCap * 0.42).toFixed(1)}" width="100" height="${(qCap * 0.09).toFixed(1)}" fill="#000"/></mask></defs><rect width="100" height="100" rx="22" fill="url(#ig)"/><path d="${qPath}" fill="#fff" mask="url(#ig2)"/></svg>\n`;
+fs.writeFileSync(path.join(OUT, 'quadris-ikon.svg'), icon);
+fs.writeFileSync(path.join(ROOT, 'public/favicon.svg'), icon);
+console.log('Logók elkészültek:', fs.readdirSync(OUT).join(', '));

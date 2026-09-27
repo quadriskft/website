@@ -1,28 +1,30 @@
 :root {
-  --bg: #050c16;
-  --bg-2: #081322;
-  --surface: #0c1929;
-  --surface-2: #112136;
-  --surface-3: #16293f;
-  --line: rgba(160, 200, 255, 0.1);
-  --line-strong: rgba(160, 200, 255, 0.2);
-  --text: #e9f1fb;
-  --text-2: #b7c7da;
-  --muted: #8298b2;
-  --accent: #3ee0ff;
-  --accent-2: #2f6bff;
-  --accent-soft: rgba(62, 224, 255, 0.12);
-  --ok: #3ddc97;
-  --danger: #ff6b6b;
+  --bg: #ffffff;
+  --bg-2: #f3f6fb;
+  --surface: #ffffff;
+  --surface-2: #f6f8fc;
+  --surface-3: #eef3fa;
+  --line: #e2e8f1;
+  --line-strong: #cdd8e6;
+  --text: #0b1f3a;
+  --text-2: #34485f;
+  --muted: #677a90;
+  --accent: #0a6cff;
+  --accent-2: #0b3a8c;
+  --accent-soft: rgba(10, 108, 255, 0.08);
+  --ok: #12a36b;
+  --danger: #e5484d;
   --tile: #ffffff;
-  --gradient: linear-gradient(135deg, #3ee0ff 0%, #2f6bff 100%);
-  --radius: 14px;
+  --navy: #0b1f3a;
+  --gradient: linear-gradient(135deg, #0a7cff 0%, #0b3a8c 100%);
+  --radius: 16px;
   --radius-sm: 10px;
-  --shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+  --shadow: 0 22px 44px -24px rgba(11, 31, 58, 0.35);
+  --shadow-sm: 0 1px 2px rgba(11, 31, 58, 0.06), 0 4px 12px -6px rgba(11, 31, 58, 0.08);
   --font-body: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
   --font-head: 'Sora Variable', 'Inter Variable', system-ui, sans-serif;
-  --header-h: 72px;
-  color-scheme: dark;
+  --header-h: 76px;
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
@@ -70,21 +72,21 @@ button, input, select, textarea { font: inherit; color: inherit; }
   text-decoration: none !important;
 }
 .btn svg { width: 18px; height: 18px; flex: none; }
-.btn-primary { background: var(--gradient); color: #03101f; box-shadow: 0 8px 30px -10px rgba(62, 160, 255, 0.7); }
-.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 12px 34px -10px rgba(62, 160, 255, 0.9); }
-.btn-ghost { background: rgba(255, 255, 255, 0.04); border-color: var(--line-strong); color: var(--text); }
+.btn-primary { background: var(--gradient); color: #fff; box-shadow: 0 10px 24px -12px rgba(10, 108, 255, 0.8); }
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 14px 30px -12px rgba(10, 108, 255, 0.9); }
+.btn-ghost { background: #fff; border-color: var(--line-strong); color: var(--text); }
 .btn-ghost:hover { border-color: var(--accent); background: var(--accent-soft); }
 .btn-sm { padding: 8px 14px; font-size: 0.88rem; }
 .btn[disabled] { opacity: 0.6; cursor: default; transform: none; }
 
 /* Kártyák, rácsok */
 .card {
-  position: relative; background: linear-gradient(180deg, var(--surface) 0%, var(--bg-2) 100%);
-  border: 1px solid var(--line); border-radius: var(--radius);
+  position: relative; background: var(--surface);
+  border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm);
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 a.card { color: inherit; text-decoration: none; display: block; }
-a.card:hover, .card.hoverable:hover { border-color: rgba(62, 224, 255, 0.45); transform: translateY(-2px); box-shadow: var(--shadow); }
+a.card:hover, .card.hoverable:hover { border-color: rgba(10, 108, 255, 0.45); transform: translateY(-2px); box-shadow: var(--shadow); }
 .grid { display: grid; gap: 20px; }
 .grid-groups { grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); }
 .grid-products { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 18px; }
@@ -93,7 +95,7 @@ a.card:hover, .card.hoverable:hover { border-color: rgba(62, 224, 255, 0.45); tr
 .breadcrumb a { color: var(--muted); }
 .breadcrumb a:hover { color: var(--accent); }
 
-.page-head { padding: 48px 0 28px; border-bottom: 1px solid var(--line); background: radial-gradient(900px 300px at 85% -40%, rgba(47, 107, 255, 0.25), transparent 70%); }
+.page-head { padding: 44px 0 30px; border-bottom: 1px solid var(--line); background: radial-gradient(900px 320px at 90% -30%, rgba(10, 108, 255, 0.12), transparent 70%), var(--bg-2); }
 .page-head h1 { font-size: clamp(1.8rem, 3.6vw, 2.8rem); }
 
 /* Űrlapok */
@@ -101,12 +103,12 @@ a.card:hover, .card.hoverable:hover { border-color: rgba(62, 224, 255, 0.45); tr
 .field label { font-size: 0.88rem; font-weight: 500; color: var(--text-2); }
 .input, .field input, .field textarea, .field select {
   width: 100%; padding: 12px 14px; border-radius: var(--radius-sm);
-  border: 1px solid var(--line-strong); background: rgba(255, 255, 255, 0.03); color: var(--text);
-  transition: border-color 0.2s ease, background 0.2s ease;
+  border: 1px solid var(--line-strong); background: #fff; color: var(--text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-.input:focus, .field input:focus, .field textarea:focus { outline: none; border-color: var(--accent); background: rgba(62, 224, 255, 0.05); }
+.input:focus, .field input:focus, .field textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px rgba(10, 108, 255, 0.1); }
 .field textarea { min-height: 110px; resize: vertical; }
-::placeholder { color: #5f7690; }
+::placeholder { color: #8a9bb0; }
 
 /* Mennyiség választó */
 .qty { display: inline-flex; align-items: center; border: 1px solid var(--line-strong); border-radius: 999px; overflow: hidden; }
@@ -124,16 +126,16 @@ a.card:hover, .card.hoverable:hover { border-color: rgba(62, 224, 255, 0.45); tr
 .product-visual img { width: 100%; height: 100%; object-fit: contain; padding: 8%; }
 .product-visual.placeholder {
   background:
-    linear-gradient(rgba(47, 107, 255, 0.07) 1px, transparent 1px) 0 0 / 22px 22px,
-    linear-gradient(90deg, rgba(47, 107, 255, 0.07) 1px, transparent 1px) 0 0 / 22px 22px,
-    linear-gradient(160deg, #13253b 0%, #0b1726 100%);
+    linear-gradient(rgba(10, 108, 255, 0.06) 1px, transparent 1px) 0 0 / 22px 22px,
+    linear-gradient(90deg, rgba(10, 108, 255, 0.06) 1px, transparent 1px) 0 0 / 22px 22px,
+    linear-gradient(160deg, #f6f9fe 0%, #eaf1fb 100%);
 }
-.product-visual.placeholder svg { width: 34%; height: 34%; color: #4f86c9; stroke-width: 1.3; opacity: 0.85; }
+.product-visual.placeholder svg { width: 34%; height: 34%; color: #7ea3d6; stroke-width: 1.3; }
 
 .toast {
   position: fixed; right: 20px; bottom: 20px; z-index: 100; max-width: calc(100vw - 40px);
   display: flex; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 12px;
-  background: var(--surface-3); border: 1px solid rgba(62, 224, 255, 0.4); box-shadow: var(--shadow);
+  background: #fff; border: 1px solid var(--line-strong); box-shadow: var(--shadow);
   transform: translateY(20px); opacity: 0; pointer-events: none; transition: all 0.25s ease;
 }
 .toast.show { transform: none; opacity: 1; pointer-events: auto; }

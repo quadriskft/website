@@ -110,7 +110,7 @@ import Icon from '../components/Icon.astro';
 </script>
 
 <style>
-  .big-search { display: flex; align-items: center; gap: 10px; margin-top: 18px; padding: 6px 6px 6px 18px; max-width: 640px; border: 1px solid var(--line-strong); border-radius: 999px; background: rgba(12, 25, 41, 0.8); }
+  .big-search { display: flex; align-items: center; gap: 10px; margin-top: 18px; padding: 6px 6px 6px 18px; max-width: 640px; border: 1px solid var(--line-strong); border-radius: 999px; background: #fff; box-shadow: var(--shadow-sm); }
   .big-search:focus-within { border-color: var(--accent); }
   .big-search > :global(svg) { color: var(--muted); flex: none; }
   .big-search input { flex: 1; min-width: 0; border: 0; background: transparent; height: 44px; outline: none; font-size: 1rem; }
@@ -130,11 +130,11 @@ import Icon from '../components/Icon.astro';
   #results :global(.s-foot) { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 4px 2px; font-size: 0.8rem; flex-wrap: wrap; }
   #results :global(.add-btn) {
     display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; border: 1px solid var(--line-strong);
-    background: rgba(255, 255, 255, 0.03); color: var(--text); font-size: 0.82rem; font-weight: 600; cursor: pointer;
+    background: #fff; color: var(--text); font-size: 0.82rem; font-weight: 600; cursor: pointer;
   }
   #results :global(.add-btn:hover) { border-color: var(--accent); color: var(--accent); }
   #results :global(.add-btn .i-added) { display: none; }
-  #results :global(.add-btn.in-quote) { border-color: rgba(61, 220, 151, 0.5); background: rgba(61, 220, 151, 0.1); color: var(--ok); }
+  #results :global(.add-btn.in-quote) { border-color: rgba(18, 163, 107, 0.5); background: rgba(18, 163, 107, 0.08); color: var(--ok); }
   #results :global(.add-btn.in-quote .i-add) { display: none; }
   #results :global(.add-btn.in-quote .i-added) { display: inline; }
   @media (max-width: 720px) {

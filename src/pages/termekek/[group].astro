@@ -84,7 +84,7 @@ const single = sections.length === 1;
   .gh .lead { margin: 0; }
   .gh-icon {
     flex: none; width: 64px; height: 64px; border-radius: 18px; display: grid; place-items: center; color: var(--accent);
-    background: linear-gradient(145deg, rgba(62, 224, 255, 0.16), rgba(47, 107, 255, 0.08)); border: 1px solid rgba(62, 224, 255, 0.25);
+    background: var(--accent-soft); border: 1px solid rgba(10, 108, 255, 0.18);
   }
   .layout { display: flex; gap: 36px; padding-top: 32px; padding-bottom: 40px; align-items: flex-start; }
   .sidebar { flex: 0 0 250px; position: sticky; top: calc(var(--header-h) + 20px); max-height: calc(100vh - var(--header-h) - 40px); overflow-y: auto; }
@@ -94,7 +94,7 @@ const single = sections.length === 1;
   .sidebar a span { color: var(--muted); font-size: 0.85rem; }
   .sidebar a:hover { background: var(--accent-soft); color: var(--text); }
   .content { flex: 1; min-width: 0; }
-  .filter { position: relative; display: flex; align-items: center; gap: 10px; margin-bottom: 28px; padding: 0 16px; border: 1px solid var(--line-strong); border-radius: 999px; background: rgba(255, 255, 255, 0.03); max-width: 560px; }
+  .filter { position: relative; display: flex; align-items: center; gap: 10px; margin-bottom: 28px; padding: 0 16px; border: 1px solid var(--line-strong); border-radius: 999px; background: #fff; max-width: 560px; }
   .filter:focus-within { border-color: var(--accent); }
   .filter > :global(svg) { color: var(--muted); flex: none; }
   .filter input { flex: 1; min-width: 0; height: 44px; border: 0; background: transparent; outline: none; }

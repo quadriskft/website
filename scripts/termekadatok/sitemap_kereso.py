@@ -20,7 +20,6 @@ from common import (clear_images, code_candidates, fetch, load_products,  # noqa
 # beszállító -> (sitemap, az URL-ekre illesztendő minta, legfeljebb ennyi oldal)
 SITES = {
     "G&C termékek": ("https://gnc-systems.com/sitemap.xml", r"/en/", 800),
-    "Sand-Profile": ("https://www.sandprofile.com/sitemap.xml", r"/en/", 800),
     "COPAR": ("https://www.copar.it/sitemap.xml", r"/en/", 800),
     "Takler": ("https://trucksandtrailers.taklergroup.com/sitemap.xml", r"lang=en|/en/|product", 800),
     "Pommier": ("https://www.pommier.eu/sitemap.xml", r"/en/", 1500),

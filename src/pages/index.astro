@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import HorseIcon from '../components/HorseIcon.astro';
-import HeroTrailer from '../components/HeroTrailer.astro';
+import HeroAssembly from '../components/HeroAssembly.astro';
 import { groups, GROUP_META, stats, roundedCount } from '../lib/catalog.js';
 
 const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárvédő'];
@@ -33,7 +33,7 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
         </div>
       </div>
       <div class="hero-visual">
-        <HeroTrailer />
+        <HeroAssembly />
       </div>
     </div>
     <div class="container">
@@ -146,23 +146,22 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
 </Base>
 
 <style>
-  .hero { position: relative; overflow: hidden; padding: 56px 0 40px; }
+  .hero { position: relative; overflow: hidden; padding: 40px 0 36px; min-height: calc(92vh - var(--header-h)); display: flex; flex-direction: column; justify-content: center; }
   .hero-bg {
     position: absolute; inset: 0; z-index: -1;
     background:
-      radial-gradient(700px 420px at 78% 30%, rgba(47, 107, 255, 0.28), transparent 70%),
-      radial-gradient(500px 300px at 15% 0%, rgba(62, 224, 255, 0.12), transparent 70%),
-      linear-gradient(rgba(120, 170, 255, 0.05) 1px, transparent 1px) 0 0 / 48px 48px,
-      linear-gradient(90deg, rgba(120, 170, 255, 0.05) 1px, transparent 1px) 0 0 / 48px 48px;
-    mask-image: linear-gradient(180deg, #000 60%, transparent);
+      radial-gradient(900px 520px at 72% 42%, rgba(10, 108, 255, 0.14), transparent 70%),
+      linear-gradient(rgba(10, 108, 255, 0.05) 1px, transparent 1px) 0 0 / 44px 44px,
+      linear-gradient(90deg, rgba(10, 108, 255, 0.05) 1px, transparent 1px) 0 0 / 44px 44px,
+      linear-gradient(180deg, #f7faff 0%, #eaf2fd 100%);
   }
-  .hero-inner { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 40px; align-items: center; }
-  .hero-copy h1 { margin: 16px 0 20px; }
+  .hero-inner { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.25fr); gap: 32px; align-items: center; }
+  .hero-copy h1 { margin: 16px 0 20px; color: var(--navy); }
   .hero-search {
     display: flex; align-items: center; gap: 10px; margin: 28px 0 12px; padding: 6px 6px 6px 18px; max-width: 580px;
-    border: 1px solid var(--line-strong); border-radius: 999px; background: rgba(12, 25, 41, 0.8);
+    border: 1px solid var(--line-strong); border-radius: 999px; background: #fff; box-shadow: var(--shadow-sm);
   }
-  .hero-search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(62, 224, 255, 0.1); }
+  .hero-search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(10, 108, 255, 0.12); }
   .hero-search > :global(svg) { color: var(--muted); flex: none; }
   .hero-search input { flex: 1; min-width: 0; border: 0; background: transparent; height: 44px; font-size: 1rem; outline: none; }
   .hero-popular { display: flex; flex-wrap: wrap; gap: 8px 12px; font-size: 0.88rem; }
@@ -171,25 +170,24 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
   .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
   .hero-visual { position: relative; }
   .stats {
-    display: grid; grid-template-columns: repeat(4, 1fr); margin: 48px 0 0; padding: 0;
-    border: 1px solid var(--line); border-radius: var(--radius); background: rgba(12, 25, 41, 0.6); backdrop-filter: blur(8px);
+    display: grid; grid-template-columns: repeat(4, 1fr); margin: 36px 0 0; padding: 0;
+    border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(8px); box-shadow: var(--shadow-sm);
   }
-  .stats div { padding: 22px 26px; border-left: 1px solid var(--line); }
+  .stats div { padding: 20px 26px; border-left: 1px solid var(--line); }
   .stats div:first-child { border-left: 0; }
-  .stats dt { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
-  .stats dd { margin: 4px 0 0; font-family: var(--font-head); font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; }
+  .stats dt { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .stats dd { margin: 4px 0 0; font-family: var(--font-head); font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; color: var(--navy); }
 
   .segments { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
   .segment { display: flex !important; gap: 22px; padding: 32px; overflow: hidden; }
   .segment::after {
     content: ''; position: absolute; right: -80px; top: -80px; width: 260px; height: 260px; border-radius: 50%;
-    background: radial-gradient(circle, rgba(47, 107, 255, 0.25), transparent 70%); pointer-events: none;
+    background: radial-gradient(circle, rgba(10, 108, 255, 0.1), transparent 70%); pointer-events: none;
   }
-  .segment.horse::after { background: radial-gradient(circle, rgba(62, 224, 255, 0.2), transparent 70%); }
   .segment h2 { font-size: 1.45rem; }
   .segment-icon, .group-icon {
     flex: none; width: 60px; height: 60px; border-radius: 16px; display: grid; place-items: center; color: var(--accent);
-    background: linear-gradient(145deg, rgba(62, 224, 255, 0.16), rgba(47, 107, 255, 0.08)); border: 1px solid rgba(62, 224, 255, 0.25);
+    background: var(--accent-soft); border: 1px solid rgba(10, 108, 255, 0.18);
   }
   .link-arrow { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 600; }
 
@@ -201,11 +199,11 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
   .group-card p { font-size: 0.9rem; flex: 1; }
   .group-count { display: inline-flex; align-items: center; gap: 6px; font-size: 0.86rem; font-weight: 600; color: var(--accent); }
 
-  .steps-section { background: linear-gradient(180deg, transparent, var(--bg-2) 30%, var(--bg-2) 70%, transparent); }
+  .steps-section { background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .steps { list-style: none; padding: 0; margin: 32px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .steps li { padding: 30px; }
   .steps li > :global(svg) { color: var(--accent); margin-bottom: 16px; }
-  .step-no { position: absolute; right: 24px; top: 18px; font-family: var(--font-head); font-size: 2.6rem; font-weight: 700; color: rgba(160, 200, 255, 0.08); }
+  .step-no { position: absolute; right: 24px; top: 18px; font-family: var(--font-head); font-size: 2.6rem; font-weight: 700; color: rgba(10, 108, 255, 0.1); }
 
   .why { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: start; }
   .why h2 { margin-top: 12px; }
@@ -217,22 +215,23 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
 
   .cta-band {
     display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
-    padding: 40px; border-radius: 20px; border: 1px solid rgba(62, 224, 255, 0.3);
-    background: radial-gradient(600px 200px at 100% 0%, rgba(47, 107, 255, 0.3), transparent 70%), linear-gradient(135deg, #0d1f35, #0a1627);
+    padding: 44px; border-radius: 22px; color: #fff;
+    background: radial-gradient(600px 240px at 100% 0%, rgba(90, 162, 255, 0.55), transparent 70%), linear-gradient(135deg, #0b3a8c, #0a6cff);
   }
-  .cta-band h2 { margin-bottom: 6px; }
-  .cta-band p { margin: 0; }
+  .cta-band h2 { margin-bottom: 6px; color: #fff; }
+  .cta-band p { margin: 0; color: #d7e6ff; }
+  .cta-band .btn-primary { background: #fff; color: var(--accent-2); }
 
   @media (max-width: 960px) {
+    .hero { min-height: 0; }
     .hero-inner { grid-template-columns: minmax(0, 1fr); gap: 8px; }
-    .hero-visual { order: -1; max-width: 420px; margin: 0 auto; width: 100%; }
+    .hero-visual { order: -1; max-width: 640px; margin: 0 auto; width: 100%; }
     .segments, .why { grid-template-columns: 1fr; }
     .steps { grid-template-columns: 1fr; }
     .why { gap: 32px; }
   }
   @media (max-width: 640px) {
-    .hero { padding-top: 16px; }
-    .hero-visual { max-width: 300px; }
+    .hero { padding-top: 12px; }
     .stats { grid-template-columns: 1fr 1fr; }
     .stats div:nth-child(3) { border-left: 0; }
     .stats div:nth-child(n + 3) { border-top: 1px solid var(--line); }

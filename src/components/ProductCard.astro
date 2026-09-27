@@ -29,12 +29,12 @@ const { product } = Astro.props;
   .code { font-size: 0.8rem; }
   .add-btn {
     display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px;
-    border: 1px solid var(--line-strong); background: rgba(255, 255, 255, 0.03); color: var(--text);
+    border: 1px solid var(--line-strong); background: #fff; color: var(--text);
     font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease;
   }
   .add-btn:hover { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
   .add-btn :global(.i-added) { display: none; }
-  .add-btn.in-quote { border-color: rgba(61, 220, 151, 0.5); background: rgba(61, 220, 151, 0.1); color: var(--ok); }
+  .add-btn.in-quote { border-color: rgba(18, 163, 107, 0.5); background: rgba(18, 163, 107, 0.08); color: var(--ok); }
   .add-btn.in-quote :global(.i-add) { display: none; }
   .add-btn.in-quote :global(.i-added) { display: inline; }
   @media (max-width: 720px) {

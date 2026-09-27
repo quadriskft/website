@@ -73,16 +73,15 @@ const total = sections.reduce((n, s) => n + s.items.length, 0);
 <style>
   .horse-hero {
     padding: 44px 0 56px; border-bottom: 1px solid var(--line);
-    background: radial-gradient(700px 360px at 85% 20%, rgba(62, 224, 255, 0.18), transparent 70%),
-      radial-gradient(600px 300px at 0% 100%, rgba(47, 107, 255, 0.18), transparent 70%);
+    background: radial-gradient(700px 360px at 85% 20%, rgba(10, 108, 255, 0.12), transparent 70%), var(--bg-2);
   }
   .hh-inner { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: center; }
   .hh-inner h1 { margin: 14px 0 18px; }
   .hh-ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
   .hh-badge {
     justify-self: center; width: min(320px, 100%); aspect-ratio: 1; border-radius: 50%; display: grid; place-content: center; justify-items: center; text-align: center; gap: 4px;
-    border: 1px solid rgba(62, 224, 255, 0.3); background: radial-gradient(circle at 50% 35%, rgba(62, 224, 255, 0.14), rgba(12, 25, 41, 0.6) 70%);
-    box-shadow: 0 0 80px -20px rgba(62, 224, 255, 0.4), inset 0 0 60px rgba(47, 107, 255, 0.15);
+    border: 1px solid rgba(10, 108, 255, 0.2); background: radial-gradient(circle at 50% 35%, #ffffff, #eaf2fd 70%);
+    box-shadow: 0 30px 60px -30px rgba(10, 108, 255, 0.45);
   }
   .hh-badge :global(svg) { color: var(--accent); stroke-width: 1.1; margin-bottom: 8px; }
   .hh-badge strong { font-family: var(--font-head); font-size: 2.6rem; line-height: 1; }
