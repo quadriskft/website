@@ -4054,6 +4054,42 @@
    "/termekkepek/309055-alafutasgatlo-konzol-700-mm-horg-2.webp"
   ]
  },
+ "3092-munkahenger-8t-05x1040x124": {
+  "source": "Ital Accessori",
+  "matchedCode": "3092S",
+  "specs": {
+   "Kivitel": "teleszkópos, gömbfejes (S típus)",
+   "Max. üzemi nyomás": "200 bar",
+   "Fokozatok": "5",
+   "Löket": "1040 mm",
+   "Olajmennyiség": "5 l",
+   "Tömeg": "29 kg"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/349/",
+  "sourceTitle": "Ital Accessori katalógus 349. oldal",
+  "description": "Teleszkópos hidraulikus billenőhenger billenős felépítményekhez, homlokfali (kabin mögötti) beépítésre.",
+  "images": [
+   "/termekkepek/3092-munkahenger-8t-05x1040x124-1.webp"
+  ]
+ },
+ "3093-munkahenger-8t-05x1190x124": {
+  "source": "Ital Accessori",
+  "matchedCode": "3093S",
+  "specs": {
+   "Kivitel": "teleszkópos, gömbfejes (S típus)",
+   "Max. üzemi nyomás": "200 bar",
+   "Fokozatok": "5",
+   "Löket": "1190 mm",
+   "Olajmennyiség": "6 l",
+   "Tömeg": "31 kg"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/349/",
+  "sourceTitle": "Ital Accessori katalógus 349. oldal",
+  "description": "Teleszkópos hidraulikus billenőhenger billenős felépítményekhez, homlokfali (kabin mögötti) beépítésre.",
+  "images": [
+   "/termekkepek/3093-munkahenger-8t-05x1190x124-1.webp"
+  ]
+ },
  "337510-hatso-lampatarto-rendszamtabla-tarto-1800-mm": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/654/",
@@ -4411,6 +4447,48 @@
    "/termekkepek/352540-egymasba-zarodo-z-zar-400-1.webp"
   ]
  },
+ "352571-sp33-600-mm-bill-hatso-rakonca-j-b": {
+  "source": "Ital Accessori",
+  "matchedCode": "325711, 322711",
+  "specs": {
+   "Magasság": "605 mm",
+   "Vastagság": "36 mm",
+   "Kivitel": "hátsó, jobb/bal, kihúzható"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/321/",
+  "sourceTitle": "Ital Accessori katalógus 321. oldal",
+  "images": [
+   "/termekkepek/352571-sp33-600-mm-bill-hatso-rakonca-j-b-1.webp"
+  ]
+ },
+ "352572-sp36-600-mm-bill-kozepso-rakonca": {
+  "source": "Ital Accessori",
+  "matchedCode": "321710",
+  "specs": {
+   "Magasság": "605 mm",
+   "Vastagság": "36 mm",
+   "Kivitel": "középső, kihúzható"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/321/",
+  "sourceTitle": "Ital Accessori katalógus 321. oldal",
+  "images": [
+   "/termekkepek/352572-sp36-600-mm-bill-kozepso-rakonca-1.webp"
+  ]
+ },
+ "352578-sp36-600-mm-bill-elso-rakonca-j-b": {
+  "source": "Ital Accessori",
+  "matchedCode": "3251708, 322708",
+  "specs": {
+   "Magasság": "605 mm",
+   "Vastagság": "36 mm",
+   "Kivitel": "első, jobb/bal, kihúzható"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/321/",
+  "sourceTitle": "Ital Accessori katalógus 321. oldal",
+  "images": [
+   "/termekkepek/352578-sp36-600-mm-bill-elso-rakonca-j-b-1.webp"
+  ]
+ },
  "353510-potkerektarto-szimpla": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/663/",
@@ -4651,6 +4729,40 @@
   },
   "images": [
    "/termekkepek/357500-peremes-z-zar-500-mm-r-l-1.webp"
+  ]
+ },
+ "35800-max-800-koztes-rakonca": {
+  "source": "Ital Accessori",
+  "matchedCode": "022650",
+  "specs": {
+   "H": "800 mm",
+   "H1": "180 mm",
+   "H2": "620 mm",
+   "Kivitel": "középső, zsebbel",
+   "Felület": "kataforézis",
+   "Tömeg": "11,90 kg"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/53/",
+  "sourceTitle": "Ital Accessori katalógus 53. oldal",
+  "images": [
+   "/termekkepek/35800-max-800-koztes-rakonca-1.webp"
+  ]
+ },
+ "35880-max-800-elso-rakonca-j-b": {
+  "source": "Ital Accessori",
+  "matchedCode": "",
+  "specs": {
+   "H": "800 mm",
+   "H1": "180 mm",
+   "H2": "620 mm",
+   "Kivitel": "első, keskeny, jobb/bal",
+   "Felület": "kataforézis",
+   "Tömeg": "6,80 kg"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/53/",
+  "sourceTitle": "Ital Accessori katalógus 53. oldal",
+  "images": [
+   "/termekkepek/35880-max-800-elso-rakonca-j-b-1.webp"
   ]
  },
  "380011-felso-adapter-34-es-csohoz": {
@@ -5298,6 +5410,24 @@
   "images": [
    "/termekkepek/502287-3-fokos-letra-thorg-steges-tk-1.webp",
    "/termekkepek/502287-3-fokos-letra-thorg-steges-tk-2.webp"
+  ]
+ },
+ "5023-munkahenger-05x1240x112-5t": {
+  "source": "Ital Accessori",
+  "matchedCode": "515023",
+  "specs": {
+   "Kivitel": "teleszkópos, gömbfejes (S típus)",
+   "Max. üzemi nyomás": "200 bar",
+   "Fokozatok": "5",
+   "Löket": "1230 mm",
+   "Olajmennyiség": "4,7 l",
+   "Tömeg": "26 kg"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/348/",
+  "sourceTitle": "Ital Accessori katalógus 348. oldal",
+  "description": "Teleszkópos hidraulikus billenőhenger billenős felépítményekhez, homlokfali (kabin mögötti) beépítésre.",
+  "images": [
+   "/termekkepek/5023-munkahenger-05x1240x112-5t-1.webp"
   ]
  },
  "502500-szimpla-gorgos-gumiutkozo-d70-85": {
@@ -5989,6 +6119,42 @@
    "/termekkepek/600-ft-csapott-teteju-sarvedo-1.webp",
    "/termekkepek/600-ft-csapott-teteju-sarvedo-2.webp",
    "/termekkepek/600-ft-csapott-teteju-sarvedo-3.webp"
+  ]
+ },
+ "6004-munkahenger-6t-06x1245x124": {
+  "source": "Ital Accessori",
+  "matchedCode": "6004S",
+  "specs": {
+   "Kivitel": "teleszkópos, gömbfejes (S típus)",
+   "Max. üzemi nyomás": "200 bar",
+   "Fokozatok": "6",
+   "Löket": "1245 mm",
+   "Olajmennyiség": "5,5 l",
+   "Tömeg": "28,5 kg"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/354/",
+  "sourceTitle": "Ital Accessori katalógus 354. oldal",
+  "description": "Teleszkópos hidraulikus billenőhenger billenős felépítményekhez, homlokfali (kabin mögötti) beépítésre.",
+  "images": [
+   "/termekkepek/6004-munkahenger-6t-06x1245x124-1.webp"
+  ]
+ },
+ "6008-munkahenger-9t-06x1470x152": {
+  "source": "Ital Accessori",
+  "matchedCode": "6008S",
+  "specs": {
+   "Kivitel": "teleszkópos, gömbfejes (S típus)",
+   "Max. üzemi nyomás": "200 bar",
+   "Fokozatok": "6",
+   "Löket": "1480 mm",
+   "Olajmennyiség": "8,9 l",
+   "Tömeg": "46 kg"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/355/",
+  "sourceTitle": "Ital Accessori katalógus 355. oldal",
+  "description": "Teleszkópos hidraulikus billenőhenger billenős felépítményekhez, homlokfali (kabin mögötti) beépítésre.",
+  "images": [
+   "/termekkepek/6008-munkahenger-9t-06x1470x152-1.webp"
   ]
  },
  "615373-krom-kulso-kilincs-12mm-kulcs": {
@@ -8441,7 +8607,9 @@
    "Szélesség": "1000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-10x1000-soft-gumi-1.webp"
+  ]
  },
  "g-10x1000x2000-soft-gumi-lap": {
   "source": "Quadris adatok",
@@ -8453,7 +8621,9 @@
    "Méret": "1000 × 2000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-10x1000x2000-soft-gumi-lap-1.webp"
+  ]
  },
  "g-1400x1400-rampaszonyeg": {
   "source": "Quadris adatok",
@@ -8476,7 +8646,9 @@
    "Méret": "1000 × 2000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-15x1000x2000-soft-gumi-lap-1.webp"
+  ]
  },
  "g-1600x1400-mm-rampaszonyeg": {
   "source": "Quadris adatok",
@@ -8499,7 +8671,9 @@
    "Méret": "1750 × 1550 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-17-1750x1550-mm-rampaszonyeg-1.webp"
+  ]
  },
  "g-1750x1540-mm-rampaszonyeg": {
   "source": "Quadris adatok",
@@ -8533,7 +8707,9 @@
    "Méret": "1830 × 1220 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-17x1830x1220-mm-istallo-szonyeg-1.webp"
+  ]
  },
  "g-17x900x1200-mm-istallo-szonyeg": {
   "source": "Quadris adatok",
@@ -8545,7 +8721,9 @@
    "Méret": "900 × 1200 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-17x900x1200-mm-istallo-szonyeg-1.webp"
+  ]
  },
  "g-1800x1400-rampaszonyeg": {
   "source": "Quadris adatok",
@@ -8634,7 +8812,9 @@
    "Méret": "2400 × 1200 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-27-2400x1200-rampaszonyeg-1.webp"
+  ]
  },
  "g-3x1000-mm-pvc-attlatszo-viztiszta-l-20-m": {
   "source": "Quadris adatok",
@@ -8647,7 +8827,9 @@
    "Tekercshossz": "20 m",
    "Anyag": "víztiszta PVC"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-3x1000-mm-pvc-attlatszo-viztiszta-l-20-m-1.webp"
+  ]
  },
  "g-3x1200x10000-mm-amoeba-gumiszonyeg": {
   "source": "Quadris adatok",
@@ -8659,7 +8841,9 @@
    "Méret": "1200 × 10000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-3x1200x10000-mm-amoeba-gumiszonyeg-1.webp"
+  ]
  },
  "g-3x1500x10000-mm-amoeba-gumiszonyeg": {
   "source": "Quadris adatok",
@@ -8671,7 +8855,9 @@
    "Méret": "1500 × 10000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-3x1500x10000-mm-amoeba-gumiszonyeg-1.webp"
+  ]
  },
  "g-3x2200x10000-mm-diamond-mintas-gumi": {
   "source": "Quadris adatok",
@@ -8683,7 +8869,9 @@
    "Méret": "2200 × 10000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-3x2200x10000-mm-diamond-mintas-gumi-1.webp"
+  ]
  },
  "g-4x1000-mm-pvc-attlatszo-viztiszta-l-20-m": {
   "source": "Quadris adatok",
@@ -8696,7 +8884,9 @@
    "Tekercshossz": "20 m",
    "Anyag": "víztiszta PVC"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-4x1000-mm-pvc-attlatszo-viztiszta-l-20-m-1.webp"
+  ]
  },
  "g-4x1200x10000-2t-s-s-altalanos-gumiszonyeg": {
   "source": "Quadris adatok",
@@ -8708,7 +8898,9 @@
    "Méret": "1200 × 10000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-4x1200x10000-2t-s-s-altalanos-gumiszonyeg-1.webp"
+  ]
  },
  "g-4x1200x10000-noppos-gumiszonyeg": {
   "source": "Quadris adatok",
@@ -8720,7 +8912,9 @@
    "Méret": "1200 × 10000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-4x1200x10000-noppos-gumiszonyeg-1.webp"
+  ]
  },
  "g-4x1200x10000-vidar-coin-noppos-gumiszonyeg": {
   "source": "Quadris adatok",
@@ -8732,7 +8926,9 @@
    "Méret": "1200 × 10000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-4x1200x10000-vidar-coin-noppos-gumiszonyeg-1.webp"
+  ]
  },
  "g-4x1400x10000-2t-s-s-altalanos-gumiszonyeg": {
   "source": "Quadris adatok",
@@ -8744,7 +8940,9 @@
    "Méret": "1400 × 10000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-4x1400x10000-2t-s-s-altalanos-gumiszonyeg-1.webp"
+  ]
  },
  "g-4x1400x10000-s-s-altalanos-gumiszonyeg": {
   "source": "Quadris adatok",
@@ -8756,7 +8954,9 @@
    "Méret": "1400 × 10000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-4x1400x10000-s-s-altalanos-gumiszonyeg-1.webp"
+  ]
  },
  "g-4x1800-mm-istallo-szonyeg": {
   "source": "Quadris adatok",
@@ -8768,7 +8968,9 @@
    "Szélesség": "1800 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-4x1800-mm-istallo-szonyeg-1.webp"
+  ]
  },
  "g-4x2000mm-cbr-szonyeg-2-nylon": {
   "source": "Quadris adatok",
@@ -8780,7 +8982,9 @@
    "Szélesség": "2000 mm",
    "Anyag": "gumi, 2 rétegű nylon betéttel"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-4x2000mm-cbr-szonyeg-2-nylon-1.webp"
+  ]
  },
  "g-5x1000-mm-pvc-attlatszo-viztiszta-l-20-m": {
   "source": "Quadris adatok",
@@ -8793,7 +8997,9 @@
    "Tekercshossz": "20 m",
    "Anyag": "víztiszta PVC"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-5x1000-mm-pvc-attlatszo-viztiszta-l-20-m-1.webp"
+  ]
  },
  "g-5x1400x10m-2t-s-s-altalanos-gumi": {
   "source": "Quadris adatok",
@@ -8806,7 +9012,9 @@
    "Tekercshossz": "10 m",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-5x1400x10m-2t-s-s-altalanos-gumi-1.webp"
+  ]
  },
  "g-5x2000-mm-istallo-szonyeg": {
   "source": "Quadris adatok",
@@ -8818,7 +9026,9 @@
    "Szélesség": "2000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-5x2000-mm-istallo-szonyeg-1.webp"
+  ]
  },
  "g-6x1450mm-cobra-szonyeg-2-nylon": {
   "source": "Quadris adatok",
@@ -8830,7 +9040,9 @@
    "Szélesség": "1450 mm",
    "Anyag": "gumi, 2 rétegű nylon betéttel"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-6x1450mm-cobra-szonyeg-2-nylon-1.webp"
+  ]
  },
  "g-6x1650-mm-istallo-szonyeg-l-10-m-rs": {
   "source": "Quadris adatok",
@@ -8843,7 +9055,9 @@
    "Tekercshossz": "10 m",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-6x1650-mm-istallo-szonyeg-l-10-m-rs-1.webp"
+  ]
  },
  "g-6x2000mm-cobra-szonyeg-2-nylon": {
   "source": "Quadris adatok",
@@ -8855,7 +9069,9 @@
    "Szélesség": "2000 mm",
    "Anyag": "gumi, 2 rétegű nylon betéttel"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-6x2000mm-cobra-szonyeg-2-nylon-1.webp"
+  ]
  },
  "g-6x2000mm-istallo-szonyeg": {
   "source": "Quadris adatok",
@@ -8867,7 +9083,9 @@
    "Szélesség": "2000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-6x2000mm-istallo-szonyeg-1.webp"
+  ]
  },
  "g-6x2000mm-istallo-szonyeg-l-10-m-rs": {
   "source": "Quadris adatok",
@@ -8880,7 +9098,9 @@
    "Tekercshossz": "10 m",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-6x2000mm-istallo-szonyeg-l-10-m-rs-1.webp"
+  ]
  },
  "g-8x1000-soft-gumi": {
   "source": "Quadris adatok",
@@ -8892,7 +9112,9 @@
    "Szélesség": "1000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-8x1000-soft-gumi-1.webp"
+  ]
  },
  "g-8x1000x2000-soft-gumi-lap": {
   "source": "Quadris adatok",
@@ -8904,7 +9126,9 @@
    "Méret": "1000 × 2000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-8x1000x2000-soft-gumi-lap-1.webp"
+  ]
  },
  "g-8x1650-istallo-szonyeg": {
   "source": "Quadris adatok",
@@ -8916,7 +9140,9 @@
    "Szélesség": "1650 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-8x1650-istallo-szonyeg-1.webp"
+  ]
  },
  "g-8x2000-istallo-szonyeg": {
   "source": "Quadris adatok",
@@ -8928,7 +9154,9 @@
    "Szélesség": "2000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-8x2000-istallo-szonyeg-1.webp"
+  ]
  },
  "g-8x2000-istallo-szonyeg-l-10-m-rs": {
   "source": "Quadris adatok",
@@ -8941,7 +9169,9 @@
    "Tekercshossz": "10 m",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-8x2000-istallo-szonyeg-l-10-m-rs-1.webp"
+  ]
  },
  "g-8x2000mm-cobra-szonyeg-1-nylon": {
   "source": "Quadris adatok",
@@ -8953,7 +9183,9 @@
    "Szélesség": "2000 mm",
    "Anyag": "gumi, 1 rétegű nylon betéttel"
   },
-  "images": []
+  "images": [
+   "/termekkepek/g-8x2000mm-cobra-szonyeg-1-nylon-1.webp"
+  ]
  },
  "harom-allasos-kapcsolo-ventilatorhoz": {
   "source": "G&C termékek",
@@ -10707,7 +10939,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "natúr (bevonat nélkül)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-12x1250x2500-mm-natur-retegelt-lemez-1.webp"
+  ]
  },
  "l-12x1250x2500-mm-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10720,7 +10954,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-12x1250x2500-mm-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-12x1500x2500-mm-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10733,7 +10969,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-12x1500x2500-mm-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-12x1500x3000-mm-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10746,7 +10984,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-12x1500x3000-mm-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-15x1250x2200-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10759,7 +10999,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-15x1250x2200-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-15x1250x2200-retegelt-lemez-fenolos-hexa": {
   "source": "Quadris adatok",
@@ -10772,7 +11014,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-15x1250x2200-retegelt-lemez-fenolos-hexa-1.webp"
+  ]
  },
  "l-15x1250x2500-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10785,7 +11029,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-15x1250x2500-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-15x1250x2500-retegelt-lemez-fenolos-hexa": {
   "source": "Quadris adatok",
@@ -10798,7 +11044,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-15x1250x2500-retegelt-lemez-fenolos-hexa-1.webp"
+  ]
  },
  "l-15x1250x2500-retegelt-lemez-natur": {
   "source": "Quadris adatok",
@@ -10811,7 +11059,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "natúr (bevonat nélkül)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-15x1250x2500-retegelt-lemez-natur-1.webp"
+  ]
  },
  "l-15x1500x2500-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10824,7 +11074,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-15x1500x2500-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-15x1500x3000-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10837,7 +11089,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-15x1500x3000-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-15x2130x1250-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10850,7 +11104,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-15x2130x1250-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-15x2150x4000-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10863,7 +11119,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-15x2150x4000-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-18x1250x2200-retegelt-lemez-fenolos-hexa": {
   "source": "Quadris adatok",
@@ -10876,7 +11134,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-18x1250x2200-retegelt-lemez-fenolos-hexa-1.webp"
+  ]
  },
  "l-18x1250x2500-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10889,7 +11149,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-18x1250x2500-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-18x1250x2500-retegelt-lemez-fenolos-hexa": {
   "source": "Quadris adatok",
@@ -10902,7 +11164,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-18x1250x2500-retegelt-lemez-fenolos-hexa-1.webp"
+  ]
  },
  "l-18x1500x2500-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10915,7 +11179,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-18x1500x2500-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-18x1500x3000-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10928,7 +11194,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-18x1500x3000-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-21x1250x2500-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10941,7 +11209,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-21x1250x2500-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-21x1250x2500-retegelt-lemez-fenolos-hexa": {
   "source": "Quadris adatok",
@@ -10954,7 +11224,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-21x1250x2500-retegelt-lemez-fenolos-hexa-1.webp"
+  ]
  },
  "l-21x1500x2500-mm-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10967,7 +11239,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-21x1500x2500-mm-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-21x1500x3000-mm-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10980,7 +11254,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-21x1500x3000-mm-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-24x1250x2500-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -10993,7 +11269,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-24x1250x2500-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-24x1500x2500-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -11006,7 +11284,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-24x1500x2500-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-27x1250x2500-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -11019,7 +11299,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-27x1250x2500-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-27x1500x2500-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -11032,7 +11314,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-27x1500x2500-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-30x1250x2500-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -11045,7 +11329,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-30x1250x2500-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-30x1500x2500-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -11058,7 +11344,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-30x1500x2500-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-4x1250x2500-mm-film-film-retegelt-lemez": {
   "source": "Quadris adatok",
@@ -11071,7 +11359,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-4x1250x2500-mm-film-film-retegelt-lemez-1.webp"
+  ]
  },
  "l-6-5x1250x2500-mm-natur-retegelt-lemez": {
   "source": "Quadris adatok",
@@ -11084,7 +11374,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "natúr (bevonat nélkül)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-6-5x1250x2500-mm-natur-retegelt-lemez-1.webp"
+  ]
  },
  "l-6-5x1250x2500-mm-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -11097,7 +11389,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-6-5x1250x2500-mm-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-6-5x1500x3000-mm-natur-retegelt-lemez": {
   "source": "Quadris adatok",
@@ -11110,7 +11404,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "natúr (bevonat nélkül)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-6-5x1500x3000-mm-natur-retegelt-lemez-1.webp"
+  ]
  },
  "l-6-5x1500x3000-mm-retegelt-lemez-fenol-bevonattal": {
   "source": "Quadris adatok",
@@ -11123,7 +11419,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-6-5x1500x3000-mm-retegelt-lemez-fenol-bevonattal-1.webp"
+  ]
  },
  "l-9x1250x2500-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -11136,7 +11434,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-9x1250x2500-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-9x1250x2500mm-natur-retegelt-lemez": {
   "source": "Quadris adatok",
@@ -11149,7 +11449,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "natúr (bevonat nélkül)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-9x1250x2500mm-natur-retegelt-lemez-1.webp"
+  ]
  },
  "l-9x1500x2500-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -11162,7 +11464,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-9x1500x2500-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-9x1500x3000-retegelt-lemez-fenolos": {
   "source": "Quadris adatok",
@@ -11175,7 +11479,9 @@
    "Anyag": "rétegelt falemez",
    "Felület": "fenolfilm bevonatos"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-9x1500x3000-retegelt-lemez-fenolos-1.webp"
+  ]
  },
  "l-mdf-6x2800x2070-mm": {
   "source": "Quadris adatok",
@@ -11187,7 +11493,9 @@
    "Méret": "2800 × 2070 mm",
    "Anyag": "MDF lap"
   },
-  "images": []
+  "images": [
+   "/termekkepek/l-mdf-6x2800x2070-mm-1.webp"
+  ]
  },
  "le-mans-tetoventilator-12v": {
   "source": "G&C termékek",
@@ -11912,7 +12220,9 @@
    "Tömeg / m²": "3,24 kg (elméleti)",
    "Felület": "festett, RAL 9016"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-1-2x1250x2500mm-feher-festett-lemez-ral9016-1.webp"
+  ]
  },
  "s-1-2x1500x2500mm-feher-festett-lemez-ral9016": {
   "source": "Quadris adatok",
@@ -11927,7 +12237,9 @@
    "Tömeg / m²": "3,24 kg (elméleti)",
    "Felület": "festett, RAL 9016"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-1-2x1500x2500mm-feher-festett-lemez-ral9016-1.webp"
+  ]
  },
  "s-1-2x1500x3000mm-feher-festett-lemez-ral9016": {
   "source": "Quadris adatok",
@@ -11942,7 +12254,9 @@
    "Tömeg / m²": "3,24 kg (elméleti)",
    "Felület": "festett, RAL 9016"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-1-2x1500x3000mm-feher-festett-lemez-ral9016-1.webp"
+  ]
  },
  "s-1-5x1000x2000-mm-alu-lemez-en-aw-1050-h24": {
   "source": "Quadris adatok",
@@ -11958,7 +12272,9 @@
    "Ötvözet": "EN AW-1050",
    "Állapot": "H24"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-1-5x1000x2000-mm-alu-lemez-en-aw-1050-h24-1.webp"
+  ]
  },
  "s-1-5x1250x2500-mm-alu-lemez-en-aw-1050-h24": {
   "source": "Quadris adatok",
@@ -11974,7 +12290,9 @@
    "Ötvözet": "EN AW-1050",
    "Állapot": "H24"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-1-5x1250x2500-mm-alu-lemez-en-aw-1050-h24-1.webp"
+  ]
  },
  "s-1-5x1500x3000mm-feher-festett-lemez-ral9010": {
   "source": "Quadris adatok",
@@ -11989,7 +12307,9 @@
    "Tömeg / m²": "4,05 kg (elméleti)",
    "Felület": "festett, RAL 9010"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-1-5x1500x3000mm-feher-festett-lemez-ral9010-1.webp"
+  ]
  },
  "s-1x1250-mm-ff-ral9016-szalag-h42": {
   "source": "Quadris adatok",
@@ -12004,15 +12324,29 @@
    "Állapot": "H42",
    "Felület": "festett, RAL 9016"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-1x1250-mm-ff-ral9016-szalag-h42-1.webp"
+  ]
  },
  "s-2-7x2500x6800-mm-rizs-mintas-alu-lemez-en-aw-5086-h32": {
   "source": "RE-ALL",
   "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/02-12.pdf#page=10",
   "sourceTitle": "RE-ALL katalógus 02-12.pdf",
   "matchedCode": "0800003",
-  "specs": {},
-  "images": []
+  "specs": {
+   "Vastagság": "2,7 mm",
+   "Szélesség": "2500 mm",
+   "Hossz": "6800 mm",
+   "Tömeg / tábla": "123,9 kg (elméleti)",
+   "Tömeg / m²": "7,29 kg (elméleti)",
+   "Ötvözet": "EN AW-5086",
+   "Állapot": "H32",
+   "Felület": "rízsmintás (csúszásgátló)"
+  },
+  "images": [
+   "/termekkepek/s-2-7x2500x6800-mm-rizs-mintas-alu-lemez-en-aw-5086-h32-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "s-2x1000x2000-mm-alu-lemez-en-aw-1050-h24": {
   "source": "Quadris adatok",
@@ -12028,7 +12362,9 @@
    "Ötvözet": "EN AW-1050",
    "Állapot": "H24"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-2x1000x2000-mm-alu-lemez-en-aw-1050-h24-1.webp"
+  ]
  },
  "s-2x1000x2000-mm-elox-alu-lemez-en-aw-5002": {
   "source": "Quadris adatok",
@@ -12044,7 +12380,9 @@
    "Ötvözet": "EN AW-5002",
    "Felület": "eloxált"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-2x1000x2000-mm-elox-alu-lemez-en-aw-5002-1.webp"
+  ]
  },
  "s-2x1250x2500-mm-alu-lemez-en-aw-1050-h24": {
   "source": "Quadris adatok",
@@ -12060,7 +12398,9 @@
    "Ötvözet": "EN AW-1050",
    "Állapot": "H24"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-2x1250x2500-mm-alu-lemez-en-aw-1050-h24-1.webp"
+  ]
  },
  "s-2x1250x2500-mm-alu-lemez-en-aw-5754-h22": {
   "source": "Quadris adatok",
@@ -12076,7 +12416,9 @@
    "Ötvözet": "EN AW-5754",
    "Állapot": "H22"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-2x1250x2500-mm-alu-lemez-en-aw-5754-h22-1.webp"
+  ]
  },
  "s-2x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14": {
   "source": "Quadris adatok",
@@ -12093,7 +12435,9 @@
    "Állapot": "H14",
    "Felület": "eloxált"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-2x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14-1.webp"
+  ]
  },
  "s-2x1250x2500-mm-rizs-mintas-alu-lemez-en-aw-3003-h22": {
   "source": "Quadris adatok",
@@ -12110,7 +12454,9 @@
    "Állapot": "H22",
    "Felület": "rízsmintás (csúszásgátló)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-2x1250x2500-mm-rizs-mintas-alu-lemez-en-aw-3003-h22-1.webp"
+  ]
  },
  "s-2x1250x2500mm-feher-festett-lemez-ral9016": {
   "source": "Quadris adatok",
@@ -12125,7 +12471,9 @@
    "Tömeg / m²": "5,4 kg (elméleti)",
    "Felület": "festett, RAL 9016"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-2x1250x2500mm-feher-festett-lemez-ral9016-1.webp"
+  ]
  },
  "s-2x1500x3000-mm-alu-lemez-en-aw-1050-h24": {
   "source": "Quadris adatok",
@@ -12141,7 +12489,9 @@
    "Ötvözet": "EN AW-1050",
    "Állapot": "H24"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-2x1500x3000-mm-alu-lemez-en-aw-1050-h24-1.webp"
+  ]
  },
  "s-2x1500x3000-mm-elox-alu-lemez-en-aw-5005-h12-h14-h24": {
   "source": "Quadris adatok",
@@ -12158,7 +12508,9 @@
    "Állapot": "H12/H14/H24",
    "Felület": "eloxált"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-2x1500x3000-mm-elox-alu-lemez-en-aw-5005-h12-h14-h24-1.webp"
+  ]
  },
  "s-3x1000x2000-mm-elox-alu-lemez-en-aw-5002": {
   "source": "Quadris adatok",
@@ -12174,7 +12526,9 @@
    "Ötvözet": "EN AW-5002",
    "Felület": "eloxált"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-3x1000x2000-mm-elox-alu-lemez-en-aw-5002-1.webp"
+  ]
  },
  "s-3x1250x2500-mm-alu-lemez-en-aw-1050-h24": {
   "source": "Quadris adatok",
@@ -12190,7 +12544,9 @@
    "Ötvözet": "EN AW-1050",
    "Állapot": "H24"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-3x1250x2500-mm-alu-lemez-en-aw-1050-h24-1.webp"
+  ]
  },
  "s-3x1250x2500-mm-alu-lemez-en-aw-5754-h22": {
   "source": "Quadris adatok",
@@ -12206,7 +12562,9 @@
    "Ötvözet": "EN AW-5754",
    "Állapot": "H22"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-3x1250x2500-mm-alu-lemez-en-aw-5754-h22-1.webp"
+  ]
  },
  "s-3x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14": {
   "source": "Quadris adatok",
@@ -12223,7 +12581,9 @@
    "Állapot": "H14",
    "Felület": "eloxált"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-3x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14-1.webp"
+  ]
  },
  "s-3x1250x3200-mm-alu-lemez-en-aw-1050a-h14-h24": {
   "source": "Quadris adatok",
@@ -12239,7 +12599,9 @@
    "Ötvözet": "EN AW-1050A",
    "Állapot": "H14/H24"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-3x1250x3200-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp"
+  ]
  },
  "s-3x1250x5000-mm-alu-lemez-en-aw-1050a-h14-h24": {
   "source": "Quadris adatok",
@@ -12255,7 +12617,9 @@
    "Ötvözet": "EN AW-1050A",
    "Állapot": "H14/H24"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-3x1250x5000-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp"
+  ]
  },
  "s-3x1250x6000-mm-alu-lemez-en-aw-1050a-h14-h24": {
   "source": "Quadris adatok",
@@ -12271,7 +12635,9 @@
    "Ötvözet": "EN AW-1050A",
    "Állapot": "H14/H24"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-3x1250x6000-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp"
+  ]
  },
  "s-3x1500x3000-mm-alu-lemez-en-aw-1050-h24": {
   "source": "Quadris adatok",
@@ -12287,7 +12653,9 @@
    "Ötvözet": "EN AW-1050",
    "Állapot": "H24"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-3x1500x3000-mm-alu-lemez-en-aw-1050-h24-1.webp"
+  ]
  },
  "s-3x1500x3000-mm-elox-alu-lemez-en-aw-5005a-h14": {
   "source": "Quadris adatok",
@@ -12304,7 +12672,9 @@
    "Állapot": "H14",
    "Felület": "eloxált"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-3x1500x3000-mm-elox-alu-lemez-en-aw-5005a-h14-1.webp"
+  ]
  },
  "s-3x1500x3200-mm-alu-lemez-en-aw-1050a-h14-h24": {
   "source": "Quadris adatok",
@@ -12320,7 +12690,9 @@
    "Ötvözet": "EN AW-1050A",
    "Állapot": "H14/H24"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-3x1500x3200-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp"
+  ]
  },
  "s-3x1500x5000-mm-alu-lemez-en-aw-1050a-h14-h24": {
   "source": "Quadris adatok",
@@ -12336,7 +12708,9 @@
    "Ötvözet": "EN AW-1050A",
    "Állapot": "H14/H24"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-3x1500x5000-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp"
+  ]
  },
  "s-3x1500x6000-mm-alu-lemez-en-aw-1050a-h14-h24": {
   "source": "Quadris adatok",
@@ -12352,7 +12726,9 @@
    "Ötvözet": "EN AW-1050A",
    "Állapot": "H14/H24"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-3x1500x6000-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp"
+  ]
  },
  "s-3x2000x5000-mm-alu-lemez-en-573-3-al-mg-1-h14-h24": {
   "source": "Quadris adatok",
@@ -12368,7 +12744,9 @@
    "Ötvözet": "EN AW-5754 (AlMg3) / Al-Mg-1 csoport",
    "Állapot": "H14/H24"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-3x2000x5000-mm-alu-lemez-en-573-3-al-mg-1-h14-h24-1.webp"
+  ]
  },
  "s-6x1250x2500-mm-alu-lemez-en-aw-5754-h22": {
   "source": "Quadris adatok",
@@ -12384,7 +12762,9 @@
    "Ötvözet": "EN AW-5754",
    "Állapot": "H22"
   },
-  "images": []
+  "images": [
+   "/termekkepek/s-6x1250x2500-mm-alu-lemez-en-aw-5754-h22-1.webp"
+  ]
  },
  "szerszamos-lada": {
   "source": "JONESCO",

@@ -124,6 +124,45 @@ def drawing(kind, a, b=0, t=0, c=0):
     return img
 
 
+def sheet(w, l, t, colour, length_label=None):
+    """Lemez / tábla / tekercs ferde axonometrikus rajza a méretekkel (hossz, szélesség, vastagság)."""
+    W, H = 1000, 750
+    img = Image.new("RGB", (W, H), "white")
+    d = ImageDraw.Draw(img)
+    fnt = font(34)
+    L = l or w * 2.6
+    k = 0.9  # a mélységi (szélesség) tengely rövidítése, 30°-os irányban
+    dx, dy = math.cos(math.radians(30)) * k, -math.sin(math.radians(30)) * k
+    s = min(600 / (L + w * dx), 340 / (w * -dy + 0.001))
+    lx, wx, wy = L * s, w * dx * s, w * dy * s
+    th = max(min(t * s * 5, 45), 16)  # a vastagság láthatóan eltúlozva
+    x0 = 250 + (600 - lx - wx) / 2
+    y0 = (H + th - wy) / 2 + 30
+    top = [(x0, y0), (x0 + lx, y0), (x0 + lx + wx, y0 + wy), (x0 + wx, y0 + wy)]
+    shade = lambda c, f: tuple(int(v * f) for v in c)  # noqa: E731
+    d.polygon([(x0, y0), (x0 + lx, y0), (x0 + lx, y0 + th), (x0, y0 + th)], fill=shade(colour, 0.72), outline="black")
+    d.polygon([(x0 + lx, y0), (x0 + lx + wx, y0 + wy), (x0 + lx + wx, y0 + wy + th), (x0 + lx, y0 + th)], fill=shade(colour, 0.55), outline="black")
+    d.polygon(top, fill=colour, outline="black")
+    for pts in ([top[0], top[1]], [top[1], top[2]]):
+        d.line(pts, fill="black", width=3)
+    dim_h(d, x0, x0 + lx, y0 + th + 70, length_label or hu(l), fnt)
+    # szélesség: a jobb oldali ferde él mentén
+    ox, oy = 40, 10
+    a, b = (x0 + lx + ox, y0 + th + oy), (x0 + lx + wx + ox, y0 + wy + th + oy)
+    d.line([a, b], fill="black", width=2)
+    d.text(((a[0] + b[0]) / 2 + 18, (a[1] + b[1]) / 2 - 10), hu(w), fill="black", font=fnt)
+    # vastagság
+    d.line([(x0 - 30, y0), (x0 - 30, y0 + th)], fill="black", width=2)
+    for y in (y0, y0 + th):
+        d.line([(x0 - 42, y), (x0 - 18, y)], fill="black", width=2)
+    tw = d.textlength(f"s = {hu(t)}", font=fnt)
+    d.text((x0 - 50 - tw, y0 + th / 2 - 20), f"s = {hu(t)}", fill="black", font=fnt)
+    import numpy as np
+    ys, xs = np.where(np.asarray(img.convert("L")) < 250)
+    m = 40
+    return img.crop((max(xs.min() - m, 0), max(ys.min() - m, 0), min(xs.max() + m, W), min(ys.max() + m, H)))
+
+
 # ---------------------------------------------------------------- megnevezés-értelmezés
 
 def parse(p):
@@ -157,7 +196,8 @@ def parse(p):
             specs["Felület"] = "eloxált"
         elif "rízs" in low:
             specs["Felület"] = "rízsmintás (csúszásgátló)"
-        return specs, None
+        colour = (243, 243, 240) if r else (205, 210, 216)
+        return specs, ("sheet", f(w), f(l) if l else 0, f(t), colour, None if l else "tekercs")
     # rétegelt lemez: "L 12x1500x2500 mm rétegelt lemez fenolos"
     m = re.match(rf"L\s*(?:MDF\s*)?{NUM}\s*[xX]\s*{NUM}\s*[xX]\s*{NUM}", n)
     if m and ("rétegelt" in low or "mdf" in low):
@@ -169,7 +209,9 @@ def parse(p):
             specs["Felület"] = ("fenolfilm bevonatos" if re.search(r"fenol|film", low) else "natúr (bevonat nélkül)")
             if "hexa" in low:
                 specs["Felület"] += ", csúszásmentes hatszögmintás (HEXA)"
-        return specs, None
+        colour = (176, 141, 99) if "mdf" in low else (104, 72, 44) if re.search(r"fenol|film", low) else (214, 180, 130)
+        a, b = sorted((f(m.group(2)), f(m.group(3))))
+        return specs, ("sheet", a, b, f(m.group(1)), colour, None)
     # gumilemez / szőnyeg: "G 8x1000x2000 Soft gumi lap", "G 6x2000mm COBRA szőnyeg"
     m = re.match(rf"G\s*{NUM}\s*[x/]\s*{NUM}(?:\s*x\s*{NUM}(?![\d.,]*\s*m\b))?", n)
     if m:
@@ -190,6 +232,11 @@ def parse(p):
             specs["Anyag"] = f"gumi, {layers} rétegű nylon betéttel"
         else:
             specs["Anyag"] = "gumi"
+        colour = (214, 234, 240) if "pvc" in low else (58, 58, 60)
+        if a3:
+            return specs, ("sheet", *sorted((f(a2), f(a3))), f(a1), colour, None)
+        if f(a1) < 40:
+            return specs, ("sheet", f(a2), 0, f(a1), colour, f"L = {L.group(1)} m" if L else "tekercs")
         return specs, None
     # szelvények
     mat = ("acél" if re.search(r"acél", low) else
@@ -306,6 +353,10 @@ def parse(p):
     return {}, None
 
 
+def render(draw):
+    return sheet(*draw[1:]) if draw[0] == "sheet" else drawing(*draw)
+
+
 def main():
     existing = load_enrichment()
     updates, drawn = {}, 0
@@ -318,7 +369,7 @@ def main():
             clear_images(p["slug"])
             merged = dict(prev)
             merged["specs"] = {**{k: v for k, v in specs.items() if k != "Anyag"}, **(prev.get("specs") or {})}
-            merged["images"] = [save_image(drawing(*draw), p["slug"], 1)]
+            merged["images"] = [save_image(render(draw), p["slug"], 1)]
             merged["nevbolRajz"] = True  # a rajz ebből a lépésből jön – újrafuttatáskor frissíthető
             updates[p["slug"]] = merged
             drawn += 1
@@ -328,7 +379,7 @@ def main():
         images = []
         if draw:
             clear_images(p["slug"])
-            images = [save_image(drawing(*draw), p["slug"], 1)]
+            images = [save_image(render(draw), p["slug"], 1)]
             drawn += 1
         updates[p["slug"]] = {"source": SOURCE, "sourceUrl": "", "sourceTitle": p["name"], "matchedCode": "",
                               "specs": specs, "images": images}

@@ -186,6 +186,8 @@ def render(page, rect, pad=1.5):
 # Kézzel ellenőrzött képkivágások (oldal index, téglalap pontban) azokhoz a tételekhez, amelyeknél a
 # táblázat–kép automatikus párosítás nem működik (összetett oldalelrendezés, több rajz egymás mellett).
 # A téglalapok csak az adott termék rajzát/fotóját fogják közre – szomszédos termék és felirat nélkül.
+_CYL = {"Kivitel": "teleszkópos, gömbfejes (S típus)", "Max. üzemi nyomás": "200 bar"}
+_CYLD = "Teleszkópos hidraulikus billenőhenger billenős felépítményekhez, homlokfali (kabin mögötti) beépítésre."
 _HV = "Acél oldalfal profil billenős és platós felépítmények első/hátsó és oldalfalához."
 MANUAL = {
     "hv400-acel-oldalfal-2-mm": ([(203, (193, 560, 252, 700))], {"Típus": "HV 400", "Magasság": "400 mm", "Falvastagság": "2,0 mm", "Tömeg": "10,9 kg/fm"}, _HV),
@@ -234,6 +236,18 @@ MANUAL = {
                                                      {"Magasság": "405 mm", "Vastagság": "36 mm", "Kivitel": "hátsó, jobb, kihúzható, zsebbel"}, ""),
     "3521904-billencs-hatso-rakonca-400-mm-b-zseb": ([(319, (192, 568, 246, 738)), (319, (118, 178, 238, 318))],
                                                      {"Magasság": "405 mm", "Vastagság": "36 mm", "Kivitel": "hátsó, bal, kihúzható, zsebbel"}, ""),
+    "3092-munkahenger-8t-05x1040x124": ([(348, (262, 165, 462, 455))], {**_CYL, "Fokozatok": "5", "Löket": "1040 mm", "Olajmennyiség": "5 l", "Tömeg": "29 kg"}, _CYLD),
+    "3093-munkahenger-8t-05x1190x124": ([(348, (262, 165, 462, 455))], {**_CYL, "Fokozatok": "5", "Löket": "1190 mm", "Olajmennyiség": "6 l", "Tömeg": "31 kg"}, _CYLD),
+    "5023-munkahenger-05x1240x112-5t": ([(347, (200, 165, 432, 455))], {**_CYL, "Fokozatok": "5", "Löket": "1230 mm", "Olajmennyiség": "4,7 l", "Tömeg": "26 kg"}, _CYLD),
+    "6004-munkahenger-6t-06x1245x124": ([(353, (195, 165, 432, 455))], {**_CYL, "Fokozatok": "6", "Löket": "1245 mm", "Olajmennyiség": "5,5 l", "Tömeg": "28,5 kg"}, _CYLD),
+    "6008-munkahenger-9t-06x1470x152": ([(354, (245, 165, 468, 455))], {**_CYL, "Fokozatok": "6", "Löket": "1480 mm", "Olajmennyiség": "8,9 l", "Tömeg": "46 kg"}, _CYLD),
+    "352578-sp36-600-mm-bill-elso-rakonca-j-b": ([(320, (96, 582, 143, 752))], {"Magasság": "605 mm", "Vastagság": "36 mm", "Kivitel": "első, jobb/bal, kihúzható"}, ""),
+    "352572-sp36-600-mm-bill-kozepso-rakonca": ([(320, (144, 582, 204, 752))], {"Magasság": "605 mm", "Vastagság": "36 mm", "Kivitel": "középső, kihúzható"}, ""),
+    "352571-sp33-600-mm-bill-hatso-rakonca-j-b": ([(320, (206, 582, 294, 752))], {"Magasság": "605 mm", "Vastagság": "36 mm", "Kivitel": "hátsó, jobb/bal, kihúzható"}, ""),
+    "35800-max-800-koztes-rakonca": ([(52, (446, 288, 562, 408))],
+                                     {"H": "800 mm", "H1": "180 mm", "H2": "620 mm", "Kivitel": "középső, zsebbel", "Felület": "kataforézis", "Tömeg": "11,90 kg"}, ""),
+    "35880-max-800-elso-rakonca-j-b": ([(52, (438, 88, 564, 272))],
+                                       {"H": "800 mm", "H1": "180 mm", "H2": "620 mm", "Kivitel": "első, keskeny, jobb/bal", "Felület": "kataforézis", "Tömeg": "6,80 kg"}, ""),
 }
 
 
@@ -305,7 +319,7 @@ def main():
         enrichment[p["slug"]] = entry
         ok += 1
 
-    for p in products:
+    for p in load_products():
         if p["slug"] not in MANUAL:
             continue
         boxes, specs, desc = MANUAL[p["slug"]]
