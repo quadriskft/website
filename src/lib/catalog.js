@@ -42,6 +42,7 @@ export const HORSE_SECTIONS = [
   ['gumiszonyegek', 'soft-gumi', 'Soft gumi lapok'],
   ['aluminium-padlo-profilok', 'rampa-profilok', 'Rámpa profilok'],
   ['hatso-ajtok-es-athajto-rampak', 'athajtorampa', 'Áthajtó rámpák'],
+  ['specialis-felepitmeny-alkatreszek', 'g-c-termekek', 'Tetőventilátorok, tetőablakok, világítás'],
   ['csuszasmentes-retegelt-padlo', 'lowipan', 'Csúszásmentes padlólemezek'],
   ['dobozos-felepitmeny-alkatreszek', 'zsanerok', 'Zsanérok'],
   ['dobozos-felepitmeny-alkatreszek', 'zarak', 'Zárak'],

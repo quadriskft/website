@@ -177,8 +177,9 @@ def main():
     out = ROOT / "src/data/catalog.json"
     out.write_text(json.dumps({"groups": groups, "products": products}, ensure_ascii=False, indent=1) + "\n")
 
-    with open(ROOT / "data/beszallitok.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
+    # pontosvesszős, BOM-os CSV: a magyar Excel így helyesen nyitja meg
+    with open(ROOT / "data/beszallitok.csv", "w", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f, delimiter=";")
         w.writerow(["Beszállító", "Termékek", "Ebből beszállítói kóddal", "Termékcsoportok"])
         for name, s in sorted(supplier_stats.items(), key=lambda kv: -kv[1]["count"]):
             w.writerow([name, s["count"], s["withCode"], "; ".join(sorted(s["groups"]))])
