@@ -23,15 +23,15 @@ PDF = ROOT / "data/forras/metra_katalog_fahrzeugbau.pdf"
 
 # Quadris Excel-kód -> (Metra jelölés, PDF oldal, kivágás [pt], műszaki adatok a lapról)
 ITEMS = {
-    "R6830": ("R 6830", 21, (110, 135, 250, 690), {"Tömeg": "3,213 kg/fm", "Magasság": "300 mm", "Vastagság": "25 mm",
+    "R6830": ("R 6830", 21, (110, 135, 250, 643), {"Tömeg": "3,213 kg/fm", "Magasság": "300 mm", "Vastagság": "25 mm",
                                                    "Látható felület": "343 mm", "Kerület": "745 mm", "Kivitel": "monoprofil oldalfal 300 mm"}),
-    "R7784": ("R 7784", 22, (305, 125, 420, 720), {"Tömeg": "3,308 kg/fm", "Magasság": "350 mm", "Vastagság": "25 mm",
+    "R7784": ("R 7784", 22, (305, 95, 420, 672), {"Tömeg": "3,308 kg/fm", "Magasság": "350 mm", "Vastagság": "25 mm",
                                                    "Látható felület": "396 mm", "Kerület": "849 mm", "Kivitel": "monoprofil oldalfal 350 mm, szakállas"}),
-    "3367": ("R 3367", 24, (190, 90, 310, 755), {"Tömeg": "4,209 kg/fm", "Magasság": "400 mm", "Vastagság": "25 mm",
+    "3367": ("R 3367", 24, (190, 68, 318, 706), {"Tömeg": "4,209 kg/fm", "Magasság": "400 mm", "Vastagság": "25 mm",
                                                  "Látható felület": "449 mm", "Kerület": "947 mm", "Kivitel": "monoprofil oldalfal 400 mm, peremes"}),
-    "B0326": ("B 326", 19, (70, 85, 262, 322), {"Tömeg": "0,729 kg/fm", "Belső szélesség": "25,5 mm", "Magasság": "40 mm",
+    "B0326": ("B 326", 19, (70, 85, 262, 297), {"Tömeg": "0,729 kg/fm", "Belső szélesség": "25,5 mm", "Magasság": "40 mm",
                                                 "Kivitel": "U-szegő (végprofil) 25 mm-es oldalfalhoz"}),
-    "R1304": ("R 1304", 29, (28, 58, 128, 292), {"Tömeg": "0,700 kg/fm", "Méret": "25 × 50 mm", "Látható felület": "150 mm",
+    "R1304": ("R 1304", 29, (28, 58, 152, 246), {"Tömeg": "0,700 kg/fm", "Méret": "25 × 50 mm", "Látható felület": "150 mm",
                                                  "Kerület": "150 mm", "Kivitel": "zártszelvény (ponyvatartó)"}),
 }
 COMMON = {"Ötvözet": "EN AW-6060 / EN AW-6005A", "Állapot": "T5 – T6"}
@@ -43,14 +43,8 @@ def render(page, box):
     img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
     g = np.asarray(img.convert("L")) < 225
     ys, xs = np.where(g)
-    img = img.crop((max(xs.min() - 16, 0), max(ys.min() - 16, 0), min(xs.max() + 16, img.width), min(ys.max() + 16, img.height)))
-    # a magas, keskeny profilrajzok 4:3-as fehér vászonra kerülnek, kicsinyítve, teljes egészükben
-    W, H = 1000, 750
-    scale = min((W * 0.97) / img.width, (H * 0.97) / img.height)
-    img = img.resize((max(1, round(img.width * scale)), max(1, round(img.height * scale))), Image.LANCZOS)
-    canvas = Image.new("RGB", (W, H), "white")
-    canvas.paste(img, ((W - img.width) // 2, (H - img.height) // 2))
-    return canvas
+    img = img.crop((max(xs.min() - 6, 0), max(ys.min() - 6, 0), min(xs.max() + 6, img.width), min(ys.max() + 6, img.height)))
+    return img
 
 
 def main():
