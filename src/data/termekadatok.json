@@ -1,4 +1,24 @@
 {
+ "02-2200-le-mans-tetoventilator-12v": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/grill-big/",
+  "sourceTitle": "Grill Large",
+  "matchedCode": "02-2200",
+  "specs": {},
+  "images": [
+   "/termekkepek/02-2200-le-mans-tetoventilator-12v-1.webp"
+  ]
+ },
+ "02-2200-zw-le-mans-tetoventilator-12v": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/le-mans/",
+  "sourceTitle": "Le Mans",
+  "matchedCode": "02-2200-ZW",
+  "specs": {},
+  "images": [
+   "/termekkepek/02-2200-zw-le-mans-tetoventilator-12v-1.webp"
+  ]
+ },
  "041280-uzemanyag-beonto-nagy": {
   "source": "Pastore",
   "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=024121322E",
@@ -897,7 +917,7 @@
   "sourceTitle": "Guľový čap - \"séria 3000\" Ball - \"series 3000\"",
   "matchedCode": "320920",
   "specs": {
-   "Anyag": "oceľ/steel",
+   "Anyag": "oceľ/acél",
    "Ø": "80",
    "Ø1": "90",
    "Ø2": "97",
@@ -917,7 +937,7 @@
   "sourceTitle": "Guľový čap Ø 60 mm Ball Ø 60 mm",
   "matchedCode": "320997",
   "specs": {
-   "Anyag": "oceľ/steel",
+   "Anyag": "oceľ/acél",
    "Mértékegység": "db",
    "Tömeg": "2,440 kg"
   },
@@ -2070,7 +2090,7 @@
   "sourceTitle": "Držiak rezervy kolesa s roztečou od 225 do 335 mm Spare wheel holder with wheelbase from 225-335 mm",
   "matchedCode": "351201",
   "specs": {
-   "Anyag": "oceľ/steel",
+   "Anyag": "oceľ/acél",
    "Mértékegység": "db",
    "Tömeg": "12,000 kg"
   },
@@ -2097,7 +2117,7 @@
   "sourceTitle": "Oceľový čap 109 mm pre nastaviteľný uzáver 109 mm steel pin for adjustable lock",
   "matchedCode": "320075",
   "specs": {
-   "Anyag": "oceľ/steel",
+   "Anyag": "oceľ/acél",
    "Mértékegység": "db",
    "Tömeg": "0,210 kg"
   },
@@ -2111,7 +2131,7 @@
   "sourceTitle": "Kapsa Socket",
   "matchedCode": "320027",
   "specs": {
-   "Anyag": "oceľ/steel",
+   "Anyag": "oceľ/acél",
    "Mértékegység": "db",
    "H (mm)": "35",
    "Tömeg": "1,660 kg"
@@ -2123,7 +2143,7 @@
   "sourceTitle": "Kapsa Socket",
   "matchedCode": "322013",
   "specs": {
-   "Anyag": "oceľ/steel",
+   "Anyag": "oceľ/acél",
    "Mértékegység": "db",
    "Tömeg": "0,640 kg"
   }
@@ -2134,7 +2154,7 @@
   "sourceTitle": "Kapsa Socket",
   "matchedCode": "322013",
   "specs": {
-   "Anyag": "oceľ/steel",
+   "Anyag": "oceľ/acél",
    "Mértékegység": "db",
    "Tömeg": "0,640 kg"
   }
@@ -2145,7 +2165,7 @@
   "sourceTitle": "Kapsa Socket",
   "matchedCode": "320027",
   "specs": {
-   "Anyag": "oceľ/steel",
+   "Anyag": "oceľ/acél",
    "Mértékegység": "db",
    "H (mm)": "35",
    "Tömeg": "1,660 kg"
@@ -2157,7 +2177,7 @@
   "sourceTitle": "Kapsa Socket",
   "matchedCode": "320027",
   "specs": {
-   "Anyag": "oceľ/steel",
+   "Anyag": "oceľ/acél",
    "Mértékegység": "db",
    "H (mm)": "35",
    "Tömeg": "1,660 kg"
@@ -4695,6 +4715,254 @@
    "/termekkepek/899210-rm-hatsoajto-zsanerlap-bak-280-3-ts-2.webp"
   ]
  },
+ "90-5000-e-tetoablak-24v-53x530": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-manual-small/",
+  "sourceTitle": "Roof Hatch Electric Small",
+  "matchedCode": "5000-E",
+  "specs": {},
+  "images": [
+   "/termekkepek/90-5000-e-tetoablak-24v-53x530-1.webp"
+  ]
+ },
+ "a1-013-elkeder-kicsi-fekete-9-5x6-5mm": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=18",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A1 013",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "1,0-2,0",
+   "Kiszerelés [m]": "100"
+  },
+  "images": [
+   "/termekkepek/a1-013-elkeder-kicsi-fekete-9-5x6-5mm-1.webp"
+  ]
+ },
+ "a1-015-keder-gumi": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=19",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A1 015",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "1,0-4,0",
+   "Kiszerelés [m]": "100"
+  },
+  "images": [
+   "/termekkepek/a1-015-keder-gumi-1.webp"
+  ]
+ },
+ "a1-105-2-lepkes-gumi-58-3x26-6-1-0-2-5-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=30",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A1 105/2",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "1,0–2,5",
+   "Kiszerelés [m]": "25"
+  },
+  "images": [
+   "/termekkepek/a1-105-2-lepkes-gumi-58-3x26-6-1-0-2-5-fekete-1.webp"
+  ]
+ },
+ "a1-105-4-lepkes-gumi-58-3x26-6-2-0-4-0-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=30",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A1 105/4",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "2,0-4,0",
+   "Kiszerelés [m]": "25"
+  },
+  "images": [
+   "/termekkepek/a1-105-4-lepkes-gumi-58-3x26-6-2-0-4-0-fekete-1.webp"
+  ]
+ },
+ "a1-134-2-dupla-szakallas-kedergumi-18-2x24-1-0-2-5-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=32",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A1 134/2",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "1,0-2,5",
+   "Kiszerelés [m]": "50"
+  },
+  "images": [
+   "/termekkepek/a1-134-2-dupla-szakallas-kedergumi-18-2x24-1-0-2-5-fekete-1.webp"
+  ]
+ },
+ "a1-134-4-dupla-szakallas-kedergumi-18-2x24-2-5-4-0-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=32",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A1 134/4",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "2,5-4,0",
+   "Kiszerelés [m]": "50"
+  },
+  "images": [
+   "/termekkepek/a1-134-4-dupla-szakallas-kedergumi-18-2x24-2-5-4-0-fekete-1.webp"
+  ]
+ },
+ "a1-503-nagy-gobos-kedergumi": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=44",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A1 503",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "1,0-3,5",
+   "Kiszerelés [m]": "1x50"
+  },
+  "images": [
+   "/termekkepek/a1-503-nagy-gobos-kedergumi-1.webp"
+  ]
+ },
+ "a1-536-kis-gobos-kedergumi-14-6x16-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=41",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A1 536",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "1,5-3,0",
+   "Kiszerelés [m]": "2x50"
+  },
+  "images": [
+   "/termekkepek/a1-536-kis-gobos-kedergumi-14-6x16-fekete-1.webp"
+  ]
+ },
+ "a2-106-2-28-mm-duplagobos-kedergumi": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=32",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A2 106/2",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "1,0-2,5",
+   "Kiszerelés [m]": "50"
+  },
+  "images": [
+   "/termekkepek/a2-106-2-28-mm-duplagobos-kedergumi-1.webp"
+  ]
+ },
+ "a2-125-felul-gobos-keder-gumi-49-35-20-mm": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=29",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A2 125",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "2,0–4,0",
+   "Kiszerelés [m]": "25"
+  },
+  "images": [
+   "/termekkepek/a2-125-felul-gobos-keder-gumi-49-35-20-mm-1.webp"
+  ]
+ },
+ "a2-127-lepkes-gumi-15-38-6-mm": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=30",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A2 127",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "1,5-3,5",
+   "Kiszerelés [m]": "50"
+  },
+  "images": [
+   "/termekkepek/a2-127-lepkes-gumi-15-38-6-mm-1.webp"
+  ]
+ },
+ "a2-254-kedergumi-14-5x21-8-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=32",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A2 254",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "2,0-5,0",
+   "Kiszerelés [m]": "50"
+  },
+  "images": [
+   "/termekkepek/a2-254-kedergumi-14-5x21-8-fekete-1.webp"
+  ]
+ },
+ "a2-255-nagy-gobos-kedergumi-fekete-20-mm": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=31",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A2 255",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "1,0-4,0",
+   "Kiszerelés [m]": "50"
+  },
+  "images": [
+   "/termekkepek/a2-255-nagy-gobos-kedergumi-fekete-20-mm-1.webp"
+  ]
+ },
+ "a2-539-kozepes-gobos-kedergumi-14-6x18-7-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=41",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A2 539",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "1,5-3,0",
+   "Kiszerelés [m]": "4x25"
+  },
+  "images": [
+   "/termekkepek/a2-539-kozepes-gobos-kedergumi-14-6x18-7-fekete-1.webp"
+  ]
+ },
+ "a2-540-kedergumi-16x19-2-2-0-4-0-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=41",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A2 540",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "2,0–4,0",
+   "Kiszerelés [m]": "3x25"
+  },
+  "images": [
+   "/termekkepek/a2-540-kedergumi-16x19-2-2-0-4-0-fekete-1.webp"
+  ]
+ },
+ "a2-541-kedergumi-16x19-2-4-0-6-0-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=41",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A2 541",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "2,0–4,0",
+   "Kiszerelés [m]": "3x25"
+  },
+  "images": [
+   "/termekkepek/a2-541-kedergumi-16x19-2-4-0-6-0-fekete-1.webp"
+  ]
+ },
+ "a2-554-nagygobos-keder-22-6": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=44",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A2 554",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "1,5-3,5",
+   "Kiszerelés [m]": "2x25"
+  },
+  "images": [
+   "/termekkepek/a2-554-nagygobos-keder-22-6-1.webp"
+  ]
+ },
  "alu-elso-takaro-lemez": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000017_edscha-cs/910111993_front-plate-2550mm--anod",
@@ -4711,6 +4979,164 @@
   },
   "images": [
    "/termekkepek/alu-elso-takaro-lemez-1.webp"
+  ]
+ },
+ "belso-12v-os-led-takaro-flower-power-feher": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/flower-power/",
+  "sourceTitle": "Flower Power",
+  "matchedCode": "35-2900",
+  "specs": {},
+  "images": [
+   "/termekkepek/belso-12v-os-led-takaro-flower-power-feher-1.webp"
+  ]
+ },
+ "belso-12v-os-led-takaro-flower-power-szurke": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/flower-power/",
+  "sourceTitle": "Flower Power",
+  "matchedCode": "35-2910",
+  "specs": {},
+  "images": [
+   "/termekkepek/belso-12v-os-led-takaro-flower-power-szurke-1.webp"
+  ]
+ },
+ "belso-takaro-flower-power-szurke": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/flower-power/",
+  "sourceTitle": "Flower Power",
+  "matchedCode": "35-2810",
+  "specs": {},
+  "images": [
+   "/termekkepek/belso-takaro-flower-power-szurke-1.webp"
+  ]
+ },
+ "d1-119-epdm-21mm-p-profil": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=67",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "D1 119",
+  "specs": {
+   "Anyag": "EPDM",
+   "Szín": "fekete",
+   "Kiszerelés [m]": "100"
+  },
+  "images": [
+   "/termekkepek/d1-119-epdm-21mm-p-profil-1.webp"
+  ]
+ },
+ "d1-128-omega-gumi-19-8x40x24-epdm-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=65",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "D1 128",
+  "specs": {
+   "Anyag": "EPDM",
+   "Szín": "fekete",
+   "Kiszerelés [m]": "30"
+  },
+  "images": [
+   "/termekkepek/d1-128-omega-gumi-19-8x40x24-epdm-fekete-1.webp"
+  ]
+ },
+ "d1-133-omega-gumi-19-8x28x24-epdm-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=65",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "D1 133",
+  "specs": {
+   "Anyag": "EPDM",
+   "Szín": "fekete",
+   "Kiszerelés [m]": "30"
+  },
+  "images": [
+   "/termekkepek/d1-133-omega-gumi-19-8x28x24-epdm-fekete-1.webp"
+  ]
+ },
+ "d2-167-elvedo-lec-epdm-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=67",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "D2 167",
+  "specs": {
+   "Anyag": "EPDM",
+   "Szín": "fekete",
+   "Kiszerelés [m]": "40"
+  },
+  "images": [
+   "/termekkepek/d2-167-elvedo-lec-epdm-fekete-1.webp"
+  ]
+ },
+ "d2-528-talpas-15-5-mm-20-5-20-epdm-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=63",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "D2 528",
+  "specs": {
+   "Anyag": "EPDM",
+   "Szín": "fekete",
+   "Kiszerelés [m]": "50"
+  },
+  "images": [
+   "/termekkepek/d2-528-talpas-15-5-mm-20-5-20-epdm-fekete-1.webp"
+  ]
+ },
+ "elektromos-tetoablak-24v-530x530": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-manual-small/",
+  "sourceTitle": "Roof Hatch Electric Small",
+  "matchedCode": "90-5000-E",
+  "specs": {},
+  "images": [
+   "/termekkepek/elektromos-tetoablak-24v-530x530-1.webp"
+  ]
+ },
+ "elektromos-tetoablak-24v-970x530": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-electric-large/",
+  "sourceTitle": "Roof Hatch Electric Large",
+  "matchedCode": "90-6000-E",
+  "specs": {},
+  "images": [
+   "/termekkepek/elektromos-tetoablak-24v-970x530-1.webp"
+  ]
+ },
+ "elkeder-13x10-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=18",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A3007",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "1,0-4,0",
+   "Kiszerelés [m]": "100"
+  },
+  "images": [
+   "/termekkepek/elkeder-13x10-fekete-1.webp"
+  ]
+ },
+ "felso-gobos-kedergumi-32x14x20-8-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=38",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A3321",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "1,0-3,0",
+   "Kiszerelés [m]": "51"
+  },
+  "images": [
+   "/termekkepek/felso-gobos-kedergumi-32x14x20-8-fekete-1.webp"
+  ]
+ },
+ "harom-allasos-kapcsolo-ventilatorhoz": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/switch-fan/",
+  "sourceTitle": "Switch Fan",
+  "matchedCode": "89-4008",
+  "specs": {},
+  "images": [
+   "/termekkepek/harom-allasos-kapcsolo-ventilatorhoz-1.webp"
   ]
  },
  "j101030-negyed-ives-sarvedo-700x650": {
@@ -5235,6 +5661,60 @@
    "Méret": "650 x 300"
   }
  },
+ "kedergumi-14-5x20-5-2-0-4-0-fekete": {
+  "source": "Sand-Profile",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=43",
+  "sourceTitle": "Fax: +49 (0) 60 27/41 60-60",
+  "matchedCode": "A3224/4",
+  "specs": {
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "2,0-4,0",
+   "Kiszerelés [m]": "75"
+  },
+  "images": [
+   "/termekkepek/kedergumi-14-5x20-5-2-0-4-0-fekete-1.webp"
+  ]
+ },
+ "le-mans-tetoventilator-12v": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/grill-big/",
+  "sourceTitle": "Grill Large",
+  "matchedCode": "02-2200",
+  "specs": {},
+  "images": [
+   "/termekkepek/le-mans-tetoventilator-12v-1.webp"
+  ]
+ },
+ "le-mans-tetoventilator-24v": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/le-mans/",
+  "sourceTitle": "Le Mans",
+  "matchedCode": "02-2300",
+  "specs": {},
+  "images": [
+   "/termekkepek/le-mans-tetoventilator-24v-1.webp"
+  ]
+ },
+ "ledes-lampa-kerek-feher": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/lighting-round/",
+  "sourceTitle": "Lighting Round",
+  "matchedCode": "92-GC01",
+  "specs": {},
+  "images": [
+   "/termekkepek/ledes-lampa-kerek-feher-1.webp"
+  ]
+ },
+ "ledes-lampa-szogletes-feher-12-24v": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/lighting-rectangle/",
+  "sourceTitle": "Lighting Rectangle",
+  "matchedCode": "92-GC05-HP",
+  "specs": {},
+  "images": [
+   "/termekkepek/ledes-lampa-szogletes-feher-12-24v-1.webp"
+  ]
+ },
  "m12x140-rugos-felfuggesztes": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/25800100-sistema-di-fissaggio-elastico-m12x140/",
@@ -5296,6 +5776,26 @@
    "/termekkepek/m18x140-rugos-felfuggesztes-2.webp"
   ]
  },
+ "manualis-belso-takaro-feher": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/v12-2/",
+  "sourceTitle": "V12",
+  "matchedCode": "35-2400",
+  "specs": {},
+  "images": [
+   "/termekkepek/manualis-belso-takaro-feher-1.webp"
+  ]
+ },
+ "manualis-belso-takaro-szurke": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/v12-2/",
+  "sourceTitle": "V12",
+  "matchedCode": "35-2410",
+  "specs": {},
+  "images": [
+   "/termekkepek/manualis-belso-takaro-szurke-1.webp"
+  ]
+ },
  "q8033-elox-profil-kefehez": {
   "source": "Car-Alu",
   "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/1006",
@@ -5332,6 +5832,116 @@
   },
   "images": [
    "/termekkepek/q8040-kefe-40-mm-elox-profillal-1.webp"
+  ]
+ },
+ "tetoablak-vezerloegyseg-24v": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/control-unit/",
+  "sourceTitle": "Control Unit",
+  "matchedCode": "30-6000",
+  "specs": {},
+  "images": [
+   "/termekkepek/tetoablak-vezerloegyseg-24v-1.webp"
+  ]
+ },
+ "tetoventilator-manualis-feher": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/grill-small/",
+  "sourceTitle": "Grill Small",
+  "matchedCode": "02-1030",
+  "specs": {},
+  "images": [
+   "/termekkepek/tetoventilator-manualis-feher-1.webp"
+  ]
+ },
+ "tetoventilator-manualis-fekete": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/exhaust-ventilator/",
+  "sourceTitle": "Exhaust Ventilator",
+  "matchedCode": "02-1030-ZW",
+  "specs": {},
+  "images": [
+   "/termekkepek/tetoventilator-manualis-fekete-1.webp"
+  ]
+ },
+ "tetoventillator-motor-nelkul-abs-feher": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/le-mans/",
+  "sourceTitle": "Le Mans",
+  "matchedCode": "02-2900",
+  "specs": {},
+  "images": [
+   "/termekkepek/tetoventillator-motor-nelkul-abs-feher-1.webp"
+  ]
+ },
+ "turbo-ii-tetoventilator-feher": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/turbo-ii/",
+  "sourceTitle": "Turbo II",
+  "matchedCode": "02-7000",
+  "specs": {},
+  "images": [
+   "/termekkepek/turbo-ii-tetoventilator-feher-1.webp"
+  ]
+ },
+ "turbo-ii-tetoventilator-fekete": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/turbo-ii/",
+  "sourceTitle": "Turbo II",
+  "matchedCode": "02-7100",
+  "specs": {},
+  "images": [
+   "/termekkepek/turbo-ii-tetoventilator-fekete-1.webp"
+  ]
+ },
+ "turbo-iii-tetoventilator-feher": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/turbo-iii/",
+  "sourceTitle": "Turbo III",
+  "matchedCode": "02-6000",
+  "specs": {},
+  "images": [
+   "/termekkepek/turbo-iii-tetoventilator-feher-1.webp"
+  ]
+ },
+ "turbo-iii-tetoventilator-fekete": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/turbo-iii/",
+  "sourceTitle": "Turbo III",
+  "matchedCode": "02-6100",
+  "specs": {},
+  "images": [
+   "/termekkepek/turbo-iii-tetoventilator-fekete-1.webp"
+  ]
+ },
+ "ventillator-also-takaro-elem-12-24v-feher": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/v12-2/",
+  "sourceTitle": "V12",
+  "matchedCode": "35-2500",
+  "specs": {},
+  "images": [
+   "/termekkepek/ventillator-also-takaro-elem-12-24v-feher-1.webp"
+  ]
+ },
+ "ventillator-belso-takaro": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/rotating-valve/",
+  "sourceTitle": "Rotating Valve",
+  "matchedCode": "35-2110",
+  "specs": {},
+  "images": [
+   "/termekkepek/ventillator-belso-takaro-1.webp"
+  ]
+ },
+ "ventillator-belso-takaro-szurke": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/rotating-valve/",
+  "sourceTitle": "Rotating Valve",
+  "matchedCode": "35-2100",
+  "specs": {},
+  "images": [
+   "/termekkepek/ventillator-belso-takaro-szurke-1.webp"
   ]
  }
 }

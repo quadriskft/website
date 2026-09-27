@@ -10,7 +10,7 @@ from pathlib import Path
 from urllib.parse import quote, unquote
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import (IMAGE_DIR, code_candidates, fetch, hu_value,  # noqa: E402
+from common import (clear_images, code_candidates, fetch, hu_value,  # noqa: E402
                     load_products, save_image, update_enrichment)
 
 SUPPLIER = "Pastore"
@@ -76,8 +76,7 @@ def main():
             specs["Tömeg"] = f"{info['weight']} g"
         if info["pack"]:
             specs["Kiszerelés"] = f"{info['pack']} db/csomag"
-        for old in IMAGE_DIR.glob(f"{p['slug']}-*.webp"):
-            old.unlink()
+        clear_images(p["slug"])
         images = []
         for n, url in enumerate(info["images"][:3], start=1):
             try:

@@ -68,6 +68,14 @@ def fetch(url, cache=True, timeout=40):
     raise last
 
 
+def clear_images(slug):
+    """A termék korábban mentett képeinek törlése (csak pontosan a slug-hoz tartozókat)."""
+    rx = re.compile(rf"{re.escape(slug)}-\d+\.webp")
+    for f in IMAGE_DIR.glob(f"{slug}-*.webp"):
+        if rx.fullmatch(f.name):
+            f.unlink()
+
+
 def save_image(img, slug, index=1):
     """PIL kép mentése WebP-be, fehér háttérre, max. MAX_IMAGE px. Visszaadja a webes útvonalat."""
     if isinstance(img, (bytes, bytearray)):

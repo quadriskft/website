@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import (IMAGE_DIR, fetch, hu_value, load_products,  # noqa: E402
+from common import (clear_images, fetch, hu_value, load_products,  # noqa: E402
                     save_image, update_enrichment)
 
 SUPPLIER = "Car-Alu"
@@ -99,8 +99,7 @@ def main():
             specs["Felület"] = "natúr (nyers)"
         specs["Anyag"] = "alumínium" if re.search(r"alumin|profiel|profile", desc, re.I) else specs.get("Anyag", "")
         specs = {k: hu_value(v) for k, v in specs.items() if v}
-        for old in IMAGE_DIR.glob(f"{p['slug']}-*.webp"):
-            old.unlink()
+        clear_images(p["slug"])
         images = []
         if hit["image"]:
             try:

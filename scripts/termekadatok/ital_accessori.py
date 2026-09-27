@@ -14,7 +14,7 @@ import pymupdf
 from PIL import Image
 
 sys.path.insert(0, str(__import__("pathlib").Path(__file__).parent))
-from common import (CACHE, IMAGE_DIR, code_candidates, fetch, hu_label, hu_value,  # noqa: E402
+from common import (CACHE, clear_images, code_candidates, fetch, hu_label, hu_value,  # noqa: E402
                     load_products, save_image, update_enrichment)
 
 SUPPLIER = "Ital Accessori"
@@ -153,8 +153,7 @@ def main():
 
     ok = 0
     for p in products:
-        for old in IMAGE_DIR.glob(f"{p['slug']}-*.webp"):
-            old.unlink()
+        clear_images(p["slug"])
         hit = found.get(p["slug"])
         if not hit:
             continue
