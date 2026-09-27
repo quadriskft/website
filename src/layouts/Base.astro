@@ -35,7 +35,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
       telephone: SITE.phone,
       taxID: SITE.taxNumber,
       address: { '@type': 'PostalAddress', streetAddress: 'Tengely utca 8.', postalCode: '2220', addressLocality: 'Vecsés', addressCountry: 'HU' },
-      ...(SITE.url && { url: SITE.url, logo: new URL('/brand/quadris-jel.svg', SITE.url).href }),
+      ...(SITE.url && { url: SITE.url, logo: new URL('/brand/quadris-logo.svg', SITE.url).href }),
     })} />
   </head>
   <body>
@@ -43,7 +43,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     <header class="site-header">
       <div class="container header-inner">
         <a class="logo" href="/" aria-label={`${SITE.name} – főoldal`}>
-          <img src="/brand/quadris-logo.svg" alt={SITE.name} width="220" height="56" />
+          <img src="/brand/quadris-felirat.svg" alt={SITE.name} width="220" height="64" />
         </a>
 
         <nav class="main-nav" id="main-nav" aria-label="Fő menü">
@@ -248,7 +248,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   .site-header.scrolled { background: rgba(255, 255, 255, 0.96); box-shadow: 0 6px 20px -14px rgba(11, 31, 58, 0.4); }
   .header-inner { height: 100%; display: flex; align-items: center; gap: 28px; }
   .logo { flex: none; display: flex; }
-  .logo img { height: 46px; width: auto; }
+  .logo img { height: 58px; width: auto; }
 
   .main-nav { display: flex; align-items: center; gap: 4px; }
   .nav-link {
@@ -312,7 +312,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   }
   @media (max-width: 960px) {
     :root { --header-h: 64px; }
-    .logo img { height: 38px; }
+    .logo img { height: 42px; }
     .menu-toggle { display: grid; }
     .main-nav {
       position: fixed; inset: var(--header-h) 0 auto 0; max-height: calc(100vh - var(--header-h)); overflow-y: auto;
@@ -329,14 +329,14 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     .suggest { position: fixed; left: 16px; right: 16px; width: auto; top: calc(var(--header-h) - 4px); }
   }
   @media (max-width: 560px) {
-    .logo img { content: url('/brand/quadris-felirat.svg'); height: 22px; }
+    .logo img { height: 34px; }
     .header-actions { gap: 8px; }
     .quote-btn { padding: 0 12px; }
   }
 
   .site-footer { background: var(--navy); color: #c7d4e6; margin-top: 56px; }
   .footer-grid { display: grid; grid-template-columns: 1.1fr 1.6fr 0.9fr; gap: 40px; padding-top: 56px; padding-bottom: 40px; }
-  .footer-brand img { height: 52px; width: auto; margin-bottom: 18px; }
+  .footer-brand img { height: 84px; width: auto; margin-bottom: 18px; }
   .footer-brand p { max-width: 340px; font-size: 0.93rem; }
   .site-footer h4 { font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: #8fa6c4; margin-bottom: 14px; }
   .site-footer .muted { color: #9fb2cb; }
