@@ -489,10 +489,10 @@ DG_GROUP = "acel-es-alu-rakoncak-es-szegok"
 DG_IMAGES = {
     "BB2": ["2025/06/serie-BB2-1-1024x1024.png", "2025/10/BB2_1°Foto-683x1024.jpg", "2025/10/BB2_2°-Foto-683x1024.jpg"],
     "BB3": ["2025/06/serie-BB3-1-1024x1024.png", "2025/10/BB3_1°-Foto-683x1024.jpg", "2025/10/BB3_2°-Foto-683x1024.jpg"],
-    "BB4": ["2025/06/serie-BB4-1-1024x1024.png", "2025/10/BB4_1°-Foto-683x1024.jpg", "2025/10/Screenshot-2025-10-24-at-11.34.14-1024x903.png"],
-    "BB5": ["2025/07/serie-BB5-1-1024x1024.png", "2025/10/BB5_1°-Foto-683x1024.jpg", "2025/10/Screenshot-2025-10-24-at-11.34.24-1024x582.png"],
+    "BB4": ["2025/06/serie-BB4-1-1024x1024.png", "2025/10/BB4_1°-Foto-683x1024.jpg"],
+    "BB5": ["2025/07/serie-BB5-1-1024x1024.png", "2025/10/BB5_1°-Foto-683x1024.jpg"],
     "BB7": ["2025/07/serie-BB7-1-1024x1024.png", "2025/10/BB7_1°-Foto-683x1024.jpg", "2025/10/BB7_2°-Foto-683x1024.jpg"],
-    "BB10": ["2025/07/serie-BB10-1-1024x1024.png", "2025/10/Screenshot-2025-10-24-at-11.34.46-1024x528.png", "2025/10/1-1-1024x1024.png"],
+    "BB10": ["2025/07/serie-BB10-1-1024x1024.png", "2025/10/1-1-1024x1024.png", "2025/10/2-1-1024x1024.png"],
 }
 # a prospektus (DG_PDF) képrészletei: (lap indexe, téglalap pontban)
 DG_CROPS = {
@@ -594,21 +594,19 @@ def dg_images(slug, series, crop):
         except Exception as err:  # noqa: BLE001
             print("  képhiba:", rel, err)
     if crop:
-        import io
-        from PIL import Image
+        # a prospektusból csak a beágyazott termékfotó (felirat nélkül): a legnagyobb kép a kijelölt területen
+        import ital_accessori as ia
         pno, rect = DG_CROPS[crop]
         doc = pymupdf.open(stream=dg_fetch(DG_PDF), filetype="pdf")
-        if len(rect) == 2:  # beágyazott képek egymás mellé, fehér háttérre
-            parts = [Image.open(io.BytesIO(doc.extract_image(x)["image"])).convert("RGB") for x in rect]
-            h = max(i.height for i in parts)
-            img = Image.new("RGB", (sum(i.width for i in parts) + 80 * (len(parts) + 1), h + 80), "white")
-            x = 80
-            for i in parts:
-                img.paste(i, (x, 40))
-                x += i.width + 80
-        else:
-            pix = doc[pno].get_pixmap(dpi=220, clip=pymupdf.Rect(*rect))
-            img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+        pg = doc[pno]
+        area = pymupdf.Rect(*rect) if len(rect) == 4 else pg.rect
+        cls = [c for c in ia.image_clusters(pg, []) if (c[0] & area).get_area() > 0.6 * c[0].get_area()]
+        if len(rect) == 2:
+            cls = [c for c in ia.image_clusters(pg, []) if any(x in rect for x, _ in c[1])]
+        if not cls:
+            return out
+        best = max(cls, key=lambda c: c[0].get_area())
+        img = ia.extract(pg, best)
         out.append(save_image(img, slug, len(out) + 1))
     return out
 

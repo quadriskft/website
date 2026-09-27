@@ -98,8 +98,7 @@
   "sourceDescription": "",
   "matchedCode": "80700800",
   "specs": {
-   "Tömeg": "0,240 Kg",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0,240 Kg"
   },
   "images": [
    "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-1.webp",
@@ -132,7 +131,6 @@
   "sourceDescription": "",
   "matchedCode": "45070110",
   "specs": {
-   "Kiszerelés": "100 db",
    "Tömeg": "0,145 kg"
   },
   "images": [
@@ -147,8 +145,7 @@
   "sourceDescription": "",
   "matchedCode": "45150100",
   "specs": {
-   "Tömeg": "0,160 kg",
-   "Kiszerelés": "150 db"
+   "Tömeg": "0,160 kg"
   },
   "images": [
    "/termekkepek/100451-deszkatarto-zseb-1.webp",
@@ -162,8 +159,7 @@
   "sourceDescription": "",
   "matchedCode": "55160100",
   "specs": {
-   "Tömeg": "0,070 kg",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0,070 kg"
   },
   "images": [
    "/termekkepek/100516-100x25-dugo-zartszelvenyhez-1.webp",
@@ -177,8 +173,7 @@
   "sourceDescription": "",
   "matchedCode": "58924056",
   "specs": {
-   "Tömeg": "0,020 kg",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0,020 kg"
   },
   "images": [
    "/termekkepek/100591-ives-alafutasgatlo-vegzaro-pvc-1.webp",
@@ -192,8 +187,7 @@
   "sourceDescription": "",
   "matchedCode": "45151100",
   "specs": {
-   "Tömeg": "0,420 kg",
-   "Kiszerelés": "40 db"
+   "Tömeg": "0,420 kg"
   },
   "images": [
    "/termekkepek/101100-d50-mm-gumiagy-acel-tarto-1.webp",
@@ -225,8 +219,7 @@
   "sourceDescription": "",
   "matchedCode": "58923055",
   "specs": {
-   "Tömeg": "0,030 kg",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0,030 kg"
   },
   "images": [
    "/termekkepek/103055-100-x-30-mm-dugo-alafutasgatlohoz-1.webp",
@@ -254,8 +247,7 @@
   "sourceDescription": "",
   "matchedCode": "45104135",
   "specs": {
-   "Tömeg": "0,315 kg",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0,315 kg"
   },
   "images": [
    "/termekkepek/104130-100x25-mm-horganyzott-szegecselheto-deszkatarto-zseb-1.webp",
@@ -269,8 +261,7 @@
   "sourceDescription": "",
   "matchedCode": "50154285",
   "specs": {
-   "Tömeg": "0,100 kg",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0,100 kg"
   },
   "images": [
    "/termekkepek/104285-d60-csodugo-1.webp",
@@ -284,8 +275,7 @@
   "sourceDescription": "",
   "matchedCode": "45155101",
   "specs": {
-   "Tömeg": "0,140 kg",
-   "Kiszerelés": "140 db"
+   "Tömeg": "0,140 kg"
   },
   "images": [
    "/termekkepek/105510-d35-mm-gumiagy-1.webp",
@@ -317,8 +307,7 @@
   "sourceDescription": "",
   "matchedCode": "45155102",
   "specs": {
-   "Tömeg": "0,160 kg",
-   "Kiszerelés": "160 db"
+   "Tömeg": "0,160 kg"
   },
   "images": [
    "/termekkepek/106220-d35-mm-acel-tarto-1.webp",
@@ -517,9 +506,7 @@
   "sourceTitle": "50071033 – Barra zincata fermacarico reg. 2085÷2485 Innesto Ø19/Ø24",
   "sourceDescription": "",
   "matchedCode": "50071033",
-  "specs": {
-   "Kiszerelés": "20 db"
-  },
+  "specs": {},
   "images": [
    "/termekkepek/121030-rakomanyrogzito-rud-acel-2200-1.webp",
    "/termekkepek/121030-rakomanyrogzito-rud-acel-2200-2.webp",
@@ -532,9 +519,7 @@
   "sourceTitle": "50071031 – Barra zincata fermacarico reg. 2360÷2760 Innesti Ø19/Ø24",
   "sourceDescription": "",
   "matchedCode": "50071031",
-  "specs": {
-   "Kiszerelés": "10 db"
-  },
+  "specs": {},
   "images": [
    "/termekkepek/121032-rakomanyrogzito-rud-acel-2500-1.webp",
    "/termekkepek/121032-rakomanyrogzito-rud-acel-2500-2.webp",
@@ -549,8 +534,7 @@
   "matchedCode": "50033111",
   "specs": {
    "Kivitel": "Magnelis",
-   "Tömeg": "6,200 kg",
-   "Kiszerelés": "5 db"
+   "Tömeg": "6,200 kg"
   },
   "images": [
    "/termekkepek/121127-kombi-rakomanyrogzito-sin-acel-magnelis-1.webp",
@@ -565,8 +549,7 @@
   "matchedCode": "50033210",
   "specs": {
    "Kivitel": "rozsdamentes",
-   "Tömeg": "6,200 kg",
-   "Kiszerelés": "5 db"
+   "Tömeg": "6,200 kg"
   },
   "images": [
    "/termekkepek/121129-kombi-rakomanyrogzito-sin-inox-1.webp",
@@ -612,8 +595,7 @@
   "sourceDescription": "",
   "matchedCode": "45020303",
   "specs": {
-   "Kivitel": "rozsdamentes",
-   "Kiszerelés": "100 db."
+   "Kivitel": "rozsdamentes"
   },
   "images": [
    "/termekkepek/122303-padloba-sullyesztehto-inox-rak-rogzito-tanyer-1.webp",
@@ -664,8 +646,7 @@
   "matchedCode": "50033320",
   "specs": {
    "Kivitel": "alumínium",
-   "Tömeg": "6,200 kg",
-   "Kiszerelés": "5 db"
+   "Tömeg": "6,200 kg"
   },
   "images": [
    "/termekkepek/123320-kombi-rakomanyrogzito-sin-aluminium-1.webp",
@@ -678,9 +659,7 @@
   "sourceTitle": "50033500 – Tappo in pvc per profili orizzontali",
   "sourceDescription": "",
   "matchedCode": "50033500",
-  "specs": {
-   "Kiszerelés": "100 db"
-  },
+  "specs": {},
   "images": [
    "/termekkepek/123350-muanyag-vegzar-kombi-sinhez-1.webp",
    "/termekkepek/123350-muanyag-vegzar-kombi-sinhez-2.webp"
@@ -706,8 +685,7 @@
   "sourceDescription": "",
   "matchedCode": "45095310",
   "specs": {
-   "Kivitel": "horganyzott / Zinc plated",
-   "Kiszerelés": "40 db"
+   "Kivitel": "horganyzott / Zinc plated"
   },
   "images": [
    "/termekkepek/125310-3-reszes-rakomanyrogzito-oval-tanyer-800-kg-1.webp",
@@ -723,8 +701,7 @@
   "sourceDescription": "",
   "matchedCode": "45096510",
   "specs": {
-   "Tömeg": "0,460 kg",
-   "Kiszerelés": "50 db."
+   "Tömeg": "0,460 kg"
   },
   "images": [
    "/termekkepek/126510-rakomanyrogzito-kengyel-nyers-alatettel-1.webp",
@@ -769,9 +746,7 @@
   "sourceTitle": "50071099 – Profilo in alluminio con protezione in pvc",
   "sourceDescription": "",
   "matchedCode": "50071099",
-  "specs": {
-   "Kiszerelés": "5 db"
-  },
+  "specs": {},
   "images": [
    "/termekkepek/127199-palcas-rakomanyrogzito-sin-sully-alu-pvc-3m-1.webp",
    "/termekkepek/127199-palcas-rakomanyrogzito-sin-sully-alu-pvc-3m-2.webp"
@@ -785,8 +760,7 @@
   "matchedCode": "80272210",
   "specs": {
    "Kivitel": "rozsdamentes",
-   "Tömeg": "0,14 kg",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0,14 kg"
   },
   "images": [
    "/termekkepek/127210-rozsdamentes-rakomanyrozito-ful-1.webp",
@@ -803,8 +777,7 @@
   "matchedCode": "45097515",
   "specs": {
    "Kivitel": "horganyzott",
-   "Tömeg": "0,370 kg",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0,370 kg"
   },
   "images": [
    "/termekkepek/127515-rakomanyrogzito-kengyel-2000-kg-ts-1.webp",
@@ -820,8 +793,7 @@
   "sourceDescription": "",
   "matchedCode": "45098110",
   "specs": {
-   "Kivitel": "nyers",
-   "Kiszerelés": "20 db."
+   "Kivitel": "nyers"
   },
   "images": [
    "/termekkepek/128110-padloba-heg-rak-rogz-2500-dan-1.webp",
@@ -836,8 +808,7 @@
   "sourceDescription": "",
   "matchedCode": "45098315",
   "specs": {
-   "Kivitel": "nyers",
-   "Kiszerelés": "40 db"
+   "Kivitel": "nyers"
   },
   "images": [
    "/termekkepek/128315-rakomanyrozito-ful-nyers-1.webp",
@@ -854,8 +825,7 @@
   "matchedCode": "45098510",
   "specs": {
    "Kivitel": "horganyzott con base in pvc",
-   "Tömeg": "0,100 kg",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0,100 kg"
   },
   "images": [
    "/termekkepek/128510-pvc-talpas-rakomanyrogzito-500-kg-1.webp",
@@ -870,8 +840,7 @@
   "matchedCode": "45093110",
   "specs": {
    "Kivitel": "horganyzott",
-   "Tömeg": "0,440 kg",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0,440 kg"
   },
   "images": [
    "/termekkepek/129310-padloba-sullyesztehto-horg-rak-rogzito-tanyer-1000-dan-1.webp",
@@ -887,8 +856,7 @@
   "sourceDescription": "",
   "matchedCode": "45097110",
   "specs": {
-   "Kivitel": "horganyzott",
-   "Kiszerelés": "40 db"
+   "Kivitel": "horganyzott"
   },
   "images": [
    "/termekkepek/129711-rakomanyrogzito-kengyel-2500-dan-ts-1.webp",
@@ -996,8 +964,7 @@
   "sourceDescription": "",
   "matchedCode": "15012303",
   "specs": {
-   "Tömeg": "2,00 kg",
-   "Kiszerelés": "25 db"
+   "Tömeg": "2,00 kg"
   },
   "images": [
    "/termekkepek/142303-billencs-nyitokar-j-1.webp",
@@ -1011,8 +978,7 @@
   "sourceDescription": "",
   "matchedCode": "15012304",
   "specs": {
-   "Tömeg": "2,00 kg",
-   "Kiszerelés": "25 db"
+   "Tömeg": "2,00 kg"
   },
   "images": [
    "/termekkepek/142304-billencs-nyitokar-b-1.webp",
@@ -1060,9 +1026,7 @@
   "sourceTitle": "14600012 – Centralina completa 12 Volt",
   "sourceDescription": "",
   "matchedCode": "14600012",
-  "specs": {
-   "Kiszerelés": "1 db."
-  },
+  "specs": {},
   "images": [
    "/termekkepek/146012-szivattyu-12v-1.webp"
   ]
@@ -1085,8 +1049,7 @@
   "sourceDescription": "",
   "matchedCode": "15276110",
   "specs": {
-   "Tömeg": "0,200 kg",
-   "Kiszerelés": "50 db/doboz"
+   "Tömeg": "0,200 kg"
   },
   "images": [
    "/termekkepek/152760-tir-zsaner-apa-resz-alu-hoz-1.webp",
@@ -1130,8 +1093,7 @@
   "matchedCode": "15281410",
   "specs": {
    "Kivitel": "horganyzott a caldo",
-   "Tömeg": "0,210 kg",
-   "Kiszerelés": "100 db."
+   "Tömeg": "0,210 kg"
   },
   "images": [
    "/termekkepek/152814-tir-zsaner-garnitura-th-1.webp"
@@ -1145,8 +1107,7 @@
   "matchedCode": "15281510",
   "specs": {
    "Kivitel": "Dacromet",
-   "Tömeg": "0,210 kg",
-   "Kiszerelés": "100 db."
+   "Tömeg": "0,210 kg"
   },
   "images": [
    "/termekkepek/152815-1-tir-zsaner-anya-1.webp"
@@ -1160,8 +1121,7 @@
   "matchedCode": "15280510",
   "specs": {
    "Kivitel": "Dacromet",
-   "Tömeg": "0,240 kg",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0,240 kg"
   },
   "images": [
    "/termekkepek/152815-2-tir-zsaner-apa-1.webp"
@@ -1175,8 +1135,7 @@
   "matchedCode": "15282310",
   "specs": {
    "Kivitel": "rozsdamentes",
-   "Tömeg": "0,210 kg",
-   "Kiszerelés": "100 db."
+   "Tömeg": "0,210 kg"
   },
   "images": [
    "/termekkepek/152823-tir-zsaner-garnitura-rm-1.webp"
@@ -1311,8 +1270,7 @@
   "sourceDescription": "",
   "matchedCode": "36200110",
   "specs": {
-   "Tömeg": "0,120 kg",
-   "Kiszerelés": "250 db"
+   "Tömeg": "0,120 kg"
   },
   "images": [
    "/termekkepek/211210-ponyvagorgo-alu-sinhez-1.webp",
@@ -2637,8 +2595,7 @@
   "matchedCode": "57900055",
   "specs": {
    "Kivitel": "horganyzott",
-   "Tömeg": "1,73 kg",
-   "Kiszerelés": "10 db"
+   "Tömeg": "1,73 kg"
   },
   "images": [
    "/termekkepek/307955-alafutasgatlo-konzol-550-mm-horg-1.webp",
@@ -2653,8 +2610,7 @@
   "matchedCode": "57900155",
   "specs": {
    "Kivitel": "horganyzott a caldo",
-   "Tömeg": "1,73 kg",
-   "Kiszerelés": "10 db"
+   "Tömeg": "1,73 kg"
   },
   "images": [
    "/termekkepek/307955-th-alafutasgatlo-konzol-550-mm-1.webp",
@@ -2678,8 +2634,7 @@
   "matchedCode": "58900055",
   "specs": {
    "Kivitel": "horganyzott",
-   "Tömeg": "3,50 kg",
-   "Kiszerelés": "10 db"
+   "Tömeg": "3,50 kg"
   },
   "images": [
    "/termekkepek/309055-alafutasgatlo-konzol-700-mm-horg-1.webp",
@@ -2930,8 +2885,7 @@
   "sourceDescription": "",
   "matchedCode": "35220400",
   "specs": {
-   "Kivitel": "H.400",
-   "Kiszerelés": "20 db. (10 J+10 B)"
+   "Kivitel": "H.400"
   },
   "images": [
    "/termekkepek/352240-ellendarabos-szego-400mm-r-l-1.webp"
@@ -2944,8 +2898,7 @@
   "sourceDescription": "",
   "matchedCode": "35220600",
   "specs": {
-   "Kivitel": "H.600",
-   "Kiszerelés": "20 db. (10 J+10 B)"
+   "Kivitel": "H.600"
   },
   "images": [
    "/termekkepek/352260-ellendarabos-szego-600mm-r-l-1.webp"
@@ -2957,9 +2910,7 @@
   "sourceTitle": "35100500 – Montante Centrale per Piantone TL35 – 35250400",
   "sourceDescription": "",
   "matchedCode": "35250400",
-  "specs": {
-   "Kiszerelés": "10 db."
-  },
+  "specs": {},
   "images": [
    "/termekkepek/352540-egymasba-zarodo-z-zar-400-1.webp"
   ]
@@ -3029,8 +2980,7 @@
   "sourceDescription": "",
   "matchedCode": "35140400",
   "specs": {
-   "Kivitel": "H.400",
-   "Kiszerelés": "20 db. (10 J+10 B)"
+   "Kivitel": "H.400"
   },
   "images": [
    "/termekkepek/354400-nem-peremes-400-z-zar-r-l-1.webp"
@@ -3044,7 +2994,6 @@
   "matchedCode": "35442401",
   "specs": {
    "Kivitel": "nyers",
-   "Kiszerelés": "100 db.",
    "Tömeg": "0,130 kg"
   },
   "images": [
@@ -3058,8 +3007,7 @@
   "sourceDescription": "",
   "matchedCode": "35140500",
   "specs": {
-   "Kivitel": "H.500",
-   "Kiszerelés": "20 db. (10 J+10 B)"
+   "Kivitel": "H.500"
   },
   "images": [
    "/termekkepek/354500-nem-peremes-500-mm-z-zar-r-l-1.webp"
@@ -3072,8 +3020,7 @@
   "sourceDescription": "",
   "matchedCode": "35140600",
   "specs": {
-   "Kivitel": "H.600",
-   "Kiszerelés": "20 db. (10 J+10 B)"
+   "Kivitel": "H.600"
   },
   "images": [
    "/termekkepek/354600-nem-peremes-600-mm-z-zar-r-l-1.webp"
@@ -3086,8 +3033,7 @@
   "sourceDescription": "",
   "matchedCode": "35140800",
   "specs": {
-   "Kivitel": "H.800",
-   "Kiszerelés": "20 db. (10 J+10 B)"
+   "Kivitel": "H.800"
   },
   "images": [
    "/termekkepek/354800-nem-peremes-800-mm-z-zar-r-l-1.webp"
@@ -3178,8 +3124,7 @@
   "sourceDescription": "",
   "matchedCode": "35160400",
   "specs": {
-   "Kivitel": "H.400",
-   "Kiszerelés": "20 db. (10 J+10 B)"
+   "Kivitel": "H.400"
   },
   "images": [
    "/termekkepek/357400-peremes-z-zar-400-mm-r-l-1.webp",
@@ -3193,8 +3138,7 @@
   "sourceDescription": "",
   "matchedCode": "35170600",
   "specs": {
-   "Kivitel": "H.600",
-   "Kiszerelés": "20 db. (10 J+10 B)"
+   "Kivitel": "H.600"
   },
   "images": [
    "/termekkepek/357401-peremes-z-zar-600-mm-r-l-1.webp"
@@ -3207,8 +3151,7 @@
   "sourceDescription": "",
   "matchedCode": "35170500",
   "specs": {
-   "Kivitel": "H.500",
-   "Kiszerelés": "20 db. (10 J+10 B)"
+   "Kivitel": "H.500"
   },
   "images": [
    "/termekkepek/357500-peremes-z-zar-500-mm-r-l-1.webp"
@@ -3221,7 +3164,6 @@
   "sourceDescription": "",
   "matchedCode": "34480011",
   "specs": {
-   "Kiszerelés": "50 db",
    "Tömeg": "0,250 kg"
   },
   "images": [
@@ -3236,8 +3178,7 @@
   "sourceDescription": "",
   "matchedCode": "34480017",
   "specs": {
-   "Tömeg": "0",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0"
   },
   "images": [
    "/termekkepek/380017-also-adapter-34-es-csohoz-1.webp",
@@ -3251,8 +3192,7 @@
   "sourceDescription": "",
   "matchedCode": "34480018",
   "specs": {
-   "Tömeg": "0",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0"
   },
   "images": [
    "/termekkepek/380018-ss-also-adapter-27-es-csohoz-kocka-1.webp"
@@ -3265,8 +3205,7 @@
   "sourceDescription": "",
   "matchedCode": "34480019",
   "specs": {
-   "Tömeg": "0",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0"
   },
   "images": [
    "/termekkepek/380019-felso-adapter-27-es-csohoz-1.webp",
@@ -3280,8 +3219,7 @@
   "sourceDescription": "",
   "matchedCode": "34480020",
   "specs": {
-   "Tömeg": "0",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0"
   },
   "images": [
    "/termekkepek/380020-ss-also-adapter-27-es-csohoz-szogletes-1.webp",
@@ -3296,8 +3234,7 @@
   "sourceDescription": "",
   "matchedCode": "34480021",
   "specs": {
-   "Tömeg": "0",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0"
   },
   "images": [
    "/termekkepek/380021-ss-also-adapter-27-es-csohoz-1.webp",
@@ -3368,8 +3305,7 @@
   "sourceDescription": "",
   "matchedCode": "34480060",
   "specs": {
-   "Tömeg": "1,200 kg",
-   "Kiszerelés": "20 db"
+   "Tömeg": "1,200 kg"
   },
   "images": [
    "/termekkepek/380060-racsnis-feszito-r-1.webp",
@@ -3383,8 +3319,7 @@
   "sourceDescription": "",
   "matchedCode": "34480061",
   "specs": {
-   "Tömeg": "1,20 kg",
-   "Kiszerelés": "20 db"
+   "Tömeg": "1,20 kg"
   },
   "images": [
    "/termekkepek/380061-racsnis-feszito-l-1.webp",
@@ -3508,8 +3443,7 @@
   "sourceDescription": "",
   "matchedCode": "34480045",
   "specs": {
-   "Tömeg": "0,730 kg",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0,730 kg"
   },
   "images": [
    "/termekkepek/381071-feszito-kocka-sliccelt-adapterhez-ts-1.webp",
@@ -3524,8 +3458,7 @@
   "sourceDescription": "",
   "matchedCode": "34480055",
   "specs": {
-   "Tömeg": "0,690 kg",
-   "Kiszerelés": "25 db"
+   "Tömeg": "0,690 kg"
   },
   "images": [
    "/termekkepek/381073-feszito-kocka-szogletes-adapterhez-1.webp",
@@ -3555,8 +3488,7 @@
   "sourceDescription": "",
   "matchedCode": "34480041",
   "specs": {
-   "Tömeg": "0",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0"
   },
   "images": [
    "/termekkepek/381420-tekero-kurbli-1.webp",
@@ -3623,8 +3555,7 @@
   "matchedCode": "45172110",
   "specs": {
    "Kivitel": "horganyzott",
-   "Tömeg": "0,720 kg",
-   "Kiszerelés": "30 db"
+   "Tömeg": "0,720 kg"
   },
   "images": [
    "/termekkepek/451721-horganyzott-nagykonzol-man-50-mm-1.webp",
@@ -3639,8 +3570,7 @@
   "matchedCode": "45177100",
   "specs": {
    "Kivitel": "horganyzott",
-   "Tömeg": "0,580 kg",
-   "Kiszerelés": "40 db"
+   "Tömeg": "0,580 kg"
   },
   "images": [
    "/termekkepek/451771-horganyzott-nagykonzol-iveco-45-mm-1.webp",
@@ -3654,8 +3584,7 @@
   "sourceDescription": "",
   "matchedCode": "45187110",
   "specs": {
-   "Tömeg": "1,090 kg",
-   "Kiszerelés": "25 db"
+   "Tömeg": "1,090 kg"
   },
   "images": [
    "/termekkepek/451871-alvaz-rogzito-konzol-10-12-14-16-1.webp",
@@ -3669,8 +3598,7 @@
   "sourceDescription": "",
   "matchedCode": "45287110",
   "specs": {
-   "Tömeg": "0,820 kg",
-   "Kiszerelés": "25 db"
+   "Tömeg": "0,820 kg"
   },
   "images": [
    "/termekkepek/452871-alvaz-rogzito-konzol-4-5-5-6-1.webp",
@@ -3684,8 +3612,7 @@
   "sourceDescription": "",
   "matchedCode": "45292110",
   "specs": {
-   "Tömeg": "0,700 kg",
-   "Kiszerelés": "25 db"
+   "Tömeg": "0,700 kg"
   },
   "images": [
    "/termekkepek/452921-alvaz-rogzito-konzol-7-8-10-12-1.webp",
@@ -3699,8 +3626,7 @@
   "sourceDescription": "",
   "matchedCode": "45388100",
   "specs": {
-   "Tömeg": "0,300 kg",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0,300 kg"
   },
   "images": [
    "/termekkepek/453881-nyers-alvaz-konzol-5-mm-1.webp",
@@ -3714,8 +3640,7 @@
   "sourceDescription": "",
   "matchedCode": "45399100",
   "specs": {
-   "Tömeg": "0,500 kg",
-   "Kiszerelés": "25 db"
+   "Tömeg": "0,500 kg"
   },
   "images": [
    "/termekkepek/453991-nyers-alvaz-konzol-6-mm-1.webp",
@@ -3730,8 +3655,7 @@
   "matchedCode": "45163200",
   "specs": {
    "Kivitel": "horganyzott",
-   "Tömeg": "0,300 kg",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0,300 kg"
   },
   "images": [
    "/termekkepek/456320-horganyzott-kiskonzol-daily-l-50-h-70-1.webp",
@@ -3746,8 +3670,7 @@
   "matchedCode": "45163300",
   "specs": {
    "Kivitel": "horganyzott",
-   "Tömeg": "0,420 kg",
-   "Kiszerelés": "72 db"
+   "Tömeg": "0,420 kg"
   },
   "images": [
    "/termekkepek/456330-horganyzott-kiskonzol-iveco-uj-1.webp",
@@ -3762,7 +3685,6 @@
   "matchedCode": "45165110",
   "specs": {
    "Tömeg": "0,630 kg",
-   "Kiszerelés": "100 db",
    "Kivitel": "horganyzott"
   },
   "images": [
@@ -3778,8 +3700,7 @@
   "matchedCode": "45163100",
   "specs": {
    "Kivitel": "horganyzott",
-   "Tömeg": "0,345 kg",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0,345 kg"
   },
   "images": [
    "/termekkepek/456610-horganyzott-kiskonzol-iveco-1.webp",
@@ -3794,8 +3715,7 @@
   "matchedCode": "45166100",
   "specs": {
    "Kivitel": "nyers",
-   "Tömeg": "0,345 kg",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0,345 kg"
   },
   "images": [
    "/termekkepek/456610-r-nyers-kiskonzol-iveco-1.webp",
@@ -3810,8 +3730,7 @@
   "matchedCode": "50102900",
   "specs": {
    "Kivitel": "horganyzott a caldo",
-   "Tömeg": "30,00 kg",
-   "Kiszerelés": "1 db"
+   "Tömeg": "30,00 kg"
   },
   "images": [
    "/termekkepek/501029-th-potkerektarto-1235x450-mm-ts-1.webp",
@@ -3826,8 +3745,7 @@
   "matchedCode": "50419270",
   "specs": {
    "Kivitel": "horganyzott AT600",
-   "Tömeg": "10,400 kg",
-   "Kiszerelés": "2 db"
+   "Tömeg": "10,400 kg"
   },
   "images": [
    "/termekkepek/501927-2-fokos-letra-th-platform-1.webp",
@@ -3843,8 +3761,7 @@
   "matchedCode": "50195200",
   "specs": {
    "Kivitel": "horganyzott a Caldo",
-   "Tömeg": "1,250 kg",
-   "Kiszerelés": "1 db"
+   "Tömeg": "1,250 kg"
   },
   "images": [
    "/termekkepek/501952-fix-thorg-oldalajto-fellepo-letra-1.webp",
@@ -3860,8 +3777,7 @@
   "sourceDescription": "",
   "matchedCode": "50292210",
   "specs": {
-   "Tömeg": "5,500 kg",
-   "Kiszerelés": "2 db"
+   "Tömeg": "5,500 kg"
   },
   "images": [
    "/termekkepek/502210-2-fokos-letra-horg-1.webp",
@@ -3894,8 +3810,7 @@
   "sourceDescription": "",
   "matchedCode": "50430270",
   "specs": {
-   "Tömeg": "13,00 kg",
-   "Kiszerelés": "1 db"
+   "Tömeg": "13,00 kg"
   },
   "images": [
    "/termekkepek/5030270-2-fokos-letra-platform-th-1.webp",
@@ -3910,8 +3825,7 @@
   "matchedCode": "10352110",
   "specs": {
    "Kivitel": "Chiusura horganyzott",
-   "Tömeg": "0,350",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0,350"
   },
   "images": [
    "/termekkepek/5032110-bekazar-140-mm-ellendarab-1.webp",
@@ -3926,8 +3840,7 @@
   "sourceDescription": "",
   "matchedCode": "50400665",
   "specs": {
-   "Tömeg": "9,00 kg",
-   "Kiszerelés": "5 db"
+   "Tömeg": "9,00 kg"
   },
   "images": [
    "/termekkepek/504665-3-fokos-letra-horganyzott-1.webp",
@@ -3941,8 +3854,7 @@
   "sourceDescription": "AT600 è un rivestimento liscio ricco di zinco, ricoperto da uno strato di poliuretano, che fornisce una finitura durevole con un’eccezionale resistenza all’abrasione e alla corrosione. I risultati dopo 600 ore di test con la nebbia salina nessun deterioramento o effetto di abrasione.",
   "matchedCode": "50449270",
   "specs": {
-   "Tömeg": "51,50 kg",
-   "Kiszerelés": "1 db"
+   "Tömeg": "51,50 kg"
   },
   "images": [
    "/termekkepek/504927-6-fokos-letra-th-1.webp",
@@ -3976,8 +3888,7 @@
   "matchedCode": "50170110",
   "specs": {
    "Kivitel": "horganyzott",
-   "Tömeg": "1,400 kg",
-   "Kiszerelés": "20 db"
+   "Tömeg": "1,400 kg"
   },
   "images": [
    "/termekkepek/507110-horganyzott-fellepo-1.webp",
@@ -3991,8 +3902,7 @@
   "sourceDescription": "",
   "matchedCode": "50398665",
   "specs": {
-   "Tömeg": "7,42 kg",
-   "Kiszerelés": "5 db"
+   "Tömeg": "7,42 kg"
   },
   "images": [
    "/termekkepek/508665-2-fokos-letra-horg-1.webp",
@@ -4006,8 +3916,7 @@
   "sourceDescription": "",
   "matchedCode": "50298820",
   "specs": {
-   "Tömeg": "3,900 kg",
-   "Kiszerelés": "10 db"
+   "Tömeg": "3,900 kg"
   },
   "images": [
    "/termekkepek/508820-1-fokos-letra-horg-1.webp",
@@ -4346,8 +4255,7 @@
   "sourceDescription": "",
   "matchedCode": "55200800",
   "specs": {
-   "Tömeg": "1,410 kg",
-   "Kiszerelés": "16 db"
+   "Tömeg": "1,410 kg"
   },
   "images": [
    "/termekkepek/552080-utkozogumi-200x80x80-1.webp",
@@ -4361,8 +4269,7 @@
   "sourceDescription": "",
   "matchedCode": "55200118",
   "specs": {
-   "Tömeg": "0,610 kg",
-   "Kiszerelés": "20 db"
+   "Tömeg": "0,610 kg"
   },
   "images": [
    "/termekkepek/552118-utkozogumi-150x60x60-1.webp",
@@ -4376,8 +4283,7 @@
   "sourceDescription": "",
   "matchedCode": "55215505",
   "specs": {
-   "Tömeg": "0,610 kg",
-   "Kiszerelés": "20 db"
+   "Tömeg": "0,610 kg"
   },
   "images": [
    "/termekkepek/552155-utkozogumi-215x50x55-1.webp",
@@ -4391,8 +4297,7 @@
   "sourceDescription": "",
   "matchedCode": "55228000",
   "specs": {
-   "Tömeg": "0,003 kg",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0,003 kg"
   },
   "images": [
    "/termekkepek/552280-gumi-utkozogyuru-d21-5x7-5-mm-1.webp",
@@ -4406,8 +4311,7 @@
   "sourceDescription": "",
   "matchedCode": "55200594",
   "specs": {
-   "Tömeg": "2,300 kg",
-   "Kiszerelés": "10 db"
+   "Tömeg": "2,300 kg"
   },
   "images": [
    "/termekkepek/552594-utkozogumi-400x65x70-1.webp",
@@ -4421,8 +4325,7 @@
   "sourceDescription": "",
   "matchedCode": "55282500",
   "specs": {
-   "Tömeg": "0,020 kg",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0,020 kg"
   },
   "images": [
    "/termekkepek/552825-kupos-utkozogumi-27-5-25-1.webp",
@@ -4436,8 +4339,7 @@
   "sourceDescription": "",
   "matchedCode": "55307065",
   "specs": {
-   "Tömeg": "1,530 kg",
-   "Kiszerelés": "15 db"
+   "Tömeg": "1,530 kg"
   },
   "images": [
    "/termekkepek/553065-utkozogumi-300x65x70-1.webp",
@@ -4477,8 +4379,7 @@
   "sourceDescription": "",
   "matchedCode": "55003541",
   "specs": {
-   "Tömeg": "0,086 kg",
-   "Kiszerelés": "150 db"
+   "Tömeg": "0,086 kg"
   },
   "images": [
    "/termekkepek/553541-kupos-utkozogumi-45-60-35-1.webp",
@@ -4492,8 +4393,7 @@
   "sourceDescription": "",
   "matchedCode": "55045040",
   "specs": {
-   "Tömeg": "1,400 kg",
-   "Kiszerelés": "18 db"
+   "Tömeg": "1,400 kg"
   },
   "images": [
    "/termekkepek/554540-utkozogumi-450x40x60-1.webp",
@@ -4507,8 +4407,7 @@
   "sourceDescription": "",
   "matchedCode": "55500490",
   "specs": {
-   "Tömeg": "0,62 kg",
-   "Kiszerelés": "20 db"
+   "Tömeg": "0,62 kg"
   },
   "images": [
    "/termekkepek/555490-utkozogumi-490x45x40-1.webp",
@@ -4522,8 +4421,7 @@
   "sourceDescription": "",
   "matchedCode": "55005575",
   "specs": {
-   "Tömeg": "0,175 kg",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0,175 kg"
   },
   "images": [
    "/termekkepek/555575-kupos-utkozogumi-55-75-40-1.webp",
@@ -4537,8 +4435,7 @@
   "sourceDescription": "",
   "matchedCode": "55006575",
   "specs": {
-   "Tömeg": "0,220 kg",
-   "Kiszerelés": "40 db"
+   "Tömeg": "0,220 kg"
   },
   "images": [
    "/termekkepek/556575-kupos-utkozogumi-65-75-50-1.webp",
@@ -4552,8 +4449,7 @@
   "sourceDescription": "",
   "matchedCode": "55007575",
   "specs": {
-   "Tömeg": "0,312 kg",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0,312 kg"
   },
   "images": [
    "/termekkepek/557575-kupos-utkozogumi-75-75-50-1.webp",
@@ -5268,8 +5164,7 @@
   "sourceDescription": "",
   "matchedCode": "75500445",
   "specs": {
-   "Tömeg": "1,350 kg",
-   "Kiszerelés": "20 db"
+   "Tömeg": "1,350 kg"
   },
   "images": [
    "/termekkepek/728972-huskampo-60mm-csohoz-1.webp",
@@ -5284,8 +5179,7 @@
   "sourceDescription": "",
   "matchedCode": "75539143",
   "specs": {
-   "Tömeg": "0,420 kg",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0,420 kg"
   },
   "images": [
    "/termekkepek/729143-sinrogzito-lancal-huspalyasinhez-rm-1.webp",
@@ -5317,8 +5211,7 @@
   "sourceDescription": "",
   "matchedCode": "80600700",
   "specs": {
-   "Tömeg": "0,890 kg",
-   "Kiszerelés": "25 db"
+   "Tömeg": "0,890 kg"
   },
   "images": [
    "/termekkepek/806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm-1.webp",
@@ -5333,8 +5226,7 @@
   "matchedCode": "80600287",
   "specs": {
    "Kivitel": "rozsdamentes",
-   "Tömeg": "0,380 kg",
-   "Kiszerelés": "50 db"
+   "Tömeg": "0,380 kg"
   },
   "images": [
    "/termekkepek/806287-inox-oldalajto-zsaner-184-65-zsirzos-1.webp",
@@ -5349,8 +5241,7 @@
   "matchedCode": "80600307",
   "specs": {
    "Kivitel": "rozsdamentes",
-   "Tömeg": "0,410 kg",
-   "Kiszerelés": "30 db"
+   "Tömeg": "0,410 kg"
   },
   "images": [
    "/termekkepek/806307-rm-oldalajto-zsaner-lepcsos-140-179-mm-1.webp",
@@ -5366,8 +5257,7 @@
   "matchedCode": "80600300",
   "specs": {
    "Kivitel": "horganyzott",
-   "Tömeg": "0,410 kg",
-   "Kiszerelés": "30 db"
+   "Tömeg": "0,410 kg"
   },
   "images": [
    "/termekkepek/806308-horganyzott-oldalajto-zsaner-140-179-mm-1.webp",
@@ -5383,8 +5273,7 @@
   "matchedCode": "80600407",
   "specs": {
    "Kivitel": "rozsdamentes",
-   "Tömeg": "0,610 kg",
-   "Kiszerelés": "50 db/doboz"
+   "Tömeg": "0,610 kg"
   },
   "images": [
    "/termekkepek/806407-rm-oldalajto-zsaner-lepcsos-183-mm-1.webp"
@@ -5410,8 +5299,7 @@
   "sourceDescription": "",
   "matchedCode": "10164110",
   "specs": {
-   "Tömeg": "0,100",
-   "Kiszerelés": "100 db"
+   "Tömeg": "0,100"
   },
   "images": [
    "/termekkepek/810164-negyszog-kulcs-1.webp",
@@ -5500,7 +5388,6 @@
   "matchedCode": "20128610",
   "specs": {
    "Tömeg": "0,530",
-   "Kiszerelés": "25 db",
    "Kivitel": "rozsdamentes acél"
   },
   "images": [
@@ -5516,7 +5403,6 @@
   "matchedCode": "20128210",
   "specs": {
    "Tömeg": "0,360",
-   "Kiszerelés": "50 db",
    "Kivitel": "rozsdamentes acél"
   },
   "images": [
@@ -5532,7 +5418,6 @@
   "matchedCode": "20128510",
   "specs": {
    "Tömeg": "0,530",
-   "Kiszerelés": "25 db",
    "Kivitel": "horganyzott"
   },
   "images": [
@@ -5548,7 +5433,6 @@
   "matchedCode": "20128110",
   "specs": {
    "Tömeg": "0,360",
-   "Kiszerelés": "50 db",
    "Kivitel": "horganyzott"
   },
   "images": [
@@ -5565,8 +5449,7 @@
   "sourceDescription": "",
   "matchedCode": "15162225",
   "specs": {
-   "Tömeg": "1,0",
-   "Kiszerelés": "25 db"
+   "Tömeg": "1,0"
   },
   "images": [
    "/termekkepek/822225-haub-csatoszar-ellendarabbal-horg-ts-1.webp",
@@ -5593,7 +5476,6 @@
   "matchedCode": "80296110",
   "specs": {
    "Tömeg": "2,40 Kg",
-   "Kiszerelés": "10 db",
    "Kivitel": "horganyzott"
   },
   "images": [
@@ -5609,8 +5491,7 @@
   "sourceDescription": "",
   "matchedCode": "80296310",
   "specs": {
-   "Tömeg": "2,40 Kg",
-   "Kiszerelés": "10 db"
+   "Tömeg": "2,40 Kg"
   },
   "images": [
    "/termekkepek/829631-rugos-ajtorogzito-horg-440-270mm-ts-1.webp",
@@ -5625,8 +5506,7 @@
   "sourceDescription": "",
   "matchedCode": "80296810",
   "specs": {
-   "Tömeg": "2,30 Kg",
-   "Kiszerelés": "10 db"
+   "Tömeg": "2,30 Kg"
   },
   "images": [
    "/termekkepek/829681-rugos-ajtorogzito-horg-545-410mm-ts-1.webp",
@@ -5642,7 +5522,6 @@
   "matchedCode": "80296910",
   "specs": {
    "Tömeg": "2,40 Kg",
-   "Kiszerelés": "10 db/doboz",
    "Kivitel": "rozsdamentes acél"
   },
   "images": [
@@ -5659,8 +5538,7 @@
   "matchedCode": "54631430",
   "specs": {
    "Kivitel": "L=3000",
-   "Tömeg": "2,960 kg",
-   "Kiszerelés": "10 db/doboz"
+   "Tömeg": "2,960 kg"
   },
   "images": [
    "/termekkepek/831230-gumis-zsaner-l-3000-mm-1.webp"
@@ -5674,8 +5552,7 @@
   "matchedCode": "54631245",
   "specs": {
    "Kivitel": "L=2500",
-   "Tömeg": "2,960 kg",
-   "Kiszerelés": "10 db/doboz"
+   "Tömeg": "2,960 kg"
   },
   "images": [
    "/termekkepek/831245-gumis-zsaner-l-2500-mm-1.webp"
@@ -5689,8 +5566,7 @@
   "matchedCode": "54631440",
   "specs": {
    "Kivitel": "L=4000",
-   "Tömeg": "3,256 kg",
-   "Kiszerelés": "10 db/doboz"
+   "Tömeg": "3,256 kg"
   },
   "images": [
    "/termekkepek/831440-gumis-zsaner-l-4000-mm-1.webp"
@@ -5704,8 +5580,7 @@
   "matchedCode": "80324100",
   "specs": {
    "Kivitel": "horganyzott",
-   "Tömeg": "0,150 kg",
-   "Kiszerelés": "150 db"
+   "Tömeg": "0,150 kg"
   },
   "images": [
    "/termekkepek/832410-horganyzott-pillango-zsaner-60x60-1.webp",
@@ -5722,8 +5597,7 @@
   "matchedCode": "80324200",
   "specs": {
    "Kivitel": "rozsdamentes",
-   "Tömeg": "0,150 kg",
-   "Kiszerelés": "150 db"
+   "Tömeg": "0,150 kg"
   },
   "images": [
    "/termekkepek/832420-rm-pillango-zsaner-60x60-1.webp",
@@ -5752,8 +5626,7 @@
   "sourceDescription": "",
   "matchedCode": "80365000",
   "specs": {
-   "Tömeg": "2,500 kg",
-   "Kiszerelés": "8 db"
+   "Tömeg": "2,500 kg"
   },
   "images": [
    "/termekkepek/836500-d18-horg-hatsoajtozar-kit-ts-1.webp",
@@ -5769,7 +5642,6 @@
   "sourceDescription": "",
   "matchedCode": "80368210",
   "specs": {
-   "Kiszerelés": "2 db",
    "Tömeg": "2,430 kg"
   },
   "images": [
@@ -5783,7 +5655,6 @@
   "sourceDescription": "",
   "matchedCode": "80368210",
   "specs": {
-   "Kiszerelés": "2 db",
    "Tömeg": "2,430 kg"
   },
   "images": [
@@ -5797,8 +5668,7 @@
   "sourceDescription": "",
   "matchedCode": "80369310",
   "specs": {
-   "Tömeg": "4",
-   "Kiszerelés": "2 db"
+   "Tömeg": "4"
   },
   "images": [
    "/termekkepek/836931-d34-kontener-rudzar-horg-kit-1.webp"
@@ -5824,8 +5694,7 @@
   "sourceDescription": "",
   "matchedCode": "80901200",
   "specs": {
-   "Tömeg": "0,04 kg",
-   "Kiszerelés": "50 db/doboz"
+   "Tömeg": "0,04 kg"
   },
   "images": [
    "/termekkepek/891200-kis-kapaszkodo-1.webp",
@@ -5839,8 +5708,7 @@
   "sourceDescription": "",
   "matchedCode": "80901235",
   "specs": {
-   "Tömeg": "0,17 kg",
-   "Kiszerelés": "25 db/doboz"
+   "Tömeg": "0,17 kg"
   },
   "images": [
    "/termekkepek/891235-nagy-kapaszkodo-1.webp",
@@ -5951,7 +5819,6 @@
   "matchedCode": "80399210",
   "specs": {
    "Tömeg": "0,750 kg",
-   "Kiszerelés": "25 db/doboz",
    "Kivitel": "rozsdamentes acél"
   },
   "images": [
@@ -5967,7 +5834,6 @@
   "matchedCode": "80399210",
   "specs": {
    "Tömeg": "0,750 kg",
-   "Kiszerelés": "25 db/doboz",
    "Kivitel": "rozsdamentes acél"
   },
   "images": [
@@ -7688,8 +7554,7 @@
   "sourceDescription": "",
   "matchedCode": "60780421",
   "specs": {
-   "Tömeg": "2,800kg",
-   "Kiszerelés": "10 db"
+   "Tömeg": "2,800kg"
   },
   "images": [
    "/termekkepek/j600421-horg-42-es-sarvedotarto-cso-750-mm-egyenes-1.webp",
@@ -7703,8 +7568,7 @@
   "sourceDescription": "",
   "matchedCode": "60770422",
   "specs": {
-   "Tömeg": "2,850kg",
-   "Kiszerelés": "10 db"
+   "Tömeg": "2,850kg"
   },
   "images": [
    "/termekkepek/j600422-th-42-es-sarvedotarto-cso-750-mm-hajlitott-1.webp",
@@ -7718,8 +7582,7 @@
   "sourceDescription": "",
   "matchedCode": "60180110",
   "specs": {
-   "Tömeg": "2,850kg",
-   "Kiszerelés": "10 db"
+   "Tömeg": "2,850kg"
   },
   "images": [
    "/termekkepek/j601811-zn-42-es-sarvedotarto-cso-800-mm-1.webp",
@@ -7750,7 +7613,6 @@
   "matchedCode": "60167110",
   "specs": {
    "Tömeg": "0,510kg",
-   "Kiszerelés": "30 db",
    "Kivitel": "horganyzott"
   },
   "images": [
@@ -8169,8 +8031,7 @@
   "sourceDescription": "",
   "matchedCode": "25800100",
   "specs": {
-   "Tömeg": "1,080 kg",
-   "Kiszerelés": "20 db"
+   "Tömeg": "1,080 kg"
   },
   "images": [
    "/termekkepek/m12x140-rugos-felfuggesztes-1.webp",
@@ -8215,8 +8076,7 @@
   "sourceDescription": "",
   "matchedCode": "25850100",
   "specs": {
-   "Tömeg": "1,250 kg",
-   "Kiszerelés": "20 db"
+   "Tömeg": "1,250 kg"
   },
   "images": [
    "/termekkepek/m18x140-rugos-felfuggesztes-1.webp",

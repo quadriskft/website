@@ -16,9 +16,9 @@ from common import ENRICHMENT, IMAGE_DIR  # noqa: E402
 
 SCRIPTS = ["ital_accessori", "woocommerce", "fts_katalogus", "pastore", "caralu", "alusv", "adaico", "sandprofile", "sitemap_kereso", "parlok", "jonesco", "gnc", "pommier", "reall", "cimaplast", "metra", "bodega"]
 
-for name in SCRIPTS:
+for name in SCRIPTS + ["szoveg_eltavolitas"]:
     print(f"\n=== {name} ===", flush=True)
-    sys.argv = [name]
+    sys.argv = [name] + (["FTS"] if name == "szoveg_eltavolitas" else [])
     try:
         runpy.run_path(str(HERE / f"{name}.py"), run_name="__main__")
     except SystemExit:

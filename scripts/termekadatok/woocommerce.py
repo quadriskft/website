@@ -158,7 +158,7 @@ def run(supplier):
             "sourceTitle": html.unescape(hit.get("name", "")),
             "sourceDescription": re.sub(r"\s+", " ", text(hit.get("description"))).strip()[:2000],
             "matchedCode": code,
-            "specs": parse_specs(hit, code),
+            "specs": {k: v for k, v in parse_specs(hit, code).items() if k != "Kiszerelés"},
             "images": images,
         }
         ok += 1

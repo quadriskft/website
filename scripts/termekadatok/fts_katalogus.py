@@ -158,9 +158,6 @@ def block_specs(page, rect, art_rect, code):
     w = re.search(r"(\d+,\d{2,3})\s*kg", text)
     if w:
         specs["Tömeg"] = f"{w.group(1)} kg"
-    pcs = re.search(r"(\d+)\s*Pcs", text, re.I)
-    if pcs:
-        specs["Kiszerelés"] = f"{pcs.group(1)} db/doboz"
     line = page.get_textbox(pymupdf.Rect(art_rect.x0, art_rect.y0 - 1, rect.x1, art_rect.y1 + 1))
     tail = line.split(code, 1)[-1] if code in line else ""
     for pat, hu in FINISH:
