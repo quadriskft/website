@@ -3907,6 +3907,52 @@
    "/termekkepek/260ft-csapott-teteju-sarvedo-3.webp"
   ]
  },
+ "302340-viztartaly-18l": {
+  "source": "Ital Accessori",
+  "matchedCode": "302340",
+  "specs": {
+   "Térfogat": "18 l",
+   "Méret": "330×330×332 mm",
+   "Anyag": "fekete műanyag",
+   "Tömeg": "1,900 kg"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/579/",
+  "sourceTitle": "Ital Accessori katalógus 579. oldal",
+  "images": [
+   "/termekkepek/302340-viztartaly-18l-1.webp",
+   "/termekkepek/302340-viztartaly-18l-2.webp"
+  ]
+ },
+ "302341-viztartaly-18l-szappan-adagolo": {
+  "source": "Ital Accessori",
+  "matchedCode": "RSTIDRO18SN0",
+  "specs": {
+   "Térfogat": "18 l",
+   "Méret": "330×330×332 mm",
+   "Anyag": "fekete műanyag",
+   "Tömeg": "1,900 kg"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/579/",
+  "sourceTitle": "Ital Accessori katalógus 579. oldal",
+  "images": [
+   "/termekkepek/302341-viztartaly-18l-szappan-adagolo-1.webp",
+   "/termekkepek/302341-viztartaly-18l-szappan-adagolo-2.webp"
+  ]
+ },
+ "302357-mgr-alafutasgatlo-konzol-710-mm": {
+  "source": "Ital Accessori",
+  "matchedCode": "123057",
+  "specs": {
+   "Méret (L×B×H)": "46×136×710 mm",
+   "Felület": "Magnelis",
+   "Tömeg": "2,073 kg"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/614/",
+  "sourceTitle": "Ital Accessori katalógus 614. oldal",
+  "images": [
+   "/termekkepek/302357-mgr-alafutasgatlo-konzol-710-mm-1.webp"
+  ]
+ },
  "303005-alafutasgatlo-konzol-700-mm-uj": {
   "source": "ADAICO",
   "sourceUrl": "https://www.adaico.com/en/1-18020028.html",
@@ -3922,6 +3968,23 @@
   "images": [
    "/termekkepek/303005-alafutasgatlo-konzol-700-mm-uj-1.webp",
    "/termekkepek/303005-alafutasgatlo-konzol-700-mm-uj-2.webp"
+  ]
+ },
+ "3052-munkahenger-11t-05x1230x152": {
+  "source": "Ital Accessori",
+  "matchedCode": "3052S",
+  "specs": {
+   "Fokozatok": "5",
+   "Löket": "1230 mm",
+   "Rögzítés": "gömbfej (S típus)",
+   "Max. üzemi nyomás": "200 bar",
+   "Olajmennyiség": "9 l",
+   "Tömeg": "46 kg"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/350/",
+  "sourceTitle": "Ital Accessori katalógus 350. oldal",
+  "images": [
+   "/termekkepek/3052-munkahenger-11t-05x1230x152-1.webp"
   ]
  },
  "307155-alafutasgatlo-konzol-572-mm": {
@@ -4161,15 +4224,54 @@
  },
  "3520902-billencs-koztes-rakonca-400-mm-zseb": {
   "source": "Ital Accessori",
-  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/324/",
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/320/",
   "sourceTitle": "Kapsa Socket",
   "matchedCode": "320027",
   "specs": {
    "Anyag": "oceľ/acél",
    "Mértékegység": "db",
    "H (mm)": "35",
-   "Tömeg": "1,660 kg"
-  }
+   "Tömeg": "1,660 kg",
+   "Magasság": "405 mm",
+   "Vastagság": "36 mm",
+   "Kivitel": "középső, kihúzható, zsebbel"
+  },
+  "images": [
+   "/termekkepek/3520902-billencs-koztes-rakonca-400-mm-zseb-1.webp",
+   "/termekkepek/3520902-billencs-koztes-rakonca-400-mm-zseb-2.webp"
+  ]
+ },
+ "3521695-billencs-elso-rakonca-400-mm-j": {
+  "source": "Ital Accessori",
+  "matchedCode": "321695",
+  "specs": {
+   "Magasság": "400 mm",
+   "Oldalfal": "25 mm",
+   "Vastagság": "36 mm",
+   "Kivitel": "első, jobb"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/318/",
+  "sourceTitle": "Ital Accessori katalógus 318. oldal",
+  "images": [
+   "/termekkepek/3521695-billencs-elso-rakonca-400-mm-j-1.webp",
+   "/termekkepek/3521695-billencs-elso-rakonca-400-mm-j-2.webp"
+  ]
+ },
+ "3521696-billencs-elso-rakonca-400-mm-b": {
+  "source": "Ital Accessori",
+  "matchedCode": "321696",
+  "specs": {
+   "Magasság": "400 mm",
+   "Oldalfal": "25 mm",
+   "Vastagság": "36 mm",
+   "Kivitel": "első, bal"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/318/",
+  "sourceTitle": "Ital Accessori katalógus 318. oldal",
+  "images": [
+   "/termekkepek/3521696-billencs-elso-rakonca-400-mm-b-1.webp",
+   "/termekkepek/3521696-billencs-elso-rakonca-400-mm-b-2.webp"
+  ]
  },
  "3521698-billencs-hatso-rakonca-400-mm-j-zseb": {
   "source": "Ital Accessori",
@@ -4179,8 +4281,16 @@
   "specs": {
    "Anyag": "oceľ/acél",
    "Mértékegység": "db",
-   "Tömeg": "0,640 kg"
-  }
+   "Tömeg": "0,640 kg",
+   "Magasság": "400 mm",
+   "Oldalfal": "25 mm",
+   "Vastagság": "36 mm",
+   "Kivitel": "hátsó, jobb, zsebbel"
+  },
+  "images": [
+   "/termekkepek/3521698-billencs-hatso-rakonca-400-mm-j-zseb-1.webp",
+   "/termekkepek/3521698-billencs-hatso-rakonca-400-mm-j-zseb-2.webp"
+  ]
  },
  "3521699-billencs-hatso-rakonca-400-mm-b-zseb": {
   "source": "Ital Accessori",
@@ -4190,32 +4300,68 @@
   "specs": {
    "Anyag": "oceľ/acél",
    "Mértékegység": "db",
-   "Tömeg": "0,640 kg"
-  }
+   "Tömeg": "0,640 kg",
+   "Magasság": "400 mm",
+   "Oldalfal": "25 mm",
+   "Vastagság": "36 mm",
+   "Kivitel": "hátsó, bal, zsebbel"
+  },
+  "images": [
+   "/termekkepek/3521699-billencs-hatso-rakonca-400-mm-b-zseb-1.webp",
+   "/termekkepek/3521699-billencs-hatso-rakonca-400-mm-b-zseb-2.webp"
+  ]
+ },
+ "352190-billencs-elso-rakonca-400-mm-j-b": {
+  "source": "Ital Accessori",
+  "matchedCode": "321900, 323900",
+  "specs": {
+   "Magasság": "405 mm",
+   "Vastagság": "36 mm",
+   "Kivitel": "első, kihúzható"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/320/",
+  "sourceTitle": "Ital Accessori katalógus 320. oldal",
+  "images": [
+   "/termekkepek/352190-billencs-elso-rakonca-400-mm-j-b-1.webp"
+  ]
  },
  "3521903-billencs-hatso-rakonca-400-mm-j-zseb": {
   "source": "Ital Accessori",
-  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/324/",
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/320/",
   "sourceTitle": "Kapsa Socket",
   "matchedCode": "320027",
   "specs": {
    "Anyag": "oceľ/acél",
    "Mértékegység": "db",
    "H (mm)": "35",
-   "Tömeg": "1,660 kg"
-  }
+   "Tömeg": "1,660 kg",
+   "Magasság": "405 mm",
+   "Vastagság": "36 mm",
+   "Kivitel": "hátsó, jobb, kihúzható, zsebbel"
+  },
+  "images": [
+   "/termekkepek/3521903-billencs-hatso-rakonca-400-mm-j-zseb-1.webp",
+   "/termekkepek/3521903-billencs-hatso-rakonca-400-mm-j-zseb-2.webp"
+  ]
  },
  "3521904-billencs-hatso-rakonca-400-mm-b-zseb": {
   "source": "Ital Accessori",
-  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/324/",
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/320/",
   "sourceTitle": "Kapsa Socket",
   "matchedCode": "320027",
   "specs": {
    "Anyag": "oceľ/acél",
    "Mértékegység": "db",
    "H (mm)": "35",
-   "Tömeg": "1,660 kg"
-  }
+   "Tömeg": "1,660 kg",
+   "Magasság": "405 mm",
+   "Vastagság": "36 mm",
+   "Kivitel": "hátsó, bal, kihúzható, zsebbel"
+  },
+  "images": [
+   "/termekkepek/3521904-billencs-hatso-rakonca-400-mm-b-zseb-1.webp",
+   "/termekkepek/3521904-billencs-hatso-rakonca-400-mm-b-zseb-2.webp"
+  ]
  },
  "352202-egymasbazarodo-zar-ellendarab": {
   "source": "FTS",
@@ -5132,6 +5278,26 @@
   "images": [
    "/termekkepek/502210-2-fokos-letra-horg-1.webp",
    "/termekkepek/502210-2-fokos-letra-horg-2.webp"
+  ]
+ },
+ "502287-3-fokos-letra-thorg-steges-tk": {
+  "source": "Ital Accessori",
+  "matchedCode": "228765",
+  "specs": {
+   "Fokok száma": "3",
+   "L1": "1366 mm",
+   "L2": "750 mm",
+   "B": "420 mm",
+   "H": "602 mm",
+   "P": "960 mm",
+   "Felület": "tűzihorganyzott",
+   "Tömeg": "12,250 kg"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/631/",
+  "sourceTitle": "Ital Accessori katalógus 631. oldal",
+  "images": [
+   "/termekkepek/502287-3-fokos-letra-thorg-steges-tk-1.webp",
+   "/termekkepek/502287-3-fokos-letra-thorg-steges-tk-2.webp"
   ]
  },
  "502500-szimpla-gorgos-gumiutkozo-d70-85": {
@@ -6553,6 +6719,16 @@
    "/termekkepek/729143-sinrogzito-lancal-huspalyasinhez-rm-4.webp"
   ]
  },
+ "770065-n-force-takaro-doboz": {
+  "source": "Ital Accessori",
+  "matchedCode": "770065",
+  "specs": {},
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/450/",
+  "sourceTitle": "Ital Accessori katalógus 450. oldal",
+  "images": [
+   "/termekkepek/770065-n-force-takaro-doboz-1.webp"
+  ]
+ },
  "770372-bil-150ce-vezerlo-220bar": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/428/",
@@ -6567,6 +6743,34 @@
   },
   "images": [
    "/termekkepek/770372-bil-150ce-vezerlo-220bar-1.webp"
+  ]
+ },
+ "771094-n-force-bil-vezerlo": {
+  "source": "Ital Accessori",
+  "matchedCode": "771094",
+  "specs": {
+   "Működtetés": "pneumatikus, kézi",
+   "Kivitel": "automatikus erőleadó (PTO) lekapcsolással"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/449/",
+  "sourceTitle": "Ital Accessori katalógus 449. oldal",
+  "images": [
+   "/termekkepek/771094-n-force-bil-vezerlo-1.webp",
+   "/termekkepek/771094-n-force-bil-vezerlo-2.webp"
+  ]
+ },
+ "771101-n-force-bil-vezerlo-nem-kapcsolos": {
+  "source": "Ital Accessori",
+  "matchedCode": "771101",
+  "specs": {
+   "Működtetés": "pneumatikus, kézi",
+   "Kivitel": "erőleadó (PTO) vezérlés nélkül"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/449/",
+  "sourceTitle": "Ital Accessori katalógus 449. oldal",
+  "images": [
+   "/termekkepek/771101-n-force-bil-vezerlo-nem-kapcsolos-1.webp",
+   "/termekkepek/771101-n-force-bil-vezerlo-nem-kapcsolos-2.webp"
   ]
  },
  "806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm": {
@@ -7052,6 +7256,19 @@
    "/termekkepek/837815-csapos-ajto-rogzito-kit-51-5-mm-2.webp"
   ]
  },
+ "854043-rugos-ajtorogzito-elox-alu": {
+  "source": "Ital Accessori",
+  "matchedCode": "854043",
+  "specs": {
+   "Anyag": "alumínium",
+   "Tömeg": "1,890 kg"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/168/",
+  "sourceTitle": "Ital Accessori katalógus 168. oldal",
+  "images": [
+   "/termekkepek/854043-rugos-ajtorogzito-elox-alu-1.webp"
+  ]
+ },
  "891200-kis-kapaszkodo": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/80901200-maniglia-di-risalita-in-poliuretano-nero-tipo-panda/",
@@ -7219,6 +7436,20 @@
   },
   "images": [
    "/termekkepek/90-5000-e-tetoablak-24v-53x530-1.webp"
+  ]
+ },
+ "990160-reflex-tabla-565x140x0-8-ece70-01": {
+  "source": "Ital Accessori",
+  "matchedCode": "990160",
+  "specs": {
+   "Anyag": "alumínium, 0,8 mm",
+   "Szabvány": "ECE 70-01",
+   "Kiszerelés": "2 tábla"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/683/",
+  "sourceTitle": "Ital Accessori katalógus 683. oldal",
+  "images": [
+   "/termekkepek/990160-reflex-tabla-565x140x0-8-ece70-01-1.webp"
   ]
  },
  "a1-013-elkeder-kicsi-fekete-9-5x6-5mm": {
@@ -7457,6 +7688,54 @@
   },
   "images": [
    "/termekkepek/a2-554-nagygobos-keder-22-6-1.webp"
+  ]
+ },
+ "acel-oldalfal-2-mm": {
+  "source": "Ital Accessori",
+  "matchedCode": "HVAKKT400",
+  "specs": {
+   "Típus": "HVAKKT 400",
+   "Magasság": "400 mm",
+   "Falvastagság": "2,0 mm",
+   "Tömeg": "12,0 kg/fm"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/205/",
+  "sourceTitle": "Ital Accessori katalógus 205. oldal",
+  "description": "Acél oldalfal profil belső tömítőléccel, billenős és platós felépítményekhez.",
+  "images": [
+   "/termekkepek/acel-oldalfal-2-mm-1.webp"
+  ]
+ },
+ "acel-oldalfal-2-mm-2": {
+  "source": "Ital Accessori",
+  "matchedCode": "HVAKTT800",
+  "specs": {
+   "Típus": "HVAKTT 800",
+   "Magasság": "800 mm",
+   "Falvastagság": "2,0 mm",
+   "Tömeg": "19,0 kg/fm"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/205/",
+  "sourceTitle": "Ital Accessori katalógus 205. oldal",
+  "description": "Acél oldalfal profil belső tömítőléccel, billenős és platós felépítményekhez.",
+  "images": [
+   "/termekkepek/acel-oldalfal-2-mm-2-1.webp"
+  ]
+ },
+ "acel-oldalfal-2-mm-3": {
+  "source": "Ital Accessori",
+  "matchedCode": "HVTT800",
+  "specs": {
+   "Típus": "HVTT 800",
+   "Magasság": "800 mm",
+   "Falvastagság": "2,0 mm",
+   "Tömeg": "18,3 kg/fm"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/204/",
+  "sourceTitle": "Ital Accessori katalógus 204. oldal",
+  "description": "Acél oldalfal profil billenős és platós felépítmények első/hátsó és oldalfalához.",
+  "images": [
+   "/termekkepek/acel-oldalfal-2-mm-3-1.webp"
   ]
  },
  "alu-elso-takaro-lemez": {
@@ -8687,6 +8966,70 @@
    "/termekkepek/harom-allasos-kapcsolo-ventilatorhoz-1.webp"
   ]
  },
+ "hv400-acel-oldalfal-2-mm": {
+  "source": "Ital Accessori",
+  "matchedCode": "114050",
+  "specs": {
+   "Típus": "HV 400",
+   "Magasság": "400 mm",
+   "Falvastagság": "2,0 mm",
+   "Tömeg": "10,9 kg/fm"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/204/",
+  "sourceTitle": "Ital Accessori katalógus 204. oldal",
+  "description": "Acél oldalfal profil billenős és platós felépítmények első/hátsó és oldalfalához.",
+  "images": [
+   "/termekkepek/hv400-acel-oldalfal-2-mm-1.webp"
+  ]
+ },
+ "hv500-acel-oldalfal-2-mm": {
+  "source": "Ital Accessori",
+  "matchedCode": "115050",
+  "specs": {
+   "Típus": "HV 500",
+   "Magasság": "500 mm",
+   "Falvastagság": "2,0 mm",
+   "Tömeg": "12,8 kg/fm"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/204/",
+  "sourceTitle": "Ital Accessori katalógus 204. oldal",
+  "description": "Acél oldalfal profil billenős és platós felépítmények első/hátsó és oldalfalához.",
+  "images": [
+   "/termekkepek/hv500-acel-oldalfal-2-mm-1.webp"
+  ]
+ },
+ "hv600-acel-oldalfal-2-mm": {
+  "source": "Ital Accessori",
+  "matchedCode": "116050",
+  "specs": {
+   "Típus": "HV 600",
+   "Magasság": "600 mm",
+   "Falvastagság": "2,0 mm",
+   "Tömeg": "14,3 kg/fm"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/204/",
+  "sourceTitle": "Ital Accessori katalógus 204. oldal",
+  "description": "Acél oldalfal profil billenős és platós felépítmények első/hátsó és oldalfalához.",
+  "images": [
+   "/termekkepek/hv600-acel-oldalfal-2-mm-1.webp"
+  ]
+ },
+ "hvak600-acel-oldalfal-2-mm": {
+  "source": "Ital Accessori",
+  "matchedCode": "116260",
+  "specs": {
+   "Típus": "HVAK 600",
+   "Magasság": "600 mm",
+   "Falvastagság": "2,0 mm",
+   "Tömeg": "15,2 kg/fm"
+  },
+  "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/205/",
+  "sourceTitle": "Ital Accessori katalógus 205. oldal",
+  "description": "Acél oldalfal profil belső tömítőléccel, billenős és platós felépítményekhez.",
+  "images": [
+   "/termekkepek/hvak600-acel-oldalfal-2-mm-1.webp"
+  ]
+ },
  "j09-ives-sarvedo-270-1280-410": {
   "source": "JONESCO",
   "sourceUrl": "https://jonesco-plastics.com/products/commercial-vehicle/mudguards/single-arch-highgard",
@@ -9242,10 +9585,13 @@
   "sourceTitle": "Zásterky čierne pre nákladné vozidlá Black mudflaps for trucks",
   "matchedCode": "150256",
   "specs": {
-   "Anyag": "PVC",
+   "Anyag": "PVC, fekete",
    "Mértékegység": "pár/pair",
-   "Méret": "450 x 350"
-  }
+   "Méret": "450×350 mm"
+  },
+  "images": [
+   "/termekkepek/j4535-sarfogo-lap-450x350-mm-felfogatas-1.webp"
+  ]
  },
  "j45a-650-ives-sarvedo": {
   "source": "JONESCO",
@@ -9892,10 +10238,13 @@
   "sourceTitle": "Zásterky čierne pre nákladné vozidlá Black mudflaps for trucks",
   "matchedCode": "150266",
   "specs": {
-   "Anyag": "PVC",
+   "Anyag": "PVC, fekete",
    "Mértékegység": "pár/pair",
-   "Méret": "530 x 370"
-  }
+   "Méret": "530×370 mm"
+  },
+  "images": [
+   "/termekkepek/j5337-sarfogo-lap-530x370-1.webp"
+  ]
  },
  "j5942550p-szerszamos-lada-tarto-konzol": {
   "source": "PARLOK",
@@ -9990,10 +10339,13 @@
   "sourceTitle": "Zásterky čierne lisované pre nákladné vozidlá Black mudflaps for trucks",
   "matchedCode": "150226",
   "specs": {
-   "Anyag": "PVC",
+   "Anyag": "PVC, fekete",
    "Mértékegység": "pár/pair",
-   "Méret": "650 x 300"
-  }
+   "Méret": "650×300 mm"
+  },
+  "images": [
+   "/termekkepek/j6530-sarfogo-lap-650x300-felfogatas-1.webp"
+  ]
  },
  "j6540-sarfogo-lap-650x400": {
   "source": "JONESCO",

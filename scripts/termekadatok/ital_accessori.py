@@ -183,6 +183,77 @@ def render(page, rect, pad=1.5):
     return Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
 
 
+# Kézzel ellenőrzött képkivágások (oldal index, téglalap pontban) azokhoz a tételekhez, amelyeknél a
+# táblázat–kép automatikus párosítás nem működik (összetett oldalelrendezés, több rajz egymás mellett).
+# A téglalapok csak az adott termék rajzát/fotóját fogják közre – szomszédos termék és felirat nélkül.
+_HV = "Acél oldalfal profil billenős és platós felépítmények első/hátsó és oldalfalához."
+MANUAL = {
+    "hv400-acel-oldalfal-2-mm": ([(203, (193, 560, 252, 700))], {"Típus": "HV 400", "Magasság": "400 mm", "Falvastagság": "2,0 mm", "Tömeg": "10,9 kg/fm"}, _HV),
+    "hv500-acel-oldalfal-2-mm": ([(203, (330, 561, 398, 700))], {"Típus": "HV 500", "Magasság": "500 mm", "Falvastagság": "2,0 mm", "Tömeg": "12,8 kg/fm"}, _HV),
+    "hv600-acel-oldalfal-2-mm": ([(203, (399, 540, 472, 700))], {"Típus": "HV 600", "Magasság": "600 mm", "Falvastagság": "2,0 mm", "Tömeg": "14,3 kg/fm"}, _HV),
+    "acel-oldalfal-2-mm-3": ([(203, (476, 492, 531, 700))], {"Típus": "HVTT 800", "Magasság": "800 mm", "Falvastagság": "2,0 mm", "Tömeg": "18,3 kg/fm"}, _HV),
+    "acel-oldalfal-2-mm": ([(204, (238, 522, 287, 692))], {"Típus": "HVAKKT 400", "Magasság": "400 mm", "Falvastagság": "2,0 mm", "Tömeg": "12,0 kg/fm"},
+                           "Acél oldalfal profil belső tömítőléccel, billenős és platós felépítményekhez."),
+    "hvak600-acel-oldalfal-2-mm": ([(204, (368, 514, 432, 692))], {"Típus": "HVAK 600", "Magasság": "600 mm", "Falvastagság": "2,0 mm", "Tömeg": "15,2 kg/fm"},
+                                   "Acél oldalfal profil belső tömítőléccel, billenős és platós felépítményekhez."),
+    "acel-oldalfal-2-mm-2": ([(204, (498, 458, 566, 692))], {"Típus": "HVAKTT 800", "Magasság": "800 mm", "Falvastagság": "2,0 mm", "Tömeg": "19,0 kg/fm"},
+                             "Acél oldalfal profil belső tömítőléccel, billenős és platós felépítményekhez."),
+    "854043-rugos-ajtorogzito-elox-alu": ([(167, (38, 420, 268, 642))], {"Anyag": "alumínium", "Tömeg": "1,890 kg"}, ""),
+    "302357-mgr-alafutasgatlo-konzol-710-mm": ([(613, (80, 300, 240, 478))], {"Méret (L×B×H)": "46×136×710 mm", "Felület": "Magnelis", "Tömeg": "2,073 kg"}, ""),
+    "302340-viztartaly-18l": ([(578, (398, 98, 508, 198)), (578, (425, 200, 562, 288))],
+                              {"Térfogat": "18 l", "Méret": "330×330×332 mm", "Anyag": "fekete műanyag", "Tömeg": "1,900 kg"}, ""),
+    "302341-viztartaly-18l-szappan-adagolo": ([(578, (398, 98, 508, 198)), (578, (425, 200, 562, 288))],
+                                              {"Térfogat": "18 l", "Méret": "330×330×332 mm", "Anyag": "fekete műanyag", "Tömeg": "1,900 kg"}, ""),
+    "502287-3-fokos-letra-thorg-steges-tk": ([(630, (345, 478, 570, 592)), (630, (350, 625, 572, 758))],
+                                             {"Fokok száma": "3", "L1": "1366 mm", "L2": "750 mm", "B": "420 mm", "H": "602 mm", "P": "960 mm",
+                                              "Felület": "tűzihorganyzott", "Tömeg": "12,250 kg"}, ""),
+    "j4535-sarfogo-lap-450x350-mm-felfogatas": ([(528, (152, 278, 250, 352))], {"Méret": "450×350 mm", "Anyag": "PVC, fekete"}, ""),
+    "j5337-sarfogo-lap-530x370": ([(528, (390, 275, 498, 352))], {"Méret": "530×370 mm", "Anyag": "PVC, fekete"}, ""),
+    "j6530-sarfogo-lap-650x300-felfogatas": ([(528, (380, 562, 507, 628))], {"Méret": "650×300 mm", "Anyag": "PVC, fekete"}, ""),
+    "990160-reflex-tabla-565x140x0-8-ece70-01": ([(682, (345, 198, 562, 232))], {"Anyag": "alumínium, 0,8 mm", "Szabvány": "ECE 70-01", "Kiszerelés": "2 tábla"}, ""),
+    "3052-munkahenger-11t-05x1230x152": ([(349, (262, 168, 425, 440))],
+                                         {"Fokozatok": "5", "Löket": "1230 mm", "Rögzítés": "gömbfej (S típus)", "Max. üzemi nyomás": "200 bar",
+                                          "Olajmennyiség": "9 l", "Tömeg": "46 kg"}, ""),
+    "770065-n-force-takaro-doboz": ([(449, (150, 440, 262, 545))], {}, ""),
+    "771094-n-force-bil-vezerlo": ([(448, (75, 290, 190, 505)), (448, (205, 110, 440, 250))],
+                                   {"Működtetés": "pneumatikus, kézi", "Kivitel": "automatikus erőleadó (PTO) lekapcsolással"}, ""),
+    "771101-n-force-bil-vezerlo-nem-kapcsolos": ([(448, (75, 290, 190, 505)), (448, (205, 110, 440, 250))],
+                                                 {"Működtetés": "pneumatikus, kézi", "Kivitel": "erőleadó (PTO) vezérlés nélkül"}, ""),
+    "3521695-billencs-elso-rakonca-400-mm-j": ([(317, (190, 195, 262, 345)), (317, (75, 165, 150, 320))],
+                                              {"Magasság": "400 mm", "Oldalfal": "25 mm", "Vastagság": "36 mm", "Kivitel": "első, jobb"}, ""),
+    "3521696-billencs-elso-rakonca-400-mm-b": ([(317, (190, 195, 262, 345)), (317, (75, 165, 150, 320))],
+                                              {"Magasság": "400 mm", "Oldalfal": "25 mm", "Vastagság": "36 mm", "Kivitel": "első, bal"}, ""),
+    "3521698-billencs-hatso-rakonca-400-mm-j-zseb": ([(317, (283, 180, 362, 345)), (317, (100, 595, 215, 705))],
+                                                     {"Magasság": "400 mm", "Oldalfal": "25 mm", "Vastagság": "36 mm", "Kivitel": "hátsó, jobb, zsebbel"}, ""),
+    "3521699-billencs-hatso-rakonca-400-mm-b-zseb": ([(317, (283, 180, 362, 345)), (317, (100, 595, 215, 705))],
+                                                     {"Magasság": "400 mm", "Oldalfal": "25 mm", "Vastagság": "36 mm", "Kivitel": "hátsó, bal, zsebbel"}, ""),
+    "352190-billencs-elso-rakonca-400-mm-j-b": ([(319, (48, 568, 106, 738))], {"Magasság": "405 mm", "Vastagság": "36 mm", "Kivitel": "első, kihúzható"}, ""),
+    "3520902-billencs-koztes-rakonca-400-mm-zseb": ([(319, (104, 568, 164, 738)), (319, (118, 178, 238, 318))],
+                                                    {"Magasság": "405 mm", "Vastagság": "36 mm", "Kivitel": "középső, kihúzható, zsebbel"}, ""),
+    "3521903-billencs-hatso-rakonca-400-mm-j-zseb": ([(319, (192, 568, 246, 738)), (319, (118, 178, 238, 318))],
+                                                     {"Magasság": "405 mm", "Vastagság": "36 mm", "Kivitel": "hátsó, jobb, kihúzható, zsebbel"}, ""),
+    "3521904-billencs-hatso-rakonca-400-mm-b-zseb": ([(319, (192, 568, 246, 738)), (319, (118, 178, 238, 318))],
+                                                     {"Magasság": "405 mm", "Vastagság": "36 mm", "Kivitel": "hátsó, bal, kihúzható, zsebbel"}, ""),
+}
+
+
+def manual_image(page, rect):
+    import numpy as np
+    pix = page.get_pixmap(clip=pymupdf.Rect(rect), dpi=220, alpha=False)
+    img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+    # a kivágásba belógó szöveg (pl. a leírás sorvége) eltávolítása – a méretszámok maradnak
+    from PIL import ImageDraw
+    z, r0 = 220 / 72, pymupdf.Rect(rect)
+    draw = ImageDraw.Draw(img)
+    for w in [w for w in page.get_text("words") if pymupdf.Rect(w[:4]).intersects(r0)]:
+        if len(re.findall(r"[A-Za-zÁ-ž]", w[4])) >= 4:
+            draw.rectangle([(w[0] - r0.x0 - 1) * z, (w[1] - r0.y0 - 1) * z, (w[2] - r0.x0 + 4) * z, (w[3] - r0.y0 + 1) * z], fill="white")
+    a = np.asarray(img.convert("L")) < 235
+    ys, xs = np.where(a)
+    pad = 12
+    return img.crop((max(xs.min() - pad, 0), max(ys.min() - pad, 0), min(xs.max() + pad, img.width), min(ys.max() + pad, img.height)))
+
+
 def main():
     doc = open_pdf()
     products = load_products(SUPPLIER)
@@ -233,6 +304,22 @@ def main():
             entry["images"] = [save_image(extract(page, c), p["slug"])]
         enrichment[p["slug"]] = entry
         ok += 1
+
+    for p in products:
+        if p["slug"] not in MANUAL:
+            continue
+        boxes, specs, desc = MANUAL[p["slug"]]
+        entry = enrichment.get(p["slug"]) or {"source": SUPPLIER, "matchedCode": p["supplierCode"], "specs": {}}
+        entry["sourceUrl"] = CATALOG_URL.format(page=boxes[0][0] + 1)
+        entry.setdefault("sourceTitle", f"Ital Accessori katalógus {boxes[0][0] + 1}. oldal")
+        entry["specs"] = {**entry.get("specs", {}), **specs}
+        if desc:
+            entry["description"] = desc
+        entry["images"] = [save_image(manual_image(doc[pg], r), p["slug"], n) for n, (pg, r) in enumerate(boxes, 1)]
+        if p["slug"] not in enrichment:
+            ok += 1
+        enrichment[p["slug"]] = entry
+        found.setdefault(p["slug"], {})
 
     update_enrichment(enrichment, SUPPLIER)
     missing = [p for p in products if p["slug"] not in found]
