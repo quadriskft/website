@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import ProductVisual from '../../components/ProductVisual.astro';
-import { products, getGroup, getCategory, productsIn, publicProduct } from '../../lib/catalog.js';
+import { products, getGroup, getCategory, productsIn, publicProduct, isProfile } from '../../lib/catalog.js';
 import { SITE } from '../../lib/site.js';
 
 export function getStaticPaths() {
@@ -17,6 +17,11 @@ const specs = Object.entries(product.specs ?? {});
 const gallery = product.images?.slice(1) ?? [];
 const related = productsIn(product.group, product.category).filter((p) => p.slug !== product.slug).slice(0, 8);
 const showCategory = category && category.name !== group.name;
+const profile = isProfile(product);
+// gyári szálhossz (ha ismert) – tájékoztató a méretsorok mellé
+const stockLength = profile
+  ? (specs.find(([k]) => /szálhossz|gyártási hossz|^hossz/i.test(k))?.[1] ?? product.name.match(/(\d[\d ]{2,5})\s*mm\b(?!.*mm)/)?.[1])
+  : null;
 const description = product.description || `${product.name}${product.code ? ` (cikkszám: ${product.code})` : ''} – ${group.name}. Kérjen ajánlatot online a ${SITE.name}-tól.`;
 ---
 <Base title={product.code ? `${product.name} (${product.code})` : product.name} description={description}>
@@ -46,19 +51,37 @@ const description = product.description || `${product.name}${product.code ? ` (c
           </p>
         )}
 
-        <div class="order card">
-          <div class="order-row">
-            <div class="qty" data-qty>
-              <button type="button" data-step="-1" aria-label="Kevesebb"><Icon name="Minus" /></button>
-              <input type="number" id="qty" min="1" max="99999" value="1" inputmode="numeric" aria-label="Mennyiség" />
-              <button type="button" data-step="1" aria-label="Több"><Icon name="Plus" /></button>
+        {profile ? (
+          <div class="order card cut-order" id="meretre" data-cut-order data-product={JSON.stringify(publicProduct(product))}>
+            <h2 class="cut-title"><Icon name="Ruler" size={20} /> Kért méretek</h2>
+            <p class="muted small">Adja meg, milyen hosszúságú szálakból hány darabra van szüksége – méretre vágást is vállalunk.{stockLength && <> Gyári szálhossz: <strong>{stockLength}{/\d$/.test(String(stockLength)) ? ' mm' : ''}</strong>.</>}</p>
+            <div class="cut-head" aria-hidden="true"><span>Hossz [mm]</span><span>Darab</span><span></span></div>
+            <div class="cut-rows" data-cut-rows></div>
+            <button type="button" class="add-row" data-add-row><Icon name="Plus" size={18} /> Másik méret hozzáadása</button>
+            <label class="cut-note-label" for="cut-note">Megjegyzés</label>
+            <textarea id="cut-note" class="input cut-note" rows="2" maxlength="300" placeholder="pl. felületkezelés, vágási tűrés, szállítási határidő…" data-cut-note></textarea>
+            <p class="cut-error" data-cut-error hidden>Adjon meg legalább egy hosszt (mm).</p>
+            <div class="cut-actions">
+              <span class="muted small" data-cut-total></span>
+              <button type="button" class="btn btn-primary" data-add-cuts><Icon name="ClipboardList" /> <span>Ajánlatkérőbe</span></button>
             </div>
-            <button type="button" class="btn btn-primary add-main" data-add-to-quote={JSON.stringify(publicProduct(product))} data-qty-from="#qty">
-              <Icon name="ClipboardList" /> <span class="label">Ajánlatkérőbe</span>
-            </button>
+            <p class="muted small">Árat nem tüntetünk fel – személyre szabott ajánlatot küldünk mennyiség, méret és szállítási igény alapján.</p>
           </div>
-          <p class="muted small">Árat nem tüntetünk fel – tegye az ajánlatkérőbe, és személyre szabott ajánlatot küldünk mennyiség és szállítási igény alapján.</p>
-        </div>
+        ) : (
+          <div class="order card">
+            <div class="order-row">
+              <div class="qty" data-qty>
+                <button type="button" data-step="-1" aria-label="Kevesebb"><Icon name="Minus" /></button>
+                <input type="number" id="qty" min="1" max="99999" value="1" inputmode="numeric" aria-label="Mennyiség" />
+                <button type="button" data-step="1" aria-label="Több"><Icon name="Plus" /></button>
+              </div>
+              <button type="button" class="btn btn-primary add-main" data-add-to-quote={JSON.stringify(publicProduct(product))} data-qty-from="#qty">
+                <Icon name="ClipboardList" /> <span class="label">Ajánlatkérőbe</span>
+              </button>
+            </div>
+            <p class="muted small">Árat nem tüntetünk fel – tegye az ajánlatkérőbe, és személyre szabott ajánlatot küldünk mennyiség és szállítási igény alapján.</p>
+          </div>
+        )}
 
         <ul class="assurances">
           <li><Icon name="BadgeCheck" size={18} /> Szakmai segítség a kiválasztáshoz</li>
@@ -112,15 +135,83 @@ const description = product.description || `${product.name}${product.code ? ` (c
 </Base>
 
 <script>
-  import { clampQty } from '../../scripts/quote.js';
+  import { quote, clampQty, clampLen, normalizeCuts, totalPcs } from '../../scripts/quote.js';
 
   const input = document.querySelector('#qty');
-  document.querySelectorAll('[data-qty] [data-step]').forEach((btn) =>
-    btn.addEventListener('click', () => {
-      input.value = String(clampQty(Number(input.value) + Number(btn.dataset.step)));
-    }),
-  );
-  input.addEventListener('change', () => (input.value = String(clampQty(input.value))));
+  if (input) {
+    document.querySelectorAll('[data-qty] [data-step]').forEach((btn) =>
+      btn.addEventListener('click', () => {
+        input.value = String(clampQty(Number(input.value) + Number(btn.dataset.step)));
+      }),
+    );
+    input.addEventListener('change', () => (input.value = String(clampQty(input.value))));
+  }
+
+  // Profilok: hossz × darab méretsorok (mint egy vágási lista), + gombbal új sor
+  const order = document.querySelector('[data-cut-order]');
+  if (order) {
+    const product = JSON.parse(order.dataset.product);
+    const rows = order.querySelector('[data-cut-rows]');
+    const note = order.querySelector('[data-cut-note]');
+    const totalEl = order.querySelector('[data-cut-total]');
+    const errorEl = order.querySelector('[data-cut-error]');
+    const x = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>';
+    const addRow = (len = '', pcs = 1, focus = false) => {
+      const row = document.createElement('div');
+      row.className = 'cut-row';
+      row.innerHTML = `<input class="input" type="number" min="1" max="30000" step="1" inputmode="numeric" placeholder="pl. 6000" aria-label="Hossz (mm)" data-len value="${len}">
+        <input class="input" type="number" min="1" max="99999" step="1" inputmode="numeric" aria-label="Darab" data-pcs value="${pcs}">
+        <button type="button" class="row-remove" aria-label="Sor törlése" data-remove-row>${x}</button>`;
+      rows.append(row);
+      if (focus) row.querySelector('[data-len]').focus();
+      update();
+    };
+    const read = () => [...rows.querySelectorAll('.cut-row')].map((r) => ({ len: r.querySelector('[data-len]').value, pcs: r.querySelector('[data-pcs]').value }));
+    const update = () => {
+      const cuts = normalizeCuts(read());
+      const m = cuts.reduce((n, c) => n + c.len * c.pcs, 0) / 1000;
+      totalEl.textContent = cuts.length ? `Összesen ${totalPcs(cuts)} db, ${m.toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm` : '';
+      rows.querySelectorAll('[data-remove-row]').forEach((b) => (b.hidden = rows.children.length < 2));
+    };
+    order.querySelector('[data-add-row]').addEventListener('click', () => addRow('', 1, true));
+    rows.addEventListener('input', () => {
+      errorEl.hidden = true;
+      update();
+    });
+    rows.addEventListener('change', (e) => {
+      if (e.target.matches('[data-pcs]')) e.target.value = String(clampQty(e.target.value));
+      if (e.target.matches('[data-len]') && e.target.value) e.target.value = String(clampLen(e.target.value) || '');
+      update();
+    });
+    rows.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-remove-row]');
+      if (btn && rows.children.length > 1) {
+        btn.closest('.cut-row').remove();
+        update();
+      }
+    });
+    rows.addEventListener('keydown', (e) => {
+      // Enter az utolsó sorban: új sor
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        if (e.target.closest('.cut-row') === rows.lastElementChild) addRow('', 1, true);
+      }
+    });
+    order.querySelector('[data-add-cuts]').addEventListener('click', () => {
+      const cuts = normalizeCuts(read());
+      if (!cuts.length) {
+        errorEl.hidden = false;
+        rows.querySelector('[data-len]')?.focus();
+        return;
+      }
+      quote.addCuts(product, cuts, note.value);
+      rows.innerHTML = '';
+      note.value = '';
+      addRow();
+      window.dispatchEvent(new CustomEvent('quote:toast', { detail: `Hozzáadva az ajánlatkérőhöz: ${product.name} (${totalPcs(cuts)} db)` }));
+    });
+    addRow();
+  }
 
   document.querySelectorAll('[data-copy]').forEach((btn) =>
     btn.addEventListener('click', async () => {
@@ -147,6 +238,20 @@ const description = product.description || `${product.name}${product.code ? ` (c
   .copy:hover { color: var(--accent); border-color: var(--accent); }
   .copy:global(.done) { color: var(--ok); border-color: var(--ok); }
   .order { padding: 22px; margin: 26px 0 20px; }
+  .cut-title { display: flex; align-items: center; gap: 8px; font-size: 1.08rem; margin: 0 0 6px; }
+  .cut-title :global(svg) { color: var(--accent); }
+  .cut-head, .cut-order :global(.cut-row) { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 36px; gap: 10px; align-items: center; }
+  .cut-head { margin: 16px 0 6px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+  .cut-rows { display: grid; gap: 8px; }
+  .cut-order :global(.cut-row .input) { width: 100%; padding: 10px 12px; }
+  .cut-order :global(.row-remove) { width: 36px; height: 36px; border-radius: 10px; border: 1px solid var(--line); background: transparent; color: var(--muted); display: grid; place-items: center; cursor: pointer; }
+  .cut-order :global(.row-remove:hover) { color: #d63a3a; border-color: #d63a3a; }
+  .add-row { margin-top: 10px; display: inline-flex; align-items: center; gap: 6px; border: 1px dashed var(--accent); color: var(--accent); background: var(--accent-soft); border-radius: 10px; padding: 8px 14px; font-weight: 600; cursor: pointer; }
+  .add-row:hover { background: rgba(10, 108, 255, 0.14); }
+  .cut-note-label { display: block; margin: 16px 0 6px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+  .cut-note { width: 100%; resize: vertical; min-height: 64px; }
+  .cut-error { color: #d63a3a; font-size: 0.88rem; margin: 8px 0 0; }
+  .cut-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 16px 0 10px; }
   .order-row { display: flex; gap: 12px; flex-wrap: wrap; }
   .add-main { flex: 1; min-width: 200px; }
   .add-main:global(.in-quote) { background: linear-gradient(135deg, #17b978, #0e8a58); }

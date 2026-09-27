@@ -81,7 +81,7 @@ import { SITE } from '../lib/site.js';
 </script>
 
 <script>
-  import { quote, clampQty } from '../scripts/quote.js';
+  import { quote, clampQty, clampLen, normalizeCuts, cutsText } from '../scripts/quote.js';
 
   const $ = (sel) => document.querySelector(sel);
   const list = $('[data-items]');
@@ -102,6 +102,13 @@ import { SITE } from '../lib/site.js';
     spark: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2z"/></svg>',
   };
 
+  const cutRow = (len = '', pcs = 1) => `<div class="cut-row">
+      <input class="input" type="number" min="1" max="30000" inputmode="numeric" placeholder="pl. 6000" aria-label="Hossz (mm)" data-cut-len value="${esc(len)}">
+      <input class="input" type="number" min="1" max="99999" inputmode="numeric" aria-label="Darab" data-cut-pcs value="${esc(pcs)}">
+      <button type="button" class="cut-del" data-cut-del aria-label="Méret törlése">${icon.trash}</button>
+    </div>`;
+  const readCuts = (li) => [...li.querySelectorAll('.cut-row')].map((r) => ({ len: r.querySelector('[data-cut-len]').value, pcs: r.querySelector('[data-cut-pcs]').value }));
+
   const render = () => {
     const items = quote.items();
     countEl.textContent = items.length ? `(${items.length})` : '';
@@ -114,14 +121,19 @@ import { SITE } from '../lib/site.js';
         <div class="item-main">
           ${i.custom ? `<span class="item-name">${esc(i.name)}</span><span class="tag">Egyedi tétel</span>` : `<a class="item-name" href="/termek/${esc(i.slug)}">${esc(i.name)}</a>`}
           ${i.code ? `<span class="muted item-code">Cikkszám: ${esc(i.code)}</span>` : ''}
+          ${i.cuts?.length ? `<div class="cuts" data-cuts>
+            <div class="cuts-head"><span>Hossz [mm]</span><span>Darab</span><span></span></div>
+            ${i.cuts.map((c) => cutRow(c.len, c.pcs)).join('')}
+            <button type="button" class="cuts-add" data-cut-add>${icon.plus} Másik méret</button>
+          </div>` : ''}
           <input class="note input" data-note placeholder="Megjegyzés a tételhez (pl. hossz, szín)…" value="${esc(i.note)}" maxlength="300">
         </div>
         <div class="item-side">
-          <div class="qty">
+          ${i.cuts?.length ? `<div class="qty-total"><span><strong>${i.qty}</strong> db</span><small>${(i.cuts.reduce((n, c) => n + c.len * c.pcs, 0) / 1000).toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm</small></div>` : `<div class="qty">
             <button type="button" data-step="-1" aria-label="Kevesebb">${icon.minus}</button>
             <input type="number" min="1" value="${i.qty}" data-qty inputmode="numeric" aria-label="Mennyiség">
             <button type="button" data-step="1" aria-label="Több">${icon.plus}</button>
-          </div>
+          </div>`}
           <button type="button" class="remove" data-remove aria-label="Tétel törlése">${icon.trash}</button>
         </div>
       </li>`,
@@ -150,6 +162,17 @@ import { SITE } from '../lib/site.js';
       quote.remove(slug);
       render();
     }
+    if (e.target.closest('[data-cut-add]')) {
+      e.target.closest('[data-cut-add]').insertAdjacentHTML('beforebegin', cutRow('', 1));
+      li.querySelectorAll('[data-cut-len]').item(li.querySelectorAll('[data-cut-len]').length - 1).focus();
+    }
+    if (e.target.closest('[data-cut-del]')) {
+      if (li.querySelectorAll('.cut-row').length > 1) {
+        e.target.closest('.cut-row').remove();
+        quote.update(slug, { cuts: readCuts(li) });
+        render();
+      }
+    }
   });
   list.addEventListener('change', (e) => {
     const li = e.target.closest('.item');
@@ -159,6 +182,16 @@ import { SITE } from '../lib/site.js';
       quote.update(li.dataset.slug, { qty: Number(e.target.value) });
     }
     if (e.target.matches('[data-note]')) quote.update(li.dataset.slug, { note: e.target.value.slice(0, 300) });
+    if (e.target.matches('[data-cut-len], [data-cut-pcs]')) {
+      if (e.target.matches('[data-cut-pcs]')) e.target.value = String(clampQty(e.target.value));
+      if (e.target.matches('[data-cut-len]') && e.target.value) e.target.value = String(clampLen(e.target.value) || '');
+      const cuts = normalizeCuts(readCuts(li));
+      if (cuts.length) {
+        quote.update(li.dataset.slug, { cuts });
+        const tot = li.querySelector('.qty-total');
+        if (tot) tot.innerHTML = `<span><strong>${quote.items().find((i) => i.slug === li.dataset.slug)?.qty ?? ''}</strong> db</span><small>${(cuts.reduce((n, c) => n + c.len * c.pcs, 0) / 1000).toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm</small>`;
+      }
+    }
   });
   clearBtn.addEventListener('click', () => {
     if (confirm('Biztosan üríti az ajánlatkérő listát?')) {
@@ -187,7 +220,7 @@ import { SITE } from '../lib/site.js';
   const listText = () =>
     quote
       .items()
-      .map((i, n) => `${n + 1}. ${i.code ? `[${i.code}] ` : ''}${i.name}${i.custom ? ' (egyedi tétel)' : ''} – ${i.qty} db${i.note ? ` – ${i.note}` : ''}`)
+      .map((i, n) => `${n + 1}. ${i.code ? `[${i.code}] ` : ''}${i.name}${i.custom ? ' (egyedi tétel)' : ''} – ${i.qty} db${i.cuts?.length ? ` (${cutsText(i.cuts)})` : ''}${i.note ? ` – ${i.note}` : ''}`)
       .join('\n');
 
   $('[data-copy-list]').addEventListener('click', async () => {
@@ -217,7 +250,7 @@ import { SITE } from '../lib/site.js';
       customer: { name: data.name, company: data.company, email: data.email, phone: data.phone, taxNumber: data.taxNumber, delivery: data.delivery },
       message: data.message,
       website: data.website,
-      items: items.map((i) => ({ code: i.code, name: i.name, qty: i.qty, note: i.note, custom: !!i.custom, url: i.custom ? '' : `${location.origin}/termek/${i.slug}` })),
+      items: items.map((i) => ({ code: i.code, name: i.name, qty: i.qty, note: i.note, cuts: i.cuts ?? [], custom: !!i.custom, url: i.custom ? '' : `${location.origin}/termek/${i.slug}` })),
     };
     submitBtn.disabled = true;
     submitLabel.textContent = 'Küldés…';
@@ -270,6 +303,15 @@ import { SITE } from '../lib/site.js';
   .items :global(.item-code) { font-size: 0.84rem; }
   .items :global(.tag) { align-self: flex-start; font-size: 0.72rem; padding: 2px 8px; border-radius: 6px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
   .items :global(.note) { margin-top: 8px; padding: 8px 12px; font-size: 0.88rem; }
+  .items :global(.cuts) { margin-top: 10px; display: grid; gap: 6px; max-width: 360px; }
+  .items :global(.cuts-head), .items :global(.cut-row) { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) 34px; gap: 8px; align-items: center; }
+  .items :global(.cuts-head) { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+  .items :global(.cut-row .input) { padding: 7px 10px; font-size: 0.9rem; width: 100%; }
+  .items :global(.cut-del) { width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 9px; background: transparent; color: var(--muted); display: grid; place-items: center; cursor: pointer; }
+  .items :global(.cut-del:hover) { color: #d63a3a; border-color: #d63a3a; }
+  .items :global(.cuts-add) { justify-self: start; display: inline-flex; align-items: center; gap: 6px; border: 1px dashed var(--accent); color: var(--accent); background: var(--accent-soft); border-radius: 9px; padding: 5px 10px; font-size: 0.85rem; font-weight: 600; cursor: pointer; }
+  .items :global(.qty-total) { display: flex; flex-direction: column; align-items: flex-end; font-size: 0.95rem; line-height: 1.3; white-space: nowrap; }
+  .items :global(.qty-total small) { color: var(--muted); font-size: 0.8rem; }
   .items :global(.item-side) { display: flex; align-items: center; gap: 8px; }
   .items :global(.remove) { width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; display: grid; place-items: center; }
   .items :global(.remove:hover) { color: var(--danger); border-color: var(--danger); }
@@ -312,5 +354,7 @@ import { SITE } from '../lib/site.js';
     .items :global(.qty) { border: 0; }
     .items :global(.qty input) { color: #000; }
     .items :global(.note) { border: 0; color: #000; padding: 0; }
+    .items :global(.cut-row .input) { border: 0; padding: 0; color: #000; }
+    .items :global(.cut-del), .items :global(.cuts-add) { display: none !important; }
   }
 </style>

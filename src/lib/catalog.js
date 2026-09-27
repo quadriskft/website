@@ -133,9 +133,26 @@ export function productTitle(p) {
   return p.code ? `${p.code} ${p.name}` : p.name;
 }
 
+// Hosszra rendelhető (szálas) termékek: profilok, csövek, sínek, gumiprofilok.
+// Ezeknél a termékoldalon hossz × darab méretsorokat lehet megadni az ajánlatkéréshez.
+const PROFILE_GROUPS = new Set([
+  'aluminium-alvaz-profilok', 'acel-profilok', 'aluminium-padlo-profilok', 'ponyvas-oldalfal-profilok-es-szegok',
+  'zart-dobozos-es-hutos-profilok', 'ipari-felgyartmanyok', 'kedergumik',
+]);
+const NO_PROFILE_GROUPS = new Set(['sarvedok-szerszamosladak', 'gumiszonyegek', 'szellozes-tetoablakok-vilagitas']);
+const HARD_NO = /dugó|végz[aá]r|kupak|(^|\s)csavar(\s|ok|$)|bilincs|adapter|készlet|(^|\s)kit(\s|$)|szett|garnitúra|kurbli|kulcs/i;
+const PROFILE_NAME = /profil|hossztartó|kereszttartó|szelvény|laposrúd|(^|\s)sín(\s|$)|sínek|tetősín|"c" sín|(^|\s)cső(\s|$)|csövek|kéder|(^|[\s-])léc(\s|$)|oszlop|tömítés|takarógumi|zsanér \d{4}/i;
+const SOFT_NO = /(^|[\s"(])(tartó|konzol|kengyel|lapka|sarokelem|összekötő|elem|zár|zsanér|görgő|kocsi|rúd|szegő)(\s|$)/i;
+export function isProfile(p) {
+  if (NO_PROFILE_GROUPS.has(p.group) || HARD_NO.test(p.name)) return false;
+  if (PROFILE_GROUPS.has(p.group) || /profil|hossztartó|kereszttartó|szelvény/i.test(p.name)) return true;
+  if (SOFT_NO.test(p.name)) return false;
+  return PROFILE_NAME.test(p.name);
+}
+
 // Böngészőnek küldhető termékadat (belső mezők nélkül)
 export function publicProduct(p) {
-  return { slug: p.slug, code: p.code, name: p.name, group: p.group, image: p.images?.[0] ?? '' };
+  return { slug: p.slug, code: p.code, name: p.name, group: p.group, image: p.images?.[0] ?? '', ...(isProfile(p) ? { profile: true } : {}) };
 }
 
 export const stats = {

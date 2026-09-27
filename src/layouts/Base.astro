@@ -167,6 +167,10 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
         if (!btn) return;
         e.preventDefault();
         const product = JSON.parse(btn.dataset.addToQuote);
+        if (product.profile && !btn.dataset.qtyFrom) {
+          location.href = `/termek/${product.slug}#meretre`;
+          return;
+        }
         if (quote.has(product.slug)) {
           location.href = '/ajanlatkeres';
           return;
