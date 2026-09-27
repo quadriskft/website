@@ -26,6 +26,17 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     <meta property="og:locale" content="hu_HU" />
     <meta name="theme-color" content="#050c16" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: SITE.name,
+      legalName: SITE.legalName,
+      email: SITE.email,
+      telephone: SITE.phone,
+      taxID: SITE.taxNumber,
+      address: { '@type': 'PostalAddress', streetAddress: 'Tengely utca 8.', postalCode: '2220', addressLocality: 'Vecsés', addressCountry: 'HU' },
+      ...(SITE.url && { url: SITE.url, logo: new URL('/brand/quadris-jel.svg', SITE.url).href }),
+    })} />
   </head>
   <body>
     <a class="skip-link" href="#main">Ugrás a tartalomra</a>
@@ -96,6 +107,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
             {SITE.address && <li>{SITE.address}</li>}
             {SITE.phone && <li><a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a></li>}
             {SITE.email && <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>}
+            {SITE.openingHours && <li class="muted">{SITE.openingHours}</li>}
             <li><a href="/kapcsolat">Üzenetküldés</a></li>
             <li><a href="/loszallito-felepitmenyek">Lószállító felépítmény gyártóknak</a></li>
           </ul>
@@ -103,6 +115,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
       </div>
       <div class="container footer-bottom">
         <span>© {new Date().getFullYear()} {SITE.name} Minden jog fenntartva.</span>
+        <span>Cégjegyzékszám: {SITE.companyRegNo} · Adószám: {SITE.taxNumber}</span>
       </div>
     </footer>
 
@@ -330,7 +343,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   .footer-links.cols { grid-template-columns: repeat(2, 1fr); column-gap: 24px; }
   .footer-links a { color: var(--text-2); }
   .footer-links a:hover { color: var(--accent); }
-  .footer-bottom { border-top: 1px solid var(--line); padding-top: 18px; padding-bottom: 24px; font-size: 0.85rem; color: var(--muted); }
+  .footer-bottom { border-top: 1px solid var(--line); padding-top: 18px; padding-bottom: 24px; font-size: 0.85rem; color: var(--muted); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
   @media (max-width: 860px) {
     .footer-grid { grid-template-columns: 1fr; gap: 28px; }
     .footer-links.cols { grid-template-columns: 1fr 1fr; }

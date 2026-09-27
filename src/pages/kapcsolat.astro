@@ -18,7 +18,9 @@ import { SITE } from '../lib/site.js';
       <div class="card info-card">
         <h2>{SITE.name}</h2>
         <ul>
-          {SITE.address && <li><Icon name="MapPin" /><span>{SITE.address}</span></li>}
+          {SITE.address && (
+            <li><Icon name="MapPin" /><span>{SITE.address}<br /><a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${SITE.name}, ${SITE.address}`)}`} target="_blank" rel="noopener">Útvonaltervezés →</a></span></li>
+          )}
           {SITE.phone && <li><Icon name="Phone" /><a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a></li>}
           {SITE.email && <li><Icon name="Mail" /><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>}
           {SITE.openingHours && <li><Icon name="Clock" /><span>{SITE.openingHours}</span></li>}
