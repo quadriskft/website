@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { categories, productsInCategory } from '../../lib/catalog.js';
+
+export function getStaticPaths() {
+  return categories.map((category) => ({ params: { slug: category.slug }, props: { category } }));
+}
+
+const { category } = Astro.props;
+const items = productsInCategory(category.slug);
+---
+<Base title={category.name} description={category.description}>
+  <nav class="breadcrumb"><a href="/">Termékek</a> › {category.name}</nav>
+  <h1>{category.name}</h1>
+  {category.description && <p class="muted">{category.description}</p>}
+  {items.length > 0 ? (
+    <ul class="product-grid">
+      {items.map((p) => <ProductCard product={p} />)}
+    </ul>
+  ) : (
+    <p>Ebben a kategóriában még nincs termék.</p>
+  )}
+</Base>

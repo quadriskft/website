@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "minta-gyarto-mt-001",
+    "sku": "MT-001",
+    "name": "Minta termék 1",
+    "manufacturer": "Minta Gyártó",
+    "supplier": "Minta Beszállító",
+    "category": "minta-kategoria-1",
+    "shortDescription": "Rövid leírás a termékről. Ez egy mintatermék.",
+    "description": "Részletes termékleírás. A valódi adatokat a gyártói oldalakról töltjük le.",
+    "specs": { "Méret": "100 × 50 mm", "Tömeg": "0,5 kg" },
+    "images": [],
+    "documents": [],
+    "sourceUrl": ""
+  },
+  {
+    "slug": "minta-gyarto-mt-002",
+    "sku": "MT-002",
+    "name": "Minta termék 2",
+    "manufacturer": "Minta Gyártó",
+    "supplier": "Minta Beszállító",
+    "category": "minta-kategoria-2",
+    "shortDescription": "Rövid leírás a termékről. Ez egy mintatermék.",
+    "description": "Részletes termékleírás. A valódi adatokat a gyártói oldalakról töltjük le.",
+    "specs": { "Anyag": "Acél" },
+    "images": [],
+    "documents": [],
+    "sourceUrl": ""
+  }
+]

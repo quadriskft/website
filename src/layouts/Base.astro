@@ -1,0 +1,104 @@
+---
+import { categories } from '../lib/catalog.js';
+
+const { title, description = 'Termékkatalógus' } = Astro.props;
+const siteName = 'Quadrisk';
+const pageTitle = title ? `${title} | ${siteName}` : siteName;
+---
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/">{siteName}</a>
+        <form class="search" action="/kereses" method="get" role="search">
+          <input type="search" name="q" placeholder="Keresés név vagy cikkszám alapján…" aria-label="Keresés" />
+          <button type="submit">Keresés</button>
+        </form>
+        <nav class="main-nav">
+          <a href="/">Termékek</a>
+          <a href="/kapcsolat">Kapcsolat</a>
+        </nav>
+      </div>
+      <nav class="category-nav" aria-label="Kategóriák">
+        <div class="container">
+          {categories.map((c) => <a href={`/kategoria/${c.slug}`}>{c.name}</a>)}
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© {new Date().getFullYear()} {siteName}</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --color-primary: #1f4e79;
+    --color-primary-dark: #163a5a;
+    --color-text: #1d2733;
+    --color-muted: #5b6776;
+    --color-border: #dde3ea;
+    --color-bg: #ffffff;
+    --color-bg-soft: #f4f6f9;
+    --radius: 8px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    color: var(--color-text);
+    background: var(--color-bg);
+    line-height: 1.5;
+  }
+  a { color: var(--color-primary); }
+  img { max-width: 100%; height: auto; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+  main.container { padding-top: 24px; padding-bottom: 48px; min-height: 60vh; }
+
+  .site-header { border-bottom: 1px solid var(--color-border); }
+  .header-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding-top: 12px; padding-bottom: 12px; }
+  .logo { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: var(--color-primary); }
+  .search { flex: 1 1 320px; display: flex; gap: 8px; }
+  .search input { flex: 1; min-width: 0; padding: 8px 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-size: 1rem; }
+  .search button, .button {
+    padding: 8px 16px; border: 0; border-radius: var(--radius);
+    background: var(--color-primary); color: #fff; font-size: 1rem; cursor: pointer; text-decoration: none; display: inline-block;
+  }
+  .search button:hover, .button:hover { background: var(--color-primary-dark); }
+  .main-nav { display: flex; gap: 16px; }
+  .main-nav a { text-decoration: none; font-weight: 500; }
+  .category-nav { background: var(--color-bg-soft); border-top: 1px solid var(--color-border); }
+  .category-nav .container { display: flex; gap: 20px; overflow-x: auto; padding-top: 10px; padding-bottom: 10px; }
+  .category-nav a { white-space: nowrap; text-decoration: none; color: var(--color-text); }
+  .category-nav a:hover { color: var(--color-primary); }
+
+  .site-footer { border-top: 1px solid var(--color-border); background: var(--color-bg-soft); color: var(--color-muted); font-size: 0.9rem; }
+
+  .breadcrumb { font-size: 0.9rem; color: var(--color-muted); margin-bottom: 16px; }
+  .breadcrumb a { color: var(--color-muted); }
+  .muted { color: var(--color-muted); }
+
+  .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; padding: 0; list-style: none; }
+  .category-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; padding: 0; list-style: none; }
+  .card {
+    display: block; height: 100%; border: 1px solid var(--color-border); border-radius: var(--radius);
+    padding: 16px; text-decoration: none; color: inherit; background: var(--color-bg);
+  }
+  .card:hover { border-color: var(--color-primary); box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06); }
+  .card h2, .card h3 { font-size: 1.05rem; margin: 8px 0 4px; }
+</style>

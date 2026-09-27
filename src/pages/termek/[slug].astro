@@ -1,0 +1,80 @@
+---
+import Base from '../../layouts/Base.astro';
+import { products, getCategory, mainImage } from '../../lib/catalog.js';
+
+export function getStaticPaths() {
+  return products.map((product) => ({ params: { slug: product.slug }, props: { product } }));
+}
+
+const { product } = Astro.props;
+const category = getCategory(product.category);
+const specs = Object.entries(product.specs ?? {});
+const gallery = product.images?.slice(1) ?? [];
+---
+<Base title={product.name} description={product.shortDescription}>
+  <nav class="breadcrumb">
+    <a href="/">Termékek</a>
+    {category && <>{' › '}<a href={`/kategoria/${category.slug}`}>{category.name}</a></>}
+    {' › '}{product.name}
+  </nav>
+
+  <div class="product">
+    <div class="images">
+      <img class="main-image" src={mainImage(product)} alt={product.name} width="800" height="600" />
+      {gallery.length > 0 && (
+        <div class="gallery">
+          {gallery.map((src) => <img src={src} alt={product.name} loading="lazy" width="160" height="120" />)}
+        </div>
+      )}
+    </div>
+
+    <div class="info">
+      <h1>{product.name}</h1>
+      <p class="muted">Gyártó: {product.manufacturer} · Cikkszám: {product.sku}</p>
+      {product.shortDescription && <p class="lead">{product.shortDescription}</p>}
+      <a class="button" href={`/kapcsolat?termek=${encodeURIComponent(product.sku)}`}>Ajánlatot kérek</a>
+    </div>
+  </div>
+
+  {product.description && (
+    <section>
+      <h2>Leírás</h2>
+      <p>{product.description}</p>
+    </section>
+  )}
+
+  {specs.length > 0 && (
+    <section>
+      <h2>Műszaki adatok</h2>
+      <table class="specs">
+        <tbody>
+          {specs.map(([key, value]) => (
+            <tr><th scope="row">{key}</th><td>{value}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  )}
+
+  {product.documents?.length > 0 && (
+    <section>
+      <h2>Dokumentumok</h2>
+      <ul>
+        {product.documents.map((d) => <li><a href={d.url} target="_blank" rel="noopener">{d.title}</a></li>)}
+      </ul>
+    </section>
+  )}
+</Base>
+
+<style>
+  .product { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; margin-bottom: 32px; }
+  @media (max-width: 760px) { .product { grid-template-columns: 1fr; } }
+  .main-image { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: var(--color-bg-soft); border-radius: var(--radius); }
+  .gallery { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .gallery img { width: 80px; height: 60px; object-fit: contain; border: 1px solid var(--color-border); border-radius: 4px; }
+  h1 { margin-top: 0; }
+  .lead { font-size: 1.1rem; }
+  .specs { border-collapse: collapse; width: 100%; max-width: 700px; }
+  .specs th, .specs td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--color-border); vertical-align: top; }
+  .specs th { width: 40%; font-weight: 500; color: var(--color-muted); }
+</style>

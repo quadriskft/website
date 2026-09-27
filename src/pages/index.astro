@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import { categories, productsInCategory } from '../lib/catalog.js';
+---
+<Base description="Termékkatalógus kategóriák szerint">
+  <h1>Termékkategóriák</h1>
+  <ul class="category-grid">
+    {categories.map((c) => (
+      <li>
+        <a class="card" href={`/kategoria/${c.slug}`}>
+          <h2>{c.name}</h2>
+          <p class="muted">{c.description}</p>
+          <p class="muted">{productsInCategory(c.slug).length} termék</p>
+        </a>
+      </li>
+    ))}
+  </ul>
+</Base>

@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Kapcsolat">
+  <h1>Kapcsolat</h1>
+  <p>Az elérhetőségeket (cím, telefonszám, e-mail) és az ajánlatkérő űrlapot a végleges adatok alapján töltjük ki.</p>
+  <p id="product-request" class="muted"></p>
+  <script>
+    const sku = new URLSearchParams(location.search).get('termek');
+    if (sku) document.getElementById('product-request').textContent = `Ajánlatkérés erre a termékre: ${sku}`;
+  </script>
+</Base>

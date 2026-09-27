@@ -1,0 +1,17 @@
+---
+import { mainImage } from '../lib/catalog.js';
+
+const { product } = Astro.props;
+---
+<li>
+  <a class="card product-card" href={`/termek/${product.slug}`}>
+    <img src={mainImage(product)} alt={product.name} loading="lazy" width="400" height="300" />
+    <h3>{product.name}</h3>
+    <p class="muted">{product.manufacturer} · Cikkszám: {product.sku}</p>
+  </a>
+</li>
+
+<style>
+  .product-card img { aspect-ratio: 4 / 3; object-fit: contain; width: 100%; background: var(--color-bg-soft); border-radius: 4px; }
+  p { margin: 0; font-size: 0.9rem; }
+</style>
