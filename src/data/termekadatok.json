@@ -1,4 +1,793 @@
 {
+ "041280-uzemanyag-beonto-nagy": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=024121322E",
+  "sourceTitle": "Galvanized steel sheet filler flap without key and with S.S. spring, 296x258 mm",
+  "sourceDescription": "",
+  "matchedCode": "024121322E",
+  "specs": {
+   "Kivitel": "Z.PL.",
+   "Tömeg": "960 g",
+   "Kiszerelés": "2 db/csomag"
+  },
+  "images": []
+ },
+ "055960-muanyag-lepcsonyito-nagy": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/660",
+  "sourceTitle": "INBOUWHANDGREEP 38MM KUNSTSTOF ZWART Packed by 1 piece Black, synthetic",
+  "matchedCode": "1001025",
+  "specs": {},
+  "images": [
+   "/termekkepek/055960-muanyag-lepcsonyito-nagy-1.webp"
+  ]
+ },
+ "056402-2-reszes-rugos-ajtokiakaszto-szet": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/80700800-ferma-porta-autoallineante-zincato/",
+  "sourceTitle": "80700800 – Ferma porta autoallineante zincato",
+  "sourceDescription": "",
+  "matchedCode": "80700800",
+  "specs": {
+   "Tömeg": "0,240 Kg",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-1.webp",
+   "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-2.webp",
+   "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-3.webp"
+  ]
+ },
+ "100021-100x25-mm-festett-szegecselheto-deszkatarto-zseb": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000018_pevne-plachtove-konstrukce/7000310_holder-of-tarp.-prof.-riveting-black",
+  "sourceTitle": "Holder of tarp. prof. riveting black",
+  "matchedCode": "62K0000021",
+  "specs": {
+   "Anyag": "S235JRG1",
+   "Felület": "RAL9005",
+   "Tömeg": "0,17 kg",
+   "Hossz": "40,0 mm",
+   "Szélesség": "30,0 mm",
+   "Magasság": "100,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/100021-100x25-mm-festett-szegecselheto-deszkatarto-zseb-1.webp"
+  ]
+ },
+ "100110-seprutarto-80-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45070110-supporto-porta-utensili-zincato-da-o28%c3%b7o40/",
+  "sourceTitle": "45070110 – Supporto porta utensili zincato da Ø28÷Ø40",
+  "sourceDescription": "",
+  "matchedCode": "45070110",
+  "specs": {
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/100110-seprutarto-80-mm-1.webp",
+   "/termekkepek/100110-seprutarto-80-mm-2.webp"
+  ]
+ },
+ "100451-deszkatarto-zseb": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45150100-supporto-asta-centina-grezza-l25/",
+  "sourceTitle": "45150100 – Supporto asta centina grezza L=25",
+  "sourceDescription": "",
+  "matchedCode": "45150100",
+  "specs": {
+   "Tömeg": "0,160 kg",
+   "Kiszerelés": "150 db"
+  },
+  "images": [
+   "/termekkepek/100451-deszkatarto-zseb-1.webp",
+   "/termekkepek/100451-deszkatarto-zseb-2.webp"
+  ]
+ },
+ "100516-100x25-dugo-zartszelvenyhez": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/55160100-tappo-asta-centina-in-gomma/",
+  "sourceTitle": "55160100 – Tappo asta centina in gomma",
+  "sourceDescription": "",
+  "matchedCode": "55160100",
+  "specs": {
+   "Tömeg": "0,070 kg",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/100516-100x25-dugo-zartszelvenyhez-1.webp",
+   "/termekkepek/100516-100x25-dugo-zartszelvenyhez-2.webp"
+  ]
+ },
+ "100591-ives-alafutasgatlo-vegzaro-pvc": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/58924056-tappo-dangolo-in-pvc-con-perni/",
+  "sourceTitle": "58924056 – Tappo d’angolo in pvc con perni",
+  "sourceDescription": "",
+  "matchedCode": "58924056",
+  "specs": {
+   "Tömeg": "0,020 kg",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/100591-ives-alafutasgatlo-vegzaro-pvc-1.webp",
+   "/termekkepek/100591-ives-alafutasgatlo-vegzaro-pvc-2.webp"
+  ]
+ },
+ "101100-d50-mm-gumiagy-acel-tarto": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45151100-supporto-tubo-centina-pvc-o50/",
+  "sourceTitle": "45151100 – Supporto tubo centina PVC Ø50",
+  "sourceDescription": "",
+  "matchedCode": "45151100",
+  "specs": {
+   "Tömeg": "0,420 kg",
+   "Kiszerelés": "40 db"
+  },
+  "images": [
+   "/termekkepek/101100-d50-mm-gumiagy-acel-tarto-1.webp",
+   "/termekkepek/101100-d50-mm-gumiagy-acel-tarto-2.webp"
+  ]
+ },
+ "102040-inox-sarokelem-nagy": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000027_closed-body-arcal/91000042_box-corner-protector-115x115x115mm-inox",
+  "sourceTitle": "Box corner protector 115x115x115mm inox",
+  "matchedCode": "62002040P9",
+  "specs": {
+   "Anyag": "rozsdamentes acél",
+   "Felület": "homokszórt",
+   "Tömeg": "0,5 kg",
+   "Hossz": "115,0 mm",
+   "Szélesség": "115,0 mm",
+   "Magasság": "115,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/102040-inox-sarokelem-nagy-1.webp"
+  ]
+ },
+ "103055-100-x-30-mm-dugo-alafutasgatlohoz": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/58923055-tappo-in-pcv-per-profilo-diritto/",
+  "sourceTitle": "58923055 – Tappo in pcv per profilo diritto",
+  "sourceDescription": "",
+  "matchedCode": "58923055",
+  "specs": {
+   "Tömeg": "0,030 kg",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/103055-100-x-30-mm-dugo-alafutasgatlohoz-1.webp",
+   "/termekkepek/103055-100-x-30-mm-dugo-alafutasgatlohoz-2.webp",
+   "/termekkepek/103055-100-x-30-mm-dugo-alafutasgatlohoz-3.webp"
+  ]
+ },
+ "104130-100x25-mm-horganyzott-szegecselheto-deszkatarto-zseb": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45104135-supporto-asta-centina-zincata-l-25-con-fori/",
+  "sourceTitle": "45104135 – Supporto asta centina zincata L.25 con fori",
+  "sourceDescription": "",
+  "matchedCode": "45104135",
+  "specs": {
+   "Tömeg": "0,315 kg",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/104130-100x25-mm-horganyzott-szegecselheto-deszkatarto-zseb-1.webp",
+   "/termekkepek/104130-100x25-mm-horganyzott-szegecselheto-deszkatarto-zseb-2.webp"
+  ]
+ },
+ "104285-d60-csodugo": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/50154285-supporto-tubo-centina-pvc-o60/",
+  "sourceTitle": "50154285 – Supporto tubo centina PVC Ø60",
+  "sourceDescription": "",
+  "matchedCode": "50154285",
+  "specs": {
+   "Tömeg": "0,100 kg",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/104285-d60-csodugo-1.webp",
+   "/termekkepek/104285-d60-csodugo-2.webp"
+  ]
+ },
+ "105510-d35-mm-gumiagy": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45155101-solo-gomma-o35/",
+  "sourceTitle": "45155101 – Solo gomma Ø35",
+  "sourceDescription": "",
+  "matchedCode": "45155101",
+  "specs": {
+   "Tömeg": "0,140 kg",
+   "Kiszerelés": "140 db"
+  },
+  "images": [
+   "/termekkepek/105510-d35-mm-gumiagy-1.webp",
+   "/termekkepek/105510-d35-mm-gumiagy-2.webp"
+  ]
+ },
+ "106107-alu-elox-szeg-deszkatarto-l-25x19x32-mm": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000018_pevne-plachtove-konstrukce/87000121_stopper-of-tarpaulin-profile--anodized",
+  "sourceTitle": "Stopper of tarpaulin profile, anodized",
+  "matchedCode": "610010E107",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "0,01 kg",
+   "Hossz": "25,0 mm",
+   "Szélesség": "19,0 mm",
+   "Magasság": "32,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/106107-alu-elox-szeg-deszkatarto-l-25x19x32-mm-1.webp"
+  ]
+ },
+ "106220-d35-mm-acel-tarto": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45155102-solo-piastrina-o35/",
+  "sourceTitle": "45155102 – Solo piastrina Ø35",
+  "sourceDescription": "",
+  "matchedCode": "45155102",
+  "specs": {
+   "Tömeg": "0,160 kg",
+   "Kiszerelés": "160 db"
+  },
+  "images": [
+   "/termekkepek/106220-d35-mm-acel-tarto-1.webp",
+   "/termekkepek/106220-d35-mm-acel-tarto-2.webp"
+  ]
+ },
+ "106282-targoncautkozo-profil-rogzito-csavar-keszlet": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000043_bumpers-and-buffers/39000629_screw-for-profile-2200071094",
+  "sourceTitle": "Screw for profile 2200071094",
+  "matchedCode": "62LP000822",
+  "specs": {
+   "Anyag": "Al / acél",
+   "Felület": "horganyzott",
+   "Tömeg": "0,019 kg",
+   "Hossz": "22,0 mm",
+   "Szélesség": "25,0 mm",
+   "Magasság": "25,0 mm",
+   "Átmérő": "8,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/106282-targoncautkozo-profil-rogzito-csavar-keszlet-1.webp"
+  ]
+ },
+ "107045-sarok-elem-25-25-r-profilhoz": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/710",
+  "sourceTitle": "KAPBOL V/HOEKVERBINDINGSPROFIEL raw Packed by 1 piece Mill finished aluminium",
+  "matchedCode": "1012270-ONB",
+  "specs": {
+   "Felület": "natúr (nyers)",
+   "Anyag": "alumínium"
+  },
+  "images": [
+   "/termekkepek/107045-sarok-elem-25-25-r-profilhoz-1.webp"
+  ]
+ },
+ "107046-sarokelem-felso-ral9006": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/719",
+  "sourceTitle": "KAPBOL OVERZET V/HOEKPR. 25,3mm OF 60,5x60,5mm R9006/X grey Packed by 1 piece RAL9006 coated",
+  "matchedCode": "1013021-9006X",
+  "specs": {},
+  "images": [
+   "/termekkepek/107046-sarokelem-felso-ral9006-1.webp"
+  ]
+ },
+ "107409-465x25-mm-festett-szegecselheto-deszkatarto-zseb": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/306000040_pillar-flange-cs-variomaster-465mm",
+  "sourceTitle": "Pillar flange CS VarioMaster 465mm",
+  "matchedCode": "62HCS17409",
+  "specs": {
+   "Anyag": "acél",
+   "Felület": "kataforézis (KTL)",
+   "Tömeg": "1,05 kg",
+   "Hossz": "60,0 mm",
+   "Szélesség": "28,0 mm",
+   "Magasság": "465,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/107409-465x25-mm-festett-szegecselheto-deszkatarto-zseb-1.webp"
+  ]
+ },
+ "117502-nagy-kormos-anya-103-mm": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000002_parts-for-aluminium-platforms/910097223_frame-clamp-aluminium-103-mm",
+  "sourceTitle": "Frame clamp aluminium 103 mm",
+  "matchedCode": "6600201502",
+  "specs": {
+   "Anyag": "EN AW 6082",
+   "Felület": "natúr",
+   "Tömeg": "0,13 kg",
+   "Hossz": "103,0 mm",
+   "Szélesség": "50,0 mm",
+   "Magasság": "14,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/117502-nagy-kormos-anya-103-mm-1.webp"
+  ]
+ },
+ "117774-kotoelem-apa": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000002_parts-for-aluminium-platforms/1483_clamp-palcom-o10-5-44-mm",
+  "sourceTitle": "Clamp Palcom o10,5/44 mm",
+  "matchedCode": "6600107776",
+  "specs": {
+   "Anyag": "EN AW 6082",
+   "Felület": "natúr",
+   "Tömeg": "0,073 kg",
+   "Hossz": "44,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/117774-kotoelem-apa-1.webp"
+  ]
+ },
+ "117775-kormos-anya": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000002_parts-for-aluminium-platforms/1482_clamp-palcom-m10-20-mm",
+  "sourceTitle": "Clamp Palcom M10/20 mm",
+  "matchedCode": "6600107775",
+  "specs": {
+   "Anyag": "EN AW 6082",
+   "Felület": "natúr",
+   "Tömeg": "0,022 kg",
+   "Hossz": "20,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/117775-kormos-anya-1.webp"
+  ]
+ },
+ "117776-kotoelem-apa-kerethez": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000002_parts-for-aluminium-platforms/910098750_clamp-palcom-13x44x44-mm",
+  "sourceTitle": "Clamp Palcom 13x44x44 mm",
+  "matchedCode": "6600117776",
+  "specs": {
+   "Anyag": "EN AW 6005A",
+   "Felület": "natúr",
+   "Tömeg": "0,048 kg",
+   "Hossz": "44,0 mm",
+   "Szélesség": "44,0 mm",
+   "Magasság": "13,0 mm",
+   "Átmérő": "10,5 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/117776-kotoelem-apa-kerethez-1.webp"
+  ]
+ },
+ "117777-kotoelem-garn-kerethez": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000002_parts-for-aluminium-platforms/910098749_clamp-palcom-low-4mm",
+  "sourceTitle": "Clamp Palcom low 4mm",
+  "matchedCode": "6600187777",
+  "specs": {
+   "Anyag": "alumínium",
+   "Felület": "natúr",
+   "Tömeg": "0,097 kg",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/117777-kotoelem-garn-kerethez-1.webp"
+  ]
+ },
+ "117787-kotoelem-garn-8mm": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000002_parts-for-aluminium-platforms/28000067_clamp-palcom-high-8mm",
+  "sourceTitle": "Clamp Palcom high 8mm",
+  "matchedCode": "6600197787",
+  "specs": {
+   "Anyag": "alumínium",
+   "Felület": "natúr",
+   "Tömeg": "0,13 kg",
+   "Mértékegység": "set"
+  },
+  "images": [
+   "/termekkepek/117787-kotoelem-garn-8mm-1.webp"
+  ]
+ },
+ "120682-muanyag-vegzar-airline-sinhez": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000037_cargo-securing-lathes/12000523_lath-end-cap-airline--plastic-50mm",
+  "sourceTitle": "Lath end cap Airline, plastic 50mm",
+  "matchedCode": "2100520682",
+  "specs": {
+   "Anyag": "PE",
+   "Tömeg": "0,014 kg",
+   "Hossz": "48,2 mm",
+   "Szélesség": "50,0 mm",
+   "Magasság": "11,5 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/120682-muanyag-vegzar-airline-sinhez-1.webp"
+  ]
+ },
+ "121030-rakomanyrogzito-rud-acel-2200": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/50071033-barra-zincata-fermacarico-reg-2085%c3%b72485-innesto-o19-24/",
+  "sourceTitle": "50071033 – Barra zincata fermacarico reg. 2085÷2485 Innesto Ø19/Ø24",
+  "sourceDescription": "",
+  "matchedCode": "50071033",
+  "specs": {
+   "Kiszerelés": "20 db"
+  },
+  "images": [
+   "/termekkepek/121030-rakomanyrogzito-rud-acel-2200-1.webp",
+   "/termekkepek/121030-rakomanyrogzito-rud-acel-2200-2.webp",
+   "/termekkepek/121030-rakomanyrogzito-rud-acel-2200-3.webp"
+  ]
+ },
+ "121032-rakomanyrogzito-rud-acel-2500": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/50071031-barra-zincata-fermacarico-reg-2360%c3%b72760-innesti-o19-o24/",
+  "sourceTitle": "50071031 – Barra zincata fermacarico reg. 2360÷2760 Innesti Ø19/Ø24",
+  "sourceDescription": "",
+  "matchedCode": "50071031",
+  "specs": {
+   "Kiszerelés": "10 db"
+  },
+  "images": [
+   "/termekkepek/121032-rakomanyrogzito-rud-acel-2500-1.webp",
+   "/termekkepek/121032-rakomanyrogzito-rud-acel-2500-2.webp",
+   "/termekkepek/121032-rakomanyrogzito-rud-acel-2500-3.webp"
+  ]
+ },
+ "121127-kombi-rakomanyrogzito-sin-acel-magnelis": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/profili-fermacarico-orizzontale-f-track/",
+  "sourceTitle": "Profili Fermacarico orizzontale F-TRACK",
+  "sourceDescription": "",
+  "matchedCode": "50033111",
+  "specs": {
+   "Kivitel": "Magnelis",
+   "Tömeg": "6,200 kg",
+   "Kiszerelés": "5 db"
+  },
+  "images": [
+   "/termekkepek/121127-kombi-rakomanyrogzito-sin-acel-magnelis-1.webp",
+   "/termekkepek/121127-kombi-rakomanyrogzito-sin-acel-magnelis-2.webp"
+  ]
+ },
+ "121129-kombi-rakomanyrogzito-sin-inox": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/profili-fermacarico-orizzontale-f-track/",
+  "sourceTitle": "Profili Fermacarico orizzontale F-TRACK",
+  "sourceDescription": "",
+  "matchedCode": "50033210",
+  "specs": {
+   "Kivitel": "rozsdamentes",
+   "Tömeg": "6,200 kg",
+   "Kiszerelés": "5 db"
+  },
+  "images": [
+   "/termekkepek/121129-kombi-rakomanyrogzito-sin-inox-1.webp",
+   "/termekkepek/121129-kombi-rakomanyrogzito-sin-inox-2.webp"
+  ]
+ },
+ "122303-padloba-sullyesztehto-inox-rak-rogzito-tanyer": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/anello-fermacarico-leggero-senza-molla/",
+  "sourceTitle": "Anello fermacarico leggero senza molla",
+  "sourceDescription": "",
+  "matchedCode": "45020303",
+  "specs": {
+   "Kivitel": "rozsdamentes",
+   "Kiszerelés": "100 db."
+  },
+  "images": [
+   "/termekkepek/122303-padloba-sullyesztehto-inox-rak-rogzito-tanyer-1.webp",
+   "/termekkepek/122303-padloba-sullyesztehto-inox-rak-rogzito-tanyer-2.webp",
+   "/termekkepek/122303-padloba-sullyesztehto-inox-rak-rogzito-tanyer-3.webp"
+  ]
+ },
+ "122850-rakomanyrogzito-kengyel-1000-dan-sv": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000036_lashing-rings/39000650_frame-stowing-ring-m8-1000dan",
+  "sourceTitle": "Frame stowing ring M8 1000daN",
+  "matchedCode": "4364382850",
+  "specs": {
+   "Anyag": "acél",
+   "Felület": "Geomet",
+   "Tömeg": "0,15 kg",
+   "Hossz": "80,0 mm",
+   "Szélesség": "60,0 mm",
+   "Magasság": "15,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/122850-rakomanyrogzito-kengyel-1000-dan-sv-1.webp"
+  ]
+ },
+ "123025-terelvalaszto-falzar-2400-2700-mm-400dan": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000005_inter-dropsides-stowing-bar/36000019_.stowing-bar-2400-2700-mm-400dan",
+  "sourceTitle": ".Stowing bar 2400-2700 mm 400daN",
+  "matchedCode": "3F50030225",
+  "specs": {
+   "Anyag": "alumínium",
+   "Felület": "eloxált (0,005mm)",
+   "Tömeg": "8,14 kg",
+   "Hossz": "2 700,0 mm",
+   "Szélesség": "50,0 mm",
+   "Magasság": "160,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/123025-terelvalaszto-falzar-2400-2700-mm-400dan-1.webp"
+  ]
+ },
+ "123320-kombi-rakomanyrogzito-sin-aluminium": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/profili-fermacarico-orizzontale-f-track/",
+  "sourceTitle": "Profili Fermacarico orizzontale F-TRACK",
+  "sourceDescription": "",
+  "matchedCode": "50033320",
+  "specs": {
+   "Kivitel": "alumínium",
+   "Tömeg": "6,200 kg",
+   "Kiszerelés": "5 db"
+  },
+  "images": [
+   "/termekkepek/123320-kombi-rakomanyrogzito-sin-aluminium-1.webp",
+   "/termekkepek/123320-kombi-rakomanyrogzito-sin-aluminium-2.webp"
+  ]
+ },
+ "123350-muanyag-vegzar-kombi-sinhez": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/50033500-tappo-in-pvc-per-profili-orizzontali/",
+  "sourceTitle": "50033500 – Tappo in pvc per profili orizzontali",
+  "sourceDescription": "",
+  "matchedCode": "50033500",
+  "specs": {
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/123350-muanyag-vegzar-kombi-sinhez-1.webp",
+   "/termekkepek/123350-muanyag-vegzar-kombi-sinhez-2.webp"
+  ]
+ },
+ "123412-spanifer-l-8-m-5000-kg-dupla-kampos": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/34128000-cinghia-con-tensore-e-bloccaggio-ganci-a-griffe-l-8-mt/",
+  "sourceTitle": "34128000 – Cinghia con tensore e bloccaggio ganci a griffe L.8 Mt.",
+  "sourceDescription": "",
+  "matchedCode": "34128000",
+  "specs": {
+   "Tömeg": "3,00 Kg"
+  },
+  "images": [
+   "/termekkepek/123412-spanifer-l-8-m-5000-kg-dupla-kampos-1.webp"
+  ]
+ },
+ "125310-3-reszes-rakomanyrogzito-oval-tanyer-800-kg": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45095310-anello-fermacarico-zincato-con-base-ovale/",
+  "sourceTitle": "45095310 – Anello fermacarico zincato con base ovale",
+  "sourceDescription": "",
+  "matchedCode": "45095310",
+  "specs": {
+   "Kivitel": "horganyzott / Zinc plated",
+   "Kiszerelés": "40 db"
+  },
+  "images": [
+   "/termekkepek/125310-3-reszes-rakomanyrogzito-oval-tanyer-800-kg-1.webp",
+   "/termekkepek/125310-3-reszes-rakomanyrogzito-oval-tanyer-800-kg-2.webp",
+   "/termekkepek/125310-3-reszes-rakomanyrogzito-oval-tanyer-800-kg-3.webp",
+   "/termekkepek/125310-3-reszes-rakomanyrogzito-oval-tanyer-800-kg-4.webp"
+  ]
+ },
+ "126510-rakomanyrogzito-kengyel-nyers-alatettel": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45096510-anello-fermacarico-zincato-con-piastra-grezza/",
+  "sourceTitle": "45096510 – Anello fermacarico zincato con piastra grezza",
+  "sourceDescription": "",
+  "matchedCode": "45096510",
+  "specs": {
+   "Tömeg": "0,460 kg",
+   "Kiszerelés": "50 db."
+  },
+  "images": [
+   "/termekkepek/126510-rakomanyrogzito-kengyel-nyers-alatettel-1.webp",
+   "/termekkepek/126510-rakomanyrogzito-kengyel-nyers-alatettel-2.webp",
+   "/termekkepek/126510-rakomanyrogzito-kengyel-nyers-alatettel-3.webp",
+   "/termekkepek/126510-rakomanyrogzito-kengyel-nyers-alatettel-4.webp"
+  ]
+ },
+ "127111-3-reszes-rakomanyrogzito-oval-tanyer-kics-350kg": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000036_lashing-rings/34000390_pivoting-stowing-ring--350kg",
+  "sourceTitle": "Pivoting stowing ring, 350kg",
+  "matchedCode": "2100071111",
+  "specs": {
+   "Anyag": "acél",
+   "Felület": "horganyzott",
+   "Tömeg": "0,18 kg",
+   "Hossz": "104,0 mm",
+   "Szélesség": "70,0 mm",
+   "Magasság": "12,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/127111-3-reszes-rakomanyrogzito-oval-tanyer-kics-350kg-1.webp"
+  ]
+ },
+ "127183-talpas-terelvalaszto-rakomanyrogzito-rud-d42-alu": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/barra-fermacarico-o42-con-molla-regolabile-2350%c3%b72720/",
+  "sourceTitle": "Barra Fermacarico Ø42 con molla regolabile 2350÷2720",
+  "sourceDescription": "",
+  "matchedCode": "50071083",
+  "specs": {
+   "Kivitel": "alumínium"
+  },
+  "images": [
+   "/termekkepek/127183-talpas-terelvalaszto-rakomanyrogzito-rud-d42-alu-1.webp"
+  ]
+ },
+ "127199-palcas-rakomanyrogzito-sin-sully-alu-pvc-3m": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/50071099-profilo-in-alluminio-con-protezione-in-pvc/",
+  "sourceTitle": "50071099 – Profilo in alluminio con protezione in pvc",
+  "sourceDescription": "",
+  "matchedCode": "50071099",
+  "specs": {
+   "Kiszerelés": "5 db"
+  },
+  "images": [
+   "/termekkepek/127199-palcas-rakomanyrogzito-sin-sully-alu-pvc-3m-1.webp",
+   "/termekkepek/127199-palcas-rakomanyrogzito-sin-sully-alu-pvc-3m-2.webp"
+  ]
+ },
+ "127210-rozsdamentes-rakomanyrozito-ful": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/80272210-maniglia-per-sponda-in-inox-con-molla/",
+  "sourceTitle": "Maniglia sponda con molla",
+  "sourceDescription": "",
+  "matchedCode": "80272210",
+  "specs": {
+   "Kivitel": "rozsdamentes",
+   "Tömeg": "0,14 kg",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/127210-rozsdamentes-rakomanyrozito-ful-1.webp",
+   "/termekkepek/127210-rozsdamentes-rakomanyrozito-ful-2.webp",
+   "/termekkepek/127210-rozsdamentes-rakomanyrozito-ful-3.webp",
+   "/termekkepek/127210-rozsdamentes-rakomanyrozito-ful-4.webp"
+  ]
+ },
+ "127515-rakomanyrogzito-kengyel-2000-kg-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45097515-anello-fermacarico-reus-zincato/",
+  "sourceTitle": "45097515 – Anello fermacarico Reus zincato",
+  "sourceDescription": "",
+  "matchedCode": "45097515",
+  "specs": {
+   "Kivitel": "horganyzott",
+   "Tömeg": "0,370 kg",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/127515-rakomanyrogzito-kengyel-2000-kg-ts-1.webp",
+   "/termekkepek/127515-rakomanyrogzito-kengyel-2000-kg-ts-2.webp",
+   "/termekkepek/127515-rakomanyrogzito-kengyel-2000-kg-ts-3.webp",
+   "/termekkepek/127515-rakomanyrogzito-kengyel-2000-kg-ts-4.webp"
+  ]
+ },
+ "128110-padloba-heg-rak-rogz-2500-dan": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/anello-fermacarico-incassato/",
+  "sourceTitle": "Anello fermacarico incassato",
+  "sourceDescription": "",
+  "matchedCode": "45098110",
+  "specs": {
+   "Kivitel": "nyers",
+   "Kiszerelés": "20 db."
+  },
+  "images": [
+   "/termekkepek/128110-padloba-heg-rak-rogz-2500-dan-1.webp",
+   "/termekkepek/128110-padloba-heg-rak-rogz-2500-dan-2.webp",
+   "/termekkepek/128110-padloba-heg-rak-rogz-2500-dan-3.webp"
+  ]
+ },
+ "128315-rakomanyrozito-ful-nyers": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/anello-fermacarico-a-comparsa/",
+  "sourceTitle": "Anello fermacarico a comparsa",
+  "sourceDescription": "",
+  "matchedCode": "45098315",
+  "specs": {
+   "Kivitel": "nyers",
+   "Kiszerelés": "40 db"
+  },
+  "images": [
+   "/termekkepek/128315-rakomanyrozito-ful-nyers-1.webp",
+   "/termekkepek/128315-rakomanyrozito-ful-nyers-2.webp",
+   "/termekkepek/128315-rakomanyrozito-ful-nyers-3.webp",
+   "/termekkepek/128315-rakomanyrozito-ful-nyers-4.webp"
+  ]
+ },
+ "128510-pvc-talpas-rakomanyrogzito-500-kg": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45098510-anello-fermacarico-zincato-con-base-in-pvc/",
+  "sourceTitle": "45098510 – Anello fermacarico zincato con base in pvc",
+  "sourceDescription": "",
+  "matchedCode": "45098510",
+  "specs": {
+   "Kivitel": "horganyzott con base in pvc",
+   "Tömeg": "0,100 kg",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/128510-pvc-talpas-rakomanyrogzito-500-kg-1.webp",
+   "/termekkepek/128510-pvc-talpas-rakomanyrogzito-500-kg-2.webp"
+  ]
+ },
+ "129111-rak-rogz-kengyel-lapka-2500-dan-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/50090323-attacco-quadruplo-ariline/",
+  "sourceTitle": "50090323 – Attacco quadruplo ARILINE",
+  "sourceDescription": "Fitting quadruplo a sgancio rapido con anello , un accessorio professionale progettato per essere inserito e bloccato all’interno dei binari di ancoraggio in alluminio (modello Airline). Caratteristiche principali Capacità di carico elevata : Come indicato dalla dicitura incisa sul metallo ( LC 2500 daN ), ha una capacità di carico ( Lashing Capacity ) di 2500 daN (circa 2,5 tonnellate). Struttura quadrupla : Occupa ben quattro alloggiamenti consecutivi sul binario, distribuendo la trazione su una superficie più ampia per evitare di danneggiare la guida in alluminio. Doppia modalità di aggancio : Dispone sia di un grande anello tondo in acciaio per inserire moschettoni e ganci a uncino, sia di un’ampia asola sagomata superiore in cui far passare direttamente cinghie di cricchetti pesanti.",
+  "matchedCode": "2500",
+  "specs": {
+   "Kiszerelés": "20 db"
+  },
+  "images": [
+   "/termekkepek/129111-rak-rogz-kengyel-lapka-2500-dan-ts-1.webp",
+   "/termekkepek/129111-rak-rogz-kengyel-lapka-2500-dan-ts-2.webp",
+   "/termekkepek/129111-rak-rogz-kengyel-lapka-2500-dan-ts-3.webp"
+  ]
+ },
+ "129310-padloba-sullyesztehto-horg-rak-rogzito-tanyer-1000-dan": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/anello-fermacarico-pesante-con-molla/",
+  "sourceTitle": "Anello fermacarico pesante con molla",
+  "sourceDescription": "Portata di carico = 1000 kg UNI EN 12640:2001 DIN 75410-1:2003",
+  "matchedCode": "45093110",
+  "specs": {
+   "Kivitel": "horganyzott",
+   "Tömeg": "0,440 kg",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/129310-padloba-sullyesztehto-horg-rak-rogzito-tanyer-1000-dan-1.webp",
+   "/termekkepek/129310-padloba-sullyesztehto-horg-rak-rogzito-tanyer-1000-dan-2.webp",
+   "/termekkepek/129310-padloba-sullyesztehto-horg-rak-rogzito-tanyer-1000-dan-3.webp",
+   "/termekkepek/129310-padloba-sullyesztehto-horg-rak-rogzito-tanyer-1000-dan-4.webp"
+  ]
+ },
+ "129711-rakomanyrogzito-kengyel-2500-dan-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45097110-anello-fermacarico-zincato-completo-di-dadi/",
+  "sourceTitle": "45097110 – Anello fermacarico zincato completo di dadi",
+  "sourceDescription": "",
+  "matchedCode": "45097110",
+  "specs": {
+   "Kivitel": "horganyzott",
+   "Kiszerelés": "40 db"
+  },
+  "images": [
+   "/termekkepek/129711-rakomanyrogzito-kengyel-2500-dan-ts-1.webp",
+   "/termekkepek/129711-rakomanyrogzito-kengyel-2500-dan-ts-2.webp",
+   "/termekkepek/129711-rakomanyrogzito-kengyel-2500-dan-ts-3.webp"
+  ]
+ },
  "140004-t4-bolcso": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/401/",
@@ -59,6 +848,17 @@
    "/termekkepek/140008-t8-bolcso-d240-1.webp"
   ]
  },
+ "140319-szivattyu-24v-3000w-20l-1p3-1cc": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-tila/",
+  "sourceTitle": "Cerniera TILA",
+  "sourceDescription": "",
+  "matchedCode": "3000",
+  "specs": {},
+  "images": [
+   "/termekkepek/140319-szivattyu-24v-3000w-20l-1p3-1cc-1.webp"
+  ]
+ },
  "140920-80-mm-es-gombcsuklo-keszlet": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/236/",
@@ -93,6 +893,50 @@
    "/termekkepek/140997-60-mm-es-gombcsuklo-keszlet-1.webp"
   ]
  },
+ "142303-billencs-nyitokar-j": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/15012303-leva-comando-destra-per-apertura-cerniere/",
+  "sourceTitle": "15012303 – Leva comando Destra per apertura cerniere",
+  "sourceDescription": "",
+  "matchedCode": "15012303",
+  "specs": {
+   "Tömeg": "2,00 kg",
+   "Kiszerelés": "25 db"
+  },
+  "images": [
+   "/termekkepek/142303-billencs-nyitokar-j-1.webp",
+   "/termekkepek/142303-billencs-nyitokar-j-2.webp"
+  ]
+ },
+ "142304-billencs-nyitokar-b": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/15012304-leva-comando-sinistra-per-apertura-cerniere/",
+  "sourceTitle": "15012304 – Leva comando Sinistra per apertura cerniere",
+  "sourceDescription": "",
+  "matchedCode": "15012304",
+  "specs": {
+   "Tömeg": "2,00 kg",
+   "Kiszerelés": "25 db"
+  },
+  "images": [
+   "/termekkepek/142304-billencs-nyitokar-b-1.webp",
+   "/termekkepek/142304-billencs-nyitokar-b-2.webp"
+  ]
+ },
+ "145010-50-mm-es-gombcsuklo-keszlet-3-5t": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/25375100-kit-sfere-orizzontali-o75-portata-max-12-ton/",
+  "sourceTitle": "25375100 – Kit sfere orizzontali Ø75- Portata max 12 Ton.",
+  "sourceDescription": "",
+  "matchedCode": "25350100",
+  "specs": {
+   "Tömeg": "16,000 kg",
+   "Kiszerelés": "1 db"
+  },
+  "images": [
+   "/termekkepek/145010-50-mm-es-gombcsuklo-keszlet-3-5t-1.webp"
+  ]
+ },
  "145170-szelep1-2": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/411/",
@@ -115,6 +959,551 @@
   },
   "images": [
    "/termekkepek/145260-szelep-22-3-4-1.webp"
+  ]
+ },
+ "146012-szivattyu-12v": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/14600012-centralina-completa-12-volt/",
+  "sourceTitle": "14600012 – Centralina completa 12 Volt",
+  "sourceDescription": "",
+  "matchedCode": "14600012",
+  "specs": {
+   "Kiszerelés": "1 db."
+  },
+  "images": [
+   "/termekkepek/146012-szivattyu-12v-1.webp"
+  ]
+ },
+ "152711-menetes-lapka-30mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/35030023-taschetta-zincata-k4/",
+  "sourceTitle": "35030023 – Taschetta Zincata K4",
+  "sourceDescription": "",
+  "matchedCode": "15270110",
+  "specs": {
+   "Kivitel": "Piastrina",
+   "Kiszerelés": "100 db."
+  },
+  "images": [
+   "/termekkepek/152711-menetes-lapka-30mm-1.webp",
+   "/termekkepek/152711-menetes-lapka-30mm-2.webp"
+  ]
+ },
+ "152760-tir-zsaner-apa-resz-alu-hoz": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/15276110-perno-in-lamiera-stampata-zincato-o12/",
+  "sourceTitle": "15276110 – Perno in Lamiera Stampata Zincato Ø12",
+  "sourceDescription": "",
+  "matchedCode": "15276110",
+  "specs": {},
+  "images": [
+   "/termekkepek/152760-tir-zsaner-apa-resz-alu-hoz-1.webp",
+   "/termekkepek/152760-tir-zsaner-apa-resz-alu-hoz-2.webp",
+   "/termekkepek/152760-tir-zsaner-apa-resz-alu-hoz-3.webp"
+  ]
+ },
+ "152781-tir-zsaner-lapka-70mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/15278110-piastrina-zincata-int-70/",
+  "sourceTitle": "15278110 – Piastrina zincata Int.70",
+  "sourceDescription": "",
+  "matchedCode": "15278110",
+  "specs": {
+   "Tömeg": "0,08 kg"
+  },
+  "images": [
+   "/termekkepek/152781-tir-zsaner-lapka-70mm-1.webp",
+   "/termekkepek/152781-tir-zsaner-lapka-70mm-2.webp"
+  ]
+ },
+ "152791-tir-zsaner-lapka-50mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/15279110-piastrina-zincata-int-50/",
+  "sourceTitle": "15279110 – Piastrina zincata Int.50",
+  "sourceDescription": "",
+  "matchedCode": "15279110",
+  "specs": {
+   "Tömeg": "0,07 kg"
+  },
+  "images": [
+   "/termekkepek/152791-tir-zsaner-lapka-50mm-1.webp",
+   "/termekkepek/152791-tir-zsaner-lapka-50mm-2.webp"
+  ]
+ },
+ "152811-tir-zsaner-garnitura-horg": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/15279110-piastrina-zincata-int-50/",
+  "sourceTitle": "15279110 – Piastrina zincata Int.50",
+  "sourceDescription": "",
+  "matchedCode": "15279110",
+  "specs": {
+   "Tömeg": "0,07 kg"
+  },
+  "images": [
+   "/termekkepek/152811-tir-zsaner-garnitura-horg-1.webp",
+   "/termekkepek/152811-tir-zsaner-garnitura-horg-2.webp"
+  ]
+ },
+ "152814-tir-zsaner-garnitura-th": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-tir-leggera-bm/",
+  "sourceTitle": "Cerniera Tir leggera BM",
+  "sourceDescription": "",
+  "matchedCode": "15281410",
+  "specs": {
+   "Kivitel": "horganyzott a caldo",
+   "Tömeg": "0,210 kg",
+   "Kiszerelés": "100 db."
+  },
+  "images": [
+   "/termekkepek/152814-tir-zsaner-garnitura-th-1.webp",
+   "/termekkepek/152814-tir-zsaner-garnitura-th-2.webp"
+  ]
+ },
+ "152815-1-tir-zsaner-anya": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-tir-leggera-bm/",
+  "sourceTitle": "Cerniera Tir leggera BM",
+  "sourceDescription": "",
+  "matchedCode": "15281510",
+  "specs": {
+   "Kivitel": "Dacromet",
+   "Tömeg": "0,210 kg",
+   "Kiszerelés": "100 db."
+  },
+  "images": [
+   "/termekkepek/152815-1-tir-zsaner-anya-1.webp",
+   "/termekkepek/152815-1-tir-zsaner-anya-2.webp"
+  ]
+ },
+ "152815-2-tir-zsaner-apa": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/perno-tir-leggero-bm/",
+  "sourceTitle": "Perno Tir leggero BM",
+  "sourceDescription": "",
+  "matchedCode": "15280510",
+  "specs": {
+   "Kivitel": "Dacromet",
+   "Tömeg": "0,240 kg",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/152815-2-tir-zsaner-apa-1.webp",
+   "/termekkepek/152815-2-tir-zsaner-apa-2.webp"
+  ]
+ },
+ "152823-tir-zsaner-garnitura-rm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-tir-leggera-bm/",
+  "sourceTitle": "Cerniera Tir leggera BM",
+  "sourceDescription": "",
+  "matchedCode": "15282310",
+  "specs": {
+   "Kivitel": "rozsdamentes",
+   "Tömeg": "0,210 kg",
+   "Kiszerelés": "100 db."
+  },
+  "images": [
+   "/termekkepek/152823-tir-zsaner-garnitura-rm-1.webp",
+   "/termekkepek/152823-tir-zsaner-garnitura-rm-2.webp"
+  ]
+ },
+ "201094-targonca-utkozo-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000043_bumpers-and-buffers/126000004_frame-profile-33x37mm-al",
+  "sourceTitle": "Frame profile 33x37mm Al",
+  "matchedCode": "2200071094",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "natúr",
+   "Tömeg": "1,06 kg",
+   "Hossz": "6 000,0 mm",
+   "Szélesség": "37,5 mm",
+   "Magasság": "33,5 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/201094-targonca-utkozo-profil-1.webp"
+  ]
+ },
+ "203492-autoszallito-padlo-keret-profil-30-mm": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000049_aluminium-floors/910099447_edgeprofil-30mm-for-tow-truck",
+  "sourceTitle": "Edgeprofil 30mm for tow truck",
+  "matchedCode": "6600013492",
+  "specs": {
+   "Anyag": "EN AW 6005A",
+   "Felület": "natúr",
+   "Tömeg": "2,525 kg",
+   "Hossz": "7 100,0 mm",
+   "Magasság": "130,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/203492-autoszallito-padlo-keret-profil-30-mm-1.webp"
+  ]
+ },
+ "211210-ponyvagorgo-alu-sinhez": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/36200110-carrucola-ruote-in-nylon-o30/",
+  "sourceTitle": "36200110 – Carrucola ruote in nylon Ø30",
+  "sourceDescription": "",
+  "matchedCode": "36200110",
+  "specs": {
+   "Tömeg": "0,120 kg",
+   "Kiszerelés": "250 db"
+  },
+  "images": [
+   "/termekkepek/211210-ponyvagorgo-alu-sinhez-1.webp",
+   "/termekkepek/211210-ponyvagorgo-alu-sinhez-2.webp"
+  ]
+ },
+ "222233-rampa-szego-g-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000050_aluminium-overruns/70000028_mounting-ramp-side-profile-g-al",
+  "sourceTitle": "Mounting ramp side profile G al",
+  "matchedCode": "6600012233",
+  "specs": {
+   "Anyag": "EN AW 6005A",
+   "Felület": "natúr",
+   "Tömeg": "3,726 kg",
+   "Hossz": "8 000,0 mm",
+   "Szélesség": "55,0 mm",
+   "Magasság": "80,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/222233-rampa-szego-g-profil-1.webp"
+  ]
+ },
+ "222528-u-szego-zartszelveny-erositessel-25-mm-elox": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/39000532_a-edging-profile-safegrip",
+  "sourceTitle": "A edging profile Safegrip",
+  "matchedCode": "6612012528",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "0,96 kg",
+   "Hossz": "6 500,0 mm",
+   "Szélesség": "70,4 mm",
+   "Magasság": "29,1 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/222528-u-szego-zartszelveny-erositessel-25-mm-elox-1.webp"
+  ]
+ },
+ "223563-tomites-also-zaroprofilhoz": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/136_gasket-for-lower-profile-eurolock",
+  "sourceTitle": "Gasket for lower profile Eurolock",
+  "matchedCode": "1001063563",
+  "specs": {
+   "Anyag": "PVC Color: grey",
+   "Tömeg": "0,09 kg",
+   "Szélesség": "18,0 mm",
+   "Magasság": "18,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/223563-tomites-also-zaroprofilhoz-1.webp"
+  ]
+ },
+ "227785-koztes-100-mm-elox-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1513_middle-profile-eurolock-100mm--anodized",
+  "sourceTitle": "Middle profile EUROLOCK 100mm, anodized",
+  "matchedCode": "6611127785",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "1,45 kg",
+   "Hossz": "7 650,0 mm",
+   "Szélesség": "100,0 mm",
+   "Magasság": "25,0 mm",
+   "Mértékegység": "m Version: central"
+  },
+  "images": [
+   "/termekkepek/227785-koztes-100-mm-elox-profil-1.webp"
+  ]
+ },
+ "231144-z-esoveto-alu-profil-60-mm": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000001_closed-body-aluminum-profiles/910189874_dripchannel-profile--anodized",
+  "sourceTitle": "Dripchannel profile, anodized",
+  "matchedCode": "6612014350",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "0,604 kg",
+   "Szélesség": "57,7 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/231144-z-esoveto-alu-profil-60-mm-1.webp"
+  ]
+ },
+ "231245-esocsatorna-kicsi-elox-5000": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/721",
+  "sourceTitle": "GOOTLIJST 23,5x18x12,5x1,5mm 50SW-silver 2-L= 5,00 m Packed by 1 piece Anodised aluminium (silver) 5.000 mm",
+  "matchedCode": "1010650-TZ2-5000",
+  "specs": {
+   "Hossz": "5,00 m",
+   "Felület": "eloxált",
+   "Anyag": "alumínium"
+  },
+  "images": [
+   "/termekkepek/231245-esocsatorna-kicsi-elox-5000-1.webp"
+  ]
+ },
+ "231245-n-esocsatorna-kicsi-5000": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/721",
+  "sourceTitle": "Gutter profiles",
+  "matchedCode": "1245 000-000",
+  "specs": {
+   "Anyag": "alumínium"
+  },
+  "images": [
+   "/termekkepek/231245-n-esocsatorna-kicsi-5000-1.webp"
+  ]
+ },
+ "231725-belga-h-szego-25-mm-elox": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/711",
+  "sourceTitle": "DEURPROFIEL-silver 2-L= 7,00 m Anodised aluminium (silver) 7.000 mm",
+  "matchedCode": "1011356-TZ2-7000",
+  "specs": {
+   "Hossz": "7,00 m",
+   "Felület": "eloxált",
+   "Anyag": "alumínium"
+  },
+  "images": [
+   "/termekkepek/231725-belga-h-szego-25-mm-elox-1.webp"
+  ]
+ },
+ "231791-15-3x26-mm-l-profil-elox": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000001_closed-body-aluminum-profiles/70000030_profil-l-26x15-3mm--anodized",
+  "sourceTitle": "Profil L 26x15,3mm, anodized",
+  "matchedCode": "66L2011791",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "0,211 kg",
+   "Hossz": "7 500,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/231791-15-3x26-mm-l-profil-elox-1.webp"
+  ]
+ },
+ "236817-n-r50-ives-felso-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000001_closed-body-aluminum-profiles/16000141_edge-profile-r50--outdoor",
+  "sourceTitle": "Edge profile R50, outdoor",
+  "matchedCode": "1000006817",
+  "specs": {
+   "Anyag": "EN AW 6082",
+   "Felület": "natúr",
+   "Tömeg": "1,25 kg",
+   "Hossz": "7 500,0 mm",
+   "Szélesség": "102,0 mm",
+   "Magasság": "102,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/236817-n-r50-ives-felso-profil-1.webp"
+  ]
+ },
+ "236817-r50-ives-felso-profil-elox": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000001_closed-body-aluminum-profiles/15000175_edge-profile-r50-outside--anodized",
+  "sourceTitle": "Edge profile R50 outside, anodized",
+  "matchedCode": "1000068171",
+  "specs": {
+   "Anyag": "alumínium",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "1,25 kg",
+   "Hossz": "7 500,0 mm",
+   "Szélesség": "102,0 mm",
+   "Magasság": "102,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/236817-r50-ives-felso-profil-elox-1.webp"
+  ]
+ },
+ "237310-20-dupla-alu-zsaner": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000022_closed-body-hinges/815_continuous-hinge-155-counterpart-max5-3m",
+  "sourceTitle": "Continuous hinge 155 counterpart max5,3m",
+  "matchedCode": "4163673200",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "0,6 kg",
+   "Hossz": "5 300,0 mm",
+   "Szélesség": "49,0 mm",
+   "Magasság": "30,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/237310-20-dupla-alu-zsaner-1.webp"
+  ]
+ },
+ "237767-n-60x60-l-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000001_closed-body-aluminum-profiles/1468_internal-profile-l-60x60mm--al",
+  "sourceTitle": "Internal profile L 60x60mm, al",
+  "matchedCode": "6600007767",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "natúr",
+   "Tömeg": "0,73 kg",
+   "Hossz": "7 500,0 mm",
+   "Szélesség": "60,0 mm",
+   "Magasság": "60,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/237767-n-60x60-l-profil-1.webp"
+  ]
+ },
+ "237768-40x40x2-5-r-elox-l-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000001_closed-body-aluminum-profiles/87000229_inside-profile-l40x40--anodized",
+  "sourceTitle": "Inside profile L40x40, anodized",
+  "matchedCode": "6612007768",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "0,45 kg",
+   "Hossz": "7 500,0 mm",
+   "Szélesség": "40,0 mm",
+   "Magasság": "40,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/237768-40x40x2-5-r-elox-l-profil-1.webp"
+  ]
+ },
+ "238043-kalap-profil-natur-35-87-mm": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000001_closed-body-aluminum-profiles/1474_roof-profile-omega-35mm--al",
+  "sourceTitle": "Roof profile omega 35mm, al",
+  "matchedCode": "6600008043",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "natúr",
+   "Tömeg": "0,908 kg",
+   "Hossz": "7 500,0 mm",
+   "Szélesség": "87,0 mm",
+   "Magasság": "35,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/238043-kalap-profil-natur-35-87-mm-1.webp"
+  ]
+ },
+ "243240-billencs-kozepso-200x40-mm": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000010_al-dropsides-dropside-prof.-30-40-60-65/38000482_tipper-profile-middle-200x40-mm",
+  "sourceTitle": "Tipper profile middle 200x40 mm",
+  "matchedCode": "66S3200400",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "natúr",
+   "Tömeg": "3,596 kg",
+   "Hossz": "7 500,0 mm",
+   "Mértékegység": "m Version: central"
+  },
+  "images": [
+   "/termekkepek/243240-billencs-kozepso-200x40-mm-1.webp"
+  ]
+ },
+ "245240-billencs-also-200x40-mm": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000010_al-dropsides-dropside-prof.-30-40-60-65/38000483_tipper-profile-bottom-200x40-mm",
+  "sourceTitle": "Tipper profile bottom 200x40 mm",
+  "matchedCode": "66S5200400",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "natúr",
+   "Tömeg": "4,68 kg",
+   "Hossz": "7 500,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/245240-billencs-also-200x40-mm-1.webp"
+  ]
+ },
+ "247243-billencs-felso-200x40-mm": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000010_al-dropsides-dropside-prof.-30-40-60-65/31000511_tipper-top-profile-200x40-mm",
+  "sourceTitle": "Tipper top profile 200x40 mm",
+  "matchedCode": "1141037243",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "natúr",
+   "Tömeg": "4,331 kg",
+   "Hossz": "7 500,0 mm",
+   "Szélesség": "40,0 mm",
+   "Magasság": "215,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/247243-billencs-felso-200x40-mm-1.webp"
+  ]
+ },
+ "307955-alafutasgatlo-konzol-550-mm-horg": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/parabiciclette-ribaltabile-h-550/",
+  "sourceTitle": "Parabiciclette ribaltabile H.550",
+  "sourceDescription": "",
+  "matchedCode": "57900055",
+  "specs": {
+   "Kivitel": "horganyzott",
+   "Tömeg": "1,73 kg",
+   "Kiszerelés": "10 db"
+  },
+  "images": [
+   "/termekkepek/307955-alafutasgatlo-konzol-550-mm-horg-1.webp",
+   "/termekkepek/307955-alafutasgatlo-konzol-550-mm-horg-2.webp"
+  ]
+ },
+ "307955-th-alafutasgatlo-konzol-550-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/parabiciclette-ribaltabile-h-550/",
+  "sourceTitle": "Parabiciclette ribaltabile H.550",
+  "sourceDescription": "",
+  "matchedCode": "57900155",
+  "specs": {
+   "Kivitel": "horganyzott a caldo",
+   "Tömeg": "1,73 kg",
+   "Kiszerelés": "10 db"
+  },
+  "images": [
+   "/termekkepek/307955-th-alafutasgatlo-konzol-550-mm-1.webp",
+   "/termekkepek/307955-th-alafutasgatlo-konzol-550-mm-2.webp"
+  ]
+ },
+ "309055-alafutasgatlo-konzol-700-mm-horg": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/parabiciclette-ribaltabile-h-700/",
+  "sourceTitle": "Parabiciclette ribaltabile H.700",
+  "sourceDescription": "",
+  "matchedCode": "58900055",
+  "specs": {
+   "Kivitel": "horganyzott",
+   "Tömeg": "3,50 kg",
+   "Kiszerelés": "10 db"
+  },
+  "images": [
+   "/termekkepek/309055-alafutasgatlo-konzol-700-mm-horg-1.webp",
+   "/termekkepek/309055-alafutasgatlo-konzol-700-mm-horg-2.webp"
   ]
  },
  "337510-hatso-lampatarto-rendszamtabla-tarto-1800-mm": {
@@ -173,6 +1562,32 @@
    "/termekkepek/337540-hatso-lampatarto-rendszamtabla-tarto-2400-mm-1.webp"
   ]
  },
+ "35014051-2-400-500-as-hatso-billencs-rakonca-r-l-acel-zsebbel": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/piantone-stretto-100-60-verniciatura-in-cataforesi/",
+  "sourceTitle": "Piantone Stretto 100/60 verniciatura in Cataforesi",
+  "sourceDescription": "",
+  "matchedCode": "35900405",
+  "specs": {
+   "Kivitel": "Posteriore Doppio Destro"
+  },
+  "images": [
+   "/termekkepek/35014051-2-400-500-as-hatso-billencs-rakonca-r-l-acel-zsebbel-1.webp"
+  ]
+ },
+ "35014251-2-400-as-billencs-elso-rakonca-r-l": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/piantone-stretto-100-60-verniciatura-in-cataforesi/",
+  "sourceTitle": "Piantone Stretto 100/60 verniciatura in Cataforesi",
+  "sourceDescription": "",
+  "matchedCode": "35900402",
+  "specs": {
+   "Kivitel": "Frontale Singolo Sinistro"
+  },
+  "images": [
+   "/termekkepek/35014251-2-400-as-billencs-elso-rakonca-r-l-1.webp"
+  ]
+ },
  "351201-potkerektarto-120-mm-tengelykozep": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/662/",
@@ -185,6 +1600,19 @@
   },
   "images": [
    "/termekkepek/351201-potkerektarto-120-mm-tengelykozep-1.webp"
+  ]
+ },
+ "3514430-1-billencs-rakonca-szego-egyenes-r-l": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/piantone-stretto-100-60-verniciatura-in-cataforesi/",
+  "sourceTitle": "Piantone Stretto 100/60 verniciatura in Cataforesi",
+  "sourceDescription": "",
+  "matchedCode": "35144300",
+  "specs": {
+   "Kivitel": "Testata Laterale"
+  },
+  "images": [
+   "/termekkepek/3514430-1-billencs-rakonca-szego-egyenes-r-l-1.webp"
   ]
  },
  "351775-bill-rakonca-csap": {
@@ -259,6 +1687,50 @@
    "Tömeg": "1,660 kg"
   }
  },
+ "352240-ellendarabos-szego-400mm-r-l": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/piantone-in-alluminio-tl35-s-battuta/",
+  "sourceTitle": "Piantone in alluminio TL35 S/BATTUTA",
+  "sourceDescription": "",
+  "matchedCode": "35220400",
+  "specs": {
+   "Kivitel": "H.400",
+   "Kiszerelés": "20 db. (10 J+10 B)"
+  },
+  "images": [
+   "/termekkepek/352240-ellendarabos-szego-400mm-r-l-1.webp",
+   "/termekkepek/352240-ellendarabos-szego-400mm-r-l-2.webp"
+  ]
+ },
+ "352260-ellendarabos-szego-600mm-r-l": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/piantone-in-alluminio-tl35-s-battuta/",
+  "sourceTitle": "Piantone in alluminio TL35 S/BATTUTA",
+  "sourceDescription": "",
+  "matchedCode": "35220600",
+  "specs": {
+   "Kivitel": "H.600",
+   "Kiszerelés": "20 db. (10 J+10 B)"
+  },
+  "images": [
+   "/termekkepek/352260-ellendarabos-szego-600mm-r-l-1.webp",
+   "/termekkepek/352260-ellendarabos-szego-600mm-r-l-2.webp"
+  ]
+ },
+ "352540-egymasba-zarodo-z-zar-400": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/35100500-montante-centrale-per-piantone-tl35-35250400/",
+  "sourceTitle": "35100500 – Montante Centrale per Piantone TL35 – 35250400",
+  "sourceDescription": "",
+  "matchedCode": "35250400",
+  "specs": {
+   "Kiszerelés": "10 db."
+  },
+  "images": [
+   "/termekkepek/352540-egymasba-zarodo-z-zar-400-1.webp",
+   "/termekkepek/352540-egymasba-zarodo-z-zar-400-2.webp"
+  ]
+ },
  "353510-potkerektarto-szimpla": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/663/",
@@ -317,6 +1789,130 @@
    "/termekkepek/353555-potkerektarto-felfogatas-255-1.webp"
   ]
  },
+ "354400-nem-peremes-400-z-zar-r-l": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-senza-battuta-maniglia-zincata/",
+  "sourceTitle": "Piantone PLANAE in alluminio Senza Battuta maniglia Zincata",
+  "sourceDescription": "",
+  "matchedCode": "35140400",
+  "specs": {
+   "Kivitel": "H.400",
+   "Kiszerelés": "20 db. (10 J+10 B)"
+  },
+  "images": [
+   "/termekkepek/354400-nem-peremes-400-z-zar-r-l-1.webp"
+  ]
+ },
+ "354424-top-kuplung": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/35442401-gancio-grezzo-per-articolazione-superiore/",
+  "sourceTitle": "35442401 – Gancio Grezzo per Articolazione Superiore",
+  "sourceDescription": "",
+  "matchedCode": "35442401",
+  "specs": {
+   "Kivitel": "nyers",
+   "Kiszerelés": "100 db."
+  },
+  "images": [
+   "/termekkepek/354424-top-kuplung-1.webp"
+  ]
+ },
+ "354500-nem-peremes-500-mm-z-zar-r-l": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-senza-battuta-maniglia-zincata/",
+  "sourceTitle": "Piantone PLANAE in alluminio Senza Battuta maniglia Zincata",
+  "sourceDescription": "",
+  "matchedCode": "35140500",
+  "specs": {
+   "Kivitel": "H.500",
+   "Kiszerelés": "20 db. (10 J+10 B)"
+  },
+  "images": [
+   "/termekkepek/354500-nem-peremes-500-mm-z-zar-r-l-1.webp"
+  ]
+ },
+ "354600-nem-peremes-600-mm-z-zar-r-l": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-senza-battuta-maniglia-zincata/",
+  "sourceTitle": "Piantone PLANAE in alluminio Senza Battuta maniglia Zincata",
+  "sourceDescription": "",
+  "matchedCode": "35140600",
+  "specs": {
+   "Kivitel": "H.600",
+   "Kiszerelés": "20 db. (10 J+10 B)"
+  },
+  "images": [
+   "/termekkepek/354600-nem-peremes-600-mm-z-zar-r-l-1.webp"
+  ]
+ },
+ "354800-nem-peremes-800-mm-z-zar-r-l": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-senza-battuta-maniglia-zincata/",
+  "sourceTitle": "Piantone PLANAE in alluminio Senza Battuta maniglia Zincata",
+  "sourceDescription": "",
+  "matchedCode": "35140800",
+  "specs": {
+   "Kivitel": "H.800",
+   "Kiszerelés": "20 db. (10 J+10 B)"
+  },
+  "images": [
+   "/termekkepek/354800-nem-peremes-800-mm-z-zar-r-l-1.webp"
+  ]
+ },
+ "356287-alu-kozepso-rakonca-400-mm-60-billeno-toldassal": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/910108523_pillar-alugrip-60-cs-with-extension",
+  "sourceTitle": "Pillar AluGrip 60/CS with extension",
+  "matchedCode": "6287CS6000",
+  "specs": {
+   "Anyag": "Al / acél",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "2,758 kg",
+   "Hossz": "602,0 mm",
+   "Szélesség": "130,0 mm",
+   "Magasság": "30,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/356287-alu-kozepso-rakonca-400-mm-60-billeno-toldassal-1.webp"
+  ]
+ },
+ "356297-alu-kozepso-rakonca-400-mm-80": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000006_pillars/910105248_midlle-pillar-alugrip-400--anod.",
+  "sourceTitle": "Midlle pillar AluGrip 400, anod.",
+  "matchedCode": "62974BB011",
+  "specs": {
+   "Anyag": "Al / acél",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "2,741 kg",
+   "Hossz": "524,0 mm",
+   "Szélesség": "158,0 mm",
+   "Magasság": "35,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/356297-alu-kozepso-rakonca-400-mm-80-1.webp"
+  ]
+ },
+ "356297b-alu-kozepso-rakonca-400-mm-80-np": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000006_pillars/48000765_middle-pillar-alugrip-400--anod--no-edge",
+  "sourceTitle": "Middle pillar AluGrip 400, anod, No edge",
+  "matchedCode": "62974B0000",
+  "specs": {
+   "Anyag": "Al / acél",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "2,67 kg",
+   "Hossz": "524,0 mm",
+   "Szélesség": "80,0 mm",
+   "Magasság": "35,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/356297b-alu-kozepso-rakonca-400-mm-80-np-1.webp"
+  ]
+ },
  "357272-kg-szego-tomites": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/41/",
@@ -329,6 +1925,228 @@
   },
   "images": [
    "/termekkepek/357272-kg-szego-tomites-1.webp"
+  ]
+ },
+ "357400-peremes-z-zar-400-mm-r-l": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-con-battuta-maniglia-zincata-con-sicura/",
+  "sourceTitle": "Piantone PLANAE in alluminio Con Battuta maniglia Zincata con Sicura",
+  "sourceDescription": "",
+  "matchedCode": "35160400",
+  "specs": {
+   "Kivitel": "H.400",
+   "Kiszerelés": "20 db. (10 J+10 B)"
+  },
+  "images": [
+   "/termekkepek/357400-peremes-z-zar-400-mm-r-l-1.webp",
+   "/termekkepek/357400-peremes-z-zar-400-mm-r-l-2.webp"
+  ]
+ },
+ "357401-peremes-z-zar-600-mm-r-l": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-con-battuta-maniglia-zincata/",
+  "sourceTitle": "Piantone PLANAE in alluminio Con Battuta maniglia Zincata",
+  "sourceDescription": "",
+  "matchedCode": "35170600",
+  "specs": {
+   "Kivitel": "H.600",
+   "Kiszerelés": "20 db. (10 J+10 B)"
+  },
+  "images": [
+   "/termekkepek/357401-peremes-z-zar-600-mm-r-l-1.webp"
+  ]
+ },
+ "357500-peremes-z-zar-500-mm-r-l": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-con-battuta-maniglia-zincata/",
+  "sourceTitle": "Piantone PLANAE in alluminio Con Battuta maniglia Zincata",
+  "sourceDescription": "",
+  "matchedCode": "35170500",
+  "specs": {
+   "Kivitel": "H.500",
+   "Kiszerelés": "20 db. (10 J+10 B)"
+  },
+  "images": [
+   "/termekkepek/357500-peremes-z-zar-500-mm-r-l-1.webp"
+  ]
+ },
+ "380011-felso-adapter-34-es-csohoz": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/34480011-tappo-superiore-per-profilo-o34/",
+  "sourceTitle": "34480011 – Tappo superiore per profilo Ø34",
+  "sourceDescription": "",
+  "matchedCode": "34480011",
+  "specs": {
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/380011-felso-adapter-34-es-csohoz-1.webp",
+   "/termekkepek/380011-felso-adapter-34-es-csohoz-2.webp"
+  ]
+ },
+ "380017-also-adapter-34-es-csohoz": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/34480017-innesto-a-taglio-per-profilo-o34/",
+  "sourceTitle": "34480017 – Innesto a taglio per profilo Ø34",
+  "sourceDescription": "",
+  "matchedCode": "34480017",
+  "specs": {
+   "Tömeg": "0",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/380017-also-adapter-34-es-csohoz-1.webp",
+   "/termekkepek/380017-also-adapter-34-es-csohoz-2.webp"
+  ]
+ },
+ "380018-ss-also-adapter-27-es-csohoz-kocka": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/34480018-ss-innesto-inferiore-inox-attacco-quadro/",
+  "sourceTitle": "34480018/SS – Innesto Inferiore Inox attacco quadro",
+  "sourceDescription": "",
+  "matchedCode": "34480018",
+  "specs": {
+   "Tömeg": "0",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/380018-ss-also-adapter-27-es-csohoz-kocka-1.webp"
+  ]
+ },
+ "380019-felso-adapter-27-es-csohoz": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/34480019-ss-tappo-in-inox-per-profilo-o27/",
+  "sourceTitle": "34480019/SS – Tappo in Inox per profilo Ø27",
+  "sourceDescription": "",
+  "matchedCode": "34480019",
+  "specs": {
+   "Tömeg": "0",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/380019-felso-adapter-27-es-csohoz-1.webp",
+   "/termekkepek/380019-felso-adapter-27-es-csohoz-2.webp"
+  ]
+ },
+ "380020-ss-also-adapter-27-es-csohoz-szogletes": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/34480020-ss-innesto-a-quadro-in-inox-per-profilo-o27/",
+  "sourceTitle": "34480020/SS – Innesto a quadro in inox per profilo Ø27",
+  "sourceDescription": "",
+  "matchedCode": "34480020",
+  "specs": {
+   "Tömeg": "0",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/380020-ss-also-adapter-27-es-csohoz-szogletes-1.webp",
+   "/termekkepek/380020-ss-also-adapter-27-es-csohoz-szogletes-2.webp",
+   "/termekkepek/380020-ss-also-adapter-27-es-csohoz-szogletes-3.webp"
+  ]
+ },
+ "380021-ss-also-adapter-27-es-csohoz": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/34480021-ss-innesto-a-taglio-in-inox-per-profilo-o27/",
+  "sourceTitle": "34480021/SS – Innesto a Taglio in Inox per profilo Ø27",
+  "sourceDescription": "",
+  "matchedCode": "34480021",
+  "specs": {
+   "Tömeg": "0",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/380021-ss-also-adapter-27-es-csohoz-1.webp",
+   "/termekkepek/380021-ss-also-adapter-27-es-csohoz-2.webp",
+   "/termekkepek/380021-ss-also-adapter-27-es-csohoz-3.webp"
+  ]
+ },
+ "380060-racsnis-feszito-r": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/34480060-tenditore-tr-destro-in-dacromet-attac-a-taglio-o25/",
+  "sourceTitle": "34480060 – Tenditore TR destro in dacromet attac. a taglio Ø25",
+  "sourceDescription": "",
+  "matchedCode": "34480060",
+  "specs": {
+   "Tömeg": "1,200 kg",
+   "Kiszerelés": "20 db"
+  },
+  "images": [
+   "/termekkepek/380060-racsnis-feszito-r-1.webp",
+   "/termekkepek/380060-racsnis-feszito-r-2.webp"
+  ]
+ },
+ "380061-racsnis-feszito-l": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/34480061-tenditore-tr-sinistro-in-dacromet-attac-a-taglio-o25/",
+  "sourceTitle": "34480061 – Tenditore TR sinistro in dacromet attac. a taglio Ø25",
+  "sourceDescription": "",
+  "matchedCode": "34480061",
+  "specs": {
+   "Tömeg": "1,20 kg",
+   "Kiszerelés": "20 db"
+  },
+  "images": [
+   "/termekkepek/380061-racsnis-feszito-l-1.webp",
+   "/termekkepek/380061-racsnis-feszito-l-2.webp"
+  ]
+ },
+ "380810-tts-racsnis-feszito-ketoldalas": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/34480010-tenditore-zincato-doppio-attacco-a-taglio-o25/",
+  "sourceTitle": "34480010 – Tenditore zincato doppio attacco a taglio Ø25",
+  "sourceDescription": "",
+  "matchedCode": "34480010",
+  "specs": {},
+  "images": [
+   "/termekkepek/380810-tts-racsnis-feszito-ketoldalas-1.webp",
+   "/termekkepek/380810-tts-racsnis-feszito-ketoldalas-2.webp"
+  ]
+ },
+ "381071-feszito-kocka-sliccelt-adapterhez-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/34480045-r-tenditore-destro-zincato-attacco-a-taglio-o25/",
+  "sourceTitle": "34480045/R – Tenditore destro zincato attacco a taglio Ø25",
+  "sourceDescription": "",
+  "matchedCode": "34480045",
+  "specs": {
+   "Tömeg": "0,730 kg",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/381071-feszito-kocka-sliccelt-adapterhez-ts-1.webp",
+   "/termekkepek/381071-feszito-kocka-sliccelt-adapterhez-ts-2.webp",
+   "/termekkepek/381071-feszito-kocka-sliccelt-adapterhez-ts-3.webp"
+  ]
+ },
+ "381073-feszito-kocka-szogletes-adapterhez": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/34480055-r-tenditore-destro-zincato-attacco-a-squadro-12x12/",
+  "sourceTitle": "34480055/R – Tenditore destro zincato attacco a squadro 12×12",
+  "sourceDescription": "",
+  "matchedCode": "34480055",
+  "specs": {
+   "Tömeg": "0,690 kg",
+   "Kiszerelés": "25 db"
+  },
+  "images": [
+   "/termekkepek/381073-feszito-kocka-szogletes-adapterhez-1.webp",
+   "/termekkepek/381073-feszito-kocka-szogletes-adapterhez-2.webp",
+   "/termekkepek/381073-feszito-kocka-szogletes-adapterhez-3.webp"
+  ]
+ },
+ "381420-tekero-kurbli": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/34480041-maniglia-zincata-per-tenditore/",
+  "sourceTitle": "34480041 – Maniglia zincata per tenditore",
+  "sourceDescription": "",
+  "matchedCode": "34480041",
+  "specs": {
+   "Tömeg": "0",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/381420-tekero-kurbli-1.webp",
+   "/termekkepek/381420-tekero-kurbli-2.webp"
   ]
  },
  "402006-40-kerek-ek-tartokonzol": {
@@ -365,6 +2183,436 @@
   },
   "images": [
    "/termekkepek/402016-42-kerek-ek-tartokonzol-1.webp"
+  ]
+ },
+ "451721-horganyzott-nagykonzol-man-50-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/supporto-falso-telaio-pesante/",
+  "sourceTitle": "Supporto falso telaio pesante",
+  "sourceDescription": "",
+  "matchedCode": "45172110",
+  "specs": {
+   "Kivitel": "horganyzott",
+   "Tömeg": "0,720 kg",
+   "Kiszerelés": "30 db"
+  },
+  "images": [
+   "/termekkepek/451721-horganyzott-nagykonzol-man-50-mm-1.webp",
+   "/termekkepek/451721-horganyzott-nagykonzol-man-50-mm-2.webp"
+  ]
+ },
+ "451771-horganyzott-nagykonzol-iveco-45-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/supporto-falso-telaio/",
+  "sourceTitle": "Supporto falso telaio",
+  "sourceDescription": "",
+  "matchedCode": "45177100",
+  "specs": {
+   "Kivitel": "horganyzott",
+   "Tömeg": "0,580 kg",
+   "Kiszerelés": "40 db"
+  },
+  "images": [
+   "/termekkepek/451771-horganyzott-nagykonzol-iveco-45-mm-1.webp",
+   "/termekkepek/451771-horganyzott-nagykonzol-iveco-45-mm-2.webp"
+  ]
+ },
+ "451871-alvaz-rogzito-konzol-10-12-14-16": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45187110-supporto-fissaggio-chassis-zincato-spessori-10-12-14-16/",
+  "sourceTitle": "45187110 – Supporto fissaggio chassis zincato spessori 10/12-14/16",
+  "sourceDescription": "",
+  "matchedCode": "45187110",
+  "specs": {
+   "Tömeg": "1,090 kg",
+   "Kiszerelés": "25 db"
+  },
+  "images": [
+   "/termekkepek/451871-alvaz-rogzito-konzol-10-12-14-16-1.webp",
+   "/termekkepek/451871-alvaz-rogzito-konzol-10-12-14-16-2.webp"
+  ]
+ },
+ "452871-alvaz-rogzito-konzol-4-5-5-6": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45287110-supporto-fissaggio-chassis-zincato-spessori-4-5-5-6/",
+  "sourceTitle": "45287110 – Supporto fissaggio chassis zincato spessori 4/5-5/6",
+  "sourceDescription": "",
+  "matchedCode": "45287110",
+  "specs": {
+   "Tömeg": "0,820 kg",
+   "Kiszerelés": "25 db"
+  },
+  "images": [
+   "/termekkepek/452871-alvaz-rogzito-konzol-4-5-5-6-1.webp",
+   "/termekkepek/452871-alvaz-rogzito-konzol-4-5-5-6-2.webp"
+  ]
+ },
+ "452921-alvaz-rogzito-konzol-7-8-10-12": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45292110-supporto-fissaggio-chassis-zincato-spessori-7-8-10-12/",
+  "sourceTitle": "45292110 – Supporto fissaggio chassis zincato spessori 7/8-10/12",
+  "sourceDescription": "",
+  "matchedCode": "45292110",
+  "specs": {
+   "Tömeg": "0,700 kg",
+   "Kiszerelés": "25 db"
+  },
+  "images": [
+   "/termekkepek/452921-alvaz-rogzito-konzol-7-8-10-12-1.webp",
+   "/termekkepek/452921-alvaz-rogzito-konzol-7-8-10-12-2.webp"
+  ]
+ },
+ "453881-nyers-alvaz-konzol-5-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45388100-supporto-falso-di-telaio-grezzo/",
+  "sourceTitle": "45388100 – Supporto falso di telaio grezzo",
+  "sourceDescription": "",
+  "matchedCode": "45388100",
+  "specs": {
+   "Tömeg": "0,300 kg",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/453881-nyers-alvaz-konzol-5-mm-1.webp",
+   "/termekkepek/453881-nyers-alvaz-konzol-5-mm-2.webp"
+  ]
+ },
+ "453991-nyers-alvaz-konzol-6-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/45399100-supporto-falso-di-telaio-pesante-grezzo/",
+  "sourceTitle": "45399100 – Supporto falso di telaio pesante grezzo",
+  "sourceDescription": "",
+  "matchedCode": "45399100",
+  "specs": {
+   "Tömeg": "0,500 kg",
+   "Kiszerelés": "25 db"
+  },
+  "images": [
+   "/termekkepek/453991-nyers-alvaz-konzol-6-mm-1.webp",
+   "/termekkepek/453991-nyers-alvaz-konzol-6-mm-2.webp"
+  ]
+ },
+ "456320-horganyzott-kiskonzol-daily-l-50-h-70": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/supporto-falso-telaio-daily-l-50-h-70/",
+  "sourceTitle": "Supporto falso telaio DAILY L.50 H.70",
+  "sourceDescription": "",
+  "matchedCode": "45163200",
+  "specs": {
+   "Kivitel": "horganyzott",
+   "Tömeg": "0,300 kg",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/456320-horganyzott-kiskonzol-daily-l-50-h-70-1.webp",
+   "/termekkepek/456320-horganyzott-kiskonzol-daily-l-50-h-70-2.webp"
+  ]
+ },
+ "456330-horganyzott-kiskonzol-iveco-uj": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/supporto-falso-telaio-daily-l-70-h-90/",
+  "sourceTitle": "Supporto falso telaio DAILY L.70 H.90",
+  "sourceDescription": "",
+  "matchedCode": "45163300",
+  "specs": {
+   "Kivitel": "horganyzott",
+   "Tömeg": "0,420 kg",
+   "Kiszerelés": "72 db"
+  },
+  "images": [
+   "/termekkepek/456330-horganyzott-kiskonzol-iveco-uj-1.webp",
+   "/termekkepek/456330-horganyzott-kiskonzol-iveco-uj-2.webp"
+  ]
+ },
+ "456511-horganyzott-eurocargo-konzol": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/supporto-falso-telaio-eurocargo/",
+  "sourceTitle": "Supporto falso telaio EUROCARGO",
+  "sourceDescription": "45164100 – Grezzo 45165110 – Zincato",
+  "matchedCode": "45165110",
+  "specs": {
+   "Tömeg": "0,630 kg",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/456511-horganyzott-eurocargo-konzol-1.webp",
+   "/termekkepek/456511-horganyzott-eurocargo-konzol-2.webp"
+  ]
+ },
+ "456610-horganyzott-kiskonzol-iveco": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/supporto-falso-telaio-leggero-daily-l-50-h-90/",
+  "sourceTitle": "Supporto falso telaio leggero DAILY L.50 H.90",
+  "sourceDescription": "",
+  "matchedCode": "45163100",
+  "specs": {
+   "Kivitel": "horganyzott",
+   "Tömeg": "0,345 kg",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/456610-horganyzott-kiskonzol-iveco-1.webp",
+   "/termekkepek/456610-horganyzott-kiskonzol-iveco-2.webp"
+  ]
+ },
+ "456610-r-nyers-kiskonzol-iveco": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/supporto-falso-telaio-leggero-daily-l-50-h-90/",
+  "sourceTitle": "Supporto falso telaio leggero DAILY L.50 H.90",
+  "sourceDescription": "",
+  "matchedCode": "45166100",
+  "specs": {
+   "Kivitel": "nyers",
+   "Tömeg": "0,345 kg",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/456610-r-nyers-kiskonzol-iveco-1.webp",
+   "/termekkepek/456610-r-nyers-kiskonzol-iveco-2.webp"
+  ]
+ },
+ "501029-th-potkerektarto-1235x450-mm-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/50102900-porta-ruota-zincato-a-caldo-385-65-r225-con-rulli/",
+  "sourceTitle": "50102900 – Porta ruota zincato a caldo 385/65 R22,5 con rulli",
+  "sourceDescription": "",
+  "matchedCode": "50102900",
+  "specs": {
+   "Kivitel": "horganyzott a caldo",
+   "Tömeg": "30,00 kg",
+   "Kiszerelés": "1 db"
+  },
+  "images": [
+   "/termekkepek/501029-th-potkerektarto-1235x450-mm-ts-1.webp",
+   "/termekkepek/501029-th-potkerektarto-1235x450-mm-ts-2.webp",
+   "/termekkepek/501029-th-potkerektarto-1235x450-mm-ts-3.webp"
+  ]
+ },
+ "501927-2-fokos-letra-th-platform": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/scaletta-estraibile-con-pedana-a-2-gradini-compatta/",
+  "sourceTitle": "Scaletta estraibile con pedana a 2 gradini compatta",
+  "sourceDescription": "",
+  "matchedCode": "50419270",
+  "specs": {
+   "Kivitel": "horganyzott AT600",
+   "Tömeg": "10,400 kg",
+   "Kiszerelés": "2 db"
+  },
+  "images": [
+   "/termekkepek/501927-2-fokos-letra-th-platform-1.webp",
+   "/termekkepek/501927-2-fokos-letra-th-platform-2.webp",
+   "/termekkepek/501927-2-fokos-letra-th-platform-3.webp"
+  ]
+ },
+ "501952-fix-thorg-oldalajto-fellepo-letra": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/gradino-sagomato-h240/",
+  "sourceTitle": "Gradino sagomato H=240",
+  "sourceDescription": "",
+  "matchedCode": "50195200",
+  "specs": {
+   "Kivitel": "horganyzott a Caldo",
+   "Tömeg": "1,250 kg",
+   "Kiszerelés": "1 db"
+  },
+  "images": [
+   "/termekkepek/501952-fix-thorg-oldalajto-fellepo-letra-1.webp",
+   "/termekkepek/501952-fix-thorg-oldalajto-fellepo-letra-2.webp",
+   "/termekkepek/501952-fix-thorg-oldalajto-fellepo-letra-3.webp",
+   "/termekkepek/501952-fix-thorg-oldalajto-fellepo-letra-4.webp"
+  ]
+ },
+ "502210-2-fokos-letra-horg": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/50292210-scaletta-leggera-zincata-estraibile-a-2-gradini/",
+  "sourceTitle": "50292210 – Scaletta leggera zincata estraibile a 2 gradini",
+  "sourceDescription": "",
+  "matchedCode": "50292210",
+  "specs": {
+   "Tömeg": "5,500 kg",
+   "Kiszerelés": "2 db"
+  },
+  "images": [
+   "/termekkepek/502210-2-fokos-letra-horg-1.webp",
+   "/termekkepek/502210-2-fokos-letra-horg-2.webp"
+  ]
+ },
+ "502500-szimpla-gorgos-gumiutkozo-d70-85": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000043_bumpers-and-buffers/99000116_buffer-with-rollers-1-cylinder-120x92mm",
+  "sourceTitle": "Buffer with rollers 1 cylinder 120x92mm",
+  "matchedCode": "43950250C0",
+  "specs": {
+   "Anyag": "acél + gumi",
+   "Felület": "horganyzott",
+   "Tömeg": "1,891 kg",
+   "Hossz": "120,0 mm",
+   "Szélesség": "85,0 mm",
+   "Magasság": "92,0 mm",
+   "Átmérő": "70,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/502500-szimpla-gorgos-gumiutkozo-d70-85-1.webp"
+  ]
+ },
+ "5030270-2-fokos-letra-platform-th": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/50430270-scaletta-estraibile-con-pedana-a-2-gradini-zincata-a-caldo/",
+  "sourceTitle": "50430270 – Scaletta estraibile con pedana a 2 gradini zincata a caldo",
+  "sourceDescription": "",
+  "matchedCode": "50430270",
+  "specs": {
+   "Tömeg": "13,00 kg",
+   "Kiszerelés": "1 db"
+  },
+  "images": [
+   "/termekkepek/5030270-2-fokos-letra-platform-th-1.webp",
+   "/termekkepek/5030270-2-fokos-letra-platform-th-2.webp"
+  ]
+ },
+ "5032110-bekazar-140-mm-ellendarab": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/chiusura-a-laccio/",
+  "sourceTitle": "Chiusura a laccio",
+  "sourceDescription": "",
+  "matchedCode": "10352110",
+  "specs": {
+   "Kivitel": "Chiusura horganyzott",
+   "Tömeg": "0,350",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/5032110-bekazar-140-mm-ellendarab-1.webp",
+   "/termekkepek/5032110-bekazar-140-mm-ellendarab-2.webp",
+   "/termekkepek/5032110-bekazar-140-mm-ellendarab-3.webp"
+  ]
+ },
+ "504665-3-fokos-letra-horganyzott": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/50400665-scaletta-zincata-estraibile-3-gradini-con-asole/",
+  "sourceTitle": "50400665 – Scaletta zincata estraibile 3 gradini con asole",
+  "sourceDescription": "",
+  "matchedCode": "50400665",
+  "specs": {
+   "Tömeg": "9,00 kg",
+   "Kiszerelés": "5 db"
+  },
+  "images": [
+   "/termekkepek/504665-3-fokos-letra-horganyzott-1.webp",
+   "/termekkepek/504665-3-fokos-letra-horganyzott-2.webp"
+  ]
+ },
+ "504927-6-fokos-letra-th": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/50449270-scala-estraibile-6-gradini-zincata-at600/",
+  "sourceTitle": "50449270 – Scala estraibile 6 gradini zincata AT600",
+  "sourceDescription": "AT600 è un rivestimento liscio ricco di zinco, ricoperto da uno strato di poliuretano, che fornisce una finitura durevole con un’eccezionale resistenza all’abrasione e alla corrosione. I risultati dopo 600 ore di test con la nebbia salina nessun deterioramento o effetto di abrasione.",
+  "matchedCode": "50449270",
+  "specs": {
+   "Tömeg": "51,50 kg",
+   "Kiszerelés": "1 db"
+  },
+  "images": [
+   "/termekkepek/504927-6-fokos-letra-th-1.webp",
+   "/termekkepek/504927-6-fokos-letra-th-2.webp",
+   "/termekkepek/504927-6-fokos-letra-th-3.webp"
+  ]
+ },
+ "506116-horganyzott-sullyesztett-fellepo": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000041_steps/62000217_folding-step-160x150mm",
+  "sourceTitle": "Folding step 160x150mm",
+  "matchedCode": "1000060116",
+  "specs": {
+   "Anyag": "acél",
+   "Felület": "horganyzott",
+   "Tömeg": "1,27 kg",
+   "Hossz": "120,0 mm",
+   "Szélesség": "160,0 mm",
+   "Magasság": "152,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/506116-horganyzott-sullyesztett-fellepo-1.webp"
+  ]
+ },
+ "507110-horganyzott-fellepo": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/pedana-salita-con-fermo/",
+  "sourceTitle": "Pedana salita con fermo",
+  "sourceDescription": "",
+  "matchedCode": "50170110",
+  "specs": {
+   "Kivitel": "horganyzott",
+   "Tömeg": "1,400 kg",
+   "Kiszerelés": "20 db"
+  },
+  "images": [
+   "/termekkepek/507110-horganyzott-fellepo-1.webp",
+   "/termekkepek/507110-horganyzott-fellepo-2.webp"
+  ]
+ },
+ "508665-2-fokos-letra-horg": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/50398665-scaletta-zincata-estraibile-2-gradini-con-asole/",
+  "sourceTitle": "50398665 – Scaletta zincata estraibile 2 gradini con asole",
+  "sourceDescription": "",
+  "matchedCode": "50398665",
+  "specs": {
+   "Tömeg": "7,42 kg",
+   "Kiszerelés": "5 db"
+  },
+  "images": [
+   "/termekkepek/508665-2-fokos-letra-horg-1.webp",
+   "/termekkepek/508665-2-fokos-letra-horg-2.webp"
+  ]
+ },
+ "508820-1-fokos-letra-horg": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/50298820-scaletta-leggera-zincata-estraibile-a-1-gradino/",
+  "sourceTitle": "50298820 – Scaletta leggera zincata estraibile a 1 gradino",
+  "sourceDescription": "",
+  "matchedCode": "50298820",
+  "specs": {
+   "Tömeg": "3,900 kg",
+   "Kiszerelés": "10 db"
+  },
+  "images": [
+   "/termekkepek/508820-1-fokos-letra-horg-1.webp",
+   "/termekkepek/508820-1-fokos-letra-horg-2.webp",
+   "/termekkepek/508820-1-fokos-letra-horg-3.webp"
+  ]
+ },
+ "512527-55-mm-es-pvc-tomites-pl": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=072027678",
+  "sourceTitle": "PVC profile, grey, mm.55,5",
+  "sourceDescription": "",
+  "matchedCode": "072027678",
+  "specs": {
+   "Kivitel": "L=2700 mm",
+   "Tömeg": "1700 g",
+   "Kiszerelés": "6 db/csomag"
+  },
+  "images": [
+   "/termekkepek/512527-55-mm-es-pvc-tomites-pl-1.webp"
+  ]
+ },
+ "512627-85-mm-es-pvc-tomites-pl": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=072021426D",
+  "sourceTitle": "PVC profile, grey, mm 85,5",
+  "sourceDescription": "",
+  "matchedCode": "072021426D",
+  "specs": {
+   "Kivitel": "L=2700 mm",
+   "Tömeg": "2050 g",
+   "Kiszerelés": "6 db/csomag"
+  },
+  "images": [
+   "/termekkepek/512627-85-mm-es-pvc-tomites-pl-1.webp"
   ]
  },
  "514528-44-mm-es-pvc-terelvalaszto-tomites-g": {
@@ -432,6 +2680,219 @@
    "/termekkepek/518009-25t-munkahenger-1.webp"
   ]
  },
+ "552080-utkozogumi-200x80x80": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/55200800-tampone-paracolpi-in-gomma-200x80x80/",
+  "sourceTitle": "55200800 – Tampone paracolpi in gomma 200x80x80",
+  "sourceDescription": "",
+  "matchedCode": "55200800",
+  "specs": {
+   "Tömeg": "1,410 kg",
+   "Kiszerelés": "16 db"
+  },
+  "images": [
+   "/termekkepek/552080-utkozogumi-200x80x80-1.webp",
+   "/termekkepek/552080-utkozogumi-200x80x80-2.webp"
+  ]
+ },
+ "552118-utkozogumi-150x60x60": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/55200118-tampone-paracolpi-in-gomma-150x60x60/",
+  "sourceTitle": "55200118 – Tampone paracolpi in gomma 150x60x60",
+  "sourceDescription": "",
+  "matchedCode": "55200118",
+  "specs": {
+   "Tömeg": "0,610 kg",
+   "Kiszerelés": "20 db"
+  },
+  "images": [
+   "/termekkepek/552118-utkozogumi-150x60x60-1.webp",
+   "/termekkepek/552118-utkozogumi-150x60x60-2.webp"
+  ]
+ },
+ "552155-utkozogumi-215x50x55": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/55215505-tampone-paracolpi-in-gomma-215x50x55/",
+  "sourceTitle": "55215505 – Tampone paracolpi in gomma 215x50x55",
+  "sourceDescription": "",
+  "matchedCode": "55215505",
+  "specs": {
+   "Tömeg": "0,610 kg",
+   "Kiszerelés": "20 db"
+  },
+  "images": [
+   "/termekkepek/552155-utkozogumi-215x50x55-1.webp",
+   "/termekkepek/552155-utkozogumi-215x50x55-2.webp"
+  ]
+ },
+ "552280-gumi-utkozogyuru-d21-5x7-5-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/55228000-tampone-paracolpi-cilindico-in-gomma-o21x75/",
+  "sourceTitle": "55228000 – Tampone paracolpi cilindico in gomma Ø21×7,5",
+  "sourceDescription": "",
+  "matchedCode": "55228000",
+  "specs": {
+   "Tömeg": "0,003 kg",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/552280-gumi-utkozogyuru-d21-5x7-5-mm-1.webp",
+   "/termekkepek/552280-gumi-utkozogyuru-d21-5x7-5-mm-2.webp"
+  ]
+ },
+ "552594-utkozogumi-400x65x70": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/55200594-tampone-paracolpi-in-gomma-400x65x70/",
+  "sourceTitle": "55200594 – Tampone paracolpi in gomma 400x65x70",
+  "sourceDescription": "",
+  "matchedCode": "55200594",
+  "specs": {
+   "Tömeg": "2,300 kg",
+   "Kiszerelés": "10 db"
+  },
+  "images": [
+   "/termekkepek/552594-utkozogumi-400x65x70-1.webp",
+   "/termekkepek/552594-utkozogumi-400x65x70-2.webp"
+  ]
+ },
+ "552825-kupos-utkozogumi-27-5-25": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/55282500-tampone-paracolpi-cilindico-in-gomma-o27x25/",
+  "sourceTitle": "55282500 – Tampone paracolpi cilindico in gomma Ø27×25",
+  "sourceDescription": "",
+  "matchedCode": "55282500",
+  "specs": {
+   "Tömeg": "0,020 kg",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/552825-kupos-utkozogumi-27-5-25-1.webp",
+   "/termekkepek/552825-kupos-utkozogumi-27-5-25-2.webp"
+  ]
+ },
+ "553065-utkozogumi-300x65x70": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/55307065-tampone-paracolpi-in-gomma-300x65x70/",
+  "sourceTitle": "55307065 – Tampone paracolpi in gomma 300x65x70",
+  "sourceDescription": "",
+  "matchedCode": "55307065",
+  "specs": {
+   "Tömeg": "1,530 kg",
+   "Kiszerelés": "15 db"
+  },
+  "images": [
+   "/termekkepek/553065-utkozogumi-300x65x70-1.webp",
+   "/termekkepek/553065-utkozogumi-300x65x70-2.webp"
+  ]
+ },
+ "553541-kupos-utkozogumi-45-60-35": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/55003541-tampone-paracolpi-conico-con-smussi-in-gomma/",
+  "sourceTitle": "55003541 – Tampone paracolpi conico con smussi in gomma",
+  "sourceDescription": "",
+  "matchedCode": "55003541",
+  "specs": {
+   "Tömeg": "0,086 kg",
+   "Kiszerelés": "150 db"
+  },
+  "images": [
+   "/termekkepek/553541-kupos-utkozogumi-45-60-35-1.webp",
+   "/termekkepek/553541-kupos-utkozogumi-45-60-35-2.webp"
+  ]
+ },
+ "554540-utkozogumi-450x40x60": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/55045040-tampone-paracolpi-in-gomma-450x40x60/",
+  "sourceTitle": "55045040 – Tampone paracolpi in gomma 450x40x60",
+  "sourceDescription": "",
+  "matchedCode": "55045040",
+  "specs": {
+   "Tömeg": "1,400 kg",
+   "Kiszerelés": "18 db"
+  },
+  "images": [
+   "/termekkepek/554540-utkozogumi-450x40x60-1.webp",
+   "/termekkepek/554540-utkozogumi-450x40x60-2.webp"
+  ]
+ },
+ "555490-utkozogumi-490x45x40": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/55500490-profilo-parasponde-nero-l-490/",
+  "sourceTitle": "55500490 – PROFILO PARASPONDE NERO L.490",
+  "sourceDescription": "",
+  "matchedCode": "55500490",
+  "specs": {
+   "Tömeg": "0,62 kg",
+   "Kiszerelés": "20 db"
+  },
+  "images": [
+   "/termekkepek/555490-utkozogumi-490x45x40-1.webp",
+   "/termekkepek/555490-utkozogumi-490x45x40-2.webp"
+  ]
+ },
+ "555575-kupos-utkozogumi-55-75-40": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/55005575-tampone-paracolpi-conico-in-gomma/",
+  "sourceTitle": "55005575 – Tampone paracolpi conico in gomma",
+  "sourceDescription": "",
+  "matchedCode": "55005575",
+  "specs": {
+   "Tömeg": "0,175 kg",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/555575-kupos-utkozogumi-55-75-40-1.webp",
+   "/termekkepek/555575-kupos-utkozogumi-55-75-40-2.webp"
+  ]
+ },
+ "556575-kupos-utkozogumi-65-75-50": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/55006575-tampone-paracolpi-conico-in-gomma/",
+  "sourceTitle": "55006575 – Tampone paracolpi conico in gomma",
+  "sourceDescription": "",
+  "matchedCode": "55006575",
+  "specs": {
+   "Tömeg": "0,220 kg",
+   "Kiszerelés": "40 db"
+  },
+  "images": [
+   "/termekkepek/556575-kupos-utkozogumi-65-75-50-1.webp",
+   "/termekkepek/556575-kupos-utkozogumi-65-75-50-2.webp"
+  ]
+ },
+ "557575-kupos-utkozogumi-75-75-50": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/55007575-tampone-paracolpi-conico-in-gomma/",
+  "sourceTitle": "55007575 – Tampone paracolpi conico in gomma",
+  "sourceDescription": "",
+  "matchedCode": "55007575",
+  "specs": {
+   "Tömeg": "0,312 kg",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/557575-kupos-utkozogumi-75-75-50-1.webp",
+   "/termekkepek/557575-kupos-utkozogumi-75-75-50-2.webp"
+  ]
+ },
+ "661090-midi-elso-oszlop-lift-elox-135": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/910120403_pillar-profile-cs-midi-front-135-anod.",
+  "sourceTitle": "Pillar profile CS MIDI front 135 anod.",
+  "matchedCode": "66K0EP1090",
+  "specs": {
+   "Anyag": "EN AW 6005A",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "5,539 kg",
+   "Hossz": "6 500,0 mm",
+   "Szélesség": "135,0 mm",
+   "Magasság": "167,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/661090-midi-elso-oszlop-lift-elox-135-1.webp"
+  ]
+ },
  "6613211-max-os-elso-elox-oszlop-it": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/85/",
@@ -444,6 +2905,204 @@
   },
   "images": [
    "/termekkepek/6613211-max-os-elso-elox-oszlop-it-1.webp"
+  ]
+ },
+ "6613365-al-eco-merevito-profil-natur": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000017_edscha-cs/910092720_al-eco-sheet-profile-counterpart",
+  "sourceTitle": "AL/ECO sheet profile counterpart",
+  "matchedCode": "6600013365",
+  "specs": {
+   "Anyag": "EN AW 6063",
+   "Felület": "natúr",
+   "Tömeg": "1,874 kg",
+   "Hossz": "7 700,0 mm",
+   "Szélesség": "27,0 mm",
+   "Magasság": "116,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/6613365-al-eco-merevito-profil-natur-1.webp"
+  ]
+ },
+ "6613366-al-eco-120-mm-kulso-palast-profil-elox": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000017_edscha-cs/910092718_al-eco-sheet-profile-120mm--anodize",
+  "sourceTitle": "AL/ECO sheet profile 120mm, anodize",
+  "matchedCode": "6612013366",
+  "specs": {
+   "Anyag": "EN AW 6063",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "1,72 kg",
+   "Hossz": "7 800,0 mm",
+   "Szélesség": "82,0 mm",
+   "Magasság": "120,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/6613366-al-eco-120-mm-kulso-palast-profil-elox-1.webp"
+  ]
+ },
+ "6613553-mini-hatso-oszlop-elox-111-mm": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/67000056_pillar-profile-cs-mini-rear-111anod",
+  "sourceTitle": "Pillar profile CS MINI rear 111anod",
+  "matchedCode": "6612013553",
+  "specs": {
+   "Anyag": "EN AW 6063",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "2,918 kg",
+   "Hossz": "7 000,0 mm",
+   "Szélesség": "111,0 mm",
+   "Magasság": "35,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/6613553-mini-hatso-oszlop-elox-111-mm-1.webp"
+  ]
+ },
+ "6613554-mini-hatso-oszlop-elox-110-166": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/910104241_pillar-profile-cs-mini-rear110(166)ano",
+  "sourceTitle": "Pillar profile CS MINI rear110(166)ano",
+  "matchedCode": "6612013554",
+  "specs": {
+   "Anyag": "EN AW 6063",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "3,181 kg",
+   "Hossz": "5 300,0 mm",
+   "Szélesség": "166,0 mm",
+   "Magasság": "35,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/6613554-mini-hatso-oszlop-elox-110-166-1.webp"
+  ]
+ },
+ "6613555-mini-hatso-oszlop-hn-elox-110-138": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/910104243_pillar-profile-cs-minirear110(138)anod",
+  "sourceTitle": "Pillar profile CS MINIrear110(138)anod",
+  "matchedCode": "6612013555",
+  "specs": {
+   "Anyag": "EN AW 6063",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "2,908 kg",
+   "Hossz": "5 300,0 mm",
+   "Szélesség": "138,0 mm",
+   "Magasság": "35,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/6613555-mini-hatso-oszlop-hn-elox-110-138-1.webp"
+  ]
+ },
+ "6613575-mini-elso-100-alu-oszlop-elox": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/910104244_pillar-profile-cs-mini-front70(100)ano.",
+  "sourceTitle": "Pillar profile CS MINI front70(100)ano.",
+  "matchedCode": "6612013575",
+  "specs": {
+   "Anyag": "EN AW 6063",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "2,228 kg",
+   "Hossz": "5 300,0 mm",
+   "Szélesség": "100,0 mm",
+   "Magasság": "35,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/6613575-mini-elso-100-alu-oszlop-elox-1.webp"
+  ]
+ },
+ "6614358-midi-hatso-u-szegos-oszlop-elox": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/910191452_pillar-profile-cs-midi-rear-2024--anod",
+  "sourceTitle": "Pillar profile CS MIDI rear 2024, anod",
+  "matchedCode": "66K2Z14358",
+  "specs": {
+   "Anyag": "EN AW 6063",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "5,413 kg",
+   "Hossz": "6 500,0 mm",
+   "Szélesség": "227,5 mm",
+   "Magasság": "35,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/6614358-midi-hatso-u-szegos-oszlop-elox-1.webp"
+  ]
+ },
+ "662000-midi-hatso-lift-oszlop-elox": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/114000054_pillar-profile-cs-midi-rear-lift-anod.",
+  "sourceTitle": "Pillar profile CS MIDI rear lift anod.",
+  "matchedCode": "66K0EZ2000",
+  "specs": {
+   "Anyag": "EN AW 6063",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "5,163 kg",
+   "Hossz": "6 500,0 mm",
+   "Szélesség": "200,0 mm",
+   "Magasság": "35,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/662000-midi-hatso-lift-oszlop-elox-1.webp"
+  ]
+ },
+ "6635255-max-os-hatso-elox-oszlop-3150-mm": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/10000293_pillar-profile-cs-max-rear--3150mm--anod",
+  "sourceTitle": "Pillar profile CS MAX rear, 3150mm, anod",
+  "matchedCode": "66OZ035255",
+  "specs": {
+   "Anyag": "EN AW 6063",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "21,82 kg",
+   "Hossz": "3 150,0 mm",
+   "Szélesség": "265,0 mm",
+   "Magasság": "35,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/6635255-max-os-hatso-elox-oszlop-3150-mm-1.webp"
+  ]
+ },
+ "663980-midi-elso-oszlop-flat-elox-246": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/118000025_pillar-profile-cs-midi-head-on-anod",
+  "sourceTitle": "Pillar profile CS MIDI head-on anod",
+  "matchedCode": "66KE309800",
+  "specs": {
+   "Anyag": "EN AW 6005A",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "6,685 kg",
+   "Hossz": "6 500,0 mm",
+   "Szélesség": "246,0 mm",
+   "Magasság": "55,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/663980-midi-elso-oszlop-flat-elox-246-1.webp"
+  ]
+ },
+ "66k0800-alu-zartszelveny-80x35-4r-elox": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000006_pillars/28000322_profile-cs-mini-80x35mm--anodized",
+  "sourceTitle": "Profile CS MINI 80x35mm, anodized",
+  "matchedCode": "66K0EU0800",
+  "specs": {
+   "Anyag": "EN AW 6005A",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "2,081 kg",
+   "Hossz": "6 200,0 mm",
+   "Szélesség": "80,0 mm",
+   "Magasság": "35,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/66k0800-alu-zartszelveny-80x35-4r-elox-1.webp"
   ]
  },
  "701-reflex-szalag-dobozra-sarga": {
@@ -502,6 +3161,177 @@
    "/termekkepek/703-reflex-szalag-dobozra-piros-stx-1.webp"
   ]
  },
+ "714859-sullyesztett-inox-rudzar-25-16-mm-pl": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=071425859",
+  "sourceTitle": "Recessed door lock APE CAR",
+  "sourceDescription": "Recessed closing mechanism for small Bar diameter 15 mm. To mount bar, misalign the cams, makes hole in the handle and bar, then insert the two pins. Not fitted for the opening from inside.",
+  "matchedCode": "071425859",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "665 g",
+   "Kiszerelés": "1 db/csomag"
+  },
+  "images": [
+   "/termekkepek/714859-sullyesztett-inox-rudzar-25-16-mm-pl-1.webp",
+   "/termekkepek/714859-sullyesztett-inox-rudzar-25-16-mm-pl-2.webp"
+  ]
+ },
+ "719130-pe-gyuru-22mm": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=071924130",
+  "sourceTitle": "Nylon bush Ø22",
+  "sourceDescription": "",
+  "matchedCode": "071924130",
+  "specs": {
+   "Tömeg": "4 g",
+   "Kiszerelés": "100 db/csomag"
+  },
+  "images": [
+   "/termekkepek/719130-pe-gyuru-22mm-1.webp",
+   "/termekkepek/719130-pe-gyuru-22mm-2.webp"
+  ]
+ },
+ "719210-19a-nylon-gyuru-22mm-kicsi": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=071921019A",
+  "sourceTitle": "Nylon bush",
+  "sourceDescription": "",
+  "matchedCode": "071921019A",
+  "specs": {
+   "Tömeg": "4 g",
+   "Kiszerelés": "100 db/csomag"
+  },
+  "images": [
+   "/termekkepek/719210-19a-nylon-gyuru-22mm-kicsi-1.webp"
+  ]
+ },
+ "719210-20-omega-csolefogato-22mm-inox-kicsi": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=071921020",
+  "sourceTitle": "Small tube clamp",
+  "sourceDescription": "",
+  "matchedCode": "071921020",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "136 g",
+   "Kiszerelés": "1 db/csomag"
+  },
+  "images": [
+   "/termekkepek/719210-20-omega-csolefogato-22mm-inox-kicsi-1.webp",
+   "/termekkepek/719210-20-omega-csolefogato-22mm-inox-kicsi-2.webp"
+  ]
+ },
+ "719220-18a-rozsdamentes-kar-22-27mm-pl": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=071922018A",
+  "sourceTitle": "S.s. flat lever with coated handle for external door locks Ø mm. 22/27",
+  "sourceDescription": "",
+  "matchedCode": "071922018A",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "995 g",
+   "Kiszerelés": "2 db/csomag"
+  },
+  "images": [
+   "/termekkepek/719220-18a-rozsdamentes-kar-22-27mm-pl-1.webp",
+   "/termekkepek/719220-18a-rozsdamentes-kar-22-27mm-pl-2.webp"
+  ]
+ },
+ "719220-99a-rozsdamentes-kartarto-22-27mm-pl": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=071920299A",
+  "sourceTitle": "Standard lever stay with holes Ø mm. 8,5 for external door locks Ø mm. 22/27",
+  "sourceDescription": "Standard lever stay with holes for padlock and customs seal, complete with bush, hole 8,5 mm",
+  "matchedCode": "071920299A",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "248 g",
+   "Kiszerelés": "2 db/csomag"
+  },
+  "images": [
+   "/termekkepek/719220-99a-rozsdamentes-kartarto-22-27mm-pl-1.webp",
+   "/termekkepek/719220-99a-rozsdamentes-kartarto-22-27mm-pl-2.webp"
+  ]
+ },
+ "719226-304-rozsdamentes-csovezeto-22-mm-pl": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=071226304",
+  "sourceTitle": "Kit Lever clamp",
+  "sourceDescription": "",
+  "matchedCode": "071226304",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "365 g",
+   "Kiszerelés": "1 db/csomag"
+  },
+  "images": [
+   "/termekkepek/719226-304-rozsdamentes-csovezeto-22-mm-pl-1.webp"
+  ]
+ },
+ "719259-48d-rozsdamentes-nyomolapos-rudzar-22mm": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=071925948D",
+  "sourceTitle": "External door lock Ø22",
+  "sourceDescription": "External handle designed for opening from inside. Dimensions indicated with installed handle, door being closed, therefore with maximum operating encumbrance",
+  "matchedCode": "071925948D",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "1450 g",
+   "Kiszerelés": "1 db/csomag"
+  },
+  "images": [
+   "/termekkepek/719259-48d-rozsdamentes-nyomolapos-rudzar-22mm-1.webp",
+   "/termekkepek/719259-48d-rozsdamentes-nyomolapos-rudzar-22mm-2.webp"
+  ]
+ },
+ "719339-omega-csolefogato-22mm-inox": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=071924339",
+  "sourceTitle": "Tube clamp SMALL for external door locks Ø mm 22/27",
+  "sourceDescription": "",
+  "matchedCode": "071924339",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "250 g",
+   "Kiszerelés": "1 db/csomag"
+  },
+  "images": [
+   "/termekkepek/719339-omega-csolefogato-22mm-inox-1.webp",
+   "/termekkepek/719339-omega-csolefogato-22mm-inox-2.webp"
+  ]
+ },
+ "719520-rm-27-mm-nyomolapos-rudzar-set-pl": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=071226125",
+  "sourceTitle": "External door gear kit BIG 4 Ø27",
+  "sourceDescription": "The anti-rack washer is an integral part of the forged cam, the measurement on the drawing cannot be modified.",
+  "matchedCode": "071226125",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "3646 g",
+   "Kiszerelés": "1 db/csomag"
+  },
+  "images": [
+   "/termekkepek/719520-rm-27-mm-nyomolapos-rudzar-set-pl-2.webp"
+  ]
+ },
+ "719831-rozsdamentes-acel-gyuru-22mm-pl": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=071913831",
+  "sourceTitle": "Antirack washer",
+  "sourceDescription": "",
+  "matchedCode": "071913831",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "32 g",
+   "Kiszerelés": "20 db/csomag"
+  },
+  "images": [
+   "/termekkepek/719831-rozsdamentes-acel-gyuru-22mm-pl-1.webp",
+   "/termekkepek/719831-rozsdamentes-acel-gyuru-22mm-pl-2.webp"
+  ]
+ },
  "721-reflex-szalag-szekcionalt-sarga": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/685/",
@@ -530,6 +3360,38 @@
    "/termekkepek/722-reflex-szalag-szekcionalt-feher-1.webp"
   ]
  },
+ "72298-alu-csotarto-biztosito-csappal": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=072622298",
+  "sourceTitle": "Anodized aluminum tube support with stainless steel hook stop with pin",
+  "sourceDescription": "",
+  "matchedCode": "072622298",
+  "specs": {
+   "Tömeg": "1295 g",
+   "Kiszerelés": "10 db/csomag"
+  },
+  "images": [
+   "/termekkepek/72298-alu-csotarto-biztosito-csappal-1.webp",
+   "/termekkepek/72298-alu-csotarto-biztosito-csappal-2.webp",
+   "/termekkepek/72298-alu-csotarto-biztosito-csappal-3.webp"
+  ]
+ },
+ "72299-kampo-rogzito-profil-elox": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=072622299",
+  "sourceTitle": "Hook stop profile in anodized aluminium, 7 m",
+  "sourceDescription": "Anodized aluminum hook stop profile. To recess under support to prevent the loaded hook from slipping out.",
+  "matchedCode": "072622299",
+  "specs": {
+   "Tömeg": "11500 g",
+   "Kiszerelés": "1 db/csomag"
+  },
+  "images": [
+   "/termekkepek/72299-kampo-rogzito-profil-elox-1.webp",
+   "/termekkepek/72299-kampo-rogzito-profil-elox-2.webp",
+   "/termekkepek/72299-kampo-rogzito-profil-elox-3.webp"
+  ]
+ },
  "723-reflex-szalag-szekcionalt-piros": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/685/",
@@ -542,6 +3404,81 @@
   },
   "images": [
    "/termekkepek/723-reflex-szalag-szekcionalt-piros-1.webp"
+  ]
+ },
+ "7250840-magneses-ajtorogzito-200n": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/660",
+  "sourceTitle": "DEURVASTZETTER 200N WIT Packed by 1 piece White, synthetic",
+  "matchedCode": "1000991",
+  "specs": {},
+  "images": [
+   "/termekkepek/7250840-magneses-ajtorogzito-200n-1.webp"
+  ]
+ },
+ "72711-elso-csoveg": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=072621711",
+  "sourceTitle": "Anodized aluminum front cap",
+  "sourceDescription": "",
+  "matchedCode": "072621711",
+  "specs": {
+   "Tömeg": "290 g",
+   "Kiszerelés": "1 db/csomag"
+  },
+  "images": [
+   "/termekkepek/72711-elso-csoveg-1.webp",
+   "/termekkepek/72711-elso-csoveg-2.webp",
+   "/termekkepek/72711-elso-csoveg-3.webp"
+  ]
+ },
+ "72733-hatso-csoveg": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=072621733",
+  "sourceTitle": "Anodized aluminum rear cap with fixed stainless steel pin",
+  "sourceDescription": "",
+  "matchedCode": "072621733",
+  "specs": {
+   "Tömeg": "610 g",
+   "Kiszerelés": "1 db/csomag"
+  },
+  "images": [
+   "/termekkepek/72733-hatso-csoveg-1.webp",
+   "/termekkepek/72733-hatso-csoveg-2.webp",
+   "/termekkepek/72733-hatso-csoveg-3.webp"
+  ]
+ },
+ "728972-huskampo-60mm-csohoz": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/75500445-gancio-carne-inox-tipo-europa/",
+  "sourceTitle": "75500445 – Gancio carne Inox tipo europa",
+  "sourceDescription": "",
+  "matchedCode": "75500445",
+  "specs": {
+   "Tömeg": "1,350 kg",
+   "Kiszerelés": "20 db"
+  },
+  "images": [
+   "/termekkepek/728972-huskampo-60mm-csohoz-1.webp",
+   "/termekkepek/728972-huskampo-60mm-csohoz-2.webp",
+   "/termekkepek/728972-huskampo-60mm-csohoz-3.webp"
+  ]
+ },
+ "729143-sinrogzito-lancal-huspalyasinhez-rm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/75539143-coppia-supporti-inox-per-fissaggio-per-bloccaggio-guidovia-con-catena/",
+  "sourceTitle": "75539143 – Coppia supporti Inox per fissaggio per bloccaggio guidovia con catena",
+  "sourceDescription": "",
+  "matchedCode": "75539143",
+  "specs": {
+   "Tömeg": "0,420 kg",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/729143-sinrogzito-lancal-huspalyasinhez-rm-1.webp",
+   "/termekkepek/729143-sinrogzito-lancal-huspalyasinhez-rm-2.webp",
+   "/termekkepek/729143-sinrogzito-lancal-huspalyasinhez-rm-3.webp",
+   "/termekkepek/729143-sinrogzito-lancal-huspalyasinhez-rm-4.webp"
   ]
  },
  "770372-bil-150ce-vezerlo-220bar": {
@@ -558,6 +3495,620 @@
   },
   "images": [
    "/termekkepek/770372-bil-150ce-vezerlo-220bar-1.webp"
+  ]
+ },
+ "806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/80600700-cerniera-per-container-zincato/",
+  "sourceTitle": "80600700 – Cerniera per container zincato",
+  "sourceDescription": "",
+  "matchedCode": "80600700",
+  "specs": {
+   "Tömeg": "0,890 kg",
+   "Kiszerelés": "25 db"
+  },
+  "images": [
+   "/termekkepek/806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm-1.webp",
+   "/termekkepek/806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm-2.webp"
+  ]
+ },
+ "806287-inox-oldalajto-zsaner-184-65-zsirzos": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-laterale-piana-con-ingrassatore/",
+  "sourceTitle": "Cerniera laterale piana con ingrassatore",
+  "sourceDescription": "",
+  "matchedCode": "80600287",
+  "specs": {
+   "Kivitel": "rozsdamentes",
+   "Tömeg": "0,380 kg",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/806287-inox-oldalajto-zsaner-184-65-zsirzos-1.webp",
+   "/termekkepek/806287-inox-oldalajto-zsaner-184-65-zsirzos-2.webp"
+  ]
+ },
+ "806307-rm-oldalajto-zsaner-lepcsos-140-179-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-laterale-salto-gomma/",
+  "sourceTitle": "Cerniera laterale salto gomma",
+  "sourceDescription": "",
+  "matchedCode": "80600307",
+  "specs": {
+   "Kivitel": "rozsdamentes",
+   "Tömeg": "0,410 kg",
+   "Kiszerelés": "30 db"
+  },
+  "images": [
+   "/termekkepek/806307-rm-oldalajto-zsaner-lepcsos-140-179-mm-1.webp",
+   "/termekkepek/806307-rm-oldalajto-zsaner-lepcsos-140-179-mm-2.webp",
+   "/termekkepek/806307-rm-oldalajto-zsaner-lepcsos-140-179-mm-3.webp"
+  ]
+ },
+ "806308-horganyzott-oldalajto-zsaner-140-179-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-laterale-salto-gomma/",
+  "sourceTitle": "Cerniera laterale salto gomma",
+  "sourceDescription": "",
+  "matchedCode": "80600300",
+  "specs": {
+   "Kivitel": "horganyzott",
+   "Tömeg": "0,410 kg",
+   "Kiszerelés": "30 db"
+  },
+  "images": [
+   "/termekkepek/806308-horganyzott-oldalajto-zsaner-140-179-mm-1.webp",
+   "/termekkepek/806308-horganyzott-oldalajto-zsaner-140-179-mm-2.webp",
+   "/termekkepek/806308-horganyzott-oldalajto-zsaner-140-179-mm-3.webp"
+  ]
+ },
+ "806407-rm-oldalajto-zsaner-lepcsos-183-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-salto-gomma-work/",
+  "sourceTitle": "Cerniera salto gomma work",
+  "sourceDescription": "",
+  "matchedCode": "80600407",
+  "specs": {
+   "Kivitel": "rozsdamentes",
+   "Tömeg": "0,610 kg"
+  },
+  "images": [
+   "/termekkepek/806407-rm-oldalajto-zsaner-lepcsos-183-mm-1.webp"
+  ]
+ },
+ "808872-rm-zongora-zsaner-40x1-5x1970-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-a-libro-in-inox-senza-fori-con-perno-in-inox/",
+  "sourceTitle": "Cerniera a libro in Inox senza fori con perno in Inox",
+  "sourceDescription": "",
+  "matchedCode": "80088720",
+  "specs": {
+   "Kivitel": "40×1970"
+  },
+  "images": [
+   "/termekkepek/808872-rm-zongora-zsaner-40x1-5x1970-mm-1.webp"
+  ]
+ },
+ "810164-negyszog-kulcs": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/10164110-chiave-quadrata-zincata/",
+  "sourceTitle": "10164110 – Chiave quadrata zincata",
+  "sourceDescription": "",
+  "matchedCode": "10164110",
+  "specs": {
+   "Tömeg": "0,100",
+   "Kiszerelés": "100 db"
+  },
+  "images": [
+   "/termekkepek/810164-negyszog-kulcs-1.webp",
+   "/termekkepek/810164-negyszog-kulcs-2.webp"
+  ]
+ },
+ "810489-rm-lapos-zsaner-140-4-mm-pl": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=070810489B",
+  "sourceTitle": "Flat hinge for flaps",
+  "sourceDescription": "Flat hinge with 180° opening for internal seals.The smooth rotation of the two pins and the absence of play between the fixed and movable parts is achieved by the insertion of IGLIDUR bushes.",
+  "matchedCode": "070810489B",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "230 g",
+   "Kiszerelés": "10 db/csomag"
+  },
+  "images": [
+   "/termekkepek/810489-rm-lapos-zsaner-140-4-mm-pl-1.webp",
+   "/termekkepek/810489-rm-lapos-zsaner-140-4-mm-pl-2.webp"
+  ]
+ },
+ "812910-elox-alu-oldalajto-zsaner-lepcsos": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000022_closed-body-hinges/103000083_hinge-al-180-anodized-170x48mm",
+  "sourceTitle": "Hinge AL 180° anodized 170x48mm",
+  "matchedCode": "62LP212910",
+  "specs": {
+   "Anyag": "EN AW 6005A",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "0,239 kg",
+   "Hossz": "170,0 mm",
+   "Szélesség": "102,0 mm",
+   "Magasság": "22,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/812910-elox-alu-oldalajto-zsaner-lepcsos-1.webp"
+  ]
+ },
+ "815811-kis-negyszog-zar": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/tavellini/",
+  "sourceTitle": "Tavellini",
+  "sourceDescription": "",
+  "matchedCode": "10158110",
+  "specs": {
+   "Kivitel": "Leggero horganyzott"
+  },
+  "images": [
+   "/termekkepek/815811-kis-negyszog-zar-1.webp",
+   "/termekkepek/815811-kis-negyszog-zar-2.webp",
+   "/termekkepek/815811-kis-negyszog-zar-3.webp"
+  ]
+ },
+ "816211-nagy-negyszog-zar": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/tavellini/",
+  "sourceTitle": "Tavellini",
+  "sourceDescription": "",
+  "matchedCode": "10162110",
+  "specs": {
+   "Kivitel": "Pesante horganyzott"
+  },
+  "images": [
+   "/termekkepek/816211-nagy-negyszog-zar-1.webp",
+   "/termekkepek/816211-nagy-negyszog-zar-2.webp",
+   "/termekkepek/816211-nagy-negyszog-zar-3.webp"
+  ]
+ },
+ "820128-l-210-mm-rugos-rigli-rm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/20128610-1-perno-a-molla-grande-in-inox/",
+  "sourceTitle": "20128610/1 – Perno a molla grande in inox",
+  "sourceDescription": "",
+  "matchedCode": "20128610",
+  "specs": {
+   "Tömeg": "0,530",
+   "Kiszerelés": "25 db"
+  },
+  "images": [
+   "/termekkepek/820128-l-210-mm-rugos-rigli-rm-1.webp",
+   "/termekkepek/820128-l-210-mm-rugos-rigli-rm-2.webp"
+  ]
+ },
+ "820128-rugos-rigli-rm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/20128210-perno-a-molla-piccolo-in-inox/",
+  "sourceTitle": "20128210 – Perno a molla piccolo in inox",
+  "sourceDescription": "",
+  "matchedCode": "20128210",
+  "specs": {
+   "Tömeg": "0,360",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/820128-rugos-rigli-rm-1.webp",
+   "/termekkepek/820128-rugos-rigli-rm-2.webp"
+  ]
+ },
+ "820129-l-247-mm-rugos-rigli-horg": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/20128510-1-perno-a-molla-grande-zinc/",
+  "sourceTitle": "20128510/1 – Perno a molla grande zinc.",
+  "sourceDescription": "",
+  "matchedCode": "20128510",
+  "specs": {
+   "Tömeg": "0,530",
+   "Kiszerelés": "25 db"
+  },
+  "images": [
+   "/termekkepek/820129-l-247-mm-rugos-rigli-horg-1.webp",
+   "/termekkepek/820129-l-247-mm-rugos-rigli-horg-2.webp"
+  ]
+ },
+ "820129-rugos-rigli-horg": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/20128110-perno-a-molla-piccolo-zincato/",
+  "sourceTitle": "20128110 – Perno a molla piccolo zincato",
+  "sourceDescription": "",
+  "matchedCode": "20128110",
+  "specs": {
+   "Tömeg": "0,360",
+   "Kiszerelés": "50 db"
+  },
+  "images": [
+   "/termekkepek/820129-rugos-rigli-horg-1.webp",
+   "/termekkepek/820129-rugos-rigli-horg-2.webp",
+   "/termekkepek/820129-rugos-rigli-horg-3.webp",
+   "/termekkepek/820129-rugos-rigli-horg-4.webp"
+  ]
+ },
+ "822225-haub-csatoszar-ellendarabbal-horg-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/15162225-chisura-zincata-registrabile-con-fermo/",
+  "sourceTitle": "15162225 – Chiusura zincata registrabile con fermo",
+  "sourceDescription": "",
+  "matchedCode": "15162225",
+  "specs": {
+   "Tömeg": "1,0",
+   "Kiszerelés": "25 db"
+  },
+  "images": [
+   "/termekkepek/822225-haub-csatoszar-ellendarabbal-horg-ts-1.webp",
+   "/termekkepek/822225-haub-csatoszar-ellendarabbal-horg-ts-2.webp",
+   "/termekkepek/822225-haub-csatoszar-ellendarabbal-horg-ts-3.webp"
+  ]
+ },
+ "829611-rugos-ajtokitamaszto-500-270mm-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/80296110-ferma-porta-sottotelaio-con-attacco-in-piano-zincato/",
+  "sourceTitle": "80296110 – Ferma porta sottotelaio con attacco piatto zincato",
+  "sourceDescription": "",
+  "matchedCode": "80296110",
+  "specs": {
+   "Tömeg": "2,40 Kg",
+   "Kiszerelés": "10 db"
+  },
+  "images": [
+   "/termekkepek/829611-rugos-ajtokitamaszto-500-270mm-ts-1.webp",
+   "/termekkepek/829611-rugos-ajtokitamaszto-500-270mm-ts-2.webp",
+   "/termekkepek/829611-rugos-ajtokitamaszto-500-270mm-ts-3.webp"
+  ]
+ },
+ "829631-rugos-ajtorogzito-horg-440-270mm-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/80296310-fermaporta-sottotelaio-con-attacco-a-squadro-zincato/",
+  "sourceTitle": "80296310 – Fermaporta sottotelaio con attacco a squadro zincato",
+  "sourceDescription": "",
+  "matchedCode": "80296310",
+  "specs": {
+   "Tömeg": "2,40 Kg",
+   "Kiszerelés": "10 db"
+  },
+  "images": [
+   "/termekkepek/829631-rugos-ajtorogzito-horg-440-270mm-ts-1.webp",
+   "/termekkepek/829631-rugos-ajtorogzito-horg-440-270mm-ts-2.webp",
+   "/termekkepek/829631-rugos-ajtorogzito-horg-440-270mm-ts-3.webp"
+  ]
+ },
+ "829681-rugos-ajtorogzito-horg-545-410mm-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/80296810-fermaporta-sottototelaio-con-attac-a-squadro-tipo-francese-zincato/",
+  "sourceTitle": "80296810 – Fermaporta sottototelaio con attac. a squadro tipo francese zincato",
+  "sourceDescription": "",
+  "matchedCode": "80296810",
+  "specs": {
+   "Tömeg": "2,30 Kg",
+   "Kiszerelés": "10 db"
+  },
+  "images": [
+   "/termekkepek/829681-rugos-ajtorogzito-horg-545-410mm-ts-1.webp",
+   "/termekkepek/829681-rugos-ajtorogzito-horg-545-410mm-ts-2.webp",
+   "/termekkepek/829681-rugos-ajtorogzito-horg-545-410mm-ts-3.webp"
+  ]
+ },
+ "829691-rugos-ajtokitamaszto-500-280-inox-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/80296910-fermaporta-sottotelaio-con-attacco-sagomato-inox/",
+  "sourceTitle": "80296910 – Fermaporta sottotelaio con attacco sagomato Inox",
+  "sourceDescription": "",
+  "matchedCode": "80296910",
+  "specs": {
+   "Tömeg": "2,40 Kg"
+  },
+  "images": [
+   "/termekkepek/829691-rugos-ajtokitamaszto-500-280-inox-ts-1.webp",
+   "/termekkepek/829691-rugos-ajtokitamaszto-500-280-inox-ts-2.webp",
+   "/termekkepek/829691-rugos-ajtokitamaszto-500-280-inox-ts-3.webp"
+  ]
+ },
+ "831230-gumis-zsaner-l-3000-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-tila/",
+  "sourceTitle": "Cerniera TILA",
+  "sourceDescription": "",
+  "matchedCode": "54631430",
+  "specs": {
+   "Kivitel": "L=3000"
+  },
+  "images": [
+   "/termekkepek/831230-gumis-zsaner-l-3000-mm-1.webp"
+  ]
+ },
+ "831245-gumis-zsaner-l-2500-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-tila/",
+  "sourceTitle": "Cerniera TILA",
+  "sourceDescription": "",
+  "matchedCode": "54631245",
+  "specs": {
+   "Kivitel": "L=2500"
+  },
+  "images": [
+   "/termekkepek/831245-gumis-zsaner-l-2500-mm-1.webp"
+  ]
+ },
+ "831440-gumis-zsaner-l-4000-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-tila/",
+  "sourceTitle": "Cerniera TILA",
+  "sourceDescription": "",
+  "matchedCode": "54631440",
+  "specs": {
+   "Kivitel": "L=4000"
+  },
+  "images": [
+   "/termekkepek/831440-gumis-zsaner-l-4000-mm-1.webp"
+  ]
+ },
+ "832410-horganyzott-pillango-zsaner-60x60": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-farfalla/",
+  "sourceTitle": "Cerniera Farfalla",
+  "sourceDescription": "",
+  "matchedCode": "80324100",
+  "specs": {
+   "Kivitel": "horganyzott",
+   "Tömeg": "0,150 kg",
+   "Kiszerelés": "150 db"
+  },
+  "images": [
+   "/termekkepek/832410-horganyzott-pillango-zsaner-60x60-1.webp",
+   "/termekkepek/832410-horganyzott-pillango-zsaner-60x60-2.webp",
+   "/termekkepek/832410-horganyzott-pillango-zsaner-60x60-3.webp",
+   "/termekkepek/832410-horganyzott-pillango-zsaner-60x60-4.webp"
+  ]
+ },
+ "832420-rm-pillango-zsaner-60x60": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-farfalla/",
+  "sourceTitle": "Cerniera Farfalla",
+  "sourceDescription": "",
+  "matchedCode": "80324200",
+  "specs": {
+   "Kivitel": "rozsdamentes",
+   "Tömeg": "0,150 kg",
+   "Kiszerelés": "150 db"
+  },
+  "images": [
+   "/termekkepek/832420-rm-pillango-zsaner-60x60-1.webp",
+   "/termekkepek/832420-rm-pillango-zsaner-60x60-2.webp",
+   "/termekkepek/832420-rm-pillango-zsaner-60x60-3.webp",
+   "/termekkepek/832420-rm-pillango-zsaner-60x60-4.webp"
+  ]
+ },
+ "836500-d18-horg-hatsoajtozar-kit-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/80365000-chiusura-sottoporta-zincata-o18/",
+  "sourceTitle": "80365000 – Chiusura sottoporta zincata Ø18",
+  "sourceDescription": "",
+  "matchedCode": "80365000",
+  "specs": {
+   "Tömeg": "2,500 kg",
+   "Kiszerelés": "8 db"
+  },
+  "images": [
+   "/termekkepek/836500-d18-horg-hatsoajtozar-kit-ts-1.webp",
+   "/termekkepek/836500-d18-horg-hatsoajtozar-kit-ts-2.webp",
+   "/termekkepek/836500-d18-horg-hatsoajtozar-kit-ts-3.webp",
+   "/termekkepek/836500-d18-horg-hatsoajtozar-kit-ts-4.webp"
+  ]
+ },
+ "836821-l-d22-kontener-rudzar-rm-kit-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/chiusura-esterna-sl2-per-tubo-o22/",
+  "sourceTitle": "Chiusura esterna SL2 per tubo Ø22",
+  "sourceDescription": "",
+  "matchedCode": "80368210",
+  "specs": {
+   "Kiszerelés": "2 db"
+  },
+  "images": [
+   "/termekkepek/836821-l-d22-kontener-rudzar-rm-kit-ts-1.webp"
+  ]
+ },
+ "836821-r-d22-kontener-rudzar-rm-kit-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/chiusura-esterna-sl2-per-tubo-o22/",
+  "sourceTitle": "Chiusura esterna SL2 per tubo Ø22",
+  "sourceDescription": "",
+  "matchedCode": "80368210",
+  "specs": {
+   "Kiszerelés": "2 db"
+  },
+  "images": [
+   "/termekkepek/836821-r-d22-kontener-rudzar-rm-kit-ts-1.webp"
+  ]
+ },
+ "836931-d34-kontener-rudzar-horg-kit": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/80369310-chiusura-esterna-container-zincata-per-tubo-o34/",
+  "sourceTitle": "80369310 – Chiusura esterna Container Zincata per tubo Ø34",
+  "sourceDescription": "",
+  "matchedCode": "80369310",
+  "specs": {
+   "Tömeg": "4",
+   "Kiszerelés": "2 db"
+  },
+  "images": [
+   "/termekkepek/836931-d34-kontener-rudzar-horg-kit-1.webp"
+  ]
+ },
+ "891200-kis-kapaszkodo": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/80901200-maniglia-di-risalita-in-poliuretano-nero-tipo-panda/",
+  "sourceTitle": "80901200 – Maniglia di risalita in poliuretano nero tipo “Panda”",
+  "sourceDescription": "",
+  "matchedCode": "80901200",
+  "specs": {
+   "Tömeg": "0,04 kg"
+  },
+  "images": [
+   "/termekkepek/891200-kis-kapaszkodo-1.webp",
+   "/termekkepek/891200-kis-kapaszkodo-2.webp"
+  ]
+ },
+ "891235-nagy-kapaszkodo": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/80901235-maniglia-di-risalita-in-poliuretano-nero/",
+  "sourceTitle": "80901235 – Maniglia di risalita in poliuretano nero",
+  "sourceDescription": "",
+  "matchedCode": "80901235",
+  "specs": {
+   "Tömeg": "0,17 kg"
+  },
+  "images": [
+   "/termekkepek/891235-nagy-kapaszkodo-1.webp",
+   "/termekkepek/891235-nagy-kapaszkodo-2.webp"
+  ]
+ },
+ "892242-rm-csavarozhato-hatsoajto-zsanerbak-csap-96-mm-pl": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=070326242",
+  "sourceTitle": "Flat bracket with pin and nut",
+  "sourceDescription": "The flat bracket should be mounted flush to the outside to allow hinge to rotate 270°",
+  "matchedCode": "070326242",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "390 g",
+   "Kiszerelés": "2 db/csomag"
+  },
+  "images": [
+   "/termekkepek/892242-rm-csavarozhato-hatsoajto-zsanerbak-csap-96-mm-pl-1.webp",
+   "/termekkepek/892242-rm-csavarozhato-hatsoajto-zsanerbak-csap-96-mm-pl-2.webp",
+   "/termekkepek/892242-rm-csavarozhato-hatsoajto-zsanerbak-csap-96-mm-pl-3.webp"
+  ]
+ },
+ "892343-rm-csavarozhato-hatsoajto-zsanerbak-csap-96-mm-pl": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=070326343",
+  "sourceTitle": "Inclined flat bracket with pin and nut",
+  "sourceDescription": "Used with radial body sides or for moving the fastening holes inward.",
+  "matchedCode": "070326343",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "415 g",
+   "Kiszerelés": "2 db/csomag"
+  },
+  "images": [
+   "/termekkepek/892343-rm-csavarozhato-hatsoajto-zsanerbak-csap-96-mm-pl-1.webp",
+   "/termekkepek/892343-rm-csavarozhato-hatsoajto-zsanerbak-csap-96-mm-pl-2.webp"
+  ]
+ },
+ "892776-rm-hatsoajto-zsanerlap-312x96-4mm-pl": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=070120776A",
+  "sourceTitle": "Rear door hinge BIG H=mm 33",
+  "sourceDescription": "Large-sized hinge. The reduced overhang of the neck (33 mm) makes this hinge suitable for recessing into rear profiles.for recessing into rear profiles.",
+  "matchedCode": "070120776A",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "1090 g",
+   "Kiszerelés": "2 db/csomag"
+  },
+  "images": [
+   "/termekkepek/892776-rm-hatsoajto-zsanerlap-312x96-4mm-pl-1.webp",
+   "/termekkepek/892776-rm-hatsoajto-zsanerlap-312x96-4mm-pl-2.webp"
+  ]
+ },
+ "895280-nagy-oldalso-ladazar": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/80952800-chiusura-a-leva-di-tenuta-grande-con-chiave-sotto-bottone/",
+  "sourceTitle": "80952800 – Chiusura a leva di tenuta grande con chiave sotto bottone",
+  "sourceDescription": "",
+  "matchedCode": "80952800",
+  "specs": {
+   "Tömeg": "0,44 Kg"
+  },
+  "images": [
+   "/termekkepek/895280-nagy-oldalso-ladazar-1.webp",
+   "/termekkepek/895280-nagy-oldalso-ladazar-2.webp",
+   "/termekkepek/895280-nagy-oldalso-ladazar-3.webp"
+  ]
+ },
+ "896966-a-rm-hatsoajto-zsanerlap-280-4-mm-pl": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=070116966A",
+  "sourceTitle": "Hinge",
+  "sourceDescription": "",
+  "matchedCode": "070116966A",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "655 g",
+   "Kiszerelés": "2 db/csomag"
+  },
+  "images": [
+   "/termekkepek/896966-a-rm-hatsoajto-zsanerlap-280-4-mm-pl-1.webp",
+   "/termekkepek/896966-a-rm-hatsoajto-zsanerlap-280-4-mm-pl-2.webp"
+  ]
+ },
+ "896966-rm-hatsoajto-zsanerlap-bak-280-4mm-pl": {
+  "source": "Pastore",
+  "sourceUrl": "https://www.pastorelombardi.com/eng/cerca?chiave=070116966A",
+  "sourceTitle": "Hinge",
+  "sourceDescription": "",
+  "matchedCode": "070116966A",
+  "specs": {
+   "Kivitel": "rozsdamentes acél",
+   "Tömeg": "655 g",
+   "Kiszerelés": "2 db/csomag"
+  },
+  "images": [
+   "/termekkepek/896966-rm-hatsoajto-zsanerlap-bak-280-4mm-pl-1.webp",
+   "/termekkepek/896966-rm-hatsoajto-zsanerlap-bak-280-4mm-pl-2.webp"
+  ]
+ },
+ "899210-c-rm-hatsoajto-zsanerbak-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/80399210-cerniera-posteriore-in-inox-composto-da-cardine-e-perno/",
+  "sourceTitle": "80399210 – Cerniera posteriore in Inox composto da cardine e perno",
+  "sourceDescription": "",
+  "matchedCode": "80399210",
+  "specs": {
+   "Tömeg": "0,750 kg"
+  },
+  "images": [
+   "/termekkepek/899210-c-rm-hatsoajto-zsanerbak-ts-1.webp",
+   "/termekkepek/899210-c-rm-hatsoajto-zsanerbak-ts-2.webp"
+  ]
+ },
+ "899210-rm-hatsoajto-zsanerlap-bak-280-3-ts": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/80399210-cerniera-posteriore-in-inox-composto-da-cardine-e-perno/",
+  "sourceTitle": "80399210 – Cerniera posteriore in Inox composto da cardine e perno",
+  "sourceDescription": "",
+  "matchedCode": "80399210",
+  "specs": {
+   "Tömeg": "0,750 kg"
+  },
+  "images": [
+   "/termekkepek/899210-rm-hatsoajto-zsanerlap-bak-280-3-ts-1.webp",
+   "/termekkepek/899210-rm-hatsoajto-zsanerlap-bak-280-3-ts-2.webp"
+  ]
+ },
+ "alu-elso-takaro-lemez": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000017_edscha-cs/910111993_front-plate-2550mm--anod",
+  "sourceTitle": "Front plate 2550mm, anod",
+  "matchedCode": "66PL111085",
+  "specs": {
+   "Anyag": "EN AW 6063",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "6,043 kg",
+   "Hossz": "2 550,0 mm",
+   "Szélesség": "35,0 mm",
+   "Magasság": "221,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/alu-elso-takaro-lemez-1.webp"
   ]
  },
  "j101030-negyed-ives-sarvedo-700x650": {
@@ -993,6 +4544,51 @@
    "Méret": "530 x 370"
   }
  },
+ "j600421-horg-42-es-sarvedotarto-cso-750-mm-egyenes": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/60780421-tubo-di-fissaggio-diritto-zincato-o42-l750/",
+  "sourceTitle": "60780421 – Tubo di fissaggio diritto zincato Ø42 L=750",
+  "sourceDescription": "",
+  "matchedCode": "60780421",
+  "specs": {
+   "Tömeg": "2,800kg",
+   "Kiszerelés": "10 db"
+  },
+  "images": [
+   "/termekkepek/j600421-horg-42-es-sarvedotarto-cso-750-mm-egyenes-1.webp",
+   "/termekkepek/j600421-horg-42-es-sarvedotarto-cso-750-mm-egyenes-2.webp"
+  ]
+ },
+ "j600422-th-42-es-sarvedotarto-cso-750-mm-hajlitott": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/60770422-tubo-zincato-a-caldo-di-fissaggio-o42-l750/",
+  "sourceTitle": "60770422 – Tubo zincato a caldo di fissaggio Ø42 L=750",
+  "sourceDescription": "",
+  "matchedCode": "60770422",
+  "specs": {
+   "Tömeg": "2,850kg",
+   "Kiszerelés": "10 db"
+  },
+  "images": [
+   "/termekkepek/j600422-th-42-es-sarvedotarto-cso-750-mm-hajlitott-1.webp",
+   "/termekkepek/j600422-th-42-es-sarvedotarto-cso-750-mm-hajlitott-2.webp"
+  ]
+ },
+ "j601811-zn-42-es-sarvedotarto-cso-800-mm": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/60180110-tubo-di-fissaggio-zincato-o42/",
+  "sourceTitle": "60180110 – Tubo di fissaggio zincato Ø42",
+  "sourceDescription": "",
+  "matchedCode": "60180110",
+  "specs": {
+   "Tömeg": "2,850kg",
+   "Kiszerelés": "10 db"
+  },
+  "images": [
+   "/termekkepek/j601811-zn-42-es-sarvedotarto-cso-800-mm-1.webp",
+   "/termekkepek/j601811-zn-42-es-sarvedotarto-cso-800-mm-2.webp"
+  ]
+ },
  "j608031-th-42-es-sarvedotarto-cso-750-mm-3p": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/521/",
@@ -1009,6 +4605,23 @@
    "/termekkepek/j608031-th-42-es-sarvedotarto-cso-750-mm-3p-1.webp"
   ]
  },
+ "j617110-42-es-horg-acel-csotarto-bilincs-f": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/60167110-supporto-parafango-sagomato-zincato-o42/",
+  "sourceTitle": "60167110 – Supporto parafango sagomato zincato Ø42",
+  "sourceDescription": "",
+  "matchedCode": "60167110",
+  "specs": {
+   "Tömeg": "0,510kg",
+   "Kiszerelés": "30 db"
+  },
+  "images": [
+   "/termekkepek/j617110-42-es-horg-acel-csotarto-bilincs-f-1.webp",
+   "/termekkepek/j617110-42-es-horg-acel-csotarto-bilincs-f-2.webp",
+   "/termekkepek/j617110-42-es-horg-acel-csotarto-bilincs-f-3.webp",
+   "/termekkepek/j617110-42-es-horg-acel-csotarto-bilincs-f-4.webp"
+  ]
+ },
  "j6530-sarfogo-lap-650x300-felfogatas": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/529/",
@@ -1019,5 +4632,104 @@
    "Mértékegység": "pár/pair",
    "Méret": "650 x 300"
   }
+ },
+ "m12x140-rugos-felfuggesztes": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/25800100-sistema-di-fissaggio-elastico-m12x140/",
+  "sourceTitle": "25800100 – Sistema di fissaggio elastico M12x140",
+  "sourceDescription": "",
+  "matchedCode": "25800100",
+  "specs": {
+   "Tömeg": "1,080 kg",
+   "Kiszerelés": "20 db"
+  },
+  "images": [
+   "/termekkepek/m12x140-rugos-felfuggesztes-1.webp",
+   "/termekkepek/m12x140-rugos-felfuggesztes-2.webp",
+   "/termekkepek/m12x140-rugos-felfuggesztes-3.webp"
+  ]
+ },
+ "m12x80-rugos-felfuggesztes": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000002_parts-for-aluminium-platforms/28000153_set-m12x80-for-elastic-connection",
+  "sourceTitle": "Set M12x80 for elastic connection",
+  "matchedCode": "6200SM1280",
+  "specs": {
+   "Anyag": "acél",
+   "Felület": "horganyzott",
+   "Tömeg": "0,335 kg",
+   "Mértékegység": "set"
+  },
+  "images": [
+   "/termekkepek/m12x80-rugos-felfuggesztes-1.webp"
+  ]
+ },
+ "m14x100-rugos-felfuggesztes": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000002_parts-for-aluminium-platforms/28000154_set-m14x100-for-elastic-connection",
+  "sourceTitle": "Set M14x100 for elastic connection",
+  "matchedCode": "6200SM1410",
+  "specs": {
+   "Anyag": "acél",
+   "Felület": "horganyzott",
+   "Tömeg": "0,385 kg",
+   "Mértékegység": "set"
+  },
+  "images": [
+   "/termekkepek/m14x100-rugos-felfuggesztes-1.webp"
+  ]
+ },
+ "m18x140-rugos-felfuggesztes": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/prodotto/25850100-sistema-di-fissaggio-elastico-pesante-m18x140/",
+  "sourceTitle": "25850100 – Sistema di fissaggio elastico pesante M18x140",
+  "sourceDescription": "",
+  "matchedCode": "25850100",
+  "specs": {
+   "Tömeg": "1,250 kg",
+   "Kiszerelés": "20 db"
+  },
+  "images": [
+   "/termekkepek/m18x140-rugos-felfuggesztes-1.webp",
+   "/termekkepek/m18x140-rugos-felfuggesztes-2.webp"
+  ]
+ },
+ "q8033-elox-profil-kefehez": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/1006",
+  "sourceTitle": "ALU SEALING PROFILE F/BRISTLE-silver 1-L= 6,00 m Packed by 1 piece Anodised aluminium (silver) 6.000 mm",
+  "matchedCode": "1012514-TZ1-6000",
+  "specs": {
+   "Hossz": "6,00 m",
+   "Felület": "eloxált",
+   "Anyag": "alumínium"
+  },
+  "images": [
+   "/termekkepek/q8033-elox-profil-kefehez-1.webp"
+  ]
+ },
+ "q8035-25-mm-kefe": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/1006",
+  "sourceTitle": "STRIPBORSTEL 25mm IJZER-black-L= 3,00 m Packed by 1 piece Steel 3.000 mm",
+  "matchedCode": "1012515-ZWART-3000",
+  "specs": {
+   "Hossz": "3,00 m"
+  },
+  "images": [
+   "/termekkepek/q8035-25-mm-kefe-1.webp"
+  ]
+ },
+ "q8040-kefe-40-mm-elox-profillal": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/1006",
+  "sourceTitle": "STRIPBORSTEL 40mm IJZER-black-L= 3,00 m Packed by 1 piece Steel 3.000 mm",
+  "matchedCode": "1013163-ZWART-3000",
+  "specs": {
+   "Hossz": "3,00 m"
+  },
+  "images": [
+   "/termekkepek/q8040-kefe-40-mm-elox-profillal-1.webp"
+  ]
  }
 }

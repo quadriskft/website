@@ -37,6 +37,17 @@ def save_enrichment(data):
     ENRICHMENT.write_text(json.dumps(dict(sorted(data.items())), ensure_ascii=False, indent=1) + "\n")
 
 
+def update_enrichment(updates, supplier=None):
+    """A friss fájlt olvassa be, és csak a megadott termékeket írja felül (párhuzamos futás esetére).
+    Ha supplier meg van adva, az adott beszállító korábbi, most nem talált bejegyzéseit törli."""
+    data = load_enrichment()
+    if supplier:
+        for slug in [s for s, e in data.items() if e.get("source") == supplier and s not in updates]:
+            del data[slug]
+    data.update(updates)
+    save_enrichment(data)
+
+
 def fetch(url, cache=True, timeout=40):
     """URL letöltése (gyorsítótárral), bájtokat ad vissza."""
     key = CACHE / re.sub(r"[^A-Za-z0-9._-]+", "_", url)[-180:]
@@ -45,7 +56,7 @@ def fetch(url, cache=True, timeout=40):
     last = None
     for attempt in range(3):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "en,hu;q=0.8"})
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html,application/xhtml+xml,application/json,image/*,*/*;q=0.8", "Accept-Language": "en,hu;q=0.8"})
             data = urllib.request.urlopen(req, timeout=timeout).read()
             if cache:
                 key.parent.mkdir(parents=True, exist_ok=True)
@@ -124,6 +135,20 @@ TERMS = [
     (r"\bpravý/right\b", "jobb"),
     (r"\bľavý/left\b", "bal"),
     (r"\bnatur(al)?\b", "natúr"),
+    (r"\bstainless( steel)?\b", "rozsdamentes acél"),
+    (r"\bsand ?blast(ed)?\b", "homokszórt"),
+    (r"\bpolished\b", "polírozott"),
+    (r"\bsteel\b", "acél"),
+    (r"\bgal(v)?\.? ?Zn\b", "horganyzott"),
+    (r"\bhot[- ]dip galvani[sz]ed\b", "tűzihorganyzott"),
+    (r"\bcataphoresis\b", "kataforézis (KTL)"),
+    (r"\banodi[sz]ed\b", "eloxált"),
+    (r"\bpowder coated\b", "porszórt"),
+    (r"\brubber\b", "gumi"),
+    (r"\bpcs\b", "db"),
+    (r"\bwithout\b", "natúr"),
+    (r"\bDx\b", "J"),
+    (r"\bSx\b", "B"),
     (r"\bčierna lakovaná black painted\b", "fekete festett"),
     (r"\blakovan[ýá]/painted\b", "festett"),
     (r"\bpainted\b", "festett"),

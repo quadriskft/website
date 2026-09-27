@@ -15,7 +15,7 @@ from PIL import Image
 
 sys.path.insert(0, str(__import__("pathlib").Path(__file__).parent))
 from common import (CACHE, IMAGE_DIR, code_candidates, fetch, hu_label, hu_value,  # noqa: E402
-                    load_enrichment, load_products, save_enrichment, save_image)
+                    load_products, save_image, update_enrichment)
 
 SUPPLIER = "Ital Accessori"
 PDF_URL = "https://www.ital-accessori.sk/katalog/book/KOMP/files/assets/common/downloads/publication.pdf"
@@ -78,7 +78,7 @@ def rect_distance(a, b):
 
 def pick_image(page, code, table_rect, tables):
     """A termékhez tartozó kép téglalapja az oldalon."""
-    W, H = page.rect.width, page.rect.height
+    H = page.rect.height
     imgs = []
     for info in page.get_image_info():
         r = pymupdf.Rect(info["bbox"]) & page.rect
@@ -124,14 +124,13 @@ def render(page, rect, pad=1.5):
 def main():
     doc = open_pdf()
     products = load_products(SUPPLIER)
-    enrichment = load_enrichment()
+    enrichment = {}
 
     # kód -> oldal index (gyors szöveges előszűrés)
     wanted = {}
     for p in products:
         for c in code_candidates(p):
             wanted.setdefault(norm_code(c), []).append(p)
-    page_text = [norm_code(" ".join(w[4] for w in pg.get_text("words"))) for pg in doc]
     word_sets = [set(norm_code(w[4]) for w in pg.get_text("words")) for pg in doc]
 
     found = {}
@@ -156,12 +155,11 @@ def main():
     for p in products:
         for old in IMAGE_DIR.glob(f"{p['slug']}-*.webp"):
             old.unlink()
-        enrichment.pop(p["slug"], None) if enrichment.get(p["slug"], {}).get("source") == SUPPLIER else None
         hit = found.get(p["slug"])
         if not hit:
             continue
         page = doc[hit["page"]]
-        entry = enrichment.get(p["slug"], {})
+        entry = {}
         entry.update({
             "source": SUPPLIER,
             "sourceUrl": CATALOG_URL.format(page=hit["page"] + 1),
@@ -175,7 +173,7 @@ def main():
         enrichment[p["slug"]] = entry
         ok += 1
 
-    save_enrichment(enrichment)
+    update_enrichment(enrichment, SUPPLIER)
     missing = [p for p in products if p["slug"] not in found]
     print(f"{SUPPLIER}: {ok}/{len(products)} termék megtalálva a katalógusban")
     for p in missing:
