@@ -1,7 +1,25 @@
 ---
 import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
 ---
 <Base title="Az oldal nem található">
-  <h1>Az oldal nem található</h1>
-  <p>A keresett oldal nem létezik vagy megszűnt. <a href="/">Vissza a termékekhez</a></p>
+  <section class="section">
+    <div class="container nf">
+      <span class="code gradient-text">404</span>
+      <h1>Az oldal nem található</h1>
+      <p class="lead">Lehet, hogy a termék átkerült egy másik csoportba. Próbálja a keresőt, vagy böngésszen a katalógusban.</p>
+      <form class="nf-search" action="/kereses" method="get" role="search">
+        <input class="input" type="search" name="q" placeholder="Terméknév vagy cikkszám…" aria-label="Keresés" />
+        <button class="btn btn-primary" type="submit"><Icon name="Search" /> Keresés</button>
+      </form>
+      <a href="/termekek" class="btn btn-ghost">Termékkatalógus</a>
+    </div>
+  </section>
 </Base>
+
+<style>
+  .nf { text-align: center; display: grid; justify-items: center; gap: 8px; }
+  .code { font-family: var(--font-head); font-size: clamp(5rem, 14vw, 9rem); font-weight: 700; line-height: 1; }
+  .nf-search { display: flex; gap: 10px; width: min(520px, 100%); margin: 12px 0 8px; }
+  .nf-search .input { border-radius: 999px; }
+</style>

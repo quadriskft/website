@@ -1,0 +1,16 @@
+---
+import Icon from './Icon.astro';
+import { groupIcon } from '../lib/catalog.js';
+
+const { product, eager = false } = Astro.props;
+const image = product.images?.[0];
+---
+{image ? (
+  <div class="product-visual">
+    <img src={image} alt={product.name} loading={eager ? 'eager' : 'lazy'} decoding="async" />
+  </div>
+) : (
+  <div class="product-visual placeholder" role="img" aria-label={product.name}>
+    <Icon name={groupIcon(product.group)} size={64} />
+  </div>
+)}

@@ -1,61 +1,143 @@
 ---
 import Base from '../layouts/Base.astro';
-import { products, mainImage } from '../lib/catalog.js';
-
-// A kereséshez szükséges adatok beágyazva, így nem kell szerver.
-const index = products.map((p) => ({
-  slug: p.slug,
-  name: p.name,
-  sku: p.sku,
-  manufacturer: p.manufacturer,
-  image: mainImage(p),
-}));
+import Icon from '../components/Icon.astro';
 ---
-<Base title="Keresés">
-  <h1>Keresés</h1>
-  <p id="search-summary" class="muted"></p>
-  <ul id="search-results" class="product-grid"></ul>
-
-  <script id="search-index" type="application/json" set:html={JSON.stringify(index)}></script>
-  <script>
-    const normalize = (s) => (s ?? '').toString().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-    const index = JSON.parse(document.getElementById('search-index').textContent);
-    const q = new URLSearchParams(location.search).get('q')?.trim() ?? '';
-    const input = document.querySelector('.search input');
-    if (input) input.value = q;
-
-    const summary = document.getElementById('search-summary');
-    const list = document.getElementById('search-results');
-    const terms = normalize(q).split(/\s+/).filter(Boolean);
-
-    if (terms.length === 0) {
-      summary.textContent = 'Írj be egy terméknevet, gyártót vagy cikkszámot.';
-    } else {
-      const hits = index.filter((p) => {
-        const text = normalize(`${p.name} ${p.sku} ${p.manufacturer}`);
-        return terms.every((t) => text.includes(t));
-      });
-      summary.textContent = `${hits.length} találat erre: „${q}”`;
-      for (const p of hits) {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.className = 'card';
-        a.href = `/termek/${p.slug}`;
-        const img = document.createElement('img');
-        img.src = p.image;
-        img.alt = p.name;
-        img.loading = 'lazy';
-        img.style.cssText = 'aspect-ratio:4/3;object-fit:contain;width:100%;background:var(--color-bg-soft);border-radius:4px';
-        const h3 = document.createElement('h3');
-        h3.textContent = p.name;
-        const meta = document.createElement('p');
-        meta.className = 'muted';
-        meta.style.margin = '0';
-        meta.textContent = `${p.manufacturer} · Cikkszám: ${p.sku}`;
-        a.append(img, h3, meta);
-        li.append(a);
-        list.append(li);
-      }
-    }
-  </script>
+<Base title="Keresés" description="Keresés a Quadris termékkatalógusában név vagy cikkszám alapján.">
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Keresés</span>
+      <h1 id="search-title">Termékkeresés</h1>
+      <form class="big-search" action="/kereses" method="get" role="search">
+        <Icon name="Search" size={20} />
+        <input type="search" name="q" id="q" placeholder="Terméknév vagy cikkszám…" aria-label="Keresés" autofocus />
+        <button class="btn btn-primary" type="submit">Keresés</button>
+      </form>
+    </div>
+  </section>
+  <section class="section-sm">
+    <div class="container">
+      <p id="summary" class="muted" aria-live="polite"></p>
+      <div id="group-filter" class="chips"></div>
+      <div id="results" class="grid grid-products"></div>
+      <button id="more" class="btn btn-ghost more" type="button" hidden>További találatok</button>
+      <div id="empty" class="empty card" hidden>
+        <Icon name="SearchX" size={32} />
+        <h2>Nincs találat</h2>
+        <p class="muted">Próbáljon rövidebb kifejezést vagy csak a cikkszám egy részét. Ha így sem találja, kérje egyedi tételként – beszerezzük.</p>
+        <a class="btn btn-primary" id="custom-link" href="/ajanlatkeres#egyedi">Egyedi tétel kérése</a>
+      </div>
+    </div>
+  </section>
 </Base>
+
+<script>
+  import { loadIndex, search } from '../scripts/search.js';
+
+  const PAGE = 48;
+  const q = new URLSearchParams(location.search).get('q')?.trim() ?? '';
+  const input = document.getElementById('q');
+  const summary = document.getElementById('summary');
+  const results = document.getElementById('results');
+  const chips = document.getElementById('group-filter');
+  const more = document.getElementById('more');
+  const empty = document.getElementById('empty');
+  input.value = q;
+  document.querySelectorAll('.header-search input').forEach((el) => (el.value = q));
+
+  const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+  const plus = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="i-add" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>';
+  const check = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="i-added" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>';
+  const tile = '<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 8.7 5 8.7-5"/></svg>';
+
+  const card = (p) => {
+    const data = esc(JSON.stringify({ slug: p.slug, code: p.code, name: p.name, group: p.group, image: p.image }));
+    const visual = p.image
+      ? `<div class="product-visual"><img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy"></div>`
+      : `<div class="product-visual placeholder">${tile}</div>`;
+    return `<article class="card hoverable product-card s-card">
+      <a href="/termek/${p.slug}" class="s-link">${visual}<h3>${esc(p.name)}</h3></a>
+      <p class="muted s-group">${esc(p.groupName)}</p>
+      <div class="s-foot"><span class="muted">${p.code ? 'Cikkszám: ' + esc(p.code) : '&nbsp;'}</span>
+      <button type="button" class="add-btn" data-add-to-quote="${data}">${plus}${check}<span class="label">Ajánlatkérőbe</span></button></div>
+    </article>`;
+  };
+
+  let hits = [];
+  let groupFilter = '';
+  let shown = 0;
+
+  const draw = () => {
+    const list = groupFilter ? hits.filter((p) => p.group === groupFilter) : hits;
+    results.innerHTML = list.slice(0, shown).map(card).join('');
+    more.hidden = shown >= list.length;
+    window.dispatchEvent(new CustomEvent('quote:change'));
+  };
+
+  if (!q) {
+    summary.textContent = 'Írjon be egy terméknevet vagy cikkszámot.';
+  } else {
+    document.getElementById('search-title').textContent = `Találatok: „${q}”`;
+    document.getElementById('custom-link').href = `/ajanlatkeres?egyedi=${encodeURIComponent(q)}#egyedi`;
+    loadIndex()
+      .then((index) => {
+        hits = search(index, q);
+        summary.textContent = `${hits.length} találat`;
+        empty.hidden = hits.length > 0;
+        const groups = new Map();
+        hits.forEach((p) => groups.set(p.group, { name: p.groupName, n: (groups.get(p.group)?.n ?? 0) + 1 }));
+        if (groups.size > 1) {
+          chips.innerHTML = `<button type="button" class="chip active" data-g="">Mind (${hits.length})</button>` +
+            [...groups].map(([slug, g]) => `<button type="button" class="chip" data-g="${slug}">${esc(g.name)} (${g.n})</button>`).join('');
+        }
+        shown = PAGE;
+        draw();
+      })
+      .catch(() => (summary.textContent = 'A keresés most nem érhető el, próbálja újra később.'));
+  }
+
+  chips.addEventListener('click', (e) => {
+    const chip = e.target.closest('.chip');
+    if (!chip) return;
+    groupFilter = chip.dataset.g;
+    chips.querySelectorAll('.chip').forEach((c) => c.classList.toggle('active', c === chip));
+    shown = PAGE;
+    draw();
+  });
+  more.addEventListener('click', () => {
+    shown += PAGE;
+    draw();
+  });
+</script>
+
+<style>
+  .big-search { display: flex; align-items: center; gap: 10px; margin-top: 18px; padding: 6px 6px 6px 18px; max-width: 640px; border: 1px solid var(--line-strong); border-radius: 999px; background: rgba(12, 25, 41, 0.8); }
+  .big-search:focus-within { border-color: var(--accent); }
+  .big-search > :global(svg) { color: var(--muted); flex: none; }
+  .big-search input { flex: 1; min-width: 0; border: 0; background: transparent; height: 44px; outline: none; font-size: 1rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .chips :global(.chip) { padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line-strong); background: transparent; color: var(--text-2); cursor: pointer; font-size: 0.86rem; }
+  .chips :global(.chip:hover) { border-color: var(--accent); }
+  .chips :global(.chip.active) { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  .more { margin: 28px auto 0; display: flex; }
+  .empty { padding: 40px; text-align: center; max-width: 560px; margin: 20px auto; display: grid; justify-items: center; gap: 4px; }
+  .empty > :global(svg) { color: var(--accent); margin-bottom: 8px; }
+
+  #results :global(.s-card) { display: flex; flex-direction: column; padding: 12px; }
+  #results :global(.s-link) { color: inherit; text-decoration: none; flex: 1; }
+  #results :global(.s-link:hover h3) { color: var(--accent); }
+  #results :global(h3) { font-size: 0.97rem; font-weight: 600; margin: 12px 4px 2px; line-height: 1.35; }
+  #results :global(.s-group) { font-size: 0.8rem; margin: 0 4px 8px; }
+  #results :global(.s-foot) { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 4px 2px; font-size: 0.8rem; flex-wrap: wrap; }
+  #results :global(.add-btn) {
+    display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; border: 1px solid var(--line-strong);
+    background: rgba(255, 255, 255, 0.03); color: var(--text); font-size: 0.82rem; font-weight: 600; cursor: pointer;
+  }
+  #results :global(.add-btn:hover) { border-color: var(--accent); color: var(--accent); }
+  #results :global(.add-btn .i-added) { display: none; }
+  #results :global(.add-btn.in-quote) { border-color: rgba(61, 220, 151, 0.5); background: rgba(61, 220, 151, 0.1); color: var(--ok); }
+  #results :global(.add-btn.in-quote .i-add) { display: none; }
+  #results :global(.add-btn.in-quote .i-added) { display: inline; }
+  @media (max-width: 720px) {
+    #results :global(.add-btn) { width: 100%; justify-content: center; }
+  }
+</style>

@@ -1,17 +1,45 @@
 ---
-import { mainImage } from '../lib/catalog.js';
+import Icon from './Icon.astro';
+import ProductVisual from './ProductVisual.astro';
+import { publicProduct } from '../lib/catalog.js';
 
 const { product } = Astro.props;
 ---
-<li>
-  <a class="card product-card" href={`/termek/${product.slug}`}>
-    <img src={mainImage(product)} alt={product.name} loading="lazy" width="400" height="300" />
+<article class="card hoverable product-card" data-name={`${product.code} ${product.name}`.toLowerCase()}>
+  <a href={`/termek/${product.slug}`} class="product-link">
+    <ProductVisual product={product} />
     <h3>{product.name}</h3>
-    <p class="muted">{product.manufacturer} · Cikkszám: {product.sku}</p>
   </a>
-</li>
+  <div class="product-foot">
+    <span class="muted code">{product.code ? `Cikkszám: ${product.code}` : ' '}</span>
+    <button type="button" class="add-btn" data-add-to-quote={JSON.stringify(publicProduct(product))} aria-label={`${product.name} – ajánlatkérőbe`}>
+      <Icon name="Plus" size={16} class="i-add" />
+      <Icon name="Check" size={16} class="i-added" />
+      <span class="label">Ajánlatkérőbe</span>
+    </button>
+  </div>
+</article>
 
 <style>
-  .product-card img { aspect-ratio: 4 / 3; object-fit: contain; width: 100%; background: var(--color-bg-soft); border-radius: 4px; }
-  p { margin: 0; font-size: 0.9rem; }
+  .product-card { display: flex; flex-direction: column; padding: 12px; }
+  .product-link { color: inherit; text-decoration: none !important; display: block; flex: 1; }
+  h3 { font-size: 0.97rem; font-weight: 600; margin: 12px 4px 6px; line-height: 1.35; }
+  .product-link:hover h3 { color: var(--accent); }
+  .product-foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 4px 2px; flex-wrap: wrap; }
+  .code { font-size: 0.8rem; }
+  .add-btn {
+    display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px;
+    border: 1px solid var(--line-strong); background: rgba(255, 255, 255, 0.03); color: var(--text);
+    font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease;
+  }
+  .add-btn:hover { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+  .add-btn :global(.i-added) { display: none; }
+  .add-btn.in-quote { border-color: rgba(61, 220, 151, 0.5); background: rgba(61, 220, 151, 0.1); color: var(--ok); }
+  .add-btn.in-quote :global(.i-add) { display: none; }
+  .add-btn.in-quote :global(.i-added) { display: inline; }
+  @media (max-width: 720px) {
+    .product-card { padding: 8px; }
+    h3 { font-size: 0.9rem; margin: 10px 2px 4px; }
+    .add-btn { width: 100%; justify-content: center; }
+  }
 </style>

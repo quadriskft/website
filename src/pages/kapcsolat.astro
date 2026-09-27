@@ -1,12 +1,110 @@
 ---
 import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { SITE } from '../lib/site.js';
 ---
-<Base title="Kapcsolat">
-  <h1>Kapcsolat</h1>
-  <p>Az elérhetőségeket (cím, telefonszám, e-mail) és az ajánlatkérő űrlapot a végleges adatok alapján töltjük ki.</p>
-  <p id="product-request" class="muted"></p>
-  <script>
-    const sku = new URLSearchParams(location.search).get('termek');
-    if (sku) document.getElementById('product-request').textContent = `Ajánlatkérés erre a termékre: ${sku}`;
-  </script>
+<Base title="Kapcsolat" description={`Lépjen kapcsolatba a ${SITE.name} csapatával: kérdések, ajánlatkérés, egyedi igények.`}>
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Morzsamenü"><a href="/">Főoldal</a> / <span>Kapcsolat</span></nav>
+      <span class="eyebrow">Kapcsolat</span>
+      <h1>Beszéljünk a felépítményéről</h1>
+      <p class="lead">Kérdése van egy termékkel kapcsolatban, vagy egyedi igénye van? Írjon nekünk, és hamarosan válaszolunk.</p>
+    </div>
+  </section>
+
+  <div class="container contact">
+    <aside class="contact-info">
+      <div class="card info-card">
+        <h2>{SITE.name}</h2>
+        <ul>
+          {SITE.address && <li><Icon name="MapPin" /><span>{SITE.address}</span></li>}
+          {SITE.phone && <li><Icon name="Phone" /><a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a></li>}
+          {SITE.email && <li><Icon name="Mail" /><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>}
+          {SITE.openingHours && <li><Icon name="Clock" /><span>{SITE.openingHours}</span></li>}
+        </ul>
+      </div>
+      <a href="/ajanlatkeres" class="card quote-card">
+        <Icon name="ClipboardList" size={26} />
+        <div>
+          <h3>Árajánlatot szeretne?</h3>
+          <p class="muted">Gyűjtse össze a termékeket az ajánlatkérőben, és küldje el egyben.</p>
+        </div>
+        <Icon name="ArrowRight" />
+      </a>
+    </aside>
+
+    <form class="card contact-form" data-contact novalidate>
+      <h2>Üzenet küldése</h2>
+      <div class="form-grid">
+        <div class="field"><label for="c-name">Név *</label><input id="c-name" name="name" required autocomplete="name" maxlength="120" /></div>
+        <div class="field"><label for="c-company">Cégnév</label><input id="c-company" name="company" autocomplete="organization" maxlength="160" /></div>
+        <div class="field"><label for="c-email">E-mail *</label><input id="c-email" name="email" type="email" required autocomplete="email" maxlength="160" /></div>
+        <div class="field"><label for="c-phone">Telefon</label><input id="c-phone" name="phone" type="tel" autocomplete="tel" maxlength="40" /></div>
+        <div class="field full"><label for="c-msg">Üzenet *</label><textarea id="c-msg" name="message" required maxlength="3000"></textarea></div>
+        <div class="hp" aria-hidden="true"><label>Weboldal<input name="website" tabindex="-1" autocomplete="off" /></label></div>
+        <label class="consent full"><input type="checkbox" name="consent" required /> <span>Hozzájárulok, hogy a {SITE.name} a megkeresésem megválaszolása céljából kezelje a megadott adataimat.</span></label>
+      </div>
+      <p class="form-error" role="alert" hidden></p>
+      <p class="form-ok" role="status" hidden><Icon name="CircleCheck" /> Köszönjük! Üzenetét megkaptuk, hamarosan válaszolunk.</p>
+      <button class="btn btn-primary" type="submit"><Icon name="Send" /> Üzenet küldése</button>
+    </form>
+  </div>
 </Base>
+
+<script>
+  const form = document.querySelector('[data-contact]');
+  const err = form.querySelector('.form-error');
+  const ok = form.querySelector('.form-ok');
+  const btn = form.querySelector('button[type=submit]');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    err.hidden = true;
+    if (!form.checkValidity()) return form.reportValidity();
+    const d = Object.fromEntries(new FormData(form));
+    btn.disabled = true;
+    try {
+      const res = await fetch('/api/ajanlatkeres', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ customer: { name: d.name, company: d.company, email: d.email, phone: d.phone }, message: d.message, website: d.website, items: [] }),
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      form.reset();
+      ok.hidden = false;
+    } catch {
+      err.textContent = 'Az üzenet küldése most nem sikerült. Kérjük, próbálja újra később.';
+      err.hidden = false;
+    } finally {
+      btn.disabled = false;
+    }
+  });
+</script>
+
+<style>
+  .contact { display: grid; grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.4fr); gap: 24px; padding-top: 32px; padding-bottom: 40px; align-items: start; }
+  .contact-info { display: grid; gap: 20px; }
+  .info-card { padding: 26px; }
+  .info-card h2 { font-size: 1.25rem; }
+  .info-card ul { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 14px; }
+  .info-card li { display: flex; gap: 12px; align-items: flex-start; color: var(--text-2); }
+  .info-card li :global(svg) { color: var(--accent); flex: none; margin-top: 2px; }
+  .quote-card { display: flex !important; align-items: center; gap: 16px; padding: 22px; }
+  .quote-card > :global(svg:first-child) { color: var(--accent); flex: none; }
+  .quote-card h3 { margin-bottom: 2px; }
+  .quote-card p { margin: 0; font-size: 0.9rem; }
+  .contact-form { padding: 28px; }
+  .contact-form h2 { font-size: 1.25rem; }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0; }
+  .full { grid-column: 1 / -1; }
+  .hp { position: absolute; left: -9999px; }
+  .consent { display: flex; gap: 10px; align-items: flex-start; font-size: 0.86rem; color: var(--text-2); }
+  .consent input { margin-top: 3px; accent-color: var(--accent); width: 16px; height: 16px; flex: none; }
+  .form-error { color: #ffb3b3; background: rgba(255, 107, 107, 0.1); border: 1px solid rgba(255, 107, 107, 0.35); padding: 12px 14px; border-radius: 10px; }
+  .form-ok { display: flex; gap: 10px; align-items: center; color: var(--ok); background: rgba(61, 220, 151, 0.08); border: 1px solid rgba(61, 220, 151, 0.35); padding: 12px 14px; border-radius: 10px; }
+  [hidden] { display: none !important; }
+  @media (max-width: 860px) {
+    .contact { grid-template-columns: 1fr; }
+    .form-grid { grid-template-columns: 1fr; }
+  }
+</style>

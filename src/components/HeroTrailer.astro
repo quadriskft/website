@@ -1,0 +1,120 @@
+---
+// Izometrikus drótváz pótkocsi felépítmény – kódból rajzolva, bármilyen méretben éles.
+const C = Math.cos(Math.PI / 6);
+const S = Math.sin(Math.PI / 6);
+const U = 34; // egység (px)
+const iso = (x, y, z) => [(x - y) * C * U, (x + y) * S * U - z * U];
+const pt = (p) => p.map((v) => v.toFixed(1)).join(',');
+const line = (a, b) => `M${pt(iso(...a))}L${pt(iso(...b))}`;
+const poly = (pts, close = true) => 'M' + pts.map((p) => pt(iso(...p))).join('L') + (close ? 'Z' : '');
+
+const L = 11; // hossz
+const W = 3.2; // szélesség
+const H = 3.4; // doboz magasság
+const F = 1.3; // padló magasság (alváz felett)
+
+// Doboz élei
+const box = [
+  poly([[0, 0, F], [L, 0, F], [L, W, F], [0, W, F]]),
+  poly([[0, 0, F + H], [L, 0, F + H], [L, W, F + H], [0, W, F + H]]),
+  line([0, 0, F], [0, 0, F + H]),
+  line([L, 0, F], [L, 0, F + H]),
+  line([L, W, F], [L, W, F + H]),
+  line([0, W, F], [0, W, F + H]),
+].join('');
+
+// Bordák az oldalfalon és a tetőn
+const ribs = [];
+for (let x = 1; x < L; x += 1) {
+  ribs.push(line([x, W, F], [x, W, F + H]));
+  ribs.push(line([x, 0, F + H], [x, W, F + H]));
+}
+// Vízszintes oldalfal profilok
+for (const z of [F + H * 0.33, F + H * 0.66]) ribs.push(line([0, W, z], [L, W, z]));
+
+// Padló rács
+const floor = [];
+for (let x = 0; x <= L; x += 0.5) floor.push(line([x, 0, F], [x, W, F]));
+for (let y = 0; y <= W; y += 0.8) floor.push(line([0, y, F], [L, y, F]));
+
+// Alváz hossztartók és kereszttartók
+const chassis = [];
+for (const y of [0.7, W - 0.7]) {
+  chassis.push(poly([[0.3, y, F - 0.05], [L - 0.2, y, F - 0.05], [L - 0.2, y, F - 0.45], [0.3, y, F - 0.45]]));
+}
+for (let x = 0.8; x < L; x += 1.4) chassis.push(line([x, 0.7, F - 0.25], [x, W - 0.7, F - 0.25]));
+
+// Kerekek (x–z síkú körök az oldalon)
+const wheel = (cx, y, r = 0.62) => {
+  const pts = [];
+  for (let i = 0; i <= 28; i++) {
+    const a = (i / 28) * Math.PI * 2;
+    pts.push([cx + Math.cos(a) * r, y, 0.62 + Math.sin(a) * r]);
+  }
+  return poly(pts, false);
+};
+const wheels = [7.2, 8.6, 10].flatMap((x) => [wheel(x, W + 0.05), wheel(x, W + 0.05, 0.36)]).join('');
+const wheelsBack = [7.2, 8.6, 10].map((x) => wheel(x, -0.05)).join('');
+
+// Hátsó ajtó (x = L oldal)
+const door = [line([L, W / 2, F], [L, W / 2, F + H]), line([L, W * 0.25, F + H * 0.45], [L, W * 0.25, F + H * 0.55]), line([L, W * 0.75, F + H * 0.45], [L, W * 0.75, F + H * 0.55])].join('');
+
+// Kiemelő pontok (csomópontok)
+const nodes = [[0, 0, F + H], [L, 0, F + H], [L, W, F + H], [0, W, F], [L, W, F], [0, W, F + H]].map((p) => iso(...p));
+
+// viewBox
+const all = [];
+for (const x of [0, L]) for (const y of [-0.1, W + 0.1]) for (const z of [0, F + H]) all.push(iso(x, y, z));
+const minX = Math.min(...all.map((p) => p[0])) - 30;
+const maxX = Math.max(...all.map((p) => p[0])) + 30;
+const minY = Math.min(...all.map((p) => p[1])) - 30;
+const maxY = Math.max(...all.map((p) => p[1])) + 40;
+const vb = `${minX.toFixed(0)} ${minY.toFixed(0)} ${(maxX - minX).toFixed(0)} ${(maxY - minY).toFixed(0)}`;
+---
+<svg class="hero-trailer" viewBox={vb} style={`--scan-from:${(minX - 140).toFixed(0)}px;--scan-to:${maxX.toFixed(0)}px`} xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="ht-edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3ee0ff" />
+      <stop offset="1" stop-color="#2f6bff" />
+    </linearGradient>
+    <linearGradient id="ht-scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3ee0ff" stop-opacity="0" />
+      <stop offset="0.5" stop-color="#3ee0ff" stop-opacity="0.9" />
+      <stop offset="1" stop-color="#3ee0ff" stop-opacity="0" />
+    </linearGradient>
+    <filter id="ht-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="b" />
+      <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <mask id="ht-scan-mask">
+      <rect class="scan-bar" x="0" y={minY} width="120" height={maxY - minY} fill="white" />
+    </mask>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d={wheelsBack} stroke="#1d3a5f" stroke-width="1.2" />
+    <path d={floor.join('')} stroke="#1d3a5f" stroke-width="0.8" />
+    <path d={chassis.join('')} stroke="#2b5a8f" stroke-width="1.4" />
+    <path d={ribs.join('')} stroke="#2d6ab0" stroke-width="1" opacity="0.75" />
+    <path d={door} stroke="#3b82d6" stroke-width="1.2" />
+    <path class="edges" d={box} stroke="url(#ht-edge)" stroke-width="2" filter="url(#ht-glow)" />
+    <path d={wheels} stroke="#4b9be8" stroke-width="1.6" />
+    <g mask="url(#ht-scan-mask)">
+      <path d={box + ribs.join('') + chassis.join('')} stroke="#bff6ff" stroke-width="2.2" filter="url(#ht-glow)" />
+    </g>
+  </g>
+  {nodes.map(([x, y]) => <circle cx={x} cy={y} r="3.2" fill="#3ee0ff" filter="url(#ht-glow)" />)}
+</svg>
+
+<style>
+  .hero-trailer { width: 100%; height: auto; overflow: visible; }
+  .edges { stroke-dasharray: 2400; stroke-dashoffset: 2400; animation: draw 2.4s ease-out 0.2s forwards; }
+  .scan-bar { animation: scan 5.5s ease-in-out 1.5s infinite; transform: translateX(var(--scan-from)); }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @keyframes scan {
+    0% { transform: translateX(var(--scan-from)); }
+    60%, 100% { transform: translateX(var(--scan-to)); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .edges { stroke-dashoffset: 0; }
+  }
+</style>

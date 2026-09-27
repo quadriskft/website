@@ -1,0 +1,13 @@
+---
+import * as icons from 'lucide-static';
+
+const { name, size = 20, class: className = '', ...rest } = Astro.props;
+const svg = (icons[name] ?? icons.Package)
+  .replace(/\s*\n\s*/g, ' ')
+  .replace(/> </g, '><')
+  .replace(/ class="lucide [^"]*"/, ' class="icon"')
+  .replace(/width="24"/, `width="${size}"`)
+  .replace(/height="24"/, `height="${size}"`)
+  .replace('class="icon"', `class="icon ${className}" aria-hidden="true"`);
+---
+<Fragment set:html={svg} {...rest} />

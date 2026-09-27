@@ -1,0 +1,109 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import HorseIcon from '../components/HorseIcon.astro';
+import ProductCard from '../components/ProductCard.astro';
+import { HORSE_SECTIONS, getGroup, getCategory, productsIn } from '../lib/catalog.js';
+
+const sections = HORSE_SECTIONS.map(([g, c, title]) => ({
+  group: getGroup(g),
+  category: getCategory(g, c),
+  title,
+  items: productsIn(g, c),
+})).filter((s) => s.items.length);
+const total = sections.reduce((n, s) => n + s.items.length, 0);
+---
+<Base title="Lószállító felépítmény alkatrészek" description="Istálló- és rámpaszőnyegek, rámpaprofilok, csúszásmentes padlók, zárak és zsanérok lószállító felépítmény gyártóknak. Kérjen ajánlatot online!">
+  <section class="horse-hero">
+    <div class="container hh-inner">
+      <div>
+        <nav class="breadcrumb" aria-label="Morzsamenü"><a href="/">Főoldal</a> / <span>Lószállító gyártóknak</span></nav>
+        <span class="eyebrow">Lószállító felépítmény gyártóknak</span>
+        <h1>Biztonság és kényelem <span class="gradient-text">minden útra.</span></h1>
+        <p class="lead">
+          A lószállító felépítmény minden részletén múlik az állat biztonsága. Összegyűjtöttük azokat az alkatrészeket,
+          amelyekre a lószállító gyártóknak a leggyakrabban szükségük van – csúszásmentes padlótól a rámpáig és a zárakig.
+        </p>
+        <div class="hh-ctas">
+          <a href="#kinalat" class="btn btn-primary">Kínálat megtekintése <Icon name="ArrowDown" /></a>
+          <a href="/ajanlatkeres" class="btn btn-ghost"><Icon name="ClipboardList" /> Ajánlatkérés</a>
+        </div>
+      </div>
+      <div class="hh-badge">
+        <HorseIcon size={120} />
+        <strong>{total}</strong>
+        <span class="muted">válogatott termék lószállítókhoz</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <ul class="features">
+        <li class="card"><Icon name="Grid3x3" size={24} /><h3>Csúszásmentes felületek</h3><p class="muted">Istálló- és rámpaszőnyegek, csúszásmentes rétegelt padlók a biztos patafogásért.</p></li>
+        <li class="card"><Icon name="Rows3" size={24} /><h3>Stabil rámpák</h3><p class="muted">Alumínium rámpaprofilok és áthajtó rámpák könnyű, mégis erős szerkezethez.</p></li>
+        <li class="card"><Icon name="Lock" size={24} /><h3>Megbízható zárak</h3><p class="muted">Zsanérok, zárak, ajtórögzítők és ütközők a biztonságos rögzítéshez.</p></li>
+      </ul>
+      <nav class="jump" aria-label="Kategóriák">
+        {sections.map((s) => <a href={`#${s.group.slug}-${s.category.slug}`}>{s.title} <span>{s.items.length}</span></a>)}
+      </nav>
+    </div>
+  </section>
+
+  <div class="container" id="kinalat">
+    {sections.map((s) => (
+      <section class="cat-section" id={`${s.group.slug}-${s.category.slug}`}>
+        <div class="cat-head">
+          <h2>{s.title} <span class="muted">{s.items.length}</span></h2>
+          <a href={`/termekek/${s.group.slug}#${s.category.slug}`} class="muted small-link">{s.group.name} <Icon name="ArrowRight" size={14} /></a>
+        </div>
+        <div class="grid grid-products">
+          {s.items.map((p) => <ProductCard product={p} />)}
+        </div>
+      </section>
+    ))}
+    <div class="cta card">
+      <h2>Egyedi lószállító projektje van?</h2>
+      <p class="muted">Küldje el a teljes anyaglistát – a katalógusban nem szereplő tételeket is beszerezzük.</p>
+      <a href="/ajanlatkeres#egyedi" class="btn btn-primary">Ajánlatot kérek <Icon name="ArrowRight" /></a>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .horse-hero {
+    padding: 44px 0 56px; border-bottom: 1px solid var(--line);
+    background: radial-gradient(700px 360px at 85% 20%, rgba(62, 224, 255, 0.18), transparent 70%),
+      radial-gradient(600px 300px at 0% 100%, rgba(47, 107, 255, 0.18), transparent 70%);
+  }
+  .hh-inner { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: center; }
+  .hh-inner h1 { margin: 14px 0 18px; }
+  .hh-ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+  .hh-badge {
+    justify-self: center; width: min(320px, 100%); aspect-ratio: 1; border-radius: 50%; display: grid; place-content: center; justify-items: center; text-align: center; gap: 4px;
+    border: 1px solid rgba(62, 224, 255, 0.3); background: radial-gradient(circle at 50% 35%, rgba(62, 224, 255, 0.14), rgba(12, 25, 41, 0.6) 70%);
+    box-shadow: 0 0 80px -20px rgba(62, 224, 255, 0.4), inset 0 0 60px rgba(47, 107, 255, 0.15);
+  }
+  .hh-badge :global(svg) { color: var(--accent); stroke-width: 1.1; margin-bottom: 8px; }
+  .hh-badge strong { font-family: var(--font-head); font-size: 2.6rem; line-height: 1; }
+  .hh-badge span { max-width: 180px; font-size: 0.9rem; }
+  .features { list-style: none; padding: 0; margin: 0 0 28px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .features li { padding: 24px; }
+  .features li > :global(svg) { color: var(--accent); margin-bottom: 12px; }
+  .features p { margin: 0; font-size: 0.93rem; }
+  .jump { display: flex; flex-wrap: wrap; gap: 8px; }
+  .jump a { display: inline-flex; gap: 6px; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line-strong); color: var(--text-2); font-size: 0.88rem; text-decoration: none; }
+  .jump a span { color: var(--muted); }
+  .jump a:hover { border-color: var(--accent); color: var(--text); background: var(--accent-soft); }
+  .cat-section { margin: 40px 0 48px; }
+  .cat-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; border-bottom: 1px solid var(--line); padding-bottom: 12px; margin-bottom: 18px; flex-wrap: wrap; }
+  .cat-head h2 { font-size: 1.4rem; margin: 0; }
+  .cat-head h2 .muted { font-size: 0.95rem; font-weight: 500; }
+  .small-link { display: inline-flex; align-items: center; gap: 4px; font-size: 0.88rem; }
+  .cta { padding: 40px; text-align: center; display: grid; justify-items: center; gap: 4px; margin-top: 20px; }
+  @media (max-width: 860px) {
+    .hh-inner { grid-template-columns: 1fr; }
+    .hh-badge { display: none; }
+    .features { grid-template-columns: 1fr; }
+  }
+</style>
