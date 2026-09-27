@@ -480,6 +480,38 @@
    "/termekkepek/121129-kombi-rakomanyrogzito-sin-inox-2.webp"
   ]
  },
+ "121172-airline-sin-alu-elox-3000mm": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-17030014.html",
+  "sourceTitle": "Airline Profile Anchor Track 3.000x50x11,5",
+  "matchedCode": "2301172",
+  "specs": {
+   "Tömeg": "2.26 kg",
+   "Anyag": "alumínium",
+   "Felületkezelés": "eloxált"
+  },
+  "images": [
+   "/termekkepek/121172-airline-sin-alu-elox-3000mm-1.webp",
+   "/termekkepek/121172-airline-sin-alu-elox-3000mm-2.webp",
+   "/termekkepek/121172-airline-sin-alu-elox-3000mm-3.webp"
+  ]
+ },
+ "121208-gyurus-rakomanyrogzito-1300-dan": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=2301208",
+  "sourceTitle": "Double Airline Fitting",
+  "matchedCode": "2301208",
+  "specs": {
+   "Tömeg": "0.14 kg",
+   "Anyag": "acél",
+   "Felületkezelés": "Zinc Plated"
+  },
+  "images": [
+   "/termekkepek/121208-gyurus-rakomanyrogzito-1300-dan-1.webp",
+   "/termekkepek/121208-gyurus-rakomanyrogzito-1300-dan-2.webp",
+   "/termekkepek/121208-gyurus-rakomanyrogzito-1300-dan-3.webp"
+  ]
+ },
  "122303-padloba-sullyesztehto-inox-rak-rogzito-tanyer": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/anello-fermacarico-leggero-senza-molla/",
@@ -1143,6 +1175,65 @@
    "/termekkepek/203492-autoszallito-padlo-keret-profil-30-mm-1.webp"
   ]
  },
+ "211086-ada-tetokiemelo-pumpa-hp-lift-450-mm": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=0601086",
+  "sourceTitle": "ADA-LIFTER Hydraulic Pump Double Effect",
+  "matchedCode": "0601086",
+  "specs": {
+   "Tömeg": "3.57 kg",
+   "A": "450",
+   "B": "1032",
+   "C": "533",
+   "Observations": "Elev. 450 mm."
+  },
+  "images": [
+   "/termekkepek/211086-ada-tetokiemelo-pumpa-hp-lift-450-mm-1.webp",
+   "/termekkepek/211086-ada-tetokiemelo-pumpa-hp-lift-450-mm-2.webp",
+   "/termekkepek/211086-ada-tetokiemelo-pumpa-hp-lift-450-mm-3.webp"
+  ]
+ },
+ "211088-ada-tetokiemelo-oszlop-keszlet": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=0601088",
+  "sourceTitle": "Standard ADA-LIFTER Pillar Extension Set",
+  "matchedCode": "0601088",
+  "specs": {
+   "Tömeg": "8.50 kg"
+  },
+  "images": [
+   "/termekkepek/211088-ada-tetokiemelo-oszlop-keszlet-1.webp",
+   "/termekkepek/211088-ada-tetokiemelo-oszlop-keszlet-2.webp",
+   "/termekkepek/211088-ada-tetokiemelo-oszlop-keszlet-3.webp"
+  ]
+ },
+ "211089-ada-tetokiemelo-csatlakozo": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=0601089",
+  "sourceTitle": "Hinge Kit for ADA-LIFTER System",
+  "matchedCode": "0601089",
+  "specs": {
+   "Tömeg": "0.20 kg"
+  },
+  "images": [
+   "/termekkepek/211089-ada-tetokiemelo-csatlakozo-1.webp",
+   "/termekkepek/211089-ada-tetokiemelo-csatlakozo-2.webp"
+  ]
+ },
+ "211110-ponyvagorgo-acel-sinhez": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=0801110",
+  "sourceTitle": "Roller Simple Ø38x30 Rol. Steel",
+  "matchedCode": "0801110",
+  "specs": {
+   "Tömeg": "0.22 kg",
+   "Anyag": "acél"
+  },
+  "images": [
+   "/termekkepek/211110-ponyvagorgo-acel-sinhez-1.webp",
+   "/termekkepek/211110-ponyvagorgo-acel-sinhez-2.webp"
+  ]
+ },
  "211210-ponyvagorgo-alu-sinhez": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/36200110-carrucola-ruote-in-nylon-o30/",
@@ -1156,6 +1247,374 @@
   "images": [
    "/termekkepek/211210-ponyvagorgo-alu-sinhez-1.webp",
    "/termekkepek/211210-ponyvagorgo-alu-sinhez-2.webp"
+  ]
+ },
+ "211372-ada-s-zarszerkezet-italszallito": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=1201372",
+  "sourceTitle": "ADA-SLIDER \"Tens-Lock\" Adjustable Delivery Truck Door Lock",
+  "matchedCode": "1201372",
+  "specs": {
+   "Tömeg": "2.54 kg",
+   "Anyag": "acél",
+   "Felületkezelés": "kataforézis (KTL)",
+   "Key": "With Key"
+  },
+  "images": [
+   "/termekkepek/211372-ada-s-zarszerkezet-italszallito-1.webp",
+   "/termekkepek/211372-ada-s-zarszerkezet-italszallito-2.webp",
+   "/termekkepek/211372-ada-s-zarszerkezet-italszallito-3.webp"
+  ]
+ },
+ "211385-ada-s-zarszerkezet-ellendarab": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010013.html",
+  "sourceTitle": "Steel Holder (ADA-SLIDER Lock)",
+  "matchedCode": "1201385",
+  "specs": {
+   "Tömeg": "0.20 kg",
+   "Anyag": "acél"
+  },
+  "images": [
+   "/termekkepek/211385-ada-s-zarszerkezet-ellendarab-1.webp",
+   "/termekkepek/211385-ada-s-zarszerkezet-ellendarab-2.webp"
+  ]
+ },
+ "212031-ada-rakonca-gorgo-t-acel-d24x24-xl": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=0502031",
+  "sourceTitle": "\"E\" Type Roller Ø24X24",
+  "matchedCode": "0502031",
+  "specs": {
+   "Tömeg": "0.70 kg"
+  },
+  "images": [
+   "/termekkepek/212031-ada-rakonca-gorgo-t-acel-d24x24-xl-1.webp",
+   "/termekkepek/212031-ada-rakonca-gorgo-t-acel-d24x24-xl-2.webp"
+  ]
+ },
+ "212061-ada-s-hajlitott-acel-lemezke": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010035.html",
+  "sourceTitle": "Pack 10 units Steel Plate \"Outfolding\"",
+  "matchedCode": "0902061",
+  "specs": {
+   "Tömeg": "0.10 kg",
+   "Anyag": "rozsdamentes acél",
+   "Observations": "Lenght 160mm",
+   "Pack": "Pack 10 Units"
+  },
+  "images": [
+   "/termekkepek/212061-ada-s-hajlitott-acel-lemezke-1.webp",
+   "/termekkepek/212061-ada-s-hajlitott-acel-lemezke-2.webp",
+   "/termekkepek/212061-ada-s-hajlitott-acel-lemezke-3.webp"
+  ]
+ },
+ "212064-ada-s-2-m-pvc-tekercs": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010010.html",
+  "sourceTitle": "PP \"Outfolding\" ADA-SLIDER",
+  "matchedCode": "0902064",
+  "specs": {
+   "Tömeg": "0.06 kg",
+   "Anyag": "Polypropylene",
+   "A": "2 m."
+  },
+  "images": [
+   "/termekkepek/212064-ada-s-2-m-pvc-tekercs-1.webp",
+   "/termekkepek/212064-ada-s-2-m-pvc-tekercs-2.webp",
+   "/termekkepek/212064-ada-s-2-m-pvc-tekercs-3.webp"
+  ]
+ },
+ "212113-ada-ponyva-gorgo-felso": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010004.html",
+  "sourceTitle": "Up Carriage Curtain ADA-SLIDER Rol. Nylon",
+  "matchedCode": "0802113",
+  "specs": {
+   "Tömeg": "0.12 kg",
+   "Anyag": "acél",
+   "Felületkezelés": "kataforézis (KTL)",
+   "Position": "Up"
+  },
+  "images": [
+   "/termekkepek/212113-ada-ponyva-gorgo-felso-1.webp",
+   "/termekkepek/212113-ada-ponyva-gorgo-felso-2.webp"
+  ]
+ },
+ "212123-ada-ajto-profil-felso-gorgo": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010005.html",
+  "sourceTitle": "Up Carriage Door ADA-SLIDER Rol. Nylon",
+  "matchedCode": "0802123",
+  "specs": {
+   "Tömeg": "0.90 kg",
+   "Anyag": "acél",
+   "Felületkezelés": "kataforézis (KTL)",
+   "Position": "Up"
+  },
+  "images": [
+   "/termekkepek/212123-ada-ajto-profil-felso-gorgo-1.webp",
+   "/termekkepek/212123-ada-ajto-profil-felso-gorgo-2.webp"
+  ]
+ },
+ "212133-ada-ponyva-gorgo-also": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010006.html",
+  "sourceTitle": "Down Carriage Curtain ADA-SLIDER Rol. Nylon",
+  "matchedCode": "0802133",
+  "specs": {
+   "Tömeg": "0.28 kg",
+   "Anyag": "acél",
+   "Felületkezelés": "kataforézis (KTL)",
+   "Position": "Down"
+  },
+  "images": [
+   "/termekkepek/212133-ada-ponyva-gorgo-also-1.webp",
+   "/termekkepek/212133-ada-ponyva-gorgo-also-2.webp",
+   "/termekkepek/212133-ada-ponyva-gorgo-also-3.webp"
+  ]
+ },
+ "212143-ada-ajto-profil-also-gorgo-l": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010007.html",
+  "sourceTitle": "Down Carriage Door ADA-SLIDER Rol. Nylon",
+  "matchedCode": "0802143",
+  "specs": {
+   "Tömeg": "2.53 kg",
+   "Anyag": "acél",
+   "Felületkezelés": "kataforézis (KTL)",
+   "Position": "Left"
+  },
+  "images": [
+   "/termekkepek/212143-ada-ajto-profil-also-gorgo-l-1.webp",
+   "/termekkepek/212143-ada-ajto-profil-also-gorgo-l-2.webp",
+   "/termekkepek/212143-ada-ajto-profil-also-gorgo-l-3.webp"
+  ]
+ },
+ "212153-ada-ajto-profil-also-gorgo-r": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010007.html",
+  "sourceTitle": "Down Carriage Door ADA-SLIDER Rol. Nylon",
+  "matchedCode": "0802153",
+  "specs": {
+   "Tömeg": "2.53 kg",
+   "Anyag": "acél",
+   "Felületkezelés": "kataforézis (KTL)",
+   "Position": "Right"
+  },
+  "images": [
+   "/termekkepek/212153-ada-ajto-profil-also-gorgo-r-1.webp",
+   "/termekkepek/212153-ada-ajto-profil-also-gorgo-r-2.webp",
+   "/termekkepek/212153-ada-ajto-profil-also-gorgo-r-3.webp"
+  ]
+ },
+ "212404-ada-s-tetosin-7000-mm": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010014.html",
+  "sourceTitle": "Horizontal Aluminium Rail Profile ADA-SLIDER",
+  "matchedCode": "1402404",
+  "specs": {
+   "Tömeg": "13.15 kg",
+   "Anyag": "alumínium",
+   "Position": "Horizontal",
+   "A": "7m."
+  },
+  "images": [
+   "/termekkepek/212404-ada-s-tetosin-7000-mm-1.webp",
+   "/termekkepek/212404-ada-s-tetosin-7000-mm-2.webp",
+   "/termekkepek/212404-ada-s-tetosin-7000-mm-3.webp"
+  ]
+ },
+ "212406-ada-s-tetosin-6000-mm": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010014.html",
+  "sourceTitle": "Horizontal Aluminium Rail Profile ADA-SLIDER",
+  "matchedCode": "1402406",
+  "specs": {
+   "Tömeg": "11.27 kg",
+   "Anyag": "alumínium",
+   "Position": "Horizontal",
+   "A": "6m."
+  },
+  "images": [
+   "/termekkepek/212406-ada-s-tetosin-6000-mm-1.webp",
+   "/termekkepek/212406-ada-s-tetosin-6000-mm-2.webp",
+   "/termekkepek/212406-ada-s-tetosin-6000-mm-3.webp"
+  ]
+ },
+ "212408-ada-s-tetosin-5000-mm": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010014.html",
+  "sourceTitle": "Horizontal Aluminium Rail Profile ADA-SLIDER",
+  "matchedCode": "1402408",
+  "specs": {
+   "Tömeg": "9.40 kg",
+   "Anyag": "alumínium",
+   "Position": "Horizontal",
+   "A": "5m."
+  },
+  "images": [
+   "/termekkepek/212408-ada-s-tetosin-5000-mm-1.webp",
+   "/termekkepek/212408-ada-s-tetosin-5000-mm-2.webp",
+   "/termekkepek/212408-ada-s-tetosin-5000-mm-3.webp"
+  ]
+ },
+ "212410-ada-s-tetosin-4000-mm": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010014.html",
+  "sourceTitle": "Horizontal Aluminium Rail Profile ADA-SLIDER",
+  "matchedCode": "1402410",
+  "specs": {
+   "Tömeg": "7.52 kg",
+   "Anyag": "alumínium",
+   "Position": "Horizontal",
+   "A": "4m."
+  },
+  "images": [
+   "/termekkepek/212410-ada-s-tetosin-4000-mm-1.webp",
+   "/termekkepek/212410-ada-s-tetosin-4000-mm-2.webp",
+   "/termekkepek/212410-ada-s-tetosin-4000-mm-3.webp"
+  ]
+ },
+ "212427-ada-s-ajto-profil-2100-mm-elox": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010015.html",
+  "sourceTitle": "Vertical Aluminium Profile ADA-SLIDER",
+  "matchedCode": "1402427",
+  "specs": {
+   "Tömeg": "7.49 kg",
+   "Anyag": "alumínium",
+   "Position": "Vertical",
+   "A": "2,1m."
+  },
+  "images": [
+   "/termekkepek/212427-ada-s-ajto-profil-2100-mm-elox-1.webp",
+   "/termekkepek/212427-ada-s-ajto-profil-2100-mm-elox-2.webp",
+   "/termekkepek/212427-ada-s-ajto-profil-2100-mm-elox-3.webp"
+  ]
+ },
+ "212429-ada-s-ajto-profil-2400-mm-elox": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010015.html",
+  "sourceTitle": "Vertical Aluminium Profile ADA-SLIDER",
+  "matchedCode": "1402429",
+  "specs": {
+   "Tömeg": "7.85 kg",
+   "Anyag": "alumínium",
+   "Position": "Vertical",
+   "A": "2,4m."
+  },
+  "images": [
+   "/termekkepek/212429-ada-s-ajto-profil-2400-mm-elox-1.webp",
+   "/termekkepek/212429-ada-s-ajto-profil-2400-mm-elox-2.webp",
+   "/termekkepek/212429-ada-s-ajto-profil-2400-mm-elox-3.webp"
+  ]
+ },
+ "212431-ada-s-ajto-profil-2800-mm-elox": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010015.html",
+  "sourceTitle": "Vertical Aluminium Profile ADA-SLIDER",
+  "matchedCode": "1402431",
+  "specs": {
+   "Tömeg": "9.98 kg",
+   "Anyag": "alumínium",
+   "Position": "Vertical",
+   "A": "2,8m."
+  },
+  "images": [
+   "/termekkepek/212431-ada-s-ajto-profil-2800-mm-elox-1.webp",
+   "/termekkepek/212431-ada-s-ajto-profil-2800-mm-elox-2.webp",
+   "/termekkepek/212431-ada-s-ajto-profil-2800-mm-elox-3.webp"
+  ]
+ },
+ "214174-gumitomites-acel-c-sinhez": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=1404174",
+  "sourceTitle": "Profile Roll Exterior PVC",
+  "matchedCode": "1404174",
+  "specs": {
+   "Tömeg": "39.20 kg",
+   "Anyag": "Pvc",
+   "Szín": "Black",
+   "A": "56m.",
+   "Vastagság": "4"
+  },
+  "images": [
+   "/termekkepek/214174-gumitomites-acel-c-sinhez-1.webp",
+   "/termekkepek/214174-gumitomites-acel-c-sinhez-2.webp",
+   "/termekkepek/214174-gumitomites-acel-c-sinhez-3.webp"
+  ]
+ },
+ "214202-ada-s-ajtoprofil-takarogumi-10-m-tekercs": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-04010016.html",
+  "sourceTitle": "ADA-SLIDER Profile Roll PVC Vertical",
+  "matchedCode": "1404202",
+  "specs": {
+   "Tömeg": "1.77 kg",
+   "Anyag": "gumi",
+   "Szín": "Black",
+   "Position": "Vertical",
+   "A": "10m.",
+   "Vastagság": "4"
+  },
+  "images": [
+   "/termekkepek/214202-ada-s-ajtoprofil-takarogumi-10-m-tekercs-1.webp",
+   "/termekkepek/214202-ada-s-ajtoprofil-takarogumi-10-m-tekercs-2.webp",
+   "/termekkepek/214202-ada-s-ajtoprofil-takarogumi-10-m-tekercs-3.webp"
+  ]
+ },
+ "214312-7800mm-50x52-mm-acel-c-sin": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=1403012",
+  "sourceTitle": "Galvanized Steel Bar Profile",
+  "matchedCode": "1403012",
+  "specs": {
+   "Tömeg": "22.90 kg",
+   "Anyag": "acél",
+   "Felületkezelés": "horganyzott",
+   "A": "7,8m.",
+   "Vastagság": "2"
+  },
+  "images": [
+   "/termekkepek/214312-7800mm-50x52-mm-acel-c-sin-1.webp",
+   "/termekkepek/214312-7800mm-50x52-mm-acel-c-sin-2.webp"
+  ]
+ },
+ "215014-adaico-rakonca-oszlop-3000-mm": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=0505014",
+  "sourceTitle": "L Fix Pillar",
+  "matchedCode": "0505014",
+  "specs": {
+   "Tömeg": "23.60 kg",
+   "Anyag": "acél",
+   "Felületkezelés": "kataforézis (KTL)",
+   "Szín": "Black",
+   "Vastagság": "3 mm."
+  },
+  "images": [
+   "/termekkepek/215014-adaico-rakonca-oszlop-3000-mm-1.webp",
+   "/termekkepek/215014-adaico-rakonca-oszlop-3000-mm-2.webp",
+   "/termekkepek/215014-adaico-rakonca-oszlop-3000-mm-3.webp"
+  ]
+ },
+ "216003-adaico-rakonca-zseb-festett": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=0506003",
+  "sourceTitle": "Chassishook to Screw",
+  "matchedCode": "0506003",
+  "specs": {
+   "Tömeg": "1.06 kg",
+   "Anyag": "acél",
+   "Felületkezelés": "kataforézis (KTL)",
+   "Szín": "Black"
+  },
+  "images": [
+   "/termekkepek/216003-adaico-rakonca-zseb-festett-1.webp",
+   "/termekkepek/216003-adaico-rakonca-zseb-festett-2.webp",
+   "/termekkepek/216003-adaico-rakonca-zseb-festett-3.webp"
   ]
  },
  "222233-rampa-szego-g-profil": {
@@ -1456,6 +1915,23 @@
   },
   "images": [
    "/termekkepek/247243-billencs-felso-200x40-mm-1.webp"
+  ]
+ },
+ "303005-alafutasgatlo-konzol-700-mm-uj": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/1-18020028.html",
+  "sourceTitle": "LIGHT Anticrash Support",
+  "matchedCode": "1702054",
+  "specs": {
+   "Tömeg": "2.00 kg",
+   "Anyag": "acél",
+   "Felületkezelés": "Zinc Plated",
+   "A": "700",
+   "Vastagság": "1,5"
+  },
+  "images": [
+   "/termekkepek/303005-alafutasgatlo-konzol-700-mm-uj-1.webp",
+   "/termekkepek/303005-alafutasgatlo-konzol-700-mm-uj-2.webp"
   ]
  },
  "307955-alafutasgatlo-konzol-550-mm-horg": {
@@ -2090,6 +2566,102 @@
    "/termekkepek/380061-racsnis-feszito-l-2.webp"
   ]
  },
+ "380184-ada-racsnis-feszito-kocka-adapterhez-r": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=1001184",
+  "sourceTitle": "Ada-Tensioner Curtain Tensioner Square Drive",
+  "matchedCode": "1001184",
+  "specs": {
+   "Tömeg": "1.50 kg",
+   "Anyag": "acél",
+   "Position": "Right"
+  },
+  "images": [
+   "/termekkepek/380184-ada-racsnis-feszito-kocka-adapterhez-r-1.webp",
+   "/termekkepek/380184-ada-racsnis-feszito-kocka-adapterhez-r-2.webp",
+   "/termekkepek/380184-ada-racsnis-feszito-kocka-adapterhez-r-3.webp"
+  ]
+ },
+ "380186-ada-racsnis-feszito-kocka-adapterhez-l": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=1001186",
+  "sourceTitle": "Ada-Tensioner Curtain Tensioner Square Drive",
+  "matchedCode": "1001186",
+  "specs": {
+   "Tömeg": "1.50 kg",
+   "Anyag": "acél",
+   "Position": "Left"
+  },
+  "images": [
+   "/termekkepek/380186-ada-racsnis-feszito-kocka-adapterhez-l-1.webp",
+   "/termekkepek/380186-ada-racsnis-feszito-kocka-adapterhez-l-2.webp",
+   "/termekkepek/380186-ada-racsnis-feszito-kocka-adapterhez-l-3.webp"
+  ]
+ },
+ "380190-ada-handy-feszito-sliccelt-adapterhez-r": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=1001190",
+  "sourceTitle": "AdaHandy Curtain Tensioner Slotted Drive",
+  "matchedCode": "1001190",
+  "specs": {
+   "Tömeg": "1.25 kg",
+   "Anyag": "acél",
+   "Position": "Right"
+  },
+  "images": [
+   "/termekkepek/380190-ada-handy-feszito-sliccelt-adapterhez-r-1.webp",
+   "/termekkepek/380190-ada-handy-feszito-sliccelt-adapterhez-r-2.webp",
+   "/termekkepek/380190-ada-handy-feszito-sliccelt-adapterhez-r-3.webp"
+  ]
+ },
+ "380192-ada-handy-feszito-sliccelt-adapterhez-l": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=1001192",
+  "sourceTitle": "AdaHandy Curtain Tensioner Slotted Drive",
+  "matchedCode": "1001192",
+  "specs": {
+   "Tömeg": "1.25 kg",
+   "Anyag": "acél",
+   "Position": "Left"
+  },
+  "images": [
+   "/termekkepek/380192-ada-handy-feszito-sliccelt-adapterhez-l-1.webp",
+   "/termekkepek/380192-ada-handy-feszito-sliccelt-adapterhez-l-2.webp",
+   "/termekkepek/380192-ada-handy-feszito-sliccelt-adapterhez-l-3.webp"
+  ]
+ },
+ "380194-ada-handy-feszito-kocka-adapterhez-r": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=1001194",
+  "sourceTitle": "AdaHandy Curtain Tensioner Square Drive",
+  "matchedCode": "1001194",
+  "specs": {
+   "Tömeg": "1.30 kg",
+   "Anyag": "acél",
+   "Position": "Right"
+  },
+  "images": [
+   "/termekkepek/380194-ada-handy-feszito-kocka-adapterhez-r-1.webp",
+   "/termekkepek/380194-ada-handy-feszito-kocka-adapterhez-r-2.webp",
+   "/termekkepek/380194-ada-handy-feszito-kocka-adapterhez-r-3.webp"
+  ]
+ },
+ "380196-ada-handy-feszito-kocka-adapterhez-l": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=1001196",
+  "sourceTitle": "AdaHandy Curtain Tensioner Square Drive",
+  "matchedCode": "1001196",
+  "specs": {
+   "Tömeg": "1.30 kg",
+   "Anyag": "acél",
+   "Position": "Left"
+  },
+  "images": [
+   "/termekkepek/380196-ada-handy-feszito-kocka-adapterhez-l-1.webp",
+   "/termekkepek/380196-ada-handy-feszito-kocka-adapterhez-l-2.webp",
+   "/termekkepek/380196-ada-handy-feszito-kocka-adapterhez-l-3.webp"
+  ]
+ },
  "380810-tts-racsnis-feszito-ketoldalas": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/34480010-tenditore-zincato-doppio-attacco-a-taglio-o25/",
@@ -2132,6 +2704,21 @@
    "/termekkepek/381073-feszito-kocka-szogletes-adapterhez-1.webp",
    "/termekkepek/381073-feszito-kocka-szogletes-adapterhez-2.webp",
    "/termekkepek/381073-feszito-kocka-szogletes-adapterhez-3.webp"
+  ]
+ },
+ "381074-feszito-kocka-szogletes-adap-60x30x30-10": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=1001074",
+  "sourceTitle": "Curtain Tensioner 60x30x30 (10) (Handlelevel)",
+  "matchedCode": "1001074",
+  "specs": {
+   "Tömeg": "0.28 kg",
+   "Anyag": "acél"
+  },
+  "images": [
+   "/termekkepek/381074-feszito-kocka-szogletes-adap-60x30x30-10-1.webp",
+   "/termekkepek/381074-feszito-kocka-szogletes-adap-60x30x30-10-2.webp",
+   "/termekkepek/381074-feszito-kocka-szogletes-adap-60x30x30-10-3.webp"
   ]
  },
  "381420-tekero-kurbli": {
@@ -3446,6 +4033,21 @@
    "/termekkepek/72733-hatso-csoveg-1.webp",
    "/termekkepek/72733-hatso-csoveg-2.webp",
    "/termekkepek/72733-hatso-csoveg-3.webp"
+  ]
+ },
+ "728120-huskampo-fix-c-sinhez": {
+  "source": "ADAICO",
+  "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=1801120",
+  "sourceTitle": "Meat Hook Fix Stainless Steel",
+  "matchedCode": "1801120",
+  "specs": {
+   "Tömeg": "0.27 kg",
+   "Anyag": "rozsdamentes acél",
+   "Felületkezelés": "polírozott"
+  },
+  "images": [
+   "/termekkepek/728120-huskampo-fix-c-sinhez-1.webp",
+   "/termekkepek/728120-huskampo-fix-c-sinhez-2.webp"
   ]
  },
  "728972-huskampo-60mm-csohoz": {
