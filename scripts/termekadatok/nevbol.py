@@ -87,7 +87,7 @@ def drawing(kind, a, b=0, t=0, c=0):
     s = min((W - 2 * M) / a, (H - 2 * M) / b)
     w, h = a * s, b * s
     x0, y0 = (W - w) / 2, (H - h) / 2 + 20
-    ts = max(t * s, 3)
+    ts = max((t or min(a, b) * 0.06) * s, 4)
     if kind == "rhs":
         d.rectangle([x0, y0, x0 + w, y0 + h], fill="black")
         d.rectangle([x0 + ts, y0 + ts, x0 + w - ts, y0 + h - ts], fill="white")
@@ -100,9 +100,26 @@ def drawing(kind, a, b=0, t=0, c=0):
         d.rectangle([x0, y0 + h - ts, x0 + w, y0 + h], fill="black")
         d.rectangle([x0, y0, x0 + ts, y0 + h], fill="black")
         d.rectangle([x0 + w - ts, y0, x0 + w, y0 + h], fill="black")
+    elif kind == "C":  # hossztartó: függőleges gerinc (b), vízszintes szárak (a)
+        d.rectangle([x0, y0, x0 + ts, y0 + h], fill="black")
+        d.rectangle([x0, y0, x0 + w, y0 + ts], fill="black")
+        d.rectangle([x0, y0 + h - ts, x0 + w, y0 + h], fill="black")
+    elif kind == "I":  # a = szélesség (öv), b = magasság
+        d.rectangle([x0, y0, x0 + w, y0 + ts], fill="black")
+        d.rectangle([x0, y0 + h - ts, x0 + w, y0 + h], fill="black")
+        d.rectangle([x0 + w / 2 - ts / 2, y0, x0 + w / 2 + ts / 2, y0 + h], fill="black")
+    elif kind == "arc":  # íves sarokprofil: két szár, lekerekített külső sarok
+        R = min(w, h) * 0.55
+        d.pieslice([x0, y0 + h - 2 * R, x0 + 2 * R, y0 + h], 90, 180, fill="black")
+        d.pieslice([x0 + ts, y0 + h - 2 * R + ts, x0 + 2 * R - ts, y0 + h - ts], 90, 180, fill="white")
+        d.rectangle([x0, y0, x0 + ts, y0 + h - R], fill="black")
+        d.rectangle([x0 + R, y0 + h - ts, x0 + w, y0 + h], fill="black")
     dim_h(d, x0, x0 + w, y0 - 40, hu(a), fnt)
     dim_v(img, d, x0 + w + 40, y0, y0 + h, hu(b), fnt)
-    if t and kind != "flat":
+    if t and kind not in ("flat", "arc"):
+        if kind == "C":
+            d.text((x0 + ts + 12, y0 + h / 2 - 20), f"s = {hu(t)}", fill="black", font=fnt)
+            return img
         d.text((x0 + ts + 12 if kind != "rhs" else x0 + w / 2 - 40, y0 + h / 2 - 20), f"s = {hu(t)}", fill="black", font=fnt)
     return img
 
@@ -175,7 +192,8 @@ def parse(p):
             specs["Anyag"] = "gumi"
         return specs, None
     # szelvények
-    mat = "alumínium" if re.search(r"alu", low) or p["group"] in ("ipari-felgyartmanyok", "aluminium-alvaz-profilok") else ""
+    mat = ("acél" if re.search(r"acél", low) else
+           "alumínium" if re.search(r"alu|elox", low) or p["group"] in ("ipari-felgyartmanyok", "aluminium-alvaz-profilok", "zart-dobozos-es-hutos-profilok", "ponyvarendszer-kiegeszitok") else "")
     if not mat:
         return specs, None
     specs["Anyag"] = mat + (", eloxált" if elox else "")
@@ -226,6 +244,65 @@ def parse(p):
         specs.update({"Gerinc": f"{hu(web)} mm", "Szár": f"{hu(fl)} mm", "Falvastagság": f"{hu(t)} mm",
                       "Tömeg": f"{hu((web + 2 * fl - 2 * t) * t * AL / 1000, 3)} kg/fm (elméleti)"})
         return specs, ("U", web, fl, t)
+    m = re.search(rf"zártszelvény\s*{NUM}\s*x\s*{NUM}\s*x\s*{NUM}", low)
+    if m:
+        a, b, t = f(m.group(1)), f(m.group(2)), f(m.group(3))
+        specs.update({"Méret": f"{hu(a)} × {hu(b)} mm", "Falvastagság": f"{hu(t)} mm",
+                      "Tömeg": f"{hu((2 * (a + b) - 4 * t) * t * AL / 1000, 3)} kg/fm (elméleti)"})
+        return specs, ("rhs", a, b, t)
+    m = re.search(rf"{NUM}\s*x\s*{NUM}\s*(?:mm)?\s*ponyvatartó zártszelvény", low)
+    if m:
+        a, b = f(m.group(1)), f(m.group(2))
+        specs["Méret"] = f"{hu(a)} × {hu(b)} mm"
+        return specs, ("rhs", a, b, 0)
+    m = re.search(rf"{NUM}\s*x\s*{NUM}\s*x\s*{NUM}\s*mm\s*r[\d,]*\s*oszlop", low)
+    if m:
+        a, b, t = f(m.group(1)), f(m.group(2)), f(m.group(3))
+        specs.update({"Méret": f"{hu(a)} × {hu(b)} mm", "Falvastagság": f"{hu(t)} mm"})
+        return specs, ("rhs", a, b, t)
+    m = re.search(rf"(?:ponyvacső\s*{NUM}\s*x\s*{NUM}|{NUM}\s*x\s*{NUM}\s*mm\s*ponyvacső)", low)
+    if m:
+        g = [x for x in m.groups() if x]
+        d_, t = f(g[0]), f(g[1])
+        specs.update({"Külső átmérő": f"{hu(d_)} mm", "Falvastagság": f"{hu(t)} mm",
+                      "Tömeg": f"{hu(math.pi * (d_ - t) * t * AL / 1000, 3)} kg/fm (elméleti)"})
+        return specs, ("tube", d_, 0, t)
+    m = re.search(rf"{NUM}\s*x\s*{NUM}(?:\s*x\s*{NUM})?\s*(?:mm)?\s*(?:belső\s*(?:bokaléc\s*)?védőprofil|\"?l\"?\s*(?:profil|belső))", low) or \
+        re.search(rf"\"?l\"?\s*profil\s*{NUM}\s*x\s*{NUM}", low) or re.search(rf"külső\s*\"?l\"?\s*profil\s*{NUM}\s*x\s*{NUM}", low) or \
+        re.search(rf"{NUM}\s*x\s*{NUM}\s*(?:mm)?\s*l\s", low)
+    if m:
+        g = [f(x) for x in m.groups() if x]
+        a, b = g[0], g[1]
+        t = g[2] if len(g) > 2 else 0
+        specs["Méret"] = f"{hu(a)} × {hu(b)} mm"
+        if t:
+            specs["Falvastagság"] = f"{hu(t)} mm"
+            specs["Tömeg"] = f"{hu((a + b - t) * t * AL / 1000, 3)} kg/fm (elméleti)"
+        return specs, ("L", a, b, t)
+    m = re.search(rf"{NUM}\s*x\s*{NUM}\s*mm\s*(?:íves|utánfutó)\s*sarokprofil", low)
+    if m:
+        a, b = f(m.group(1)), f(m.group(2))
+        specs["Szárak"] = f"{hu(a)} × {hu(b)} mm"
+        return specs, ("arc", a, b, 0)
+    m = re.search(rf"\"i\"\s*gerenda profil\s*{NUM}\s*x\s*{NUM}\s*/\s*{NUM}\s*x\s*{NUM}", low)
+    if m:
+        h_, b_, _, t = (f(x) for x in m.groups())
+        specs.update({"Magasság": f"{hu(h_)} mm", "Övszélesség": f"{hu(b_)} mm", "Falvastagság": f"{hu(t)} mm"})
+        return specs, ("I", b_, h_, t)
+    m = re.search(rf"\"i\"\s*{NUM}\s*/\s*{NUM}\s*kereszttartó", low)
+    if m:
+        h_, b_ = f(m.group(1)), f(m.group(2))
+        specs.update({"Magasság": f"{hu(h_)} mm", "Övszélesség": f"{hu(b_)} mm"})
+        return specs, ("I", b_, h_, 0)
+    m = re.search(rf"\"u\"\s*{NUM}\s*/\s*{NUM}\s*hossztartó", low) or re.search(rf"hossztartó\s*{NUM}\s*/\s*{NUM}\s*/\s*{NUM}", low)
+    if m:
+        g = [f(x) for x in m.groups()]
+        h_, fl = g[0], g[1]
+        t = g[2] if len(g) > 2 else 0
+        specs.update({"Magasság": f"{hu(h_)} mm", "Szár": f"{hu(fl)} mm"})
+        if t:
+            specs["Falvastagság"] = f"{hu(t)} mm"
+        return specs, ("C", fl, h_, t)
     return {}, None
 
 
@@ -234,9 +311,18 @@ def main():
     updates, drawn = {}, 0
     for p in load_products():
         prev = existing.get(p["slug"])
-        if prev and prev.get("source") != SOURCE:
-            continue
         specs, draw = parse(p)
+        if prev and prev.get("source") != SOURCE:
+            if (prev.get("images") and not prev.get("nevbolRajz")) or not draw:
+                continue
+            clear_images(p["slug"])
+            merged = dict(prev)
+            merged["specs"] = {**{k: v for k, v in specs.items() if k != "Anyag"}, **(prev.get("specs") or {})}
+            merged["images"] = [save_image(drawing(*draw), p["slug"], 1)]
+            merged["nevbolRajz"] = True  # a rajz ebből a lépésből jön – újrafuttatáskor frissíthető
+            updates[p["slug"]] = merged
+            drawn += 1
+            continue
         if len(specs) < 2:
             continue
         images = []
@@ -246,7 +332,9 @@ def main():
             drawn += 1
         updates[p["slug"]] = {"source": SOURCE, "sourceUrl": "", "sourceTitle": p["name"], "matchedCode": "",
                               "specs": specs, "images": images}
-    update_enrichment(updates, SOURCE)
+    # a más forrásúakat forrásuk megtartásával írjuk vissza
+    update_enrichment({k: v for k, v in updates.items() if v["source"] == SOURCE}, SOURCE)
+    update_enrichment({k: v for k, v in updates.items() if v["source"] != SOURCE})
     print(f"{SOURCE}: {len(updates)} termék adatlapja a megnevezésből, ebből {drawn} keresztmetszet-rajzzal")
 
 

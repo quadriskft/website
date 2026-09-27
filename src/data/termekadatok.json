@@ -957,6 +957,36 @@
    "/termekkepek/140997-60-mm-es-gombcsuklo-keszlet-1.webp"
   ]
  },
+ "141265-acel-hossztarto-120-60-5-mm": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "ACÉL hossztartó 120/60/5 mm",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "acél",
+   "Magasság": "120 mm",
+   "Szár": "60 mm",
+   "Falvastagság": "5 mm"
+  },
+  "images": [
+   "/termekkepek/141265-acel-hossztarto-120-60-5-mm-1.webp"
+  ]
+ },
+ "141266-acel-hossztarto-120-60-6-mm": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "ACÉL hossztartó 120/60/6 mm",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "acél",
+   "Magasság": "120 mm",
+   "Szár": "60 mm",
+   "Falvastagság": "6 mm"
+  },
+  "images": [
+   "/termekkepek/141266-acel-hossztarto-120-60-6-mm-1.webp"
+  ]
+ },
  "142303-billencs-nyitokar-j": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/15012303-leva-comando-destra-per-apertura-cerniere/",
@@ -1141,6 +1171,20 @@
    "/termekkepek/152823-tir-zsaner-garnitura-rm-1.webp"
   ]
  },
+ "200392-i-90-60-kereszttarto-ex": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "\"I\" 90/60 Kereszttartó EX",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Magasság": "90 mm",
+   "Övszélesség": "60 mm"
+  },
+  "images": [
+   "/termekkepek/200392-i-90-60-kereszttarto-ex-1.webp"
+  ]
+ },
  "201094-targonca-utkozo-profil": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000043_bumpers-and-buffers/126000004_frame-profile-33x37mm-al",
@@ -1269,6 +1313,21 @@
    "/termekkepek/205162-u-80x60x5-mm-aluprofil-1.webp"
   ]
  },
+ "206441-i-gerenda-profil-80x60-50x8-6-mm": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "\"I\" gerenda profil 80x60/50x8,6 mm",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Magasság": "80 mm",
+   "Övszélesség": "60 mm",
+   "Falvastagság": "8,6 mm"
+  },
+  "images": [
+   "/termekkepek/206441-i-gerenda-profil-80x60-50x8-6-mm-1.webp"
+  ]
+ },
  "207833-100x30-mm-alafutasgatlo-elox-profil": {
   "source": "BODEGA",
   "sourceUrl": "https://www.bodega.it",
@@ -1282,6 +1341,20 @@
   },
   "images": [
    "/termekkepek/207833-100x30-mm-alafutasgatlo-elox-profil-1.webp"
+  ]
+ },
+ "209695-u-110-60-hossztarto-duplanutolt-ex": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "\"U\" 110/60 Hossztartó duplanútolt EX",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Magasság": "110 mm",
+   "Szár": "60 mm"
+  },
+  "images": [
+   "/termekkepek/209695-u-110-60-hossztarto-duplanutolt-ex-1.webp"
   ]
  },
  "211086-ada-tetokiemelo-pumpa-hp-lift-450-mm": {
@@ -1739,6 +1812,19 @@
    "/termekkepek/216003-adaico-rakonca-zseb-festett-3.webp"
   ]
  },
+ "220233-150x25-mm-ponyvatarto-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "150x25 mm Ponyvatartó zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "150 × 25 mm"
+  },
+  "images": [
+   "/termekkepek/220233-150x25-mm-ponyvatarto-zartszelveny-1.webp"
+  ]
+ },
  "220326-n-u-25-mm-szego-profil-m": {
   "source": "Metra",
   "sourceUrl": "https://www.metraluminium.it",
@@ -1805,6 +1891,32 @@
   },
   "images": []
  },
+ "222001-100x25-mm-ponyvatarto-zartszelveny-t": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "100x25 mm Ponyvatartó zártszelvény T",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "100 × 25 mm"
+  },
+  "images": [
+   "/termekkepek/222001-100x25-mm-ponyvatarto-zartszelveny-t-1.webp"
+  ]
+ },
+ "222185-100x25-mm-ponyvatarto-zartszelveny-merevitett": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "100x25 mm Ponyvatartó zártszelvény, merevített",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "100 × 25 mm"
+  },
+  "images": [
+   "/termekkepek/222185-100x25-mm-ponyvatarto-zartszelveny-merevitett-1.webp"
+  ]
+ },
  "222233-rampa-szego-g-profil": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000050_aluminium-overruns/70000028_mounting-ramp-side-profile-g-al",
@@ -1821,6 +1933,19 @@
   },
   "images": [
    "/termekkepek/222233-rampa-szego-g-profil-1.webp"
+  ]
+ },
+ "222266-100x25-mm-ponyvatarto-zartszelveny-gk": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "100x25 mm Ponyvatartó zártszelvény GK",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "100 × 25 mm"
+  },
+  "images": [
+   "/termekkepek/222266-100x25-mm-ponyvatarto-zartszelveny-gk-1.webp"
   ]
  },
  "222528-u-szego-zartszelveny-erositessel-25-mm-elox": {
@@ -1841,6 +1966,36 @@
    "/termekkepek/222528-u-szego-zartszelveny-erositessel-25-mm-elox-1.webp"
   ]
  },
+ "222891-zartszelveny-60x30x2-5-r2-5-elox": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "Zártszelvény 60x30x2,5 R2,5 elox",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Méret": "60 × 30 mm",
+   "Falvastagság": "2,5 mm",
+   "Tömeg": "1,147 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/222891-zartszelveny-60x30x2-5-r2-5-elox-1.webp"
+  ]
+ },
+ "222923-60x1-5-mm-ponyvacso": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "60x1,5 mm Ponyvacső",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Külső átmérő": "60 mm",
+   "Falvastagság": "1,5 mm",
+   "Tömeg": "0,744 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/222923-60x1-5-mm-ponyvacso-1.webp"
+  ]
+ },
  "222985-d50-mm-alu-cso": {
   "source": "Quadris adatok",
   "sourceUrl": "",
@@ -1851,6 +2006,19 @@
    "Külső átmérő": "50 mm"
   },
   "images": []
+ },
+ "223219-100x25-mm-ponyvatarto-zartszelveny-elox": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "100x25 mm Ponyvatartó zártszelvény elox",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Méret": "100 × 25 mm"
+  },
+  "images": [
+   "/termekkepek/223219-100x25-mm-ponyvatarto-zartszelveny-elox-1.webp"
+  ]
  },
  "223350-350-mm-mono-profil-szakalas-elox": {
   "source": "Metra",
@@ -1890,6 +2058,21 @@
   },
   "images": [
    "/termekkepek/223367-400-mm-peremes-monoprofil-elox-1.webp"
+  ]
+ },
+ "223520-ponyvacso-35x2-mm": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "Ponyvacső 35x2 mm",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Külső átmérő": "35 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "0,56 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/223520-ponyvacso-35x2-mm-1.webp"
   ]
  },
  "223563-tomites-also-zaroprofilhoz": {
@@ -1942,6 +2125,19 @@
   },
   "images": [
    "/termekkepek/226830-300-mm-mono-profil-elox-1.webp"
+  ]
+ },
+ "226900-100x25-mm-ponyvatarto-zartszelveny-d": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "100x25 mm Ponyvatartó zártszelvény D",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "100 × 25 mm"
+  },
+  "images": [
+   "/termekkepek/226900-100x25-mm-ponyvatarto-zartszelveny-d-1.webp"
   ]
  },
  "226915-30-mm-szego-profil-elox": {
@@ -2064,6 +2260,35 @@
   },
   "images": [
    "/termekkepek/227047-n-felso-200-mm-profil-1.webp"
+  ]
+ },
+ "227576-zartszelveny-60x30x2-mm-or3-ir1-elox": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "Zártszelvény 60x30x2 mm OR3/IR1 elox",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Méret": "60 × 30 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "0,929 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/227576-zartszelveny-60x30x2-mm-or3-ir1-elox-1.webp"
+  ]
+ },
+ "227686-50x35x3-5-mm-r4-oszlop-profil-elox": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "50x35x3,5 mm R4 oszlop profil elox",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Méret": "50 × 35 mm",
+   "Falvastagság": "3,5 mm"
+  },
+  "images": [
+   "/termekkepek/227686-50x35x3-5-mm-r4-oszlop-profil-elox-1.webp"
   ]
  },
  "227783-also-szakallas-200-mm-elox-profil": {
@@ -2318,6 +2543,32 @@
    "/termekkepek/231791-15-3x26-mm-l-profil-elox-1.webp"
   ]
  },
+ "232010-20x10-l-profil-natur": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "20x10 \"L\" Profil natúr",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "20 × 10 mm"
+  },
+  "images": [
+   "/termekkepek/232010-20x10-l-profil-natur-1.webp"
+  ]
+ },
+ "232121-35x35-mm-ives-sarokprofil-elox": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "35x35 mm íves sarokprofil elox",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Szárak": "35 × 35 mm"
+  },
+  "images": [
+   "/termekkepek/232121-35x35-mm-ives-sarokprofil-elox-1.webp"
+  ]
+ },
  "232125-dobozos-keret-elox-or-130-mm-nyitott": {
   "source": "RE-ALL",
   "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=5",
@@ -2330,6 +2581,32 @@
   },
   "images": []
  },
+ "232156-50x174-mm-l-belso-vedoprofil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "50x174 mm L Belső védőprofil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "50 × 174 mm"
+  },
+  "images": [
+   "/termekkepek/232156-50x174-mm-l-belso-vedoprofil-1.webp"
+  ]
+ },
+ "232189-50x170-mm-l-belso-vedoprofil-elox": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "50x170 mm L Belső védőprofil elox",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Méret": "50 × 170 mm"
+  },
+  "images": [
+   "/termekkepek/232189-50x170-mm-l-belso-vedoprofil-elox-1.webp"
+  ]
+ },
  "232460-tomites-az-u-ajtoszego-profilhoz": {
   "source": "Car-Alu",
   "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/678",
@@ -2340,6 +2617,19 @@
   },
   "images": [
    "/termekkepek/232460-tomites-az-u-ajtoszego-profilhoz-1.webp"
+  ]
+ },
+ "234235-35x35-mm-ives-sarokprofil-elox-d": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "35x35 mm íves sarokprofil elox D",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Szárak": "35 × 35 mm"
+  },
+  "images": [
+   "/termekkepek/234235-35x35-mm-ives-sarokprofil-elox-d-1.webp"
   ]
  },
  "236817-n-r50-ives-felso-profil": {
@@ -2378,6 +2668,47 @@
    "/termekkepek/236817-r50-ives-felso-profil-elox-1.webp"
   ]
  },
+ "236825-80x80-mm-l-profil-elox": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "80x80 mm L profil elox",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Méret": "80 × 80 mm"
+  },
+  "images": [
+   "/termekkepek/236825-80x80-mm-l-profil-elox-1.webp"
+  ]
+ },
+ "237000-25x25-mm-ives-sarokprofil-elox": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "25x25 mm íves sarokprofil elox",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Szárak": "25 × 25 mm"
+  },
+  "images": [
+   "/termekkepek/237000-25x25-mm-ives-sarokprofil-elox-1.webp"
+  ]
+ },
+ "237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "45x300x3 mm L Belső bokaléc védőprofil elox",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Méret": "45 × 300 mm",
+   "Falvastagság": "3 mm",
+   "Tömeg": "2,77 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox-1.webp"
+  ]
+ },
  "237310-20-dupla-alu-zsaner": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000022_closed-body-hinges/815_continuous-hinge-155-counterpart-max5-3m",
@@ -2406,6 +2737,45 @@
   },
   "images": [
    "/termekkepek/237310-20-dupla-alu-zsaner-5000-mm-1.webp"
+  ]
+ },
+ "237461-50x260-mm-l-belso-vedoprofil-elox": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "50x260 mm L Belső védőprofil elox",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Méret": "50 × 260 mm"
+  },
+  "images": [
+   "/termekkepek/237461-50x260-mm-l-belso-vedoprofil-elox-1.webp"
+  ]
+ },
+ "237461-n-50x260-mm-l-belso-vedoprofil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "50x260 mm L Belső védőprofil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "50 × 260 mm"
+  },
+  "images": [
+   "/termekkepek/237461-n-50x260-mm-l-belso-vedoprofil-1.webp"
+  ]
+ },
+ "237767-60x60-l-profil-elox": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "60x60 \"L\" profil elox",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Méret": "60 × 60 mm"
+  },
+  "images": [
+   "/termekkepek/237767-60x60-l-profil-elox-1.webp"
   ]
  },
  "237767-n-60x60-l-profil": {
@@ -2444,6 +2814,32 @@
    "/termekkepek/237768-40x40x2-5-r-elox-l-profil-1.webp"
   ]
  },
+ "237870-25x25-mm-utanfuto-sarokprofil-elox": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "25x25 mm utánfutó sarokprofil elox",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Szárak": "25 × 25 mm"
+  },
+  "images": [
+   "/termekkepek/237870-25x25-mm-utanfuto-sarokprofil-elox-1.webp"
+  ]
+ },
+ "237905-n-25x35-mm-ives-sarokprofil-r50": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "25x35 mm íves sarokprofil R50",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Szárak": "25 × 35 mm"
+  },
+  "images": [
+   "/termekkepek/237905-n-25x35-mm-ives-sarokprofil-r50-1.webp"
+  ]
+ },
  "238043-kalap-profil-natur-35-87-mm": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000001_closed-body-aluminum-profiles/1474_roof-profile-omega-35mm--al",
@@ -2462,6 +2858,19 @@
    "/termekkepek/238043-kalap-profil-natur-35-87-mm-1.webp"
   ]
  },
+ "238087-70x110-mm-l-kulso-elox": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "70x110 mm L külső elox",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Méret": "70 × 110 mm"
+  },
+  "images": [
+   "/termekkepek/238087-70x110-mm-l-kulso-elox-1.webp"
+  ]
+ },
  "238170-or-ajto-keret-elox-70x30x65-25mm": {
   "source": "RE-ALL",
   "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/18.pdf#page=9",
@@ -2473,6 +2882,19 @@
   },
   "images": [
    "/termekkepek/238170-or-ajto-keret-elox-70x30x65-25mm-1.webp"
+  ]
+ },
+ "238645-kulso-l-profil-140x80mm-elox": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "Külső \"L\" profil 140x80mm elox",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Méret": "140 × 80 mm"
+  },
+  "images": [
+   "/termekkepek/238645-kulso-l-profil-140x80mm-elox-1.webp"
   ]
  },
  "243240-billencs-kozepso-200x40-mm": {
@@ -2660,8 +3082,15 @@
   "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19",
   "sourceTitle": "RE-ALL katalógus 13-15.pdf",
   "matchedCode": "1304605",
-  "specs": {},
-  "images": []
+  "specs": {
+   "Méret": "40 × 40 mm",
+   "Falvastagság": "3 mm",
+   "Tömeg": "0,624 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/250403-40x40x3-alu-l-profil-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "250405-40x5-mm-alu-lapos-profil": {
   "source": "Quadris adatok",
@@ -2744,9 +3173,14 @@
   "sourceTitle": "RE-ALL katalógus 13-15.pdf",
   "matchedCode": "15-01160",
   "specs": {
+   "Szélesség": "40 mm",
+   "Vastagság": "20 mm",
+   "Tömeg": "2,16 kg/fm (elméleti)",
    "Tömeg [kg/fm]": "2,176"
   },
-  "images": []
+  "images": [
+   "/termekkepek/251160-40x20-mm-alu-lapos-profil-1.webp"
+  ]
  },
  "251210-120x10-mm-alu-lapos-profil": {
   "source": "Quadris adatok",
@@ -2977,8 +3411,15 @@
   "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19",
   "sourceTitle": "RE-ALL katalógus 13-15.pdf",
   "matchedCode": "1304540",
-  "specs": {},
-  "images": []
+  "specs": {
+   "Méret": "25 × 25 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "0,259 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252502-25x25x2-alu-l-profil-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "252535-60x40x3-alu-zartszelveny": {
   "source": "Quadris adatok",
@@ -3211,8 +3652,15 @@
   "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19",
   "sourceTitle": "RE-ALL katalógus 13-15.pdf",
   "matchedCode": "1304510",
-  "specs": {},
-  "images": []
+  "specs": {
+   "Méret": "20 × 20 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "0,205 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/254508-20x20x2-alu-l-profil-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "254979-60x50x50x5-mm-u-profil": {
   "source": "Quadris adatok",
@@ -5739,6 +6187,21 @@
   },
   "images": [
    "/termekkepek/703-reflex-szalag-dobozra-piros-stx-1.webp"
+  ]
+ },
+ "70605-d60x5-mm-huspalya-cso-elox-6000-mm": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "D60x5 mm Húspálya cső elox 6000 mm",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium, eloxált",
+   "Külső átmérő": "60 mm",
+   "Falvastagság": "5 mm",
+   "Tömeg": "2,333 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/70605-d60x5-mm-huspalya-cso-elox-6000-mm-1.webp"
   ]
  },
  "710x560-mm-sarvedo-lap-stopspray": {
