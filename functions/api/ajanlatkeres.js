@@ -113,8 +113,24 @@ export async function onRequestPost({ request, env }) {
   });
 
   if (!res.ok) {
-    console.error('Resend hiba', res.status, await res.text());
-    return json(502, { ok: false, error: 'send_failed' });
+    const detail = await res.text();
+    console.error('Resend hiba', res.status, detail);
+    let message = '';
+    try {
+      message = String(JSON.parse(detail).message ?? '');
+    } catch {}
+    return json(502, { ok: false, error: 'send_failed', status: res.status, message: message.slice(0, 300) });
   }
   return json(200, { ok: true });
+}
+
+// Diagnosztika: GET /api/ajanlatkeres – megmutatja, be vannak-e állítva a változók (értékük nélkül)
+export function onRequestGet({ env }) {
+  return json(200, {
+    ok: true,
+    function: 'ajanlatkeres',
+    RESEND_API_KEY: env.RESEND_API_KEY ? 'beállítva' : 'HIÁNYZIK',
+    QUOTE_TO: env.QUOTE_TO ? 'beállítva' : 'HIÁNYZIK',
+    QUOTE_FROM: env.QUOTE_FROM ? 'beállítva' : 'alapértelmezett',
+  });
 }

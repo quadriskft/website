@@ -223,20 +223,24 @@ import { SITE } from '../lib/site.js';
     submitLabel.textContent = 'Küldés…';
     try {
       const res = await fetch('/api/ajanlatkeres', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
-      if (!res.ok) throw new Error(String(res.status));
+      if (!res.ok) {
+        const info = await res.json().catch(() => ({}));
+        throw new Error([res.status, info.error, info.message].filter(Boolean).join(' – '));
+      }
       quote.clear();
       form.hidden = true;
       document.querySelector('.items-col').hidden = true;
       $('[data-success]').hidden = false;
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    } catch {
+    } catch (err) {
+      const code = `<br><small>Hibakód: ${esc(err.message || 'hálózati hiba')}</small>`;
       const email = window.__QUADRIS_EMAIL;
       if (email) {
         const body = `Ajánlatkérés\n\nNév: ${data.name}\nCég: ${data.company}\nE-mail: ${data.email}\nTelefon: ${data.phone}\nAdószám: ${data.taxNumber}\nSzállítás: ${data.delivery}\n\nTételek:\n${listText()}\n\nMegjegyzés:\n${data.message}`;
         const href = `mailto:${email}?subject=${encodeURIComponent(`Ajánlatkérés – ${data.company}`)}&body=${encodeURIComponent(body)}`;
-        showError(`Az online küldés most nem sikerült. <a href="${esc(href)}">Küldje el e-mailben egy kattintással →</a>`);
+        showError(`Az online küldés most nem sikerült. <a href="${esc(href)}">Küldje el e-mailben egy kattintással →</a>${code}`);
       } else {
-        showError('Az online küldés most nem sikerült. Kérjük, próbálja újra később, vagy másolja ki a listát és küldje el nekünk e-mailben.');
+        showError(`Az online küldés most nem sikerült. Kérjük, próbálja újra később, vagy másolja ki a listát és küldje el nekünk e-mailben.${code}`);
       }
     } finally {
       submitBtn.disabled = false;
