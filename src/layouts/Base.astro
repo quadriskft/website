@@ -334,7 +334,8 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     }
     .menu-open .main-nav { transform: none; opacity: 1; visibility: visible; }
     .nav-link { padding: 12px 14px; font-size: 1rem; }
-    .mega { position: static; width: auto; opacity: 1; visibility: visible; transform: none; background: transparent; border: 0; box-shadow: none; padding: 0 0 8px 8px; }
+    .mega { position: static; width: auto; opacity: 1; visibility: inherit; transform: none; background: transparent; border: 0; box-shadow: none; padding: 0 0 8px 8px; }
+    .has-mega:hover .mega, .has-mega:focus-within .mega { visibility: inherit; }  /* a zárt mobilmenü láthatatlan linkjei ne fogják el az érintést */
     .mega-grid { grid-template-columns: 1fr; }
     .header-search { width: auto; flex: 1; min-width: 0; }
     .header-actions { flex: 1; justify-content: flex-end; }
