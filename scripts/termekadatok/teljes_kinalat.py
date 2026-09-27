@@ -4,7 +4,7 @@ Kimenet: src/data/bovitett.json – új termékcsoportok/kategóriák, termékek
 termékeinek átsorolása (moves). A weboldal (src/lib/catalog.js) összefésüli a
 katalógussal. A képek a public/termekkepek alá kerülnek.
 
-Használat: python3 scripts/termekadatok/teljes_kinalat.py [fuhrmann rubberselect gnc sandprofile]
+Használat: python3 scripts/termekadatok/teljes_kinalat.py [fuhrmann rubberselect gnc sandprofile dg]
 """
 
 import html
@@ -472,7 +472,176 @@ def sandprofile_full():
     return {"categories": cats, "products": products, "moves": moves, "rename": {SP_GROUP: "Gumi- és kéderprofilok"}}
 
 
-RUNNERS = {"fuhrmann": ("Fuhrmann", fuhrmann), "rubberselect": ("Rubber Select", rubberselect), "gnc": ("G&C termékek", gnc), "sandprofile": ("Sand-Profile", sandprofile_full)}
+# ---------------------------------------------------------------- DG TS (Officina De Giambattista, IT)
+# A gyártó oldala (en.dg-ts.it) sorozatonként (BB2…BB10) mutatja be a rakoncákat, cikkszámok nélkül.
+# Az oldal SiteGround-captchával védett: gyakori kérésnél 202-es "captcha" választ ad, ezért
+# türelmesen újrapróbáljuk, és csak a valódi választ tesszük a gyorsítótárba.
+
+DG_UP = "https://dg-ts.it/wp-content/uploads/"
+DG_PDF = "https://en.dg-ts.it/wp-content/uploads/2025/07/DG-TS_Brochure-2024.pdf"
+DG_CAT = "dg"  # az Excel "DG" kategóriája (acel-es-alu-rakoncak-es-szegok csoport)
+DG_GROUP = "acel-es-alu-rakoncak-es-szegok"
+DG_IMAGES = {
+    "BB2": ["2025/06/serie-BB2-1-1024x1024.png", "2025/10/BB2_1°Foto-683x1024.jpg", "2025/10/BB2_2°-Foto-683x1024.jpg"],
+    "BB3": ["2025/06/serie-BB3-1-1024x1024.png", "2025/10/BB3_1°-Foto-683x1024.jpg", "2025/10/BB3_2°-Foto-683x1024.jpg"],
+    "BB4": ["2025/06/serie-BB4-1-1024x1024.png", "2025/10/BB4_1°-Foto-683x1024.jpg", "2025/10/Screenshot-2025-10-24-at-11.34.14-1024x903.png"],
+    "BB5": ["2025/07/serie-BB5-1-1024x1024.png", "2025/10/BB5_1°-Foto-683x1024.jpg", "2025/10/Screenshot-2025-10-24-at-11.34.24-1024x582.png"],
+    "BB7": ["2025/07/serie-BB7-1-1024x1024.png", "2025/10/BB7_1°-Foto-683x1024.jpg", "2025/10/BB7_2°-Foto-683x1024.jpg"],
+    "BB10": ["2025/07/serie-BB10-1-1024x1024.png", "2025/10/Screenshot-2025-10-24-at-11.34.46-1024x528.png", "2025/10/1-1-1024x1024.png"],
+}
+# a prospektus (DG_PDF) képrészletei: (lap indexe, téglalap pontban)
+DG_CROPS = {
+    "lift": (6, (273, 277)),  # itt a beágyazott fotók (xref) kellenek, a háttérben szürke minta van
+    "slider": (6, (292, 612, 566, 842)),
+    "acc24": (3, (404, 630, 570, 842)),
+    "acc105": (4, (200, 704, 560, 842)),
+}
+
+LIGHT = "Kisteherautók, könnyű platós felépítmények (max. 3,5 t össztömeg)"
+DG_PRODUCTS = [
+    # (slug, név, sorozat, specifikáció, leírás, extra kép)
+    ("dg-alu-rakonca-acel-karral-90", "Alumínium rakonca acél zárókarral, 90°-os nyitással", "BB2",
+     {"Anyag": "eloxált alumínium, acél zárókar", "Nyitási szög": "90°", "Magasság": "310–810 mm", "Tömeg": "0,73–1,42 kg",
+      "Kivitel": "első, hátsó jobb/bal; ütközővel vagy anélkül; egy- vagy kétkamrás", "Csap": "vízszintes vagy függőleges", "Felhasználás": LIGHT},
+     "Kisteherautók oldalfalzárásának klasszikus, bevált megoldása: az oldalfalba épül, egy ujjal működtethető, a rugós zárócsap nyitáskor erőt ad, záráskor megfogja az oldalfalat. Kiálló részek nélküli, szennyeződés ellen védett csapház. Egyedi hossz és profil kérésre.", None),
+    ("dg-alu-oldalfalzar-fuggoleges-acel-karral", "Alumínium oldalfalzár függőleges acél karral", "BB2",
+     {"Anyag": "eloxált alumínium, acél kar", "Magasság": "310–610 mm", "Tömeg": "0,76–1,06 kg",
+      "Kivitel": "jobb / bal; ütközővel vagy anélkül", "Csap": "vízszintes", "Felhasználás": LIGHT},
+     "Függőleges karos alumínium oldalfalzár kisteherautók platójára – egyszerű, biztonságos, korrózióálló.", "acc24"),
+    ("dg-alu-rakonca-muanyag-karral-170", "Alumínium rakonca lehajtható műanyag karral és biztonsági kampóval, 170°", "BB3",
+     {"Anyag": "eloxált alumínium, PA66 műanyag kar", "Nyitási szög": "170°", "Nyitott helyzetben kiáll": "20 mm", "Magasság": "310–810 mm",
+      "Tömeg": "0,5–1,16 kg", "Kivitel": "vízszintes vagy függőleges csap; ütközővel vagy anélkül; egy- vagy kétkamrás",
+      "Felhasználás": "max. 3,5 t (kérésre 6 t-ig)"},
+     "A legkönnyebb és legkompaktabb alumínium rakonca: a beépített biztonsági kampó és a lehajtható kar megakadályozza a véletlen nyitást, kesztyűben is jól kezelhető. Háromfázisú, sima nyitás–zárás.", None),
+    ("dg-alu-oldalfalzar-muanyag-karral", "Alumínium oldalfalzár lehajtható műanyag karral", "BB3",
+     {"Anyag": "eloxált alumínium, PA66 műanyag kar", "Magasság": "310–810 mm", "Tömeg": "0,5–1,2 kg",
+      "Kivitel": "jobb / bal; vízszintes vagy függőleges csap; ütközővel vagy anélkül", "Felhasználás": LIGHT},
+     "Könnyű, biztonsági kampós alumínium oldalfalzár kisteherautók platójára.", "acc24"),
+    ("dg-alu-rakonca-lehajthato-acel-karral-170", "Alumínium rakonca lehajtható acél karral, 170°", "BB4",
+     {"Anyag": "eloxált alumínium, acél kar", "Nyitási szög": "170°", "Nyitott helyzetben kiáll": "30 mm", "Magasság": "310–810 mm",
+      "Tömeg": "0,62–1,34 kg", "Kivitel": "első, hátsó, jobb/bal; ütközővel vagy anélkül; vízszintes vagy függőleges csap", "Felhasználás": LIGHT},
+     "A 90°-os acél karos rakonca továbbfejlesztett változata: lehajtható acél kar beépített ütközővel, minimális erővel nyitható és zárható, nagy terhelésnél is stabil.", None),
+    ("dg-alu-oldalfalzar-lehajthato-acel-karral", "Alumínium oldalfalzár lehajtható acél karral", "BB4",
+     {"Anyag": "eloxált alumínium, acél kar", "Magasság": "310–810 mm", "Tömeg": "0,50–1,17 kg",
+      "Kivitel": "jobb / bal; ütközővel vagy anélkül", "Felhasználás": LIGHT},
+     "Lehajtható acél karos alumínium oldalfalzár beépített zárónyelvvel kisteherautók platójára.", "acc24"),
+    ("dg-acel-rakonca-konnyu-plato", "Acél rakonca platós felépítményekhez (5 t alatt)", "BB5",
+     {"Anyag": "acél, KTL (kataforézis) fekete bevonat; kérésre rozsdamentes", "Magasság": "400–800 mm (szabvány 400–600 mm)", "Tömeg": "3,5–6,2 kg",
+      "Kivitel": "első, középső, hátsó; 1 vagy 2 karos", "Rögzítés": "csavarozható vagy hegeszthető talp", "Oldalfal": "25 mm",
+      "Felhasználás": "fix platók, ponyvás és billenős felépítmények, 5 t alatt"},
+     "Kompakt, könnyű acél rakonca a plató oldalára: kétfokozatú oldalfal-kioldás, földről kezelhető, kevés karbantartást igényel. Az összeszerelés után teljes KTL-bevonatot kap. Ponyvás felépítményhez is kapható.", "acc105"),
+    ("dg-acel-rakonca-nehez-plato", "Acél rakonca nehéz platós felépítményekhez (5 t felett)", "BB10",
+     {"Anyag": "2,5 mm nagyszilárdságú acél, KTL (kataforézis) fekete bevonat; kérésre rozsdamentes", "Magasság": "400–1000 mm",
+      "Tömeg": "3,5 kg (első 400 mm) – 12,6 kg (középső 1000 mm)", "Kivitel": "első, középső, hátsó; fix vagy kivehető, 180°-ban elforgatható; két karos",
+      "Rögzítés": "csavarozható vagy hegeszthető talp (0,52–0,59 kg)", "Oldalfal": "25 mm", "Felhasználás": "fix platók 5 t felett"},
+     "Átlagosan 20%-kal könnyebb a hagyományos acél rakoncáknál, teljesítménybeli kompromisszum nélkül. Kivehető vagy 180°-ban elforgatható – teljesen szabad rakfelület. A zárószerkezet a rakoncába integrált, kétfokozatú kioldással.", "acc105"),
+    ("dg-ponyvas-oszlop-kozepso", "Elhúzható középső oszlop ponyvás félpótkocsihoz", "BB7",
+     {"Anyag": "2,5 mm nagyszilárdságú acél vagy 2 mm S700MC (tömegoptimalizált)", "Felület": "KTL (kataforézis) fekete; alumíniumból is",
+      "Magasság": "2400 mm-től (szabvány 2800–3000 mm)", "Tömeg": "21,5–23,8 kg", "Kivitel": "1 vagy 2 karos; francia vagy oldalsó bordához (H600/800/1000)",
+      "Kocsi": "csuklós vagy fix, rugós vagy gumis biztosítással"},
+     "Curtainsider (ponyvás) félpótkocsik középső oszlopa könnyű oldalirányú mozgatással: a csuklós, beépített kampós rendszer egy kézzel, a földről is kioldható. Moduláris kialakítás, csavarozható vagy hegeszthető zsebekkel.", None),
+    ("dg-ponyvas-oszlop-elso-hatso", "Első és hátsó oszlop ponyvás félpótkocsihoz", "BB7",
+     {"Anyag": "nagyszilárdságú acél", "Felület": "KTL (kataforézis) fekete; alumíniumból is", "Magasság": "2400 mm-től",
+      "Kivitel": "egyedi formákkal, fix vagy teleszkópos tetővel"},
+     "Első és hátsó oszlopok curtainsider félpótkocsikhoz, a középső oszlopokkal egységes rendszerben.", None),
+    ("dg-rugos-oszlopemelo-gazrugoval", "Rugós oszlopemelő gázrugóval ponyvás oszlophoz", None,
+     {"Kivitel": "kézi mechanikus emelő gázrugóval", "Gázrugó": "900 N vagy 1300 N", "Felület": "KTL (kataforézis) fekete", "Magasság": "2400 mm-től"},
+     "Mechanikus oszlopemelő gázrugóval a ponyvás félpótkocsik középső oszlopához – megkönnyíti az oszlop kiemelését és áthelyezését.", "lift"),
+    ("dg-rugos-csuszka-kozepso-oszlophoz", "Rugós csúszka ponyvás középső oszlophoz", None,
+     {"Kivitel": "komplett, szegecselhető készlet", "Felület": "horganyzott"},
+     "Rugós csúszókocsi curtainsider középső oszlophoz: az oszlop gyors, könnyű oldalirányú mozgatására.", "slider"),
+]
+# Excel DG termékek: a Quadris / DG kódból a sorozat
+DG_EXCEL_SERIES = [(r"^12-", "BB10"), (r"^06-", "BB5"), (r"^30-05", "BB10")]
+
+
+def dg_fetch(url):
+    """Letöltés a captcha-védett DG oldalról: csak valódi választ fogad el és gyorsítótáraz."""
+    import time
+    import urllib.request
+    from urllib.parse import quote
+    from common import CACHE, UA
+    key = CACHE / re.sub(r"[^A-Za-z0-9._-]+", "_", url)[-180:]
+    if key.exists():
+        return key.read_bytes()
+    for attempt in range(8):
+        req = urllib.request.Request(quote(url, safe=":/%"), headers={"User-Agent": UA, "Accept": "*/*", "Accept-Language": "en"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                data, status = r.read(), r.status
+        except Exception:  # noqa: BLE001
+            data, status = b"", 0
+        if status == 200 and len(data) > 2000 and b"sgcaptcha" not in data[:3000]:
+            key.parent.mkdir(parents=True, exist_ok=True)
+            key.write_bytes(data)
+            return data
+        time.sleep(10 * (attempt + 1))
+    raise RuntimeError(f"nem sikerült letölteni: {url}")
+
+
+def dg_images(slug, series, crop):
+    import pymupdf
+    clear_images(slug)
+    out = []
+    for rel in DG_IMAGES.get(series, [])[:3 if not crop else 2]:
+        try:
+            out.append(save_image(dg_fetch(DG_UP + rel), slug, len(out) + 1))
+        except Exception as err:  # noqa: BLE001
+            print("  képhiba:", rel, err)
+    if crop:
+        import io
+        from PIL import Image
+        pno, rect = DG_CROPS[crop]
+        doc = pymupdf.open(stream=dg_fetch(DG_PDF), filetype="pdf")
+        if len(rect) == 2:  # beágyazott képek egymás mellé, fehér háttérre
+            parts = [Image.open(io.BytesIO(doc.extract_image(x)["image"])).convert("RGB") for x in rect]
+            h = max(i.height for i in parts)
+            img = Image.new("RGB", (sum(i.width for i in parts) + 80 * (len(parts) + 1), h + 80), "white")
+            x = 80
+            for i in parts:
+                img.paste(i, (x, 40))
+                x += i.width + 80
+        else:
+            pix = doc[pno].get_pixmap(dpi=220, clip=pymupdf.Rect(*rect))
+            img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+        out.append(save_image(img, slug, len(out) + 1))
+    return out
+
+
+def dg():
+    products = []
+    for slug, name, series, specs, desc, crop in DG_PRODUCTS:
+        products.append({"slug": slug, "code": "", "name": name, "group": DG_GROUP, "category": DG_CAT, "specs": specs,
+                         "description": desc, "images": dg_images(slug, series, crop),
+                         "sourceUrl": f"https://en.dg-ts.it/serie-{series.lower()}/" if series else DG_PDF})
+    # az Excel DG termékeinek képe és leírása a sorozat alapján (termekadatok.json)
+    from common import update_enrichment
+    by_series = {p["slug"]: p for p in products}
+    enrichment = {}
+    for p in excel_products():
+        if p["supplier"] != "DG":
+            continue
+        code = (p["supplierCode"] or "").strip()
+        series = next((s for rx, s in DG_EXCEL_SERIES if re.match(rx, code)), "BB10")
+        base = by_series["dg-acel-rakonca-konnyu-plato" if series == "BB5" else "dg-acel-rakonca-nehez-plato"]
+        is_counter = code.startswith("30-")
+        imgs = dg_images(p["slug"], series, "acc105" if is_counter else None)
+        if is_counter:
+            imgs = imgs[-1:] + imgs[:-1]
+        size = re.search(r"(\d{3,4})\s*mm|DG\s*(\d{3,4})\b|KDG\s*(\d{3})", p["name"])
+        specs = {k: v for k, v in base["specs"].items() if k in ("Anyag", "Rögzítés", "Oldalfal")}
+        if size:
+            specs["Magasság"] = f"{next(g for g in size.groups() if g)} mm"
+        enrichment[p["slug"]] = {"source": "DG", "sourceUrl": base["sourceUrl"], "sourceTitle": series, "matchedCode": code,
+                                 "description": ("Rakonca ellendarab / rögzítő zseb a plató oldalára, a rakoncához illesztve." if is_counter
+                                                 else base["description"]),
+                                 "specs": specs, "images": imgs}
+    update_enrichment(enrichment, "DG")
+    print(f"  DG Excel-termékek kiegészítve: {len(enrichment)}")
+    return {"products": products}
+
+
+RUNNERS = {"fuhrmann": ("Fuhrmann", fuhrmann), "rubberselect": ("Rubber Select", rubberselect), "gnc": ("G&C termékek", gnc), "sandprofile": ("Sand-Profile", sandprofile_full), "dg": ("DG", dg)}
 
 
 def main(names):

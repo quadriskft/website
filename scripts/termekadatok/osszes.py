@@ -14,7 +14,7 @@ HERE = Path(__file__).parent
 sys.path.insert(0, str(HERE))
 from common import ENRICHMENT, IMAGE_DIR  # noqa: E402
 
-SCRIPTS = ["ital_accessori", "woocommerce", "pastore", "caralu", "alusv", "adaico", "sandprofile", "sitemap_kereso"]
+SCRIPTS = ["ital_accessori", "woocommerce", "pastore", "caralu", "alusv", "adaico", "sandprofile", "sitemap_kereso", "parlok", "jonesco"]
 
 for name in SCRIPTS:
     print(f"\n=== {name} ===", flush=True)
