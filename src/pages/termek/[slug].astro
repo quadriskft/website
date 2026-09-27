@@ -14,7 +14,7 @@ const { product } = Astro.props;
 const group = getGroup(product.group);
 const category = getCategory(product.group, product.category);
 const specs = Object.entries(product.specs ?? {});
-const gallery = product.images?.slice(1) ?? [];
+const gallery = product.images?.length > 1 ? product.images : [];
 const related = productsIn(product.group, product.category).filter((p) => p.slug !== product.slug).slice(0, 8);
 const showCategory = category && category.name !== group.name;
 const profile = isProfile(product);
@@ -37,7 +37,11 @@ const description = product.description || `${product.name}${product.code ? ` (c
         <ProductVisual product={product} eager />
         {gallery.length > 0 && (
           <div class="gallery">
-            {gallery.map((src) => <img src={src} alt={product.name} loading="lazy" />)}
+            {gallery.map((src, i) => (
+              <button type="button" class:list={['thumb-btn', { active: i === 0 }]} data-src={src} aria-label={`${i + 1}. kép megjelenítése`}>
+                <img src={src} alt="" loading="lazy" />
+              </button>
+            ))}
           </div>
         )}
       </div>
@@ -147,6 +151,16 @@ const description = product.description || `${product.name}${product.code ? ` (c
     input.addEventListener('change', () => (input.value = String(clampQty(input.value))));
   }
 
+  // Galéria: a bélyegképre kattintva az a kép jelenik meg nagyban
+  const mainImg = document.querySelector('.media .product-visual img');
+  document.querySelectorAll('.gallery .thumb-btn').forEach((btn) =>
+    btn.addEventListener('click', () => {
+      if (!mainImg) return;
+      mainImg.src = btn.dataset.src;
+      document.querySelectorAll('.gallery .thumb-btn').forEach((b) => b.classList.toggle('active', b === btn));
+    }),
+  );
+
   // Profilok: hossz × darab méretsorok (mint egy vágási lista), + gombbal új sor
   const order = document.querySelector('[data-cut-order]');
   if (order) {
@@ -231,7 +245,10 @@ const description = product.description || `${product.name}${product.code ? ` (c
   .media :global(.product-visual) { border-radius: var(--radius); border: 1px solid var(--line); }
   .media :global(.product-visual.placeholder svg) { width: 26%; height: 26%; }
   .gallery { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
-  .gallery img { width: 88px; height: 66px; object-fit: contain; background: var(--tile); border-radius: 8px; padding: 4px; }
+  .thumb-btn { padding: 0; border: 2px solid transparent; border-radius: 10px; background: none; cursor: pointer; transition: border-color 0.2s; }
+  .thumb-btn:hover { border-color: rgba(10, 108, 255, 0.4); }
+  .thumb-btn.active { border-color: var(--accent); }
+  .gallery img { display: block; width: 88px; height: 66px; object-fit: contain; background: #fff; border-radius: 8px; padding: 4px; }
   .info h1 { font-size: clamp(1.7rem, 3.2vw, 2.5rem); margin: 12px 0 12px; }
   .code-line { display: flex; align-items: center; gap: 8px; color: var(--text-2); }
   .copy { border: 1px solid var(--line); background: transparent; border-radius: 8px; width: 30px; height: 30px; display: grid; place-items: center; cursor: pointer; color: var(--muted); }
