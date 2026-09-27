@@ -58,12 +58,24 @@ def lookup(code):
     return {"title": title, "url": BASE + link, "specs": specs, "images": list(dict.fromkeys(imgs))}
 
 
+# Quadris-cikkszám -> Alu-SV cikkszám: a Constellium Děčín Eurolock 25 mm-es oldalfal-rendszer, amelyet
+# az Alu-SV forgalmaz (az Excelben a gyártó szerepel). elox = "66111…", natúr (/n) = "66110…".
+EXTRA = {
+    "227045": "6611127045", "227045/n": "6611007045",
+    "227046": "6611121777", "227046/n": "6611007046",
+    "227047": "6611128196", "227047/n": "6611008196",
+    "227783": "6611127783", "227784": "6611127784", "227785": "6611127785", "227948": "6611127948",
+    "228197": "6611128197", "228240": "6611128240",
+}
+
+
 def main():
     products = load_products(SUPPLIER)
+    products += [p for p in load_products() if p["code"] in EXTRA and p not in products]
     enrichment, missing = {}, []
     for p in products:
         info, code = None, None
-        for c in code_candidates(p):
+        for c in ([EXTRA[p["code"]]] if p["code"] in EXTRA else []) + code_candidates(p):
             try:
                 info = lookup(c)
             except Exception as err:  # noqa: BLE001

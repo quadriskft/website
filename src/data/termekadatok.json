@@ -104,8 +104,7 @@
   "images": [
    "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-1.webp",
    "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-2.webp",
-   "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-3.webp",
-   "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-9.webp"
+   "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-3.webp"
   ]
  },
  "100021-100x25-mm-festett-szegecselheto-deszkatarto-zseb": {
@@ -168,8 +167,7 @@
   },
   "images": [
    "/termekkepek/100516-100x25-dugo-zartszelvenyhez-1.webp",
-   "/termekkepek/100516-100x25-dugo-zartszelvenyhez-2.webp",
-   "/termekkepek/100516-100x25-dugo-zartszelvenyhez-9.webp"
+   "/termekkepek/100516-100x25-dugo-zartszelvenyhez-2.webp"
   ]
  },
  "100591-ives-alafutasgatlo-vegzaro-pvc": {
@@ -1028,7 +1026,9 @@
   "specs": {
    "Tömeg": "10,300 kg"
   },
-  "images": []
+  "images": [
+   "/termekkepek/145010-50-mm-es-gombcsuklo-keszlet-3-5t-1.webp"
+  ]
  },
  "145170-szelep1-2": {
   "source": "Ital Accessori",
@@ -1075,7 +1075,7 @@
    "Tömeg": "0,040 kg"
   },
   "images": [
-   "/termekkepek/152711-menetes-lapka-30mm-9.webp"
+   "/termekkepek/152711-menetes-lapka-30mm-1.webp"
   ]
  },
  "152760-tir-zsaner-apa-resz-alu-hoz": {
@@ -1121,15 +1121,6 @@
    "/termekkepek/152791-tir-zsaner-lapka-50mm-1.webp",
    "/termekkepek/152791-tir-zsaner-lapka-50mm-2.webp"
   ]
- },
- "152811-tir-zsaner-garnitura-horg": {
-  "source": "FTS",
-  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=76",
-  "matchedCode": "15279110",
-  "specs": {
-   "Tömeg": "0,075 kg"
-  },
-  "images": []
  },
  "152814-tir-zsaner-garnitura-th": {
   "source": "FTS",
@@ -1772,6 +1763,150 @@
    "/termekkepek/226915-30-mm-szego-profil-elox-1.webp"
   ]
  },
+ "227045-koztes-ponyvas-200-mm-elox-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1507_tarpaulin-profile-eurolock200mm--anodized",
+  "sourceTitle": "Tarpaulin profile Eurolock200mm, anodized",
+  "matchedCode": "6611127045",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "2,06 kg",
+   "Hossz": "7 650,0 mm",
+   "Szélesség": "200,0 mm",
+   "Magasság": "25,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/227045-koztes-ponyvas-200-mm-elox-profil-1.webp"
+  ]
+ },
+ "227045-n-koztes-ponyvas-200-mm-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1497_tarpaulin-profile-eurolock-200-mm--al",
+  "sourceTitle": "Tarpaulin profile Eurolock 200 mm, Al",
+  "matchedCode": "6611007045",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "natúr",
+   "Tömeg": "2,06 kg",
+   "Hossz": "7 650,0 mm",
+   "Szélesség": "200,0 mm",
+   "Magasság": "25,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/227045-n-koztes-ponyvas-200-mm-profil-1.webp"
+  ]
+ },
+ "227046-koztes-200-mm-elox-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/28000241_middle-profile-eurolock-200-mm--anodized",
+  "sourceTitle": "Middle profile Eurolock 200 mm, anodized",
+  "matchedCode": "6611121777",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "2,215 kg",
+   "Hossz": "7 650,0 mm",
+   "Szélesség": "222,2 mm",
+   "Magasság": "25,0 mm",
+   "Mértékegység": "m Version: central"
+  },
+  "images": [
+   "/termekkepek/227046-koztes-200-mm-elox-profil-1.webp"
+  ]
+ },
+ "227046-n-koztes-200-mm-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1498_middle-profile-eurolock-200mm--al",
+  "sourceTitle": "Middle profile Eurolock 200mm, al",
+  "matchedCode": "6611007046",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "natúr",
+   "Tömeg": "2,54 kg",
+   "Hossz": "7 500,0 mm",
+   "Szélesség": "200,0 mm",
+   "Magasság": "25,0 mm",
+   "Mértékegység": "m Version: central"
+  },
+  "images": [
+   "/termekkepek/227046-n-koztes-200-mm-profil-1.webp"
+  ]
+ },
+ "227047-felso-200-mm-elox-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/8000106_top-profile-eurolock-200-mm--anodized",
+  "sourceTitle": "Top profile Eurolock 200 mm, anodized",
+  "matchedCode": "6611128196",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "2,526 kg",
+   "Hossz": "7 650,0 mm",
+   "Szélesség": "25,0 mm",
+   "Magasság": "200,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/227047-felso-200-mm-elox-profil-1.webp"
+  ]
+ },
+ "227047-n-felso-200-mm-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/8000248_top-profile-eurolock-200-mm--al",
+  "sourceTitle": "Top profile Eurolock 200 mm, al",
+  "matchedCode": "6611008196",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "natúr",
+   "Tömeg": "2,526 kg",
+   "Hossz": "7 650,0 mm",
+   "Szélesség": "25,0 mm",
+   "Magasság": "200,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/227047-n-felso-200-mm-profil-1.webp"
+  ]
+ },
+ "227783-also-szakallas-200-mm-elox-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1511_bottom-profile-eurolock-200-mm--anodized",
+  "sourceTitle": "Bottom profile Eurolock 200 mm, anodized",
+  "matchedCode": "6611127783",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "2,677 kg",
+   "Hossz": "7 650,0 mm",
+   "Szélesség": "200,0 mm",
+   "Magasság": "25,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/227783-also-szakallas-200-mm-elox-profil-1.webp"
+  ]
+ },
+ "227784-also-tomiteses-200-mm-elox-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1512_bottom-profile-eurolock-200mm--an.--sealin",
+  "sourceTitle": "Bottom profile EUROLOCK 200mm, an., sealin",
+  "matchedCode": "6611127784",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "2,675 kg",
+   "Hossz": "7 650,0 mm",
+   "Szélesség": "200,0 mm",
+   "Magasság": "25,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/227784-also-tomiteses-200-mm-elox-profil-1.webp"
+  ]
+ },
  "227785-koztes-100-mm-elox-profil": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1513_middle-profile-eurolock-100mm--anodized",
@@ -1788,6 +1923,60 @@
   },
   "images": [
    "/termekkepek/227785-koztes-100-mm-elox-profil-1.webp"
+  ]
+ },
+ "227948-also-tomiteses-100-mm-elox-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1514_lower-profile-eurolock-100mm--an.--sealing",
+  "sourceTitle": "Lower profile EUROLOCK 100mm, an., sealing",
+  "matchedCode": "6611127948",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "1,626 kg",
+   "Hossz": "7 650,0 mm",
+   "Szélesség": "100,0 mm",
+   "Magasság": "25,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/227948-also-tomiteses-100-mm-elox-profil-1.webp"
+  ]
+ },
+ "228197-also-szakallas-100-mm-elox-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1515_bottom-profile-eurolock-100mm--anodized",
+  "sourceTitle": "Bottom profile Eurolock 100mm, anodized",
+  "matchedCode": "6611128197",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "1,593 kg",
+   "Hossz": "7 650,0 mm",
+   "Szélesség": "100,0 mm",
+   "Magasság": "25,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/228197-also-szakallas-100-mm-elox-profil-1.webp"
+  ]
+ },
+ "228240-felso-100-mm-elox-profil": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/15000001_top-profile-eurolock-100mm--anodized",
+  "sourceTitle": "Top profile Eurolock 100mm, anodized",
+  "matchedCode": "6611128240",
+  "specs": {
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "1,566 kg",
+   "Hossz": "7 650,0 mm",
+   "Szélesség": "117,2 mm",
+   "Magasság": "25,0 mm",
+   "Mértékegység": "méter"
+  },
+  "images": [
+   "/termekkepek/228240-felso-100-mm-elox-profil-1.webp"
   ]
  },
  "231144-z-esoveto-alu-profil-60-mm": {
@@ -2205,7 +2394,10 @@
    "Tömeg": "1,500 kg",
    "Kivitel": "tűzihorganyzott"
   },
-  "images": []
+  "images": [
+   "/termekkepek/307155-alafutasgatlo-konzol-572-mm-1.webp",
+   "/termekkepek/307155-alafutasgatlo-konzol-572-mm-2.webp"
+  ]
  },
  "307955-alafutasgatlo-konzol-550-mm-horg": {
   "source": "FTS",
@@ -2244,7 +2436,9 @@
   "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=268",
   "matchedCode": "58800155",
   "specs": {},
-  "images": []
+  "images": [
+   "/termekkepek/308155-th-alafutasgatlo-konzol-710-mm-1.webp"
+  ]
  },
  "309055-alafutasgatlo-konzol-700-mm-horg": {
   "source": "FTS",
@@ -2391,7 +2585,7 @@
    "Tömeg": "0,050 kg"
   },
   "images": [
-   "/termekkepek/351501-z-zar-ellendarab-csavarozhato-9.webp"
+   "/termekkepek/351501-z-zar-ellendarab-csavarozhato-1.webp"
   ]
  },
  "351502-z-zar-ellendarab-hegesztheto-nagy-30": {
@@ -2401,7 +2595,9 @@
   "specs": {
    "Tömeg": "0,030 kg"
   },
-  "images": []
+  "images": [
+   "/termekkepek/351502-z-zar-ellendarab-hegesztheto-nagy-30-1.webp"
+  ]
  },
  "351503-z-zar-ellendarab-hegesztheto-kicsi-20": {
   "source": "FTS",
@@ -2410,7 +2606,9 @@
   "specs": {
    "Tömeg": "0,025 kg"
   },
-  "images": []
+  "images": [
+   "/termekkepek/351503-z-zar-ellendarab-hegesztheto-kicsi-20-1.webp"
+  ]
  },
  "351775-bill-rakonca-csap": {
   "source": "Ital Accessori",
@@ -2491,7 +2689,9 @@
   "specs": {
    "Tömeg": "0,060 kg"
   },
-  "images": []
+  "images": [
+   "/termekkepek/352202-egymasbazarodo-zar-ellendarab-1.webp"
+  ]
  },
  "352240-ellendarabos-szego-400mm-r-l": {
   "source": "FTS",
@@ -2617,7 +2817,9 @@
    "Kiszerelés": "100 db.",
    "Tömeg": "0,130 kg"
   },
-  "images": []
+  "images": [
+   "/termekkepek/354424-top-kuplung-1.webp"
+  ]
  },
  "354500-nem-peremes-500-mm-z-zar-r-l": {
   "source": "FTS",
@@ -2750,7 +2952,8 @@
    "Kiszerelés": "20 db. (10 J+10 B)"
   },
   "images": [
-   "/termekkepek/357400-peremes-z-zar-400-mm-r-l-1.webp"
+   "/termekkepek/357400-peremes-z-zar-400-mm-r-l-1.webp",
+   "/termekkepek/357400-peremes-z-zar-400-mm-r-l-2.webp"
   ]
  },
  "357401-peremes-z-zar-600-mm-r-l": {
@@ -3226,8 +3429,7 @@
   },
   "images": [
    "/termekkepek/451871-alvaz-rogzito-konzol-10-12-14-16-1.webp",
-   "/termekkepek/451871-alvaz-rogzito-konzol-10-12-14-16-2.webp",
-   "/termekkepek/451871-alvaz-rogzito-konzol-10-12-14-16-9.webp"
+   "/termekkepek/451871-alvaz-rogzito-konzol-10-12-14-16-2.webp"
   ]
  },
  "452871-alvaz-rogzito-konzol-4-5-5-6": {
@@ -3242,8 +3444,7 @@
   },
   "images": [
    "/termekkepek/452871-alvaz-rogzito-konzol-4-5-5-6-1.webp",
-   "/termekkepek/452871-alvaz-rogzito-konzol-4-5-5-6-2.webp",
-   "/termekkepek/452871-alvaz-rogzito-konzol-4-5-5-6-9.webp"
+   "/termekkepek/452871-alvaz-rogzito-konzol-4-5-5-6-2.webp"
   ]
  },
  "452921-alvaz-rogzito-konzol-7-8-10-12": {
@@ -3258,8 +3459,7 @@
   },
   "images": [
    "/termekkepek/452921-alvaz-rogzito-konzol-7-8-10-12-1.webp",
-   "/termekkepek/452921-alvaz-rogzito-konzol-7-8-10-12-2.webp",
-   "/termekkepek/452921-alvaz-rogzito-konzol-7-8-10-12-9.webp"
+   "/termekkepek/452921-alvaz-rogzito-konzol-7-8-10-12-2.webp"
   ]
  },
  "453881-nyers-alvaz-konzol-5-mm": {
@@ -3921,8 +4121,7 @@
   },
   "images": [
    "/termekkepek/552080-utkozogumi-200x80x80-1.webp",
-   "/termekkepek/552080-utkozogumi-200x80x80-2.webp",
-   "/termekkepek/552080-utkozogumi-200x80x80-9.webp"
+   "/termekkepek/552080-utkozogumi-200x80x80-2.webp"
   ]
  },
  "552118-utkozogumi-150x60x60": {
@@ -3952,8 +4151,7 @@
   },
   "images": [
    "/termekkepek/552155-utkozogumi-215x50x55-1.webp",
-   "/termekkepek/552155-utkozogumi-215x50x55-2.webp",
-   "/termekkepek/552155-utkozogumi-215x50x55-9.webp"
+   "/termekkepek/552155-utkozogumi-215x50x55-2.webp"
   ]
  },
  "552280-gumi-utkozogyuru-d21-5x7-5-mm": {
@@ -3983,8 +4181,7 @@
   },
   "images": [
    "/termekkepek/552594-utkozogumi-400x65x70-1.webp",
-   "/termekkepek/552594-utkozogumi-400x65x70-2.webp",
-   "/termekkepek/552594-utkozogumi-400x65x70-9.webp"
+   "/termekkepek/552594-utkozogumi-400x65x70-2.webp"
   ]
  },
  "552825-kupos-utkozogumi-27-5-25": {
@@ -4055,8 +4252,7 @@
   },
   "images": [
    "/termekkepek/553541-kupos-utkozogumi-45-60-35-1.webp",
-   "/termekkepek/553541-kupos-utkozogumi-45-60-35-2.webp",
-   "/termekkepek/553541-kupos-utkozogumi-45-60-35-9.webp"
+   "/termekkepek/553541-kupos-utkozogumi-45-60-35-2.webp"
   ]
  },
  "554540-utkozogumi-450x40x60": {
@@ -4086,8 +4282,7 @@
   },
   "images": [
    "/termekkepek/555490-utkozogumi-490x45x40-1.webp",
-   "/termekkepek/555490-utkozogumi-490x45x40-2.webp",
-   "/termekkepek/555490-utkozogumi-490x45x40-9.webp"
+   "/termekkepek/555490-utkozogumi-490x45x40-2.webp"
   ]
  },
  "555575-kupos-utkozogumi-55-75-40": {
@@ -4102,8 +4297,7 @@
   },
   "images": [
    "/termekkepek/555575-kupos-utkozogumi-55-75-40-1.webp",
-   "/termekkepek/555575-kupos-utkozogumi-55-75-40-2.webp",
-   "/termekkepek/555575-kupos-utkozogumi-55-75-40-9.webp"
+   "/termekkepek/555575-kupos-utkozogumi-55-75-40-2.webp"
   ]
  },
  "556575-kupos-utkozogumi-65-75-50": {
@@ -4898,8 +5092,7 @@
   },
   "images": [
    "/termekkepek/806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm-1.webp",
-   "/termekkepek/806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm-2.webp",
-   "/termekkepek/806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm-9.webp"
+   "/termekkepek/806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm-2.webp"
   ]
  },
  "806287-inox-oldalajto-zsaner-184-65-zsirzos": {
@@ -4992,8 +5185,7 @@
   },
   "images": [
    "/termekkepek/810164-negyszog-kulcs-1.webp",
-   "/termekkepek/810164-negyszog-kulcs-2.webp",
-   "/termekkepek/810164-negyszog-kulcs-9.webp"
+   "/termekkepek/810164-negyszog-kulcs-2.webp"
   ]
  },
  "810489-rm-lapos-zsaner-140-4-mm-pl": {
@@ -5159,7 +5351,9 @@
   "specs": {
    "Tömeg": "0,160 kg"
   },
-  "images": []
+  "images": [
+   "/termekkepek/828010-nyers-zsaner-bak-csavar-1.webp"
+  ]
  },
  "829611-rugos-ajtokitamaszto-500-270mm-ts": {
   "source": "FTS",
@@ -5191,8 +5385,7 @@
   "images": [
    "/termekkepek/829631-rugos-ajtorogzito-horg-440-270mm-ts-1.webp",
    "/termekkepek/829631-rugos-ajtorogzito-horg-440-270mm-ts-2.webp",
-   "/termekkepek/829631-rugos-ajtorogzito-horg-440-270mm-ts-3.webp",
-   "/termekkepek/829631-rugos-ajtorogzito-horg-440-270mm-ts-9.webp"
+   "/termekkepek/829631-rugos-ajtorogzito-horg-440-270mm-ts-3.webp"
   ]
  },
  "829681-rugos-ajtorogzito-horg-545-410mm-ts": {
@@ -5236,7 +5429,7 @@
   "matchedCode": "54631430",
   "specs": {
    "Kivitel": "L=3000",
-   "Tömeg": "3,550 kg",
+   "Tömeg": "2,960 kg",
    "Kiszerelés": "10 db/doboz"
   },
   "images": [
@@ -5266,7 +5459,7 @@
   "matchedCode": "54631440",
   "specs": {
    "Kivitel": "L=4000",
-   "Tömeg": "3,700 kg",
+   "Tömeg": "3,256 kg",
    "Kiszerelés": "10 db/doboz"
   },
   "images": [
@@ -5485,8 +5678,7 @@
   "images": [
    "/termekkepek/895280-nagy-oldalso-ladazar-1.webp",
    "/termekkepek/895280-nagy-oldalso-ladazar-2.webp",
-   "/termekkepek/895280-nagy-oldalso-ladazar-3.webp",
-   "/termekkepek/895280-nagy-oldalso-ladazar-9.webp"
+   "/termekkepek/895280-nagy-oldalso-ladazar-3.webp"
   ]
  },
  "896966-a-rm-hatsoajto-zsanerlap-280-4-mm-pl": {

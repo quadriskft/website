@@ -31,6 +31,44 @@ FINISH = [(r"zincat[oa] a caldo|hot galvani[sz]ed", "tűzihorganyzott"), (r"zinc
           (r"dacromet", "dacromet bevonatú"), (r"cataforesi|cataphoresis", "kataforézis bevonatú"), (r"nero|black", "fekete")]
 
 
+# Kézzel ellenőrzött kivágások (oldal, [x0, y0, x1, y1] pontban) azokhoz a termékekhez, amelyeknek a
+# webáruházban nincs ép képe (pl. a Z-zárak beépítési rajza a webshopban a szélén le van vágva).
+MANUAL = {  # ("foto", oldal, kép befoglaló téglalapja) = beágyazott fotó; ("rajz", oldal, téglalap) = vektoros méretrajz
+    "357400-peremes-z-zar-400-mm-r-l": [("foto", 145, (332, 127, 567, 391)), ("rajz", 145, (48, 170, 142, 372))],
+    "357401-peremes-z-zar-600-mm-r-l": [("foto", 148, (309, 127, 544, 391))],
+    "357500-peremes-z-zar-500-mm-r-l": [("foto", 148, (309, 127, 544, 391))],
+    "354400-nem-peremes-400-z-zar-r-l": [("foto", 146, (306, 127, 544, 399))],
+    "354500-nem-peremes-500-mm-z-zar-r-l": [("foto", 146, (306, 127, 544, 399))],
+    "354600-nem-peremes-600-mm-z-zar-r-l": [("foto", 146, (306, 127, 544, 399))],
+    "354800-nem-peremes-800-mm-z-zar-r-l": [("foto", 146, (306, 127, 544, 399))],
+    "351501-z-zar-ellendarab-csavarozhato": [("foto", 146, (181, 643, 247, 735))],
+    "351502-z-zar-ellendarab-hegesztheto-nagy-30": [("foto", 146, (453, 451, 516, 533))],
+    "351503-z-zar-ellendarab-hegesztheto-kicsi-20": [("foto", 146, (184, 468, 247, 534))],
+    "352202-egymasbazarodo-zar-ellendarab": [("foto", 139, (442, 375, 567, 493))],
+    "307155-alafutasgatlo-konzol-572-mm": [("foto", 268, (400, 147, 507, 547)), ("rajz", 268, (55, 192, 215, 345))],
+    "308155-th-alafutasgatlo-konzol-710-mm": [("rajz", 268, (60, 503, 215, 805))],
+    "828010-nyers-zsaner-bak-csavar": [("foto", 315, (358, 555, 473, 653))],
+    "145010-50-mm-es-gombcsuklo-keszlet-3-5t": [("foto", 111, (51, 165, 292, 320))],
+}
+SKIP_SLUGS = {"152811-tir-zsaner-garnitura-horg"}  # az Excel kódja egy másik termékre (lapka) mutat
+
+
+def manual_images(doc, slug):
+    import ital_accessori as ia
+    out = []
+    for n, (kind, pno, box) in enumerate(MANUAL[slug], start=1):
+        pg, rect = doc[pno - 1], pymupdf.Rect(*box)
+        img = None
+        if kind == "foto":
+            cl = next((c for c in ia.image_clusters(pg, []) if abs(c[0].x0 - rect.x0) < 3 and abs(c[0].y0 - rect.y0) < 3), None)
+            img = ia.extract(pg, cl) if cl else None
+        if img is None:
+            img = render(pg, rect)
+        if img is not None:
+            out.append(save_image(img, slug, n))
+    return out
+
+
 def arts(page):
     words = page.get_text("words")
     out = []
@@ -86,8 +124,25 @@ def cuts_through(page, rect):
     return False
 
 
+def photo(page, rect, art_rect):
+    """A blokkban lévő legnagyobb termékfotó, közvetlenül a PDF-ből. A katalógus a fotókat vízszintes
+    csíkokban tárolja: a csíkokat összeillesztjük (ital_accessori.image_clusters / extract)."""
+    import ital_accessori as ia
+    best = None
+    for cl in ia.image_clusters(page, []):
+        b = cl[0]
+        if b.width < 60 or b.height < 40 or (b & rect).get_area() < 0.8 * b.get_area():
+            continue
+        if best is None or b.get_area() > best[0].get_area():
+            best = cl
+    if not best:
+        return None
+    img = ia.extract(page, best)
+    return img
+
+
 def render(page, rect):
-    zoom = 170 / 72
+    zoom = 220 / 72
     pix = page.get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), clip=rect, alpha=False)
     img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
     g = np.asarray(img.convert("L")) < 225
@@ -129,6 +184,18 @@ def main():
     products = load_products(SUPPLIER)
     updates, stats = {}, {"kép": 0, "adat": 0, "új": 0, "kihagyott kép": 0}
     for p in products:
+        if p["slug"] in SKIP_SLUGS:
+            continue
+        if p["slug"] in MANUAL:
+            entry = dict(enrichment.get(p["slug"], {}))
+            entry.setdefault("source", SUPPLIER)
+            entry.setdefault("sourceUrl", PDF)
+            entry.setdefault("specs", {})
+            clear_images(p["slug"])
+            entry["images"] = manual_images(doc, p["slug"])
+            updates[p["slug"]] = entry
+            stats["kép"] += 1
+            continue
         cands = [re.sub(r"/.*$", "", c.strip()) for c in re.split(r"[,\s]+", p["supplierCode"] or "") if c.strip()]
         hit = next(((c, index[c]) for c in cands if c in index), None)
         if not hit:
@@ -152,18 +219,15 @@ def main():
         for k, v in block_specs(pg, rect, r, full).items():
             specs.setdefault(k, v)
         entry["specs"] = specs
-        images = list(entry.get("images") or [])
-        if clean:
-            img = render(pg, rect)
-            if img is not None:
-                if is_new:
-                    clear_images(p["slug"])
-                    images = [save_image(img, p["slug"], 1)]
-                else:
-                    images = [i for i in images if not i.endswith(f"-{9}.webp")] + [save_image(img, p["slug"], 9)]
+        images = [i for i in (entry.get("images") or []) if not i.endswith("-9.webp")]
+        if not images:
+            img = photo(pg, rect, r) if not any(f in inside for f in foreign) else None
+            if img is not None and img.width >= 150:
+                clear_images(p["slug"])
+                images = [save_image(img, p["slug"], 1)]
                 stats["kép"] += 1
-        else:
-            stats["kihagyott kép"] += 1
+            else:
+                stats["kihagyott kép"] += 1
         entry["images"] = images
         updates[p["slug"]] = entry
         stats["adat"] += 1

@@ -113,7 +113,7 @@ def parse_specs(item, code):
 
 
 # a webáruház katalógusoldal-képei / táblázatai (nem termékfotók) – ezeket nem vesszük át
-SKIP_IMAGE = re.compile(r"-00(-\d+)?\.|-tab(-\d+)?\.|catalog|catalogo|listino", re.I)
+SKIP_IMAGE = re.compile(r"-00(-\d+)?\.|-tab(-\d+)?\.|catalog|catalogo|listino|^Tipo-", re.I)  # Tipo-*: beépítési rajz, a kép szélén levágva
 # ellenőrzötten hibás párosítások (az Excel kódja egy másik webáruház-termékre mutat)
 WRONG = {"25350100", "15270110"}
 NOT_MATCH_SLUGS = {"152811-tir-zsaner-garnitura-horg"}
