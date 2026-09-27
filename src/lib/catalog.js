@@ -120,6 +120,11 @@ export function productsIn(groupSlug, categorySlug) {
   return products.filter((p) => p.group === groupSlug && (!categorySlug || p.category === categorySlug));
 }
 
+// Főkategória kép (scripts/csoportkepek.py állítja elő)
+export function groupImage(slug) {
+  return `/csoportkepek/${slug}.webp`;
+}
+
 export function groupIcon(slug) {
   return GROUP_META[slug]?.icon ?? 'Package';
 }

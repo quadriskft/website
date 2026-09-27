@@ -4,7 +4,7 @@ import Icon from '../components/Icon.astro';
 import HorseIcon from '../components/HorseIcon.astro';
 import HeroAssembly from '../components/HeroAssembly.astro';
 import HeroVideo from '../components/HeroVideo.astro';
-import { groups, GROUP_META, stats, roundedCount } from '../lib/catalog.js';
+import { groups, GROUP_META, stats, roundedCount, groupImage } from '../lib/catalog.js';
 
 const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárvédő'];
 ---
@@ -92,7 +92,10 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
       <div class="grid grid-groups">
         {groups.map((g) => (
           <a href={`/termekek/${g.slug}`} class="card group-card">
-            <div class="group-icon"><Icon name={GROUP_META[g.slug]?.icon} size={24} /></div>
+            <div class="group-media">
+              <img src={groupImage(g.slug)} alt="" loading="lazy" width="800" height="560" />
+              <div class="group-icon"><Icon name={GROUP_META[g.slug]?.icon} size={20} /></div>
+            </div>
             <h3>{g.name}</h3>
             <p class="muted">{GROUP_META[g.slug]?.text}</p>
             <span class="group-count">{g.count} termék <Icon name="ArrowRight" size={16} /></span>
@@ -211,8 +214,14 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
 
   .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-bottom: 32px; flex-wrap: wrap; }
   .section-head h2 { margin: 10px 0 0; }
-  .group-card { padding: 24px; display: flex !important; flex-direction: column; }
-  .group-icon { width: 48px; height: 48px; border-radius: 13px; margin-bottom: 18px; }
+  .group-card { padding: 0 22px 22px; display: flex !important; flex-direction: column; overflow: hidden; }
+  .group-media { position: relative; margin: 0 -22px 18px; aspect-ratio: 10 / 7; background: #fff; border-bottom: 1px solid var(--line); overflow: hidden; }
+  .group-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+  .group-card:hover .group-media img { transform: scale(1.05); }
+  .group-media .group-icon {
+    position: absolute; left: 14px; bottom: 14px; width: 40px; height: 40px; border-radius: 11px;
+    background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(6px); box-shadow: 0 6px 16px -8px rgba(11, 31, 58, 0.35);
+  }
   .group-card h3 { font-size: 1.06rem; }
   .group-card p { font-size: 0.9rem; flex: 1; }
   .group-count { display: inline-flex; align-items: center; gap: 6px; font-size: 0.86rem; font-weight: 600; color: var(--accent); }

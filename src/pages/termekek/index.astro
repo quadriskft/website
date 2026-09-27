@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
-import { groups, GROUP_META, stats } from '../../lib/catalog.js';
+import { groups, GROUP_META, stats, groupImage } from '../../lib/catalog.js';
 ---
 <Base title="Termékkatalógus" description={`${stats.products} termék ${stats.groups} termékcsoportban jármű- és lószállító felépítmény gyártóknak.`}>
   <section class="page-head">
@@ -16,6 +16,9 @@ import { groups, GROUP_META, stats } from '../../lib/catalog.js';
     <div class="container catalog-list">
       {groups.map((g) => (
         <article class="card catalog-group">
+          <a href={`/termekek/${g.slug}`} class="cg-media" tabindex="-1" aria-hidden="true">
+            <img src={groupImage(g.slug)} alt="" loading="lazy" width="800" height="560" />
+          </a>
           <a href={`/termekek/${g.slug}`} class="cg-head">
             <span class="cg-icon"><Icon name={GROUP_META[g.slug]?.icon} size={22} /></span>
             <span>
@@ -36,7 +39,10 @@ import { groups, GROUP_META, stats } from '../../lib/catalog.js';
 
 <style>
   .catalog-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
-  .catalog-group { padding: 22px; }
+  .catalog-group { padding: 0 22px 22px; overflow: hidden; }
+  .cg-media { display: block; margin: 0 -22px 18px; aspect-ratio: 16 / 9; background: #fff; border-bottom: 1px solid var(--line); overflow: hidden; }
+  .cg-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+  .catalog-group:hover .cg-media img { transform: scale(1.04); }
   .cg-head { display: flex; gap: 14px; align-items: center; color: inherit; text-decoration: none !important; margin-bottom: 14px; }
   .cg-head:hover h2 { color: var(--accent); }
   .cg-head h2 { font-size: 1.1rem; margin: 0; }
