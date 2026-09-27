@@ -1,4 +1,31 @@
 {
+ "0156mnh-pvc-saroktakaro-szalag": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/profiles-for-refrigerated-body",
+  "sourceTitle": "Art. 156M",
+  "matchedCode": "156M",
+  "description": "Sarokprofil hűtős és dobozos felépítményekhez ütésálló PVC-ből.",
+  "specs": {
+   "Anyag": "gumi-PVC, előre vágott, öntapadós"
+  },
+  "images": [
+   "/termekkepek/0156mnh-pvc-saroktakaro-szalag-1.webp"
+  ]
+ },
+ "0156ne-pvc-saroktakaro-csik-fekete": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/profiles-for-refrigerated-body",
+  "sourceTitle": "Art. 156M",
+  "matchedCode": "156M",
+  "description": "Sarokprofil hűtős és dobozos felépítményekhez ütésálló PVC-ből.",
+  "specs": {
+   "Anyag": "gumi-PVC, előre vágott, öntapadós",
+   "Szín": "fekete"
+  },
+  "images": [
+   "/termekkepek/0156ne-pvc-saroktakaro-csik-fekete-1.webp"
+  ]
+ },
  "02-2200-le-mans-tetoventilator-12v": {
   "source": "G&C termékek",
   "sourceUrl": "https://gnc-systems.com/en/products/le-mans/",
@@ -1600,6 +1627,20 @@
    "/termekkepek/214202-ada-s-ajtoprofil-takarogumi-10-m-tekercs-1.webp",
    "/termekkepek/214202-ada-s-ajtoprofil-takarogumi-10-m-tekercs-2.webp",
    "/termekkepek/214202-ada-s-ajtoprofil-takarogumi-10-m-tekercs-3.webp"
+  ]
+ },
+ "214209-takaro-gumi-acel-c-sinhez-cp": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/profiles-for-semi-trailers",
+  "sourceTitle": "Art. 209M",
+  "matchedCode": "209M",
+  "description": "Ponyvás félpótkocsi profil gumi-PVC-ből: hidegben is rugalmas, biztosítja a vízzárást és az oldalponyva könnyű nyitását.",
+  "specs": {
+   "Anyag": "gumi-PVC",
+   "Tulajdonság": "alacsony hőmérsékleten is rugalmas"
+  },
+  "images": [
+   "/termekkepek/214209-takaro-gumi-acel-c-sinhez-cp-1.webp"
   ]
  },
  "214312-7800mm-50x52-mm-acel-c-sin": {
@@ -3544,6 +3585,54 @@
    "/termekkepek/508820-1-fokos-letra-horg-3.webp"
   ]
  },
+ "511127-25-mm-es-pvc-tomites-g": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer",
+  "sourceTitle": "Art. 111C",
+  "matchedCode": "111C",
+  "description": "Ajtó- és kerettömítő profil félpótkocsikhoz és hűtős félpótkocsikhoz: alacsony hőmérsékleten is rugalmas gumi-PVC tömítőajak merev PVC talpon.",
+  "specs": {
+   "Anyag": "gumi-PVC / merev PVC (koextrudált)",
+   "Méret": "25 mm",
+   "Szín": "szürke",
+   "Tulajdonság": "alacsony hőmérsékleten is rugalmas"
+  },
+  "images": [
+   "/termekkepek/511127-25-mm-es-pvc-tomites-g-1.webp"
+  ]
+ },
+ "511127-25-mm-es-pvc-tomites-w-b": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer",
+  "sourceTitle": "Art. 111C",
+  "matchedCode": "111C",
+  "description": "Ajtó- és kerettömítő profil félpótkocsikhoz és hűtős félpótkocsikhoz: alacsony hőmérsékleten is rugalmas gumi-PVC tömítőajak merev PVC talpon.",
+  "specs": {
+   "Anyag": "gumi-PVC / merev PVC (koextrudált)",
+   "Méret": "25 mm",
+   "Szín": "fehér talp / fekete tömítőajak",
+   "Tulajdonság": "alacsony hőmérsékleten is rugalmas"
+  },
+  "images": [
+   "/termekkepek/511127-25-mm-es-pvc-tomites-w-b-1.webp"
+  ]
+ },
+ "511132-25-mm-es-pvc-tomites-g": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer",
+  "sourceTitle": "Art. 111C",
+  "matchedCode": "111C",
+  "description": "Ajtó- és kerettömítő profil félpótkocsikhoz és hűtős félpótkocsikhoz: alacsony hőmérsékleten is rugalmas gumi-PVC tömítőajak merev PVC talpon.",
+  "specs": {
+   "Anyag": "gumi-PVC / merev PVC (koextrudált)",
+   "Méret": "25 mm",
+   "Szín": "szürke",
+   "Tulajdonság": "alacsony hőmérsékleten is rugalmas"
+  },
+  "images": [
+   "/termekkepek/511132-25-mm-es-pvc-tomites-g-1.webp"
+  ]
+ },
  "511207-50-70-mm-es-gumi-tomites-pfg": {
   "source": "Pommier Furgocar",
   "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/extendable-gaskets/gasket-20-m-rolls-panel-width-50-70-mm",
@@ -3613,6 +3702,85 @@
    "/termekkepek/512627-85-mm-es-pvc-tomites-pl-1.webp"
   ]
  },
+ "512827-40-mm-pvc-tomites-n-n": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer",
+  "sourceTitle": "Art. 28C",
+  "matchedCode": "28C",
+  "description": "Ajtó- és kerettömítő profil félpótkocsikhoz és hűtős félpótkocsikhoz: alacsony hőmérsékleten is rugalmas gumi-PVC tömítőajak merev PVC talpon.",
+  "specs": {
+   "Anyag": "gumi-PVC / merev PVC (koextrudált)",
+   "Méret": "40 mm",
+   "Szín": "fekete",
+   "Tulajdonság": "alacsony hőmérsékleten is rugalmas"
+  },
+  "images": [
+   "/termekkepek/512827-40-mm-pvc-tomites-n-n-1.webp"
+  ]
+ },
+ "512827-40-mm-pvc-tomites-w-b": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer",
+  "sourceTitle": "Art. 28C",
+  "matchedCode": "28C",
+  "description": "Ajtó- és kerettömítő profil félpótkocsikhoz és hűtős félpótkocsikhoz: alacsony hőmérsékleten is rugalmas gumi-PVC tömítőajak merev PVC talpon.",
+  "specs": {
+   "Anyag": "gumi-PVC / merev PVC (koextrudált)",
+   "Méret": "40 mm",
+   "Szín": "fehér talp / fekete tömítőajak",
+   "Tulajdonság": "alacsony hőmérsékleten is rugalmas"
+  },
+  "images": [
+   "/termekkepek/512827-40-mm-pvc-tomites-w-b-1.webp"
+  ]
+ },
+ "513627-35-mm-es-pvc-tomites-g": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer",
+  "sourceTitle": "Art. 36C",
+  "matchedCode": "36C",
+  "description": "Ajtó- és kerettömítő profil félpótkocsikhoz és hűtős félpótkocsikhoz: alacsony hőmérsékleten is rugalmas gumi-PVC tömítőajak merev PVC talpon.",
+  "specs": {
+   "Anyag": "gumi-PVC / merev PVC (koextrudált)",
+   "Méret": "35 mm",
+   "Szín": "szürke",
+   "Tulajdonság": "alacsony hőmérsékleten is rugalmas"
+  },
+  "images": [
+   "/termekkepek/513627-35-mm-es-pvc-tomites-g-1.webp"
+  ]
+ },
+ "513627c-35-mm-es-pvc-tomites-b-w": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer",
+  "sourceTitle": "Art. 36C",
+  "matchedCode": "36C",
+  "description": "Ajtó- és kerettömítő profil félpótkocsikhoz és hűtős félpótkocsikhoz: alacsony hőmérsékleten is rugalmas gumi-PVC tömítőajak merev PVC talpon.",
+  "specs": {
+   "Anyag": "gumi-PVC / merev PVC (koextrudált)",
+   "Méret": "35 mm",
+   "Szín": "fekete / fehér",
+   "Tulajdonság": "alacsony hőmérsékleten is rugalmas"
+  },
+  "images": [
+   "/termekkepek/513627c-35-mm-es-pvc-tomites-b-w-1.webp"
+  ]
+ },
+ "514427-44-mm-es-pvc-terelvalaszto-tomites-g": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/profiles-for-refrigerated-body",
+  "sourceTitle": "Art. 440C",
+  "matchedCode": "440C",
+  "description": "Sarokprofil hűtős és dobozos felépítményekhez ütésálló PVC-ből.",
+  "specs": {
+   "Anyag": "ütésálló PVC",
+   "Méret": "44 mm",
+   "Szín": "szürke"
+  },
+  "images": [
+   "/termekkepek/514427-44-mm-es-pvc-terelvalaszto-tomites-g-1.webp"
+  ]
+ },
  "514528-44-mm-es-pvc-terelvalaszto-tomites-g": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/158/",
@@ -3645,6 +3813,22 @@
    "/termekkepek/515006-22t-munkahenger-1.webp"
   ]
  },
+ "516245-65-mm-es-pvc-tomites-n-n": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/profiles-for-refrigerated-body",
+  "sourceTitle": "Art. 245C",
+  "matchedCode": "245C",
+  "description": "Hűtős felépítmények ajtótömítő profilja gumi-PVC-ből: alacsony hőmérsékleten is rugalmas, a merev részével együtt koextrudált.",
+  "specs": {
+   "Anyag": "gumi-PVC (koextrudált, merev PVC talppal)",
+   "Méret": "65 mm",
+   "Szín": "fekete",
+   "Tulajdonság": "alacsony hőmérsékleten is rugalmas"
+  },
+  "images": [
+   "/termekkepek/516245-65-mm-es-pvc-tomites-n-n-1.webp"
+  ]
+ },
  "517026-30-mm-es-pvc-tomites-g": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/157/",
@@ -3658,6 +3842,22 @@
   },
   "images": [
    "/termekkepek/517026-30-mm-es-pvc-tomites-g-1.webp"
+  ]
+ },
+ "517027-30-mm-es-pvc-tomites-b-w": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer",
+  "sourceTitle": "Art. 70C",
+  "matchedCode": "70C",
+  "description": "Ajtó- és kerettömítő profil félpótkocsikhoz és hűtős félpótkocsikhoz: alacsony hőmérsékleten is rugalmas gumi-PVC tömítőajak merev PVC talpon.",
+  "specs": {
+   "Anyag": "gumi-PVC / merev PVC (koextrudált)",
+   "Méret": "30 mm",
+   "Szín": "fekete / fehér",
+   "Tulajdonság": "alacsony hőmérsékleten is rugalmas"
+  },
+  "images": [
+   "/termekkepek/517027-30-mm-es-pvc-tomites-b-w-1.webp"
   ]
  },
  "518009-25t-munkahenger": {
@@ -3815,6 +4015,32 @@
   "images": [
    "/termekkepek/553065-utkozogumi-300x65x70-1.webp",
    "/termekkepek/553065-utkozogumi-300x65x70-2.webp"
+  ]
+ },
+ "553208-2-5-m-pvc-utkozesvedo-lec-cp": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/lateral-bumpers",
+  "sourceTitle": "Art. 208P",
+  "matchedCode": "208P",
+  "description": "Oldalfal-ütköző (ütközésvédő léc) az oldal- és hátfalak védelmére rakodáskor.",
+  "specs": {
+   "Anyag": "HDPE (újrahasznosítható), kb. 30%-kal könnyebb a PVC változatnál"
+  },
+  "images": [
+   "/termekkepek/553208-2-5-m-pvc-utkozesvedo-lec-cp-1.webp"
+  ]
+ },
+ "553208-3-m-pvc-utkozesvedo-lec-cp": {
+  "source": "Cimaplast",
+  "sourceUrl": "https://www.cimaplast.it/en/profiles/lateral-bumpers",
+  "sourceTitle": "Art. 208P",
+  "matchedCode": "208P",
+  "description": "Oldalfal-ütköző (ütközésvédő léc) az oldal- és hátfalak védelmére rakodáskor.",
+  "specs": {
+   "Anyag": "HDPE (újrahasznosítható), kb. 30%-kal könnyebb a PVC változatnál"
+  },
+  "images": [
+   "/termekkepek/553208-3-m-pvc-utkozesvedo-lec-cp-1.webp"
   ]
  },
  "553541-kupos-utkozogumi-45-60-35": {

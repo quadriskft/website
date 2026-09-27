@@ -352,25 +352,25 @@ Acél profilok;142730;PU00 Acél keret 140/27/3/7500;Cargoframes Czech;PU00-1402
 Acél profilok;142730;PU00 Acél keret 140/27/3/8000;Cargoframes Czech;PU00-1402730-00-8000;NINCS;nem;0;;;
 Acél profilok;141224;PUL0 Acél keret 112/24/3 mm;Cargoframes Czech;PUL0-1122430-00-0000;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;100001;Dugó perforált acél kerethez;Cargoframes Czech;ZAS0000001;NINCS;nem;0;;;
-Dobozos felépítmény alkatrészek;;0156MNH PVC saroktakaró szalag;Cimaplast;156M;NINCS;nem;0;;;
-Dobozos felépítmény alkatrészek;;0156NE PVC Saroktakaró csík, fekete;Cimaplast;54092100;NINCS;nem;0;;;
+Dobozos felépítmény alkatrészek;;0156MNH PVC saroktakaró szalag;Cimaplast;156M;MEGVAN;igen;1;156M;Art. 156M;https://www.cimaplast.it/en/profiles/profiles-for-refrigerated-body
+Dobozos felépítmény alkatrészek;;0156NE PVC Saroktakaró csík, fekete;Cimaplast;54092100;MEGVAN;igen;2;156M;Art. 156M;https://www.cimaplast.it/en/profiles/profiles-for-refrigerated-body
+Dobozos felépítmény alkatrészek;511127;25 mm -es PVC tömítés G;Cimaplast;111C;MEGVAN;igen;4;111C;Art. 111C;https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer
+Dobozos felépítmény alkatrészek;511132;25 mm -es PVC tömítés G;Cimaplast;111C;MEGVAN;igen;4;111C;Art. 111C;https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer
+Dobozos felépítmény alkatrészek;511127;25 mm -es PVC tömítés W/B;Cimaplast;111C;MEGVAN;igen;4;111C;Art. 111C;https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer
+Dobozos felépítmény alkatrészek;517027;30 mm -es PVC tömítés B/W;Cimaplast;70C;MEGVAN;igen;4;70C;Art. 70C;https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer
+Dobozos felépítmény alkatrészek;513627;35 mm-es PVC tömítés G;Cimaplast;36C;MEGVAN;igen;4;36C;Art. 36C;https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer
+Dobozos felépítmény alkatrészek;512827;40 mm PVC tömítés N/N;Cimaplast;28C;MEGVAN;igen;4;28C;Art. 28C;https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer
+Dobozos felépítmény alkatrészek;512827;40 mm PVC tömítés W/B;Cimaplast;28C;MEGVAN;igen;4;28C;Art. 28C;https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer
+Dobozos felépítmény alkatrészek;514427;44 mm-es PVC térelválasztó tömítés G;Cimaplast;440C;MEGVAN;igen;3;440C;Art. 440C;https://www.cimaplast.it/en/profiles/profiles-for-refrigerated-body
+Dobozos felépítmény alkatrészek;;513627C 35 mm-es PVC tömítés B/W;Cimaplast;36C;MEGVAN;igen;4;36C;Art. 36C;https://www.cimaplast.it/en/profiles/semi-trailer-and-refrigerated-semi-trailer
+Dobozos felépítmény alkatrészek;;553208/2,5 m PVC ütközésvédő léc CP;Cimaplast;208P;MEGVAN;igen;1;208P;Art. 208P;https://www.cimaplast.it/en/profiles/lateral-bumpers
+Dobozos felépítmény alkatrészek;516245;65 mm-es PVC tömítés N/N;Cimaplast;245C;MEGVAN;igen;4;245C;Art. 245C;https://www.cimaplast.it/en/profiles/profiles-for-refrigerated-body
+Dobozos felépítmény alkatrészek;553208/3;M PVC ütközésvédő léc CP;Cimaplast;208P;MEGVAN;igen;1;208P;Art. 208P;https://www.cimaplast.it/en/profiles/lateral-bumpers
+Elhúzható rolóponyvás rendszer;214209;"Takaró gumi acél ""C"" sínhez CP";Cimaplast;209M;MEGVAN;igen;2;209M;Art. 209M;https://www.cimaplast.it/en/profiles/profiles-for-semi-trailers
 Dobozos felépítmény alkatrészek;;0157GR PVC Saroktakaró csík, szürke;Cimaplast;;NINCS;nem;0;;;
-Dobozos felépítmény alkatrészek;511127;25 mm -es PVC tömítés G;Cimaplast;111C;NINCS;nem;0;;;
-Dobozos felépítmény alkatrészek;511132;25 mm -es PVC tömítés G;Cimaplast;111C;NINCS;nem;0;;;
-Dobozos felépítmény alkatrészek;511127;25 mm -es PVC tömítés W/B;Cimaplast;111C;NINCS;nem;0;;;
-Dobozos felépítmény alkatrészek;517027;30 mm -es PVC tömítés B/W;Cimaplast;70C;NINCS;nem;0;;;
-Dobozos felépítmény alkatrészek;513627;35 mm-es PVC tömítés G;Cimaplast;36C;NINCS;nem;0;;;
-Dobozos felépítmény alkatrészek;512827;40 mm PVC tömítés N/N;Cimaplast;28C;NINCS;nem;0;;;
-Dobozos felépítmény alkatrészek;512827;40 mm PVC tömítés W/B;Cimaplast;28C;NINCS;nem;0;;;
-Dobozos felépítmény alkatrészek;514427;44 mm-es PVC térelválasztó tömítés G;Cimaplast;440C;NINCS;nem;0;;;
-Dobozos felépítmény alkatrészek;;513627C 35 mm-es PVC tömítés B/W;Cimaplast;36C;NINCS;nem;0;;;
 Dobozos felépítmény alkatrészek;515727;55 mm-es PVC tömítés N/N;Cimaplast;570C;NINCS;nem;0;;;
-Dobozos felépítmény alkatrészek;;553208/2,5 m PVC ütközésvédő léc CP;Cimaplast;208P;NINCS;nem;0;;;
 Dobozos felépítmény alkatrészek;516550;65 mm-es PVC tömítés G;Cimaplast;016527;NINCS;nem;0;;;
-Dobozos felépítmény alkatrészek;516245;65 mm-es PVC tömítés N/N;Cimaplast;245C;NINCS;nem;0;;;
-Dobozos felépítmény alkatrészek;553208/3;M PVC ütközésvédő léc CP;Cimaplast;208P;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;;E87370 Edscha takaró gumi COMPACT 110;Cimaplast;4038087370;NINCS;nem;0;;;
-Elhúzható rolóponyvás rendszer;214209;"Takaró gumi acél ""C"" sínhez CP";Cimaplast;209M;NINCS;nem;0;;;
 Acél és alu rakoncák és szegők;227686;50x35x3,5 mm R4 oszlop profil elox;Constellium Decin;7686;NINCS;nem;0;;;
 Alumínium alváz profilok;202387;"""I"" 70 Kereszttartó";Constellium Decin;12387;NINCS;nem;0;;;
 Alumínium alváz profilok;207319;"""I"" 90 Kereszttartó";Constellium Decin;7319;NINCS;nem;0;;;
