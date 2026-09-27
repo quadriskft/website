@@ -1,24 +1,56 @@
 import catalog from '../data/catalog.json';
 import extra from '../data/termekadatok.json';
+import extended from '../data/bovitett.json';
 
-// FONTOS: a termékadatokban lévő beszállító (supplier, supplierCode) belső adat,
+// FONTOS: a termékadatokban lévő beszállító (supplier, supplierCode, source…) belső adat,
 // a weboldalon soha nem jelenik meg.
 
-export const groups = catalog.groups;
-
 // Az Excelből jövő alapadatok kiegészítése a beszállítói oldalakról letöltött
-// képekkel és műszaki adatokkal (scripts/termekadatok/). A forrás adatai
-// (sourceUrl, sourceTitle) belső adatok, nem kerülnek ki az oldalra.
-export const products = catalog.products.map((p) => {
+// képekkel és műszaki adatokkal (scripts/termekadatok/).
+const excelProducts = catalog.products.map((p) => {
   const e = extra[p.slug];
-  if (!e) return p;
+  const move = extended.moves?.[p.slug];
+  const out = move ? { ...p, group: move.group, category: move.category } : p;
+  if (!e) return out;
   return {
-    ...p,
+    ...out,
     images: e.images?.length ? e.images : p.images,
     specs: { ...(e.specs ?? {}), ...p.specs },
     description: p.description || e.description || '',
   };
 });
+
+// A beszállítók teljes kínálatából felvett további termékek (scripts/termekadatok/teljes_kinalat.py)
+const extendedProducts = (extended.products ?? []).map((p) => ({
+  slug: p.slug, code: p.code, name: p.name, group: p.group, category: p.category,
+  specs: p.specs ?? {}, images: p.images ?? [], description: p.description ?? '', documents: [], supplier: p.source,
+}));
+
+export const products = [...excelProducts, ...extendedProducts];
+
+// Csoportok és kategóriák: Excel + új csoportok/kategóriák, darabszámok újraszámolva, üresek elhagyva
+const groupList = catalog.groups.map((g) => ({
+  slug: g.slug,
+  name: extended.renameGroups?.[g.slug] ?? g.name,
+  categories: g.categories.map((c) => ({ slug: c.slug, name: c.name })),
+}));
+for (const g of extended.groups ?? []) {
+  groupList.push({ slug: g.slug, name: g.name, categories: [] });
+}
+for (const c of extended.categories ?? []) {
+  const g = groupList.find((x) => x.slug === c.group);
+  if (g && !g.categories.some((x) => x.slug === c.slug)) g.categories.push({ slug: c.slug, name: c.name });
+}
+const counts = new Map();
+for (const p of products) counts.set(`${p.group}/${p.category}`, (counts.get(`${p.group}/${p.category}`) ?? 0) + 1);
+export const groups = groupList
+  .map((g) => {
+    const categories = g.categories
+      .map((c) => ({ ...c, count: counts.get(`${g.slug}/${c.slug}`) ?? 0 }))
+      .filter((c) => c.count > 0);
+    return { ...g, categories, count: categories.reduce((n, c) => n + c.count, 0) };
+  })
+  .filter((g) => g.count > 0);
 
 const groupsBySlug = new Map(groups.map((g) => [g.slug, g]));
 const productsBySlug = new Map(products.map((p) => [p.slug, p]));
@@ -50,6 +82,10 @@ export const GROUP_META = {
 };
 
 // Lószállító felépítmény gyártóknak kiemelt kategóriák: [csoport, kategória, felirat]
+for (const g of extended.groups ?? []) {
+  if (!GROUP_META[g.slug]) GROUP_META[g.slug] = { icon: g.icon ?? 'Package', text: g.text ?? '' };
+}
+
 export const HORSE_SECTIONS = [
   ['gumiszonyegek', 'istallo-szonyeg', 'Istálló szőnyegek'],
   ['gumiszonyegek', 'rampa-szonyeg', 'Rámpa szőnyegek'],
