@@ -1686,6 +1686,61 @@
    "/termekkepek/216003-adaico-rakonca-zseb-festett-3.webp"
   ]
  },
+ "220326-n-u-25-mm-szego-profil-m": {
+  "source": "Metra",
+  "sourceUrl": "https://www.metraluminium.it",
+  "sourceTitle": "Metra B 326",
+  "matchedCode": "B 326",
+  "specs": {
+   "Tömeg": "0,729 kg/fm",
+   "Belső szélesség": "25,5 mm",
+   "Magasság": "40 mm",
+   "Kivitel": "U-szegő (végprofil) 25 mm-es oldalfalhoz",
+   "Ötvözet": "EN AW-6060 / EN AW-6005A",
+   "Állapot": "T5 – T6",
+   "Felület": "natúr"
+  },
+  "images": [
+   "/termekkepek/220326-n-u-25-mm-szego-profil-m-1.webp"
+  ]
+ },
+ "220326-u-25-mm-szego-profil-elox-m": {
+  "source": "Metra",
+  "sourceUrl": "https://www.metraluminium.it",
+  "sourceTitle": "Metra B 326",
+  "matchedCode": "B 326",
+  "specs": {
+   "Tömeg": "0,729 kg/fm",
+   "Belső szélesség": "25,5 mm",
+   "Magasság": "40 mm",
+   "Kivitel": "U-szegő (végprofil) 25 mm-es oldalfalhoz",
+   "Ötvözet": "EN AW-6060 / EN AW-6005A",
+   "Állapot": "T5 – T6",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/220326-u-25-mm-szego-profil-elox-m-1.webp"
+  ]
+ },
+ "221304-50x25-mm-ponyvatarto-zartszelveny-m": {
+  "source": "Metra",
+  "sourceUrl": "https://www.metraluminium.it",
+  "sourceTitle": "Metra R 1304",
+  "matchedCode": "R 1304",
+  "specs": {
+   "Tömeg": "0,700 kg/fm",
+   "Méret": "25 × 50 mm",
+   "Látható felület": "150 mm",
+   "Kerület": "150 mm",
+   "Kivitel": "zártszelvény (ponyvatartó)",
+   "Ötvözet": "EN AW-6060 / EN AW-6005A",
+   "Állapot": "T5 – T6",
+   "Felület": "natúr"
+  },
+  "images": [
+   "/termekkepek/221304-50x25-mm-ponyvatarto-zartszelveny-m-1.webp"
+  ]
+ },
  "221902-bordazott-padlo-profil-200-40-mm": {
   "source": "RE-ALL",
   "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/19.pdf#page=3",
@@ -1733,6 +1788,46 @@
    "/termekkepek/222528-u-szego-zartszelveny-erositessel-25-mm-elox-1.webp"
   ]
  },
+ "223350-350-mm-mono-profil-szakalas-elox": {
+  "source": "Metra",
+  "sourceUrl": "https://www.metraluminium.it",
+  "sourceTitle": "Metra R 7784",
+  "matchedCode": "R 7784",
+  "specs": {
+   "Tömeg": "3,308 kg/fm",
+   "Magasság": "350 mm",
+   "Vastagság": "25 mm",
+   "Látható felület": "396 mm",
+   "Kerület": "849 mm",
+   "Kivitel": "monoprofil oldalfal 350 mm, szakállas",
+   "Ötvözet": "EN AW-6060 / EN AW-6005A",
+   "Állapot": "T5 – T6",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/223350-350-mm-mono-profil-szakalas-elox-1.webp"
+  ]
+ },
+ "223367-400-mm-peremes-monoprofil-elox": {
+  "source": "Metra",
+  "sourceUrl": "https://www.metraluminium.it",
+  "sourceTitle": "Metra R 3367",
+  "matchedCode": "R 3367",
+  "specs": {
+   "Tömeg": "4,209 kg/fm",
+   "Magasság": "400 mm",
+   "Vastagság": "25 mm",
+   "Látható felület": "449 mm",
+   "Kerület": "947 mm",
+   "Kivitel": "monoprofil oldalfal 400 mm, peremes",
+   "Ötvözet": "EN AW-6060 / EN AW-6005A",
+   "Állapot": "T5 – T6",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/223367-400-mm-peremes-monoprofil-elox-1.webp"
+  ]
+ },
  "223563-tomites-also-zaroprofilhoz": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/136_gasket-for-lower-profile-eurolock",
@@ -1747,6 +1842,26 @@
   },
   "images": [
    "/termekkepek/223563-tomites-also-zaroprofilhoz-1.webp"
+  ]
+ },
+ "226830-300-mm-mono-profil-elox": {
+  "source": "Metra",
+  "sourceUrl": "https://www.metraluminium.it",
+  "sourceTitle": "Metra R 6830",
+  "matchedCode": "R 6830",
+  "specs": {
+   "Tömeg": "3,213 kg/fm",
+   "Magasság": "300 mm",
+   "Vastagság": "25 mm",
+   "Látható felület": "343 mm",
+   "Kerület": "745 mm",
+   "Kivitel": "monoprofil oldalfal 300 mm",
+   "Ötvözet": "EN AW-6060 / EN AW-6005A",
+   "Állapot": "T5 – T6",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/226830-300-mm-mono-profil-elox-1.webp"
   ]
  },
  "226915-30-mm-szego-profil-elox": {

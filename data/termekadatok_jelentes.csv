@@ -222,6 +222,7 @@ Ponyvás oldalfal profilok és szegők;222528;"""u"" szegő zártszelvény erős
 Ponyvás oldalfal profilok és szegők;245240;Billencs alsó 200x40 mm;Alu-SV;66S5200400;MEGVAN;igen;5;66S5200400;Tipper profile bottom 200x40 mm;https://www.alu-sv.com/en/goods.ep/4000010_al-dropsides-dropside-prof.-30-40-60-65/38000483_tipper-profile-bottom-200x40-mm
 Ponyvás oldalfal profilok és szegők;247243;Billencs felső 200x40 mm;Alu-SV;1141037243;MEGVAN;igen;7;1141037243;Tipper top profile 200x40 mm;https://www.alu-sv.com/en/goods.ep/4000010_al-dropsides-dropside-prof.-30-40-60-65/31000511_tipper-top-profile-200x40-mm
 Ponyvás oldalfal profilok és szegők;243240;Billencs középső 200x40 mm;Alu-SV;66S3200400;MEGVAN;igen;5;66S3200400;Tipper profile middle 200x40 mm;https://www.alu-sv.com/en/goods.ep/4000010_al-dropsides-dropside-prof.-30-40-60-65/38000482_tipper-profile-middle-200x40-mm
+Ponyvás oldalfal profilok és szegők;228240;Felső 100 mm elox profil;Alu-SV;8240;MEGVAN;igen;7;6611128240;Top profile Eurolock 100mm, anodized;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/15000001_top-profile-eurolock-100mm--anodized
 Ponyvás oldalfal profilok és szegők;227785;Köztes 100 mm elox profil;Alu-SV;6611127785;MEGVAN;igen;7;6611127785;Middle profile EUROLOCK 100mm, anodized;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1513_middle-profile-eurolock-100mm--anodized
 Ponyvás oldalfal profilok és szegők;223563;Tömítés alsó záróprofilhoz.;Alu-SV;1001063563;MEGVAN;igen;5;1001063563;Gasket for lower profile Eurolock;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/136_gasket-for-lower-profile-eurolock
 Rakományrögzítés;127111;3-részes rakományrögzítő ovál tányér KICS 350kg;Alu-SV;2100071111;MEGVAN;igen;7;2100071111;Pivoting stowing ring, 350kg;https://www.alu-sv.com/en/goods.ep/4000036_lashing-rings/34000390_pivoting-stowing-ring--350kg
@@ -252,7 +253,6 @@ Elhúzható rolóponyvás rendszer;6613576;MINI első FLAT alu oszlop elox;Alu-S
 Platós alkatrészek és kiegészítők;;3515P23 Alumínium zár ellendarab UNI elox;Alu-SV;2ZSB3;NINCS;nem;0;;;
 Platós alkatrészek és kiegészítők;117773;Kötőelem csavar;Alu-SV;117773;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;226915/n;"30 mm ""u"" Szegő profil";Alu-SV;6915;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;228240;Felső 100 mm elox profil;Alu-SV;8240;NINCS;nem;0;;;
 Rakományrögzítés;121206;Gyűrűs rakományrögzítő 400 daN D40;Alu-SV;2301206;NINCS;nem;0;;;
 Rakományrögzítés;1263935;Kombi ponyvatartó rakományrögzítő sín - acél;Alu-SV;226030093500;NINCS;nem;0;;;
 Rakományrögzítés;127159;Pálcás rakományrögzítő sín sülly.- alu/5m;Alu-SV;;NINCS;nem;0;;;
@@ -371,6 +371,16 @@ Dobozos felépítmény alkatrészek;;0157GR PVC Saroktakaró csík, szürke;Cima
 Dobozos felépítmény alkatrészek;515727;55 mm-es PVC tömítés N/N;Cimaplast;570C;NINCS;nem;0;;;
 Dobozos felépítmény alkatrészek;516550;65 mm-es PVC tömítés G;Cimaplast;016527;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;;E87370 Edscha takaró gumi COMPACT 110;Cimaplast;4038087370;NINCS;nem;0;;;
+Ponyvás oldalfal profilok és szegők;228197;Alsó szakállas 100 mm elox profil;Constellium Decin;8197;MEGVAN;igen;7;6611128197;Bottom profile Eurolock 100mm, anodized;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1515_bottom-profile-eurolock-100mm--anodized
+Ponyvás oldalfal profilok és szegők;227783;Alsó szakállas 200 mm elox profil;Constellium Decin;7783;MEGVAN;igen;7;6611127783;Bottom profile Eurolock 200 mm, anodized;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1511_bottom-profile-eurolock-200-mm--anodized
+Ponyvás oldalfal profilok és szegők;227948;Alsó tömítéses 100 mm elox profil;Constellium Decin;7948;MEGVAN;igen;7;6611127948;Lower profile EUROLOCK 100mm, an., sealing;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1514_lower-profile-eurolock-100mm--an.--sealing
+Ponyvás oldalfal profilok és szegők;227784;Alsó tömítéses 200 mm elox profil;Constellium Decin;7784;MEGVAN;igen;7;6611127784;Bottom profile EUROLOCK 200mm, an., sealin;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1512_bottom-profile-eurolock-200mm--an.--sealin
+Ponyvás oldalfal profilok és szegők;227047;Felső 200 mm elox profil;Constellium Decin;7047;MEGVAN;igen;7;6611128196;Top profile Eurolock 200 mm, anodized;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/8000106_top-profile-eurolock-200-mm--anodized
+Ponyvás oldalfal profilok és szegők;227047/n;Felső 200 mm profil;Constellium Decin;7047;MEGVAN;igen;7;6611008196;Top profile Eurolock 200 mm, al;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/8000248_top-profile-eurolock-200-mm--al
+Ponyvás oldalfal profilok és szegők;227046;Köztes 200 mm elox profil;Constellium Decin;7046;MEGVAN;igen;7;6611121777;Middle profile Eurolock 200 mm, anodized;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/28000241_middle-profile-eurolock-200-mm--anodized
+Ponyvás oldalfal profilok és szegők;227046/n;Köztes 200 mm profil;Constellium Decin;7046;MEGVAN;igen;7;6611007046;Middle profile Eurolock 200mm, al;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1498_middle-profile-eurolock-200mm--al
+Ponyvás oldalfal profilok és szegők;227045;Köztes ponyvás 200 mm elox profil;Constellium Decin;7045;MEGVAN;igen;7;6611127045;Tarpaulin profile Eurolock200mm, anodized;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1507_tarpaulin-profile-eurolock200mm--anodized
+Ponyvás oldalfal profilok és szegők;227045/n;Köztes ponyvás 200 mm profil;Constellium Decin;7045;MEGVAN;igen;7;6611007045;Tarpaulin profile Eurolock 200 mm, Al;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1497_tarpaulin-profile-eurolock-200-mm--al
 Acél és alu rakoncák és szegők;227686;50x35x3,5 mm R4 oszlop profil elox;Constellium Decin;7686;NINCS;nem;0;;;
 Alumínium alváz profilok;202387;"""I"" 70 Kereszttartó";Constellium Decin;12387;NINCS;nem;0;;;
 Alumínium alváz profilok;207319;"""I"" 90 Kereszttartó";Constellium Decin;7319;NINCS;nem;0;;;
@@ -391,19 +401,9 @@ Elhúzható rolóponyvás rendszer;6612225;Első oszlop 90/70 alu elox D;Constel
 Elhúzható rolóponyvás rendszer;6612226;Hátsó oszlop 128/35 alu elox D;Constellium Decin;12226;NINCS;nem;0;;;
 Ipari félgyártmányok;222891;Zártszelvény 60x30x2,5 R2,5 elox;Constellium Decin;12891;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;226900;100x25 mm Ponyvatartó zártszelvény D;Constellium Decin;6900;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;228197;Alsó szakállas 100 mm elox profil;Constellium Decin;8197;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;227783;Alsó szakállas 200 mm elox profil;Constellium Decin;7783;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;227948;Alsó tömítéses 100 mm elox profil;Constellium Decin;7948;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;227784;Alsó tömítéses 200 mm elox profil;Constellium Decin;7784;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;227047;Felső 200 mm elox profil;Constellium Decin;7047;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;227047/n;Felső 200 mm profil;Constellium Decin;7047;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;227046;Köztes 200 mm elox profil;Constellium Decin;7046;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;227046/CK10;Köztes 200 mm elox profil;Constellium Decin;12579;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;227046/n;Köztes 200 mm profil;Constellium Decin;7046;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;224230;Köztes 250 mm elox profil CD;Constellium Decin;14230;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;224230/n;Köztes 250 mm profil CD;Constellium Decin;14230;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;227045;Köztes ponyvás 200 mm elox profil;Constellium Decin;7045;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;227045/n;Köztes ponyvás 200 mm profil;Constellium Decin;7045;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;237847/n;"""h"" Ajtószegő 30 mm D";Constellium Decin;7847;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;237870;25x25 mm utánfutó sarokprofil elox;Constellium Decin;7870;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;237905/n;25x35 mm íves sarokprofil R50;Constellium Decin;7905;NINCS;nem;0;;;
@@ -565,14 +565,14 @@ Zárt-dobozos és hűtős profilok;238210;Lamella TARTÓ profil EX;Exlabesa PL;3
 Zárt-dobozos és hűtős profilok;238209;Lamella profil 200 mm EX;Exlabesa PL;38209;NINCS;nem;0;;;
 Billencs alkatrészek;35014251/2;- 400-as billencs első rakonca R/L;FTS;35900402;MEGVAN;igen;2;35900402;Piantone Stretto 100/60 verniciatura in Cataforesi;https://www.fts-farina.it/prodotto/piantone-stretto-100-60-verniciatura-in-cataforesi/
 Billencs alkatrészek;35014051/2;- 400/500-as hátsó billencs rakonca R/L acél zsebbel;FTS;35900405;MEGVAN;igen;1;35900405;Piantone Stretto 100/60 verniciatura in Cataforesi;https://www.fts-farina.it/prodotto/piantone-stretto-100-60-verniciatura-in-cataforesi/
-Billencs alkatrészek;145010;- 50 mm-es gömbcsukló készlet 3,5t;FTS;25350100;MEGVAN;nem;1;25350100;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=111
+Billencs alkatrészek;145010;- 50 mm-es gömbcsukló készlet 3,5t;FTS;25350100;MEGVAN;igen;1;25350100;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=111
 Billencs alkatrészek;142304;Billencs nyitókar B;FTS;15012304;MEGVAN;igen;2;15012304;15012304 – Leva comando Sinistra per apertura cerniere;https://www.fts-farina.it/prodotto/15012304-leva-comando-sinistra-per-apertura-cerniere/
 Billencs alkatrészek;142303;Billencs nyitókar J;FTS;15012303;MEGVAN;igen;2;15012303;15012303 – Leva comando Destra per apertura cerniere;https://www.fts-farina.it/prodotto/15012303-leva-comando-destra-per-apertura-cerniere/
 Billencs alkatrészek;3514430/1;Billencs rakonca szegő egyenes R/L;FTS;35144300/301;MEGVAN;igen;2;35144300;Piantone Stretto 100/60 verniciatura in Cataforesi;https://www.fts-farina.it/prodotto/piantone-stretto-100-60-verniciatura-in-cataforesi/
 Billencs alkatrészek;352240;Ellendarabos szegő 400mm R+L;FTS;35220400;MEGVAN;igen;2;35220400;Piantone in alluminio TL35 S/BATTUTA;https://www.fts-farina.it/prodotto/piantone-in-alluminio-tl35-s-battuta/
 Billencs alkatrészek;352260;Ellendarabos szegő 600mm R+L;FTS;35220600/R/L;MEGVAN;igen;2;35220600;Piantone in alluminio TL35 S/BATTUTA;https://www.fts-farina.it/prodotto/piantone-in-alluminio-tl35-s-battuta/
 Billencs alkatrészek;146012;Szivattyú 12V;FTS;14600012;MEGVAN;igen;1;14600012;14600012 – Centralina completa 12 Volt;https://www.fts-farina.it/prodotto/14600012-centralina-completa-12-volt/
-Billencs alkatrészek;354424;Top-Kuplung;FTS;35442401;MEGVAN;nem;3;35442401;35442401 – Gancio Grezzo per Articolazione Superiore;https://www.fts-farina.it/prodotto/35442401-gancio-grezzo-per-articolazione-superiore/
+Billencs alkatrészek;354424;Top-Kuplung;FTS;35442401;MEGVAN;igen;3;35442401;35442401 – Gancio Grezzo per Articolazione Superiore;https://www.fts-farina.it/prodotto/35442401-gancio-grezzo-per-articolazione-superiore/
 Dobozos felépítmény alkatrészek;508820;1 fokos létra horg.;FTS;50298820;MEGVAN;igen;2;50298820;50298820 – Scaletta leggera zincata estraibile a 1 gradino;https://www.fts-farina.it/prodotto/50298820-scaletta-leggera-zincata-estraibile-a-1-gradino/
 Dobozos felépítmény alkatrészek;5030270;2 fokos létra + platform TH;FTS;50430270;MEGVAN;igen;2;50430270;50430270 – Scaletta estraibile con pedana a 2 gradini zincata a caldo;https://www.fts-farina.it/prodotto/50430270-scaletta-estraibile-con-pedana-a-2-gradini-zincata-a-caldo/
 Dobozos felépítmény alkatrészek;501927;2 fokos létra TH platform;FTS;50419270;MEGVAN;igen;3;50419270;Scaletta estraibile con pedana a 2 gradini compatta;https://www.fts-farina.it/prodotto/scaletta-estraibile-con-pedana-a-2-gradini-compatta/
@@ -604,7 +604,7 @@ Dobozos felépítmény alkatrészek;555575;Kúpos ütközőgumi 55/75/40;FTS;550
 Dobozos felépítmény alkatrészek;556575;Kúpos ütközőgumi 65/75/50;FTS;55006575;MEGVAN;igen;2;55006575;55006575 – Tampone paracolpi conico in gomma;https://www.fts-farina.it/prodotto/55006575-tampone-paracolpi-conico-in-gomma/
 Dobozos felépítmény alkatrészek;557575;Kúpos ütközőgumi 75/75/50;FTS;55007575;MEGVAN;igen;2;55007575;55007575 – Tampone paracolpi conico in gomma;https://www.fts-farina.it/prodotto/55007575-tampone-paracolpi-conico-in-gomma/
 Dobozos felépítmény alkatrészek;891235;Nagy kapaszkodó;FTS;80901235;MEGVAN;igen;2;80901235;80901235 – Maniglia di risalita in poliuretano nero;https://www.fts-farina.it/prodotto/80901235-maniglia-di-risalita-in-poliuretano-nero/
-Dobozos felépítmény alkatrészek;828010;Nyers zsanér bak + csavar;FTS;80280100;MEGVAN;nem;1;80280100;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=315
+Dobozos felépítmény alkatrészek;828010;Nyers zsanér bak + csavar;FTS;80280100;MEGVAN;igen;1;80280100;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=315
 Dobozos felépítmény alkatrészek;899210/C;RM hátsóajtó zsanérbak TS;FTS;80399210/C;MEGVAN;igen;3;80399210;80399210 – Cerniera posteriore in Inox composto da cardine e perno;https://www.fts-farina.it/prodotto/80399210-cerniera-posteriore-in-inox-composto-da-cardine-e-perno/
 Dobozos felépítmény alkatrészek;899210;RM hátsóajtó zsanérlap+bak 280/3 TS;FTS;80399210;MEGVAN;igen;3;80399210;80399210 – Cerniera posteriore in Inox composto da cardine e perno;https://www.fts-farina.it/prodotto/80399210-cerniera-posteriore-in-inox-composto-da-cardine-e-perno/
 Dobozos felépítmény alkatrészek;806307;RM oldalajtó zsanér, lépcsős 140/179 mm;FTS;80600307;MEGVAN;igen;3;80600307;Cerniera laterale salto gomma;https://www.fts-farina.it/prodotto/cerniera-laterale-salto-gomma/
@@ -631,12 +631,12 @@ Platós alkatrészek és kiegészítők;452871;Alváz rögzítő konzol 4/5-5/6;
 Platós alkatrészek és kiegészítők;452921;Alváz rögzítő konzol 7/8-10/12;FTS;45292110;MEGVAN;igen;2;45292110;45292110 – Supporto fissaggio chassis zincato spessori 7/8-10/12;https://www.fts-farina.it/prodotto/45292110-supporto-fissaggio-chassis-zincato-spessori-7-8-10-12/
 Platós alkatrészek és kiegészítők;307955/TH;Aláfutásgátló konzol 550 mm;FTS;57900155;MEGVAN;igen;3;57900155;Parabiciclette ribaltabile H.550;https://www.fts-farina.it/prodotto/parabiciclette-ribaltabile-h-550/
 Platós alkatrészek és kiegészítők;307955;Aláfutásgátló konzol 550 mm horg.;FTS;57900055;MEGVAN;igen;3;57900055;Parabiciclette ribaltabile H.550;https://www.fts-farina.it/prodotto/parabiciclette-ribaltabile-h-550/
-Platós alkatrészek és kiegészítők;307155;Aláfutásgátló konzol 572 mm;FTS;57700155;MEGVAN;nem;2;57700155;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=268
+Platós alkatrészek és kiegészítők;307155;Aláfutásgátló konzol 572 mm;FTS;57700155;MEGVAN;igen;2;57700155;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=268
 Platós alkatrészek és kiegészítők;309055;Aláfutásgátló konzol 700 mm horg.;FTS;58900055;MEGVAN;igen;3;58900055;Parabiciclette ribaltabile H.700;https://www.fts-farina.it/prodotto/parabiciclette-ribaltabile-h-700/
-Platós alkatrészek és kiegészítők;308155/TH;Aláfutásgátló konzol 710 mm;FTS;58800155;MEGVAN;nem;0;58800155;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=268
+Platós alkatrészek és kiegészítők;308155/TH;Aláfutásgátló konzol 710 mm;FTS;58800155;MEGVAN;igen;0;58800155;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=268
 Platós alkatrészek és kiegészítők;5032110;Békazár 140 mm + ellendarab;FTS;10352110;MEGVAN;igen;3;10352110;Chiusura a laccio;https://www.fts-farina.it/prodotto/chiusura-a-laccio/
 Platós alkatrészek és kiegészítők;352540;Egymásba záródó Z-zár 400;FTS;35250400;MEGVAN;igen;1;35250400;35100500 – Montante Centrale per Piantone TL35 – 35250400;https://www.fts-farina.it/prodotto/35100500-montante-centrale-per-piantone-tl35-35250400/
-Platós alkatrészek és kiegészítők;352202;Egymásbazáródó zár ellendarab;FTS;35220002;MEGVAN;nem;1;35220002;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=139
+Platós alkatrészek és kiegészítők;352202;Egymásbazáródó zár ellendarab;FTS;35220002;MEGVAN;igen;1;35220002;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=139
 Platós alkatrészek és kiegészítők;456511;Horganyzott EUROCARGO konzol;FTS;45165110;MEGVAN;igen;3;45165110;Supporto falso telaio EUROCARGO;https://www.fts-farina.it/prodotto/supporto-falso-telaio-eurocargo/
 Platós alkatrészek és kiegészítők;507110;Horganyzott fellépő;FTS;50170110;MEGVAN;igen;3;50170110;Pedana salita con fermo;https://www.fts-farina.it/prodotto/pedana-salita-con-fermo/
 Platós alkatrészek és kiegészítők;456320;Horganyzott kiskonzol DAILY L.50-H.70;FTS;45163200;MEGVAN;igen;3;45163200;Supporto falso telaio DAILY L.50 H.70;https://www.fts-farina.it/prodotto/supporto-falso-telaio-daily-l-50-h-70/
@@ -663,11 +663,10 @@ Platós alkatrészek és kiegészítők;152815/2;TIR-zsanér apa;FTS;15280510;ME
 Platós alkatrészek és kiegészítők;152760;TIR-zsanér apa rész alu-hoz;FTS;15276110;MEGVAN;igen;2;15276110;15276110 – Perno in Lamiera Stampata Zincato Ø12;https://www.fts-farina.it/prodotto/15276110-perno-in-lamiera-stampata-zincato-o12/
 Platós alkatrészek és kiegészítők;152823;TIR-zsanér garnitúra RM;FTS;15282310/15280310;MEGVAN;igen;3;15282310;Cerniera Tir leggera BM;https://www.fts-farina.it/prodotto/cerniera-tir-leggera-bm/
 Platós alkatrészek és kiegészítők;152814;TIR-zsanér garnitúra TH;FTS;15281410/15280410;MEGVAN;igen;3;15281410;Cerniera Tir leggera BM;https://www.fts-farina.it/prodotto/cerniera-tir-leggera-bm/
-Platós alkatrészek és kiegészítők;152811;TIR-zsanér garnitúra horg.;FTS;15279110;MEGVAN;nem;1;15279110;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=76
 Platós alkatrészek és kiegészítők;152791;TIR-zsanér lapka 50mm;FTS;15279110;MEGVAN;igen;1;15279110;15279110 – Piastrina zincata Int.50;https://www.fts-farina.it/prodotto/15279110-piastrina-zincata-int-50/
 Platós alkatrészek és kiegészítők;152781;TIR-zsanér lapka 70mm;FTS;15278110;MEGVAN;igen;1;15278110;15278110 – Piastrina zincata Int.70;https://www.fts-farina.it/prodotto/15278110-piastrina-zincata-int-70/
-Platós alkatrészek és kiegészítők;351503;Z-zár ellendarab hegeszthető kicsi 20;FTS;35150250;MEGVAN;nem;1;35150250;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=144
-Platós alkatrészek és kiegészítők;351502;Z-zár ellendarab hegeszthető nagy 30;FTS;35150200;MEGVAN;nem;1;35150200;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=140
+Platós alkatrészek és kiegészítők;351503;Z-zár ellendarab hegeszthető kicsi 20;FTS;35150250;MEGVAN;igen;1;35150250;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=144
+Platós alkatrészek és kiegészítők;351502;Z-zár ellendarab hegeszthető nagy 30;FTS;35150200;MEGVAN;igen;1;35150200;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=140
 Platós alkatrészek és kiegészítők;351501;Z-zár ellendarab, csavarozható;FTS;35150100;MEGVAN;igen;1;35150100;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=140
 Ponyvarendszer kiegészítők;103055;100 x 30 mm Dugó aláfutásgátlóhoz;FTS;58923055;MEGVAN;igen;2;58923055;58923055 – Tappo in pcv per profilo diritto;https://www.fts-farina.it/prodotto/58923055-tappo-in-pcv-per-profilo-diritto/
 Ponyvarendszer kiegészítők;100516;100x25 Dugó zártszelvényhez;FTS;55160100;MEGVAN;igen;2;55160100;55160100 – Tappo asta centina in gomma;https://www.fts-farina.it/prodotto/55160100-tappo-asta-centina-in-gomma/
@@ -743,6 +742,7 @@ Platós alkatrészek és kiegészítők;152531;Billencs zsanér lap;FTS;322531;N
 Platós alkatrészek és kiegészítők;451030/TH;Kiskonzol IVECO;FTS;2001030;NINCS;nem;0;;;
 Platós alkatrészek és kiegészítők;152815;TIR-zsanér garnitúra DC;FTS;152815;NINCS;nem;0;;;
 Platós alkatrészek és kiegészítők;152901;TIR-zsanér garnitúra NAGY horg.;FTS;152901;NINCS;nem;0;;;
+Platós alkatrészek és kiegészítők;152811;TIR-zsanér garnitúra horg.;FTS;15279110;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;380022;Alsó adapter 27-es csőhöz, PWP kocka;FTS;736022;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;380081;PWP Racsnis feszítő sliccelt L;FTS;34480081;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;380080;PWP Racsnis feszítő sliccelt R;FTS;34480080;NINCS;nem;0;;;
@@ -1020,12 +1020,12 @@ Rakományrögzítés;;121018-SL Rakományrögzítő rúd ALU 1650-2050 mm;Load L
 Rakományrögzítés;121019;Rakományrögzítő rúd ALU 2050-2450 mm;Load Look;18AL;NINCS;nem;0;;;
 Hátsó ajtók és áthajtó rámpák;;Rámpa 040x615x2500;MetalMec;MM045ST.60.25;NINCS;nem;0;;;
 Hátsó ajtók és áthajtó rámpák;;Áthajtó rámpa;MetalMec;MS030AC;NINCS;nem;0;;;
-Ponyvarendszer kiegészítők;221304;50x25 mm Ponyvatartó zártszelvény M;Metra;R1304;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;220326/n;"""u"" 25 mm szegő profil M";Metra;B0326;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;220326;"""u"" 25 mm szegő profil elox M";Metra;B0326;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;226830;300 mm MONO profil elox;Metra;R6830;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;223350;350 mm MONO profil szakálas elox;Metra;R7784;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;223367;400 mm peremes MONOprofil elox;Metra;3367;NINCS;nem;0;;;
+Ponyvarendszer kiegészítők;221304;50x25 mm Ponyvatartó zártszelvény M;Metra;R1304;MEGVAN;igen;8;R 1304;Metra R 1304;https://www.metraluminium.it
+Ponyvás oldalfal profilok és szegők;220326/n;"""u"" 25 mm szegő profil M";Metra;B0326;MEGVAN;igen;7;B 326;Metra B 326;https://www.metraluminium.it
+Ponyvás oldalfal profilok és szegők;220326;"""u"" 25 mm szegő profil elox M";Metra;B0326;MEGVAN;igen;7;B 326;Metra B 326;https://www.metraluminium.it
+Ponyvás oldalfal profilok és szegők;226830;300 mm MONO profil elox;Metra;R6830;MEGVAN;igen;9;R 6830;Metra R 6830;https://www.metraluminium.it
+Ponyvás oldalfal profilok és szegők;223350;350 mm MONO profil szakálas elox;Metra;R7784;MEGVAN;igen;9;R 7784;Metra R 7784;https://www.metraluminium.it
+Ponyvás oldalfal profilok és szegők;223367;400 mm peremes MONOprofil elox;Metra;3367;MEGVAN;igen;9;R 3367;Metra R 3367;https://www.metraluminium.it
 Alumínium lemezek;;S 1,2x1250x2500mm Fehér festett lemez RAL9016;Novelis;;NINCS;nem;0;;;
 Alumínium lemezek;;S 1,2x1500x2500mm Fehér festett lemez RAL9016;Novelis;;NINCS;nem;0;;;
 Alumínium lemezek;;S 1,2x1500x3000mm Fehér festett lemez RAL9016;Novelis;;NINCS;nem;0;;;
