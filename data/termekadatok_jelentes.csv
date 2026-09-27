@@ -284,7 +284,9 @@ Sárvédők, szerszámosládák;;J50027/B 280FT Csapott tetejű sárvédő, feh�
 Sárvédők, szerszámosládák;;J504335 Szerszámos láda 500x430x350 mm;BMC Flexpar;C-504335;NINCS;nem;0;;;
 Sárvédők, szerszámosládák;;J605040 Szerszámos láda 600x500x400 mm;BMC Flexpar;C-605040;NINCS;nem;0;;;
 Sárvédők, szerszámosládák;;J804550 Szerszámos láda 800x450x500 mm;BMC Flexpar;C-804550;NINCS;nem;0;;;
-Alumínium alváz profilok;207833;100x30 mm Aláfutásgátló elox profil;BODEGA;TB27833;NINCS;nem;0;;;
+Alumínium alváz profilok;207833;100x30 mm Aláfutásgátló elox profil;BODEGA;TB27833;MEGVAN;igen;4;TB27833;Bodega TB27833;https://www.bodega.it
+Ponyvás oldalfal profilok és szegők;228153;"""u"" 25 mm szegő profil elox B";BODEGA;TB28153;MEGVAN;igen;5;TB28153;Bodega TB28153;https://www.bodega.it
+Ponyvás oldalfal profilok és szegők;225549;400 mm peremes oldalfal elox;BODEGA;TB25549;MEGVAN;igen;5;TB25549;Bodega TB25549;https://www.bodega.it
 Alumínium alváz profilok;2015290;15 mm Keretprofil elox;BODEGA;TB50290;NINCS;nem;0;;;
 Alumínium alváz profilok;2018290;18 mm Keretprofil elox;BODEGA;TB50042;NINCS;nem;0;;;
 Alumínium padló profilok;226821/21;Padló profil 200 mm;BODEGA;TB48968;NINCS;nem;0;;;
@@ -294,12 +296,10 @@ Ipari félgyártmányok;252535;60x40x3 alu zártszelvény;BODEGA;;NINCS;nem;0;;;
 Ipari félgyártmányok;251659;80x50x4 mm R4 Alu Zártszelvény;BODEGA;TB51659;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;223032;Spitz profil 100 mm;BODEGA;TB53032;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;222005;Spitz profil 150 mm magas T;BODEGA;T1.2005.0;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;228153;"""u"" 25 mm szegő profil elox B";BODEGA;TB28153;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;225455/n;"""u"" 35 mm szegő profil";BODEGA;TB54550;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;225455;"""u"" 35 mm szegő profil elox";BODEGA;TB54550;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;226671;400 mm gumis oldalfal elox;BODEGA;TB36671;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;226795;400 mm peremes gumis oldalfal elox;BODEGA;TB36795;NINCS;nem;0;;;
-Ponyvás oldalfal profilok és szegők;225549;400 mm peremes oldalfal elox;BODEGA;TB25549;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;226113;Felső 200 mm elox profil B;BODEGA;TB36113;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;226114;Köztes 200 mm elox profil B;BODEGA;TB36114;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;225040;Köztes 250 mm elox profil;BODEGA;TB50040;NINCS;nem;0;;;
@@ -321,24 +321,24 @@ Dobozos felépítmény alkatrészek;107046;Sarokelem felső RAL9006;Car-Alu;1013
 Speciális felépítmény alkatrészek;055960;Műanyag lépcsőnyitó - nagy;Car-Alu;1001025;MEGVAN;igen;0;1001025;INBOUWHANDGREEP 38MM KUNSTSTOF ZWART Packed by 1 piece Black, synthetic;https://www.caralushop.nl/en/catalog/categories/660
 Speciális felépítmény alkatrészek;;Q8033 elox Profil keféhez;Car-Alu;1012514-TZ1-6000;MEGVAN;igen;3;1012514-TZ1-6000;ALU SEALING PROFILE F/BRISTLE-silver 1-L= 6,00 m Packed by 1 piece Anodised aluminium (silver) 6.000 mm;https://www.caralushop.nl/en/catalog/categories/1006
 Speciális felépítmény alkatrészek;;Q8035 25 mm Kefe;Car-Alu;1012515-zwart-3000;MEGVAN;igen;1;1012515-ZWART-3000;STRIPBORSTEL 25mm IJZER-black-L= 3,00 m Packed by 1 piece Steel 3.000 mm;https://www.caralushop.nl/en/catalog/categories/1006
+Speciális felépítmény alkatrészek;;Q8037 Kefe 25 mm elox profillal;Car-Alu;;MEGVAN;igen;1;1012515-ZWART-3000;STRIPBORSTEL 25mm IJZER-black-L= 3,00 m Packed by 1 piece Steel 3.000 mm;https://www.caralushop.nl/en/catalog/categories/1006
 Speciális felépítmény alkatrészek;;Q8040 Kefe 40 mm elox profillal;Car-Alu;1013163ZWART-3000;MEGVAN;igen;1;1013163-ZWART-3000;STRIPBORSTEL 40mm IJZER-black-L= 3,00 m Packed by 1 piece Steel 3.000 mm;https://www.caralushop.nl/en/catalog/categories/1006
+Zárt-dobozos és hűtős profilok;231726;B Tömítéses ajtószegő 25 mm elox;Car-Alu;1317 260-011;MEGVAN;igen;3;1011357-TZ2-7000;AANSLAGPROFIEL 25mm-silver 2-L= 7,00 m Anodised aluminium (silver) 7.000 mm;https://www.caralushop.nl/en/catalog/categories/711
+Zárt-dobozos és hűtős profilok;231725/n;"Belga ""h"" szegő 25 mm";Car-Alu;1317 250-000;MEGVAN;igen;3;1011356-ONB-7000;DEURPROFIEL-raw-L= 7,00 m Mill finished aluminium 7.000 mm;https://www.caralushop.nl/en/catalog/categories/711
 Zárt-dobozos és hűtős profilok;231725;"Belga ""h"" szegő 25 mm elox";Car-Alu;1011356-tz2-7000;MEGVAN;igen;3;1011356-TZ2-7000;DEURPROFIEL-silver 2-L= 7,00 m Anodised aluminium (silver) 7.000 mm;https://www.caralushop.nl/en/catalog/categories/711
 Zárt-dobozos és hűtős profilok;231245/n;Esőcsatorna kicsi 5000;Car-Alu;1245 000-000;MEGVAN;igen;1;1245 000-000;Gutter profiles;https://www.caralushop.nl/en/catalog/categories/721
 Zárt-dobozos és hűtős profilok;231245;Esőcsatorna kicsi elox 5000;Car-Alu;1010650-TZ2-5000;MEGVAN;igen;3;1010650-TZ2-5000;GOOTLIJST 23,5x18x12,5x1,5mm 50SW-silver 2-L= 5,00 m Packed by 1 piece Anodised aluminium (silver) 5.000 mm;https://www.caralushop.nl/en/catalog/categories/721
+Zárt-dobozos és hűtős profilok;231305/n;Esőcsatorna mini 5000;Car-Alu;1305 115-000;MEGVAN;igen;3;1011218-ONB-5000;GOOTLIJST 23x5x18x12,5x1,5mm 50ST-raw-L= 5,00 m Packed by 1 piece Mill finished aluminium 5.000 mm;https://www.caralushop.nl/en/catalog/categories/721
+Zárt-dobozos és hűtős profilok;231165;Lépcső sarok profil 20x20 mm elox;Car-Alu;1165 000-001;MEGVAN;igen;3;1010477-TZ1-5000;TRAPKANT 20mm + NEUS-silver 1-L= 5,00 m Packed by 1 piece Anodised aluminium (silver) 5.000 mm;https://www.caralushop.nl/en/catalog/categories/1001
+Zárt-dobozos és hűtős profilok;232460;"Tömítés az ""u"" ajtószegő profilhoz";Car-Alu;2460 060-000;MEGVAN;igen;1;1021543-R50;RUBBER TBV AANSLAGPROFIEL Rol 50 m Deliverd by 1 roll Black, rubber;https://www.caralushop.nl/en/catalog/categories/678
 Ipari félgyártmányok;251316;40x25x4 mm R zártszelvény;Car-Alu;1316 010-000;NINCS;nem;0;;;
 Kédergumik;;"M1 001 ""C""sín - alumínium";Car-Alu;1172 340-000;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;221746;H toldó - szegő profil elox;Car-Alu;1320 090-011;NINCS;nem;0;;;
 Speciális felépítmény alkatrészek;092901;Műanyag lépcsőnyitó - kicsi;Car-Alu;;NINCS;nem;0;;;
-Speciális felépítmény alkatrészek;;Q8037 Kefe 25 mm elox profillal;Car-Alu;;NINCS;nem;0;;;
 Speciális felépítmény alkatrészek;617280;Zár ellendarab ívelt lemez;Car-Alu;7280 112-000;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;231726;B Tömítéses ajtószegő 25 mm elox;Car-Alu;1317 260-011;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;231729;"B front tömítéses ""u"" ajtószegő 25 mm elox";Car-Alu;1317 290-011;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;231725/n;"Belga ""h"" szegő 25 mm";Car-Alu;1317 250-000;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;235215;Dobozos keretprofil ívelt elox;Car-Alu;1305 215-011;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;233901;Dobozos Íves alsó keretprofil elox 25 mm panelhez;Car-Alu;139001;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;231305/n;Esőcsatorna mini 5000;Car-Alu;1305 115-000;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;231165;Lépcső sarok profil 20x20 mm elox;Car-Alu;1165 000-001;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;232460;"Tömítés az ""u"" ajtószegő profilhoz";Car-Alu;2460 060-000;NINCS;nem;0;;;
 Acél profilok;;141520/perf, PU00 Acél keret 110/15/2/5100;Cargoframes Czech;PU00-1101520-H3-5100;NINCS;nem;0;;;
 Acél profilok;141265;ACÉL hossztartó 120/60/5 mm;Cargoframes Czech;U0FE-1206005-00;NINCS;nem;0;;;
 Acél profilok;141266;ACÉL hossztartó 120/60/6 mm;Cargoframes Czech;U0FE-1206006-00;NINCS;nem;0;;;

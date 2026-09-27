@@ -65,6 +65,18 @@ def norm(s):
     return re.sub(r"[\s._-]+", "", s or "").upper()
 
 
+# Régi Caralu kódok (a webshopban már nem szerepelnek) -> mai cikkszám, megnevezés és méret alapján
+# kiválasztva. Csak az egyértelmű eseteket párosítjuk.
+MANUAL = {
+    "1165 000-001": "1010477-TZ1-5000",   # lépcső sarokprofil 20 mm, eloxált (TRAPKANT 20mm + NEUS)
+    "1305 115-000": "1011218-ONB-5000",   # esőcsatorna mini (GOOTLIJST 23x5x18x12,5)
+    "1317 250-000": "1011356-ONB-7000",   # belga "h" szegő 25 mm natúr (az eloxált párja 1011356-TZ2)
+    "1317 260-011": "1011357-TZ2-7000",   # tömítéses ajtószegő 25 mm eloxált (AANSLAGPROFIEL 25mm)
+    "2460 060-000": "1021543-R50",        # tömítés az ajtószegő profilhoz (RUBBER TBV AANSLAGPROFIEL)
+    "Q8037": "1012515-ZWART-3000",        # 25 mm kefe (STRIPBORSTEL 25mm) – a profil a Q8033
+}
+
+
 def main():
     rows = crawl()
     by_article = {norm(r["article"]): r for r in rows}
@@ -73,7 +85,8 @@ def main():
     ok, missing = 0, []
     for p in products:
         code = p["supplierCode"] or ""
-        hit = by_article.get(norm(code))
+        manual = MANUAL.get(code) or next((v for k, v in MANUAL.items() if p["name"].startswith(k)), None)
+        hit = by_article.get(norm(manual)) if manual else by_article.get(norm(code))
         if not hit and code:
             # részleges egyezés: azonos alapszám (pl. 1012515-zwart-3000 -> 1012515-…)
             base = re.match(r"^(\d{7})", code.replace(" ", ""))

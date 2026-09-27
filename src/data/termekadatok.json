@@ -1230,6 +1230,21 @@
    "/termekkepek/203492-autoszallito-padlo-keret-profil-30-mm-1.webp"
   ]
  },
+ "207833-100x30-mm-alafutasgatlo-elox-profil": {
+  "source": "BODEGA",
+  "sourceUrl": "https://www.bodega.it",
+  "sourceTitle": "Bodega TB27833",
+  "matchedCode": "TB27833",
+  "specs": {
+   "Tömeg": "1,246 kg/fm",
+   "Méret": "100 × 30 mm",
+   "Kivitel": "aláfutásgátló profil",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/207833-100x30-mm-alafutasgatlo-elox-profil-1.webp"
+  ]
+ },
  "211086-ada-tetokiemelo-pumpa-hp-lift-450-mm": {
   "source": "ADAICO",
   "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=0601086",
@@ -1844,6 +1859,22 @@
    "/termekkepek/223563-tomites-also-zaroprofilhoz-1.webp"
   ]
  },
+ "225549-400-mm-peremes-oldalfal-elox": {
+  "source": "BODEGA",
+  "sourceUrl": "https://www.bodega.it",
+  "sourceTitle": "Bodega TB25549",
+  "matchedCode": "TB25549",
+  "specs": {
+   "Tömeg": "4,116 kg/fm",
+   "Magasság": "400 mm",
+   "Vastagság": "25 mm",
+   "Kivitel": "peremes oldalfal-profil",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/225549-400-mm-peremes-oldalfal-elox-1.webp"
+  ]
+ },
  "226830-300-mm-mono-profil-elox": {
   "source": "Metra",
   "sourceUrl": "https://www.metraluminium.it",
@@ -2058,6 +2089,22 @@
    "/termekkepek/227948-also-tomiteses-100-mm-elox-profil-1.webp"
   ]
  },
+ "228153-u-25-mm-szego-profil-elox-b": {
+  "source": "BODEGA",
+  "sourceUrl": "https://www.bodega.it",
+  "sourceTitle": "Bodega TB28153",
+  "matchedCode": "TB28153",
+  "specs": {
+   "Tömeg": "0,724 kg/fm",
+   "Belső szélesség": "29,5 mm",
+   "Magasság": "40 mm",
+   "Kivitel": "U-szegő 25 mm-es oldalfalhoz",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/228153-u-25-mm-szego-profil-elox-b-1.webp"
+  ]
+ },
  "228197-also-szakallas-100-mm-elox-profil": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1515_bottom-profile-eurolock-100mm--anodized",
@@ -2110,6 +2157,20 @@
    "/termekkepek/231144-z-esoveto-alu-profil-60-mm-1.webp"
   ]
  },
+ "231165-lepcso-sarok-profil-20x20-mm-elox": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/1001",
+  "sourceTitle": "TRAPKANT 20mm + NEUS-silver 1-L= 5,00 m Packed by 1 piece Anodised aluminium (silver) 5.000 mm",
+  "matchedCode": "1010477-TZ1-5000",
+  "specs": {
+   "Hossz": "5,00 m",
+   "Felület": "eloxált",
+   "Anyag": "alumínium"
+  },
+  "images": [
+   "/termekkepek/231165-lepcso-sarok-profil-20x20-mm-elox-1.webp"
+  ]
+ },
  "231245-esocsatorna-kicsi-elox-5000": {
   "source": "Car-Alu",
   "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/721",
@@ -2136,6 +2197,20 @@
    "/termekkepek/231245-n-esocsatorna-kicsi-5000-1.webp"
   ]
  },
+ "231305-n-esocsatorna-mini-5000": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/721",
+  "sourceTitle": "GOOTLIJST 23x5x18x12,5x1,5mm 50ST-raw-L= 5,00 m Packed by 1 piece Mill finished aluminium 5.000 mm",
+  "matchedCode": "1011218-ONB-5000",
+  "specs": {
+   "Hossz": "5,00 m",
+   "Felület": "natúr (nyers)",
+   "Anyag": "alumínium"
+  },
+  "images": [
+   "/termekkepek/231305-n-esocsatorna-mini-5000-1.webp"
+  ]
+ },
  "231725-belga-h-szego-25-mm-elox": {
   "source": "Car-Alu",
   "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/711",
@@ -2148,6 +2223,34 @@
   },
   "images": [
    "/termekkepek/231725-belga-h-szego-25-mm-elox-1.webp"
+  ]
+ },
+ "231725-n-belga-h-szego-25-mm": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/711",
+  "sourceTitle": "DEURPROFIEL-raw-L= 7,00 m Mill finished aluminium 7.000 mm",
+  "matchedCode": "1011356-ONB-7000",
+  "specs": {
+   "Hossz": "7,00 m",
+   "Felület": "natúr (nyers)",
+   "Anyag": "alumínium"
+  },
+  "images": [
+   "/termekkepek/231725-n-belga-h-szego-25-mm-1.webp"
+  ]
+ },
+ "231726-b-tomiteses-ajtoszego-25-mm-elox": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/711",
+  "sourceTitle": "AANSLAGPROFIEL 25mm-silver 2-L= 7,00 m Anodised aluminium (silver) 7.000 mm",
+  "matchedCode": "1011357-TZ2-7000",
+  "specs": {
+   "Hossz": "7,00 m",
+   "Felület": "eloxált",
+   "Anyag": "alumínium"
+  },
+  "images": [
+   "/termekkepek/231726-b-tomiteses-ajtoszego-25-mm-elox-1.webp"
   ]
  },
  "231791-15-3x26-mm-l-profil-elox": {
@@ -2177,6 +2280,18 @@
    "Gyári szálhossz [mm]": "7500"
   },
   "images": []
+ },
+ "232460-tomites-az-u-ajtoszego-profilhoz": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/678",
+  "sourceTitle": "RUBBER TBV AANSLAGPROFIEL Rol 50 m Deliverd by 1 roll Black, rubber",
+  "matchedCode": "1021543-R50",
+  "specs": {
+   "Anyag": "alumínium"
+  },
+  "images": [
+   "/termekkepek/232460-tomites-az-u-ajtoszego-profilhoz-1.webp"
+  ]
  },
  "236817-n-r50-ives-felso-profil": {
   "source": "Alu-SV",
@@ -8162,6 +8277,18 @@
   },
   "images": [
    "/termekkepek/q8035-25-mm-kefe-1.webp"
+  ]
+ },
+ "q8037-kefe-25-mm-elox-profillal": {
+  "source": "Car-Alu",
+  "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/1006",
+  "sourceTitle": "STRIPBORSTEL 25mm IJZER-black-L= 3,00 m Packed by 1 piece Steel 3.000 mm",
+  "matchedCode": "1012515-ZWART-3000",
+  "specs": {
+   "Hossz": "3,00 m"
+  },
+  "images": [
+   "/termekkepek/q8037-kefe-25-mm-elox-profillal-1.webp"
   ]
  },
  "q8040-kefe-40-mm-elox-profillal": {
