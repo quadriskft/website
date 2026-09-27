@@ -1,16 +1,58 @@
 ﻿Termékcsoport;Quadris cikkszám;Megnevezés;Beszállító;Beszállítói kód;Állapot;Kép;Műszaki adatok száma;Talált kód;Beszállítói megnevezés;Forrás
-Alumínium lemezek;;S 1,5x1500x3000mm Fehér festett lemez RAL9010;(nincs megadva);;NINCS;nem;0;;;
-Alumínium lemezek;;S 1x1250 mm FF RAL9016 SZALAG H42;(nincs megadva);;NINCS;nem;0;;;
-Alumínium lemezek;;S 2x1250x2500mm Fehér festett lemez RAL9016;(nincs megadva);;NINCS;nem;0;;;
-Alumínium lemezek;;S 2x1500x3000 mm ELOX Alu lemez EN AW-5005 H12/H14/H24;(nincs megadva);;NINCS;nem;0;;;
-Alumínium lemezek;;S 3x1000x2000 mm ELOX Alu lemez EN AW-5002;(nincs megadva);;NINCS;nem;0;;;
-Alumínium lemezek;;S 3x1250x3200 mm Alu lemez EN AW-1050A H14/H24;(nincs megadva);;NINCS;nem;0;;;
-Alumínium lemezek;;S 3x1250x5000 mm Alu lemez EN AW-1050A H14/H24;(nincs megadva);;NINCS;nem;0;;;
-Alumínium lemezek;;S 3x1250x6000 mm Alu lemez EN AW-1050A H14/H24;(nincs megadva);;NINCS;nem;0;;;
-Alumínium lemezek;;S 3x1500x3200 mm Alu lemez EN AW-1050A H14/H24;(nincs megadva);;NINCS;nem;0;;;
-Alumínium lemezek;;S 3x1500x5000 mm Alu lemez EN AW-1050A H14/H24;(nincs megadva);;NINCS;nem;0;;;
-Alumínium lemezek;;S 3x1500x6000 mm Alu lemez EN AW-1050A H14/H24;(nincs megadva);;NINCS;nem;0;;;
-Alumínium lemezek;;S 3x2000x5000 mm Alu lemez EN 573-3 (Al-Mg-1) H14/H24;(nincs megadva);;NINCS;nem;0;;;
+Alumínium lemezek;;S 1,5x1500x3000mm Fehér festett lemez RAL9010;(nincs megadva);;MEGVAN;nem;6;;S 1,5x1500x3000mm Fehér festett lemez RAL9010;
+Alumínium lemezek;;S 1x1250 mm FF RAL9016 SZALAG H42;(nincs megadva);;MEGVAN;nem;6;;S 1x1250 mm FF RAL9016 SZALAG H42;
+Alumínium lemezek;;S 2x1250x2500mm Fehér festett lemez RAL9016;(nincs megadva);;MEGVAN;nem;6;;S 2x1250x2500mm Fehér festett lemez RAL9016;
+Alumínium lemezek;;S 2x1500x3000 mm ELOX Alu lemez EN AW-5005 H12/H14/H24;(nincs megadva);;MEGVAN;nem;8;;S 2x1500x3000 mm ELOX Alu lemez EN AW-5005 H12/H14/H24;
+Alumínium lemezek;;S 3x1000x2000 mm ELOX Alu lemez EN AW-5002;(nincs megadva);;MEGVAN;nem;7;;S 3x1000x2000 mm ELOX Alu lemez EN AW-5002;
+Alumínium lemezek;;S 3x1250x3200 mm Alu lemez EN AW-1050A H14/H24;(nincs megadva);;MEGVAN;nem;7;;S 3x1250x3200 mm Alu lemez EN AW-1050A H14/H24;
+Alumínium lemezek;;S 3x1250x5000 mm Alu lemez EN AW-1050A H14/H24;(nincs megadva);;MEGVAN;nem;7;;S 3x1250x5000 mm Alu lemez EN AW-1050A H14/H24;
+Alumínium lemezek;;S 3x1250x6000 mm Alu lemez EN AW-1050A H14/H24;(nincs megadva);;MEGVAN;nem;7;;S 3x1250x6000 mm Alu lemez EN AW-1050A H14/H24;
+Alumínium lemezek;;S 3x1500x3200 mm Alu lemez EN AW-1050A H14/H24;(nincs megadva);;MEGVAN;nem;7;;S 3x1500x3200 mm Alu lemez EN AW-1050A H14/H24;
+Alumínium lemezek;;S 3x1500x5000 mm Alu lemez EN AW-1050A H14/H24;(nincs megadva);;MEGVAN;nem;7;;S 3x1500x5000 mm Alu lemez EN AW-1050A H14/H24;
+Alumínium lemezek;;S 3x1500x6000 mm Alu lemez EN AW-1050A H14/H24;(nincs megadva);;MEGVAN;nem;7;;S 3x1500x6000 mm Alu lemez EN AW-1050A H14/H24;
+Alumínium lemezek;;S 3x2000x5000 mm Alu lemez EN 573-3 (Al-Mg-1) H14/H24;(nincs megadva);;MEGVAN;nem;7;;S 3x2000x5000 mm Alu lemez EN 573-3 (Al-Mg-1) H14/H24;
+Csúszásmentes rétegelt padló;;L 12x1500x2500 mm rétegelt lemez fenolos;(nincs megadva);;MEGVAN;nem;4;;L 12x1500x2500 mm rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 12x1500x3000 mm rétegelt lemez fenolos;(nincs megadva);;MEGVAN;nem;4;;L 12x1500x3000 mm rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 15x2130x1250 Rétegelt lemez, Fenolos;(nincs megadva);;MEGVAN;nem;4;;L 15x2130x1250 Rétegelt lemez, Fenolos;
+Csúszásmentes rétegelt padló;;L 18x1500x3000 Rétegelt lemez fenolos;(nincs megadva);;MEGVAN;nem;4;;L 18x1500x3000 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 24x1500x2500 Rétegelt lemez fenolos;(nincs megadva);;MEGVAN;nem;4;;L 24x1500x2500 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 30x1500x2500 Rétegelt lemez fenolos;(nincs megadva);;MEGVAN;nem;4;;L 30x1500x2500 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 4x1250x2500 mm FILM/FILM rétegelt lemez;(nincs megadva);;MEGVAN;nem;4;;L 4x1250x2500 mm FILM/FILM rétegelt lemez;
+Csúszásmentes rétegelt padló;;L 6,5x1500x3000 mm rétegelt lemez fenol bevonattal;(nincs megadva);;MEGVAN;nem;4;;L 6,5x1500x3000 mm rétegelt lemez fenol bevonattal;
+Csúszásmentes rétegelt padló;;L 9x1500x2500 Rétegelt lemez fenolos;(nincs megadva);;MEGVAN;nem;4;;L 9x1500x2500 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 9x1500x3000 Rétegelt lemez fenolos;(nincs megadva);;MEGVAN;nem;4;;L 9x1500x3000 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L MDF 6X2800X2070 mm;(nincs megadva);;MEGVAN;nem;3;;L MDF 6X2800X2070 mm;
+Gumiszőnyegek;;G 10x1000 Soft gumi;(nincs megadva);;MEGVAN;nem;3;;G 10x1000 Soft gumi;
+Gumiszőnyegek;;G 10x1000x2000 Soft gumi lap;(nincs megadva);;MEGVAN;nem;3;;G 10x1000x2000 Soft gumi lap;
+Gumiszőnyegek;;G 15x1000x2000 Soft gumi lap;(nincs megadva);;MEGVAN;nem;3;;G 15x1000x2000 Soft gumi lap;
+Gumiszőnyegek;;G 1600x1400 mm Rampaszőnyeg;(nincs megadva);;MEGVAN;nem;2;;G 1600x1400 mm Rampaszőnyeg;
+Gumiszőnyegek;;G 17/1750x1550 mm Rámpaszőnyeg;(nincs megadva);LM17/0;MEGVAN;nem;3;;G 17/1750x1550 mm Rámpaszőnyeg;
+Gumiszőnyegek;;G 1750x1540 mm Rámpaszőnyeg;(nincs megadva);;MEGVAN;nem;2;;G 1750x1540 mm Rámpaszőnyeg;
+Gumiszőnyegek;;G 1750x1550 mm Rámpaszőnyeg;(nincs megadva);SG;MEGVAN;nem;2;;G 1750x1550 mm Rámpaszőnyeg;
+Gumiszőnyegek;;G 17x1830x1220 mm Istálló szőnyeg;(nincs megadva);;MEGVAN;nem;3;;G 17x1830x1220 mm Istálló szőnyeg;
+Gumiszőnyegek;;G 17x900x1200 mm Istálló szőnyeg;(nincs megadva);;MEGVAN;nem;3;;G 17x900x1200 mm Istálló szőnyeg;
+Gumiszőnyegek;;G 2000x1400 mm Rampaszőnyeg;(nincs megadva);;MEGVAN;nem;2;;G 2000x1400 mm Rampaszőnyeg;
+Gumiszőnyegek;;G 2000x1600 mm Rampaszőnyeg;(nincs megadva);;MEGVAN;nem;2;;G 2000x1600 mm Rampaszőnyeg;
+Gumiszőnyegek;;G 2400x2000 Rampaszőnyeg;(nincs megadva);;MEGVAN;nem;2;;G 2400x2000 Rampaszőnyeg;
+Gumiszőnyegek;;G 27/2400x1200 Rampaszőnyeg;(nincs megadva);TM27/0;MEGVAN;nem;3;;G 27/2400x1200 Rampaszőnyeg;
+Gumiszőnyegek;;G 3x1000 mm PVC áttlátszó víztiszta L:20 m;(nincs megadva);;MEGVAN;nem;4;;G 3x1000 mm PVC áttlátszó víztiszta L:20 m;
+Gumiszőnyegek;;G 3x1200x10000 mm Amoeba gumiszőnyeg;(nincs megadva);AM65 3/0;MEGVAN;nem;3;;G 3x1200x10000 mm Amoeba gumiszőnyeg;
+Gumiszőnyegek;;G 3x1500x10000 mm Amoeba gumiszőnyeg;(nincs megadva);AM65 3/0;MEGVAN;nem;3;;G 3x1500x10000 mm Amoeba gumiszőnyeg;
+Gumiszőnyegek;;G 3x2200x10000 mm DIAMOND mintás gumi;(nincs megadva);;MEGVAN;nem;3;;G 3x2200x10000 mm DIAMOND mintás gumi;
+Gumiszőnyegek;;G 4x1000 mm PVC áttlátszó víztiszta L:20 m;(nincs megadva);;MEGVAN;nem;4;;G 4x1000 mm PVC áttlátszó víztiszta L:20 m;
+Gumiszőnyegek;;G 4x1400x10000 2T S/S Általános gumiszőnyeg;(nincs megadva);;MEGVAN;nem;3;;G 4x1400x10000 2T S/S Általános gumiszőnyeg;
+Gumiszőnyegek;;G 4x1400x10000 S/S Általános gumiszőnyeg;(nincs megadva);;MEGVAN;nem;3;;G 4x1400x10000 S/S Általános gumiszőnyeg;
+Gumiszőnyegek;;G 4x2000mm CBR szőnyeg 2 nylon;(nincs megadva);SX70150C 4/2;MEGVAN;nem;3;;G 4x2000mm CBR szőnyeg 2 nylon;
+Gumiszőnyegek;;G 5x1000 mm PVC áttlátszó víztiszta L:20 m;(nincs megadva);;MEGVAN;nem;4;;G 5x1000 mm PVC áttlátszó víztiszta L:20 m;
+Gumiszőnyegek;;G 6x1450mm COBRA szőnyeg 2 nylon;(nincs megadva);SX70150C 6/2;MEGVAN;nem;3;;G 6x1450mm COBRA szőnyeg 2 nylon;
+Gumiszőnyegek;;G 6x1650 mm Istálló szőnyeg L:10 m RS;(nincs megadva);;MEGVAN;nem;4;;G 6x1650 mm Istálló szőnyeg L:10 m RS;
+Gumiszőnyegek;;G 6x2000mm COBRA szőnyeg 2 nylon;(nincs megadva);SX70150C;MEGVAN;nem;3;;G 6x2000mm COBRA szőnyeg 2 nylon;
+Gumiszőnyegek;;G 6x2000mm Istálló szőnyeg L: 10 m RS;(nincs megadva);;MEGVAN;nem;4;;G 6x2000mm Istálló szőnyeg L: 10 m RS;
+Gumiszőnyegek;;G 8x1000 Soft gumi;(nincs megadva);;MEGVAN;nem;3;;G 8x1000 Soft gumi;
+Gumiszőnyegek;;G 8x1000x2000 Soft gumi lap;(nincs megadva);;MEGVAN;nem;3;;G 8x1000x2000 Soft gumi lap;
+Gumiszőnyegek;;G 8x1650 Istálló szőnyeg;(nincs megadva);;MEGVAN;nem;3;;G 8x1650 Istálló szőnyeg;
+Gumiszőnyegek;;G 8x2000 Istálló szőnyeg L:10 m RS;(nincs megadva);;MEGVAN;nem;4;;G 8x2000 Istálló szőnyeg L:10 m RS;
+Gumiszőnyegek;;G 8x2000mm COBRA szőnyeg 1 nylon;(nincs megadva);SX70150C 8/1;MEGVAN;nem;3;;G 8x2000mm COBRA szőnyeg 1 nylon;
 Billencs alkatrészek;351704;Bill. Rakonca 500 mm első J-B;(nincs megadva);;NINCS;nem;0;;;
 Billencs alkatrészek;351707;Bill. Rakonca 500 mm hátsó J-B;(nincs megadva);;NINCS;nem;0;;;
 Billencs alkatrészek;351706;Bill. Rakonca 500 mm középső;(nincs megadva);;NINCS;nem;0;;;
@@ -29,48 +71,6 @@ Billencs alkatrészek;3510207;SP.41 Billencs hátsó rakonca 400/120 mm J;(nincs
 Billencs alkatrészek;352571;SP33 - 600 mm Bill. hátsó rakonca J/B;(nincs megadva);325711, 322711;NINCS;nem;0;;;
 Billencs alkatrészek;352578;SP36 - 600 mm Bill. első rakonca J/B;(nincs megadva);3251708, 322708;NINCS;nem;0;;;
 Billencs alkatrészek;352572;SP36 - 600 mm Bill. középső rakonca;(nincs megadva);321710;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 12x1500x2500 mm rétegelt lemez fenolos;(nincs megadva);;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 12x1500x3000 mm rétegelt lemez fenolos;(nincs megadva);;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 15x2130x1250 Rétegelt lemez, Fenolos;(nincs megadva);;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 18x1500x3000 Rétegelt lemez fenolos;(nincs megadva);;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 24x1500x2500 Rétegelt lemez fenolos;(nincs megadva);;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 30x1500x2500 Rétegelt lemez fenolos;(nincs megadva);;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 4x1250x2500 mm FILM/FILM rétegelt lemez;(nincs megadva);;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 6,5x1500x3000 mm rétegelt lemez fenol bevonattal;(nincs megadva);;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 9x1500x2500 Rétegelt lemez fenolos;(nincs megadva);;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 9x1500x3000 Rétegelt lemez fenolos;(nincs megadva);;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L MDF 6X2800X2070 mm;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 10x1000 Soft gumi;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 10x1000x2000 Soft gumi lap;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 15x1000x2000 Soft gumi lap;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 1600x1400 mm Rampaszőnyeg;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 17/1750x1550 mm Rámpaszőnyeg;(nincs megadva);LM17/0;NINCS;nem;0;;;
-Gumiszőnyegek;;G 1750x1540 mm Rámpaszőnyeg;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 1750x1550 mm Rámpaszőnyeg;(nincs megadva);SG;NINCS;nem;0;;;
-Gumiszőnyegek;;G 17x1830x1220 mm Istálló szőnyeg;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 17x900x1200 mm Istálló szőnyeg;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 2000x1400 mm Rampaszőnyeg;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 2000x1600 mm Rampaszőnyeg;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 2400x2000 Rampaszőnyeg;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 27/2400x1200 Rampaszőnyeg;(nincs megadva);TM27/0;NINCS;nem;0;;;
-Gumiszőnyegek;;G 3x1000 mm PVC áttlátszó víztiszta L:20 m;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 3x1200x10000 mm Amoeba gumiszőnyeg;(nincs megadva);AM65 3/0;NINCS;nem;0;;;
-Gumiszőnyegek;;G 3x1500x10000 mm Amoeba gumiszőnyeg;(nincs megadva);AM65 3/0;NINCS;nem;0;;;
-Gumiszőnyegek;;G 3x2200x10000 mm DIAMOND mintás gumi;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 4x1000 mm PVC áttlátszó víztiszta L:20 m;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 4x1400x10000 2T S/S Általános gumiszőnyeg;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 4x1400x10000 S/S Általános gumiszőnyeg;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 4x2000mm CBR szőnyeg 2 nylon;(nincs megadva);SX70150C 4/2;NINCS;nem;0;;;
-Gumiszőnyegek;;G 5x1000 mm PVC áttlátszó víztiszta L:20 m;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 6x1450mm COBRA szőnyeg 2 nylon;(nincs megadva);SX70150C 6/2;NINCS;nem;0;;;
-Gumiszőnyegek;;G 6x1650 mm Istálló szőnyeg L:10 m RS;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 6x2000mm COBRA szőnyeg 2 nylon;(nincs megadva);SX70150C;NINCS;nem;0;;;
-Gumiszőnyegek;;G 6x2000mm Istálló szőnyeg L: 10 m RS;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 8x1000 Soft gumi;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 8x1000x2000 Soft gumi lap;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 8x1650 Istálló szőnyeg;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 8x2000 Istálló szőnyeg L:10 m RS;(nincs megadva);;NINCS;nem;0;;;
-Gumiszőnyegek;;G 8x2000mm COBRA szőnyeg 1 nylon;(nincs megadva);SX70150C 8/1;NINCS;nem;0;;;
 Hátsó ajtók és áthajtó rámpák;;Hátsó ajtó alu elox;(nincs megadva);;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;;KIT Hűtős doboz;(nincs megadva);;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;;Zártdobozos felépítmény készlet;(nincs megadva);;NINCS;nem;0;;;
@@ -123,54 +123,54 @@ Italszállító KIT;;21 ADA-Slider tető rendszer;ADAICO;;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;381072;Feszítő kocka sliccelt adapterhez;ADAICO;1001072;NINCS;nem;0;;;
 Rakományrögzítés;121128;Kombi rakományrögzítő sín - acél;ADAICO;50033110;NINCS;nem;0;;;
 Rakományrögzítés;121110;Kombi rakományrögzítő sín sülly.- acél;ADAICO;50043110;NINCS;nem;0;;;
-Alumínium alváz profilok;202274;"""U"" 100x50x50x5 mm profil";ALCOMET;UPR-02274;NINCS;nem;0;;;
-Alumínium alváz profilok;203548;"""U"" 140x60x60x7 mm profil";ALCOMET;UPR-03548;NINCS;nem;0;;;
-Alumínium alváz profilok;202869;"""U"" 160x80x80x8 mm profil";ALCOMET;UPR-02869;NINCS;nem;0;;;
-Alumínium alváz profilok;205162;"""U"" 80x60x5 mm aluprofil";ALCOMET;UPR-05162;NINCS;nem;0;;;
-Alumínium alváz profilok;203432;"""U"" 90x50x50x5 mm profil";ALCOMET;UPR-03432;NINCS;nem;0;;;
+Alumínium alváz profilok;202274;"""U"" 100x50x50x5 mm profil";ALCOMET;UPR-02274;MEGVAN;igen;5;;"""U"" 100x50x50x5 mm profil";
+Alumínium alváz profilok;203548;"""U"" 140x60x60x7 mm profil";ALCOMET;UPR-03548;MEGVAN;igen;5;;"""U"" 140x60x60x7 mm profil";
+Alumínium alváz profilok;202869;"""U"" 160x80x80x8 mm profil";ALCOMET;UPR-02869;MEGVAN;igen;5;;"""U"" 160x80x80x8 mm profil";
+Alumínium alváz profilok;205162;"""U"" 80x60x5 mm aluprofil";ALCOMET;UPR-05162;MEGVAN;igen;5;;"""U"" 80x60x5 mm aluprofil";
+Alumínium alváz profilok;203432;"""U"" 90x50x50x5 mm profil";ALCOMET;UPR-03432;MEGVAN;igen;5;;"""U"" 90x50x50x5 mm profil";
+Ipari félgyártmányok;251048;100x10 mm Alu lapos profil;ALCOMET;FLB-01048;MEGVAN;igen;4;;100x10 mm Alu lapos profil;
+Ipari félgyártmányok;255472;100x100x4 mm R7/3 Alu zártszelvény;ALCOMET;SQT-05472;MEGVAN;igen;4;;100x100x4 mm R7/3 Alu zártszelvény;
+Ipari félgyártmányok;250503;100x50x3 mm Alu zártszelvény;ALCOMET;100503;MEGVAN;igen;4;;100x50x3 mm Alu zártszelvény;
+Ipari félgyártmányok;251210;120x10 mm Alu lapos profil;ALCOMET;;MEGVAN;igen;4;;120x10 mm Alu lapos profil;
+Ipari félgyártmányok;251510;150x10 mm Alu lapos profil;ALCOMET;;MEGVAN;igen;4;;150x10 mm Alu lapos profil;
+Ipari félgyártmányok;253734;150x25x2,5 R2 Alu zártszelvény;ALCOMET;RCT-03734;MEGVAN;igen;4;;150x25x2,5 R2 Alu zártszelvény;
+Ipari félgyártmányok;252798;150x30x3 mm alu zártszelvény;ALCOMET;;MEGVAN;igen;4;;150x30x3 mm alu zártszelvény;
+Ipari félgyártmányok;256076;160x90x5 mm Alu zártszelvány;ALCOMET;RCT-06076;MEGVAN;igen;4;;160x90x5 mm Alu zártszelvány;
+Ipari félgyártmányok;251530;18 mm Alu rúd;ALCOMET;1500030;MEGVAN;igen;3;;18 mm Alu rúd;
+Ipari félgyártmányok;251310;18x2 Alu cső;ALCOMET;1303010;MEGVAN;igen;4;;18x2 Alu cső;
+Ipari félgyártmányok;250202;20x2 Alu cső;ALCOMET;EXO202N;MEGVAN;igen;4;;20x2 Alu cső;
+Ipari félgyártmányok;258354;25x25x2 alu zártszelvény;ALCOMET;A8354;MEGVAN;igen;4;;25x25x2 alu zártszelvény;
+Ipari félgyártmányok;250301;30x10 mm Alu lapos profil;ALCOMET;;MEGVAN;igen;4;;30x10 mm Alu lapos profil;
+Ipari félgyártmányok;251883;30x20x1,5 alu zártszelvény;ALCOMET;01883;MEGVAN;igen;4;;30x20x1,5 alu zártszelvény;
+Ipari félgyártmányok;253020;30x20x2 alu zártszelvény;ALCOMET;;MEGVAN;igen;4;;30x20x2 alu zártszelvény;
+Ipari félgyártmányok;253295;30x30x2 alu zártszelvény;ALCOMET;KPA8358;MEGVAN;igen;4;;30x30x2 alu zártszelvény;
+Ipari félgyártmányok;253030;30x30x3 mm U profil;ALCOMET;;MEGVAN;igen;5;;30x30x3 mm U profil;
+Ipari félgyártmányok;252417;30x8 mm Alu lapos profil;ALCOMET;FLB-02417;MEGVAN;igen;4;;30x8 mm Alu lapos profil;
+Ipari félgyártmányok;253535;35x35x3 mm alu zártszelvény;ALCOMET;SQT-02817;MEGVAN;igen;4;;35x35x3 mm alu zártszelvény;
+Ipari félgyártmányok;250890;40x20x2 mm Alu zártszelvény;ALCOMET;RCT-00890;MEGVAN;igen;4;;40x20x2 mm Alu zártszelvény;
+Ipari félgyártmányok;252242;40x30x2 alu zártszelvény;ALCOMET;RCT-02242;MEGVAN;igen;4;;40x30x2 alu zártszelvény;
+Ipari félgyártmányok;255340;40x40x3 R2 mm Alu zártszelvény;ALCOMET;SQT-05340;MEGVAN;igen;4;;40x40x3 R2 mm Alu zártszelvény;
+Ipari félgyártmányok;252296;40x8 mm Alu lapos profil;ALCOMET;FLB-02296;MEGVAN;igen;4;;40x8 mm Alu lapos profil;
+Ipari félgyártmányok;253812;50x30x2 R5 alu zártszelvény 6000 mm;ALCOMET;RCT-03812;MEGVAN;igen;4;;50x30x2 R5 alu zártszelvény 6000 mm;
+Ipari félgyártmányok;251742;50x5 mm Alu lapos profil;ALCOMET;FLB-01742;MEGVAN;igen;4;;50x5 mm Alu lapos profil;
+Ipari félgyártmányok;258352;50x50x3 alu zártszelvény;ALCOMET;A8352;MEGVAN;igen;4;;50x50x3 alu zártszelvény;
+Ipari félgyártmányok;250297;"50x50x5 Alu ""L"" profil";ALCOMET;LPR-00297;MEGVAN;igen;4;;"50x50x5 Alu ""L"" profil";
+Ipari félgyártmányok;255610;60x30x2,5 R2,5 mm alu zártszelvény;ALCOMET;RCT-05610;MEGVAN;igen;4;;60x30x2,5 R2,5 mm alu zártszelvény;
+Ipari félgyártmányok;255070;60x30x3 mm Alu zártszelvény;ALCOMET;RCT-05070;MEGVAN;igen;4;;60x30x3 mm Alu zártszelvény;
+Ipari félgyártmányok;252444;60x40x2,5 mm alu zártszelvény;ALCOMET;RCT-02444;MEGVAN;igen;4;;60x40x2,5 mm alu zártszelvény;
+Ipari félgyártmányok;252687;60x40x4 alu zártszelvény;ALCOMET;1302687;MEGVAN;igen;4;;60x40x4 alu zártszelvény;
+Ipari félgyártmányok;256468;60x40x4 mm R4/2 alu zártszelvény;ALCOMET;RCT-06468;MEGVAN;igen;4;;60x40x4 mm R4/2 alu zártszelvény;
+Ipari félgyártmányok;254979;"60x50x50x5 mm ""U"" profil";ALCOMET;UPR-04979;MEGVAN;igen;5;;"60x50x50x5 mm ""U"" profil";
+Ipari félgyártmányok;252672;80x20x2 alu zártszelvény;ALCOMET;;MEGVAN;igen;4;;80x20x2 alu zártszelvény;
+Ipari félgyártmányok;252763;80x40x3 alu zártszelvény;ALCOMET;;MEGVAN;igen;4;;80x40x3 alu zártszelvény;
+Ipari félgyártmányok;255207;80x40x3 mm R5 Alu zártszelvény;ALCOMET;RCT-05207;MEGVAN;igen;4;;80x40x3 mm R5 Alu zártszelvény;
+Ipari félgyártmányok;252764;80x40x4 alu zártszelvény;ALCOMET;RCT-02345;MEGVAN;igen;4;;80x40x4 alu zártszelvény;
+Ipari félgyártmányok;258418;80x50x4 mm R3 Alu Zártszelvény;ALCOMET;A8418;MEGVAN;igen;4;;80x50x4 mm R3 Alu Zártszelvény;
+Ipari félgyártmányok;255473;80x80x4 mm Alu zártszelvény;ALCOMET;;MEGVAN;igen;4;;80x80x4 mm Alu zártszelvény;
+Ponyvarendszer kiegészítők;222985;D50 mm alu cső;ALCOMET;RNT-02985;MEGVAN;nem;2;;D50 mm alu cső;
 Dobozos felépítmény alkatrészek;70605;D60x5 mm Húspálya cső elox 6000 mm;ALCOMET;;NINCS;nem;0;;;
-Ipari félgyártmányok;251048;100x10 mm Alu lapos profil;ALCOMET;FLB-01048;NINCS;nem;0;;;
-Ipari félgyártmányok;255472;100x100x4 mm R7/3 Alu zártszelvény;ALCOMET;SQT-05472;NINCS;nem;0;;;
-Ipari félgyártmányok;250503;100x50x3 mm Alu zártszelvény;ALCOMET;100503;NINCS;nem;0;;;
-Ipari félgyártmányok;251210;120x10 mm Alu lapos profil;ALCOMET;;NINCS;nem;0;;;
-Ipari félgyártmányok;251510;150x10 mm Alu lapos profil;ALCOMET;;NINCS;nem;0;;;
-Ipari félgyártmányok;253734;150x25x2,5 R2 Alu zártszelvény;ALCOMET;RCT-03734;NINCS;nem;0;;;
-Ipari félgyártmányok;252798;150x30x3 mm alu zártszelvény;ALCOMET;;NINCS;nem;0;;;
-Ipari félgyártmányok;256076;160x90x5 mm Alu zártszelvány;ALCOMET;RCT-06076;NINCS;nem;0;;;
-Ipari félgyártmányok;251530;18 mm Alu rúd;ALCOMET;1500030;NINCS;nem;0;;;
-Ipari félgyártmányok;251310;18x2 Alu cső;ALCOMET;1303010;NINCS;nem;0;;;
-Ipari félgyártmányok;250202;20x2 Alu cső;ALCOMET;EXO202N;NINCS;nem;0;;;
-Ipari félgyártmányok;258354;25x25x2 alu zártszelvény;ALCOMET;A8354;NINCS;nem;0;;;
-Ipari félgyártmányok;250301;30x10 mm Alu lapos profil;ALCOMET;;NINCS;nem;0;;;
-Ipari félgyártmányok;251883;30x20x1,5 alu zártszelvény;ALCOMET;01883;NINCS;nem;0;;;
-Ipari félgyártmányok;253020;30x20x2 alu zártszelvény;ALCOMET;;NINCS;nem;0;;;
-Ipari félgyártmányok;253295;30x30x2 alu zártszelvény;ALCOMET;KPA8358;NINCS;nem;0;;;
-Ipari félgyártmányok;253030;30x30x3 mm U profil;ALCOMET;;NINCS;nem;0;;;
-Ipari félgyártmányok;252417;30x8 mm Alu lapos profil;ALCOMET;FLB-02417;NINCS;nem;0;;;
-Ipari félgyártmányok;253535;35x35x3 mm alu zártszelvény;ALCOMET;SQT-02817;NINCS;nem;0;;;
-Ipari félgyártmányok;250890;40x20x2 mm Alu zártszelvény;ALCOMET;RCT-00890;NINCS;nem;0;;;
-Ipari félgyártmányok;252242;40x30x2 alu zártszelvény;ALCOMET;RCT-02242;NINCS;nem;0;;;
-Ipari félgyártmányok;255340;40x40x3 R2 mm Alu zártszelvény;ALCOMET;SQT-05340;NINCS;nem;0;;;
-Ipari félgyártmányok;252296;40x8 mm Alu lapos profil;ALCOMET;FLB-02296;NINCS;nem;0;;;
-Ipari félgyártmányok;253812;50x30x2 R5 alu zártszelvény 6000 mm;ALCOMET;RCT-03812;NINCS;nem;0;;;
-Ipari félgyártmányok;251742;50x5 mm Alu lapos profil;ALCOMET;FLB-01742;NINCS;nem;0;;;
-Ipari félgyártmányok;258352;50x50x3 alu zártszelvény;ALCOMET;A8352;NINCS;nem;0;;;
-Ipari félgyártmányok;250297;"50x50x5 Alu ""L"" profil";ALCOMET;LPR-00297;NINCS;nem;0;;;
-Ipari félgyártmányok;255610;60x30x2,5 R2,5 mm alu zártszelvény;ALCOMET;RCT-05610;NINCS;nem;0;;;
-Ipari félgyártmányok;255070;60x30x3 mm Alu zártszelvény;ALCOMET;RCT-05070;NINCS;nem;0;;;
-Ipari félgyártmányok;252444;60x40x2,5 mm alu zártszelvény;ALCOMET;RCT-02444;NINCS;nem;0;;;
-Ipari félgyártmányok;252687;60x40x4 alu zártszelvény;ALCOMET;1302687;NINCS;nem;0;;;
-Ipari félgyártmányok;256468;60x40x4 mm R4/2 alu zártszelvény;ALCOMET;RCT-06468;NINCS;nem;0;;;
-Ipari félgyártmányok;254979;"60x50x50x5 mm ""U"" profil";ALCOMET;UPR-04979;NINCS;nem;0;;;
-Ipari félgyártmányok;252672;80x20x2 alu zártszelvény;ALCOMET;;NINCS;nem;0;;;
-Ipari félgyártmányok;252763;80x40x3 alu zártszelvény;ALCOMET;;NINCS;nem;0;;;
-Ipari félgyártmányok;255207;80x40x3 mm R5 Alu zártszelvény;ALCOMET;RCT-05207;NINCS;nem;0;;;
-Ipari félgyártmányok;252764;80x40x4 alu zártszelvény;ALCOMET;RCT-02345;NINCS;nem;0;;;
-Ipari félgyártmányok;258418;80x50x4 mm R3 Alu Zártszelvény;ALCOMET;A8418;NINCS;nem;0;;;
-Ipari félgyártmányok;255473;80x80x4 mm Alu zártszelvény;ALCOMET;;NINCS;nem;0;;;
 Ipari félgyártmányok;227576;Zártszelvény 60x30x2 mm OR3/IR1 elox;ALCOMET;RCT-07576;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;222923;60x1,5 mm Ponyvacső;ALCOMET;RNT-02923;NINCS;nem;0;;;
-Ponyvarendszer kiegészítők;222985;D50 mm alu cső;ALCOMET;RNT-02985;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;237798;Speciális 35 ALSÓ KERET profil EC;ALCOMET;DRP-07798;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;237797;Speciális TETŐ profil EC;ALCOMET;DRP-07797;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;231309;"AN ""h"" ajtószegő 30 mm elox";ALSAP;1309AN;NINCS;nem;0;;;
@@ -260,18 +260,18 @@ Rakományrögzítés;122000;Rakományrögzítő kengyel 1000 dAN P;Alu-SV;3U2000
 Rakományrögzítés;122263;Süllyesztett Airline sín alu 3000mm;Alu-SV;2171226300;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;231726/n;B Tömítéses ajtószegő 25 mm;Alu-SV;1317 260-000;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;233176;Esőcsatorna elox nagy 7500;Alu-SV;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 12x1250x2500 mm Natúr rétegelt lemez;BAYU;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 12x1250x2500 mm rétegelt lemez fenolos;BAYU;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 15x1500x2500 Rétegelt lemez fenolos;BAYU;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 15x1500x3000 Rétegelt lemez fenolos;BAYU;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 15x2150x4000 Rétegelt lemez fenolos;BAYU;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 21x1500x2500 mm Rétegelt lemez fenolos;BAYU;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 30x1250x2500 Rétegelt lemez fenolos;BAYU;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 6,5x1250x2500 mm Natúr rétegelt lemez;BAYU;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 6,5x1250x2500 mm rétegelt lemez fenolos;BAYU;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 6,5x1500x3000 mm Natúr rétegelt lemez;BAYU;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 9x1250x2500 Rétegelt lemez fenolos;BAYU;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 9x1250x2500mm Natúr rétegelt lemez;BAYU;;NINCS;nem;0;;;
+Csúszásmentes rétegelt padló;;L 12x1250x2500 mm Natúr rétegelt lemez;BAYU;;MEGVAN;nem;4;;L 12x1250x2500 mm Natúr rétegelt lemez;
+Csúszásmentes rétegelt padló;;L 12x1250x2500 mm rétegelt lemez fenolos;BAYU;;MEGVAN;nem;4;;L 12x1250x2500 mm rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 15x1500x2500 Rétegelt lemez fenolos;BAYU;;MEGVAN;nem;4;;L 15x1500x2500 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 15x1500x3000 Rétegelt lemez fenolos;BAYU;;MEGVAN;nem;4;;L 15x1500x3000 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 15x2150x4000 Rétegelt lemez fenolos;BAYU;;MEGVAN;nem;4;;L 15x2150x4000 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 21x1500x2500 mm Rétegelt lemez fenolos;BAYU;;MEGVAN;nem;4;;L 21x1500x2500 mm Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 30x1250x2500 Rétegelt lemez fenolos;BAYU;;MEGVAN;nem;4;;L 30x1250x2500 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 6,5x1250x2500 mm Natúr rétegelt lemez;BAYU;;MEGVAN;nem;4;;L 6,5x1250x2500 mm Natúr rétegelt lemez;
+Csúszásmentes rétegelt padló;;L 6,5x1250x2500 mm rétegelt lemez fenolos;BAYU;;MEGVAN;nem;4;;L 6,5x1250x2500 mm rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 6,5x1500x3000 mm Natúr rétegelt lemez;BAYU;;MEGVAN;nem;4;;L 6,5x1500x3000 mm Natúr rétegelt lemez;
+Csúszásmentes rétegelt padló;;L 9x1250x2500 Rétegelt lemez fenolos;BAYU;;MEGVAN;nem;4;;L 9x1250x2500 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 9x1250x2500mm Natúr rétegelt lemez;BAYU;;MEGVAN;nem;4;;L 9x1250x2500mm Natúr rétegelt lemez;
 Sárvédők, szerszámosládák;;J50001 Íves sárvédő, 1380/880/400;BMC Flexpar;50001;NINCS;nem;0;;;
 Sárvédők, szerszámosládák;;J50002 Íves sárvédő, 1380/880/450;BMC Flexpar;50002;NINCS;nem;0;;;
 Sárvédők, szerszámosládák;;J50002/B Íves sárvédő, fehér csíkkal 1380/880/450;BMC Flexpar;BMC;NINCS;nem;0;;;
@@ -285,15 +285,15 @@ Sárvédők, szerszámosládák;;J504335 Szerszámos láda 500x430x350 mm;BMC Fl
 Sárvédők, szerszámosládák;;J605040 Szerszámos láda 600x500x400 mm;BMC Flexpar;C-605040;NINCS;nem;0;;;
 Sárvédők, szerszámosládák;;J804550 Szerszámos láda 800x450x500 mm;BMC Flexpar;C-804550;NINCS;nem;0;;;
 Alumínium alváz profilok;207833;100x30 mm Aláfutásgátló elox profil;BODEGA;TB27833;MEGVAN;igen;4;TB27833;Bodega TB27833;https://www.bodega.it
+Ipari félgyártmányok;252981;20x20x3 alu zártszelvény;BODEGA;;MEGVAN;igen;4;;20x20x3 alu zártszelvény;
+Ipari félgyártmányok;258455;60x40x2,5 R2 alu zártszelvény;BODEGA;TB18455;MEGVAN;igen;4;;60x40x2,5 R2 alu zártszelvény;
+Ipari félgyártmányok;252535;60x40x3 alu zártszelvény;BODEGA;;MEGVAN;igen;4;;60x40x3 alu zártszelvény;
+Ipari félgyártmányok;251659;80x50x4 mm R4 Alu Zártszelvény;BODEGA;TB51659;MEGVAN;igen;4;;80x50x4 mm R4 Alu Zártszelvény;
 Ponyvás oldalfal profilok és szegők;228153;"""u"" 25 mm szegő profil elox B";BODEGA;TB28153;MEGVAN;igen;5;TB28153;Bodega TB28153;https://www.bodega.it
 Ponyvás oldalfal profilok és szegők;225549;400 mm peremes oldalfal elox;BODEGA;TB25549;MEGVAN;igen;5;TB25549;Bodega TB25549;https://www.bodega.it
 Alumínium alváz profilok;2015290;15 mm Keretprofil elox;BODEGA;TB50290;NINCS;nem;0;;;
 Alumínium alváz profilok;2018290;18 mm Keretprofil elox;BODEGA;TB50042;NINCS;nem;0;;;
 Alumínium padló profilok;226821/21;Padló profil 200 mm;BODEGA;TB48968;NINCS;nem;0;;;
-Ipari félgyártmányok;252981;20x20x3 alu zártszelvény;BODEGA;;NINCS;nem;0;;;
-Ipari félgyártmányok;258455;60x40x2,5 R2 alu zártszelvény;BODEGA;TB18455;NINCS;nem;0;;;
-Ipari félgyártmányok;252535;60x40x3 alu zártszelvény;BODEGA;;NINCS;nem;0;;;
-Ipari félgyártmányok;251659;80x50x4 mm R4 Alu Zártszelvény;BODEGA;TB51659;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;223032;Spitz profil 100 mm;BODEGA;TB53032;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;222005;Spitz profil 150 mm magas T;BODEGA;T1.2005.0;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;225455/n;"""u"" 35 mm szegő profil";BODEGA;TB54550;NINCS;nem;0;;;
@@ -318,6 +318,7 @@ Sárvédők, szerszámosládák;;JVR50 NOVA BOX 500X400X350 mm;COPAR;ICBEB20000N
 Dobozos felépítmény alkatrészek;7250840;Mágneses ajtórögzítő 200N;Car-Alu;1000991;MEGVAN;igen;0;1000991;DEURVASTZETTER 200N WIT Packed by 1 piece White, synthetic;https://www.caralushop.nl/en/catalog/categories/660
 Dobozos felépítmény alkatrészek;107045;Sarok elem 25/25 R profilhoz;Car-Alu;1012270-onb;MEGVAN;igen;2;1012270-ONB;KAPBOL V/HOEKVERBINDINGSPROFIEL raw Packed by 1 piece Mill finished aluminium;https://www.caralushop.nl/en/catalog/categories/710
 Dobozos felépítmény alkatrészek;107046;Sarokelem felső RAL9006;Car-Alu;1013021-9006x;MEGVAN;igen;0;1013021-9006X;KAPBOL OVERZET V/HOEKPR. 25,3mm OF 60,5x60,5mm R9006/X grey Packed by 1 piece RAL9006 coated;https://www.caralushop.nl/en/catalog/categories/719
+Ipari félgyártmányok;251316;40x25x4 mm R zártszelvény;Car-Alu;1316 010-000;MEGVAN;igen;4;;40x25x4 mm R zártszelvény;
 Speciális felépítmény alkatrészek;055960;Műanyag lépcsőnyitó - nagy;Car-Alu;1001025;MEGVAN;igen;0;1001025;INBOUWHANDGREEP 38MM KUNSTSTOF ZWART Packed by 1 piece Black, synthetic;https://www.caralushop.nl/en/catalog/categories/660
 Speciális felépítmény alkatrészek;;Q8033 elox Profil keféhez;Car-Alu;1012514-TZ1-6000;MEGVAN;igen;3;1012514-TZ1-6000;ALU SEALING PROFILE F/BRISTLE-silver 1-L= 6,00 m Packed by 1 piece Anodised aluminium (silver) 6.000 mm;https://www.caralushop.nl/en/catalog/categories/1006
 Speciális felépítmény alkatrészek;;Q8035 25 mm Kefe;Car-Alu;1012515-zwart-3000;MEGVAN;igen;1;1012515-ZWART-3000;STRIPBORSTEL 25mm IJZER-black-L= 3,00 m Packed by 1 piece Steel 3.000 mm;https://www.caralushop.nl/en/catalog/categories/1006
@@ -331,7 +332,6 @@ Zárt-dobozos és hűtős profilok;231245;Esőcsatorna kicsi elox 5000;Car-Alu;1
 Zárt-dobozos és hűtős profilok;231305/n;Esőcsatorna mini 5000;Car-Alu;1305 115-000;MEGVAN;igen;3;1011218-ONB-5000;GOOTLIJST 23x5x18x12,5x1,5mm 50ST-raw-L= 5,00 m Packed by 1 piece Mill finished aluminium 5.000 mm;https://www.caralushop.nl/en/catalog/categories/721
 Zárt-dobozos és hűtős profilok;231165;Lépcső sarok profil 20x20 mm elox;Car-Alu;1165 000-001;MEGVAN;igen;3;1010477-TZ1-5000;TRAPKANT 20mm + NEUS-silver 1-L= 5,00 m Packed by 1 piece Anodised aluminium (silver) 5.000 mm;https://www.caralushop.nl/en/catalog/categories/1001
 Zárt-dobozos és hűtős profilok;232460;"Tömítés az ""u"" ajtószegő profilhoz";Car-Alu;2460 060-000;MEGVAN;igen;1;1021543-R50;RUBBER TBV AANSLAGPROFIEL Rol 50 m Deliverd by 1 roll Black, rubber;https://www.caralushop.nl/en/catalog/categories/678
-Ipari félgyártmányok;251316;40x25x4 mm R zártszelvény;Car-Alu;1316 010-000;NINCS;nem;0;;;
 Kédergumik;;"M1 001 ""C""sín - alumínium";Car-Alu;1172 340-000;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;221746;H toldó - szegő profil elox;Car-Alu;1320 090-011;NINCS;nem;0;;;
 Speciális felépítmény alkatrészek;092901;Műanyag lépcsőnyitó - kicsi;Car-Alu;;NINCS;nem;0;;;
@@ -484,12 +484,12 @@ Dobozos felépítmény alkatrészek;;MP LEM Inox kampó;EMEPE;LEM1;NINCS;nem;0;;
 Dobozos felépítmény alkatrészek;;MP22 FEX22001 RM Nyomólapos rúdzár;EMEPE;FEX22001;NINCS;nem;0;;;
 Dobozos felépítmény alkatrészek;;MP22 KLC-EX41 RM kampó+fészek;EMEPE;KLC-EX41;NINCS;nem;0;;;
 Dobozos felépítmény alkatrészek;;MP22 KLCB-EX41E RM kampó+fészek+omegák KIT;EMEPE;KLCB-EX41E;NINCS;nem;0;;;
+Ipari félgyártmányok;255004;100x50x4 mm Alu zártszelvény;ESAL;6060A/ T6;MEGVAN;igen;4;;100x50x4 mm Alu zártszelvény;
+Ipari félgyártmányok;254020;"40x20x2 Alu ""L"" profil";ESAL;402002;MEGVAN;igen;4;;"40x20x2 Alu ""L"" profil";
 Alumínium alváz profilok;203183;250/25 mm Aláfutásgátló elox profil;ESAL;S021318375;NINCS;nem;0;;;
 Alumínium alváz profilok;205535;Íves aláfutásgátló végzáró elox profil;ESAL;250535;NINCS;nem;0;;;
 Dobozos felépítmény alkatrészek;729629;"Húspálya ""C"" sín elox 6000 mm";ESAL;S0296296;NINCS;nem;0;;;
 Dobozos felépítmény alkatrészek;729630;"Húspálya ""C"" sín elox 7000 mm";ESAL;S0296297;NINCS;nem;0;;;
-Ipari félgyártmányok;255004;100x50x4 mm Alu zártszelvény;ESAL;6060A/ T6;NINCS;nem;0;;;
-Ipari félgyártmányok;254020;"40x20x2 Alu ""L"" profil";ESAL;402002;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;102439;Dugó spitzprofilhoz 150 mm magas;ESAL;12439;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;201092;Spanner profil;ESAL;21092;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;203101;Spanner profil;ESAL;7KPB3101;NINCS;nem;0;;;
@@ -501,8 +501,8 @@ Zárt-dobozos és hűtős profilok;231381;25 mm Díszléc alu 3000 mm;ESAL;C01MT
 Zárt-dobozos és hűtős profilok;232134;285 mm I Koptató profil elox;ESAL;2134;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;233837;OR Tömítéses ajtószegő 35 mm elox;ESAL;213837;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;234002;Tömítés a szegő profilhoz OR;ESAL;GK40020;NINCS;nem;0;;;
-Ipari félgyártmányok;251010;"100x100x8 Alu ""L"" profil";EXAL;EXL1001008N;NINCS;nem;0;;;
-Ipari félgyártmányok;255032;50x30x2,5 Alu zártszelvény 6000 mm;EXAL;EXZ50302-5N;NINCS;nem;0;;;
+Ipari félgyártmányok;251010;"100x100x8 Alu ""L"" profil";EXAL;EXL1001008N;MEGVAN;igen;4;;"100x100x8 Alu ""L"" profil";
+Ipari félgyártmányok;255032;50x30x2,5 Alu zártszelvény 6000 mm;EXAL;EXZ50302-5N;MEGVAN;igen;4;;50x30x2,5 Alu zártszelvény 6000 mm;
 Ponyvarendszer kiegészítők;223520;Ponyvacső 35x2 mm;EXAL;EXO352N/7000;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;;E/COMPACT CS tolótető rendszer;Edscha;;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;;E/COMPACT FIX tető rendszer;Edscha;;NINCS;nem;0;;;
@@ -566,158 +566,158 @@ Zárt-dobozos és hűtős profilok;238209;Lamella profil 200 mm EX;Exlabesa PL;3
 Billencs alkatrészek;35014251/2;- 400-as billencs első rakonca R/L;FTS;35900402;MEGVAN;igen;2;35900402;Piantone Stretto 100/60 verniciatura in Cataforesi;https://www.fts-farina.it/prodotto/piantone-stretto-100-60-verniciatura-in-cataforesi/
 Billencs alkatrészek;35014051/2;- 400/500-as hátsó billencs rakonca R/L acél zsebbel;FTS;35900405;MEGVAN;igen;1;35900405;Piantone Stretto 100/60 verniciatura in Cataforesi;https://www.fts-farina.it/prodotto/piantone-stretto-100-60-verniciatura-in-cataforesi/
 Billencs alkatrészek;145010;- 50 mm-es gömbcsukló készlet 3,5t;FTS;25350100;MEGVAN;igen;1;25350100;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=111
-Billencs alkatrészek;142304;Billencs nyitókar B;FTS;15012304;MEGVAN;igen;2;15012304;15012304 – Leva comando Sinistra per apertura cerniere;https://www.fts-farina.it/prodotto/15012304-leva-comando-sinistra-per-apertura-cerniere/
-Billencs alkatrészek;142303;Billencs nyitókar J;FTS;15012303;MEGVAN;igen;2;15012303;15012303 – Leva comando Destra per apertura cerniere;https://www.fts-farina.it/prodotto/15012303-leva-comando-destra-per-apertura-cerniere/
+Billencs alkatrészek;142304;Billencs nyitókar B;FTS;15012304;MEGVAN;igen;1;15012304;15012304 – Leva comando Sinistra per apertura cerniere;https://www.fts-farina.it/prodotto/15012304-leva-comando-sinistra-per-apertura-cerniere/
+Billencs alkatrészek;142303;Billencs nyitókar J;FTS;15012303;MEGVAN;igen;1;15012303;15012303 – Leva comando Destra per apertura cerniere;https://www.fts-farina.it/prodotto/15012303-leva-comando-destra-per-apertura-cerniere/
 Billencs alkatrészek;3514430/1;Billencs rakonca szegő egyenes R/L;FTS;35144300/301;MEGVAN;igen;2;35144300;Piantone Stretto 100/60 verniciatura in Cataforesi;https://www.fts-farina.it/prodotto/piantone-stretto-100-60-verniciatura-in-cataforesi/
-Billencs alkatrészek;352240;Ellendarabos szegő 400mm R+L;FTS;35220400;MEGVAN;igen;2;35220400;Piantone in alluminio TL35 S/BATTUTA;https://www.fts-farina.it/prodotto/piantone-in-alluminio-tl35-s-battuta/
-Billencs alkatrészek;352260;Ellendarabos szegő 600mm R+L;FTS;35220600/R/L;MEGVAN;igen;2;35220600;Piantone in alluminio TL35 S/BATTUTA;https://www.fts-farina.it/prodotto/piantone-in-alluminio-tl35-s-battuta/
-Billencs alkatrészek;146012;Szivattyú 12V;FTS;14600012;MEGVAN;igen;1;14600012;14600012 – Centralina completa 12 Volt;https://www.fts-farina.it/prodotto/14600012-centralina-completa-12-volt/
-Billencs alkatrészek;354424;Top-Kuplung;FTS;35442401;MEGVAN;igen;3;35442401;35442401 – Gancio Grezzo per Articolazione Superiore;https://www.fts-farina.it/prodotto/35442401-gancio-grezzo-per-articolazione-superiore/
-Dobozos felépítmény alkatrészek;508820;1 fokos létra horg.;FTS;50298820;MEGVAN;igen;2;50298820;50298820 – Scaletta leggera zincata estraibile a 1 gradino;https://www.fts-farina.it/prodotto/50298820-scaletta-leggera-zincata-estraibile-a-1-gradino/
-Dobozos felépítmény alkatrészek;5030270;2 fokos létra + platform TH;FTS;50430270;MEGVAN;igen;2;50430270;50430270 – Scaletta estraibile con pedana a 2 gradini zincata a caldo;https://www.fts-farina.it/prodotto/50430270-scaletta-estraibile-con-pedana-a-2-gradini-zincata-a-caldo/
-Dobozos felépítmény alkatrészek;501927;2 fokos létra TH platform;FTS;50419270;MEGVAN;igen;3;50419270;Scaletta estraibile con pedana a 2 gradini compatta;https://www.fts-farina.it/prodotto/scaletta-estraibile-con-pedana-a-2-gradini-compatta/
-Dobozos felépítmény alkatrészek;502210;2 fokos létra horg.;FTS;50292210;MEGVAN;igen;2;50292210;50292210 – Scaletta leggera zincata estraibile a 2 gradini;https://www.fts-farina.it/prodotto/50292210-scaletta-leggera-zincata-estraibile-a-2-gradini/
-Dobozos felépítmény alkatrészek;508665;2 fokos létra horg.;FTS;50398665;MEGVAN;igen;2;50398665;50398665 – Scaletta zincata estraibile 2 gradini con asole;https://www.fts-farina.it/prodotto/50398665-scaletta-zincata-estraibile-2-gradini-con-asole/
-Dobozos felépítmény alkatrészek;056402;2 részes rugós ajtókiakasztó szet;FTS;80700800;MEGVAN;igen;2;80700800;80700800 – Ferma porta autoallineante zincato;https://www.fts-farina.it/prodotto/80700800-ferma-porta-autoallineante-zincato/
-Dobozos felépítmény alkatrészek;820128/L;210 mm Rugós Rigli RM;FTS;20128610;MEGVAN;igen;3;20128610;20128610/1 – Perno a molla grande in inox;https://www.fts-farina.it/prodotto/20128610-1-perno-a-molla-grande-in-inox/
-Dobozos felépítmény alkatrészek;820129/L;247 mm Rugós Rigli horg;FTS;20128510/1;MEGVAN;igen;3;20128510;20128510/1 – Perno a molla grande zinc.;https://www.fts-farina.it/prodotto/20128510-1-perno-a-molla-grande-zinc/
-Dobozos felépítmény alkatrészek;504665;3 fokos létra horganyzott;FTS;50400665;MEGVAN;igen;2;50400665;50400665 – Scaletta zincata estraibile 3 gradini con asole;https://www.fts-farina.it/prodotto/50400665-scaletta-zincata-estraibile-3-gradini-con-asole/
-Dobozos felépítmény alkatrészek;504927;6 fokos létra TH;FTS;50449270;MEGVAN;igen;2;50449270;50449270 – Scala estraibile 6 gradini zincata AT600;https://www.fts-farina.it/prodotto/50449270-scala-estraibile-6-gradini-zincata-at600/
-Dobozos felépítmény alkatrészek;836500;D18 horg hátsóajtózár KIT TS;FTS;80365000;MEGVAN;igen;2;80365000;80365000 – Chiusura sottoporta zincata Ø18;https://www.fts-farina.it/prodotto/80365000-chiusura-sottoporta-zincata-o18/
-Dobozos felépítmény alkatrészek;836821/L;D22 konténer rúdzár RM. kit TS;FTS;80368210/L;MEGVAN;igen;2;80368210;Chiusura esterna SL2 per tubo Ø22;https://www.fts-farina.it/prodotto/chiusura-esterna-sl2-per-tubo-o22/
-Dobozos felépítmény alkatrészek;836821/R;D22 konténer rúdzár RM. kit TS;FTS;80368210/R;MEGVAN;igen;2;80368210;Chiusura esterna SL2 per tubo Ø22;https://www.fts-farina.it/prodotto/chiusura-esterna-sl2-per-tubo-o22/
-Dobozos felépítmény alkatrészek;836931;D34 konténer rúdzár horg. kit;FTS;80369310;MEGVAN;igen;2;80369310;80369310 – Chiusura esterna Container Zincata per tubo Ø34;https://www.fts-farina.it/prodotto/80369310-chiusura-esterna-container-zincata-per-tubo-o34/
-Dobozos felépítmény alkatrészek;501952;Fix Thorg. oldalajtó fellépő létra;FTS;50195200;MEGVAN;igen;3;50195200;Gradino sagomato H=240;https://www.fts-farina.it/prodotto/gradino-sagomato-h240/
-Dobozos felépítmény alkatrészek;552280;Gumi ütközőgyűrű D21,5x7,5 mm;FTS;55228000;MEGVAN;igen;2;55228000;55228000 – Tampone paracolpi cilindico in gomma Ø21×7,5;https://www.fts-farina.it/prodotto/55228000-tampone-paracolpi-cilindico-in-gomma-o21x75/
-Dobozos felépítmény alkatrészek;831245;Gumis zsanér L:2500 mm;FTS;54631245;MEGVAN;igen;3;54631245;Cerniera TILA;https://www.fts-farina.it/prodotto/cerniera-tila/
-Dobozos felépítmény alkatrészek;831230;Gumis zsanér L:3000 mm;FTS;54631430;MEGVAN;igen;3;54631430;Cerniera TILA;https://www.fts-farina.it/prodotto/cerniera-tila/
-Dobozos felépítmény alkatrészek;831440;Gumis zsanér L:4000 mm;FTS;54631440;MEGVAN;igen;3;54631440;Cerniera TILA;https://www.fts-farina.it/prodotto/cerniera-tila/
-Dobozos felépítmény alkatrészek;806070;Horg. konténerajó zsanér, lépcsős 130/61 mm;FTS;80600700;MEGVAN;igen;2;80600700;80600700 – Cerniera per container zincato;https://www.fts-farina.it/prodotto/80600700-cerniera-per-container-zincato/
-Dobozos felépítmény alkatrészek;806308;Horganyzott oldalajtó zsanér 140/179 mm;FTS;80600300;MEGVAN;igen;3;80600300;Cerniera laterale salto gomma;https://www.fts-farina.it/prodotto/cerniera-laterale-salto-gomma/
-Dobozos felépítmény alkatrészek;832410;Horganyzott pillangó zsanér 60x60;FTS;80324100;MEGVAN;igen;3;80324100;Cerniera Farfalla;https://www.fts-farina.it/prodotto/cerniera-farfalla/
-Dobozos felépítmény alkatrészek;728972;Húskampó 60mm csőhöz;FTS;75500445;MEGVAN;igen;2;75500445;75500445 – Gancio carne Inox tipo europa;https://www.fts-farina.it/prodotto/75500445-gancio-carne-inox-tipo-europa/
-Dobozos felépítmény alkatrészek;806287;INOX oldalajtó zsanér 184/65 zsírzós;FTS;80600287;MEGVAN;igen;3;80600287;Cerniera laterale piana con ingrassatore;https://www.fts-farina.it/prodotto/cerniera-laterale-piana-con-ingrassatore/
-Dobozos felépítmény alkatrészek;891200;Kis kapaszkodó;FTS;80901200;MEGVAN;igen;2;80901200;80901200 – Maniglia di risalita in poliuretano nero tipo “Panda”;https://www.fts-farina.it/prodotto/80901200-maniglia-di-risalita-in-poliuretano-nero-tipo-panda/
-Dobozos felépítmény alkatrészek;552825;Kúpos ütközőgumi 27,5/25;FTS;55282500;MEGVAN;igen;2;55282500;55282500 – Tampone paracolpi cilindico in gomma Ø27×25;https://www.fts-farina.it/prodotto/55282500-tampone-paracolpi-cilindico-in-gomma-o27x25/
-Dobozos felépítmény alkatrészek;553541;Kúpos ütközőgumi 45/60/35;FTS;55003541;MEGVAN;igen;2;55003541;55003541 – Tampone paracolpi conico con smussi in gomma;https://www.fts-farina.it/prodotto/55003541-tampone-paracolpi-conico-con-smussi-in-gomma/
-Dobozos felépítmény alkatrészek;555575;Kúpos ütközőgumi 55/75/40;FTS;55005575;MEGVAN;igen;2;55005575;55005575 – Tampone paracolpi conico in gomma;https://www.fts-farina.it/prodotto/55005575-tampone-paracolpi-conico-in-gomma/
-Dobozos felépítmény alkatrészek;556575;Kúpos ütközőgumi 65/75/50;FTS;55006575;MEGVAN;igen;2;55006575;55006575 – Tampone paracolpi conico in gomma;https://www.fts-farina.it/prodotto/55006575-tampone-paracolpi-conico-in-gomma/
-Dobozos felépítmény alkatrészek;557575;Kúpos ütközőgumi 75/75/50;FTS;55007575;MEGVAN;igen;2;55007575;55007575 – Tampone paracolpi conico in gomma;https://www.fts-farina.it/prodotto/55007575-tampone-paracolpi-conico-in-gomma/
-Dobozos felépítmény alkatrészek;891235;Nagy kapaszkodó;FTS;80901235;MEGVAN;igen;2;80901235;80901235 – Maniglia di risalita in poliuretano nero;https://www.fts-farina.it/prodotto/80901235-maniglia-di-risalita-in-poliuretano-nero/
+Billencs alkatrészek;352240;Ellendarabos szegő 400mm R+L;FTS;35220400;MEGVAN;igen;1;35220400;Piantone in alluminio TL35 S/BATTUTA;https://www.fts-farina.it/prodotto/piantone-in-alluminio-tl35-s-battuta/
+Billencs alkatrészek;352260;Ellendarabos szegő 600mm R+L;FTS;35220600/R/L;MEGVAN;igen;1;35220600;Piantone in alluminio TL35 S/BATTUTA;https://www.fts-farina.it/prodotto/piantone-in-alluminio-tl35-s-battuta/
+Billencs alkatrészek;146012;Szivattyú 12V;FTS;14600012;MEGVAN;igen;0;14600012;14600012 – Centralina completa 12 Volt;https://www.fts-farina.it/prodotto/14600012-centralina-completa-12-volt/
+Billencs alkatrészek;354424;Top-Kuplung;FTS;35442401;MEGVAN;igen;2;35442401;35442401 – Gancio Grezzo per Articolazione Superiore;https://www.fts-farina.it/prodotto/35442401-gancio-grezzo-per-articolazione-superiore/
+Dobozos felépítmény alkatrészek;508820;1 fokos létra horg.;FTS;50298820;MEGVAN;igen;1;50298820;50298820 – Scaletta leggera zincata estraibile a 1 gradino;https://www.fts-farina.it/prodotto/50298820-scaletta-leggera-zincata-estraibile-a-1-gradino/
+Dobozos felépítmény alkatrészek;5030270;2 fokos létra + platform TH;FTS;50430270;MEGVAN;igen;1;50430270;50430270 – Scaletta estraibile con pedana a 2 gradini zincata a caldo;https://www.fts-farina.it/prodotto/50430270-scaletta-estraibile-con-pedana-a-2-gradini-zincata-a-caldo/
+Dobozos felépítmény alkatrészek;501927;2 fokos létra TH platform;FTS;50419270;MEGVAN;igen;2;50419270;Scaletta estraibile con pedana a 2 gradini compatta;https://www.fts-farina.it/prodotto/scaletta-estraibile-con-pedana-a-2-gradini-compatta/
+Dobozos felépítmény alkatrészek;502210;2 fokos létra horg.;FTS;50292210;MEGVAN;igen;1;50292210;50292210 – Scaletta leggera zincata estraibile a 2 gradini;https://www.fts-farina.it/prodotto/50292210-scaletta-leggera-zincata-estraibile-a-2-gradini/
+Dobozos felépítmény alkatrészek;508665;2 fokos létra horg.;FTS;50398665;MEGVAN;igen;1;50398665;50398665 – Scaletta zincata estraibile 2 gradini con asole;https://www.fts-farina.it/prodotto/50398665-scaletta-zincata-estraibile-2-gradini-con-asole/
+Dobozos felépítmény alkatrészek;056402;2 részes rugós ajtókiakasztó szet;FTS;80700800;MEGVAN;igen;1;80700800;80700800 – Ferma porta autoallineante zincato;https://www.fts-farina.it/prodotto/80700800-ferma-porta-autoallineante-zincato/
+Dobozos felépítmény alkatrészek;820128/L;210 mm Rugós Rigli RM;FTS;20128610;MEGVAN;igen;2;20128610;20128610/1 – Perno a molla grande in inox;https://www.fts-farina.it/prodotto/20128610-1-perno-a-molla-grande-in-inox/
+Dobozos felépítmény alkatrészek;820129/L;247 mm Rugós Rigli horg;FTS;20128510/1;MEGVAN;igen;2;20128510;20128510/1 – Perno a molla grande zinc.;https://www.fts-farina.it/prodotto/20128510-1-perno-a-molla-grande-zinc/
+Dobozos felépítmény alkatrészek;504665;3 fokos létra horganyzott;FTS;50400665;MEGVAN;igen;1;50400665;50400665 – Scaletta zincata estraibile 3 gradini con asole;https://www.fts-farina.it/prodotto/50400665-scaletta-zincata-estraibile-3-gradini-con-asole/
+Dobozos felépítmény alkatrészek;504927;6 fokos létra TH;FTS;50449270;MEGVAN;igen;1;50449270;50449270 – Scala estraibile 6 gradini zincata AT600;https://www.fts-farina.it/prodotto/50449270-scala-estraibile-6-gradini-zincata-at600/
+Dobozos felépítmény alkatrészek;836500;D18 horg hátsóajtózár KIT TS;FTS;80365000;MEGVAN;igen;1;80365000;80365000 – Chiusura sottoporta zincata Ø18;https://www.fts-farina.it/prodotto/80365000-chiusura-sottoporta-zincata-o18/
+Dobozos felépítmény alkatrészek;836821/L;D22 konténer rúdzár RM. kit TS;FTS;80368210/L;MEGVAN;igen;1;80368210;Chiusura esterna SL2 per tubo Ø22;https://www.fts-farina.it/prodotto/chiusura-esterna-sl2-per-tubo-o22/
+Dobozos felépítmény alkatrészek;836821/R;D22 konténer rúdzár RM. kit TS;FTS;80368210/R;MEGVAN;igen;1;80368210;Chiusura esterna SL2 per tubo Ø22;https://www.fts-farina.it/prodotto/chiusura-esterna-sl2-per-tubo-o22/
+Dobozos felépítmény alkatrészek;836931;D34 konténer rúdzár horg. kit;FTS;80369310;MEGVAN;igen;1;80369310;80369310 – Chiusura esterna Container Zincata per tubo Ø34;https://www.fts-farina.it/prodotto/80369310-chiusura-esterna-container-zincata-per-tubo-o34/
+Dobozos felépítmény alkatrészek;501952;Fix Thorg. oldalajtó fellépő létra;FTS;50195200;MEGVAN;igen;2;50195200;Gradino sagomato H=240;https://www.fts-farina.it/prodotto/gradino-sagomato-h240/
+Dobozos felépítmény alkatrészek;552280;Gumi ütközőgyűrű D21,5x7,5 mm;FTS;55228000;MEGVAN;igen;1;55228000;55228000 – Tampone paracolpi cilindico in gomma Ø21×7,5;https://www.fts-farina.it/prodotto/55228000-tampone-paracolpi-cilindico-in-gomma-o21x75/
+Dobozos felépítmény alkatrészek;831245;Gumis zsanér L:2500 mm;FTS;54631245;MEGVAN;igen;2;54631245;Cerniera TILA;https://www.fts-farina.it/prodotto/cerniera-tila/
+Dobozos felépítmény alkatrészek;831230;Gumis zsanér L:3000 mm;FTS;54631430;MEGVAN;igen;2;54631430;Cerniera TILA;https://www.fts-farina.it/prodotto/cerniera-tila/
+Dobozos felépítmény alkatrészek;831440;Gumis zsanér L:4000 mm;FTS;54631440;MEGVAN;igen;2;54631440;Cerniera TILA;https://www.fts-farina.it/prodotto/cerniera-tila/
+Dobozos felépítmény alkatrészek;806070;Horg. konténerajó zsanér, lépcsős 130/61 mm;FTS;80600700;MEGVAN;igen;1;80600700;80600700 – Cerniera per container zincato;https://www.fts-farina.it/prodotto/80600700-cerniera-per-container-zincato/
+Dobozos felépítmény alkatrészek;806308;Horganyzott oldalajtó zsanér 140/179 mm;FTS;80600300;MEGVAN;igen;2;80600300;Cerniera laterale salto gomma;https://www.fts-farina.it/prodotto/cerniera-laterale-salto-gomma/
+Dobozos felépítmény alkatrészek;832410;Horganyzott pillangó zsanér 60x60;FTS;80324100;MEGVAN;igen;2;80324100;Cerniera Farfalla;https://www.fts-farina.it/prodotto/cerniera-farfalla/
+Dobozos felépítmény alkatrészek;728972;Húskampó 60mm csőhöz;FTS;75500445;MEGVAN;igen;1;75500445;75500445 – Gancio carne Inox tipo europa;https://www.fts-farina.it/prodotto/75500445-gancio-carne-inox-tipo-europa/
+Dobozos felépítmény alkatrészek;806287;INOX oldalajtó zsanér 184/65 zsírzós;FTS;80600287;MEGVAN;igen;2;80600287;Cerniera laterale piana con ingrassatore;https://www.fts-farina.it/prodotto/cerniera-laterale-piana-con-ingrassatore/
+Dobozos felépítmény alkatrészek;891200;Kis kapaszkodó;FTS;80901200;MEGVAN;igen;1;80901200;80901200 – Maniglia di risalita in poliuretano nero tipo “Panda”;https://www.fts-farina.it/prodotto/80901200-maniglia-di-risalita-in-poliuretano-nero-tipo-panda/
+Dobozos felépítmény alkatrészek;552825;Kúpos ütközőgumi 27,5/25;FTS;55282500;MEGVAN;igen;1;55282500;55282500 – Tampone paracolpi cilindico in gomma Ø27×25;https://www.fts-farina.it/prodotto/55282500-tampone-paracolpi-cilindico-in-gomma-o27x25/
+Dobozos felépítmény alkatrészek;553541;Kúpos ütközőgumi 45/60/35;FTS;55003541;MEGVAN;igen;1;55003541;55003541 – Tampone paracolpi conico con smussi in gomma;https://www.fts-farina.it/prodotto/55003541-tampone-paracolpi-conico-con-smussi-in-gomma/
+Dobozos felépítmény alkatrészek;555575;Kúpos ütközőgumi 55/75/40;FTS;55005575;MEGVAN;igen;1;55005575;55005575 – Tampone paracolpi conico in gomma;https://www.fts-farina.it/prodotto/55005575-tampone-paracolpi-conico-in-gomma/
+Dobozos felépítmény alkatrészek;556575;Kúpos ütközőgumi 65/75/50;FTS;55006575;MEGVAN;igen;1;55006575;55006575 – Tampone paracolpi conico in gomma;https://www.fts-farina.it/prodotto/55006575-tampone-paracolpi-conico-in-gomma/
+Dobozos felépítmény alkatrészek;557575;Kúpos ütközőgumi 75/75/50;FTS;55007575;MEGVAN;igen;1;55007575;55007575 – Tampone paracolpi conico in gomma;https://www.fts-farina.it/prodotto/55007575-tampone-paracolpi-conico-in-gomma/
+Dobozos felépítmény alkatrészek;891235;Nagy kapaszkodó;FTS;80901235;MEGVAN;igen;1;80901235;80901235 – Maniglia di risalita in poliuretano nero;https://www.fts-farina.it/prodotto/80901235-maniglia-di-risalita-in-poliuretano-nero/
 Dobozos felépítmény alkatrészek;828010;Nyers zsanér bak + csavar;FTS;80280100;MEGVAN;igen;1;80280100;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=315
-Dobozos felépítmény alkatrészek;899210/C;RM hátsóajtó zsanérbak TS;FTS;80399210/C;MEGVAN;igen;3;80399210;80399210 – Cerniera posteriore in Inox composto da cardine e perno;https://www.fts-farina.it/prodotto/80399210-cerniera-posteriore-in-inox-composto-da-cardine-e-perno/
-Dobozos felépítmény alkatrészek;899210;RM hátsóajtó zsanérlap+bak 280/3 TS;FTS;80399210;MEGVAN;igen;3;80399210;80399210 – Cerniera posteriore in Inox composto da cardine e perno;https://www.fts-farina.it/prodotto/80399210-cerniera-posteriore-in-inox-composto-da-cardine-e-perno/
-Dobozos felépítmény alkatrészek;806307;RM oldalajtó zsanér, lépcsős 140/179 mm;FTS;80600307;MEGVAN;igen;3;80600307;Cerniera laterale salto gomma;https://www.fts-farina.it/prodotto/cerniera-laterale-salto-gomma/
-Dobozos felépítmény alkatrészek;806407;RM oldalajtó zsanér, lépcsős 183 mm;FTS;80600407;MEGVAN;igen;3;80600407;Cerniera salto gomma work;https://www.fts-farina.it/prodotto/cerniera-salto-gomma-work/
-Dobozos felépítmény alkatrészek;832420;RM pillangó zsanér 60x60;FTS;80324200;MEGVAN;igen;3;80324200;Cerniera Farfalla;https://www.fts-farina.it/prodotto/cerniera-farfalla/
+Dobozos felépítmény alkatrészek;899210/C;RM hátsóajtó zsanérbak TS;FTS;80399210/C;MEGVAN;igen;2;80399210;80399210 – Cerniera posteriore in Inox composto da cardine e perno;https://www.fts-farina.it/prodotto/80399210-cerniera-posteriore-in-inox-composto-da-cardine-e-perno/
+Dobozos felépítmény alkatrészek;899210;RM hátsóajtó zsanérlap+bak 280/3 TS;FTS;80399210;MEGVAN;igen;2;80399210;80399210 – Cerniera posteriore in Inox composto da cardine e perno;https://www.fts-farina.it/prodotto/80399210-cerniera-posteriore-in-inox-composto-da-cardine-e-perno/
+Dobozos felépítmény alkatrészek;806307;RM oldalajtó zsanér, lépcsős 140/179 mm;FTS;80600307;MEGVAN;igen;2;80600307;Cerniera laterale salto gomma;https://www.fts-farina.it/prodotto/cerniera-laterale-salto-gomma/
+Dobozos felépítmény alkatrészek;806407;RM oldalajtó zsanér, lépcsős 183 mm;FTS;80600407;MEGVAN;igen;2;80600407;Cerniera salto gomma work;https://www.fts-farina.it/prodotto/cerniera-salto-gomma-work/
+Dobozos felépítmény alkatrészek;832420;RM pillangó zsanér 60x60;FTS;80324200;MEGVAN;igen;2;80324200;Cerniera Farfalla;https://www.fts-farina.it/prodotto/cerniera-farfalla/
 Dobozos felépítmény alkatrészek;808872;RM zongora zsanér 40x1,5x1970 mm;FTS;80088720;MEGVAN;igen;1;80088720;Cerniera a libro in Inox senza fori con perno in Inox;https://www.fts-farina.it/prodotto/cerniera-a-libro-in-inox-senza-fori-con-perno-in-inox/
-Dobozos felépítmény alkatrészek;820128;Rugós Rigli RM;FTS;20128210;MEGVAN;igen;3;20128210;20128210 – Perno a molla piccolo in inox;https://www.fts-farina.it/prodotto/20128210-perno-a-molla-piccolo-in-inox/
-Dobozos felépítmény alkatrészek;820129;Rugós Rigli horg;FTS;20128110;MEGVAN;igen;3;20128110;20128110 – Perno a molla piccolo zincato;https://www.fts-farina.it/prodotto/20128110-perno-a-molla-piccolo-zincato/
-Dobozos felépítmény alkatrészek;829611;Rugós ajtókitámasztó 500/270mm TS;FTS;80296110;MEGVAN;igen;3;80296110;80296110 – Ferma porta sottotelaio con attacco piatto zincato;https://www.fts-farina.it/prodotto/80296110-ferma-porta-sottotelaio-con-attacco-in-piano-zincato/
-Dobozos felépítmény alkatrészek;829691;Rugós ajtókitámasztó 500/280 Inox TS;FTS;80296910;MEGVAN;igen;3;80296910;80296910 – Fermaporta sottotelaio con attacco sagomato Inox;https://www.fts-farina.it/prodotto/80296910-fermaporta-sottotelaio-con-attacco-sagomato-inox/
-Dobozos felépítmény alkatrészek;829631;Rugós ajtórögzítő horg 440/270mm TS;FTS;80296310;MEGVAN;igen;2;80296310;80296310 – Fermaporta sottotelaio con attacco a squadro zincato;https://www.fts-farina.it/prodotto/80296310-fermaporta-sottotelaio-con-attacco-a-squadro-zincato/
-Dobozos felépítmény alkatrészek;829681;Rugós ajtórögzítő horg 545/410mm TS;FTS;80296810;MEGVAN;igen;2;80296810;80296810 – Fermaporta sottototelaio con attac. a squadro tipo francese zincato;https://www.fts-farina.it/prodotto/80296810-fermaporta-sottototelaio-con-attac-a-squadro-tipo-francese-zincato/
-Dobozos felépítmény alkatrészek;729143;Sínrőgzítő láncal húspályasínhez RM;FTS;75539143;MEGVAN;igen;2;75539143;75539143 – Coppia supporti Inox per fissaggio per bloccaggio guidovia con catena;https://www.fts-farina.it/prodotto/75539143-coppia-supporti-inox-per-fissaggio-per-bloccaggio-guidovia-con-catena/
-Dobozos felépítmény alkatrészek;552118;Ütközőgumi 150x60x60;FTS;55200118;MEGVAN;igen;2;55200118;55200118 – Tampone paracolpi in gomma 150x60x60;https://www.fts-farina.it/prodotto/55200118-tampone-paracolpi-in-gomma-150x60x60/
-Dobozos felépítmény alkatrészek;552080;Ütközőgumi 200x80x80;FTS;55200800;MEGVAN;igen;2;55200800;55200800 – Tampone paracolpi in gomma 200x80x80;https://www.fts-farina.it/prodotto/55200800-tampone-paracolpi-in-gomma-200x80x80/
-Dobozos felépítmény alkatrészek;552155;Ütközőgumi 215x50x55;FTS;55215505;MEGVAN;igen;2;55215505;55215505 – Tampone paracolpi in gomma 215x50x55;https://www.fts-farina.it/prodotto/55215505-tampone-paracolpi-in-gomma-215x50x55/
-Dobozos felépítmény alkatrészek;553065;Ütközőgumi 300x65x70;FTS;55307065;MEGVAN;igen;2;55307065;55307065 – Tampone paracolpi in gomma 300x65x70;https://www.fts-farina.it/prodotto/55307065-tampone-paracolpi-in-gomma-300x65x70/
-Dobozos felépítmény alkatrészek;552594;Ütközőgumi 400x65x70;FTS;55200594;MEGVAN;igen;2;55200594;55200594 – Tampone paracolpi in gomma 400x65x70;https://www.fts-farina.it/prodotto/55200594-tampone-paracolpi-in-gomma-400x65x70/
-Dobozos felépítmény alkatrészek;554540;Ütközőgumi 450x40x60;FTS;55045040;MEGVAN;igen;2;55045040;55045040 – Tampone paracolpi in gomma 450x40x60;https://www.fts-farina.it/prodotto/55045040-tampone-paracolpi-in-gomma-450x40x60/
-Dobozos felépítmény alkatrészek;555490;Ütközőgumi 490x45x40;FTS;55500490;MEGVAN;igen;2;55500490;55500490 – PROFILO PARASPONDE NERO L.490;https://www.fts-farina.it/prodotto/55500490-profilo-parasponde-nero-l-490/
-Elhúzható rolóponyvás rendszer;211210;Ponyvagörgő ALU sínhez;FTS;36200110;MEGVAN;igen;2;36200110;36200110 – Carrucola ruote in nylon Ø30;https://www.fts-farina.it/prodotto/36200110-carrucola-ruote-in-nylon-o30/
-Platós alkatrészek és kiegészítők;451871;Alváz rögzítő konzol 10/12-14/16;FTS;45187110;MEGVAN;igen;2;45187110;45187110 – Supporto fissaggio chassis zincato spessori 10/12-14/16;https://www.fts-farina.it/prodotto/45187110-supporto-fissaggio-chassis-zincato-spessori-10-12-14-16/
-Platós alkatrészek és kiegészítők;452871;Alváz rögzítő konzol 4/5-5/6;FTS;45287110;MEGVAN;igen;2;45287110;45287110 – Supporto fissaggio chassis zincato spessori 4/5-5/6;https://www.fts-farina.it/prodotto/45287110-supporto-fissaggio-chassis-zincato-spessori-4-5-5-6/
-Platós alkatrészek és kiegészítők;452921;Alváz rögzítő konzol 7/8-10/12;FTS;45292110;MEGVAN;igen;2;45292110;45292110 – Supporto fissaggio chassis zincato spessori 7/8-10/12;https://www.fts-farina.it/prodotto/45292110-supporto-fissaggio-chassis-zincato-spessori-7-8-10-12/
-Platós alkatrészek és kiegészítők;307955/TH;Aláfutásgátló konzol 550 mm;FTS;57900155;MEGVAN;igen;3;57900155;Parabiciclette ribaltabile H.550;https://www.fts-farina.it/prodotto/parabiciclette-ribaltabile-h-550/
-Platós alkatrészek és kiegészítők;307955;Aláfutásgátló konzol 550 mm horg.;FTS;57900055;MEGVAN;igen;3;57900055;Parabiciclette ribaltabile H.550;https://www.fts-farina.it/prodotto/parabiciclette-ribaltabile-h-550/
+Dobozos felépítmény alkatrészek;820128;Rugós Rigli RM;FTS;20128210;MEGVAN;igen;2;20128210;20128210 – Perno a molla piccolo in inox;https://www.fts-farina.it/prodotto/20128210-perno-a-molla-piccolo-in-inox/
+Dobozos felépítmény alkatrészek;820129;Rugós Rigli horg;FTS;20128110;MEGVAN;igen;2;20128110;20128110 – Perno a molla piccolo zincato;https://www.fts-farina.it/prodotto/20128110-perno-a-molla-piccolo-zincato/
+Dobozos felépítmény alkatrészek;829611;Rugós ajtókitámasztó 500/270mm TS;FTS;80296110;MEGVAN;igen;2;80296110;80296110 – Ferma porta sottotelaio con attacco piatto zincato;https://www.fts-farina.it/prodotto/80296110-ferma-porta-sottotelaio-con-attacco-in-piano-zincato/
+Dobozos felépítmény alkatrészek;829691;Rugós ajtókitámasztó 500/280 Inox TS;FTS;80296910;MEGVAN;igen;2;80296910;80296910 – Fermaporta sottotelaio con attacco sagomato Inox;https://www.fts-farina.it/prodotto/80296910-fermaporta-sottotelaio-con-attacco-sagomato-inox/
+Dobozos felépítmény alkatrészek;829631;Rugós ajtórögzítő horg 440/270mm TS;FTS;80296310;MEGVAN;igen;1;80296310;80296310 – Fermaporta sottotelaio con attacco a squadro zincato;https://www.fts-farina.it/prodotto/80296310-fermaporta-sottotelaio-con-attacco-a-squadro-zincato/
+Dobozos felépítmény alkatrészek;829681;Rugós ajtórögzítő horg 545/410mm TS;FTS;80296810;MEGVAN;igen;1;80296810;80296810 – Fermaporta sottototelaio con attac. a squadro tipo francese zincato;https://www.fts-farina.it/prodotto/80296810-fermaporta-sottototelaio-con-attac-a-squadro-tipo-francese-zincato/
+Dobozos felépítmény alkatrészek;729143;Sínrőgzítő láncal húspályasínhez RM;FTS;75539143;MEGVAN;igen;1;75539143;75539143 – Coppia supporti Inox per fissaggio per bloccaggio guidovia con catena;https://www.fts-farina.it/prodotto/75539143-coppia-supporti-inox-per-fissaggio-per-bloccaggio-guidovia-con-catena/
+Dobozos felépítmény alkatrészek;552118;Ütközőgumi 150x60x60;FTS;55200118;MEGVAN;igen;1;55200118;55200118 – Tampone paracolpi in gomma 150x60x60;https://www.fts-farina.it/prodotto/55200118-tampone-paracolpi-in-gomma-150x60x60/
+Dobozos felépítmény alkatrészek;552080;Ütközőgumi 200x80x80;FTS;55200800;MEGVAN;igen;1;55200800;55200800 – Tampone paracolpi in gomma 200x80x80;https://www.fts-farina.it/prodotto/55200800-tampone-paracolpi-in-gomma-200x80x80/
+Dobozos felépítmény alkatrészek;552155;Ütközőgumi 215x50x55;FTS;55215505;MEGVAN;igen;1;55215505;55215505 – Tampone paracolpi in gomma 215x50x55;https://www.fts-farina.it/prodotto/55215505-tampone-paracolpi-in-gomma-215x50x55/
+Dobozos felépítmény alkatrészek;553065;Ütközőgumi 300x65x70;FTS;55307065;MEGVAN;igen;1;55307065;55307065 – Tampone paracolpi in gomma 300x65x70;https://www.fts-farina.it/prodotto/55307065-tampone-paracolpi-in-gomma-300x65x70/
+Dobozos felépítmény alkatrészek;552594;Ütközőgumi 400x65x70;FTS;55200594;MEGVAN;igen;1;55200594;55200594 – Tampone paracolpi in gomma 400x65x70;https://www.fts-farina.it/prodotto/55200594-tampone-paracolpi-in-gomma-400x65x70/
+Dobozos felépítmény alkatrészek;554540;Ütközőgumi 450x40x60;FTS;55045040;MEGVAN;igen;1;55045040;55045040 – Tampone paracolpi in gomma 450x40x60;https://www.fts-farina.it/prodotto/55045040-tampone-paracolpi-in-gomma-450x40x60/
+Dobozos felépítmény alkatrészek;555490;Ütközőgumi 490x45x40;FTS;55500490;MEGVAN;igen;1;55500490;55500490 – PROFILO PARASPONDE NERO L.490;https://www.fts-farina.it/prodotto/55500490-profilo-parasponde-nero-l-490/
+Elhúzható rolóponyvás rendszer;211210;Ponyvagörgő ALU sínhez;FTS;36200110;MEGVAN;igen;1;36200110;36200110 – Carrucola ruote in nylon Ø30;https://www.fts-farina.it/prodotto/36200110-carrucola-ruote-in-nylon-o30/
+Platós alkatrészek és kiegészítők;451871;Alváz rögzítő konzol 10/12-14/16;FTS;45187110;MEGVAN;igen;1;45187110;45187110 – Supporto fissaggio chassis zincato spessori 10/12-14/16;https://www.fts-farina.it/prodotto/45187110-supporto-fissaggio-chassis-zincato-spessori-10-12-14-16/
+Platós alkatrészek és kiegészítők;452871;Alváz rögzítő konzol 4/5-5/6;FTS;45287110;MEGVAN;igen;1;45287110;45287110 – Supporto fissaggio chassis zincato spessori 4/5-5/6;https://www.fts-farina.it/prodotto/45287110-supporto-fissaggio-chassis-zincato-spessori-4-5-5-6/
+Platós alkatrészek és kiegészítők;452921;Alváz rögzítő konzol 7/8-10/12;FTS;45292110;MEGVAN;igen;1;45292110;45292110 – Supporto fissaggio chassis zincato spessori 7/8-10/12;https://www.fts-farina.it/prodotto/45292110-supporto-fissaggio-chassis-zincato-spessori-7-8-10-12/
+Platós alkatrészek és kiegészítők;307955/TH;Aláfutásgátló konzol 550 mm;FTS;57900155;MEGVAN;igen;2;57900155;Parabiciclette ribaltabile H.550;https://www.fts-farina.it/prodotto/parabiciclette-ribaltabile-h-550/
+Platós alkatrészek és kiegészítők;307955;Aláfutásgátló konzol 550 mm horg.;FTS;57900055;MEGVAN;igen;2;57900055;Parabiciclette ribaltabile H.550;https://www.fts-farina.it/prodotto/parabiciclette-ribaltabile-h-550/
 Platós alkatrészek és kiegészítők;307155;Aláfutásgátló konzol 572 mm;FTS;57700155;MEGVAN;igen;2;57700155;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=268
-Platós alkatrészek és kiegészítők;309055;Aláfutásgátló konzol 700 mm horg.;FTS;58900055;MEGVAN;igen;3;58900055;Parabiciclette ribaltabile H.700;https://www.fts-farina.it/prodotto/parabiciclette-ribaltabile-h-700/
+Platós alkatrészek és kiegészítők;309055;Aláfutásgátló konzol 700 mm horg.;FTS;58900055;MEGVAN;igen;2;58900055;Parabiciclette ribaltabile H.700;https://www.fts-farina.it/prodotto/parabiciclette-ribaltabile-h-700/
 Platós alkatrészek és kiegészítők;308155/TH;Aláfutásgátló konzol 710 mm;FTS;58800155;MEGVAN;igen;0;58800155;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=268
-Platós alkatrészek és kiegészítők;5032110;Békazár 140 mm + ellendarab;FTS;10352110;MEGVAN;igen;3;10352110;Chiusura a laccio;https://www.fts-farina.it/prodotto/chiusura-a-laccio/
-Platós alkatrészek és kiegészítők;352540;Egymásba záródó Z-zár 400;FTS;35250400;MEGVAN;igen;1;35250400;35100500 – Montante Centrale per Piantone TL35 – 35250400;https://www.fts-farina.it/prodotto/35100500-montante-centrale-per-piantone-tl35-35250400/
+Platós alkatrészek és kiegészítők;5032110;Békazár 140 mm + ellendarab;FTS;10352110;MEGVAN;igen;2;10352110;Chiusura a laccio;https://www.fts-farina.it/prodotto/chiusura-a-laccio/
+Platós alkatrészek és kiegészítők;352540;Egymásba záródó Z-zár 400;FTS;35250400;MEGVAN;igen;0;35250400;35100500 – Montante Centrale per Piantone TL35 – 35250400;https://www.fts-farina.it/prodotto/35100500-montante-centrale-per-piantone-tl35-35250400/
 Platós alkatrészek és kiegészítők;352202;Egymásbazáródó zár ellendarab;FTS;35220002;MEGVAN;igen;1;35220002;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=139
-Platós alkatrészek és kiegészítők;456511;Horganyzott EUROCARGO konzol;FTS;45165110;MEGVAN;igen;3;45165110;Supporto falso telaio EUROCARGO;https://www.fts-farina.it/prodotto/supporto-falso-telaio-eurocargo/
-Platós alkatrészek és kiegészítők;507110;Horganyzott fellépő;FTS;50170110;MEGVAN;igen;3;50170110;Pedana salita con fermo;https://www.fts-farina.it/prodotto/pedana-salita-con-fermo/
-Platós alkatrészek és kiegészítők;456320;Horganyzott kiskonzol DAILY L.50-H.70;FTS;45163200;MEGVAN;igen;3;45163200;Supporto falso telaio DAILY L.50 H.70;https://www.fts-farina.it/prodotto/supporto-falso-telaio-daily-l-50-h-70/
-Platós alkatrészek és kiegészítők;456610;Horganyzott kiskonzol IVECO;FTS;45163100;MEGVAN;igen;3;45163100;Supporto falso telaio leggero DAILY L.50 H.90;https://www.fts-farina.it/prodotto/supporto-falso-telaio-leggero-daily-l-50-h-90/
-Platós alkatrészek és kiegészítők;456330;Horganyzott kiskonzol IVECO Új;FTS;45163300;MEGVAN;igen;3;45163300;Supporto falso telaio DAILY L.70 H.90;https://www.fts-farina.it/prodotto/supporto-falso-telaio-daily-l-70-h-90/
-Platós alkatrészek és kiegészítők;451771;Horganyzott nagykonzol IVECO 45 mm;FTS;45177100;MEGVAN;igen;3;45177100;Supporto falso telaio;https://www.fts-farina.it/prodotto/supporto-falso-telaio/
-Platós alkatrészek és kiegészítők;451721;Horganyzott nagykonzol MAN 50 mm;FTS;45172110;MEGVAN;igen;3;45172110;Supporto falso telaio pesante;https://www.fts-farina.it/prodotto/supporto-falso-telaio-pesante/
-Platós alkatrészek és kiegészítők;;M12x140 Rugós felfüggesztés;FTS;25800100;MEGVAN;igen;2;25800100;25800100 – Sistema di fissaggio elastico M12x140;https://www.fts-farina.it/prodotto/25800100-sistema-di-fissaggio-elastico-m12x140/
-Platós alkatrészek és kiegészítők;;M18x140 Rugós felfüggesztés;FTS;25850100;MEGVAN;igen;2;25850100;25850100 – Sistema di fissaggio elastico pesante M18x140;https://www.fts-farina.it/prodotto/25850100-sistema-di-fissaggio-elastico-pesante-m18x140/
+Platós alkatrészek és kiegészítők;456511;Horganyzott EUROCARGO konzol;FTS;45165110;MEGVAN;igen;2;45165110;Supporto falso telaio EUROCARGO;https://www.fts-farina.it/prodotto/supporto-falso-telaio-eurocargo/
+Platós alkatrészek és kiegészítők;507110;Horganyzott fellépő;FTS;50170110;MEGVAN;igen;2;50170110;Pedana salita con fermo;https://www.fts-farina.it/prodotto/pedana-salita-con-fermo/
+Platós alkatrészek és kiegészítők;456320;Horganyzott kiskonzol DAILY L.50-H.70;FTS;45163200;MEGVAN;igen;2;45163200;Supporto falso telaio DAILY L.50 H.70;https://www.fts-farina.it/prodotto/supporto-falso-telaio-daily-l-50-h-70/
+Platós alkatrészek és kiegészítők;456610;Horganyzott kiskonzol IVECO;FTS;45163100;MEGVAN;igen;2;45163100;Supporto falso telaio leggero DAILY L.50 H.90;https://www.fts-farina.it/prodotto/supporto-falso-telaio-leggero-daily-l-50-h-90/
+Platós alkatrészek és kiegészítők;456330;Horganyzott kiskonzol IVECO Új;FTS;45163300;MEGVAN;igen;2;45163300;Supporto falso telaio DAILY L.70 H.90;https://www.fts-farina.it/prodotto/supporto-falso-telaio-daily-l-70-h-90/
+Platós alkatrészek és kiegészítők;451771;Horganyzott nagykonzol IVECO 45 mm;FTS;45177100;MEGVAN;igen;2;45177100;Supporto falso telaio;https://www.fts-farina.it/prodotto/supporto-falso-telaio/
+Platós alkatrészek és kiegészítők;451721;Horganyzott nagykonzol MAN 50 mm;FTS;45172110;MEGVAN;igen;2;45172110;Supporto falso telaio pesante;https://www.fts-farina.it/prodotto/supporto-falso-telaio-pesante/
+Platós alkatrészek és kiegészítők;;M12x140 Rugós felfüggesztés;FTS;25800100;MEGVAN;igen;1;25800100;25800100 – Sistema di fissaggio elastico M12x140;https://www.fts-farina.it/prodotto/25800100-sistema-di-fissaggio-elastico-m12x140/
+Platós alkatrészek és kiegészítők;;M18x140 Rugós felfüggesztés;FTS;25850100;MEGVAN;igen;1;25850100;25850100 – Sistema di fissaggio elastico pesante M18x140;https://www.fts-farina.it/prodotto/25850100-sistema-di-fissaggio-elastico-pesante-m18x140/
 Platós alkatrészek és kiegészítők;152711;Menetes lapka 30mm;FTS;15270110;MEGVAN;igen;1;15270110;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=72
-Platós alkatrészek és kiegészítők;354400;Nem peremes 400 Z-zár R+L;FTS;35140400;MEGVAN;igen;2;35140400;Piantone PLANAE in alluminio Senza Battuta maniglia Zincata;https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-senza-battuta-maniglia-zincata/
-Platós alkatrészek és kiegészítők;354500;Nem peremes 500 mm Z-zár R+L;FTS;35140500;MEGVAN;igen;2;35140500;Piantone PLANAE in alluminio Senza Battuta maniglia Zincata;https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-senza-battuta-maniglia-zincata/
-Platós alkatrészek és kiegészítők;354600;Nem peremes 600 mm Z-zár R+L;FTS;35140600;MEGVAN;igen;2;35140600;Piantone PLANAE in alluminio Senza Battuta maniglia Zincata;https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-senza-battuta-maniglia-zincata/
-Platós alkatrészek és kiegészítők;354800;Nem peremes 800 mm Z-zár R+L;FTS;35140800;MEGVAN;igen;2;35140800;Piantone PLANAE in alluminio Senza Battuta maniglia Zincata;https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-senza-battuta-maniglia-zincata/
-Platós alkatrészek és kiegészítők;453881;Nyers alváz konzol /5 mm;FTS;45388100;MEGVAN;igen;2;45388100;45388100 – Supporto falso di telaio grezzo;https://www.fts-farina.it/prodotto/45388100-supporto-falso-di-telaio-grezzo/
-Platós alkatrészek és kiegészítők;453991;Nyers alváz konzol /6 mm;FTS;45399100;MEGVAN;igen;2;45399100;45399100 – Supporto falso di telaio pesante grezzo;https://www.fts-farina.it/prodotto/45399100-supporto-falso-di-telaio-pesante-grezzo/
-Platós alkatrészek és kiegészítők;456610/R;Nyers kiskonzol IVECO;FTS;45166100;MEGVAN;igen;3;45166100;Supporto falso telaio leggero DAILY L.50 H.90;https://www.fts-farina.it/prodotto/supporto-falso-telaio-leggero-daily-l-50-h-90/
-Platós alkatrészek és kiegészítők;357400;Peremes Z-zár 400 mm R+L;FTS;35160400;MEGVAN;igen;2;35160400;Piantone PLANAE in alluminio Con Battuta maniglia Zincata con Sicura;https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-con-battuta-maniglia-zincata-con-sicura/
-Platós alkatrészek és kiegészítők;357500;Peremes Z-zár 500 mm R+L;FTS;35170500;MEGVAN;igen;2;35170500;Piantone PLANAE in alluminio Con Battuta maniglia Zincata;https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-con-battuta-maniglia-zincata/
-Platós alkatrészek és kiegészítők;357401;Peremes Z-zár 600 mm R+L;FTS;35170600;MEGVAN;igen;2;35170600;Piantone PLANAE in alluminio Con Battuta maniglia Zincata;https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-con-battuta-maniglia-zincata/
-Platós alkatrészek és kiegészítők;501029;TH Pótkeréktartó 1235x450 mm TS;FTS;50102900;MEGVAN;igen;3;50102900;50102900 – Porta ruota zincato a caldo 385/65 R22,5 con rulli;https://www.fts-farina.it/prodotto/50102900-porta-ruota-zincato-a-caldo-385-65-r225-con-rulli/
-Platós alkatrészek és kiegészítők;152815/1;TIR-zsanér anya;FTS;15281510;MEGVAN;igen;3;15281510;Cerniera Tir leggera BM;https://www.fts-farina.it/prodotto/cerniera-tir-leggera-bm/
-Platós alkatrészek és kiegészítők;152815/2;TIR-zsanér apa;FTS;15280510;MEGVAN;igen;3;15280510;Perno Tir leggero BM;https://www.fts-farina.it/prodotto/perno-tir-leggero-bm/
-Platós alkatrészek és kiegészítők;152760;TIR-zsanér apa rész alu-hoz;FTS;15276110;MEGVAN;igen;2;15276110;15276110 – Perno in Lamiera Stampata Zincato Ø12;https://www.fts-farina.it/prodotto/15276110-perno-in-lamiera-stampata-zincato-o12/
-Platós alkatrészek és kiegészítők;152823;TIR-zsanér garnitúra RM;FTS;15282310/15280310;MEGVAN;igen;3;15282310;Cerniera Tir leggera BM;https://www.fts-farina.it/prodotto/cerniera-tir-leggera-bm/
-Platós alkatrészek és kiegészítők;152814;TIR-zsanér garnitúra TH;FTS;15281410/15280410;MEGVAN;igen;3;15281410;Cerniera Tir leggera BM;https://www.fts-farina.it/prodotto/cerniera-tir-leggera-bm/
+Platós alkatrészek és kiegészítők;354400;Nem peremes 400 Z-zár R+L;FTS;35140400;MEGVAN;igen;1;35140400;Piantone PLANAE in alluminio Senza Battuta maniglia Zincata;https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-senza-battuta-maniglia-zincata/
+Platós alkatrészek és kiegészítők;354500;Nem peremes 500 mm Z-zár R+L;FTS;35140500;MEGVAN;igen;1;35140500;Piantone PLANAE in alluminio Senza Battuta maniglia Zincata;https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-senza-battuta-maniglia-zincata/
+Platós alkatrészek és kiegészítők;354600;Nem peremes 600 mm Z-zár R+L;FTS;35140600;MEGVAN;igen;1;35140600;Piantone PLANAE in alluminio Senza Battuta maniglia Zincata;https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-senza-battuta-maniglia-zincata/
+Platós alkatrészek és kiegészítők;354800;Nem peremes 800 mm Z-zár R+L;FTS;35140800;MEGVAN;igen;1;35140800;Piantone PLANAE in alluminio Senza Battuta maniglia Zincata;https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-senza-battuta-maniglia-zincata/
+Platós alkatrészek és kiegészítők;453881;Nyers alváz konzol /5 mm;FTS;45388100;MEGVAN;igen;1;45388100;45388100 – Supporto falso di telaio grezzo;https://www.fts-farina.it/prodotto/45388100-supporto-falso-di-telaio-grezzo/
+Platós alkatrészek és kiegészítők;453991;Nyers alváz konzol /6 mm;FTS;45399100;MEGVAN;igen;1;45399100;45399100 – Supporto falso di telaio pesante grezzo;https://www.fts-farina.it/prodotto/45399100-supporto-falso-di-telaio-pesante-grezzo/
+Platós alkatrészek és kiegészítők;456610/R;Nyers kiskonzol IVECO;FTS;45166100;MEGVAN;igen;2;45166100;Supporto falso telaio leggero DAILY L.50 H.90;https://www.fts-farina.it/prodotto/supporto-falso-telaio-leggero-daily-l-50-h-90/
+Platós alkatrészek és kiegészítők;357400;Peremes Z-zár 400 mm R+L;FTS;35160400;MEGVAN;igen;1;35160400;Piantone PLANAE in alluminio Con Battuta maniglia Zincata con Sicura;https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-con-battuta-maniglia-zincata-con-sicura/
+Platós alkatrészek és kiegészítők;357500;Peremes Z-zár 500 mm R+L;FTS;35170500;MEGVAN;igen;1;35170500;Piantone PLANAE in alluminio Con Battuta maniglia Zincata;https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-con-battuta-maniglia-zincata/
+Platós alkatrészek és kiegészítők;357401;Peremes Z-zár 600 mm R+L;FTS;35170600;MEGVAN;igen;1;35170600;Piantone PLANAE in alluminio Con Battuta maniglia Zincata;https://www.fts-farina.it/prodotto/piantone-planae-in-alluminio-con-battuta-maniglia-zincata/
+Platós alkatrészek és kiegészítők;501029;TH Pótkeréktartó 1235x450 mm TS;FTS;50102900;MEGVAN;igen;2;50102900;50102900 – Porta ruota zincato a caldo 385/65 R22,5 con rulli;https://www.fts-farina.it/prodotto/50102900-porta-ruota-zincato-a-caldo-385-65-r225-con-rulli/
+Platós alkatrészek és kiegészítők;152815/1;TIR-zsanér anya;FTS;15281510;MEGVAN;igen;2;15281510;Cerniera Tir leggera BM;https://www.fts-farina.it/prodotto/cerniera-tir-leggera-bm/
+Platós alkatrészek és kiegészítők;152815/2;TIR-zsanér apa;FTS;15280510;MEGVAN;igen;2;15280510;Perno Tir leggero BM;https://www.fts-farina.it/prodotto/perno-tir-leggero-bm/
+Platós alkatrészek és kiegészítők;152760;TIR-zsanér apa rész alu-hoz;FTS;15276110;MEGVAN;igen;1;15276110;15276110 – Perno in Lamiera Stampata Zincato Ø12;https://www.fts-farina.it/prodotto/15276110-perno-in-lamiera-stampata-zincato-o12/
+Platós alkatrészek és kiegészítők;152823;TIR-zsanér garnitúra RM;FTS;15282310/15280310;MEGVAN;igen;2;15282310;Cerniera Tir leggera BM;https://www.fts-farina.it/prodotto/cerniera-tir-leggera-bm/
+Platós alkatrészek és kiegészítők;152814;TIR-zsanér garnitúra TH;FTS;15281410/15280410;MEGVAN;igen;2;15281410;Cerniera Tir leggera BM;https://www.fts-farina.it/prodotto/cerniera-tir-leggera-bm/
 Platós alkatrészek és kiegészítők;152791;TIR-zsanér lapka 50mm;FTS;15279110;MEGVAN;igen;1;15279110;15279110 – Piastrina zincata Int.50;https://www.fts-farina.it/prodotto/15279110-piastrina-zincata-int-50/
 Platós alkatrészek és kiegészítők;152781;TIR-zsanér lapka 70mm;FTS;15278110;MEGVAN;igen;1;15278110;15278110 – Piastrina zincata Int.70;https://www.fts-farina.it/prodotto/15278110-piastrina-zincata-int-70/
 Platós alkatrészek és kiegészítők;351503;Z-zár ellendarab hegeszthető kicsi 20;FTS;35150250;MEGVAN;igen;1;35150250;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=144
 Platós alkatrészek és kiegészítők;351502;Z-zár ellendarab hegeszthető nagy 30;FTS;35150200;MEGVAN;igen;1;35150200;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=140
 Platós alkatrészek és kiegészítők;351501;Z-zár ellendarab, csavarozható;FTS;35150100;MEGVAN;igen;1;35150100;;https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=140
-Ponyvarendszer kiegészítők;103055;100 x 30 mm Dugó aláfutásgátlóhoz;FTS;58923055;MEGVAN;igen;2;58923055;58923055 – Tappo in pcv per profilo diritto;https://www.fts-farina.it/prodotto/58923055-tappo-in-pcv-per-profilo-diritto/
-Ponyvarendszer kiegészítők;100516;100x25 Dugó zártszelvényhez;FTS;55160100;MEGVAN;igen;2;55160100;55160100 – Tappo asta centina in gomma;https://www.fts-farina.it/prodotto/55160100-tappo-asta-centina-in-gomma/
-Ponyvarendszer kiegészítők;104130;100x25 mm horganyzott szegecselhető deszkatartó zseb;FTS;45104135;MEGVAN;igen;2;45104135;45104135 – Supporto asta centina zincata L.25 con fori;https://www.fts-farina.it/prodotto/45104135-supporto-asta-centina-zincata-l-25-con-fori/
-Ponyvarendszer kiegészítők;380021/SS;Alsó adapter 27-es csőhöz;FTS;34480021/ss;MEGVAN;igen;2;34480021;34480021/SS – Innesto a Taglio in Inox per profilo Ø27;https://www.fts-farina.it/prodotto/34480021-ss-innesto-a-taglio-in-inox-per-profilo-o27/
-Ponyvarendszer kiegészítők;380020/SS;Alsó adapter 27-es csőhöz szögletes;FTS;34480020/ss;MEGVAN;igen;2;34480020;34480020/SS – Innesto a quadro in inox per profilo Ø27;https://www.fts-farina.it/prodotto/34480020-ss-innesto-a-quadro-in-inox-per-profilo-o27/
-Ponyvarendszer kiegészítők;380018/SS;Alsó adapter 27-es csőhöz, kocka;FTS;34480018/ss;MEGVAN;igen;2;34480018;34480018/SS – Innesto Inferiore Inox attacco quadro;https://www.fts-farina.it/prodotto/34480018-ss-innesto-inferiore-inox-attacco-quadro/
-Ponyvarendszer kiegészítők;380017;Alsó adapter 34-es csőhöz;FTS;34480017;MEGVAN;igen;2;34480017;34480017 – Innesto a taglio per profilo Ø34;https://www.fts-farina.it/prodotto/34480017-innesto-a-taglio-per-profilo-o34/
-Ponyvarendszer kiegészítők;105510;D35 mm Gumiágy;FTS;45155101;MEGVAN;igen;2;45155101;45155101 – Solo gomma Ø35;https://www.fts-farina.it/prodotto/45155101-solo-gomma-o35/
-Ponyvarendszer kiegészítők;106220;D35 mm acél tartó;FTS;45155102;MEGVAN;igen;2;45155102;45155102 – Solo piastrina Ø35;https://www.fts-farina.it/prodotto/45155102-solo-piastrina-o35/
-Ponyvarendszer kiegészítők;101100;D50 mm gumiágy+ acél tartó;FTS;45151100;MEGVAN;igen;2;45151100;45151100 – Supporto tubo centina PVC Ø50;https://www.fts-farina.it/prodotto/45151100-supporto-tubo-centina-pvc-o50/
-Ponyvarendszer kiegészítők;104285;D60 Csődugó;FTS;50154285;MEGVAN;igen;2;50154285;50154285 – Supporto tubo centina PVC Ø60;https://www.fts-farina.it/prodotto/50154285-supporto-tubo-centina-pvc-o60/
-Ponyvarendszer kiegészítők;100451;Deszkatartó zseb;FTS;45150100;MEGVAN;igen;2;45150100;45150100 – Supporto asta centina grezza L=25;https://www.fts-farina.it/prodotto/45150100-supporto-asta-centina-grezza-l25/
-Ponyvarendszer kiegészítők;380019;Felső adapter 27-es csőhöz;FTS;34480019;MEGVAN;igen;2;34480019;34480019/SS – Tappo in Inox per profilo Ø27;https://www.fts-farina.it/prodotto/34480019-ss-tappo-in-inox-per-profilo-o27/
-Ponyvarendszer kiegészítők;380011;Felső adapter 34-es csőhöz;FTS;34480011;MEGVAN;igen;2;34480011;34480011 – Tappo superiore per profilo Ø34;https://www.fts-farina.it/prodotto/34480011-tappo-superiore-per-profilo-o34/
-Ponyvarendszer kiegészítők;381071;Feszítő kocka sliccelt adapterhez TS;FTS;34480045/R/L;MEGVAN;igen;2;34480045;34480045/R – Tenditore destro zincato attacco a taglio Ø25;https://www.fts-farina.it/prodotto/34480045-r-tenditore-destro-zincato-attacco-a-taglio-o25/
-Ponyvarendszer kiegészítők;381073;Feszítő kocka szögletes adapterhez;FTS;34480055/R/L;MEGVAN;igen;2;34480055;34480055/R – Tenditore destro zincato attacco a squadro 12×12;https://www.fts-farina.it/prodotto/34480055-r-tenditore-destro-zincato-attacco-a-squadro-12x12/
-Ponyvarendszer kiegészítők;380061;Racsnis feszítő L;FTS;34480061;MEGVAN;igen;2;34480061;34480061 – Tenditore TR sinistro in dacromet attac. a taglio Ø25;https://www.fts-farina.it/prodotto/34480061-tenditore-tr-sinistro-in-dacromet-attac-a-taglio-o25/
-Ponyvarendszer kiegészítők;380060;Racsnis feszítő R;FTS;34480060;MEGVAN;igen;2;34480060;34480060 – Tenditore TR destro in dacromet attac. a taglio Ø25;https://www.fts-farina.it/prodotto/34480060-tenditore-tr-destro-in-dacromet-attac-a-taglio-o25/
-Ponyvarendszer kiegészítők;100110;Seprűtartó 80 mm;FTS;45070110;MEGVAN;igen;2;45070110;45070110 – Supporto porta utensili zincato da Ø28÷Ø40;https://www.fts-farina.it/prodotto/45070110-supporto-porta-utensili-zincato-da-o28%c3%b7o40/
+Ponyvarendszer kiegészítők;103055;100 x 30 mm Dugó aláfutásgátlóhoz;FTS;58923055;MEGVAN;igen;1;58923055;58923055 – Tappo in pcv per profilo diritto;https://www.fts-farina.it/prodotto/58923055-tappo-in-pcv-per-profilo-diritto/
+Ponyvarendszer kiegészítők;100516;100x25 Dugó zártszelvényhez;FTS;55160100;MEGVAN;igen;1;55160100;55160100 – Tappo asta centina in gomma;https://www.fts-farina.it/prodotto/55160100-tappo-asta-centina-in-gomma/
+Ponyvarendszer kiegészítők;104130;100x25 mm horganyzott szegecselhető deszkatartó zseb;FTS;45104135;MEGVAN;igen;1;45104135;45104135 – Supporto asta centina zincata L.25 con fori;https://www.fts-farina.it/prodotto/45104135-supporto-asta-centina-zincata-l-25-con-fori/
+Ponyvarendszer kiegészítők;380021/SS;Alsó adapter 27-es csőhöz;FTS;34480021/ss;MEGVAN;igen;1;34480021;34480021/SS – Innesto a Taglio in Inox per profilo Ø27;https://www.fts-farina.it/prodotto/34480021-ss-innesto-a-taglio-in-inox-per-profilo-o27/
+Ponyvarendszer kiegészítők;380020/SS;Alsó adapter 27-es csőhöz szögletes;FTS;34480020/ss;MEGVAN;igen;1;34480020;34480020/SS – Innesto a quadro in inox per profilo Ø27;https://www.fts-farina.it/prodotto/34480020-ss-innesto-a-quadro-in-inox-per-profilo-o27/
+Ponyvarendszer kiegészítők;380018/SS;Alsó adapter 27-es csőhöz, kocka;FTS;34480018/ss;MEGVAN;igen;1;34480018;34480018/SS – Innesto Inferiore Inox attacco quadro;https://www.fts-farina.it/prodotto/34480018-ss-innesto-inferiore-inox-attacco-quadro/
+Ponyvarendszer kiegészítők;380017;Alsó adapter 34-es csőhöz;FTS;34480017;MEGVAN;igen;1;34480017;34480017 – Innesto a taglio per profilo Ø34;https://www.fts-farina.it/prodotto/34480017-innesto-a-taglio-per-profilo-o34/
+Ponyvarendszer kiegészítők;105510;D35 mm Gumiágy;FTS;45155101;MEGVAN;igen;1;45155101;45155101 – Solo gomma Ø35;https://www.fts-farina.it/prodotto/45155101-solo-gomma-o35/
+Ponyvarendszer kiegészítők;106220;D35 mm acél tartó;FTS;45155102;MEGVAN;igen;1;45155102;45155102 – Solo piastrina Ø35;https://www.fts-farina.it/prodotto/45155102-solo-piastrina-o35/
+Ponyvarendszer kiegészítők;101100;D50 mm gumiágy+ acél tartó;FTS;45151100;MEGVAN;igen;1;45151100;45151100 – Supporto tubo centina PVC Ø50;https://www.fts-farina.it/prodotto/45151100-supporto-tubo-centina-pvc-o50/
+Ponyvarendszer kiegészítők;104285;D60 Csődugó;FTS;50154285;MEGVAN;igen;1;50154285;50154285 – Supporto tubo centina PVC Ø60;https://www.fts-farina.it/prodotto/50154285-supporto-tubo-centina-pvc-o60/
+Ponyvarendszer kiegészítők;100451;Deszkatartó zseb;FTS;45150100;MEGVAN;igen;1;45150100;45150100 – Supporto asta centina grezza L=25;https://www.fts-farina.it/prodotto/45150100-supporto-asta-centina-grezza-l25/
+Ponyvarendszer kiegészítők;380019;Felső adapter 27-es csőhöz;FTS;34480019;MEGVAN;igen;1;34480019;34480019/SS – Tappo in Inox per profilo Ø27;https://www.fts-farina.it/prodotto/34480019-ss-tappo-in-inox-per-profilo-o27/
+Ponyvarendszer kiegészítők;380011;Felső adapter 34-es csőhöz;FTS;34480011;MEGVAN;igen;1;34480011;34480011 – Tappo superiore per profilo Ø34;https://www.fts-farina.it/prodotto/34480011-tappo-superiore-per-profilo-o34/
+Ponyvarendszer kiegészítők;381071;Feszítő kocka sliccelt adapterhez TS;FTS;34480045/R/L;MEGVAN;igen;1;34480045;34480045/R – Tenditore destro zincato attacco a taglio Ø25;https://www.fts-farina.it/prodotto/34480045-r-tenditore-destro-zincato-attacco-a-taglio-o25/
+Ponyvarendszer kiegészítők;381073;Feszítő kocka szögletes adapterhez;FTS;34480055/R/L;MEGVAN;igen;1;34480055;34480055/R – Tenditore destro zincato attacco a squadro 12×12;https://www.fts-farina.it/prodotto/34480055-r-tenditore-destro-zincato-attacco-a-squadro-12x12/
+Ponyvarendszer kiegészítők;380061;Racsnis feszítő L;FTS;34480061;MEGVAN;igen;1;34480061;34480061 – Tenditore TR sinistro in dacromet attac. a taglio Ø25;https://www.fts-farina.it/prodotto/34480061-tenditore-tr-sinistro-in-dacromet-attac-a-taglio-o25/
+Ponyvarendszer kiegészítők;380060;Racsnis feszítő R;FTS;34480060;MEGVAN;igen;1;34480060;34480060 – Tenditore TR destro in dacromet attac. a taglio Ø25;https://www.fts-farina.it/prodotto/34480060-tenditore-tr-destro-in-dacromet-attac-a-taglio-o25/
+Ponyvarendszer kiegészítők;100110;Seprűtartó 80 mm;FTS;45070110;MEGVAN;igen;1;45070110;45070110 – Supporto porta utensili zincato da Ø28÷Ø40;https://www.fts-farina.it/prodotto/45070110-supporto-porta-utensili-zincato-da-o28%c3%b7o40/
 Ponyvarendszer kiegészítők;380810;TTS racsnis feszítő, kétoldalas;FTS;34480010;MEGVAN;igen;1;34480010;34480010 – Tenditore zincato doppio attacco a taglio Ø25;https://www.fts-farina.it/prodotto/34480010-tenditore-zincato-doppio-attacco-a-taglio-o25/
-Ponyvarendszer kiegészítők;381420;Tekerő kurbli;FTS;34480041;MEGVAN;igen;2;34480041;34480041 – Maniglia zincata per tenditore;https://www.fts-farina.it/prodotto/34480041-maniglia-zincata-per-tenditore/
-Ponyvarendszer kiegészítők;100591;Íves aláfutásgátló végzáró PVC;FTS;58924056;MEGVAN;igen;2;58924056;58924056 – Tappo d’angolo in pvc con perni;https://www.fts-farina.it/prodotto/58924056-tappo-dangolo-in-pvc-con-perni/
-Rakományrögzítés;125310;3-részes rakományrögzítő ovál tányér 800 kg;FTS;45095310;MEGVAN;igen;2;45095310;45095310 – Anello fermacarico zincato con base ovale;https://www.fts-farina.it/prodotto/45095310-anello-fermacarico-zincato-con-base-ovale/
-Rakományrögzítés;121127;Kombi rakományrögzítő sín - acél MAGNELIS;FTS;50033111;MEGVAN;igen;3;50033111;Profili Fermacarico orizzontale F-TRACK;https://www.fts-farina.it/prodotto/profili-fermacarico-orizzontale-f-track/
-Rakományrögzítés;123320;Kombi rakományrögzítő sín - alumínium;FTS;50033320;MEGVAN;igen;3;50033320;Profili Fermacarico orizzontale F-TRACK;https://www.fts-farina.it/prodotto/profili-fermacarico-orizzontale-f-track/
-Rakományrögzítés;121129;Kombi rakományrögzítő sín - inox;FTS;50033210;MEGVAN;igen;3;50033210;Profili Fermacarico orizzontale F-TRACK;https://www.fts-farina.it/prodotto/profili-fermacarico-orizzontale-f-track/
-Rakományrögzítés;123350;Műanyag végzár kombi sínhez;FTS;50033500;MEGVAN;igen;1;50033500;50033500 – Tappo in pvc per profili orizzontali;https://www.fts-farina.it/prodotto/50033500-tappo-in-pvc-per-profili-orizzontali/
-Rakományrögzítés;128510;PVC-talpas rakományrögzítő 500 kg;FTS;45098510;MEGVAN;igen;3;45098510;45098510 – Anello fermacarico zincato con base in pvc;https://www.fts-farina.it/prodotto/45098510-anello-fermacarico-zincato-con-base-in-pvc/
-Rakományrögzítés;128110;Padlóba heg. rak. rögz. 2500 daN;FTS;45098110;MEGVAN;igen;2;45098110;Anello fermacarico incassato;https://www.fts-farina.it/prodotto/anello-fermacarico-incassato/
-Rakományrögzítés;122303;Padlóba süllyesztehtő INOX rak. rögzítő tányér;FTS;45020303;MEGVAN;igen;2;45020303;Anello fermacarico leggero senza molla;https://www.fts-farina.it/prodotto/anello-fermacarico-leggero-senza-molla/
-Rakományrögzítés;129310;Padlóba süllyesztehtő. horg.rak. rögzítő tányér 1000 daN;FTS;45093110;MEGVAN;igen;3;45093110;Anello fermacarico pesante con molla;https://www.fts-farina.it/prodotto/anello-fermacarico-pesante-con-molla/
-Rakományrögzítés;127199;Pálcás rakományrögzítő sín sülly.- alu/PVC 3m;FTS;50071099;MEGVAN;igen;1;50071099;50071099 – Profilo in alluminio con protezione in pvc;https://www.fts-farina.it/prodotto/50071099-profilo-in-alluminio-con-protezione-in-pvc/
-Rakományrögzítés;127515;Rakományrögzítő kengyel 2000 kg TS;FTS;45097515;MEGVAN;igen;3;45097515;45097515 – Anello fermacarico Reus zincato;https://www.fts-farina.it/prodotto/45097515-anello-fermacarico-reus-zincato/
-Rakományrögzítés;129711;Rakományrögzítő kengyel 2500 daN TS;FTS;45097110;MEGVAN;igen;2;45097110;45097110 – Anello fermacarico zincato completo di dadi;https://www.fts-farina.it/prodotto/45097110-anello-fermacarico-zincato-completo-di-dadi/
-Rakományrögzítés;126510;Rakományrögzítő kengyel nyers alátéttel;FTS;45096510;MEGVAN;igen;2;45096510;45096510 – Anello fermacarico zincato con piastra grezza;https://www.fts-farina.it/prodotto/45096510-anello-fermacarico-zincato-con-piastra-grezza/
-Rakományrögzítés;121030;Rakományrögzítő rúd acél 2200;FTS;50071033;MEGVAN;igen;1;50071033;50071033 – Barra zincata fermacarico reg. 2085÷2485 Innesto Ø19/Ø24;https://www.fts-farina.it/prodotto/50071033-barra-zincata-fermacarico-reg-2085%c3%b72485-innesto-o19-24/
-Rakományrögzítés;121032;Rakományrögzítő rúd acél 2500;FTS;50071031;MEGVAN;igen;1;50071031;50071031 – Barra zincata fermacarico reg. 2360÷2760 Innesti Ø19/Ø24;https://www.fts-farina.it/prodotto/50071031-barra-zincata-fermacarico-reg-2360%c3%b72760-innesti-o19-o24/
-Rakományrögzítés;128315;Rakományrözítő fül nyers;FTS;45098315;MEGVAN;igen;2;45098315;Anello fermacarico a comparsa;https://www.fts-farina.it/prodotto/anello-fermacarico-a-comparsa/
-Rakományrögzítés;127210;Rozsdamentes rakományrözítő fül;FTS;80272210;MEGVAN;igen;3;80272210;Maniglia sponda con molla;https://www.fts-farina.it/prodotto/80272210-maniglia-per-sponda-in-inox-con-molla/
+Ponyvarendszer kiegészítők;381420;Tekerő kurbli;FTS;34480041;MEGVAN;igen;1;34480041;34480041 – Maniglia zincata per tenditore;https://www.fts-farina.it/prodotto/34480041-maniglia-zincata-per-tenditore/
+Ponyvarendszer kiegészítők;100591;Íves aláfutásgátló végzáró PVC;FTS;58924056;MEGVAN;igen;1;58924056;58924056 – Tappo d’angolo in pvc con perni;https://www.fts-farina.it/prodotto/58924056-tappo-dangolo-in-pvc-con-perni/
+Rakományrögzítés;125310;3-részes rakományrögzítő ovál tányér 800 kg;FTS;45095310;MEGVAN;igen;1;45095310;45095310 – Anello fermacarico zincato con base ovale;https://www.fts-farina.it/prodotto/45095310-anello-fermacarico-zincato-con-base-ovale/
+Rakományrögzítés;121127;Kombi rakományrögzítő sín - acél MAGNELIS;FTS;50033111;MEGVAN;igen;2;50033111;Profili Fermacarico orizzontale F-TRACK;https://www.fts-farina.it/prodotto/profili-fermacarico-orizzontale-f-track/
+Rakományrögzítés;123320;Kombi rakományrögzítő sín - alumínium;FTS;50033320;MEGVAN;igen;2;50033320;Profili Fermacarico orizzontale F-TRACK;https://www.fts-farina.it/prodotto/profili-fermacarico-orizzontale-f-track/
+Rakományrögzítés;121129;Kombi rakományrögzítő sín - inox;FTS;50033210;MEGVAN;igen;2;50033210;Profili Fermacarico orizzontale F-TRACK;https://www.fts-farina.it/prodotto/profili-fermacarico-orizzontale-f-track/
+Rakományrögzítés;123350;Műanyag végzár kombi sínhez;FTS;50033500;MEGVAN;igen;0;50033500;50033500 – Tappo in pvc per profili orizzontali;https://www.fts-farina.it/prodotto/50033500-tappo-in-pvc-per-profili-orizzontali/
+Rakományrögzítés;128510;PVC-talpas rakományrögzítő 500 kg;FTS;45098510;MEGVAN;igen;2;45098510;45098510 – Anello fermacarico zincato con base in pvc;https://www.fts-farina.it/prodotto/45098510-anello-fermacarico-zincato-con-base-in-pvc/
+Rakományrögzítés;128110;Padlóba heg. rak. rögz. 2500 daN;FTS;45098110;MEGVAN;igen;1;45098110;Anello fermacarico incassato;https://www.fts-farina.it/prodotto/anello-fermacarico-incassato/
+Rakományrögzítés;122303;Padlóba süllyesztehtő INOX rak. rögzítő tányér;FTS;45020303;MEGVAN;igen;1;45020303;Anello fermacarico leggero senza molla;https://www.fts-farina.it/prodotto/anello-fermacarico-leggero-senza-molla/
+Rakományrögzítés;129310;Padlóba süllyesztehtő. horg.rak. rögzítő tányér 1000 daN;FTS;45093110;MEGVAN;igen;2;45093110;Anello fermacarico pesante con molla;https://www.fts-farina.it/prodotto/anello-fermacarico-pesante-con-molla/
+Rakományrögzítés;127199;Pálcás rakományrögzítő sín sülly.- alu/PVC 3m;FTS;50071099;MEGVAN;igen;0;50071099;50071099 – Profilo in alluminio con protezione in pvc;https://www.fts-farina.it/prodotto/50071099-profilo-in-alluminio-con-protezione-in-pvc/
+Rakományrögzítés;127515;Rakományrögzítő kengyel 2000 kg TS;FTS;45097515;MEGVAN;igen;2;45097515;45097515 – Anello fermacarico Reus zincato;https://www.fts-farina.it/prodotto/45097515-anello-fermacarico-reus-zincato/
+Rakományrögzítés;129711;Rakományrögzítő kengyel 2500 daN TS;FTS;45097110;MEGVAN;igen;1;45097110;45097110 – Anello fermacarico zincato completo di dadi;https://www.fts-farina.it/prodotto/45097110-anello-fermacarico-zincato-completo-di-dadi/
+Rakományrögzítés;126510;Rakományrögzítő kengyel nyers alátéttel;FTS;45096510;MEGVAN;igen;1;45096510;45096510 – Anello fermacarico zincato con piastra grezza;https://www.fts-farina.it/prodotto/45096510-anello-fermacarico-zincato-con-piastra-grezza/
+Rakományrögzítés;121030;Rakományrögzítő rúd acél 2200;FTS;50071033;MEGVAN;igen;0;50071033;50071033 – Barra zincata fermacarico reg. 2085÷2485 Innesto Ø19/Ø24;https://www.fts-farina.it/prodotto/50071033-barra-zincata-fermacarico-reg-2085%c3%b72485-innesto-o19-24/
+Rakományrögzítés;121032;Rakományrögzítő rúd acél 2500;FTS;50071031;MEGVAN;igen;0;50071031;50071031 – Barra zincata fermacarico reg. 2360÷2760 Innesti Ø19/Ø24;https://www.fts-farina.it/prodotto/50071031-barra-zincata-fermacarico-reg-2360%c3%b72760-innesti-o19-o24/
+Rakományrögzítés;128315;Rakományrözítő fül nyers;FTS;45098315;MEGVAN;igen;1;45098315;Anello fermacarico a comparsa;https://www.fts-farina.it/prodotto/anello-fermacarico-a-comparsa/
+Rakományrögzítés;127210;Rozsdamentes rakományrözítő fül;FTS;80272210;MEGVAN;igen;2;80272210;Maniglia sponda con molla;https://www.fts-farina.it/prodotto/80272210-maniglia-per-sponda-in-inox-con-molla/
 Rakományrögzítés;123412;Spanifer L: 8 m 5000 kg dupla kampós;FTS;34128000;MEGVAN;igen;1;34128000;34128000 – Cinghia con tensore e bloccaggio ganci a griffe L.8 Mt.;https://www.fts-farina.it/prodotto/34128000-cinghia-con-tensore-e-bloccaggio-ganci-a-griffe-l-8-mt/
 Rakományrögzítés;127183;Talpas térelválasztó rakományrögzítő rúd D42 ALU;FTS;50071083;MEGVAN;igen;1;50071083;Barra Fermacarico Ø42 con molla regolabile 2350÷2720;https://www.fts-farina.it/prodotto/barra-fermacarico-o42-con-molla-regolabile-2350%c3%b72720/
-Speciális felépítmény alkatrészek;822225;Haub-csatoszár ellendarabbal horg. TS;FTS;15162225;MEGVAN;igen;2;15162225;15162225 – Chiusura zincata registrabile con fermo;https://www.fts-farina.it/prodotto/15162225-chisura-zincata-registrabile-con-fermo/
+Speciális felépítmény alkatrészek;822225;Haub-csatoszár ellendarabbal horg. TS;FTS;15162225;MEGVAN;igen;1;15162225;15162225 – Chiusura zincata registrabile con fermo;https://www.fts-farina.it/prodotto/15162225-chisura-zincata-registrabile-con-fermo/
 Speciális felépítmény alkatrészek;815811;Kis négyszög zár;FTS;10158110;MEGVAN;igen;1;10158110;Tavellini;https://www.fts-farina.it/prodotto/tavellini/
 Speciális felépítmény alkatrészek;816211;Nagy négyszög zár;FTS;10162110;MEGVAN;igen;1;10162110;Tavellini;https://www.fts-farina.it/prodotto/tavellini/
 Speciális felépítmény alkatrészek;895280;Nagy oldalsó ládazár;FTS;80952800;MEGVAN;igen;1;80952800;80952800 – Chiusura a leva di tenuta grande con chiave sotto bottone;https://www.fts-farina.it/prodotto/80952800-chiusura-a-leva-di-tenuta-grande-con-chiave-sotto-bottone/
-Speciális felépítmény alkatrészek;810164;Négyszög kulcs;FTS;10164110;MEGVAN;igen;2;10164110;10164110 – Chiave quadrata zincata;https://www.fts-farina.it/prodotto/10164110-chiave-quadrata-zincata/
-Sárvédők, szerszámosládák;;J600421 horg. 42-es sárvédőtartó cső 750 mm egyenes;FTS;60780421;MEGVAN;igen;2;60780421;60780421 – Tubo di fissaggio diritto zincato Ø42 L=750;https://www.fts-farina.it/prodotto/60780421-tubo-di-fissaggio-diritto-zincato-o42-l750/
-Sárvédők, szerszámosládák;;J600422 TH 42-es sárvédőtartó cső 750 mm hajlított;FTS;60770422;MEGVAN;igen;2;60770422;60770422 – Tubo zincato a caldo di fissaggio Ø42 L=750;https://www.fts-farina.it/prodotto/60770422-tubo-zincato-a-caldo-di-fissaggio-o42-l750/
-Sárvédők, szerszámosládák;;J601811 ZN 42-es sárvédőtartó cső 800 mm;FTS;60180110;MEGVAN;igen;2;60180110;60180110 – Tubo di fissaggio zincato Ø42;https://www.fts-farina.it/prodotto/60180110-tubo-di-fissaggio-zincato-o42/
-Sárvédők, szerszámosládák;;J617110 42-es horg acél csőtartó bilincs F;FTS;60167110;MEGVAN;igen;3;60167110;60167110 – Supporto parafango sagomato zincato Ø42;https://www.fts-farina.it/prodotto/60167110-supporto-parafango-sagomato-zincato-o42/
+Speciális felépítmény alkatrészek;810164;Négyszög kulcs;FTS;10164110;MEGVAN;igen;1;10164110;10164110 – Chiave quadrata zincata;https://www.fts-farina.it/prodotto/10164110-chiave-quadrata-zincata/
+Sárvédők, szerszámosládák;;J600421 horg. 42-es sárvédőtartó cső 750 mm egyenes;FTS;60780421;MEGVAN;igen;1;60780421;60780421 – Tubo di fissaggio diritto zincato Ø42 L=750;https://www.fts-farina.it/prodotto/60780421-tubo-di-fissaggio-diritto-zincato-o42-l750/
+Sárvédők, szerszámosládák;;J600422 TH 42-es sárvédőtartó cső 750 mm hajlított;FTS;60770422;MEGVAN;igen;1;60770422;60770422 – Tubo zincato a caldo di fissaggio Ø42 L=750;https://www.fts-farina.it/prodotto/60770422-tubo-zincato-a-caldo-di-fissaggio-o42-l750/
+Sárvédők, szerszámosládák;;J601811 ZN 42-es sárvédőtartó cső 800 mm;FTS;60180110;MEGVAN;igen;1;60180110;60180110 – Tubo di fissaggio zincato Ø42;https://www.fts-farina.it/prodotto/60180110-tubo-di-fissaggio-zincato-o42/
+Sárvédők, szerszámosládák;;J617110 42-es horg acél csőtartó bilincs F;FTS;60167110;MEGVAN;igen;2;60167110;60167110 – Supporto parafango sagomato zincato Ø42;https://www.fts-farina.it/prodotto/60167110-supporto-parafango-sagomato-zincato-o42/
 Billencs alkatrészek;142103/V;3 Kardán;FTS;;NINCS;nem;0;;;
 Billencs alkatrészek;143100;43 mm Gömbcsukló készlet kicsi;FTS;;NINCS;nem;0;;;
 Billencs alkatrészek;3514400/1;Billencs rakonca szegő háromszöges;FTS;;NINCS;nem;0;;;
@@ -801,17 +801,17 @@ Ponyvarendszer kiegészítők;222266;100x25 mm Ponyvatartó zártszelvény GK;Gr
 Ponyvarendszer kiegészítők;222001;100x25 mm Ponyvatartó zártszelvény T;Grupa Kęty;T1.2001.0;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;223219;100x25 mm Ponyvatartó zártszelvény elox;Grupa Kęty;R3219;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;222185;100x25 mm Ponyvatartó zártszelvény, merevített;Grupa Kęty;2185;NINCS;nem;0;;;
-Gumiszőnyegek;;G 1400x1400 Rampaszőnyeg;Gummitrading;;NINCS;nem;0;;;
-Gumiszőnyegek;;G 1800x1400 Rampaszőnyeg;Gummitrading;;NINCS;nem;0;;;
-Gumiszőnyegek;;G 1800x1600 Rampaszőnyeg;Gummitrading;;NINCS;nem;0;;;
-Gumiszőnyegek;;G 2200x1400 Rampaszőnyeg;Gummitrading;;NINCS;nem;0;;;
-Gumiszőnyegek;;G 2400x1400 Rampaszőnyeg;Gummitrading;;NINCS;nem;0;;;
-Gumiszőnyegek;;G 4x1200x10000 Noppos gumiszőnyeg;Gummitrading;;NINCS;nem;0;;;
-Gumiszőnyegek;;G 4x1200x10000 Vidar Coin Noppos gumiszőnyeg;Gummitrading;;NINCS;nem;0;;;
-Gumiszőnyegek;;G 4x1800 mm Istálló szőnyeg;Gummitrading;;NINCS;nem;0;;;
-Gumiszőnyegek;;G 5x1400x10m 2T S/S Általános gumi;Gummitrading;;NINCS;nem;0;;;
-Gumiszőnyegek;;G 5x2000 mm Istálló szőnyeg;Gummitrading;;NINCS;nem;0;;;
-Gumiszőnyegek;;G 6x2000mm Istálló szőnyeg;Gummitrading;;NINCS;nem;0;;;
+Gumiszőnyegek;;G 1400x1400 Rampaszőnyeg;Gummitrading;;MEGVAN;nem;2;;G 1400x1400 Rampaszőnyeg;
+Gumiszőnyegek;;G 1800x1400 Rampaszőnyeg;Gummitrading;;MEGVAN;nem;2;;G 1800x1400 Rampaszőnyeg;
+Gumiszőnyegek;;G 1800x1600 Rampaszőnyeg;Gummitrading;;MEGVAN;nem;2;;G 1800x1600 Rampaszőnyeg;
+Gumiszőnyegek;;G 2200x1400 Rampaszőnyeg;Gummitrading;;MEGVAN;nem;2;;G 2200x1400 Rampaszőnyeg;
+Gumiszőnyegek;;G 2400x1400 Rampaszőnyeg;Gummitrading;;MEGVAN;nem;2;;G 2400x1400 Rampaszőnyeg;
+Gumiszőnyegek;;G 4x1200x10000 Noppos gumiszőnyeg;Gummitrading;;MEGVAN;nem;3;;G 4x1200x10000 Noppos gumiszőnyeg;
+Gumiszőnyegek;;G 4x1200x10000 Vidar Coin Noppos gumiszőnyeg;Gummitrading;;MEGVAN;nem;3;;G 4x1200x10000 Vidar Coin Noppos gumiszőnyeg;
+Gumiszőnyegek;;G 4x1800 mm Istálló szőnyeg;Gummitrading;;MEGVAN;nem;3;;G 4x1800 mm Istálló szőnyeg;
+Gumiszőnyegek;;G 5x1400x10m 2T S/S Általános gumi;Gummitrading;;MEGVAN;nem;4;;G 5x1400x10m 2T S/S Általános gumi;
+Gumiszőnyegek;;G 5x2000 mm Istálló szőnyeg;Gummitrading;;MEGVAN;nem;3;;G 5x2000 mm Istálló szőnyeg;
+Gumiszőnyegek;;G 6x2000mm Istálló szőnyeg;Gummitrading;;MEGVAN;nem;3;;G 6x2000mm Istálló szőnyeg;
 Dobozos felépítmény alkatrészek;056402;4-részes ajtókiakasztó szet;IndesCar;;NINCS;nem;0;;;
 Dobozos felépítmény alkatrészek;056402/2;4-részes ajtókiakasztó szet IN;IndesCar;;NINCS;nem;0;;;
 Dobozos felépítmény alkatrészek;556404;Kúpos ütközőgumi 40/60/27;IndesCar;;NINCS;nem;0;;;
@@ -987,35 +987,35 @@ Sárvédők, szerszámosládák;;JX37F 510FT Csapott tetejű sárvédő;JONESCO;
 Sárvédők, szerszámosládák;;Szerszámos láda;JONESCO;JBX80;MEGVAN;igen;6;JBZ800;JBZ800 (800mm-toolbox);https://jonesco-plastics.com/products/commercial-vehicle/on-board-storage/800mm-toolbox
 Sárvédők, szerszámosládák;;JF45106 450x1060 mm sárvédő lap;JONESCO;;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;106060;D60-as acél csődugótartó fészek;Kadia;;NINCS;nem;0;;;
+Alumínium lemezek;;S 1,5x1000x2000 mm Alu lemez EN AW-1050 H24;Klöckner;;MEGVAN;nem;7;;S 1,5x1000x2000 mm Alu lemez EN AW-1050 H24;
+Alumínium lemezek;;S 1,5x1250x2500 mm Alu lemez EN AW-1050 H24;Klöckner;;MEGVAN;nem;7;;S 1,5x1250x2500 mm Alu lemez EN AW-1050 H24;
+Alumínium lemezek;;S 2x1000x2000 mm Alu lemez EN AW-1050 H24;Klöckner;;MEGVAN;nem;7;;S 2x1000x2000 mm Alu lemez EN AW-1050 H24;
+Alumínium lemezek;;S 2x1000x2000 mm ELOX Alu lemez EN AW-5002;Klöckner;;MEGVAN;nem;7;;S 2x1000x2000 mm ELOX Alu lemez EN AW-5002;
+Alumínium lemezek;;S 2x1250x2500 mm Alu lemez EN AW-1050 H24;Klöckner;;MEGVAN;nem;7;;S 2x1250x2500 mm Alu lemez EN AW-1050 H24;
+Alumínium lemezek;;S 2x1250x2500 mm Alu lemez EN AW-5754 H22;Klöckner;;MEGVAN;nem;7;;S 2x1250x2500 mm Alu lemez EN AW-5754 H22;
+Alumínium lemezek;;S 2x1250x2500 mm ELOX Alu lemez EN AW-5005A H14;Klöckner;;MEGVAN;nem;8;;S 2x1250x2500 mm ELOX Alu lemez EN AW-5005A H14;
+Alumínium lemezek;;S 2x1500x3000 mm Alu lemez EN AW-1050 H24;Klöckner;;MEGVAN;nem;7;;S 2x1500x3000 mm Alu lemez EN AW-1050 H24;
+Alumínium lemezek;;S 3x1250x2500 mm Alu lemez EN AW-1050 H24;Klöckner;;MEGVAN;nem;7;;S 3x1250x2500 mm Alu lemez EN AW-1050 H24;
+Alumínium lemezek;;S 3x1250x2500 mm Alu lemez EN AW-5754 H22;Klöckner;;MEGVAN;nem;7;;S 3x1250x2500 mm Alu lemez EN AW-5754 H22;
+Alumínium lemezek;;S 3x1250x2500 mm ELOX Alu lemez EN AW-5005A H14;Klöckner;;MEGVAN;nem;8;;S 3x1250x2500 mm ELOX Alu lemez EN AW-5005A H14;
+Alumínium lemezek;;S 3x1500x3000 mm Alu lemez EN AW-1050 H24;Klöckner;;MEGVAN;nem;7;;S 3x1500x3000 mm Alu lemez EN AW-1050 H24;
+Alumínium lemezek;;S 3x1500x3000 mm ELOX Alu lemez EN AW-5005A H14;Klöckner;;MEGVAN;nem;8;;S 3x1500x3000 mm ELOX Alu lemez EN AW-5005A H14;
+Alumínium lemezek;;S 6x1250x2500 mm Alu lemez EN AW-5754 H22;Klöckner;;MEGVAN;nem;7;;S 6x1250x2500 mm Alu lemez EN AW-5754 H22;
+Ipari félgyártmányok;252003;20x3 mm Alu lapos profil;Klöckner;;MEGVAN;igen;4;;20x3 mm Alu lapos profil;
+Ipari félgyártmányok;250305;30x5 mm Alu lapos profil;Klöckner;;MEGVAN;igen;4;;30x5 mm Alu lapos profil;
+Ipari félgyártmányok;252251;40x10 mm Alu lapos profil;Klöckner;6060A /T6;MEGVAN;igen;4;;40x10 mm Alu lapos profil;
+Ipari félgyártmányok;252229;40x40x4 alu zártszelvény;Klöckner;;MEGVAN;igen;4;;40x40x4 alu zártszelvény;
+Ipari félgyártmányok;250405;40x5 mm Alu lapos profil;Klöckner;C01PI4005;MEGVAN;igen;4;;40x5 mm Alu lapos profil;
+Ipari félgyártmányok;253337;50x50x4 alu zártszelvény;Klöckner;;MEGVAN;igen;4;;50x50x4 alu zártszelvény;
 Alumínium lemezek;;S 1,5/2x1000x2000 mm Diamond Alu lemez EN AW-3003 H224;Klöckner;;NINCS;nem;0;;;
 Alumínium lemezek;;S 1,5/2x1500x3000 mm DUETT cseppmintás Alu lemez EN AW-5754 (AlMg3) H114;Klöckner;;NINCS;nem;0;;;
-Alumínium lemezek;;S 1,5x1000x2000 mm Alu lemez EN AW-1050 H24;Klöckner;;NINCS;nem;0;;;
-Alumínium lemezek;;S 1,5x1250x2500 mm Alu lemez EN AW-1050 H24;Klöckner;;NINCS;nem;0;;;
 Alumínium lemezek;;S 2,5/4x1250x2500 mm Cseppmintás EN AW-5754 H114;Klöckner;;NINCS;nem;0;;;
 Alumínium lemezek;;S 2/3,5x1000x2000 mm Cseppmintás EN AW-5754 H114;Klöckner;;NINCS;nem;0;;;
 Alumínium lemezek;;S 2/3,5x1250x2500 mm Cseppmintás EN AW-5754 H114;Klöckner;;NINCS;nem;0;;;
 Alumínium lemezek;;S 2/3,5x1500x3000 mm Cseppmintás EN AW-5754 H114;Klöckner;;NINCS;nem;0;;;
-Alumínium lemezek;;S 2x1000x2000 mm Alu lemez EN AW-1050 H24;Klöckner;;NINCS;nem;0;;;
-Alumínium lemezek;;S 2x1000x2000 mm ELOX Alu lemez EN AW-5002;Klöckner;;NINCS;nem;0;;;
-Alumínium lemezek;;S 2x1250x2500 mm Alu lemez EN AW-1050 H24;Klöckner;;NINCS;nem;0;;;
-Alumínium lemezek;;S 2x1250x2500 mm Alu lemez EN AW-5754 H22;Klöckner;;NINCS;nem;0;;;
-Alumínium lemezek;;S 2x1250x2500 mm ELOX Alu lemez EN AW-5005A H14;Klöckner;;NINCS;nem;0;;;
-Alumínium lemezek;;S 2x1500x3000 mm Alu lemez EN AW-1050 H24;Klöckner;;NINCS;nem;0;;;
 Alumínium lemezek;;S 3/4,5x1250x2500 mm Cseppmintás EN AW-5754 H114;Klöckner;;NINCS;nem;0;;;
-Alumínium lemezek;;S 3x1250x2500 mm Alu lemez EN AW-1050 H24;Klöckner;;NINCS;nem;0;;;
-Alumínium lemezek;;S 3x1250x2500 mm Alu lemez EN AW-5754 H22;Klöckner;;NINCS;nem;0;;;
-Alumínium lemezek;;S 3x1250x2500 mm ELOX Alu lemez EN AW-5005A H14;Klöckner;;NINCS;nem;0;;;
-Alumínium lemezek;;S 3x1500x3000 mm Alu lemez EN AW-1050 H24;Klöckner;;NINCS;nem;0;;;
-Alumínium lemezek;;S 3x1500x3000 mm ELOX Alu lemez EN AW-5005A H14;Klöckner;;NINCS;nem;0;;;
 Alumínium lemezek;;S 4/5,5x1250x2500 mm Cseppmintás EN AW-5754 H114;Klöckner;;NINCS;nem;0;;;
 Alumínium lemezek;;S 5/6,5x1250x2500 mm Cseppmintás EN AW-5754 H114;Klöckner;;NINCS;nem;0;;;
-Alumínium lemezek;;S 6x1250x2500 mm Alu lemez EN AW-5754 H22;Klöckner;;NINCS;nem;0;;;
-Ipari félgyártmányok;252003;20x3 mm Alu lapos profil;Klöckner;;NINCS;nem;0;;;
-Ipari félgyártmányok;250305;30x5 mm Alu lapos profil;Klöckner;;NINCS;nem;0;;;
-Ipari félgyártmányok;252251;40x10 mm Alu lapos profil;Klöckner;6060A /T6;NINCS;nem;0;;;
-Ipari félgyártmányok;252229;40x40x4 alu zártszelvény;Klöckner;;NINCS;nem;0;;;
-Ipari félgyártmányok;250405;40x5 mm Alu lapos profil;Klöckner;C01PI4005;NINCS;nem;0;;;
-Ipari félgyártmányok;253337;50x50x4 alu zártszelvény;Klöckner;;NINCS;nem;0;;;
 Rakományrögzítés;;121018-SL Rakományrögzítő rúd ALU 1650-2050 mm;Load Look;18AL-SL;NINCS;nem;0;;;
 Rakományrögzítés;121019;Rakományrögzítő rúd ALU 2050-2450 mm;Load Look;18AL;NINCS;nem;0;;;
 Hátsó ajtók és áthajtó rámpák;;Rámpa 040x615x2500;MetalMec;MM045ST.60.25;NINCS;nem;0;;;
@@ -1026,9 +1026,9 @@ Ponyvás oldalfal profilok és szegők;220326;"""u"" 25 mm szegő profil elox M"
 Ponyvás oldalfal profilok és szegők;226830;300 mm MONO profil elox;Metra;R6830;MEGVAN;igen;9;R 6830;Metra R 6830;https://www.metraluminium.it
 Ponyvás oldalfal profilok és szegők;223350;350 mm MONO profil szakálas elox;Metra;R7784;MEGVAN;igen;9;R 7784;Metra R 7784;https://www.metraluminium.it
 Ponyvás oldalfal profilok és szegők;223367;400 mm peremes MONOprofil elox;Metra;3367;MEGVAN;igen;9;R 3367;Metra R 3367;https://www.metraluminium.it
-Alumínium lemezek;;S 1,2x1250x2500mm Fehér festett lemez RAL9016;Novelis;;NINCS;nem;0;;;
-Alumínium lemezek;;S 1,2x1500x2500mm Fehér festett lemez RAL9016;Novelis;;NINCS;nem;0;;;
-Alumínium lemezek;;S 1,2x1500x3000mm Fehér festett lemez RAL9016;Novelis;;NINCS;nem;0;;;
+Alumínium lemezek;;S 1,2x1250x2500mm Fehér festett lemez RAL9016;Novelis;;MEGVAN;nem;6;;S 1,2x1250x2500mm Fehér festett lemez RAL9016;
+Alumínium lemezek;;S 1,2x1500x2500mm Fehér festett lemez RAL9016;Novelis;;MEGVAN;nem;6;;S 1,2x1500x2500mm Fehér festett lemez RAL9016;
+Alumínium lemezek;;S 1,2x1500x3000mm Fehér festett lemez RAL9016;Novelis;;MEGVAN;nem;6;;S 1,2x1500x3000mm Fehér festett lemez RAL9016;
 Speciális felépítmény alkatrészek;;17310-1 Tetőablak 40/80 alu kerettel + kalapács;OTO TRIM;18-RH-17310-1;NINCS;nem;0;;;
 Speciális felépítmény alkatrészek;;18533-1 24V E-Tetőablak 945x518 +kapcsoló;OTO TRIM;18-ER-18533-1;NINCS;nem;0;;;
 Sárvédők, szerszámosládák;;J5025135P Sárvédő 450FT;PARLOK;;MEGVAN;igen;5;100264;Mudguard 450x1400 FT;https://www.parlok.com/products/commercial-vehicles/mudguards/flat-top
@@ -1066,34 +1066,34 @@ Sárvédők, szerszámosládák;;J5166825P Íves sárvédő 680/2575 Supra;PARLO
 Sárvédők, szerszámosládák;;J5942550P Szerszámos láda tartó konzol;PARLOK;102902;MEGVAN;igen;0;102827;Installation kit for toolbox 550-700L SL4;https://www.parlok.com/products/commercial-vehicles/toolboxes/550-sl
 Ponyvarendszer kiegészítők;;3840-2900-SSTAVG 27 MM feszítő ALU cső;PB planen;40-SSTAVG-2900;NINCS;nem;0;;;
 Ponyvarendszer kiegészítők;;38400-CB27-HSD kézi heveder szürke bilinccsel készlet;PB planen;40-HSD-CB27;NINCS;nem;0;;;
-Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x1900 mm;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x2000 mm;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x2100 mm;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x2200 mm;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x2300 mm;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x2400 mm;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x2500 mm;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x2600 mm;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POL Frigoser High Gloss 2,0x2300 mm;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POL Frigoser High Gloss 2,0x2400 mm;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POL Frigoser High Gloss 2,0x2500 mm;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POL Frigoser High Gloss 2,0x2600 mm;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POL Frigoser High Impact 0,8x2000 mm;POLSER;;NINCS;nem;0;;;
+Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x1900 mm;POLSER;;MEGVAN;igen;16;;Frigoser;https://polser.com/en/products/automotive-industry/frigoser
+Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x2000 mm;POLSER;;MEGVAN;igen;16;;Frigoser;https://polser.com/en/products/automotive-industry/frigoser
+Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x2100 mm;POLSER;;MEGVAN;igen;16;;Frigoser;https://polser.com/en/products/automotive-industry/frigoser
+Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x2200 mm;POLSER;;MEGVAN;igen;16;;Frigoser;https://polser.com/en/products/automotive-industry/frigoser
+Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x2300 mm;POLSER;;MEGVAN;igen;16;;Frigoser;https://polser.com/en/products/automotive-industry/frigoser
+Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x2400 mm;POLSER;;MEGVAN;igen;16;;Frigoser;https://polser.com/en/products/automotive-industry/frigoser
+Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x2500 mm;POLSER;;MEGVAN;igen;16;;Frigoser;https://polser.com/en/products/automotive-industry/frigoser
+Üvegszálas poliészter;;POL Frigoser High Gloss 1,5x2600 mm;POLSER;;MEGVAN;igen;16;;Frigoser;https://polser.com/en/products/automotive-industry/frigoser
+Üvegszálas poliészter;;POL Frigoser High Gloss 2,0x2300 mm;POLSER;;MEGVAN;igen;16;;Frigoser;https://polser.com/en/products/automotive-industry/frigoser
+Üvegszálas poliészter;;POL Frigoser High Gloss 2,0x2400 mm;POLSER;;MEGVAN;igen;16;;Frigoser;https://polser.com/en/products/automotive-industry/frigoser
+Üvegszálas poliészter;;POL Frigoser High Gloss 2,0x2500 mm;POLSER;;MEGVAN;igen;16;;Frigoser;https://polser.com/en/products/automotive-industry/frigoser
+Üvegszálas poliészter;;POL Frigoser High Gloss 2,0x2600 mm;POLSER;;MEGVAN;igen;16;;Frigoser;https://polser.com/en/products/automotive-industry/frigoser
+Üvegszálas poliészter;;POL Frigoser High Impact 0,8x2000 mm;POLSER;;MEGVAN;igen;12;;Frigoser;https://polser.com/en/products/automotive-industry/frigoser
+Üvegszálas poliészter;;POLYDET High Gloss 1600/1,5 Corona;POLSER;;MEGVAN;nem;3;;POLYDET High Gloss 1600/1,5 Corona;
+Üvegszálas poliészter;;POLYDET High Gloss 1900/1,5 Corona;POLSER;;MEGVAN;nem;3;;POLYDET High Gloss 1900/1,5 Corona;
+Üvegszálas poliészter;;POLYDET High Gloss 2000/1,5 Corona;POLSER;;MEGVAN;nem;3;;POLYDET High Gloss 2000/1,5 Corona;
+Üvegszálas poliészter;;POLYDET High Gloss 2100/1,5 Corona;POLSER;;MEGVAN;nem;3;;POLYDET High Gloss 2100/1,5 Corona;
+Üvegszálas poliészter;;POLYDET High Gloss 2200/1,5 Corona;POLSER;;MEGVAN;nem;3;;POLYDET High Gloss 2200/1,5 Corona;
+Üvegszálas poliészter;;POLYDET High Gloss 2300/1,5 Corona;POLSER;;MEGVAN;nem;3;;POLYDET High Gloss 2300/1,5 Corona;
+Üvegszálas poliészter;;POLYDET Performance Plus 2000/1,5 Roughened;POLSER;;MEGVAN;nem;3;;POLYDET Performance Plus 2000/1,5 Roughened;
+Üvegszálas poliészter;;POLYDET Performance Plus 2100/1,8 CORONA;POLSER;;MEGVAN;nem;3;;POLYDET Performance Plus 2100/1,8 CORONA;
+Üvegszálas poliészter;;POLYDET Performance Plus 2200/1,5 Roughened;POLSER;;MEGVAN;nem;3;;POLYDET Performance Plus 2200/1,5 Roughened;
+Üvegszálas poliészter;;POLYDET Performance Plus 2200/1,8 CORONA;POLSER;;MEGVAN;nem;3;;POLYDET Performance Plus 2200/1,8 CORONA;
+Üvegszálas poliészter;;POLYDET Performance Plus 2300/1,8 CORONA;POLSER;;MEGVAN;nem;3;;POLYDET Performance Plus 2300/1,8 CORONA;
+Üvegszálas poliészter;;POLYDET Performance Plus 2400/1,8 Roughened;POLSER;;MEGVAN;nem;3;;POLYDET Performance Plus 2400/1,8 Roughened;
+Üvegszálas poliészter;;POLYDET Performance Plus 2500/1,8 CORONA;POLSER;;MEGVAN;nem;3;;POLYDET Performance Plus 2500/1,8 CORONA;
 Üvegszálas poliészter;;POL/Panel 25 mm;POLSER;;NINCS;nem;0;;;
 Üvegszálas poliészter;;POL/Panel 25 mm szendvicspanel erősített;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POLYDET High Gloss 1600/1,5 Corona;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POLYDET High Gloss 1900/1,5 Corona;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POLYDET High Gloss 2000/1,5 Corona;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POLYDET High Gloss 2100/1,5 Corona;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POLYDET High Gloss 2200/1,5 Corona;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POLYDET High Gloss 2300/1,5 Corona;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POLYDET Performance Plus 2000/1,5 Roughened;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POLYDET Performance Plus 2100/1,8 CORONA;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POLYDET Performance Plus 2200/1,5 Roughened;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POLYDET Performance Plus 2200/1,8 CORONA;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POLYDET Performance Plus 2300/1,8 CORONA;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POLYDET Performance Plus 2400/1,8 Roughened;POLSER;;NINCS;nem;0;;;
-Üvegszálas poliészter;;POLYDET Performance Plus 2500/1,8 CORONA;POLSER;;NINCS;nem;0;;;
 Dobozos felépítmény alkatrészek;512527;55 mm-es PVC tömítés PL;Pastore;072027678;MEGVAN;igen;3;072027678;PVC profile, grey, mm.55,5;https://www.pastorelombardi.com/eng/cerca?chiave=072027678
 Dobozos felépítmény alkatrészek;512627;85 mm-es PVC tömítés PL;Pastore;072021426D;MEGVAN;igen;3;072021426D;PVC profile, grey, mm 85,5;https://www.pastorelombardi.com/eng/cerca?chiave=072021426D
 Dobozos felépítmény alkatrészek;72298;Alu csőtartó biztosító csappal;Pastore;072622298;MEGVAN;igen;2;072622298;Anodized aluminum tube support with stainless steel hook stop with pin;https://www.pastorelombardi.com/eng/cerca?chiave=072622298
@@ -1124,21 +1124,21 @@ Dobozos felépítmény alkatrészek;72706;Hátsó csővég rugós;Pastore;072621
 Dobozos felépítmény alkatrészek;552050;Ütközőgumi 200x50x80;Pastore;;NINCS;nem;0;;;
 Speciális felépítmény alkatrészek;719220/99A;+ 719226/304 Rozsdamentes kartartó+csővezető;Pastore;;NINCS;nem;0;;;
 Speciális felépítmény alkatrészek;041225;Üzemanyag beöntő 245x190 zárható;Pastore;024120253G;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 15x1250x2200 Rétegelt lemez fenolos;Peri;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 15x1250x2200 Rétegelt lemez fenolos HEXA;Peri;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 15x1250x2500 Rétegelt lemez Natúr;Peri;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 15x1250x2500 Rétegelt lemez fenolos;Peri;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 15x1250x2500 Rétegelt lemez fenolos HEXA;Peri;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 18x1250x2200 Rétegelt lemez fenolos, HEXA;Peri;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 18x1250x2500 Rétegelt lemez fenolos;Peri;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 18x1250x2500 Rétegelt lemez fenolos HEXA;Peri;252923;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 18x1500x2500 Rétegelt lemez fenolos;Peri;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 21x1250x2500 Rétegelt lemez fenolos;Peri;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 21x1250x2500 Rétegelt lemez fenolos HEXA;Peri;252930;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 21x1500x3000 mm Rétegelt lemez fenolos;Peri;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 24x1250x2500 Rétegelt lemez fenolos;Peri;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 27x1250x2500 Rétegelt lemez fenolos;Peri;;NINCS;nem;0;;;
-Csúszásmentes rétegelt padló;;L 27x1500x2500 Rétegelt lemez fenolos;Peri;;NINCS;nem;0;;;
+Csúszásmentes rétegelt padló;;L 15x1250x2200 Rétegelt lemez fenolos;Peri;;MEGVAN;nem;4;;L 15x1250x2200 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 15x1250x2200 Rétegelt lemez fenolos HEXA;Peri;;MEGVAN;nem;4;;L 15x1250x2200 Rétegelt lemez fenolos HEXA;
+Csúszásmentes rétegelt padló;;L 15x1250x2500 Rétegelt lemez Natúr;Peri;;MEGVAN;nem;4;;L 15x1250x2500 Rétegelt lemez Natúr;
+Csúszásmentes rétegelt padló;;L 15x1250x2500 Rétegelt lemez fenolos;Peri;;MEGVAN;nem;4;;L 15x1250x2500 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 15x1250x2500 Rétegelt lemez fenolos HEXA;Peri;;MEGVAN;nem;4;;L 15x1250x2500 Rétegelt lemez fenolos HEXA;
+Csúszásmentes rétegelt padló;;L 18x1250x2200 Rétegelt lemez fenolos, HEXA;Peri;;MEGVAN;nem;4;;L 18x1250x2200 Rétegelt lemez fenolos, HEXA;
+Csúszásmentes rétegelt padló;;L 18x1250x2500 Rétegelt lemez fenolos;Peri;;MEGVAN;nem;4;;L 18x1250x2500 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 18x1250x2500 Rétegelt lemez fenolos HEXA;Peri;252923;MEGVAN;nem;4;;L 18x1250x2500 Rétegelt lemez fenolos HEXA;
+Csúszásmentes rétegelt padló;;L 18x1500x2500 Rétegelt lemez fenolos;Peri;;MEGVAN;nem;4;;L 18x1500x2500 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 21x1250x2500 Rétegelt lemez fenolos;Peri;;MEGVAN;nem;4;;L 21x1250x2500 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 21x1250x2500 Rétegelt lemez fenolos HEXA;Peri;252930;MEGVAN;nem;4;;L 21x1250x2500 Rétegelt lemez fenolos HEXA;
+Csúszásmentes rétegelt padló;;L 21x1500x3000 mm Rétegelt lemez fenolos;Peri;;MEGVAN;nem;4;;L 21x1500x3000 mm Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 24x1250x2500 Rétegelt lemez fenolos;Peri;;MEGVAN;nem;4;;L 24x1250x2500 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 27x1250x2500 Rétegelt lemez fenolos;Peri;;MEGVAN;nem;4;;L 27x1250x2500 Rétegelt lemez fenolos;
+Csúszásmentes rétegelt padló;;L 27x1500x2500 Rétegelt lemez fenolos;Peri;;MEGVAN;nem;4;;L 27x1500x2500 Rétegelt lemez fenolos;
 Sárvédők, szerszámosládák;;J24300 Sárvédő gumi 240x300 mm;Plastic Padana;150236;NINCS;nem;0;;;
 Sárvédők, szerszámosládák;;J260260 Sárvédő gumi 260x260 mm;Plastic Padana;000801;NINCS;nem;0;;;
 Sárvédők, szerszámosládák;;J450300 Sárfogó lap 450x300 mm;Plastic Padana;214530;NINCS;nem;0;;;
@@ -1168,6 +1168,7 @@ Ponyvarendszer kiegészítők;388008;27mm feszítő cső alu profil;Profilpol;T1
 Rakományrögzítés;123250;Térelválasztó falzár;Profilpol;33PB0;NINCS;nem;0;;;
 Alumínium alváz profilok;203004;30 mm Keretprofil elox;RE-ALL;1800004;MEGVAN;igen;2;1800004;RE-ALL katalógus 18.pdf;https://www.re-all.it/images/catalogo-pdf/2026/18.pdf#page=5
 Alumínium lemezek;;S 2,7x2500x6800 mm Rízs mintás Alu lemez EN AW-5086 H32;RE-ALL;0800003;MEGVAN;nem;0;0800003;RE-ALL katalógus 02-12.pdf;https://www.re-all.it/images/catalogo-pdf/2026/02-12.pdf#page=10
+Alumínium lemezek;;S 2x1250x2500 mm Rízs mintás Alu lemez EN AW-3003 H22;RE-ALL;1100002;MEGVAN;nem;8;;S 2x1250x2500 mm Rízs mintás Alu lemez EN AW-3003 H22;
 Alumínium padló profilok;221902;Bordázott padló profil 200/40 mm;RE-ALL;1900002;MEGVAN;nem;2;1900002;RE-ALL katalógus 19.pdf;https://www.re-all.it/images/catalogo-pdf/2026/19.pdf#page=3
 Dobozos felépítmény alkatrészek;103925;Sarok elem 35/35 R profilhoz;RE-ALL;3900125;MEGVAN;igen;2;3900125;RE-ALL katalógus 21.pdf;https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=4
 Elhúzható rolóponyvás rendszer;6621620;OR MIDI Első oszlop alu elox;RE-ALL;2100062;MEGVAN;igen;2;2100062;RE-ALL katalógus 21.pdf;https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=12
@@ -1188,7 +1189,6 @@ Ponyvás oldalfal profilok és szegők;247180;Billencs alsó profil 200+45 mm/ 3
 Ponyvás oldalfal profilok és szegők;247158;Billencs középső 200x30 mm profil;RE-ALL;17-00158;MEGVAN;igen;3;17-00158;RE-ALL katalógus 16-17.pdf;https://www.re-all.it/images/catalogo-pdf/2026/16-17.pdf#page=16
 Zárt-dobozos és hűtős profilok;232125;Dobozos keret elox OR 130 mm nyitott;RE-ALL;2100025;MEGVAN;nem;3;2100025;RE-ALL katalógus 21.pdf;https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=5
 Zárt-dobozos és hűtős profilok;238170;OR ajtó keret elox 70x30x65/25mm;RE-ALL;1800170;MEGVAN;igen;2;1800170;RE-ALL katalógus 18.pdf;https://www.re-all.it/images/catalogo-pdf/2026/18.pdf#page=9
-Alumínium lemezek;;S 2x1250x2500 mm Rízs mintás Alu lemez EN AW-3003 H22;RE-ALL;1100002;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;232010;"20x10 ""L"" Profil natúr";RE-ALL;;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;237000;25x25 mm íves sarokprofil elox;RE-ALL;T1.7000.1;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;232121;35x35 mm íves sarokprofil elox;RE-ALL;213838;NINCS;nem;0;;;
@@ -1242,8 +1242,8 @@ Ponyvás oldalfal profilok és szegők;;224004/ 400 mm peremes oldalfal elox;Tak
 Ponyvás oldalfal profilok és szegők;224004;400 mm peremes oldalfal elox;Takler;4004 TK;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;245005;Bill. 400/30 mm mono profil elox;Takler;T1.5005.1;NINCS;nem;0;;;
 Speciális felépítmény alkatrészek;612623;TIT zárszerkezet;Titgemeyer;;NINCS;nem;0;;;
-Gumiszőnyegek;;G 4x1200x10000 2T S/S Általános gumiszőnyeg;VR-Trade;;NINCS;nem;0;;;
-Gumiszőnyegek;;G 8x2000 Istálló szőnyeg;VR-Trade;;NINCS;nem;0;;;
+Gumiszőnyegek;;G 4x1200x10000 2T S/S Általános gumiszőnyeg;VR-Trade;;MEGVAN;nem;3;;G 4x1200x10000 2T S/S Általános gumiszőnyeg;
+Gumiszőnyegek;;G 8x2000 Istálló szőnyeg;VR-Trade;;MEGVAN;nem;3;;G 8x2000 Istálló szőnyeg;
 Elhúzható rolóponyvás rendszer;;T-rakonca görgő;Versus;RTS-002;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;;V144-01006 Elhúzó rúd;Versus;;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;;V144-10001 szerelő készlet DTL, MT;Versus;;NINCS;nem;0;;;

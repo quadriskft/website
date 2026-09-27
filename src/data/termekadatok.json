@@ -1159,6 +1159,38 @@
    "/termekkepek/201094-targonca-utkozo-profil-1.webp"
   ]
  },
+ "202274-u-100x50x50x5-mm-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "\"U\" 100x50x50x5 mm profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Gerinc": "100 mm",
+   "Szár": "50 mm",
+   "Falvastagság": "5 mm",
+   "Tömeg": "2,565 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/202274-u-100x50x50x5-mm-profil-1.webp"
+  ]
+ },
+ "202869-u-160x80x80x8-mm-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "\"U\" 160x80x80x8 mm profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Gerinc": "160 mm",
+   "Szár": "80 mm",
+   "Falvastagság": "8 mm",
+   "Tömeg": "6,566 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/202869-u-160x80x80x8-mm-profil-1.webp"
+  ]
+ },
  "203004-30-mm-keretprofil-elox": {
   "source": "RE-ALL",
   "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/18.pdf#page=5",
@@ -1170,6 +1202,22 @@
   },
   "images": [
    "/termekkepek/203004-30-mm-keretprofil-elox-1.webp"
+  ]
+ },
+ "203432-u-90x50x50x5-mm-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "\"U\" 90x50x50x5 mm profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Gerinc": "90 mm",
+   "Szár": "50 mm",
+   "Falvastagság": "5 mm",
+   "Tömeg": "2,43 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/203432-u-90x50x50x5-mm-profil-1.webp"
   ]
  },
  "203492-autoszallito-padlo-keret-profil-30-mm": {
@@ -1187,6 +1235,38 @@
   },
   "images": [
    "/termekkepek/203492-autoszallito-padlo-keret-profil-30-mm-1.webp"
+  ]
+ },
+ "203548-u-140x60x60x7-mm-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "\"U\" 140x60x60x7 mm profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Gerinc": "140 mm",
+   "Szár": "60 mm",
+   "Falvastagság": "7 mm",
+   "Tömeg": "4,649 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/203548-u-140x60x60x7-mm-profil-1.webp"
+  ]
+ },
+ "205162-u-80x60x5-mm-aluprofil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "\"U\" 80x60x5 mm aluprofil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Gerinc": "80 mm",
+   "Szár": "60 mm",
+   "Falvastagság": "5 mm",
+   "Tömeg": "2,565 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/205162-u-80x60x5-mm-aluprofil-1.webp"
   ]
  },
  "207833-100x30-mm-alafutasgatlo-elox-profil": {
@@ -1760,6 +1840,17 @@
   "images": [
    "/termekkepek/222528-u-szego-zartszelveny-erositessel-25-mm-elox-1.webp"
   ]
+ },
+ "222985-d50-mm-alu-cso": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "D50 mm alu cső",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Külső átmérő": "50 mm"
+  },
+  "images": []
  },
  "223350-350-mm-mono-profil-szakalas-elox": {
   "source": "Metra",
@@ -2504,6 +2595,66 @@
    "/termekkepek/247243-billencs-felso-200x40-mm-1.webp"
   ]
  },
+ "250202-20x2-alu-cso": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "20x2 Alu cső",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Külső átmérő": "20 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "0,305 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/250202-20x2-alu-cso-1.webp"
+  ]
+ },
+ "250297-50x50x5-alu-l-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "50x50x5 Alu \"L\" profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "50 × 50 mm",
+   "Falvastagság": "5 mm",
+   "Tömeg": "1,282 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/250297-50x50x5-alu-l-profil-1.webp"
+  ]
+ },
+ "250301-30x10-mm-alu-lapos-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "30x10 mm Alu lapos profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Szélesség": "30 mm",
+   "Vastagság": "10 mm",
+   "Tömeg": "0,81 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/250301-30x10-mm-alu-lapos-profil-1.webp"
+  ]
+ },
+ "250305-30x5-mm-alu-lapos-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "30x5 mm Alu lapos profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Szélesség": "30 mm",
+   "Vastagság": "5 mm",
+   "Tömeg": "0,405 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/250305-30x5-mm-alu-lapos-profil-1.webp"
+  ]
+ },
  "250403-40x40x3-alu-l-profil": {
   "source": "RE-ALL",
   "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19",
@@ -2511,6 +2662,81 @@
   "matchedCode": "1304605",
   "specs": {},
   "images": []
+ },
+ "250405-40x5-mm-alu-lapos-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "40x5 mm Alu lapos profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Szélesség": "40 mm",
+   "Vastagság": "5 mm",
+   "Tömeg": "0,54 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/250405-40x5-mm-alu-lapos-profil-1.webp"
+  ]
+ },
+ "250503-100x50x3-mm-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "100x50x3 mm Alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "100 × 50 mm",
+   "Falvastagság": "3 mm",
+   "Tömeg": "2,333 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/250503-100x50x3-mm-alu-zartszelveny-1.webp"
+  ]
+ },
+ "250890-40x20x2-mm-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "40x20x2 mm Alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "40 × 20 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "0,605 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/250890-40x20x2-mm-alu-zartszelveny-1.webp"
+  ]
+ },
+ "251010-100x100x8-alu-l-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "100x100x8 Alu \"L\" profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "100 × 100 mm",
+   "Falvastagság": "8 mm",
+   "Tömeg": "4,147 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/251010-100x100x8-alu-l-profil-1.webp"
+  ]
+ },
+ "251048-100x10-mm-alu-lapos-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "100x10 mm Alu lapos profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Szélesség": "100 mm",
+   "Vastagság": "10 mm",
+   "Tömeg": "2,7 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/251048-100x10-mm-alu-lapos-profil-1.webp"
+  ]
  },
  "251160-40x20-mm-alu-lapos-profil": {
   "source": "RE-ALL",
@@ -2522,6 +2748,230 @@
   },
   "images": []
  },
+ "251210-120x10-mm-alu-lapos-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "120x10 mm Alu lapos profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Szélesség": "120 mm",
+   "Vastagság": "10 mm",
+   "Tömeg": "3,24 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/251210-120x10-mm-alu-lapos-profil-1.webp"
+  ]
+ },
+ "251310-18x2-alu-cso": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "18x2 Alu cső",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Külső átmérő": "18 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "0,271 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/251310-18x2-alu-cso-1.webp"
+  ]
+ },
+ "251316-40x25x4-mm-r-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "40x25x4 mm R zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "40 × 25 mm",
+   "Falvastagság": "4 mm",
+   "Tömeg": "1,231 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/251316-40x25x4-mm-r-zartszelveny-1.webp"
+  ]
+ },
+ "251510-150x10-mm-alu-lapos-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "150x10 mm Alu lapos profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Szélesség": "150 mm",
+   "Vastagság": "10 mm",
+   "Tömeg": "4,05 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/251510-150x10-mm-alu-lapos-profil-1.webp"
+  ]
+ },
+ "251530-18-mm-alu-rud": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "18 mm Alu rúd",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Átmérő": "18 mm",
+   "Tömeg": "0,687 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/251530-18-mm-alu-rud-1.webp"
+  ]
+ },
+ "251659-80x50x4-mm-r4-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "80x50x4 mm R4 Alu Zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "80 × 50 mm",
+   "Falvastagság": "4 mm",
+   "Tömeg": "2,635 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/251659-80x50x4-mm-r4-alu-zartszelveny-1.webp"
+  ]
+ },
+ "251742-50x5-mm-alu-lapos-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "50x5 mm Alu lapos profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Szélesség": "50 mm",
+   "Vastagság": "5 mm",
+   "Tömeg": "0,675 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/251742-50x5-mm-alu-lapos-profil-1.webp"
+  ]
+ },
+ "251883-30x20x1-5-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "30x20x1,5 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "30 × 20 mm",
+   "Falvastagság": "1,5 mm",
+   "Tömeg": "0,381 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/251883-30x20x1-5-alu-zartszelveny-1.webp"
+  ]
+ },
+ "252003-20x3-mm-alu-lapos-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "20x3 mm Alu lapos profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Szélesség": "20 mm",
+   "Vastagság": "3 mm",
+   "Tömeg": "0,162 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252003-20x3-mm-alu-lapos-profil-1.webp"
+  ]
+ },
+ "252229-40x40x4-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "40x40x4 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "40 × 40 mm",
+   "Falvastagság": "4 mm",
+   "Tömeg": "1,555 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252229-40x40x4-alu-zartszelveny-1.webp"
+  ]
+ },
+ "252242-40x30x2-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "40x30x2 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "40 × 30 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "0,713 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252242-40x30x2-alu-zartszelveny-1.webp"
+  ]
+ },
+ "252251-40x10-mm-alu-lapos-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "40x10 mm Alu lapos profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Szélesség": "40 mm",
+   "Vastagság": "10 mm",
+   "Tömeg": "1,08 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252251-40x10-mm-alu-lapos-profil-1.webp"
+  ]
+ },
+ "252296-40x8-mm-alu-lapos-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "40x8 mm Alu lapos profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Szélesség": "40 mm",
+   "Vastagság": "8 mm",
+   "Tömeg": "0,864 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252296-40x8-mm-alu-lapos-profil-1.webp"
+  ]
+ },
+ "252417-30x8-mm-alu-lapos-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "30x8 mm Alu lapos profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Szélesség": "30 mm",
+   "Vastagság": "8 mm",
+   "Tömeg": "0,648 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252417-30x8-mm-alu-lapos-profil-1.webp"
+  ]
+ },
+ "252444-60x40x2-5-mm-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "60x40x2,5 mm alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "60 × 40 mm",
+   "Falvastagság": "2,5 mm",
+   "Tömeg": "1,282 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252444-60x40x2-5-mm-alu-zartszelveny-1.webp"
+  ]
+ },
  "252502-25x25x2-alu-l-profil": {
   "source": "RE-ALL",
   "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19",
@@ -2530,6 +2980,232 @@
   "specs": {},
   "images": []
  },
+ "252535-60x40x3-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "60x40x3 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "60 × 40 mm",
+   "Falvastagság": "3 mm",
+   "Tömeg": "1,523 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252535-60x40x3-alu-zartszelveny-1.webp"
+  ]
+ },
+ "252672-80x20x2-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "80x20x2 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "80 × 20 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "1,037 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252672-80x20x2-alu-zartszelveny-1.webp"
+  ]
+ },
+ "252687-60x40x4-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "60x40x4 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "60 × 40 mm",
+   "Falvastagság": "4 mm",
+   "Tömeg": "1,987 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252687-60x40x4-alu-zartszelveny-1.webp"
+  ]
+ },
+ "252763-80x40x3-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "80x40x3 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "80 × 40 mm",
+   "Falvastagság": "3 mm",
+   "Tömeg": "1,847 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252763-80x40x3-alu-zartszelveny-1.webp"
+  ]
+ },
+ "252764-80x40x4-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "80x40x4 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "80 × 40 mm",
+   "Falvastagság": "4 mm",
+   "Tömeg": "2,419 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252764-80x40x4-alu-zartszelveny-1.webp"
+  ]
+ },
+ "252798-150x30x3-mm-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "150x30x3 mm alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "150 × 30 mm",
+   "Falvastagság": "3 mm",
+   "Tömeg": "2,819 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252798-150x30x3-mm-alu-zartszelveny-1.webp"
+  ]
+ },
+ "252981-20x20x3-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "20x20x3 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "20 × 20 mm",
+   "Falvastagság": "3 mm",
+   "Tömeg": "0,551 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/252981-20x20x3-alu-zartszelveny-1.webp"
+  ]
+ },
+ "253020-30x20x2-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "30x20x2 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "30 × 20 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "0,497 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/253020-30x20x2-alu-zartszelveny-1.webp"
+  ]
+ },
+ "253030-30x30x3-mm-u-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "30x30x3 mm U profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Gerinc": "30 mm",
+   "Szár": "30 mm",
+   "Falvastagság": "3 mm",
+   "Tömeg": "0,68 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/253030-30x30x3-mm-u-profil-1.webp"
+  ]
+ },
+ "253295-30x30x2-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "30x30x2 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "30 × 30 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "0,605 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/253295-30x30x2-alu-zartszelveny-1.webp"
+  ]
+ },
+ "253337-50x50x4-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "50x50x4 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "50 × 50 mm",
+   "Falvastagság": "4 mm",
+   "Tömeg": "1,987 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/253337-50x50x4-alu-zartszelveny-1.webp"
+  ]
+ },
+ "253535-35x35x3-mm-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "35x35x3 mm alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "35 × 35 mm",
+   "Falvastagság": "3 mm",
+   "Tömeg": "1,037 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/253535-35x35x3-mm-alu-zartszelveny-1.webp"
+  ]
+ },
+ "253734-150x25x2-5-r2-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "150x25x2,5 R2 Alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "150 × 25 mm",
+   "Falvastagság": "2,5 mm",
+   "Tömeg": "2,295 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/253734-150x25x2-5-r2-alu-zartszelveny-1.webp"
+  ]
+ },
+ "253812-50x30x2-r5-alu-zartszelveny-6000-mm": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "50x30x2 R5 alu zártszelvény 6000 mm",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "50 × 30 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "0,821 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/253812-50x30x2-r5-alu-zartszelveny-6000-mm-1.webp"
+  ]
+ },
+ "254020-40x20x2-alu-l-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "40x20x2 Alu \"L\" profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "40 × 20 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "0,313 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/254020-40x20x2-alu-l-profil-1.webp"
+  ]
+ },
  "254508-20x20x2-alu-l-profil": {
   "source": "RE-ALL",
   "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19",
@@ -2537,6 +3213,232 @@
   "matchedCode": "1304510",
   "specs": {},
   "images": []
+ },
+ "254979-60x50x50x5-mm-u-profil": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "60x50x50x5 mm \"U\" profil",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Gerinc": "60 mm",
+   "Szár": "50 mm",
+   "Falvastagság": "5 mm",
+   "Tömeg": "2,025 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/254979-60x50x50x5-mm-u-profil-1.webp"
+  ]
+ },
+ "255004-100x50x4-mm-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "100x50x4 mm Alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "100 × 50 mm",
+   "Falvastagság": "4 mm",
+   "Tömeg": "3,067 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/255004-100x50x4-mm-alu-zartszelveny-1.webp"
+  ]
+ },
+ "255032-50x30x2-5-alu-zartszelveny-6000-mm": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "50x30x2,5 Alu zártszelvény 6000 mm",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "50 × 30 mm",
+   "Falvastagság": "2,5 mm",
+   "Tömeg": "1,013 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/255032-50x30x2-5-alu-zartszelveny-6000-mm-1.webp"
+  ]
+ },
+ "255070-60x30x3-mm-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "60x30x3 mm Alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "60 × 30 mm",
+   "Falvastagság": "3 mm",
+   "Tömeg": "1,361 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/255070-60x30x3-mm-alu-zartszelveny-1.webp"
+  ]
+ },
+ "255207-80x40x3-mm-r5-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "80x40x3 mm R5 Alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "80 × 40 mm",
+   "Falvastagság": "3 mm",
+   "Tömeg": "1,847 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/255207-80x40x3-mm-r5-alu-zartszelveny-1.webp"
+  ]
+ },
+ "255340-40x40x3-r2-mm-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "40x40x3 R2 mm Alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "40 × 40 mm",
+   "Falvastagság": "3 mm",
+   "Tömeg": "1,199 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/255340-40x40x3-r2-mm-alu-zartszelveny-1.webp"
+  ]
+ },
+ "255472-100x100x4-mm-r7-3-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "100x100x4 mm R7/3 Alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "100 × 100 mm",
+   "Falvastagság": "4 mm",
+   "Tömeg": "4,147 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/255472-100x100x4-mm-r7-3-alu-zartszelveny-1.webp"
+  ]
+ },
+ "255473-80x80x4-mm-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "80x80x4 mm Alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "80 × 80 mm",
+   "Falvastagság": "4 mm",
+   "Tömeg": "3,283 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/255473-80x80x4-mm-alu-zartszelveny-1.webp"
+  ]
+ },
+ "255610-60x30x2-5-r2-5-mm-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "60x30x2,5 R2,5 mm alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "60 × 30 mm",
+   "Falvastagság": "2,5 mm",
+   "Tömeg": "1,147 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/255610-60x30x2-5-r2-5-mm-alu-zartszelveny-1.webp"
+  ]
+ },
+ "256076-160x90x5-mm-alu-zartszelvany": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "160x90x5 mm Alu zártszelvány",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "160 × 90 mm",
+   "Falvastagság": "5 mm",
+   "Tömeg": "6,48 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/256076-160x90x5-mm-alu-zartszelvany-1.webp"
+  ]
+ },
+ "256468-60x40x4-mm-r4-2-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "60x40x4 mm R4/2 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "60 × 40 mm",
+   "Falvastagság": "4 mm",
+   "Tömeg": "1,987 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/256468-60x40x4-mm-r4-2-alu-zartszelveny-1.webp"
+  ]
+ },
+ "258352-50x50x3-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "50x50x3 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "50 × 50 mm",
+   "Falvastagság": "3 mm",
+   "Tömeg": "1,523 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/258352-50x50x3-alu-zartszelveny-1.webp"
+  ]
+ },
+ "258354-25x25x2-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "25x25x2 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "25 × 25 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "0,497 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/258354-25x25x2-alu-zartszelveny-1.webp"
+  ]
+ },
+ "258418-80x50x4-mm-r3-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "80x50x4 mm R3 Alu Zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "80 × 50 mm",
+   "Falvastagság": "4 mm",
+   "Tömeg": "2,635 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/258418-80x50x4-mm-r3-alu-zartszelveny-1.webp"
+  ]
+ },
+ "258455-60x40x2-5-r2-alu-zartszelveny": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "60x40x2,5 R2 alu zártszelvény",
+  "matchedCode": "",
+  "specs": {
+   "Anyag": "alumínium",
+   "Méret": "60 × 40 mm",
+   "Falvastagság": "2,5 mm",
+   "Tömeg": "1,282 kg/fm (elméleti)"
+  },
+  "images": [
+   "/termekkepek/258455-60x40x2-5-r2-alu-zartszelveny-1.webp"
+  ]
  },
  "260ft-csapott-teteju-sarvedo": {
   "source": "JONESCO",
@@ -6314,6 +7216,530 @@
    "/termekkepek/felso-gobos-kedergumi-32x14x20-8-fekete-1.webp"
   ]
  },
+ "g-10x1000-soft-gumi": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 10x1000 Soft gumi",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "10 mm",
+   "Szélesség": "1000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-10x1000x2000-soft-gumi-lap": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 10x1000x2000 Soft gumi lap",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "10 mm",
+   "Méret": "1000 × 2000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-1400x1400-rampaszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 1400x1400 Rampaszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Méret": "1400 × 1400 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-15x1000x2000-soft-gumi-lap": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 15x1000x2000 Soft gumi lap",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "15 mm",
+   "Méret": "1000 × 2000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-1600x1400-mm-rampaszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 1600x1400 mm Rampaszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Méret": "1600 × 1400 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-17-1750x1550-mm-rampaszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 17/1750x1550 mm Rámpaszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "17 mm",
+   "Méret": "1750 × 1550 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-1750x1540-mm-rampaszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 1750x1540 mm Rámpaszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Méret": "1750 × 1540 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-1750x1550-mm-rampaszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 1750x1550 mm Rámpaszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Méret": "1750 × 1550 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-17x1830x1220-mm-istallo-szonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 17x1830x1220 mm Istálló szőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "17 mm",
+   "Méret": "1830 × 1220 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-17x900x1200-mm-istallo-szonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 17x900x1200 mm Istálló szőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "17 mm",
+   "Méret": "900 × 1200 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-1800x1400-rampaszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 1800x1400 Rampaszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Méret": "1800 × 1400 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-1800x1600-rampaszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 1800x1600 Rampaszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Méret": "1800 × 1600 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-2000x1400-mm-rampaszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 2000x1400 mm Rampaszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Méret": "2000 × 1400 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-2000x1600-mm-rampaszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 2000x1600 mm Rampaszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Méret": "2000 × 1600 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-2200x1400-rampaszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 2200x1400 Rampaszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Méret": "2200 × 1400 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-2400x1400-rampaszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 2400x1400 Rampaszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Méret": "2400 × 1400 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-2400x2000-rampaszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 2400x2000 Rampaszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Méret": "2400 × 2000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-27-2400x1200-rampaszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 27/2400x1200 Rampaszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "27 mm",
+   "Méret": "2400 × 1200 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-3x1000-mm-pvc-attlatszo-viztiszta-l-20-m": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 3x1000 mm PVC áttlátszó víztiszta L:20 m",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Szélesség": "1000 mm",
+   "Tekercshossz": "20 m",
+   "Anyag": "víztiszta PVC"
+  },
+  "images": []
+ },
+ "g-3x1200x10000-mm-amoeba-gumiszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 3x1200x10000 mm Amoeba gumiszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Méret": "1200 × 10000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-3x1500x10000-mm-amoeba-gumiszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 3x1500x10000 mm Amoeba gumiszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Méret": "1500 × 10000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-3x2200x10000-mm-diamond-mintas-gumi": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 3x2200x10000 mm DIAMOND mintás gumi",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Méret": "2200 × 10000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-4x1000-mm-pvc-attlatszo-viztiszta-l-20-m": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 4x1000 mm PVC áttlátszó víztiszta L:20 m",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "4 mm",
+   "Szélesség": "1000 mm",
+   "Tekercshossz": "20 m",
+   "Anyag": "víztiszta PVC"
+  },
+  "images": []
+ },
+ "g-4x1200x10000-2t-s-s-altalanos-gumiszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 4x1200x10000 2T S/S Általános gumiszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "4 mm",
+   "Méret": "1200 × 10000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-4x1200x10000-noppos-gumiszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 4x1200x10000 Noppos gumiszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "4 mm",
+   "Méret": "1200 × 10000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-4x1200x10000-vidar-coin-noppos-gumiszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 4x1200x10000 Vidar Coin Noppos gumiszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "4 mm",
+   "Méret": "1200 × 10000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-4x1400x10000-2t-s-s-altalanos-gumiszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 4x1400x10000 2T S/S Általános gumiszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "4 mm",
+   "Méret": "1400 × 10000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-4x1400x10000-s-s-altalanos-gumiszonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 4x1400x10000 S/S Általános gumiszőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "4 mm",
+   "Méret": "1400 × 10000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-4x1800-mm-istallo-szonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 4x1800 mm Istálló szőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "4 mm",
+   "Szélesség": "1800 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-4x2000mm-cbr-szonyeg-2-nylon": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 4x2000mm CBR szőnyeg 2 nylon",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "4 mm",
+   "Szélesség": "2000 mm",
+   "Anyag": "gumi, 2 rétegű nylon betéttel"
+  },
+  "images": []
+ },
+ "g-5x1000-mm-pvc-attlatszo-viztiszta-l-20-m": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 5x1000 mm PVC áttlátszó víztiszta L:20 m",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "5 mm",
+   "Szélesség": "1000 mm",
+   "Tekercshossz": "20 m",
+   "Anyag": "víztiszta PVC"
+  },
+  "images": []
+ },
+ "g-5x1400x10m-2t-s-s-altalanos-gumi": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 5x1400x10m 2T S/S Általános gumi",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "5 mm",
+   "Szélesség": "1400 mm",
+   "Tekercshossz": "10 m",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-5x2000-mm-istallo-szonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 5x2000 mm Istálló szőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "5 mm",
+   "Szélesség": "2000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-6x1450mm-cobra-szonyeg-2-nylon": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 6x1450mm COBRA szőnyeg 2 nylon",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "6 mm",
+   "Szélesség": "1450 mm",
+   "Anyag": "gumi, 2 rétegű nylon betéttel"
+  },
+  "images": []
+ },
+ "g-6x1650-mm-istallo-szonyeg-l-10-m-rs": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 6x1650 mm Istálló szőnyeg L:10 m RS",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "6 mm",
+   "Szélesség": "1650 mm",
+   "Tekercshossz": "10 m",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-6x2000mm-cobra-szonyeg-2-nylon": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 6x2000mm COBRA szőnyeg 2 nylon",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "6 mm",
+   "Szélesség": "2000 mm",
+   "Anyag": "gumi, 2 rétegű nylon betéttel"
+  },
+  "images": []
+ },
+ "g-6x2000mm-istallo-szonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 6x2000mm Istálló szőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "6 mm",
+   "Szélesség": "2000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-6x2000mm-istallo-szonyeg-l-10-m-rs": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 6x2000mm Istálló szőnyeg L: 10 m RS",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "6 mm",
+   "Szélesség": "2000 mm",
+   "Tekercshossz": "10 m",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-8x1000-soft-gumi": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 8x1000 Soft gumi",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "8 mm",
+   "Szélesség": "1000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-8x1000x2000-soft-gumi-lap": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 8x1000x2000 Soft gumi lap",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "8 mm",
+   "Méret": "1000 × 2000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-8x1650-istallo-szonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 8x1650 Istálló szőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "8 mm",
+   "Szélesség": "1650 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-8x2000-istallo-szonyeg": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 8x2000 Istálló szőnyeg",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "8 mm",
+   "Szélesség": "2000 mm",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-8x2000-istallo-szonyeg-l-10-m-rs": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 8x2000 Istálló szőnyeg L:10 m RS",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "8 mm",
+   "Szélesség": "2000 mm",
+   "Tekercshossz": "10 m",
+   "Anyag": "gumi"
+  },
+  "images": []
+ },
+ "g-8x2000mm-cobra-szonyeg-1-nylon": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "G 8x2000mm COBRA szőnyeg 1 nylon",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "8 mm",
+   "Szélesség": "2000 mm",
+   "Anyag": "gumi, 1 rétegű nylon betéttel"
+  },
+  "images": []
+ },
  "harom-allasos-kapcsolo-ventilatorhoz": {
   "source": "G&C termékek",
   "sourceUrl": "https://gnc-systems.com/en/products/switch-fan/",
@@ -7982,6 +9408,499 @@
    "/termekkepek/kedergumi-14-5x20-5-2-0-4-0-fekete-1.webp"
   ]
  },
+ "l-12x1250x2500-mm-natur-retegelt-lemez": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 12x1250x2500 mm Natúr rétegelt lemez",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "12 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "natúr (bevonat nélkül)"
+  },
+  "images": []
+ },
+ "l-12x1250x2500-mm-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 12x1250x2500 mm rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "12 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-12x1500x2500-mm-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 12x1500x2500 mm rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "12 mm",
+   "Méret": "1500 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-12x1500x3000-mm-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 12x1500x3000 mm rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "12 mm",
+   "Méret": "1500 × 3000 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-15x1250x2200-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 15x1250x2200 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "15 mm",
+   "Méret": "1250 × 2200 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-15x1250x2200-retegelt-lemez-fenolos-hexa": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 15x1250x2200 Rétegelt lemez fenolos HEXA",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "15 mm",
+   "Méret": "1250 × 2200 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
+  },
+  "images": []
+ },
+ "l-15x1250x2500-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 15x1250x2500 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "15 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-15x1250x2500-retegelt-lemez-fenolos-hexa": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 15x1250x2500 Rétegelt lemez fenolos HEXA",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "15 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
+  },
+  "images": []
+ },
+ "l-15x1250x2500-retegelt-lemez-natur": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 15x1250x2500 Rétegelt lemez Natúr",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "15 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "natúr (bevonat nélkül)"
+  },
+  "images": []
+ },
+ "l-15x1500x2500-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 15x1500x2500 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "15 mm",
+   "Méret": "1500 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-15x1500x3000-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 15x1500x3000 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "15 mm",
+   "Méret": "1500 × 3000 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-15x2130x1250-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 15x2130x1250 Rétegelt lemez, Fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "15 mm",
+   "Méret": "2130 × 1250 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-15x2150x4000-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 15x2150x4000 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "15 mm",
+   "Méret": "2150 × 4000 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-18x1250x2200-retegelt-lemez-fenolos-hexa": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 18x1250x2200 Rétegelt lemez fenolos, HEXA",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "18 mm",
+   "Méret": "1250 × 2200 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
+  },
+  "images": []
+ },
+ "l-18x1250x2500-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 18x1250x2500 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "18 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-18x1250x2500-retegelt-lemez-fenolos-hexa": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 18x1250x2500 Rétegelt lemez fenolos HEXA",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "18 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
+  },
+  "images": []
+ },
+ "l-18x1500x2500-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 18x1500x2500 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "18 mm",
+   "Méret": "1500 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-18x1500x3000-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 18x1500x3000 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "18 mm",
+   "Méret": "1500 × 3000 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-21x1250x2500-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 21x1250x2500 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "21 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-21x1250x2500-retegelt-lemez-fenolos-hexa": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 21x1250x2500 Rétegelt lemez fenolos HEXA",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "21 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
+  },
+  "images": []
+ },
+ "l-21x1500x2500-mm-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 21x1500x2500 mm Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "21 mm",
+   "Méret": "1500 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-21x1500x3000-mm-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 21x1500x3000 mm Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "21 mm",
+   "Méret": "1500 × 3000 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-24x1250x2500-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 24x1250x2500 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "24 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-24x1500x2500-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 24x1500x2500 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "24 mm",
+   "Méret": "1500 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-27x1250x2500-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 27x1250x2500 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "27 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-27x1500x2500-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 27x1500x2500 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "27 mm",
+   "Méret": "1500 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-30x1250x2500-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 30x1250x2500 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "30 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-30x1500x2500-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 30x1500x2500 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "30 mm",
+   "Méret": "1500 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-4x1250x2500-mm-film-film-retegelt-lemez": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 4x1250x2500 mm FILM/FILM rétegelt lemez",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "4 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-6-5x1250x2500-mm-natur-retegelt-lemez": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 6,5x1250x2500 mm Natúr rétegelt lemez",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "6,5 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "natúr (bevonat nélkül)"
+  },
+  "images": []
+ },
+ "l-6-5x1250x2500-mm-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 6,5x1250x2500 mm rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "6,5 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-6-5x1500x3000-mm-natur-retegelt-lemez": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 6,5x1500x3000 mm Natúr rétegelt lemez",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "6,5 mm",
+   "Méret": "1500 × 3000 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "natúr (bevonat nélkül)"
+  },
+  "images": []
+ },
+ "l-6-5x1500x3000-mm-retegelt-lemez-fenol-bevonattal": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 6,5x1500x3000 mm rétegelt lemez fenol bevonattal",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "6,5 mm",
+   "Méret": "1500 × 3000 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-9x1250x2500-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 9x1250x2500 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "9 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-9x1250x2500mm-natur-retegelt-lemez": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 9x1250x2500mm Natúr rétegelt lemez",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "9 mm",
+   "Méret": "1250 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "natúr (bevonat nélkül)"
+  },
+  "images": []
+ },
+ "l-9x1500x2500-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 9x1500x2500 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "9 mm",
+   "Méret": "1500 × 2500 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-9x1500x3000-retegelt-lemez-fenolos": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L 9x1500x3000 Rétegelt lemez fenolos",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "9 mm",
+   "Méret": "1500 × 3000 mm",
+   "Anyag": "rétegelt falemez",
+   "Felület": "fenolfilm bevonatos"
+  },
+  "images": []
+ },
+ "l-mdf-6x2800x2070-mm": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "L MDF 6X2800X2070 mm",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "6 mm",
+   "Méret": "2800 × 2070 mm",
+   "Anyag": "MDF lap"
+  },
+  "images": []
+ },
  "le-mans-tetoventilator-12v": {
   "source": "G&C termékek",
   "sourceUrl": "https://gnc-systems.com/en/products/le-mans/",
@@ -8113,6 +10032,535 @@
    "/termekkepek/manualis-belso-takaro-szurke-1.webp"
   ]
  },
+ "pol-frigoser-high-gloss-1-5x1900-mm": {
+  "source": "POLSER",
+  "sourceUrl": "https://polser.com/en/products/automotive-industry/frigoser",
+  "sourceTitle": "Frigoser",
+  "matchedCode": "",
+  "description": "Frigoser üvegszálas poliészter burkolólemez száraz és hűtős felépítményekhez, buszokhoz, lakóautókhoz: ütésálló, rugalmas, korrózió- és vegyszerálló, könnyű, higiénikus és könnyen tisztítható felület.",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "1900 mm",
+   "Tömeg": "2000 g/m²",
+   "Üvegszál": "500 g/m²",
+   "Hajlítószilárdság": "160 MPa",
+   "Szakítószilárdság": "75 MPa",
+   "Felület": "High Gloss (magasfényű gélbevonat)",
+   "Anyag": "üvegszálas poliészter (GRP), gélbevonatos",
+   "Üvegszál-tartalom": "≥ 25%",
+   "Barcol-keménység": "45",
+   "Sűrűség": "1,4–1,5 g/cm³",
+   "Vízfelvétel": "0,3%",
+   "Hőállóság": "-40 °C … +120 °C",
+   "Szállítási forma": "tábla max. 12 m, tekercs 60–300 m",
+   "Szín": "RAL színek szerint",
+   "Megfelelőség": "ATP (élelmiszerrel érintkezhet), TÜV SÜD, HACCP"
+  },
+  "images": [
+   "/termekkepek/pol-frigoser-high-gloss-1-5x1900-mm-1.webp",
+   "/termekkepek/pol-frigoser-high-gloss-1-5x1900-mm-2.webp"
+  ]
+ },
+ "pol-frigoser-high-gloss-1-5x2000-mm": {
+  "source": "POLSER",
+  "sourceUrl": "https://polser.com/en/products/automotive-industry/frigoser",
+  "sourceTitle": "Frigoser",
+  "matchedCode": "",
+  "description": "Frigoser üvegszálas poliészter burkolólemez száraz és hűtős felépítményekhez, buszokhoz, lakóautókhoz: ütésálló, rugalmas, korrózió- és vegyszerálló, könnyű, higiénikus és könnyen tisztítható felület.",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "2000 mm",
+   "Tömeg": "2000 g/m²",
+   "Üvegszál": "500 g/m²",
+   "Hajlítószilárdság": "160 MPa",
+   "Szakítószilárdság": "75 MPa",
+   "Felület": "High Gloss (magasfényű gélbevonat)",
+   "Anyag": "üvegszálas poliészter (GRP), gélbevonatos",
+   "Üvegszál-tartalom": "≥ 25%",
+   "Barcol-keménység": "45",
+   "Sűrűség": "1,4–1,5 g/cm³",
+   "Vízfelvétel": "0,3%",
+   "Hőállóság": "-40 °C … +120 °C",
+   "Szállítási forma": "tábla max. 12 m, tekercs 60–300 m",
+   "Szín": "RAL színek szerint",
+   "Megfelelőség": "ATP (élelmiszerrel érintkezhet), TÜV SÜD, HACCP"
+  },
+  "images": [
+   "/termekkepek/pol-frigoser-high-gloss-1-5x2000-mm-1.webp",
+   "/termekkepek/pol-frigoser-high-gloss-1-5x2000-mm-2.webp"
+  ]
+ },
+ "pol-frigoser-high-gloss-1-5x2100-mm": {
+  "source": "POLSER",
+  "sourceUrl": "https://polser.com/en/products/automotive-industry/frigoser",
+  "sourceTitle": "Frigoser",
+  "matchedCode": "",
+  "description": "Frigoser üvegszálas poliészter burkolólemez száraz és hűtős felépítményekhez, buszokhoz, lakóautókhoz: ütésálló, rugalmas, korrózió- és vegyszerálló, könnyű, higiénikus és könnyen tisztítható felület.",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "2100 mm",
+   "Tömeg": "2000 g/m²",
+   "Üvegszál": "500 g/m²",
+   "Hajlítószilárdság": "160 MPa",
+   "Szakítószilárdság": "75 MPa",
+   "Felület": "High Gloss (magasfényű gélbevonat)",
+   "Anyag": "üvegszálas poliészter (GRP), gélbevonatos",
+   "Üvegszál-tartalom": "≥ 25%",
+   "Barcol-keménység": "45",
+   "Sűrűség": "1,4–1,5 g/cm³",
+   "Vízfelvétel": "0,3%",
+   "Hőállóság": "-40 °C … +120 °C",
+   "Szállítási forma": "tábla max. 12 m, tekercs 60–300 m",
+   "Szín": "RAL színek szerint",
+   "Megfelelőség": "ATP (élelmiszerrel érintkezhet), TÜV SÜD, HACCP"
+  },
+  "images": [
+   "/termekkepek/pol-frigoser-high-gloss-1-5x2100-mm-1.webp",
+   "/termekkepek/pol-frigoser-high-gloss-1-5x2100-mm-2.webp"
+  ]
+ },
+ "pol-frigoser-high-gloss-1-5x2200-mm": {
+  "source": "POLSER",
+  "sourceUrl": "https://polser.com/en/products/automotive-industry/frigoser",
+  "sourceTitle": "Frigoser",
+  "matchedCode": "",
+  "description": "Frigoser üvegszálas poliészter burkolólemez száraz és hűtős felépítményekhez, buszokhoz, lakóautókhoz: ütésálló, rugalmas, korrózió- és vegyszerálló, könnyű, higiénikus és könnyen tisztítható felület.",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "2200 mm",
+   "Tömeg": "2000 g/m²",
+   "Üvegszál": "500 g/m²",
+   "Hajlítószilárdság": "160 MPa",
+   "Szakítószilárdság": "75 MPa",
+   "Felület": "High Gloss (magasfényű gélbevonat)",
+   "Anyag": "üvegszálas poliészter (GRP), gélbevonatos",
+   "Üvegszál-tartalom": "≥ 25%",
+   "Barcol-keménység": "45",
+   "Sűrűség": "1,4–1,5 g/cm³",
+   "Vízfelvétel": "0,3%",
+   "Hőállóság": "-40 °C … +120 °C",
+   "Szállítási forma": "tábla max. 12 m, tekercs 60–300 m",
+   "Szín": "RAL színek szerint",
+   "Megfelelőség": "ATP (élelmiszerrel érintkezhet), TÜV SÜD, HACCP"
+  },
+  "images": [
+   "/termekkepek/pol-frigoser-high-gloss-1-5x2200-mm-1.webp",
+   "/termekkepek/pol-frigoser-high-gloss-1-5x2200-mm-2.webp"
+  ]
+ },
+ "pol-frigoser-high-gloss-1-5x2300-mm": {
+  "source": "POLSER",
+  "sourceUrl": "https://polser.com/en/products/automotive-industry/frigoser",
+  "sourceTitle": "Frigoser",
+  "matchedCode": "",
+  "description": "Frigoser üvegszálas poliészter burkolólemez száraz és hűtős felépítményekhez, buszokhoz, lakóautókhoz: ütésálló, rugalmas, korrózió- és vegyszerálló, könnyű, higiénikus és könnyen tisztítható felület.",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "2300 mm",
+   "Tömeg": "2000 g/m²",
+   "Üvegszál": "500 g/m²",
+   "Hajlítószilárdság": "160 MPa",
+   "Szakítószilárdság": "75 MPa",
+   "Felület": "High Gloss (magasfényű gélbevonat)",
+   "Anyag": "üvegszálas poliészter (GRP), gélbevonatos",
+   "Üvegszál-tartalom": "≥ 25%",
+   "Barcol-keménység": "45",
+   "Sűrűség": "1,4–1,5 g/cm³",
+   "Vízfelvétel": "0,3%",
+   "Hőállóság": "-40 °C … +120 °C",
+   "Szállítási forma": "tábla max. 12 m, tekercs 60–300 m",
+   "Szín": "RAL színek szerint",
+   "Megfelelőség": "ATP (élelmiszerrel érintkezhet), TÜV SÜD, HACCP"
+  },
+  "images": [
+   "/termekkepek/pol-frigoser-high-gloss-1-5x2300-mm-1.webp",
+   "/termekkepek/pol-frigoser-high-gloss-1-5x2300-mm-2.webp"
+  ]
+ },
+ "pol-frigoser-high-gloss-1-5x2400-mm": {
+  "source": "POLSER",
+  "sourceUrl": "https://polser.com/en/products/automotive-industry/frigoser",
+  "sourceTitle": "Frigoser",
+  "matchedCode": "",
+  "description": "Frigoser üvegszálas poliészter burkolólemez száraz és hűtős felépítményekhez, buszokhoz, lakóautókhoz: ütésálló, rugalmas, korrózió- és vegyszerálló, könnyű, higiénikus és könnyen tisztítható felület.",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "2400 mm",
+   "Tömeg": "2000 g/m²",
+   "Üvegszál": "500 g/m²",
+   "Hajlítószilárdság": "160 MPa",
+   "Szakítószilárdság": "75 MPa",
+   "Felület": "High Gloss (magasfényű gélbevonat)",
+   "Anyag": "üvegszálas poliészter (GRP), gélbevonatos",
+   "Üvegszál-tartalom": "≥ 25%",
+   "Barcol-keménység": "45",
+   "Sűrűség": "1,4–1,5 g/cm³",
+   "Vízfelvétel": "0,3%",
+   "Hőállóság": "-40 °C … +120 °C",
+   "Szállítási forma": "tábla max. 12 m, tekercs 60–300 m",
+   "Szín": "RAL színek szerint",
+   "Megfelelőség": "ATP (élelmiszerrel érintkezhet), TÜV SÜD, HACCP"
+  },
+  "images": [
+   "/termekkepek/pol-frigoser-high-gloss-1-5x2400-mm-1.webp",
+   "/termekkepek/pol-frigoser-high-gloss-1-5x2400-mm-2.webp"
+  ]
+ },
+ "pol-frigoser-high-gloss-1-5x2500-mm": {
+  "source": "POLSER",
+  "sourceUrl": "https://polser.com/en/products/automotive-industry/frigoser",
+  "sourceTitle": "Frigoser",
+  "matchedCode": "",
+  "description": "Frigoser üvegszálas poliészter burkolólemez száraz és hűtős felépítményekhez, buszokhoz, lakóautókhoz: ütésálló, rugalmas, korrózió- és vegyszerálló, könnyű, higiénikus és könnyen tisztítható felület.",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "2500 mm",
+   "Tömeg": "2000 g/m²",
+   "Üvegszál": "500 g/m²",
+   "Hajlítószilárdság": "160 MPa",
+   "Szakítószilárdság": "75 MPa",
+   "Felület": "High Gloss (magasfényű gélbevonat)",
+   "Anyag": "üvegszálas poliészter (GRP), gélbevonatos",
+   "Üvegszál-tartalom": "≥ 25%",
+   "Barcol-keménység": "45",
+   "Sűrűség": "1,4–1,5 g/cm³",
+   "Vízfelvétel": "0,3%",
+   "Hőállóság": "-40 °C … +120 °C",
+   "Szállítási forma": "tábla max. 12 m, tekercs 60–300 m",
+   "Szín": "RAL színek szerint",
+   "Megfelelőség": "ATP (élelmiszerrel érintkezhet), TÜV SÜD, HACCP"
+  },
+  "images": [
+   "/termekkepek/pol-frigoser-high-gloss-1-5x2500-mm-1.webp",
+   "/termekkepek/pol-frigoser-high-gloss-1-5x2500-mm-2.webp"
+  ]
+ },
+ "pol-frigoser-high-gloss-1-5x2600-mm": {
+  "source": "POLSER",
+  "sourceUrl": "https://polser.com/en/products/automotive-industry/frigoser",
+  "sourceTitle": "Frigoser",
+  "matchedCode": "",
+  "description": "Frigoser üvegszálas poliészter burkolólemez száraz és hűtős felépítményekhez, buszokhoz, lakóautókhoz: ütésálló, rugalmas, korrózió- és vegyszerálló, könnyű, higiénikus és könnyen tisztítható felület.",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "2600 mm",
+   "Tömeg": "2000 g/m²",
+   "Üvegszál": "500 g/m²",
+   "Hajlítószilárdság": "160 MPa",
+   "Szakítószilárdság": "75 MPa",
+   "Felület": "High Gloss (magasfényű gélbevonat)",
+   "Anyag": "üvegszálas poliészter (GRP), gélbevonatos",
+   "Üvegszál-tartalom": "≥ 25%",
+   "Barcol-keménység": "45",
+   "Sűrűség": "1,4–1,5 g/cm³",
+   "Vízfelvétel": "0,3%",
+   "Hőállóság": "-40 °C … +120 °C",
+   "Szállítási forma": "tábla max. 12 m, tekercs 60–300 m",
+   "Szín": "RAL színek szerint",
+   "Megfelelőség": "ATP (élelmiszerrel érintkezhet), TÜV SÜD, HACCP"
+  },
+  "images": [
+   "/termekkepek/pol-frigoser-high-gloss-1-5x2600-mm-1.webp",
+   "/termekkepek/pol-frigoser-high-gloss-1-5x2600-mm-2.webp"
+  ]
+ },
+ "pol-frigoser-high-gloss-2-0x2300-mm": {
+  "source": "POLSER",
+  "sourceUrl": "https://polser.com/en/products/automotive-industry/frigoser",
+  "sourceTitle": "Frigoser",
+  "matchedCode": "",
+  "description": "Frigoser üvegszálas poliészter burkolólemez száraz és hűtős felépítményekhez, buszokhoz, lakóautókhoz: ütésálló, rugalmas, korrózió- és vegyszerálló, könnyű, higiénikus és könnyen tisztítható felület.",
+  "specs": {
+   "Vastagság": "2,0 mm",
+   "Szélesség": "2300 mm",
+   "Tömeg": "2700 g/m²",
+   "Üvegszál": "675 g/m²",
+   "Hajlítószilárdság": "170 MPa",
+   "Szakítószilárdság": "85 MPa",
+   "Felület": "High Gloss (magasfényű gélbevonat)",
+   "Anyag": "üvegszálas poliészter (GRP), gélbevonatos",
+   "Üvegszál-tartalom": "≥ 25%",
+   "Barcol-keménység": "45",
+   "Sűrűség": "1,4–1,5 g/cm³",
+   "Vízfelvétel": "0,3%",
+   "Hőállóság": "-40 °C … +120 °C",
+   "Szállítási forma": "tábla max. 12 m, tekercs 60–300 m",
+   "Szín": "RAL színek szerint",
+   "Megfelelőség": "ATP (élelmiszerrel érintkezhet), TÜV SÜD, HACCP"
+  },
+  "images": [
+   "/termekkepek/pol-frigoser-high-gloss-2-0x2300-mm-1.webp",
+   "/termekkepek/pol-frigoser-high-gloss-2-0x2300-mm-2.webp"
+  ]
+ },
+ "pol-frigoser-high-gloss-2-0x2400-mm": {
+  "source": "POLSER",
+  "sourceUrl": "https://polser.com/en/products/automotive-industry/frigoser",
+  "sourceTitle": "Frigoser",
+  "matchedCode": "",
+  "description": "Frigoser üvegszálas poliészter burkolólemez száraz és hűtős felépítményekhez, buszokhoz, lakóautókhoz: ütésálló, rugalmas, korrózió- és vegyszerálló, könnyű, higiénikus és könnyen tisztítható felület.",
+  "specs": {
+   "Vastagság": "2,0 mm",
+   "Szélesség": "2400 mm",
+   "Tömeg": "2700 g/m²",
+   "Üvegszál": "675 g/m²",
+   "Hajlítószilárdság": "170 MPa",
+   "Szakítószilárdság": "85 MPa",
+   "Felület": "High Gloss (magasfényű gélbevonat)",
+   "Anyag": "üvegszálas poliészter (GRP), gélbevonatos",
+   "Üvegszál-tartalom": "≥ 25%",
+   "Barcol-keménység": "45",
+   "Sűrűség": "1,4–1,5 g/cm³",
+   "Vízfelvétel": "0,3%",
+   "Hőállóság": "-40 °C … +120 °C",
+   "Szállítási forma": "tábla max. 12 m, tekercs 60–300 m",
+   "Szín": "RAL színek szerint",
+   "Megfelelőség": "ATP (élelmiszerrel érintkezhet), TÜV SÜD, HACCP"
+  },
+  "images": [
+   "/termekkepek/pol-frigoser-high-gloss-2-0x2400-mm-1.webp",
+   "/termekkepek/pol-frigoser-high-gloss-2-0x2400-mm-2.webp"
+  ]
+ },
+ "pol-frigoser-high-gloss-2-0x2500-mm": {
+  "source": "POLSER",
+  "sourceUrl": "https://polser.com/en/products/automotive-industry/frigoser",
+  "sourceTitle": "Frigoser",
+  "matchedCode": "",
+  "description": "Frigoser üvegszálas poliészter burkolólemez száraz és hűtős felépítményekhez, buszokhoz, lakóautókhoz: ütésálló, rugalmas, korrózió- és vegyszerálló, könnyű, higiénikus és könnyen tisztítható felület.",
+  "specs": {
+   "Vastagság": "2,0 mm",
+   "Szélesség": "2500 mm",
+   "Tömeg": "2700 g/m²",
+   "Üvegszál": "675 g/m²",
+   "Hajlítószilárdság": "170 MPa",
+   "Szakítószilárdság": "85 MPa",
+   "Felület": "High Gloss (magasfényű gélbevonat)",
+   "Anyag": "üvegszálas poliészter (GRP), gélbevonatos",
+   "Üvegszál-tartalom": "≥ 25%",
+   "Barcol-keménység": "45",
+   "Sűrűség": "1,4–1,5 g/cm³",
+   "Vízfelvétel": "0,3%",
+   "Hőállóság": "-40 °C … +120 °C",
+   "Szállítási forma": "tábla max. 12 m, tekercs 60–300 m",
+   "Szín": "RAL színek szerint",
+   "Megfelelőség": "ATP (élelmiszerrel érintkezhet), TÜV SÜD, HACCP"
+  },
+  "images": [
+   "/termekkepek/pol-frigoser-high-gloss-2-0x2500-mm-1.webp",
+   "/termekkepek/pol-frigoser-high-gloss-2-0x2500-mm-2.webp"
+  ]
+ },
+ "pol-frigoser-high-gloss-2-0x2600-mm": {
+  "source": "POLSER",
+  "sourceUrl": "https://polser.com/en/products/automotive-industry/frigoser",
+  "sourceTitle": "Frigoser",
+  "matchedCode": "",
+  "description": "Frigoser üvegszálas poliészter burkolólemez száraz és hűtős felépítményekhez, buszokhoz, lakóautókhoz: ütésálló, rugalmas, korrózió- és vegyszerálló, könnyű, higiénikus és könnyen tisztítható felület.",
+  "specs": {
+   "Vastagság": "2,0 mm",
+   "Szélesség": "2600 mm",
+   "Tömeg": "2700 g/m²",
+   "Üvegszál": "675 g/m²",
+   "Hajlítószilárdság": "170 MPa",
+   "Szakítószilárdság": "85 MPa",
+   "Felület": "High Gloss (magasfényű gélbevonat)",
+   "Anyag": "üvegszálas poliészter (GRP), gélbevonatos",
+   "Üvegszál-tartalom": "≥ 25%",
+   "Barcol-keménység": "45",
+   "Sűrűség": "1,4–1,5 g/cm³",
+   "Vízfelvétel": "0,3%",
+   "Hőállóság": "-40 °C … +120 °C",
+   "Szállítási forma": "tábla max. 12 m, tekercs 60–300 m",
+   "Szín": "RAL színek szerint",
+   "Megfelelőség": "ATP (élelmiszerrel érintkezhet), TÜV SÜD, HACCP"
+  },
+  "images": [
+   "/termekkepek/pol-frigoser-high-gloss-2-0x2600-mm-1.webp",
+   "/termekkepek/pol-frigoser-high-gloss-2-0x2600-mm-2.webp"
+  ]
+ },
+ "pol-frigoser-high-impact-0-8x2000-mm": {
+  "source": "POLSER",
+  "sourceUrl": "https://polser.com/en/products/automotive-industry/frigoser",
+  "sourceTitle": "Frigoser",
+  "matchedCode": "",
+  "description": "Frigoser üvegszálas poliészter burkolólemez száraz és hűtős felépítményekhez, buszokhoz, lakóautókhoz: ütésálló, rugalmas, korrózió- és vegyszerálló, könnyű, higiénikus és könnyen tisztítható felület.",
+  "specs": {
+   "Vastagság": "0,8 mm",
+   "Szélesség": "2000 mm",
+   "Felület": "High Impact (fokozott ütésállóság)",
+   "Anyag": "üvegszálas poliészter (GRP), gélbevonatos",
+   "Üvegszál-tartalom": "≥ 25%",
+   "Barcol-keménység": "45",
+   "Sűrűség": "1,4–1,5 g/cm³",
+   "Vízfelvétel": "0,3%",
+   "Hőállóság": "-40 °C … +120 °C",
+   "Szállítási forma": "tábla max. 12 m, tekercs 60–300 m",
+   "Szín": "RAL színek szerint",
+   "Megfelelőség": "ATP (élelmiszerrel érintkezhet), TÜV SÜD, HACCP"
+  },
+  "images": [
+   "/termekkepek/pol-frigoser-high-impact-0-8x2000-mm-1.webp",
+   "/termekkepek/pol-frigoser-high-impact-0-8x2000-mm-2.webp"
+  ]
+ },
+ "polydet-high-gloss-1600-1-5-corona": {
+  "source": "POLSER",
+  "sourceUrl": "",
+  "sourceTitle": "POLYDET High Gloss 1600/1,5 Corona",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "1600 mm",
+   "Felület": "High Gloss"
+  },
+  "images": []
+ },
+ "polydet-high-gloss-1900-1-5-corona": {
+  "source": "POLSER",
+  "sourceUrl": "",
+  "sourceTitle": "POLYDET High Gloss 1900/1,5 Corona",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "1900 mm",
+   "Felület": "High Gloss"
+  },
+  "images": []
+ },
+ "polydet-high-gloss-2000-1-5-corona": {
+  "source": "POLSER",
+  "sourceUrl": "",
+  "sourceTitle": "POLYDET High Gloss 2000/1,5 Corona",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "2000 mm",
+   "Felület": "High Gloss"
+  },
+  "images": []
+ },
+ "polydet-high-gloss-2100-1-5-corona": {
+  "source": "POLSER",
+  "sourceUrl": "",
+  "sourceTitle": "POLYDET High Gloss 2100/1,5 Corona",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "2100 mm",
+   "Felület": "High Gloss"
+  },
+  "images": []
+ },
+ "polydet-high-gloss-2200-1-5-corona": {
+  "source": "POLSER",
+  "sourceUrl": "",
+  "sourceTitle": "POLYDET High Gloss 2200/1,5 Corona",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "2200 mm",
+   "Felület": "High Gloss"
+  },
+  "images": []
+ },
+ "polydet-high-gloss-2300-1-5-corona": {
+  "source": "POLSER",
+  "sourceUrl": "",
+  "sourceTitle": "POLYDET High Gloss 2300/1,5 Corona",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "2300 mm",
+   "Felület": "High Gloss"
+  },
+  "images": []
+ },
+ "polydet-performance-plus-2000-1-5-roughened": {
+  "source": "POLSER",
+  "sourceUrl": "",
+  "sourceTitle": "POLYDET Performance Plus 2000/1,5 Roughened",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "2000 mm",
+   "Felület": "Performance Plus"
+  },
+  "images": []
+ },
+ "polydet-performance-plus-2100-1-8-corona": {
+  "source": "POLSER",
+  "sourceUrl": "",
+  "sourceTitle": "POLYDET Performance Plus 2100/1,8 CORONA",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,8 mm",
+   "Szélesség": "2100 mm",
+   "Felület": "Performance Plus"
+  },
+  "images": []
+ },
+ "polydet-performance-plus-2200-1-5-roughened": {
+  "source": "POLSER",
+  "sourceUrl": "",
+  "sourceTitle": "POLYDET Performance Plus 2200/1,5 Roughened",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "2200 mm",
+   "Felület": "Performance Plus"
+  },
+  "images": []
+ },
+ "polydet-performance-plus-2200-1-8-corona": {
+  "source": "POLSER",
+  "sourceUrl": "",
+  "sourceTitle": "POLYDET Performance Plus 2200/1,8 CORONA",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,8 mm",
+   "Szélesség": "2200 mm",
+   "Felület": "Performance Plus"
+  },
+  "images": []
+ },
+ "polydet-performance-plus-2300-1-8-corona": {
+  "source": "POLSER",
+  "sourceUrl": "",
+  "sourceTitle": "POLYDET Performance Plus 2300/1,8 CORONA",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,8 mm",
+   "Szélesség": "2300 mm",
+   "Felület": "Performance Plus"
+  },
+  "images": []
+ },
+ "polydet-performance-plus-2400-1-8-roughened": {
+  "source": "POLSER",
+  "sourceUrl": "",
+  "sourceTitle": "POLYDET Performance Plus 2400/1,8 Roughened",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,8 mm",
+   "Szélesség": "2400 mm",
+   "Felület": "Performance Plus"
+  },
+  "images": []
+ },
+ "polydet-performance-plus-2500-1-8-corona": {
+  "source": "POLSER",
+  "sourceUrl": "",
+  "sourceTitle": "POLYDET Performance Plus 2500/1,8 CORONA",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,8 mm",
+   "Szélesség": "2500 mm",
+   "Felület": "Performance Plus"
+  },
+  "images": []
+ },
  "q8033-elox-profil-kefehez": {
   "source": "Car-Alu",
   "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/1006",
@@ -8163,12 +10611,491 @@
    "/termekkepek/q8040-kefe-40-mm-elox-profillal-1.webp"
   ]
  },
+ "s-1-2x1250x2500mm-feher-festett-lemez-ral9016": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 1,2x1250x2500mm Fehér festett lemez RAL9016",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,2 mm",
+   "Szélesség": "1250 mm",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "10,1 kg (elméleti)",
+   "Tömeg / m²": "3,24 kg (elméleti)",
+   "Felület": "festett, RAL 9016"
+  },
+  "images": []
+ },
+ "s-1-2x1500x2500mm-feher-festett-lemez-ral9016": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 1,2x1500x2500mm Fehér festett lemez RAL9016",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,2 mm",
+   "Szélesség": "1500 mm",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "12,2 kg (elméleti)",
+   "Tömeg / m²": "3,24 kg (elméleti)",
+   "Felület": "festett, RAL 9016"
+  },
+  "images": []
+ },
+ "s-1-2x1500x3000mm-feher-festett-lemez-ral9016": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 1,2x1500x3000mm Fehér festett lemez RAL9016",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,2 mm",
+   "Szélesség": "1500 mm",
+   "Hossz": "3000 mm",
+   "Tömeg / tábla": "14,6 kg (elméleti)",
+   "Tömeg / m²": "3,24 kg (elméleti)",
+   "Felület": "festett, RAL 9016"
+  },
+  "images": []
+ },
+ "s-1-5x1000x2000-mm-alu-lemez-en-aw-1050-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 1,5x1000x2000 mm Alu lemez EN AW-1050 H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "1000 mm",
+   "Hossz": "2000 mm",
+   "Tömeg / tábla": "8,1 kg (elméleti)",
+   "Tömeg / m²": "4,05 kg (elméleti)",
+   "Ötvözet": "EN AW-1050",
+   "Állapot": "H24"
+  },
+  "images": []
+ },
+ "s-1-5x1250x2500-mm-alu-lemez-en-aw-1050-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 1,5x1250x2500 mm Alu lemez EN AW-1050 H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "1250 mm",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "12,7 kg (elméleti)",
+   "Tömeg / m²": "4,05 kg (elméleti)",
+   "Ötvözet": "EN AW-1050",
+   "Állapot": "H24"
+  },
+  "images": []
+ },
+ "s-1-5x1500x3000mm-feher-festett-lemez-ral9010": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 1,5x1500x3000mm Fehér festett lemez RAL9010",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,5 mm",
+   "Szélesség": "1500 mm",
+   "Hossz": "3000 mm",
+   "Tömeg / tábla": "18,2 kg (elméleti)",
+   "Tömeg / m²": "4,05 kg (elméleti)",
+   "Felület": "festett, RAL 9010"
+  },
+  "images": []
+ },
+ "s-1x1250-mm-ff-ral9016-szalag-h42": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 1x1250 mm FF RAL9016 SZALAG H42",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1 mm",
+   "Szélesség": "1250 mm",
+   "Kiszerelés": "szalag (tekercs)",
+   "Tömeg / m²": "2,7 kg (elméleti)",
+   "Állapot": "H42",
+   "Felület": "festett, RAL 9016"
+  },
+  "images": []
+ },
  "s-2-7x2500x6800-mm-rizs-mintas-alu-lemez-en-aw-5086-h32": {
   "source": "RE-ALL",
   "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/02-12.pdf#page=10",
   "sourceTitle": "RE-ALL katalógus 02-12.pdf",
   "matchedCode": "0800003",
   "specs": {},
+  "images": []
+ },
+ "s-2x1000x2000-mm-alu-lemez-en-aw-1050-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 2x1000x2000 mm Alu lemez EN AW-1050 H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "2 mm",
+   "Szélesség": "1000 mm",
+   "Hossz": "2000 mm",
+   "Tömeg / tábla": "10,8 kg (elméleti)",
+   "Tömeg / m²": "5,4 kg (elméleti)",
+   "Ötvözet": "EN AW-1050",
+   "Állapot": "H24"
+  },
+  "images": []
+ },
+ "s-2x1000x2000-mm-elox-alu-lemez-en-aw-5002": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 2x1000x2000 mm ELOX Alu lemez EN AW-5002",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "2 mm",
+   "Szélesség": "1000 mm",
+   "Hossz": "2000 mm",
+   "Tömeg / tábla": "10,8 kg (elméleti)",
+   "Tömeg / m²": "5,4 kg (elméleti)",
+   "Ötvözet": "EN AW-5002",
+   "Felület": "eloxált"
+  },
+  "images": []
+ },
+ "s-2x1250x2500-mm-alu-lemez-en-aw-1050-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 2x1250x2500 mm Alu lemez EN AW-1050 H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "2 mm",
+   "Szélesség": "1250 mm",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "16,9 kg (elméleti)",
+   "Tömeg / m²": "5,4 kg (elméleti)",
+   "Ötvözet": "EN AW-1050",
+   "Állapot": "H24"
+  },
+  "images": []
+ },
+ "s-2x1250x2500-mm-alu-lemez-en-aw-5754-h22": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 2x1250x2500 mm Alu lemez EN AW-5754 H22",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "2 mm",
+   "Szélesség": "1250 mm",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "16,9 kg (elméleti)",
+   "Tömeg / m²": "5,4 kg (elméleti)",
+   "Ötvözet": "EN AW-5754",
+   "Állapot": "H22"
+  },
+  "images": []
+ },
+ "s-2x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 2x1250x2500 mm ELOX Alu lemez EN AW-5005A H14",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "2 mm",
+   "Szélesség": "1250 mm",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "16,9 kg (elméleti)",
+   "Tömeg / m²": "5,4 kg (elméleti)",
+   "Ötvözet": "EN AW-5005A",
+   "Állapot": "H14",
+   "Felület": "eloxált"
+  },
+  "images": []
+ },
+ "s-2x1250x2500-mm-rizs-mintas-alu-lemez-en-aw-3003-h22": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 2x1250x2500 mm Rízs mintás Alu lemez EN AW-3003 H22",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "2 mm",
+   "Szélesség": "1250 mm",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "16,9 kg (elméleti)",
+   "Tömeg / m²": "5,4 kg (elméleti)",
+   "Ötvözet": "EN AW-3003",
+   "Állapot": "H22",
+   "Felület": "rízsmintás (csúszásgátló)"
+  },
+  "images": []
+ },
+ "s-2x1250x2500mm-feher-festett-lemez-ral9016": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 2x1250x2500mm Fehér festett lemez RAL9016",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "2 mm",
+   "Szélesség": "1250 mm",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "16,9 kg (elméleti)",
+   "Tömeg / m²": "5,4 kg (elméleti)",
+   "Felület": "festett, RAL 9016"
+  },
+  "images": []
+ },
+ "s-2x1500x3000-mm-alu-lemez-en-aw-1050-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 2x1500x3000 mm Alu lemez EN AW-1050 H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "2 mm",
+   "Szélesség": "1500 mm",
+   "Hossz": "3000 mm",
+   "Tömeg / tábla": "24,3 kg (elméleti)",
+   "Tömeg / m²": "5,4 kg (elméleti)",
+   "Ötvözet": "EN AW-1050",
+   "Állapot": "H24"
+  },
+  "images": []
+ },
+ "s-2x1500x3000-mm-elox-alu-lemez-en-aw-5005-h12-h14-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 2x1500x3000 mm ELOX Alu lemez EN AW-5005 H12/H14/H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "2 mm",
+   "Szélesség": "1500 mm",
+   "Hossz": "3000 mm",
+   "Tömeg / tábla": "24,3 kg (elméleti)",
+   "Tömeg / m²": "5,4 kg (elméleti)",
+   "Ötvözet": "EN AW-5005",
+   "Állapot": "H12/H14/H24",
+   "Felület": "eloxált"
+  },
+  "images": []
+ },
+ "s-3x1000x2000-mm-elox-alu-lemez-en-aw-5002": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 3x1000x2000 mm ELOX Alu lemez EN AW-5002",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Szélesség": "1000 mm",
+   "Hossz": "2000 mm",
+   "Tömeg / tábla": "16,2 kg (elméleti)",
+   "Tömeg / m²": "8,1 kg (elméleti)",
+   "Ötvözet": "EN AW-5002",
+   "Felület": "eloxált"
+  },
+  "images": []
+ },
+ "s-3x1250x2500-mm-alu-lemez-en-aw-1050-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 3x1250x2500 mm Alu lemez EN AW-1050 H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Szélesség": "1250 mm",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "25,3 kg (elméleti)",
+   "Tömeg / m²": "8,1 kg (elméleti)",
+   "Ötvözet": "EN AW-1050",
+   "Állapot": "H24"
+  },
+  "images": []
+ },
+ "s-3x1250x2500-mm-alu-lemez-en-aw-5754-h22": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 3x1250x2500 mm Alu lemez EN AW-5754 H22",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Szélesség": "1250 mm",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "25,3 kg (elméleti)",
+   "Tömeg / m²": "8,1 kg (elméleti)",
+   "Ötvözet": "EN AW-5754",
+   "Állapot": "H22"
+  },
+  "images": []
+ },
+ "s-3x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 3x1250x2500 mm ELOX Alu lemez EN AW-5005A H14",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Szélesség": "1250 mm",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "25,3 kg (elméleti)",
+   "Tömeg / m²": "8,1 kg (elméleti)",
+   "Ötvözet": "EN AW-5005A",
+   "Állapot": "H14",
+   "Felület": "eloxált"
+  },
+  "images": []
+ },
+ "s-3x1250x3200-mm-alu-lemez-en-aw-1050a-h14-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 3x1250x3200 mm Alu lemez EN AW-1050A H14/H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Szélesség": "1250 mm",
+   "Hossz": "3200 mm",
+   "Tömeg / tábla": "32,4 kg (elméleti)",
+   "Tömeg / m²": "8,1 kg (elméleti)",
+   "Ötvözet": "EN AW-1050A",
+   "Állapot": "H14/H24"
+  },
+  "images": []
+ },
+ "s-3x1250x5000-mm-alu-lemez-en-aw-1050a-h14-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 3x1250x5000 mm Alu lemez EN AW-1050A H14/H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Szélesség": "1250 mm",
+   "Hossz": "5000 mm",
+   "Tömeg / tábla": "50,6 kg (elméleti)",
+   "Tömeg / m²": "8,1 kg (elméleti)",
+   "Ötvözet": "EN AW-1050A",
+   "Állapot": "H14/H24"
+  },
+  "images": []
+ },
+ "s-3x1250x6000-mm-alu-lemez-en-aw-1050a-h14-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 3x1250x6000 mm Alu lemez EN AW-1050A H14/H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Szélesség": "1250 mm",
+   "Hossz": "6000 mm",
+   "Tömeg / tábla": "60,8 kg (elméleti)",
+   "Tömeg / m²": "8,1 kg (elméleti)",
+   "Ötvözet": "EN AW-1050A",
+   "Állapot": "H14/H24"
+  },
+  "images": []
+ },
+ "s-3x1500x3000-mm-alu-lemez-en-aw-1050-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 3x1500x3000 mm Alu lemez EN AW-1050 H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Szélesség": "1500 mm",
+   "Hossz": "3000 mm",
+   "Tömeg / tábla": "36,5 kg (elméleti)",
+   "Tömeg / m²": "8,1 kg (elméleti)",
+   "Ötvözet": "EN AW-1050",
+   "Állapot": "H24"
+  },
+  "images": []
+ },
+ "s-3x1500x3000-mm-elox-alu-lemez-en-aw-5005a-h14": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 3x1500x3000 mm ELOX Alu lemez EN AW-5005A H14",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Szélesség": "1500 mm",
+   "Hossz": "3000 mm",
+   "Tömeg / tábla": "36,5 kg (elméleti)",
+   "Tömeg / m²": "8,1 kg (elméleti)",
+   "Ötvözet": "EN AW-5005A",
+   "Állapot": "H14",
+   "Felület": "eloxált"
+  },
+  "images": []
+ },
+ "s-3x1500x3200-mm-alu-lemez-en-aw-1050a-h14-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 3x1500x3200 mm Alu lemez EN AW-1050A H14/H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Szélesség": "1500 mm",
+   "Hossz": "3200 mm",
+   "Tömeg / tábla": "38,9 kg (elméleti)",
+   "Tömeg / m²": "8,1 kg (elméleti)",
+   "Ötvözet": "EN AW-1050A",
+   "Állapot": "H14/H24"
+  },
+  "images": []
+ },
+ "s-3x1500x5000-mm-alu-lemez-en-aw-1050a-h14-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 3x1500x5000 mm Alu lemez EN AW-1050A H14/H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Szélesség": "1500 mm",
+   "Hossz": "5000 mm",
+   "Tömeg / tábla": "60,8 kg (elméleti)",
+   "Tömeg / m²": "8,1 kg (elméleti)",
+   "Ötvözet": "EN AW-1050A",
+   "Állapot": "H14/H24"
+  },
+  "images": []
+ },
+ "s-3x1500x6000-mm-alu-lemez-en-aw-1050a-h14-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 3x1500x6000 mm Alu lemez EN AW-1050A H14/H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Szélesség": "1500 mm",
+   "Hossz": "6000 mm",
+   "Tömeg / tábla": "72,9 kg (elméleti)",
+   "Tömeg / m²": "8,1 kg (elméleti)",
+   "Ötvözet": "EN AW-1050A",
+   "Állapot": "H14/H24"
+  },
+  "images": []
+ },
+ "s-3x2000x5000-mm-alu-lemez-en-573-3-al-mg-1-h14-h24": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 3x2000x5000 mm Alu lemez EN 573-3 (Al-Mg-1) H14/H24",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm",
+   "Szélesség": "2000 mm",
+   "Hossz": "5000 mm",
+   "Tömeg / tábla": "81 kg (elméleti)",
+   "Tömeg / m²": "8,1 kg (elméleti)",
+   "Ötvözet": "EN AW-5754 (AlMg3) / Al-Mg-1 csoport",
+   "Állapot": "H14/H24"
+  },
+  "images": []
+ },
+ "s-6x1250x2500-mm-alu-lemez-en-aw-5754-h22": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 6x1250x2500 mm Alu lemez EN AW-5754 H22",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "6 mm",
+   "Szélesség": "1250 mm",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "50,6 kg (elméleti)",
+   "Tömeg / m²": "16,2 kg (elméleti)",
+   "Ötvözet": "EN AW-5754",
+   "Állapot": "H22"
+  },
   "images": []
  },
  "szerszamos-lada": {
