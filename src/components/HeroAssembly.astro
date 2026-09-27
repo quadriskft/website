@@ -10,11 +10,11 @@ const iso = (x, y, z) => [(x - y) * C * U, (x + y) * S * U - z * U];
 const f = (n) => n.toFixed(1);
 const P = (pts) => 'M' + pts.map((p) => iso(...p).map(f).join(',')).join('L') + 'Z';
 
-// Színek
-const AL = { top: '#f4f7fb', side: '#dbe4ef', end: '#c4d1e0', line: '#7f95b0' };
-const STEEL = { top: '#56657a', side: '#3b475a', end: '#2c3747', line: '#1f2937' };
-const DARK = { top: '#3a4452', side: '#252d38', end: '#1c232c', line: '#141a21' };
-const BLUE = { top: '#5aa2ff', side: '#0a6cff', end: '#0a54c4', line: '#0a3f94' };
+// Színek (a felületek színátmenetesek a térhatásért)
+const AL = { top: 'url(#g-al-top)', side: 'url(#g-al-side)', end: 'url(#g-al-end)', line: '#8095ad' };
+const STEEL = { top: '#5d6b80', side: 'url(#g-steel-side)', end: '#2c3747', line: '#1f2937' };
+const DARK = { top: '#3a4452', side: 'url(#g-dark-side)', end: '#1c232c', line: '#141a21' };
+const BLUE = { top: '#6aaeff', side: 'url(#g-blue-side)', end: '#0a54c4', line: '#0a3f94' };
 const RED = { top: '#ff8a80', side: '#e5484d', end: '#b3261e', line: '#8c1d18' };
 
 // Doboz: a három látható lap (felső, +y oldal, +x vég)
@@ -26,21 +26,29 @@ function box(x0, x1, y0, y1, z0, z1, c) {
   ];
 }
 
-// Kerék (x–z síkú kör az y oldalon)
-function wheel(cx, y, r, tire = '#1f2733', rim = '#c9d3df') {
-  const circ = (rr) => {
+// Kerék: valódi henger (futófelület-sáv + oldalfal), fémes felni, csavarok, agy
+function wheel(cx, y, r, far = false) {
+  const depth = 0.24;
+  const circ = (yy, rr, z0 = 0.36, x0 = cx) => {
     const pts = [];
-    for (let i = 0; i < 36; i++) {
-      const a = (i / 36) * Math.PI * 2;
-      pts.push([cx + Math.cos(a) * rr, y, 0.36 + Math.sin(a) * rr]);
+    for (let i = 0; i < 40; i++) {
+      const a = (i / 40) * Math.PI * 2;
+      pts.push([x0 + Math.cos(a) * rr, yy, z0 + Math.sin(a) * rr]);
     }
     return P(pts);
   };
-  return [
-    { d: circ(r), fill: tire, stroke: '#0e131a' },
-    { d: circ(r * 0.58), fill: rim, stroke: '#8a98a8' },
-    { d: circ(r * 0.2), fill: '#8a98a8', stroke: '#6b7888' },
-  ];
+  const out = [];
+  for (let k = 0; k <= 8; k++) out.push({ d: circ(y - depth + (k * depth) / 8, r), fill: k < 8 ? '#141a21' : '#1b2129', stroke: 'none' });
+  if (far) return out;
+  out.push({ d: circ(y, r), fill: 'url(#g-tire)', stroke: '#0b0f14' });
+  out.push({ d: circ(y + 0.002, r * 0.64), fill: 'url(#g-rim)', stroke: '#6f7c8b' });
+  out.push({ d: circ(y + 0.003, r * 0.47), fill: 'none', stroke: '#8e9aa8' });
+  for (let i = 0; i < 6; i++) {
+    const a = (i / 6) * Math.PI * 2;
+    out.push({ d: circ(y + 0.004, r * 0.05, 0.36 + Math.sin(a) * r * 0.31, cx + Math.cos(a) * r * 0.31), fill: '#4d5764', stroke: 'none' });
+  }
+  out.push({ d: circ(y + 0.005, r * 0.17), fill: 'url(#g-hub)', stroke: '#5a6571' });
+  return out;
 }
 
 const W = 2.1; // szélesség
@@ -60,16 +68,27 @@ function cab() {
     const nx = -(bz - az), nz = bx - ax; // kifelé mutató normális (óramutató szerinti körüljárás)
     if (nx * 1 + nz * 1 <= 0.001) continue;
     const glass = i === 3 || i === 2;
-    shapes.push({ d: P([[ax, y0, az], [bx, y0, bz], [bx, y1, bz], [ax, y1, az]]), fill: glass ? (i === 3 ? '#2b3b52' : '#f2f5f9') : '#e9eef4', stroke: '#8d9bab' });
+    shapes.push({ d: P([[ax, y0, az], [bx, y0, bz], [bx, y1, bz], [ax, y1, az]]), fill: glass ? (i === 3 ? 'url(#g-glass)' : '#eef2f7') : 'url(#g-cab-top)', stroke: '#8d9bab' });
   }
-  shapes.push({ d: P(cabProfile.map(([x, z]) => [x, y1, z])), fill: '#ffffff', stroke: '#8d9bab' });
+  shapes.push({ d: P(cabProfile.map(([x, z]) => [x, y1, z])), fill: 'url(#g-cab-side)', stroke: '#8d9bab' });
   // oldalablak, ajtó, lökhárító, fényszóró
-  shapes.push({ d: P([[5.02, y1, 1.62], [5.02, y1, 2.36], [6.02, y1, 2.36], [6.24, y1, 2.2], [6.44, y1, 1.62]]), fill: '#2b3b52', stroke: '#1d2838' });
+  shapes.push({ d: P([[5.02, y1, 1.62], [5.02, y1, 2.36], [6.02, y1, 2.36], [6.24, y1, 2.2], [6.44, y1, 1.62]]), fill: 'url(#g-glass)', stroke: '#1d2838' });
   shapes.push({ d: P([[4.95, y1, 0.66], [4.95, y1, 1.55], [6.1, y1, 1.55], [6.1, y1, 0.66]]), fill: 'none', stroke: '#b3bfcc' });
   shapes.push({ d: P([[6.62, y1, 0.62], [6.98, y1, 0.62], [6.98, y1, 0.92], [6.64, y1, 0.92]]), fill: '#2a323d', stroke: '#141a21' });
   shapes.push({ d: P([[6.98, 0.3, 0.62], [6.98, W - 0.3, 0.62], [6.98, W - 0.3, 0.92], [6.98, 0.3, 0.92]]), fill: '#2a323d', stroke: '#141a21' });
   shapes.push({ d: P([[6.95, W - 0.42, 1.08], [6.95, W - 0.14, 1.08], [6.95, W - 0.14, 1.26], [6.95, W - 0.42, 1.26]]), fill: '#dff0ff', stroke: '#7a8ea6' });
   shapes.push({ d: P([[6.0, y1 + 0.02, 1.7], [6.0, y1 + 0.22, 1.7], [6.0, y1 + 0.22, 2.05], [6.0, y1 + 0.02, 2.05]]), fill: '#1f2733', stroke: '#0e131a' });
+  // alsó műanyag burkolat, kerékív az első kerék fölött, kilincs, hűtőrács
+  shapes.push({ d: P([[4.72, y1, 0.62], [6.98, y1, 0.62], [6.98, y1, 0.8], [4.72, y1, 0.8]]), fill: '#2a323d', stroke: 'none' });
+  const arch = [];
+  for (let i = 0; i <= 16; i++) { const a = Math.PI * (i / 16); arch.push([5.85 + Math.cos(a) * 0.5, y1 + 0.001, 0.36 + Math.sin(a) * 0.5]); }
+  for (let i = 16; i >= 0; i--) { const a = Math.PI * (i / 16); arch.push([5.85 + Math.cos(a) * 0.42, y1 + 0.001, 0.36 + Math.sin(a) * 0.42]); }
+  shapes.push({ d: P(arch), fill: '#232a33', stroke: 'none' });
+  shapes.push({ d: P([[5.3, y1 + 0.005, 1.38], [5.52, y1 + 0.005, 1.38], [5.52, y1 + 0.005, 1.43], [5.3, y1 + 0.005, 1.43]]), fill: '#3a4450', stroke: 'none' });
+  for (let k = 0; k < 4; k++) {
+    const z = 0.98 + k * 0.07;
+    shapes.push({ d: P([[6.97, 0.45, z], [6.97, W - 0.55, z], [6.97, W - 0.55, z + 0.035], [6.97, 0.45, z + 0.035]]), fill: '#2a323d', stroke: 'none' });
+  }
   return shapes;
 }
 
@@ -79,10 +98,10 @@ const add = (id, label, anchor, off, start, shapes, dur = 0.9) => parts.push({ i
 
 // 0) alapjármű: hátsó kerekek (túloldal), alváz, fülke, kerekek
 const base = [
-  ...wheel(2.35, 0.12, 0.36, '#2a3340'), ...wheel(5.85, 0.12, 0.36, '#2a3340'),
+  ...wheel(2.35, 0.36, 0.36, true), ...wheel(5.85, 0.36, 0.36, true),
   ...box(0.35, 6.5, 0.42, 0.58, 0.58, 0.76, STEEL), ...box(0.35, 6.5, W - 0.58, W - 0.42, 0.58, 0.76, STEEL),
   ...cab(),
-  ...wheel(2.35, W - 0.12, 0.36), ...wheel(5.85, W - 0.12, 0.36),
+  ...wheel(2.35, W - 0.1, 0.36), ...wheel(5.85, W - 0.1, 0.36),
 ];
 add('base', null, null, [9, 0, 0], 0, base, 1.3);
 
@@ -198,6 +217,18 @@ const doneX = (minX + maxX) / 2;
 ---
 <svg class="hero-assembly" viewBox={vb} xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Alkatrészekből összeálló platós felépítmény animációja">
   <defs>
+    <linearGradient id="g-al-top" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" /><stop offset="1" stop-color="#e3eaf3" /></linearGradient>
+    <linearGradient id="g-al-side" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3f7fb" /><stop offset="0.45" stop-color="#d9e2ed" /><stop offset="0.5" stop-color="#c7d3e1" /><stop offset="1" stop-color="#b5c4d6" /></linearGradient>
+    <linearGradient id="g-al-end" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cdd8e5" /><stop offset="1" stop-color="#9fb0c5" /></linearGradient>
+    <linearGradient id="g-steel-side" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#55647a" /><stop offset="1" stop-color="#2d3847" /></linearGradient>
+    <linearGradient id="g-dark-side" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b4553" /><stop offset="1" stop-color="#1a2029" /></linearGradient>
+    <linearGradient id="g-blue-side" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a95ff" /><stop offset="1" stop-color="#0a4fc0" /></linearGradient>
+    <linearGradient id="g-cab-side" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" /><stop offset="0.7" stop-color="#f1f4f8" /><stop offset="1" stop-color="#dfe5ec" /></linearGradient>
+    <linearGradient id="g-cab-top" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f4f7fa" /><stop offset="1" stop-color="#d9e0e8" /></linearGradient>
+    <linearGradient id="g-glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a6486" /><stop offset="0.35" stop-color="#7fa0c4" /><stop offset="0.42" stop-color="#2a3a52" /><stop offset="1" stop-color="#18222f" /></linearGradient>
+    <radialGradient id="g-tire" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#4a525d" /><stop offset="0.75" stop-color="#1c2128" /><stop offset="1" stop-color="#0c1015" /></radialGradient>
+    <radialGradient id="g-rim" cx="0.35" cy="0.3" r="0.85"><stop offset="0" stop-color="#ffffff" /><stop offset="0.55" stop-color="#cbd3dc" /><stop offset="1" stop-color="#7a8795" /></radialGradient>
+    <radialGradient id="g-hub" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#f4f6f9" /><stop offset="1" stop-color="#7d8998" /></radialGradient>
     <radialGradient id="qa-shadow" cx="50%" cy="50%" r="50%">
       <stop offset="0" stop-color="#0b1f3a" stop-opacity="0.22" />
       <stop offset="1" stop-color="#0b1f3a" stop-opacity="0" />

@@ -40,11 +40,13 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   </head>
   <body>
     <a class="skip-link" href="#main">Ugrás a tartalomra</a>
+    <div class="brand-bar">
+      <a class="logo" href="/" aria-label={`${SITE.name} – főoldal`}>
+        <img src="/brand/quadris-logo.svg" alt={SITE.name} width="320" height="72" />
+      </a>
+    </div>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" href="/" aria-label={`${SITE.name} – főoldal`}>
-          <img src="/brand/quadris-felirat.svg" alt={SITE.name} width="220" height="64" />
-        </a>
 
         <nav class="main-nav" id="main-nav" aria-label="Fő menü">
           <div class="nav-item has-mega">
@@ -90,7 +92,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-brand">
-          <img src="/brand/quadris-logo-feher.svg" alt={SITE.name} width="220" height="56" loading="lazy" />
+          <img src="/brand/quadris-logo.svg" alt={SITE.name} width="280" height="64" loading="lazy" />
           <p class="muted">Alkatrészek, profilok és kiegészítők jármű- és lószállító felépítmény gyártóknak – egy helyről, szakértő támogatással.</p>
           <a href="/ajanlatkeres" class="btn btn-primary btn-sm"><Icon name="Send" /> Ajánlatot kérek</a>
         </div>
@@ -246,11 +248,15 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     border-bottom: 1px solid var(--line); transition: box-shadow 0.2s ease, background 0.2s ease;
   }
   .site-header.scrolled { background: rgba(255, 255, 255, 0.96); box-shadow: 0 6px 20px -14px rgba(11, 31, 58, 0.4); }
+  .brand-bar {
+    display: flex; justify-content: center; align-items: center; padding: 14px 16px 12px;
+    background: radial-gradient(600px 120px at 50% 120%, rgba(26, 120, 255, 0.35), transparent 70%), #0b1733;
+  }
+  .logo { display: flex; }
+  .logo img { height: 74px; width: auto; }
   .header-inner { height: 100%; display: flex; align-items: center; gap: 28px; }
-  .logo { flex: none; display: flex; }
-  .logo img { height: 58px; width: auto; }
 
-  .main-nav { display: flex; align-items: center; gap: 4px; }
+  .main-nav { display: flex; align-items: center; gap: 4px; margin-left: -14px; }
   .nav-link {
     display: inline-flex; align-items: center; gap: 4px; padding: 8px 14px; border-radius: 999px;
     color: var(--text-2); font-weight: 500; font-size: 0.95rem; text-decoration: none !important; white-space: nowrap;
@@ -312,10 +318,12 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   }
   @media (max-width: 960px) {
     :root { --header-h: 64px; }
-    .logo img { height: 42px; }
+    .logo img { height: 56px; }
+    .brand-bar { padding: 10px 16px 8px; }
+    .main-nav { margin-left: 0; }
     .menu-toggle { display: grid; }
     .main-nav {
-      position: fixed; inset: var(--header-h) 0 auto 0; max-height: calc(100vh - var(--header-h)); overflow-y: auto;
+      position: absolute; top: 100%; left: 0; right: 0; max-height: calc(100vh - var(--header-h)); overflow-y: auto;
       flex-direction: column; align-items: stretch; gap: 2px; padding: 12px 16px 20px;
       background: #fff; border-bottom: 1px solid var(--line); box-shadow: var(--shadow);
       transform: translateY(-8px); opacity: 0; visibility: hidden; transition: all 0.2s ease;
@@ -329,14 +337,14 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     .suggest { position: fixed; left: 16px; right: 16px; width: auto; top: calc(var(--header-h) - 4px); }
   }
   @media (max-width: 560px) {
-    .logo img { height: 34px; }
+    .logo img { height: 44px; }
     .header-actions { gap: 8px; }
     .quote-btn { padding: 0 12px; }
   }
 
   .site-footer { background: var(--navy); color: #c7d4e6; margin-top: 56px; }
   .footer-grid { display: grid; grid-template-columns: 1.1fr 1.6fr 0.9fr; gap: 40px; padding-top: 56px; padding-bottom: 40px; }
-  .footer-brand img { height: 84px; width: auto; margin-bottom: 18px; }
+  .footer-brand img { height: 64px; width: auto; margin-bottom: 18px; }
   .footer-brand p { max-width: 340px; font-size: 0.93rem; }
   .site-footer h4 { font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: #8fa6c4; margin-bottom: 14px; }
   .site-footer .muted { color: #9fb2cb; }
