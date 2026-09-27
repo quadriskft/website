@@ -9,6 +9,7 @@ import io
 import json
 import re
 import time
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -56,7 +57,8 @@ def fetch(url, cache=True, timeout=40):
     last = None
     for attempt in range(3):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html,application/xhtml+xml,application/json,image/*,*/*;q=0.8", "Accept-Language": "en,hu;q=0.8"})
+            safe = urllib.parse.quote(url, safe=":/?&=%#+,;@~!$'()*[]")  # pl. „BB3_1°-Foto” – nem ASCII karakter az útvonalban
+            req = urllib.request.Request(safe, headers={"User-Agent": UA, "Accept": "text/html,application/xhtml+xml,application/json,image/*,*/*;q=0.8", "Accept-Language": "en,hu;q=0.8"})
             data = urllib.request.urlopen(req, timeout=timeout).read()
             if cache:
                 key.parent.mkdir(parents=True, exist_ok=True)

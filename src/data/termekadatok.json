@@ -969,6 +969,8 @@
    "Falvastagság": "5 mm"
   },
   "images": [
+   "/termekkepek/3d/141265-acel-hossztarto-120-60-5-mm-1.webp",
+   "/termekkepek/3d/141265-acel-hossztarto-120-60-5-mm-2.webp",
    "/termekkepek/141265-acel-hossztarto-120-60-5-mm-1.webp"
   ]
  },
@@ -984,6 +986,8 @@
    "Falvastagság": "6 mm"
   },
   "images": [
+   "/termekkepek/3d/141266-acel-hossztarto-120-60-6-mm-1.webp",
+   "/termekkepek/3d/141266-acel-hossztarto-120-60-6-mm-2.webp",
    "/termekkepek/141266-acel-hossztarto-120-60-6-mm-1.webp"
   ]
  },
@@ -1017,11 +1021,8 @@
  },
  "145010-50-mm-es-gombcsuklo-keszlet-3-5t": {
   "source": "FTS",
-  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=111",
-  "matchedCode": "25350100",
-  "specs": {
-   "Tömeg": "10,300 kg"
-  },
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf",
+  "specs": {},
   "images": [
    "/termekkepek/145010-50-mm-es-gombcsuklo-keszlet-3-5t-1.webp"
   ]
@@ -1182,6 +1183,8 @@
    "Övszélesség": "60 mm"
   },
   "images": [
+   "/termekkepek/3d/200392-i-90-60-kereszttarto-ex-1.webp",
+   "/termekkepek/3d/200392-i-90-60-kereszttarto-ex-2.webp",
    "/termekkepek/200392-i-90-60-kereszttarto-ex-1.webp"
   ]
  },
@@ -1216,6 +1219,8 @@
    "Tömeg": "2,565 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/202274-u-100x50x50x5-mm-profil-1.webp",
+   "/termekkepek/3d/202274-u-100x50x50x5-mm-profil-2.webp",
    "/termekkepek/202274-u-100x50x50x5-mm-profil-1.webp"
   ]
  },
@@ -1232,6 +1237,8 @@
    "Tömeg": "6,566 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/202869-u-160x80x80x8-mm-profil-1.webp",
+   "/termekkepek/3d/202869-u-160x80x80x8-mm-profil-2.webp",
    "/termekkepek/202869-u-160x80x80x8-mm-profil-1.webp"
   ]
  },
@@ -1261,6 +1268,8 @@
    "Tömeg": "2,43 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/203432-u-90x50x50x5-mm-profil-1.webp",
+   "/termekkepek/3d/203432-u-90x50x50x5-mm-profil-2.webp",
    "/termekkepek/203432-u-90x50x50x5-mm-profil-1.webp"
   ]
  },
@@ -1294,6 +1303,8 @@
    "Tömeg": "4,649 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/203548-u-140x60x60x7-mm-profil-1.webp",
+   "/termekkepek/3d/203548-u-140x60x60x7-mm-profil-2.webp",
    "/termekkepek/203548-u-140x60x60x7-mm-profil-1.webp"
   ]
  },
@@ -1310,6 +1321,8 @@
    "Tömeg": "2,565 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/205162-u-80x60x5-mm-aluprofil-1.webp",
+   "/termekkepek/3d/205162-u-80x60x5-mm-aluprofil-2.webp",
    "/termekkepek/205162-u-80x60x5-mm-aluprofil-1.webp"
   ]
  },
@@ -1325,6 +1338,8 @@
    "Falvastagság": "8,6 mm"
   },
   "images": [
+   "/termekkepek/3d/206441-i-gerenda-profil-80x60-50x8-6-mm-1.webp",
+   "/termekkepek/3d/206441-i-gerenda-profil-80x60-50x8-6-mm-2.webp",
    "/termekkepek/206441-i-gerenda-profil-80x60-50x8-6-mm-1.webp"
   ]
  },
@@ -1354,6 +1369,8 @@
    "Szár": "60 mm"
   },
   "images": [
+   "/termekkepek/3d/209695-u-110-60-hossztarto-duplanutolt-ex-1.webp",
+   "/termekkepek/3d/209695-u-110-60-hossztarto-duplanutolt-ex-2.webp",
    "/termekkepek/209695-u-110-60-hossztarto-duplanutolt-ex-1.webp"
   ]
  },
@@ -1822,6 +1839,8 @@
    "Méret": "150 × 25 mm"
   },
   "images": [
+   "/termekkepek/3d/220233-150x25-mm-ponyvatarto-zartszelveny-1.webp",
+   "/termekkepek/3d/220233-150x25-mm-ponyvatarto-zartszelveny-2.webp",
    "/termekkepek/220233-150x25-mm-ponyvatarto-zartszelveny-1.webp"
   ]
  },
@@ -1901,6 +1920,8 @@
    "Méret": "100 × 25 mm"
   },
   "images": [
+   "/termekkepek/3d/222001-100x25-mm-ponyvatarto-zartszelveny-t-1.webp",
+   "/termekkepek/3d/222001-100x25-mm-ponyvatarto-zartszelveny-t-2.webp",
    "/termekkepek/222001-100x25-mm-ponyvatarto-zartszelveny-t-1.webp"
   ]
  },
@@ -1914,6 +1935,8 @@
    "Méret": "100 × 25 mm"
   },
   "images": [
+   "/termekkepek/3d/222185-100x25-mm-ponyvatarto-zartszelveny-merevitett-1.webp",
+   "/termekkepek/3d/222185-100x25-mm-ponyvatarto-zartszelveny-merevitett-2.webp",
    "/termekkepek/222185-100x25-mm-ponyvatarto-zartszelveny-merevitett-1.webp"
   ]
  },
@@ -1945,6 +1968,8 @@
    "Méret": "100 × 25 mm"
   },
   "images": [
+   "/termekkepek/3d/222266-100x25-mm-ponyvatarto-zartszelveny-gk-1.webp",
+   "/termekkepek/3d/222266-100x25-mm-ponyvatarto-zartszelveny-gk-2.webp",
    "/termekkepek/222266-100x25-mm-ponyvatarto-zartszelveny-gk-1.webp"
   ]
  },
@@ -1978,6 +2003,8 @@
    "Tömeg": "1,147 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/222891-zartszelveny-60x30x2-5-r2-5-elox-1.webp",
+   "/termekkepek/3d/222891-zartszelveny-60x30x2-5-r2-5-elox-2.webp",
    "/termekkepek/222891-zartszelveny-60x30x2-5-r2-5-elox-1.webp"
   ]
  },
@@ -1993,6 +2020,8 @@
    "Tömeg": "0,744 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/222923-60x1-5-mm-ponyvacso-1.webp",
+   "/termekkepek/3d/222923-60x1-5-mm-ponyvacso-2.webp",
    "/termekkepek/222923-60x1-5-mm-ponyvacso-1.webp"
   ]
  },
@@ -2017,6 +2046,8 @@
    "Méret": "100 × 25 mm"
   },
   "images": [
+   "/termekkepek/3d/223219-100x25-mm-ponyvatarto-zartszelveny-elox-1.webp",
+   "/termekkepek/3d/223219-100x25-mm-ponyvatarto-zartszelveny-elox-2.webp",
    "/termekkepek/223219-100x25-mm-ponyvatarto-zartszelveny-elox-1.webp"
   ]
  },
@@ -2072,6 +2103,8 @@
    "Tömeg": "0,56 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/223520-ponyvacso-35x2-mm-1.webp",
+   "/termekkepek/3d/223520-ponyvacso-35x2-mm-2.webp",
    "/termekkepek/223520-ponyvacso-35x2-mm-1.webp"
   ]
  },
@@ -2137,6 +2170,8 @@
    "Méret": "100 × 25 mm"
   },
   "images": [
+   "/termekkepek/3d/226900-100x25-mm-ponyvatarto-zartszelveny-d-1.webp",
+   "/termekkepek/3d/226900-100x25-mm-ponyvatarto-zartszelveny-d-2.webp",
    "/termekkepek/226900-100x25-mm-ponyvatarto-zartszelveny-d-1.webp"
   ]
  },
@@ -2274,6 +2309,8 @@
    "Tömeg": "0,929 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/227576-zartszelveny-60x30x2-mm-or3-ir1-elox-1.webp",
+   "/termekkepek/3d/227576-zartszelveny-60x30x2-mm-or3-ir1-elox-2.webp",
    "/termekkepek/227576-zartszelveny-60x30x2-mm-or3-ir1-elox-1.webp"
   ]
  },
@@ -2288,6 +2325,8 @@
    "Falvastagság": "3,5 mm"
   },
   "images": [
+   "/termekkepek/3d/227686-50x35x3-5-mm-r4-oszlop-profil-elox-1.webp",
+   "/termekkepek/3d/227686-50x35x3-5-mm-r4-oszlop-profil-elox-2.webp",
    "/termekkepek/227686-50x35x3-5-mm-r4-oszlop-profil-elox-1.webp"
   ]
  },
@@ -2553,6 +2592,8 @@
    "Méret": "20 × 10 mm"
   },
   "images": [
+   "/termekkepek/3d/232010-20x10-l-profil-natur-1.webp",
+   "/termekkepek/3d/232010-20x10-l-profil-natur-2.webp",
    "/termekkepek/232010-20x10-l-profil-natur-1.webp"
   ]
  },
@@ -2566,6 +2607,8 @@
    "Szárak": "35 × 35 mm"
   },
   "images": [
+   "/termekkepek/3d/232121-35x35-mm-ives-sarokprofil-elox-1.webp",
+   "/termekkepek/3d/232121-35x35-mm-ives-sarokprofil-elox-2.webp",
    "/termekkepek/232121-35x35-mm-ives-sarokprofil-elox-1.webp"
   ]
  },
@@ -2591,6 +2634,8 @@
    "Méret": "50 × 174 mm"
   },
   "images": [
+   "/termekkepek/3d/232156-50x174-mm-l-belso-vedoprofil-1.webp",
+   "/termekkepek/3d/232156-50x174-mm-l-belso-vedoprofil-2.webp",
    "/termekkepek/232156-50x174-mm-l-belso-vedoprofil-1.webp"
   ]
  },
@@ -2604,6 +2649,8 @@
    "Méret": "50 × 170 mm"
   },
   "images": [
+   "/termekkepek/3d/232189-50x170-mm-l-belso-vedoprofil-elox-1.webp",
+   "/termekkepek/3d/232189-50x170-mm-l-belso-vedoprofil-elox-2.webp",
    "/termekkepek/232189-50x170-mm-l-belso-vedoprofil-elox-1.webp"
   ]
  },
@@ -2629,6 +2676,8 @@
    "Szárak": "35 × 35 mm"
   },
   "images": [
+   "/termekkepek/3d/234235-35x35-mm-ives-sarokprofil-elox-d-1.webp",
+   "/termekkepek/3d/234235-35x35-mm-ives-sarokprofil-elox-d-2.webp",
    "/termekkepek/234235-35x35-mm-ives-sarokprofil-elox-d-1.webp"
   ]
  },
@@ -2678,6 +2727,8 @@
    "Méret": "80 × 80 mm"
   },
   "images": [
+   "/termekkepek/3d/236825-80x80-mm-l-profil-elox-1.webp",
+   "/termekkepek/3d/236825-80x80-mm-l-profil-elox-2.webp",
    "/termekkepek/236825-80x80-mm-l-profil-elox-1.webp"
   ]
  },
@@ -2691,6 +2742,8 @@
    "Szárak": "25 × 25 mm"
   },
   "images": [
+   "/termekkepek/3d/237000-25x25-mm-ives-sarokprofil-elox-1.webp",
+   "/termekkepek/3d/237000-25x25-mm-ives-sarokprofil-elox-2.webp",
    "/termekkepek/237000-25x25-mm-ives-sarokprofil-elox-1.webp"
   ]
  },
@@ -2706,6 +2759,8 @@
    "Tömeg": "2,77 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox-1.webp",
+   "/termekkepek/3d/237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox-2.webp",
    "/termekkepek/237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox-1.webp"
   ]
  },
@@ -2749,6 +2804,8 @@
    "Méret": "50 × 260 mm"
   },
   "images": [
+   "/termekkepek/3d/237461-50x260-mm-l-belso-vedoprofil-elox-1.webp",
+   "/termekkepek/3d/237461-50x260-mm-l-belso-vedoprofil-elox-2.webp",
    "/termekkepek/237461-50x260-mm-l-belso-vedoprofil-elox-1.webp"
   ]
  },
@@ -2762,6 +2819,8 @@
    "Méret": "50 × 260 mm"
   },
   "images": [
+   "/termekkepek/3d/237461-n-50x260-mm-l-belso-vedoprofil-1.webp",
+   "/termekkepek/3d/237461-n-50x260-mm-l-belso-vedoprofil-2.webp",
    "/termekkepek/237461-n-50x260-mm-l-belso-vedoprofil-1.webp"
   ]
  },
@@ -2775,6 +2834,8 @@
    "Méret": "60 × 60 mm"
   },
   "images": [
+   "/termekkepek/3d/237767-60x60-l-profil-elox-1.webp",
+   "/termekkepek/3d/237767-60x60-l-profil-elox-2.webp",
    "/termekkepek/237767-60x60-l-profil-elox-1.webp"
   ]
  },
@@ -2824,6 +2885,8 @@
    "Szárak": "25 × 25 mm"
   },
   "images": [
+   "/termekkepek/3d/237870-25x25-mm-utanfuto-sarokprofil-elox-1.webp",
+   "/termekkepek/3d/237870-25x25-mm-utanfuto-sarokprofil-elox-2.webp",
    "/termekkepek/237870-25x25-mm-utanfuto-sarokprofil-elox-1.webp"
   ]
  },
@@ -2837,6 +2900,8 @@
    "Szárak": "25 × 35 mm"
   },
   "images": [
+   "/termekkepek/3d/237905-n-25x35-mm-ives-sarokprofil-r50-1.webp",
+   "/termekkepek/3d/237905-n-25x35-mm-ives-sarokprofil-r50-2.webp",
    "/termekkepek/237905-n-25x35-mm-ives-sarokprofil-r50-1.webp"
   ]
  },
@@ -2868,6 +2933,8 @@
    "Méret": "70 × 110 mm"
   },
   "images": [
+   "/termekkepek/3d/238087-70x110-mm-l-kulso-elox-1.webp",
+   "/termekkepek/3d/238087-70x110-mm-l-kulso-elox-2.webp",
    "/termekkepek/238087-70x110-mm-l-kulso-elox-1.webp"
   ]
  },
@@ -2894,6 +2961,8 @@
    "Méret": "140 × 80 mm"
   },
   "images": [
+   "/termekkepek/3d/238645-kulso-l-profil-140x80mm-elox-1.webp",
+   "/termekkepek/3d/238645-kulso-l-profil-140x80mm-elox-2.webp",
    "/termekkepek/238645-kulso-l-profil-140x80mm-elox-1.webp"
   ]
  },
@@ -3029,6 +3098,8 @@
    "Tömeg": "0,305 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/250202-20x2-alu-cso-1.webp",
+   "/termekkepek/3d/250202-20x2-alu-cso-2.webp",
    "/termekkepek/250202-20x2-alu-cso-1.webp"
   ]
  },
@@ -3044,6 +3115,8 @@
    "Tömeg": "1,282 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/250297-50x50x5-alu-l-profil-1.webp",
+   "/termekkepek/3d/250297-50x50x5-alu-l-profil-2.webp",
    "/termekkepek/250297-50x50x5-alu-l-profil-1.webp"
   ]
  },
@@ -3059,6 +3132,8 @@
    "Tömeg": "0,81 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/250301-30x10-mm-alu-lapos-profil-1.webp",
+   "/termekkepek/3d/250301-30x10-mm-alu-lapos-profil-2.webp",
    "/termekkepek/250301-30x10-mm-alu-lapos-profil-1.webp"
   ]
  },
@@ -3074,6 +3149,8 @@
    "Tömeg": "0,405 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/250305-30x5-mm-alu-lapos-profil-1.webp",
+   "/termekkepek/3d/250305-30x5-mm-alu-lapos-profil-2.webp",
    "/termekkepek/250305-30x5-mm-alu-lapos-profil-1.webp"
   ]
  },
@@ -3088,6 +3165,8 @@
    "Tömeg": "0,624 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/250403-40x40x3-alu-l-profil-1.webp",
+   "/termekkepek/3d/250403-40x40x3-alu-l-profil-2.webp",
    "/termekkepek/250403-40x40x3-alu-l-profil-1.webp"
   ],
   "nevbolRajz": true
@@ -3104,6 +3183,8 @@
    "Tömeg": "0,54 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/250405-40x5-mm-alu-lapos-profil-1.webp",
+   "/termekkepek/3d/250405-40x5-mm-alu-lapos-profil-2.webp",
    "/termekkepek/250405-40x5-mm-alu-lapos-profil-1.webp"
   ]
  },
@@ -3119,6 +3200,8 @@
    "Tömeg": "2,333 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/250503-100x50x3-mm-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/250503-100x50x3-mm-alu-zartszelveny-2.webp",
    "/termekkepek/250503-100x50x3-mm-alu-zartszelveny-1.webp"
   ]
  },
@@ -3134,6 +3217,8 @@
    "Tömeg": "0,605 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/250890-40x20x2-mm-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/250890-40x20x2-mm-alu-zartszelveny-2.webp",
    "/termekkepek/250890-40x20x2-mm-alu-zartszelveny-1.webp"
   ]
  },
@@ -3149,6 +3234,8 @@
    "Tömeg": "4,147 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/251010-100x100x8-alu-l-profil-1.webp",
+   "/termekkepek/3d/251010-100x100x8-alu-l-profil-2.webp",
    "/termekkepek/251010-100x100x8-alu-l-profil-1.webp"
   ]
  },
@@ -3164,6 +3251,8 @@
    "Tömeg": "2,7 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/251048-100x10-mm-alu-lapos-profil-1.webp",
+   "/termekkepek/3d/251048-100x10-mm-alu-lapos-profil-2.webp",
    "/termekkepek/251048-100x10-mm-alu-lapos-profil-1.webp"
   ]
  },
@@ -3194,6 +3283,8 @@
    "Tömeg": "3,24 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/251210-120x10-mm-alu-lapos-profil-1.webp",
+   "/termekkepek/3d/251210-120x10-mm-alu-lapos-profil-2.webp",
    "/termekkepek/251210-120x10-mm-alu-lapos-profil-1.webp"
   ]
  },
@@ -3209,6 +3300,8 @@
    "Tömeg": "0,271 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/251310-18x2-alu-cso-1.webp",
+   "/termekkepek/3d/251310-18x2-alu-cso-2.webp",
    "/termekkepek/251310-18x2-alu-cso-1.webp"
   ]
  },
@@ -3224,6 +3317,8 @@
    "Tömeg": "1,231 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/251316-40x25x4-mm-r-zartszelveny-1.webp",
+   "/termekkepek/3d/251316-40x25x4-mm-r-zartszelveny-2.webp",
    "/termekkepek/251316-40x25x4-mm-r-zartszelveny-1.webp"
   ]
  },
@@ -3239,6 +3334,8 @@
    "Tömeg": "4,05 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/251510-150x10-mm-alu-lapos-profil-1.webp",
+   "/termekkepek/3d/251510-150x10-mm-alu-lapos-profil-2.webp",
    "/termekkepek/251510-150x10-mm-alu-lapos-profil-1.webp"
   ]
  },
@@ -3253,6 +3350,8 @@
    "Tömeg": "0,687 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/251530-18-mm-alu-rud-1.webp",
+   "/termekkepek/3d/251530-18-mm-alu-rud-2.webp",
    "/termekkepek/251530-18-mm-alu-rud-1.webp"
   ]
  },
@@ -3268,6 +3367,8 @@
    "Tömeg": "2,635 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/251659-80x50x4-mm-r4-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/251659-80x50x4-mm-r4-alu-zartszelveny-2.webp",
    "/termekkepek/251659-80x50x4-mm-r4-alu-zartszelveny-1.webp"
   ]
  },
@@ -3283,6 +3384,8 @@
    "Tömeg": "0,675 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/251742-50x5-mm-alu-lapos-profil-1.webp",
+   "/termekkepek/3d/251742-50x5-mm-alu-lapos-profil-2.webp",
    "/termekkepek/251742-50x5-mm-alu-lapos-profil-1.webp"
   ]
  },
@@ -3298,6 +3401,8 @@
    "Tömeg": "0,381 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/251883-30x20x1-5-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/251883-30x20x1-5-alu-zartszelveny-2.webp",
    "/termekkepek/251883-30x20x1-5-alu-zartszelveny-1.webp"
   ]
  },
@@ -3313,6 +3418,8 @@
    "Tömeg": "0,162 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252003-20x3-mm-alu-lapos-profil-1.webp",
+   "/termekkepek/3d/252003-20x3-mm-alu-lapos-profil-2.webp",
    "/termekkepek/252003-20x3-mm-alu-lapos-profil-1.webp"
   ]
  },
@@ -3328,6 +3435,8 @@
    "Tömeg": "1,555 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252229-40x40x4-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/252229-40x40x4-alu-zartszelveny-2.webp",
    "/termekkepek/252229-40x40x4-alu-zartszelveny-1.webp"
   ]
  },
@@ -3343,6 +3452,8 @@
    "Tömeg": "0,713 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252242-40x30x2-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/252242-40x30x2-alu-zartszelveny-2.webp",
    "/termekkepek/252242-40x30x2-alu-zartszelveny-1.webp"
   ]
  },
@@ -3358,6 +3469,8 @@
    "Tömeg": "1,08 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252251-40x10-mm-alu-lapos-profil-1.webp",
+   "/termekkepek/3d/252251-40x10-mm-alu-lapos-profil-2.webp",
    "/termekkepek/252251-40x10-mm-alu-lapos-profil-1.webp"
   ]
  },
@@ -3373,6 +3486,8 @@
    "Tömeg": "0,864 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252296-40x8-mm-alu-lapos-profil-1.webp",
+   "/termekkepek/3d/252296-40x8-mm-alu-lapos-profil-2.webp",
    "/termekkepek/252296-40x8-mm-alu-lapos-profil-1.webp"
   ]
  },
@@ -3388,6 +3503,8 @@
    "Tömeg": "0,648 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252417-30x8-mm-alu-lapos-profil-1.webp",
+   "/termekkepek/3d/252417-30x8-mm-alu-lapos-profil-2.webp",
    "/termekkepek/252417-30x8-mm-alu-lapos-profil-1.webp"
   ]
  },
@@ -3403,6 +3520,8 @@
    "Tömeg": "1,282 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252444-60x40x2-5-mm-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/252444-60x40x2-5-mm-alu-zartszelveny-2.webp",
    "/termekkepek/252444-60x40x2-5-mm-alu-zartszelveny-1.webp"
   ]
  },
@@ -3417,6 +3536,8 @@
    "Tömeg": "0,259 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252502-25x25x2-alu-l-profil-1.webp",
+   "/termekkepek/3d/252502-25x25x2-alu-l-profil-2.webp",
    "/termekkepek/252502-25x25x2-alu-l-profil-1.webp"
   ],
   "nevbolRajz": true
@@ -3433,6 +3554,8 @@
    "Tömeg": "1,523 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252535-60x40x3-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/252535-60x40x3-alu-zartszelveny-2.webp",
    "/termekkepek/252535-60x40x3-alu-zartszelveny-1.webp"
   ]
  },
@@ -3448,6 +3571,8 @@
    "Tömeg": "1,037 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252672-80x20x2-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/252672-80x20x2-alu-zartszelveny-2.webp",
    "/termekkepek/252672-80x20x2-alu-zartszelveny-1.webp"
   ]
  },
@@ -3463,6 +3588,8 @@
    "Tömeg": "1,987 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252687-60x40x4-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/252687-60x40x4-alu-zartszelveny-2.webp",
    "/termekkepek/252687-60x40x4-alu-zartszelveny-1.webp"
   ]
  },
@@ -3478,6 +3605,8 @@
    "Tömeg": "1,847 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252763-80x40x3-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/252763-80x40x3-alu-zartszelveny-2.webp",
    "/termekkepek/252763-80x40x3-alu-zartszelveny-1.webp"
   ]
  },
@@ -3493,6 +3622,8 @@
    "Tömeg": "2,419 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252764-80x40x4-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/252764-80x40x4-alu-zartszelveny-2.webp",
    "/termekkepek/252764-80x40x4-alu-zartszelveny-1.webp"
   ]
  },
@@ -3508,6 +3639,8 @@
    "Tömeg": "2,819 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252798-150x30x3-mm-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/252798-150x30x3-mm-alu-zartszelveny-2.webp",
    "/termekkepek/252798-150x30x3-mm-alu-zartszelveny-1.webp"
   ]
  },
@@ -3523,6 +3656,8 @@
    "Tömeg": "0,551 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/252981-20x20x3-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/252981-20x20x3-alu-zartszelveny-2.webp",
    "/termekkepek/252981-20x20x3-alu-zartszelveny-1.webp"
   ]
  },
@@ -3538,6 +3673,8 @@
    "Tömeg": "0,497 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/253020-30x20x2-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/253020-30x20x2-alu-zartszelveny-2.webp",
    "/termekkepek/253020-30x20x2-alu-zartszelveny-1.webp"
   ]
  },
@@ -3554,6 +3691,8 @@
    "Tömeg": "0,68 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/253030-30x30x3-mm-u-profil-1.webp",
+   "/termekkepek/3d/253030-30x30x3-mm-u-profil-2.webp",
    "/termekkepek/253030-30x30x3-mm-u-profil-1.webp"
   ]
  },
@@ -3569,6 +3708,8 @@
    "Tömeg": "0,605 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/253295-30x30x2-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/253295-30x30x2-alu-zartszelveny-2.webp",
    "/termekkepek/253295-30x30x2-alu-zartszelveny-1.webp"
   ]
  },
@@ -3584,6 +3725,8 @@
    "Tömeg": "1,987 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/253337-50x50x4-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/253337-50x50x4-alu-zartszelveny-2.webp",
    "/termekkepek/253337-50x50x4-alu-zartszelveny-1.webp"
   ]
  },
@@ -3599,6 +3742,8 @@
    "Tömeg": "1,037 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/253535-35x35x3-mm-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/253535-35x35x3-mm-alu-zartszelveny-2.webp",
    "/termekkepek/253535-35x35x3-mm-alu-zartszelveny-1.webp"
   ]
  },
@@ -3614,6 +3759,8 @@
    "Tömeg": "2,295 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/253734-150x25x2-5-r2-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/253734-150x25x2-5-r2-alu-zartszelveny-2.webp",
    "/termekkepek/253734-150x25x2-5-r2-alu-zartszelveny-1.webp"
   ]
  },
@@ -3629,6 +3776,8 @@
    "Tömeg": "0,821 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/253812-50x30x2-r5-alu-zartszelveny-6000-mm-1.webp",
+   "/termekkepek/3d/253812-50x30x2-r5-alu-zartszelveny-6000-mm-2.webp",
    "/termekkepek/253812-50x30x2-r5-alu-zartszelveny-6000-mm-1.webp"
   ]
  },
@@ -3644,6 +3793,8 @@
    "Tömeg": "0,313 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/254020-40x20x2-alu-l-profil-1.webp",
+   "/termekkepek/3d/254020-40x20x2-alu-l-profil-2.webp",
    "/termekkepek/254020-40x20x2-alu-l-profil-1.webp"
   ]
  },
@@ -3658,6 +3809,8 @@
    "Tömeg": "0,205 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/254508-20x20x2-alu-l-profil-1.webp",
+   "/termekkepek/3d/254508-20x20x2-alu-l-profil-2.webp",
    "/termekkepek/254508-20x20x2-alu-l-profil-1.webp"
   ],
   "nevbolRajz": true
@@ -3675,6 +3828,8 @@
    "Tömeg": "2,025 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/254979-60x50x50x5-mm-u-profil-1.webp",
+   "/termekkepek/3d/254979-60x50x50x5-mm-u-profil-2.webp",
    "/termekkepek/254979-60x50x50x5-mm-u-profil-1.webp"
   ]
  },
@@ -3690,6 +3845,8 @@
    "Tömeg": "3,067 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/255004-100x50x4-mm-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/255004-100x50x4-mm-alu-zartszelveny-2.webp",
    "/termekkepek/255004-100x50x4-mm-alu-zartszelveny-1.webp"
   ]
  },
@@ -3705,6 +3862,8 @@
    "Tömeg": "1,013 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/255032-50x30x2-5-alu-zartszelveny-6000-mm-1.webp",
+   "/termekkepek/3d/255032-50x30x2-5-alu-zartszelveny-6000-mm-2.webp",
    "/termekkepek/255032-50x30x2-5-alu-zartszelveny-6000-mm-1.webp"
   ]
  },
@@ -3720,6 +3879,8 @@
    "Tömeg": "1,361 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/255070-60x30x3-mm-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/255070-60x30x3-mm-alu-zartszelveny-2.webp",
    "/termekkepek/255070-60x30x3-mm-alu-zartszelveny-1.webp"
   ]
  },
@@ -3735,6 +3896,8 @@
    "Tömeg": "1,847 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/255207-80x40x3-mm-r5-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/255207-80x40x3-mm-r5-alu-zartszelveny-2.webp",
    "/termekkepek/255207-80x40x3-mm-r5-alu-zartszelveny-1.webp"
   ]
  },
@@ -3750,6 +3913,8 @@
    "Tömeg": "1,199 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/255340-40x40x3-r2-mm-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/255340-40x40x3-r2-mm-alu-zartszelveny-2.webp",
    "/termekkepek/255340-40x40x3-r2-mm-alu-zartszelveny-1.webp"
   ]
  },
@@ -3765,6 +3930,8 @@
    "Tömeg": "4,147 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/255472-100x100x4-mm-r7-3-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/255472-100x100x4-mm-r7-3-alu-zartszelveny-2.webp",
    "/termekkepek/255472-100x100x4-mm-r7-3-alu-zartszelveny-1.webp"
   ]
  },
@@ -3780,6 +3947,8 @@
    "Tömeg": "3,283 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/255473-80x80x4-mm-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/255473-80x80x4-mm-alu-zartszelveny-2.webp",
    "/termekkepek/255473-80x80x4-mm-alu-zartszelveny-1.webp"
   ]
  },
@@ -3795,6 +3964,8 @@
    "Tömeg": "1,147 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/255610-60x30x2-5-r2-5-mm-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/255610-60x30x2-5-r2-5-mm-alu-zartszelveny-2.webp",
    "/termekkepek/255610-60x30x2-5-r2-5-mm-alu-zartszelveny-1.webp"
   ]
  },
@@ -3810,6 +3981,8 @@
    "Tömeg": "6,48 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/256076-160x90x5-mm-alu-zartszelvany-1.webp",
+   "/termekkepek/3d/256076-160x90x5-mm-alu-zartszelvany-2.webp",
    "/termekkepek/256076-160x90x5-mm-alu-zartszelvany-1.webp"
   ]
  },
@@ -3825,6 +3998,8 @@
    "Tömeg": "1,987 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/256468-60x40x4-mm-r4-2-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/256468-60x40x4-mm-r4-2-alu-zartszelveny-2.webp",
    "/termekkepek/256468-60x40x4-mm-r4-2-alu-zartszelveny-1.webp"
   ]
  },
@@ -3840,6 +4015,8 @@
    "Tömeg": "1,523 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/258352-50x50x3-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/258352-50x50x3-alu-zartszelveny-2.webp",
    "/termekkepek/258352-50x50x3-alu-zartszelveny-1.webp"
   ]
  },
@@ -3855,6 +4032,8 @@
    "Tömeg": "0,497 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/258354-25x25x2-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/258354-25x25x2-alu-zartszelveny-2.webp",
    "/termekkepek/258354-25x25x2-alu-zartszelveny-1.webp"
   ]
  },
@@ -3870,6 +4049,8 @@
    "Tömeg": "2,635 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/258418-80x50x4-mm-r3-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/258418-80x50x4-mm-r3-alu-zartszelveny-2.webp",
    "/termekkepek/258418-80x50x4-mm-r3-alu-zartszelveny-1.webp"
   ]
  },
@@ -3885,6 +4066,8 @@
    "Tömeg": "1,282 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/258455-60x40x2-5-r2-alu-zartszelveny-1.webp",
+   "/termekkepek/3d/258455-60x40x2-5-r2-alu-zartszelveny-2.webp",
    "/termekkepek/258455-60x40x2-5-r2-alu-zartszelveny-1.webp"
   ]
  },
@@ -3989,12 +4172,8 @@
  },
  "307155-alafutasgatlo-konzol-572-mm": {
   "source": "FTS",
-  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=268",
-  "matchedCode": "57700155",
-  "specs": {
-   "Tömeg": "1,500 kg",
-   "Kivitel": "tűzihorganyzott"
-  },
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf",
+  "specs": {},
   "images": [
    "/termekkepek/307155-alafutasgatlo-konzol-572-mm-1.webp",
    "/termekkepek/307155-alafutasgatlo-konzol-572-mm-2.webp"
@@ -4032,8 +4211,7 @@
  },
  "308155-th-alafutasgatlo-konzol-710-mm": {
   "source": "FTS",
-  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=268",
-  "matchedCode": "58800155",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf",
   "specs": {},
   "images": [
    "/termekkepek/308155-th-alafutasgatlo-konzol-710-mm-1.webp"
@@ -4213,33 +4391,24 @@
  },
  "351501-z-zar-ellendarab-csavarozhato": {
   "source": "FTS",
-  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=140",
-  "matchedCode": "35150100",
-  "specs": {
-   "Tömeg": "0,050 kg"
-  },
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf",
+  "specs": {},
   "images": [
    "/termekkepek/351501-z-zar-ellendarab-csavarozhato-1.webp"
   ]
  },
  "351502-z-zar-ellendarab-hegesztheto-nagy-30": {
   "source": "FTS",
-  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=140",
-  "matchedCode": "35150200",
-  "specs": {
-   "Tömeg": "0,030 kg"
-  },
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf",
+  "specs": {},
   "images": [
    "/termekkepek/351502-z-zar-ellendarab-hegesztheto-nagy-30-1.webp"
   ]
  },
  "351503-z-zar-ellendarab-hegesztheto-kicsi-20": {
   "source": "FTS",
-  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=144",
-  "matchedCode": "35150250",
-  "specs": {
-   "Tömeg": "0,025 kg"
-  },
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf",
+  "specs": {},
   "images": [
    "/termekkepek/351503-z-zar-ellendarab-hegesztheto-kicsi-20-1.webp"
   ]
@@ -4401,11 +4570,8 @@
  },
  "352202-egymasbazarodo-zar-ellendarab": {
   "source": "FTS",
-  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=139",
-  "matchedCode": "35220002",
-  "specs": {
-   "Tömeg": "0,060 kg"
-  },
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf",
+  "specs": {},
   "images": [
    "/termekkepek/352202-egymasbazarodo-zar-ellendarab-1.webp"
   ]
@@ -6533,6 +6699,8 @@
    "Tömeg": "2,333 kg/fm (elméleti)"
   },
   "images": [
+   "/termekkepek/3d/70605-d60x5-mm-huspalya-cso-elox-6000-mm-1.webp",
+   "/termekkepek/3d/70605-d60x5-mm-huspalya-cso-elox-6000-mm-2.webp",
    "/termekkepek/70605-d60x5-mm-huspalya-cso-elox-6000-mm-1.webp"
   ]
  },
@@ -7194,11 +7362,8 @@
  },
  "828010-nyers-zsaner-bak-csavar": {
   "source": "FTS",
-  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf#page=315",
-  "matchedCode": "80280100",
-  "specs": {
-   "Tömeg": "0,160 kg"
-  },
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf",
+  "specs": {},
   "images": [
    "/termekkepek/828010-nyers-zsaner-bak-csavar-1.webp"
   ]
@@ -8608,6 +8773,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-10x1000-soft-gumi-1.webp",
+   "/termekkepek/3d/g-10x1000-soft-gumi-2.webp",
    "/termekkepek/g-10x1000-soft-gumi-1.webp"
   ]
  },
@@ -8622,6 +8789,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-10x1000x2000-soft-gumi-lap-1.webp",
+   "/termekkepek/3d/g-10x1000x2000-soft-gumi-lap-2.webp",
    "/termekkepek/g-10x1000x2000-soft-gumi-lap-1.webp"
   ]
  },
@@ -8634,7 +8803,11 @@
    "Méret": "1400 × 1400 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/g-1400x1400-rampaszonyeg-1.webp",
+   "/termekkepek/3d/g-1400x1400-rampaszonyeg-2.webp",
+   "/termekkepek/g-1400x1400-rampaszonyeg-1.webp"
+  ]
  },
  "g-15x1000x2000-soft-gumi-lap": {
   "source": "Quadris adatok",
@@ -8647,6 +8820,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-15x1000x2000-soft-gumi-lap-1.webp",
+   "/termekkepek/3d/g-15x1000x2000-soft-gumi-lap-2.webp",
    "/termekkepek/g-15x1000x2000-soft-gumi-lap-1.webp"
   ]
  },
@@ -8659,7 +8834,11 @@
    "Méret": "1600 × 1400 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/g-1600x1400-mm-rampaszonyeg-1.webp",
+   "/termekkepek/3d/g-1600x1400-mm-rampaszonyeg-2.webp",
+   "/termekkepek/g-1600x1400-mm-rampaszonyeg-1.webp"
+  ]
  },
  "g-17-1750x1550-mm-rampaszonyeg": {
   "source": "Quadris adatok",
@@ -8672,6 +8851,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-17-1750x1550-mm-rampaszonyeg-1.webp",
+   "/termekkepek/3d/g-17-1750x1550-mm-rampaszonyeg-2.webp",
    "/termekkepek/g-17-1750x1550-mm-rampaszonyeg-1.webp"
   ]
  },
@@ -8684,7 +8865,11 @@
    "Méret": "1750 × 1540 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/g-1750x1540-mm-rampaszonyeg-1.webp",
+   "/termekkepek/3d/g-1750x1540-mm-rampaszonyeg-2.webp",
+   "/termekkepek/g-1750x1540-mm-rampaszonyeg-1.webp"
+  ]
  },
  "g-1750x1550-mm-rampaszonyeg": {
   "source": "Quadris adatok",
@@ -8695,7 +8880,11 @@
    "Méret": "1750 × 1550 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/g-1750x1550-mm-rampaszonyeg-1.webp",
+   "/termekkepek/3d/g-1750x1550-mm-rampaszonyeg-2.webp",
+   "/termekkepek/g-1750x1550-mm-rampaszonyeg-1.webp"
+  ]
  },
  "g-17x1830x1220-mm-istallo-szonyeg": {
   "source": "Quadris adatok",
@@ -8708,6 +8897,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-17x1830x1220-mm-istallo-szonyeg-1.webp",
+   "/termekkepek/3d/g-17x1830x1220-mm-istallo-szonyeg-2.webp",
    "/termekkepek/g-17x1830x1220-mm-istallo-szonyeg-1.webp"
   ]
  },
@@ -8722,6 +8913,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-17x900x1200-mm-istallo-szonyeg-1.webp",
+   "/termekkepek/3d/g-17x900x1200-mm-istallo-szonyeg-2.webp",
    "/termekkepek/g-17x900x1200-mm-istallo-szonyeg-1.webp"
   ]
  },
@@ -8734,7 +8927,11 @@
    "Méret": "1800 × 1400 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/g-1800x1400-rampaszonyeg-1.webp",
+   "/termekkepek/3d/g-1800x1400-rampaszonyeg-2.webp",
+   "/termekkepek/g-1800x1400-rampaszonyeg-1.webp"
+  ]
  },
  "g-1800x1600-rampaszonyeg": {
   "source": "Quadris adatok",
@@ -8745,7 +8942,11 @@
    "Méret": "1800 × 1600 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/g-1800x1600-rampaszonyeg-1.webp",
+   "/termekkepek/3d/g-1800x1600-rampaszonyeg-2.webp",
+   "/termekkepek/g-1800x1600-rampaszonyeg-1.webp"
+  ]
  },
  "g-2000x1400-mm-rampaszonyeg": {
   "source": "Quadris adatok",
@@ -8756,7 +8957,11 @@
    "Méret": "2000 × 1400 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/g-2000x1400-mm-rampaszonyeg-1.webp",
+   "/termekkepek/3d/g-2000x1400-mm-rampaszonyeg-2.webp",
+   "/termekkepek/g-2000x1400-mm-rampaszonyeg-1.webp"
+  ]
  },
  "g-2000x1600-mm-rampaszonyeg": {
   "source": "Quadris adatok",
@@ -8767,7 +8972,11 @@
    "Méret": "2000 × 1600 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/g-2000x1600-mm-rampaszonyeg-1.webp",
+   "/termekkepek/3d/g-2000x1600-mm-rampaszonyeg-2.webp",
+   "/termekkepek/g-2000x1600-mm-rampaszonyeg-1.webp"
+  ]
  },
  "g-2200x1400-rampaszonyeg": {
   "source": "Quadris adatok",
@@ -8778,7 +8987,11 @@
    "Méret": "2200 × 1400 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/g-2200x1400-rampaszonyeg-1.webp",
+   "/termekkepek/3d/g-2200x1400-rampaszonyeg-2.webp",
+   "/termekkepek/g-2200x1400-rampaszonyeg-1.webp"
+  ]
  },
  "g-2400x1400-rampaszonyeg": {
   "source": "Quadris adatok",
@@ -8789,7 +9002,11 @@
    "Méret": "2400 × 1400 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/g-2400x1400-rampaszonyeg-1.webp",
+   "/termekkepek/3d/g-2400x1400-rampaszonyeg-2.webp",
+   "/termekkepek/g-2400x1400-rampaszonyeg-1.webp"
+  ]
  },
  "g-2400x2000-rampaszonyeg": {
   "source": "Quadris adatok",
@@ -8800,7 +9017,11 @@
    "Méret": "2400 × 2000 mm",
    "Anyag": "gumi"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/g-2400x2000-rampaszonyeg-1.webp",
+   "/termekkepek/3d/g-2400x2000-rampaszonyeg-2.webp",
+   "/termekkepek/g-2400x2000-rampaszonyeg-1.webp"
+  ]
  },
  "g-27-2400x1200-rampaszonyeg": {
   "source": "Quadris adatok",
@@ -8813,6 +9034,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-27-2400x1200-rampaszonyeg-1.webp",
+   "/termekkepek/3d/g-27-2400x1200-rampaszonyeg-2.webp",
    "/termekkepek/g-27-2400x1200-rampaszonyeg-1.webp"
   ]
  },
@@ -8828,6 +9051,8 @@
    "Anyag": "víztiszta PVC"
   },
   "images": [
+   "/termekkepek/3d/g-3x1000-mm-pvc-attlatszo-viztiszta-l-20-m-1.webp",
+   "/termekkepek/3d/g-3x1000-mm-pvc-attlatszo-viztiszta-l-20-m-2.webp",
    "/termekkepek/g-3x1000-mm-pvc-attlatszo-viztiszta-l-20-m-1.webp"
   ]
  },
@@ -8842,6 +9067,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-3x1200x10000-mm-amoeba-gumiszonyeg-1.webp",
+   "/termekkepek/3d/g-3x1200x10000-mm-amoeba-gumiszonyeg-2.webp",
    "/termekkepek/g-3x1200x10000-mm-amoeba-gumiszonyeg-1.webp"
   ]
  },
@@ -8856,6 +9083,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-3x1500x10000-mm-amoeba-gumiszonyeg-1.webp",
+   "/termekkepek/3d/g-3x1500x10000-mm-amoeba-gumiszonyeg-2.webp",
    "/termekkepek/g-3x1500x10000-mm-amoeba-gumiszonyeg-1.webp"
   ]
  },
@@ -8870,6 +9099,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-3x2200x10000-mm-diamond-mintas-gumi-1.webp",
+   "/termekkepek/3d/g-3x2200x10000-mm-diamond-mintas-gumi-2.webp",
    "/termekkepek/g-3x2200x10000-mm-diamond-mintas-gumi-1.webp"
   ]
  },
@@ -8885,6 +9116,8 @@
    "Anyag": "víztiszta PVC"
   },
   "images": [
+   "/termekkepek/3d/g-4x1000-mm-pvc-attlatszo-viztiszta-l-20-m-1.webp",
+   "/termekkepek/3d/g-4x1000-mm-pvc-attlatszo-viztiszta-l-20-m-2.webp",
    "/termekkepek/g-4x1000-mm-pvc-attlatszo-viztiszta-l-20-m-1.webp"
   ]
  },
@@ -8899,6 +9132,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-4x1200x10000-2t-s-s-altalanos-gumiszonyeg-1.webp",
+   "/termekkepek/3d/g-4x1200x10000-2t-s-s-altalanos-gumiszonyeg-2.webp",
    "/termekkepek/g-4x1200x10000-2t-s-s-altalanos-gumiszonyeg-1.webp"
   ]
  },
@@ -8913,6 +9148,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-4x1200x10000-noppos-gumiszonyeg-1.webp",
+   "/termekkepek/3d/g-4x1200x10000-noppos-gumiszonyeg-2.webp",
    "/termekkepek/g-4x1200x10000-noppos-gumiszonyeg-1.webp"
   ]
  },
@@ -8927,6 +9164,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-4x1200x10000-vidar-coin-noppos-gumiszonyeg-1.webp",
+   "/termekkepek/3d/g-4x1200x10000-vidar-coin-noppos-gumiszonyeg-2.webp",
    "/termekkepek/g-4x1200x10000-vidar-coin-noppos-gumiszonyeg-1.webp"
   ]
  },
@@ -8941,6 +9180,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-4x1400x10000-2t-s-s-altalanos-gumiszonyeg-1.webp",
+   "/termekkepek/3d/g-4x1400x10000-2t-s-s-altalanos-gumiszonyeg-2.webp",
    "/termekkepek/g-4x1400x10000-2t-s-s-altalanos-gumiszonyeg-1.webp"
   ]
  },
@@ -8955,6 +9196,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-4x1400x10000-s-s-altalanos-gumiszonyeg-1.webp",
+   "/termekkepek/3d/g-4x1400x10000-s-s-altalanos-gumiszonyeg-2.webp",
    "/termekkepek/g-4x1400x10000-s-s-altalanos-gumiszonyeg-1.webp"
   ]
  },
@@ -8969,6 +9212,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-4x1800-mm-istallo-szonyeg-1.webp",
+   "/termekkepek/3d/g-4x1800-mm-istallo-szonyeg-2.webp",
    "/termekkepek/g-4x1800-mm-istallo-szonyeg-1.webp"
   ]
  },
@@ -8983,6 +9228,8 @@
    "Anyag": "gumi, 2 rétegű nylon betéttel"
   },
   "images": [
+   "/termekkepek/3d/g-4x2000mm-cbr-szonyeg-2-nylon-1.webp",
+   "/termekkepek/3d/g-4x2000mm-cbr-szonyeg-2-nylon-2.webp",
    "/termekkepek/g-4x2000mm-cbr-szonyeg-2-nylon-1.webp"
   ]
  },
@@ -8998,6 +9245,8 @@
    "Anyag": "víztiszta PVC"
   },
   "images": [
+   "/termekkepek/3d/g-5x1000-mm-pvc-attlatszo-viztiszta-l-20-m-1.webp",
+   "/termekkepek/3d/g-5x1000-mm-pvc-attlatszo-viztiszta-l-20-m-2.webp",
    "/termekkepek/g-5x1000-mm-pvc-attlatszo-viztiszta-l-20-m-1.webp"
   ]
  },
@@ -9013,6 +9262,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-5x1400x10m-2t-s-s-altalanos-gumi-1.webp",
+   "/termekkepek/3d/g-5x1400x10m-2t-s-s-altalanos-gumi-2.webp",
    "/termekkepek/g-5x1400x10m-2t-s-s-altalanos-gumi-1.webp"
   ]
  },
@@ -9027,6 +9278,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-5x2000-mm-istallo-szonyeg-1.webp",
+   "/termekkepek/3d/g-5x2000-mm-istallo-szonyeg-2.webp",
    "/termekkepek/g-5x2000-mm-istallo-szonyeg-1.webp"
   ]
  },
@@ -9041,6 +9294,8 @@
    "Anyag": "gumi, 2 rétegű nylon betéttel"
   },
   "images": [
+   "/termekkepek/3d/g-6x1450mm-cobra-szonyeg-2-nylon-1.webp",
+   "/termekkepek/3d/g-6x1450mm-cobra-szonyeg-2-nylon-2.webp",
    "/termekkepek/g-6x1450mm-cobra-szonyeg-2-nylon-1.webp"
   ]
  },
@@ -9056,6 +9311,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-6x1650-mm-istallo-szonyeg-l-10-m-rs-1.webp",
+   "/termekkepek/3d/g-6x1650-mm-istallo-szonyeg-l-10-m-rs-2.webp",
    "/termekkepek/g-6x1650-mm-istallo-szonyeg-l-10-m-rs-1.webp"
   ]
  },
@@ -9070,6 +9327,8 @@
    "Anyag": "gumi, 2 rétegű nylon betéttel"
   },
   "images": [
+   "/termekkepek/3d/g-6x2000mm-cobra-szonyeg-2-nylon-1.webp",
+   "/termekkepek/3d/g-6x2000mm-cobra-szonyeg-2-nylon-2.webp",
    "/termekkepek/g-6x2000mm-cobra-szonyeg-2-nylon-1.webp"
   ]
  },
@@ -9084,6 +9343,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-6x2000mm-istallo-szonyeg-1.webp",
+   "/termekkepek/3d/g-6x2000mm-istallo-szonyeg-2.webp",
    "/termekkepek/g-6x2000mm-istallo-szonyeg-1.webp"
   ]
  },
@@ -9099,6 +9360,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-6x2000mm-istallo-szonyeg-l-10-m-rs-1.webp",
+   "/termekkepek/3d/g-6x2000mm-istallo-szonyeg-l-10-m-rs-2.webp",
    "/termekkepek/g-6x2000mm-istallo-szonyeg-l-10-m-rs-1.webp"
   ]
  },
@@ -9113,6 +9376,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-8x1000-soft-gumi-1.webp",
+   "/termekkepek/3d/g-8x1000-soft-gumi-2.webp",
    "/termekkepek/g-8x1000-soft-gumi-1.webp"
   ]
  },
@@ -9127,6 +9392,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-8x1000x2000-soft-gumi-lap-1.webp",
+   "/termekkepek/3d/g-8x1000x2000-soft-gumi-lap-2.webp",
    "/termekkepek/g-8x1000x2000-soft-gumi-lap-1.webp"
   ]
  },
@@ -9141,6 +9408,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-8x1650-istallo-szonyeg-1.webp",
+   "/termekkepek/3d/g-8x1650-istallo-szonyeg-2.webp",
    "/termekkepek/g-8x1650-istallo-szonyeg-1.webp"
   ]
  },
@@ -9155,6 +9424,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-8x2000-istallo-szonyeg-1.webp",
+   "/termekkepek/3d/g-8x2000-istallo-szonyeg-2.webp",
    "/termekkepek/g-8x2000-istallo-szonyeg-1.webp"
   ]
  },
@@ -9170,6 +9441,8 @@
    "Anyag": "gumi"
   },
   "images": [
+   "/termekkepek/3d/g-8x2000-istallo-szonyeg-l-10-m-rs-1.webp",
+   "/termekkepek/3d/g-8x2000-istallo-szonyeg-l-10-m-rs-2.webp",
    "/termekkepek/g-8x2000-istallo-szonyeg-l-10-m-rs-1.webp"
   ]
  },
@@ -9184,6 +9457,8 @@
    "Anyag": "gumi, 1 rétegű nylon betéttel"
   },
   "images": [
+   "/termekkepek/3d/g-8x2000mm-cobra-szonyeg-1-nylon-1.webp",
+   "/termekkepek/3d/g-8x2000mm-cobra-szonyeg-1-nylon-2.webp",
    "/termekkepek/g-8x2000mm-cobra-szonyeg-1-nylon-1.webp"
   ]
  },
@@ -9907,6 +10182,168 @@
    "/termekkepek/j47-ives-sarvedo-670-2110-690-3.webp"
   ]
  },
+ "j50001-ives-sarvedo-1380-880-400": {
+  "source": "BMC Flexpar",
+  "sourceUrl": "https://www.bmcflexpar.com/flex-par-c-2/",
+  "sourceTitle": "PM400.000",
+  "matchedCode": "PM400.000",
+  "description": "Egytengelyes sárvédő fröccsöntött kopolimer polipropilénből: sima felület, magas és alacsony hőmérsékleten is ellenálló, vegyszer- és gázolajálló, UV-stabilizált. Kis tömege egyszerűsíti a szállítást és a szerelést.",
+  "specs": {
+   "Szélesség (B)": "400 mm",
+   "Ívhossz (L)": "1380 mm",
+   "Húr (S)": "880 mm (±50 mm)",
+   "Anyag": "kopolimer polipropilén (PP)",
+   "Szín": "matt fekete",
+   "Tömeg": "1,826 kg"
+  },
+  "images": [
+   "/termekkepek/j50001-ives-sarvedo-1380-880-400-1.webp"
+  ]
+ },
+ "j50002-b-ives-sarvedo-feher-csikkal-1380-880-450": {
+  "source": "BMC Flexpar",
+  "sourceUrl": "https://www.bmcflexpar.com/flex-par-c-white-line/",
+  "sourceTitle": "PM450.130",
+  "matchedCode": "PM450.130",
+  "description": "Egytengelyes sárvédő fröccsöntött kopolimer polipropilénből: sima felület, magas és alacsony hőmérsékleten is ellenálló, vegyszer- és gázolajálló, UV-stabilizált. Kis tömege egyszerűsíti a szállítást és a szerelést. Elegáns fehér szegéllyel.",
+  "specs": {
+   "Szélesség (B)": "450 mm",
+   "Ívhossz (L)": "1380 mm",
+   "Húr (S)": "880 mm (±50 mm)",
+   "Anyag": "kopolimer polipropilén (PP)",
+   "Szín": "matt fekete, fehér szegéllyel",
+   "Tömeg": "2,032 kg"
+  },
+  "images": [
+   "/termekkepek/j50002-b-ives-sarvedo-feher-csikkal-1380-880-450-1.webp"
+  ]
+ },
+ "j50002-ives-sarvedo-1380-880-450": {
+  "source": "BMC Flexpar",
+  "sourceUrl": "https://www.bmcflexpar.com/flex-par-c-2/",
+  "sourceTitle": "PM450.030",
+  "matchedCode": "PM450.030",
+  "description": "Egytengelyes sárvédő fröccsöntött kopolimer polipropilénből: sima felület, magas és alacsony hőmérsékleten is ellenálló, vegyszer- és gázolajálló, UV-stabilizált. Kis tömege egyszerűsíti a szállítást és a szerelést.",
+  "specs": {
+   "Szélesség (B)": "450 mm",
+   "Ívhossz (L)": "1380 mm",
+   "Húr (S)": "880 mm (±50 mm)",
+   "Anyag": "kopolimer polipropilén (PP)",
+   "Szín": "matt fekete",
+   "Tömeg": "2,032 kg"
+  },
+  "images": [
+   "/termekkepek/j50002-ives-sarvedo-1380-880-450-1.webp"
+  ]
+ },
+ "j50003-b-ives-sarvedo-feher-csikkal-1380-880-270": {
+  "source": "BMC Flexpar",
+  "sourceUrl": "https://www.bmcflexpar.com/flex-par-c-white-line/",
+  "sourceTitle": "PM270.100",
+  "matchedCode": "PM270.100",
+  "description": "Egytengelyes sárvédő fröccsöntött kopolimer polipropilénből: sima felület, magas és alacsony hőmérsékleten is ellenálló, vegyszer- és gázolajálló, UV-stabilizált. Kis tömege egyszerűsíti a szállítást és a szerelést. Elegáns fehér szegéllyel.",
+  "specs": {
+   "Szélesség (B)": "270 mm",
+   "Ívhossz (L)": "1380 mm",
+   "Húr (S)": "880 mm (±50 mm)",
+   "Anyag": "kopolimer polipropilén (PP)",
+   "Szín": "matt fekete, fehér szegéllyel",
+   "Tömeg": "1,268 kg"
+  },
+  "images": [
+   "/termekkepek/j50003-b-ives-sarvedo-feher-csikkal-1380-880-270-1.webp"
+  ]
+ },
+ "j50003-ives-sarvedo-1380-880-270": {
+  "source": "BMC Flexpar",
+  "sourceUrl": "https://www.bmcflexpar.com/flex-par-c-2/",
+  "sourceTitle": "PM270.000",
+  "matchedCode": "PM270.000",
+  "description": "Egytengelyes sárvédő fröccsöntött kopolimer polipropilénből: sima felület, magas és alacsony hőmérsékleten is ellenálló, vegyszer- és gázolajálló, UV-stabilizált. Kis tömege egyszerűsíti a szállítást és a szerelést.",
+  "specs": {
+   "Szélesség (B)": "270 mm",
+   "Ívhossz (L)": "1380 mm",
+   "Húr (S)": "880 mm (±50 mm)",
+   "Anyag": "kopolimer polipropilén (PP)",
+   "Szín": "matt fekete",
+   "Tömeg": "1,268 kg"
+  },
+  "images": [
+   "/termekkepek/j50003-ives-sarvedo-1380-880-270-1.webp"
+  ]
+ },
+ "j50019-450ft-csapott-teteju-sarvedo": {
+  "source": "BMC Flexpar",
+  "sourceUrl": "https://www.bmcflexpar.com/flex-par-ft/",
+  "sourceTitle": "PM450.020",
+  "matchedCode": "PM450.020",
+  "description": "Lapos tetejű sárvédő fröccsöntött kopolimer polipropilénből: sima felület, magas és alacsony hőmérsékleten is ellenálló, vegyszer- és gázolajálló, UV-stabilizált. Kis tömege egyszerűsíti a szállítást és a szerelést.",
+  "specs": {
+   "Szélesség (B)": "450 mm",
+   "Ívhossz (L)": "1450 mm",
+   "Húr (S)": "900 mm (±50 mm)",
+   "Anyag": "kopolimer polipropilén (PP)",
+   "Szín": "matt fekete",
+   "Tömeg": "2,480 kg"
+  },
+  "images": [
+   "/termekkepek/j50019-450ft-csapott-teteju-sarvedo-1.webp"
+  ]
+ },
+ "j50019-b-450ft-csapott-teteju-sarvedo-feher-csikkal": {
+  "source": "BMC Flexpar",
+  "sourceUrl": "https://www.bmcflexpar.com/flex-par-ft/",
+  "sourceTitle": "PM450.120",
+  "matchedCode": "PM450.120",
+  "description": "Lapos tetejű sárvédő fröccsöntött kopolimer polipropilénből: sima felület, magas és alacsony hőmérsékleten is ellenálló, vegyszer- és gázolajálló, UV-stabilizált. Kis tömege egyszerűsíti a szállítást és a szerelést. Fehér szegéllyel.",
+  "specs": {
+   "Szélesség (B)": "450 mm",
+   "Ívhossz (L)": "1450 mm",
+   "Húr (S)": "900 mm (±50 mm)",
+   "Anyag": "kopolimer polipropilén (PP)",
+   "Szín": "matt fekete, fehér szegéllyel",
+   "Tömeg": "2,480 kg"
+  },
+  "images": [
+   "/termekkepek/j50019-b-450ft-csapott-teteju-sarvedo-feher-csikkal-1.webp"
+  ]
+ },
+ "j50027-280ft-csapott-teteju-sarvedo": {
+  "source": "BMC Flexpar",
+  "sourceUrl": "https://www.bmcflexpar.com/flex-par-ft/",
+  "sourceTitle": "PM280.000",
+  "matchedCode": "PM280.000",
+  "description": "Lapos tetejű sárvédő fröccsöntött kopolimer polipropilénből: sima felület, magas és alacsony hőmérsékleten is ellenálló, vegyszer- és gázolajálló, UV-stabilizált. Kis tömege egyszerűsíti a szállítást és a szerelést.",
+  "specs": {
+   "Szélesség (B)": "280 mm",
+   "Ívhossz (L)": "1450 mm",
+   "Húr (S)": "900 mm (±50 mm)",
+   "Anyag": "kopolimer polipropilén (PP)",
+   "Szín": "matt fekete",
+   "Tömeg": "1,510 kg"
+  },
+  "images": [
+   "/termekkepek/j50027-280ft-csapott-teteju-sarvedo-1.webp"
+  ]
+ },
+ "j50027-b-280ft-csapott-teteju-sarvedo-feher-csikkal": {
+  "source": "BMC Flexpar",
+  "sourceUrl": "https://www.bmcflexpar.com/flex-par-ft/",
+  "sourceTitle": "PM280.100",
+  "matchedCode": "PM280.100",
+  "description": "Lapos tetejű sárvédő fröccsöntött kopolimer polipropilénből: sima felület, magas és alacsony hőmérsékleten is ellenálló, vegyszer- és gázolajálló, UV-stabilizált. Kis tömege egyszerűsíti a szállítást és a szerelést. Fehér szegéllyel.",
+  "specs": {
+   "Szélesség (B)": "280 mm",
+   "Ívhossz (L)": "1450 mm",
+   "Húr (S)": "900 mm (±50 mm)",
+   "Anyag": "kopolimer polipropilén (PP)",
+   "Szín": "matt fekete, fehér szegéllyel",
+   "Tömeg": "1,510 kg"
+  },
+  "images": [
+   "/termekkepek/j50027-b-280ft-csapott-teteju-sarvedo-feher-csikkal-1.webp"
+  ]
+ },
  "j5025135p-sarvedo-450ft": {
   "source": "PARLOK",
   "sourceUrl": "https://www.parlok.com/products/commercial-vehicles/mudguards/flat-top",
@@ -9952,6 +10389,22 @@
   "specs": {},
   "images": [
    "/termekkepek/j5039700p-42-es-muanyag-csotarto-1.webp"
+  ]
+ },
+ "j504335-szerszamos-lada-500x430x350-mm": {
+  "source": "BMC Flexpar",
+  "sourceUrl": "https://www.bmcflexpar.com/toolbox-evolution/",
+  "sourceTitle": "PT500.100",
+  "matchedCode": "PT500.100",
+  "description": "Szerszámosláda fröccsöntött kopolimer polipropilénből: rezgésálló fogantyú kettős zárással, kulccsal és porvédő sapkával; körbefutó fedél és vízzáró tömítés, megerősített zsanér, hidegben is nagy mechanikai szilárdság, UV-stabilizált.",
+  "specs": {
+   "Méret (H × M × Ma)": "500 × 430 × 350 mm",
+   "Anyag": "kopolimer polipropilén (PP)",
+   "Szín": "matt fekete",
+   "Tömeg": "3,580 kg"
+  },
+  "images": [
+   "/termekkepek/j504335-szerszamos-lada-500x430x350-mm-1.webp"
   ]
  },
  "j5043500p-szerszamos-lada-550-mm": {
@@ -10532,6 +10985,22 @@
    "/termekkepek/j601811-zn-42-es-sarvedotarto-cso-800-mm-2.webp"
   ]
  },
+ "j605040-szerszamos-lada-600x500x400-mm": {
+  "source": "BMC Flexpar",
+  "sourceUrl": "https://www.bmcflexpar.com/toolbox-evolution/",
+  "sourceTitle": "PT600.100",
+  "matchedCode": "PT600.100",
+  "description": "Szerszámosláda fröccsöntött kopolimer polipropilénből: rezgésálló fogantyú kettős zárással, kulccsal és porvédő sapkával; körbefutó fedél és vízzáró tömítés, megerősített zsanér, hidegben is nagy mechanikai szilárdság, UV-stabilizált.",
+  "specs": {
+   "Méret (H × M × Ma)": "600 × 500 × 400 mm",
+   "Anyag": "kopolimer polipropilén (PP)",
+   "Szín": "matt fekete",
+   "Tömeg": "6,080 kg"
+  },
+  "images": [
+   "/termekkepek/j605040-szerszamos-lada-600x500x400-mm-1.webp"
+  ]
+ },
  "j608031-th-42-es-sarvedotarto-cso-750-mm-3p": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/521/",
@@ -10593,6 +11062,22 @@
    "/termekkepek/j6540-sarfogo-lap-650x400-1.webp",
    "/termekkepek/j6540-sarfogo-lap-650x400-2.webp",
    "/termekkepek/j6540-sarfogo-lap-650x400-3.webp"
+  ]
+ },
+ "j804550-szerszamos-lada-800x450x500-mm": {
+  "source": "BMC Flexpar",
+  "sourceUrl": "https://www.bmcflexpar.com/toolbox-pioneer/",
+  "sourceTitle": "PT800.000",
+  "matchedCode": "PT800.000",
+  "description": "Szerszámosláda fröccsöntött kopolimer polipropilénből, több ponton záródó fogantyúval; körbefutó fedél és vízzáró tömítés, megerősített zsanér, UV-stabilizált. Megfelel az ECE R73.01 oldalvédelmi előírásnak.",
+  "specs": {
+   "Méret (H × M × Ma)": "800 × 450 × 500 mm",
+   "Anyag": "kopolimer polipropilén (PP)",
+   "Szín": "matt fekete",
+   "Tömeg": "8,000 kg"
+  },
+  "images": [
+   "/termekkepek/j804550-szerszamos-lada-800x450x500-mm-1.webp"
   ]
  },
  "jbx100-szerszamos-lada": {
@@ -10940,6 +11425,8 @@
    "Felület": "natúr (bevonat nélkül)"
   },
   "images": [
+   "/termekkepek/3d/l-12x1250x2500-mm-natur-retegelt-lemez-1.webp",
+   "/termekkepek/3d/l-12x1250x2500-mm-natur-retegelt-lemez-2.webp",
    "/termekkepek/l-12x1250x2500-mm-natur-retegelt-lemez-1.webp"
   ]
  },
@@ -10955,6 +11442,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-12x1250x2500-mm-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-12x1250x2500-mm-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-12x1250x2500-mm-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -10970,6 +11459,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-12x1500x2500-mm-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-12x1500x2500-mm-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-12x1500x2500-mm-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -10985,6 +11476,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-12x1500x3000-mm-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-12x1500x3000-mm-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-12x1500x3000-mm-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11000,6 +11493,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-15x1250x2200-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-15x1250x2200-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-15x1250x2200-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11015,6 +11510,8 @@
    "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
   },
   "images": [
+   "/termekkepek/3d/l-15x1250x2200-retegelt-lemez-fenolos-hexa-1.webp",
+   "/termekkepek/3d/l-15x1250x2200-retegelt-lemez-fenolos-hexa-2.webp",
    "/termekkepek/l-15x1250x2200-retegelt-lemez-fenolos-hexa-1.webp"
   ]
  },
@@ -11030,6 +11527,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-15x1250x2500-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-15x1250x2500-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-15x1250x2500-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11045,6 +11544,8 @@
    "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
   },
   "images": [
+   "/termekkepek/3d/l-15x1250x2500-retegelt-lemez-fenolos-hexa-1.webp",
+   "/termekkepek/3d/l-15x1250x2500-retegelt-lemez-fenolos-hexa-2.webp",
    "/termekkepek/l-15x1250x2500-retegelt-lemez-fenolos-hexa-1.webp"
   ]
  },
@@ -11060,6 +11561,8 @@
    "Felület": "natúr (bevonat nélkül)"
   },
   "images": [
+   "/termekkepek/3d/l-15x1250x2500-retegelt-lemez-natur-1.webp",
+   "/termekkepek/3d/l-15x1250x2500-retegelt-lemez-natur-2.webp",
    "/termekkepek/l-15x1250x2500-retegelt-lemez-natur-1.webp"
   ]
  },
@@ -11075,6 +11578,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-15x1500x2500-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-15x1500x2500-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-15x1500x2500-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11090,6 +11595,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-15x1500x3000-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-15x1500x3000-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-15x1500x3000-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11105,6 +11612,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-15x2130x1250-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-15x2130x1250-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-15x2130x1250-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11120,6 +11629,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-15x2150x4000-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-15x2150x4000-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-15x2150x4000-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11135,6 +11646,8 @@
    "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
   },
   "images": [
+   "/termekkepek/3d/l-18x1250x2200-retegelt-lemez-fenolos-hexa-1.webp",
+   "/termekkepek/3d/l-18x1250x2200-retegelt-lemez-fenolos-hexa-2.webp",
    "/termekkepek/l-18x1250x2200-retegelt-lemez-fenolos-hexa-1.webp"
   ]
  },
@@ -11150,6 +11663,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-18x1250x2500-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-18x1250x2500-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-18x1250x2500-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11165,6 +11680,8 @@
    "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
   },
   "images": [
+   "/termekkepek/3d/l-18x1250x2500-retegelt-lemez-fenolos-hexa-1.webp",
+   "/termekkepek/3d/l-18x1250x2500-retegelt-lemez-fenolos-hexa-2.webp",
    "/termekkepek/l-18x1250x2500-retegelt-lemez-fenolos-hexa-1.webp"
   ]
  },
@@ -11180,6 +11697,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-18x1500x2500-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-18x1500x2500-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-18x1500x2500-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11195,6 +11714,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-18x1500x3000-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-18x1500x3000-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-18x1500x3000-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11210,6 +11731,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-21x1250x2500-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-21x1250x2500-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-21x1250x2500-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11225,6 +11748,8 @@
    "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
   },
   "images": [
+   "/termekkepek/3d/l-21x1250x2500-retegelt-lemez-fenolos-hexa-1.webp",
+   "/termekkepek/3d/l-21x1250x2500-retegelt-lemez-fenolos-hexa-2.webp",
    "/termekkepek/l-21x1250x2500-retegelt-lemez-fenolos-hexa-1.webp"
   ]
  },
@@ -11240,6 +11765,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-21x1500x2500-mm-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-21x1500x2500-mm-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-21x1500x2500-mm-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11255,6 +11782,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-21x1500x3000-mm-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-21x1500x3000-mm-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-21x1500x3000-mm-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11270,6 +11799,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-24x1250x2500-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-24x1250x2500-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-24x1250x2500-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11285,6 +11816,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-24x1500x2500-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-24x1500x2500-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-24x1500x2500-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11300,6 +11833,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-27x1250x2500-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-27x1250x2500-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-27x1250x2500-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11315,6 +11850,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-27x1500x2500-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-27x1500x2500-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-27x1500x2500-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11330,6 +11867,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-30x1250x2500-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-30x1250x2500-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-30x1250x2500-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11345,6 +11884,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-30x1500x2500-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-30x1500x2500-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-30x1500x2500-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11360,6 +11901,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-4x1250x2500-mm-film-film-retegelt-lemez-1.webp",
+   "/termekkepek/3d/l-4x1250x2500-mm-film-film-retegelt-lemez-2.webp",
    "/termekkepek/l-4x1250x2500-mm-film-film-retegelt-lemez-1.webp"
   ]
  },
@@ -11375,6 +11918,8 @@
    "Felület": "natúr (bevonat nélkül)"
   },
   "images": [
+   "/termekkepek/3d/l-6-5x1250x2500-mm-natur-retegelt-lemez-1.webp",
+   "/termekkepek/3d/l-6-5x1250x2500-mm-natur-retegelt-lemez-2.webp",
    "/termekkepek/l-6-5x1250x2500-mm-natur-retegelt-lemez-1.webp"
   ]
  },
@@ -11390,6 +11935,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-6-5x1250x2500-mm-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-6-5x1250x2500-mm-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-6-5x1250x2500-mm-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11405,6 +11952,8 @@
    "Felület": "natúr (bevonat nélkül)"
   },
   "images": [
+   "/termekkepek/3d/l-6-5x1500x3000-mm-natur-retegelt-lemez-1.webp",
+   "/termekkepek/3d/l-6-5x1500x3000-mm-natur-retegelt-lemez-2.webp",
    "/termekkepek/l-6-5x1500x3000-mm-natur-retegelt-lemez-1.webp"
   ]
  },
@@ -11420,6 +11969,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-6-5x1500x3000-mm-retegelt-lemez-fenol-bevonattal-1.webp",
+   "/termekkepek/3d/l-6-5x1500x3000-mm-retegelt-lemez-fenol-bevonattal-2.webp",
    "/termekkepek/l-6-5x1500x3000-mm-retegelt-lemez-fenol-bevonattal-1.webp"
   ]
  },
@@ -11435,6 +11986,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-9x1250x2500-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-9x1250x2500-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-9x1250x2500-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11450,6 +12003,8 @@
    "Felület": "natúr (bevonat nélkül)"
   },
   "images": [
+   "/termekkepek/3d/l-9x1250x2500mm-natur-retegelt-lemez-1.webp",
+   "/termekkepek/3d/l-9x1250x2500mm-natur-retegelt-lemez-2.webp",
    "/termekkepek/l-9x1250x2500mm-natur-retegelt-lemez-1.webp"
   ]
  },
@@ -11465,6 +12020,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-9x1500x2500-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-9x1500x2500-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-9x1500x2500-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11480,6 +12037,8 @@
    "Felület": "fenolfilm bevonatos"
   },
   "images": [
+   "/termekkepek/3d/l-9x1500x3000-retegelt-lemez-fenolos-1.webp",
+   "/termekkepek/3d/l-9x1500x3000-retegelt-lemez-fenolos-2.webp",
    "/termekkepek/l-9x1500x3000-retegelt-lemez-fenolos-1.webp"
   ]
  },
@@ -11494,6 +12053,8 @@
    "Anyag": "MDF lap"
   },
   "images": [
+   "/termekkepek/3d/l-mdf-6x2800x2070-mm-1.webp",
+   "/termekkepek/3d/l-mdf-6x2800x2070-mm-2.webp",
    "/termekkepek/l-mdf-6x2800x2070-mm-1.webp"
   ]
  },
@@ -12007,11 +12568,18 @@
   "sourceTitle": "POLYDET High Gloss 1600/1,5 Corona",
   "matchedCode": "",
   "specs": {
-   "Vastagság": "1,5 mm",
    "Szélesség": "1600 mm",
-   "Felület": "High Gloss"
+   "Vastagság": "1,5 mm",
+   "Kiszerelés": "tekercs",
+   "Felület": "High Gloss",
+   "Hátoldal": "corona-kezelt (ragasztáshoz)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/polydet-high-gloss-1600-1-5-corona-1.webp",
+   "/termekkepek/3d/polydet-high-gloss-1600-1-5-corona-2.webp",
+   "/termekkepek/polydet-high-gloss-1600-1-5-corona-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "polydet-high-gloss-1900-1-5-corona": {
   "source": "POLSER",
@@ -12019,11 +12587,18 @@
   "sourceTitle": "POLYDET High Gloss 1900/1,5 Corona",
   "matchedCode": "",
   "specs": {
-   "Vastagság": "1,5 mm",
    "Szélesség": "1900 mm",
-   "Felület": "High Gloss"
+   "Vastagság": "1,5 mm",
+   "Kiszerelés": "tekercs",
+   "Felület": "High Gloss",
+   "Hátoldal": "corona-kezelt (ragasztáshoz)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/polydet-high-gloss-1900-1-5-corona-1.webp",
+   "/termekkepek/3d/polydet-high-gloss-1900-1-5-corona-2.webp",
+   "/termekkepek/polydet-high-gloss-1900-1-5-corona-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "polydet-high-gloss-2000-1-5-corona": {
   "source": "POLSER",
@@ -12031,11 +12606,18 @@
   "sourceTitle": "POLYDET High Gloss 2000/1,5 Corona",
   "matchedCode": "",
   "specs": {
-   "Vastagság": "1,5 mm",
    "Szélesség": "2000 mm",
-   "Felület": "High Gloss"
+   "Vastagság": "1,5 mm",
+   "Kiszerelés": "tekercs",
+   "Felület": "High Gloss",
+   "Hátoldal": "corona-kezelt (ragasztáshoz)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/polydet-high-gloss-2000-1-5-corona-1.webp",
+   "/termekkepek/3d/polydet-high-gloss-2000-1-5-corona-2.webp",
+   "/termekkepek/polydet-high-gloss-2000-1-5-corona-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "polydet-high-gloss-2100-1-5-corona": {
   "source": "POLSER",
@@ -12043,11 +12625,18 @@
   "sourceTitle": "POLYDET High Gloss 2100/1,5 Corona",
   "matchedCode": "",
   "specs": {
-   "Vastagság": "1,5 mm",
    "Szélesség": "2100 mm",
-   "Felület": "High Gloss"
+   "Vastagság": "1,5 mm",
+   "Kiszerelés": "tekercs",
+   "Felület": "High Gloss",
+   "Hátoldal": "corona-kezelt (ragasztáshoz)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/polydet-high-gloss-2100-1-5-corona-1.webp",
+   "/termekkepek/3d/polydet-high-gloss-2100-1-5-corona-2.webp",
+   "/termekkepek/polydet-high-gloss-2100-1-5-corona-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "polydet-high-gloss-2200-1-5-corona": {
   "source": "POLSER",
@@ -12055,11 +12644,18 @@
   "sourceTitle": "POLYDET High Gloss 2200/1,5 Corona",
   "matchedCode": "",
   "specs": {
-   "Vastagság": "1,5 mm",
    "Szélesség": "2200 mm",
-   "Felület": "High Gloss"
+   "Vastagság": "1,5 mm",
+   "Kiszerelés": "tekercs",
+   "Felület": "High Gloss",
+   "Hátoldal": "corona-kezelt (ragasztáshoz)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/polydet-high-gloss-2200-1-5-corona-1.webp",
+   "/termekkepek/3d/polydet-high-gloss-2200-1-5-corona-2.webp",
+   "/termekkepek/polydet-high-gloss-2200-1-5-corona-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "polydet-high-gloss-2300-1-5-corona": {
   "source": "POLSER",
@@ -12067,11 +12663,18 @@
   "sourceTitle": "POLYDET High Gloss 2300/1,5 Corona",
   "matchedCode": "",
   "specs": {
-   "Vastagság": "1,5 mm",
    "Szélesség": "2300 mm",
-   "Felület": "High Gloss"
+   "Vastagság": "1,5 mm",
+   "Kiszerelés": "tekercs",
+   "Felület": "High Gloss",
+   "Hátoldal": "corona-kezelt (ragasztáshoz)"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/polydet-high-gloss-2300-1-5-corona-1.webp",
+   "/termekkepek/3d/polydet-high-gloss-2300-1-5-corona-2.webp",
+   "/termekkepek/polydet-high-gloss-2300-1-5-corona-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "polydet-performance-plus-2000-1-5-roughened": {
   "source": "POLSER",
@@ -12079,11 +12682,18 @@
   "sourceTitle": "POLYDET Performance Plus 2000/1,5 Roughened",
   "matchedCode": "",
   "specs": {
-   "Vastagság": "1,5 mm",
    "Szélesség": "2000 mm",
+   "Vastagság": "1,5 mm",
+   "Kiszerelés": "tekercs",
+   "Hátoldal": "érdesített (ragasztáshoz)",
    "Felület": "Performance Plus"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/polydet-performance-plus-2000-1-5-roughened-1.webp",
+   "/termekkepek/3d/polydet-performance-plus-2000-1-5-roughened-2.webp",
+   "/termekkepek/polydet-performance-plus-2000-1-5-roughened-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "polydet-performance-plus-2100-1-8-corona": {
   "source": "POLSER",
@@ -12091,11 +12701,18 @@
   "sourceTitle": "POLYDET Performance Plus 2100/1,8 CORONA",
   "matchedCode": "",
   "specs": {
-   "Vastagság": "1,8 mm",
    "Szélesség": "2100 mm",
+   "Vastagság": "1,8 mm",
+   "Kiszerelés": "tekercs",
+   "Hátoldal": "corona-kezelt (ragasztáshoz)",
    "Felület": "Performance Plus"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/polydet-performance-plus-2100-1-8-corona-1.webp",
+   "/termekkepek/3d/polydet-performance-plus-2100-1-8-corona-2.webp",
+   "/termekkepek/polydet-performance-plus-2100-1-8-corona-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "polydet-performance-plus-2200-1-5-roughened": {
   "source": "POLSER",
@@ -12103,11 +12720,18 @@
   "sourceTitle": "POLYDET Performance Plus 2200/1,5 Roughened",
   "matchedCode": "",
   "specs": {
-   "Vastagság": "1,5 mm",
    "Szélesség": "2200 mm",
+   "Vastagság": "1,5 mm",
+   "Kiszerelés": "tekercs",
+   "Hátoldal": "érdesített (ragasztáshoz)",
    "Felület": "Performance Plus"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/polydet-performance-plus-2200-1-5-roughened-1.webp",
+   "/termekkepek/3d/polydet-performance-plus-2200-1-5-roughened-2.webp",
+   "/termekkepek/polydet-performance-plus-2200-1-5-roughened-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "polydet-performance-plus-2200-1-8-corona": {
   "source": "POLSER",
@@ -12115,11 +12739,18 @@
   "sourceTitle": "POLYDET Performance Plus 2200/1,8 CORONA",
   "matchedCode": "",
   "specs": {
-   "Vastagság": "1,8 mm",
    "Szélesség": "2200 mm",
+   "Vastagság": "1,8 mm",
+   "Kiszerelés": "tekercs",
+   "Hátoldal": "corona-kezelt (ragasztáshoz)",
    "Felület": "Performance Plus"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/polydet-performance-plus-2200-1-8-corona-1.webp",
+   "/termekkepek/3d/polydet-performance-plus-2200-1-8-corona-2.webp",
+   "/termekkepek/polydet-performance-plus-2200-1-8-corona-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "polydet-performance-plus-2300-1-8-corona": {
   "source": "POLSER",
@@ -12127,11 +12758,18 @@
   "sourceTitle": "POLYDET Performance Plus 2300/1,8 CORONA",
   "matchedCode": "",
   "specs": {
-   "Vastagság": "1,8 mm",
    "Szélesség": "2300 mm",
+   "Vastagság": "1,8 mm",
+   "Kiszerelés": "tekercs",
+   "Hátoldal": "corona-kezelt (ragasztáshoz)",
    "Felület": "Performance Plus"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/polydet-performance-plus-2300-1-8-corona-1.webp",
+   "/termekkepek/3d/polydet-performance-plus-2300-1-8-corona-2.webp",
+   "/termekkepek/polydet-performance-plus-2300-1-8-corona-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "polydet-performance-plus-2400-1-8-roughened": {
   "source": "POLSER",
@@ -12139,11 +12777,18 @@
   "sourceTitle": "POLYDET Performance Plus 2400/1,8 Roughened",
   "matchedCode": "",
   "specs": {
-   "Vastagság": "1,8 mm",
    "Szélesség": "2400 mm",
+   "Vastagság": "1,8 mm",
+   "Kiszerelés": "tekercs",
+   "Hátoldal": "érdesített (ragasztáshoz)",
    "Felület": "Performance Plus"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/polydet-performance-plus-2400-1-8-roughened-1.webp",
+   "/termekkepek/3d/polydet-performance-plus-2400-1-8-roughened-2.webp",
+   "/termekkepek/polydet-performance-plus-2400-1-8-roughened-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "polydet-performance-plus-2500-1-8-corona": {
   "source": "POLSER",
@@ -12151,11 +12796,18 @@
   "sourceTitle": "POLYDET Performance Plus 2500/1,8 CORONA",
   "matchedCode": "",
   "specs": {
-   "Vastagság": "1,8 mm",
    "Szélesség": "2500 mm",
+   "Vastagság": "1,8 mm",
+   "Kiszerelés": "tekercs",
+   "Hátoldal": "corona-kezelt (ragasztáshoz)",
    "Felület": "Performance Plus"
   },
-  "images": []
+  "images": [
+   "/termekkepek/3d/polydet-performance-plus-2500-1-8-corona-1.webp",
+   "/termekkepek/3d/polydet-performance-plus-2500-1-8-corona-2.webp",
+   "/termekkepek/polydet-performance-plus-2500-1-8-corona-1.webp"
+  ],
+  "nevbolRajz": true
  },
  "q8033-elox-profil-kefehez": {
   "source": "Car-Alu",
@@ -12221,6 +12873,8 @@
    "Felület": "festett, RAL 9016"
   },
   "images": [
+   "/termekkepek/3d/s-1-2x1250x2500mm-feher-festett-lemez-ral9016-1.webp",
+   "/termekkepek/3d/s-1-2x1250x2500mm-feher-festett-lemez-ral9016-2.webp",
    "/termekkepek/s-1-2x1250x2500mm-feher-festett-lemez-ral9016-1.webp"
   ]
  },
@@ -12238,6 +12892,8 @@
    "Felület": "festett, RAL 9016"
   },
   "images": [
+   "/termekkepek/3d/s-1-2x1500x2500mm-feher-festett-lemez-ral9016-1.webp",
+   "/termekkepek/3d/s-1-2x1500x2500mm-feher-festett-lemez-ral9016-2.webp",
    "/termekkepek/s-1-2x1500x2500mm-feher-festett-lemez-ral9016-1.webp"
   ]
  },
@@ -12255,7 +12911,49 @@
    "Felület": "festett, RAL 9016"
   },
   "images": [
+   "/termekkepek/3d/s-1-2x1500x3000mm-feher-festett-lemez-ral9016-1.webp",
+   "/termekkepek/3d/s-1-2x1500x3000mm-feher-festett-lemez-ral9016-2.webp",
    "/termekkepek/s-1-2x1500x3000mm-feher-festett-lemez-ral9016-1.webp"
+  ]
+ },
+ "s-1-5-2x1000x2000-mm-diamond-alu-lemez-en-aw-3003-h224": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 1,5/2x1000x2000 mm Diamond Alu lemez EN AW-3003 H224",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,5 mm (mintával 2 mm)",
+   "Szélesség": "1000 mm",
+   "Felület": "gyémántmintás",
+   "Hossz": "2000 mm",
+   "Tömeg / tábla": "8,1 kg (elméleti)",
+   "Tömeg / m²": "4,05 kg (elméleti)",
+   "Ötvözet": "EN AW-3003"
+  },
+  "images": [
+   "/termekkepek/3d/s-1-5-2x1000x2000-mm-diamond-alu-lemez-en-aw-3003-h224-1.webp",
+   "/termekkepek/3d/s-1-5-2x1000x2000-mm-diamond-alu-lemez-en-aw-3003-h224-2.webp",
+   "/termekkepek/s-1-5-2x1000x2000-mm-diamond-alu-lemez-en-aw-3003-h224-1.webp"
+  ]
+ },
+ "s-1-5-2x1500x3000-mm-duett-cseppmintas-alu-lemez-en-aw-5754-almg3-h114": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 1,5/2x1500x3000 mm DUETT cseppmintás Alu lemez EN AW-5754 (AlMg3) H114",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "1,5 mm (mintával 2 mm)",
+   "Szélesség": "1500 mm",
+   "Felület": "cseppmintás (DUETT: kétirányú csepp)",
+   "Hossz": "3000 mm",
+   "Tömeg / tábla": "18,2 kg (elméleti)",
+   "Tömeg / m²": "4,05 kg (elméleti)",
+   "Ötvözet": "EN AW-5754"
+  },
+  "images": [
+   "/termekkepek/3d/s-1-5-2x1500x3000-mm-duett-cseppmintas-alu-lemez-en-aw-5754-almg3-h114-1.webp",
+   "/termekkepek/3d/s-1-5-2x1500x3000-mm-duett-cseppmintas-alu-lemez-en-aw-5754-almg3-h114-2.webp",
+   "/termekkepek/s-1-5-2x1500x3000-mm-duett-cseppmintas-alu-lemez-en-aw-5754-almg3-h114-1.webp"
   ]
  },
  "s-1-5x1000x2000-mm-alu-lemez-en-aw-1050-h24": {
@@ -12273,6 +12971,8 @@
    "Állapot": "H24"
   },
   "images": [
+   "/termekkepek/3d/s-1-5x1000x2000-mm-alu-lemez-en-aw-1050-h24-1.webp",
+   "/termekkepek/3d/s-1-5x1000x2000-mm-alu-lemez-en-aw-1050-h24-2.webp",
    "/termekkepek/s-1-5x1000x2000-mm-alu-lemez-en-aw-1050-h24-1.webp"
   ]
  },
@@ -12291,6 +12991,8 @@
    "Állapot": "H24"
   },
   "images": [
+   "/termekkepek/3d/s-1-5x1250x2500-mm-alu-lemez-en-aw-1050-h24-1.webp",
+   "/termekkepek/3d/s-1-5x1250x2500-mm-alu-lemez-en-aw-1050-h24-2.webp",
    "/termekkepek/s-1-5x1250x2500-mm-alu-lemez-en-aw-1050-h24-1.webp"
   ]
  },
@@ -12308,6 +13010,8 @@
    "Felület": "festett, RAL 9010"
   },
   "images": [
+   "/termekkepek/3d/s-1-5x1500x3000mm-feher-festett-lemez-ral9010-1.webp",
+   "/termekkepek/3d/s-1-5x1500x3000mm-feher-festett-lemez-ral9010-2.webp",
    "/termekkepek/s-1-5x1500x3000mm-feher-festett-lemez-ral9010-1.webp"
   ]
  },
@@ -12325,7 +13029,89 @@
    "Felület": "festett, RAL 9016"
   },
   "images": [
+   "/termekkepek/3d/s-1x1250-mm-ff-ral9016-szalag-h42-1.webp",
+   "/termekkepek/3d/s-1x1250-mm-ff-ral9016-szalag-h42-2.webp",
    "/termekkepek/s-1x1250-mm-ff-ral9016-szalag-h42-1.webp"
+  ]
+ },
+ "s-2-3-5x1000x2000-mm-cseppmintas-en-aw-5754-h114": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 2/3,5x1000x2000 mm Cseppmintás EN AW-5754 H114",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "2 mm (mintával 3,5 mm)",
+   "Szélesség": "1000 mm",
+   "Felület": "cseppmintás, csúszásgátló",
+   "Hossz": "2000 mm",
+   "Tömeg / tábla": "10,8 kg (elméleti)",
+   "Tömeg / m²": "5,4 kg (elméleti)",
+   "Ötvözet": "EN AW-5754"
+  },
+  "images": [
+   "/termekkepek/3d/s-2-3-5x1000x2000-mm-cseppmintas-en-aw-5754-h114-1.webp",
+   "/termekkepek/3d/s-2-3-5x1000x2000-mm-cseppmintas-en-aw-5754-h114-2.webp",
+   "/termekkepek/s-2-3-5x1000x2000-mm-cseppmintas-en-aw-5754-h114-1.webp"
+  ]
+ },
+ "s-2-3-5x1250x2500-mm-cseppmintas-en-aw-5754-h114": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 2/3,5x1250x2500 mm Cseppmintás EN AW-5754 H114",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "2 mm (mintával 3,5 mm)",
+   "Szélesség": "1250 mm",
+   "Felület": "cseppmintás, csúszásgátló",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "16,9 kg (elméleti)",
+   "Tömeg / m²": "5,4 kg (elméleti)",
+   "Ötvözet": "EN AW-5754"
+  },
+  "images": [
+   "/termekkepek/3d/s-2-3-5x1250x2500-mm-cseppmintas-en-aw-5754-h114-1.webp",
+   "/termekkepek/3d/s-2-3-5x1250x2500-mm-cseppmintas-en-aw-5754-h114-2.webp",
+   "/termekkepek/s-2-3-5x1250x2500-mm-cseppmintas-en-aw-5754-h114-1.webp"
+  ]
+ },
+ "s-2-3-5x1500x3000-mm-cseppmintas-en-aw-5754-h114": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 2/3,5x1500x3000 mm Cseppmintás EN AW-5754 H114",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "2 mm (mintával 3,5 mm)",
+   "Szélesség": "1500 mm",
+   "Felület": "cseppmintás, csúszásgátló",
+   "Hossz": "3000 mm",
+   "Tömeg / tábla": "24,3 kg (elméleti)",
+   "Tömeg / m²": "5,4 kg (elméleti)",
+   "Ötvözet": "EN AW-5754"
+  },
+  "images": [
+   "/termekkepek/3d/s-2-3-5x1500x3000-mm-cseppmintas-en-aw-5754-h114-1.webp",
+   "/termekkepek/3d/s-2-3-5x1500x3000-mm-cseppmintas-en-aw-5754-h114-2.webp",
+   "/termekkepek/s-2-3-5x1500x3000-mm-cseppmintas-en-aw-5754-h114-1.webp"
+  ]
+ },
+ "s-2-5-4x1250x2500-mm-cseppmintas-en-aw-5754-h114": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 2,5/4x1250x2500 mm Cseppmintás EN AW-5754 H114",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "2,5 mm (mintával 4 mm)",
+   "Szélesség": "1250 mm",
+   "Felület": "cseppmintás, csúszásgátló",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "21,1 kg (elméleti)",
+   "Tömeg / m²": "6,75 kg (elméleti)",
+   "Ötvözet": "EN AW-5754"
+  },
+  "images": [
+   "/termekkepek/3d/s-2-5-4x1250x2500-mm-cseppmintas-en-aw-5754-h114-1.webp",
+   "/termekkepek/3d/s-2-5-4x1250x2500-mm-cseppmintas-en-aw-5754-h114-2.webp",
+   "/termekkepek/s-2-5-4x1250x2500-mm-cseppmintas-en-aw-5754-h114-1.webp"
   ]
  },
  "s-2-7x2500x6800-mm-rizs-mintas-alu-lemez-en-aw-5086-h32": {
@@ -12344,6 +13130,8 @@
    "Felület": "rízsmintás (csúszásgátló)"
   },
   "images": [
+   "/termekkepek/3d/s-2-7x2500x6800-mm-rizs-mintas-alu-lemez-en-aw-5086-h32-1.webp",
+   "/termekkepek/3d/s-2-7x2500x6800-mm-rizs-mintas-alu-lemez-en-aw-5086-h32-2.webp",
    "/termekkepek/s-2-7x2500x6800-mm-rizs-mintas-alu-lemez-en-aw-5086-h32-1.webp"
   ],
   "nevbolRajz": true
@@ -12363,6 +13151,8 @@
    "Állapot": "H24"
   },
   "images": [
+   "/termekkepek/3d/s-2x1000x2000-mm-alu-lemez-en-aw-1050-h24-1.webp",
+   "/termekkepek/3d/s-2x1000x2000-mm-alu-lemez-en-aw-1050-h24-2.webp",
    "/termekkepek/s-2x1000x2000-mm-alu-lemez-en-aw-1050-h24-1.webp"
   ]
  },
@@ -12381,6 +13171,8 @@
    "Felület": "eloxált"
   },
   "images": [
+   "/termekkepek/3d/s-2x1000x2000-mm-elox-alu-lemez-en-aw-5002-1.webp",
+   "/termekkepek/3d/s-2x1000x2000-mm-elox-alu-lemez-en-aw-5002-2.webp",
    "/termekkepek/s-2x1000x2000-mm-elox-alu-lemez-en-aw-5002-1.webp"
   ]
  },
@@ -12399,6 +13191,8 @@
    "Állapot": "H24"
   },
   "images": [
+   "/termekkepek/3d/s-2x1250x2500-mm-alu-lemez-en-aw-1050-h24-1.webp",
+   "/termekkepek/3d/s-2x1250x2500-mm-alu-lemez-en-aw-1050-h24-2.webp",
    "/termekkepek/s-2x1250x2500-mm-alu-lemez-en-aw-1050-h24-1.webp"
   ]
  },
@@ -12417,6 +13211,8 @@
    "Állapot": "H22"
   },
   "images": [
+   "/termekkepek/3d/s-2x1250x2500-mm-alu-lemez-en-aw-5754-h22-1.webp",
+   "/termekkepek/3d/s-2x1250x2500-mm-alu-lemez-en-aw-5754-h22-2.webp",
    "/termekkepek/s-2x1250x2500-mm-alu-lemez-en-aw-5754-h22-1.webp"
   ]
  },
@@ -12436,6 +13232,8 @@
    "Felület": "eloxált"
   },
   "images": [
+   "/termekkepek/3d/s-2x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14-1.webp",
+   "/termekkepek/3d/s-2x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14-2.webp",
    "/termekkepek/s-2x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14-1.webp"
   ]
  },
@@ -12455,6 +13253,8 @@
    "Felület": "rízsmintás (csúszásgátló)"
   },
   "images": [
+   "/termekkepek/3d/s-2x1250x2500-mm-rizs-mintas-alu-lemez-en-aw-3003-h22-1.webp",
+   "/termekkepek/3d/s-2x1250x2500-mm-rizs-mintas-alu-lemez-en-aw-3003-h22-2.webp",
    "/termekkepek/s-2x1250x2500-mm-rizs-mintas-alu-lemez-en-aw-3003-h22-1.webp"
   ]
  },
@@ -12472,6 +13272,8 @@
    "Felület": "festett, RAL 9016"
   },
   "images": [
+   "/termekkepek/3d/s-2x1250x2500mm-feher-festett-lemez-ral9016-1.webp",
+   "/termekkepek/3d/s-2x1250x2500mm-feher-festett-lemez-ral9016-2.webp",
    "/termekkepek/s-2x1250x2500mm-feher-festett-lemez-ral9016-1.webp"
   ]
  },
@@ -12490,6 +13292,8 @@
    "Állapot": "H24"
   },
   "images": [
+   "/termekkepek/3d/s-2x1500x3000-mm-alu-lemez-en-aw-1050-h24-1.webp",
+   "/termekkepek/3d/s-2x1500x3000-mm-alu-lemez-en-aw-1050-h24-2.webp",
    "/termekkepek/s-2x1500x3000-mm-alu-lemez-en-aw-1050-h24-1.webp"
   ]
  },
@@ -12509,7 +13313,29 @@
    "Felület": "eloxált"
   },
   "images": [
+   "/termekkepek/3d/s-2x1500x3000-mm-elox-alu-lemez-en-aw-5005-h12-h14-h24-1.webp",
+   "/termekkepek/3d/s-2x1500x3000-mm-elox-alu-lemez-en-aw-5005-h12-h14-h24-2.webp",
    "/termekkepek/s-2x1500x3000-mm-elox-alu-lemez-en-aw-5005-h12-h14-h24-1.webp"
+  ]
+ },
+ "s-3-4-5x1250x2500-mm-cseppmintas-en-aw-5754-h114": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 3/4,5x1250x2500 mm Cseppmintás EN AW-5754 H114",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "3 mm (mintával 4,5 mm)",
+   "Szélesség": "1250 mm",
+   "Felület": "cseppmintás, csúszásgátló",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "25,3 kg (elméleti)",
+   "Tömeg / m²": "8,1 kg (elméleti)",
+   "Ötvözet": "EN AW-5754"
+  },
+  "images": [
+   "/termekkepek/3d/s-3-4-5x1250x2500-mm-cseppmintas-en-aw-5754-h114-1.webp",
+   "/termekkepek/3d/s-3-4-5x1250x2500-mm-cseppmintas-en-aw-5754-h114-2.webp",
+   "/termekkepek/s-3-4-5x1250x2500-mm-cseppmintas-en-aw-5754-h114-1.webp"
   ]
  },
  "s-3x1000x2000-mm-elox-alu-lemez-en-aw-5002": {
@@ -12527,6 +13353,8 @@
    "Felület": "eloxált"
   },
   "images": [
+   "/termekkepek/3d/s-3x1000x2000-mm-elox-alu-lemez-en-aw-5002-1.webp",
+   "/termekkepek/3d/s-3x1000x2000-mm-elox-alu-lemez-en-aw-5002-2.webp",
    "/termekkepek/s-3x1000x2000-mm-elox-alu-lemez-en-aw-5002-1.webp"
   ]
  },
@@ -12545,6 +13373,8 @@
    "Állapot": "H24"
   },
   "images": [
+   "/termekkepek/3d/s-3x1250x2500-mm-alu-lemez-en-aw-1050-h24-1.webp",
+   "/termekkepek/3d/s-3x1250x2500-mm-alu-lemez-en-aw-1050-h24-2.webp",
    "/termekkepek/s-3x1250x2500-mm-alu-lemez-en-aw-1050-h24-1.webp"
   ]
  },
@@ -12563,6 +13393,8 @@
    "Állapot": "H22"
   },
   "images": [
+   "/termekkepek/3d/s-3x1250x2500-mm-alu-lemez-en-aw-5754-h22-1.webp",
+   "/termekkepek/3d/s-3x1250x2500-mm-alu-lemez-en-aw-5754-h22-2.webp",
    "/termekkepek/s-3x1250x2500-mm-alu-lemez-en-aw-5754-h22-1.webp"
   ]
  },
@@ -12582,6 +13414,8 @@
    "Felület": "eloxált"
   },
   "images": [
+   "/termekkepek/3d/s-3x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14-1.webp",
+   "/termekkepek/3d/s-3x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14-2.webp",
    "/termekkepek/s-3x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14-1.webp"
   ]
  },
@@ -12600,6 +13434,8 @@
    "Állapot": "H14/H24"
   },
   "images": [
+   "/termekkepek/3d/s-3x1250x3200-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp",
+   "/termekkepek/3d/s-3x1250x3200-mm-alu-lemez-en-aw-1050a-h14-h24-2.webp",
    "/termekkepek/s-3x1250x3200-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp"
   ]
  },
@@ -12618,6 +13454,8 @@
    "Állapot": "H14/H24"
   },
   "images": [
+   "/termekkepek/3d/s-3x1250x5000-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp",
+   "/termekkepek/3d/s-3x1250x5000-mm-alu-lemez-en-aw-1050a-h14-h24-2.webp",
    "/termekkepek/s-3x1250x5000-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp"
   ]
  },
@@ -12636,6 +13474,8 @@
    "Állapot": "H14/H24"
   },
   "images": [
+   "/termekkepek/3d/s-3x1250x6000-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp",
+   "/termekkepek/3d/s-3x1250x6000-mm-alu-lemez-en-aw-1050a-h14-h24-2.webp",
    "/termekkepek/s-3x1250x6000-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp"
   ]
  },
@@ -12654,6 +13494,8 @@
    "Állapot": "H24"
   },
   "images": [
+   "/termekkepek/3d/s-3x1500x3000-mm-alu-lemez-en-aw-1050-h24-1.webp",
+   "/termekkepek/3d/s-3x1500x3000-mm-alu-lemez-en-aw-1050-h24-2.webp",
    "/termekkepek/s-3x1500x3000-mm-alu-lemez-en-aw-1050-h24-1.webp"
   ]
  },
@@ -12673,6 +13515,8 @@
    "Felület": "eloxált"
   },
   "images": [
+   "/termekkepek/3d/s-3x1500x3000-mm-elox-alu-lemez-en-aw-5005a-h14-1.webp",
+   "/termekkepek/3d/s-3x1500x3000-mm-elox-alu-lemez-en-aw-5005a-h14-2.webp",
    "/termekkepek/s-3x1500x3000-mm-elox-alu-lemez-en-aw-5005a-h14-1.webp"
   ]
  },
@@ -12691,6 +13535,8 @@
    "Állapot": "H14/H24"
   },
   "images": [
+   "/termekkepek/3d/s-3x1500x3200-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp",
+   "/termekkepek/3d/s-3x1500x3200-mm-alu-lemez-en-aw-1050a-h14-h24-2.webp",
    "/termekkepek/s-3x1500x3200-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp"
   ]
  },
@@ -12709,6 +13555,8 @@
    "Állapot": "H14/H24"
   },
   "images": [
+   "/termekkepek/3d/s-3x1500x5000-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp",
+   "/termekkepek/3d/s-3x1500x5000-mm-alu-lemez-en-aw-1050a-h14-h24-2.webp",
    "/termekkepek/s-3x1500x5000-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp"
   ]
  },
@@ -12727,6 +13575,8 @@
    "Állapot": "H14/H24"
   },
   "images": [
+   "/termekkepek/3d/s-3x1500x6000-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp",
+   "/termekkepek/3d/s-3x1500x6000-mm-alu-lemez-en-aw-1050a-h14-h24-2.webp",
    "/termekkepek/s-3x1500x6000-mm-alu-lemez-en-aw-1050a-h14-h24-1.webp"
   ]
  },
@@ -12745,7 +13595,49 @@
    "Állapot": "H14/H24"
   },
   "images": [
+   "/termekkepek/3d/s-3x2000x5000-mm-alu-lemez-en-573-3-al-mg-1-h14-h24-1.webp",
+   "/termekkepek/3d/s-3x2000x5000-mm-alu-lemez-en-573-3-al-mg-1-h14-h24-2.webp",
    "/termekkepek/s-3x2000x5000-mm-alu-lemez-en-573-3-al-mg-1-h14-h24-1.webp"
+  ]
+ },
+ "s-4-5-5x1250x2500-mm-cseppmintas-en-aw-5754-h114": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 4/5,5x1250x2500 mm Cseppmintás EN AW-5754 H114",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "4 mm (mintával 5,5 mm)",
+   "Szélesség": "1250 mm",
+   "Felület": "cseppmintás, csúszásgátló",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "33,8 kg (elméleti)",
+   "Tömeg / m²": "10,8 kg (elméleti)",
+   "Ötvözet": "EN AW-5754"
+  },
+  "images": [
+   "/termekkepek/3d/s-4-5-5x1250x2500-mm-cseppmintas-en-aw-5754-h114-1.webp",
+   "/termekkepek/3d/s-4-5-5x1250x2500-mm-cseppmintas-en-aw-5754-h114-2.webp",
+   "/termekkepek/s-4-5-5x1250x2500-mm-cseppmintas-en-aw-5754-h114-1.webp"
+  ]
+ },
+ "s-5-6-5x1250x2500-mm-cseppmintas-en-aw-5754-h114": {
+  "source": "Quadris adatok",
+  "sourceUrl": "",
+  "sourceTitle": "S 5/6,5x1250x2500 mm Cseppmintás EN AW-5754 H114",
+  "matchedCode": "",
+  "specs": {
+   "Vastagság": "5 mm (mintával 6,5 mm)",
+   "Szélesség": "1250 mm",
+   "Felület": "cseppmintás, csúszásgátló",
+   "Hossz": "2500 mm",
+   "Tömeg / tábla": "42,2 kg (elméleti)",
+   "Tömeg / m²": "13,5 kg (elméleti)",
+   "Ötvözet": "EN AW-5754"
+  },
+  "images": [
+   "/termekkepek/3d/s-5-6-5x1250x2500-mm-cseppmintas-en-aw-5754-h114-1.webp",
+   "/termekkepek/3d/s-5-6-5x1250x2500-mm-cseppmintas-en-aw-5754-h114-2.webp",
+   "/termekkepek/s-5-6-5x1250x2500-mm-cseppmintas-en-aw-5754-h114-1.webp"
   ]
  },
  "s-6x1250x2500-mm-alu-lemez-en-aw-5754-h22": {
@@ -12763,6 +13655,8 @@
    "Állapot": "H22"
   },
   "images": [
+   "/termekkepek/3d/s-6x1250x2500-mm-alu-lemez-en-aw-5754-h22-1.webp",
+   "/termekkepek/3d/s-6x1250x2500-mm-alu-lemez-en-aw-5754-h22-2.webp",
    "/termekkepek/s-6x1250x2500-mm-alu-lemez-en-aw-5754-h22-1.webp"
   ]
  },

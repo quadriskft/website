@@ -8,6 +8,7 @@ Csak ott ír, ahol a terméknek még nincs beszállítói bejegyzése (vagy a ko
 Használat: python3 scripts/termekadatok/nevbol.py
 """
 
+import json
 import math
 import re
 import sys
@@ -124,7 +125,7 @@ def drawing(kind, a, b=0, t=0, c=0):
     return img
 
 
-def sheet(w, l, t, colour, length_label=None):
+def sheet(w, l, t, colour, length_label=None, pattern=None):
     """Lemez / tábla / tekercs ferde axonometrikus rajza a méretekkel (hossz, szélesség, vastagság)."""
     W, H = 1000, 750
     img = Image.new("RGB", (W, H), "white")
@@ -151,6 +152,10 @@ def sheet(w, l, t, colour, length_label=None):
     a, b = (x0 + lx + ox, y0 + th + oy), (x0 + lx + wx + ox, y0 + wy + th + oy)
     d.line([a, b], fill="black", width=2)
     d.text(((a[0] + b[0]) / 2 + 18, (a[1] + b[1]) / 2 - 10), hu(w), fill="black", font=fnt)
+    if not t:
+        import numpy as np
+        ys, xs = np.where(np.asarray(img.convert("L")) < 250)
+        return img.crop((max(xs.min() - 40, 0), max(ys.min() - 40, 0), min(xs.max() + 40, W), min(ys.max() + 40, H)))
     # vastagság
     d.line([(x0 - 30, y0), (x0 - 30, y0 + th)], fill="black", width=2)
     for y in (y0, y0 + th):
@@ -171,10 +176,12 @@ def parse(p):
     elox = "elox" in low
     specs, draw = {}, None
     # lemez: "S 3x1250x3200 mm Alu lemez EN AW-1050A H14/H24"
-    m = re.match(rf"S\s*{NUM}\s*x\s*{NUM}(?:\s*x\s*{NUM})?", n)
-    if m and ("lemez" in low or "szalag" in low):
-        t, w, l = m.group(1), m.group(2), m.group(3)
-        specs.update({"Vastagság": f"{hu(f(t))} mm", "Szélesség": f"{w} mm"})
+    m = re.match(rf"S\s*{NUM}(?:\s*/\s*{NUM})?\s*x\s*{NUM}(?:\s*x\s*{NUM})?", n)
+    if m and ("lemez" in low or "szalag" in low or "cseppmint" in low):
+        t, tp, w, l = m.group(1), m.group(2), m.group(3), m.group(4)
+        specs.update({"Vastagság": f"{hu(f(t))} mm" + (f" (mintával {hu(f(tp))} mm)" if tp else ""), "Szélesség": f"{w} mm"})
+        if tp:
+            specs["Felület"] = "cseppmintás (DUETT: kétirányú csepp)" if "duett" in low else "gyémántmintás" if "diamond" in low else "cseppmintás, csúszásgátló"
         if l:
             specs["Hossz"] = f"{l} mm"
             specs["Tömeg / tábla"] = f"{hu(f(t) * f(w) * f(l) * AL / 1e6, 1)} kg (elméleti)"
@@ -192,12 +199,15 @@ def parse(p):
         r = re.search(r"RAL\s?(\d{4})", n)
         if r:
             specs["Felület"] = f"festett, RAL {r.group(1)}"
+        elif tp:
+            pass
         elif elox:
             specs["Felület"] = "eloxált"
         elif "rízs" in low:
             specs["Felület"] = "rízsmintás (csúszásgátló)"
         colour = (243, 243, 240) if r else (205, 210, 216)
-        return specs, ("sheet", f(w), f(l) if l else 0, f(t), colour, None if l else "tekercs")
+        pattern = ("diamond" if "diamond" in low else "drop") if tp else None
+        return specs, ("sheet", f(w), f(l) if l else 0, f(t), colour, None if l else "tekercs", pattern)
     # rétegelt lemez: "L 12x1500x2500 mm rétegelt lemez fenolos"
     m = re.match(rf"L\s*(?:MDF\s*)?{NUM}\s*[xX]\s*{NUM}\s*[xX]\s*{NUM}", n)
     if m and ("rétegelt" in low or "mdf" in low):
@@ -237,7 +247,19 @@ def parse(p):
             return specs, ("sheet", *sorted((f(a2), f(a3))), f(a1), colour, None)
         if f(a1) < 40:
             return specs, ("sheet", f(a2), 0, f(a1), colour, f"L = {L.group(1)} m" if L else "tekercs")
-        return specs, None
+        return specs, ("sheet", *sorted((f(a1), f(a2))), 0, colour, None)
+    # üvegszálas poliészter (GRP) lemez tekercsben: "POLYDET High Gloss 2000/1,5 Corona"
+    m = re.search(rf"POLYDET.*?(\d{{4}})\s*/\s*{NUM}", n, re.I)
+    if m:
+        specs.update({"Szélesség": f"{m.group(1)} mm", "Vastagság": f"{hu(f(m.group(2)))} mm", "Kiszerelés": "tekercs",
+                      "Anyag": "üvegszál-erősítésű poliészter (GRP)"})
+        if "gloss" in low:
+            specs["Felület"] = "magasfényű gélbevonat"
+        if "roughened" in low:
+            specs["Hátoldal"] = "érdesített (ragasztáshoz)"
+        elif "corona" in low:
+            specs["Hátoldal"] = "corona-kezelt (ragasztáshoz)"
+        return specs, ("sheet", float(m.group(1)), 0, f(m.group(2)), (246, 247, 248), "tekercs")
     # szelvények
     mat = ("acél" if re.search(r"acél", low) else
            "alumínium" if re.search(r"alu|elox", low) or p["group"] in ("ipari-felgyartmanyok", "aluminium-alvaz-profilok", "zart-dobozos-es-hutos-profilok", "ponyvarendszer-kiegeszitok") else "")
@@ -357,9 +379,26 @@ def render(draw):
     return sheet(*draw[1:]) if draw[0] == "sheet" else drawing(*draw)
 
 
+# a saját 3D renderek (scripts/profil3d) – a termékképek elé kerülnek, a rajz a harmadik kép
+RENDER_DIR = Path(__file__).resolve().parents[2] / "public/termekkepek/3d"
+MANIFEST = Path(__file__).resolve().parents[1] / "profil3d/profilok.json"
+
+
+def material(specs, name):
+    a = (specs.get("Anyag") or "").lower() + " " + name.lower()
+    if "acél" in a:
+        return "galv" if re.search(r"horg|zn|tűzi", a) else "steel"
+    return "elox" if "elox" in a else "alu"
+
+
+def with_renders(slug, drawing_img):
+    renders = [f"/termekkepek/3d/{slug}-{i}.webp" for i in (1, 2) if (RENDER_DIR / f"{slug}-{i}.webp").exists()]
+    return renders + [drawing_img]
+
+
 def main():
     existing = load_enrichment()
-    updates, drawn = {}, 0
+    updates, drawn, manifest = {}, 0, []
     for p in load_products():
         prev = existing.get(p["slug"])
         specs, draw = parse(p)
@@ -369,7 +408,8 @@ def main():
             clear_images(p["slug"])
             merged = dict(prev)
             merged["specs"] = {**{k: v for k, v in specs.items() if k != "Anyag"}, **(prev.get("specs") or {})}
-            merged["images"] = [save_image(render(draw), p["slug"], 1)]
+            merged["images"] = with_renders(p["slug"], save_image(render(draw), p["slug"], 1))
+            manifest.append({"slug": p["slug"], "draw": draw, "mat": material(merged["specs"], p["name"])})
             merged["nevbolRajz"] = True  # a rajz ebből a lépésből jön – újrafuttatáskor frissíthető
             updates[p["slug"]] = merged
             drawn += 1
@@ -379,10 +419,13 @@ def main():
         images = []
         if draw:
             clear_images(p["slug"])
-            images = [save_image(render(draw), p["slug"], 1)]
+            images = with_renders(p["slug"], save_image(render(draw), p["slug"], 1))
+            manifest.append({"slug": p["slug"], "draw": draw, "mat": material(specs, p["name"])})
             drawn += 1
         updates[p["slug"]] = {"source": SOURCE, "sourceUrl": "", "sourceTitle": p["name"], "matchedCode": "",
                               "specs": specs, "images": images}
+    MANIFEST.parent.mkdir(parents=True, exist_ok=True)
+    MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False))
     # a más forrásúakat forrásuk megtartásával írjuk vissza
     update_enrichment({k: v for k, v in updates.items() if v["source"] == SOURCE}, SOURCE)
     update_enrichment({k: v for k, v in updates.items() if v["source"] != SOURCE})
