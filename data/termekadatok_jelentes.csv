@@ -128,6 +128,7 @@ Alumínium alváz profilok;203548;"""U"" 140x60x60x7 mm profil";ALCOMET;UPR-0354
 Alumínium alváz profilok;202869;"""U"" 160x80x80x8 mm profil";ALCOMET;UPR-02869;MEGVAN;igen;5;;"""U"" 160x80x80x8 mm profil";
 Alumínium alváz profilok;205162;"""U"" 80x60x5 mm aluprofil";ALCOMET;UPR-05162;MEGVAN;igen;5;;"""U"" 80x60x5 mm aluprofil";
 Alumínium alváz profilok;203432;"""U"" 90x50x50x5 mm profil";ALCOMET;UPR-03432;MEGVAN;igen;5;;"""U"" 90x50x50x5 mm profil";
+Dobozos felépítmény alkatrészek;70605;D60x5 mm Húspálya cső elox 6000 mm;ALCOMET;;MEGVAN;igen;4;;D60x5 mm Húspálya cső elox 6000 mm;
 Ipari félgyártmányok;251048;100x10 mm Alu lapos profil;ALCOMET;FLB-01048;MEGVAN;igen;4;;100x10 mm Alu lapos profil;
 Ipari félgyártmányok;255472;100x100x4 mm R7/3 Alu zártszelvény;ALCOMET;SQT-05472;MEGVAN;igen;4;;100x100x4 mm R7/3 Alu zártszelvény;
 Ipari félgyártmányok;250503;100x50x3 mm Alu zártszelvény;ALCOMET;100503;MEGVAN;igen;4;;100x50x3 mm Alu zártszelvény;
@@ -167,10 +168,9 @@ Ipari félgyártmányok;255207;80x40x3 mm R5 Alu zártszelvény;ALCOMET;RCT-0520
 Ipari félgyártmányok;252764;80x40x4 alu zártszelvény;ALCOMET;RCT-02345;MEGVAN;igen;4;;80x40x4 alu zártszelvény;
 Ipari félgyártmányok;258418;80x50x4 mm R3 Alu Zártszelvény;ALCOMET;A8418;MEGVAN;igen;4;;80x50x4 mm R3 Alu Zártszelvény;
 Ipari félgyártmányok;255473;80x80x4 mm Alu zártszelvény;ALCOMET;;MEGVAN;igen;4;;80x80x4 mm Alu zártszelvény;
+Ipari félgyártmányok;227576;Zártszelvény 60x30x2 mm OR3/IR1 elox;ALCOMET;RCT-07576;MEGVAN;igen;4;;Zártszelvény 60x30x2 mm OR3/IR1 elox;
+Ponyvarendszer kiegészítők;222923;60x1,5 mm Ponyvacső;ALCOMET;RNT-02923;MEGVAN;igen;4;;60x1,5 mm Ponyvacső;
 Ponyvarendszer kiegészítők;222985;D50 mm alu cső;ALCOMET;RNT-02985;MEGVAN;nem;2;;D50 mm alu cső;
-Dobozos felépítmény alkatrészek;70605;D60x5 mm Húspálya cső elox 6000 mm;ALCOMET;;NINCS;nem;0;;;
-Ipari félgyártmányok;227576;Zártszelvény 60x30x2 mm OR3/IR1 elox;ALCOMET;RCT-07576;NINCS;nem;0;;;
-Ponyvarendszer kiegészítők;222923;60x1,5 mm Ponyvacső;ALCOMET;RNT-02923;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;237798;Speciális 35 ALSÓ KERET profil EC;ALCOMET;DRP-07798;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;237797;Speciális TETŐ profil EC;ALCOMET;DRP-07797;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;231309;"AN ""h"" ajtószegő 30 mm elox";ALSAP;1309AN;NINCS;nem;0;;;
@@ -339,9 +339,9 @@ Speciális felépítmény alkatrészek;617280;Zár ellendarab ívelt lemez;Car-A
 Zárt-dobozos és hűtős profilok;231729;"B front tömítéses ""u"" ajtószegő 25 mm elox";Car-Alu;1317 290-011;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;235215;Dobozos keretprofil ívelt elox;Car-Alu;1305 215-011;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;233901;Dobozos Íves alsó keretprofil elox 25 mm panelhez;Car-Alu;139001;NINCS;nem;0;;;
+Acél profilok;141265;ACÉL hossztartó 120/60/5 mm;Cargoframes Czech;U0FE-1206005-00;MEGVAN;igen;4;;ACÉL hossztartó 120/60/5 mm;
+Acél profilok;141266;ACÉL hossztartó 120/60/6 mm;Cargoframes Czech;U0FE-1206006-00;MEGVAN;igen;4;;ACÉL hossztartó 120/60/6 mm;
 Acél profilok;;141520/perf, PU00 Acél keret 110/15/2/5100;Cargoframes Czech;PU00-1101520-H3-5100;NINCS;nem;0;;;
-Acél profilok;141265;ACÉL hossztartó 120/60/5 mm;Cargoframes Czech;U0FE-1206005-00;NINCS;nem;0;;;
-Acél profilok;141266;ACÉL hossztartó 120/60/6 mm;Cargoframes Czech;U0FE-1206006-00;NINCS;nem;0;;;
 Acél profilok;142730;PF50 Acél keret 140/27/3/2500 sima;Cargoframes Czech;PF50-1402730-00-2500;NINCS;nem;0;;;
 Acél profilok;141520;PU00 Acél keret 110/15/2/5000;Cargoframes Czech;PU00-1101520-00-5000;NINCS;nem;0;;;
 Acél profilok;141521;PU00 Acél keret 115/21/3 mm;Cargoframes Czech;PU00-1152130-00-7500;NINCS;nem;0;;;
@@ -371,6 +371,9 @@ Dobozos felépítmény alkatrészek;;0157GR PVC Saroktakaró csík, szürke;Cima
 Dobozos felépítmény alkatrészek;515727;55 mm-es PVC tömítés N/N;Cimaplast;570C;NINCS;nem;0;;;
 Dobozos felépítmény alkatrészek;516550;65 mm-es PVC tömítés G;Cimaplast;016527;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;;E87370 Edscha takaró gumi COMPACT 110;Cimaplast;4038087370;NINCS;nem;0;;;
+Acél és alu rakoncák és szegők;227686;50x35x3,5 mm R4 oszlop profil elox;Constellium Decin;7686;MEGVAN;igen;3;;50x35x3,5 mm R4 oszlop profil elox;
+Ipari félgyártmányok;222891;Zártszelvény 60x30x2,5 R2,5 elox;Constellium Decin;12891;MEGVAN;igen;4;;Zártszelvény 60x30x2,5 R2,5 elox;
+Ponyvarendszer kiegészítők;226900;100x25 mm Ponyvatartó zártszelvény D;Constellium Decin;6900;MEGVAN;igen;2;;100x25 mm Ponyvatartó zártszelvény D;
 Ponyvás oldalfal profilok és szegők;228197;Alsó szakállas 100 mm elox profil;Constellium Decin;8197;MEGVAN;igen;7;6611128197;Bottom profile Eurolock 100mm, anodized;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1515_bottom-profile-eurolock-100mm--anodized
 Ponyvás oldalfal profilok és szegők;227783;Alsó szakállas 200 mm elox profil;Constellium Decin;7783;MEGVAN;igen;7;6611127783;Bottom profile Eurolock 200 mm, anodized;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1511_bottom-profile-eurolock-200-mm--anodized
 Ponyvás oldalfal profilok és szegők;227948;Alsó tömítéses 100 mm elox profil;Constellium Decin;7948;MEGVAN;igen;7;6611127948;Lower profile EUROLOCK 100mm, an., sealing;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1514_lower-profile-eurolock-100mm--an.--sealing
@@ -381,7 +384,16 @@ Ponyvás oldalfal profilok és szegők;227046;Köztes 200 mm elox profil;Constel
 Ponyvás oldalfal profilok és szegők;227046/n;Köztes 200 mm profil;Constellium Decin;7046;MEGVAN;igen;7;6611007046;Middle profile Eurolock 200mm, al;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1498_middle-profile-eurolock-200mm--al
 Ponyvás oldalfal profilok és szegők;227045;Köztes ponyvás 200 mm elox profil;Constellium Decin;7045;MEGVAN;igen;7;6611127045;Tarpaulin profile Eurolock200mm, anodized;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1507_tarpaulin-profile-eurolock200mm--anodized
 Ponyvás oldalfal profilok és szegők;227045/n;Köztes ponyvás 200 mm profil;Constellium Decin;7045;MEGVAN;igen;7;6611007045;Tarpaulin profile Eurolock 200 mm, Al;https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1497_tarpaulin-profile-eurolock-200-mm--al
-Acél és alu rakoncák és szegők;227686;50x35x3,5 mm R4 oszlop profil elox;Constellium Decin;7686;NINCS;nem;0;;;
+Zárt-dobozos és hűtős profilok;237870;25x25 mm utánfutó sarokprofil elox;Constellium Decin;7870;MEGVAN;igen;2;;25x25 mm utánfutó sarokprofil elox;
+Zárt-dobozos és hűtős profilok;237905/n;25x35 mm íves sarokprofil R50;Constellium Decin;7905;MEGVAN;igen;2;;25x35 mm íves sarokprofil R50;
+Zárt-dobozos és hűtős profilok;234235;35x35 mm íves sarokprofil elox D;Constellium Decin;14235;MEGVAN;igen;2;;35x35 mm íves sarokprofil elox D;
+Zárt-dobozos és hűtős profilok;232189;50x170 mm L Belső védőprofil elox;Constellium Decin;;MEGVAN;igen;2;;50x170 mm L Belső védőprofil elox;
+Zárt-dobozos és hűtős profilok;237461/n;50x260 mm L Belső védőprofil;Constellium Decin;7461;MEGVAN;igen;2;;50x260 mm L Belső védőprofil;
+Zárt-dobozos és hűtős profilok;237461;50x260 mm L Belső védőprofil elox;Constellium Decin;7461;MEGVAN;igen;2;;50x260 mm L Belső védőprofil elox;
+Zárt-dobozos és hűtős profilok;237767;"60x60 ""L"" profil elox";Constellium Decin;7767;MEGVAN;igen;2;;"60x60 ""L"" profil elox";
+Zárt-dobozos és hűtős profilok;238087;70x110 mm L külső elox;Constellium Decin;8087;MEGVAN;igen;2;;70x110 mm L külső elox;
+Zárt-dobozos és hűtős profilok;236825;80x80 mm L profil elox;Constellium Decin;7753;MEGVAN;igen;2;;80x80 mm L profil elox;
+Zárt-dobozos és hűtős profilok;238645;"Külső ""L"" profil 140x80mm elox";Constellium Decin;8645;MEGVAN;igen;2;;"Külső ""L"" profil 140x80mm elox";
 Alumínium alváz profilok;202387;"""I"" 70 Kereszttartó";Constellium Decin;12387;NINCS;nem;0;;;
 Alumínium alváz profilok;207319;"""I"" 90 Kereszttartó";Constellium Decin;7319;NINCS;nem;0;;;
 Alumínium alváz profilok;2073902;"""I"" 90 csavarozható kereszttartó";Constellium Decin;10902;NINCS;nem;0;;;
@@ -399,26 +411,14 @@ Alumínium padló profilok;227543/30;Padló profil 200 mm;Constellium Decin;7543
 Alumínium padló profilok;227543/30;Padló profil 200 mm ELOX;Constellium Decin;7543;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;6612225;Első oszlop 90/70 alu elox D;Constellium Decin;12225;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;6612226;Hátsó oszlop 128/35 alu elox D;Constellium Decin;12226;NINCS;nem;0;;;
-Ipari félgyártmányok;222891;Zártszelvény 60x30x2,5 R2,5 elox;Constellium Decin;12891;NINCS;nem;0;;;
-Ponyvarendszer kiegészítők;226900;100x25 mm Ponyvatartó zártszelvény D;Constellium Decin;6900;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;227046/CK10;Köztes 200 mm elox profil;Constellium Decin;12579;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;224230;Köztes 250 mm elox profil CD;Constellium Decin;14230;NINCS;nem;0;;;
 Ponyvás oldalfal profilok és szegők;224230/n;Köztes 250 mm profil CD;Constellium Decin;14230;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;237847/n;"""h"" Ajtószegő 30 mm D";Constellium Decin;7847;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;237870;25x25 mm utánfutó sarokprofil elox;Constellium Decin;7870;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;237905/n;25x35 mm íves sarokprofil R50;Constellium Decin;7905;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;237460/n;260 mm I Koptató profil;Constellium Decin;;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;237460;260 mm I Koptató profil elox;Constellium Decin;7460;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;234235;35x35 mm íves sarokprofil elox D;Constellium Decin;14235;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;232189;50x170 mm L Belső védőprofil elox;Constellium Decin;;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;237461/n;50x260 mm L Belső védőprofil;Constellium Decin;7461;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;237461;50x260 mm L Belső védőprofil elox;Constellium Decin;7461;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;237767;"60x60 ""L"" profil elox";Constellium Decin;7767;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;238087;70x110 mm L külső elox;Constellium Decin;8087;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;236825;80x80 mm L profil elox;Constellium Decin;7753;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;231543;Dobozos keret elox 134/80;Constellium Decin;;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;237971;Hűtős keretprofil nyitott elox;Constellium Decin;;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;238645;"Külső ""L"" profil 140x80mm elox";Constellium Decin;8645;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;237846/n;Tömítéses ajtószegő 30 mm D;Constellium Decin;7846;NINCS;nem;0;;;
 Speciális felépítmény alkatrészek;614603;"""B"" Oldalajtó zárszerkezet FEKETE";D.LaPorte;2141199DR;NINCS;nem;0;;;
 Speciális felépítmény alkatrészek;614602;"""J"" Oldalajtó zárszerkezet";D.LaPorte;61.4600.0002;NINCS;nem;0;;;
@@ -503,7 +503,7 @@ Zárt-dobozos és hűtős profilok;233837;OR Tömítéses ajtószegő 35 mm elox
 Zárt-dobozos és hűtős profilok;234002;Tömítés a szegő profilhoz OR;ESAL;GK40020;NINCS;nem;0;;;
 Ipari félgyártmányok;251010;"100x100x8 Alu ""L"" profil";EXAL;EXL1001008N;MEGVAN;igen;4;;"100x100x8 Alu ""L"" profil";
 Ipari félgyártmányok;255032;50x30x2,5 Alu zártszelvény 6000 mm;EXAL;EXZ50302-5N;MEGVAN;igen;4;;50x30x2,5 Alu zártszelvény 6000 mm;
-Ponyvarendszer kiegészítők;223520;Ponyvacső 35x2 mm;EXAL;EXO352N/7000;NINCS;nem;0;;;
+Ponyvarendszer kiegészítők;223520;Ponyvacső 35x2 mm;EXAL;EXO352N/7000;MEGVAN;igen;4;;Ponyvacső 35x2 mm;
 Elhúzható rolóponyvás rendszer;;E/COMPACT CS tolótető rendszer;Edscha;;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;;E/COMPACT FIX tető rendszer;Edscha;;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;;E/COMPACT tetőprofil 900407/5000;Edscha;29600;NINCS;nem;0;;;
@@ -548,18 +548,18 @@ Elhúzható rolóponyvás rendszer;;E69004740 CS-Compact tetőkereszttartó 2550
 Elhúzható rolóponyvás rendszer;;E87370 Edscha takaró gumi COMPACT 110 SZÜRKE 14M;Edscha;511012;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;;EDSCHA tolótető CS STANDARD KIT;Edscha;;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;;EDSCHA tolótető CS Volumen KIT;Edscha;;NINCS;nem;0;;;
-Alumínium alváz profilok;206441;"""I"" gerenda profil 80x60/50x8,6 mm";Exlabesa ES;06441;NINCS;nem;0;;;
-Ponyvarendszer kiegészítők;220233;150x25 mm Ponyvatartó zártszelvény;Exlabesa ES;20233;NINCS;nem;0;;;
+Alumínium alváz profilok;206441;"""I"" gerenda profil 80x60/50x8,6 mm";Exlabesa ES;06441;MEGVAN;igen;4;;"""I"" gerenda profil 80x60/50x8,6 mm";
+Ponyvarendszer kiegészítők;220233;150x25 mm Ponyvatartó zártszelvény;Exlabesa ES;20233;MEGVAN;igen;2;;150x25 mm Ponyvatartó zártszelvény;
 Ponyvarendszer kiegészítők;226887;Spitz profil 140 mm magas;Exlabesa ES;06887;NINCS;nem;0;;;
-Alumínium alváz profilok;200392;"""I"" 90/60 Kereszttartó EX";Exlabesa PL;50392;NINCS;nem;0;;;
+Alumínium alváz profilok;200392;"""I"" 90/60 Kereszttartó EX";Exlabesa PL;50392;MEGVAN;igen;3;;"""I"" 90/60 Kereszttartó EX";
+Alumínium alváz profilok;209695;"""U"" 110/60 Hossztartó duplanútolt EX";Exlabesa PL;39695;MEGVAN;igen;3;;"""U"" 110/60 Hossztartó duplanútolt EX";
+Zárt-dobozos és hűtős profilok;237301;45x300x3 mm L Belső bokaléc védőprofil elox;Exlabesa PL;130301;MEGVAN;igen;4;;45x300x3 mm L Belső bokaléc védőprofil elox;
 Alumínium alváz profilok;207327;"""TL"" 110/60/60 Hossztartó EX";Exlabesa PL;37327;NINCS;nem;0;;;
-Alumínium alváz profilok;209695;"""U"" 110/60 Hossztartó duplanútolt EX";Exlabesa PL;39695;NINCS;nem;0;;;
 Alumínium padló profilok;222910/30;Padló profil 200 mm EXL;Exlabesa PL;29100;NINCS;nem;0;;;
 Alumínium padló profilok;207776/30;Padló profil 220 mm EX;Exlabesa PL;37776;NINCS;nem;0;;;
 Alumínium padló profilok;225630/55;Padló profil 250 mm zárt;Exlabesa PL;05630;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;6639692;MAX első oszlop EXL elox;Exlabesa PL;39692;NINCS;nem;0;;;
 Elhúzható rolóponyvás rendszer;6639604;MAX hátsó oszlop EXL elox;Exlabesa PL;39604;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;237301;45x300x3 mm L Belső bokaléc védőprofil elox;Exlabesa PL;130301;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;237712/13;"Dupla alu csiga zsanér ""u"" 25 mm elox";Exlabesa PL;37712;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;238210;Lamella TARTÓ profil EX;Exlabesa PL;38210;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;238209;Lamella profil 200 mm EX;Exlabesa PL;38209;NINCS;nem;0;;;
@@ -796,11 +796,11 @@ Speciális felépítmény alkatrészek;;Ledes lámpa, szögletes fehér 12/24V;G
 Speciális felépítmény alkatrészek;;Szellőző rács 410x100 mm;G&C termékek;35-4010;NINCS;nem;0;;;
 Speciális felépítmény alkatrészek;;Tetőablak üveg 970x530;G&C termékek;90-8060-Dark;NINCS;nem;0;;;
 Speciális felépítmény alkatrészek;;Ventillátor belső takaró elem;G&C termékek;35-2195-LED-24V;NINCS;nem;0;;;
+Ponyvarendszer kiegészítők;222266;100x25 mm Ponyvatartó zártszelvény GK;Grupa Kęty;7KPH2266;MEGVAN;igen;2;;100x25 mm Ponyvatartó zártszelvény GK;
+Ponyvarendszer kiegészítők;222001;100x25 mm Ponyvatartó zártszelvény T;Grupa Kęty;T1.2001.0;MEGVAN;igen;2;;100x25 mm Ponyvatartó zártszelvény T;
+Ponyvarendszer kiegészítők;223219;100x25 mm Ponyvatartó zártszelvény elox;Grupa Kęty;R3219;MEGVAN;igen;2;;100x25 mm Ponyvatartó zártszelvény elox;
+Ponyvarendszer kiegészítők;222185;100x25 mm Ponyvatartó zártszelvény, merevített;Grupa Kęty;2185;MEGVAN;igen;2;;100x25 mm Ponyvatartó zártszelvény, merevített;
 Alumínium alváz profilok;202850;"""U"" 130 Hossztartó K";Grupa Kęty;W2850;NINCS;nem;0;;;
-Ponyvarendszer kiegészítők;222266;100x25 mm Ponyvatartó zártszelvény GK;Grupa Kęty;7KPH2266;NINCS;nem;0;;;
-Ponyvarendszer kiegészítők;222001;100x25 mm Ponyvatartó zártszelvény T;Grupa Kęty;T1.2001.0;NINCS;nem;0;;;
-Ponyvarendszer kiegészítők;223219;100x25 mm Ponyvatartó zártszelvény elox;Grupa Kęty;R3219;NINCS;nem;0;;;
-Ponyvarendszer kiegészítők;222185;100x25 mm Ponyvatartó zártszelvény, merevített;Grupa Kęty;2185;NINCS;nem;0;;;
 Gumiszőnyegek;;G 1400x1400 Rampaszőnyeg;Gummitrading;;MEGVAN;nem;2;;G 1400x1400 Rampaszőnyeg;
 Gumiszőnyegek;;G 1800x1400 Rampaszőnyeg;Gummitrading;;MEGVAN;nem;2;;G 1800x1400 Rampaszőnyeg;
 Gumiszőnyegek;;G 1800x1600 Rampaszőnyeg;Gummitrading;;MEGVAN;nem;2;;G 1800x1600 Rampaszőnyeg;
@@ -1173,10 +1173,10 @@ Alumínium padló profilok;221902;Bordázott padló profil 200/40 mm;RE-ALL;1900
 Dobozos felépítmény alkatrészek;103925;Sarok elem 35/35 R profilhoz;RE-ALL;3900125;MEGVAN;igen;2;3900125;RE-ALL katalógus 21.pdf;https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=4
 Elhúzható rolóponyvás rendszer;6621620;OR MIDI Első oszlop alu elox;RE-ALL;2100062;MEGVAN;igen;2;2100062;RE-ALL katalógus 21.pdf;https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=12
 Elhúzható rolóponyvás rendszer;6621640;OR MIDI Hátsó oszlop alu elox;RE-ALL;2100064;MEGVAN;igen;2;2100064;RE-ALL katalógus 21.pdf;https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=12
-Ipari félgyártmányok;254508;"20x20x2 Alu ""L"" profil";RE-ALL;1304510;MEGVAN;nem;0;1304510;RE-ALL katalógus 13-15.pdf;https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19
-Ipari félgyártmányok;252502;"25x25x2 Alu ""L"" profil";RE-ALL;1304540;MEGVAN;nem;0;1304540;RE-ALL katalógus 13-15.pdf;https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19
-Ipari félgyártmányok;251160;40x20 mm Alu lapos profil;RE-ALL;15-01160;MEGVAN;nem;1;15-01160;RE-ALL katalógus 13-15.pdf;https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=11
-Ipari félgyártmányok;250403;"40x40x3 Alu ""L"" profil";RE-ALL;1304605;MEGVAN;nem;0;1304605;RE-ALL katalógus 13-15.pdf;https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19
+Ipari félgyártmányok;254508;"20x20x2 Alu ""L"" profil";RE-ALL;1304510;MEGVAN;igen;3;1304510;RE-ALL katalógus 13-15.pdf;https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19
+Ipari félgyártmányok;252502;"25x25x2 Alu ""L"" profil";RE-ALL;1304540;MEGVAN;igen;3;1304540;RE-ALL katalógus 13-15.pdf;https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19
+Ipari félgyártmányok;251160;40x20 mm Alu lapos profil;RE-ALL;15-01160;MEGVAN;igen;4;15-01160;RE-ALL katalógus 13-15.pdf;https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=11
+Ipari félgyártmányok;250403;"40x40x3 Alu ""L"" profil";RE-ALL;1304605;MEGVAN;igen;3;1304605;RE-ALL katalógus 13-15.pdf;https://www.re-all.it/images/catalogo-pdf/2026/13-15.pdf#page=19
 Ponyvarendszer kiegészítők;380045;34mm feszítő cső alu profil;RE-ALL;2100045;MEGVAN;igen;3;2100045;RE-ALL katalógus 21.pdf;https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=8
 Ponyvarendszer kiegészítők;380035;Ponyvabeakasztó alu profil 55 mm elox;RE-ALL;2100035;MEGVAN;igen;3;2100035;RE-ALL katalógus 21.pdf;https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=7
 Ponyvarendszer kiegészítők;380033;Ponyvabeakasztó alu profil 60 mm elox;RE-ALL;2100033;MEGVAN;igen;3;2100033;RE-ALL katalógus 21.pdf;https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=7
@@ -1187,12 +1187,12 @@ Ponyvás oldalfal profilok és szegők;247152;Bill. felső profil 200/30 mm elox
 Ponyvás oldalfal profilok és szegők;247162;Bill. köztes profil 100/30 mm elox;RE-ALL;17-00162;MEGVAN;igen;3;17-00162;RE-ALL katalógus 16-17.pdf;https://www.re-all.it/images/catalogo-pdf/2026/16-17.pdf#page=16
 Ponyvás oldalfal profilok és szegők;247180;Billencs alsó profil 200+45 mm/ 30 mm elox;RE-ALL;17-00180;MEGVAN;igen;3;17-00180;RE-ALL katalógus 16-17.pdf;https://www.re-all.it/images/catalogo-pdf/2026/16-17.pdf#page=17
 Ponyvás oldalfal profilok és szegők;247158;Billencs középső 200x30 mm profil;RE-ALL;17-00158;MEGVAN;igen;3;17-00158;RE-ALL katalógus 16-17.pdf;https://www.re-all.it/images/catalogo-pdf/2026/16-17.pdf#page=16
+Zárt-dobozos és hűtős profilok;232010;"20x10 ""L"" Profil natúr";RE-ALL;;MEGVAN;igen;2;;"20x10 ""L"" Profil natúr";
+Zárt-dobozos és hűtős profilok;237000;25x25 mm íves sarokprofil elox;RE-ALL;T1.7000.1;MEGVAN;igen;2;;25x25 mm íves sarokprofil elox;
+Zárt-dobozos és hűtős profilok;232121;35x35 mm íves sarokprofil elox;RE-ALL;213838;MEGVAN;igen;2;;35x35 mm íves sarokprofil elox;
+Zárt-dobozos és hűtős profilok;232156;50x174 mm L Belső védőprofil;RE-ALL;;MEGVAN;igen;2;;50x174 mm L Belső védőprofil;
 Zárt-dobozos és hűtős profilok;232125;Dobozos keret elox OR 130 mm nyitott;RE-ALL;2100025;MEGVAN;nem;3;2100025;RE-ALL katalógus 21.pdf;https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=5
 Zárt-dobozos és hűtős profilok;238170;OR ajtó keret elox 70x30x65/25mm;RE-ALL;1800170;MEGVAN;igen;2;1800170;RE-ALL katalógus 18.pdf;https://www.re-all.it/images/catalogo-pdf/2026/18.pdf#page=9
-Zárt-dobozos és hűtős profilok;232010;"20x10 ""L"" Profil natúr";RE-ALL;;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;237000;25x25 mm íves sarokprofil elox;RE-ALL;T1.7000.1;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;232121;35x35 mm íves sarokprofil elox;RE-ALL;213838;NINCS;nem;0;;;
-Zárt-dobozos és hűtős profilok;232156;50x174 mm L Belső védőprofil;RE-ALL;;NINCS;nem;0;;;
 Zárt-dobozos és hűtős profilok;232129;OR Tömítéses ajtószegő 25 mm elox;RE-ALL;250062;NINCS;nem;0;;;
 Speciális felépítmény alkatrészek;615106;Retesz rúd D10 L:1300 mm;Sachermayer;102269188;NINCS;nem;0;;;
 Speciális felépítmény alkatrészek;615105;Süllyesztett dupla működésű retesz;Sachermayer;102269040;NINCS;nem;0;;;
