@@ -10,18 +10,6 @@
  ],
  "categories": [
   {
-   "group": "acel-profilok",
-   "slug": "lezerhegesztett-acel-oldalfalak",
-   "name": "Lézerhegesztett acél oldalfalak",
-   "source": "Fuhrmann"
-  },
-  {
-   "group": "acel-profilok",
-   "slug": "heavy-duty-acel-oldalfalak",
-   "name": "Heavy Duty acél oldalfalak",
-   "source": "Fuhrmann"
-  },
-  {
    "group": "gumiszonyegek",
    "slug": "bordas-es-mintas-gumiszonyegek",
    "name": "Bordás és mintás gumiszőnyegek",
@@ -170,6 +158,18 @@
    "slug": "tomitoprofilok",
    "name": "Élvédő tömítőprofilok",
    "source": "Sand-Profile"
+  },
+  {
+   "group": "acel-profilok",
+   "slug": "lezerhegesztett-acel-oldalfalak",
+   "name": "Lézerhegesztett acél oldalfalak",
+   "source": "Fuhrmann"
+  },
+  {
+   "group": "acel-profilok",
+   "slug": "heavy-duty-acel-oldalfalak",
+   "name": "Heavy Duty acél oldalfalak",
+   "source": "Fuhrmann"
   }
  ],
  "renameGroups": {
@@ -177,2054 +177,6 @@
   "kedergumik": "Gumi- és kéderprofilok"
  },
  "products": [
-  {
-   "slug": "acel-oldalfal-b-300",
-   "code": "B 300",
-   "name": "Acél oldalfal B 300 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "10",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "300"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw300.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-b-300-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bak-300",
-   "code": "BAK 300",
-   "name": "Acél oldalfal BAK 300 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "10,6",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "300"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw300.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bak-300-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hv-300",
-   "code": "HV 300",
-   "name": "Acél oldalfal HV 300 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "9,3",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "300"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw300.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hv-300-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvak-300",
-   "code": "HVAK 300",
-   "name": "Acél oldalfal HVAK 300 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "10,1",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "300"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw300.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvak-300-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hv-350",
-   "code": "HV 350",
-   "name": "Acél oldalfal HV 350 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "10,1",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "350"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw350.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hv-350-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvkt-350",
-   "code": "HVkT 350",
-   "name": "Acél oldalfal HVkT 350 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "10,4",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "350"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw350.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvkt-350-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-b-400",
-   "code": "B 400",
-   "name": "Acél oldalfal B 400 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "11,6",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "400"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-b-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bnkt-400",
-   "code": "BNKT 400",
-   "name": "Acél oldalfal BNKT 400 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "12,3",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "400"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bnkt-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bnskt-400",
-   "code": "BNSKT 400",
-   "name": "Acél oldalfal BNSKT 400 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "70",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "12,5",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "400"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bnskt-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bak-400",
-   "code": "BAK 400",
-   "name": "Acél oldalfal BAK 400 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "12,4",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "400"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bak-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bakkt-400",
-   "code": "BAKkt 400",
-   "name": "Acél oldalfal BAKkt 400 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "12,7",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "400"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bakkt-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bakskt-400",
-   "code": "BAKSkt 400",
-   "name": "Acél oldalfal BAKSkt 400 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "70",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "12,9",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "400"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bakskt-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hv-400",
-   "code": "HV 400",
-   "name": "Acél oldalfal HV 400 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "1,25 / 1,50 / 2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "6,8 / 8,2 / 10,9",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "400"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hv-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvkt-400",
-   "code": "HVkT 400",
-   "name": "Acél oldalfal HVkT 400 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "11,2",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "400"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvkt-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvn-400",
-   "code": "HVN 400",
-   "name": "Acél oldalfal HVN 400 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "11,4",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "400"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvn-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvnkt-400",
-   "code": "HVNkT 400",
-   "name": "Acél oldalfal HVNkT 400 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "11,7",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "400"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvnkt-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvd-400",
-   "code": "HVD 400",
-   "name": "Acél oldalfal HVD 400 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "11,0",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "400"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvd-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvak-400",
-   "code": "HVAK 400",
-   "name": "Acél oldalfal HVAK 400 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "11,7",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "400"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvak-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvakkt-400",
-   "code": "HVAKkT 400",
-   "name": "Acél oldalfal HVAKkT 400 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "12,0",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "400"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvakkt-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-b-450",
-   "code": "B 450",
-   "name": "Acél oldalfal B 450 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "12,6",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "450"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw450.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-b-450-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bn-450",
-   "code": "BN 450",
-   "name": "Acél oldalfal BN 450 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "12,9",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "450"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw450.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bn-450-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bak-450",
-   "code": "BAK 450",
-   "name": "Acél oldalfal BAK 450 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "13,4",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "450"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw450.php",
-   "images": [],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hv-450",
-   "code": "HV 450",
-   "name": "Acél oldalfal HV 450 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "11,9",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "450"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw450.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hv-450-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvn-450",
-   "code": "HVN 450",
-   "name": "Acél oldalfal HVN 450 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "12,4",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "450"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw450.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvn-450-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvak-450",
-   "code": "HVAK 450",
-   "name": "Acél oldalfal HVAK 450 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "12,7",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "450"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw450.php",
-   "images": [],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-b-500",
-   "code": "B 500",
-   "name": "Acél oldalfal B 500 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0 / 2,5",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "13,4 / 16,8",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "500"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-b-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bn-500",
-   "code": "BN 500",
-   "name": "Acél oldalfal BN 500 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "13,9",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "500"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bn-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bns-500",
-   "code": "BNS 500",
-   "name": "Acél oldalfal BNS 500 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "70",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "14,0",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "500"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bns-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bak-500",
-   "code": "BAK 500",
-   "name": "Acél oldalfal BAK 500 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "14,2",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "500"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bak-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-baks-500",
-   "code": "BAKS 500",
-   "name": "Acél oldalfal BAKS 500 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "70",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "14,4",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "500"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-baks-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hv-500",
-   "code": "HV 500",
-   "name": "Acél oldalfal HV 500 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "1,25 / 1,50 / 2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "6,8 / 8,2 / 10,9",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "500"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hv-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvn-500",
-   "code": "HVN 500",
-   "name": "Acél oldalfal HVN 500 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "11,2",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "500"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvn-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvak-500",
-   "code": "HVAK 500",
-   "name": "Acél oldalfal HVAK 500 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "11,4",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "500"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvak-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvd-500",
-   "code": "HVD 500",
-   "name": "Acél oldalfal HVD 500 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "11,7",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "500"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvd-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-b-600",
-   "code": "B 600",
-   "name": "Acél oldalfal B 600 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0 / 2,5",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "15 / 18,8",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "600"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-b-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bn-600",
-   "code": "BN 600",
-   "name": "Acél oldalfal BN 600 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0 / 2,5",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "15,4 / 19,3",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "600"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bn-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bns-600",
-   "code": "BNS 600",
-   "name": "Acél oldalfal BNS 600 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0 / 2,5",
-    "Felső szélesség [mm]": "70",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "15,7 / 19,5",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "600"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bns-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bak-600",
-   "code": "BAK 600",
-   "name": "Acél oldalfal BAK 600 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0 / 2,5",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "15,8 / 19,8",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "600"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bak-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-baks-600",
-   "code": "BAKS 600",
-   "name": "Acél oldalfal BAKS 600 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0 / 2,5",
-    "Felső szélesség [mm]": "70",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "16 / 20",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "600"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-baks-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bakt-600",
-   "code": "BAKT 600",
-   "name": "Acél oldalfal BAKT 600 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "20,2",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "600"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bakt-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hv-600",
-   "code": "HV 600",
-   "name": "Acél oldalfal HV 600 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "1,50 / 2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "10,8 / 14,3",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "600"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hv-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvn-600",
-   "code": "HVN 600",
-   "name": "Acél oldalfal HVN 600 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "14,8",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "600"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvn-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvak-600",
-   "code": "HVAK 600",
-   "name": "Acél oldalfal HVAK 600 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "15,2",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "600"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvak-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvakt-600",
-   "code": "HVAKT 600",
-   "name": "Acél oldalfal HVAKT 600 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "15,5",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "600"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvakt-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvd-600",
-   "code": "HVD 600",
-   "name": "Acél oldalfal HVD 600 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "14,3",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "600"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvd-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-btt-800",
-   "code": "BTT 800",
-   "name": "Acél oldalfal BTT 800 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "23,6",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "800"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw800.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-btt-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-bntt-800",
-   "code": "BNTT 800",
-   "name": "Acél oldalfal BNTT 800 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "24,1",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "800"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw800.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-bntt-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-baktt-800",
-   "code": "BAKTT 800",
-   "name": "Acél oldalfal BAKTT 800 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5",
-    "Felső szélesség [mm]": "60",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "24,6",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "800"
-   },
-   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw800.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-baktt-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hv-800",
-   "code": "HV 800",
-   "name": "Acél oldalfal HV 800 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "17,5",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "800"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw800.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hv-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvtt-800",
-   "code": "HVTT 800",
-   "name": "Acél oldalfal HVTT 800 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "18,3",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "800"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw800.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvtt-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvntt-800",
-   "code": "HVNTT 800",
-   "name": "Acél oldalfal HVNTT 800 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "18,7",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "800"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw800.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvntt-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvaktt-800",
-   "code": "HVAKTT 800",
-   "name": "Acél oldalfal HVAKTT 800 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "19",
-    "Felhasználás": "magasító (ráépítő) oldalfal",
-    "Magasság [mm]": "800"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw800.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvaktt-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hv-900",
-   "code": "HV 900",
-   "name": "Acél oldalfal HV 900 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "19,1",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "900"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw1000.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hv-900-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-hvw-1000",
-   "code": "HVW 1000",
-   "name": "Acél oldalfal HVW 1000 mm",
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,0",
-    "Felső szélesség [mm]": "33",
-    "Alsó szélesség [mm]": "33",
-    "Tömeg [kg/m]": "20,7",
-    "Felhasználás": "alap oldalfal",
-    "Magasság [mm]": "1000"
-   },
-   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbw1000.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-hvw-1000-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-fhd-600",
-   "code": "FHD 600",
-   "name": "Acél oldalfal FHD 600 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "3,0",
-    "Tömeg [kg/m]": "23,5",
-    "Anyagminőség": "S500",
-    "Gyártási hossz": "2500 / 5000",
-    "Magasság [mm]": "600"
-   },
-   "description": "Heavy Duty acél oldalfal nehéz építőipari felépítményekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfhd.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-fhd-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-fhd-800",
-   "code": "FHD 800",
-   "name": "Acél oldalfal FHD 800 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "3,0",
-    "Tömeg [kg/m]": "28,7",
-    "Anyagminőség": "S500",
-    "Gyártási hossz": "2500 / 5000",
-    "Magasság [mm]": "800"
-   },
-   "description": "Heavy Duty acél oldalfal nehéz építőipari felépítményekhez.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfhd.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-fhd-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxb-600",
-   "code": "FOXB 600",
-   "name": "Acél oldalfal FOXB 600 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "4,0",
-    "Tömeg [kg/m]": "32,2",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "600"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxb-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxb-700",
-   "code": "FOXB 700",
-   "name": "Acél oldalfal FOXB 700 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "4,0",
-    "Tömeg [kg/m]": "35,4",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "700"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxb-700-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxb-800",
-   "code": "FOXB 800",
-   "name": "Acél oldalfal FOXB 800 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "4,0",
-    "Tömeg [kg/m]": "38,6",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "800"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxb-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxb-900",
-   "code": "FOXB 900",
-   "name": "Acél oldalfal FOXB 900 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "4,0",
-    "Tömeg [kg/m]": "41,8",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "900"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxb-900-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxb-1000",
-   "code": "FOXB 1000",
-   "name": "Acél oldalfal FOXB 1000 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "4,0",
-    "Tömeg [kg/m]": "45",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "1000"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxb-1000-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxhv-600",
-   "code": "FOXHV 600",
-   "name": "Acél oldalfal FOXHV 600 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "4,0",
-    "Tömeg [kg/m]": "31,5",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "600"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxhv-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxhv-700",
-   "code": "FOXHV 700",
-   "name": "Acél oldalfal FOXHV 700 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "4,0",
-    "Tömeg [kg/m]": "34,7",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "700"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxhv-700-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxhv-800",
-   "code": "FOXHV 800",
-   "name": "Acél oldalfal FOXHV 800 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "4,0",
-    "Tömeg [kg/m]": "37,9",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "800"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxhv-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxhv-900",
-   "code": "FOXHV 900",
-   "name": "Acél oldalfal FOXHV 900 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "4,0",
-    "Tömeg [kg/m]": "41,1",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "900"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxhv-900-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxhv-1000",
-   "code": "FOXHV 1000",
-   "name": "Acél oldalfal FOXHV 1000 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "4,0",
-    "Tömeg [kg/m]": "44,3",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "1000"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxhv-1000-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlb-400",
-   "code": "FOXLB 400",
-   "name": "Acél oldalfal FOXLB 400 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5",
-    "Tömeg [kg/m]": "13,6",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "400"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlb-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlb-500",
-   "code": "FOXLB 500",
-   "name": "Acél oldalfal FOXLB 500 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5",
-    "Tömeg [kg/m]": "15,7",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "500"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlb-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlb-600",
-   "code": "FOXLB 600",
-   "name": "Acél oldalfal FOXLB 600 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5",
-    "Tömeg [kg/m]": "17,5",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "600"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlb-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlb-700",
-   "code": "FOXLB 700",
-   "name": "Acél oldalfal FOXLB 700 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5",
-    "Tömeg [kg/m]": "18,6",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "700"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlb-700-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlb-800",
-   "code": "FOXLB 800",
-   "name": "Acél oldalfal FOXLB 800 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5",
-    "Tömeg [kg/m]": "21,5",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "800"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlb-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlb-900",
-   "code": "FOXLB 900",
-   "name": "Acél oldalfal FOXLB 900 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "3,0",
-    "Tömeg [kg/m]": "28,2",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "900"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlb-900-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlb-1000",
-   "code": "FOXLB 1000",
-   "name": "Acél oldalfal FOXLB 1000 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "3,0",
-    "Tömeg [kg/m]": "30,4",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "1000"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlb-1000-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhv-400",
-   "code": "FOXLHV 400",
-   "name": "Acél oldalfal FOXLHV 400 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5",
-    "Tömeg [kg/m]": "12,5",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "400"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhv-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhv-500",
-   "code": "FOXLHV 500",
-   "name": "Acél oldalfal FOXLHV 500 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5",
-    "Tömeg [kg/m]": "14,5",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "500"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhv-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhv-600",
-   "code": "FOXLHV 600",
-   "name": "Acél oldalfal FOXLHV 600 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5",
-    "Tömeg [kg/m]": "16,5",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "600"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhv-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhv-700",
-   "code": "FOXLHV 700",
-   "name": "Acél oldalfal FOXLHV 700 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5",
-    "Tömeg [kg/m]": "18,6",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "700"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhv-700-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhv-800",
-   "code": "FOXLHV 800",
-   "name": "Acél oldalfal FOXLHV 800 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5",
-    "Tömeg [kg/m]": "20,4",
-    "Anyagminőség": "Hardox 450",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "800"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhv-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlbak-400",
-   "code": "FOXLBAK 400",
-   "name": "Acél oldalfal FOXLBAK 400 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 [3,0]",
-    "Tömeg [kg/m]": "15,6",
-    "Anyagminőség": "Hardox 450 [S500]",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "400"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlbak-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlbak-500",
-   "code": "FOXLBAK 500",
-   "name": "Acél oldalfal FOXLBAK 500 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 [3,0]",
-    "Tömeg [kg/m]": "17,6",
-    "Anyagminőség": "Hardox 450 [S500]",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "500"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlbak-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlbak-600",
-   "code": "FOXLBAK 600",
-   "name": "Acél oldalfal FOXLBAK 600 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 [3,0]",
-    "Tömeg [kg/m]": "19,5",
-    "Anyagminőség": "Hardox 450 [S500]",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "600"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlbak-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlbak-700",
-   "code": "FOXLBAK 700",
-   "name": "Acél oldalfal FOXLBAK 700 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 [3,0]",
-    "Tömeg [kg/m]": "21,5",
-    "Anyagminőség": "Hardox 450 [S500]",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "700"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlbak-700-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlbak-800",
-   "code": "FOXLBAK 800",
-   "name": "Acél oldalfal FOXLBAK 800 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 [3,0]",
-    "Tömeg [kg/m]": "25,9",
-    "Anyagminőség": "Hardox 450 [S500]",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "800"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlbak-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhvak-400",
-   "code": "FOXLHVAK 400",
-   "name": "Acél oldalfal FOXLHVAK 400 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 [3,0]",
-    "Tömeg [kg/m]": "14,5",
-    "Anyagminőség": "Hardox 450 [S500]",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "400"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhvak-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhvak-500",
-   "code": "FOXLHVAK 500",
-   "name": "Acél oldalfal FOXLHVAK 500 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 [3,0]",
-    "Tömeg [kg/m]": "16,5",
-    "Anyagminőség": "Hardox 450 [S500]",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "500"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhvak-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhvak-600",
-   "code": "FOXLHVAK 600",
-   "name": "Acél oldalfal FOXLHVAK 600 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 [3,0]",
-    "Tömeg [kg/m]": "18,5",
-    "Anyagminőség": "Hardox 450 [S500]",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "600"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhvak-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhvak-700",
-   "code": "FOXLHVAK 700",
-   "name": "Acél oldalfal FOXLHVAK 700 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 [3,0]",
-    "Tömeg [kg/m]": "20,3",
-    "Anyagminőség": "Hardox 450 [S500]",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "700"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhvak-700-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhvak-800",
-   "code": "FOXLHVAK 800",
-   "name": "Acél oldalfal FOXLHVAK 800 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 [3,0]",
-    "Tömeg [kg/m]": "21,9",
-    "Anyagminőség": "Hardox 450 [S500]",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "800"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhvak-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlbn-400",
-   "code": "FOXLBN 400",
-   "name": "Acél oldalfal FOXLBN 400 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 & 3,0",
-    "Tömeg [kg/m]": "14,6",
-    "Anyagminőség": "Hardox 450 & S500",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "400"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlbn-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlbn-500",
-   "code": "FOXLBN 500",
-   "name": "Acél oldalfal FOXLBN 500 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 & 3,0",
-    "Tömeg [kg/m]": "16,7",
-    "Anyagminőség": "Hardox 450 & S500",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "500"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlbn-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlbn-600",
-   "code": "FOXLBN 600",
-   "name": "Acél oldalfal FOXLBN 600 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 & 3,0",
-    "Tömeg [kg/m]": "18,7",
-    "Anyagminőség": "Hardox 450 & S500",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "600"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlbn-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlbn-700",
-   "code": "FOXLBN 700",
-   "name": "Acél oldalfal FOXLBN 700 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 & 3,0",
-    "Tömeg [kg/m]": "20,8",
-    "Anyagminőség": "Hardox 450 & S500",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "700"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlbn-700-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlbn-800",
-   "code": "FOXLBN 800",
-   "name": "Acél oldalfal FOXLBN 800 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 & 3,0",
-    "Tömeg [kg/m]": "22,6",
-    "Anyagminőség": "Hardox 450 & S500",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "800"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlbn-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhvn-400",
-   "code": "FOXLHVN 400",
-   "name": "Acél oldalfal FOXLHVN 400 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 & 3,0",
-    "Tömeg [kg/m]": "13,6",
-    "Anyagminőség": "Hardox 450 & S500",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "400"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhvn-400-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhvn-500",
-   "code": "FOXLHVN 500",
-   "name": "Acél oldalfal FOXLHVN 500 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 & 3,0",
-    "Tömeg [kg/m]": "15,6",
-    "Anyagminőség": "Hardox 450 & S500",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "500"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhvn-500-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhvn-600",
-   "code": "FOXLHVN 600",
-   "name": "Acél oldalfal FOXLHVN 600 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 & 3,0",
-    "Tömeg [kg/m]": "17,6",
-    "Anyagminőség": "Hardox 450 & S500",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "600"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhvn-600-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhvn-700",
-   "code": "FOXLHVN 700",
-   "name": "Acél oldalfal FOXLHVN 700 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 & 3,0",
-    "Tömeg [kg/m]": "20",
-    "Anyagminőség": "Hardox 450 & S500",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "700"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhvn-700-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-foxlhvn-800",
-   "code": "FOXLHVN 800",
-   "name": "Acél oldalfal FOXLHVN 800 mm",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Lemezvastagság [mm]": "2,5 & 3,0",
-    "Tömeg [kg/m]": "21,9",
-    "Anyagminőség": "Hardox 450 & S500",
-    "Gyártási hossz": "2500 / 5000 / 6000",
-    "Magasság [mm]": "800"
-   },
-   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
-   "images": [
-    "/termekkepek/acel-oldalfal-foxlhvn-800-1.webp"
-   ],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-fox-rock-heavy",
-   "code": "FOX-ROCK HEAVY",
-   "name": "Acél oldalfal FOX-ROCK HEAVY",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Kivitel": "\"HEAVY\"",
-    "Magasság [mm]": "800 | 900 | 1000 | 1200 | 1400",
-    "Tömeg [kg/m]": "54 | 62 | 68 | 82 | 96",
-    "Gyártási hossz [mm]": "2500 | 5000 | 6000",
-    "Lemezvastagság [mm]": "4,0",
-    "Anyag": "HARDOX 450"
-   },
-   "description": "Extra erős acél oldalfal kőszállító billencsekhez, a legkeményebb igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/foxrock.php",
-   "images": [],
-   "source": "Fuhrmann"
-  },
-  {
-   "slug": "acel-oldalfal-fox-rock-light",
-   "code": "FOX-ROCK LIGHT",
-   "name": "Acél oldalfal FOX-ROCK LIGHT",
-   "group": "acel-profilok",
-   "category": "heavy-duty-acel-oldalfalak",
-   "specs": {
-    "Kivitel": "\"LIGHT\"",
-    "Magasság [mm]": "800 | 900 | 1000",
-    "Tömeg [kg/m]": "47 | 54 | 59",
-    "Gyártási hossz [mm]": "2500 | 5000 | 6000",
-    "Lemezvastagság [mm]": "4,0 | 3,0",
-    "Anyag": "HARDOX 450 | S500"
-   },
-   "description": "Extra erős acél oldalfal kőszállító billencsekhez, a legkeményebb igénybevételre.",
-   "sourceUrl": "https://www.fuhrmann.at/de/foxrock.php",
-   "images": [],
-   "source": "Fuhrmann"
-  },
   {
    "slug": "utanfuto-es-loszallito-gumiszonyeg-lm-17-0-1550-1750",
    "code": "LM 17/0",
@@ -14592,29 +12544,2061 @@
    ],
    "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
    "source": "Sand-Profile"
+  },
+  {
+   "slug": "acel-oldalfal-b-300",
+   "code": "B 300",
+   "name": "Acél oldalfal B 300 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "10",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "300"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw300.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-b-300-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bak-300",
+   "code": "BAK 300",
+   "name": "Acél oldalfal BAK 300 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "10,6",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "300"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw300.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bak-300-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hv-300",
+   "code": "HV 300",
+   "name": "Acél oldalfal HV 300 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "9,3",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "300"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw300.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hv-300-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvak-300",
+   "code": "HVAK 300",
+   "name": "Acél oldalfal HVAK 300 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "10,1",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "300"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw300.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvak-300-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hv-350",
+   "code": "HV 350",
+   "name": "Acél oldalfal HV 350 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "10,1",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "350"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw350.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hv-350-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvkt-350",
+   "code": "HVkT 350",
+   "name": "Acél oldalfal HVkT 350 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "10,4",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "350"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw350.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvkt-350-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-b-400",
+   "code": "B 400",
+   "name": "Acél oldalfal B 400 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "11,6",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "400"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-b-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bnkt-400",
+   "code": "BNKT 400",
+   "name": "Acél oldalfal BNKT 400 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "12,3",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "400"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bnkt-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bnskt-400",
+   "code": "BNSKT 400",
+   "name": "Acél oldalfal BNSKT 400 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "70",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "12,5",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "400"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bnskt-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bak-400",
+   "code": "BAK 400",
+   "name": "Acél oldalfal BAK 400 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "12,4",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "400"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bak-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bakkt-400",
+   "code": "BAKkt 400",
+   "name": "Acél oldalfal BAKkt 400 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "12,7",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "400"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bakkt-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bakskt-400",
+   "code": "BAKSkt 400",
+   "name": "Acél oldalfal BAKSkt 400 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "70",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "12,9",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "400"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bakskt-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hv-400",
+   "code": "HV 400",
+   "name": "Acél oldalfal HV 400 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "1,25 / 1,50 / 2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "6,8 / 8,2 / 10,9",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "400"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hv-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvkt-400",
+   "code": "HVkT 400",
+   "name": "Acél oldalfal HVkT 400 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "11,2",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "400"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvkt-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvn-400",
+   "code": "HVN 400",
+   "name": "Acél oldalfal HVN 400 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "11,4",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "400"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvn-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvnkt-400",
+   "code": "HVNkT 400",
+   "name": "Acél oldalfal HVNkT 400 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "11,7",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "400"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvnkt-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvd-400",
+   "code": "HVD 400",
+   "name": "Acél oldalfal HVD 400 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "11,0",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "400"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvd-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvak-400",
+   "code": "HVAK 400",
+   "name": "Acél oldalfal HVAK 400 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "11,7",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "400"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvak-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvakkt-400",
+   "code": "HVAKkT 400",
+   "name": "Acél oldalfal HVAKkT 400 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "12,0",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "400"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw400.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvakkt-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-b-450",
+   "code": "B 450",
+   "name": "Acél oldalfal B 450 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "12,6",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "450"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw450.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-b-450-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bn-450",
+   "code": "BN 450",
+   "name": "Acél oldalfal BN 450 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "12,9",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "450"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw450.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bn-450-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bak-450",
+   "code": "BAK 450",
+   "name": "Acél oldalfal BAK 450 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "13,4",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "450"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw450.php",
+   "images": [],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hv-450",
+   "code": "HV 450",
+   "name": "Acél oldalfal HV 450 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "11,9",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "450"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw450.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hv-450-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvn-450",
+   "code": "HVN 450",
+   "name": "Acél oldalfal HVN 450 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "12,4",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "450"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw450.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvn-450-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvak-450",
+   "code": "HVAK 450",
+   "name": "Acél oldalfal HVAK 450 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "12,7",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "450"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw450.php",
+   "images": [],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-b-500",
+   "code": "B 500",
+   "name": "Acél oldalfal B 500 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0 / 2,5",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "13,4 / 16,8",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "500"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-b-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bn-500",
+   "code": "BN 500",
+   "name": "Acél oldalfal BN 500 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "13,9",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "500"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bn-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bns-500",
+   "code": "BNS 500",
+   "name": "Acél oldalfal BNS 500 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "70",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "14,0",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "500"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bns-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bak-500",
+   "code": "BAK 500",
+   "name": "Acél oldalfal BAK 500 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "14,2",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "500"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bak-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-baks-500",
+   "code": "BAKS 500",
+   "name": "Acél oldalfal BAKS 500 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "70",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "14,4",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "500"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-baks-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hv-500",
+   "code": "HV 500",
+   "name": "Acél oldalfal HV 500 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "1,25 / 1,50 / 2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "6,8 / 8,2 / 10,9",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "500"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hv-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvn-500",
+   "code": "HVN 500",
+   "name": "Acél oldalfal HVN 500 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "11,2",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "500"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvn-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvak-500",
+   "code": "HVAK 500",
+   "name": "Acél oldalfal HVAK 500 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "11,4",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "500"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvak-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvd-500",
+   "code": "HVD 500",
+   "name": "Acél oldalfal HVD 500 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "11,7",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "500"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw500.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvd-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-b-600",
+   "code": "B 600",
+   "name": "Acél oldalfal B 600 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0 / 2,5",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "15 / 18,8",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "600"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-b-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bn-600",
+   "code": "BN 600",
+   "name": "Acél oldalfal BN 600 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0 / 2,5",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "15,4 / 19,3",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "600"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bn-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bns-600",
+   "code": "BNS 600",
+   "name": "Acél oldalfal BNS 600 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0 / 2,5",
+    "Felső szélesség [mm]": "70",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "15,7 / 19,5",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "600"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bns-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bak-600",
+   "code": "BAK 600",
+   "name": "Acél oldalfal BAK 600 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0 / 2,5",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "15,8 / 19,8",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "600"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bak-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-baks-600",
+   "code": "BAKS 600",
+   "name": "Acél oldalfal BAKS 600 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0 / 2,5",
+    "Felső szélesség [mm]": "70",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "16 / 20",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "600"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-baks-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bakt-600",
+   "code": "BAKT 600",
+   "name": "Acél oldalfal BAKT 600 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "20,2",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "600"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bakt-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hv-600",
+   "code": "HV 600",
+   "name": "Acél oldalfal HV 600 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "1,50 / 2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "10,8 / 14,3",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "600"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hv-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvn-600",
+   "code": "HVN 600",
+   "name": "Acél oldalfal HVN 600 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "14,8",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "600"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvn-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvak-600",
+   "code": "HVAK 600",
+   "name": "Acél oldalfal HVAK 600 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "15,2",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "600"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvak-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvakt-600",
+   "code": "HVAKT 600",
+   "name": "Acél oldalfal HVAKT 600 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "15,5",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "600"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvakt-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvd-600",
+   "code": "HVD 600",
+   "name": "Acél oldalfal HVD 600 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "14,3",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "600"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw600.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvd-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-btt-800",
+   "code": "BTT 800",
+   "name": "Acél oldalfal BTT 800 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "23,6",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "800"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw800.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-btt-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-bntt-800",
+   "code": "BNTT 800",
+   "name": "Acél oldalfal BNTT 800 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "24,1",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "800"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw800.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-bntt-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-baktt-800",
+   "code": "BAKTT 800",
+   "name": "Acél oldalfal BAKTT 800 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5",
+    "Felső szélesség [mm]": "60",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "24,6",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "800"
+   },
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw800.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-baktt-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hv-800",
+   "code": "HV 800",
+   "name": "Acél oldalfal HV 800 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "17,5",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "800"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw800.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hv-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvtt-800",
+   "code": "HVTT 800",
+   "name": "Acél oldalfal HVTT 800 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "18,3",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "800"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw800.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvtt-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvntt-800",
+   "code": "HVNTT 800",
+   "name": "Acél oldalfal HVNTT 800 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "18,7",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "800"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw800.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvntt-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvaktt-800",
+   "code": "HVAKTT 800",
+   "name": "Acél oldalfal HVAKTT 800 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "19",
+    "Felhasználás": "magasító (ráépítő) oldalfal",
+    "Magasság [mm]": "800"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw800.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvaktt-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hv-900",
+   "code": "HV 900",
+   "name": "Acél oldalfal HV 900 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "19,1",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "900"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw1000.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hv-900-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-hvw-1000",
+   "code": "HVW 1000",
+   "name": "Acél oldalfal HVW 1000 mm",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Felső szélesség [mm]": "33",
+    "Alsó szélesség [mm]": "33",
+    "Tömeg [kg/m]": "20,7",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "1000"
+   },
+   "description": "Lézerhegesztett acél oldalfal homlok- és hátfalnak billencs és platós felépítményekhez, valamint oldalfalnak utánfutókhoz és könnyű teherautókhoz.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbw1000.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-hvw-1000-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-fhd-600",
+   "code": "FHD 600",
+   "name": "Acél oldalfal FHD 600 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "3,0",
+    "Tömeg [kg/m]": "23,5",
+    "Anyagminőség": "S500",
+    "Gyártási hossz": "2500 / 5000",
+    "Magasság [mm]": "600"
+   },
+   "description": "Heavy Duty acél oldalfal nehéz építőipari felépítményekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfhd.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-fhd-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-fhd-800",
+   "code": "FHD 800",
+   "name": "Acél oldalfal FHD 800 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "3,0",
+    "Tömeg [kg/m]": "28,7",
+    "Anyagminőség": "S500",
+    "Gyártási hossz": "2500 / 5000",
+    "Magasság [mm]": "800"
+   },
+   "description": "Heavy Duty acél oldalfal nehéz építőipari felépítményekhez.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfhd.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-fhd-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxb-600",
+   "code": "FOXB 600",
+   "name": "Acél oldalfal FOXB 600 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "4,0",
+    "Tömeg [kg/m]": "32,2",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "600"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxb-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxb-700",
+   "code": "FOXB 700",
+   "name": "Acél oldalfal FOXB 700 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "4,0",
+    "Tömeg [kg/m]": "35,4",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "700"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxb-700-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxb-800",
+   "code": "FOXB 800",
+   "name": "Acél oldalfal FOXB 800 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "4,0",
+    "Tömeg [kg/m]": "38,6",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "800"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxb-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxb-900",
+   "code": "FOXB 900",
+   "name": "Acél oldalfal FOXB 900 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "4,0",
+    "Tömeg [kg/m]": "41,8",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "900"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxb-900-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxb-1000",
+   "code": "FOXB 1000",
+   "name": "Acél oldalfal FOXB 1000 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "4,0",
+    "Tömeg [kg/m]": "45",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "1000"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxb-1000-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxhv-600",
+   "code": "FOXHV 600",
+   "name": "Acél oldalfal FOXHV 600 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "4,0",
+    "Tömeg [kg/m]": "31,5",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "600"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxhv-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxhv-700",
+   "code": "FOXHV 700",
+   "name": "Acél oldalfal FOXHV 700 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "4,0",
+    "Tömeg [kg/m]": "34,7",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "700"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxhv-700-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxhv-800",
+   "code": "FOXHV 800",
+   "name": "Acél oldalfal FOXHV 800 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "4,0",
+    "Tömeg [kg/m]": "37,9",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "800"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxhv-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxhv-900",
+   "code": "FOXHV 900",
+   "name": "Acél oldalfal FOXHV 900 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "4,0",
+    "Tömeg [kg/m]": "41,1",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "900"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxhv-900-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxhv-1000",
+   "code": "FOXHV 1000",
+   "name": "Acél oldalfal FOXHV 1000 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "4,0",
+    "Tömeg [kg/m]": "44,3",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "1000"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfox.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxhv-1000-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlb-400",
+   "code": "FOXLB 400",
+   "name": "Acél oldalfal FOXLB 400 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5",
+    "Tömeg [kg/m]": "13,6",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "400"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlb-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlb-500",
+   "code": "FOXLB 500",
+   "name": "Acél oldalfal FOXLB 500 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5",
+    "Tömeg [kg/m]": "15,7",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "500"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlb-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlb-600",
+   "code": "FOXLB 600",
+   "name": "Acél oldalfal FOXLB 600 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5",
+    "Tömeg [kg/m]": "17,5",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "600"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlb-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlb-700",
+   "code": "FOXLB 700",
+   "name": "Acél oldalfal FOXLB 700 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5",
+    "Tömeg [kg/m]": "18,6",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "700"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlb-700-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlb-800",
+   "code": "FOXLB 800",
+   "name": "Acél oldalfal FOXLB 800 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5",
+    "Tömeg [kg/m]": "21,5",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "800"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlb-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlb-900",
+   "code": "FOXLB 900",
+   "name": "Acél oldalfal FOXLB 900 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "3,0",
+    "Tömeg [kg/m]": "28,2",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "900"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlb-900-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlb-1000",
+   "code": "FOXLB 1000",
+   "name": "Acél oldalfal FOXLB 1000 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "3,0",
+    "Tömeg [kg/m]": "30,4",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "1000"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlb-1000-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhv-400",
+   "code": "FOXLHV 400",
+   "name": "Acél oldalfal FOXLHV 400 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5",
+    "Tömeg [kg/m]": "12,5",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "400"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhv-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhv-500",
+   "code": "FOXLHV 500",
+   "name": "Acél oldalfal FOXLHV 500 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5",
+    "Tömeg [kg/m]": "14,5",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "500"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhv-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhv-600",
+   "code": "FOXLHV 600",
+   "name": "Acél oldalfal FOXLHV 600 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5",
+    "Tömeg [kg/m]": "16,5",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "600"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhv-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhv-700",
+   "code": "FOXLHV 700",
+   "name": "Acél oldalfal FOXLHV 700 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5",
+    "Tömeg [kg/m]": "18,6",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "700"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhv-700-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhv-800",
+   "code": "FOXLHV 800",
+   "name": "Acél oldalfal FOXLHV 800 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5",
+    "Tömeg [kg/m]": "20,4",
+    "Anyagminőség": "Hardox 450",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "800"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxl.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhv-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlbak-400",
+   "code": "FOXLBAK 400",
+   "name": "Acél oldalfal FOXLBAK 400 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 [3,0]",
+    "Tömeg [kg/m]": "15,6",
+    "Anyagminőség": "Hardox 450 [S500]",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "400"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlbak-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlbak-500",
+   "code": "FOXLBAK 500",
+   "name": "Acél oldalfal FOXLBAK 500 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 [3,0]",
+    "Tömeg [kg/m]": "17,6",
+    "Anyagminőség": "Hardox 450 [S500]",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "500"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlbak-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlbak-600",
+   "code": "FOXLBAK 600",
+   "name": "Acél oldalfal FOXLBAK 600 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 [3,0]",
+    "Tömeg [kg/m]": "19,5",
+    "Anyagminőség": "Hardox 450 [S500]",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "600"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlbak-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlbak-700",
+   "code": "FOXLBAK 700",
+   "name": "Acél oldalfal FOXLBAK 700 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 [3,0]",
+    "Tömeg [kg/m]": "21,5",
+    "Anyagminőség": "Hardox 450 [S500]",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "700"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlbak-700-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlbak-800",
+   "code": "FOXLBAK 800",
+   "name": "Acél oldalfal FOXLBAK 800 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 [3,0]",
+    "Tömeg [kg/m]": "25,9",
+    "Anyagminőség": "Hardox 450 [S500]",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "800"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlbak-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhvak-400",
+   "code": "FOXLHVAK 400",
+   "name": "Acél oldalfal FOXLHVAK 400 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 [3,0]",
+    "Tömeg [kg/m]": "14,5",
+    "Anyagminőség": "Hardox 450 [S500]",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "400"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhvak-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhvak-500",
+   "code": "FOXLHVAK 500",
+   "name": "Acél oldalfal FOXLHVAK 500 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 [3,0]",
+    "Tömeg [kg/m]": "16,5",
+    "Anyagminőség": "Hardox 450 [S500]",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "500"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhvak-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhvak-600",
+   "code": "FOXLHVAK 600",
+   "name": "Acél oldalfal FOXLHVAK 600 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 [3,0]",
+    "Tömeg [kg/m]": "18,5",
+    "Anyagminőség": "Hardox 450 [S500]",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "600"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhvak-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhvak-700",
+   "code": "FOXLHVAK 700",
+   "name": "Acél oldalfal FOXLHVAK 700 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 [3,0]",
+    "Tömeg [kg/m]": "20,3",
+    "Anyagminőség": "Hardox 450 [S500]",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "700"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhvak-700-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhvak-800",
+   "code": "FOXLHVAK 800",
+   "name": "Acél oldalfal FOXLHVAK 800 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 [3,0]",
+    "Tömeg [kg/m]": "21,9",
+    "Anyagminőség": "Hardox 450 [S500]",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "800"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxla.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhvak-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlbn-400",
+   "code": "FOXLBN 400",
+   "name": "Acél oldalfal FOXLBN 400 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 & 3,0",
+    "Tömeg [kg/m]": "14,6",
+    "Anyagminőség": "Hardox 450 & S500",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "400"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlbn-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlbn-500",
+   "code": "FOXLBN 500",
+   "name": "Acél oldalfal FOXLBN 500 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 & 3,0",
+    "Tömeg [kg/m]": "16,7",
+    "Anyagminőség": "Hardox 450 & S500",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "500"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlbn-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlbn-600",
+   "code": "FOXLBN 600",
+   "name": "Acél oldalfal FOXLBN 600 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 & 3,0",
+    "Tömeg [kg/m]": "18,7",
+    "Anyagminőség": "Hardox 450 & S500",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "600"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlbn-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlbn-700",
+   "code": "FOXLBN 700",
+   "name": "Acél oldalfal FOXLBN 700 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 & 3,0",
+    "Tömeg [kg/m]": "20,8",
+    "Anyagminőség": "Hardox 450 & S500",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "700"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlbn-700-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlbn-800",
+   "code": "FOXLBN 800",
+   "name": "Acél oldalfal FOXLBN 800 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 & 3,0",
+    "Tömeg [kg/m]": "22,6",
+    "Anyagminőség": "Hardox 450 & S500",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "800"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlbn-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhvn-400",
+   "code": "FOXLHVN 400",
+   "name": "Acél oldalfal FOXLHVN 400 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 & 3,0",
+    "Tömeg [kg/m]": "13,6",
+    "Anyagminőség": "Hardox 450 & S500",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "400"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhvn-400-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhvn-500",
+   "code": "FOXLHVN 500",
+   "name": "Acél oldalfal FOXLHVN 500 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 & 3,0",
+    "Tömeg [kg/m]": "15,6",
+    "Anyagminőség": "Hardox 450 & S500",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "500"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhvn-500-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhvn-600",
+   "code": "FOXLHVN 600",
+   "name": "Acél oldalfal FOXLHVN 600 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 & 3,0",
+    "Tömeg [kg/m]": "17,6",
+    "Anyagminőség": "Hardox 450 & S500",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "600"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhvn-600-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhvn-700",
+   "code": "FOXLHVN 700",
+   "name": "Acél oldalfal FOXLHVN 700 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 & 3,0",
+    "Tömeg [kg/m]": "20",
+    "Anyagminőség": "Hardox 450 & S500",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "700"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhvn-700-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-foxlhvn-800",
+   "code": "FOXLHVN 800",
+   "name": "Acél oldalfal FOXLHVN 800 mm",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Lemezvastagság [mm]": "2,5 & 3,0",
+    "Tömeg [kg/m]": "21,9",
+    "Anyagminőség": "Hardox 450 & S500",
+    "Gyártási hossz": "2500 / 5000 / 6000",
+    "Magasság [mm]": "800"
+   },
+   "description": "Heavy Duty acél oldalfal építőipari billencsekhez és platós felépítményekhez, nagy igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/stbwfoxln.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-foxlhvn-800-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-fox-rock-heavy",
+   "code": "FOX-ROCK HEAVY",
+   "name": "Acél oldalfal FOX-ROCK HEAVY",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Kivitel": "\"HEAVY\"",
+    "Magasság [mm]": "800 | 900 | 1000 | 1200 | 1400",
+    "Tömeg [kg/m]": "54 | 62 | 68 | 82 | 96",
+    "Gyártási hossz [mm]": "2500 | 5000 | 6000",
+    "Lemezvastagság [mm]": "4,0",
+    "Anyag": "HARDOX 450"
+   },
+   "description": "Extra erős acél oldalfal kőszállító billencsekhez, a legkeményebb igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/foxrock.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-fox-rock-heavy-1.webp"
+   ],
+   "source": "Fuhrmann"
+  },
+  {
+   "slug": "acel-oldalfal-fox-rock-light",
+   "code": "FOX-ROCK LIGHT",
+   "name": "Acél oldalfal FOX-ROCK LIGHT",
+   "group": "acel-profilok",
+   "category": "heavy-duty-acel-oldalfalak",
+   "specs": {
+    "Kivitel": "\"LIGHT\"",
+    "Magasság [mm]": "800 | 900 | 1000",
+    "Tömeg [kg/m]": "47 | 54 | 59",
+    "Gyártási hossz [mm]": "2500 | 5000 | 6000",
+    "Lemezvastagság [mm]": "4,0 | 3,0",
+    "Anyag": "HARDOX 450 | S500"
+   },
+   "description": "Extra erős acél oldalfal kőszállító billencsekhez, a legkeményebb igénybevételre.",
+   "sourceUrl": "https://www.fuhrmann.at/de/foxrock.php",
+   "images": [
+    "/termekkepek/acel-oldalfal-fox-rock-light-1.webp"
+   ],
+   "source": "Fuhrmann"
   }
  ],
  "moves": {
-  "hv400-acel-oldalfal-2-mm": {
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "source": "Fuhrmann"
-  },
-  "hv500-acel-oldalfal-2-mm": {
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "source": "Fuhrmann"
-  },
-  "hv600-acel-oldalfal-2-mm": {
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "source": "Fuhrmann"
-  },
-  "hvak600-acel-oldalfal-2-mm": {
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "source": "Fuhrmann"
-  },
   "tetoventilator-manualis-feher": {
    "group": "szellozes-tetoablakok-vilagitas",
    "category": "tetoventilatorok",
@@ -14914,6 +14898,26 @@
    "group": "kedergumik",
    "category": "specialis-gumiprofilok",
    "source": "Sand-Profile"
+  },
+  "hv400-acel-oldalfal-2-mm": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "source": "Fuhrmann"
+  },
+  "hv500-acel-oldalfal-2-mm": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "source": "Fuhrmann"
+  },
+  "hv600-acel-oldalfal-2-mm": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "source": "Fuhrmann"
+  },
+  "hvak600-acel-oldalfal-2-mm": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "source": "Fuhrmann"
   }
  }
 }
