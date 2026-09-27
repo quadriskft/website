@@ -43,7 +43,14 @@ def render(page, box):
     img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
     g = np.asarray(img.convert("L")) < 225
     ys, xs = np.where(g)
-    return img.crop((max(xs.min() - 16, 0), max(ys.min() - 16, 0), min(xs.max() + 16, img.width), min(ys.max() + 16, img.height)))
+    img = img.crop((max(xs.min() - 16, 0), max(ys.min() - 16, 0), min(xs.max() + 16, img.width), min(ys.max() + 16, img.height)))
+    # a magas, keskeny profilrajzok 4:3-as fehér vászonra kerülnek, kicsinyítve, teljes egészükben
+    W, H = 1000, 750
+    scale = min((W * 0.97) / img.width, (H * 0.97) / img.height)
+    img = img.resize((max(1, round(img.width * scale)), max(1, round(img.height * scale))), Image.LANCZOS)
+    canvas = Image.new("RGB", (W, H), "white")
+    canvas.paste(img, ((W - img.width) // 2, (H - img.height) // 2))
+    return canvas
 
 
 def main():
