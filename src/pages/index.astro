@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import HorseIcon from '../components/HorseIcon.astro';
 import HeroAssembly from '../components/HeroAssembly.astro';
+import HeroVideo from '../components/HeroVideo.astro';
 import { groups, GROUP_META, stats, roundedCount } from '../lib/catalog.js';
 
 const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárvédő'];
@@ -33,7 +34,7 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
         </div>
       </div>
       <div class="hero-visual">
-        <HeroAssembly />
+        <HeroVideo />
       </div>
     </div>
     <div class="container">
@@ -64,6 +65,18 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
           <span class="link-arrow">Lószállító kínálat <Icon name="ArrowRight" size={18} /></span>
         </div>
       </a>
+    </div>
+  </section>
+
+  <section class="section assembly-section">
+    <div class="container assembly">
+      <div class="assembly-copy">
+        <span class="eyebrow">Egy felépítmény – minden alkatrész</span>
+        <h2>Az alváztól a sárvédőig, egy beszállítótól</h2>
+        <p class="lead">Profilok, padló, oldalfalak, rakoncák, zárak, aláfutásgátló, sárvédő és szerszámosláda: a teljes felépítményhez szükséges alkatrészeket egy ajánlatban állítjuk össze.</p>
+        <a href="/termekek" class="btn btn-primary">Termékcsoportok <Icon name="ArrowRight" /></a>
+      </div>
+      <div class="assembly-visual"><HeroAssembly /></div>
     </div>
   </section>
 
@@ -155,7 +168,7 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
       linear-gradient(90deg, rgba(10, 108, 255, 0.05) 1px, transparent 1px) 0 0 / 44px 44px,
       linear-gradient(180deg, #f7faff 0%, #eaf2fd 100%);
   }
-  .hero-inner { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.25fr); gap: 32px; align-items: center; }
+  .hero-inner { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 48px; align-items: center; }
   .hero-copy h1 { margin: 16px 0 20px; color: var(--navy); }
   .hero-search {
     display: flex; align-items: center; gap: 10px; margin: 28px 0 12px; padding: 6px 6px 6px 18px; max-width: 580px;
@@ -168,7 +181,11 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
   .hero-popular a { color: var(--text-2); border-bottom: 1px dashed var(--line-strong); text-decoration: none; }
   .hero-popular a:hover { color: var(--accent); border-color: var(--accent); }
   .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
-  .hero-visual { position: relative; }
+  .hero-visual { position: relative; display: flex; justify-content: flex-end; }
+  .hero-visual :global(.hv) { max-width: 420px; }
+  .assembly-section { background: #fff; }
+  .assembly { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 40px; align-items: center; }
+  .assembly h2 { margin-top: 12px; }
   .stats {
     display: grid; grid-template-columns: repeat(4, 1fr); margin: 36px 0 0; padding: 0;
     border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(8px); box-shadow: var(--shadow-sm);
@@ -225,7 +242,9 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
   @media (max-width: 960px) {
     .hero { min-height: 0; }
     .hero-inner { grid-template-columns: minmax(0, 1fr); gap: 8px; }
-    .hero-visual { order: -1; max-width: 640px; margin: 0 auto; width: 100%; }
+    .hero-visual { order: -1; justify-content: center; }
+    .hero-visual :global(.hv) { max-width: 300px; max-height: 58vh; }
+    .assembly { grid-template-columns: 1fr; }
     .segments, .why { grid-template-columns: 1fr; }
     .steps { grid-template-columns: 1fr; }
     .why { gap: 32px; }
