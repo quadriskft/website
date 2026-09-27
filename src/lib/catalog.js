@@ -1,10 +1,24 @@
 import catalog from '../data/catalog.json';
+import extra from '../data/termekadatok.json';
 
 // FONTOS: a termékadatokban lévő beszállító (supplier, supplierCode) belső adat,
 // a weboldalon soha nem jelenik meg.
 
 export const groups = catalog.groups;
-export const products = catalog.products;
+
+// Az Excelből jövő alapadatok kiegészítése a beszállítói oldalakról letöltött
+// képekkel és műszaki adatokkal (scripts/termekadatok/). A forrás adatai
+// (sourceUrl, sourceTitle) belső adatok, nem kerülnek ki az oldalra.
+export const products = catalog.products.map((p) => {
+  const e = extra[p.slug];
+  if (!e) return p;
+  return {
+    ...p,
+    images: e.images?.length ? e.images : p.images,
+    specs: { ...(e.specs ?? {}), ...p.specs },
+    description: p.description || e.description || '',
+  };
+});
 
 const groupsBySlug = new Map(groups.map((g) => [g.slug, g]));
 const productsBySlug = new Map(products.map((p) => [p.slug, p]));
