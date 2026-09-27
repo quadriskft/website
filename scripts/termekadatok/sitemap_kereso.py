@@ -19,11 +19,10 @@ from common import (clear_images, code_candidates, fetch, load_products,  # noqa
 
 # beszállító -> (sitemap, az URL-ekre illesztendő minta, legfeljebb ennyi oldal)
 SITES = {
-    "G&C termékek": ("https://gnc-systems.com/sitemap.xml", r"/en/", 800),
+    # G&C: külön letöltő (gnc.py) – a fejléc-kód alapú párosítás és a PDF-adatlapok miatt
     "COPAR": ("https://www.copar.it/sitemap.xml", r"/en/", 800),
     "Takler": ("https://trucksandtrailers.taklergroup.com/sitemap.xml", r"lang=en|/en/|product", 800),
-    "Pommier": ("https://www.pommier.eu/sitemap.xml", r"/en/", 1500),
-    "Pommier Furgocar": ("https://www.pommier.eu/sitemap.xml", r"/en/", 1500),
+    # Pommier / Pommier Furgocar: külön letöltő (pommier.py) – csak a Reference oszlop alapján párosít
     "Profilpol": ("https://profilpolsystem.pl/sitemap.xml", r"/en/", 800),
     "Cargoframes Czech": ("https://cargoframes.eu/sitemap.xml", r"/en/", 800),
     "RE-ALL": ("https://www.re-all.it/sitemap.xml", r"", 800),

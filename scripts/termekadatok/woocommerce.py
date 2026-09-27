@@ -112,6 +112,13 @@ def parse_specs(item, code):
     return specs
 
 
+# a webáruház katalógusoldal-képei / táblázatai (nem termékfotók) – ezeket nem vesszük át
+SKIP_IMAGE = re.compile(r"-00(-\d+)?\.|-tab(-\d+)?\.|catalog|catalogo|listino", re.I)
+# ellenőrzötten hibás párosítások (az Excel kódja egy másik webáruház-termékre mutat)
+WRONG = {"25350100", "15270110"}
+NOT_MATCH_SLUGS = {"152811-tir-zsaner-garnitura-horg"}
+
+
 def run(supplier):
     base = SITES[supplier]
     items = all_products(base)
@@ -125,7 +132,12 @@ def run(supplier):
     ok, missing = 0, []
     for p in products:
         hit, code = None, None
+        if p["slug"] in NOT_MATCH_SLUGS:
+            missing.append(p)
+            continue
         for c in code_candidates(p):
+            if len(norm(c)) < 6 or norm(c) in WRONG:  # rövid számok (pl. "2500", "3000") téves egyezést adnak
+                continue
             if norm(c) in index:
                 hit, code = index[norm(c)], norm(c)
                 break
@@ -134,7 +146,8 @@ def run(supplier):
             continue
         clear_images(p["slug"])
         images = []
-        for n, img in enumerate((hit.get("images") or [])[:4], start=1):
+        srcs = [img for img in (hit.get("images") or []) if not SKIP_IMAGE.search(img["src"].rsplit("/", 1)[-1])]
+        for n, img in enumerate(srcs[:4], start=1):
             try:
                 images.append(save_image(fetch(img["src"]), p["slug"], n))
             except Exception as err:  # noqa: BLE001

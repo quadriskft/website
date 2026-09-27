@@ -58,54 +58,6 @@
    "source": "Rubber Select"
   },
   {
-   "group": "szellozes-tetoablakok-vilagitas",
-   "slug": "tetoventilatorok",
-   "name": "Tetőventilátorok",
-   "source": "G&C termékek"
-  },
-  {
-   "group": "szellozes-tetoablakok-vilagitas",
-   "slug": "tetoablakok",
-   "name": "Tetőablakok",
-   "source": "G&C termékek"
-  },
-  {
-   "group": "szellozes-tetoablakok-vilagitas",
-   "slug": "belso-szellozok-es-racsok",
-   "name": "Belső szellőzők és rácsok",
-   "source": "G&C termékek"
-  },
-  {
-   "group": "szellozes-tetoablakok-vilagitas",
-   "slug": "axial-es-radial-ventilatorok",
-   "name": "Axiál- és radiálventilátorok",
-   "source": "G&C termékek"
-  },
-  {
-   "group": "szellozes-tetoablakok-vilagitas",
-   "slug": "vilagitas",
-   "name": "Belső világítás",
-   "source": "G&C termékek"
-  },
-  {
-   "group": "szellozes-tetoablakok-vilagitas",
-   "slug": "mennyezeti-legelosztok",
-   "name": "Mennyezeti légelosztók",
-   "source": "G&C termékek"
-  },
-  {
-   "group": "szellozes-tetoablakok-vilagitas",
-   "slug": "legtisztitok",
-   "name": "Légtisztítók",
-   "source": "G&C termékek"
-  },
-  {
-   "group": "szellozes-tetoablakok-vilagitas",
-   "slug": "szelloztetes-kiegeszitok",
-   "name": "Kiegészítők és vezérlés",
-   "source": "G&C termékek"
-  },
-  {
    "group": "kedergumik",
    "slug": "elvedo-profilok",
    "name": "Élvédő profilok",
@@ -170,6 +122,54 @@
    "slug": "heavy-duty-acel-oldalfalak",
    "name": "Heavy Duty acél oldalfalak",
    "source": "Fuhrmann"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "tetoventilatorok",
+   "name": "Tetőventilátorok",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "tetoablakok",
+   "name": "Tetőablakok",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "belso-szellozok-es-racsok",
+   "name": "Belső szellőzők és rácsok",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "axial-es-radial-ventilatorok",
+   "name": "Axiál- és radiálventilátorok",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "vilagitas",
+   "name": "Belső világítás",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "mennyezeti-legelosztok",
+   "name": "Mennyezeti légelosztók",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "legtisztitok",
+   "name": "Légtisztítók",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "szelloztetes-kiegeszitok",
+   "name": "Kiegészítők és vezérlés",
+   "source": "G&C termékek"
   }
  ],
  "renameGroups": {
@@ -6827,337 +6827,6 @@
    ],
    "sourceUrl": "https://www.rubberselect.com/en/products/granulate/sportsflooring",
    "source": "Rubber Select"
-  },
-  {
-   "slug": "gc-le-mans-ll",
-   "code": "02-4200",
-   "name": "Le Mans LL alacsony tetőventilátor",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "tetoventilatorok",
-   "specs": {
-    "Cikkszámok": "02-4200, 02-4300",
-    "Szín": "fekete / fehér",
-    "Feszültség": "12 V",
-    "Tanúsítás": "EMC jóváhagyott"
-   },
-   "description": "Tetőventilátor lószállító, dobozos és személyszállító felépítményekhez: hatékony légcsere, 12/24 V-os és motor nélküli kivitelben.",
-   "images": [
-    "/termekkepek/gc-le-mans-ll-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/le-mans-ll/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-rooftop-ventilators",
-   "code": "02-0200",
-   "name": "Tetőventilátor",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "tetoventilatorok",
-   "specs": {
-    "Cikkszámok": "02-0200, 02-0200-ZW, 02-0300, 02-0300-ZW",
-    "Szín": "fekete / fehér",
-    "Feszültség": "12/24 V",
-    "Tanúsítás": "EMC jóváhagyott"
-   },
-   "description": "Tetőventilátor lószállító, dobozos és személyszállító felépítményekhez: hatékony légcsere, 12/24 V-os és motor nélküli kivitelben.",
-   "images": [
-    "/termekkepek/gc-rooftop-ventilators-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/rooftop_ventilators/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-winglet",
-   "code": "02-5000",
-   "name": "Winglet tetőventilátor",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "tetoventilatorok",
-   "specs": {
-    "Cikkszámok": "02-5000, 02-5100, 02-5500, 02-5600",
-    "Szín": "fekete / fehér",
-    "Tanúsítás": "EMC jóváhagyott"
-   },
-   "description": "Tetőventilátor lószállító, dobozos és személyszállító felépítményekhez: hatékony légcsere, 12/24 V-os és motor nélküli kivitelben.",
-   "images": [
-    "/termekkepek/gc-winglet-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/winglet/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-electric-round",
-   "code": "90-5000-DG",
-   "name": "Elektromos tetőablak, kerek",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "tetoablakok",
-   "specs": {
-    "Cikkszámok": "90-5000-DG"
-   },
-   "description": "Kézi és elektromos tetőablak felépítményekhez: természetes fény és szellőzés, vészkijáratként is.",
-   "images": [
-    "/termekkepek/gc-electric-round-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/electric-round/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-roof-hatches-manual-big",
-   "code": "90-6000-DG",
-   "name": "Kézi tetőablak, nagy",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "tetoablakok",
-   "specs": {
-    "Cikkszámok": "90-6000-DG"
-   },
-   "description": "Kézi és elektromos tetőablak felépítményekhez: természetes fény és szellőzés, vészkijáratként is.",
-   "images": [
-    "/termekkepek/gc-roof-hatches-manual-big-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-manual-big/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-light-metal-rotary-valve",
-   "code": "35-4088",
-   "name": "Könnyűfém forgószelep",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "belso-szellozok-es-racsok",
-   "specs": {
-    "Cikkszámok": "35-4088"
-   },
-   "description": "Belső szellőzőszelepek, rácsok és takarók a légáram szabályozásához.",
-   "images": [
-    "/termekkepek/gc-light-metal-rotary-valve-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/light-metal-rotary-valve/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-axial-ventilator",
-   "code": "",
-   "name": "Axiálventilátor",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "axial-es-radial-ventilatorok",
-   "specs": {
-    "Feszültség": "12/24 V",
-    "Tanúsítás": "EMC jóváhagyott"
-   },
-   "description": "Beépíthető axiál- és radiálventilátorok kényszerszellőzéshez.",
-   "images": [
-    "/termekkepek/gc-axial-ventilator-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/axial-ventilator/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-axialventilator",
-   "code": "",
-   "name": "Axiálventilátor, kompakt",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "axial-es-radial-ventilatorok",
-   "specs": {
-    "Tanúsítás": "EMC jóváhagyott"
-   },
-   "description": "Beépíthető axiál- és radiálventilátorok kényszerszellőzéshez.",
-   "images": [
-    "/termekkepek/gc-axialventilator-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/axialventilator/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-radial-ventilator",
-   "code": "",
-   "name": "Radiálventilátor",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "axial-es-radial-ventilatorok",
-   "specs": {
-    "Tanúsítás": "EMC jóváhagyott"
-   },
-   "description": "Beépíthető axiál- és radiálventilátorok kényszerszellőzéshez.",
-   "images": [
-    "/termekkepek/gc-radial-ventilator-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/radial-ventilator/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-lighting-rectangle",
-   "code": "",
-   "name": "LED lámpa, szögletes",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "vilagitas",
-   "specs": {
-    "Feszültség": "12 V"
-   },
-   "description": "LED belső világítás felépítményekbe, 12/24 V.",
-   "images": [
-    "/termekkepek/gc-lighting-rectangle-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/lighting-rectangle/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-lighting-round",
-   "code": "",
-   "name": "LED lámpa, kerek",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "vilagitas",
-   "specs": {
-    "Feszültség": "12 V"
-   },
-   "description": "LED belső világítás felépítményekbe, 12/24 V.",
-   "images": [
-    "/termekkepek/gc-lighting-round-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/lighting-round/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-ceilingflow",
-   "code": "24-0008",
-   "name": "Ceilingflow mennyezeti légelosztó",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "mennyezeti-legelosztok",
-   "specs": {
-    "Cikkszámok": "24-0008, 24-0009",
-    "Szín": "fekete / fehér"
-   },
-   "description": "Mennyezeti légelosztó egyenletes, huzatmentes szellőzéshez.",
-   "images": [
-    "/termekkepek/gc-ceilingflow-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/ceilingflow/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-air-purifier-large",
-   "code": "24-0600",
-   "name": "Légtisztító, nagy",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "legtisztitok",
-   "specs": {
-    "Cikkszámok": "24-0600"
-   },
-   "description": "Légtisztító állatszállító és személyszállító felépítményekbe.",
-   "images": [
-    "/termekkepek/gc-air-purifier-large-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/air-purifier-large/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-air-purifier-small",
-   "code": "24-0125",
-   "name": "Légtisztító, kicsi",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "legtisztitok",
-   "specs": {
-    "Cikkszámok": "24-0125"
-   },
-   "description": "Légtisztító állatszállító és személyszállító felépítményekbe.",
-   "images": [
-    "/termekkepek/gc-air-purifier-small-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/air-purifier-small/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-floor-ventilator",
-   "code": "89-5600",
-   "name": "Padlószellőző",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "szelloztetes-kiegeszitok",
-   "specs": {
-    "Cikkszámok": "89-5600"
-   },
-   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
-   "images": [
-    "/termekkepek/gc-floor-ventilator-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/floor-ventilator/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-floor-ventilator-2",
-   "code": "89-5700",
-   "name": "Padlószellőző, nagy",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "szelloztetes-kiegeszitok",
-   "specs": {
-    "Cikkszámok": "89-5700"
-   },
-   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
-   "images": [
-    "/termekkepek/gc-floor-ventilator-2-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/floor-ventilator-2/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-snowfilter",
-   "code": "89-5011",
-   "name": "Hószűrő tetőventilátorhoz",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "szelloztetes-kiegeszitok",
-   "specs": {
-    "Cikkszámok": "89-5011"
-   },
-   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
-   "images": [
-    "/termekkepek/gc-snowfilter-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/snowfilter/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-speedcontrol",
-   "code": "30-3004",
-   "name": "Fordulatszám-szabályzó ventilátorhoz",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "szelloztetes-kiegeszitok",
-   "specs": {
-    "Cikkszámok": "30-3004",
-    "Feszültség": "12 V"
-   },
-   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
-   "images": [
-    "/termekkepek/gc-speedcontrol-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/speedcontrol/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-switch-round",
-   "code": "89-4002",
-   "name": "Kapcsoló, kerek",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "szelloztetes-kiegeszitok",
-   "specs": {
-    "Cikkszámok": "89-4002"
-   },
-   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
-   "images": [
-    "/termekkepek/gc-switch-round-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/switch-round/",
-   "source": "G&C termékek"
-  },
-  {
-   "slug": "gc-switch-square",
-   "code": "89-4005",
-   "name": "Kapcsoló, szögletes",
-   "group": "szellozes-tetoablakok-vilagitas",
-   "category": "szelloztetes-kiegeszitok",
-   "specs": {
-    "Cikkszámok": "89-4005"
-   },
-   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
-   "images": [
-    "/termekkepek/gc-switch-square-1.webp"
-   ],
-   "sourceUrl": "https://gnc-systems.com/en/products/switch-square/",
-   "source": "G&C termékek"
   },
   {
    "slug": "sp-a1-009",
@@ -14596,9 +14265,499 @@
     "/termekkepek/acel-oldalfal-fox-rock-light-1.webp"
    ],
    "source": "Fuhrmann"
+  },
+  {
+   "slug": "gc-le-mans-ll",
+   "code": "02-4200",
+   "name": "Le Mans LL alacsony tetőventilátor",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "specs": {
+    "Feszültség [V]": "12",
+    "Légszállítás [m³/h]": "515",
+    "Teljesítmény [W]": "34",
+    "Fordulatszám [1/perc]": "3100",
+    "Zajszint [dB(A)]": "65",
+    "Működés": "szívó",
+    "Tetőkivágás [mm]": "230",
+    "Anyag (tetőgyűrű)": "ABS/szürke",
+    "Anyag (fedél)": "PA6/fehér Ral 9010",
+    "Változatok": "02-4200, 02-4300",
+    "Szín": "fekete / fehér",
+    "Feszültség": "12 V",
+    "Tanúsítás": "EMC jóváhagyott"
+   },
+   "description": "Tetőventilátor lószállító, dobozos és személyszállító felépítményekhez: hatékony légcsere, 12/24 V-os és motor nélküli kivitelben.",
+   "images": [
+    "/termekkepek/gc-le-mans-ll-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/le-mans-ll/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-rooftop-ventilators",
+   "code": "02-0200",
+   "name": "Tetőventilátor",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "specs": {
+    "Feszültség [V]": "12",
+    "Légszállítás [m³/h]": "850",
+    "Teljesítmény [W]": "80",
+    "Fordulatszám [1/perc]": "2600",
+    "Zajszint [dB(A)]": "52",
+    "Működés": "szívó / fúvó",
+    "Tetőkivágás [mm]": "230 / 245",
+    "Anyag (tetőgyűrű)": "ABS/fehér RAL 9010",
+    "Anyag (fedél)": "PA6/fehér RAL 9010",
+    "Változatok": "02-0200, 02-0200-ZW, 02-0300, 02-0300-ZW",
+    "Szín": "fekete / fehér",
+    "Feszültség": "12/24 V",
+    "Tanúsítás": "EMC jóváhagyott"
+   },
+   "description": "Tetőventilátor lószállító, dobozos és személyszállító felépítményekhez: hatékony légcsere, 12/24 V-os és motor nélküli kivitelben.",
+   "images": [
+    "/termekkepek/gc-rooftop-ventilators-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/rooftop_ventilators/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-winglet",
+   "code": "02-5000",
+   "name": "Winglet tetőventilátor",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "specs": {
+    "Működés": "szívó",
+    "Teljesítmény [W]": "3",
+    "Zajszint [dB(A)]": "32",
+    "Tetőkivágás [mm]": "80",
+    "Anyag": "ABS",
+    "Változatok": "02-5000, 02-5100, 02-5500, 02-5600",
+    "Szín": "fekete / fehér",
+    "Tanúsítás": "EMC jóváhagyott"
+   },
+   "description": "Tetőventilátor lószállító, dobozos és személyszállító felépítményekhez: hatékony légcsere, 12/24 V-os és motor nélküli kivitelben.",
+   "images": [
+    "/termekkepek/gc-winglet-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/winglet/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-electric-round",
+   "code": "90-5000-DG",
+   "name": "Elektromos tetőablak, kerek",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoablakok",
+   "specs": {},
+   "description": "Kézi és elektromos tetőablak felépítményekhez: természetes fény és szellőzés, vészkijáratként is.",
+   "images": [
+    "/termekkepek/gc-electric-round-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/electric-round/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-roof-hatches-manual-big",
+   "code": "90-6000-DG",
+   "name": "Kézi tetőablak, nagy",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoablakok",
+   "specs": {},
+   "description": "Kézi és elektromos tetőablak felépítményekhez: természetes fény és szellőzés, vészkijáratként is.",
+   "images": [
+    "/termekkepek/gc-roof-hatches-manual-big-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-manual-big/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-light-metal-rotary-valve",
+   "code": "35-4088",
+   "name": "Könnyűfém forgószelep",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "specs": {
+    "Méret": "Ø 250mm"
+   },
+   "description": "Belső szellőzőszelepek, rácsok és takarók a légáram szabályozásához.",
+   "images": [
+    "/termekkepek/gc-light-metal-rotary-valve-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/light-metal-rotary-valve/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-axial-ventilator",
+   "code": "",
+   "name": "Axiálventilátor",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "axial-es-radial-ventilatorok",
+   "specs": {
+    "Feszültség": "12/24 V",
+    "Tanúsítás": "EMC jóváhagyott"
+   },
+   "description": "Beépíthető axiál- és radiálventilátorok kényszerszellőzéshez.",
+   "images": [
+    "/termekkepek/gc-axial-ventilator-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/axial-ventilator/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-axialventilator",
+   "code": "",
+   "name": "Axiálventilátor, kompakt",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "axial-es-radial-ventilatorok",
+   "specs": {
+    "Tanúsítás": "EMC jóváhagyott"
+   },
+   "description": "Beépíthető axiál- és radiálventilátorok kényszerszellőzéshez.",
+   "images": [
+    "/termekkepek/gc-axialventilator-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/axialventilator/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-radial-ventilator",
+   "code": "",
+   "name": "Radiálventilátor",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "axial-es-radial-ventilatorok",
+   "specs": {
+    "Tanúsítás": "EMC jóváhagyott"
+   },
+   "description": "Beépíthető axiál- és radiálventilátorok kényszerszellőzéshez.",
+   "images": [
+    "/termekkepek/gc-radial-ventilator-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/radial-ventilator/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-lighting-rectangle",
+   "code": "",
+   "name": "LED lámpa, szögletes",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "vilagitas",
+   "specs": {
+    "Feszültség": "12 V"
+   },
+   "description": "LED belső világítás felépítményekbe, 12/24 V.",
+   "images": [
+    "/termekkepek/gc-lighting-rectangle-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/lighting-rectangle/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-lighting-round",
+   "code": "",
+   "name": "LED lámpa, kerek",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "vilagitas",
+   "specs": {
+    "Feszültség": "12 V"
+   },
+   "description": "LED belső világítás felépítményekbe, 12/24 V.",
+   "images": [
+    "/termekkepek/gc-lighting-round-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/lighting-round/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-ceilingflow",
+   "code": "24-0008",
+   "name": "Ceilingflow mennyezeti légelosztó",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "mennyezeti-legelosztok",
+   "specs": {
+    "Feszültség [V]": "220-230",
+    "Légszállítás [m³/h]": "130",
+    "Teljesítmény [W]": "27 (low) – 41 (High)",
+    "Zajszint [dB(A)]": "35(Low)– 47 (High)",
+    "Szín": "fekete / fehér",
+    "Változatok": "24-0008, 24-0009"
+   },
+   "description": "Mennyezeti légelosztó egyenletes, huzatmentes szellőzéshez.",
+   "images": [
+    "/termekkepek/gc-ceilingflow-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/ceilingflow/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-air-purifier-large",
+   "code": "24-0600",
+   "name": "Légtisztító, nagy",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "legtisztitok",
+   "specs": {},
+   "description": "Légtisztító állatszállító és személyszállító felépítményekbe.",
+   "images": [
+    "/termekkepek/gc-air-purifier-large-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/air-purifier-large/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-air-purifier-small",
+   "code": "24-0125",
+   "name": "Légtisztító, kicsi",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "legtisztitok",
+   "specs": {},
+   "description": "Légtisztító állatszállító és személyszállító felépítményekbe.",
+   "images": [
+    "/termekkepek/gc-air-purifier-small-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/air-purifier-small/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-floor-ventilator",
+   "code": "89-5600",
+   "name": "Padlószellőző",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "szelloztetes-kiegeszitok",
+   "specs": {
+    "Anyag": "PC / ABS"
+   },
+   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
+   "images": [
+    "/termekkepek/gc-floor-ventilator-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/floor-ventilator/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-floor-ventilator-2",
+   "code": "89-5700",
+   "name": "Padlószellőző, nagy",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "szelloztetes-kiegeszitok",
+   "specs": {
+    "Anyag": "ABS"
+   },
+   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
+   "images": [
+    "/termekkepek/gc-floor-ventilator-2-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/floor-ventilator-2/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-snowfilter",
+   "code": "89-5011",
+   "name": "Hószűrő tetőventilátorhoz",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "szelloztetes-kiegeszitok",
+   "specs": {
+    "Méret": "860 x 40 x 10mm"
+   },
+   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
+   "images": [
+    "/termekkepek/gc-snowfilter-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/snowfilter/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-speedcontrol",
+   "code": "30-3004",
+   "name": "Fordulatszám-szabályzó ventilátorhoz",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "szelloztetes-kiegeszitok",
+   "specs": {
+    "Feszültség": "12 V"
+   },
+   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
+   "images": [
+    "/termekkepek/gc-speedcontrol-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/speedcontrol/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-switch-round",
+   "code": "89-4002",
+   "name": "Kapcsoló, kerek",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "szelloztetes-kiegeszitok",
+   "specs": {},
+   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
+   "images": [
+    "/termekkepek/gc-switch-round-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/switch-round/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-switch-square",
+   "code": "89-4005",
+   "name": "Kapcsoló, szögletes",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "szelloztetes-kiegeszitok",
+   "specs": {},
+   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
+   "images": [
+    "/termekkepek/gc-switch-square-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/switch-square/",
+   "source": "G&C termékek"
   }
  ],
  "moves": {
+  "a1-013-elkeder-kicsi-fekete-9-5x6-5mm": {
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "source": "Sand-Profile"
+  },
+  "elkeder-13x10-fekete": {
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "source": "Sand-Profile"
+  },
+  "a1-015-keder-gumi": {
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "source": "Sand-Profile"
+  },
+  "a2-125-felul-gobos-keder-gumi-49-35-20-mm": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-127-lepkes-gumi-15-38-6-mm": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a1-105-2-lepkes-gumi-58-3x26-6-1-0-2-5-fekete": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a1-105-4-lepkes-gumi-58-3x26-6-2-0-4-0-fekete": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-255-nagy-gobos-kedergumi-fekete-20-mm": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-254-kedergumi-14-5x21-8-fekete": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a1-134-2-dupla-szakallas-kedergumi-18-2x24-1-0-2-5-fekete": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a1-134-4-dupla-szakallas-kedergumi-18-2x24-2-5-4-0-fekete": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-106-2-28-mm-duplagobos-kedergumi": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "felso-gobos-kedergumi-32x14x20-8-fekete": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "a1-536-kis-gobos-kedergumi-14-6x16-fekete": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-539-kozepes-gobos-kedergumi-14-6x18-7-fekete": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-540-kedergumi-16x19-2-2-0-4-0-fekete": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-541-kedergumi-16x19-2-4-0-6-0-fekete": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "kedergumi-14-5x20-5-2-0-4-0-fekete": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "a1-503-nagy-gobos-kedergumi": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-554-nagygobos-keder-22-6": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "d2-528-talpas-15-5-mm-20-5-20-epdm-fekete": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "d1-133-omega-gumi-19-8x28x24-epdm-fekete": {
+   "group": "kedergumik",
+   "category": "mono-profilok",
+   "source": "Sand-Profile"
+  },
+  "d1-128-omega-gumi-19-8x40x24-epdm-fekete": {
+   "group": "kedergumik",
+   "category": "mono-profilok",
+   "source": "Sand-Profile"
+  },
+  "d1-119-epdm-21mm-p-profil": {
+   "group": "kedergumik",
+   "category": "specialis-gumiprofilok",
+   "source": "Sand-Profile"
+  },
+  "d2-167-elvedo-lec-epdm-fekete": {
+   "group": "kedergumik",
+   "category": "specialis-gumiprofilok",
+   "source": "Sand-Profile"
+  },
+  "hv400-acel-oldalfal-2-mm": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "source": "Fuhrmann"
+  },
+  "hv500-acel-oldalfal-2-mm": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "source": "Fuhrmann"
+  },
+  "hv600-acel-oldalfal-2-mm": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "source": "Fuhrmann"
+  },
+  "hvak600-acel-oldalfal-2-mm": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "source": "Fuhrmann"
+  },
   "tetoventilator-manualis-feher": {
    "group": "szellozes-tetoablakok-vilagitas",
    "category": "tetoventilatorok",
@@ -14773,151 +14932,6 @@
    "group": "szellozes-tetoablakok-vilagitas",
    "category": "vilagitas",
    "source": "G&C termékek"
-  },
-  "a1-013-elkeder-kicsi-fekete-9-5x6-5mm": {
-   "group": "kedergumik",
-   "category": "elvedo-profilok",
-   "source": "Sand-Profile"
-  },
-  "elkeder-13x10-fekete": {
-   "group": "kedergumik",
-   "category": "elvedo-profilok",
-   "source": "Sand-Profile"
-  },
-  "a1-015-keder-gumi": {
-   "group": "kedergumik",
-   "category": "elvedo-profilok",
-   "source": "Sand-Profile"
-  },
-  "a2-125-felul-gobos-keder-gumi-49-35-20-mm": {
-   "group": "kedergumik",
-   "category": "tomitoprofilok",
-   "source": "Sand-Profile"
-  },
-  "a2-127-lepkes-gumi-15-38-6-mm": {
-   "group": "kedergumik",
-   "category": "tomitoprofilok",
-   "source": "Sand-Profile"
-  },
-  "a1-105-2-lepkes-gumi-58-3x26-6-1-0-2-5-fekete": {
-   "group": "kedergumik",
-   "category": "tomitoprofilok",
-   "source": "Sand-Profile"
-  },
-  "a1-105-4-lepkes-gumi-58-3x26-6-2-0-4-0-fekete": {
-   "group": "kedergumik",
-   "category": "tomitoprofilok",
-   "source": "Sand-Profile"
-  },
-  "a2-255-nagy-gobos-kedergumi-fekete-20-mm": {
-   "group": "kedergumik",
-   "category": "tomitoprofilok",
-   "source": "Sand-Profile"
-  },
-  "a2-254-kedergumi-14-5x21-8-fekete": {
-   "group": "kedergumik",
-   "category": "tomitoprofilok",
-   "source": "Sand-Profile"
-  },
-  "a1-134-2-dupla-szakallas-kedergumi-18-2x24-1-0-2-5-fekete": {
-   "group": "kedergumik",
-   "category": "tomitoprofilok",
-   "source": "Sand-Profile"
-  },
-  "a1-134-4-dupla-szakallas-kedergumi-18-2x24-2-5-4-0-fekete": {
-   "group": "kedergumik",
-   "category": "tomitoprofilok",
-   "source": "Sand-Profile"
-  },
-  "a2-106-2-28-mm-duplagobos-kedergumi": {
-   "group": "kedergumik",
-   "category": "tomitoprofilok",
-   "source": "Sand-Profile"
-  },
-  "felso-gobos-kedergumi-32x14x20-8-fekete": {
-   "group": "kedergumik",
-   "category": "gista-kederprofilok",
-   "source": "Sand-Profile"
-  },
-  "a1-536-kis-gobos-kedergumi-14-6x16-fekete": {
-   "group": "kedergumik",
-   "category": "gista-kederprofilok",
-   "source": "Sand-Profile"
-  },
-  "a2-539-kozepes-gobos-kedergumi-14-6x18-7-fekete": {
-   "group": "kedergumik",
-   "category": "gista-kederprofilok",
-   "source": "Sand-Profile"
-  },
-  "a2-540-kedergumi-16x19-2-2-0-4-0-fekete": {
-   "group": "kedergumik",
-   "category": "gista-kederprofilok",
-   "source": "Sand-Profile"
-  },
-  "a2-541-kedergumi-16x19-2-4-0-6-0-fekete": {
-   "group": "kedergumik",
-   "category": "gista-kederprofilok",
-   "source": "Sand-Profile"
-  },
-  "kedergumi-14-5x20-5-2-0-4-0-fekete": {
-   "group": "kedergumik",
-   "category": "gista-kederprofilok",
-   "source": "Sand-Profile"
-  },
-  "a1-503-nagy-gobos-kedergumi": {
-   "group": "kedergumik",
-   "category": "gista-kederprofilok",
-   "source": "Sand-Profile"
-  },
-  "a2-554-nagygobos-keder-22-6": {
-   "group": "kedergumik",
-   "category": "gista-kederprofilok",
-   "source": "Sand-Profile"
-  },
-  "d2-528-talpas-15-5-mm-20-5-20-epdm-fekete": {
-   "group": "kedergumik",
-   "category": "tomitoprofilok",
-   "source": "Sand-Profile"
-  },
-  "d1-133-omega-gumi-19-8x28x24-epdm-fekete": {
-   "group": "kedergumik",
-   "category": "mono-profilok",
-   "source": "Sand-Profile"
-  },
-  "d1-128-omega-gumi-19-8x40x24-epdm-fekete": {
-   "group": "kedergumik",
-   "category": "mono-profilok",
-   "source": "Sand-Profile"
-  },
-  "d1-119-epdm-21mm-p-profil": {
-   "group": "kedergumik",
-   "category": "specialis-gumiprofilok",
-   "source": "Sand-Profile"
-  },
-  "d2-167-elvedo-lec-epdm-fekete": {
-   "group": "kedergumik",
-   "category": "specialis-gumiprofilok",
-   "source": "Sand-Profile"
-  },
-  "hv400-acel-oldalfal-2-mm": {
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "source": "Fuhrmann"
-  },
-  "hv500-acel-oldalfal-2-mm": {
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "source": "Fuhrmann"
-  },
-  "hv600-acel-oldalfal-2-mm": {
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "source": "Fuhrmann"
-  },
-  "hvak600-acel-oldalfal-2-mm": {
-   "group": "acel-profilok",
-   "category": "lezerhegesztett-acel-oldalfalak",
-   "source": "Fuhrmann"
   }
  }
 }

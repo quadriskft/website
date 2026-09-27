@@ -381,7 +381,12 @@ def gnc():
                 continue  # az Excel már tartalmazza
             specs = {}
             if codes:
-                specs["Cikkszámok"] = ", ".join(codes[:8])
+                import gnc as gnc_mod
+                for pdf in re.findall(r'href="([^"]+\.pdf)"', page):
+                    s_pdf, _ = gnc_mod.pdf_specs(pdf, codes[0])
+                    specs.update({k: v for k, v in s_pdf.items() if k not in specs})
+                if len(codes) > 1:
+                    specs["Változatok"] = ", ".join(codes[:8])
             if re.search(r"Black\s*/\s*White|White\s*/\s*Black", text, re.I):
                 specs["Szín"] = "fekete / fehér"
             v = re.search(r"\b(12\s*/\s*24|12|24)\s*V\b", text)

@@ -1,10 +1,21 @@
 {
  "02-2200-le-mans-tetoventilator-12v": {
   "source": "G&C termékek",
-  "sourceUrl": "https://gnc-systems.com/en/products/grill-big/",
-  "sourceTitle": "Grill Large",
+  "sourceUrl": "https://gnc-systems.com/en/products/le-mans/",
+  "sourceTitle": "Le Mans",
   "matchedCode": "02-2200",
-  "specs": {},
+  "sourceDescription": "Speed control; Switch; Internal ventilation valve; Snow filter \n“Le Mans”",
+  "specs": {
+   "Feszültség [V]": "12",
+   "Légszállítás [m³/h]": "850",
+   "Teljesítmény [W]": "80",
+   "Fordulatszám [1/perc]": "2600",
+   "Zajszint [dB(A)]": "52",
+   "Működés": "szívó / fúvó",
+   "Tetőkivágás [mm]": "230 / 245",
+   "Anyag (tetőgyűrű)": "ABS/fehér RAL 9010",
+   "Anyag (fedél)": "PA6/fehér RAL 9010"
+  },
   "images": [
    "/termekkepek/02-2200-le-mans-tetoventilator-12v-1.webp"
   ]
@@ -14,7 +25,18 @@
   "sourceUrl": "https://gnc-systems.com/en/products/le-mans/",
   "sourceTitle": "Le Mans",
   "matchedCode": "02-2200-ZW",
-  "specs": {},
+  "sourceDescription": "Speed control; Switch; Internal ventilation valve; Snow filter \n“Le Mans”",
+  "specs": {
+   "Feszültség [V]": "12",
+   "Légszállítás [m³/h]": "850",
+   "Teljesítmény [W]": "80",
+   "Fordulatszám [1/perc]": "2600",
+   "Zajszint [dB(A)]": "52",
+   "Működés": "szívó / fúvó",
+   "Tetőkivágás [mm]": "230 / 245",
+   "Anyag (tetőgyűrű)": "ABS/fehér RAL 9010",
+   "Anyag (fedél)": "PA6/fekete RAL 9005"
+  },
   "images": [
    "/termekkepek/02-2200-zw-le-mans-tetoventilator-12v-1.webp"
   ]
@@ -554,8 +576,7 @@
   },
   "images": [
    "/termekkepek/122303-padloba-sullyesztehto-inox-rak-rogzito-tanyer-1.webp",
-   "/termekkepek/122303-padloba-sullyesztehto-inox-rak-rogzito-tanyer-2.webp",
-   "/termekkepek/122303-padloba-sullyesztehto-inox-rak-rogzito-tanyer-3.webp"
+   "/termekkepek/122303-padloba-sullyesztehto-inox-rak-rogzito-tanyer-2.webp"
   ]
  },
  "122850-rakomanyrogzito-kengyel-1000-dan-sv": {
@@ -667,8 +688,7 @@
   "images": [
    "/termekkepek/126510-rakomanyrogzito-kengyel-nyers-alatettel-1.webp",
    "/termekkepek/126510-rakomanyrogzito-kengyel-nyers-alatettel-2.webp",
-   "/termekkepek/126510-rakomanyrogzito-kengyel-nyers-alatettel-3.webp",
-   "/termekkepek/126510-rakomanyrogzito-kengyel-nyers-alatettel-4.webp"
+   "/termekkepek/126510-rakomanyrogzito-kengyel-nyers-alatettel-3.webp"
   ]
  },
  "127111-3-reszes-rakomanyrogzito-oval-tanyer-kics-350kg": {
@@ -801,21 +821,6 @@
    "/termekkepek/128510-pvc-talpas-rakomanyrogzito-500-kg-2.webp"
   ]
  },
- "129111-rak-rogz-kengyel-lapka-2500-dan-ts": {
-  "source": "FTS",
-  "sourceUrl": "https://www.fts-farina.it/prodotto/50090323-attacco-quadruplo-ariline/",
-  "sourceTitle": "50090323 – Attacco quadruplo ARILINE",
-  "sourceDescription": "Fitting quadruplo a sgancio rapido con anello , un accessorio professionale progettato per essere inserito e bloccato all’interno dei binari di ancoraggio in alluminio (modello Airline). Caratteristiche principali Capacità di carico elevata : Come indicato dalla dicitura incisa sul metallo ( LC 2500 daN ), ha una capacità di carico ( Lashing Capacity ) di 2500 daN (circa 2,5 tonnellate). Struttura quadrupla : Occupa ben quattro alloggiamenti consecutivi sul binario, distribuendo la trazione su una superficie più ampia per evitare di danneggiare la guida in alluminio. Doppia modalità di aggancio : Dispone sia di un grande anello tondo in acciaio per inserire moschettoni e ganci a uncino, sia di un’ampia asola sagomata superiore in cui far passare direttamente cinghie di cricchetti pesanti.",
-  "matchedCode": "2500",
-  "specs": {
-   "Kiszerelés": "20 db"
-  },
-  "images": [
-   "/termekkepek/129111-rak-rogz-kengyel-lapka-2500-dan-ts-1.webp",
-   "/termekkepek/129111-rak-rogz-kengyel-lapka-2500-dan-ts-2.webp",
-   "/termekkepek/129111-rak-rogz-kengyel-lapka-2500-dan-ts-3.webp"
-  ]
- },
  "129310-padloba-sullyesztehto-horg-rak-rogzito-tanyer-1000-dan": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/anello-fermacarico-pesante-con-molla/",
@@ -846,8 +851,7 @@
   },
   "images": [
    "/termekkepek/129711-rakomanyrogzito-kengyel-2500-dan-ts-1.webp",
-   "/termekkepek/129711-rakomanyrogzito-kengyel-2500-dan-ts-2.webp",
-   "/termekkepek/129711-rakomanyrogzito-kengyel-2500-dan-ts-3.webp"
+   "/termekkepek/129711-rakomanyrogzito-kengyel-2500-dan-ts-2.webp"
   ]
  },
  "140004-t4-bolcso": {
@@ -908,17 +912,6 @@
   },
   "images": [
    "/termekkepek/140008-t8-bolcso-d240-1.webp"
-  ]
- },
- "140319-szivattyu-24v-3000w-20l-1p3-1cc": {
-  "source": "FTS",
-  "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-tila/",
-  "sourceTitle": "Cerniera TILA",
-  "sourceDescription": "",
-  "matchedCode": "3000",
-  "specs": {},
-  "images": [
-   "/termekkepek/140319-szivattyu-24v-3000w-20l-1p3-1cc-1.webp"
   ]
  },
  "140920-80-mm-es-gombcsuklo-keszlet": {
@@ -985,20 +978,6 @@
    "/termekkepek/142304-billencs-nyitokar-b-2.webp"
   ]
  },
- "145010-50-mm-es-gombcsuklo-keszlet-3-5t": {
-  "source": "FTS",
-  "sourceUrl": "https://www.fts-farina.it/prodotto/25375100-kit-sfere-orizzontali-o75-portata-max-12-ton/",
-  "sourceTitle": "25375100 – Kit sfere orizzontali Ø75- Portata max 12 Ton.",
-  "sourceDescription": "",
-  "matchedCode": "25350100",
-  "specs": {
-   "Tömeg": "16,000 kg",
-   "Kiszerelés": "1 db"
-  },
-  "images": [
-   "/termekkepek/145010-50-mm-es-gombcsuklo-keszlet-3-5t-1.webp"
-  ]
- },
  "145170-szelep1-2": {
   "source": "Ital Accessori",
   "sourceUrl": "https://www.ital-accessori.sk/katalog/book/KOMP/411/",
@@ -1034,21 +1013,6 @@
   },
   "images": [
    "/termekkepek/146012-szivattyu-12v-1.webp"
-  ]
- },
- "152711-menetes-lapka-30mm": {
-  "source": "FTS",
-  "sourceUrl": "https://www.fts-farina.it/prodotto/35030023-taschetta-zincata-k4/",
-  "sourceTitle": "35030023 – Taschetta Zincata K4",
-  "sourceDescription": "",
-  "matchedCode": "15270110",
-  "specs": {
-   "Kivitel": "Piastrina",
-   "Kiszerelés": "100 db."
-  },
-  "images": [
-   "/termekkepek/152711-menetes-lapka-30mm-1.webp",
-   "/termekkepek/152711-menetes-lapka-30mm-2.webp"
   ]
  },
  "152760-tir-zsaner-apa-resz-alu-hoz": {
@@ -1092,20 +1056,6 @@
    "/termekkepek/152791-tir-zsaner-lapka-50mm-2.webp"
   ]
  },
- "152811-tir-zsaner-garnitura-horg": {
-  "source": "FTS",
-  "sourceUrl": "https://www.fts-farina.it/prodotto/15279110-piastrina-zincata-int-50/",
-  "sourceTitle": "15279110 – Piastrina zincata Int.50",
-  "sourceDescription": "",
-  "matchedCode": "15279110",
-  "specs": {
-   "Tömeg": "0,07 kg"
-  },
-  "images": [
-   "/termekkepek/152811-tir-zsaner-garnitura-horg-1.webp",
-   "/termekkepek/152811-tir-zsaner-garnitura-horg-2.webp"
-  ]
- },
  "152814-tir-zsaner-garnitura-th": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-tir-leggera-bm/",
@@ -1118,8 +1068,7 @@
    "Kiszerelés": "100 db."
   },
   "images": [
-   "/termekkepek/152814-tir-zsaner-garnitura-th-1.webp",
-   "/termekkepek/152814-tir-zsaner-garnitura-th-2.webp"
+   "/termekkepek/152814-tir-zsaner-garnitura-th-1.webp"
   ]
  },
  "152815-1-tir-zsaner-anya": {
@@ -1134,8 +1083,7 @@
    "Kiszerelés": "100 db."
   },
   "images": [
-   "/termekkepek/152815-1-tir-zsaner-anya-1.webp",
-   "/termekkepek/152815-1-tir-zsaner-anya-2.webp"
+   "/termekkepek/152815-1-tir-zsaner-anya-1.webp"
   ]
  },
  "152815-2-tir-zsaner-apa": {
@@ -1150,8 +1098,7 @@
    "Kiszerelés": "100 db"
   },
   "images": [
-   "/termekkepek/152815-2-tir-zsaner-apa-1.webp",
-   "/termekkepek/152815-2-tir-zsaner-apa-2.webp"
+   "/termekkepek/152815-2-tir-zsaner-apa-1.webp"
   ]
  },
  "152823-tir-zsaner-garnitura-rm": {
@@ -1166,8 +1113,7 @@
    "Kiszerelés": "100 db."
   },
   "images": [
-   "/termekkepek/152823-tir-zsaner-garnitura-rm-1.webp",
-   "/termekkepek/152823-tir-zsaner-garnitura-rm-2.webp"
+   "/termekkepek/152823-tir-zsaner-garnitura-rm-1.webp"
   ]
  },
  "201094-targonca-utkozo-profil": {
@@ -1845,10 +1791,12 @@
  },
  "237310-20-dupla-alu-zsaner-5000-mm": {
   "source": "Pommier Furgocar",
-  "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/aluminium/hinge-stop-gray-plastic",
-  "sourceTitle": "Hinge stop, gray plastic",
+  "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/aluminium/anodized-aluminium-hinge-profile",
+  "sourceTitle": "Anodized aluminium hinge profile",
   "matchedCode": "1636731",
-  "specs": {},
+  "specs": {
+   "Hossz": "5 m"
+  },
   "images": [
    "/termekkepek/237310-20-dupla-alu-zsaner-5000-mm-1.webp"
   ]
@@ -2243,8 +2191,7 @@
    "Kiszerelés": "20 db. (10 J+10 B)"
   },
   "images": [
-   "/termekkepek/352240-ellendarabos-szego-400mm-r-l-1.webp",
-   "/termekkepek/352240-ellendarabos-szego-400mm-r-l-2.webp"
+   "/termekkepek/352240-ellendarabos-szego-400mm-r-l-1.webp"
   ]
  },
  "352260-ellendarabos-szego-600mm-r-l": {
@@ -2258,8 +2205,7 @@
    "Kiszerelés": "20 db. (10 J+10 B)"
   },
   "images": [
-   "/termekkepek/352260-ellendarabos-szego-600mm-r-l-1.webp",
-   "/termekkepek/352260-ellendarabos-szego-600mm-r-l-2.webp"
+   "/termekkepek/352260-ellendarabos-szego-600mm-r-l-1.webp"
   ]
  },
  "352540-egymasba-zarodo-z-zar-400": {
@@ -2272,8 +2218,7 @@
    "Kiszerelés": "10 db."
   },
   "images": [
-   "/termekkepek/352540-egymasba-zarodo-z-zar-400-1.webp",
-   "/termekkepek/352540-egymasba-zarodo-z-zar-400-2.webp"
+   "/termekkepek/352540-egymasba-zarodo-z-zar-400-1.webp"
   ]
  },
  "353510-potkerektarto-szimpla": {
@@ -2358,9 +2303,7 @@
    "Kivitel": "nyers",
    "Kiszerelés": "100 db."
   },
-  "images": [
-   "/termekkepek/354424-top-kuplung-1.webp"
-  ]
+  "images": []
  },
  "354500-nem-peremes-500-mm-z-zar-r-l": {
   "source": "FTS",
@@ -2493,8 +2436,7 @@
    "Kiszerelés": "20 db. (10 J+10 B)"
   },
   "images": [
-   "/termekkepek/357400-peremes-z-zar-400-mm-r-l-1.webp",
-   "/termekkepek/357400-peremes-z-zar-400-mm-r-l-2.webp"
+   "/termekkepek/357400-peremes-z-zar-400-mm-r-l-1.webp"
   ]
  },
  "357401-peremes-z-zar-600-mm-r-l": {
@@ -3066,8 +3008,7 @@
   },
   "images": [
    "/termekkepek/501029-th-potkerektarto-1235x450-mm-ts-1.webp",
-   "/termekkepek/501029-th-potkerektarto-1235x450-mm-ts-2.webp",
-   "/termekkepek/501029-th-potkerektarto-1235x450-mm-ts-3.webp"
+   "/termekkepek/501029-th-potkerektarto-1235x450-mm-ts-2.webp"
   ]
  },
  "501927-2-fokos-letra-th-platform": {
@@ -3272,9 +3213,12 @@
   "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/extendable-gaskets/gasket-20-m-rolls-panel-width-50-70-mm",
   "sourceTitle": "Gasket in 20 m rolls for panel width from 50 to 70 mm",
   "matchedCode": "580611207",
-  "specs": {},
+  "specs": {
+   "Tömeg [kg]": "0,532"
+  },
   "images": [
-   "/termekkepek/511207-50-70-mm-es-gumi-tomites-pfg-1.webp"
+   "/termekkepek/511207-50-70-mm-es-gumi-tomites-pfg-1.webp",
+   "/termekkepek/511207-50-70-mm-es-gumi-tomites-pfg-2.webp"
   ]
  },
  "512235-55-mm-es-pvc-tomites-g-5m": {
@@ -3282,7 +3226,10 @@
   "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/seals-rigid-soles/dual-hardness-pvc-1",
   "sourceTitle": "Dual-hardness PVC",
   "matchedCode": "1132235",
-  "specs": {},
+  "specs": {
+   "Hossz": "5 m",
+   "Szín": "szürke"
+  },
   "images": [
    "/termekkepek/512235-55-mm-es-pvc-tomites-g-5m-1.webp"
   ]
@@ -3292,7 +3239,10 @@
   "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/seals-rigid-soles/dual-hardness-pvc-4",
   "sourceTitle": "Dual-hardness PVC",
   "matchedCode": "1132389",
-  "specs": {},
+  "specs": {
+   "Hossz": "5 m",
+   "Szín": "szürke/szürke"
+  },
   "images": [
    "/termekkepek/512389-84-mm-es-pvc-tomites-5m-1.webp"
   ]
@@ -3397,7 +3347,9 @@
   "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/other-seals-and-accessories/fixing-profi-le-epdm-gaskets",
   "sourceTitle": "Fixing profi le for EPDM gaskets",
   "matchedCode": "741209031",
-  "specs": {},
+  "specs": {
+   "Tömeg [kg]": "0,38"
+  },
   "images": [
    "/termekkepek/519031-alu-lefogato-sin-3800-12-mm-1.webp"
   ]
@@ -3637,10 +3589,12 @@
  },
  "615373-krom-kulso-kilincs-12mm-kulcs": {
   "source": "Pommier Furgocar",
-  "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/handles-and-inner-handles/chrome-plated-brass-inside-handle-0",
-  "sourceTitle": "Chrome plated brass inside handle",
+  "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/handles-and-inner-handles/chrome-plated-brass-locking-handle-two-keys",
+  "sourceTitle": "Chrome plated brass locking handle with two keys",
   "matchedCode": "2344373",
-  "specs": {},
+  "specs": {
+   "Tömeg [kg]": "0,76"
+  },
   "images": [
    "/termekkepek/615373-krom-kulso-kilincs-12mm-kulcs-1.webp"
   ]
@@ -3650,9 +3604,23 @@
   "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/handles-and-inner-handles/chrome-plated-brass-inside-handle-0",
   "sourceTitle": "Chrome plated brass inside handle",
   "matchedCode": "2344378",
-  "specs": {},
+  "specs": {
+   "Tömeg [kg]": "0,49"
+  },
   "images": [
    "/termekkepek/615378-krom-belso-kilincs-12mm-1.webp"
+  ]
+ },
+ "615437bg-fekete-zarszerkezet-2-iranyu": {
+  "source": "Pommier Furgocar",
+  "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/accessories-rod-lock/centre-lock-2-way-rod-lock-assembly",
+  "sourceTitle": "Centre lock for 2 way rod lock assembly",
+  "matchedCode": "2304437BG",
+  "specs": {
+   "Tömeg [kg]": "1,37"
+  },
+  "images": [
+   "/termekkepek/615437bg-fekete-zarszerkezet-2-iranyu-1.webp"
   ]
  },
  "660x1220-mm-sarvedo-lap-stopspray": {
@@ -4476,8 +4444,7 @@
   },
   "images": [
    "/termekkepek/815811-kis-negyszog-zar-1.webp",
-   "/termekkepek/815811-kis-negyszog-zar-2.webp",
-   "/termekkepek/815811-kis-negyszog-zar-3.webp"
+   "/termekkepek/815811-kis-negyszog-zar-2.webp"
   ]
  },
  "816211-nagy-negyszog-zar": {
@@ -4491,8 +4458,7 @@
   },
   "images": [
    "/termekkepek/816211-nagy-negyszog-zar-1.webp",
-   "/termekkepek/816211-nagy-negyszog-zar-2.webp",
-   "/termekkepek/816211-nagy-negyszog-zar-3.webp"
+   "/termekkepek/816211-nagy-negyszog-zar-2.webp"
   ]
  },
  "819264-250-mm-fogantyu-acel-merevitessel": {
@@ -4500,7 +4466,9 @@
   "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/handrails-and-grab-handles/black-polyurethane-grab-handle-zinc-plated-steel",
   "sourceTitle": "Black polyurethane grab handle, with zinc plated steel core",
   "matchedCode": "190810264",
-  "specs": {},
+  "specs": {
+   "Tömeg [kg]": "0,26"
+  },
   "images": [
    "/termekkepek/819264-250-mm-fogantyu-acel-merevitessel-1.webp"
   ]
@@ -4726,9 +4694,12 @@
   "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/recessed-locking-dropside-gear/recessed-locking-gear-zinc-plated-steel",
   "sourceTitle": "Recessed locking gear, zinc plated steel",
   "matchedCode": "3368250DE",
-  "specs": {},
+  "specs": {
+   "Tömeg [kg]": "1,478"
+  },
   "images": [
-   "/termekkepek/833682-horganyzott-sullyesztett-nyelves-zar-pm-1.webp"
+   "/termekkepek/833682-horganyzott-sullyesztett-nyelves-zar-pm-1.webp",
+   "/termekkepek/833682-horganyzott-sullyesztett-nyelves-zar-pm-2.webp"
   ]
  },
  "836500-d18-horg-hatsoajtozar-kit-ts": {
@@ -4793,9 +4764,12 @@
   "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/stops/complete-door-retainer-0",
   "sourceTitle": "Complete door retainer",
   "matchedCode": "2537815",
-  "specs": {},
+  "specs": {
+   "Tömeg [kg]": "0,105"
+  },
   "images": [
-   "/termekkepek/837815-csapos-ajto-rogzito-kit-51-5-mm-1.webp"
+   "/termekkepek/837815-csapos-ajto-rogzito-kit-51-5-mm-1.webp",
+   "/termekkepek/837815-csapos-ajto-rogzito-kit-51-5-mm-2.webp"
   ]
  },
  "891200-kis-kapaszkodo": {
@@ -4954,8 +4928,13 @@
   "source": "G&C termékek",
   "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-manual-small/",
   "sourceTitle": "Roof Hatch Electric Small",
-  "matchedCode": "5000-E",
-  "specs": {},
+  "matchedCode": "90-5000-E",
+  "sourceDescription": "Glass Dome homologated ECE 43R; Dark tinted glass; Homologated according EC 2004/104; Suits roof thickness 30mm - 70mm; High Quality Gaskets; Internal frame easy to mount in outside frame; Pre-drilled mounting holes in outside frame",
+  "specs": {
+   "Nyílásméret [mm]": "530 × 530",
+   "Sarokrádiusz": "R80",
+   "Üveg": "UV-áteresztés 6%, hőáteresztés 16%, fényáteresztés 17%"
+  },
   "images": [
    "/termekkepek/90-5000-e-tetoablak-24v-53x530-1.webp"
   ]
@@ -5221,7 +5200,12 @@
   "sourceUrl": "https://gnc-systems.com/en/products/flower-power/",
   "sourceTitle": "Flower Power",
   "matchedCode": "35-2900",
-  "specs": {},
+  "sourceDescription": "",
+  "specs": {
+   "Szín": "fehér",
+   "Feszültség [V]": "12",
+   "Anyag": "ABS"
+  },
   "images": [
    "/termekkepek/belso-12v-os-led-takaro-flower-power-feher-1.webp"
   ]
@@ -5231,9 +5215,44 @@
   "sourceUrl": "https://gnc-systems.com/en/products/flower-power/",
   "sourceTitle": "Flower Power",
   "matchedCode": "35-2910",
-  "specs": {},
+  "sourceDescription": "",
+  "specs": {
+   "Szín": "világosszürke",
+   "Feszültség [V]": "12",
+   "Anyag": "ABS"
+  },
   "images": [
    "/termekkepek/belso-12v-os-led-takaro-flower-power-szurke-1.webp"
+  ]
+ },
+ "belso-24-v-os-led-vilagitassal-flower-power-feher": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/flower-power/",
+  "sourceTitle": "Flower Power",
+  "matchedCode": "35-2905",
+  "sourceDescription": "",
+  "specs": {
+   "Szín": "fehér",
+   "Feszültség [V]": "24",
+   "Anyag": "ABS"
+  },
+  "images": [
+   "/termekkepek/belso-24-v-os-led-vilagitassal-flower-power-feher-1.webp"
+  ]
+ },
+ "belso-24-v-os-led-vilagitassal-flower-power-szurke": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/flower-power/",
+  "sourceTitle": "Flower Power",
+  "matchedCode": "35-2915",
+  "sourceDescription": "",
+  "specs": {
+   "Szín": "világosszürke",
+   "Feszültség [V]": "24",
+   "Anyag": "ABS"
+  },
+  "images": [
+   "/termekkepek/belso-24-v-os-led-vilagitassal-flower-power-szurke-1.webp"
   ]
  },
  "belso-takaro-flower-power-szurke": {
@@ -5241,7 +5260,11 @@
   "sourceUrl": "https://gnc-systems.com/en/products/flower-power/",
   "sourceTitle": "Flower Power",
   "matchedCode": "35-2810",
-  "specs": {},
+  "sourceDescription": "",
+  "specs": {
+   "Szín": "világosszürke",
+   "Anyag": "ABS"
+  },
   "images": [
    "/termekkepek/belso-takaro-flower-power-szurke-1.webp"
   ]
@@ -5321,7 +5344,12 @@
   "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-manual-small/",
   "sourceTitle": "Roof Hatch Electric Small",
   "matchedCode": "90-5000-E",
-  "specs": {},
+  "sourceDescription": "Glass Dome homologated ECE 43R; Dark tinted glass; Homologated according EC 2004/104; Suits roof thickness 30mm - 70mm; High Quality Gaskets; Internal frame easy to mount in outside frame; Pre-drilled mounting holes in outside frame",
+  "specs": {
+   "Nyílásméret [mm]": "530 × 530",
+   "Sarokrádiusz": "R80",
+   "Üveg": "UV-áteresztés 6%, hőáteresztés 16%, fényáteresztés 17%"
+  },
   "images": [
    "/termekkepek/elektromos-tetoablak-24v-530x530-1.webp"
   ]
@@ -5331,7 +5359,12 @@
   "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-electric-large/",
   "sourceTitle": "Roof Hatch Electric Large",
   "matchedCode": "90-6000-E",
-  "specs": {},
+  "sourceDescription": "Glass Dome homologated ECE 43R; Emergency exit according EC2001/85; Standard Dark tinted glass; Homologated according EC 2004/104; Suits roof thickness 30mm - 70mm; High Quality Gaskets; Internal frame easy to mount in outside frame; Pre-drilled mounting holes in outside frame; With breakglass hammer\nPart. No.\nDescription\nAperture Size\nRadius\nGlass\n90-6000-E\nRoof Hatch Electric 24 Volt* \n970  x 530\nR80\nUV Transmission 6%, Heat Transmission 16%, Light Transmission 17%\n+10\n-0\n+5\n-0\nUse always our control unit 30-6000 in combination with the Electric Roof Hatch!",
+  "specs": {
+   "Nyílásméret [mm]": "970 × 530",
+   "Sarokrádiusz": "R80",
+   "Üveg": "UV-áteresztés 6%, hőáteresztés 16%, fényáteresztés 17%"
+  },
   "images": [
    "/termekkepek/elektromos-tetoablak-24v-970x530-1.webp"
   ]
@@ -5369,6 +5402,7 @@
   "sourceUrl": "https://gnc-systems.com/en/products/switch-fan/",
   "sourceTitle": "Switch Fan",
   "matchedCode": "89-4008",
+  "sourceDescription": "",
   "specs": {},
   "images": [
    "/termekkepek/harom-allasos-kapcsolo-ventilatorhoz-1.webp"
@@ -7036,10 +7070,21 @@
  },
  "le-mans-tetoventilator-12v": {
   "source": "G&C termékek",
-  "sourceUrl": "https://gnc-systems.com/en/products/grill-big/",
-  "sourceTitle": "Grill Large",
+  "sourceUrl": "https://gnc-systems.com/en/products/le-mans/",
+  "sourceTitle": "Le Mans",
   "matchedCode": "02-2200",
-  "specs": {},
+  "sourceDescription": "Speed control; Switch; Internal ventilation valve; Snow filter \n“Le Mans”",
+  "specs": {
+   "Feszültség [V]": "12",
+   "Légszállítás [m³/h]": "850",
+   "Teljesítmény [W]": "80",
+   "Fordulatszám [1/perc]": "2600",
+   "Zajszint [dB(A)]": "52",
+   "Működés": "szívó / fúvó",
+   "Tetőkivágás [mm]": "230 / 245",
+   "Anyag (tetőgyűrű)": "ABS/fehér RAL 9010",
+   "Anyag (fedél)": "PA6/fehér RAL 9010"
+  },
   "images": [
    "/termekkepek/le-mans-tetoventilator-12v-1.webp"
   ]
@@ -7049,29 +7094,20 @@
   "sourceUrl": "https://gnc-systems.com/en/products/le-mans/",
   "sourceTitle": "Le Mans",
   "matchedCode": "02-2300",
-  "specs": {},
+  "sourceDescription": "Speed control; Switch; Internal ventilation valve; Snow filter \n“Le Mans”",
+  "specs": {
+   "Feszültség [V]": "24",
+   "Légszállítás [m³/h]": "850",
+   "Teljesítmény [W]": "80",
+   "Fordulatszám [1/perc]": "2600",
+   "Zajszint [dB(A)]": "52",
+   "Működés": "szívó / fúvó",
+   "Tetőkivágás [mm]": "230 / 245",
+   "Anyag (tetőgyűrű)": "ABS/fehér RAL 9010",
+   "Anyag (fedél)": "PA6/fehér RAL 9010"
+  },
   "images": [
    "/termekkepek/le-mans-tetoventilator-24v-1.webp"
-  ]
- },
- "ledes-lampa-kerek-feher": {
-  "source": "G&C termékek",
-  "sourceUrl": "https://gnc-systems.com/en/products/lighting-round/",
-  "sourceTitle": "Lighting Round",
-  "matchedCode": "92-GC01",
-  "specs": {},
-  "images": [
-   "/termekkepek/ledes-lampa-kerek-feher-1.webp"
-  ]
- },
- "ledes-lampa-szogletes-feher-12-24v": {
-  "source": "G&C termékek",
-  "sourceUrl": "https://gnc-systems.com/en/products/lighting-rectangle/",
-  "sourceTitle": "Lighting Rectangle",
-  "matchedCode": "92-GC05-HP",
-  "specs": {},
-  "images": [
-   "/termekkepek/ledes-lampa-szogletes-feher-12-24v-1.webp"
   ]
  },
  "m12x140-rugos-felfuggesztes": {
@@ -7140,7 +7176,12 @@
   "sourceUrl": "https://gnc-systems.com/en/products/v12-2/",
   "sourceTitle": "V12",
   "matchedCode": "35-2400",
-  "specs": {},
+  "sourceDescription": "Electrical",
+  "specs": {
+   "Szín": "fehér",
+   "Anyag": "ABS",
+   "Tömeg": "0,5 kg"
+  },
   "images": [
    "/termekkepek/manualis-belso-takaro-feher-1.webp"
   ]
@@ -7150,7 +7191,12 @@
   "sourceUrl": "https://gnc-systems.com/en/products/v12-2/",
   "sourceTitle": "V12",
   "matchedCode": "35-2410",
-  "specs": {},
+  "sourceDescription": "Electrical",
+  "specs": {
+   "Szín": "szürke",
+   "Anyag": "ABS",
+   "Tömeg": "0,5 kg"
+  },
   "images": [
    "/termekkepek/manualis-belso-takaro-szurke-1.webp"
   ]
@@ -7213,22 +7259,53 @@
    "/termekkepek/szerszamos-lada-3.webp"
   ]
  },
+ "tetoablak-manualis-530x530": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/electric-round/",
+  "sourceTitle": "Roof Hatch Manual Small",
+  "matchedCode": "90-5000-DG",
+  "sourceDescription": "Glass Dome homologated ECE 43R; Suits roof thickness 30mm - 70mm; High Quality Gaskets; Internal frame easy to mount in outside frame; Pre-drilled mounting holes in outside frame",
+  "specs": {},
+  "images": [
+   "/termekkepek/tetoablak-manualis-530x530-1.webp"
+  ]
+ },
+ "tetoablak-manualis-970x530": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-manual-big/",
+  "sourceTitle": "Roof Hatches Manual Large",
+  "matchedCode": "90-6000-DG",
+  "sourceDescription": "Emergency exit according EC2001/85; Glass Dome homologated ECE 43R; Suits roof thickness 30mm - 70mm; High Quality Gaskets; Internal frame easy to mount in outside frame; Pre-drilled mounting holes in outside frame; With breakglass hammer",
+  "specs": {},
+  "images": [
+   "/termekkepek/tetoablak-manualis-970x530-1.webp"
+  ]
+ },
  "tetoablak-vezerloegyseg-24v": {
   "source": "G&C termékek",
   "sourceUrl": "https://gnc-systems.com/en/products/control-unit/",
   "sourceTitle": "Control Unit",
   "matchedCode": "30-6000",
-  "specs": {},
+  "sourceDescription": "Homologated according EC 2004/104; The unit 30-6000 can control one or two electrical operated roof hatches; To open/close front and backside of the roofhatch; The position of the dome can be seen on the display (green Led’s); The unit closes automatically when the ignition key is turned off; Even when the ignition key is off, the hatch can be opened for ventilatio; The panel display has a current save function, reacting to usage; Illumination with Orange Led’s for the push buttons\nPart. No.\nDescription\nVoltage\nV\nOutside Dimensions \n30-6000\nControl Unit 24 Volt for Electric Roofhatch \n24*\n96 x 49 x 28mm\n*  For 12 Volt application, use our 12V to 24V Converter (89-STEP12-24)",
+  "specs": {
+   "Feszültség [V]": "24"
+  },
   "images": [
    "/termekkepek/tetoablak-vezerloegyseg-24v-1.webp"
   ]
  },
  "tetoventilator-manualis-feher": {
   "source": "G&C termékek",
-  "sourceUrl": "https://gnc-systems.com/en/products/grill-small/",
-  "sourceTitle": "Grill Small",
+  "sourceUrl": "https://gnc-systems.com/en/products/exhaust-ventilator/",
+  "sourceTitle": "Exhaust Ventilator",
   "matchedCode": "02-1030",
-  "specs": {},
+  "sourceDescription": "",
+  "specs": {
+   "Működés": "szívó",
+   "Tömeg": "0,5 kg",
+   "Anyag": "ABS",
+   "Szín": "fehér"
+  },
   "images": [
    "/termekkepek/tetoventilator-manualis-feher-1.webp"
   ]
@@ -7238,7 +7315,13 @@
   "sourceUrl": "https://gnc-systems.com/en/products/exhaust-ventilator/",
   "sourceTitle": "Exhaust Ventilator",
   "matchedCode": "02-1030-ZW",
-  "specs": {},
+  "sourceDescription": "",
+  "specs": {
+   "Működés": "szívó",
+   "Tömeg": "0,5 kg",
+   "Anyag": "ABS",
+   "Szín": "fekete"
+  },
   "images": [
    "/termekkepek/tetoventilator-manualis-fekete-1.webp"
   ]
@@ -7248,7 +7331,13 @@
   "sourceUrl": "https://gnc-systems.com/en/products/le-mans/",
   "sourceTitle": "Le Mans",
   "matchedCode": "02-2900",
-  "specs": {},
+  "sourceDescription": "Speed control; Switch; Internal ventilation valve; Snow filter \n“Le Mans”",
+  "specs": {
+   "Feszültség [V]": "motor nélkül",
+   "Tetőkivágás [mm]": "230 / 245",
+   "Anyag (tetőgyűrű)": "ABS/fehér RAL 9010",
+   "Anyag (fedél)": "PA6/fehér RAL 9010"
+  },
   "images": [
    "/termekkepek/tetoventillator-motor-nelkul-abs-feher-1.webp"
   ]
@@ -7258,7 +7347,12 @@
   "sourceUrl": "https://gnc-systems.com/en/products/turbo-ii/",
   "sourceTitle": "Turbo II",
   "matchedCode": "02-7000",
-  "specs": {},
+  "sourceDescription": "\nStandard mountingset suits\nroof thickness 1mm - 21mm\n(other mountingsets available\non request)",
+  "specs": {
+   "Működés": "szívó",
+   "Tömeg": "1,2 kg",
+   "Anyag": "ABS"
+  },
   "images": [
    "/termekkepek/turbo-ii-tetoventilator-feher-1.webp"
   ]
@@ -7268,7 +7362,12 @@
   "sourceUrl": "https://gnc-systems.com/en/products/turbo-ii/",
   "sourceTitle": "Turbo II",
   "matchedCode": "02-7100",
-  "specs": {},
+  "sourceDescription": "\nStandard mountingset suits\nroof thickness 1mm - 21mm\n(other mountingsets available\non request)",
+  "specs": {
+   "Működés": "szívó",
+   "Tömeg": "1,2 kg",
+   "Anyag": "ABS"
+  },
   "images": [
    "/termekkepek/turbo-ii-tetoventilator-fekete-1.webp"
   ]
@@ -7278,7 +7377,11 @@
   "sourceUrl": "https://gnc-systems.com/en/products/turbo-iii/",
   "sourceTitle": "Turbo III",
   "matchedCode": "02-6000",
-  "specs": {},
+  "sourceDescription": "\nStandard mountingset suits \nroof thickness 1 mm - 17 mm. \n(other mountingsets available \non request). Roof cut out \nø 80 mm.",
+  "specs": {
+   "Működés": "szívó",
+   "Tömeg": "0,55 kg"
+  },
   "images": [
    "/termekkepek/turbo-iii-tetoventilator-feher-1.webp"
   ]
@@ -7288,7 +7391,11 @@
   "sourceUrl": "https://gnc-systems.com/en/products/turbo-iii/",
   "sourceTitle": "Turbo III",
   "matchedCode": "02-6100",
-  "specs": {},
+  "sourceDescription": "\nStandard mountingset suits \nroof thickness 1 mm - 17 mm. \n(other mountingsets available \non request). Roof cut out \nø 80 mm.",
+  "specs": {
+   "Működés": "szívó",
+   "Tömeg": "0,55 kg"
+  },
   "images": [
    "/termekkepek/turbo-iii-tetoventilator-fekete-1.webp"
   ]
@@ -7298,7 +7405,12 @@
   "sourceUrl": "https://gnc-systems.com/en/products/v12-2/",
   "sourceTitle": "V12",
   "matchedCode": "35-2500",
-  "specs": {},
+  "sourceDescription": "Electrical",
+  "specs": {
+   "Szín": "fehér",
+   "Anyag": "ABS",
+   "Tömeg": "0,6 kg"
+  },
   "images": [
    "/termekkepek/ventillator-also-takaro-elem-12-24v-feher-1.webp"
   ]
@@ -7308,9 +7420,29 @@
   "sourceUrl": "https://gnc-systems.com/en/products/rotating-valve/",
   "sourceTitle": "Rotating Valve",
   "matchedCode": "35-2110",
-  "specs": {},
+  "sourceDescription": "\nMicro-switch which switches \noff the ventilator when the \nvalve is closed",
+  "specs": {
+   "Szín": "fehér",
+   "Anyag": "ABS",
+   "Tömeg": "0,4 kg"
+  },
   "images": [
    "/termekkepek/ventillator-belso-takaro-1.webp"
+  ]
+ },
+ "ventillator-belso-takaro-12-24v-led": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/rotating-valve/",
+  "sourceTitle": "Rotating Valve",
+  "matchedCode": "35-2200",
+  "sourceDescription": "\nMicro-switch which switches \noff the ventilator when the \nvalve is closed",
+  "specs": {
+   "Szín": "fehér",
+   "Anyag": "ABS",
+   "Tömeg": "0,7 kg"
+  },
+  "images": [
+   "/termekkepek/ventillator-belso-takaro-12-24v-led-1.webp"
   ]
  },
  "ventillator-belso-takaro-szurke": {
@@ -7318,7 +7450,12 @@
   "sourceUrl": "https://gnc-systems.com/en/products/rotating-valve/",
   "sourceTitle": "Rotating Valve",
   "matchedCode": "35-2100",
-  "specs": {},
+  "sourceDescription": "\nMicro-switch which switches \noff the ventilator when the \nvalve is closed",
+  "specs": {
+   "Szín": "szürke",
+   "Anyag": "ABS",
+   "Tömeg": "0,4 kg"
+  },
   "images": [
    "/termekkepek/ventillator-belso-takaro-szurke-1.webp"
   ]
