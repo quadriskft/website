@@ -44,6 +44,7 @@ CATEGORY_TITLES = {
     "Aluminíum rakoncák": "Alumínium rakoncák",
     "Név alapján hozzáadva (nem szerepelt a listán)": "Felépítmény készletek",
     "Lowipan": "Rétegelt lemezek",
+    "Sandprofil": "Egyéb kéder- és tömítőgumik",
 }
 
 # Beszállítónevek egységesítése (kis/nagybetű, elírások)

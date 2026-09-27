@@ -1,5 +1,13 @@
 {
- "groups": [],
+ "groups": [
+  {
+   "slug": "szellozes-tetoablakok-vilagitas",
+   "name": "Szellőzés, tetőablakok, világítás",
+   "icon": "Fan",
+   "text": "Tetőventilátorok, tetőablakok, belső szellőzők és LED világítás – lószállító és dobozos felépítményekhez is.",
+   "source": "G&C termékek"
+  }
+ ],
  "categories": [
   {
    "group": "acel-profilok",
@@ -60,10 +68,113 @@
    "slug": "granulatum-lapok",
    "name": "Gumigranulátum lapok",
    "source": "Rubber Select"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "tetoventilatorok",
+   "name": "Tetőventilátorok",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "tetoablakok",
+   "name": "Tetőablakok",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "belso-szellozok-es-racsok",
+   "name": "Belső szellőzők és rácsok",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "axial-es-radial-ventilatorok",
+   "name": "Axiál- és radiálventilátorok",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "vilagitas",
+   "name": "Belső világítás",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "mennyezeti-legelosztok",
+   "name": "Mennyezeti légelosztók",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "legtisztitok",
+   "name": "Légtisztítók",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "slug": "szelloztetes-kiegeszitok",
+   "name": "Kiegészítők és vezérlés",
+   "source": "G&C termékek"
+  },
+  {
+   "group": "kedergumik",
+   "slug": "elvedo-profilok",
+   "name": "Élvédő profilok",
+   "source": "Sand-Profile"
+  },
+  {
+   "group": "kedergumik",
+   "slug": "moosgumi-profilok",
+   "name": "Moosgumi profilok",
+   "source": "Sand-Profile"
+  },
+  {
+   "group": "kedergumik",
+   "slug": "gista-kederprofilok",
+   "name": "Kéder- és ablakgumi profilok (Gista)",
+   "source": "Sand-Profile"
+  },
+  {
+   "group": "kedergumik",
+   "slug": "kitolto-profilok",
+   "name": "Kitöltő (zár) profilok",
+   "source": "Sand-Profile"
+  },
+  {
+   "group": "kedergumik",
+   "slug": "uvegvezeto-profilok",
+   "name": "Üvegvezető profilok",
+   "source": "Sand-Profile"
+  },
+  {
+   "group": "kedergumik",
+   "slug": "mono-profilok",
+   "name": "Mono tömítőprofilok",
+   "source": "Sand-Profile"
+  },
+  {
+   "group": "kedergumik",
+   "slug": "ujjvedo-profilok",
+   "name": "Ujjvédő profilok",
+   "source": "Sand-Profile"
+  },
+  {
+   "group": "kedergumik",
+   "slug": "specialis-gumiprofilok",
+   "name": "Speciális gumiprofilok",
+   "source": "Sand-Profile"
+  },
+  {
+   "group": "kedergumik",
+   "slug": "tomitoprofilok",
+   "name": "Élvédő tömítőprofilok",
+   "source": "Sand-Profile"
   }
  ],
  "renameGroups": {
-  "gumiszonyegek": "Gumiszőnyegek és gumilemezek"
+  "gumiszonyegek": "Gumiszőnyegek és gumilemezek",
+  "kedergumik": "Gumi- és kéderprofilok"
  },
  "products": [
   {
@@ -8764,6 +8875,5723 @@
    ],
    "sourceUrl": "https://www.rubberselect.com/en/products/granulate/sportsflooring",
    "source": "Rubber Select"
+  },
+  {
+   "slug": "gc-le-mans-ll",
+   "code": "02-4200",
+   "name": "Le Mans LL alacsony tetőventilátor",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "specs": {
+    "Cikkszámok": "02-4200, 02-4300",
+    "Szín": "fekete / fehér",
+    "Feszültség": "12 V",
+    "Tanúsítás": "EMC jóváhagyott"
+   },
+   "description": "Tetőventilátor lószállító, dobozos és személyszállító felépítményekhez: hatékony légcsere, 12/24 V-os és motor nélküli kivitelben.",
+   "images": [
+    "/termekkepek/gc-le-mans-ll-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/le-mans-ll/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-rooftop-ventilators",
+   "code": "02-0200",
+   "name": "Tetőventilátor",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "specs": {
+    "Cikkszámok": "02-0200, 02-0200-ZW, 02-0300, 02-0300-ZW",
+    "Szín": "fekete / fehér",
+    "Feszültség": "12/24 V",
+    "Tanúsítás": "EMC jóváhagyott"
+   },
+   "description": "Tetőventilátor lószállító, dobozos és személyszállító felépítményekhez: hatékony légcsere, 12/24 V-os és motor nélküli kivitelben.",
+   "images": [
+    "/termekkepek/gc-rooftop-ventilators-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/rooftop_ventilators/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-winglet",
+   "code": "02-5000",
+   "name": "Winglet tetőventilátor",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "specs": {
+    "Cikkszámok": "02-5000, 02-5100, 02-5500, 02-5600",
+    "Szín": "fekete / fehér",
+    "Tanúsítás": "EMC jóváhagyott"
+   },
+   "description": "Tetőventilátor lószállító, dobozos és személyszállító felépítményekhez: hatékony légcsere, 12/24 V-os és motor nélküli kivitelben.",
+   "images": [
+    "/termekkepek/gc-winglet-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/winglet/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-electric-round",
+   "code": "90-5000-DG",
+   "name": "Elektromos tetőablak, kerek",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoablakok",
+   "specs": {
+    "Cikkszámok": "90-5000-DG"
+   },
+   "description": "Kézi és elektromos tetőablak felépítményekhez: természetes fény és szellőzés, vészkijáratként is.",
+   "images": [
+    "/termekkepek/gc-electric-round-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/electric-round/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-roof-hatches-manual-big",
+   "code": "90-6000-DG",
+   "name": "Kézi tetőablak, nagy",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoablakok",
+   "specs": {
+    "Cikkszámok": "90-6000-DG"
+   },
+   "description": "Kézi és elektromos tetőablak felépítményekhez: természetes fény és szellőzés, vészkijáratként is.",
+   "images": [
+    "/termekkepek/gc-roof-hatches-manual-big-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-manual-big/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-light-metal-rotary-valve",
+   "code": "35-4088",
+   "name": "Könnyűfém forgószelep",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "specs": {
+    "Cikkszámok": "35-4088"
+   },
+   "description": "Belső szellőzőszelepek, rácsok és takarók a légáram szabályozásához.",
+   "images": [
+    "/termekkepek/gc-light-metal-rotary-valve-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/light-metal-rotary-valve/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-axial-ventilator",
+   "code": "",
+   "name": "Axiálventilátor",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "axial-es-radial-ventilatorok",
+   "specs": {
+    "Feszültség": "12/24 V",
+    "Tanúsítás": "EMC jóváhagyott"
+   },
+   "description": "Beépíthető axiál- és radiálventilátorok kényszerszellőzéshez.",
+   "images": [
+    "/termekkepek/gc-axial-ventilator-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/axial-ventilator/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-axialventilator",
+   "code": "",
+   "name": "Axiálventilátor, kompakt",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "axial-es-radial-ventilatorok",
+   "specs": {
+    "Tanúsítás": "EMC jóváhagyott"
+   },
+   "description": "Beépíthető axiál- és radiálventilátorok kényszerszellőzéshez.",
+   "images": [
+    "/termekkepek/gc-axialventilator-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/axialventilator/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-radial-ventilator",
+   "code": "",
+   "name": "Radiálventilátor",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "axial-es-radial-ventilatorok",
+   "specs": {
+    "Tanúsítás": "EMC jóváhagyott"
+   },
+   "description": "Beépíthető axiál- és radiálventilátorok kényszerszellőzéshez.",
+   "images": [
+    "/termekkepek/gc-radial-ventilator-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/radial-ventilator/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-lighting-rectangle",
+   "code": "",
+   "name": "LED lámpa, szögletes",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "vilagitas",
+   "specs": {
+    "Feszültség": "12 V"
+   },
+   "description": "LED belső világítás felépítményekbe, 12/24 V.",
+   "images": [
+    "/termekkepek/gc-lighting-rectangle-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/lighting-rectangle/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-lighting-round",
+   "code": "",
+   "name": "LED lámpa, kerek",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "vilagitas",
+   "specs": {
+    "Feszültség": "12 V"
+   },
+   "description": "LED belső világítás felépítményekbe, 12/24 V.",
+   "images": [
+    "/termekkepek/gc-lighting-round-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/lighting-round/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-ceilingflow",
+   "code": "24-0008",
+   "name": "Ceilingflow mennyezeti légelosztó",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "mennyezeti-legelosztok",
+   "specs": {
+    "Cikkszámok": "24-0008, 24-0009",
+    "Szín": "fekete / fehér"
+   },
+   "description": "Mennyezeti légelosztó egyenletes, huzatmentes szellőzéshez.",
+   "images": [
+    "/termekkepek/gc-ceilingflow-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/ceilingflow/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-air-purifier-large",
+   "code": "24-0600",
+   "name": "Légtisztító, nagy",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "legtisztitok",
+   "specs": {
+    "Cikkszámok": "24-0600"
+   },
+   "description": "Légtisztító állatszállító és személyszállító felépítményekbe.",
+   "images": [
+    "/termekkepek/gc-air-purifier-large-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/air-purifier-large/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-air-purifier-small",
+   "code": "24-0125",
+   "name": "Légtisztító, kicsi",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "legtisztitok",
+   "specs": {
+    "Cikkszámok": "24-0125"
+   },
+   "description": "Légtisztító állatszállító és személyszállító felépítményekbe.",
+   "images": [
+    "/termekkepek/gc-air-purifier-small-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/air-purifier-small/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-floor-ventilator",
+   "code": "89-5600",
+   "name": "Padlószellőző",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "szelloztetes-kiegeszitok",
+   "specs": {
+    "Cikkszámok": "89-5600"
+   },
+   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
+   "images": [
+    "/termekkepek/gc-floor-ventilator-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/floor-ventilator/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-floor-ventilator-2",
+   "code": "89-5700",
+   "name": "Padlószellőző, nagy",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "szelloztetes-kiegeszitok",
+   "specs": {
+    "Cikkszámok": "89-5700"
+   },
+   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
+   "images": [
+    "/termekkepek/gc-floor-ventilator-2-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/floor-ventilator-2/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-snowfilter",
+   "code": "89-5011",
+   "name": "Hószűrő tetőventilátorhoz",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "szelloztetes-kiegeszitok",
+   "specs": {
+    "Cikkszámok": "89-5011"
+   },
+   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
+   "images": [
+    "/termekkepek/gc-snowfilter-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/snowfilter/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-speedcontrol",
+   "code": "30-3004",
+   "name": "Fordulatszám-szabályzó ventilátorhoz",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "szelloztetes-kiegeszitok",
+   "specs": {
+    "Cikkszámok": "30-3004",
+    "Feszültség": "12 V"
+   },
+   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
+   "images": [
+    "/termekkepek/gc-speedcontrol-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/speedcontrol/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-switch-round",
+   "code": "89-4002",
+   "name": "Kapcsoló, kerek",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "szelloztetes-kiegeszitok",
+   "specs": {
+    "Cikkszámok": "89-4002"
+   },
+   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
+   "images": [
+    "/termekkepek/gc-switch-round-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/switch-round/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "gc-switch-square",
+   "code": "89-4005",
+   "name": "Kapcsoló, szögletes",
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "szelloztetes-kiegeszitok",
+   "specs": {
+    "Cikkszámok": "89-4005"
+   },
+   "description": "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez.",
+   "images": [
+    "/termekkepek/gc-switch-square-1.webp"
+   ],
+   "sourceUrl": "https://gnc-systems.com/en/products/switch-square/",
+   "source": "G&C termékek"
+  },
+  {
+   "slug": "sp-a1-009",
+   "code": "A1 009",
+   "name": "Élvédő profil A1 009 – fekete, 0,8-1,5 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "0,8-1,5",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-009-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=18",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-010",
+   "code": "A1 010",
+   "name": "Élvédő profil A1 010 – fekete, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-010-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=18",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-011",
+   "code": "A1 011",
+   "name": "Élvédő profil A1 011 – fehér, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fehér",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-011-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=18",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-012",
+   "code": "A1 012",
+   "name": "Élvédő profil A1 012 – szürke, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "szürke",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-012-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=18",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-014",
+   "code": "A1 014",
+   "name": "Élvédő profil A1 014 – fehér, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fehér",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-014-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=18",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-034",
+   "code": "A1 034",
+   "name": "Élvédő profil A1 034 – ezüst, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "ezüst",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-034-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=18",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-023-2",
+   "code": "A1 023/2",
+   "name": "Élvédő profil A1 023/2 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-023-2-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=18",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-023-4",
+   "code": "A1 023/4",
+   "name": "Élvédő profil A1 023/4 – fekete, 2,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-4,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-023-4-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=18",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-051",
+   "code": "A2 051",
+   "name": "Élvédő profil A2 051 – fekete, 1,0–3,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–3,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a2-051-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=18",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-032",
+   "code": "A1 032",
+   "name": "Élvédő profil A1 032 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "4x50"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-032-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=18",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-016",
+   "code": "A1 016",
+   "name": "Élvédő profil A1 016 – anthrazit, 1,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "anthrazit",
+    "Szorítási tartomány [mm]": "1,0-4,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-016-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=19",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-017",
+   "code": "A1 017",
+   "name": "Élvédő profil A1 017 – light grey, 1,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "light grey",
+    "Szorítási tartomány [mm]": "1,0-4,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-017-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=19",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-022",
+   "code": "A1 022",
+   "name": "Élvédő profil A1 022 – white grey, 1,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "white grey",
+    "Szorítási tartomány [mm]": "1,0-4,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-022-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=19",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-044",
+   "code": "A1 044",
+   "name": "Élvédő profil A1 044 – fekete, 2,0-5,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-5,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-044-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=19",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-634",
+   "code": "A3 634",
+   "name": "Élvédő profil A3 634 – szürke, 2,0-5,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "szürke",
+    "Szorítási tartomány [mm]": "2,0-5,0",
+    "Kiszerelés [m]": "10x120"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a3-634-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=19",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-021",
+   "code": "A1 021",
+   "name": "Élvédő profil A1 021 – fekete, 2,0-5,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-5,0",
+    "Kiszerelés [m]": "50,1"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-021-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=19",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-019-8",
+   "code": "A1 019/8",
+   "name": "Élvédő profil A1 019/8 – fekete, 6,0-8,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "6,0-8,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-019-8-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=19",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-020-8",
+   "code": "A1 020/8",
+   "name": "Élvédő profil A1 020/8 – light grey, 6,0-8,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "light grey",
+    "Szorítási tartomány [mm]": "6,0-8,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-020-8-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=19",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-019-10",
+   "code": "A1 019/10",
+   "name": "Élvédő profil A1 019/10 – fekete, 8,0-10,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "8,0-10,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-019-10-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=19",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-020-10",
+   "code": "A1 020/10",
+   "name": "Élvédő profil A1 020/10 – light grey, 8,0-10,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "light grey",
+    "Szorítási tartomány [mm]": "8,0-10,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-020-10-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=19",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-078",
+   "code": "A2 078",
+   "name": "Élvédő profil A2 078 – fekete, 10,0-12,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "10,0-12,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a2-078-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=19",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-037",
+   "code": "A1 037",
+   "name": "Élvédő profil A1 037 – fekete, 1,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-4,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-037-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=20",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-024-2",
+   "code": "A1 024/2",
+   "name": "Élvédő profil A1 024/2 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-024-2-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=20",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-024-4",
+   "code": "A1 024/4",
+   "name": "Élvédő profil A1 024/4 – fekete, 2,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-4,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-024-4-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=20",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-024-6",
+   "code": "A1 024/6",
+   "name": "Élvédő profil A1 024/6 – fekete, 4,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "4,0-6,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-024-6-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=20",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-018",
+   "code": "A1 018",
+   "name": "Élvédő profil A1 018 – fekete, 1,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-4,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-018-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=20",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-030",
+   "code": "A1 030",
+   "name": "Élvédő profil A1 030 – fekete, 4,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "4,0-6,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-030-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=20",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-046",
+   "code": "A3 046",
+   "name": "Élvédő profil A3 046 – fekete, 0,8-1,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "0,8-1,0",
+    "Kiszerelés [m]": "200"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a3-046-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=21",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-077",
+   "code": "A1 077",
+   "name": "Élvédő profil A1 077 – fekete, 0,5-3,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "0,5-3,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-077-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=21",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-813",
+   "code": "A2 813",
+   "name": "Élvédő profil A2 813 – fekete, 0,5-3,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "0,5-3,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a2-813-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=21",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-075",
+   "code": "A1 075",
+   "name": "Élvédő profil A1 075 – fekete, 1,0–2,5 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–2,5",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a1-075-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=21",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-087",
+   "code": "A3 087",
+   "name": "Élvédő profil A3 087 – fehér, 2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fehér",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "10x120"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a3-087-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=21",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-490",
+   "code": "A3 490",
+   "name": "Élvédő profil A3 490 – creamy-, 2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "creamy-",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "50,1"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a3-490-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=21",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-362-bu",
+   "code": "A3 362-BU",
+   "name": "Élvédő profil A3 362-BU – light-, 2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "light-",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "50,1"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a3-362-bu-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=21",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-withbutyl",
+   "code": "WITHBUTYL",
+   "name": "Élvédő profil WITHBUTYL – ivory, 2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "ivory",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "50,1"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-withbutyl-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=21",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-253-bu",
+   "code": "A4 253-BU",
+   "name": "Élvédő profil A4 253-BU – fehér, 2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fehér",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "1x50,1"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a4-253-bu-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=22",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-steelcarrier",
+   "code": "STEELCARRIER",
+   "name": "Élvédő profil STEELCARRIER – fehér, 2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fehér",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "1x50,1"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-steelcarrier-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=22",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-unbroken",
+   "code": "UNBROKEN",
+   "name": "Élvédő profil UNBROKEN – fehér, 2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fehér",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "1x50,1"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-unbroken-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=22",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-257",
+   "code": "A2 257",
+   "name": "Élvédő profil A2 257 – pearl-, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "pearl-",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a2-257-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=22",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-tpe",
+   "code": "(TPE)",
+   "name": "Élvédő profil (TPE) – fehér, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fehér",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-tpe-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=22",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-stainlessstealwire",
+   "code": "STAINLESSSTEALWIRE",
+   "name": "Élvédő profil STAINLESSSTEALWIRE – pearl-, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "pearl-",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-stainlessstealwire-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=22",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-carrier",
+   "code": "CARRIER",
+   "name": "Élvédő profil CARRIER – pearl-, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "pearl-",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-carrier-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=22",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-521",
+   "code": "A3 521",
+   "name": "Élvédő profil A3 521 – fekete, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a3-521-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=23",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-centerbar",
+   "code": "CENTERBAR",
+   "name": "Élvédő profil CENTERBAR – fekete, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-centerbar-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=23",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-782",
+   "code": "A4 782",
+   "name": "Élvédő profil A4 782 – schwarz, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "schwarz",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a4-782-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=23",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-firesafetystandard",
+   "code": "(FIRESAFETYSTANDARD",
+   "name": "Élvédő profil (FIRESAFETYSTANDARD – schwarz, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "schwarz",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-firesafetystandard-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=23",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-nff16-101",
+   "code": "NFF16-101)",
+   "name": "Élvédő profil NFF16-101) – schwarz, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "schwarz",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-nff16-101-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=23",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-613",
+   "code": "A2 613",
+   "name": "Élvédő profil A2 613 – fekete, 1,0–3,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–3,0",
+    "Kiszerelés [m]": "2x100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a2-613-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=23",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-444",
+   "code": "A3 444",
+   "name": "Élvédő profil A3 444 – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a3-444-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=23",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-wirecarrier",
+   "code": "WIRECARRIER",
+   "name": "Élvédő profil WIRECARRIER – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-wirecarrier-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=23",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-550",
+   "code": "A3 550",
+   "name": "Élvédő profil A3 550 – fekete, 5,0–8,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0–8,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a3-550-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=23",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-broken",
+   "code": "BROKEN",
+   "name": "Élvédő profil BROKEN – fekete, 5,0–8,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0–8,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-broken-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=23",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-808-bu",
+   "code": "A4 808-BU",
+   "name": "Élvédő profil A4 808-BU – fekete, 4,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "4,0-6,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére.",
+   "images": [
+    "/termekkepek/sp-a4-808-bu-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=23",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-107",
+   "code": "A1 107",
+   "name": "Élvédő tömítőprofil A1 107 – fekete, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-107-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=28",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-158",
+   "code": "A2 158",
+   "name": "Élvédő tömítőprofil A2 158 – fekete, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "200"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a2-158-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=28",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-102",
+   "code": "A1 102",
+   "name": "Élvédő tömítőprofil A1 102 – fekete, 1,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-102-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=28",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-117",
+   "code": "A1 117",
+   "name": "Élvédő tömítőprofil A1 117 – fekete, 1,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-117-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=28",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-104-2",
+   "code": "A1 104/2",
+   "name": "Élvédő tömítőprofil A1 104/2 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-104-2-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=28",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-104-4",
+   "code": "A1 104/4",
+   "name": "Élvédő tömítőprofil A1 104/4 – fekete, 2,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-104-4-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=28",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-104-6",
+   "code": "A1 104/6",
+   "name": "Élvédő tömítőprofil A1 104/6 – fekete, 4,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "4,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-104-6-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=28",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-110",
+   "code": "A1 110",
+   "name": "Élvédő tömítőprofil A1 110 – fekete, 1,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-110-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=29",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-119",
+   "code": "A1 119",
+   "name": "Élvédő tömítőprofil A1 119 – fekete, 1,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-119-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=29",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-withepdmsoftrubber",
+   "code": "WITHEPDMSOFTRUBBER",
+   "name": "Élvédő tömítőprofil WITHEPDMSOFTRUBBER – fekete, 2,0–4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0–4,0",
+    "Kiszerelés [m]": "25"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-withepdmsoftrubber-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=29",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-tube505shorea",
+   "code": "TUBE50±5SHOREA",
+   "name": "Élvédő tömítőprofil TUBE50±5SHOREA – fekete, 2,0–4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0–4,0",
+    "Kiszerelés [m]": "25"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-tube505shorea-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=29",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-steelcarrierbroken",
+   "code": "STEELCARRIERBROKEN",
+   "name": "Élvédő tömítőprofil STEELCARRIERBROKEN – fekete, 2,0–4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0–4,0",
+    "Kiszerelés [m]": "25"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-steelcarrierbroken-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=29",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-213",
+   "code": "A2 213",
+   "name": "Élvédő tömítőprofil A2 213 – fekete, 1,0–2,5 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–2,5",
+    "Kiszerelés [m]": "available"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a2-213-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=29",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-withpu-foamandwire",
+   "code": "WITHPU-FOAMANDWIRE",
+   "name": "Élvédő tömítőprofil WITHPU-FOAMANDWIRE – fekete, 1,0–2,5 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–2,5",
+    "Kiszerelés [m]": "in max."
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-withpu-foamandwire-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=29",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-073",
+   "code": "A3 073",
+   "name": "Élvédő tömítőprofil A3 073 – fekete, 2,5–4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,5–4,0",
+    "Kiszerelés [m]": "25"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a3-073-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=30",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-105-6",
+   "code": "A1 105/6",
+   "name": "Élvédő tömítőprofil A1 105/6 – fekete, 4,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "4,0-6,0",
+    "Kiszerelés [m]": "25"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-105-6-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=30",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-101",
+   "code": "A1 101",
+   "name": "Élvédő tömítőprofil A1 101 – fekete, 1,0–2,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–2,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-101-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=31",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-114",
+   "code": "A1 114",
+   "name": "Élvédő tömítőprofil A1 114 – fekete, 1,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-114-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=31",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-196",
+   "code": "A2 196",
+   "name": "Élvédő tömítőprofil A2 196 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a2-196-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=31",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-109",
+   "code": "A1 109",
+   "name": "Élvédő tömítőprofil A1 109 – fekete, 1,0–4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-109-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=31",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-100",
+   "code": "A1 100",
+   "name": "Élvédő tömítőprofil A1 100 – fekete, 1,0–4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-100-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=31",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-121-2",
+   "code": "A1 121/2",
+   "name": "Élvédő tömítőprofil A1 121/2 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-121-2-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=32",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-121-4",
+   "code": "A1 121/4",
+   "name": "Élvédő tömítőprofil A1 121/4 – fekete, 2,5-4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,5-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-121-4-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=32",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-121-6",
+   "code": "A1 121/6",
+   "name": "Élvédő tömítőprofil A1 121/6 – fekete, 4,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "4,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-121-6-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=32",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-108",
+   "code": "A1 108",
+   "name": "Élvédő tömítőprofil A1 108 – fekete, 1,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-108-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=32",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-139",
+   "code": "A2 139",
+   "name": "Élvédő tömítőprofil A2 139 – fekete, 3,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "3,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a2-139-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=32",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-134-6",
+   "code": "A1 134/6",
+   "name": "Élvédő tömítőprofil A1 134/6 – fekete, 4,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "4,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-134-6-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=32",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-106-4",
+   "code": "A2 106/4",
+   "name": "Élvédő tömítőprofil A2 106/4 – fekete, 2,5-4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,5-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a2-106-4-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=32",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-106-6",
+   "code": "A2 106/6",
+   "name": "Élvédő tömítőprofil A2 106/6 – fekete, 4,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "4,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a2-106-6-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=32",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-162",
+   "code": "A1 162",
+   "name": "Élvédő tömítőprofil A1 162 – fekete, 1,0–4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-162-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=33",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-124",
+   "code": "A2 124",
+   "name": "Élvédő tömítőprofil A2 124 – fekete, 1,0–4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a2-124-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=33",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-103",
+   "code": "A1 103",
+   "name": "Élvédő tömítőprofil A1 103 – fekete, 1,0–4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-103-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=33",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-256",
+   "code": "A2 256",
+   "name": "Élvédő tömítőprofil A2 256 – fekete, 1,0-3,5 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-3,5",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a2-256-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=33",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-132",
+   "code": "A1 132",
+   "name": "Élvédő tömítőprofil A1 132 – fekete, 1,0–4,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a1-132-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=33",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-339",
+   "code": "A3 339",
+   "name": "Élvédő tömítőprofil A3 339 – carrier:, 1,5-2,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "carrier:",
+    "Szorítási tartomány [mm]": "1,5-2,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a3-339-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=34",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-363",
+   "code": "A3 363",
+   "name": "Élvédő tömítőprofil A3 363 – carrier:, 2,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "carrier:",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a3-363-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=34",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-363-bu",
+   "code": "A3 363-BU",
+   "name": "Élvédő tömítőprofil A3 363-BU – other colours), 2,0 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "other colours)",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a3-363-bu-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=34",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-530",
+   "code": "A3 530",
+   "name": "Élvédő tömítőprofil A3 530 – carrier:, 1,5 mm",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Szín": "carrier:",
+    "Szorítási tartomány [mm]": "1,5",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-a3-530-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=34",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-544",
+   "code": "A2 544",
+   "name": "Kéderprofil A2 544 – fekete, 0,5-1,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "0,5-1,5",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-544-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=35",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-518",
+   "code": "A2 518",
+   "name": "Kéderprofil A2 518 – fekete, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-518-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=35",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-432",
+   "code": "A3 432",
+   "name": "Kéderprofil A3 432 – fekete, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "3x100"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-432-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=35",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-centrebar",
+   "code": "CENTREBAR",
+   "name": "Kéderprofil CENTREBAR – fekete, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "3x100"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-centrebar-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=35",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-512",
+   "code": "A1 512",
+   "name": "Kéderprofil A1 512 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a1-512-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=35",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-196",
+   "code": "A3 196",
+   "name": "Kéderprofil A3 196 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-196-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=35",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-withslidingvarnish",
+   "code": "WITHSLIDINGVARNISH",
+   "name": "Kéderprofil WITHSLIDINGVARNISH – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-withslidingvarnish-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=35",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-coating",
+   "code": "COATING",
+   "name": "Kéderprofil COATING – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-coating-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=35",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-513",
+   "code": "A1 513",
+   "name": "Kéderprofil A1 513 – fekete, 1,0–3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–3,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a1-513-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=36",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-517",
+   "code": "A1 517",
+   "name": "Kéderprofil A1 517 – fekete, 1,0–3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–3,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a1-517-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=36",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-513epdm",
+   "code": "A2 513EPDM",
+   "name": "Kéderprofil A2 513EPDM – fekete, 1,0–3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–3,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-513epdm-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=36",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-513nbr",
+   "code": "A2 513NBR",
+   "name": "Kéderprofil A2 513NBR – fekete, 1,0–3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–3,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-513nbr-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=36",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-oilresistant",
+   "code": "OILRESISTANT",
+   "name": "Kéderprofil OILRESISTANT – fekete, 1,0–3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–3,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-oilresistant-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=36",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-466-bu",
+   "code": "A4 466-BU",
+   "name": "Kéderprofil A4 466-BU – fekete, 2,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-4,0",
+    "Kiszerelés [m]": "75"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a4-466-bu-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=36",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-280",
+   "code": "A3 280",
+   "name": "Kéderprofil A3 280 – fekete, 2,5-3,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,5-3,5",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-280-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=36",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-538",
+   "code": "A1 538",
+   "name": "Kéderprofil A1 538 – fekete, 1,0-3,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-3,5",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a1-538-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=37",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-514",
+   "code": "A2 514",
+   "name": "Kéderprofil A2 514 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-514-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=37",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-546",
+   "code": "A2 546",
+   "name": "Kéderprofil A2 546 – fekete, 1,5-3,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,5-3,5",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-546-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=37",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-516-2",
+   "code": "A2 516/2",
+   "name": "Kéderprofil A2 516/2 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-516-2-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=37",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-516-4",
+   "code": "A2 516/4",
+   "name": "Kéderprofil A2 516/4 – fekete, 2,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-4,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-516-4-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=37",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-806",
+   "code": "A3 806",
+   "name": "Kéderprofil A3 806 – fekete, 2,0-3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-3,0",
+    "Kiszerelés [m]": "2x25"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-806-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=37",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-525",
+   "code": "A1 525",
+   "name": "Kéderprofil A1 525 – fekete, 1,0-3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-3,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a1-525-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=38",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-289",
+   "code": "A3 289",
+   "name": "Kéderprofil A3 289 – fekete, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-289-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=38",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-421",
+   "code": "A4 421",
+   "name": "Kéderprofil A4 421 – fekete, 1,5-3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,5-3,0",
+    "Kiszerelés [m]": "3x25"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a4-421-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=38",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-422",
+   "code": "A4 422",
+   "name": "Kéderprofil A4 422 – fekete, 1,5-3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,5-3,0",
+    "Kiszerelés [m]": "3x25"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a4-422-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=38",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-423",
+   "code": "A4 423",
+   "name": "Kéderprofil A4 423 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "3x25"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a4-423-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=39",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-807",
+   "code": "A4 807",
+   "name": "Kéderprofil A4 807 – fekete, 3,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "3,0-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a4-807-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=39",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-500",
+   "code": "A3 500",
+   "name": "Kéderprofil A3 500 – fekete, 1,5-3,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,5-3,5",
+    "Kiszerelés [m]": "75"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-500-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=39",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-807",
+   "code": "A3 807",
+   "name": "Kéderprofil A3 807 – fekete, 2,0-3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-3,0",
+    "Kiszerelés [m]": "2x25"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-807-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=39",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-860",
+   "code": "A3 860",
+   "name": "Kéderprofil A3 860 – fekete, 2,0-3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-3,0",
+    "Kiszerelés [m]": "2x25"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-860-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=40",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-533",
+   "code": "A2 533",
+   "name": "Kéderprofil A2 533 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-533-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=40",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-507",
+   "code": "A2 507",
+   "name": "Kéderprofil A2 507 – fekete, 0,8-2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "0,8-2,5",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-507-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=40",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-545",
+   "code": "A2 545",
+   "name": "Kéderprofil A2 545 – fekete, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-545-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=40",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-506s",
+   "code": "A2 506S",
+   "name": "Kéderprofil A2 506S – fekete, 2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-506s-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=40",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-471",
+   "code": "A3 471",
+   "name": "Kéderprofil A3 471 – fekete, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "4x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-471-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=40",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-549epdm",
+   "code": "A1 549EPDM",
+   "name": "Kéderprofil A1 549EPDM – fekete, 2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a1-549epdm-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=40",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-550nbr",
+   "code": "A1 550NBR",
+   "name": "Kéderprofil A1 550NBR – fekete, 2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a1-550nbr-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=40",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-379",
+   "code": "A3 379",
+   "name": "Kéderprofil A3 379 – fekete, 2,0-3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-3,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-379-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=41",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-767",
+   "code": "A3 767",
+   "name": "Kéderprofil A3 767 – fekete, 2,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-767-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=41",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-911",
+   "code": "A3 911",
+   "name": "Kéderprofil A3 911 – fekete, 1,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,5",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-911-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=41",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-713",
+   "code": "A4 713",
+   "name": "Kéderprofil A4 713 – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a4-713-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=42",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-803",
+   "code": "A4 803",
+   "name": "Kéderprofil A4 803 – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a4-803-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=42",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-297",
+   "code": "A3 297",
+   "name": "Kéderprofil A3 297 – fekete, 2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-297-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=42",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-229",
+   "code": "A3 229",
+   "name": "Kéderprofil A3 229 – fekete, 1,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-229-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=42",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-361-4",
+   "code": "A3 361/4",
+   "name": "Kéderprofil A3 361/4 – fekete, 2,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-4,0",
+    "Kiszerelés [m]": "75"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-361-4-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=42",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-361-6",
+   "code": "A3 361/6",
+   "name": "Kéderprofil A3 361/6 – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "75"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-361-6-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=42",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-752",
+   "code": "A3 752",
+   "name": "Kéderprofil A3 752 – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-752-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=42",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-224-2",
+   "code": "A3 224/2",
+   "name": "Kéderprofil A3 224/2 – fekete, 1,0–2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–2,5",
+    "Kiszerelés [m]": "75"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-224-2-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=43",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-224-6",
+   "code": "A3 224/6",
+   "name": "Kéderprofil A3 224/6 – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "75"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-224-6-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=43",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-169",
+   "code": "A3 169",
+   "name": "Kéderprofil A3 169 – fekete, 3,5-5,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "3,5-5,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-169-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=43",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-812",
+   "code": "A3 812",
+   "name": "Kéderprofil A3 812 – fekete, 3,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "3,0-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-812-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=43",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-757",
+   "code": "A3 757",
+   "name": "Kéderprofil A3 757 – fekete, 2,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-757-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=43",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-114",
+   "code": "A3 114",
+   "name": "Kéderprofil A3 114 – fekete, 5,0-9,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-9,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-114-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=43",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-547",
+   "code": "A3 547",
+   "name": "Kéderprofil A3 547 – fekete, 2,0–4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0–4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-547-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=43",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-558-cr",
+   "code": "A2 558(CR)",
+   "name": "Kéderprofil A2 558(CR) – fekete, 1,0-3,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-3,5",
+    "Kiszerelés [m]": "1x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-558-cr-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=44",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-813",
+   "code": "A3 813",
+   "name": "Kéderprofil A3 813 – fekete, 2,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-4,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-813-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=44",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-145",
+   "code": "A3 145",
+   "name": "Kéderprofil A3 145 – fekete, 3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "3,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-145-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=44",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-549",
+   "code": "A3 549",
+   "name": "Kéderprofil A3 549 – fekete, 4,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "4,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-549-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=44",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-844-bu",
+   "code": "A4 844-BU",
+   "name": "Kéderprofil A4 844-BU – fekete, 5,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0",
+    "Kiszerelés [m]": "75"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a4-844-bu-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=44",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-725",
+   "code": "A3 725",
+   "name": "Kéderprofil A3 725 – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-725-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=45",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-725-bu",
+   "code": "A3 725-BU",
+   "name": "Kéderprofil A3 725-BU – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-725-bu-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=45",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-104",
+   "code": "A3 104",
+   "name": "Kéderprofil A3 104 – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-104-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=45",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-576",
+   "code": "A4 576",
+   "name": "Kéderprofil A4 576 – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a4-576-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=45",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-729",
+   "code": "A3 729",
+   "name": "Kéderprofil A3 729 – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-729-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=45",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-578",
+   "code": "A3 578",
+   "name": "Kéderprofil A3 578 – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-578-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=45",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-467",
+   "code": "A3 467",
+   "name": "Kéderprofil A3 467 – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-467-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=45",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-467-bu",
+   "code": "A3 467-BU",
+   "name": "Kéderprofil A3 467-BU – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-467-bu-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=45",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-348",
+   "code": "A3 348",
+   "name": "Kéderprofil A3 348 – fekete, 5,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0-6,0",
+    "Kiszerelés [m]": "75"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-348-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=45",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-714",
+   "code": "A4 714",
+   "name": "Kéderprofil A4 714 – fekete, 4,0-5,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "4,0-5,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a4-714-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=46",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-718-bu",
+   "code": "A4 718-BU",
+   "name": "Kéderprofil A4 718-BU – fekete, 4,0-5,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "4,0-5,0",
+    "Kiszerelés [m]": "35"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a4-718-bu-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=46",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-560",
+   "code": "A3 560",
+   "name": "Kéderprofil A3 560 – fekete, 5,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-560-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=46",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-949",
+   "code": "A4 949",
+   "name": "Kéderprofil A4 949 – fekete, 5,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "5,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a4-949-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=46",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-548",
+   "code": "A2 548",
+   "name": "Kéderprofil A2 548 – fekete, 1,5-3,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,5-3,5",
+    "Kiszerelés [m]": "2x25"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-548-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=46",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-156",
+   "code": "A3 156",
+   "name": "Kéderprofil A3 156 – fekete, 3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "3,0",
+    "Kiszerelés [m]": "52"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-156-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=46",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-667-bu",
+   "code": "A4 667-BU",
+   "name": "Kéderprofil A4 667-BU – fekete, 3,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "3,0-4,0",
+    "Kiszerelés [m]": "35"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a4-667-bu-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=46",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-502",
+   "code": "A1 502",
+   "name": "Kéderprofil A1 502 – fekete, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a1-502-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=47",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-322",
+   "code": "A4 322",
+   "name": "Kéderprofil A4 322 – fekete, 2,0-3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-3,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a4-322-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=47",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-501",
+   "code": "A1 501",
+   "name": "Kéderprofil A1 501 – fekete, 1,0–2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–2,5",
+    "Kiszerelés [m]": "3x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a1-501-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=47",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-521",
+   "code": "A1 521",
+   "name": "Kéderprofil A1 521 – fekete, 1,0–3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0–3,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a1-521-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=47",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-592",
+   "code": "A3 592",
+   "name": "Kéderprofil A3 592 – fekete, 2,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-4,0",
+    "Kiszerelés [m]": "2x25"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-592-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=47",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-605",
+   "code": "A3 605",
+   "name": "Kéderprofil A3 605 – fekete, 2,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-4,0",
+    "Kiszerelés [m]": "2x25"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-605-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=47",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-500",
+   "code": "A1 500",
+   "name": "Kéderprofil A1 500 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a1-500-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=47",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-612",
+   "code": "A2 612",
+   "name": "Kéderprofil A2 612 – fekete, 3,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "3,0-4,0",
+    "Kiszerelés [m]": "2x20"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-612-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=48",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-655",
+   "code": "A3 655",
+   "name": "Kéderprofil A3 655 – fekete, 2,0-4,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-4,0",
+    "Kiszerelés [m]": "2x20"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-655-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=48",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-300",
+   "code": "A3 300",
+   "name": "Kéderprofil A3 300 – fekete, 4,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "4,0-6,0",
+    "Kiszerelés [m]": "sold only in"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-300-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=48",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-withoutmetal",
+   "code": "WITHOUTMETAL",
+   "name": "Kéderprofil WITHOUTMETAL – fekete, 4,0-6,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "4,0-6,0",
+    "Kiszerelés [m]": "cut length"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-withoutmetal-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=48",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-511",
+   "code": "A2 511",
+   "name": "Kéderprofil A2 511 – fekete, 1,0-3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-3,0",
+    "Kiszerelés [m]": "3x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-511-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=49",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-343",
+   "code": "A3 343",
+   "name": "Kéderprofil A3 343 – fekete, 2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-343-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=49",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-brokenor",
+   "code": "BROKENOR",
+   "name": "Kéderprofil BROKENOR – fekete, 2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-brokenor-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=49",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-074",
+   "code": "A3 074",
+   "name": "Kéderprofil A3 074 – fekete, 1,0-2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-074-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=49",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-228",
+   "code": "A3 228",
+   "name": "Kéderprofil A3 228 – fekete, 0,5-2,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "0,5-2,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-228-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=49",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a2-523",
+   "code": "A2 523",
+   "name": "Kéderprofil A2 523 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a2-523-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=49",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-518",
+   "code": "A3 518",
+   "name": "Kéderprofil A3 518 – fekete, 1,25-2.,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,25-2.,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-518-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=50",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-one-sidedbroken",
+   "code": "ONE-SIDEDBROKEN",
+   "name": "Kéderprofil ONE-SIDEDBROKEN – fekete, 1,25-2.,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,25-2.,0",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-one-sidedbroken-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=50",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a3-276",
+   "code": "A3 276",
+   "name": "Kéderprofil A3 276 – fekete, 2,0-3,0 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "2,0-3,0",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a3-276-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=50",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-520",
+   "code": "A1 520",
+   "name": "Kéderprofil A1 520 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a1-520-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=50",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-526",
+   "code": "A1 526",
+   "name": "Kéderprofil A1 526 – fekete, 1,0-3,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-3,5",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a1-526-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=50",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a1-528",
+   "code": "A1 528",
+   "name": "Kéderprofil A1 528 – fekete, 1,0-2,5 mm",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Szín": "fekete",
+    "Szorítási tartomány [mm]": "1,0-2,5",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-a1-528-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=50",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-134",
+   "code": "B1 134",
+   "name": "Kéderprofil B1 134",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [
+    "/termekkepek/sp-b1-134-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b2-164",
+   "code": "B2 164",
+   "name": "Kéderprofil B2 164",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "17"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b2-133",
+   "code": "B2 133",
+   "name": "Kéderprofil B2 133",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "32"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-112",
+   "code": "B1 112",
+   "name": "Kéderprofil B1 112",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "20"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-142",
+   "code": "B1 142",
+   "name": "Kéderprofil B1 142",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-115",
+   "code": "B1 115",
+   "name": "Kéderprofil B1 115",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "6x25"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-118",
+   "code": "B1 118",
+   "name": "Kéderprofil B1 118",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "20"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-107",
+   "code": "B1 107",
+   "name": "Kéderprofil B1 107",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-121",
+   "code": "B1 121",
+   "name": "Kéderprofil B1 121",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "25"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-122",
+   "code": "B1 122",
+   "name": "Kéderprofil B1 122",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "20"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b2-122-nbr",
+   "code": "B2 122(NBR)",
+   "name": "Kéderprofil B2 122(NBR)",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "20"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-181",
+   "code": "B1 181",
+   "name": "Kéderprofil B1 181",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "20"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-102",
+   "code": "B1 102",
+   "name": "Kéderprofil B1 102",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "20"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-110",
+   "code": "B1 110",
+   "name": "Kéderprofil B1 110",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-113",
+   "code": "B1 113",
+   "name": "Kéderprofil B1 113",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-127",
+   "code": "B1 127",
+   "name": "Kéderprofil B1 127",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "20"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-114",
+   "code": "B1 114",
+   "name": "Kéderprofil B1 114",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-123",
+   "code": "B1 123",
+   "name": "Kéderprofil B1 123",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "20"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-119",
+   "code": "B1 119",
+   "name": "Kéderprofil B1 119",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b2-173",
+   "code": "B2 173",
+   "name": "Kéderprofil B2 173",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-106",
+   "code": "B1 106",
+   "name": "Kéderprofil B1 106",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-120",
+   "code": "B1 120",
+   "name": "Kéderprofil B1 120",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "20"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-124",
+   "code": "B1 124",
+   "name": "Kéderprofil B1 124",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-125",
+   "code": "B1 125",
+   "name": "Kéderprofil B1 125",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-103",
+   "code": "B1 103",
+   "name": "Kéderprofil B1 103",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-159",
+   "code": "B1 159",
+   "name": "Kéderprofil B1 159",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-139",
+   "code": "B1 139",
+   "name": "Kéderprofil B1 139",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-108",
+   "code": "B1 108",
+   "name": "Kéderprofil B1 108",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-148",
+   "code": "B1 148",
+   "name": "Kéderprofil B1 148",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-104",
+   "code": "B1 104",
+   "name": "Kéderprofil B1 104",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b2-130",
+   "code": "B2 130",
+   "name": "Kéderprofil B2 130",
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "specs": {
+    "Kiszerelés [m]": "14.5"
+   },
+   "description": "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=52",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-c1-200",
+   "code": "C1 200",
+   "name": "Kitöltő profil C1 200 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-c1-200-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=53",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-c1-201",
+   "code": "C1 201",
+   "name": "Kitöltő profil C1 201 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=53",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-c1-202",
+   "code": "C1 202",
+   "name": "Kitöltő profil C1 202 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=53",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-c1-250",
+   "code": "C1 250",
+   "name": "Kitöltő profil C1 250 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "PVC",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=53",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-c1-251",
+   "code": "C1 251",
+   "name": "Kitöltő profil C1 251 – ivory",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "PVC",
+    "Szín": "ivory",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=53",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-c1-252",
+   "code": "C1 252",
+   "name": "Kitöltő profil C1 252 – ezüst",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "PVC",
+    "Szín": "ezüst",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=53",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-c1-253",
+   "code": "C1 253",
+   "name": "Kitöltő profil C1 253 – piros",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "PVC",
+    "Szín": "piros",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=53",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-117",
+   "code": "B1 117",
+   "name": "Kitöltő profil B1 117",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-b1-117-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=54",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b2-149",
+   "code": "B2 149",
+   "name": "Kitöltő profil B2 149",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Kiszerelés [m]": "15"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-b2-149-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=54",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b2-144",
+   "code": "B2 144",
+   "name": "Kitöltő profil B2 144",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Kiszerelés [m]": "25"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-b2-144-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=54",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-b1-155",
+   "code": "B1 155",
+   "name": "Kitöltő profil B1 155",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Kiszerelés [m]": "18"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-b1-155-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=54",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-553",
+   "code": "D2 553",
+   "name": "Kitöltő profil D2 553 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d2-553-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=55",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-013",
+   "code": "D1 013",
+   "name": "Kitöltő profil D1 013 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-013-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=55",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-123",
+   "code": "D1 123",
+   "name": "Kitöltő profil D1 123 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "25"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-123-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=55",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-499",
+   "code": "D2 499",
+   "name": "Kitöltő profil D2 499 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "25"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d2-499-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=55",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-199",
+   "code": "D2 199",
+   "name": "Kitöltő profil D2 199 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "8x48"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d2-199-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=55",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-020",
+   "code": "D1 020",
+   "name": "Kitöltő profil D1 020 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-020-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=56",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-021",
+   "code": "D1 021",
+   "name": "Kitöltő profil D1 021 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "4x100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-021-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=56",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-010",
+   "code": "D1 010",
+   "name": "Kitöltő profil D1 010 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "2x100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-010-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=56",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-011",
+   "code": "D1 011",
+   "name": "Kitöltő profil D1 011 – schwarz",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "schwarz",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-011-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=56",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-012",
+   "code": "D1 012",
+   "name": "Kitöltő profil D1 012 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-012-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=56",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-539",
+   "code": "D2 539",
+   "name": "Kitöltő profil D2 539 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "200"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d2-539-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=56",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-028",
+   "code": "D1 028",
+   "name": "Kitöltő profil D1 028 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-028-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=56",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-022",
+   "code": "D1 022",
+   "name": "Kitöltő profil D1 022 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "3x100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-022-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=57",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-024",
+   "code": "D1 024",
+   "name": "Kitöltő profil D1 024 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-024-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=57",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-014",
+   "code": "D1 014",
+   "name": "Kitöltő profil D1 014 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-014-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=57",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-034",
+   "code": "D1 034",
+   "name": "Kitöltő profil D1 034 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-034-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=57",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-025",
+   "code": "D1 025",
+   "name": "Kitöltő profil D1 025 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-025-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=57",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-015",
+   "code": "D1 015",
+   "name": "Kitöltő profil D1 015 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-015-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=57",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-026",
+   "code": "D1 026",
+   "name": "Kitöltő profil D1 026 – fekete",
+   "group": "kedergumik",
+   "category": "kitolto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "3x40"
+   },
+   "description": "Kitöltő (zár) profil kéderprofilokhoz.",
+   "images": [
+    "/termekkepek/sp-d1-026-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=57",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-358",
+   "code": "D2 358",
+   "name": "Üvegvezető profil D2 358 – fekete",
+   "group": "kedergumik",
+   "category": "uvegvezeto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Üvegvezető profil tolóablakokhoz és ajtóüvegekhez.",
+   "images": [
+    "/termekkepek/sp-d2-358-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=58",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-335",
+   "code": "D2 335",
+   "name": "Üvegvezető profil D2 335 – fekete",
+   "group": "kedergumik",
+   "category": "uvegvezeto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "4x50"
+   },
+   "description": "Üvegvezető profil tolóablakokhoz és ajtóüvegekhez.",
+   "images": [
+    "/termekkepek/sp-d2-335-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=58",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-635",
+   "code": "A4 635",
+   "name": "Üvegvezető profil A4 635 – fekete",
+   "group": "kedergumik",
+   "category": "uvegvezeto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Üvegvezető profil tolóablakokhoz és ajtóüvegekhez.",
+   "images": [
+    "/termekkepek/sp-a4-635-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=58",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-a4-800",
+   "code": "A4 800",
+   "name": "Üvegvezető profil A4 800 – fekete",
+   "group": "kedergumik",
+   "category": "uvegvezeto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "2x50"
+   },
+   "description": "Üvegvezető profil tolóablakokhoz és ajtóüvegekhez.",
+   "images": [
+    "/termekkepek/sp-a4-800-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=58",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d3-453",
+   "code": "D3 453",
+   "name": "Üvegvezető profil D3 453 – fekete",
+   "group": "kedergumik",
+   "category": "uvegvezeto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "3x50"
+   },
+   "description": "Üvegvezető profil tolóablakokhoz és ajtóüvegekhez.",
+   "images": [
+    "/termekkepek/sp-d3-453-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=58",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d3-321",
+   "code": "D3 321",
+   "name": "Üvegvezető profil D3 321 – fekete",
+   "group": "kedergumik",
+   "category": "uvegvezeto-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Üvegvezető profil tolóablakokhoz és ajtóüvegekhez.",
+   "images": [
+    "/termekkepek/sp-d3-321-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=58",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-g1-104",
+   "code": "G1 104",
+   "name": "Élvédő tömítőprofil G1 104 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "PVC",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "7x20"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-g1-104-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=59",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-g1-101",
+   "code": "G1 101",
+   "name": "Élvédő tömítőprofil G1 101 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "PVC",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "7x20"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-g1-101-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=59",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-g1-106",
+   "code": "G1 106",
+   "name": "Élvédő tömítőprofil G1 106 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "PVC",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "7x20"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-g1-106-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=59",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-g1-108",
+   "code": "G1 108",
+   "name": "Élvédő tömítőprofil G1 108 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "PVC",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "5x20"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-g1-108-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=59",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-127",
+   "code": "D1 127",
+   "name": "Élvédő tömítőprofil D1 127 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d1-127-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=59",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-274",
+   "code": "D2 274",
+   "name": "Élvédő tömítőprofil D2 274 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "200"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-274-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=59",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-363",
+   "code": "D2 363",
+   "name": "Élvédő tömítőprofil D2 363 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "200"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-363-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=60",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-169e",
+   "code": "D2 169E",
+   "name": "Élvédő tömítőprofil D2 169E – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "8x150"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-169e-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=60",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-419",
+   "code": "D2 419",
+   "name": "Élvédő tömítőprofil D2 419 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "200"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-419-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=60",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-545",
+   "code": "D2 545",
+   "name": "Élvédő tömítőprofil D2 545 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-545-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=60",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-544",
+   "code": "D2 544",
+   "name": "Élvédő tömítőprofil D2 544 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-544-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=60",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-311",
+   "code": "D2 311",
+   "name": "Élvédő tömítőprofil D2 311 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "200"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-311-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=61",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-184",
+   "code": "D2 184",
+   "name": "Élvédő tömítőprofil D2 184 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "75"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-184-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=61",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-537",
+   "code": "D2 537",
+   "name": "Élvédő tömítőprofil D2 537 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-537-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=61",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-382",
+   "code": "D2 382",
+   "name": "Élvédő tömítőprofil D2 382 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-382-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=61",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-538",
+   "code": "D2 538",
+   "name": "Élvédő tömítőprofil D2 538 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-538-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=61",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d3-041-afh",
+   "code": "D3 041-AFH",
+   "name": "Élvédő tömítőprofil D3 041-AFH – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d3-041-afh-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=62",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d3-061-bu",
+   "code": "D3 061-BU",
+   "name": "Élvédő tömítőprofil D3 061-BU – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d3-061-bu-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=62",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-541",
+   "code": "D2 541",
+   "name": "Élvédő tömítőprofil D2 541 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "150"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-541-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=62",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-421",
+   "code": "D2 421",
+   "name": "Élvédő tömítőprofil D2 421 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-421-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=62",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-390",
+   "code": "D2 390",
+   "name": "Élvédő tömítőprofil D2 390 – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "200"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-390-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=62",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d3-024-afh",
+   "code": "D3 024-AFH",
+   "name": "Élvédő tömítőprofil D3 024-AFH – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "5x25"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d3-024-afh-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=63",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-999-afh",
+   "code": "D2 999-AFH",
+   "name": "Élvédő tömítőprofil D2 999-AFH – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-999-afh-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=63",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-421-afh",
+   "code": "D2 421-AFH",
+   "name": "Élvédő tömítőprofil D2 421-AFH – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "4x25"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-421-afh-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=63",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d3-013-afh",
+   "code": "D3 013-AFH",
+   "name": "Élvédő tömítőprofil D3 013-AFH – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "4x25"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d3-013-afh-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=64",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-528-afh",
+   "code": "D2 528-AFH",
+   "name": "Élvédő tömítőprofil D2 528-AFH – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "3x25"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-528-afh-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=64",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-998-afh",
+   "code": "D2 998-AFH",
+   "name": "Élvédő tömítőprofil D2 998-AFH – fekete",
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben.",
+   "images": [
+    "/termekkepek/sp-d2-998-afh-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=64",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-193",
+   "code": "D2 193",
+   "name": "Mono profil D2 193 – fekete",
+   "group": "kedergumik",
+   "category": "mono-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "40"
+   },
+   "description": "Egyanyagú tömítőprofil.",
+   "images": [
+    "/termekkepek/sp-d2-193-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=65",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e-d2407",
+   "code": "E-D2407",
+   "name": "Mono profil E-D2407 – fekete",
+   "group": "kedergumik",
+   "category": "mono-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "50"
+   },
+   "description": "Egyanyagú tömítőprofil.",
+   "images": [
+    "/termekkepek/sp-e-d2407-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=65",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-135",
+   "code": "D1 135",
+   "name": "Ujjvédő profil D1 135 – fekete",
+   "group": "kedergumik",
+   "category": "ujjvedo-profilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "30"
+   },
+   "description": "Ujjbecsípődés elleni védőprofil ajtókhoz.",
+   "images": [
+    "/termekkepek/sp-d1-135-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=66",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-m1-001",
+   "code": "M1 001",
+   "name": "Ujjvédő profil M1 001 – -",
+   "group": "kedergumik",
+   "category": "ujjvedo-profilok",
+   "specs": {
+    "Anyag": "alumínium",
+    "Szín": "-",
+    "Kiszerelés [m]": "5"
+   },
+   "description": "Ujjbecsípődés elleni védőprofil ajtókhoz.",
+   "images": [
+    "/termekkepek/sp-m1-001-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=66",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d1-137",
+   "code": "D1 137",
+   "name": "Gumiprofil D1 137 – fekete",
+   "group": "kedergumik",
+   "category": "specialis-gumiprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "100"
+   },
+   "description": "Speciális gumiprofil egyedi felhasználásra.",
+   "images": [
+    "/termekkepek/sp-d1-137-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=67",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-230",
+   "code": "D2 230",
+   "name": "Gumiprofil D2 230 – fekete",
+   "group": "kedergumik",
+   "category": "specialis-gumiprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "501"
+   },
+   "description": "Speciális gumiprofil egyedi felhasználásra.",
+   "images": [
+    "/termekkepek/sp-d2-230-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=67",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-d2-796",
+   "code": "D2 796",
+   "name": "Gumiprofil D2 796 – fekete",
+   "group": "kedergumik",
+   "category": "specialis-gumiprofilok",
+   "specs": {
+    "Anyag": "EPDM",
+    "Szín": "fekete",
+    "Kiszerelés [m]": "200"
+   },
+   "description": "Speciális gumiprofil egyedi felhasználásra.",
+   "images": [
+    "/termekkepek/sp-d2-796-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=67",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-500d",
+   "code": "E1 500D",
+   "name": "Moosgumi profil E1 500D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-500d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-501d",
+   "code": "E1 501D",
+   "name": "Moosgumi profil E1 501D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-501d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-503d",
+   "code": "E1 503D",
+   "name": "Moosgumi profil E1 503D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-503d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-504d",
+   "code": "E1 504D",
+   "name": "Moosgumi profil E1 504D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-504d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-506d",
+   "code": "E1 506D",
+   "name": "Moosgumi profil E1 506D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-506d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-509d",
+   "code": "E1 509D",
+   "name": "Moosgumi profil E1 509D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-509d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-510d",
+   "code": "E1 510D",
+   "name": "Moosgumi profil E1 510D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-510d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-511d",
+   "code": "E1 511D",
+   "name": "Moosgumi profil E1 511D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-511d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-512d",
+   "code": "E1 512D",
+   "name": "Moosgumi profil E1 512D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-512d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-514d",
+   "code": "E1 514D",
+   "name": "Moosgumi profil E1 514D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-514d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-515d",
+   "code": "E1 515D",
+   "name": "Moosgumi profil E1 515D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-515d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-516d",
+   "code": "E1 516D",
+   "name": "Moosgumi profil E1 516D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-516d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-517d",
+   "code": "E1 517D",
+   "name": "Moosgumi profil E1 517D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-517d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-519d",
+   "code": "E1 519D",
+   "name": "Moosgumi profil E1 519D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-519d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-520d",
+   "code": "E1 520D",
+   "name": "Moosgumi profil E1 520D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-520d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-521d",
+   "code": "E1 521D",
+   "name": "Moosgumi profil E1 521D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-521d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-522d",
+   "code": "E1 522D",
+   "name": "Moosgumi profil E1 522D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-522d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-523d",
+   "code": "E1 523D",
+   "name": "Moosgumi profil E1 523D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-523d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-524d",
+   "code": "E1 524D",
+   "name": "Moosgumi profil E1 524D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-524d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-525d",
+   "code": "E1 525D",
+   "name": "Moosgumi profil E1 525D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-525d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-526d",
+   "code": "E1 526D",
+   "name": "Moosgumi profil E1 526D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-526d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
+  },
+  {
+   "slug": "sp-e1-530d",
+   "code": "E1 530D",
+   "name": "Moosgumi profil E1 530D",
+   "group": "kedergumik",
+   "category": "moosgumi-profilok",
+   "specs": {},
+   "description": "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz.",
+   "images": [
+    "/termekkepek/sp-e1-530d-1.webp"
+   ],
+   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=76",
+   "source": "Sand-Profile"
   }
  ],
  "moves": {
@@ -8786,6 +14614,306 @@
    "group": "acel-profilok",
    "category": "lezerhegesztett-acel-oldalfalak",
    "source": "Fuhrmann"
+  },
+  "tetoventilator-manualis-feher": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "source": "G&C termékek"
+  },
+  "tetoventilator-manualis-fekete": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "source": "G&C termékek"
+  },
+  "le-mans-tetoventilator-12v": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "source": "G&C termékek"
+  },
+  "02-2200-zw-le-mans-tetoventilator-12v": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "source": "G&C termékek"
+  },
+  "02-2200-le-mans-tetoventilator-12v": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "source": "G&C termékek"
+  },
+  "le-mans-tetoventilator-24v": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "source": "G&C termékek"
+  },
+  "tetoventillator-motor-nelkul-abs-feher": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "source": "G&C termékek"
+  },
+  "turbo-iii-tetoventilator-feher": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "source": "G&C termékek"
+  },
+  "turbo-iii-tetoventilator-fekete": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "source": "G&C termékek"
+  },
+  "turbo-ii-tetoventilator-feher": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "source": "G&C termékek"
+  },
+  "turbo-ii-tetoventilator-fekete": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoventilatorok",
+   "source": "G&C termékek"
+  },
+  "tetoablak-vezerloegyseg-24v": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoablakok",
+   "source": "G&C termékek"
+  },
+  "ventillator-belso-takaro-szurke": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "source": "G&C termékek"
+  },
+  "ventillator-belso-takaro": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "source": "G&C termékek"
+  },
+  "12v-led-ventillator-belso-takaro": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "source": "G&C termékek"
+  },
+  "ventillator-belso-takaro-elem": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "source": "G&C termékek"
+  },
+  "ventillator-belso-takaro-12-24v-led": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "source": "G&C termékek"
+  },
+  "manualis-belso-takaro-feher": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "source": "G&C termékek"
+  },
+  "manualis-belso-takaro-szurke": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "source": "G&C termékek"
+  },
+  "ventillator-also-takaro-elem-12-24v-feher": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "source": "G&C termékek"
+  },
+  "belso-takaro-flower-power-szurke": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "source": "G&C termékek"
+  },
+  "belso-12v-os-led-takaro-flower-power-feher": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "source": "G&C termékek"
+  },
+  "belso-24-v-os-led-vilagitassal-flower-power-feher": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "source": "G&C termékek"
+  },
+  "belso-12v-os-led-takaro-flower-power-szurke": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "source": "G&C termékek"
+  },
+  "belso-24-v-os-led-vilagitassal-flower-power-szurke": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "source": "G&C termékek"
+  },
+  "szellozo-racs-410x100-mm": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "belso-szellozok-es-racsok",
+   "source": "G&C termékek"
+  },
+  "harom-allasos-kapcsolo-ventilatorhoz": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "szelloztetes-kiegeszitok",
+   "source": "G&C termékek"
+  },
+  "tetoablak-manualis-530x530": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoablakok",
+   "source": "G&C termékek"
+  },
+  "elektromos-tetoablak-24v-530x530": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoablakok",
+   "source": "G&C termékek"
+  },
+  "90-5000-e-tetoablak-24v-53x530": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoablakok",
+   "source": "G&C termékek"
+  },
+  "tetoablak-manualis-970x530": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoablakok",
+   "source": "G&C termékek"
+  },
+  "elektromos-tetoablak-24v-970x530": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoablakok",
+   "source": "G&C termékek"
+  },
+  "tetoablak-uveg-970x530": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "tetoablakok",
+   "source": "G&C termékek"
+  },
+  "ledes-lampa-kerek-feher": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "vilagitas",
+   "source": "G&C termékek"
+  },
+  "ledes-lampa-szogletes-feher-12-24v": {
+   "group": "szellozes-tetoablakok-vilagitas",
+   "category": "vilagitas",
+   "source": "G&C termékek"
+  },
+  "a1-013-elkeder-kicsi-fekete-9-5x6-5mm": {
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "source": "Sand-Profile"
+  },
+  "elkeder-13x10-fekete": {
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "source": "Sand-Profile"
+  },
+  "a1-015-keder-gumi": {
+   "group": "kedergumik",
+   "category": "elvedo-profilok",
+   "source": "Sand-Profile"
+  },
+  "a2-125-felul-gobos-keder-gumi-49-35-20-mm": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-127-lepkes-gumi-15-38-6-mm": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a1-105-2-lepkes-gumi-58-3x26-6-1-0-2-5-fekete": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a1-105-4-lepkes-gumi-58-3x26-6-2-0-4-0-fekete": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-255-nagy-gobos-kedergumi-fekete-20-mm": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-254-kedergumi-14-5x21-8-fekete": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a1-134-2-dupla-szakallas-kedergumi-18-2x24-1-0-2-5-fekete": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a1-134-4-dupla-szakallas-kedergumi-18-2x24-2-5-4-0-fekete": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-106-2-28-mm-duplagobos-kedergumi": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "felso-gobos-kedergumi-32x14x20-8-fekete": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "a1-536-kis-gobos-kedergumi-14-6x16-fekete": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-539-kozepes-gobos-kedergumi-14-6x18-7-fekete": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-540-kedergumi-16x19-2-2-0-4-0-fekete": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-541-kedergumi-16x19-2-4-0-6-0-fekete": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "kedergumi-14-5x20-5-2-0-4-0-fekete": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "a1-503-nagy-gobos-kedergumi": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "a2-554-nagygobos-keder-22-6": {
+   "group": "kedergumik",
+   "category": "gista-kederprofilok",
+   "source": "Sand-Profile"
+  },
+  "d2-528-talpas-15-5-mm-20-5-20-epdm-fekete": {
+   "group": "kedergumik",
+   "category": "tomitoprofilok",
+   "source": "Sand-Profile"
+  },
+  "d1-133-omega-gumi-19-8x28x24-epdm-fekete": {
+   "group": "kedergumik",
+   "category": "mono-profilok",
+   "source": "Sand-Profile"
+  },
+  "d1-128-omega-gumi-19-8x40x24-epdm-fekete": {
+   "group": "kedergumik",
+   "category": "mono-profilok",
+   "source": "Sand-Profile"
+  },
+  "d1-119-epdm-21mm-p-profil": {
+   "group": "kedergumik",
+   "category": "specialis-gumiprofilok",
+   "source": "Sand-Profile"
+  },
+  "d2-167-elvedo-lec-epdm-fekete": {
+   "group": "kedergumik",
+   "category": "specialis-gumiprofilok",
+   "source": "Sand-Profile"
   }
  }
 }

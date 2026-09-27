@@ -58,7 +58,7 @@ const productsBySlug = new Map(products.map((p) => [p.slug, p]));
 // Csoportonkénti ikon (Lucide) és rövid leírás
 export const GROUP_META = {
   'aluminium-alvaz-profilok': { icon: 'Frame', text: 'Hossz- és kereszttartók, keretprofilok, aláfutásgátló profilok alumínium alvázakhoz.' },
-  'acel-profilok': { icon: 'Construction', text: 'Acél hossztartók, keretek és oldalfalak nagy terhelésű felépítményekhez.' },
+  'acel-profilok': { icon: 'Construction', text: 'Acél hossztartók, keretek, lézerhegesztett és Heavy Duty acél oldalfalak nagy terhelésű felépítményekhez.' },
   'aluminium-padlo-profilok': { icon: 'Rows3', text: 'Padló-, rámpa- és autószállító profilok alumíniumból.' },
   'ponyvas-oldalfal-profilok-es-szegok': { icon: 'Columns3', text: 'Oldalfal rendszerek, monó profilok, szegők és billencs oldalfalak.' },
   'platos-alkatreszek-es-kiegeszitok': { icon: 'Truck', text: 'Alváz konzolok, TIR zsanérok, Z-zárak, fellépők és pótkerék tartók.' },
@@ -73,8 +73,8 @@ export const GROUP_META = {
   'ipari-felgyartmanyok': { icon: 'Ruler', text: 'Zártszelvények, U- és L-profilok, csövek, rudak, laposprofilok.' },
   'aluminium-lemezek': { icon: 'SquareStack', text: 'Sima, cseppmintás és festett alumínium lemezek.' },
   'csuszasmentes-retegelt-padlo': { icon: 'Layers', text: 'Csúszásmentes és fenolos rétegelt lemezek padlónak és falnak.' },
-  'gumiszonyegek': { icon: 'Grid3x3', text: 'Istálló-, rámpa-, soft és általános gumiszőnyegek, víztiszta PVC.' },
-  'kedergumik': { icon: 'Spline', text: 'Kéder- és tömítőgumi profilok felépítményekhez.' },
+  'gumiszonyegek': { icon: 'Grid3x3', text: 'Istálló-, utánfutó-, rámpa- és munkahelyi gumiszőnyegek, gumi-, PU- és PVC lemezek, moosgumi.' },
+  'kedergumik': { icon: 'Spline', text: 'Élvédő, tömítő-, kéder-, üvegvezető és moosgumi profilok felépítményekhez.' },
   'uvegszalas-polieszter': { icon: 'Sheet', text: 'Üvegszálas poliészter (GFK) lemezek és panelek.' },
   'specialis-felepitmeny-alkatreszek': { icon: 'Cog', text: 'Speciális zárak, szerelvények és egyedi felépítmény alkatrészek.' },
   'italszallito-kit': { icon: 'Wine', text: 'Komplett alkatrészkészlet italszállító felépítményekhez.' },
@@ -87,12 +87,14 @@ for (const g of extended.groups ?? []) {
 }
 
 export const HORSE_SECTIONS = [
-  ['gumiszonyegek', 'istallo-szonyeg', 'Istálló szőnyegek'],
+  ['gumiszonyegek', 'istallo-szonyeg', 'Istálló- és utánfutó szőnyegek'],
   ['gumiszonyegek', 'rampa-szonyeg', 'Rámpa szőnyegek'],
   ['gumiszonyegek', 'soft-gumi', 'Soft gumi lapok'],
   ['aluminium-padlo-profilok', 'rampa-profilok', 'Rámpa profilok'],
   ['hatso-ajtok-es-athajto-rampak', 'athajtorampa', 'Áthajtó rámpák'],
-  ['specialis-felepitmeny-alkatreszek', 'g-c-termekek', 'Tetőventilátorok, tetőablakok, világítás'],
+  ['szellozes-tetoablakok-vilagitas', 'tetoventilatorok', 'Tetőventilátorok'],
+  ['szellozes-tetoablakok-vilagitas', 'tetoablakok', 'Tetőablakok'],
+  ['szellozes-tetoablakok-vilagitas', 'vilagitas', 'Belső világítás'],
   ['csuszasmentes-retegelt-padlo', 'lowipan', 'Csúszásmentes padlólemezek'],
   ['dobozos-felepitmeny-alkatreszek', 'zsanerok', 'Zsanérok'],
   ['dobozos-felepitmeny-alkatreszek', 'zarak', 'Zárak'],

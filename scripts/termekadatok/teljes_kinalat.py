@@ -321,7 +321,158 @@ def rubberselect():
     return {"categories": cats, "products": products, "rename": {G: "Gumiszőnyegek és gumilemezek"}}
 
 
-RUNNERS = {"fuhrmann": ("Fuhrmann", fuhrmann), "rubberselect": ("Rubber Select", rubberselect)}
+# ---------------------------------------------------------------- G&C Systems
+
+GC_GROUP = "szellozes-tetoablakok-vilagitas"
+GC_CATS = {  # gyártói kategória -> (slug, név, leírás)
+    "roofto-ventilators": ("tetoventilatorok", "Tetőventilátorok", "Tetőventilátor lószállító, dobozos és személyszállító felépítményekhez: hatékony légcsere, 12/24 V-os és motor nélküli kivitelben."),
+    "roof-hatches": ("tetoablakok", "Tetőablakok", "Kézi és elektromos tetőablak felépítményekhez: természetes fény és szellőzés, vészkijáratként is."),
+    "internal-ventilation-valve": ("belso-szellozok-es-racsok", "Belső szellőzők és rácsok", "Belső szellőzőszelepek, rácsok és takarók a légáram szabályozásához."),
+    "axial-radial-ventilators": ("axial-es-radial-ventilatorok", "Axiál- és radiálventilátorok", "Beépíthető axiál- és radiálventilátorok kényszerszellőzéshez."),
+    "lighting": ("vilagitas", "Belső világítás", "LED belső világítás felépítményekbe, 12/24 V."),
+    "ceiling-flow": ("mennyezeti-legelosztok", "Mennyezeti légelosztók", "Mennyezeti légelosztó egyenletes, huzatmentes szellőzéshez."),
+    "air-purifier": ("legtisztitok", "Légtisztítók", "Légtisztító állatszállító és személyszállító felépítményekbe."),
+    "various": ("szelloztetes-kiegeszitok", "Kiegészítők és vezérlés", "Kapcsolók, fordulatszám-szabályzók, hószűrők és egyéb kiegészítők szellőzőrendszerekhez."),
+}
+GC_NAMES = {
+    "control-unit": "Tetőablak vezérlőegység", "electric-round": "Elektromos tetőablak, kerek",
+    "roof-hatches-electric-large": "Elektromos tetőablak, nagy", "roof-hatches-manual-big": "Kézi tetőablak, nagy",
+    "roof-hatches-manual-small": "Kézi tetőablak, kicsi", "exhaust-ventilator": "Elszívó tetőventilátor",
+    "le-mans": "Le Mans tetőventilátor", "le-mans-ll": "Le Mans LL alacsony tetőventilátor",
+    "rooftop_ventilators": "Tetőventilátor", "turbo-ii": "Turbo II tetőventilátor", "turbo-iii": "Turbo III tetőventilátor",
+    "winglet": "Winglet tetőventilátor", "flower-power": "Flower Power belső szellőző", "grill-big": "Szellőzőrács, nagy",
+    "grill-small": "Szellőzőrács, kicsi", "light-metal-rotary-valve": "Könnyűfém forgószelep", "rotary-valve": "Forgószelep",
+    "rotating-valve": "Állítható szellőzőszelep", "v12-2": "V12 belső szellőzőszelep", "axial-ventilator": "Axiálventilátor",
+    "axialventilator": "Axiálventilátor, kompakt", "radial-ventilator": "Radiálventilátor",
+    "lighting-rectangle": "LED lámpa, szögletes", "lighting-round": "LED lámpa, kerek",
+    "ceilingflow": "Ceilingflow mennyezeti légelosztó", "floor-ventilator": "Padlószellőző",
+    "floor-ventilator-2": "Padlószellőző, nagy", "snowfilter": "Hószűrő tetőventilátorhoz",
+    "speedcontrol": "Fordulatszám-szabályzó ventilátorhoz", "switch-fan": "Ventilátorkapcsoló",
+    "switch-round": "Kapcsoló, kerek", "switch-square": "Kapcsoló, szögletes",
+    "air-purifier-large": "Légtisztító, nagy", "air-purifier-small": "Légtisztító, kicsi",
+}
+
+
+def gc_move_category(name):
+    n = name.lower()
+    if "tetőablak" in n:
+        return "tetoablakok"
+    if "lámpa" in n:
+        return "vilagitas"
+    if "takaró" in n or "flower" in n or "rács" in n:
+        return "belso-szellozok-es-racsok"
+    if "kapcsoló" in n or "vezérlő" in n:
+        return "szelloztetes-kiegeszitok"
+    return "tetoventilatorok"
+
+
+def gnc():
+    base = "https://gnc-systems.com/en/"
+    excel = [p for p in excel_products() if p["supplier"] == "G&C termékek"]
+    excel_codes = {re.sub(r"\W", "", (p["supplierCode"] or "")).upper() for p in excel}
+    products = []
+    for mcat, (cat, _, desc) in GC_CATS.items():
+        raw = fetch(f"{base}product-category/{mcat}/").decode("utf-8", "ignore")
+        for slug in sorted(set(re.findall(r'href="https://gnc-systems.com/en/products/([^"/]+)/"', raw))):
+            page = fetch(f"{base}products/{slug}/").decode("utf-8", "ignore")
+            text = clean(re.sub(r"<script.*?</script>|<style.*?</style>", " ", page, flags=re.S))
+            codes = list(dict.fromkeys(re.findall(r"\b\d{2}-\d{4}(?:-[A-Z]{1,3})?\b", text)))
+            if codes and any(re.sub(r"\W", "", c).upper() in excel_codes for c in codes):
+                continue  # az Excel már tartalmazza
+            specs = {}
+            if codes:
+                specs["Cikkszámok"] = ", ".join(codes[:8])
+            if re.search(r"Black\s*/\s*White|White\s*/\s*Black", text, re.I):
+                specs["Szín"] = "fekete / fehér"
+            v = re.search(r"\b(12\s*/\s*24|12|24)\s*V\b", text)
+            if v:
+                specs["Feszültség"] = v.group(1).replace(" ", "") + " V"
+            if re.search(r"EMC approved", text, re.I):
+                specs["Tanúsítás"] = "EMC jóváhagyott"
+            og = re.search(r'og:image" content="([^"]+)"', page)
+            name = GC_NAMES.get(slug, slug.replace("-", " ").title())
+            pslug = "gc-" + slugify(slug)
+            products.append({"slug": pslug, "code": codes[0] if codes else "", "name": name, "group": GC_GROUP,
+                             "category": cat, "specs": specs, "description": desc,
+                             "images": download_images(pslug, [og.group(1)] if og else [], 1),
+                             "sourceUrl": f"{base}products/{slug}/"})
+    moves = {p["slug"]: {"group": GC_GROUP, "category": gc_move_category(p["name"])} for p in excel}
+    group = {"slug": GC_GROUP, "name": "Szellőzés, tetőablakok, világítás", "icon": "Fan",
+             "text": "Tetőventilátorok, tetőablakok, belső szellőzők és LED világítás – lószállító és dobozos felépítményekhez is."}
+    cats = [{"group": GC_GROUP, "slug": c[0], "name": c[1]} for c in GC_CATS.values()]
+    return {"groups": [group], "categories": cats, "products": products, "moves": moves}
+
+
+# ---------------------------------------------------------------- SAND Profile (teljes katalógus)
+
+SP_GROUP = "kedergumik"
+SP_SECTIONS = [  # (kulcsszó a lapszélen, kategória slug, név, egyes számú típusnév, leírás)
+    ("edge protector", "elvedo-profilok", "Élvédő profilok", "Élvédő profil", "Fémbetétes élvédő profil lemezélek, peremek takarására és védelmére."),
+    ("sponge rubber", "moosgumi-profilok", "Moosgumi profilok", "Moosgumi profil", "Szivacsgumi (moosgumi) tömítőprofil ajtókhoz, szervizajtókhoz, burkolatokhoz."),
+    ("gista", "gista-kederprofilok", "Kéder- és ablakgumi profilok (Gista)", "Kéderprofil", "Kéder- és ablakgumi profil üvegek, panelek rögzítéséhez és tömítéséhez."),
+    ("filler", "kitolto-profilok", "Kitöltő (zár) profilok", "Kitöltő profil", "Kitöltő (zár) profil kéderprofilokhoz."),
+    ("glass run", "uvegvezeto-profilok", "Üvegvezető profilok", "Üvegvezető profil", "Üvegvezető profil tolóablakokhoz és ajtóüvegekhez."),
+    ("monoprofile", "mono-profilok", "Mono tömítőprofilok", "Mono profil", "Egyanyagú tömítőprofil."),
+    ("finger guard", "ujjvedo-profilok", "Ujjvédő profilok", "Ujjvédő profil", "Ujjbecsípődés elleni védőprofil ajtókhoz."),
+    ("special", "specialis-gumiprofilok", "Speciális gumiprofilok", "Gumiprofil", "Speciális gumiprofil egyedi felhasználásra."),
+    ("sealing", "tomitoprofilok", "Élvédő tömítőprofilok", "Élvédő tömítőprofil", "Fémbetétes élvédő tömítőprofil ajtókhoz, szervizajtókhoz és rakterekhez: élvédelem és tömítés egyben."),
+]
+
+
+def sandprofile_full():
+    import pymupdf
+    import sandprofile as spm
+    doc = pymupdf.open(stream=fetch(spm.PDF), filetype="pdf")
+    index = spm.index_catalog(doc)
+    # lapok fejezete a lapszéli függőleges feliratból (ha nincs, az előző lapé)
+    section_of, current = {}, None
+    for i, pg in enumerate(doc):
+        side = []
+        for b in pg.get_text("dict")["blocks"]:
+            for ln in b.get("lines", []):
+                if abs(ln["dir"][0]) < 0.5:
+                    side.append("".join(sp["text"] for sp in ln["spans"]).replace("ﬁ ", "fi").replace("ﬁ", "fi").lower())
+        for key, *_ in SP_SECTIONS:
+            if any(key in x for x in side):
+                current = key
+                break
+        section_of[i] = current
+    meta = {k: rest for k, *rest in SP_SECTIONS}
+    excel = [p for p in excel_products() if p["supplier"] == "Sand-Profile"]
+    excel_codes = {}
+    for p in excel:
+        for c in [p["supplierCode"]] + re.findall(r"\b[A-E]\d\s?\d{3}(?:/\d)?", p["name"]):
+            if c:
+                excel_codes[spm.norm(c)] = p
+    products, moves, used_cats = [], {}, set()
+    for code_norm, (pno, design, specs) in index.items():
+        key = section_of.get(pno) or "special"
+        cat, cat_name, singular, desc = meta[key]
+        if code_norm in excel_codes:
+            moves[excel_codes[code_norm]["slug"]] = {"group": SP_GROUP, "category": cat}
+            used_cats.add(key)
+            continue
+        code = re.sub(r"^([A-Z]\d)(\d{3})", r"\1 \2", code_norm)
+        extra = []
+        if specs.get("Szín"):
+            extra.append(specs["Szín"])
+        rng = next((v for k, v in specs.items() if k.startswith("Szorítási")), None)
+        if rng:
+            extra.append(f"{rng} mm")
+        name = f"{singular} {code}" + (f" – {', '.join(extra)}" if extra else "")
+        slug = "sp-" + slugify(code)
+        img = []
+        if design:
+            clear_images(slug)
+            img = [save_image(spm.render(doc[pno], design), slug)]
+        products.append({"slug": slug, "code": code, "name": name, "group": SP_GROUP, "category": cat, "specs": specs,
+                         "description": desc, "images": img, "sourceUrl": f"{spm.PDF}#page={pno + 1}"})
+        used_cats.add(key)
+    cats = [{"group": SP_GROUP, "slug": meta[k][0], "name": meta[k][1]} for k, *_ in SP_SECTIONS if k in used_cats]
+    return {"categories": cats, "products": products, "moves": moves, "rename": {SP_GROUP: "Gumi- és kéderprofilok"}}
+
+
+RUNNERS = {"fuhrmann": ("Fuhrmann", fuhrmann), "rubberselect": ("Rubber Select", rubberselect), "gnc": ("G&C termékek", gnc), "sandprofile": ("Sand-Profile", sandprofile_full)}
 
 
 def main(names):
