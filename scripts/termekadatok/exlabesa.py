@@ -28,6 +28,10 @@ PDF = ROOT / "data/forras/exlabesa_pl_katalog_2023.pdf"
 ITEMS = {
     "37327": (23, (60, 98, 203, 180), {"Tömeg": "3,198 kg/fm", "Kerület": "447 mm", "Méret": "110 × 60 × 60 mm",
                                         "Falvastagság": "5 / 6 mm", "Kivitel": "TL hossztartó-profil"}),
+    "39695": (23, (445, 276, 548, 418), {"Tömeg": "3,897 kg/fm", "Kerület": "548 mm", "Magasság": "110 mm",
+                                          "Övszélesség": "60 mm", "Falvastagság": "5 / 5,2 / 6,2 mm", "Kivitel": "U hossztartó-profil, dupla nútos gerinccel"}),
+    "50392": (23, (92, 497, 226, 690), {"Tömeg": "2,027 kg/fm", "Kerület": "462 mm", "Magasság": "90 mm",
+                                         "Övszélesség": "60 mm", "Falvastagság": "3 mm", "Kivitel": "I kereszttartó-profil, alsó nútos övvel"}),
     "37776": (24, (52, 658, 282, 730), {"Tömeg": "3,378 kg/fm", "Kerület": "837 mm", "Hasznos szélesség": "220 mm",
                                          "Teljes szélesség": "233,5 mm", "Magasság": "30 mm", "Kivitel": "bordázott padlóprofil"}),
     "39604": (25, (104, 648, 512, 737), {"Tömeg": "6,363 kg/fm", "Kerület": "795 mm", "Szélesség": "257,5 mm",
@@ -52,6 +56,11 @@ def render(page, box):
     return img.crop((max(xs.min() - 16, 0), max(ys.min() - 16, 0), min(xs.max() + 16, img.width), min(ys.max() + 16, img.height)))
 
 
+def renders(slug):
+    """A profil3d-vel készült 3D képek (ha vannak) a katalógusrajz után maradnak."""
+    return [f"/termekkepek/3d/{slug}-{i}.webp" for i in (1, 2) if (ROOT / f"public/termekkepek/3d/{slug}-{i}.webp").exists()]
+
+
 def main():
     doc = pymupdf.open(PDF)
     enrichment, missing = {}, []
@@ -66,7 +75,7 @@ def main():
         elox = "elox" in p["name"].lower()
         enrichment[p["slug"]] = {"source": SOURCE, "sourceUrl": "https://www.exlabesa.com", "sourceTitle": f"Exlabesa katalógus EXL-{code}",
                                  "matchedCode": f"EXL-{code}", "specs": {**specs, "Felület": "eloxált" if elox else "natúr"},
-                                 "images": [save_image(render(doc[pno - 1], box), p["slug"], 1)]}
+                                 "images": [save_image(render(doc[pno - 1], box), p["slug"], 1)] + renders(p["slug"])}
     update_enrichment(enrichment, SOURCE)
     print(f"{SOURCE}: {len(enrichment)} termék a katalógusból, {len(missing)} nincs benne")
     for p in missing:

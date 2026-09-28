@@ -190,6 +190,8 @@ _CYL = {"Kivitel": "teleszkópos, gömbfejes (S típus)", "Max. üzemi nyomás":
 _CYLD = "Teleszkópos hidraulikus billenőhenger billenős felépítményekhez, homlokfali (kabin mögötti) beépítésre."
 _HV = "Acél oldalfal profil billenős és platós felépítmények első/hátsó és oldalfalához."
 MANUAL = {
+    "207316-u-90-hossztarto": ([(2, (336, 80, 447, 183))], {"Felületkezelés": "natúr", "Magasság": "90 mm", "Kivitel": "U hossztartó-profil (Runner aluminium profile 90 mm)"}, ""),
+    "207317-u-108-hossztarto": ([(2, (449, 166, 568, 283))], {"Felületkezelés": "natúr", "Magasság": "108 mm", "Kivitel": "U hossztartó-profil (Runner aluminium profile 108 mm)"}, ""),
     "hv400-acel-oldalfal-2-mm": ([(203, (193, 560, 252, 700))], {"Típus": "HV 400", "Magasság": "400 mm", "Falvastagság": "2,0 mm", "Tömeg": "10,9 kg/fm"}, _HV),
     "hv500-acel-oldalfal-2-mm": ([(203, (330, 561, 398, 700))], {"Típus": "HV 500", "Magasság": "500 mm", "Falvastagság": "2,0 mm", "Tömeg": "12,8 kg/fm"}, _HV),
     "hv600-acel-oldalfal-2-mm": ([(203, (399, 540, 472, 700))], {"Típus": "HV 600", "Magasság": "600 mm", "Falvastagság": "2,0 mm", "Tömeg": "14,3 kg/fm"}, _HV),
@@ -268,15 +270,21 @@ def manual_image(page, rect):
     return img.crop((max(xs.min() - pad, 0), max(ys.min() - pad, 0), min(xs.max() + pad, img.width), min(ys.max() + pad, img.height)))
 
 
+# Más beszállítónál nyilvántartott, de az Ital Accessori katalógusban is szereplő profilok:
+# Quadris-kód -> Ital Accessori kód (az utolsó 4 számjegy a Constellium-szám)
+EXTRA = {"207316": "117316", "207317": "117317"}
+
+
 def main():
     doc = open_pdf()
     products = load_products(SUPPLIER)
+    products += [p for p in load_products() if p["code"] in EXTRA and p["supplier"] != SUPPLIER]
     enrichment = {}
 
     # kód -> oldal index (gyors szöveges előszűrés)
     wanted = {}
     for p in products:
-        for c in code_candidates(p):
+        for c in [EXTRA[p["code"]]] if p["code"] in EXTRA else code_candidates(p):
             wanted.setdefault(norm_code(c), []).append(p)
     word_sets = [set(norm_code(w[4]) for w in pg.get_text("words")) for pg in doc]
 

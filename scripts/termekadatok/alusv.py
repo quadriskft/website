@@ -66,6 +66,9 @@ EXTRA = {
     "227047": "6611128196", "227047/n": "6611008196",
     "227783": "6611127783", "227784": "6611127784", "227785": "6611127785", "227948": "6611127948",
     "228197": "6611128197", "228240": "6611128240",
+    # Constellium Děčín alvázprofilok: az Alu-SV kód vége a Constellium-szám (6600… natúr, 6612… eloxált)
+    "207315": "6600007315", "207318": "6612007318", "207319": "6600007319",
+    "237460": "6600007460", "237460/n": "6600007460",
 }
 
 
@@ -99,7 +102,7 @@ def main():
             "sourceUrl": info["url"],
             "sourceTitle": info["title"],
             "matchedCode": code,
-            "specs": info["specs"],
+            "specs": {**info["specs"], **({"Felület": "eloxált"} if "elox" in p["name"].lower() and info["specs"].get("Felület") == "natúr" else {})},
             "images": images,
         }
     update_enrichment(enrichment, SUPPLIER)
