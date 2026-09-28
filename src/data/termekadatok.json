@@ -1431,6 +1431,26 @@
    "/termekkepek/209695-u-110-60-hossztarto-duplanutolt-ex-1.webp"
   ]
  },
+ "21-ada-slider-teto-rendszer": {
+  "source": "ADAICO ADA-Slider",
+  "sourceUrl": "https://www.adaico.com",
+  "sourceTitle": "AEV Automotive 19-0429A (EN 12642 XL)",
+  "matchedCode": "ADA-SLIDER",
+  "description": "Elhúzható PVC ponyvás oldalfal-rendszer felső és alsó alumínium profilon futó dupla görgős kocsikkal, első és hátsó feszítőzárral és biztonsági zárakkal. Az oldalfal EN 12642:2006 szerint XL kódú (megerősített) felépítményhez vizsgált és megfelelt.",
+  "specs": {
+   "Rendszer": "ADAICO ADA-Slider Classic",
+   "Szabvány": "EN 12642:2006 XL – oldalfal-szilárdság (5.3.4. pont), megfelelt",
+   "Vizsgálati terhelés": "0,4 P (10 000 daN hasznos terhelésnél 4 000 daN)",
+   "Legnagyobb belső méret": "7 000 × 2 400 mm (hossz × magasság)",
+   "Ponyva": "900 g/m² PVC, elhúzható",
+   "Függőleges hevederek": "2,4 t, egymástól legfeljebb 550 mm-re",
+   "Vízszintes hevederek": "3 db, 1,3 t, egymástól legfeljebb 600 mm-re",
+   "Futókocsik": "Ø25 × 27 mm nylon görgős felső és alsó kocsik"
+  },
+  "images": [
+   "/termekkepek/21-ada-slider-teto-rendszer-1.webp"
+  ]
+ },
  "211086-ada-tetokiemelo-pumpa-hp-lift-450-mm": {
   "source": "ADAICO",
   "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=0601086",
@@ -6693,6 +6713,34 @@
    "/termekkepek/6008-munkahenger-9t-06x1470x152-1.webp"
   ]
  },
+ "615263-68-s1-t-karos-sully-zar-f": {
+  "source": "Industrilas",
+  "sourceUrl": "https://industrilas.com",
+  "sourceTitle": "Industrilås 68-S1",
+  "matchedCode": "272063-68-S1",
+  "specs": {
+   "Típus": "Industrilås 68-S1",
+   "Kivitel": "süllyesztett (felületbe építhető) T-karos zár, kulccsal zárható",
+   "Szín": "fekete ház, krómozott fogantyú"
+  },
+  "images": [
+   "/termekkepek/615263-68-s1-t-karos-sully-zar-f-1.webp"
+  ]
+ },
+ "615363-68-s1-t-karos-sully-zar": {
+  "source": "Industrilas",
+  "sourceUrl": "https://industrilas.com",
+  "sourceTitle": "Industrilås 68-S1",
+  "matchedCode": "275363-68-S1",
+  "specs": {
+   "Típus": "Industrilås 68-S1",
+   "Kivitel": "süllyesztett (felületbe építhető) T-karos zár, kulccsal zárható",
+   "Szín": "fekete ház, krómozott fogantyú"
+  },
+  "images": [
+   "/termekkepek/615363-68-s1-t-karos-sully-zar-1.webp"
+  ]
+ },
  "615373-krom-kulso-kilincs-12mm-kulcs": {
   "source": "Pommier Furgocar",
   "sourceUrl": "https://www.pommier.eu/en/en/all-our-products/handles-and-inner-handles/chrome-plated-brass-locking-handle-two-keys",
@@ -8746,6 +8794,20 @@
    "/termekkepek/e-compact-tetoprofil-900407-8000-2.webp"
   ]
  },
+ "e-ponyvagorgo-85810": {
+  "source": "Edscha Compact",
+  "sourceUrl": "https://www.edschats.com#page=7",
+  "sourceTitle": "Edscha Compact alkatrész-katalógus 2018: 40 38 085 810",
+  "matchedCode": "40 38 085 810",
+  "specs": {
+   "Cikkszám (gyári)": "40 38 085 810",
+   "Megnevezés (gyári)": "Seitenplanenroller ohne Clip – oldalponyva-görgő klip nélkül",
+   "Rendszer": "Edscha Compact / CS-Lite"
+  },
+  "images": [
+   "/termekkepek/e-ponyvagorgo-85810-1.webp"
+  ]
+ },
  "e-sesam-fix-volumen-kit": {
   "source": "Edscha",
   "sourceUrl": "https://www.edschats.com/en/products/sesam/sesam-cs-slimliner-fix/",
@@ -8971,6 +9033,18 @@
    "/termekkepek/e4038069900-compact-lezaro-ponyvahoz-2550-mm-1.webp"
   ]
  },
+ "e4069000940-elhuzo-kocsi-compact-normal-2550-mm": {
+  "source": "Edscha Compact",
+  "sourceUrl": "https://www.edschats.com#page=9",
+  "sourceTitle": "Edscha Compact alkatrész-katalógus 2018: 40 69 000 940",
+  "matchedCode": "40 69 000 940",
+  "specs": {
+   "Cikkszám (gyári)": "40 69 000 940",
+   "Megnevezés (gyári)": "Endlaufwagen Standard – végkocsi, normál",
+   "Rendszer": "Edscha Compact"
+  },
+  "images": []
+ },
  "e4069000940-elhuzo-kocsi-compact-tw-1200-mm": {
   "source": "Edscha",
   "sourceUrl": "https://www.edschats.com/globalassets/documents/pdfs/edscha/einzelersatzteilkatalog_international/09_24/edschats_ersatzteilkatalog_de-en_04-2024.pdf#page=572",
@@ -8982,6 +9056,18 @@
   "images": [
    "/termekkepek/e4069000940-elhuzo-kocsi-compact-tw-1200-mm-1.webp"
   ]
+ },
+ "e4069002960-elhuzo-kocsi-compact-small-2550-mm": {
+  "source": "Edscha Compact",
+  "sourceUrl": "https://www.edschats.com#page=9",
+  "sourceTitle": "Edscha Compact alkatrész-katalógus 2018: 40 69 002 960",
+  "matchedCode": "40 69 002 960",
+  "specs": {
+   "Cikkszám (gyári)": "40 69 002 960",
+   "Megnevezés (gyári)": "Endlaufwagen Compact small – végkocsi, keskeny",
+   "Rendszer": "Edscha Compact"
+  },
+  "images": []
  },
  "e4069009030-130-as-compact-normal-lezaro-2550-mm": {
   "source": "Edscha",
@@ -9093,6 +9179,19 @@
   "images": [
    "/termekkepek/e69001370-190-es-lezaro-2550-mm-1.webp"
   ]
+ },
+ "e69004670-compact-fix-tetokereszttarto-2550-mm": {
+  "source": "Edscha Compact",
+  "sourceUrl": "https://www.edschats.com#page=12",
+  "sourceTitle": "Edscha Compact alkatrész-katalógus 2018: 40 69 004 670",
+  "matchedCode": "40 69 004 670",
+  "specs": {
+   "Cikkszám (gyári)": "40 69 004 670",
+   "Megnevezés (gyári)": "Standardspriegel-Festdach inkl. Klammerprofil – fix tetős kereszttartó szorítóprofillal",
+   "Rendszer": "Edscha Compact Fix",
+   "Felépítményszélesség": "2550 mm"
+  },
+  "images": []
  },
  "e69004740-cs-compact-tetokereszttarto-2550-mm": {
   "source": "Edscha",
@@ -11869,6 +11968,46 @@
    "/termekkepek/jvg47-670-ives-sarvedo-3.webp"
   ]
  },
+ "jvr35-mini-box-350x350x350-mm": {
+  "source": "COPAR",
+  "sourceUrl": "https://www.copar.it",
+  "sourceTitle": "Co.Par. MINI BOX 35",
+  "matchedCode": "ICAEA12000N0",
+  "specs": {
+   "Típus": "MINI BOX 35",
+   "Méret (hossz × mélység × magasság)": "350 × 350 × 350 mm",
+   "Tömeg": "2,2 kg",
+   "Űrtartalom": "26 l",
+   "Tartó": "FSUM4AXXN7 oldalsó tartó (315 × 5 mm)",
+   "Anyag": "polipropilén (PP), fröccsöntött",
+   "Üzemi hőmérséklet": "−45 °C … +60 °C",
+   "Megfelelőség": "ECE R73.01 oldalsó aláfutásgátló (Co.Par. tartókkal)"
+  },
+  "images": [
+   "/termekkepek/jvr35-mini-box-350x350x350-mm-1.webp",
+   "/termekkepek/jvr35-mini-box-350x350x350-mm-2.webp"
+  ]
+ },
+ "jvr50-nova-box-500x400x350-mm": {
+  "source": "COPAR",
+  "sourceUrl": "https://www.copar.it",
+  "sourceTitle": "Co.Par. NOVA BOX 50",
+  "matchedCode": "ICBEB20000N0",
+  "specs": {
+   "Típus": "NOVA BOX 50",
+   "Méret (hossz × mélység × magasság)": "500 × 400 × 350 mm",
+   "Tömeg": "3,2 kg",
+   "Űrtartalom": "42 l",
+   "Tartó": "FSUM4AXXN7 oldalsó tartó",
+   "Anyag": "polipropilén (PP), fröccsöntött",
+   "Üzemi hőmérséklet": "−45 °C … +60 °C",
+   "Megfelelőség": "ECE R73.01 oldalsó aláfutásgátló (Co.Par. tartókkal)"
+  },
+  "images": [
+   "/termekkepek/jvr50-nova-box-500x400x350-mm-1.webp",
+   "/termekkepek/jvr50-nova-box-500x400x350-mm-2.webp"
+  ]
+ },
  "jx37f-510ft-csapott-teteju-sarvedo": {
   "source": "JONESCO",
   "sourceUrl": "https://jonesco-plastics.com/products/commercial-vehicle/mudguards/flat-top-xgard",
@@ -14458,6 +14597,80 @@
    "/termekkepek/turbo-iii-tetoventilator-fekete-1.webp"
   ]
  },
+ "v144-01006-elhuzo-rud": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 144-01006",
+  "matchedCode": "144-01006",
+  "specs": {
+   "Cikkszám (gyártói)": "144-01006",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Pull bar – Telescopic (teleszkópos elhúzó rúd)"
+  },
+  "images": [
+   "/termekkepek/v144-01006-elhuzo-rud-1.webp"
+  ]
+ },
+ "v144-10001-szerelo-keszlet-dtl-mt": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 144-10001",
+  "matchedCode": "144-10001",
+  "specs": {
+   "Cikkszám (gyártói)": "144-10001",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Set accessories (alap tartozékkészlet)",
+   "Kiszerelés": "készlet"
+  },
+  "images": [
+   "/termekkepek/v144-10001-szerelo-keszlet-dtl-mt-1.webp"
+  ]
+ },
+ "v144-10022-csavarkeszlet-fekete-lezarohoz-dtl-mt": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 144-10022",
+  "matchedCode": "144-10022",
+  "specs": {
+   "Cikkszám (gyártói)": "144-10022",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Mounting set (a 193-14001 hátsó lezáró szerelőkészlete)",
+   "Kiszerelés": "készlet"
+  },
+  "images": [
+   "/termekkepek/v144-10022-csavarkeszlet-fekete-lezarohoz-dtl-mt-1.webp"
+  ]
+ },
+ "v144-10048-fix-keresztarto-csavarkeszlet": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 144-10048",
+  "matchedCode": "144-10048",
+  "specs": {
+   "Cikkszám (gyártói)": "144-10048",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Mounting set roof stick fix (fix kereszttartó szerelőkészlete)",
+   "Kiszerelés": "1 készlet / kereszttartó"
+  },
+  "images": [
+   "/termekkepek/v144-10048-fix-keresztarto-csavarkeszlet-1.webp"
+  ]
+ },
+ "v154-03013-oszlop-sin-osszekoto-keszlet-dtl": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 154-03013",
+  "matchedCode": "154-03013",
+  "specs": {
+   "Cikkszám (gyártói)": "154-03013",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Set mounting plates (rögzítőlemez-készlet)",
+   "Kiszerelés": "a képen látható alkatrészek 4-szerese"
+  },
+  "images": [
+   "/termekkepek/v154-03013-oszlop-sin-osszekoto-keszlet-dtl-1.webp"
+  ]
+ },
  "v162-08700-tetosin-pico": {
   "source": "Versus",
   "sourceUrl": "https://www.versus-omega.com/en/products/20/pico",
@@ -14534,6 +14747,190 @@
   "images": [
    "/termekkepek/v162-238-9600-mm-teto-sin-duo-trike-light-1.webp",
    "/termekkepek/v162-238-9600-mm-teto-sin-duo-trike-light-2.webp"
+  ]
+ },
+ "v193-14001-fekete-lezaro-dtl": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 193-14001",
+  "matchedCode": "193-14001",
+  "specs": {
+   "Cikkszám (gyártói)": "193-14001",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Back beam (hátsó lezáró gerenda)",
+   "Felépítményszélesség": "2550 mm",
+   "Típus": "145Z",
+   "Szerelőkészlet": "144-10022"
+  },
+  "images": [
+   "/termekkepek/v193-14001-fekete-lezaro-dtl-1.webp"
+  ]
+ },
+ "v214-47201-elhuzokocsi-dtl-mt": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 214-47201",
+  "matchedCode": "214-47201",
+  "specs": {
+   "Cikkszám (gyártói)": "214-47201",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Collapsible backside (összecsukható hátfal-keret)",
+   "Felépítményszélesség": "2550 mm",
+   "Változat": "L=52"
+  },
+  "images": [
+   "/termekkepek/v214-47201-elhuzokocsi-dtl-mt-1.webp"
+  ]
+ },
+ "v224-01001-gorgos-kereszttarto-ponyvahoz": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 224-01001",
+  "matchedCode": "224-01001",
+  "specs": {
+   "Cikkszám (gyártói)": "224-01001",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Roof stick for sliding roof – Type SP (kereszttartó elhúzható tetőhöz)",
+   "Felépítményszélesség": "2550 mm"
+  },
+  "images": [
+   "/termekkepek/v224-01001-gorgos-kereszttarto-ponyvahoz-1.webp"
+  ]
+ },
+ "v224-41211-fix-kereszttarto-ponyvahoz": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 224-41211",
+  "matchedCode": "224-41211",
+  "specs": {
+   "Cikkszám (gyártói)": "224-41211",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Roof stick for fixed roof with tarpaulin cover – Type SP",
+   "Felépítményszélesség": "2550 mm",
+   "Rögzítés": "csavarokkal a sínhez (144-10048 készlettel)"
+  },
+  "images": [
+   "/termekkepek/v224-41211-fix-kereszttarto-ponyvahoz-1.webp"
+  ]
+ },
+ "v242-01004-400-mm-piros-csuklo": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 242-01004",
+  "matchedCode": "242-01004",
+  "specs": {
+   "Cikkszám (gyártói)": "242-01004",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Folding plate – Type 400 (csukló)",
+   "Típus": "400"
+  },
+  "images": [
+   "/termekkepek/v242-01004-400-mm-piros-csuklo-1.webp"
+  ]
+ },
+ "v242-01007-700-mm-piros-csuklo": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 242-01007",
+  "matchedCode": "242-01007",
+  "specs": {
+   "Cikkszám (gyártói)": "242-01007",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Folding plate – Type 700 (csukló)",
+   "Típus": "700"
+  },
+  "images": [
+   "/termekkepek/v242-01007-700-mm-piros-csuklo-1.webp"
+  ]
+ },
+ "v242-01065-650-mm-piros-csuklo": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 242-01065",
+  "matchedCode": "242-01065",
+  "specs": {
+   "Cikkszám (gyártói)": "242-01065",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Folding plate – Type 650 (csukló)",
+   "Típus": "650"
+  },
+  "images": [
+   "/termekkepek/v242-01065-650-mm-piros-csuklo-1.webp"
+  ]
+ },
+ "v242-14109-tomites-9-m-dtl": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 242-14109",
+  "matchedCode": "242-14109",
+  "specs": {
+   "Cikkszám (gyártói)": "242-14109",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "PVC pelmet (fekete PVC takaróprofil)",
+   "Hossz": "9 m",
+   "Szín": "fekete",
+   "Anyag": "PVC"
+  },
+  "images": [
+   "/termekkepek/v242-14109-tomites-9-m-dtl-1.webp"
+  ]
+ },
+ "v262-05007-rakonca-pasz": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 262-05007",
+  "matchedCode": "262-05007",
+  "specs": {
+   "Cikkszám (gyártói)": "262-05007",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Pillar bracket – Plate (oszlopkonzol lemeze)"
+  },
+  "images": [
+   "/termekkepek/v262-05007-rakonca-pasz-1.webp"
+  ]
+ },
+ "v264-01001-rakonca-kocsi": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 264-01001",
+  "matchedCode": "264-01001",
+  "specs": {
+   "Cikkszám (gyártói)": "264-01001",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Pillar bracket – Bracket (oszlopkonzol)"
+  },
+  "images": [
+   "/termekkepek/v264-01001-rakonca-kocsi-1.webp"
+  ]
+ },
+ "v284-10024-ponyvagorgo": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 284-10024",
+  "matchedCode": "284-10024",
+  "specs": {
+   "Cikkszám (gyártói)": "284-10024",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Trike roller (görgő)"
+  },
+  "images": [
+   "/termekkepek/v284-10024-ponyvagorgo-1.webp"
+  ]
+ },
+ "v324-47201-hatso-teleszkops-lezaro-fix-mt": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 324-47201",
+  "matchedCode": "324-47201",
+  "specs": {
+   "Cikkszám (gyártói)": "324-47201",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "Collapsible backside for fixed roof with tarpaulin cover",
+   "Felépítményszélesség": "2550 mm",
+   "Változat": "L=100"
+  },
+  "images": [
+   "/termekkepek/v324-47201-hatso-teleszkops-lezaro-fix-mt-1.webp"
   ]
  },
  "v35991-6800-mm-tetosin-micro-trike": {
