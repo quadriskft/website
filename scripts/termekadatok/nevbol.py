@@ -402,14 +402,20 @@ def main():
     for p in load_products():
         prev = existing.get(p["slug"])
         specs, draw = parse(p)
+        if not draw and prev and prev.get("rajz"):  # más forrás adta meg a hiányzó méretet (pl. cső falvastagsága)
+            draw = tuple(prev["rajz"])
         if prev and prev.get("source") != SOURCE:
             if (prev.get("images") and not prev.get("nevbolRajz")) or not draw:
                 continue
             clear_images(p["slug"])
             merged = dict(prev)
             merged["specs"] = {**{k: v for k, v in specs.items() if k != "Anyag"}, **(prev.get("specs") or {})}
-            merged["images"] = with_renders(p["slug"], save_image(render(draw), p["slug"], 1))
-            manifest.append({"slug": p["slug"], "draw": draw, "mat": material(merged["specs"], p["name"])})
+            drawing_img = save_image(render(draw), p["slug"], 1)
+            if prev.get("fotok"):  # valódi gyártói fotó van – azt követi a rajz, 3D render nem kell
+                merged["images"] = prev["fotok"] + [drawing_img]
+            else:
+                merged["images"] = with_renders(p["slug"], drawing_img)
+                manifest.append({"slug": p["slug"], "draw": draw, "mat": material(merged["specs"], p["name"])})
             merged["nevbolRajz"] = True  # a rajz ebből a lépésből jön – újrafuttatáskor frissíthető
             updates[p["slug"]] = merged
             drawn += 1
