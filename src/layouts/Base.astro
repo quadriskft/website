@@ -6,7 +6,7 @@ import Icon from '../components/Icon.astro';
 import { groups, GROUP_META } from '../lib/catalog.js';
 import { SITE, abs, absPage } from '../lib/site.js';
 
-const { crumbs = null, back = null, title, image = '/brand/og-image.png', type = 'website', jsonLd = [], noindex = false, description = 'Alkatrészek jármű- és lószállító felépítmény gyártóknak: alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők, rakományrögzítés. Kérjen ajánlatot online!' } = Astro.props;
+const { headerTheme = 'metal', crumbs = null, back = null, title, image = '/brand/og-image.png', type = 'website', jsonLd = [], noindex = false, description = 'Alkatrészek jármű- és lószállító felépítmény gyártóknak: alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők, rakományrögzítés. Kérjen ajánlatot online!' } = Astro.props;
 const pageTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} – ${SITE.tagline}`;
 const path = Astro.url.pathname;
 const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
@@ -49,7 +49,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   </head>
   <body id="top">
     <a class="skip-link" href="#main">Ugrás a tartalomra</a>
-    <header class="site-header">
+    <header class:list={['site-header', { 'header-dark': headerTheme === 'dark' }]}>
       <div class="container header-inner">
         <a class="logo" href="/" aria-label={`${SITE.name} – főoldal`}>
           <img src="/brand/quadris-logo-fem.webp" alt={SITE.name} width="900" height="244" fetchpriority="high" />
@@ -320,6 +320,17 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   .site-header::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px; background: var(--metal); opacity: 0.8; pointer-events: none; }
   .site-header.scrolled { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 8px 22px -14px rgba(18, 24, 33, 0.55); }
   .logo { display: flex; flex: none; }
+  /* sötét változat (videós főoldal-teszt): a fejléc egybeolvad a sötétített videóval */
+  .site-header.header-dark { background: #1c1d1f; border-bottom-color: transparent; box-shadow: none; }
+  .site-header.header-dark::after { display: none; }
+  .site-header.header-dark.scrolled { box-shadow: 0 8px 22px -12px rgba(0, 0, 0, 0.7); }
+  .header-dark .nav-link { color: #d9dee4; }
+  .header-dark .nav-link:hover, .header-dark .nav-link.active { color: #fff; background: rgba(255, 255, 255, 0.1); }
+  .header-dark .header-search input { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.22); color: #fff; box-shadow: none; }
+  .header-dark .header-search input::placeholder { color: #aab2bc; }
+  .header-dark .header-search input:focus { background: #fff; color: var(--text); }
+  .header-dark .header-search :global(.search-icon) { color: #aab2bc; z-index: 1; }
+  .header-dark .menu-toggle { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.22); color: #fff; }
   .logo { margin-left: 28px; }
   .logo img { height: 66px; width: auto; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5)); }
   .header-inner { height: 100%; display: flex; align-items: center; gap: 20px; }
@@ -398,6 +409,8 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
       transform: translateY(-8px); opacity: 0; visibility: hidden; transition: all 0.2s ease;
     }
     .menu-open .main-nav { transform: none; opacity: 1; visibility: visible; }
+    .header-dark .nav-link { color: var(--text-2); }
+    .header-dark .nav-link:hover, .header-dark .nav-link.active { color: var(--text); background: var(--surface-3); }
     .nav-link { padding: 12px 14px; font-size: 1rem; }
     .mega { position: static; width: auto; opacity: 1; visibility: inherit; transform: none; background: transparent; border: 0; box-shadow: none; padding: 0 0 8px 8px; }
     .has-mega:hover .mega, .has-mega:focus-within .mega { visibility: inherit; }  /* a zárt mobilmenü láthatatlan linkjei ne fogják el az érintést */
