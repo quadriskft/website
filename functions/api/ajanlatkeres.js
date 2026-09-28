@@ -26,8 +26,6 @@ export function parseRequest(body) {
     company: str(c.company, 160),
     email: str(c.email, 160),
     phone: str(c.phone, 40),
-    taxNumber: str(c.taxNumber, 30),
-    delivery: str(c.delivery, 200),
   };
   const items = (Array.isArray(body?.items) ? body.items : []).slice(0, MAX_ITEMS).map((i) => ({
     code: str(i?.code, 60),
@@ -62,8 +60,6 @@ export function buildEmail({ customer, items, message }) {
     ['Cég', customer.company],
     ['E-mail', customer.email],
     ['Telefon', customer.phone],
-    ['Adószám', customer.taxNumber],
-    ['Szállítás', customer.delivery],
   ].filter(([, v]) => v);
 
   const text = [

@@ -4,7 +4,7 @@ import Icon from '../../components/Icon.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import ProductVisual from '../../components/ProductVisual.astro';
 import { products, getGroup, getCategory, productsIn, publicProduct, isProfile } from '../../lib/catalog.js';
-import { SITE } from '../../lib/site.js';
+import { SITE, abs, absPage } from '../../lib/site.js';
 
 export function getStaticPaths() {
   return products.map((product) => ({ params: { slug: product.slug }, props: { product } }));
@@ -23,8 +23,30 @@ const stockLength = profile
   ? (specs.find(([k]) => /szálhossz|gyártási hossz|^hossz/i.test(k))?.[1] ?? product.name.match(/(\d[\d ]{2,5})\s*mm\b(?!.*mm)/)?.[1])
   : null;
 const description = product.description || `${product.name}${product.code ? ` (cikkszám: ${product.code})` : ''} – ${group.name}. Kérjen ajánlatot online a ${SITE.name}-tól.`;
+const crumbs = [
+  ['Főoldal', '/'], ['Termékek', '/termekek'], [group.name, `/termekek/${group.slug}`],
+  ...(showCategory ? [[category.name, `/termekek/${group.slug}#${category.slug}`]] : []),
+  [product.name, `/termek/${product.slug}`],
+];
+const jsonLd = [
+  {
+    '@type': 'Product',
+    name: product.name,
+    ...(product.code && { sku: product.code, mpn: product.code }),
+    description,
+    url: absPage(`/termek/${product.slug}`),
+    category: showCategory ? `${group.name} > ${category.name}` : group.name,
+    brand: { '@type': 'Brand', name: SITE.shortName },
+    ...(product.images?.length && { image: product.images.map((i) => abs(i)) }),
+    ...(specs.length && { additionalProperty: specs.map(([k, v]) => ({ '@type': 'PropertyValue', name: k, value: String(v) })) }),
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map(([name, url], i) => ({ '@type': 'ListItem', position: i + 1, name, item: absPage(url) })),
+  },
+];
 ---
-<Base title={product.code ? `${product.name} (${product.code})` : product.name} description={description}>
+<Base title={product.code ? `${product.name} (${product.code})` : product.name} description={description} image={product.images?.[0]} type="product" jsonLd={jsonLd}>
   <div class="container">
     <nav class="breadcrumb crumbs" aria-label="Morzsamenü">
       <a href="/">Főoldal</a> / <a href="/termekek">Termékek</a> /

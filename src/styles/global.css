@@ -149,3 +149,14 @@ a.card:hover, .card.hoverable:hover { border-color: rgba(10, 108, 255, 0.45); tr
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* Jogi oldalak (impresszum, adatkezelési tájékoztató) */
+.legal { max-width: 820px; padding: 40px 0 72px; line-height: 1.7; color: var(--text-2); }
+.legal h2 { font-size: 1.25rem; color: var(--text); margin: 2.2em 0 0.6em; }
+.legal h3 { font-size: 1.02rem; color: var(--text); margin: 1.6em 0 0.4em; }
+.legal ul { padding-left: 1.2em; }
+.legal li { margin: 0.25em 0; }
+.legal table { width: 100%; border-collapse: collapse; margin: 0.8em 0 1.2em; font-size: 0.94rem; }
+.legal th, .legal td { text-align: left; vertical-align: top; padding: 9px 12px; border-bottom: 1px solid var(--line); }
+.legal th { width: 38%; color: var(--text); font-weight: 600; }
+.legal .muted { font-size: 0.9rem; }

@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../lib/site.js';
+
+const rows = [
+  ['Cégnév', SITE.legalName],
+  ['Rövidített cégnév', 'QUADRIS Kft.'],
+  ['Székhely', SITE.address],
+  ['Cégjegyzékszám', SITE.companyRegNo],
+  ['Nyilvántartó bíróság', SITE.registryCourt],
+  ['Adószám', SITE.taxNumber],
+  ['E-mail', SITE.email],
+  ['Telefon', SITE.phone],
+];
+---
+<Base title="Impresszum" description={`A ${SITE.name} weboldalának üzemeltetői és tárhelyszolgáltatói adatai.`}>
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Morzsamenü"><a href="/">Főoldal</a> / <span>Impresszum</span></nav>
+      <h1>Impresszum</h1>
+    </div>
+  </section>
+
+  <div class="container legal">
+    <h2>A weboldal üzemeltetője</h2>
+    <table>
+      {rows.map(([k, v]) => v && (
+        <tr><th scope="row">{k}</th><td>{k === 'E-mail' ? <a href={`mailto:${v}`}>{v}</a> : k === 'Telefon' ? <a href={`tel:${v.replace(/\s/g, '')}`}>{v}</a> : v}</td></tr>
+      ))}
+    </table>
+
+    <h2>Tárhelyszolgáltató</h2>
+    <table>
+      <tr><th scope="row">Név</th><td>{SITE.hosting.name}</td></tr>
+      <tr><th scope="row">Cím</th><td>{SITE.hosting.address}</td></tr>
+      <tr><th scope="row">Elérhetőség</th><td><a href={SITE.hosting.web} rel="noopener">{SITE.hosting.web.replace('https://', '')}</a></td></tr>
+    </table>
+
+    <h2>Tájékoztató jellegű tartalom</h2>
+    <p>
+      A weboldalon közölt termékadatok, méretek, tömegek és képek tájékoztató jellegűek; a képek egy része illusztráció vagy
+      méretezett rajz. A weboldal nem webáruház: az ajánlatkérés nem minősül megrendelésnek, és a weboldal tartalma nem minősül
+      ajánlattételnek. Az érvényes árat, kiszerelést és szállítási határidőt minden esetben az egyedi árajánlat tartalmazza.
+    </p>
+
+    <h2>Szerzői jog</h2>
+    <p>
+      A weboldal szövegei, arculati elemei és saját készítésű képei a {SITE.name} tulajdonát képezik; előzetes írásbeli
+      engedély nélkül nem másolhatók és nem terjeszthetők. Az egyes termékképek a gyártók tulajdonát képezhetik.
+    </p>
+
+    <h2>Adatkezelés</h2>
+    <p>A személyes adatok kezeléséről az <a href="/adatkezeles">adatkezelési tájékoztatóban</a> olvashat.</p>
+  </div>
+</Base>

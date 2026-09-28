@@ -4,9 +4,9 @@ import '@fontsource-variable/sora';
 import '../styles/global.css';
 import Icon from '../components/Icon.astro';
 import { groups, GROUP_META } from '../lib/catalog.js';
-import { SITE } from '../lib/site.js';
+import { SITE, abs, absPage } from '../lib/site.js';
 
-const { title, description = 'Alkatrészek jármű- és lószállító felépítmény gyártóknak: alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők, rakományrögzítés. Kérjen ajánlatot online!' } = Astro.props;
+const { title, image = '/brand/og-image.png', type = 'website', jsonLd = [], noindex = false, description = 'Alkatrészek jármű- és lószállító felépítmény gyártóknak: alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők, rakományrögzítés. Kérjen ajánlatot online!' } = Astro.props;
 const pageTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} – ${SITE.tagline}`;
 const path = Astro.url.pathname;
 const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
@@ -18,25 +18,34 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
-    {!SITE.indexable && <meta name="robots" content="noindex, nofollow" />}
-    {SITE.url && <link rel="canonical" href={new URL(path, SITE.url)} />}
-    <meta property="og:type" content="website" />
+    {(!SITE.indexable || noindex) && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={absPage(path)} />
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={SITE.name} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
+    <meta property="og:url" content={absPage(path)} />
+    <meta property="og:image" content={abs(image)} />
     <meta property="og:locale" content="hu_HU" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <script type="application/ld+json" set:html={JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'Organization',
+      '@id': abs('/#org'),
       name: SITE.name,
       legalName: SITE.legalName,
+      url: abs('/'),
+      logo: abs('/brand/quadris-logo.svg'),
       email: SITE.email,
       telephone: SITE.phone,
       taxID: SITE.taxNumber,
-      address: { '@type': 'PostalAddress', streetAddress: 'Tengely utca 8.', postalCode: '2220', addressLocality: 'Vecsés', addressCountry: 'HU' },
-      ...(SITE.url && { url: SITE.url, logo: new URL('/brand/quadris-logo.svg', SITE.url).href }),
+      foundingDate: String(SITE.foundingYear),
+      address: { '@type': 'PostalAddress', streetAddress: SITE.seat.street, postalCode: SITE.seat.postalCode, addressLocality: SITE.seat.city, addressCountry: 'HU' },
     })} />
+    {jsonLd.map((d) => <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', ...d })} />)}
   </head>
   <body>
     <a class="skip-link" href="#main">Ugrás a tartalomra</a>
@@ -118,6 +127,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
       <div class="container footer-bottom">
         <span>© {new Date().getFullYear()} {SITE.name} Minden jog fenntartva.</span>
         <span>Cégjegyzékszám: {SITE.companyRegNo} · Adószám: {SITE.taxNumber}</span>
+        <span class="legal-links"><a href="/impresszum">Impresszum</a> · <a href="/adatkezeles">Adatkezelési tájékoztató</a> · <a href="/adatkezeles#sutik">Sütik</a></span>
       </div>
     </footer>
 
@@ -359,6 +369,8 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   .footer-links a { color: #d6e1f0; }
   .footer-links a:hover { color: #fff; }
   .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.12); padding-top: 18px; padding-bottom: 24px; font-size: 0.85rem; color: #8fa6c4; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+  .footer-bottom .legal-links a { color: #c8d6ea; }
+  .footer-bottom .legal-links a:hover { color: #fff; }
   @media (max-width: 860px) {
     .footer-grid { grid-template-columns: 1fr; gap: 28px; }
     .footer-links.cols { grid-template-columns: 1fr 1fr; }

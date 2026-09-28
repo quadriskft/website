@@ -52,12 +52,10 @@ import { SITE } from '../lib/site.js';
         <div class="field"><label for="f-name">Név *</label><input id="f-name" name="name" required autocomplete="name" maxlength="120" /></div>
         <div class="field"><label for="f-company">Cégnév *</label><input id="f-company" name="company" required autocomplete="organization" maxlength="160" /></div>
         <div class="field"><label for="f-email">E-mail *</label><input id="f-email" name="email" type="email" required autocomplete="email" maxlength="160" /></div>
-        <div class="field"><label for="f-phone">Telefon</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" maxlength="40" /></div>
-        <div class="field"><label for="f-tax">Adószám</label><input id="f-tax" name="taxNumber" maxlength="30" /></div>
-        <div class="field"><label for="f-city">Szállítási cím / település</label><input id="f-city" name="delivery" autocomplete="address-level2" maxlength="200" /></div>
-        <div class="field full"><label for="f-msg">Megjegyzés</label><textarea id="f-msg" name="message" maxlength="3000" placeholder="Határidő, szállítási igény, egyéb kérés…"></textarea></div>
+        <div class="field"><label for="f-phone">Telefon *</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel" maxlength="40" /></div>
+        <div class="field full"><label for="f-msg">Megjegyzés</label><textarea id="f-msg" name="message" maxlength="3000" placeholder="Határidő, szállítási cím / igény, egyéb kérés…"></textarea></div>
         <div class="hp" aria-hidden="true"><label>Weboldal<input name="website" tabindex="-1" autocomplete="off" /></label></div>
-        <label class="consent full"><input type="checkbox" name="consent" required /> <span>Hozzájárulok, hogy a {SITE.name} az ajánlatkérés teljesítése céljából kezelje a megadott adataimat.</span></label>
+        <label class="consent full"><input type="checkbox" name="consent" required /> <span>Hozzájárulok, hogy a {SITE.name} az ajánlatkérés teljesítése céljából kezelje a megadott adataimat. Részletek az <a href="/adatkezeles" target="_blank">adatkezelési tájékoztatóban</a>.</span></label>
       </div>
       <p class="form-error" data-error role="alert" hidden></p>
       <button class="btn btn-primary submit" type="submit" data-submit><Icon name="Send" /> <span data-submit-label>Ajánlatkérés elküldése</span></button>
@@ -247,7 +245,7 @@ import { SITE } from '../lib/site.js';
     }
     const data = Object.fromEntries(new FormData(form));
     const payload = {
-      customer: { name: data.name, company: data.company, email: data.email, phone: data.phone, taxNumber: data.taxNumber, delivery: data.delivery },
+      customer: { name: data.name, company: data.company, email: data.email, phone: data.phone },
       message: data.message,
       website: data.website,
       items: items.map((i) => ({ code: i.code, name: i.name, qty: i.qty, note: i.note, cuts: i.cuts ?? [], custom: !!i.custom, url: i.custom ? '' : `${location.origin}/termek/${i.slug}` })),
@@ -269,7 +267,7 @@ import { SITE } from '../lib/site.js';
       const code = `<br><small>Hibakód: ${esc(err.message || 'hálózati hiba')}</small>`;
       const email = window.__QUADRIS_EMAIL;
       if (email) {
-        const body = `Ajánlatkérés\n\nNév: ${data.name}\nCég: ${data.company}\nE-mail: ${data.email}\nTelefon: ${data.phone}\nAdószám: ${data.taxNumber}\nSzállítás: ${data.delivery}\n\nTételek:\n${listText()}\n\nMegjegyzés:\n${data.message}`;
+        const body = `Ajánlatkérés\n\nNév: ${data.name}\nCég: ${data.company}\nE-mail: ${data.email}\nTelefon: ${data.phone}\n\nTételek:\n${listText()}\n\nMegjegyzés:\n${data.message}`;
         const href = `mailto:${email}?subject=${encodeURIComponent(`Ajánlatkérés – ${data.company}`)}&body=${encodeURIComponent(body)}`;
         showError(`Az online küldés most nem sikerült. <a href="${esc(href)}">Küldje el e-mailben egy kattintással →</a>${code}`);
       } else {

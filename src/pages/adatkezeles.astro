@@ -1,0 +1,112 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../lib/site.js';
+
+const EFFECTIVE = '2026. szeptember 28.';
+---
+<Base title="Adatkezelési tájékoztató" description={`A ${SITE.name} tájékoztatója a weboldalon megadott személyes adatok kezeléséről és a sütikről.`}>
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Morzsamenü"><a href="/">Főoldal</a> / <span>Adatkezelési tájékoztató</span></nav>
+      <h1>Adatkezelési tájékoztató</h1>
+      <p class="lead">Hatályos: {EFFECTIVE}</p>
+    </div>
+  </section>
+
+  <div class="container legal">
+    <p>
+      A {SITE.legalName} (a továbbiakban: Adatkezelő) az Európai Parlament és a Tanács (EU) 2016/679 rendelete (GDPR) és az
+      információs önrendelkezési jogról és az információszabadságról szóló 2011. évi CXII. törvény (Infotv.) alapján az alábbiakban
+      tájékoztatja a weboldal látogatóit a személyes adataik kezeléséről.
+    </p>
+
+    <h2>1. Az adatkezelő</h2>
+    <table>
+      <tr><th scope="row">Név</th><td>{SITE.legalName} ({SITE.name})</td></tr>
+      <tr><th scope="row">Székhely</th><td>{SITE.address}</td></tr>
+      <tr><th scope="row">Cégjegyzékszám</th><td>{SITE.companyRegNo}</td></tr>
+      <tr><th scope="row">Adószám</th><td>{SITE.taxNumber}</td></tr>
+      <tr><th scope="row">E-mail</th><td><a href={`mailto:${SITE.email}`}>{SITE.email}</a></td></tr>
+      <tr><th scope="row">Telefon</th><td>{SITE.phone}</td></tr>
+    </table>
+    <p>Adatvédelmi tisztviselő kinevezésére az Adatkezelő nem köteles.</p>
+
+    <h2>2. Ajánlatkérés és üzenetküldés</h2>
+    <p>Az ajánlatkérő és a kapcsolatfelvételi űrlap kitöltésekor az alábbi adatokat kezeljük:</p>
+    <table>
+      <tr><th scope="row">Kezelt adatok</th><td>név, cégnév, e-mail cím, telefonszám, az üzenet szövege, valamint az ajánlatkérő lista tartalma (termékek, mennyiségek, méretek, megjegyzések)</td></tr>
+      <tr><th scope="row">Az adatkezelés célja</th><td>az ajánlatkérés vagy megkeresés megválaszolása, árajánlat készítése, kapcsolattartás</td></tr>
+      <tr><th scope="row">Jogalap</th><td>az érintett hozzájárulása (GDPR 6. cikk (1) a)), illetve a szerződés megkötését megelőző, az érintett kérésére tett lépések (GDPR 6. cikk (1) b))</td></tr>
+      <tr><th scope="row">Megőrzési idő</th><td>az ajánlatkérés lezárásától számított 1 év; ha szerződés jön létre, a szerződéshez kapcsolódó dokumentumokat a számvitelről szóló 2000. évi C. törvény 169. §-a szerint 8 évig őrizzük</td></tr>
+    </table>
+    <p>
+      Az adatok megadása önkéntes, de ezek nélkül nem tudunk ajánlatot adni, illetve válaszolni. A hozzájárulás bármikor
+      visszavonható a {SITE.email} címre küldött üzenettel; a visszavonás nem érinti a korábbi adatkezelés jogszerűségét.
+    </p>
+
+    <h2>3. Technikai naplózás</h2>
+    <p>
+      A weboldal kiszolgálásakor a tárhelyszolgáltató a biztonságos és zavartalan működés érdekében technikai adatokat
+      (IP-cím, a kérés időpontja, böngésző típusa) rövid ideig naplózhat. Jogalap: az Adatkezelő jogos érdeke a weboldal
+      biztonságos üzemeltetéséhez (GDPR 6. cikk (1) f)). Ezekből az adatokból a látogatót nem azonosítjuk.
+    </p>
+
+    <h2 id="sutik">4. Sütik (cookie-k) és helyi tárolás</h2>
+    <p>
+      A weboldal <strong>nem használ</strong> analitikai, reklám- vagy követő sütiket, és nem épít profilt a látogatókról,
+      ezért sütihozzájárulást nem kérünk.
+    </p>
+    <ul>
+      <li>
+        <strong>Ajánlatkérő lista</strong> – a kiválasztott termékeket a böngésző helyi tárhelyén (localStorage,
+        <code>quadris-ajanlatkero-v1</code>) tároljuk, hogy oldalváltáskor ne vesszenek el. Ez az adat csak az Ön eszközén van,
+        és csak az ajánlatkérés elküldésekor jut el hozzánk. A lista az ajánlatkérő oldalon vagy a böngésző adatainak törlésével
+        bármikor törölhető.
+      </li>
+      <li>
+        <strong>Technikailag szükséges sütik</strong> – a tárhelyszolgáltató a támadások kiszűrésére szükség esetén
+        biztonsági sütit helyezhet el. Ezek a weboldal működéséhez elengedhetetlenek, hozzájárulást nem igényelnek.
+      </li>
+    </ul>
+
+    <h2>5. Adatfeldolgozók és címzettek</h2>
+    <p>Az adatokat nem adjuk el és nem adjuk át harmadik félnek marketingcélra. Az alábbi szolgáltatókat vesszük igénybe:</p>
+    <table>
+      <tr><th scope="row">{SITE.hosting.name}</th><td>tárhely és a weboldal kiszolgálása ({SITE.hosting.address})</td></tr>
+      <tr><th scope="row">{SITE.mailer.name}</th><td>az ajánlatkérések és üzenetek e-mailes továbbítása az Adatkezelő postafiókjába ({SITE.mailer.web.replace('https://', '')})</td></tr>
+    </table>
+    <p>
+      A szolgáltatók az Európai Unión kívül (az Amerikai Egyesült Államokban) is kezelhetnek adatot; az adattovábbítás az
+      EU–USA adatvédelmi keretrendszer, illetve az Európai Bizottság által elfogadott általános szerződési feltételek alapján,
+      megfelelő garanciák mellett történik.
+    </p>
+
+    <h2>6. Adatbiztonság</h2>
+    <p>
+      A weboldal kizárólag titkosított (HTTPS) kapcsolaton keresztül érhető el. Az ajánlatkérések csak az Adatkezelő erre
+      kijelölt munkatársaihoz jutnak el, akik az adatokat bizalmasan kezelik.
+    </p>
+
+    <h2>7. Az Ön jogai</h2>
+    <p>Az adatkezeléssel kapcsolatban Ön jogosult:</p>
+    <ul>
+      <li>tájékoztatást és hozzáférést kérni a kezelt adataihoz (GDPR 15. cikk),</li>
+      <li>kérni az adatai helyesbítését (16. cikk) vagy törlését (17. cikk),</li>
+      <li>kérni az adatkezelés korlátozását (18. cikk),</li>
+      <li>adathordozhatóságot kérni (20. cikk),</li>
+      <li>tiltakozni a jogos érdeken alapuló adatkezelés ellen (21. cikk),</li>
+      <li>hozzájárulását bármikor visszavonni.</li>
+    </ul>
+    <p>
+      Kérelmét a {SITE.email} címre küldheti; legfeljebb egy hónapon belül válaszolunk. Jogsértés esetén panaszt tehet a
+      Nemzeti Adatvédelmi és Információszabadság Hatóságnál (NAIH, 1055 Budapest, Falk Miksa utca 9–11.; postacím: 1363 Budapest,
+      Pf. 9.; <a href="https://www.naih.hu" rel="noopener">www.naih.hu</a>; ugyfelszolgalat@naih.hu), vagy bírósághoz fordulhat,
+      amely az Ön választása szerint a lakóhelye vagy tartózkodási helye szerinti törvényszék is lehet.
+    </p>
+
+    <h2>8. Módosítás</h2>
+    <p class="muted">
+      Az Adatkezelő fenntartja a jogot, hogy a tájékoztatót módosítsa; a mindenkor hatályos változat ezen az oldalon érhető el.
+    </p>
+  </div>
+</Base>

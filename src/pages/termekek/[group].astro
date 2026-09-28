@@ -2,7 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import ProductCard from '../../components/ProductCard.astro';
-import { groups, GROUP_META, productsIn } from '../../lib/catalog.js';
+import { groups, GROUP_META, productsIn, groupImage } from '../../lib/catalog.js';
+import { absPage } from '../../lib/site.js';
 
 export function getStaticPaths() {
   return groups.map((group) => ({ params: { group: group.slug }, props: { group } }));
@@ -12,8 +13,25 @@ const { group } = Astro.props;
 const meta = GROUP_META[group.slug] ?? {};
 const sections = group.categories.map((c) => ({ ...c, items: productsIn(group.slug, c.slug) }));
 const single = sections.length === 1;
+const jsonLd = [
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [['Főoldal', '/'], ['Termékek', '/termekek'], [group.name, `/termekek/${group.slug}`]]
+      .map(([name, url], i) => ({ '@type': 'ListItem', position: i + 1, name, item: absPage(url) })),
+  },
+  {
+    '@type': 'CollectionPage',
+    name: group.name,
+    url: absPage(`/termekek/${group.slug}`),
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: group.count,
+      itemListElement: sections.flatMap((sec) => sec.items).map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: absPage(`/termek/${p.slug}`), name: p.name })),
+    },
+  },
+];
 ---
-<Base title={group.name} description={`${group.name}: ${meta.text ?? ''} ${group.count} termék – kérjen ajánlatot online a Quadristól.`}>
+<Base title={group.name} description={`${group.name}: ${meta.text ?? ''} ${group.count} termék – kérjen ajánlatot online a Quadristól.`} image={groupImage(group.slug)} jsonLd={jsonLd}>
   <section class="page-head">
     <div class="container">
       <nav class="breadcrumb" aria-label="Morzsamenü"><a href="/">Főoldal</a> / <a href="/termekek">Termékek</a> / <span>{group.name}</span></nav>
