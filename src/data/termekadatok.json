@@ -9001,6 +9001,24 @@
    "/termekkepek/a1-536-kis-gobos-kedergumi-14-6x16-fekete-1.webp"
   ]
  },
+ "a1-549-mini-gobos-kedergumi-13x11-8-2-mm": {
+  "source": "Sand-Profile kiegészítés",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=40",
+  "sourceTitle": "SAND Profile összkatalógus, 40. oldal",
+  "matchedCode": "A1 549 EPDM",
+  "specs": {
+   "Cikkszám (gyári)": "A1 549 EPDM",
+   "Anyag": "EPDM tömör gumi / moosgumi (szivacsgumi) koextrudált, beágyazott acélhuzal betéttel",
+   "Méret": "13 x 11,8 mm",
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "2,0",
+   "Kiszerelés [m]": "2x50",
+   "Minimális rendelés [m]": "100"
+  },
+  "images": [
+   "/termekkepek/a1-549-mini-gobos-kedergumi-13x11-8-2-mm-1.webp"
+  ]
+ },
  "a2-106-2-28-mm-duplagobos-kedergumi": {
   "source": "Sand-Profile",
   "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=32",
@@ -9069,6 +9087,24 @@
   },
   "images": [
    "/termekkepek/a2-255-nagy-gobos-kedergumi-fekete-20-mm-1.webp"
+  ]
+ },
+ "a2-513-felso-gobos-keder-21-5x11-mm": {
+  "source": "Sand-Profile kiegészítés",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=36",
+  "sourceTitle": "SAND Profile összkatalógus, 36. oldal",
+  "matchedCode": "A2 513 EPDM",
+  "specs": {
+   "Cikkszám (gyári)": "A2 513 EPDM",
+   "Anyag": "EPDM tömör gumi / moosgumi (szivacsgumi) koextrudált, beágyazott acélhuzal betéttel",
+   "Méret": "21,5 x 11 mm (tömlő: 10,7 mm)",
+   "Szín": "fekete",
+   "Szorítási tartomány [mm]": "1,0–3,0",
+   "Kiszerelés [m]": "2x50",
+   "Minimális rendelés [m]": "100"
+  },
+  "images": [
+   "/termekkepek/a2-513-felso-gobos-keder-21-5x11-mm-1.webp"
   ]
  },
  "a2-539-kozepes-gobos-kedergumi-14-6x18-7-fekete": {
@@ -9639,6 +9675,38 @@
    "/termekkepek/e-volumen-tetoprofil-900301-9600-1.webp"
   ]
  },
+ "e2-546-af-moos-gumi-ontapados": {
+  "source": "Sand-Profile kiegészítés",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=25",
+  "sourceTitle": "SAND Profile összkatalógus, 25. oldal",
+  "matchedCode": "E2 546",
+  "specs": {
+   "Cikkszám (gyári)": "E2 546 (AF: öntapadós kivitel)",
+   "Anyag": "EPDM moosgumi (szivacsgumi, cellás gumi)",
+   "Méret": "20,6 x 13,6 mm",
+   "Szín": "fekete",
+   "Öntapadós": "igen – tartósan öntapadó (AF) kivitel"
+  },
+  "images": [
+   "/termekkepek/e2-546-af-moos-gumi-ontapados-1.webp"
+  ]
+ },
+ "e2-701-af-moos-gumi-epdm-ontapados": {
+  "source": "Sand-Profile kiegészítés",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=25",
+  "sourceTitle": "SAND Profile összkatalógus, 25. oldal",
+  "matchedCode": "E2 701",
+  "specs": {
+   "Cikkszám (gyári)": "E2 701 (AF: öntapadós kivitel)",
+   "Anyag": "EPDM moosgumi (szivacsgumi, cellás gumi)",
+   "Méret": "13 x 16 mm",
+   "Szín": "fekete",
+   "Öntapadós": "igen – tartósan öntapadó (AF) kivitel"
+  },
+  "images": [
+   "/termekkepek/e2-701-af-moos-gumi-epdm-ontapados-1.webp"
+  ]
+ },
  "e210422558-elhuzo-kocsi-2550-mm": {
   "source": "Edscha",
   "sourceUrl": "https://www.edschats.com/globalassets/documents/pdfs/sesam/new_25/sesam_komponenten-u-ersatzteilkatalog_04-2024.pdf#page=78",
@@ -9904,6 +9972,51 @@
   "images": [
    "/termekkepek/elkeder-13x10-fekete-1.webp"
   ]
+ },
+ "epdm-1030-moosgumi": {
+  "source": "Sand-Profile kiegészítés",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=72",
+  "sourceTitle": "SAND Profile összkatalógus, 72. oldal",
+  "matchedCode": "10x30",
+  "specs": {
+   "Méret": "10 x 30 mm",
+   "Anyag": "EPDM moosgumi (cellás gumi), zárt külső bőrrel",
+   "Keresztmetszet": "négyszög (vierkant)",
+   "Szín": "fekete (világosszürke is rendelhető)",
+   "Kiszerelés [m]": "25",
+   "Öntapadós": "rendelhető a szélesebb oldalon (SK / AF)"
+  },
+  "images": []
+ },
+ "epdm-1530-moosgumi": {
+  "source": "Sand-Profile kiegészítés",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=73",
+  "sourceTitle": "SAND Profile összkatalógus, 73. oldal",
+  "matchedCode": "15x30",
+  "specs": {
+   "Méret": "15 x 30 mm",
+   "Anyag": "EPDM moosgumi (cellás gumi), zárt külső bőrrel",
+   "Keresztmetszet": "négyszög (vierkant)",
+   "Szín": "fekete (világosszürke is rendelhető)",
+   "Kiszerelés [m]": "25",
+   "Öntapadós": "rendelhető a szélesebb oldalon (SK / AF)"
+  },
+  "images": []
+ },
+ "epdm-3030-af-moosgumi": {
+  "source": "Sand-Profile kiegészítés",
+  "sourceUrl": "https://www.sandprofile.com/media/gesamtkatalog_en.pdf#page=73",
+  "sourceTitle": "SAND Profile összkatalógus, 73. oldal",
+  "matchedCode": "30x30",
+  "specs": {
+   "Méret": "30 x 30 mm",
+   "Anyag": "EPDM moosgumi (cellás gumi), zárt külső bőrrel",
+   "Keresztmetszet": "négyzet (vierkant)",
+   "Szín": "fekete (világosszürke is rendelhető)",
+   "Kiszerelés [m]": "20",
+   "Öntapadós": "igen – tartósan öntapadó (AF) kivitel"
+  },
+  "images": []
  },
  "felso-gobos-kedergumi-32x14x20-8-fekete": {
   "source": "Sand-Profile",
