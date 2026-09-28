@@ -120,30 +120,16 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <span class="footer-logo"><img src="/brand/quadris-logo-fem.webp" alt={SITE.name} width="900" height="244" loading="lazy" /></span>
-          <p class="muted">Alkatrészek, profilok és kiegészítők jármű- és lószállító felépítmény gyártóknak – egy helyről, szakértő támogatással.</p>
-          <a href="/ajanlatkeres" class="btn btn-primary btn-sm"><Icon name="Send" /> Ajánlatot kérek</a>
-        </div>
-        <div>
-          <h4>Termékcsoportok</h4>
-          <ul class="footer-links cols">
-            {groups.map((g) => <li><a href={`/termekek/${g.slug}`}>{g.name}</a></li>)}
-          </ul>
-        </div>
-        <div>
-          <h4>Kapcsolat</h4>
-          <ul class="footer-links">
-            <li><strong>{SITE.name}</strong></li>
-            {SITE.address && <li>{SITE.address}</li>}
-            {SITE.phone && <li><a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a></li>}
-            {SITE.email && <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>}
-            {SITE.openingHours && <li class="muted">{SITE.openingHours}</li>}
-            <li><a href="/kapcsolat">Üzenetküldés</a></li>
-            <li><a href="/loszallito-felepitmenyek">Lószállító felépítmény gyártóknak</a></li>
-          </ul>
-        </div>
+      <div class="container footer-main">
+        <a href="/" class="footer-logo" aria-label={`${SITE.name} – főoldal`}><img src="/brand/quadris-logo-fem.webp" alt={SITE.name} width="900" height="244" loading="lazy" /></a>
+        <ul class="footer-contact">
+          <li><strong>{SITE.name}</strong></li>
+          {SITE.address && <li>{SITE.address}</li>}
+          {SITE.phone && <li><a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a></li>}
+          {SITE.email && <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>}
+          {SITE.openingHours && <li class="muted">{SITE.openingHours}</li>}
+          <li><a href="/kapcsolat">Üzenetküldés</a></li>
+        </ul>
       </div>
       <div class="container footer-bottom">
         <span>© {new Date().getFullYear()} {SITE.name} Minden jog fenntartva.</span>
@@ -426,26 +412,19 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     .quote-btn { padding: 0 12px; }
   }
 
-  .site-footer { background: linear-gradient(180deg, #f6f7f9 0%, #eceff3 100%); color: var(--text-2); margin-top: 56px; border-top: 1px solid var(--line); }
-  .footer-grid { display: grid; grid-template-columns: 1.1fr 1.6fr 0.9fr; gap: 40px; padding-top: 56px; padding-bottom: 40px; }
+  .site-footer { background: linear-gradient(180deg, #f6f7f9 0%, #eceff3 100%); color: var(--text-2); margin-top: 40px; border-top: 1px solid var(--line); }
+  .footer-main { display: flex; align-items: center; justify-content: space-between; gap: 16px 32px; flex-wrap: wrap; padding-top: 22px; padding-bottom: 16px; }
   .footer-logo {
-    display: inline-flex; padding: 12px 20px; margin-bottom: 18px; border-radius: 14px;
+    flex: none; display: inline-flex; padding: 8px 16px; border-radius: 12px;
     background: radial-gradient(ellipse 70% 130% at 50% 45%, #313234 0%, #1c1d1f 100%); box-shadow: var(--shadow-sm);
   }
-  .footer-logo img { height: 48px; width: auto; }
-  .footer-brand p { max-width: 340px; font-size: 0.93rem; }
-  .site-footer h4 { font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
-  .site-footer .muted { color: var(--muted); }
-  .site-footer strong { color: var(--text); }
-  .footer-links { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 0.92rem; }
-  .footer-links.cols { grid-template-columns: repeat(2, 1fr); column-gap: 24px; }
-  .footer-links a { color: var(--text-2); }
-  .footer-links a:hover { color: var(--accent); }
-  .footer-bottom { border-top: 1px solid var(--line-strong); padding-top: 18px; padding-bottom: 24px; font-size: 0.85rem; color: var(--muted); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+  .footer-logo img { height: 36px; width: auto; }
+  .footer-contact { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 0.88rem; }
+  .footer-contact strong { color: var(--text); }
+  .footer-contact .muted { color: var(--muted); }
+  .footer-contact a { color: var(--text-2); }
+  .footer-contact a:hover { color: var(--accent); }
+  .footer-bottom { border-top: 1px solid var(--line-strong); padding-top: 10px; padding-bottom: 14px; font-size: 0.8rem; color: var(--muted); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 24px; }
   .footer-bottom .legal-links a { color: var(--text-2); }
   .footer-bottom .legal-links a:hover { color: var(--accent); }
-  @media (max-width: 860px) {
-    .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-    .footer-links.cols { grid-template-columns: 1fr 1fr; }
-  }
 </style>
