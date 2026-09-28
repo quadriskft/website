@@ -342,7 +342,8 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   .logo img { height: 66px; width: auto; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5)); }
   .header-inner { height: 100%; display: flex; align-items: center; gap: 16px; }
 
-  .main-nav { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+  /* a menüpontok egyenletesen elosztva a logó és a kereső között */
+  .main-nav { flex: 1 1 auto; display: flex; align-items: center; justify-content: space-evenly; gap: 4px; }
   .nav-link {
     display: inline-flex; align-items: center; gap: 4px; padding: 8px 14px; border-radius: 999px;
     color: var(--text-2); font-weight: 500; font-size: 0.95rem; text-decoration: none !important; white-space: nowrap;
@@ -363,8 +364,8 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   .mega-link:hover { background: var(--accent-soft); color: var(--text); }
   .mega-link :global(svg) { color: var(--accent); flex: none; }
 
-  .header-actions { flex: 1 1 380px; justify-content: flex-end; display: flex; align-items: center; gap: 12px; }
-  .header-search { position: relative; flex: 1 1 auto; min-width: 0; max-width: 430px; }
+  .header-actions { flex: none; justify-content: flex-end; display: flex; align-items: center; gap: 12px; }
+  .header-search { position: relative; flex: none; width: clamp(354px, 30vw, 430px); }
   .header-search :global(.search-icon) { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
   .header-search input {
     width: 100%; height: 46px; padding: 0 14px 0 40px; border-radius: 999px; border: 1px solid var(--line-strong);
