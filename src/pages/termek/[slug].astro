@@ -28,6 +28,11 @@ const crumbs = [
   ...(showCategory ? [[category.name, `/termekek/${group.slug}#${category.slug}`]] : []),
   [product.name, `/termek/${product.slug}`],
 ];
+// látható morzsamenü: Főoldal › Főkategória › Alkategória › termék; „Vissza” = egy szinttel feljebb
+const navCrumbs = crumbs.filter(([name]) => name !== 'Termékek');
+const backTo = showCategory
+  ? { href: `/termekek/${group.slug}#${category.slug}`, label: category.name }
+  : { href: `/termekek/${group.slug}`, label: group.name };
 const jsonLd = [
   {
     '@type': 'Product',
@@ -46,13 +51,8 @@ const jsonLd = [
   },
 ];
 ---
-<Base title={product.code ? `${product.name} (${product.code})` : product.name} description={description} image={product.images?.[0]} type="product" jsonLd={jsonLd}>
+<Base crumbs={navCrumbs} back={backTo} title={product.code ? `${product.name} (${product.code})` : product.name} description={description} image={product.images?.[0]} type="product" jsonLd={jsonLd}>
   <div class="container">
-    <nav class="breadcrumb crumbs" aria-label="Morzsamenü">
-      <a href="/">Főoldal</a> / <a href="/termekek">Termékek</a> /
-      <a href={`/termekek/${group.slug}`}>{group.name}</a>
-      {showCategory && <> / <a href={`/termekek/${group.slug}#${category.slug}`}>{category.name}</a></>}
-    </nav>
 
     <div class="product">
       <div class="media">
@@ -261,8 +261,7 @@ const jsonLd = [
 </script>
 
 <style>
-  .crumbs { padding-top: 28px; }
-  .product { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+  .product { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 48px; align-items: start; padding-top: 28px; }
   .media { position: sticky; top: calc(var(--header-h) + 20px); }
   .media :global(.product-visual) { border-radius: var(--radius); border: 1px solid var(--line); }
   .media :global(.product-visual.placeholder svg) { width: 26%; height: 26%; }

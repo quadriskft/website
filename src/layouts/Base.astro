@@ -6,7 +6,7 @@ import Icon from '../components/Icon.astro';
 import { groups, GROUP_META } from '../lib/catalog.js';
 import { SITE, abs, absPage } from '../lib/site.js';
 
-const { title, image = '/brand/og-image.png', type = 'website', jsonLd = [], noindex = false, description = 'Alkatrészek jármű- és lószállító felépítmény gyártóknak: alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők, rakományrögzítés. Kérjen ajánlatot online!' } = Astro.props;
+const { crumbs = null, back = null, title, image = '/brand/og-image.png', type = 'website', jsonLd = [], noindex = false, description = 'Alkatrészek jármű- és lószállító felépítmény gyártóknak: alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők, rakományrögzítés. Kérjen ajánlatot online!' } = Astro.props;
 const pageTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} – ${SITE.tagline}`;
 const path = Astro.url.pathname;
 const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
@@ -47,7 +47,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     })} />
     {jsonLd.map((d) => <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', ...d })} />)}
   </head>
-  <body>
+  <body id="top">
     <a class="skip-link" href="#main">Ugrás a tartalomra</a>
     <div class="brand-bar">
       <a class="logo" href="/" aria-label={`${SITE.name} – főoldal`}>
@@ -94,6 +94,27 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
       </div>
     </header>
 
+    {crumbs && (
+      <div class="crumbbar">
+        <div class="container crumbbar-inner">
+          {back && (
+            <a class="back-btn" href={back.href} data-back title={`Vissza: ${back.label}`} aria-label={`Vissza: ${back.label}`}>
+              <Icon name="ArrowLeft" size={18} /><span>Vissza</span>
+            </a>
+          )}
+          <nav class="crumb-trail" aria-label="Morzsamenü">
+            {crumbs.map(([name, url], i) => (
+              <>
+                {i > 0 && <span class="sep" aria-hidden="true">›</span>}
+                <a href={url} class:list={{ current: i === crumbs.length - 1 }} data-crumb={i === crumbs.length - 1 ? 'last' : undefined} aria-current={i === crumbs.length - 1 ? 'page' : undefined}>{name}</a>
+              </>
+            ))}
+            <span class="sep" aria-hidden="true" data-sub-sep hidden>›</span>
+            <a class="current" data-sub-crumb hidden></a>
+          </nav>
+        </div>
+      </div>
+    )}
     <main id="main">
       <slot />
     </main>
@@ -136,6 +157,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
       <span data-toast-text></span>
       <a href="/ajanlatkeres" class="btn btn-ghost btn-sm">Megnézem</a>
     </div>
+    <a href="#top" class="to-top" data-to-top aria-label="Vissza az oldal tetejére" title="Az oldal tetejére"><Icon name="ArrowUp" size={22} /></a>
 
     <script>
       import { quote } from '../scripts/quote.js';
@@ -248,6 +270,17 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
       document.addEventListener('click', (e) => {
         if (!form.contains(e.target)) box.hidden = true;
       });
+
+      // --- „Fel” nyíl: kis görgetés után jelenik meg ---
+      const toTop = document.querySelector('[data-to-top]');
+      const syncTop = () => toTop.classList.toggle('show', window.scrollY > 400);
+      window.addEventListener('scroll', syncTop, { passive: true });
+      syncTop();
+      toTop.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        history.replaceState(null, '', location.pathname + location.search);
+      });
     </script>
   </body>
 </html>
@@ -255,6 +288,40 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
 <style>
   .skip-link { position: absolute; left: -999px; top: 8px; z-index: 200; background: var(--accent); color: #000; padding: 8px 14px; border-radius: 8px; }
   .skip-link:focus { left: 8px; }
+
+  /* Morzsamenü-sáv: a fejléc alatt, görgetéskor is látható */
+  .crumbbar {
+    position: sticky; top: var(--header-h); z-index: 40;
+    background: rgba(255, 255, 255, 0.94); backdrop-filter: saturate(160%) blur(12px); -webkit-backdrop-filter: saturate(160%) blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .crumbbar-inner { display: flex; align-items: center; gap: 14px; min-height: 48px; }
+  .back-btn {
+    flex: none; display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 14px 0 10px;
+    border: 1px solid var(--line-strong); border-radius: 999px; background: #fff; color: var(--text);
+    font-size: 0.9rem; font-weight: 600; text-decoration: none;
+  }
+  .back-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .crumb-trail { display: flex; align-items: center; gap: 8px; min-width: 0; overflow: hidden; white-space: nowrap; font-size: 0.9rem; }
+  .crumb-trail a { color: var(--muted); text-decoration: none; overflow: hidden; text-overflow: ellipsis; }
+  .crumb-trail a:hover { color: var(--accent); }
+  .crumb-trail a.current { color: var(--text); font-weight: 600; }
+  .crumb-trail .sep { color: var(--line-strong); flex: none; }
+  @media (max-width: 640px) {
+    .back-btn span { display: none; }
+    .back-btn { padding: 0 9px; }
+    .crumb-trail { font-size: 0.84rem; gap: 6px; }
+  }
+
+  /* „Fel” nyíl */
+  .to-top {
+    position: fixed; right: 20px; bottom: 20px; z-index: 90; width: 48px; height: 48px; border-radius: 50%;
+    display: grid; place-items: center; background: var(--accent); color: #fff; box-shadow: 0 10px 24px -10px rgba(10, 108, 255, 0.7);
+    opacity: 0; pointer-events: none; transform: translateY(12px); transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .to-top.show { opacity: 1; pointer-events: auto; transform: none; }
+  .to-top:hover { filter: brightness(1.08); }
+  :global(.toast.show) ~ .to-top { bottom: 92px; }
 
   .site-header {
     position: sticky; top: 0; z-index: 50; height: var(--header-h);

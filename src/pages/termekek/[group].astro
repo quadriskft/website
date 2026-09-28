@@ -31,10 +31,9 @@ const jsonLd = [
   },
 ];
 ---
-<Base title={group.name} description={`${group.name}: ${meta.text ?? ''} ${group.count} termék – kérjen ajánlatot online a Quadristól.`} image={groupImage(group.slug)} jsonLd={jsonLd}>
+<Base crumbs={[['Főoldal', '/'], [group.name, `/termekek/${group.slug}`]]} back={{ href: '/', label: 'Főoldal' }} title={group.name} description={`${group.name}: ${meta.text ?? ''} ${group.count} termék – kérjen ajánlatot online a Quadristól.`} image={groupImage(group.slug)} jsonLd={jsonLd}>
   <section class="page-head">
     <div class="container">
-      <nav class="breadcrumb" aria-label="Morzsamenü"><a href="/">Főoldal</a> / <a href="/termekek">Termékek</a> / <span>{group.name}</span></nav>
       <div class="gh">
         <span class="gh-icon"><Icon name={meta.icon} size={30} /></span>
         <div>
@@ -63,7 +62,7 @@ const jsonLd = [
         <span class="filter-count muted" aria-live="polite"></span>
       </div>
       {sections.map((c) => (
-        <section class="cat-section" id={c.slug} data-cat>
+        <section class="cat-section" id={c.slug} data-cat data-cat-name={c.name}>
           {!single && <h2>{c.name} <span class="muted">{c.count}</span></h2>}
           <div class="grid grid-products">
             {c.items.map((p) => <ProductCard product={p} />)}
@@ -76,6 +75,49 @@ const jsonLd = [
 </Base>
 
 <script>
+  // --- Morzsamenü: az éppen látható alkategória, és a „Vissza” gomb célja ---
+  const catSections = [...document.querySelectorAll('[data-cat]')];
+  const subCrumb = document.querySelector('[data-sub-crumb]');
+  const subSep = document.querySelector('[data-sub-sep]');
+  const groupCrumb = document.querySelector('[data-crumb="last"]');
+  const back = document.querySelector('[data-back]');
+  const home = { href: back.getAttribute('href'), label: back.getAttribute('aria-label') };
+  const groupUrl = groupCrumb.getAttribute('href');
+  const setActive = (sec) => {
+    const on = !!sec && catSections.length > 1;
+    subSep.hidden = subCrumb.hidden = !on;
+    groupCrumb.classList.toggle('current', !on);
+    if (on) {
+      subCrumb.textContent = sec.dataset.catName;
+      subCrumb.href = `#${sec.id}`;
+      back.href = groupUrl;
+      back.setAttribute('aria-label', `Vissza: ${groupCrumb.textContent}`);
+      back.title = back.getAttribute('aria-label');
+    } else {
+      back.href = home.href;
+      back.setAttribute('aria-label', home.label);
+      back.title = home.label;
+    }
+  };
+  const updateActive = () => {
+    const line = window.innerHeight * 0.3;
+    let current = null;
+    for (const sec of catSections) {
+      if (sec.hidden) continue;
+      if (sec.getBoundingClientRect().top <= line) current = sec;
+    }
+    setActive(current);
+  };
+  window.addEventListener('scroll', updateActive, { passive: true });
+  updateActive();
+  back.addEventListener('click', (e) => {
+    if (back.getAttribute('href') === groupUrl) {  // alkategóriából a főkategória tetejére
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      history.replaceState(null, '', groupUrl);
+    }
+  });
+
   const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
   const input = document.querySelector('.filter-input');
   const cards = [...document.querySelectorAll('.product-card')].map((el) => ({ el, text: norm(el.dataset.name ?? '') }));
@@ -105,7 +147,7 @@ const jsonLd = [
     background: var(--accent-soft); border: 1px solid rgba(10, 108, 255, 0.18);
   }
   .layout { display: flex; gap: 36px; padding-top: 32px; padding-bottom: 40px; align-items: flex-start; }
-  .sidebar { flex: 0 0 250px; position: sticky; top: calc(var(--header-h) + 20px); max-height: calc(100vh - var(--header-h) - 40px); overflow-y: auto; }
+  .sidebar { flex: 0 0 250px; position: sticky; top: calc(var(--header-h) + 68px); max-height: calc(100vh - var(--header-h) - 88px); overflow-y: auto; }
   .side-title { font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
   .sidebar ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
   .sidebar a { display: flex; justify-content: space-between; gap: 10px; padding: 8px 12px; border-radius: 10px; color: var(--text-2); font-size: 0.93rem; text-decoration: none; }

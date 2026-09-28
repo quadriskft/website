@@ -3,10 +3,9 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import { groups, GROUP_META, stats, groupImage } from '../../lib/catalog.js';
 ---
-<Base title="Termékkatalógus" description={`${stats.products} termék ${stats.groups} termékcsoportban jármű- és lószállító felépítmény gyártóknak.`}>
+<Base crumbs={[['Főoldal', '/'], ['Termékek', '/termekek']]} back={{ href: '/', label: 'Főoldal' }} title="Termékkatalógus" description={`${stats.products} termék ${stats.groups} termékcsoportban jármű- és lószállító felépítmény gyártóknak.`}>
   <section class="page-head">
     <div class="container">
-      <nav class="breadcrumb" aria-label="Morzsamenü"><a href="/">Főoldal</a> / <span>Termékek</span></nav>
       <span class="eyebrow">Termékkatalógus</span>
       <h1>Termékcsoportok</h1>
       <p class="lead">{stats.products} termék {stats.groups} csoportban. Válasszon csoportot, vagy keressen a fejlécben név, illetve cikkszám alapján.</p>
