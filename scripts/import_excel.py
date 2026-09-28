@@ -113,6 +113,9 @@ def category_name(raw):
     return CATEGORY_TITLES.get(name, name)
 
 
+DELETED = json.loads((ROOT / "data/torolt_termekek.json").read_text()) if (ROOT / "data/torolt_termekek.json").exists() else {}
+
+
 def main():
     wb = openpyxl.load_workbook(SOURCE, data_only=True)
     groups = []
@@ -147,6 +150,8 @@ def main():
             base = slugify(f"{internal_code} {title}" if internal_code else title)
             used_slugs[base] += 1
             slug = base if used_slugs[base] == 1 else f"{base}-{used_slugs[base]}"
+            if slug in DELETED:  # a Quadris által törlésre jelölt termék (data/torolt_termekek.json)
+                continue
 
             products.append({
                 "slug": slug,

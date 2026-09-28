@@ -1,0 +1,401 @@
+{
+ "056402-2-4-reszes-ajtokiakaszto-szet-in": {
+  "name": "4-részes ajtókiakasztó szet IN",
+  "supplier": "IndesCar",
+  "code": "056402/2",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "056402-4-reszes-ajtokiakaszto-szet": {
+  "name": "4-részes ajtókiakasztó szet",
+  "supplier": "IndesCar",
+  "code": "056402",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "211308-italszallito-zarszerkezet-d": {
+  "name": "Italszállító Zárszerkezet D",
+  "supplier": "Dost",
+  "code": "211308",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "212104-italszallito-ajto-profil-felso-gorgo-d": {
+  "name": "Italszállító ajtó profil felső görgő D",
+  "supplier": "Dost",
+  "code": "212104",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "212105a-italszallito-ajto-profil-also-gorgo-r-d": {
+  "name": "212105A Italszállító ajtó profil alsó görgő R D",
+  "supplier": "Dost",
+  "code": "",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "212105b-italszallito-ajto-profil-also-gorgo-l-d": {
+  "name": "212105B Italszállító ajtó profil alsó görgő L D",
+  "supplier": "Dost",
+  "code": "",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "212106-italszallito-ponyva-gorgo-felso-d": {
+  "name": "Italszállító ponyva görgő felső D",
+  "supplier": "Dost",
+  "code": "212106",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "212107-italszallito-ponyva-gorgo-also-d": {
+  "name": "Italszállító ponyva görgő alsó D",
+  "supplier": "Dost",
+  "code": "212107",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "232129-or-tomiteses-ajtoszego-25-mm-elox": {
+  "name": "OR Tömítéses ajtószegő 25 mm elox",
+  "supplier": "RE-ALL",
+  "code": "232129",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "237797-specialis-teto-profil-ec": {
+  "name": "Speciális TETŐ profil EC",
+  "supplier": "ALCOMET",
+  "code": "237797",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "237798-specialis-35-also-keret-profil-ec": {
+  "name": "Speciális 35 ALSÓ KERET profil EC",
+  "supplier": "ALCOMET",
+  "code": "237798",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "381072-feszito-kocka-sliccelt-adapterhez": {
+  "name": "Feszítő kocka sliccelt adapterhez",
+  "supplier": "ADAICO",
+  "code": "381072",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "556404-kupos-utkozogumi-40-60-27": {
+  "name": "Kúpos ütközőgumi 40/60/27",
+  "supplier": "IndesCar",
+  "code": "556404",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "811400-rm-hatsoajto-zsanerlap-280-4-mm-dm": {
+  "name": "RM hátsóajtó zsanérlap 280/4 mm DM",
+  "supplier": "Demolli",
+  "code": "811400",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "820270-rm-oldalajto-zsaner-lepcsos-190-238-75-mm-in": {
+  "name": "RM oldalajtó zsanér lépcsős 190/238/75 mm IN",
+  "supplier": "IndesCar",
+  "code": "820270",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "e-medium-tetoprofil-9500-mm": {
+  "name": "E/MEDIUM tetőprofil 9500 mm",
+  "supplier": "Edscha",
+  "code": "",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "e21042-elhuzo-kocsi-2200-mm": {
+  "name": "E21042 Elhúzó kocsi 2200 mm",
+  "supplier": "Edscha",
+  "code": "",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "e87370-edscha-takaro-gumi-compact-110-szurke-14m": {
+  "name": "E87370 Edscha takaró gumi COMPACT 110 SZÜRKE 14M",
+  "supplier": "Edscha",
+  "code": "",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "edscha-toloteto-cs-standard-kit": {
+  "name": "EDSCHA tolótető CS STANDARD KIT",
+  "supplier": "Edscha",
+  "code": "",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "edscha-toloteto-cs-volumen-kit": {
+  "name": "EDSCHA tolótető CS Volumen KIT",
+  "supplier": "Edscha",
+  "code": "",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "epdm-moosgumi": {
+  "name": "EPDM moosgumi",
+  "supplier": "Sand-Profile",
+  "code": "",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-102": {
+  "name": "Kéderprofil B1 102",
+  "supplier": "Sand-Profile",
+  "code": "B1 102",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-103": {
+  "name": "Kéderprofil B1 103",
+  "supplier": "Sand-Profile",
+  "code": "B1 103",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-104": {
+  "name": "Kéderprofil B1 104",
+  "supplier": "Sand-Profile",
+  "code": "B1 104",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-106": {
+  "name": "Kéderprofil B1 106",
+  "supplier": "Sand-Profile",
+  "code": "B1 106",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-107": {
+  "name": "Kéderprofil B1 107",
+  "supplier": "Sand-Profile",
+  "code": "B1 107",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-108": {
+  "name": "Kéderprofil B1 108",
+  "supplier": "Sand-Profile",
+  "code": "B1 108",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-110": {
+  "name": "Kéderprofil B1 110",
+  "supplier": "Sand-Profile",
+  "code": "B1 110",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-112": {
+  "name": "Kéderprofil B1 112",
+  "supplier": "Sand-Profile",
+  "code": "B1 112",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-113": {
+  "name": "Kéderprofil B1 113",
+  "supplier": "Sand-Profile",
+  "code": "B1 113",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-114": {
+  "name": "Kéderprofil B1 114",
+  "supplier": "Sand-Profile",
+  "code": "B1 114",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-115": {
+  "name": "Kéderprofil B1 115",
+  "supplier": "Sand-Profile",
+  "code": "B1 115",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-118": {
+  "name": "Kéderprofil B1 118",
+  "supplier": "Sand-Profile",
+  "code": "B1 118",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-119": {
+  "name": "Kéderprofil B1 119",
+  "supplier": "Sand-Profile",
+  "code": "B1 119",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-120": {
+  "name": "Kéderprofil B1 120",
+  "supplier": "Sand-Profile",
+  "code": "B1 120",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-121": {
+  "name": "Kéderprofil B1 121",
+  "supplier": "Sand-Profile",
+  "code": "B1 121",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-122": {
+  "name": "Kéderprofil B1 122",
+  "supplier": "Sand-Profile",
+  "code": "B1 122",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-123": {
+  "name": "Kéderprofil B1 123",
+  "supplier": "Sand-Profile",
+  "code": "B1 123",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-124": {
+  "name": "Kéderprofil B1 124",
+  "supplier": "Sand-Profile",
+  "code": "B1 124",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-125": {
+  "name": "Kéderprofil B1 125",
+  "supplier": "Sand-Profile",
+  "code": "B1 125",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-127": {
+  "name": "Kéderprofil B1 127",
+  "supplier": "Sand-Profile",
+  "code": "B1 127",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-139": {
+  "name": "Kéderprofil B1 139",
+  "supplier": "Sand-Profile",
+  "code": "B1 139",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-142": {
+  "name": "Kéderprofil B1 142",
+  "supplier": "Sand-Profile",
+  "code": "B1 142",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-148": {
+  "name": "Kéderprofil B1 148",
+  "supplier": "Sand-Profile",
+  "code": "B1 148",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-159": {
+  "name": "Kéderprofil B1 159",
+  "supplier": "Sand-Profile",
+  "code": "B1 159",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b1-181": {
+  "name": "Kéderprofil B1 181",
+  "supplier": "Sand-Profile",
+  "code": "B1 181",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b2-122-nbr": {
+  "name": "Kéderprofil B2 122(NBR)",
+  "supplier": "Sand-Profile",
+  "code": "B2 122(NBR)",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b2-130": {
+  "name": "Kéderprofil B2 130",
+  "supplier": "Sand-Profile",
+  "code": "B2 130",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b2-133": {
+  "name": "Kéderprofil B2 133",
+  "supplier": "Sand-Profile",
+  "code": "B2 133",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-b2-164": {
+  "name": "Kéderprofil B2 164",
+  "supplier": "Sand-Profile",
+  "code": "B2 164",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-c1-201": {
+  "name": "Kitöltő profil C1 201 – fekete",
+  "supplier": "Sand-Profile",
+  "code": "C1 201",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-c1-202": {
+  "name": "Kitöltő profil C1 202 – fekete",
+  "supplier": "Sand-Profile",
+  "code": "C1 202",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-c1-250": {
+  "name": "Kitöltő profil C1 250 – fekete",
+  "supplier": "Sand-Profile",
+  "code": "C1 250",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-c1-251": {
+  "name": "Kitöltő profil C1 251 – ivory",
+  "supplier": "Sand-Profile",
+  "code": "C1 251",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-c1-252": {
+  "name": "Kitöltő profil C1 252 – ezüst",
+  "supplier": "Sand-Profile",
+  "code": "C1 252",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "sp-c1-253": {
+  "name": "Kitöltő profil C1 253 – piros",
+  "supplier": "Sand-Profile",
+  "code": "C1 253",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "versus-penta-flex-toloteto-rendszer": {
+  "name": "VERSUS PENTA Flex Tolótető rendszer",
+  "supplier": "Versus",
+  "code": "",
+  "date": "2026-09-28",
+  "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ }
+}

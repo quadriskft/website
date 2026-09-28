@@ -1,6 +1,7 @@
 import catalog from '../data/catalog.json';
 import extra from '../data/termekadatok.json';
 import extended from '../data/bovitett.json';
+import deleted from '../../data/torolt_termekek.json';
 
 // FONTOS: a termékadatokban lévő beszállító (supplier, supplierCode, source…) belső adat,
 // a weboldalon soha nem jelenik meg.
@@ -26,7 +27,8 @@ const extendedProducts = (extended.products ?? []).map((p) => ({
   specs: p.specs ?? {}, images: p.images ?? [], description: p.description ?? '', documents: [], supplier: p.source,
 }));
 
-export const products = [...excelProducts, ...extendedProducts];
+// A Quadris által törlésre jelölt termékek (data/torolt_termekek.json) sehol nem jelennek meg
+export const products = [...excelProducts, ...extendedProducts].filter((p) => !deleted[p.slug]);
 
 // Csoportok és kategóriák: Excel + új csoportok/kategóriák, darabszámok újraszámolva, üresek elhagyva
 const groupList = catalog.groups.map((g) => ({

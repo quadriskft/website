@@ -36,6 +36,9 @@ def load():
 
 
 def save(data):
+    deleted_file = ROOT / "data/torolt_termekek.json"  # a Quadris által törlésre jelölt termékek
+    deleted = json.loads(deleted_file.read_text()) if deleted_file.exists() else {}
+    data["products"] = [p for p in data["products"] if p["slug"] not in deleted]
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n")
 
 

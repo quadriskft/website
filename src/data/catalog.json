@@ -174,12 +174,12 @@
     {
      "slug": "edscha",
      "name": "Edscha",
-     "count": 45
+     "count": 40
     },
     {
      "slug": "versus",
      "name": "Versus",
-     "count": 40
+     "count": 39
     },
     {
      "slug": "aluminium-sarok-oszlopok",
@@ -192,7 +192,7 @@
      "count": 11
     }
    ],
-   "count": 122
+   "count": 116
   },
   {
    "slug": "ponyvarendszer-kiegeszitok",
@@ -226,10 +226,10 @@
     {
      "slug": "ponyvafeszito-profilok-es-alkatreszei",
      "name": "Ponyvafeszítő profilok és alkatrészei",
-     "count": 37
+     "count": 36
     }
    ],
-   "count": 70
+   "count": 69
   },
   {
    "slug": "hatso-ajtok-es-athajto-rampak",
@@ -255,7 +255,7 @@
     {
      "slug": "zart-dobozos-es-hutos-profilok",
      "name": "Zárt-dobozos és hűtős profilok",
-     "count": 64
+     "count": 61
     },
     {
      "slug": "felepitmeny-keszletek",
@@ -263,7 +263,7 @@
      "count": 2
     }
    ],
-   "count": 66
+   "count": 63
   },
   {
    "slug": "dobozos-felepitmeny-alkatreszek",
@@ -272,7 +272,7 @@
     {
      "slug": "zsanerok",
      "name": "Zsanérok",
-     "count": 29
+     "count": 27
     },
     {
      "slug": "zarak",
@@ -292,12 +292,12 @@
     {
      "slug": "gumiutkozok",
      "name": "Gumiütközők",
-     "count": 23
+     "count": 22
     },
     {
      "slug": "ajtorogzitok",
      "name": "Ajtórögzítők",
-     "count": 13
+     "count": 11
     },
     {
      "slug": "huspalya-rendszer",
@@ -310,7 +310,7 @@
      "count": 13
     }
    ],
-   "count": 159
+   "count": 154
   },
   {
    "slug": "rakomanyrogzites",
@@ -476,10 +476,10 @@
     {
      "slug": "egyeb-keder-es-tomitogumik",
      "name": "Egyéb kéder- és tömítőgumik",
-     "count": 35
+     "count": 34
     }
    ],
-   "count": 35
+   "count": 34
   },
   {
    "slug": "uvegszalas-polieszter",
@@ -522,10 +522,10 @@
     {
      "slug": "italszallito-kit",
      "name": "Italszállító KIT",
-     "count": 24
+     "count": 18
     }
    ],
-   "count": 24
+   "count": 18
   },
   {
    "slug": "billencs-alkatreszek",
@@ -3888,19 +3888,6 @@
    "documents": []
   },
   {
-   "slug": "e-medium-tetoprofil-9500-mm",
-   "code": "",
-   "name": "E/MEDIUM tetőprofil 9500 mm",
-   "group": "elhuzhato-roloponyvas-rendszer",
-   "category": "edscha",
-   "supplier": "Edscha",
-   "supplierCode": "",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
    "slug": "e-ponyvagorgo-85810",
    "code": "",
    "name": "E/Ponyvagörgő 85810",
@@ -4064,19 +4051,6 @@
    "category": "edscha",
    "supplier": "Edscha",
    "supplierCode": "29395",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "e21042-elhuzo-kocsi-2200-mm",
-   "code": "",
-   "name": "E21042 Elhúzó kocsi 2200 mm",
-   "group": "elhuzhato-roloponyvas-rendszer",
-   "category": "edscha",
-   "supplier": "Edscha",
-   "supplierCode": "",
    "description": "",
    "specs": {},
    "images": [],
@@ -4337,45 +4311,6 @@
    "category": "edscha",
    "supplier": "Cimaplast",
    "supplierCode": "4038087370",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "e87370-edscha-takaro-gumi-compact-110-szurke-14m",
-   "code": "",
-   "name": "E87370 Edscha takaró gumi COMPACT 110 SZÜRKE 14M",
-   "group": "elhuzhato-roloponyvas-rendszer",
-   "category": "edscha",
-   "supplier": "Edscha",
-   "supplierCode": "511012",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "edscha-toloteto-cs-standard-kit",
-   "code": "",
-   "name": "EDSCHA tolótető CS STANDARD KIT",
-   "group": "elhuzhato-roloponyvas-rendszer",
-   "category": "edscha",
-   "supplier": "Edscha",
-   "supplierCode": "",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "edscha-toloteto-cs-volumen-kit",
-   "code": "",
-   "name": "EDSCHA tolótető CS Volumen KIT",
-   "group": "elhuzhato-roloponyvas-rendszer",
-   "category": "edscha",
-   "supplier": "Edscha",
-   "supplierCode": "",
    "description": "",
    "specs": {},
    "images": [],
@@ -4853,19 +4788,6 @@
    "slug": "versus-micro-trike-toloteto-rendszer",
    "code": "",
    "name": "VERSUS MICRO TRIKE Tolótető rendszer",
-   "group": "elhuzhato-roloponyvas-rendszer",
-   "category": "versus",
-   "supplier": "Versus",
-   "supplierCode": "",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "versus-penta-flex-toloteto-rendszer",
-   "code": "",
-   "name": "VERSUS PENTA Flex Tolótető rendszer",
    "group": "elhuzhato-roloponyvas-rendszer",
    "category": "versus",
    "supplier": "Versus",
@@ -6176,19 +6098,6 @@
    "documents": []
   },
   {
-   "slug": "381072-feszito-kocka-sliccelt-adapterhez",
-   "code": "381072",
-   "name": "Feszítő kocka sliccelt adapterhez",
-   "group": "ponyvarendszer-kiegeszitok",
-   "category": "ponyvafeszito-profilok-es-alkatreszei",
-   "supplier": "ADAICO",
-   "supplierCode": "1001072",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
    "slug": "381073-feszito-kocka-szogletes-adapterhez",
    "code": "381073",
    "name": "Feszítő kocka szögletes adapterhez",
@@ -6560,19 +6469,6 @@
    "category": "zart-dobozos-es-hutos-profilok",
    "supplier": "RE-ALL",
    "supplierCode": "2100025",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "232129-or-tomiteses-ajtoszego-25-mm-elox",
-   "code": "232129",
-   "name": "OR Tömítéses ajtószegő 25 mm elox",
-   "group": "zart-dobozos-es-hutos-profilok",
-   "category": "zart-dobozos-es-hutos-profilok",
-   "supplier": "RE-ALL",
-   "supplierCode": "250062",
    "description": "",
    "specs": {},
    "images": [],
@@ -6969,32 +6865,6 @@
    "documents": []
   },
   {
-   "slug": "237797-specialis-teto-profil-ec",
-   "code": "237797",
-   "name": "Speciális TETŐ profil EC",
-   "group": "zart-dobozos-es-hutos-profilok",
-   "category": "zart-dobozos-es-hutos-profilok",
-   "supplier": "ALCOMET",
-   "supplierCode": "DRP-07797",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "237798-specialis-35-also-keret-profil-ec",
-   "code": "237798",
-   "name": "Speciális 35 ALSÓ KERET profil EC",
-   "group": "zart-dobozos-es-hutos-profilok",
-   "category": "zart-dobozos-es-hutos-profilok",
-   "supplier": "ALCOMET",
-   "supplierCode": "DRP-07798",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
    "slug": "237846-n-tomiteses-ajtoszego-30-mm-d",
    "code": "237846/n",
    "name": "Tömítéses ajtószegő 30 mm D",
@@ -7294,19 +7164,6 @@
    "documents": []
   },
   {
-   "slug": "811400-rm-hatsoajto-zsanerlap-280-4-mm-dm",
-   "code": "811400",
-   "name": "RM hátsóajtó zsanérlap 280/4 mm DM",
-   "group": "dobozos-felepitmeny-alkatreszek",
-   "category": "zsanerok",
-   "supplier": "Demolli",
-   "supplierCode": "",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
    "slug": "812910-elox-alu-oldalajto-zsaner-lepcsos",
    "code": "812910",
    "name": "ELOX alu oldalajtó zsanér, lépcsős",
@@ -7314,19 +7171,6 @@
    "category": "zsanerok",
    "supplier": "Alu-SV",
    "supplierCode": "62LP212910",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "820270-rm-oldalajto-zsaner-lepcsos-190-238-75-mm-in",
-   "code": "820270",
-   "name": "RM oldalajtó zsanér lépcsős 190/238/75 mm IN",
-   "group": "dobozos-felepitmeny-alkatreszek",
-   "category": "zsanerok",
-   "supplier": "IndesCar",
-   "supplierCode": "20270I",
    "description": "",
    "specs": {},
    "images": [],
@@ -8737,19 +8581,6 @@
    "documents": []
   },
   {
-   "slug": "556404-kupos-utkozogumi-40-60-27",
-   "code": "556404",
-   "name": "Kúpos ütközőgumi 40/60/27",
-   "group": "dobozos-felepitmeny-alkatreszek",
-   "category": "gumiutkozok",
-   "supplier": "IndesCar",
-   "supplierCode": "",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
    "slug": "556575-kupos-utkozogumi-65-75-50",
    "code": "556575",
    "name": "Kúpos ütközőgumi 65/75/50",
@@ -8809,32 +8640,6 @@
    "category": "ajtorogzitok",
    "supplier": "FTS",
    "supplierCode": "80700800",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "056402-4-reszes-ajtokiakaszto-szet",
-   "code": "056402",
-   "name": "4-részes ajtókiakasztó szet",
-   "group": "dobozos-felepitmeny-alkatreszek",
-   "category": "ajtorogzitok",
-   "supplier": "IndesCar",
-   "supplierCode": "",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "056402-2-4-reszes-ajtokiakaszto-szet-in",
-   "code": "056402/2",
-   "name": "4-részes ajtókiakasztó szet IN",
-   "group": "dobozos-felepitmeny-alkatreszek",
-   "category": "ajtorogzitok",
-   "supplier": "IndesCar",
-   "supplierCode": "",
    "description": "",
    "specs": {},
    "images": [],
@@ -14379,19 +14184,6 @@
    "documents": []
   },
   {
-   "slug": "epdm-moosgumi",
-   "code": "",
-   "name": "EPDM moosgumi",
-   "group": "kedergumik",
-   "category": "egyeb-keder-es-tomitogumik",
-   "supplier": "Sand-Profile",
-   "supplierCode": "",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
    "slug": "m1-001-c-sin-aluminium",
    "code": "",
    "name": "M1 001 \"C\"sín - alumínium",
@@ -16056,19 +15848,6 @@
    "documents": []
   },
   {
-   "slug": "211308-italszallito-zarszerkezet-d",
-   "code": "211308",
-   "name": "Italszállító Zárszerkezet D",
-   "group": "italszallito-kit",
-   "category": "italszallito-kit",
-   "supplier": "Dost",
-   "supplierCode": "EHP-08",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
    "slug": "211372-ada-s-zarszerkezet-italszallito",
    "code": "211372",
    "name": "ADA-S Zárszerkezet italszállító",
@@ -16115,71 +15894,6 @@
    "category": "italszallito-kit",
    "supplier": "ADAICO",
    "supplierCode": "0902064",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "212104-italszallito-ajto-profil-felso-gorgo-d",
-   "code": "212104",
-   "name": "Italszállító ajtó profil felső görgő D",
-   "group": "italszallito-kit",
-   "category": "italszallito-kit",
-   "supplier": "Dost",
-   "supplierCode": "EHP-04",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "212105a-italszallito-ajto-profil-also-gorgo-r-d",
-   "code": "",
-   "name": "212105A Italszállító ajtó profil alsó görgő R D",
-   "group": "italszallito-kit",
-   "category": "italszallito-kit",
-   "supplier": "Dost",
-   "supplierCode": "EHP-05A",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "212105b-italszallito-ajto-profil-also-gorgo-l-d",
-   "code": "",
-   "name": "212105B Italszállító ajtó profil alsó görgő L D",
-   "group": "italszallito-kit",
-   "category": "italszallito-kit",
-   "supplier": "Dost",
-   "supplierCode": "EHP-05B",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "212106-italszallito-ponyva-gorgo-felso-d",
-   "code": "212106",
-   "name": "Italszállító ponyva görgő felső D",
-   "group": "italszallito-kit",
-   "category": "italszallito-kit",
-   "supplier": "Dost",
-   "supplierCode": "EHP-06",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "212107-italszallito-ponyva-gorgo-also-d",
-   "code": "212107",
-   "name": "Italszállító ponyva görgő alsó D",
-   "group": "italszallito-kit",
-   "category": "italszallito-kit",
-   "supplier": "Dost",
-   "supplierCode": "EHP-07",
    "description": "",
    "specs": {},
    "images": [],
