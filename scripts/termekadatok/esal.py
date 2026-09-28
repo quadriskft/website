@@ -28,7 +28,8 @@ from common import CACHE, clear_images, load_products, save_image, update_enrich
 SUPPLIER = "ESAL"
 PDF = Path(__file__).resolve().parents[2] / "data/forras/esal_sponde_2020.pdf"
 URL = "https://esalforli.com/public/Catalogo-Sponde-2020-Esal-Forli.pdf"
-DPI = 150
+DPI = 150  # OCR és táblázatvonal-keresés (az OCR-gyorsítótár ehhez a felbontáshoz tartozik)
+HIRES_DPI = 400  # a végső rajz-kivágás renderelése (a lapok vektorosak, így élesebb, nagyobb kép)
 # Quadris slug -> (katalóguskód, szálhossz a Quadris-kódból [m] vagy None)
 MAP = {
     "203183-250-25-mm-alafutasgatlo-elox-profil": ("13183", "7,5"),
@@ -82,18 +83,32 @@ def h_lines(gray, x0, x1):
     return [int(np.mean(g)) for g in lines]
 
 
-def tight(img, pad=10):
+def tight_box(img, pad=10):
+    """A rajz befoglaló doboza a cella-képen belül (a 150 dpi-s OCR-képen számolva), vagy None."""
     g = np.asarray(img.convert("L"))
     # ha a cellában még egy táblázatvonal van (szomszéd sor széle), a legtöbb rajzot tartalmazó sávot tartjuk meg
-    cuts = [0] + [int(r) for r in np.where(((g < 235) & (g > 140)).mean(axis=1) > 0.8)[0]]  # szürke táblázatvonal, nem fekete rajzvonal + [g.shape[0]]
+    # szürke táblázatvonal (nem fekete rajzvonal) mentén daraboljuk
+    cuts = [0] + [int(r) for r in np.where(((g < 235) & (g > 140)).mean(axis=1) > 0.8)[0]] + [g.shape[0]]
     segs = [(int((g[a:b] < 200).sum()), a, b) for a, b in zip(cuts, cuts[1:]) if b - a > 3]
+    a = 0
     if len(segs) > 1:
         _, a, b = max(segs)
-        img, g = img.crop((0, a, img.width, b)), g[a:b]
+        g = g[a:b]
     ys, xs = np.where(g < 200)
     if len(xs) < 20:
         return None
-    out = img.crop((max(xs.min() - pad, 0), max(ys.min() - pad, 0), min(xs.max() + pad, img.width), min(ys.max() + pad, img.height)))
+    return (max(xs.min() - pad, 0), a + max(ys.min() - pad, 0), min(xs.max() + pad, img.width), a + min(ys.max() + pad, g.shape[0]))
+
+
+def hires_crop(doc, pno, box):
+    """A (DPI-s koordinátájú) dobozt HIRES_DPI felbontással rendereli ki a PDF-ből."""
+    z = HIRES_DPI / DPI
+    x0, y0, x1, y1 = box
+    clip = pymupdf.Rect(x0, y0, x1, y1) * (72 / DPI)
+    pix = doc[pno].get_pixmap(dpi=HIRES_DPI, clip=clip, alpha=False)
+    out = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+    # a pontosan skálázott méretre igazítjuk (a clip kerekítése 1-2 px eltérést adhat)
+    out = out.resize((round((x1 - x0) * z), round((y1 - y0) * z)), Image.LANCZOS) if abs(out.width - (x1 - x0) * z) > 3 else out
     if out.height < out.width / 3:  # nagyon lapos rajz: fehér sávval nézhetőbb arányra bővítjük
         canvas = Image.new("RGB", (out.width, int(out.width / 3)), "white")
         canvas.paste(out, (0, (canvas.height - out.height) // 2))
@@ -132,7 +147,9 @@ def find(doc, code):
         if nxt is not None:
             bot = min(bot, int((cy + nxt) / 2))
         x0, x1 = hdr["codice"][2] + 25, hdr["peso"][0] - 12
-        cell = tight(img.crop((x0, top + 4, x1, bot - 4)))
+        cy0 = top + 4
+        box = tight_box(img.crop((x0, cy0, x1, bot - 4)))
+        cell = None if box is None else hires_crop(doc, pno, (x0 + box[0], cy0 + box[1], x0 + box[2], cy0 + box[3]))
         wt = next((w[4] for w in sorted(words, key=lambda w: w[0])
                    if top < (w[1] + w[3]) / 2 < bot and w[0] >= hdr["peso"][0] - 20 and re.fullmatch(r"\d+,\d{2,3}", w[4])), None)
         header = " ".join(w[4] for w in words if w[3] < hdr["codice"][1])

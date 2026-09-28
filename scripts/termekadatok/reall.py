@@ -23,7 +23,7 @@ import pymupdf
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import ROOT, clear_images, fetch, load_products, save_image, update_enrichment  # noqa: E402
+from common import ROOT, clear_images, fetch, load_enrichment, load_products, save_image, update_enrichment  # noqa: E402
 
 SUPPLIER = "RE-ALL"
 BASE = "https://www.re-all.it"
@@ -52,10 +52,24 @@ def norm(s):
     return re.sub(r"[\s.\-/]", "", s or "").upper()
 
 
+# A profilfejezetek (szám szerinti nevek: 01, 02-12, 13-15, …, 21) mindig benne vannak; a honlap 2026-tól
+# kiegészítő „cat-XX.pdf” fejezeteket is listáz (tartozékok, alkatrészlisták), ezekben a profilkódok csak
+# hivatkozásként szerepelnek (rajz nélkül) – ezért a keresésnél a profilfejezetek elsőbbséget kapnak.
+KNOWN_PDFS = ["/images/catalogo-pdf/2026/" + n for n in ("01.pdf", "02-12.pdf", "13-15.pdf", "16-17.pdf", "18.pdf", "19.pdf", "20.pdf", "21.pdf")]
+
+
+def pdf_rank(rel):
+    """Rendezési kulcs: előbb a profilfejezetek (01…21), utána a cat-XX kiegészítők, számsorrendben."""
+    name = rel.rsplit("/", 1)[-1]
+    m = re.search(r"\d+", name)
+    num = int(m[0]) if m else 999
+    return (1 if name.startswith("cat-") else 0, num, name)
+
+
 def catalog_pdfs():
-    seen, queue, pdfs = set(), list(START), []
-    while queue and len(seen) < 150:
-        u = queue.pop()
+    seen, queue, pdfs = set(), list(START), list(KNOWN_PDFS)
+    while queue and len(seen) < 400:
+        u = queue.pop(0)
         if u in seen:
             continue
         seen.add(u)
@@ -66,10 +80,10 @@ def catalog_pdfs():
         for p in re.findall(r'href="(/images/catalogo-pdf/2026/[^"]+\.pdf)"', t):
             if p not in pdfs:
                 pdfs.append(p)
-        for h in set(re.findall(r'href="(/it/[^"#?]+\.html)"', t)):
+        for h in sorted(set(re.findall(r'href="(/it/[^"#?]+\.html)"', t))):
             if re.search(r"profili-in-alluminio|profilati|accessori|lamiere|prodotti", h) and h not in seen:
                 queue.append(h)
-    return pdfs
+    return sorted(pdfs, key=pdf_rank)
 
 
 def thin_lines(dark, min_run, max_width=3):
@@ -135,6 +149,11 @@ def row_specs(page, word_rect):
     return specs
 
 
+def quality(e):
+    """Egy bejegyzés „jósága”: képek száma, majd műszaki adatok száma."""
+    return (len((e or {}).get("images") or []), len((e or {}).get("specs") or {}))
+
+
 def main():
     pdfs = catalog_pdfs()
     docs = []
@@ -145,51 +164,65 @@ def main():
             print("  pdf hiba:", rel, err)
     print(f"  RE-ALL katalógus: {len(docs)} fejezet")
     products = load_products(SUPPLIER)
-    enrichment, missing = {}, []
+    existing = load_enrichment()
+    found, missing = {}, []  # slug -> (bejegyzés, rajz-kép vagy None)
     for p in products:
         code = norm(p["supplierCode"])
         if len(code) < 6:
             missing.append(p)
             continue
-        hit = None
-        for rel, doc in docs:
-            for pno, pg in enumerate(doc):
-                for w in pg.get_text("words"):
-                    if norm(w[4]) == code:
-                        hit = (rel, pno, pg, pymupdf.Rect(w[:4]))
-                        break
-                if hit:
-                    break
-            if hit:
-                break
-        if not hit:
+        # minden előfordulás, profilfejezetek elöl; az első, ahol a cellából rajz is kijön, nyer
+        hits = [(rel, pno, pg, pymupdf.Rect(w[:4])) for rel, doc in docs for pno, pg in enumerate(doc)
+                for w in pg.get_text("words") if norm(w[4]) == code]
+        if not hits:
             missing.append(p)
             continue
-        rel, pno, pg, wr = hit
-        clear_images(p["slug"])
-        images = []
-        drawing = cell_drawing(pg, wr)
-        if drawing is not None:
-            images.append(save_image(drawing, p["slug"], 1))
+        best = None
+        for rel, pno, pg, wr in hits:
+            drawing = cell_drawing(pg, wr)
+            if drawing is not None:
+                best = (rel, pno, pg, wr, drawing)
+                break
+        if best is None:
+            best = (*hits[0], None)
+        rel, pno, pg, wr, drawing = best
         specs = {"Ötvözet": "EN AW-6060 T6"} if "LEGA 6060" in pg.get_text() else {}
         specs.update(row_specs(pg, wr))
-        enrichment[p["slug"]] = {"source": SUPPLIER, "sourceUrl": f"{BASE}{rel}#page={pno + 1}", "sourceTitle": f"RE-ALL katalógus {rel.rsplit('/', 1)[-1]}",
-                                 "matchedCode": p["supplierCode"], "specs": specs, "images": images}
+        found[p["slug"]] = ({"source": SUPPLIER, "sourceUrl": f"{BASE}{rel}#page={pno + 1}", "sourceTitle": f"RE-ALL katalógus {rel.rsplit('/', 1)[-1]}",
+                             "matchedCode": p["supplierCode"], "specs": specs, "images": []}, drawing)
     for p in products:  # kézi kivágás a helyi katalógusból, ha az automatikus nem adott képet
         man = MANUAL.get(norm(p["supplierCode"]))
-        if not man or enrichment.get(p["slug"], {}).get("images"):
+        if not man or (p["slug"] in found and found[p["slug"]][1] is not None):
             continue
         pdf, pno, box, rel, specs = man
-        clear_images(p["slug"])
-        e = enrichment.get(p["slug"]) or {"source": SUPPLIER, "sourceUrl": f"{BASE}{rel}#page={pno}", "sourceTitle": f"RE-ALL katalógus {rel.rsplit('/', 1)[-1]}",
-                                          "matchedCode": p["supplierCode"], "specs": {}}
+        e = found[p["slug"]][0] if p["slug"] in found else {"source": SUPPLIER, "sourceUrl": f"{BASE}{rel}#page={pno}", "sourceTitle": f"RE-ALL katalógus {rel.rsplit('/', 1)[-1]}",
+                                                             "matchedCode": p["supplierCode"], "specs": {}, "images": []}
         e["specs"] = {**e["specs"], **specs}
-        e["images"] = [save_image(manual_drawing(pdf, pno, box), p["slug"], 1)]
-        enrichment[p["slug"]] = e
+        found[p["slug"]] = (e, manual_drawing(pdf, pno, box))
         if p in missing:
             missing.remove(p)
-    update_enrichment(enrichment, SUPPLIER)
-    print(f"{SUPPLIER}: {len(enrichment)}/{len(products)} egyezés, {sum(1 for e in enrichment.values() if e['images'])} képpel")
+
+    # Csak akkor írunk felül, ha a mostani találat legalább olyan jó, mint a meglévő RE-ALL bejegyzés;
+    # más forrásból (pl. „Quadris adatok”) származó bejegyzéshez nem nyúlunk, és a most nem talált
+    # termékek korábbi adatait megtartjuk (nincs beszállító szerinti törlés).
+    updates, kept = {}, []
+    for slug, (e, drawing) in found.items():
+        old = existing.get(slug)
+        if old and old.get("source") != SUPPLIER:
+            kept.append((slug, f"más forrás: {old.get('source')}"))
+            continue
+        new_quality = (1 if drawing is not None else 0, len(e["specs"]))
+        if old and new_quality < quality(old):
+            kept.append((slug, f"a meglévő adat bővebb {quality(old)} > {new_quality}"))
+            continue
+        if drawing is not None:
+            clear_images(slug)
+            e["images"] = [save_image(drawing, slug, 1)]
+        updates[slug] = e
+    update_enrichment(updates)
+    print(f"{SUPPLIER}: {len(found)}/{len(products)} egyezés, {len(updates)} frissítve ({sum(1 for e in updates.values() if e['images'])} képpel)")
+    for slug, why in kept:
+        print(f"  MEGTARTVA: {slug} ({why})")
     for p in missing:
         print(f"  NINCS: {p['supplierCode'] or '-':>12}  {p['name']}")
 
