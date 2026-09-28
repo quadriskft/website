@@ -8635,6 +8635,27 @@
    "/termekkepek/899210-rm-hatsoajto-zsanerlap-bak-280-3-ts-2.webp"
   ]
  },
+ "8bt1mb-rm-hatsoajto-zsanerlap-bak-260-3mm-mp": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=34",
+  "sourceTitle": "MP Steel katalógus 12/2016: BT1MB",
+  "matchedCode": "BT1MB",
+  "specs": {
+   "Cikkszám (gyártói)": "BT1MB",
+   "Megnevezés (gyári)": "Bisagra trasera BT1MB con soporte U 25 / Rear hinge BT1MB with \"U\" bracket 25 – hátsóajtó-zsanér U-bakkal",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Teljes hossz": "274 mm",
+   "Zsanérlap szélessége": "86 mm",
+   "Lemezvastagság": "3 mm",
+   "Bak": "U-alakú, 25 mm, 79 × 50 mm",
+   "Rögzítő furatok": "Ø8,5 mm",
+   "Tömeg": "862 g"
+  },
+  "images": [
+   "/termekkepek/8bt1mb-rm-hatsoajto-zsanerlap-bak-260-3mm-mp-1.webp",
+   "/termekkepek/8bt1mb-rm-hatsoajto-zsanerlap-bak-260-3mm-mp-2.webp"
+  ]
+ },
  "90-5000-e-tetoablak-24v-53x530": {
   "source": "G&C termékek",
   "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-manual-small/",
@@ -13245,6 +13266,291 @@
   },
   "images": [
    "/termekkepek/manualis-belso-takaro-szurke-1.webp"
+  ]
+ },
+ "mp-cem-inox-feszek": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=11",
+  "sourceTitle": "MP Steel katalógus 12/2016: CEM1",
+  "matchedCode": "CEM1",
+  "specs": {
+   "Cikkszám (gyártói)": "CEM1",
+   "Megnevezés (gyári)": "Cremona empotrar CEM1 / Recessed keeper – zárfészek (ellendarab) süllyesztett rúdzárhoz",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Méret": "110 × 30 mm",
+   "Magasság": "14 mm",
+   "Rögzítő furatok": "2 × Ø8,5 mm, 90 mm osztással",
+   "Tömeg": "189 g"
+  },
+  "images": [
+   "/termekkepek/mp-cem-inox-feszek-1.webp",
+   "/termekkepek/mp-cem-inox-feszek-2.webp"
+  ]
+ },
+ "mp-cem-inox-feszek-mp-lem-kampo-kit": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=11",
+  "sourceTitle": "MP Steel katalógus 12/2016: KLC-EM1",
+  "matchedCode": "KLC-EM1",
+  "specs": {
+   "Cikkszám (gyártói)": "KLC-EM1",
+   "Megnevezés (gyári)": "Kit levas – cremonas empotrar KLC-EM1 / Kit recessed cams + keepers – zárkampó + zárfészek készlet",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Tartalom": "LEM1 zárkampó (61 × 23,5 mm, rúdfurat Ø16,1 mm) + CEM1 zárfészek (110 × 30 mm)",
+   "Tömeg": "473 g (készlet)"
+  },
+  "images": [
+   "/termekkepek/mp-cem-inox-feszek-mp-lem-kampo-kit-1.webp"
+  ]
+ },
+ "mp-cfem003-alatet-a-zarhoz": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=9",
+  "sourceTitle": "MP Steel katalógus 12/2016: CFEM003",
+  "matchedCode": "CFEM003",
+  "specs": {
+   "Cikkszám (gyártói)": "CFEM003",
+   "Megnevezés (gyári)": "Junta falleba de empotrar CFEM003 / Gasket for recessed handle – tömítés a süllyesztett rúdzárhoz (FEM16003)",
+   "Anyag": "elasztomer",
+   "Méret": "325 × 159 mm",
+   "Vastagság": "3,2 mm",
+   "Rögzítő furatok": "Ø5 mm",
+   "Tömeg": "17 g"
+  },
+  "images": [
+   "/termekkepek/mp-cfem003-alatet-a-zarhoz-1.webp",
+   "/termekkepek/mp-cfem003-alatet-a-zarhoz-2.webp"
+  ]
+ },
+ "mp-fem16003-25-sullyesztett-rudzar-inox": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=9",
+  "sourceTitle": "MP Steel katalógus 12/2016: FEM16003-25",
+  "matchedCode": "FEM16003-25",
+  "specs": {
+   "Cikkszám (gyártói)": "FEM16003-25",
+   "Megnevezés (gyári)": "Falleba empotrar 16 FEM16003-25 / Recessed handle 16 – süllyesztett rúdzár",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Rúdátmérő": "Ø16 mm (rúdfurat Ø16,3 mm)",
+   "Méret": "320 × 154 mm",
+   "Beépítési mélység": "33 mm",
+   "Rögzítő furatok": "Ø5 mm",
+   "Tömeg": "1626 g"
+  },
+  "images": [
+   "/termekkepek/mp-fem16003-25-sullyesztett-rudzar-inox-1.webp",
+   "/termekkepek/mp-fem16003-25-sullyesztett-rudzar-inox-2.webp"
+  ]
+ },
+ "mp-fem16003-29-sullyesztett-rudzar-inox": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=9",
+  "sourceTitle": "MP Steel katalógus 12/2016: FEM16003-29",
+  "matchedCode": "FEM16003-29",
+  "specs": {
+   "Cikkszám (gyártói)": "FEM16003-29",
+   "Megnevezés (gyári)": "Falleba empotrar 16 FEM16003-29 / Recessed handle 16 – süllyesztett rúdzár",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Rúdátmérő": "Ø16 mm (rúdfurat Ø16,3 mm)",
+   "Méret": "320 × 154 mm",
+   "Beépítési mélység": "33 mm",
+   "Rögzítő furatok": "Ø5 mm",
+   "Tömeg": "1670 g"
+  },
+  "images": [
+   "/termekkepek/mp-fem16003-29-sullyesztett-rudzar-inox-1.webp",
+   "/termekkepek/mp-fem16003-29-sullyesztett-rudzar-inox-2.webp"
+  ]
+ },
+ "mp-fex16-001-klcex31-kb3a-nyomolapos-rudzar-szett": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=12",
+  "sourceTitle": "MP Steel katalógus 12/2016: FEX16001 + KLC-EX31 + KB3A",
+  "matchedCode": "FEX16001 + KLC-EX31 + KB3A",
+  "specs": {
+   "Cikkszám (gyártói)": "FEX16001 + KLC-EX31 + KB3A",
+   "Megnevezés (gyári)": "External lock 16 FEX16001 + Kit cams and keepers 16 KLC-EX31 + Kit tube clamp with bush 31-16 KB3A – nyomólapos rúdzár szett",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Tartalom": "FEX16001 külső nyomólapos rúdzár (270 × 115 mm, 1365 g); KLC-EX31 zárkampó + zárfészek készlet (1044 g); KB3A rúdvezető bilincs nylon persellyel (81 g)",
+   "Rúdátmérő": "Ø16 mm"
+  },
+  "images": [
+   "/termekkepek/mp-fex16-001-klcex31-kb3a-nyomolapos-rudzar-szett-1.webp",
+   "/termekkepek/mp-fex16-001-klcex31-kb3a-nyomolapos-rudzar-szett-2.webp",
+   "/termekkepek/mp-fex16-001-klcex31-kb3a-nyomolapos-rudzar-szett-3.webp"
+  ]
+ },
+ "mp-fex16-001-nyomolapos-rudzar": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=12",
+  "sourceTitle": "MP Steel katalógus 12/2016: FEX16001",
+  "matchedCode": "FEX16001",
+  "specs": {
+   "Cikkszám (gyártói)": "FEX16001",
+   "Megnevezés (gyári)": "Falleba exterior 16 FEX16001 / External lock 16 – külső nyomólapos rúdzár",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Rúdátmérő": "Ø16 mm (rúdfurat Ø16,3 mm)",
+   "Méret": "270 × 115 mm",
+   "Magasság": "42 mm",
+   "Rögzítő furatok": "Ø8,5 mm",
+   "Tömeg": "1365 g"
+  },
+  "images": [
+   "/termekkepek/mp-fex16-001-nyomolapos-rudzar-1.webp",
+   "/termekkepek/mp-fex16-001-nyomolapos-rudzar-2.webp"
+  ]
+ },
+ "mp-kb2a-22-mm-omega-lefogato-33-22": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=19",
+  "sourceTitle": "MP Steel katalógus 12/2016: KB2A",
+  "matchedCode": "KB2A",
+  "specs": {
+   "Cikkszám (gyártói)": "KB2A",
+   "Megnevezés (gyári)": "Kit brida con casquillo 33-22 KB2A / Kit tube clamp with bush – rúdvezető (omega) bilincs nylon persellyel",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Rúdátmérő": "Ø22 mm (furat Ø22,3 mm)",
+   "Méret": "82 × 33 mm",
+   "Magasság": "41,5 mm",
+   "Rögzítő furatok": "2 × Ø8,5 mm, 61 mm osztással",
+   "Tömeg": "91 g"
+  },
+  "images": [
+   "/termekkepek/mp-kb2a-22-mm-omega-lefogato-33-22-1.webp",
+   "/termekkepek/mp-kb2a-22-mm-omega-lefogato-33-22-2.webp"
+  ]
+ },
+ "mp-kb2b-22-mm-nagy-omega-130-22": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=19",
+  "sourceTitle": "MP Steel katalógus 12/2016: KB2B",
+  "matchedCode": "KB2B",
+  "specs": {
+   "Cikkszám (gyártói)": "KB2B",
+   "Megnevezés (gyári)": "Kit brida con casquillo 130-22 KB2B / Kit tube clamp with bush 130-22 – hosszú rúdvezető (omega) bilincs nylon persellyel",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Rúdátmérő": "Ø22 mm (furat Ø22,3 mm)",
+   "Méret": "130 × 82 mm",
+   "Magasság": "41,5 mm",
+   "Rögzítő furatok": "4 × Ø8,5 mm, 61 mm osztással",
+   "Tömeg": "312 g"
+  },
+  "images": [
+   "/termekkepek/mp-kb2b-22-mm-nagy-omega-130-22-1.webp",
+   "/termekkepek/mp-kb2b-22-mm-nagy-omega-130-22-2.webp"
+  ]
+ },
+ "mp-kb2e-kit-omega-lefogato-22-mm": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=20",
+  "sourceTitle": "MP Steel katalógus 12/2016: KB2E",
+  "matchedCode": "KB2E",
+  "specs": {
+   "Cikkszám (gyártói)": "KB2E",
+   "Megnevezés (gyári)": "Kit de bridas con casquillo (2×130+1×33) – 22 KB2E / Kit tube clamps with bush – rúdvezető bilincs készlet",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Tartalom": "2 × KB2B (130-22) + 1 × KB2A (33-22) rúdvezető bilincs nylon persellyel",
+   "Rúdátmérő": "Ø22 mm",
+   "Tömeg": "715 g (készlet)"
+  },
+  "images": [
+   "/termekkepek/mp-kb2e-kit-omega-lefogato-22-mm-1.webp",
+   "/termekkepek/mp-kb2e-kit-omega-lefogato-22-mm-2.webp"
+  ]
+ },
+ "mp-kb3a-omega-lefogato-16-mm": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=14",
+  "sourceTitle": "MP Steel katalógus 12/2016: KB3A",
+  "matchedCode": "KB3A",
+  "specs": {
+   "Cikkszám (gyártói)": "KB3A",
+   "Megnevezés (gyári)": "Kit brida con casquillo 31-16 KB3A / Kit tube clamp with bush 31-16 – rúdvezető bilincs nylon persellyel",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Rúdátmérő": "Ø16 mm (furat Ø16,3 mm)",
+   "Méret": "76 × 31 mm",
+   "Magasság": "38,7 mm",
+   "Rögzítő furatok": "2 × Ø8,5 mm, 55 mm osztással",
+   "Tömeg": "81 g"
+  },
+  "images": [
+   "/termekkepek/mp-kb3a-omega-lefogato-16-mm-1.webp",
+   "/termekkepek/mp-kb3a-omega-lefogato-16-mm-2.webp"
+  ]
+ },
+ "mp-klc-em2-inox-feszek-kampo": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=11",
+  "sourceTitle": "MP Steel katalógus 12/2016: KLC-EM2",
+  "matchedCode": "KLC-EM2",
+  "specs": {
+   "Cikkszám (gyártói)": "KLC-EM2",
+   "Megnevezés (gyári)": "Kit levas – cremonas empotrar KLC-EM2 / Kit recessed cams + keepers – zárkampó + zárfészek készlet",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Tartalom": "LEM1 zárkampó (61 × 23,5 mm, rúdfurat Ø16,1 mm) + CEM2 és CEM3 zárfészek (75 × 30 mm, magasság 16 mm)",
+   "Tömeg": "355 g (készlet)"
+  },
+  "images": [
+   "/termekkepek/mp-klc-em2-inox-feszek-kampo-1.webp"
+  ]
+ },
+ "mp-klc-ex31-kit-16-zarkampo-ellendarab": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=14",
+  "sourceTitle": "MP Steel katalógus 12/2016: KLC-EX31",
+  "matchedCode": "KLC-EX31",
+  "specs": {
+   "Cikkszám (gyártói)": "KLC-EX31",
+   "Megnevezés (gyári)": "Kit levas – cremonas 16 KLC-EX31 / Kit cams and keepers 16 – zárkampó + ellendarab készlet",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Tartalom": "2 × LEX31 zárkampó (242 g) + 2 × CEX3 zárfészek (280 g)",
+   "Rúdátmérő": "Ø16 mm",
+   "Zárfészek mérete": "99 × 35,5 mm, magasság 38,5 mm",
+   "Rögzítő furatok": "Ø8,5 mm, 79,5 mm osztással",
+   "Tömeg": "1044 g (készlet)"
+  },
+  "images": [
+   "/termekkepek/mp-klc-ex31-kit-16-zarkampo-ellendarab-1.webp",
+   "/termekkepek/mp-klc-ex31-kit-16-zarkampo-ellendarab-2.webp"
+  ]
+ },
+ "mp-lem-inox-kampo": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=11",
+  "sourceTitle": "MP Steel katalógus 12/2016: LEM1",
+  "matchedCode": "LEM1",
+  "specs": {
+   "Cikkszám (gyártói)": "LEM1",
+   "Megnevezés (gyári)": "Leva empotrar LEM1 / Recessed cam – zárkampó süllyesztett rúdzárhoz",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Rúdfurat": "Ø16,1 mm (Ø16 mm-es rúdhoz)",
+   "Méret": "61 × 23,5 mm",
+   "Vastagság": "9,7 mm",
+   "Tömeg": "47 g"
+  },
+  "images": [
+   "/termekkepek/mp-lem-inox-kampo-1.webp",
+   "/termekkepek/mp-lem-inox-kampo-2.webp"
+  ]
+ },
+ "mp22-fex22001-rm-nyomolapos-rudzar": {
+  "source": "MP Steel",
+  "sourceUrl": "https://mpsteel.es/wp-content/uploads/2026/06/Catalogo-MP_Steel-12_2016_r2.pdf#page=18",
+  "sourceTitle": "MP Steel katalógus 12/2016: FEX22001",
+  "matchedCode": "FEX22001",
+  "specs": {
+   "Cikkszám (gyártói)": "FEX22001",
+   "Megnevezés (gyári)": "Falleba exterior 22 FEX22001 / External lock 22 – külső nyomólapos rúdzár",
+   "Anyag": "rozsdamentes acél (AISI 304)",
+   "Rúdátmérő": "Ø22 mm (rúdfurat Ø22,3 mm)",
+   "Méret": "293 × 137 mm",
+   "Magasság": "43,5 mm",
+   "Rögzítő furatok": "Ø8,5 mm",
+   "Tömeg": "1846 g"
+  },
+  "images": [
+   "/termekkepek/mp22-fex22001-rm-nyomolapos-rudzar-1.webp",
+   "/termekkepek/mp22-fex22001-rm-nyomolapos-rudzar-2.webp"
   ]
  },
  "pol-frigoser-high-gloss-1-5x1900-mm": {

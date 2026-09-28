@@ -26,6 +26,7 @@ NAMEBASED = "Quadris adatok"  # nevbol.py: adatlap a Quadris-megnevezésből, ne
 
 # Beszállító -> hol kerestük (a scripts/termekadatok/ letöltői alapján)
 SEARCHED = {
+    "EMEPE": "mpsteel.es – MP Steel katalógus 12/2016 (PDF)",
     "FTS": "fts-farina.it webáruház (WooCommerce API); FTS 2024 katalógus (PDF)",
     "Ital Accessori": "Ital Accessori teljes PDF katalógus (ital-accessori.sk)",
     "Alu-SV": "alu-sv.com webáruház, keresés rendelési számra",
