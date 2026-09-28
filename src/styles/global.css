@@ -19,6 +19,8 @@
   --graphite: #1c1d1f;
   --metal: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #c9ced4 22%, #f4f6f8 50%, #c9ced4 78%, rgba(255, 255, 255, 0) 100%);
   --gradient: linear-gradient(135deg, #2b86ff 0%, #0a4fc4 100%);
+  /* szálcsiszolt alumínium keret (kártyák, keretezett elemek) */
+  --metal-frame: linear-gradient(135deg, #f1f3f5 0%, #aeb6bf 16%, #f8f9fa 34%, #959ea8 54%, #e9ecef 72%, #a9b0b9 88%, #eef0f3 100%);
   --radius: 18px;
   --radius-sm: 12px;
   --shadow: 0 24px 48px -28px rgba(18, 24, 33, 0.35);
@@ -82,13 +84,15 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .btn[disabled] { opacity: 0.6; cursor: default; transform: none; }
 
 /* Kártyák, rácsok */
-.card {
-  position: relative; background: var(--surface);
-  border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm);
-  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+.card, .metal-frame {
+  position: relative;
+  border: 2px solid transparent; border-radius: var(--radius);
+  background: linear-gradient(var(--surface), var(--surface)) padding-box, var(--metal-frame) border-box;
+  box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 a.card { color: inherit; text-decoration: none; display: block; }
-a.card:hover, .card.hoverable:hover { border-color: rgba(10, 108, 255, 0.4); transform: translateY(-3px); box-shadow: var(--shadow); }
+a.card:hover, .card.hoverable:hover { transform: translateY(-3px); box-shadow: var(--shadow), 0 0 0 3px rgba(10, 108, 255, 0.12); }
 .grid { display: grid; gap: 20px; }
 .grid-groups { grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); }
 .grid-products { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 18px; }

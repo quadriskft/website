@@ -6,127 +6,60 @@ import { groups, GROUP_META, stats, roundedCount, groupImage } from '../lib/cata
 
 const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárvédő'];
 
-// A 3D felépítmény 7 alkatrészcsoportja (a hero3d.js sorrendjében) és a hozzájuk tartozó termékcsoport
-const heroSteps = [
-  { part: 'Padló', group: 'aluminium-padlo-profilok', text: 'Alumínium padlóprofilok és csúszásmentes rétegelt lemez.' },
-  { part: 'Oldalfalak', group: 'ponyvas-oldalfal-profilok-es-szegok', text: 'Eloxált oldalfal-profilok, szegők és zárak.' },
-  { part: 'Rakoncák', group: 'acel-es-alu-rakoncak-es-szegok', text: 'Acél és alumínium rakoncák, rakonca-zsebek, szegők.' },
-  { part: 'Homlokfal', group: 'platos-alkatreszek-es-kiegeszitok', text: 'Fejfal, zsanérok, zárak és platós kiegészítők.' },
-  { part: 'Sárvédők', group: 'sarvedok-szerszamosladak', cat: 'sarvedok', text: 'Műanyag és acél sárvédők, felfogatások, sárfogók.' },
-  { part: 'Aláfutásgátló', group: 'aluminium-alvaz-profilok', cat: 'alafutasgatlo-profilok', text: 'Oldalsó aláfutásgátló profilok és konzolok.' },
-  { part: 'Szerszámosláda', group: 'sarvedok-szerszamosladak', cat: 'dobozok-tarto-konzolok', text: 'Szerszámosládák, víztartályok és tartókonzolok.' },
-].map((s) => {
-  const g = groups.find((x) => x.slug === s.group);
-  return { ...s, name: g?.name ?? s.group, count: g?.count ?? 0, icon: GROUP_META[s.group]?.icon, href: `/termekek/${s.group}${s.cat ? `#${s.cat}` : ''}` };
-});
 ---
 <Base>
   <section class="hero">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <div class="hero-copy">
-        <span class="eyebrow">Alkatrész-beszállító felépítménygyártóknak</span>
-        <h1>Minden alkatrész a felépítményhez – <span class="gradient-text">egy helyről.</span></h1>
-        <p class="lead">
-          Alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők és rakományrögzítés
-          jármű- és lószállító felépítmény gyártóknak. Állítsa össze a listáját, és elkészítjük az ajánlatát.
-        </p>
-        <form class="hero-search" action="/kereses" method="get" role="search">
-          <Icon name="Search" size={20} />
-          <input type="search" name="q" placeholder="Keressen terméknévre vagy cikkszámra…" aria-label="Termékkeresés" />
-          <button class="btn btn-primary" type="submit">Keresés</button>
-        </form>
-        <div class="hero-popular">
-          <span class="muted">Népszerű:</span>
-          {popular.map((q) => <a href={`/kereses?q=${encodeURIComponent(q)}`}>{q}</a>)}
-        </div>
-        <div class="hero-ctas">
-          <a href="/termekek" class="btn btn-primary">Termékkatalógus <Icon name="ArrowRight" /></a>
-          <a href="/ajanlatkeres" class="btn btn-ghost"><Icon name="ClipboardList" /> Ajánlatkérés</a>
-        </div>
+      <span class="eyebrow">Alkatrész-beszállító felépítménygyártóknak</span>
+      <h1>Minden alkatrész a felépítményhez – <span class="gradient-text">egy helyről.</span></h1>
+      <p class="lead">
+        Alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők és rakományrögzítés
+        jármű- és lószállító felépítmény gyártóknak. Állítsa össze a listáját, és elkészítjük az ajánlatát.
+      </p>
+      <form class="hero-search metal-frame" action="/kereses" method="get" role="search">
+        <Icon name="Search" size={20} />
+        <input type="search" name="q" placeholder="Keressen terméknévre vagy cikkszámra…" aria-label="Termékkeresés" />
+        <button class="btn btn-primary" type="submit">Keresés</button>
+      </form>
+      <div class="hero-popular">
+        <span class="muted">Népszerű:</span>
+        {popular.map((q) => <a href={`/kereses?q=${encodeURIComponent(q)}`}>{q}</a>)}
       </div>
-      <div class="hero-visual">
-        <canvas class="hero-canvas" data-hero-canvas aria-label="Alkatrészekből összeálló platós felépítmény 3D animációja" role="img"></canvas>
-        <div class="hero-cards" aria-live="polite">
-          {heroSteps.map((s, i) => (
-            <a href={s.href} class="hero-card" data-hero-card={i}>
-              <span class="hc-icon"><Icon name={s.icon} size={20} /></span>
-              <span class="hc-body">
-                <span class="hc-step">{i + 1} / {heroSteps.length} · {s.part}</span>
-                <strong>{s.name}</strong>
-                <span class="hc-text">{s.text}</span>
-              </span>
-              <span class="hc-count">{s.count} termék <Icon name="ArrowRight" size={16} /></span>
-            </a>
-          ))}
-          <a href="/termekek" class="hero-card hero-card-done" data-hero-card="-1">
-            <span class="hc-icon"><Icon name="PackageCheck" size={20} /></span>
-            <span class="hc-body">
-              <span class="hc-step">Kész felépítmény</span>
-              <strong>Minden alkatrész egy helyről</strong>
-              <span class="hc-text">Profilok, zárak, rakoncák, sárvédők – egy ajánlatban.</span>
-            </span>
-            <span class="hc-count">Katalógus <Icon name="ArrowRight" size={16} /></span>
-          </a>
-        </div>
+      <div class="hero-video metal-frame">
+        <video src="/video/quadris-iveco-hero.mp4" poster="/video/quadris-iveco-poster.jpg" autoplay muted loop playsinline preload="auto" data-hero-video
+          width="960" height="960" aria-label="Quadris raktár: alumínium és acél profilok, beálló platós tehergépkocsi"></video>
       </div>
-    </div>
-    <div class="container">
-      <dl class="stats">
-        <div><dt>Termék</dt><dd>{roundedCount(stats.products)}</dd></div>
-        <div><dt>Termékcsoport</dt><dd>{stats.groups}</dd></div>
-        <div><dt>Gyártó partner</dt><dd>{roundedCount(stats.suppliers, 25)}</dd></div>
-        <div><dt>Ajánlatkérés</dt><dd>Online</dd></div>
-      </dl>
     </div>
   </section>
 
   <section class="section-sm">
     <div class="container segments">
       <a href="/termekek" class="card segment">
-        <div class="segment-icon"><Icon name="Truck" size={30} /></div>
+        <div class="segment-icon"><Icon name="Truck" size={22} /></div>
         <div>
           <h2>Járműfelépítmény-gyártóknak</h2>
           <p class="muted">Platós, ponyvás, dobozos, hűtős és billencs felépítmények teljes alkatrész-kínálata – profiloktól a zárakig.</p>
-          <span class="link-arrow">Teljes katalógus <Icon name="ArrowRight" size={18} /></span>
+          <span class="link-arrow">Teljes katalógus <Icon name="ArrowRight" size={16} /></span>
         </div>
       </a>
       <a href="/loszallito-felepitmenyek" class="card segment horse">
-        <div class="segment-icon"><HorseIcon size={30} /></div>
+        <div class="segment-icon"><HorseIcon size={22} /></div>
         <div>
           <h2>Lószállító felépítmény gyártóknak</h2>
           <p class="muted">Istálló- és rámpaszőnyegek, rámpaprofilok, csúszásmentes padlók, zárak és zsanérok – válogatva a lószállítók igényeire.</p>
-          <span class="link-arrow">Lószállító kínálat <Icon name="ArrowRight" size={18} /></span>
+          <span class="link-arrow">Lószállító kínálat <Icon name="ArrowRight" size={16} /></span>
         </div>
       </a>
     </div>
   </section>
 
 
-  <section class="section-sm">
-    <div class="container showcase">
-      <div class="showcase-media">
-        <video src="/video/quadris-iveco-hero.mp4" poster="/video/quadris-iveco-poster.jpg" muted loop playsinline preload="none" data-showcase-video
-          width="960" height="960" aria-label="Quadris raktár: alumínium és acél profilok, beálló platós tehergépkocsi"></video>
-      </div>
-      <div class="showcase-copy">
-        <span class="eyebrow">Quadris raktár</span>
-        <h2>Profilok, lemezek, alkatrészek – összegyűjtve egy helyen</h2>
-        <p class="lead">Alumínium és acél profilok, lemezek és felépítmény-alkatrészek számos gyártótól. Összeállítjuk a rendelését, és egyben kapja meg.</p>
-        <div class="hero-ctas">
-          <a href="/termekek" class="btn btn-primary">Termékkatalógus <Icon name="ArrowRight" /></a>
-          <a href="/kapcsolat" class="btn btn-ghost">Kapcsolat</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="termekcsoportok">
+  <section class="section groups-section" id="termekcsoportok">
     <div class="container">
       <div class="section-head">
         <div>
           <span class="eyebrow">Termékkatalógus</span>
-          <h2>{stats.groups} termékcsoport, {stats.categories} kategória</h2>
         </div>
         <a href="/termekek" class="btn btn-ghost">Összes termék <Icon name="ArrowRight" /></a>
       </div>
@@ -135,7 +68,6 @@ const heroSteps = [
           <a href={`/termekek/${g.slug}`} class="card group-card">
             <div class="group-media">
               <img src={groupImage(g.slug)} alt="" loading="lazy" width="800" height="560" />
-              <div class="group-icon"><Icon name={GROUP_META[g.slug]?.icon} size={20} /></div>
             </div>
             <h3>{g.name}</h3>
             <p class="muted">{GROUP_META[g.slug]?.text}</p>
@@ -204,106 +136,57 @@ const heroSteps = [
 
 
 <script>
-  // Raktárvideó: csak akkor töltődik és játszódik, amikor látszik (mozgáscsökkentésnél a poszterkép marad)
-  const sv = document.querySelector('[data-showcase-video]');
-  if (sv && !matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
-    new IntersectionObserver(([e]) => {
-      if (e.isIntersecting) sv.play().catch(() => {});
-      else sv.pause();
-    }, { threshold: 0.25 }).observe(sv);
-  }
-
-  // 3D hero: a platós felépítmény összeáll; az éppen beépülő alkatrész termékcsoport-kártyája látszik
-  const canvas = document.querySelector('[data-hero-canvas]');
-  const cards = [...document.querySelectorAll('[data-hero-card]')];
-  const show = (i) => cards.forEach((c) => c.classList.toggle('show', Number(c.dataset.heroCard) === i));
-  show(-1);
-  if (canvas) {
-    import('../scripts/hero3d.js')
-      .then((QuadrisTruck) => QuadrisTruck.mount(canvas, { onStep: show }))
-      .catch(() => canvas.remove());  // WebGL nélkül a kártya marad
-  }
+  // mozgáscsökkentésnél a videó áll, a poszterkép látszik
+  const hv = document.querySelector('[data-hero-video]');
+  if (hv && matchMedia('(prefers-reduced-motion: reduce)').matches) { hv.removeAttribute('autoplay'); hv.pause(); }
 </script>
 
 <style>
-  .hero { position: relative; overflow: hidden; padding: 40px 0 36px; min-height: calc(92vh - var(--header-h)); display: flex; flex-direction: column; justify-content: center; }
+  .hero { position: relative; overflow: hidden; padding: 44px 0 36px; }
   .hero-bg {
     position: absolute; inset: 0; z-index: -1;
     background:
-      radial-gradient(760px 480px at 70% 45%, #ffffff 0%, rgba(255, 255, 255, 0) 70%),
-      radial-gradient(900px 520px at 100% 0%, rgba(10, 108, 255, 0.07), transparent 70%),
+      radial-gradient(900px 420px at 50% 0%, #ffffff 0%, rgba(255, 255, 255, 0) 70%),
       linear-gradient(180deg, #f7f8fa 0%, #eceff3 100%);
   }
-  .hero-inner { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr); gap: 32px; align-items: center; }
-  .hero-copy h1 { margin: 16px 0 20px; color: var(--navy); }
+  .hero-inner { display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .hero-inner h1 { margin: 14px 0 16px; color: var(--navy); max-width: 900px; }
+  .hero-inner .lead { margin: 0 auto; }
   .hero-search {
-    display: flex; align-items: center; gap: 10px; margin: 28px 0 12px; padding: 6px 6px 6px 18px; max-width: 580px;
-    border: 1px solid var(--line-strong); border-radius: 999px; background: #fff; box-shadow: var(--shadow-sm);
+    display: flex; align-items: center; gap: 10px; margin: 26px 0 12px; padding: 6px 6px 6px 18px; width: 100%; max-width: 640px;
+    border-radius: 999px; text-align: left;
   }
-  .hero-search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(10, 108, 255, 0.12); }
+  .hero-search:focus-within { box-shadow: 0 0 0 4px rgba(10, 108, 255, 0.14); }
   .hero-search > :global(svg) { color: var(--muted); flex: none; }
   .hero-search input { flex: 1; min-width: 0; border: 0; background: transparent; height: 44px; font-size: 1rem; outline: none; }
-  .hero-popular { display: flex; flex-wrap: wrap; gap: 8px 12px; font-size: 0.88rem; }
+  .hero-popular { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 12px; font-size: 0.88rem; }
   .hero-popular a { color: var(--text-2); border-bottom: 1px dashed var(--line-strong); text-decoration: none; }
   .hero-popular a:hover { color: var(--accent); border-color: var(--accent); }
-  .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
-  .hero-visual { position: relative; aspect-ratio: 16 / 10; }
-  .hero-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-  .hero-cards { position: absolute; left: 0; bottom: 4%; width: min(360px, 78%); }
-  .hero-card {
-    position: absolute; left: 0; bottom: 0; width: 100%; display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; align-items: start;
-    padding: 14px 16px; border-radius: 16px; background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-    border: 1px solid var(--line); box-shadow: var(--shadow); color: var(--text); text-decoration: none;
-    opacity: 0; transform: translateY(10px); pointer-events: none; transition: opacity 0.35s ease, transform 0.35s ease;
-  }
-  .hero-card.show { opacity: 1; transform: none; pointer-events: auto; }
-  .hero-card:hover { border-color: var(--accent); }
-  .hc-icon { grid-row: span 2; width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; color: var(--accent); background: var(--accent-soft); }
-  .hc-body { display: grid; gap: 2px; min-width: 0; }
-  .hc-step { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
-  .hc-body strong { font-family: var(--font-head); font-size: 1.02rem; line-height: 1.25; }
-  .hc-text { font-size: 0.86rem; color: var(--muted); }
-  .hc-count { grid-column: 2; display: inline-flex; align-items: center; gap: 4px; font-size: 0.86rem; font-weight: 600; color: var(--accent); }
-  .hero-card-done .hc-icon { color: #fff; background: var(--accent); }
-  .stats {
-    display: grid; grid-template-columns: repeat(4, 1fr); margin: 36px 0 0; padding: 0;
-    border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(8px); box-shadow: var(--shadow-sm);
-  }
-  .stats div { padding: 20px 26px; border-left: 1px solid var(--line); }
-  .stats div:first-child { border-left: 0; }
-  .stats dt { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
-  .stats dd { margin: 4px 0 0; font-family: var(--font-head); font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; color: var(--navy); }
+  .hero-video { width: 100%; max-width: 1080px; margin-top: 30px; padding: 0; border-width: 3px; border-radius: 26px; overflow: hidden; box-shadow: var(--shadow); }
+  .hero-video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 8; object-fit: cover; object-position: 50% 58%; border-radius: 23px; background: #e9ecef; }
 
-  .segments { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  .segment { display: flex !important; gap: 22px; padding: 32px; overflow: hidden; }
-  .segment::after {
-    content: ''; position: absolute; right: -80px; top: -80px; width: 260px; height: 260px; border-radius: 50%;
-    background: radial-gradient(circle, rgba(10, 108, 255, 0.1), transparent 70%); pointer-events: none;
-  }
-  .segment h2 { font-size: 1.45rem; }
+  .segments { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .segment { display: flex !important; align-items: center; gap: 16px; padding: 16px 20px; overflow: hidden; }
+  .segment h2 { font-size: 1.08rem; margin: 0 0 2px; }
+  .segment p { font-size: 0.86rem; line-height: 1.45; margin: 0 0 4px; }
+  .segment .link-arrow { font-size: 0.86rem; }
+  .segment .segment-icon { width: 44px; height: 44px; border-radius: 12px; }
   .segment-icon, .group-icon {
     flex: none; width: 60px; height: 60px; border-radius: 16px; display: grid; place-items: center; color: var(--accent);
     background: var(--accent-soft); border: 1px solid rgba(10, 108, 255, 0.18);
   }
   .link-arrow { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 600; }
 
-  .showcase { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 56px; align-items: center; }
-  .showcase-media { position: relative; border-radius: 24px; overflow: hidden; box-shadow: var(--shadow); background: #e9ecef; aspect-ratio: 1 / 1; }
-  .showcase-media video { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .showcase-copy h2 { margin: 12px 0 16px; }
-
-  .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-bottom: 32px; flex-wrap: wrap; }
+  .groups-section { padding-top: 40px; }
+  .section-head { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 32px; flex-wrap: wrap; }
   .section-head h2 { margin: 10px 0 0; }
-  .group-card { padding: 0 22px 22px; display: flex !important; flex-direction: column; overflow: hidden; }
-  .group-media { position: relative; margin: 0 -22px 18px; aspect-ratio: 10 / 7; background: #fff; border-bottom: 1px solid var(--line); overflow: hidden; }
+  .grid-groups { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
+  .group-card { padding: 0 16px 16px; display: flex !important; flex-direction: column; overflow: hidden; }
+  .group-media { position: relative; margin: 0 -16px 14px; aspect-ratio: 10 / 7; background: #fff; border-bottom: 1px solid var(--line); overflow: hidden; }
   .group-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
   .group-card:hover .group-media img { transform: scale(1.05); }
-  .group-media .group-icon {
-    position: absolute; left: 14px; bottom: 14px; width: 40px; height: 40px; border-radius: 11px;
-    background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(6px); box-shadow: 0 6px 16px -8px rgba(18, 24, 33, 0.35);
-  }
-  .group-card h3 { font-size: 1.06rem; }
-  .group-card p { font-size: 0.9rem; flex: 1; }
+  .group-card h3 { font-size: 0.98rem; }
+  .group-card p { font-size: 0.84rem; line-height: 1.5; flex: 1; }
   .group-count { display: inline-flex; align-items: center; gap: 6px; font-size: 0.86rem; font-weight: 600; color: var(--accent); }
 
   .steps-section { background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -329,27 +212,19 @@ const heroSteps = [
   .cta-band p { margin: 0; color: #d7e6ff; }
   .cta-band .btn-primary { background: #fff; color: var(--accent-2); }
 
+  @media (max-width: 1180px) { .grid-groups { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
   @media (max-width: 960px) {
-    .hero { min-height: 0; }
-    .hero-inner { grid-template-columns: minmax(0, 1fr); gap: 8px; }
-    .hero-visual { order: -1; max-width: 640px; margin: 0 auto; width: 100%; }
-    .hero-visual { aspect-ratio: auto; display: grid; gap: 8px; }
-    .hero-canvas { position: relative; inset: auto; aspect-ratio: 16 / 10; height: auto; }
-    .hero-cards { position: relative; bottom: auto; width: 100%; height: 92px; }
-    .hc-text { display: none; }
-    .segments, .why, .showcase { grid-template-columns: 1fr; }
-    .showcase { gap: 28px; }
-    .showcase-media { max-width: 560px; }
+    .grid-groups { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .hero-video video { aspect-ratio: 4 / 3; }
+    .segments, .why { grid-template-columns: 1fr; }
     .steps { grid-template-columns: 1fr; }
     .why { gap: 32px; }
   }
   @media (max-width: 640px) {
     .hero { padding-top: 12px; }
-    .stats { grid-template-columns: 1fr 1fr; }
-    .stats div:nth-child(3) { border-left: 0; }
-    .stats div:nth-child(n + 3) { border-top: 1px solid var(--line); }
-    .stats div { padding: 16px 18px; }
-    .segment { flex-direction: column; padding: 24px; }
+    .grid-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .group-card p { display: none; }
+    .hero-video video { aspect-ratio: 1 / 1; }
     .benefits { grid-template-columns: 1fr; }
     .cta-band { padding: 28px 22px; }
     .hero-search .btn { padding: 10px 16px; }

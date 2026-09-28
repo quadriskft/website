@@ -52,7 +52,8 @@ export const groups = groupList
       .filter((c) => c.count > 0);
     return { ...g, categories, count: categories.reduce((n, c) => n + c.count, 0) };
   })
-  .filter((g) => g.count > 0);
+  .filter((g) => g.count > 0)
+  .sort((a, b) => a.name.localeCompare(b.name, 'hu'));  // ABC sorrend
 
 const groupsBySlug = new Map(groups.map((g) => [g.slug, g]));
 const productsBySlug = new Map(products.map((p) => [p.slug, p]));
