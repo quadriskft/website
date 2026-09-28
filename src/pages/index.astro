@@ -2,11 +2,23 @@
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import HorseIcon from '../components/HorseIcon.astro';
-import HeroAssembly from '../components/HeroAssembly.astro';
-import HeroVideo from '../components/HeroVideo.astro';
 import { groups, GROUP_META, stats, roundedCount, groupImage } from '../lib/catalog.js';
 
 const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárvédő'];
+
+// A 3D felépítmény 7 alkatrészcsoportja (a hero3d.js sorrendjében) és a hozzájuk tartozó termékcsoport
+const heroSteps = [
+  { part: 'Padló', group: 'aluminium-padlo-profilok', text: 'Alumínium padlóprofilok és csúszásmentes rétegelt lemez.' },
+  { part: 'Oldalfalak', group: 'ponyvas-oldalfal-profilok-es-szegok', text: 'Eloxált oldalfal-profilok, szegők és zárak.' },
+  { part: 'Rakoncák', group: 'acel-es-alu-rakoncak-es-szegok', text: 'Acél és alumínium rakoncák, rakonca-zsebek, szegők.' },
+  { part: 'Homlokfal', group: 'platos-alkatreszek-es-kiegeszitok', text: 'Fejfal, zsanérok, zárak és platós kiegészítők.' },
+  { part: 'Sárvédők', group: 'sarvedok-szerszamosladak', cat: 'sarvedok', text: 'Műanyag és acél sárvédők, felfogatások, sárfogók.' },
+  { part: 'Aláfutásgátló', group: 'aluminium-alvaz-profilok', cat: 'alafutasgatlo-profilok', text: 'Oldalsó aláfutásgátló profilok és konzolok.' },
+  { part: 'Szerszámosláda', group: 'sarvedok-szerszamosladak', cat: 'dobozok-tarto-konzolok', text: 'Szerszámosládák, víztartályok és tartókonzolok.' },
+].map((s) => {
+  const g = groups.find((x) => x.slug === s.group);
+  return { ...s, name: g?.name ?? s.group, count: g?.count ?? 0, icon: GROUP_META[s.group]?.icon, href: `/termekek/${s.group}${s.cat ? `#${s.cat}` : ''}` };
+});
 ---
 <Base>
   <section class="hero">
@@ -34,7 +46,29 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
         </div>
       </div>
       <div class="hero-visual">
-        <HeroAssembly />
+        <canvas class="hero-canvas" data-hero-canvas aria-label="Alkatrészekből összeálló platós felépítmény 3D animációja" role="img"></canvas>
+        <div class="hero-cards" aria-live="polite">
+          {heroSteps.map((s, i) => (
+            <a href={s.href} class="hero-card" data-hero-card={i}>
+              <span class="hc-icon"><Icon name={s.icon} size={20} /></span>
+              <span class="hc-body">
+                <span class="hc-step">{i + 1} / {heroSteps.length} · {s.part}</span>
+                <strong>{s.name}</strong>
+                <span class="hc-text">{s.text}</span>
+              </span>
+              <span class="hc-count">{s.count} termék <Icon name="ArrowRight" size={16} /></span>
+            </a>
+          ))}
+          <a href="/termekek" class="hero-card hero-card-done" data-hero-card="-1">
+            <span class="hc-icon"><Icon name="PackageCheck" size={20} /></span>
+            <span class="hc-body">
+              <span class="hc-step">Kész felépítmény</span>
+              <strong>Minden alkatrész egy helyről</strong>
+              <span class="hc-text">Profilok, zárak, rakoncák, sárvédők – egy ajánlatban.</span>
+            </span>
+            <span class="hc-count">Katalógus <Icon name="ArrowRight" size={16} /></span>
+          </a>
+        </div>
       </div>
     </div>
     <div class="container">
@@ -68,17 +102,6 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
     </div>
   </section>
 
-  <section class="section assembly-section">
-    <div class="container assembly">
-      <div class="assembly-visual"><HeroVideo /></div>
-      <div class="assembly-copy">
-        <span class="eyebrow">A valóságban</span>
-        <h2>Alkatrészeink egy elkészült platós felépítményen</h2>
-        <p class="lead">Oldalfal szegők, aláfutásgátló, rakoncák, szerszámosláda, sárvédő, zsanérok és zárak – a videóban megjelenő termékekre kattintva azonnal ajánlatot kérhet.</p>
-        <a href="/termekek" class="btn btn-primary">Termékcsoportok <Icon name="ArrowRight" /></a>
-      </div>
-    </div>
-  </section>
 
   <section class="section" id="termekcsoportok">
     <div class="container">
@@ -161,6 +184,20 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
   </section>
 </Base>
 
+
+<script>
+  // 3D hero: a platós felépítmény összeáll; az éppen beépülő alkatrész termékcsoport-kártyája látszik
+  const canvas = document.querySelector('[data-hero-canvas]');
+  const cards = [...document.querySelectorAll('[data-hero-card]')];
+  const show = (i) => cards.forEach((c) => c.classList.toggle('show', Number(c.dataset.heroCard) === i));
+  show(-1);
+  if (canvas) {
+    import('../scripts/hero3d.js')
+      .then((QuadrisTruck) => QuadrisTruck.mount(canvas, { onStep: show }))
+      .catch(() => canvas.remove());  // WebGL nélkül a kártya marad
+  }
+</script>
+
 <style>
   .hero { position: relative; overflow: hidden; padding: 40px 0 36px; min-height: calc(92vh - var(--header-h)); display: flex; flex-direction: column; justify-content: center; }
   .hero-bg {
@@ -184,12 +221,24 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
   .hero-popular a { color: var(--text-2); border-bottom: 1px dashed var(--line-strong); text-decoration: none; }
   .hero-popular a:hover { color: var(--accent); border-color: var(--accent); }
   .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
-  .hero-visual { position: relative; }
-  .assembly-section { background: #fff; }
-  .assembly { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 56px; align-items: center; }
-  .assembly-visual { display: flex; justify-content: center; }
-  .assembly-visual :global(.hv) { max-width: 400px; }
-  .assembly h2 { margin-top: 12px; }
+  .hero-visual { position: relative; aspect-ratio: 16 / 10; }
+  .hero-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .hero-cards { position: absolute; left: 0; bottom: 4%; width: min(360px, 78%); }
+  .hero-card {
+    position: absolute; left: 0; bottom: 0; width: 100%; display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; align-items: start;
+    padding: 14px 16px; border-radius: 16px; background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--line); box-shadow: var(--shadow); color: var(--text); text-decoration: none;
+    opacity: 0; transform: translateY(10px); pointer-events: none; transition: opacity 0.35s ease, transform 0.35s ease;
+  }
+  .hero-card.show { opacity: 1; transform: none; pointer-events: auto; }
+  .hero-card:hover { border-color: var(--accent); }
+  .hc-icon { grid-row: span 2; width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; color: var(--accent); background: var(--accent-soft); }
+  .hc-body { display: grid; gap: 2px; min-width: 0; }
+  .hc-step { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+  .hc-body strong { font-family: var(--font-head); font-size: 1.02rem; line-height: 1.25; }
+  .hc-text { font-size: 0.86rem; color: var(--muted); }
+  .hc-count { grid-column: 2; display: inline-flex; align-items: center; gap: 4px; font-size: 0.86rem; font-weight: 600; color: var(--accent); }
+  .hero-card-done .hc-icon { color: #fff; background: var(--accent); }
   .stats {
     display: grid; grid-template-columns: repeat(4, 1fr); margin: 36px 0 0; padding: 0;
     border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(8px); box-shadow: var(--shadow-sm);
@@ -253,8 +302,10 @@ const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárv
     .hero { min-height: 0; }
     .hero-inner { grid-template-columns: minmax(0, 1fr); gap: 8px; }
     .hero-visual { order: -1; max-width: 640px; margin: 0 auto; width: 100%; }
-    .assembly-visual :global(.hv) { max-width: 320px; max-height: 70vh; }
-    .assembly { grid-template-columns: 1fr; }
+    .hero-visual { aspect-ratio: auto; display: grid; gap: 8px; }
+    .hero-canvas { position: relative; inset: auto; aspect-ratio: 16 / 10; height: auto; }
+    .hero-cards { position: relative; bottom: auto; width: 100%; height: 92px; }
+    .hc-text { display: none; }
     .segments, .why { grid-template-columns: 1fr; }
     .steps { grid-template-columns: 1fr; }
     .why { gap: 32px; }
