@@ -311,10 +311,10 @@ const SHORT = {
   .vhero .eyebrow { color: #8fbcff; }
   .vhero .eyebrow::before { background: #8fbcff; }
   .vhero h1 { margin: 10px 0 14px; color: #fff; font-size: clamp(1.9rem, 3.2vw, 2.6rem); text-align: left; text-shadow: 0 2px 20px rgba(0, 0, 0, 0.35); }
-  /* kiemelt zárósor: új sorban, világoskék–fémes átmenet, alatta kék csík */
+  /* kiemelt zárósor: új sorban, egyszínű világoskék, alatta kék csík */
   .vhero h1 .vh-accent {
     position: relative; display: table; margin-top: 6px; padding-bottom: 8px;
-    background: linear-gradient(100deg, #6ea8ff 0%, #b9d4ff 45%, #ffffff 60%, #8fbcff 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
+    color: #8fbcff;
   }
   .vhero h1 .vh-accent::after { content: ''; position: absolute; left: 0; bottom: 0; width: 64%; height: 4px; border-radius: 4px; background: linear-gradient(90deg, #2b86ff, rgba(43, 134, 255, 0)); }
   .vhero .lead { color: #d9dee4; }
