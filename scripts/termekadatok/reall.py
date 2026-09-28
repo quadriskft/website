@@ -7,6 +7,10 @@ megfelelő fejezetét (PDF) adják. A lapok szkenneltek, minden termék saját k
 A kép kivágása: a szkennelt lapon megkeressük a keret vonalait, a cikkszámot tartalmazó cellában
 a legnagyobb vonalak közötti sáv a rajz – csak ezt vágjuk ki, így szomszédos termék nem kerül bele.
 
+Ahol az automatikus cellakeresés nem ad rajzot (vagy a honlap nem érhető el), a MANUAL táblázat
+kézzel ellenőrzött kivágást ad a Quadris-tól kapott katalógusfejezetekből (data/forras/reall_19_pedane.pdf,
+data/forras/reall_21_furgoni.pdf); ezek adatai a lapokról leolvasva (Art., kg/ml, ötvözet a lap fejlécéből).
+
 Használat: python3 scripts/termekadatok/reall.py
 """
 
@@ -19,13 +23,29 @@ import pymupdf
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import clear_images, fetch, load_products, save_image, update_enrichment  # noqa: E402
+from common import ROOT, clear_images, fetch, load_products, save_image, update_enrichment  # noqa: E402
 
 SUPPLIER = "RE-ALL"
 BASE = "https://www.re-all.it"
 START = ["/it/prodotti/profili-alluminio-carrozzerie-veicoli-industriali.html", "/it/prodotti/profili-alluminio-commerciali-speciali.html",
          "/it/prodotti/accessori-alluminio.html", "/it/prodotti/lamiere-piastre-alluminio.html", "/it/prodotti/prodotti-alluminio.html"]
 DPI = 200
+
+# RE-ALL cikkszám (normalizálva) -> (helyi PDF, oldal, kivágás [pt], webes fejezet, műszaki adatok a lapról)
+MANUAL = {
+    "1900002": (ROOT / "data/forras/reall_19_pedane.pdf", 3, (84, 175, 364, 276), "/images/catalogo-pdf/2026/19.pdf",
+                {"Ötvözet": "EN AW-6005 T6", "Tömeg [kg/fm]": "5,950", "Gyári szálhossz [mm]": "5000", "Szélesség": "200 mm", "Magasság": "40 mm"}),
+    "2100025": (ROOT / "data/forras/reall_21_furgoni.pdf", 5, (84, 507, 364, 670), "/images/catalogo-pdf/2026/21.pdf",
+                {"Ötvözet": "EN AW-6060 T6", "Tömeg [kg/fm]": "1,390", "Gyári szálhossz [mm]": "7500", "Magasság": "130 mm", "Szélesség": "58 mm"}),
+}
+
+
+def manual_drawing(pdf, pno, box):
+    zoom = 240 / 72
+    pix = pymupdf.open(pdf)[pno - 1].get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), clip=pymupdf.Rect(*box), alpha=False)
+    img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+    ys, xs = np.where(np.asarray(img.convert("L")) < 200)
+    return img.crop((max(xs.min() - 16, 0), max(ys.min() - 16, 0), min(xs.max() + 16, img.width), min(ys.max() + 16, img.height)))
 
 
 def norm(s):
@@ -155,6 +175,19 @@ def main():
         specs.update(row_specs(pg, wr))
         enrichment[p["slug"]] = {"source": SUPPLIER, "sourceUrl": f"{BASE}{rel}#page={pno + 1}", "sourceTitle": f"RE-ALL katalógus {rel.rsplit('/', 1)[-1]}",
                                  "matchedCode": p["supplierCode"], "specs": specs, "images": images}
+    for p in products:  # kézi kivágás a helyi katalógusból, ha az automatikus nem adott képet
+        man = MANUAL.get(norm(p["supplierCode"]))
+        if not man or enrichment.get(p["slug"], {}).get("images"):
+            continue
+        pdf, pno, box, rel, specs = man
+        clear_images(p["slug"])
+        e = enrichment.get(p["slug"]) or {"source": SUPPLIER, "sourceUrl": f"{BASE}{rel}#page={pno}", "sourceTitle": f"RE-ALL katalógus {rel.rsplit('/', 1)[-1]}",
+                                          "matchedCode": p["supplierCode"], "specs": {}}
+        e["specs"] = {**e["specs"], **specs}
+        e["images"] = [save_image(manual_drawing(pdf, pno, box), p["slug"], 1)]
+        enrichment[p["slug"]] = e
+        if p in missing:
+            missing.remove(p)
     update_enrichment(enrichment, SUPPLIER)
     print(f"{SUPPLIER}: {len(enrichment)}/{len(products)} egyezés, {sum(1 for e in enrichment.values() if e['images'])} képpel")
     for p in missing:

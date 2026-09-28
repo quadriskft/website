@@ -1241,6 +1241,26 @@
   ],
   "nevbolRajz": true
  },
+ "202850-u-130-hossztarto-k": {
+  "source": "Grupa Kęty",
+  "sourceUrl": "https://www.grupakety.com",
+  "sourceTitle": "Grupa Kęty profilrajz W2850",
+  "matchedCode": "W2850",
+  "specs": {
+   "Tömeg": "3,44 kg/fm",
+   "Magasság": "130 mm",
+   "Szélesség": "50 mm",
+   "Falvastagság": "5 / 6 mm",
+   "Kerület": "444 mm",
+   "Ötvözet": "EN AW-6005A T6",
+   "Tűrés": "EN 755-9",
+   "Kivitel": "U-profil (hossztartó)",
+   "Felület": "natúr"
+  },
+  "images": [
+   "/termekkepek/202850-u-130-hossztarto-k-1.webp"
+  ]
+ },
  "202869-u-160x80x80x8-mm-profil": {
   "source": "ALCOMET",
   "sourceUrl": "",
@@ -1398,6 +1418,41 @@
    "/termekkepek/3d/206441-i-gerenda-profil-80x60-50x8-6-mm-1.webp",
    "/termekkepek/3d/206441-i-gerenda-profil-80x60-50x8-6-mm-2.webp",
    "/termekkepek/206441-i-gerenda-profil-80x60-50x8-6-mm-1.webp"
+  ]
+ },
+ "207327-tl-110-60-60-hossztarto-ex": {
+  "source": "Exlabesa",
+  "sourceUrl": "https://www.exlabesa.com",
+  "sourceTitle": "Exlabesa katalógus EXL-37327",
+  "matchedCode": "EXL-37327",
+  "specs": {
+   "Tömeg": "3,198 kg/fm",
+   "Kerület": "447 mm",
+   "Méret": "110 × 60 × 60 mm",
+   "Falvastagság": "5 / 6 mm",
+   "Kivitel": "TL hossztartó-profil",
+   "Felület": "natúr"
+  },
+  "images": [
+   "/termekkepek/207327-tl-110-60-60-hossztarto-ex-1.webp"
+  ]
+ },
+ "207776-30-padlo-profil-220-mm-ex": {
+  "source": "Exlabesa",
+  "sourceUrl": "https://www.exlabesa.com",
+  "sourceTitle": "Exlabesa katalógus EXL-37776",
+  "matchedCode": "EXL-37776",
+  "specs": {
+   "Tömeg": "3,378 kg/fm",
+   "Kerület": "837 mm",
+   "Hasznos szélesség": "220 mm",
+   "Teljes szélesség": "233,5 mm",
+   "Magasság": "30 mm",
+   "Kivitel": "bordázott padlóprofil",
+   "Felület": "natúr"
+  },
+  "images": [
+   "/termekkepek/207776-30-padlo-profil-220-mm-ex-1.webp"
   ]
  },
  "207833-100x30-mm-alafutasgatlo-elox-profil": {
@@ -2014,9 +2069,14 @@
   "matchedCode": "1900002",
   "specs": {
    "Tömeg [kg/fm]": "5,950",
-   "Gyári szálhossz [mm]": "5000"
+   "Gyári szálhossz [mm]": "5000",
+   "Ötvözet": "EN AW-6005 T6",
+   "Szélesség": "200 mm",
+   "Magasság": "40 mm"
   },
-  "images": []
+  "images": [
+   "/termekkepek/221902-bordazott-padlo-profil-200-40-mm-1.webp"
+  ]
  },
  "222001-100x25-mm-ponyvatarto-zartszelveny-t": {
   "source": "Quadris adatok",
@@ -2793,9 +2853,13 @@
   "specs": {
    "Ötvözet": "EN AW-6060 T6",
    "Tömeg [kg/fm]": "1,390",
-   "Gyári szálhossz [mm]": "7500"
+   "Gyári szálhossz [mm]": "7500",
+   "Magasság": "130 mm",
+   "Szélesség": "58 mm"
   },
-  "images": []
+  "images": [
+   "/termekkepek/232125-dobozos-keret-elox-or-130-mm-nyitott-1.webp"
+  ]
  },
  "232134-285-mm-i-koptato-profil-elox": {
   "source": "ESAL",
@@ -3025,6 +3089,23 @@
    "/termekkepek/237461-n-50x260-mm-l-belso-vedoprofil-1.webp"
   ]
  },
+ "237712-13-dupla-alu-csiga-zsaner-u-25-mm-elox": {
+  "source": "Exlabesa",
+  "sourceUrl": "https://www.exlabesa.com",
+  "sourceTitle": "Exlabesa katalógus EXL-37712",
+  "matchedCode": "EXL-37712",
+  "specs": {
+   "Tömeg": "1,104 kg/fm",
+   "Kerület": "331 mm",
+   "Szélesség": "60,2 mm",
+   "Belső méret (U)": "25,1 mm",
+   "Kivitel": "csigás zsanérprofil 25 mm-es falhoz",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/237712-13-dupla-alu-csiga-zsaner-u-25-mm-elox-1.webp"
+  ]
+ },
  "237767-60x60-l-profil-elox": {
   "source": "Quadris adatok",
   "sourceUrl": "",
@@ -3150,6 +3231,40 @@
   },
   "images": [
    "/termekkepek/238170-or-ajto-keret-elox-70x30x65-25mm-1.webp"
+  ]
+ },
+ "238209-lamella-profil-200-mm-ex": {
+  "source": "Exlabesa",
+  "sourceUrl": "https://www.exlabesa.com",
+  "sourceTitle": "Exlabesa katalógus EXL-38209",
+  "matchedCode": "EXL-38209",
+  "specs": {
+   "Tömeg": "2,383 kg/fm",
+   "Kerület": "412 mm",
+   "Szélesség": "200 mm",
+   "Vastagság": "34 mm",
+   "Kivitel": "lamella (fénytörő) profil",
+   "Felület": "natúr"
+  },
+  "images": [
+   "/termekkepek/238209-lamella-profil-200-mm-ex-1.webp"
+  ]
+ },
+ "238210-lamella-tarto-profil-ex": {
+  "source": "Exlabesa",
+  "sourceUrl": "https://www.exlabesa.com",
+  "sourceTitle": "Exlabesa katalógus EXL-38210",
+  "matchedCode": "EXL-38210",
+  "specs": {
+   "Tömeg": "1,706 kg/fm",
+   "Kerület": "318 mm",
+   "Szög": "45°",
+   "Kompatibilis": "EXL-38209, EXL-38266",
+   "Kivitel": "lamellatartó profil",
+   "Felület": "natúr"
+  },
+  "images": [
+   "/termekkepek/238210-lamella-tarto-profil-ex-1.webp"
   ]
  },
  "238645-kulso-l-profil-140x80mm-elox": {
@@ -7011,6 +7126,40 @@
   },
   "images": [
    "/termekkepek/6635255-max-os-hatso-elox-oszlop-3150-mm-1.webp"
+  ]
+ },
+ "6639604-max-hatso-oszlop-exl-elox": {
+  "source": "Exlabesa",
+  "sourceUrl": "https://www.exlabesa.com",
+  "sourceTitle": "Exlabesa katalógus EXL-39604",
+  "matchedCode": "EXL-39604",
+  "specs": {
+   "Tömeg": "6,363 kg/fm",
+   "Kerület": "795 mm",
+   "Szélesség": "257,5 mm",
+   "Magasság": "35 mm",
+   "Kivitel": "MAX oszlopprofil",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/6639604-max-hatso-oszlop-exl-elox-1.webp"
+  ]
+ },
+ "6639692-max-elso-oszlop-exl-elox": {
+  "source": "Exlabesa",
+  "sourceUrl": "https://www.exlabesa.com",
+  "sourceTitle": "Exlabesa katalógus EXL-39692",
+  "matchedCode": "EXL-39692",
+  "specs": {
+   "Tömeg": "5,987 kg/fm",
+   "Kerület": "782 mm",
+   "Magasság": "133,5 mm",
+   "Szélesség": "175 mm",
+   "Kivitel": "MAX oszlopprofil",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/6639692-max-elso-oszlop-exl-elox-1.webp"
   ]
  },
  "663980-midi-elso-oszlop-flat-elox-246": {
