@@ -19,7 +19,7 @@ W, H, PAD = 800, 560, 36
 
 # csoport -> termékképek (public/ alatti útvonal); "cover" = kitöltő fotó (saját háttérrel)
 PHOTOS = {
-    "acel-profilok": ["termekkepek/acel-oldalfal-foxb-600-1.webp", "termekkepek/acel-oldalfal-foxlbak-600-1.webp", "termekkepek/acel-oldalfal-foxlb-600-1.webp"],
+    "acel-profilok": ["cover", "../data/forras/cargoframes/cargoframes_kit_keret.jpg"],  # Cargo Frames összeszerelt acél plató-keret
     "platos-alkatreszek-es-kiegeszitok": ["termekkepek/451721-horganyzott-nagykonzol-man-50-mm-1.webp", "termekkepek/m12x140-rugos-felfuggesztes-1.webp"],
     "acel-es-alu-rakoncak-es-szegok": ["termekkepek/351190-alu-rakonca-magasito-elox-1900-mm-1.webp", "termekkepek/352240-ellendarabos-szego-400mm-r-l-1.webp"],
     "elhuzhato-roloponyvas-rendszer": ["termekkepek/6613211-max-os-elso-elox-oszlop-it-1.webp"],
