@@ -263,7 +263,11 @@ const jsonLd = [
 <style>
   .product { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 48px; align-items: start; padding-top: 28px; }
   .media { position: sticky; top: calc(var(--header-h) + 20px); }
-  .media :global(.product-visual) { border-radius: var(--radius); border: 1px solid var(--line); }
+  /* fémes keret a termékképen */
+  .media :global(.product-visual) {
+    border-radius: var(--radius); border: 3px solid transparent;
+    background: linear-gradient(#fff, #fff) padding-box, var(--metal-frame) border-box; box-shadow: var(--shadow-sm), var(--metal-bevel);
+  }
   .media :global(.product-visual.placeholder svg) { width: 26%; height: 26%; }
   .gallery { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
   .thumb-btn { padding: 0; border: 2px solid transparent; border-radius: 10px; background: none; cursor: pointer; transition: border-color 0.2s; }
