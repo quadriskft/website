@@ -14913,6 +14913,21 @@
    "/termekkepek/v144-10022-csavarkeszlet-fekete-lezarohoz-dtl-mt-1.webp"
   ]
  },
+ "v144-10037-112-07003-mt-hatso-lezaro-ponyvahoz": {
+  "source": "Versus katalógus",
+  "sourceUrl": "https://online.flippingbook.com/view/967067615/209/",
+  "sourceTitle": "Versus-Omega katalógus – 144-10037",
+  "matchedCode": "144-10037",
+  "specs": {
+   "Cikkszám (gyártói)": "144-10037",
+   "Rendszer": "Micro Trike (Quadris); a katalógusban a Ferro és Pico rendszernél",
+   "Megnevezés (gyári)": "Set back beam tube 30x30mm (hátsó lezáró, 30×30 mm-es csővel)",
+   "Cső": "30×30×2 mm acélcső (a katalógusban 112-07001)"
+  },
+  "images": [
+   "/termekkepek/v144-10037-112-07003-mt-hatso-lezaro-ponyvahoz-1.webp"
+  ]
+ },
  "v144-10048-fix-keresztarto-csavarkeszlet": {
   "source": "Versus DTL",
   "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
@@ -14941,6 +14956,21 @@
   },
   "images": [
    "/termekkepek/v154-03013-oszlop-sin-osszekoto-keszlet-dtl-1.webp"
+  ]
+ },
+ "v154-03041-oszlop-sin-osszekoto-keszlet-mt": {
+  "source": "Versus katalógus",
+  "sourceUrl": "https://online.flippingbook.com/view/967067615/124/",
+  "sourceTitle": "Versus-Omega katalógus – 154-03041",
+  "matchedCode": "154-03041",
+  "specs": {
+   "Cikkszám (gyártói)": "154-03041",
+   "Rendszer": "Micro Trike",
+   "Megnevezés (gyári)": "Set of 4 mounting plates (rögzítőlemez-készlet)",
+   "Kiszerelés": "4 db-os készlet"
+  },
+  "images": [
+   "/termekkepek/v154-03041-oszlop-sin-osszekoto-keszlet-mt-1.webp"
   ]
  },
  "v162-08700-tetosin-pico": {
@@ -15019,6 +15049,25 @@
   "images": [
    "/termekkepek/v162-238-9600-mm-teto-sin-duo-trike-light-1.webp",
    "/termekkepek/v162-238-9600-mm-teto-sin-duo-trike-light-2.webp"
+  ]
+ },
+ "v193-11001-fekete-lezaro-mt": {
+  "source": "Versus katalógus",
+  "sourceUrl": "https://online.flippingbook.com/view/967067615/123/",
+  "sourceTitle": "Versus-Omega katalógus – 193-11001",
+  "matchedCode": "193-11001",
+  "specs": {
+   "Cikkszám (gyártói)": "193-11001",
+   "Rendszer": "Micro Trike",
+   "Megnevezés (gyári)": "Back beam steel (acél hátsó lezáró gerenda)",
+   "Felépítményszélesség": "2550 mm",
+   "Típus": "125Z",
+   "Anyag": "acél",
+   "Esővédő léc": "192-01601",
+   "Szerelőkészlet": "144-10022"
+  },
+  "images": [
+   "/termekkepek/v193-11001-fekete-lezaro-mt-1.webp"
   ]
  },
  "v193-14001-fekete-lezaro-dtl": {
@@ -15145,6 +15194,40 @@
   },
   "images": [
    "/termekkepek/v242-14109-tomites-9-m-dtl-1.webp"
+  ]
+ },
+ "v242-15109-tomites-9-m-mt": {
+  "source": "Versus katalógus",
+  "sourceUrl": "https://online.flippingbook.com/view/967067615/124/",
+  "sourceTitle": "Versus-Omega katalógus – 242-15109",
+  "matchedCode": "242-15109",
+  "specs": {
+   "Cikkszám (gyártói)": "242-15109",
+   "Rendszer": "Micro Trike",
+   "Megnevezés (gyári)": "PVC pelmet (black) – fekete PVC takaróprofil",
+   "Hossz": "9 m",
+   "Szín": "fekete",
+   "Anyag": "PVC"
+  },
+  "images": [
+   "/termekkepek/v242-15109-tomites-9-m-mt-1.webp"
+  ]
+ },
+ "v242-15114-tomites-14-m-mt": {
+  "source": "Versus katalógus",
+  "sourceUrl": "https://online.flippingbook.com/view/967067615/124/",
+  "sourceTitle": "Versus-Omega katalógus – 242-15114",
+  "matchedCode": "242-15114",
+  "specs": {
+   "Cikkszám (gyártói)": "242-15114",
+   "Rendszer": "Micro Trike",
+   "Megnevezés (gyári)": "PVC pelmet (black) – fekete PVC takaróprofil",
+   "Hossz": "14 m",
+   "Szín": "fekete",
+   "Anyag": "PVC"
+  },
+  "images": [
+   "/termekkepek/v242-15114-tomites-14-m-mt-1.webp"
   ]
  },
  "v262-05007-rakonca-pasz": {
