@@ -4,51 +4,166 @@
 <script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
 </head><body>
 <script type="module">
-// Profilok és lemezek saját, fotószerű 3D renderje a keresztmetszet méreteiből.
+// Profilok és lemezek fotószerű 3D renderje a keresztmetszet méreteiből – v2.
+// Újdonságok: stúdió-környezet (RoomEnvironment + softboxok), szálcsiszolt alumínium
+// (irányított érdesség- és domborítás-térkép), külön anyag a vágott véglapnak,
+// rétegelt lemez látható rétegekkel és fenolfilmmel, gumi / mintás lemez domborítással,
+// kontakt-árnyék, semleges tónusleképezés (Neutral).
 // A shoot.mjs hívja: window.render(tétel, nézet) -> PNG dataURL (átlátszó háttérrel).
 import * as THREE from 'three';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 
 const W = 1200, H = 900;
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
 renderer.setPixelRatio(1);
 renderer.setSize(W, H);
-renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMapping = THREE.NeutralToneMapping;
+renderer.toneMappingExposure = 1.0;
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.VSMShadowMap;
 document.body.appendChild(renderer.domElement);
 
-// stúdió környezet softboxokkal – a fémfelületeken csíkos tükröződés
+// ---- Környezet: RoomEnvironment + erős felső és oldalsó softboxok (csíkos fémtükröződés) ----
 const pmrem = new THREE.PMREMGenerator(renderer);
-const env = new THREE.Scene();
-env.add(new THREE.Mesh(new THREE.SphereGeometry(20, 32, 16), new THREE.MeshBasicMaterial({ color: 0x8d949e, side: THREE.BackSide })));
-const fl = new THREE.Mesh(new THREE.PlaneGeometry(40, 40), new THREE.MeshBasicMaterial({ color: 0x9aa2ad })); fl.rotation.x = -Math.PI / 2; fl.position.y = -3; env.add(fl);
-for (const [x, y, z, w, h, k] of [[0, 9, 0, 14, 5, 6], [-10, 3, 4, 3, 10, 4], [9, 4, -6, 2, 12, 3], [3, 2, 10, 10, 2.5, 2.2], [-4, 1, -10, 8, 2, 1.8]]) {
+const envScene = new RoomEnvironment();
+for (const [x, y, z, w, h, k] of [[0, 12, 0, 16, 5, 9], [-13, 4, 3, 2.5, 12, 6], [12, 5, -4, 2, 14, 4], [2, 3, 13, 12, 2, 2.6]]) {
   const p = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({ color: new THREE.Color(k, k, k), side: THREE.DoubleSide }));
-  p.position.set(x, y, z); p.lookAt(0, 0, 0); env.add(p);
+  p.position.set(x, y, z); p.lookAt(0, 0, 0); envScene.add(p);
 }
-const envTex = pmrem.fromScene(env, 0.02).texture;
+const envTex = pmrem.fromScene(envScene, 0.035).texture;
 
+// ---- Eljárásos textúrák ----
+function canvasTex(w, h, draw, srgb = false) {
+  const c = document.createElement('canvas'); c.width = w; c.height = h;
+  draw(c.getContext('2d'), w, h);
+  const t = new THREE.CanvasTexture(c);
+  t.wrapS = t.wrapT = THREE.RepeatWrapping; t.anisotropy = 16;
+  if (srgb) t.colorSpace = THREE.SRGBColorSpace;
+  return t;
+}
+let seed = 7;
+const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+// szálcsiszolás: oszloponként változó fényesség, függőlegesen állandó -> csíkok a profil hossza mentén
+function brushed(base, spread) {
+  return canvasTex(1024, 8, (g, w, h) => {
+    for (let x = 0; x < w; x++) {
+      const v = Math.max(0, Math.min(255, base + (rnd() - 0.5) * spread + (rnd() < 0.03 ? (rnd() - 0.5) * spread * 2.5 : 0)));
+      g.fillStyle = `rgb(${v},${v},${v})`; g.fillRect(x, 0, 1, h);
+    }
+  });
+}
+function noise(base, spread, size = 256) {
+  return canvasTex(size, size, (g, w, h) => {
+    const d = g.createImageData(w, h);
+    for (let i = 0; i < w * h; i++) { const v = base + (rnd() - 0.5) * spread; d.data[i * 4] = d.data[i * 4 + 1] = d.data[i * 4 + 2] = v; d.data[i * 4 + 3] = 255; }
+    g.putImageData(d, 0, 0);
+  });
+}
+// minta domborításhoz (fehér = kiemelkedő)
+function pattern(kind) {
+  return canvasTex(256, 256, (g) => {
+    g.fillStyle = '#000'; g.fillRect(0, 0, 256, 256); g.fillStyle = '#fff';
+    if (kind === 'hexa') {
+      g.strokeStyle = '#fff'; g.lineWidth = 7;
+      const r = 32, hh = Math.sqrt(3) * r;
+      for (let row = -1; row < 6; row++) for (let col = -1; col < 6; col++) {
+        const cx = col * 1.5 * r * 1.0 + 0, cy = row * hh + (col % 2 ? hh / 2 : 0);
+        g.beginPath(); for (let k = 0; k < 6; k++) { const a = Math.PI / 3 * k; g.lineTo(cx + r * 0.82 * Math.cos(a), cy + r * 0.82 * Math.sin(a)); } g.closePath(); g.stroke();
+      }
+    } else if (kind === 'coin') {
+      for (const [x, y] of [[64, 64], [192, 64], [64, 192], [192, 192], [128, 128], [0, 128], [128, 0], [0, 0]]) { const gr = g.createRadialGradient(x, y, 0, x, y, 30); gr.addColorStop(0, '#fff'); gr.addColorStop(0.8, '#eee'); gr.addColorStop(1, '#000'); g.fillStyle = gr; g.beginPath(); g.arc(x, y, 30, 0, Math.PI * 2); g.fill(); }
+    } else if (kind === 'rib') {
+      for (let y = 0; y < 256; y += 32) { const gr = g.createLinearGradient(0, y, 0, y + 20); gr.addColorStop(0, '#000'); gr.addColorStop(0.5, '#fff'); gr.addColorStop(1, '#000'); g.fillStyle = gr; g.fillRect(0, y, 256, 20); }
+    } else if (kind === 'rizs') {
+      for (let i = 0; i < 90; i++) { g.save(); g.translate(rnd() * 256, rnd() * 256); g.rotate(rnd() * Math.PI); g.beginPath(); g.ellipse(0, 0, 9, 3.2, 0, 0, Math.PI * 2); g.fill(); g.restore(); }
+    } else if (kind === 'diamond') {
+      for (const [x, y] of [[64, 64], [192, 192], [192, 64], [64, 192]]) { g.beginPath(); g.moveTo(x, y - 28); g.lineTo(x + 16, y); g.lineTo(x, y + 28); g.lineTo(x - 16, y); g.fill(); }
+    } else { // csepp
+      const drop = (x, y, a) => { g.save(); g.translate(x, y); g.rotate(a); g.beginPath(); g.ellipse(0, 0, 44, 12, 0, 0, Math.PI * 2); g.fill(); g.restore(); };
+      drop(64, 64, Math.PI / 4); drop(192, 192, Math.PI / 4); drop(192, 64, -Math.PI / 4); drop(64, 192, -Math.PI / 4);
+    }
+  });
+}
+// rétegelt lemez éle: váltakozó nyír / sötétebb furnérrétegek, a széleken fenolfilm
+function plyEdge(layers) {
+  return canvasTex(64, 512, (g, w, h) => {
+    const lh = h / layers;
+    for (let i = 0; i < layers; i++) {
+      const light = i % 2 === 0;
+      const base = light ? [226, 196, 150] : [196, 160, 112];
+      for (let y = Math.floor(i * lh); y < Math.floor((i + 1) * lh); y++) {
+        const j = (rnd() - 0.5) * 14;
+        g.fillStyle = `rgb(${base[0] + j},${base[1] + j},${base[2] + j})`; g.fillRect(0, y, w, 1);
+      }
+      g.fillStyle = 'rgba(90,60,30,0.35)'; g.fillRect(0, Math.floor(i * lh), w, 1);
+    }
+    g.fillStyle = '#4a2f1c'; g.fillRect(0, 0, w, Math.max(2, lh * 0.18)); g.fillRect(0, h - Math.max(2, lh * 0.18), w, h);
+  }, true);
+}
+
+// ---- Anyagok ----
+function metal(color, rough, streak, clear = 0) {
+  const r = brushed(Math.round(rough * 255), streak * 0.8);
+  const b = brushed(128, 60);
+  const m = new THREE.MeshPhysicalMaterial({ color, metalness: 1, roughness: 1, roughnessMap: r, bumpMap: b, bumpScale: 0.22, clearcoat: clear, clearcoatRoughness: 0.25, envMapIntensity: 1.15 });
+  m.userData.tex = [r, b];
+  return m;
+}
 const MAT = {
-  alu: () => new THREE.MeshPhysicalMaterial({ color: 0xc3c9d1, metalness: 1, roughness: 0.3 }),
-  elox: () => new THREE.MeshPhysicalMaterial({ color: 0xd3d8de, metalness: 0.95, roughness: 0.2, clearcoat: 0.3 }),
-  steel: () => new THREE.MeshPhysicalMaterial({ color: 0x6d737b, metalness: 0.9, roughness: 0.42 }),
-  galv: () => new THREE.MeshPhysicalMaterial({ color: 0xb4bac0, metalness: 0.85, roughness: 0.38 }),
+  alu: () => [metal(0xc9ced5, 0.34, 60), new THREE.MeshPhysicalMaterial({ color: 0xd9dde2, metalness: 1, roughness: 0.48 })],
+  elox: () => [metal(0xdde1e6, 0.24, 36, 0.35), new THREE.MeshPhysicalMaterial({ color: 0xe4e7eb, metalness: 1, roughness: 0.42 })],
+  steel: () => { const n = noise(150, 70); return [new THREE.MeshPhysicalMaterial({ color: 0x5c636c, metalness: 0.85, roughness: 1, roughnessMap: n, bumpMap: n, bumpScale: 0.2 }), new THREE.MeshPhysicalMaterial({ color: 0x9aa1a9, metalness: 1, roughness: 0.4 })]; },
+  galv: () => { const n = noise(110, 110, 128); return [new THREE.MeshPhysicalMaterial({ color: 0xb8bec4, metalness: 0.9, roughness: 1, roughnessMap: n }), new THREE.MeshPhysicalMaterial({ color: 0xc8cdd2, metalness: 1, roughness: 0.4 })]; },
 };
-function colourMat(rgb) {
+
+function sheetMats(it) {
+  const [, w, l, t, rgb, , pat] = it.draw;
+  const s = it.slug;
   const [r, g, b] = rgb.map((v) => v / 255);
   const c = new THREE.Color().setRGB(r, g, b, THREE.SRGBColorSpace);
   const lum = 0.3 * r + 0.6 * g + 0.1 * b;
-  if (r > 0.75 && g > 0.75 && b > 0.75 && Math.abs(r - b) < 0.06 && lum < 0.9) return new THREE.MeshPhysicalMaterial({ color: c, metalness: 1, roughness: 0.3 }); // alu lemez
-  if (b > r + 0.05 && lum > 0.8) return new THREE.MeshPhysicalMaterial({ color: c, metalness: 0, roughness: 0.05, transmission: 0.6, thickness: 0.05, transparent: true, opacity: 0.85 }); // víztiszta PVC
-  if (lum < 0.3) return new THREE.MeshPhysicalMaterial({ color: c, metalness: 0, roughness: 0.75 }); // gumi
-  if (lum > 0.85) return new THREE.MeshPhysicalMaterial({ color: c, metalness: 0, roughness: 0.35, clearcoat: 0.8 }); // festett
-  return new THREE.MeshPhysicalMaterial({ color: c.multiplyScalar(0.62), metalness: 0, roughness: 0.5, clearcoat: 0.25 }); // fa / MDF
+  const k = 3 / w, Lmm = l ? Math.min(l, 6.5 / k) : 2.6 / k; // a ténylegesen megjelenített hossz mm-ben
+  const rep = (tex, mm) => { tex.repeat.set(w / mm, Lmm / mm); return tex; };
+  // alumínium lemez
+  if (r > 0.75 && g > 0.75 && b > 0.75 && Math.abs(r - b) < 0.06 && lum < 0.9) {
+    const top = metal(0xcfd4da, /elox/.test(s) ? 0.22 : 0.3, 50);
+    top.userData.tex.forEach((x) => x.repeat.set(w / 400, 1));
+    const kind = /rizs/.test(s) ? 'rizs' : /csepp|negyzet|gyemant|diamond/.test(s) ? (/gyemant|diamond/.test(s) ? 'diamond' : 'csepp') : pat;
+    if (kind) { top.bumpMap = rep(pattern(kind), 120); top.bumpScale = 3; top.roughnessMap = null; top.roughness = 0.3; }
+    const edge = new THREE.MeshPhysicalMaterial({ color: 0xdadfe4, metalness: 1, roughness: 0.4 });
+    return { top, edge };
+  }
+  // rétegelt lemez (fenolos / film) és MDF
+  if (/retegelt|film|lowipan|fenol/.test(s)) {
+    const film = new THREE.MeshPhysicalMaterial({ color: new THREE.Color('#4a2e1b'), metalness: 0, roughness: 0.72, clearcoat: 0.12, clearcoatRoughness: 0.6, envMapIntensity: 0.45 });
+    const n = noise(128, 40, 256); film.bumpMap = rep(n, 60); film.bumpScale = 0.4;
+    if (/hexa|csuszasmentes|lowipan/.test(s)) { film.bumpMap = rep(pattern('hexa'), 70); film.bumpScale = 4; film.roughness = 0.7; film.clearcoat = 0.1; }
+    const layers = Math.max(3, Math.round(t / 1.4));
+    const edgeTex = plyEdge(layers);
+    const edge = new THREE.MeshPhysicalMaterial({ map: edgeTex, roughness: 0.8, metalness: 0 });
+    edge.userData.ply = true;
+    return { top: film, edge };
+  }
+  if (/mdf/.test(s)) { const n = noise(150, 30); const m = new THREE.MeshPhysicalMaterial({ color: c, roughness: 0.9, bumpMap: rep(n, 30), bumpScale: 0.3 }); return { top: m, edge: m }; }
+  // gumi
+  if (lum < 0.3) {
+    const m = new THREE.MeshPhysicalMaterial({ color: new THREE.Color('#2b2c2f'), metalness: 0, roughness: 0.78, sheen: 0.4, sheenColor: new THREE.Color('#5a5d63'), sheenRoughness: 0.6 });
+    const kind = /coin|noppos/.test(s) ? 'coin' : /rampa/.test(s) ? 'rib' : null;
+    if (kind) { m.bumpMap = rep(pattern(kind), kind === 'coin' ? 90 : 120); m.bumpScale = 5; }
+    else { const n = noise(128, 90, 256); m.bumpMap = rep(n, 25); m.bumpScale = 1.2; }
+    return { top: m, edge: m };
+  }
+  // víztiszta PVC
+  if (b > r + 0.05 && lum > 0.8) { const m = new THREE.MeshPhysicalMaterial({ color: c, metalness: 0, roughness: 0.05, transmission: 0.7, thickness: 0.05, transparent: true, opacity: 0.9, ior: 1.5 }); return { top: m, edge: m }; }
+  // festett / fehér lemez (poliészter, polydet)
+  if (lum > 0.85) { const m = new THREE.MeshPhysicalMaterial({ color: c, metalness: 0, roughness: 0.28, clearcoat: 1, clearcoatRoughness: 0.08 }); return { top: m, edge: m }; }
+  const m = new THREE.MeshPhysicalMaterial({ color: c, metalness: 0, roughness: 0.5, clearcoat: 0.25 });
+  return { top: m, edge: m };
 }
 
 const V = (x, y) => new THREE.Vector2(x, y);
 function poly(pts) { return new THREE.Shape(pts.map(([x, y]) => V(x, y))); }
 function section(kind, a, b, t) {
-  // keresztmetszet mm-ben, x jobbra, y fel
   t = t || Math.min(a, b || a) * 0.06;
   switch (kind) {
     case 'rhs': { const s = poly([[0, 0], [a, 0], [a, b], [0, b]]); s.holes.push(new THREE.Path([V(t, t), V(t, b - t), V(a - t, b - t), V(a - t, t)])); return s; }
@@ -71,16 +186,22 @@ function section(kind, a, b, t) {
 }
 
 let scene;
+// kontakt-árnyék: puha, sötét folt közvetlenül a tárgy alatt (a vetett árnyék mellé)
+function contactShadow(w, d) {
+  const tex = canvasTex(256, 256, (g) => { const gr = g.createRadialGradient(128, 128, 10, 128, 128, 128); gr.addColorStop(0, 'rgba(0,0,0,0.55)'); gr.addColorStop(0.55, 'rgba(0,0,0,0.18)'); gr.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = gr; g.fillRect(0, 0, 256, 256); });
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(w, d), new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false, opacity: 0.55 }));
+  m.rotation.x = -Math.PI / 2; m.position.y = 0.001; m.renderOrder = -1; scene.add(m);
+}
 function setup() {
   scene = new THREE.Scene();
   scene.environment = envTex;
-  const key = new THREE.DirectionalLight(0xffffff, 2.0);
-  key.position.set(-3, 7, 5); key.castShadow = true;
-  key.shadow.mapSize.set(4096, 4096); key.shadow.radius = 10; key.shadow.blurSamples = 16;
-  Object.assign(key.shadow.camera, { left: -12, right: 12, top: 12, bottom: -12, near: 0.5, far: 40 });
+  const key = new THREE.DirectionalLight(0xffffff, 1.6);
+  key.position.set(-3, 8, 4); key.castShadow = true;
+  key.shadow.mapSize.set(2048, 2048); key.shadow.radius = 14; key.shadow.blurSamples = 20; key.shadow.bias = -0.0004;
+  Object.assign(key.shadow.camera, { left: -8, right: 8, top: 8, bottom: -8, near: 0.5, far: 30 });
   scene.add(key);
-  scene.add(new THREE.HemisphereLight(0xffffff, 0xdfe6f2, 0.6));
-  const g = new THREE.Mesh(new THREE.PlaneGeometry(60, 60), new THREE.ShadowMaterial({ opacity: 0.24 }));
+  const rim = new THREE.DirectionalLight(0xf2f5fa, 0.7); rim.position.set(6, 3, -6); scene.add(rim);
+  const g = new THREE.Mesh(new THREE.PlaneGeometry(60, 60), new THREE.ShadowMaterial({ opacity: 0.2 }));
   g.rotation.x = -Math.PI / 2; g.receiveShadow = true; scene.add(g);
 }
 function add(geo, mat) { const m = new THREE.Mesh(geo, mat); m.castShadow = m.receiveShadow = true; scene.add(m); return m; }
@@ -88,54 +209,60 @@ function add(geo, mat) { const m = new THREE.Mesh(geo, mat); m.castShadow = m.re
 function buildProfile(it) {
   const [kind, a, b0, t] = it.draw;
   const b = kind === 'tube' || kind === 'rod' ? a : b0;
-  const k = 1 / Math.max(a, b);            // a keresztmetszet ~1 egység
+  const k = 1 / Math.max(a, b);
   const len = 3.6;
   const s = section(kind, a, b, t);
-  const bevel = Math.min(a, b) * k * 0.012;
-  const geo = new THREE.ExtrudeGeometry(s, { depth: len / k, bevelEnabled: true, bevelThickness: bevel / k, bevelSize: bevel / k * 0.6, bevelSegments: 2, curveSegments: 48 });
+  const bevel = Math.min(a, b) * k * 0.008;
+  const geo = new THREE.ExtrudeGeometry(s, { depth: len / k, bevelEnabled: true, bevelThickness: bevel / k, bevelSize: bevel / k * 0.6, bevelSegments: 3, curveSegments: 64 });
   geo.scale(k, k, k); geo.translate(-a * k / 2, 0, -len / 2); geo.computeVertexNormals();
-  add(geo, MAT[it.mat] ? MAT[it.mat]() : MAT.alu());
-}
-// csúszásgátló minta (csepp / gyémánt) domborításként
-function patternMap(kind, repX, repY) {
-  const c = document.createElement('canvas'); c.width = c.height = 128;
-  const g = c.getContext('2d'); g.fillStyle = '#000'; g.fillRect(0, 0, 128, 128); g.fillStyle = '#fff';
-  const drop = (x, y, a) => { g.save(); g.translate(x, y); g.rotate(a); g.beginPath(); g.ellipse(0, 0, 22, 6, 0, 0, Math.PI * 2); g.fill(); g.restore(); };
-  if (kind === 'diamond') { for (const [x, y] of [[32, 32], [96, 96], [96, 32], [32, 96]]) { g.beginPath(); g.moveTo(x, y - 14); g.lineTo(x + 8, y); g.lineTo(x, y + 14); g.lineTo(x - 8, y); g.fill(); } }
-  else { drop(32, 32, Math.PI / 4); drop(96, 96, Math.PI / 4); drop(96, 32, -Math.PI / 4); drop(32, 96, -Math.PI / 4); }
-  const t = new THREE.CanvasTexture(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(repX, repY); t.anisotropy = 8; return t;
+  const [side, cap] = (MAT[it.mat] || MAT.alu)();
+  // oldalfal UV: u = keresztmetszet (mm), v = hossz (mm) -> a csiszolás a hossz mentén fut
+  side.userData.tex?.forEach((x) => x.repeat.set(1 / 28, 1 / 2000));
+  if (side.roughnessMap && !side.userData.tex) side.roughnessMap.repeat.set(1 / 80, 1 / 80);
+  add(geo, [cap, side]);
+  contactShadow(1.6, len * 1.15);
 }
 function buildSheet(it) {
-  const [, w, l, t, colour, , pattern] = it.draw;
-  const k = 3 / w, mat = colourMat(colour), th = Math.max(t * k, 0.025);
-  if (pattern) { mat.bumpMap = patternMap(pattern, w / 110, (l || w * 2) / 110); mat.bumpScale = 2.5; mat.roughness = 0.38; }
-  if (l) {                                  // tábla: fekve
+  const [, w, l, t] = it.draw;
+  const k = 3 / w, th = Math.max(t * k, 0.03);
+  const { top, edge } = sheetMats(it);
+  if (edge.userData.ply && edge.map) edge.map.repeat.set(1, 1);
+  // BoxGeometry anyagsorrend: +x, -x, +y, -y, +z, -z
+  const mats = [edge, edge, top, top, edge, edge];
+  if (l) {
     const L = Math.min(l * k, 6.5);
-    add(new THREE.BoxGeometry(w * k, th, L), mat).position.set(0, th / 2, 0);
-  } else {                                  // tekercs + kiterített rész
+    const box = new THREE.BoxGeometry(w * k, th, L);
+    // él-textúra: a rétegek vízszintesen fussanak a lemez vastagságában
+    if (edge.userData.ply) {
+      const uv = box.attributes.uv;
+      for (let i = 0; i < uv.count; i++) { const f = Math.floor(i / 4); if (f !== 2 && f !== 3) { const u = uv.getX(i), v = uv.getY(i); uv.setXY(i, u * 4, v); } }
+    }
+    add(box, mats).position.set(0, th / 2, 0);
+    contactShadow(w * k * 1.1, L * 1.08);
+  } else {
     const r = 0.42;
-    const roll = add(new THREE.CylinderGeometry(r, r, w * k, 64), mat);
+    const roll = add(new THREE.CylinderGeometry(r, r, w * k, 96), [top, edge, edge]);
     roll.rotation.z = Math.PI / 2; roll.position.set(0, r, -0.9);
-    add(new THREE.BoxGeometry(w * k, th, 2.6), mat).position.set(0, th / 2, 0.4);
+    add(new THREE.BoxGeometry(w * k, th, 2.6), mats).position.set(0, th / 2, 0.4);
+    contactShadow(w * k * 1.1, 3.6);
   }
 }
 
 function camera(view) {
   const box = new THREE.Box3();
-  const meshes = scene.children.filter((o) => o.isMesh && !(o.material instanceof THREE.ShadowMaterial));
-  meshes.forEach((m) => box.expandByObject(m));
+  scene.children.filter((o) => o.isMesh && o.castShadow).forEach((m) => box.expandByObject(m));
   const c = box.getCenter(new THREE.Vector3()), sph = box.getBoundingSphere(new THREE.Sphere());
-  // 1. nézet: hosszanti 3/4-es kép; 2. nézet: közelebbi, a vágott végre néző kép
-  const dir = view === 1 ? new THREE.Vector3(-1.35, 0.95, 1.25) : new THREE.Vector3(0.55, 0.45, 1.6);
-  const fov = 28, cam = new THREE.PerspectiveCamera(fov, W / H, 0.01, 200);
-  const dist = sph.radius / Math.sin(THREE.MathUtils.degToRad(fov / 2)) * (view === 1 ? 0.92 : 0.8);
+  const dir = view === 1 ? new THREE.Vector3(-1.35, 0.8, 1.25) : new THREE.Vector3(0.55, 0.4, 1.6);
+  const fov = 26, cam = new THREE.PerspectiveCamera(fov, W / H, 0.01, 200);
+  const dist = sph.radius / Math.sin(THREE.MathUtils.degToRad(fov / 2)) * (view === 1 ? 0.9 : 0.78);
   cam.position.copy(c).add(dir.normalize().multiplyScalar(dist));
   cam.lookAt(c);
   return cam;
 }
 
 window.render = (it, view) => {
-  if (scene) scene.traverse((o) => { if (o.geometry) o.geometry.dispose(); if (o.material) { for (const k in o.material) if (o.material[k]?.isTexture) o.material[k].dispose(); o.material.dispose(); } });
+  seed = 7;
+  if (scene) scene.traverse((o) => { if (o.geometry) o.geometry.dispose(); const ms = Array.isArray(o.material) ? o.material : o.material ? [o.material] : []; for (const m of ms) { for (const k in m) if (m[k]?.isTexture) m[k].dispose(); m.dispose(); } });
   setup();
   if (it.draw[0] === 'sheet') buildSheet(it); else buildProfile(it);
   renderer.render(scene, camera(view));
