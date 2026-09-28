@@ -526,6 +526,24 @@
    "/termekkepek/121032-rakomanyrogzito-rud-acel-2500-3.webp"
   ]
  },
+ "121110-kombi-rakomanyrogzito-sin-sully-acel": {
+  "source": "ADAICO katalógus",
+  "sourceUrl": "https://www.adaico.com/en/downloadcatalogues/download?id=ADAICO_2025_EDS.pdf#page=329",
+  "sourceTitle": "ADAICO katalógus 2025: 2301110",
+  "matchedCode": "2301110",
+  "specs": {
+   "Cikkszám (gyártói)": "2301110",
+   "Megnevezés (gyári)": "Encastred COMBI Anchor Track – süllyesztett kombi rakományrögzítő sín",
+   "Anyag": "acél, horganyzott",
+   "Méret": "3048 × 130 mm",
+   "Falvastagság": "2,5 mm",
+   "Tömeg": "6,4 kg"
+  },
+  "images": [
+   "/termekkepek/121110-kombi-rakomanyrogzito-sin-sully-acel-1.webp",
+   "/termekkepek/121110-kombi-rakomanyrogzito-sin-sully-acel-2.webp"
+  ]
+ },
  "121127-kombi-rakomanyrogzito-sin-acel-magnelis": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/profili-fermacarico-orizzontale-f-track/",
@@ -539,6 +557,22 @@
   "images": [
    "/termekkepek/121127-kombi-rakomanyrogzito-sin-acel-magnelis-1.webp",
    "/termekkepek/121127-kombi-rakomanyrogzito-sin-acel-magnelis-2.webp"
+  ]
+ },
+ "121128-kombi-rakomanyrogzito-sin-acel": {
+  "source": "ADAICO katalógus",
+  "sourceUrl": "https://www.adaico.com/en/downloadcatalogues/download?id=ADAICO_2025_EDS.pdf#page=327",
+  "sourceTitle": "ADAICO katalógus 2025: 2301128",
+  "matchedCode": "2301128",
+  "specs": {
+   "Cikkszám (gyártói)": "2301128",
+   "Megnevezés (gyári)": "ADAICO COMBI Anchor Track – kombi rakományrögzítő sín",
+   "Anyag": "acél",
+   "Szélesség": "115 mm",
+   "Lyukosztás": "50,8 mm / 101,6 mm"
+  },
+  "images": [
+   "/termekkepek/121128-kombi-rakomanyrogzito-sin-acel-1.webp"
   ]
  },
  "121129-kombi-rakomanyrogzito-sin-inox": {
@@ -1506,6 +1540,24 @@
    "/termekkepek/21-ada-slider-teto-rendszer-1.webp"
   ]
  },
+ "211086-88-ada-tetokiemelo-hp-lift-kit": {
+  "source": "ADAICO katalógus",
+  "sourceUrl": "https://www.adaico.com/en/downloadcatalogues/download?id=ADAICO_2025_EDS.pdf#page=39",
+  "sourceTitle": "ADAICO katalógus 2025: 0601086 + 0601088",
+  "matchedCode": "0601086 + 0601088",
+  "specs": {
+   "Cikkszám (gyártói)": "0601086 + 0601088",
+   "Megnevezés (gyári)": "ADA-LIFTER Hydraulic Pump Double Effect + Pillar Extension Set – hidraulikus tetőemelő szivattyú hosszabbító készlettel",
+   "Emelés": "450 mm",
+   "Szivattyú tömege": "3,57 kg (0601086)",
+   "Hosszabbító készlet tömege": "8,5 kg (0601088)",
+   "Működés": "kettős működésű – a kar fel- és lefelé mozgatásakor is emel"
+  },
+  "images": [
+   "/termekkepek/211086-88-ada-tetokiemelo-hp-lift-kit-1.webp",
+   "/termekkepek/211086-88-ada-tetokiemelo-hp-lift-kit-2.webp"
+  ]
+ },
  "211086-ada-tetokiemelo-pumpa-hp-lift-450-mm": {
   "source": "ADAICO",
   "sourceUrl": "https://www.adaico.com/en/catalogsearch/result/?q=0601086",
@@ -1639,6 +1691,23 @@
   "images": [
    "/termekkepek/211410-rakonca-kocsi-acel-c-sinhez-1.webp",
    "/termekkepek/211410-rakonca-kocsi-acel-c-sinhez-2.webp"
+  ]
+ },
+ "212002-adaico-rakonca-zseb-nyers": {
+  "source": "ADAICO katalógus",
+  "sourceUrl": "https://www.adaico.com/en/downloadcatalogues/download?id=ADAICO_2025_EDS.pdf#page=35",
+  "sourceTitle": "ADAICO katalógus 2025: 0502002",
+  "matchedCode": "0502002",
+  "specs": {
+   "Cikkszám (gyártói)": "0502002",
+   "Megnevezés (gyári)": "Chassishook to weld – hegeszthető rakonca-alvázzseb",
+   "Anyag": "acél, nyers (hegesztéshez)",
+   "Méret": "85 × 126 mm, 31 mm mély",
+   "Tömeg": "1,08 kg"
+  },
+  "images": [
+   "/termekkepek/212002-adaico-rakonca-zseb-nyers-1.webp",
+   "/termekkepek/212002-adaico-rakonca-zseb-nyers-2.webp"
   ]
  },
  "212031-ada-rakonca-gorgo-t-acel-d24x24-xl": {
@@ -1938,6 +2007,42 @@
   },
   "images": [
    "/termekkepek/214209-takaro-gumi-acel-c-sinhez-cp-1.webp"
+  ]
+ },
+ "214312-5000mm-50x52-mm-acel-c-sin": {
+  "source": "ADAICO katalógus",
+  "sourceUrl": "https://www.adaico.com/en/downloadcatalogues/download?id=ADAICO_2025_EDS.pdf#page=270",
+  "sourceTitle": "ADAICO katalógus 2025: 1403010 / 1403012 / 1490006",
+  "matchedCode": "1403010 / 1403012 / 1490006",
+  "specs": {
+   "Cikkszám (gyártói)": "1403010 / 1403012 / 1490006",
+   "Megnevezés (gyári)": "Galvanized Steel Bar Profile – horganyzott acél sínprofil (gumitömítéshez)",
+   "Anyag": "acél, tűzihorganyzott",
+   "Falvastagság": "2 mm",
+   "Méret": "52 × 50 mm",
+   "Tömeg": "kb. 2,94 kg/fm"
+  },
+  "images": [
+   "/termekkepek/214312-5000mm-50x52-mm-acel-c-sin-1.webp",
+   "/termekkepek/214312-5000mm-50x52-mm-acel-c-sin-2.webp"
+  ]
+ },
+ "214312-6600mm-50x52-mm-acel-c-sin": {
+  "source": "ADAICO katalógus",
+  "sourceUrl": "https://www.adaico.com/en/downloadcatalogues/download?id=ADAICO_2025_EDS.pdf#page=270",
+  "sourceTitle": "ADAICO katalógus 2025: 1403010 / 1403012 / 1490006",
+  "matchedCode": "1403010 / 1403012 / 1490006",
+  "specs": {
+   "Cikkszám (gyártói)": "1403010 / 1403012 / 1490006",
+   "Megnevezés (gyári)": "Galvanized Steel Bar Profile – horganyzott acél sínprofil (gumitömítéshez)",
+   "Anyag": "acél, tűzihorganyzott",
+   "Falvastagság": "2 mm",
+   "Méret": "52 × 50 mm",
+   "Tömeg": "kb. 2,94 kg/fm"
+  },
+  "images": [
+   "/termekkepek/214312-6600mm-50x52-mm-acel-c-sin-1.webp",
+   "/termekkepek/214312-6600mm-50x52-mm-acel-c-sin-2.webp"
   ]
  },
  "214312-7800mm-50x52-mm-acel-c-sin": {
@@ -7943,6 +8048,24 @@
    "/termekkepek/820129-rugos-rigli-horg-2.webp",
    "/termekkepek/820129-rugos-rigli-horg-3.webp",
    "/termekkepek/820129-rugos-rigli-horg-4.webp"
+  ]
+ },
+ "821018-rugos-ajtokitamaszto-horg-540-425-mm-ad": {
+  "source": "ADAICO katalógus",
+  "sourceUrl": "https://www.adaico.com/en/downloadcatalogues/download?id=ADAICO_2025_EDS.pdf#page=396",
+  "sourceTitle": "ADAICO katalógus 2025: 1601018",
+  "matchedCode": "1601018",
+  "specs": {
+   "Cikkszám (gyártói)": "1601018",
+   "Megnevezés (gyári)": "Spring Door Retainer (Ø25) Zinc Plated – rugós ajtókitámasztó",
+   "Anyag": "acél, horganyzott",
+   "Csőátmérő": "Ø25 mm",
+   "Méret": "540 × 425 mm",
+   "Tömeg": "2,43 kg"
+  },
+  "images": [
+   "/termekkepek/821018-rugos-ajtokitamaszto-horg-540-425-mm-ad-1.webp",
+   "/termekkepek/821018-rugos-ajtokitamaszto-horg-540-425-mm-ad-2.webp"
   ]
  },
  "822225-haub-csatoszar-ellendarabbal-horg-ts": {
