@@ -27,7 +27,7 @@ import { groups, GROUP_META, stats, groupImage } from '../../lib/catalog.js';
           </a>
           <ul class="cg-cats">
             {g.categories.map((c) => (
-              <li><a href={`/termekek/${g.slug}#${c.slug}`}>{c.name} <span class="muted">{c.count}</span></a></li>
+              <li><a class="metal-chip" href={`/termekek/${g.slug}#${c.slug}`}>{c.name} <span class="muted">{c.count}</span></a></li>
             ))}
           </ul>
         </article>
@@ -51,10 +51,6 @@ import { groups, GROUP_META, stats, groupImage } from '../../lib/catalog.js';
     background: var(--accent-soft); border: 1px solid rgba(10, 108, 255, 0.18);
   }
   .cg-cats { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
-  .cg-cats a {
-    display: inline-flex; gap: 6px; padding: 6px 12px; border-radius: 999px; font-size: 0.86rem;
-    border: 1px solid var(--line); color: var(--text-2); text-decoration: none;
-  }
-  .cg-cats a:hover { border-color: var(--accent); color: var(--text); background: var(--accent-soft); }
+  .cg-cats a { gap: 6px; font-size: 0.86rem; padding: 5px 12px; }
   @media (max-width: 420px) { .catalog-list { grid-template-columns: 1fr; } }
 </style>
