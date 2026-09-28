@@ -14,7 +14,7 @@ HERE = Path(__file__).parent
 sys.path.insert(0, str(HERE))
 from common import ENRICHMENT, IMAGE_DIR  # noqa: E402
 
-SCRIPTS = ["ital_accessori", "woocommerce", "fts_katalogus", "pastore", "caralu", "alusv", "adaico", "sandprofile", "sitemap_kereso", "parlok", "jonesco", "gnc", "pommier", "reall", "cimaplast", "metra", "bodega", "polser", "versus", "edscha", "bmc", "alcomet", "kloeckner", "dost", "plasticpadana", "nevbol"]
+SCRIPTS = ["ital_accessori", "woocommerce", "fts_katalogus", "pastore", "caralu", "alusv", "adaico", "sandprofile", "sitemap_kereso", "parlok", "jonesco", "gnc", "pommier", "reall", "cimaplast", "metra", "bodega", "polser", "versus", "edscha", "bmc", "alcomet", "kloeckner", "dost", "plasticpadana", "beszallitoi_rajzok", "nevbol"]
 
 for name in SCRIPTS + ["szoveg_eltavolitas"]:
     print(f"\n=== {name} ===", flush=True)
@@ -25,6 +25,8 @@ for name in SCRIPTS + ["szoveg_eltavolitas"]:
         pass
 
 used = {img.split("/")[-1] for e in json.loads(ENRICHMENT.read_text()).values() for img in e.get("images", [])}
+# a bővített kínálat (bovitett.json) képei is használatban vannak
+used |= {img.split("/")[-1] for p in json.loads((ENRICHMENT.parent / "bovitett.json").read_text())["products"] for img in p.get("images", [])}
 orphans = [f for f in IMAGE_DIR.glob("*.webp") if f.name not in used]
 for f in orphans:
     f.unlink()

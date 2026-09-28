@@ -24,9 +24,15 @@ const excelProducts = catalog.products.map((p) => {
 const extendedProducts = (extended.products ?? []).map((p) => ({
   slug: p.slug, code: p.code, name: p.name, group: p.group, category: p.category,
   specs: p.specs ?? {}, images: p.images ?? [], description: p.description ?? '', documents: [], supplier: p.source,
+  first: p.first ?? false,
 }));
 
-export const products = [...excelProducts, ...extendedProducts];
+// A "first" jelölésű bővített termékek (pl. komplett KIT) a kategóriájuk elejére kerülnek
+export const products = [
+  ...extendedProducts.filter((p) => p.first),
+  ...excelProducts,
+  ...extendedProducts.filter((p) => !p.first),
+];
 
 // Csoportok és kategóriák: Excel + új csoportok/kategóriák, darabszámok újraszámolva, üresek elhagyva
 const groupList = catalog.groups.map((g) => ({

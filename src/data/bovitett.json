@@ -14611,6 +14611,26 @@
    ],
    "sourceUrl": "https://gnc-systems.com/en/products/switch-square/",
    "source": "G&C termékek"
+  },
+  {
+   "slug": "csavarozott-acel-segedkeret-kit",
+   "code": "",
+   "name": "Csavarozott acél segédkeret KIT",
+   "group": "acel-profilok",
+   "category": "acel-keret",
+   "first": true,
+   "description": "Horganyzott, csavarozott acél segédkeret (alvázkeret) készlet teherautó-felépítményekhez: U-típusú padlókeret-profilok, hossz- és kereszttartók, konzolok. Hegesztés nélkül szerelhető, a felépítmény méretére összeállítva.",
+   "specs": {
+    "Anyag": "S355MC acél",
+    "Felület": "horganyzott",
+    "Kivitel": "csavarozott, hegesztés nélkül",
+    "Elemek": "padlókeret-profilok, hossz- és kereszttartók, konzolok",
+    "Méret": "egyedi, a felépítmény szerint"
+   },
+   "images": [
+    "/termekkepek/csavarozott-acel-segedkeret-kit-1.webp"
+   ],
+   "source": "Beszállítói rajz"
   }
  ],
  "moves": {

@@ -991,6 +991,122 @@
    "/termekkepek/141266-acel-hossztarto-120-60-6-mm-1.webp"
   ]
  },
+ "141520-perf-pu00-acel-keret-110-15-2-5100": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "Cargo Frames U profil",
+  "matchedCode": "",
+  "description": "Hidegen hengerelt acél padlókeret-profil (U típus) teherautó- és pótkocsi-felépítmények alvázkeretéhez. A felső horony a süllyesztett kikötőfülek fogadására szolgál, a padló rétegelt lemeze a lépcsőre fekszik fel.",
+  "specs": {
+   "Profil típus": "U",
+   "Magasság": "110 mm",
+   "Padlólemez-lépcső": "15 mm",
+   "Lemezvastagság": "2 mm",
+   "Szélesség": "74 mm",
+   "Hossz": "5100 mm",
+   "Tömeg": "3,67 kg/m (18,7 kg/db)",
+   "Lyukasztás": "dupla furat kikötőfülhöz 300 mm-enként",
+   "Anyag": "S355MC acél",
+   "Tűrés": "EN 10162"
+  },
+  "images": [
+   "/termekkepek/141520-perf-pu00-acel-keret-110-15-2-5100-1.webp",
+   "/termekkepek/141520-perf-pu00-acel-keret-110-15-2-5100-2.webp",
+   "/termekkepek/141520-perf-pu00-acel-keret-110-15-2-5100-3.webp"
+  ]
+ },
+ "141520-pu00-acel-keret-110-15-2-5000": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "Cargo Frames U profil",
+  "matchedCode": "",
+  "description": "Hidegen hengerelt acél padlókeret-profil (U típus) teherautó- és pótkocsi-felépítmények alvázkeretéhez. A felső horony a süllyesztett kikötőfülek fogadására szolgál, a padló rétegelt lemeze a lépcsőre fekszik fel.",
+  "specs": {
+   "Profil típus": "U",
+   "Magasság": "110 mm",
+   "Padlólemez-lépcső": "15 mm",
+   "Lemezvastagság": "2 mm",
+   "Szélesség": "74 mm",
+   "Hossz": "5000 mm",
+   "Tömeg": "3,67 kg/m (18,4 kg/db)",
+   "Lyukasztás": "nincs",
+   "Anyag": "S355MC acél",
+   "Tűrés": "EN 10162"
+  },
+  "images": [
+   "/termekkepek/141520-pu00-acel-keret-110-15-2-5000-1.webp",
+   "/termekkepek/141520-pu00-acel-keret-110-15-2-5000-2.webp"
+  ]
+ },
+ "141521-pu00-acel-keret-115-21-3-mm": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "Cargo Frames U profil",
+  "matchedCode": "",
+  "description": "Hidegen hengerelt acél padlókeret-profil (U típus) teherautó- és pótkocsi-felépítmények alvázkeretéhez. A felső horony a süllyesztett kikötőfülek fogadására szolgál, a padló rétegelt lemeze a lépcsőre fekszik fel.",
+  "specs": {
+   "Profil típus": "U",
+   "Magasság": "115 mm",
+   "Padlólemez-lépcső": "21 mm",
+   "Lemezvastagság": "3 mm",
+   "Szélesség": "74 mm",
+   "Hossz": "7500 mm",
+   "Tömeg": "5,63 kg/m (42,2 kg/db)",
+   "Lyukasztás": "nincs",
+   "Anyag": "S355MC acél",
+   "Tűrés": "EN 10162"
+  },
+  "images": [
+   "/termekkepek/141521-pu00-acel-keret-115-21-3-mm-1.webp",
+   "/termekkepek/141521-pu00-acel-keret-115-21-3-mm-2.webp"
+  ]
+ },
+ "141527-pu00-acel-keret-115-27-3-7500": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "Cargo Frames U profil",
+  "matchedCode": "",
+  "description": "Hidegen hengerelt acél padlókeret-profil (U típus) teherautó- és pótkocsi-felépítmények alvázkeretéhez. A felső horony a süllyesztett kikötőfülek fogadására szolgál, a padló rétegelt lemeze a lépcsőre fekszik fel.",
+  "specs": {
+   "Profil típus": "U",
+   "Magasság": "115 mm",
+   "Padlólemez-lépcső": "27 mm",
+   "Lemezvastagság": "3 mm",
+   "Szélesség": "74 mm",
+   "Hossz": "7500 mm",
+   "Tömeg": "5,77 kg/m (43,3 kg/db)",
+   "Lyukasztás": "nincs",
+   "Anyag": "S355MC acél",
+   "Tűrés": "EN 10162"
+  },
+  "images": [
+   "/termekkepek/141527-pu00-acel-keret-115-27-3-7500-1.webp",
+   "/termekkepek/141527-pu00-acel-keret-115-27-3-7500-2.webp"
+  ]
+ },
+ "142130-pu00-acel-keret-140-21-3-7500": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "Cargo Frames U profil",
+  "matchedCode": "",
+  "description": "Hidegen hengerelt acél padlókeret-profil (U típus) teherautó- és pótkocsi-felépítmények alvázkeretéhez. A felső horony a süllyesztett kikötőfülek fogadására szolgál, a padló rétegelt lemeze a lépcsőre fekszik fel.",
+  "specs": {
+   "Profil típus": "U",
+   "Magasság": "140 mm",
+   "Padlólemez-lépcső": "21 mm",
+   "Lemezvastagság": "3 mm",
+   "Szélesség": "74 mm",
+   "Hossz": "7500 mm",
+   "Tömeg": "6,22 kg/m (46,7 kg/db)",
+   "Lyukasztás": "nincs",
+   "Anyag": "S355MC acél",
+   "Tűrés": "EN 10162"
+  },
+  "images": [
+   "/termekkepek/142130-pu00-acel-keret-140-21-3-7500-1.webp",
+   "/termekkepek/142130-pu00-acel-keret-140-21-3-7500-2.webp"
+  ]
+ },
  "142303-billencs-nyitokar-j": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/15012303-leva-comando-destra-per-apertura-cerniere/",
@@ -1017,6 +1133,93 @@
   "images": [
    "/termekkepek/142304-billencs-nyitokar-b-1.webp",
    "/termekkepek/142304-billencs-nyitokar-b-2.webp"
+  ]
+ },
+ "142430-pu00-acel-keret-140-24-3-7500": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "Cargo Frames U profil",
+  "matchedCode": "",
+  "description": "Hidegen hengerelt acél padlókeret-profil (U típus) teherautó- és pótkocsi-felépítmények alvázkeretéhez. A felső horony a süllyesztett kikötőfülek fogadására szolgál, a padló rétegelt lemeze a lépcsőre fekszik fel.",
+  "specs": {
+   "Profil típus": "U",
+   "Magasság": "140 mm",
+   "Padlólemez-lépcső": "24 mm",
+   "Lemezvastagság": "3 mm",
+   "Szélesség": "74 mm",
+   "Hossz": "7500 mm",
+   "Tömeg": "6,29 kg/m (47,2 kg/db)",
+   "Lyukasztás": "nincs",
+   "Anyag": "S355MC acél",
+   "Tűrés": "EN 10162"
+  },
+  "images": [
+   "/termekkepek/142430-pu00-acel-keret-140-24-3-7500-1.webp",
+   "/termekkepek/142430-pu00-acel-keret-140-24-3-7500-2.webp"
+  ]
+ },
+ "142730-pf50-acel-keret-140-27-3-2500-sima": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "Cargo Frames F profil",
+  "matchedCode": "",
+  "description": "Hidegen hengerelt acél padlókeret-profil sima felső résszel (hegesztett kikötőfülekhez vagy a felépítmény homlok- és hátsó keretéhez).",
+  "specs": {
+   "Profil típus": "F (sima felső rész, horony nélkül)",
+   "Magasság": "140 mm",
+   "Padlólemez-lépcső": "27 mm",
+   "Lemezvastagság": "3 mm",
+   "Hossz": "2500 mm",
+   "Anyag": "S355MC acél"
+  },
+  "images": [
+   "/termekkepek/142730-pf50-acel-keret-140-27-3-2500-sima-1.webp"
+  ]
+ },
+ "142730-pu00-acel-keret-140-27-3-7500": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "Cargo Frames U profil",
+  "matchedCode": "",
+  "description": "Hidegen hengerelt acél padlókeret-profil (U típus) teherautó- és pótkocsi-felépítmények alvázkeretéhez. A felső horony a süllyesztett kikötőfülek fogadására szolgál, a padló rétegelt lemeze a lépcsőre fekszik fel.",
+  "specs": {
+   "Profil típus": "U",
+   "Magasság": "140 mm",
+   "Padlólemez-lépcső": "27 mm",
+   "Lemezvastagság": "3 mm",
+   "Szélesség": "74 mm",
+   "Hossz": "7500 mm",
+   "Tömeg": "6,36 kg/m (47,7 kg/db)",
+   "Lyukasztás": "nincs",
+   "Anyag": "S355MC acél",
+   "Tűrés": "EN 10162"
+  },
+  "images": [
+   "/termekkepek/142730-pu00-acel-keret-140-27-3-7500-1.webp",
+   "/termekkepek/142730-pu00-acel-keret-140-27-3-7500-2.webp"
+  ]
+ },
+ "142730-pu00-acel-keret-140-27-3-8000": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "Cargo Frames U profil",
+  "matchedCode": "",
+  "description": "Hidegen hengerelt acél padlókeret-profil (U típus) teherautó- és pótkocsi-felépítmények alvázkeretéhez. A felső horony a süllyesztett kikötőfülek fogadására szolgál, a padló rétegelt lemeze a lépcsőre fekszik fel.",
+  "specs": {
+   "Profil típus": "U",
+   "Magasság": "140 mm",
+   "Padlólemez-lépcső": "27 mm",
+   "Lemezvastagság": "3 mm",
+   "Szélesség": "74 mm",
+   "Hossz": "8000 mm",
+   "Tömeg": "6,36 kg/m (50,9 kg/db)",
+   "Lyukasztás": "nincs",
+   "Anyag": "S355MC acél",
+   "Tűrés": "EN 10162"
+  },
+  "images": [
+   "/termekkepek/142730-pu00-acel-keret-140-27-3-8000-1.webp",
+   "/termekkepek/142730-pu00-acel-keret-140-27-3-8000-2.webp"
   ]
  },
  "145010-50-mm-es-gombcsuklo-keszlet-3-5t": {
@@ -6691,6 +6894,141 @@
   "description": "Teleszkópos hidraulikus billenőhenger billenős felépítményekhez, homlokfali (kabin mögötti) beépítésre.",
   "images": [
    "/termekkepek/6008-munkahenger-9t-06x1470x152-1.webp"
+  ]
+ },
+ "614602-j-oldalajto-zarszerkezet": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "61.4600.0002.pdf",
+  "matchedCode": "",
+  "description": "Kabinzár (forgócsapdás oldalajtózár) biztosítással és erősítőlemezzel, jobb oldali kivitel. Dobozos felépítmények, fülkék és szerszámosládák ajtóihoz.",
+  "specs": {
+   "Kivitel": "jobb, biztosítással, erősítőlemezzel",
+   "Méret (sz × m)": "65,4 × 74 mm",
+   "Zártest szélessége": "45 mm",
+   "Zárcsap átmérő": "Ø10 mm",
+   "Erősítőlemez vastagsága": "2,5 mm",
+   "Nyitási szög": "90°",
+   "Felület": "Cr(VI)-mentes bevonat",
+   "Tömeg": "0,53 kg"
+  },
+  "images": [
+   "/termekkepek/614602-j-oldalajto-zarszerkezet-1.webp",
+   "/termekkepek/614602-j-oldalajto-zarszerkezet-2.webp"
+  ]
+ },
+ "615000-zarcsap": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "05.0007.2122.pdf",
+  "matchedCode": "",
+  "description": "Zárcsap a forgócsapdás oldalajtózárakhoz, M12×1 menetes ellenlappal.",
+  "specs": {
+   "Menetes ellenlap": "M12×1",
+   "Ellenlap mérete": "39 × 31 × 8 mm",
+   "Ellenlap anyaga": "St37-2 (DIN 174) acél",
+   "Felület": "horganyzott"
+  },
+  "images": [
+   "/termekkepek/615000-zarcsap-1.webp"
+  ]
+ },
+ "615003-belsozarszerk-oldalajtohoz-500-mm-kar-b": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "61.5101.0003.pdf",
+  "matchedCode": "",
+  "description": "Forgócsapdás (Drehfallen-) oldalajtózár belső, 500 mm-es kilincskarral és biztosítással, bal oldali kivitel. Dobozos felépítmények és fülkék oldalajtóihoz.",
+  "specs": {
+   "Traverz (kar) hossza": "500 mm",
+   "Kar rögzítése": "fokozatmentesen állítható szögben",
+   "Zártest magassága": "84 mm",
+   "Kioldási löket": "7,5 mm",
+   "Rögzítés": "M8 süllyesztett fejű csavar (ISO 10642)",
+   "Biztosítás": "igen, reteszelő karral",
+   "Felület": "Cr(VI)-mentes bevonat",
+   "Tartozék": "bal és jobb takarósapka tolókával",
+   "Kivitel": "bal"
+  },
+  "images": [
+   "/termekkepek/615003-belsozarszerk-oldalajtohoz-500-mm-kar-b-1.webp",
+   "/termekkepek/615003-belsozarszerk-oldalajtohoz-500-mm-kar-b-2.webp",
+   "/termekkepek/615003-belsozarszerk-oldalajtohoz-500-mm-kar-b-3.webp"
+  ]
+ },
+ "615102-kulso-oldalajto-kilincs": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "53.4560.0004.pdf",
+  "matchedCode": "",
+  "description": "Nyomógombos külső fogantyú zárhengerrel oldalajtókhoz; a nyomógomb a belső zárat oldja. 2 kulccsal szállítjuk.",
+  "specs": {
+   "Hossz": "180 mm",
+   "Szélesség": "36 mm",
+   "Magasság": "34 mm",
+   "Furattávolság": "120 mm",
+   "Rögzítés": "2 db M6×12 menetes persely (max. 10 Nm)",
+   "Kioldási löket": "13,5 mm",
+   "Zárhenger": "igen, 180°-os zárási mozgás, 2 kulccsal",
+   "Felület": "Cr(VI)-mentes"
+  },
+  "images": [
+   "/termekkepek/615102-kulso-oldalajto-kilincs-1.webp"
+  ]
+ },
+ "615104-oldalajtozar-belso-500-mm-kar-jobb": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "61.5101.0003.pdf",
+  "matchedCode": "",
+  "description": "Forgócsapdás (Drehfallen-) oldalajtózár belső, 500 mm-es kilincskarral és biztosítással, jobb oldali kivitel (a bal oldali tükörképe). Dobozos felépítmények és fülkék oldalajtóihoz.",
+  "specs": {
+   "Traverz (kar) hossza": "500 mm",
+   "Kar rögzítése": "fokozatmentesen állítható szögben",
+   "Zártest magassága": "84 mm",
+   "Kioldási löket": "7,5 mm",
+   "Rögzítés": "M8 süllyesztett fejű csavar (ISO 10642)",
+   "Biztosítás": "igen, reteszelő karral",
+   "Felület": "Cr(VI)-mentes bevonat",
+   "Tartozék": "bal és jobb takarósapka tolókával",
+   "Kivitel": "jobb (a rajz a bal oldalit mutatja)"
+  },
+  "images": [
+   "/termekkepek/615104-oldalajtozar-belso-500-mm-kar-jobb-1.webp",
+   "/termekkepek/615104-oldalajtozar-belso-500-mm-kar-jobb-2.webp",
+   "/termekkepek/615104-oldalajtozar-belso-500-mm-kar-jobb-3.webp"
+  ]
+ },
+ "615263-68-s1-t-karos-sully-zar-f": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "Industrilas 68-S1",
+  "matchedCode": "",
+  "description": "68-S1 T-karos süllyesztett zár, zárhengerrel.",
+  "specs": {
+   "Működtetés": "T-kar",
+   "Beépítés": "süllyesztett",
+   "Zárhenger": "igen",
+   "Ház": "fekete"
+  },
+  "images": [
+   "/termekkepek/615263-68-s1-t-karos-sully-zar-f-1.webp"
+  ]
+ },
+ "615363-68-s1-t-karos-sully-zar": {
+  "source": "Beszállítói rajz",
+  "sourceUrl": "",
+  "sourceTitle": "Industrilas 68-S1",
+  "matchedCode": "",
+  "description": "68-S1 T-karos süllyesztett zár, zárhengerrel.",
+  "specs": {
+   "Működtetés": "T-kar",
+   "Beépítés": "süllyesztett",
+   "Zárhenger": "igen",
+   "Ház": "fekete"
+  },
+  "images": [
+   "/termekkepek/615363-68-s1-t-karos-sully-zar-1.webp"
   ]
  },
  "615373-krom-kulso-kilincs-12mm-kulcs": {

@@ -5,3 +5,5 @@ dist/
 .env.*
 .DS_Store
 .cache/
+# A D. La Porte rajzai „bizalmas” jelöléssel érkeztek: csak helyben, a képek előállításához
+data/forras/beszallitoi_rajzok/dlp/
