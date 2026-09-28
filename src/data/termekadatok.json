@@ -1553,6 +1553,26 @@
    "/termekkepek/201094-targonca-utkozo-profil-1.webp"
   ]
  },
+ "2018652-18-mm-keretprofil-erositett-elox": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 8652 (Transport2024, 44. oldal)",
+  "matchedCode": "8652",
+  "specs": {
+   "Profilszám (gyártói)": "8652",
+   "Ötvözet": "AlMgSi0,5 (≈ EN AW-6060) F25",
+   "Tömeg": "2,26 kg/fm",
+   "Kerület": "522 mm",
+   "Keresztmetszet": "834 mm²",
+   "Profil típusa": "nyitott",
+   "Magasság": "126,5 mm",
+   "Szélesség": "40 mm (felső rész), 28 mm (alsó perem)",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/2018652-18-mm-keretprofil-erositett-elox-1.webp"
+  ]
+ },
  "202274-u-100x50x50x5-mm-profil": {
   "source": "ALCOMET",
   "sourceUrl": "",
@@ -1573,6 +1593,67 @@
    "/termekkepek/202274-u-100x50x50x5-mm-profil-1.webp"
   ],
   "nevbolRajz": true
+ },
+ "202386-u-130-hossztarto": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 12386 (Transport2024, 52. oldal)",
+  "matchedCode": "12386",
+  "specs": {
+   "Profilszám (gyártói)": "12386",
+   "Ötvözet": "EN AW-6005",
+   "Tömeg": "3,205 kg/fm",
+   "Kerület": "484 mm",
+   "Keresztmetszet": "1 188 mm²",
+   "Profil típusa": "nyitott",
+   "Szélesség": "130 mm",
+   "Magasság": "60 mm",
+   "Falvastagság": "4,5 mm",
+   "Felület": "natúr"
+  },
+  "images": [
+   "/termekkepek/202386-u-130-hossztarto-1.webp"
+  ]
+ },
+ "202387-i-70-kereszttarto": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 12387 (Transport2024, 53. oldal)",
+  "matchedCode": "12387",
+  "specs": {
+   "Profilszám (gyártói)": "12387",
+   "Ötvözet": "EN AW-6005",
+   "Tömeg": "1,733 kg/fm",
+   "Kerület": "393 mm",
+   "Keresztmetszet": "642 mm²",
+   "Profil típusa": "nyitott",
+   "Magasság": "70 mm",
+   "Szélesség": "50 mm (felső öv), 46 mm (alsó öv)",
+   "Felület": "natúr"
+  },
+  "images": [
+   "/termekkepek/202387-i-70-kereszttarto-1.webp"
+  ]
+ },
+ "202388-15-70-mm-keretprofil-elox-cd": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 12388 (Transport2024, 54. oldal)",
+  "matchedCode": "12388",
+  "specs": {
+   "Profilszám (gyártói)": "12388",
+   "Ötvözet": "EN AW-6005",
+   "Tömeg": "1,638 kg/fm",
+   "Kerület": "458 mm",
+   "Keresztmetszet": "607 mm²",
+   "Profil típusa": "nyitott",
+   "Magasság": "109 mm",
+   "Szélesség": "40 mm (felső rész)",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/202388-15-70-mm-keretprofil-elox-cd-1.webp"
+  ]
  },
  "202850-u-130-hossztarto-k": {
   "source": "Grupa Kęty",
@@ -1753,6 +1834,26 @@
    "/termekkepek/206441-i-gerenda-profil-80x60-50x8-6-mm-1.webp"
   ]
  },
+ "206941-cd-100x30-mm-alafutasgatlo-elox-profil": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 6941 (Transport2024B, 54. oldal)",
+  "matchedCode": "6941",
+  "specs": {
+   "Profilszám (gyártói)": "6941",
+   "Ötvözet": "EN AW-6060",
+   "Tömeg": "1,483 kg/fm",
+   "Kerület": "305 mm",
+   "Keresztmetszet": "549 mm²",
+   "Profil típusa": "zárt (üreges)",
+   "Magasság": "100 mm",
+   "Szélesség": "30,3 mm",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/206941-cd-100x30-mm-alafutasgatlo-elox-profil-1.webp"
+  ]
+ },
  "207315-i-108-kereszttarto": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000002_parts-for-aluminium-platforms/1457_crossbar-108mm-al",
@@ -1854,6 +1955,27 @@
    "/termekkepek/207327-tl-110-60-60-hossztarto-ex-1.webp"
   ]
  },
+ "2073902-i-90-csavarozhato-kereszttarto": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 10902 (Transport2024, 49. oldal)",
+  "matchedCode": "10902",
+  "specs": {
+   "Profilszám (gyártói)": "10902",
+   "Ötvözet": "EN AW-6060",
+   "Tömeg": "2,428 kg/fm",
+   "Kerület": "511 mm",
+   "Keresztmetszet": "899 mm²",
+   "Profil típusa": "nyitott",
+   "Szélesség": "85 mm",
+   "Magasság": "90 mm",
+   "Falvastagság": "3 mm",
+   "Felület": "natúr"
+  },
+  "images": [
+   "/termekkepek/2073902-i-90-csavarozhato-kereszttarto-1.webp"
+  ]
+ },
  "207776-30-padlo-profil-220-mm-ex": {
   "source": "Exlabesa",
   "sourceUrl": "https://www.exlabesa.com",
@@ -1885,6 +2007,26 @@
   },
   "images": [
    "/termekkepek/207833-100x30-mm-alafutasgatlo-elox-profil-1.webp"
+  ]
+ },
+ "208477-cd2-100x30-mm-alafutasgatlo-elox-profil": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 8477 (Transport2024B, 44. oldal)",
+  "matchedCode": "8477",
+  "specs": {
+   "Profilszám (gyártói)": "8477",
+   "Ötvözet": "AlMgSi0,5 (≈ EN AW-6060)",
+   "Tömeg": "1,125 kg/fm",
+   "Kerület": "301 mm",
+   "Keresztmetszet": "415 mm²",
+   "Profil típusa": "zárt (üreges)",
+   "Magasság": "100 mm",
+   "Szélesség": "30,2 mm",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/208477-cd2-100x30-mm-alafutasgatlo-elox-profil-1.webp"
   ]
  },
  "209695-u-110-60-hossztarto-duplanutolt-ex": {
@@ -2882,6 +3024,26 @@
    "/termekkepek/226915-30-mm-szego-profil-elox-1.webp"
   ]
  },
+ "226915-n-30-mm-u-szego-profil": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 6915 (Transport2024, 67. oldal)",
+  "matchedCode": "6915",
+  "specs": {
+   "Profilszám (gyártói)": "6915",
+   "Ötvözet": "AlMgSi0,5 (≈ EN AW-6060) F25",
+   "Tömeg": "0,743 kg/fm",
+   "Keresztmetszet": "274 mm²",
+   "Profil típusa": "nyitott",
+   "Szélesség": "35,5 mm",
+   "Magasság": "40 mm",
+   "Falvastagság": "3 mm",
+   "Felület": "natúr"
+  },
+  "images": [
+   "/termekkepek/226915-n-30-mm-u-szego-profil-1.webp"
+  ]
+ },
  "227045-koztes-ponyvas-200-mm-elox-profil": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000002_dropsides--dropside-profiles/1507_tarpaulin-profile-eurolock200mm--anodized",
@@ -2916,6 +3078,25 @@
   },
   "images": [
    "/termekkepek/227045-n-koztes-ponyvas-200-mm-profil-1.webp"
+  ]
+ },
+ "227046-ck10-koztes-200-mm-elox-profil": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 12579 (Transport2024, 33. oldal)",
+  "matchedCode": "12579",
+  "specs": {
+   "Profilszám (gyártói)": "12579",
+   "Ötvözet": "EN AW-6060",
+   "Tömeg": "1,903 kg/fm",
+   "Kerület": "618 mm",
+   "Keresztmetszet": "704 mm²",
+   "Profil típusa": "zárt (üreges)",
+   "Magasság": "222 mm (teljes), 200 mm beépítési magasság",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/227046-ck10-koztes-200-mm-elox-profil-1.webp"
   ]
  },
  "227046-koztes-200-mm-elox-profil": {
@@ -3003,6 +3184,46 @@
   },
   "images": [
    "/termekkepek/227075-200-mm-mono-profil-teli-szakalas-elox-1.webp"
+  ]
+ },
+ "227543-30-padlo-profil-200-mm": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 7543 (Transport2024B, 50. oldal)",
+  "matchedCode": "7543",
+  "specs": {
+   "Profilszám (gyártói)": "7543",
+   "Ötvözet": "EN AW-6005",
+   "Tömeg": "3,032 kg/fm",
+   "Kerület": "732 mm",
+   "Keresztmetszet": "1 123 mm²",
+   "Profil típusa": "nyitott",
+   "Szélesség": "200 mm",
+   "Magasság": "30 mm",
+   "Felület": "natúr"
+  },
+  "images": [
+   "/termekkepek/227543-30-padlo-profil-200-mm-1.webp"
+  ]
+ },
+ "227543-30-padlo-profil-200-mm-elox": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 7543 (Transport2024B, 50. oldal)",
+  "matchedCode": "7543",
+  "specs": {
+   "Profilszám (gyártói)": "7543",
+   "Ötvözet": "EN AW-6005",
+   "Tömeg": "3,032 kg/fm",
+   "Kerület": "732 mm",
+   "Keresztmetszet": "1 123 mm²",
+   "Profil típusa": "nyitott",
+   "Szélesség": "200 mm",
+   "Magasság": "30 mm",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/227543-30-padlo-profil-200-mm-elox-1.webp"
   ]
  },
  "227576-zartszelveny-60x30x2-mm-or3-ir1-elox": {
@@ -3247,6 +3468,26 @@
   },
   "images": [
    "/termekkepek/231381-25-mm-diszlec-alu-3000-mm-1.webp"
+  ]
+ },
+ "231543-dobozos-keret-elox-134-80": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 11543 (Transport2024B, 38. oldal)",
+  "matchedCode": "11543",
+  "specs": {
+   "Profilszám (gyártói)": "11543",
+   "Ötvözet": "EN AW-6060 T6",
+   "Tömeg": "1,743 kg/fm",
+   "Kerület": "389 mm",
+   "Keresztmetszet": "646 mm²",
+   "Profil típusa": "nyitott",
+   "Magasság": "134 mm",
+   "Szélesség": "60 mm",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/231543-dobozos-keret-elox-134-80-1.webp"
   ]
  },
  "231725-belga-h-szego-25-mm-elox": {
@@ -3681,6 +3922,46 @@
    "/termekkepek/237768-40x40x2-5-r-elox-l-profil-1.webp"
   ]
  },
+ "237846-n-tomiteses-ajtoszego-30-mm-d": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 7846 (Transport2024, 75. oldal)",
+  "matchedCode": "7846",
+  "specs": {
+   "Profilszám (gyártói)": "7846",
+   "Ötvözet": "AlMgSi0,5 (≈ EN AW-6060)",
+   "Tömeg": "0,935 kg/fm",
+   "Kerület": "254 mm",
+   "Keresztmetszet": "345 mm²",
+   "Profil típusa": "nyitott",
+   "Magasság": "65 mm",
+   "Szélesség": "34,35 mm",
+   "Felület": "natúr"
+  },
+  "images": [
+   "/termekkepek/237846-n-tomiteses-ajtoszego-30-mm-d-1.webp"
+  ]
+ },
+ "237847-n-h-ajtoszego-30-mm-d": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 7847 (Transport2024, 76. oldal)",
+  "matchedCode": "7847",
+  "specs": {
+   "Profilszám (gyártói)": "7847",
+   "Ötvözet": "AlMgSi0,5 (≈ EN AW-6060)",
+   "Tömeg": "1,014 kg/fm",
+   "Kerület": "346 mm",
+   "Keresztmetszet": "374 mm²",
+   "Profil típusa": "nyitott",
+   "Magasság": "93 mm",
+   "Szélesség": "34,25 mm",
+   "Felület": "natúr"
+  },
+  "images": [
+   "/termekkepek/237847-n-h-ajtoszego-30-mm-d-1.webp"
+  ]
+ },
  "237870-25x25-mm-utanfuto-sarokprofil-elox": {
   "source": "Quadris adatok",
   "sourceUrl": "",
@@ -3709,6 +3990,26 @@
    "/termekkepek/3d/237905-n-25x35-mm-ives-sarokprofil-r50-1.webp",
    "/termekkepek/3d/237905-n-25x35-mm-ives-sarokprofil-r50-2.webp",
    "/termekkepek/237905-n-25x35-mm-ives-sarokprofil-r50-1.webp"
+  ]
+ },
+ "237971-hutos-keretprofil-nyitott-elox": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 7971 (Transport2024B, 24. oldal)",
+  "matchedCode": "7971",
+  "specs": {
+   "Profilszám (gyártói)": "7971",
+   "Ötvözet": "AlMgSi0,5 (≈ EN AW-6060) F22",
+   "Tömeg": "2,981 kg/fm",
+   "Kerület": "568 mm",
+   "Keresztmetszet": "1 100 mm²",
+   "Profil típusa": "nyitott",
+   "Magasság": "187,5 mm",
+   "Szélesség": "73,8 mm",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/237971-hutos-keretprofil-nyitott-elox-1.webp"
   ]
  },
  "238043-kalap-profil-natur-35-87-mm": {
@@ -7551,6 +7852,46 @@
   },
   "images": [
    "/termekkepek/661090-midi-elso-oszlop-lift-elox-135-1.webp"
+  ]
+ },
+ "6612225-elso-oszlop-90-70-alu-elox-d": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 12225 (Transport2024B, 46. oldal)",
+  "matchedCode": "12225",
+  "specs": {
+   "Profilszám (gyártói)": "12225",
+   "Ötvözet": "EN AW-6005",
+   "Tömeg": "2,585 kg/fm",
+   "Kerület": "421 mm",
+   "Keresztmetszet": "958 mm²",
+   "Profil típusa": "zárt (üreges)",
+   "Szélesség": "90 mm",
+   "Magasság": "70 mm",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/6612225-elso-oszlop-90-70-alu-elox-d-1.webp"
+  ]
+ },
+ "6612226-hatso-oszlop-128-35-alu-elox-d": {
+  "source": "Constellium rajz",
+  "sourceUrl": "https://www.constellium.com",
+  "sourceTitle": "Constellium Děčín profilrajz 12226 (Transport2024B, 46. oldal)",
+  "matchedCode": "12226",
+  "specs": {
+   "Profilszám (gyártói)": "12226",
+   "Ötvözet": "EN AW-6005",
+   "Tömeg": "3,181 kg/fm",
+   "Kerület": "538 mm",
+   "Keresztmetszet": "1 171 mm²",
+   "Profil típusa": "zárt (üreges)",
+   "Szélesség": "128 mm",
+   "Magasság": "35 mm",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/6612226-hatso-oszlop-128-35-alu-elox-d-1.webp"
   ]
  },
  "6613211-max-os-elso-elox-oszlop-it": {

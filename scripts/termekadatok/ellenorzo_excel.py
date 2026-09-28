@@ -32,7 +32,7 @@ SEARCHED = {
     "Ital Accessori": "Ital Accessori teljes PDF katalógus (ital-accessori.sk); Takler termékoldalak (aláfutásgátló konzolok)",
     "Alu-SV": "alu-sv.com webáruház, keresés rendelési számra",
     "ALCOMET": "Alcomet 2017 szabványprofil-katalógus (PDF)",
-    "Constellium Decin": "alu-sv.com (a kód utolsó számjegyei); Ital Accessori katalógus; Drive: CONSTELLIUM DECIN Excel – nem letölthető (>10 MB)",
+    "Constellium Decin": "alu-sv.com (a kód utolsó számjegyei); Ital Accessori katalógus; Drive: CONSTELLIUM DECIN Excel – nem letölthető (>10 MB); Constellium Děčín profilrajzok (Transport2024, Transport2024B)",
     "ADAICO": "adaico.com webáruház; ADAICO 2025 katalógus (PDF); ADA-Slider vizsgálati jelentés (Drive)",
     "Edscha": "Edscha TS / SESAM alkatrész-katalógus 2024 (edschats.com); Edscha Compact alkatrész-katalógus 2018 (Drive)",
     "Versus": "versus-omega.com termékoldalak; Duo Trike Light alkatrész-PDF (Drive); Versus-Omega online katalógus 2026 (FlippingBook)",
