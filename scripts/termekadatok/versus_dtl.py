@@ -50,6 +50,11 @@ ITEMS = {
     "242-01065": (5, (605, 88, 736, 158), [], {"Megnevezés (gyári)": "Folding plate – Type 650 (csukló)", "Típus": "650"}),
     "242-14109": (5, (652, 340, 690, 507), [], {"Megnevezés (gyári)": "PVC pelmet (fekete PVC takaróprofil)", "Hossz": "9 m", "Szín": "fekete",
                                                 "Anyag": "PVC"}),
+    # A 242-14165 szó szerint nem szerepel a PDF-ben (sem az online katalógusban), de a Versus PVC pelmet
+    # cikkszámai a hosszt kódolják (DTL: 242-14109 = 9 m, 242-14114 = 14 m; Duo Penta Mix: 242-17106/-17109/
+    # -17114/-17165 = 6/9/14/16,5 m), és a Quadris-megnevezés is „Takaró gumi DTL 16,5m” – ugyanaz a profil.
+    "242-14165": (5, (652, 340, 690, 507), [], {"Megnevezés (gyári)": "PVC pelmet (fekete PVC takaróprofil)", "Hossz": "16,5 m", "Szín": "fekete",
+                                                "Anyag": "PVC", "Megjegyzés": "a katalógusban 9 m (242-14109) és 14 m (242-14114) hosszban szerepel; azonos profil"}),
     "262-05007": (6, (628, 159, 700, 306), [(644, 159, 700, 165), (652, 159, 700, 180.5)], {"Megnevezés (gyári)": "Pillar bracket – Plate (oszlopkonzol lemeze)"}),
     "264-01001": (6, (615, 86, 700, 154.5), [(628, 143, 644, 157)], {"Megnevezés (gyári)": "Pillar bracket – Bracket (oszlopkonzol)"}),
     "284-10024": (6, (343, 373, 488, 521), [], {"Megnevezés (gyári)": "Trike roller (görgő)"}),

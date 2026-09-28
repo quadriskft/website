@@ -9732,6 +9732,21 @@
    "/termekkepek/e235421-szerelo-keszlet-1.webp"
   ]
  },
+ "e38067930-compact-csuklopant-650-mm": {
+  "source": "Edscha",
+  "sourceUrl": "https://www.edschats.com/globalassets/documents/pdfs/edscha/einzelersatzteilkatalog_international/09_24/edschats_ersatzteilkatalog_de-en_04-2024.pdf#page=241",
+  "sourceTitle": "Edscha TS alkatrész-katalógus 2024/04: Link VP-UL",
+  "matchedCode": "4038067930",
+  "specs": {
+   "Cikkszám (gyári)": "40 38 067 930",
+   "Rendszer": "Edscha Compact",
+   "Megnevezés (gyári)": "Gelenk VP-UL – csukló (Compact, 650 mm)",
+   "Tömeg": "0,21 kg"
+  },
+  "images": [
+   "/termekkepek/e38067930-compact-csuklopant-650-mm-1.webp"
+  ]
+ },
  "e4038068710-biztosito-keszlt-compact": {
   "source": "Edscha",
   "sourceUrl": "https://www.edschats.com/globalassets/documents/pdfs/edscha/einzelersatzteilkatalog_international/09_24/edschats_ersatzteilkatalog_de-en_04-2024.pdf#page=18",
@@ -9766,7 +9781,9 @@
    "Megnevezés (gyári)": "Endlaufwagen Standard – végkocsi, normál",
    "Rendszer": "Edscha Compact"
   },
-  "images": []
+  "images": [
+   "/termekkepek/e4069000940-elhuzo-kocsi-compact-normal-2550-mm-1.webp"
+  ]
  },
  "e4069000940-elhuzo-kocsi-compact-tw-1200-mm": {
   "source": "Edscha",
@@ -9782,7 +9799,7 @@
  },
  "e4069002960-elhuzo-kocsi-compact-small-2550-mm": {
   "source": "Edscha Compact",
-  "sourceUrl": "https://www.edschats.com#page=9",
+  "sourceUrl": "https://www.edschats.com#page=3",
   "sourceTitle": "Edscha Compact alkatrész-katalógus 2018: 40 69 002 960",
   "matchedCode": "40 69 002 960",
   "specs": {
@@ -9790,7 +9807,9 @@
    "Megnevezés (gyári)": "Endlaufwagen Compact small – végkocsi, keskeny",
    "Rendszer": "Edscha Compact"
   },
-  "images": []
+  "images": [
+   "/termekkepek/e4069002960-elhuzo-kocsi-compact-small-2550-mm-1.webp"
+  ]
  },
  "e4069009030-130-as-compact-normal-lezaro-2550-mm": {
   "source": "Edscha",
@@ -9904,17 +9923,20 @@
   ]
  },
  "e69004670-compact-fix-tetokereszttarto-2550-mm": {
-  "source": "Edscha Compact",
-  "sourceUrl": "https://www.edschats.com#page=12",
-  "sourceTitle": "Edscha Compact alkatrész-katalógus 2018: 40 69 004 670",
-  "matchedCode": "40 69 004 670",
+  "source": "Edscha",
+  "sourceUrl": "https://www.edschats.com/globalassets/documents/pdfs/edscha/einzelersatzteilkatalog_international/09_24/edschats_ersatzteilkatalog_de-en_04-2024.pdf#page=617",
+  "sourceTitle": "Edscha TS alkatrész-katalógus 2024/04: Standard bow fixes roof incl. Clamping profile",
+  "matchedCode": "4069004670",
   "specs": {
    "Cikkszám (gyári)": "40 69 004 670",
-   "Megnevezés (gyári)": "Standardspriegel-Festdach inkl. Klammerprofil – fix tetős kereszttartó szorítóprofillal",
    "Rendszer": "Edscha Compact Fix",
-   "Felépítményszélesség": "2550 mm"
+   "Felépítményszélesség": "2550 mm",
+   "Megnevezés (gyári)": "Standardspriegel-Festdach inkl. Klammerprofil – fix tetős kereszttartó szorítóprofillal",
+   "Tömeg": "3,39 kg"
   },
-  "images": []
+  "images": [
+   "/termekkepek/e69004670-compact-fix-tetokereszttarto-2550-mm-1.webp"
+  ]
  },
  "e69004740-cs-compact-tetokereszttarto-2550-mm": {
   "source": "Edscha",
@@ -15975,6 +15997,24 @@
   },
   "images": [
    "/termekkepek/v242-14109-tomites-9-m-dtl-1.webp"
+  ]
+ },
+ "v242-14165-takaro-gumi-dtl-16-5m": {
+  "source": "Versus DTL",
+  "sourceUrl": "https://www.versus-omega.com/en/products/2/duo-trike-light",
+  "sourceTitle": "Versus-Omega 242-14165",
+  "matchedCode": "242-14165",
+  "specs": {
+   "Cikkszám (gyártói)": "242-14165",
+   "Rendszer": "Duo Trike Light",
+   "Megnevezés (gyári)": "PVC pelmet (fekete PVC takaróprofil)",
+   "Hossz": "16,5 m",
+   "Szín": "fekete",
+   "Anyag": "PVC",
+   "Megjegyzés": "a katalógusban 9 m (242-14109) és 14 m (242-14114) hosszban szerepel; azonos profil"
+  },
+  "images": [
+   "/termekkepek/v242-14165-takaro-gumi-dtl-16-5m-1.webp"
   ]
  },
  "v242-15109-tomites-9-m-mt": {

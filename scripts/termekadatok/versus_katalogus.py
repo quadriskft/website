@@ -13,7 +13,8 @@ hiányzó oldalakat tölti le a .cache/letoltes/versus_omega/ mappába.
 
 Csak azokat a Quadris-tételeket párosítjuk, amelyek cikkszáma pontosan szerepel a katalógus lapján; a
 kivágásokat kézzel ellenőriztük (csak maga az alkatrész, táblázat/pozíciószám nélkül).
-Nincs a katalógusban: 242-14116/-14121/-14128/-14165 (DTL takaró gumik/tömítés), Penta Flex, RTS-002.
+Nincs a katalógusban: 242-14116/-14121/-14128/-14165 (DTL takaró gumik/tömítés), Penta Flex, RTS-002
+(a 242-14165 a versus_dtl.py-ban a DTL PVC pelmet rajzát kapja).
 
 Forrásnév: "Versus katalógus" (külön a versus.py / versus_dtl.py bejegyzéseitől). Azokat a termékeket,
 amelyeknek már van képe más forrásból, kihagyja.

@@ -57,6 +57,15 @@ SYSTEMS = [
 ]
 
 
+# Quadris-kód -> (katalógus-cikkszám, kiegészítő műszaki adatok), ahol a Quadris kódja eltér a gyáritól
+# (a megrendelő útmutatása: az „E” előtag nélkül, a gyári 40-es előtaggal keresve)
+ALIASES = {
+    "4138067930": ("4038067930", {"Rendszer": "Edscha Compact", "Megnevezés (gyári)": "Gelenk VP-UL – csukló (Compact, 650 mm)"}),
+    "69004670": ("4069004670", {"Rendszer": "Edscha Compact Fix", "Felépítményszélesség": "2550 mm",
+                                "Megnevezés (gyári)": "Standardspriegel-Festdach inkl. Klammerprofil – fix tetős kereszttartó szorítóprofillal"}),
+}
+
+
 def norm(s):
     return re.sub(r"\D", "", s or "")
 
@@ -106,8 +115,9 @@ def main():
     products = load_products(SUPPLIER)
     enrichment, missing = {}, []
     for p in products:
-        hit = items.get(norm(p["supplierCode"]))
-        if hit and len(norm(p["supplierCode"])) >= 8:
+        code, extra = ALIASES.get(norm(p["supplierCode"]), (norm(p["supplierCode"]), {}))
+        hit = items.get(code)
+        if hit and len(code) >= 8:
             brand, rel, pno, pg, rect, lines = hit
             specs = {}
             en = next((ln for ln in lines if re.search(r"[a-z]", ln) and ln == lines[-1]), None)
@@ -118,11 +128,13 @@ def main():
             m = re.search(r"(\d{3,4}(?:-\d{3,4})?)\s*mm", de)
             if m:
                 specs["Méret"] = f"{m.group(1).replace('-', '–')} mm"
+            if extra:
+                specs = {"Cikkszám (gyári)": f"{code[:2]} {code[2:4]} {code[4:7]} {code[7:]}", **extra, **specs}
             clear_images(p["slug"])
             images = [save_image(frame_image(pg, rect), p["slug"], 1)] if rect else []
             enrichment[p["slug"]] = {"source": SUPPLIER, "sourceUrl": f"{BASE}{rel}#page={pno + 1}",
                                      "sourceTitle": f"{brand} alkatrész-katalógus 2024/04: {(en or de).split(';')[0]}",
-                                     "matchedCode": p["supplierCode"], "specs": specs, "images": images}
+                                     "matchedCode": code if extra else p["supplierCode"], "specs": specs, "images": images}
             continue
         sysm = next((s for s in SYSTEMS if re.search(s[0], p["name"], re.I)), None)
         if not sysm:
