@@ -49,13 +49,11 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   </head>
   <body id="top">
     <a class="skip-link" href="#main">Ugrás a tartalomra</a>
-    <div class="brand-bar">
-      <a class="logo" href="/" aria-label={`${SITE.name} – főoldal`}>
-        <img src="/brand/quadris-logo-fem.webp" alt={SITE.name} width="900" height="244" fetchpriority="high" />
-      </a>
-    </div>
     <header class="site-header">
       <div class="container header-inner">
+        <a class="logo" href="/" aria-label={`${SITE.name} – főoldal`}>
+          <img src="/brand/quadris-logo-fem.webp" alt={SITE.name} width="900" height="244" fetchpriority="high" />
+        </a>
 
         <nav class="main-nav" id="main-nav" aria-label="Fő menü">
           <div class="nav-item has-mega">
@@ -71,7 +69,6 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
               </div>
             </div>
           </div>
-          <a href="/loszallito-felepitmenyek" class:list={['nav-link', { active: isActive('/loszallito-felepitmenyek') }]}>Lószállító gyártóknak</a>
           <a href="/kapcsolat" class:list={['nav-link', { active: isActive('/kapcsolat') }]}>Kapcsolat</a>
         </nav>
 
@@ -309,28 +306,30 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   .to-top:hover { filter: brightness(1.08); }
   :global(.toast.show) ~ .to-top { bottom: 92px; }
 
+  /* Fejléc egy sorban: a logó körül sötét grafit (mint a logó eredeti háttere), jobbra szálcsiszolt, világos fém */
   .site-header {
+    --dark-end: max(250px, calc(50% - 390px));
     position: sticky; top: 0; z-index: 50; height: var(--header-h);
-    background: rgba(255, 255, 255, 0.86); backdrop-filter: saturate(160%) blur(16px); -webkit-backdrop-filter: saturate(160%) blur(16px);
-    border-bottom: 1px solid var(--line); transition: box-shadow 0.2s ease, background 0.2s ease;
+    background:
+      repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0 1px, rgba(0, 0, 0, 0.035) 1px 2px, transparent 2px 3px),
+      radial-gradient(ellipse 340px 120% at calc(var(--dark-end) - 150px) 50%, #3a3b3e 0%, rgba(58, 59, 62, 0) 70%),
+      linear-gradient(90deg, #141516 0%, #1e1f21 calc(var(--dark-end) - 60px), #55595e calc(var(--dark-end) + 60px), #b9bfc6 calc(var(--dark-end) + 180px), #e3e6ea calc(var(--dark-end) + 320px), #f1f3f5 72%, #dde1e5 100%);
+    border-bottom: 1px solid #b7bec6;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 1px 0 rgba(255, 255, 255, 0.9);
+    transition: box-shadow 0.2s ease;
   }
-  .site-header.scrolled { background: rgba(255, 255, 255, 0.96); box-shadow: 0 6px 20px -14px rgba(18, 24, 33, 0.4); }
-  /* Márkasáv: a fémes logó grafit háttere (mint a logó eredeti környezete), középen a logó */
-  .brand-bar {
-    position: relative; display: flex; justify-content: center; align-items: center; padding: 12px 16px;
-    background: radial-gradient(ellipse 60% 140% at 50% 45%, #313234 0%, #222325 45%, #161718 100%);
-  }
-  .brand-bar::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--metal); opacity: 0.55; }
-  .logo { display: flex; }
-  .logo img { height: 78px; width: auto; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.45)); }
-  .header-inner { height: 100%; display: flex; align-items: center; gap: 28px; }
+  .site-header::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px; background: var(--metal); opacity: 0.8; pointer-events: none; }
+  .site-header.scrolled { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 8px 22px -14px rgba(18, 24, 33, 0.55); }
+  .logo { display: flex; flex: none; }
+  .logo img { height: 58px; width: auto; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5)); }
+  .header-inner { height: 100%; display: flex; align-items: center; gap: 20px; }
 
-  .main-nav { display: flex; align-items: center; gap: 4px; margin-left: -14px; }
+  .main-nav { display: flex; align-items: center; gap: 4px; margin-left: auto; }
   .nav-link {
     display: inline-flex; align-items: center; gap: 4px; padding: 8px 14px; border-radius: 999px;
     color: var(--text-2); font-weight: 500; font-size: 0.95rem; text-decoration: none !important; white-space: nowrap;
   }
-  .nav-link:hover, .nav-link.active { color: var(--text); background: var(--surface-3); }
+  .nav-link:hover, .nav-link.active { color: var(--text); background: rgba(255, 255, 255, 0.7); }
   .nav-link.active { color: var(--accent); }
   .nav-item { position: relative; }
   .mega {
@@ -346,12 +345,12 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   .mega-link:hover { background: var(--accent-soft); color: var(--text); }
   .mega-link :global(svg) { color: var(--accent); flex: none; }
 
-  .header-actions { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+  .header-actions { display: flex; align-items: center; gap: 12px; }
   .header-search { position: relative; width: clamp(200px, 24vw, 340px); }
   .header-search :global(.search-icon) { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
   .header-search input {
     width: 100%; height: 44px; padding: 0 14px 0 40px; border-radius: 999px; border: 1px solid var(--line-strong);
-    background: var(--surface-2); color: var(--text); font-size: 0.92rem;
+    background: rgba(255, 255, 255, 0.85); color: var(--text); font-size: 0.92rem; box-shadow: inset 0 1px 2px rgba(18, 24, 33, 0.08);
   }
   .header-search input:focus { outline: none; border-color: var(--accent); background: #fff; box-shadow: 0 0 0 4px rgba(10, 108, 255, 0.1); }
   .suggest {
@@ -387,8 +386,8 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   }
   @media (max-width: 960px) {
     :root { --header-h: 64px; }
-    .logo img { height: 60px; }
-    .brand-bar { padding: 8px 16px; }
+    .logo img { height: 44px; }
+    .site-header { --dark-end: 175px; }
     .main-nav { margin-left: 0; }
     .menu-toggle { display: grid; }
     .main-nav {
@@ -407,7 +406,9 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     .suggest { position: fixed; left: 16px; right: 16px; width: auto; top: calc(var(--header-h) - 4px); }
   }
   @media (max-width: 560px) {
-    .logo img { height: 48px; }
+    .logo img { height: 36px; }
+    .site-header { --dark-end: 140px; }
+    .header-inner { gap: 10px; }
     .header-actions { gap: 8px; }
     .quote-btn { padding: 0 12px; }
   }
