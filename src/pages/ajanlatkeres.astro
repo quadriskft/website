@@ -4,12 +4,10 @@ import Icon from '../components/Icon.astro';
 import { SITE } from '../lib/site.js';
 ---
 <Base title="Ajánlatkérés" description="Állítsa össze az ajánlatkérő listáját, és küldje el egy kattintással a Quadris Kft.-nek.">
-  <section class="page-head">
+  <section class="page-head quote-head">
     <div class="container">
-      <nav class="breadcrumb" aria-label="Morzsamenü"><a href="/">Főoldal</a> / <span>Ajánlatkérés</span></nav>
-      <span class="eyebrow">Ajánlatkérés</span>
       <h1>Ajánlatkérő lista</h1>
-      <p class="lead">Ellenőrizze a tételeket és a mennyiségeket, adja meg az elérhetőségét, és küldje el a kérést. Kollégáink hamarosan ajánlattal jelentkeznek.</p>
+      <p class="lead">Ellenőrizze a tételeket, adja meg az elérhetőségét, és küldje el – hamarosan ajánlattal jelentkezünk.</p>
     </div>
   </section>
 
@@ -22,16 +20,16 @@ import { SITE } from '../lib/site.js';
         </div>
         <ul class="items" data-items></ul>
         <div class="empty-state" data-empty>
-          <Icon name="ClipboardList" size={36} />
+          <Icon name="ClipboardList" size={28} />
           <p><strong>Az ajánlatkérő lista üres.</strong></p>
-          <p class="muted">Böngésszen a katalógusban, és az „Ajánlatkérőbe” gombbal adja hozzá a termékeket.</p>
+          <p class="muted">Az „Ajánlatkérőbe” gombbal adhat hozzá termékeket a katalógusból.</p>
           <a href="/termekek" class="btn btn-primary btn-sm">Termékkatalógus <Icon name="ArrowRight" /></a>
         </div>
       </div>
 
       <form class="card custom-card" id="egyedi" data-custom>
-        <h2><Icon name="Sparkles" size={20} /> Egyedi tétel hozzáadása</h2>
-        <p class="muted">Nem találja a katalógusban? Írja le, mire van szüksége (méret, anyag, gyártó, cikkszám) – beszerezzük.</p>
+        <h2><Icon name="Sparkles" size={18} /> Egyedi tétel hozzáadása</h2>
+        <p class="muted">Nem találja? Írja le (méret, anyag, gyártó, cikkszám) – beszerezzük.</p>
         <div class="custom-row">
           <div class="field grow">
             <label for="custom-name">Megnevezés / leírás</label>
@@ -281,12 +279,16 @@ import { SITE } from '../lib/site.js';
 </script>
 
 <style>
-  .quote-layout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(320px, 1fr); gap: 24px; align-items: start; padding-top: 32px; padding-bottom: 40px; }
-  .items-col { display: grid; gap: 24px; }
-  .items-card, .custom-card, .form-card { padding: 26px; }
+  .quote-head { padding: 12px 0 10px; }
+  .quote-head h1 { font-size: clamp(1.4rem, 2.4vw, 1.8rem); margin: 0 0 4px; }
+  .quote-head .lead { font-size: 0.92rem; margin: 0; max-width: none; }
+  .quote-layout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(320px, 1fr); gap: 18px; align-items: start; padding-top: 14px; padding-bottom: 0; }
+  .items-col { display: grid; gap: 14px; }
+  .items-card, .custom-card, .form-card { padding: 16px 20px; }
   .items-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-  .items-head h2, .custom-card h2, .form-card h2 { font-size: 1.25rem; margin: 0; }
-  .custom-card h2 { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .items-head h2, .custom-card h2, .form-card h2 { font-size: 1.08rem; margin: 0; }
+  .custom-card h2 { display: flex; align-items: center; gap: 8px; margin-bottom: 2px; }
+  .custom-card > p { font-size: 0.88rem; margin: 0 0 8px; }
   .custom-card h2 :global(svg) { color: var(--accent); }
   .link-btn { display: inline-flex; align-items: center; gap: 6px; border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 0.88rem; padding: 4px; }
   .link-btn:hover { color: var(--accent); }
@@ -313,22 +315,29 @@ import { SITE } from '../lib/site.js';
   .items :global(.item-side) { display: flex; align-items: center; gap: 8px; }
   .items :global(.remove) { width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; display: grid; place-items: center; }
   .items :global(.remove:hover) { color: var(--danger); border-color: var(--danger); }
-  .empty-state { text-align: center; padding: 30px 10px 10px; display: grid; justify-items: center; gap: 2px; }
-  .empty-state > :global(svg) { color: var(--accent); margin-bottom: 8px; }
+  .empty-state { text-align: center; padding: 2px 10px 0; display: grid; justify-items: center; gap: 0; font-size: 0.92rem; }
+  .empty-state p { margin: 0 0 6px; }
+  .empty-state > :global(svg) { color: var(--accent); margin-bottom: 4px; }
   .empty-state[hidden] { display: none; }
   .custom-row { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; }
   .grow { flex: 1; min-width: 220px; }
   .qty-field { width: 110px; }
-  .form-card { position: sticky; top: calc(var(--header-h) + 20px); }
-  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0; }
+  .form-card { position: sticky; top: calc(var(--header-h) + 16px); }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; margin: 8px 0 10px; }
+  .form-card :global(.field) { gap: 3px; }
+  .form-card :global(.field label) { font-size: 0.82rem; }
+  .form-card :global(.field input), .form-card :global(.field textarea), .custom-card :global(.field input) { padding: 6px 11px; }
+  .form-card :global(.field textarea) { min-height: 50px; }
+  .custom-card :global(.field label) { font-size: 0.82rem; }
+  .custom-card :global(.btn) { padding: 9px 16px; }
   .full { grid-column: 1 / -1; }
   .hp { position: absolute; left: -9999px; }
-  .consent { display: flex; gap: 10px; align-items: flex-start; font-size: 0.86rem; color: var(--text-2); }
+  .consent { display: flex; gap: 8px; align-items: flex-start; font-size: 0.78rem; line-height: 1.45; color: var(--text-2); }
   .consent input { margin-top: 3px; accent-color: var(--accent); width: 16px; height: 16px; flex: none; }
   .form-error { color: #b42318; background: #fef3f2; border: 1px solid #fecdca; padding: 12px 14px; border-radius: 10px; font-size: 0.92rem; }
   .form-error :global(a) { color: #b42318; font-weight: 700; text-decoration: underline; }
-  .submit { width: 100%; padding: 15px; font-size: 1rem; }
-  .alt-actions { display: flex; justify-content: center; gap: 16px; margin-top: 12px; flex-wrap: wrap; }
+  .submit { width: 100%; padding: 12px; font-size: 0.97rem; }
+  .alt-actions { display: flex; justify-content: center; gap: 16px; margin-top: 6px; flex-wrap: wrap; }
   .success { grid-column: 1 / -1; padding: 56px 24px; text-align: center; display: grid; justify-items: center; gap: 6px; }
   .success > :global(svg) { color: var(--ok); margin-bottom: 8px; }
   .success[hidden], [hidden] { display: none !important; }
