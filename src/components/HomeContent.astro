@@ -1,22 +1,9 @@
 ---
 import Icon from './Icon.astro';
-import { groups, stats, roundedCount, groupImage, getProduct } from '../lib/catalog.js';
+import { groups, stats, roundedCount, groupImage } from '../lib/catalog.js';
 
 // A főoldal tartalma. hero: 'split' (szöveg + videó egymás mellett) vagy 'video' (teljes szélességű, sötétített videó, rajta a szöveg)
 const { hero = 'split' } = Astro.props;
-
-// A videón a platós felépítményen látható alkatrészek: [megjelenés (mp), termék, felirat]
-const HERO_CUES = [
-  [0.3, '225549-400-mm-peremes-oldalfal-elox', 'Oldalfal'],
-  [2.8, '356297-alu-kozepso-rakonca-400-mm-80', 'Rakonca'],
-  [5.3, '352540-egymasba-zarodo-z-zar-400', 'Oldalfalzár'],
-  [7.8, '152814-tir-zsaner-garnitura-th', 'Zsanér'],
-  [10.3, 'j101030-negyed-ives-sarvedo-700x650', 'Sárvédő'],
-  [12.8, '227543-30-padlo-profil-200-mm-elox', 'Padló'],
-].map(([t, slug, label]) => {
-  const p = getProduct(slug);
-  return p ? { t, label, name: p.name, image: p.images?.[0] ?? '', href: `/termek/${p.slug}` } : null;
-}).filter(Boolean);
 
 // Rövid, egysoros összefoglaló a főoldali termékcsoport-kártyákra
 const SHORT = {
@@ -54,20 +41,11 @@ const SHORT = {
     <div class="container vhero-inner">
       <div class="vhero-copy" lang="hu">
         <span class="eyebrow">Alkatrész-beszállító felépítménygyártóknak</span>
-        <h1>Minden alkatrész a&nbsp;felépítményhez – <span>egy helyről.</span></h1>
+        <h1>Minden alkatrész a&nbsp;felépítményhez <span class="vh-accent">– egy helyről.</span></h1>
         <p class="lead">
           Alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők és rakományrögzítés
           jármű- és lószállító felépítmény gyártóknak. Állítsa össze a listáját, és elkészítjük az ajánlatát.
         </p>
-      </div>
-      <!-- a videón látható alkatrészek: az aktuális középen-jobbra, az előzők a jobb alsó sarokba úsznak -->
-      <div class="vh-products" data-cues={JSON.stringify(HERO_CUES)} aria-live="polite">
-        <a class="vh-stage metal-frame" data-stage href="#" hidden>
-          <span class="vh-img"><img alt="" data-stage-img /></span>
-          <span class="vh-label" data-stage-label></span>
-          <strong data-stage-name></strong>
-        </a>
-        <div class="vh-stack" data-stack></div>
       </div>
     </div>
   </section>
@@ -197,64 +175,6 @@ const SHORT = {
   const hv = document.querySelector('[data-hero-video]');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (hv && reduced) { hv.removeAttribute('autoplay'); hv.pause(); }
-
-  // Videóhoz időzített termékek: az új termék középen-jobbra jelenik meg; amikor jön a következő,
-  // az előző a jobb alsó sarokba úszik, és ott egymásra rakódnak (alulról felfelé). Újrainduláskor törlődnek.
-  const box = document.querySelector('.vh-products');
-  if (hv && box && !reduced) {
-    const cues = JSON.parse(box.dataset.cues);
-    const stage = box.querySelector('[data-stage]');
-    const stack = box.querySelector('[data-stack]');
-    const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
-    let shown = -1;
-
-    const setStage = (i) => {
-      const c = cues[i];
-      stage.href = c.href;
-      stage.querySelector('[data-stage-img]').src = c.image;
-      stage.querySelector('[data-stage-label]').textContent = `${i + 1} / ${cues.length} · ${c.label}`;
-      stage.querySelector('[data-stage-name]').textContent = c.name;
-      stage.hidden = false;
-      stage.classList.remove('in');
-      void stage.offsetWidth;
-      stage.classList.add('in');
-    };
-    // az éppen látható termék „leúszik” a kupac tetejére
-    const dock = (i) => {
-      const c = cues[i];
-      const from = stage.getBoundingClientRect();
-      const el = document.createElement('a');
-      el.className = 'vh-mini metal-frame';
-      el.href = c.href;
-      el.innerHTML = `<img src="${esc(c.image)}" alt=""><span><small>${esc(c.label)}</small><strong>${esc(c.name)}</strong></span>`;
-      stack.appendChild(el);
-      const to = el.getBoundingClientRect();
-      el.animate([
-        { transform: `translate(${from.left - to.left}px, ${from.top - to.top}px) scale(${from.width / to.width}, ${from.height / to.height})`, opacity: 0.9 },
-        { transform: 'none', opacity: 1 },
-      ], { duration: 750, easing: 'cubic-bezier(.2,.8,.2,1)', transformOrigin: 'top left' });
-    };
-    const reset = () => { stack.querySelectorAll('.vh-mini').forEach((m) => m.remove()); stage.hidden = true; shown = -1; };
-
-    const tick = () => {
-      const t = hv.currentTime;
-      let i = -1;
-      cues.forEach((c, k) => { if (t >= c.t) i = k; });
-      const end = t > hv.duration - 0.45;  // a videó végén az utolsó is a helyére úszik
-      if (i < shown) reset();
-      if (i > shown) {
-        // ha közben több is elmúlt (pl. háttérben lévő fül), azok is bekerülnek a kupacba
-        for (let k = Math.max(shown, 0); k < i; k++) if (k !== shown || !stage.hidden) dock(k);
-        shown = i;
-        setStage(i);
-      } else if (end && !stage.hidden && shown === cues.length - 1) {
-        dock(shown);
-        stage.hidden = true;
-      }
-      requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
-  }
 </script>
 
 <style>
@@ -388,35 +308,15 @@ const SHORT = {
   .vhero-copy { width: 100%; max-width: 480px; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
   .vhero-copy .lead { text-align: justify; text-align-last: left; font-size: 0.98rem; line-height: 1.6; margin: 0; }
 
-  /* termékkártyák a videón */
-  .vh-products { position: absolute; inset: 0 20px; pointer-events: none; }
-  .vh-products :global(a) { pointer-events: auto; color: var(--text); text-decoration: none !important; }
-  .vh-stage {
-    position: absolute; top: 50%; right: 300px; width: 250px; margin-top: -150px; padding: 10px; border-radius: 16px;
-    display: grid; gap: 2px; box-shadow: 0 24px 50px -20px rgba(0, 0, 0, 0.75), var(--metal-bevel);
-  }
-  .vh-stage[hidden] { display: none; }
-  .vh-stage.in { animation: vh-in 0.55s cubic-bezier(.2,.8,.2,1); }
-  @keyframes vh-in { from { opacity: 0; transform: translateY(14px) scale(0.94); } }
-  .vh-img { display: block; aspect-ratio: 4 / 3; border-radius: 10px; overflow: hidden; background: #fff; margin-bottom: 8px; }
-  .vh-img img { width: 100%; height: 100%; object-fit: contain; padding: 6%; }
-  .vh-stage .vh-label, .vh-mini small { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
-  .vh-stage strong { font-family: var(--font-head); font-size: 0.95rem; line-height: 1.3; }
-  .vh-stage:hover, .vh-products :global(.vh-mini:hover) { box-shadow: 0 0 0 4px rgba(10, 108, 255, 0.35), 0 0 18px 2px rgba(10, 108, 255, 0.35); }
-  .vh-stack { position: absolute; right: 0; bottom: 40px; width: 250px; display: flex; flex-direction: column-reverse; gap: 8px; }
-  .vh-products :global(.vh-mini) {
-    display: grid; grid-template-columns: 46px 1fr; gap: 10px; align-items: center; padding: 5px 10px 5px 5px; border-radius: 12px;
-    box-shadow: 0 10px 24px -14px rgba(0, 0, 0, 0.8), var(--metal-bevel); border-width: 2px;
-  }
-  .vh-products :global(.vh-mini img) { width: 46px; height: 40px; object-fit: contain; background: #fff; border-radius: 8px; }
-  .vh-products :global(.vh-mini span) { display: grid; min-width: 0; }
-  .vh-products :global(.vh-mini strong) { font-size: 0.8rem; line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  @media (max-width: 1100px) { .vh-stage { right: 270px; width: 220px; } .vh-stack { width: 230px; } }
-  @media (max-width: 960px) { .vh-products { display: none; } }
   .vhero .eyebrow { color: #8fbcff; }
   .vhero .eyebrow::before { background: #8fbcff; }
   .vhero h1 { margin: 10px 0 14px; color: #fff; font-size: clamp(1.9rem, 3.2vw, 2.6rem); text-align: left; text-shadow: 0 2px 20px rgba(0, 0, 0, 0.35); }
-  .vhero h1 span { color: #8fbcff; }
+  /* kiemelt zárósor: új sorban, világoskék–fémes átmenet, alatta kék csík */
+  .vhero h1 .vh-accent {
+    position: relative; display: table; margin-top: 6px; padding-bottom: 8px;
+    background: linear-gradient(100deg, #6ea8ff 0%, #b9d4ff 45%, #ffffff 60%, #8fbcff 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .vhero h1 .vh-accent::after { content: ''; position: absolute; left: 0; bottom: 0; width: 64%; height: 4px; border-radius: 4px; background: linear-gradient(90deg, #2b86ff, rgba(43, 134, 255, 0)); }
   .vhero .lead { color: #d9dee4; }
   .vhero-search { max-width: 560px; background: rgba(255, 255, 255, 0.96); border: 1px solid rgba(255, 255, 255, 0.6); box-shadow: 0 16px 40px -18px rgba(0, 0, 0, 0.7); }
   .vhero .hero-popular { color: #b9c1ca; }
