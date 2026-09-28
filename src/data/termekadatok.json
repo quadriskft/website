@@ -1006,6 +1006,19 @@
    "/termekkepek/140997-60-mm-es-gombcsuklo-keszlet-1.webp"
   ]
  },
+ "141224-pul0-acel-keret-112-24-3-mm": {
+  "source": "Cargo Frames",
+  "sourceUrl": "https://cargoframes.eu",
+  "sourceTitle": "Cargo Frames acél keret (PUL0-1122430-00-0000)",
+  "matchedCode": "PUL0-1122430-00-0000",
+  "specs": {
+   "Cikkszám (gyártói)": "PUL0-1122430-00-0000",
+   "Méret (megnevezés szerint)": "112/24/3 mm"
+  },
+  "images": [
+   "/termekkepek/141224-pul0-acel-keret-112-24-3-mm-1.webp"
+  ]
+ },
  "141265-acel-hossztarto-120-60-5-mm": {
   "source": "Quadris adatok",
   "sourceUrl": "",
@@ -1040,6 +1053,117 @@
    "/termekkepek/141266-acel-hossztarto-120-60-6-mm-1.webp"
   ]
  },
+ "141520-perf-pu00-acel-keret-110-15-2-5100": {
+  "source": "Cargo Frames",
+  "sourceUrl": "https://cargoframes.eu",
+  "sourceTitle": "Cargo Frames profil U 110/15/2",
+  "matchedCode": "PU00-1101520-H3-5100",
+  "specs": {
+   "Cikkszám (gyártói)": "PU00-1101520-H3-5100",
+   "Profil típus": "U 110/15/2",
+   "Anyag": "S355MC acél",
+   "Magasság": "110 mm",
+   "Szélesség": "74 mm",
+   "Felső rész mélysége": "15 mm",
+   "Falvastagság": "2 mm",
+   "Hossz": "5100 mm",
+   "Furatkép": "dupla furat (2 × Ø15 mm, 50 mm távolság) a rakományrögzítő fülnek, 300 mm osztással (Z 150 / X 300 / Y 150 mm)",
+   "Tömeg": "3,67 kg/fm"
+  },
+  "images": [
+   "/termekkepek/141520-perf-pu00-acel-keret-110-15-2-5100-1.webp",
+   "/termekkepek/141520-perf-pu00-acel-keret-110-15-2-5100-2.webp",
+   "/termekkepek/141520-perf-pu00-acel-keret-110-15-2-5100-3.webp"
+  ]
+ },
+ "141520-pu00-acel-keret-110-15-2-5000": {
+  "source": "Cargo Frames",
+  "sourceUrl": "https://cargoframes.eu",
+  "sourceTitle": "Cargo Frames profil U 110/15/2",
+  "matchedCode": "PU00-1101520-00-5000",
+  "specs": {
+   "Cikkszám (gyártói)": "PU00-1101520-00-5000",
+   "Profil típus": "U 110/15/2",
+   "Anyag": "S355MC acél",
+   "Magasság": "110 mm",
+   "Szélesség": "74 mm",
+   "Felső rész mélysége": "15 mm",
+   "Falvastagság": "2 mm",
+   "Hossz": "5000 mm",
+   "Furatkép": "furat nélkül",
+   "Tömeg": "3,67 kg/fm"
+  },
+  "images": [
+   "/termekkepek/141520-pu00-acel-keret-110-15-2-5000-1.webp",
+   "/termekkepek/141520-pu00-acel-keret-110-15-2-5000-2.webp"
+  ]
+ },
+ "141521-pu00-acel-keret-115-21-3-mm": {
+  "source": "Cargo Frames",
+  "sourceUrl": "https://cargoframes.eu",
+  "sourceTitle": "Cargo Frames profil U 115/21/3",
+  "matchedCode": "PU00-1152130-00-7500",
+  "specs": {
+   "Cikkszám (gyártói)": "PU00-1152130-00-7500",
+   "Profil típus": "U 115/21/3",
+   "Anyag": "S355MC acél",
+   "Magasság": "115 mm",
+   "Szélesség": "74 mm",
+   "Felső rész mélysége": "21 mm",
+   "Falvastagság": "3 mm",
+   "Hossz": "7500 mm",
+   "Furatkép": "furat nélkül",
+   "Tömeg": "5,63 kg/fm"
+  },
+  "images": [
+   "/termekkepek/141521-pu00-acel-keret-115-21-3-mm-1.webp",
+   "/termekkepek/141521-pu00-acel-keret-115-21-3-mm-2.webp"
+  ]
+ },
+ "141527-pu00-acel-keret-115-27-3-7500": {
+  "source": "Cargo Frames",
+  "sourceUrl": "https://cargoframes.eu",
+  "sourceTitle": "Cargo Frames profil U 115/27/3",
+  "matchedCode": "PU00-1152730-00-7500",
+  "specs": {
+   "Cikkszám (gyártói)": "PU00-1152730-00-7500",
+   "Profil típus": "U 115/27/3",
+   "Anyag": "S355MC acél",
+   "Magasság": "115 mm",
+   "Szélesség": "74 mm",
+   "Felső rész mélysége": "27 mm",
+   "Falvastagság": "3 mm",
+   "Hossz": "7500 mm",
+   "Furatkép": "furat nélkül",
+   "Tömeg": "5,77 kg/fm"
+  },
+  "images": [
+   "/termekkepek/141527-pu00-acel-keret-115-27-3-7500-1.webp",
+   "/termekkepek/141527-pu00-acel-keret-115-27-3-7500-2.webp"
+  ]
+ },
+ "142130-pu00-acel-keret-140-21-3-7500": {
+  "source": "Cargo Frames",
+  "sourceUrl": "https://cargoframes.eu",
+  "sourceTitle": "Cargo Frames profil U 140/21/3",
+  "matchedCode": "PU00-1402130-00-7500",
+  "specs": {
+   "Cikkszám (gyártói)": "PU00-1402130-00-7500",
+   "Profil típus": "U 140/21/3",
+   "Anyag": "S355MC acél",
+   "Magasság": "140 mm",
+   "Szélesség": "74 mm",
+   "Felső rész mélysége": "21 mm",
+   "Falvastagság": "3 mm",
+   "Hossz": "7500 mm",
+   "Furatkép": "furat nélkül",
+   "Tömeg": "6,22 kg/fm"
+  },
+  "images": [
+   "/termekkepek/142130-pu00-acel-keret-140-21-3-7500-1.webp",
+   "/termekkepek/142130-pu00-acel-keret-140-21-3-7500-2.webp"
+  ]
+ },
  "142303-billencs-nyitokar-j": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/15012303-leva-comando-destra-per-apertura-cerniere/",
@@ -1066,6 +1190,86 @@
   "images": [
    "/termekkepek/142304-billencs-nyitokar-b-1.webp",
    "/termekkepek/142304-billencs-nyitokar-b-2.webp"
+  ]
+ },
+ "142430-pu00-acel-keret-140-24-3-7500": {
+  "source": "Cargo Frames",
+  "sourceUrl": "https://cargoframes.eu",
+  "sourceTitle": "Cargo Frames profil U 140/24/3",
+  "matchedCode": "PU00-1402430-00-7500",
+  "specs": {
+   "Cikkszám (gyártói)": "PU00-1402430-00-7500",
+   "Profil típus": "U 140/24/3",
+   "Anyag": "S355MC acél",
+   "Magasság": "140 mm",
+   "Szélesség": "74 mm",
+   "Felső rész mélysége": "24 mm",
+   "Falvastagság": "3 mm",
+   "Hossz": "7500 mm",
+   "Furatkép": "furat nélkül",
+   "Tömeg": "6,29 kg/fm"
+  },
+  "images": [
+   "/termekkepek/142430-pu00-acel-keret-140-24-3-7500-1.webp",
+   "/termekkepek/142430-pu00-acel-keret-140-24-3-7500-2.webp"
+  ]
+ },
+ "142730-pf50-acel-keret-140-27-3-2500-sima": {
+  "source": "Cargo Frames",
+  "sourceUrl": "https://cargoframes.eu",
+  "sourceTitle": "Cargo Frames acél keret (PF50-1402730-00-2500)",
+  "matchedCode": "PF50-1402730-00-2500",
+  "specs": {
+   "Cikkszám (gyártói)": "PF50-1402730-00-2500",
+   "Méret (megnevezés szerint)": "140/27/3 mm",
+   "Hossz": "2500 mm"
+  },
+  "images": [
+   "/termekkepek/142730-pf50-acel-keret-140-27-3-2500-sima-1.webp"
+  ]
+ },
+ "142730-pu00-acel-keret-140-27-3-7500": {
+  "source": "Cargo Frames",
+  "sourceUrl": "https://cargoframes.eu",
+  "sourceTitle": "Cargo Frames profil U 140/27/3",
+  "matchedCode": "PU00-1402730-00-7500",
+  "specs": {
+   "Cikkszám (gyártói)": "PU00-1402730-00-7500",
+   "Profil típus": "U 140/27/3",
+   "Anyag": "S355MC acél",
+   "Magasság": "140 mm",
+   "Szélesség": "74 mm",
+   "Felső rész mélysége": "27 mm",
+   "Falvastagság": "3 mm",
+   "Hossz": "7500 mm",
+   "Furatkép": "furat nélkül",
+   "Tömeg": "6,36 kg/fm"
+  },
+  "images": [
+   "/termekkepek/142730-pu00-acel-keret-140-27-3-7500-1.webp",
+   "/termekkepek/142730-pu00-acel-keret-140-27-3-7500-2.webp"
+  ]
+ },
+ "142730-pu00-acel-keret-140-27-3-8000": {
+  "source": "Cargo Frames",
+  "sourceUrl": "https://cargoframes.eu",
+  "sourceTitle": "Cargo Frames profil U 140/27/3",
+  "matchedCode": "PU00-1402730-00-8000",
+  "specs": {
+   "Cikkszám (gyártói)": "PU00-1402730-00-8000",
+   "Profil típus": "U 140/27/3",
+   "Anyag": "S355MC acél",
+   "Magasság": "140 mm",
+   "Szélesség": "74 mm",
+   "Felső rész mélysége": "27 mm",
+   "Falvastagság": "3 mm",
+   "Hossz": "8000 mm",
+   "Furatkép": "furat nélkül",
+   "Tömeg": "6,36 kg/fm"
+  },
+  "images": [
+   "/termekkepek/142730-pu00-acel-keret-140-27-3-8000-1.webp",
+   "/termekkepek/142730-pu00-acel-keret-140-27-3-8000-2.webp"
   ]
  },
  "145010-50-mm-es-gombcsuklo-keszlet-3-5t": {

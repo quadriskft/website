@@ -61,7 +61,7 @@ SEARCHED = {
     "IndesCar": "indescar.com webáruház (WooCommerce API)",
     "Takler": "taklergroup.com oldaltérkép bejárása",
     "Profilpol": "profilpolsystem.pl oldaltérkép bejárása",
-    "Cargoframes Czech": "cargoframes.eu oldaltérkép bejárása",
+    "Cargoframes Czech": "cargoframes.eu oldaltérkép; Cargo Frames profilrajzok és műszaki lista (Quadris e-mail)",
 }
 # ezeknél nincs beszállítói forrás: az adatlap (méretek, elméleti tömeg) a Quadris-megnevezésből készül
 NAME_ONLY = {"Peri", "BAYU", "Gummitrading", "VR-Trade", "Novelis", "(nincs megadva)", ""}
