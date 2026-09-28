@@ -637,6 +637,67 @@
    "/termekkepek/121208-gyurus-rakomanyrogzito-1300-dan-3.webp"
   ]
  },
+ "121824-rakomanyrogzito-rud-alu-elox": {
+  "source": "Wistra",
+  "sourceUrl": "https://www.wistra.eu/fileadmin/media/products/catalogs/de/Wistra-Hauptkatalog-DE.pdf#page=56",
+  "sourceTitle": "WISTRA főkatalógus: 221808000920",
+  "matchedCode": "221808000920",
+  "specs": {
+   "Cikkszám (gyártói)": "221808000920",
+   "Megnevezés (gyári)": "Sperrb 1808 Alu 09 – állítható kerek alumínium rakományrögzítő rúd",
+   "Anyag": "alumínium",
+   "Tartócső átmérője": "42 mm",
+   "Végcsap": "09-es kivitel, Ø19 mm-es csap",
+   "Blokkolóerő (BC)": "400 daN (egyenletes felületi terhelésnél)",
+   "Alkalmazási tartomány": "2235–2685 mm"
+  },
+  "images": [
+   "/termekkepek/121824-rakomanyrogzito-rud-alu-elox-1.webp",
+   "/termekkepek/121824-rakomanyrogzito-rud-alu-elox-2.webp"
+  ]
+ },
+ "122185-rakomany-rogzito-rud-airline-sinhez-1600": {
+  "source": "Wistra",
+  "sourceUrl": "https://www.wistra.eu/fileadmin/media/products/catalogs/de/Wistra-Hauptkatalog-DE.pdf#page=113",
+  "sourceTitle": "WISTRA főkatalógus: 221855-600-1600",
+  "matchedCode": "221855-600-1600",
+  "specs": {
+   "Cikkszám (gyártói)": "221855-600-1600",
+   "Megnevezés (gyári)": "Sperrb 1855 1600 mm WIS schwarz blank – „Airline-Beam” rakományrögzítő rúd Airline-sínhez",
+   "Alaphossz": "1600 mm",
+   "Teleszkóp-út": "600 mm (kihúzásgátlóval)",
+   "Alkalmazási tartomány": "1600–2160 mm",
+   "Blokkolóerő (BC)": "200–425 daN",
+   "Tartócső átmérője": "42 mm",
+   "Bevonat": "fekete PVC-bevonat",
+   "Rögzítés": "mindkét végén automata Airline-csap (egy lyukpárba pattan)",
+   "Felhasználás": "vízszintesen és függőlegesen is; csúszásgátlóval menetirányban akár 2250 kg rakományhoz"
+  },
+  "images": [
+   "/termekkepek/122185-rakomany-rogzito-rud-airline-sinhez-1600-1.webp"
+  ]
+ },
+ "122186-rakomany-rogzito-rud-airline-sinhez-1800": {
+  "source": "Wistra",
+  "sourceUrl": "https://www.wistra.eu/fileadmin/media/products/catalogs/de/Wistra-Hauptkatalog-DE.pdf#page=113",
+  "sourceTitle": "WISTRA főkatalógus: 221855-600-1800",
+  "matchedCode": "221855-600-1800",
+  "specs": {
+   "Cikkszám (gyártói)": "221855-600-1800",
+   "Megnevezés (gyári)": "Sperrb 1855 1800 mm WIS schwarz blank – „Airline-Beam” rakományrögzítő rúd Airline-sínhez",
+   "Alaphossz": "1800 mm",
+   "Teleszkóp-út": "600 mm (kihúzásgátlóval)",
+   "Alkalmazási tartomány": "1800–2360 mm",
+   "Blokkolóerő (BC)": "200–375 daN",
+   "Tartócső átmérője": "42 mm",
+   "Bevonat": "fekete PVC-bevonat",
+   "Rögzítés": "mindkét végén automata Airline-csap (egy lyukpárba pattan)",
+   "Felhasználás": "vízszintesen és függőlegesen is; csúszásgátlóval menetirányban akár 2250 kg rakományhoz"
+  },
+  "images": [
+   "/termekkepek/122186-rakomany-rogzito-rud-airline-sinhez-1800-1.webp"
+  ]
+ },
  "122303-padloba-sullyesztehto-inox-rak-rogzito-tanyer": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/anello-fermacarico-leggero-senza-molla/",
@@ -725,6 +786,21 @@
   },
   "images": [
    "/termekkepek/123412-spanifer-l-8-m-5000-kg-dupla-kampos-1.webp"
+  ]
+ },
+ "124821-kombi-sinhez-gyurus-csatlakozo": {
+  "source": "Wistra",
+  "sourceUrl": "https://www.wistra.eu/fileadmin/media/products/catalogs/de/Wistra-Hauptkatalog-DE.pdf#page=49",
+  "sourceTitle": "WISTRA főkatalógus: 140000082100",
+  "matchedCode": "140000082100",
+  "specs": {
+   "Cikkszám (gyártói)": "140000082100",
+   "Megnevezés (gyári)": "Endbeschlag 821 für Anker-Kombi-Zurrschienen – gyűrűs végszerelvény kombi (Anker-Kombi) rögzítősínhez",
+   "Rögzítőerő (LC)": "1000 daN",
+   "Gyűrű belső átmérője": "33 mm"
+  },
+  "images": [
+   "/termekkepek/124821-kombi-sinhez-gyurus-csatlakozo-1.webp"
   ]
  },
  "125310-3-reszes-rakomanyrogzito-oval-tanyer-800-kg": {
@@ -5043,6 +5119,72 @@
    "/termekkepek/260ft-csapott-teteju-sarvedo-3.webp"
   ]
  },
+ "302321-mgu-alafutasgatlo-konzol-430-mm": {
+  "source": "Takler",
+  "sourceUrl": "https://trucksandtrailers.taklergroup.com/product/44/steel-zm-adjustable-bracket-for-side-protection",
+  "sourceTitle": "Takler: Steel ZM adjustable bracket (TK3021)",
+  "matchedCode": "TK3021",
+  "specs": {
+   "Cikkszám (gyártói)": "TK3021",
+   "Megnevezés (gyári)": "Steel ZM adjustable bracket for side protection – állítható konzol oldalsó aláfutásgátlóhoz",
+   "Anyag": "acél, ZM (cink-magnézium) bevonattal",
+   "Szélesség (L)": "54,7 mm",
+   "Konzollap szélessége (B)": "140 mm",
+   "Konzollap magassága (S)": "155 mm",
+   "Kialakítás": "csavar és csap nélküli nyitó-záró mechanizmus",
+   "Jóváhagyás": "E1173R-011025; E1173R-011027 (ECE R73, max. 3000 mm tengelytáv)",
+   "Magasság (H)": "430 mm",
+   "Tömeg": "0,8 kg"
+  },
+  "images": [
+   "/termekkepek/302321-mgu-alafutasgatlo-konzol-430-mm-1.webp",
+   "/termekkepek/302321-mgu-alafutasgatlo-konzol-430-mm-2.webp"
+  ]
+ },
+ "302323-mgu-alafutasgatlo-konzol-572-mm": {
+  "source": "Takler",
+  "sourceUrl": "https://trucksandtrailers.taklergroup.com/product/44/steel-zm-adjustable-bracket-for-side-protection",
+  "sourceTitle": "Takler: Steel ZM adjustable bracket (TK3023)",
+  "matchedCode": "TK3023",
+  "specs": {
+   "Cikkszám (gyártói)": "TK3023",
+   "Megnevezés (gyári)": "Steel ZM adjustable bracket for side protection – állítható konzol oldalsó aláfutásgátlóhoz",
+   "Anyag": "acél, ZM (cink-magnézium) bevonattal",
+   "Szélesség (L)": "54,7 mm",
+   "Konzollap szélessége (B)": "140 mm",
+   "Konzollap magassága (S)": "155 mm",
+   "Kialakítás": "csavar és csap nélküli nyitó-záró mechanizmus",
+   "Jóváhagyás": "E1173R-011025; E1173R-011027 (ECE R73, max. 3000 mm tengelytáv)",
+   "Magasság (H)": "572 mm",
+   "Tömeg": "1,8 kg"
+  },
+  "images": [
+   "/termekkepek/302323-mgu-alafutasgatlo-konzol-572-mm-1.webp",
+   "/termekkepek/302323-mgu-alafutasgatlo-konzol-572-mm-2.webp"
+  ]
+ },
+ "302325-mgu-alafutasgatlo-konzol-710-mm": {
+  "source": "Takler",
+  "sourceUrl": "https://trucksandtrailers.taklergroup.com/product/44/steel-zm-adjustable-bracket-for-side-protection",
+  "sourceTitle": "Takler: Steel ZM adjustable bracket (TK3025)",
+  "matchedCode": "TK3025",
+  "specs": {
+   "Cikkszám (gyártói)": "TK3025",
+   "Megnevezés (gyári)": "Steel ZM adjustable bracket for side protection – állítható konzol oldalsó aláfutásgátlóhoz",
+   "Anyag": "acél, ZM (cink-magnézium) bevonattal",
+   "Szélesség (L)": "54,7 mm",
+   "Konzollap szélessége (B)": "140 mm",
+   "Konzollap magassága (S)": "155 mm",
+   "Kialakítás": "csavar és csap nélküli nyitó-záró mechanizmus",
+   "Jóváhagyás": "E1173R-011025; E1173R-011027 (ECE R73, max. 3000 mm tengelytáv)",
+   "Magasság (H)": "710 mm",
+   "Tömeg": "2 kg"
+  },
+  "images": [
+   "/termekkepek/302325-mgu-alafutasgatlo-konzol-710-mm-1.webp",
+   "/termekkepek/302325-mgu-alafutasgatlo-konzol-710-mm-2.webp"
+  ]
+ },
  "302340-viztartaly-18l": {
   "source": "Ital Accessori",
   "matchedCode": "302340",
@@ -6220,6 +6362,24 @@
   "images": [
    "/termekkepek/381420-tekero-kurbli-1.webp",
    "/termekkepek/381420-tekero-kurbli-2.webp"
+  ]
+ },
+ "383148-direktspanner": {
+  "source": "Miederhoff",
+  "sourceUrl": "https://shop.miederhoff.de/de/produkte/side_curtain_zubehoer/direktspanner/",
+  "sourceTitle": "Miederhoff Direktspanner 2000® (31.0048.20 / 31.0448.20)",
+  "matchedCode": "31.0048.20 / 31.0448.20",
+  "specs": {
+   "Cikkszám (gyártói)": "31.0048.20 / 31.0448.20",
+   "Megnevezés (gyári)": "Direktspanner 2000® – direkt ponyvafeszítő (csúszóponyvás rendszerhez)",
+   "Változatok": "31.0048.20: 35 mm állítási út; 31.0448.20: 25 mm állítási út, 10 kN terhelhetőség (CURTSEC-tanúsított)",
+   "Anyag": "rozsdamentes acél",
+   "Méret": "160 × 60 × 21 mm (H × Sz × M)",
+   "Furatátmérő": "7,0 mm",
+   "Furattávolság": "28 mm"
+  },
+  "images": [
+   "/termekkepek/383148-direktspanner-1.webp"
   ]
  },
  "400x700-mm-sarvedo-lap-stopspay": {
