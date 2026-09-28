@@ -333,6 +333,21 @@
    "/termekkepek/106282-targoncautkozo-profil-rogzito-csavar-keszlet-1.webp"
   ]
  },
+ "106731-lezaro-csiga-zsanerhoz": {
+  "source": "Pommier katalógus",
+  "sourceUrl": "https://www.pommier.eu/sites/default/files/catalogs/POMMIER_Catalogue_DE-EN_2023-24_BD_0.pdf#page=331",
+  "sourceTitle": "Pommier katalógus 2023–24, 329. o.: Hinge stop, gray plastic (for 1636731 / 1636761)",
+  "matchedCode": "1636765DR/GA",
+  "specs": {
+   "Pommier cikkszám": "1636765DR (jobbos) / 1636765GA (balos)",
+   "Anyag": "szürke műanyag",
+   "Tömeg [kg]": "0,035",
+   "Illeszkedik": "1636731 / 1636761 alu zsanérprofilhoz"
+  },
+  "images": [
+   "/termekkepek/106731-lezaro-csiga-zsanerhoz-1.webp"
+  ]
+ },
  "107045-sarok-elem-25-25-r-profilhoz": {
   "source": "Car-Alu",
   "sourceUrl": "https://www.caralushop.nl/en/catalog/categories/710",
@@ -6405,6 +6420,25 @@
   "images": [
    "/termekkepek/511207-50-70-mm-es-gumi-tomites-pfg-1.webp",
    "/termekkepek/511207-50-70-mm-es-gumi-tomites-pfg-2.webp"
+  ]
+ },
+ "511208-70-90-mm-es-gumi-tomites-pfg": {
+  "source": "Pommier katalógus",
+  "sourceUrl": "https://www.pommier.eu/sites/default/files/catalogs/POMMIER_Catalogue_DE-EN_2023-24_BD_0.pdf#page=525",
+  "sourceTitle": "Pommier katalógus 2023–24, 523. o.: Gasket in 20 m rolls for panel width from 70 to 90 mm",
+  "matchedCode": "580611208",
+  "specs": {
+   "Pommier cikkszám": "580611208",
+   "Anyag": "EPDM gumi",
+   "Panelvastagság [mm]": "70–90",
+   "Méret": "45 × 80 mm (teljes magasság 92 mm)",
+   "Tömeg [kg]": "0,647",
+   "Kiszerelés": "20 m-es tekercs",
+   "Rögzítőprofil": "741209031 alumínium",
+   "Hézag [mm]": "16/18"
+  },
+  "images": [
+   "/termekkepek/511208-70-90-mm-es-gumi-tomites-pfg-1.webp"
   ]
  },
  "512235-55-mm-es-pvc-tomites-g-5m": {
