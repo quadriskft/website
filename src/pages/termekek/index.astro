@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
-import { groups, GROUP_META, stats, groupImage } from '../../lib/catalog.js';
+import { groups, stats, groupImage } from '../../lib/catalog.js';
 ---
 <Base crumbs={[['Főoldal', '/'], ['Termékek', '/termekek']]} back={{ href: '/', label: 'Főoldal' }} title="Termékkatalógus" description={`${stats.products} termék ${stats.groups} termékcsoportban jármű- és lószállító felépítmény gyártóknak.`}>
   <section class="page-head">
@@ -19,7 +19,6 @@ import { groups, GROUP_META, stats, groupImage } from '../../lib/catalog.js';
             <img src={groupImage(g.slug)} alt="" loading="lazy" width="800" height="560" />
           </a>
           <a href={`/termekek/${g.slug}`} class="cg-head">
-            <span class="cg-icon"><Icon name={GROUP_META[g.slug]?.icon} size={22} /></span>
             <span>
               <h2>{g.name}</h2>
               <span class="muted">{g.count} termék</span>
@@ -46,10 +45,6 @@ import { groups, GROUP_META, stats, groupImage } from '../../lib/catalog.js';
   .cg-head:hover h2 { color: var(--accent); }
   .cg-head h2 { font-size: 1.1rem; margin: 0; }
   .cg-head .muted { font-size: 0.85rem; }
-  .cg-icon {
-    flex: none; width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; color: var(--accent);
-    background: var(--accent-soft); border: 1px solid rgba(10, 108, 255, 0.18);
-  }
   .cg-cats { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
   .cg-cats a { gap: 6px; font-size: 0.86rem; padding: 5px 12px; }
   @media (max-width: 420px) { .catalog-list { grid-template-columns: 1fr; } }

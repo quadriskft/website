@@ -35,7 +35,6 @@ const jsonLd = [
   <section class="page-head">
     <div class="container">
       <div class="gh">
-        <span class="gh-icon"><Icon name={meta.icon} size={30} /></span>
         <div>
           <h1>{group.name}</h1>
           <p class="lead">{meta.text} <span class="muted">{group.count} termék.</span></p>
@@ -142,10 +141,6 @@ const jsonLd = [
   .gh { display: flex; gap: 20px; align-items: flex-start; }
   .gh h1 { margin-bottom: 8px; }
   .gh .lead { margin: 0; }
-  .gh-icon {
-    flex: none; width: 64px; height: 64px; border-radius: 18px; display: grid; place-items: center; color: #8fbcff;
-    background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.16);
-  }
   .layout { display: flex; gap: 36px; padding-top: 32px; padding-bottom: 40px; align-items: flex-start; }
   /* alkategóriánként 4 termék egy sorban (kisebb kijelzőn 3, mobilon 2) */
   .layout :global(.grid-products) { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
@@ -175,6 +170,5 @@ const jsonLd = [
     .side-title { display: none; }
   }
   @media (max-width: 640px) {
-    .gh-icon { display: none; }
   }
 </style>
