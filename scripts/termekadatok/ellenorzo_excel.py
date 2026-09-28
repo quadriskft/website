@@ -1,6 +1,7 @@
-"""Ellenőrző Excel az összes termékről (data/termek_ellenorzes.xlsx).
+"""Ellenőrző Excel a KÉP NÉLKÜLI termékekről (data/termek_ellenorzes.xlsx).
 
-Termékenként: van-e kép / műszaki adat, honnan jött az adat, hol kerestük és hol nem találtuk,
+Csak azok a termékek kerülnek bele, amelyeknek most 0 képe van. Oszlopsorrend: beszállító, megnevezés,
+TÖRÖLHETŐ, megjegyzés, majd a többi adat. Termékenként: van-e műszaki adat, honnan jött, hol kerestük és hol nem találtuk,
 valamint üres oszlopok a Quadris visszajelzéséhez (TÖRÖLHETŐ, megjegyzés). A „Beszállítók” lap
 képletekkel összesít beszállítónként, így a visszaküldött fájlban a jelölések után is friss.
 
@@ -70,10 +71,12 @@ NOTES = {
     "202386-u-130-hossztarto": "A Quadris kérésére most kihagyva (csak a Decin Excelben van rajz).",
 }
 
-HEAD = ["Quadris cikkszám", "Megnevezés", "Termékcsoport", "Kategória", "Beszállító", "Beszállítói kód", "Eredet",
-        "Kép (db)", "Műszaki adat (db)", "Leírás", "Állapot", "Kerestük?", "Hol kerestük", "Eredmény / hol nem találtuk",
-        "Adatforrás", "Weboldal", "TÖRÖLHETŐ", "Megjegyzés (Quadris)", "Azonosító (slug)"]
-WIDTH = [16, 44, 26, 26, 18, 18, 14, 9, 11, 9, 20, 11, 52, 52, 40, 40, 13, 36, 36]
+HEAD = ["Beszállító", "Megnevezés", "TÖRÖLHETŐ", "Megjegyzés (Quadris)", "Quadris cikkszám", "Beszállítói kód",
+        "Termékcsoport", "Kategória", "Eredet", "Kép (db)", "Műszaki adat (db)", "Leírás", "Állapot", "Kerestük?",
+        "Hol kerestük", "Eredmény / hol nem találtuk", "Adatforrás", "Weboldal", "Azonosító (slug)"]
+WIDTH = [18, 44, 13, 36, 16, 18, 26, 26, 14, 9, 11, 9, 20, 11, 52, 52, 40, 40, 36]
+# rows() belső sorrendje -> HEAD sorrend
+ORDER = [4, 1, 16, 17, 0, 5, 2, 3, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18]
 
 FONT = "Arial"
 HFILL = PatternFill("solid", fgColor="1F3864")
@@ -126,7 +129,8 @@ def rows():
                     "van" if p.get("description") else "nincs", None, "Igen", f"{sup} teljes kínálata (gyártói katalógus / weboldal)",
                     "Megtalálva: a beszállító teljes kínálatából felvett termék", p.get("sourceUrl") or "",
                     f"{SITE}/termek/{p['slug']}/", "", "", p["slug"]])
-    out.sort(key=lambda r: (r[6] != "Quadris Excel", r[4].lower(), r[2], r[1]))
+    out = [[r[i] for i in ORDER] for r in out if r[7] == 0]  # csak a kép nélküliek, új oszlopsorrendben
+    out.sort(key=lambda r: (r[0].lower(), r[6], r[1]))
     return out
 
 
@@ -141,13 +145,13 @@ def main():
         ("Termék-ellenőrző táblázat – Quadris weboldal", True),
         ("", False),
         ("Mit mutat?", True),
-        ("A „Termékek” lapon minden termék egy sor: van-e képe és műszaki adata, honnan jött az adat, hol kerestük és hol nem találtuk.", False),
-        ("A „Beszállítók” lap beszállítónként összesít (képletekkel, a jelölések után is frissül).", False),
+        ("A „Termékek” lapon a jelenleg KÉP NÉLKÜLI termékek vannak, soronként egy: van-e műszaki adata, honnan jött az adat, hol kerestük és hol nem találtuk.", False),
+        ("A „Beszállítók” lap beszállítónként összesíti a kép nélküli termékeket (képletekkel, a jelölések után is frissül).", False),
         ("", False),
         ("Mit kell kitölteni? (sárga oszlopok a „Termékek” lapon)", True),
-        ("Q – TÖRÖLHETŐ: legördülőből „IGEN”, ha a terméket le lehet venni a weboldalról és mindenhonnan (katalógus, kereső, ajánlatkérő).", False),
-        ("R – Megjegyzés (Quadris): bármi, amit tudnunk kell – pl. „kép: a beszállító új katalógusában a 34. oldalon”, „helyes cikkszám: 7318”, „nem forgalmazzuk”.", False),
-        ("Példa: Q = IGEN, R = „Kifutott termék, nem rendelhető.”", False),
+        ("C – TÖRÖLHETŐ: legördülőből „IGEN”, ha a terméket le lehet venni a weboldalról és mindenhonnan (katalógus, kereső, ajánlatkérő).", False),
+        ("D – Megjegyzés (Quadris): bármi, amit tudnunk kell – pl. „kép: a beszállító új katalógusában a 34. oldalon”, „helyes cikkszám: 7318”, „nem forgalmazzuk”.", False),
+        ("Példa: C = IGEN, D = „Kifutott termék, nem rendelhető.”", False),
         ("A többi oszlopot kérjük, ne módosítsák – az S oszlop (azonosító) alapján olvassuk vissza a fájlt.", False),
         ("", False),
         ("Oszlopok jelentése", True),
@@ -176,8 +180,8 @@ def main():
         ws.append(r)
     n = len(data) + 1
     for i in range(2, n + 1):
-        ws.cell(row=i, column=11, value=f'=IF(AND(H{i}>0,I{i}>0),"Rendben",IF(AND(H{i}=0,I{i}=0),"Nincs kép és adat",IF(H{i}=0,"Nincs kép","Nincs adat")))')
-        for col in (15, 16):
+        ws.cell(row=i, column=13, value=f'=IF(AND(J{i}>0,K{i}>0),"Rendben",IF(AND(J{i}=0,K{i}=0),"Nincs kép és adat",IF(J{i}=0,"Nincs kép","Nincs adat")))')
+        for col in (17, 18):
             c = ws.cell(row=i, column=col)
             if c.value:
                 c.hyperlink = c.value
@@ -188,55 +192,53 @@ def main():
         c.font = Font(name=FONT, bold=True, color="FFFFFF", size=10)
         c.fill = HFILL
         c.alignment = Alignment(wrap_text=True, vertical="center")
-    for c in (ws["Q1"], ws["R1"]):
+    for c in (ws["C1"], ws["D1"]):
         c.fill = PatternFill("solid", fgColor="BF8F00")
     for row in ws.iter_rows(min_row=2, max_row=n):
         for c in row:
             if c.hyperlink is None:
                 c.font = Font(name=FONT, size=9)
-            c.alignment = Alignment(vertical="top", wrap_text=c.column in (2, 13, 14, 18))
+            c.alignment = Alignment(vertical="top", wrap_text=c.column in (2, 4, 15, 16))
             c.border = THIN
-        row[16].fill = INPUT
-        row[17].fill = INPUT
-        row[16].alignment = Alignment(horizontal="center", vertical="top")
-    ws.freeze_panes = "C2"
+        row[2].fill = INPUT
+        row[3].fill = INPUT
+        row[2].alignment = Alignment(horizontal="center", vertical="top")
+    ws.freeze_panes = "E2"
     ws.auto_filter.ref = f"A1:{get_column_letter(len(HEAD))}{n}"
     ws.row_dimensions[1].height = 30
     dv = DataValidation(type="list", formula1='"IGEN"', allow_blank=True, showDropDown=False)
     dv.error, dv.errorTitle = "Csak „IGEN” vagy üres lehet.", "TÖRÖLHETŐ"
     ws.add_data_validation(dv)
-    dv.add(f"Q2:Q{n}")
+    dv.add(f"C2:C{n}")
     red, orange, green = (PatternFill("solid", fgColor=c) for c in ("F8CBAD", "FCE4D6", "E2EFDA"))
-    ws.conditional_formatting.add(f"K2:K{n}", FormulaRule(formula=[f'K2="Nincs kép és adat"'], fill=red))
-    ws.conditional_formatting.add(f"K2:K{n}", FormulaRule(formula=[f'OR(K2="Nincs kép",K2="Nincs adat")'], fill=orange))
-    ws.conditional_formatting.add(f"K2:K{n}", FormulaRule(formula=[f'K2="Rendben"'], fill=green))
-    ws.conditional_formatting.add(f"A2:P{n}", FormulaRule(formula=[f'$Q2="IGEN"'], font=Font(strike=True, color="808080")))
+    ws.conditional_formatting.add(f"M2:M{n}", FormulaRule(formula=[f'M2="Nincs kép és adat"'], fill=red))
+    ws.conditional_formatting.add(f"M2:M{n}", FormulaRule(formula=[f'OR(M2="Nincs kép",M2="Nincs adat")'], fill=orange))
+    ws.conditional_formatting.add(f"M2:M{n}", FormulaRule(formula=[f'M2="Rendben"'], fill=green))
+    ws.conditional_formatting.add(f"A2:B{n}", FormulaRule(formula=[f'$C2="IGEN"'], font=Font(strike=True, color="808080")))
+    ws.conditional_formatting.add(f"E2:R{n}", FormulaRule(formula=[f'$C2="IGEN"'], font=Font(strike=True, color="808080")))
 
     # --- Beszállítók ---
     wsb = wb.create_sheet("Beszállítók", 1)
-    bh = ["Beszállító", "Termékek", "Rendben", "Nincs kép", "Nincs adat", "Nincs kép és adat", "Kép nélkül összesen",
+    bh = ["Beszállító", "Kép nélküli termékek", "Ebből műszaki adat sincs", "Ebből van műszaki adat",
           "Kerestük?", "Hol kerestük", "Törlésre jelölve"]
     wsb.append(bh)
     sups = []
     for r in data:
-        if r[4] not in sups:
-            sups.append(r[4])
+        if r[0] not in sups:
+            sups.append(r[0])
     rng = lambda col: f"Termékek!${col}$2:${col}${n}"  # noqa: E731
     for i, s in enumerate(sups, 2):
-        first = next(r for r in data if r[4] == s)
+        first = next(r for r in data if r[0] == s)
         wsb.append([s,
-                    f'=COUNTIF({rng("E")},A{i})',
-                    f'=COUNTIFS({rng("E")},A{i},{rng("K")},"Rendben")',
-                    f'=COUNTIFS({rng("E")},A{i},{rng("K")},"Nincs kép")',
-                    f'=COUNTIFS({rng("E")},A{i},{rng("K")},"Nincs adat")',
-                    f'=COUNTIFS({rng("E")},A{i},{rng("K")},"Nincs kép és adat")',
-                    f'=D{i}+F{i}',
-                    first[11], first[12],
-                    f'=COUNTIFS({rng("E")},A{i},{rng("Q")},"IGEN")'])
+                    f'=COUNTIF({rng("A")},A{i})',
+                    f'=COUNTIFS({rng("A")},A{i},{rng("M")},"Nincs kép és adat")',
+                    f'=B{i}-C{i}',
+                    first[13], first[14],
+                    f'=COUNTIFS({rng("A")},A{i},{rng("C")},"IGEN")'])
     last = len(sups) + 1
     tot = last + 1
     wsb.cell(row=tot, column=1, value="Összesen")
-    for col in "BCDEFGJ":
+    for col in "BCDG":
         wsb[f"{col}{tot}"] = f"=SUM({col}2:{col}{last})"
     for c in wsb[1]:
         c.font = Font(name=FONT, bold=True, color="FFFFFF", size=10)
@@ -245,13 +247,13 @@ def main():
     for row in wsb.iter_rows(min_row=2, max_row=tot):
         for c in row:
             c.font = Font(name=FONT, size=9, bold=c.row == tot)
-            c.alignment = Alignment(vertical="top", wrap_text=c.column == 9)
+            c.alignment = Alignment(vertical="top", wrap_text=c.column == 6)
             c.border = THIN
-    for col, w in zip("ABCDEFGHIJ", (22, 10, 10, 10, 10, 13, 13, 10, 80, 12)):
+    for col, w in zip("ABCDEFG", (22, 12, 14, 14, 10, 80, 12)):
         wsb.column_dimensions[col].width = w
     wsb.freeze_panes = "B2"
-    wsb.auto_filter.ref = f"A1:J{last}"
-    wsb.conditional_formatting.add(f"G2:G{last}", FormulaRule(formula=["G2>0"], fill=orange))
+    wsb.auto_filter.ref = f"A1:G{last}"
+    wsb.conditional_formatting.add(f"C2:C{last}", FormulaRule(formula=["C2>0"], fill=orange))
 
     wb.calculation.fullCalcOnLoad = True  # a képleteket az Excel megnyitáskor számolja ki
     OUT.parent.mkdir(parents=True, exist_ok=True)
