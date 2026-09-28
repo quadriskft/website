@@ -10,6 +10,7 @@ A kivágások (fotó és méretrajz) kézzel ellenőrizve.
 Használat: python3 scripts/termekadatok/adaico_katalogus.py
 """
 
+import shutil
 import sys
 from pathlib import Path
 
@@ -18,13 +19,16 @@ import pymupdf
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import CACHE, clear_images, fetch, load_enrichment, load_products, save_image, update_enrichment  # noqa: E402
+from common import CACHE, ROOT, clear_images, fetch, load_enrichment, load_products, save_image, update_enrichment  # noqa: E402
 
 SOURCE = "ADAICO katalógus"
 URL = "https://www.adaico.com/en/downloadcatalogues/download?id=ADAICO_2025_EDS.pdf"
 C_RAIL = ("1403010 / 1403012 / 1490006", 270, [(236, 648, 349, 765), (363, 645, 462, 745)],
           {"Megnevezés (gyári)": "Galvanized Steel Bar Profile – horganyzott acél sínprofil (gumitömítéshez)",
            "Anyag": "acél, tűzihorganyzott", "Falvastagság": "2 mm", "Méret": "52 × 50 mm", "Tömeg": "kb. 2,94 kg/fm"})
+# A Quadris kérésére ezek a hosszak ugyanazt a képet kapják, mint a 7800 mm-es változat
+SAME_IMAGES = {"214312-5000mm-50x52-mm-acel-c-sin": "214312-7800mm-50x52-mm-acel-c-sin",
+               "214312-6600mm-50x52-mm-acel-c-sin": "214312-7800mm-50x52-mm-acel-c-sin"}
 # slug -> (ADAICO kód, oldal, kivágások [pt] (esetleg kifehérítendő részekkel), műszaki adatok)
 ITEMS = {
     "821018-rugos-ajtokitamaszto-horg-540-425-mm-ad": ("1601018", 396, [(118, 130, 318, 225), (345, 58, 560, 240)],
@@ -75,7 +79,14 @@ def main():
             continue
         ref, pno, boxes, specs = item
         clear_images(p["slug"])
-        images = [save_image(render(doc[pno - 1], b), p["slug"], i) for i, b in enumerate(boxes, 1)]
+        if p["slug"] in SAME_IMAGES:  # a Quadris kérésére ugyanazok a képek, mint a másik hosszé (adaico.py webáruházas képei)
+            src = existing.get(SAME_IMAGES[p["slug"]], {}).get("images", [])
+            images = []
+            for i, u in enumerate(src, 1):
+                shutil.copyfile(ROOT / "public" / u.lstrip("/"), ROOT / f"public/termekkepek/{p['slug']}-{i}.webp")
+                images.append(f"/termekkepek/{p['slug']}-{i}.webp")
+        else:
+            images = [save_image(render(doc[pno - 1], b), p["slug"], i) for i, b in enumerate(boxes, 1)]
         enrichment[p["slug"]] = {"source": SOURCE, "sourceUrl": f"{URL}#page={pno}", "sourceTitle": f"ADAICO katalógus 2025: {ref}",
                                  "matchedCode": ref, "specs": {"Cikkszám (gyártói)": ref, **specs}, "images": images}
     update_enrichment(enrichment, SOURCE)
