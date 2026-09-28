@@ -156,13 +156,7 @@ function sheetMats(it) {
   // víztiszta PVC
   if (b > r + 0.05 && lum > 0.8) { const m = new THREE.MeshPhysicalMaterial({ color: c, metalness: 0, roughness: 0.05, transmission: 0.7, thickness: 0.05, transparent: true, opacity: 0.9, ior: 1.5 }); return { top: m, edge: m }; }
   // festett / fehér lemez (poliészter, polydet)
-  // fehér háttéren is látszódjon: enyhén tompított szín, kevesebb tükröződés, sötétebb él
-  if (lum > 0.85) {
-    const top = new THREE.MeshPhysicalMaterial({ color: c.clone().multiplyScalar(0.5), metalness: 0, roughness: 0.55, clearcoat: 0.15, clearcoatRoughness: 0.35, envMapIntensity: 0.25 });
-    const edge = new THREE.MeshPhysicalMaterial({ color: new THREE.Color('#6b7480'), metalness: 0, roughness: 0.55 });
-    top.userData.outline = true;
-    return { top, edge };
-  }
+  if (lum > 0.85) { const m = new THREE.MeshPhysicalMaterial({ color: c, metalness: 0, roughness: 0.28, clearcoat: 1, clearcoatRoughness: 0.08 }); return { top: m, edge: m }; }
   const m = new THREE.MeshPhysicalMaterial({ color: c, metalness: 0, roughness: 0.5, clearcoat: 0.25 });
   return { top: m, edge: m };
 }
@@ -243,10 +237,7 @@ function buildSheet(it) {
       const uv = box.attributes.uv;
       for (let i = 0; i < uv.count; i++) { const f = Math.floor(i / 4); if (f !== 2 && f !== 3) { const u = uv.getX(i), v = uv.getY(i); uv.setXY(i, u * 4, v); } }
     }
-    const mesh = add(box, mats);
-    mesh.position.set(0, th / 2, 0);
-    // fehér lemeznél vékony szürke kontúr, hogy a fehér háttértől elváljon
-    if (top.userData.outline) mesh.add(new THREE.LineSegments(new THREE.EdgesGeometry(box), new THREE.LineBasicMaterial({ color: '#8a929c' })));
+    add(box, mats).position.set(0, th / 2, 0);
     contactShadow(w * k * 1.1, L * 1.08);
   } else {
     const r = 0.42;

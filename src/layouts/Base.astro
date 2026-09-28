@@ -28,7 +28,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     <meta property="og:image" content={abs(image)} />
     <meta property="og:locale" content="hu_HU" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#1c1d1f" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <script type="application/ld+json" set:html={JSON.stringify({
@@ -51,7 +51,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     <a class="skip-link" href="#main">Ugrás a tartalomra</a>
     <div class="brand-bar">
       <a class="logo" href="/" aria-label={`${SITE.name} – főoldal`}>
-        <img src="/brand/quadris-logo.svg" alt={SITE.name} width="320" height="72" />
+        <img src="/brand/quadris-logo-fem.webp" alt={SITE.name} width="900" height="244" fetchpriority="high" />
       </a>
     </div>
     <header class="site-header">
@@ -122,7 +122,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     <footer class="site-footer">
       <div class="container footer-grid">
         <div class="footer-brand">
-          <img src="/brand/quadris-logo.svg" alt={SITE.name} width="280" height="64" loading="lazy" />
+          <span class="footer-logo"><img src="/brand/quadris-logo-fem.webp" alt={SITE.name} width="900" height="244" loading="lazy" /></span>
           <p class="muted">Alkatrészek, profilok és kiegészítők jármű- és lószállító felépítmény gyártóknak – egy helyről, szakértő támogatással.</p>
           <a href="/ajanlatkeres" class="btn btn-primary btn-sm"><Icon name="Send" /> Ajánlatot kérek</a>
         </div>
@@ -328,13 +328,15 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     background: rgba(255, 255, 255, 0.86); backdrop-filter: saturate(160%) blur(16px); -webkit-backdrop-filter: saturate(160%) blur(16px);
     border-bottom: 1px solid var(--line); transition: box-shadow 0.2s ease, background 0.2s ease;
   }
-  .site-header.scrolled { background: rgba(255, 255, 255, 0.96); box-shadow: 0 6px 20px -14px rgba(11, 31, 58, 0.4); }
+  .site-header.scrolled { background: rgba(255, 255, 255, 0.96); box-shadow: 0 6px 20px -14px rgba(18, 24, 33, 0.4); }
+  /* Márkasáv: a fémes logó grafit háttere (mint a logó eredeti környezete), középen a logó */
   .brand-bar {
-    display: flex; justify-content: center; align-items: center; padding: 14px 16px 12px;
-    background: radial-gradient(600px 120px at 50% 120%, rgba(26, 120, 255, 0.35), transparent 70%), #0b1733;
+    position: relative; display: flex; justify-content: center; align-items: center; padding: 12px 16px;
+    background: radial-gradient(ellipse 60% 140% at 50% 45%, #313234 0%, #222325 45%, #161718 100%);
   }
+  .brand-bar::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--metal); opacity: 0.55; }
   .logo { display: flex; }
-  .logo img { height: 74px; width: auto; }
+  .logo img { height: 78px; width: auto; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.45)); }
   .header-inner { height: 100%; display: flex; align-items: center; gap: 28px; }
 
   .main-nav { display: flex; align-items: center; gap: 4px; margin-left: -14px; }
@@ -399,8 +401,8 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   }
   @media (max-width: 960px) {
     :root { --header-h: 64px; }
-    .logo img { height: 56px; }
-    .brand-bar { padding: 10px 16px 8px; }
+    .logo img { height: 60px; }
+    .brand-bar { padding: 8px 16px; }
     .main-nav { margin-left: 0; }
     .menu-toggle { display: grid; }
     .main-nav {
@@ -419,25 +421,29 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     .suggest { position: fixed; left: 16px; right: 16px; width: auto; top: calc(var(--header-h) - 4px); }
   }
   @media (max-width: 560px) {
-    .logo img { height: 44px; }
+    .logo img { height: 48px; }
     .header-actions { gap: 8px; }
     .quote-btn { padding: 0 12px; }
   }
 
-  .site-footer { background: var(--navy); color: #c7d4e6; margin-top: 56px; }
+  .site-footer { background: linear-gradient(180deg, #f6f7f9 0%, #eceff3 100%); color: var(--text-2); margin-top: 56px; border-top: 1px solid var(--line); }
   .footer-grid { display: grid; grid-template-columns: 1.1fr 1.6fr 0.9fr; gap: 40px; padding-top: 56px; padding-bottom: 40px; }
-  .footer-brand img { height: 64px; width: auto; margin-bottom: 18px; }
+  .footer-logo {
+    display: inline-flex; padding: 12px 20px; margin-bottom: 18px; border-radius: 14px;
+    background: radial-gradient(ellipse 70% 130% at 50% 45%, #313234 0%, #1c1d1f 100%); box-shadow: var(--shadow-sm);
+  }
+  .footer-logo img { height: 48px; width: auto; }
   .footer-brand p { max-width: 340px; font-size: 0.93rem; }
-  .site-footer h4 { font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: #8fa6c4; margin-bottom: 14px; }
-  .site-footer .muted { color: #9fb2cb; }
-  .site-footer strong { color: #fff; }
+  .site-footer h4 { font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+  .site-footer .muted { color: var(--muted); }
+  .site-footer strong { color: var(--text); }
   .footer-links { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 0.92rem; }
   .footer-links.cols { grid-template-columns: repeat(2, 1fr); column-gap: 24px; }
-  .footer-links a { color: #d6e1f0; }
-  .footer-links a:hover { color: #fff; }
-  .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.12); padding-top: 18px; padding-bottom: 24px; font-size: 0.85rem; color: #8fa6c4; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
-  .footer-bottom .legal-links a { color: #c8d6ea; }
-  .footer-bottom .legal-links a:hover { color: #fff; }
+  .footer-links a { color: var(--text-2); }
+  .footer-links a:hover { color: var(--accent); }
+  .footer-bottom { border-top: 1px solid var(--line-strong); padding-top: 18px; padding-bottom: 24px; font-size: 0.85rem; color: var(--muted); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+  .footer-bottom .legal-links a { color: var(--text-2); }
+  .footer-bottom .legal-links a:hover { color: var(--accent); }
   @media (max-width: 860px) {
     .footer-grid { grid-template-columns: 1fr; gap: 28px; }
     .footer-links.cols { grid-template-columns: 1fr 1fr; }
