@@ -5,8 +5,6 @@ import { groups, stats, roundedCount, groupImage } from '../lib/catalog.js';
 // A főoldal tartalma. hero: 'split' (szöveg + videó egymás mellett) vagy 'video' (teljes szélességű, sötétített videó, rajta a szöveg)
 const { hero = 'split' } = Astro.props;
 
-const popular = ['alu lemez', 'rakonca', 'zsanér', 'istálló szőnyeg', 'sárvédő'];
-
 // Rövid, egysoros összefoglaló a főoldali termékcsoport-kártyákra
 const SHORT = {
   'acel-es-alu-rakoncak-es-szegok': 'Első, köztes és hátsó rakoncák.',
@@ -47,15 +45,6 @@ const SHORT = {
         Alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők és rakományrögzítés
         jármű- és lószállító felépítmény gyártóknak. Állítsa össze a listáját, és elkészítjük az ajánlatát.
       </p>
-      <form class="hero-search vhero-search" action="/kereses" method="get" role="search">
-        <Icon name="Search" size={20} />
-        <input type="search" name="q" placeholder="Keressen terméknévre vagy cikkszámra…" aria-label="Termékkeresés" />
-        <button class="btn btn-primary" type="submit">Keresés</button>
-      </form>
-      <div class="hero-popular">
-        <span>Népszerű:</span>
-        {popular.map((q) => <a href={`/kereses?q=${encodeURIComponent(q)}`}>{q}</a>)}
-      </div>
     </div>
   </section>
   ) : (
@@ -69,15 +58,6 @@ const SHORT = {
         Alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők és rakományrögzítés
         jármű- és lószállító felépítmény gyártóknak. Állítsa össze a listáját, és elkészítjük az ajánlatát.
       </p>
-      <form class="hero-search metal-frame" action="/kereses" method="get" role="search">
-        <Icon name="Search" size={20} />
-        <input type="search" name="q" placeholder="Keressen terméknévre vagy cikkszámra…" aria-label="Termékkeresés" />
-        <button class="btn btn-primary" type="submit">Keresés</button>
-      </form>
-      <div class="hero-popular">
-        <span class="muted">Népszerű:</span>
-        {popular.map((q) => <a href={`/kereses?q=${encodeURIComponent(q)}`}>{q}</a>)}
-      </div>
       </div>
       <div class="hero-video metal-frame">
         <video src="/video/quadris-iveco-hero.mp4" poster="/video/quadris-iveco-poster.jpg" autoplay muted loop playsinline preload="auto" data-hero-video

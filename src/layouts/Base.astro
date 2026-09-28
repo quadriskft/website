@@ -75,7 +75,7 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
         <div class="header-actions">
           <form class="header-search" action="/kereses" method="get" role="search" autocomplete="off">
             <Icon name="Search" size={18} class="search-icon" />
-            <input type="search" name="q" placeholder="Keresés: név vagy cikkszám" aria-label="Termékkeresés" aria-autocomplete="list" aria-controls="search-suggest" />
+            <input type="search" name="q" placeholder="Keressen terméknévre vagy cikkszámra…" aria-label="Termékkeresés" aria-autocomplete="list" aria-controls="search-suggest" />
             <div class="suggest" id="search-suggest" role="listbox" hidden></div>
           </form>
           <a href="/ajanlatkeres" class="quote-btn" aria-label="Ajánlatkérő lista">
@@ -357,10 +357,10 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
   .mega-link :global(svg) { color: var(--accent); flex: none; }
 
   .header-actions { display: flex; align-items: center; gap: 12px; }
-  .header-search { position: relative; width: clamp(200px, 24vw, 340px); }
+  .header-search { position: relative; width: clamp(220px, 27vw, 390px); }
   .header-search :global(.search-icon) { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
   .header-search input {
-    width: 100%; height: 44px; padding: 0 14px 0 40px; border-radius: 999px; border: 1px solid var(--line-strong);
+    width: 100%; height: 46px; padding: 0 14px 0 40px; border-radius: 999px; border: 1px solid var(--line-strong);
     background: rgba(255, 255, 255, 0.85); color: var(--text); font-size: 0.92rem; box-shadow: inset 0 1px 2px rgba(18, 24, 33, 0.08);
   }
   .header-search input:focus { outline: none; border-color: var(--accent); background: #fff; box-shadow: 0 0 0 4px rgba(10, 108, 255, 0.1); }
