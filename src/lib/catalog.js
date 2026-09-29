@@ -25,12 +25,19 @@ const excelProducts = catalog.products.map((p) => {
 });
 
 // A beszállítók teljes kínálatából felvett további termékek (scripts/termekadatok/teljes_kinalat.py)
-const extendedProducts = (extended.products ?? []).map((p) => ({
-  slug: p.slug, code: p.code, name: p.name, group: p.group, category: p.category,
-  specs: p.specs ?? {}, images: p.images ?? [], description: p.description ?? '', documents: [], supplier: p.source,
-  // a G&C teljes kínálatából felvett termékek kódja a gyártói cikkszám, a színe a névből / kódból (ZW = fekete)
-  ...(p.source === 'G&C termékek' ? { codeLabel: 'Gyártói cikkszám', specs: { ...(gncColor(p) ? { Szín: gncColor(p) } : {}), ...(p.specs ?? {}) } } : {}),
-}));
+const extendedProducts = (extended.products ?? []).map((p) => {
+  const out = {
+    slug: p.slug, code: p.code, name: p.name, group: p.group, category: p.category,
+    specs: p.specs ?? {}, images: p.images ?? [], description: p.description ?? '', documents: [], supplier: p.source,
+    // a G&C teljes kínálatából felvett termékek kódja a gyártói cikkszám, a színe a névből / kódból (ZW = fekete)
+    ...(p.source === 'G&C termékek' ? { codeLabel: 'Gyártói cikkszám', specs: { ...(gncColor(p) ? { Szín: gncColor(p) } : {}), ...(p.specs ?? {}) } } : {}),
+  };
+  // ha egy letöltő szkript képeket / adatokat adott hozzá (termekadatok.json), és a kézi javítások
+  const e = extra[p.slug];
+  const merged = e ? { ...out, images: e.images?.length ? e.images : out.images, specs: { ...out.specs, ...(e.specs ?? {}) } } : out;
+  const f = fixes[p.slug];
+  return f ? { ...merged, ...(f.name ? { name: f.name } : {}), ...(f.code ? { code: f.code } : {}), specs: { ...merged.specs, ...(f.specs ?? {}) } } : merged;
+});
 
 function gncColor(p) {
   const s = `${p.name} ${p.code ?? ''}`.toLowerCase();

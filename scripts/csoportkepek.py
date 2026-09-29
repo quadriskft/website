@@ -22,7 +22,7 @@ PHOTOS = {
     "acel-profilok": ["cover", "../data/forras/cargoframes/cargoframes_kit_keret.jpg"],  # Cargo Frames összeszerelt acél plató-keret
     "platos-alkatreszek-es-kiegeszitok": ["termekkepek/451721-horganyzott-nagykonzol-man-50-mm-1.webp", "termekkepek/m12x140-rugos-felfuggesztes-1.webp"],
     "acel-es-alu-rakoncak-es-szegok": ["termekkepek/351190-alu-rakonca-magasito-elox-1900-mm-1.webp", "termekkepek/352240-ellendarabos-szego-400mm-r-l-1.webp"],
-    "elhuzhato-roloponyvas-rendszer": ["cover", "../data/forras/roloponyvas_kategoria.png"],  # a Quadris által küldött kép (298×198)
+    "elhuzhato-roloponyvas-rendszer": ["small", "../data/forras/roloponyvas_kategoria.png"],  # a Quadris által küldött kép (298×198)
     "ponyvarendszer-kiegeszitok": ["termekkepek/380184-ada-racsnis-feszito-kocka-adapterhez-r-1.webp"],
     "dobozos-felepitmeny-alkatreszek": ["termekkepek/714859-sullyesztett-inox-rudzar-25-16-mm-pl-1.webp"],
     "rakomanyrogzites": ["termekkepek/123412-spanifer-l-8-m-5000-kg-dupla-kampos-1.webp"],
@@ -68,6 +68,18 @@ def cover(im):
     return im.crop((left, top, left + W, top + H))
 
 
+def small(im, frac=0.72):
+    """Saját hátterű fotó kisebb méretben, fehér keretben középen (a kitöltő mód túl nagynak hatott)."""
+    im = im.convert("RGB")
+    scale = min(W * frac / im.width, H * frac / im.height)
+    im = im.resize((round(im.width * scale), round(im.height * scale)), Image.LANCZOS)
+    if scale > 1.5:
+        im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=60, threshold=2))
+    canvas = Image.new("RGB", (W, H), "white")
+    canvas.paste(im, ((W - im.width) // 2, (H - im.height) // 2))
+    return canvas
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     done = []
@@ -77,6 +89,8 @@ def main():
     for group, paths in PHOTOS.items():
         if paths[0] == "cover":
             img = cover(Image.open(ROOT / "public" / paths[1]))
+        elif paths[0] == "small":
+            img = small(Image.open(ROOT / "public" / paths[1]))
         else:
             img = compose([Image.open(ROOT / "public" / p) for p in paths])
         img.save(OUT / f"{group}.webp", "WEBP", quality=84, method=6)

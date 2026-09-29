@@ -10665,33 +10665,33 @@
   ]
  },
  "elektromos-tetoablak-24v-530x530": {
-  "source": "G&C termékek",
+  "source": "G&C tetőablak képek",
   "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-manual-small/",
-  "sourceTitle": "Roof Hatch Electric Small",
-  "matchedCode": "90-5000-E",
-  "sourceDescription": "Glass Dome homologated ECE 43R; Dark tinted glass; Homologated according EC 2004/104; Suits roof thickness 30mm - 70mm; High Quality Gaskets; Internal frame easy to mount in outside frame; Pre-drilled mounting holes in outside frame",
   "specs": {
    "Nyílásméret [mm]": "530 × 530",
    "Sarokrádiusz": "R80",
-   "Üveg": "UV-áteresztés 6%, hőáteresztés 16%, fényáteresztés 17%"
+   "Üveg": "UV-áteresztés 6%, hőáteresztés 16%, fényáteresztés 17%",
+   "Külső méret [mm]": "640 × 640",
+   "Beépítési magasság [mm]": "84"
   },
   "images": [
-   "/termekkepek/elektromos-tetoablak-24v-530x530-1.webp"
+   "/termekkepek/elektromos-tetoablak-24v-530x530-1.webp",
+   "/termekkepek/elektromos-tetoablak-24v-530x530-2.webp"
   ]
  },
  "elektromos-tetoablak-24v-970x530": {
-  "source": "G&C termékek",
+  "source": "G&C tetőablak képek",
   "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-electric-large/",
-  "sourceTitle": "Roof Hatch Electric Large",
-  "matchedCode": "90-6000-E",
-  "sourceDescription": "Glass Dome homologated ECE 43R; Emergency exit according EC2001/85; Standard Dark tinted glass; Homologated according EC 2004/104; Suits roof thickness 30mm - 70mm; High Quality Gaskets; Internal frame easy to mount in outside frame; Pre-drilled mounting holes in outside frame; With breakglass hammer\nPart. No.\nDescription\nAperture Size\nRadius\nGlass\n90-6000-E\nRoof Hatch Electric 24 Volt* \n970  x 530\nR80\nUV Transmission 6%, Heat Transmission 16%, Light Transmission 17%\n+10\n-0\n+5\n-0\nUse always our control unit 30-6000 in combination with the Electric Roof Hatch!",
   "specs": {
    "Nyílásméret [mm]": "970 × 530",
    "Sarokrádiusz": "R80",
-   "Üveg": "UV-áteresztés 6%, hőáteresztés 16%, fényáteresztés 17%"
+   "Üveg": "UV-áteresztés 6%, hőáteresztés 16%, fényáteresztés 17%",
+   "Külső méret [mm]": "1080 × 640",
+   "Beépítési magasság [mm]": "84"
   },
   "images": [
-   "/termekkepek/elektromos-tetoablak-24v-970x530-1.webp"
+   "/termekkepek/elektromos-tetoablak-24v-970x530-1.webp",
+   "/termekkepek/elektromos-tetoablak-24v-970x530-2.webp"
   ]
  },
  "elkeder-13x10-fekete": {
@@ -11465,6 +11465,32 @@
    "/termekkepek/3d/g-8x2000mm-cobra-szonyeg-1-nylon-1.webp",
    "/termekkepek/3d/g-8x2000mm-cobra-szonyeg-1-nylon-2.webp",
    "/termekkepek/g-8x2000mm-cobra-szonyeg-1-nylon-1.webp"
+  ]
+ },
+ "gc-electric-round": {
+  "source": "G&C tetőablak képek",
+  "sourceUrl": "https://gnc-systems.com/en/products/electric-round/",
+  "specs": {
+   "Nyílásméret [mm]": "530 × 530",
+   "Külső méret [mm]": "640 × 640",
+   "Beépítési magasság [mm]": "84"
+  },
+  "images": [
+   "/termekkepek/gc-electric-round-1.webp",
+   "/termekkepek/gc-electric-round-2.webp"
+  ]
+ },
+ "gc-roof-hatches-manual-big": {
+  "source": "G&C tetőablak képek",
+  "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-manual-big/",
+  "specs": {
+   "Nyílásméret [mm]": "970 × 530",
+   "Külső méret [mm]": "1080 × 640",
+   "Beépítési magasság [mm]": "84"
+  },
+  "images": [
+   "/termekkepek/gc-roof-hatches-manual-big-1.webp",
+   "/termekkepek/gc-roof-hatches-manual-big-2.webp"
   ]
  },
  "harom-allasos-kapcsolo-ventilatorhoz": {
@@ -16284,16 +16310,16 @@
   ]
  },
  "tetoablak-vezerloegyseg-24v": {
-  "source": "G&C termékek",
+  "source": "G&C tetőablak képek",
   "sourceUrl": "https://gnc-systems.com/en/products/control-unit/",
-  "sourceTitle": "Control Unit",
-  "matchedCode": "30-6000",
-  "sourceDescription": "Homologated according EC 2004/104; The unit 30-6000 can control one or two electrical operated roof hatches; To open/close front and backside of the roofhatch; The position of the dome can be seen on the display (green Led’s); The unit closes automatically when the ignition key is turned off; Even when the ignition key is off, the hatch can be opened for ventilatio; The panel display has a current save function, reacting to usage; Illumination with Orange Led’s for the push buttons\nPart. No.\nDescription\nVoltage\nV\nOutside Dimensions \n30-6000\nControl Unit 24 Volt for Electric Roofhatch \n24*\n96 x 49 x 28mm\n*  For 12 Volt application, use our 12V to 24V Converter (89-STEP12-24)",
   "specs": {
-   "Feszültség [V]": "24"
+   "Feszültség [V]": "24",
+   "Beépítési méret [mm]": "87 × 38 × 35"
   },
   "images": [
-   "/termekkepek/tetoablak-vezerloegyseg-24v-1.webp"
+   "/termekkepek/tetoablak-vezerloegyseg-24v-1.webp",
+   "/termekkepek/tetoablak-vezerloegyseg-24v-2.webp",
+   "/termekkepek/tetoablak-vezerloegyseg-24v-3.webp"
   ]
  },
  "tetoventilator-manualis-feher": {

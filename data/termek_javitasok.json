@@ -83,7 +83,8 @@
  "tetoablak-vezerloegyseg-24v": {
   "name": "Tetőablak vezérlőegység 24V",
   "code": "30-6000",
-  "codeLabel": "Gyártói cikkszám"
+  "codeLabel": "Gyártói cikkszám",
+  "order": 5
  },
  "ventillator-belso-takaro-szurke": {
   "name": "Ventilátor belső takaró, szürke",
@@ -208,7 +209,8 @@
   "codeLabel": "Gyártói cikkszám",
   "specs": {
    "Működtetés": "elektromos, 24V (vezérlőegység: 30-6000)"
-  }
+  },
+  "order": 1
  },
  "tetoablak-manualis-970x530": {
   "name": "Tetőablak 970×530, manuális (D / DG)",
@@ -225,7 +227,8 @@
   "codeLabel": "Gyártói cikkszám",
   "specs": {
    "Működtetés": "elektromos, 24V (vezérlőegység: 30-6000)"
-  }
+  },
+  "order": 3
  },
  "tetoablak-uveg-970x530": {
   "name": "Tetőablak üveg 970×530",
@@ -373,5 +376,13 @@
  },
  "214202-ada-s-ajtoprofil-takarogumi-10-m-tekercs": {
   "order": 19
+ },
+ "gc-electric-round": {
+  "order": 2,
+  "name": "Tetőablak 530×530, manuális (DG)"
+ },
+ "gc-roof-hatches-manual-big": {
+  "order": 4,
+  "name": "Tetőablak 970×530, manuális (DG)"
  }
 }
