@@ -179,7 +179,31 @@ export function productsIn(groupSlug, categorySlug) {
     .map((p) => (familyBySlug.has(p.slug) ? { ...p, name: familyBySlug.get(p.slug).name, family: true } : p));
   // kézi sorrend (data/termek_javitasok.json „order”): ezek elöl, a megadott sorrendben; a többi az eredeti sorrendben
   const rank = (p) => fixes[p.slug]?.order ?? Infinity;
-  return list.map((p, i) => [p, i]).sort((a, b) => rank(a[0]) - rank(b[0]) || a[1] - b[1]).map(([p]) => p);
+  const bySize = SIZE_SORTED_GROUPS.has(groupSlug);
+  return list
+    .map((p, i) => [p, i])
+    .sort((a, b) => rank(a[0]) - rank(b[0]) || (bySize && compareSizes(a[0].name, b[0].name)) || a[1] - b[1])
+    .map(([p]) => p);
+}
+
+// Ezekben a főkategóriákban a termékek a névben szereplő méret szerint növekvő sorrendben állnak
+// (első méret, egyezésnél a második, harmadik …; pl. 20x20x3 < 25x25x2 < 30x20x1,5 < 30x20x2).
+const SIZE_SORTED_GROUPS = new Set(['ipari-felgyartmanyok']);
+
+function sizesOf(name) {
+  const m = name.match(/\d+(?:[.,]\d+)?(?:\s*x\s*\d+(?:[.,]\d+)?)*/i);
+  return m ? m[0].split(/\s*x\s*/i).map((n) => parseFloat(n.replace(',', '.'))) : [];
+}
+
+function compareSizes(a, b) {
+  const x = sizesOf(a);
+  const y = sizesOf(b);
+  if (!x.length || !y.length) return y.length - x.length;
+  for (let i = 0; i < Math.max(x.length, y.length); i++) {
+    const d = (x[i] ?? -1) - (y[i] ?? -1);
+    if (d) return d;
+  }
+  return 0;
 }
 
 // Főkategória kép (scripts/csoportkepek.py állítja elő)
