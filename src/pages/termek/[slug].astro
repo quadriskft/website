@@ -70,7 +70,7 @@ const jsonLd = [
 
       <div class="info">
         <span class="eyebrow">{showCategory ? category.name : group.name}</span>
-        <h1>{product.name}</h1>
+        <h1 class="product-title">{product.name}</h1>
         {product.code && (
           <p class="code-line">Cikkszám: <strong>{product.code}</strong>
             <button type="button" class="copy" data-copy={product.code} aria-label="Cikkszám másolása"><Icon name="Copy" size={15} /></button>

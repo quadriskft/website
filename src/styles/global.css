@@ -27,8 +27,9 @@
   --radius-sm: 12px;
   --shadow: 0 24px 48px -28px rgba(18, 24, 33, 0.35);
   --shadow-sm: 0 1px 2px rgba(18, 24, 33, 0.05), 0 6px 16px -10px rgba(18, 24, 33, 0.12);
-  --font-body: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
-  --font-head: 'Sora Variable', 'Inter Variable', system-ui, sans-serif;
+  --font-body: 'Instrument Sans Variable', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-head: 'Archivo Variable', 'Instrument Sans Variable', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --header-h: 80px;
   color-scheme: light;
 }
@@ -48,8 +49,14 @@ img { max-width: 100%; height: auto; display: block; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 0.5em; }
-h1 { font-size: clamp(2rem, 4.5vw, 3.4rem); font-weight: 700; }
-h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 650; }
+/* Nagy címsorok: Archivo, extra vastag, csupa nagybetű */
+h1, h2 { font-weight: 800; text-transform: uppercase; line-height: 0.98; }
+h1 { font-size: clamp(2rem, 4.2vw, 3.3rem); }
+h2 { font-size: clamp(1.45rem, 2.8vw, 2.1rem); }
+/* Terméknevek: megmarad a kis-nagybetű (mm, cikkszám, típusjelek) */
+h1.product-title { text-transform: none; font-weight: 700; line-height: 1.15; letter-spacing: -0.015em; }
+/* Kisebb címek (kártyák, termék-csoportnevek): a szövegtörzs betűje */
+h3, h4 { font-family: var(--font-body); letter-spacing: 0; }
 h3 { font-size: 1.1rem; font-weight: 600; }
 p { margin: 0 0 1em; }
 button, input, select, textarea { font: inherit; color: inherit; }
@@ -60,11 +67,11 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .section-sm { padding: 48px 0; }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px;
-  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--accent);
 }
 .eyebrow::before { content: ''; width: 18px; height: 2px; background: var(--gradient); }
-.lead { font-size: 1.15rem; color: var(--text-2); max-width: 680px; }
+.lead { font-family: var(--font-serif); font-size: 1.45rem; line-height: 1.4; color: var(--text-2); max-width: 680px; }
 .muted { color: var(--muted); }
 .gradient-text { background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -73,7 +80,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   padding: 12px 22px; border-radius: 999px; border: 1px solid transparent;
-  font-weight: 600; font-size: 0.97rem; line-height: 1.2; cursor: pointer; white-space: nowrap;
+  font-weight: 600; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; line-height: 1.2; cursor: pointer; white-space: nowrap;
   transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
   text-decoration: none !important;
 }
