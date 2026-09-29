@@ -68,7 +68,10 @@ INSERT = {"e69004740-cs-compact-tetokereszttarto-2550-mm": [("data/forras/edscha
           "e422552-tetokereszttarto-2550-mm": [("data/forras/edscha_tetokereszttarto_422552.png", "foto", 1)],
           # a 130-as és a 190-es lezáró ugyanazt a fotót kapja (a kék keret nélkül)
           "e69000690-130-as-lezaro-2550-mm": [("data/forras/edscha_lezaro_2550.png", "foto", 1)],
-          "e69001370-190-es-lezaro-2550-mm": [("data/forras/edscha_lezaro_2550.png", "foto", 1)]}
+          "e69001370-190-es-lezaro-2550-mm": [("data/forras/edscha_lezaro_2550.png", "foto", 1)],
+          # Versus Omega MICRO TRIKE: az alkatrész-áttekintő rajz első képként (a PDF-néző kiemelése, fejléc és
+          # oldalszám nélkül; eredeti: versus_micro_trike_lap.png)
+          "versus-micro-trike-toloteto-rendszer": [("data/forras/versus_micro_trike.png", "attekinto", 0)]}
 
 
 def main():
