@@ -2658,6 +2658,46 @@
    "/termekkepek/216003-adaico-rakonca-zseb-festett-3.webp"
   ]
  },
+ "220190-rampa-felso-zaro-profil-225-30-mm": {
+  "source": "Profilpol katalógus",
+  "sourceUrl": "https://profilpolsystem.pl/wp-content/uploads/2026/02/Katalog-2025_Profilpolsystem.pdf#page=138",
+  "sourceTitle": "Profilpol 22.21.0679",
+  "matchedCode": "22.21.0679",
+  "specs": {
+   "Cikkszám (gyártói)": "22.21.0679",
+   "Megnevezés (gyári)": "Profil trapu zakończeniowy – rámpa záróprofil",
+   "Szélesség": "225 mm",
+   "Magasság": "30 mm",
+   "Tömeg": "6,468 kg/fm",
+   "Szálhossz": "5 m",
+   "Anyag": "alumínium"
+  },
+  "images": [
+   "/termekkepek/220190-rampa-felso-zaro-profil-225-30-mm-rajz.webp",
+   "/termekkepek/220190-rampa-felso-zaro-profil-225-30-mm-1.webp",
+   "/termekkepek/220190-rampa-felso-zaro-profil-225-30-mm-2.webp"
+  ]
+ },
+ "220192-also-rampa-indito-profil": {
+  "source": "Profilpol katalógus",
+  "sourceUrl": "https://profilpolsystem.pl/wp-content/uploads/2026/02/Katalog-2025_Profilpolsystem.pdf#page=121",
+  "sourceTitle": "Profilpol 22.21.88168",
+  "matchedCode": "22.21.88168",
+  "specs": {
+   "Cikkszám (gyártói)": "22.21.88168",
+   "Megnevezés (gyári)": "Profil najazdowy zakończeniowy 120 – rámpa indító (felhajtó) záróprofil",
+   "Szélesség": "120 mm",
+   "Magasság": "30 mm",
+   "Tömeg": "2,11 kg/fm",
+   "Szálhossz": "4,5 m",
+   "Anyag": "alumínium"
+  },
+  "images": [
+   "/termekkepek/220192-also-rampa-indito-profil-rajz.webp",
+   "/termekkepek/220192-also-rampa-indito-profil-1.webp",
+   "/termekkepek/220192-also-rampa-indito-profil-2.webp"
+  ]
+ },
  "220233-150x25-mm-ponyvatarto-zartszelveny": {
   "source": "Quadris adatok",
   "sourceUrl": "",

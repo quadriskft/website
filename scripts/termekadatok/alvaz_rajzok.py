@@ -63,6 +63,8 @@ PROFILES = {
     "227543-30-padlo-profil-200-mm": ("padlo-profilok", 200),
     "227543-30-padlo-profil-200-mm-elox": ("padlo-profilok", 200),
     "222233-rampa-szego-g-profil": ("rampa-profilok", 80),
+    "220192-also-rampa-indito-profil": ("rampa-profilok", 120),  # Profilpol 22.21.88168
+    "220190-rampa-felso-zaro-profil-225-30-mm": ("rampa-profilok", 225),  # Profilpol 22.21.0679
     "203492-autoszallito-padlo-keret-profil-30-mm": ("autoszallito-profilok", 130),
     "207776-30-padlo-profil-220-mm-ex": ("autoszallito-profilok", 233.5),
 }
@@ -115,7 +117,8 @@ def load(path):
 
 
 # a nagyobb felbontású szkennelt rajzok vastagabb falúak (képpontban) – itt nagyobb falvastagságig töltünk
-THICK = {"202387-i-70-kereszttarto": 0.05, "202388-15-70-mm-keretprofil-elox-cd": 0.05}
+THICK = {"202387-i-70-kereszttarto": 0.05, "202388-15-70-mm-keretprofil-elox-cd": 0.05,
+         "220190-rampa-felso-zaro-profil-225-30-mm": 0.004}  # tömör forrásrajz: a C-horony üres marad
 
 
 def normalize(rgb, thick=0.03, fill_all=None):
