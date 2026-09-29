@@ -1,4 +1,4 @@
-"""Alumínium alváz profilok: egységes keresztmetszet-rajzok (etalon: 207315 „I” 108 kereszttartó).
+"""Alumínium alváz és padló profilok: egységes keresztmetszet-rajzok (etalon: 207315 „I” 108 kereszttartó).
 
 A beszállítói rajzok (Constellium, Exlabesa, Ital Accessori, Alu-SV, ESAL, BODEGA, RE-ALL, nevbol.py …)
 stílusa vegyes: körvonalas, szürkével vagy kékkel kitöltött, szkennelt. Ez a szkript mindegyiket az etalon
@@ -57,6 +57,13 @@ PROFILES = {
     "208477-cd2-100x30-mm-alafutasgatlo-elox-profil": ("alafutasgatlo-profilok", 100),
     "205535-ives-alafutasgatlo-vegzaro-elox-profil": ("alafutasgatlo-profilok", 100),  # Metra R 7297
     "201094-targonca-utkozo-profil": ("targonca-utkozo", 37.5),
+    # Alumínium padló profilok (a kulcs első tagja az alkategória, a lépték alkategóriánként közös)
+    "221902-bordazott-padlo-profil-200-40-mm": ("padlo-profilok", 200),
+    "227543-30-padlo-profil-200-mm": ("padlo-profilok", 200),
+    "227543-30-padlo-profil-200-mm-elox": ("padlo-profilok", 200),
+    "222233-rampa-szego-g-profil": ("rampa-profilok", 80),
+    "203492-autoszallito-padlo-keret-profil-30-mm": ("autoszallito-profilok", 130),
+    "207776-30-padlo-profil-220-mm-ex": ("autoszallito-profilok", 233.5),
 }
 # szkennelt rajzok megszakított falvonalai: (x0, y0, x1, y1, vastagság) a forráskép képpontjaiban
 REPAIR = {
@@ -70,6 +77,12 @@ DIMS = {"203183-250-25-mm-alafutasgatlo-elox-profil": ((26, 119, 974, 214), "250
 # régi segédvonalas szkennelt rajzok tisztán újrarajzolva a gyártói méretekből (profil_vektor.py) és a fő
 # méretek; mindkét kép (tömör és körvonalas) így készül. (szélesség mm, magasság mm, a szélesség csak a felső részé)
 CLEAN = {"202388-15-70-mm-keretprofil-elox-cd": ("40", "109", 40)}
+# apró, olvashatatlan méretezésű rajzok: csak a profil marad meg (a régi méretvonalak nélkül), és az etalon
+# stílusában új fő méretek kerülnek rá: (szélesség mm, magasság mm)
+# (szélesség, magasság, a szélesség-méret jobb végének távolsága a profil jobb szélétől mm-ben)
+REDIM = {"227543-30-padlo-profil-200-mm": ("200", "30", 5), "227543-30-padlo-profil-200-mm-elox": ("200", "30", 5)}
+# Constellium rajzok: a forrás a constellium.py profilkiválasztása (csak a profil körvonala, a méretek nélkül)
+CONSTELLIUM = {"227543-30-padlo-profil-200-mm": "7543", "227543-30-padlo-profil-200-mm-elox": "7543"}
 # törésvonallal rövidítve rajzolt profilok valós arányra nyújtása: (sor, beszúrt sorok száma) – a beszúrt
 # sorok a megadott sor másolatai; 202388: a [40] szélesség 498 px (12,45 px/mm), így a [109] magasság 1357 px
 STRETCH = {"202388-15-70-mm-keretprofil-elox-cd": (620, 518)}
@@ -173,7 +186,7 @@ def straighten(out, core, size):
     return np.minimum(res, canvas)
 
 
-def add_dims(rgb, box, wtext, htext, wspan=None, top=False, fsize=46, lw=2):
+def add_dims(rgb, box, wtext, htext, wspan=None, top=False, fsize=46, lw=2, wx=None):
     """Etalon-stílusú méretvonalak nyilakkal: szélesség a profil alatt (top: fölött; wspan: csak a profil egy
     részének szélessége, képpontban), magasság a profil bal oldalán."""
     pad = int(max(160, fsize * 3.5))
@@ -192,14 +205,15 @@ def add_dims(rgb, box, wtext, htext, wspan=None, top=False, fsize=46, lw=2):
         ux, uy = vx / n, vy / n
         d.polygon([p, (p[0] + ux * a - uy * a / 3, p[1] + uy * a + ux * a / 3), (p[0] + ux * a + uy * a / 3, p[1] + uy * a - ux * a / 3)], fill=col)
 
-    wx1 = x0 + wspan if wspan else x1
+    wx0 = x0 if wx is None else wx[0] + pad
+    wx1 = (wx[1] + pad) if wx is not None else (x0 + wspan if wspan else x1)
     edge, yd = (y0, y0 - off) if top else (y1, y1 + off)  # szélesség
     sgn = -1 if top else 1
-    d.line([(x0, edge + 8 * sgn), (x0, yd + 14 * sgn)], fill=col, width=lw)
+    d.line([(wx0, edge + 8 * sgn), (wx0, yd + 14 * sgn)], fill=col, width=lw)
     d.line([(wx1, edge + 8 * sgn), (wx1, yd + 14 * sgn)], fill=col, width=lw)
-    d.line([(x0, yd), (wx1, yd)], fill=col, width=lw)
-    arrow((x0, yd), (wx1, yd)); arrow((wx1, yd), (x0, yd))
-    d.text(((x0 + wx1) / 2, yd - 8), wtext, fill=col, font=fnt, anchor="mb")
+    d.line([(wx0, yd), (wx1, yd)], fill=col, width=lw)
+    arrow((wx0, yd), (wx1, yd)); arrow((wx1, yd), (wx0, yd))
+    d.text(((wx0 + wx1) / 2, yd - 8), wtext, fill=col, font=fnt, anchor="mb")
     xd = x0 - off  # magasság
     d.line([(x0 - 8, y0), (xd - 14, y0)], fill=col, width=lw)
     d.line([(x0 - 8, y1), (xd - 14, y1)], fill=col, width=lw)
@@ -238,6 +252,14 @@ def main():
             print("  nincs rajz:", slug)
             continue
         keep = CACHE / f"{slug}.png"
+        if slug in CONSTELLIUM and not keep.exists():
+            import constellium
+            cfg = constellium.DRAWINGS[CONSTELLIUM[slug]]
+            saved = {k: cfg.pop(k) for k in ("keep", "draw") if k in cfg}  # méretek nélkül
+            try:
+                constellium.render(CONSTELLIUM[slug]).save(keep)
+            finally:
+                cfg.update(saved)
         if not keep.exists():
             Image.open(ROOT / "public" / src.lstrip("/")).save(keep)
         rgb = load(keep)
@@ -280,6 +302,22 @@ def main():
             second = add_dims(outline, box, wt, ht, wmm * ppm, top=True, fsize=fs, lw=lw).mean(axis=2).astype(np.uint8)
             prof = float(ht) * ppm
             CLEAN_SECOND[slug] = ink_crop(second)
+        if slug in REDIM:
+            wt, ht, roff = REDIM[slug]
+            solid = (g < 110).astype(np.uint8)
+            # a vékony méret- és segédvonalak (2–3 px) nyitással eltűnnek, a 2,5 mm-es falak (≈18 px) maradnak
+            body = cv2.morphologyEx(solid, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7)))
+            n, lab, st, _ = cv2.connectedComponentsWithStats(body, connectivity=8)
+            body = lab == 1 + int(np.argmax(st[1:, cv2.CC_STAT_AREA]))
+            ys, xs = np.where(body)
+            box = (xs.min(), ys.min(), xs.max(), ys.max())
+            ppm = (ys.max() - ys.min()) / float(ht)
+            polys, hier = polygonize(body, 0.8)
+            base = np.full(g.shape + (3,), 255, np.float32)
+            cv2.drawContours(base, polys, -1, (0, 0, 0), thickness=cv2.FILLED, lineType=cv2.LINE_AA, hierarchy=hier)
+            wx = (box[2] - (roff + float(wt)) * ppm, box[2] - roff * ppm)  # a 200-as méret a padló felső lapjáé
+            g = add_dims(base, box, wt, ht, fsize=int(ppm * 7), lw=max(2, int(ppm / 3)), wx=wx).mean(axis=2).astype(np.uint8)
+            prof = max(box[2] - box[0], box[3] - box[1]) + 0.0
         g = ink_crop(g)
         items[slug] = (cat, mm, g, prof)
     # alkategóriánként közös arány: px / mm = a legszűkebb (a vászonra épp ráférő) érték
