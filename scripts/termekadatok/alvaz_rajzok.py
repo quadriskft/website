@@ -20,7 +20,7 @@ from pathlib import Path
 
 import cv2
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageDraw, ImageFont
 
 sys.path.insert(0, str(Path(__file__).parent))
 from common import ENRICHMENT, ROOT  # noqa: E402
@@ -61,6 +61,12 @@ REPAIR = {
     "202387-i-70-kereszttarto": [(523, 150, 523, 530, 5), (566, 150, 566, 530, 5)],  # a gerinc törésjele
     "202388-15-70-mm-keretprofil-elox-cd": [(165, 300, 166, 700, 4), (196, 300, 198, 700, 4),  # a hosszú szár törésjele
                                             (665, 317, 978, 319, 4)],  # a vízszintes szár szakadozott felső vonala
+}
+# a gerincbe lógó régi méretszám törlése (fehérrel), mielőtt a falvonalakat meghúzzuk: (x0, y0, x1, y1)
+ERASE = {"202387-i-70-kereszttarto": [(498, 222, 590, 256)]}
+# a kitöltés által eltakart méretszámok újraírása: (szöveg, x, y közép) a forráskép képpontjaiban
+LABELS = {
+    "202387-i-70-kereszttarto": [("[50]", 700, 245)],  # eredetileg a gerincen belül állt
 }
 CACHE = ROOT / ".cache" / "alvaz_rajzok"  # a forrásrajzok másolata (a kimenet külön fájl, de biztos, ami biztos)
 
@@ -149,9 +155,19 @@ def main():
         if not keep.exists():
             Image.open(ROOT / "public" / src.lstrip("/")).save(keep)
         rgb = load(keep)
+        for x0, y0, x1, y1 in ERASE.get(slug, []):
+            rgb[y0:y1, x0:x1] = 255
+            rgb[257:260, x0:x1] = 0  # a méretvonal folytatása a törölt szám alatt (a 202387 méretvonala a 258. sorban)
         for x0, y0, x1, y1, t in REPAIR.get(slug, []):
             cv2.line(rgb, (x0, y0), (x1, y1), (0, 0, 0), t)
         g, prof = normalize(rgb, THICK.get(slug, 0.03))
+        if slug in LABELS:
+            im = Image.fromarray(g)
+            d = ImageDraw.Draw(im)
+            fnt = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 30)
+            for text, x, y in LABELS[slug]:
+                d.text((x, y), text, fill=0, font=fnt, anchor="mb")
+            g = np.asarray(im)
         g = ink_crop(g)
         items[slug] = (cat, mm, g, prof)
     # alkategóriánként közös arány: px / mm = a legszűkebb (a vászonra épp ráférő) érték
