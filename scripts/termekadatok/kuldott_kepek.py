@@ -33,13 +33,15 @@ ITEMS = {
 }
 
 
-# a meglévő képek elé kerülő rajz: slug-ok -> (kép, képnév-utótag, adatok)
+# a meglévő képek elé kerülő rajzok: slug -> ([(kép, képnév-utótag), …], adatok)
 COMPACT = [f"e-compact-tetoprofil-900407-{n}" for n in (5000, 5600, 6600, 7800, 8000)]
-PREPEND = {slug: ("data/forras/edscha_compact_sin.png", "meretrajz",
+PREPEND = {slug: ([("data/forras/edscha_compact_sin.png", "meretrajz")],
                   {"Profilméret": "43 × 112 mm (alul 33 mm)", "Tömeg": "2,88 kg/m", "Ix": "112,5 cm⁴", "Iy": "13,3 cm⁴"})
            for slug in COMPACT}
 VOLUMEN = [f"e-volumen-tetoprofil-900301-{n}" for n in (7800, 8500, 9000, 9400, 9600, 10000)]
-PREPEND.update({slug: ("data/forras/edscha_volumen_sin.png", "meretrajz",
+# (a tetőszerkezetes rajz a lap jobb oldaláról, a súly/inercia kerete nélkül: edscha_volumen_tetoszerkezet.png)
+PREPEND.update({slug: ([("data/forras/edscha_volumen_sin.png", "meretrajz"),
+                        ("data/forras/edscha_volumen_tetoszerkezet.png", "tetoszerkezet")],
                        {"Profilméret": "120 × 163 mm (alul 35 mm)", "Tömeg": "5,65 kg/m", "Ix": "595,0 cm⁴", "Iy": "207,2 cm⁴"})
                 for slug in VOLUMEN})
 
@@ -56,11 +58,11 @@ def main():
         enrichment[p["slug"]] = {"source": SOURCE, "sourceTitle": title, "matchedCode": code,
                                  "specs": {"Cikkszám (gyártói)": code, **specs}, "images": images}
     old = load_enrichment()
-    for slug, (src, suffix, specs) in PREPEND.items():
+    for slug, (drawings, specs) in PREPEND.items():
         prev = old.get(slug, {})
-        drawing = save_image(Image.open(ROOT / src).convert("RGB"), slug, suffix)
-        rest = [u for u in prev.get("images", []) if u != drawing]
-        enrichment[slug] = {**prev, "source": SOURCE, "specs": {**prev.get("specs", {}), **specs}, "images": [drawing] + rest}
+        front = [save_image(Image.open(ROOT / src).convert("RGB"), slug, suffix) for src, suffix in drawings]
+        rest = [u for u in prev.get("images", []) if u not in front]
+        enrichment[slug] = {**prev, "source": SOURCE, "specs": {**prev.get("specs", {}), **specs}, "images": front + rest}
     update_enrichment(enrichment, SOURCE)
     print(f"{SOURCE}: {len(enrichment)} termék")
 
