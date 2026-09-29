@@ -34,13 +34,23 @@ ITEMS = {
     "R1304": ("R 1304", 29, (28, 58, 152, 246), {"Tömeg": "0,700 kg/fm", "Méret": "25 × 50 mm", "Látható felület": "150 mm",
                                                  "Kerület": "150 mm", "Kivitel": "zártszelvény (ponyvatartó)"}),
 }
+# más beszállítónál nyilvántartott, de a Quadris kérésére a Metra katalógusból vett termékek:
+# slug -> (Metra jelölés, oldal, kivágás [pt], műszaki adatok, kifehérítendő téglalapok [pt])
+EXTRA = {
+    "205535-ives-alafutasgatlo-vegzaro-elox-profil": ("R 7297", 31, (40, 90, 382, 460),
+        {"Tömeg": "2,190 kg/fm", "Szélesség": "100 mm", "Magasság": "100 mm", "Szelvény": "30,5 mm",
+         "Látható felület": "248 mm", "Kerület": "317 mm", "Kivitel": "íves aláfutásgátló végprofil (paraciclisti)"},
+        [(190, 308, 316, 346)]),  # a „Tappo di chiusura / Art. AA518592” felirat
+}
 COMMON = {"Ötvözet": "EN AW-6060 / EN AW-6005A", "Állapot": "T5 – T6"}
 
 
-def render(page, box):
+def render(page, box, blanks=()):
     zoom = 240 / 72
     pix = page.get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), clip=pymupdf.Rect(*box), alpha=False)
     img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+    for bx0, by0, bx1, by1 in blanks:
+        img.paste("white", tuple(int((v - o) * zoom) for v, o in zip((bx0, by0, bx1, by1), (box[0], box[1], box[0], box[1]))))
     g = np.asarray(img.convert("L")) < 225
     ys, xs = np.where(g)
     img = img.crop((max(xs.min() - 6, 0), max(ys.min() - 6, 0), min(xs.max() + 6, img.width), min(ys.max() + 6, img.height)))
@@ -61,6 +71,15 @@ def main():
         elox = "elox" in p["name"].lower()
         enrichment[p["slug"]] = {"source": SUPPLIER, "sourceUrl": "https://www.metraluminium.it", "sourceTitle": f"Metra {sigla}",
                                  "matchedCode": sigla, "specs": {**specs, **COMMON, "Felület": "eloxált" if elox else "natúr"},
+                                 "images": [img]}
+    for p in load_products():
+        if p["slug"] not in EXTRA:
+            continue
+        sigla, pno, box, specs, blanks = EXTRA[p["slug"]]
+        clear_images(p["slug"])
+        img = save_image(render(doc[pno - 1], box, blanks), p["slug"], 1)
+        enrichment[p["slug"]] = {"source": SUPPLIER, "sourceUrl": "https://www.metraluminium.it", "sourceTitle": f"Metra {sigla}",
+                                 "matchedCode": sigla, "specs": {**specs, **COMMON, "Felület": "eloxált" if "elox" in p["name"].lower() else "natúr"},
                                  "images": [img]}
     update_enrichment(enrichment, SUPPLIER)
     print(f"{SUPPLIER}: {len(enrichment)} termék")

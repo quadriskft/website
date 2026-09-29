@@ -1817,13 +1817,21 @@
   "nevbolRajz": true
  },
  "205535-ives-alafutasgatlo-vegzaro-elox-profil": {
-  "source": "ESAL",
-  "sourceUrl": "https://esalforli.com/public/Catalogo-Sponde-2020-Esal-Forli.pdf#page=55",
-  "sourceTitle": "ESAL 50535",
-  "matchedCode": "50535",
+  "source": "Metra",
+  "sourceUrl": "https://www.metraluminium.it",
+  "sourceTitle": "Metra R 7297",
+  "matchedCode": "R 7297",
   "specs": {
-   "Anyag": "alumínium EN AW-6060 T5",
-   "Felület": "eloxált (ARS, 10 µm)"
+   "Tömeg": "2,190 kg/fm",
+   "Szélesség": "100 mm",
+   "Magasság": "100 mm",
+   "Szelvény": "30,5 mm",
+   "Látható felület": "248 mm",
+   "Kerület": "317 mm",
+   "Kivitel": "íves aláfutásgátló végprofil (paraciclisti)",
+   "Ötvözet": "EN AW-6060 / EN AW-6005A",
+   "Állapot": "T5 – T6",
+   "Felület": "eloxált"
   },
   "images": [
    "/termekkepek/205535-ives-alafutasgatlo-vegzaro-elox-profil-rajz.webp",

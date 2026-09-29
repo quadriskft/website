@@ -54,7 +54,7 @@ PROFILES = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("alafutasgatlo-profilok", 100),
     "207833-100x30-mm-alafutasgatlo-elox-profil": ("alafutasgatlo-profilok", 100),
     "208477-cd2-100x30-mm-alafutasgatlo-elox-profil": ("alafutasgatlo-profilok", 100),
-    "205535-ives-alafutasgatlo-vegzaro-elox-profil": ("egyedi", None),  # ívelt végzáró, nem keresztmetszet
+    "205535-ives-alafutasgatlo-vegzaro-elox-profil": ("alafutasgatlo-profilok", 100),  # Metra R 7297
     "201094-targonca-utkozo-profil": ("targonca-utkozo", 37.5),
 }
 # szkennelt rajzok megszakított falvonalai: (x0, y0, x1, y1, vastagság) a forráskép képpontjaiban

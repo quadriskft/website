@@ -33,7 +33,7 @@ HIRES_DPI = 400  # a végső rajz-kivágás renderelése (a lapok vektorosak, í
 # Quadris slug -> (katalóguskód, szálhossz a Quadris-kódból [m] vagy None)
 MAP = {
     "203183-250-25-mm-alafutasgatlo-elox-profil": ("13183", "7,5"),
-    "205535-ives-alafutasgatlo-vegzaro-elox-profil": ("50535", None),
+    # 205535: a Quadris kérésére a Metra R 7297 a forrás (metra.py)
     "227075-200-mm-mono-profil-teli-szakalas-elox": ("8770", "7,5"),
     "222020-h-szego-kiugros-25-mm-elox": ("50020", "6"),
     "245085-bill-u-szego-30-mm-40-60-elox": ("50085", "6"),
