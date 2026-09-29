@@ -24,6 +24,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 sys.path.insert(0, str(Path(__file__).parent))
 from common import ENRICHMENT, ROOT  # noqa: E402
+from profil_vektor import VECTOR, rasterize  # noqa: E402
 
 W, H, MARGIN = 1200, 840, 50
 CLEAN_SECOND = {}
@@ -66,7 +67,7 @@ REPAIR = {
 # méretezés nélküli forrásrajzok: a fő befoglaló méretek (szélesség, magasság) felrajzolása – a profil
 # befoglalója a forrásképen (x0, y0, x1, y1) és a méretszámok; 203183: ESAL 13183 „Parabici da 250 mm”, 250 × 25
 DIMS = {"203183-250-25-mm-alafutasgatlo-elox-profil": ((26, 119, 974, 214), "250", "25")}
-# régi segédvonalas szkennelt rajzok tisztán újrarajzolva: csak a profil (a vékony jelölések nélkül) és a fő
+# régi segédvonalas szkennelt rajzok tisztán újrarajzolva a gyártói méretekből (profil_vektor.py) és a fő
 # méretek; mindkét kép (tömör és körvonalas) így készül. (szélesség mm, magasság mm, a szélesség csak a felső részé)
 CLEAN = {"202388-15-70-mm-keretprofil-elox-cd": ("40", "109", 40)}
 # törésvonallal rövidítve rajzolt profilok valós arányra nyújtása: (sor, beszúrt sorok száma) – a beszúrt
@@ -142,15 +143,40 @@ def normalize(rgb, thick=0.03, fill_all=None):
         x1 = max(stats[i, 0] + stats[i, 2] for i in keep)
         y1 = max(stats[i, 1] + stats[i, 3] for i in keep)
         prof = max(x1 - x0, y1 - y0)
+        out = straighten(out, np.isin(lab, keep), size)
     else:
         prof = size
     return out.astype(np.uint8), prof
 
 
+def polygonize(mask, eps):
+    """A profil (maszk) körvonalai egyenes szakaszokból álló sokszögként (Douglas–Peucker, eps képpont tűrés):
+    a recés, szkennelt élek helyett precíz egyenesek; az ívek sűrű töréspontokkal maradnak simák."""
+    cnts, hier = cv2.findContours(mask.astype(np.uint8), cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
+    return [cv2.approxPolyDP(c, eps, True) for c in cnts], hier
+
+
+def straighten(out, core, size):
+    """A profilfalak újrarajzolása precíz, élsimított sokszögként. A falhoz tartozó sötét terület: a tömör
+    részek, amelyek a profil fő részével összefüggnek (a vékony méretvonalak – 1–2 px – nem)."""
+    solid = (out < 110).astype(np.uint8)
+    thick = cv2.morphologyEx(solid, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3)))
+    n, lab = cv2.connectedComponents(thick, connectivity=8)
+    ids = np.unique(lab[core & (thick > 0)])
+    mask = np.isin(lab, ids[ids > 0])
+    eps = max(0.8, size / 1000)  # kis tűrés: az egyenesek kiegyenesednek, az ívek simák maradnak
+    polys, hier = polygonize(mask, eps)
+    res = out.astype(np.float32).copy()
+    res[cv2.dilate(mask.astype(np.uint8), np.ones((3, 3), np.uint8)) > 0] = 255
+    canvas = np.full(out.shape, 255, np.uint8)
+    cv2.drawContours(canvas, polys, -1, 0, thickness=cv2.FILLED, lineType=cv2.LINE_AA, hierarchy=hier)
+    return np.minimum(res, canvas)
+
+
 def add_dims(rgb, box, wtext, htext, wspan=None, top=False, fsize=46, lw=2):
     """Etalon-stílusú méretvonalak nyilakkal: szélesség a profil alatt (top: fölött; wspan: csak a profil egy
     részének szélessége, képpontban), magasság a profil bal oldalán."""
-    pad = 160
+    pad = int(max(160, fsize * 3.5))
     img = Image.fromarray(rgb.astype(np.uint8)).convert("RGB")
     canvas = Image.new("RGB", (img.width + 2 * pad, img.height + 2 * pad), "white")
     canvas.paste(img, (pad, pad))
@@ -236,23 +262,23 @@ def main():
             g = np.asarray(im)
         if slug in CLEAN:
             wt, ht, wmm = CLEAN[slug]
-            solid = (g < 110).astype(np.uint8)
-            body = cv2.morphologyEx(solid, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (15, 15)))
-            n, lab, st, _ = cv2.connectedComponentsWithStats(body, connectivity=8)
-            body = lab == 1 + int(np.argmax(st[1:, cv2.CC_STAT_AREA]))
-            body = cv2.GaussianBlur(body.astype(np.float32), (0, 0), 4) > 0.5  # a szkennelés recés széleinek simítása
-            ys, xs = np.where(body)
-            box = (xs.min(), ys.min(), xs.max(), ys.max())
-            ppm = (ys.max() - ys.min()) / float(ht)
+            ppm = 12.0
+            # vektoros szerkesztés a gyártói méretek alapján (profil_vektor.py): precíz egyenesek és ívek
+            geom = VECTOR[slug]()
+            body, _ = rasterize(geom, ppm, 2)
+            polys, hier = polygonize(body, 0.6)
+            gx0, gy0, _, _ = geom.bounds
+            box = (int((0 - gx0 + 2) * ppm), int((0 - gy0 + 2) * ppm), int((wmm - gx0 + 2) * ppm), int((float(ht) - gy0 + 2) * ppm))
+            g = np.full(body.shape, 255, np.uint8)
             base = np.full(g.shape + (3,), 255, np.float32)
-            filled = base.copy(); filled[body] = 0
+            filled = base.copy()
+            cv2.drawContours(filled, polys, -1, (0, 0, 0), thickness=cv2.FILLED, lineType=cv2.LINE_AA, hierarchy=hier)
             outline = base.copy()
-            cnts, _ = cv2.findContours(body.astype(np.uint8), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
-            cv2.drawContours(outline, cnts, -1, (0, 0, 0), max(3, int(ppm / 2.5)))
+            cv2.drawContours(outline, polys, -1, (0, 0, 0), max(3, int(ppm / 2.5)), lineType=cv2.LINE_AA)
             fs, lw = int(ppm * 7), max(2, int(ppm / 3))
             g = add_dims(filled, box, wt, ht, wmm * ppm, top=True, fsize=fs, lw=lw).mean(axis=2).astype(np.uint8)
             second = add_dims(outline, box, wt, ht, wmm * ppm, top=True, fsize=fs, lw=lw).mean(axis=2).astype(np.uint8)
-            prof = max(box[2] - box[0], box[3] - box[1]) + 0.0
+            prof = float(ht) * ppm
             CLEAN_SECOND[slug] = ink_crop(second)
         g = ink_crop(g)
         items[slug] = (cat, mm, g, prof)
