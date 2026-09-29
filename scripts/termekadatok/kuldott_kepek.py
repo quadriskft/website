@@ -7,6 +7,8 @@ termékekhez, amelyeknek a forrás-katalógusa nincs meg nálunk. A kivágás k�
   E/COMPACT tetőprofil 900407 (mind az öt hossz) – az Edscha Compact sín méretezett rajza (43 × 112 mm) első képként,
     a meglévő (edscha_compact.py) képek elé: data/forras/edscha_compact_sin.png (a küldött lapkép kivágva,
     4× nagyítva, a szürke háttér fehérre cserélve; az eredeti: edscha_compact_sin_lap.png)
+  E/VOLUMEN tetőprofil 900301 (mind a hat hossz) – a Volumen sín („Alu-Träger”) méretezett rajza első képként:
+    data/forras/edscha_volumen_sin.png (a küldött 900301-es lap bal oldali rajza, 3× nagyítva; eredeti: …_lap.png)
 
 Használat: python3 scripts/termekadatok/kuldott_kepek.py
 """
@@ -36,6 +38,10 @@ COMPACT = [f"e-compact-tetoprofil-900407-{n}" for n in (5000, 5600, 6600, 7800, 
 PREPEND = {slug: ("data/forras/edscha_compact_sin.png", "meretrajz",
                   {"Profilméret": "43 × 112 mm (alul 33 mm)", "Tömeg": "2,88 kg/m", "Ix": "112,5 cm⁴", "Iy": "13,3 cm⁴"})
            for slug in COMPACT}
+VOLUMEN = [f"e-volumen-tetoprofil-900301-{n}" for n in (7800, 8500, 9000, 9400, 9600, 10000)]
+PREPEND.update({slug: ("data/forras/edscha_volumen_sin.png", "meretrajz",
+                       {"Profilméret": "120 × 163 mm (alul 35 mm)", "Tömeg": "5,65 kg/m", "Ix": "595,0 cm⁴", "Iy": "207,2 cm⁴"})
+                for slug in VOLUMEN})
 
 
 def main():

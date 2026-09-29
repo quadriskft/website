@@ -10394,7 +10394,7 @@
   ]
  },
  "e-volumen-tetoprofil-900301-10000": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/en/products/sesam/sesam-cs-slimliner-fix/",
   "sourceTitle": "E/VOLUMEN tetőprofil",
   "matchedCode": "E/VOLUMEN tetőprofil",
@@ -10402,14 +10402,19 @@
   "specs": {
    "Anyag": "extrudált alumínium",
    "Profil": "Volumen",
-   "Hossz": "10000 mm"
+   "Hossz": "10000 mm",
+   "Profilméret": "120 × 163 mm (alul 35 mm)",
+   "Tömeg": "5,65 kg/m",
+   "Ix": "595,0 cm⁴",
+   "Iy": "207,2 cm⁴"
   },
   "images": [
+   "/termekkepek/e-volumen-tetoprofil-900301-10000-meretrajz.webp",
    "/termekkepek/e-volumen-tetoprofil-900301-10000-1.webp"
   ]
  },
  "e-volumen-tetoprofil-900301-7800": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/en/products/sesam/sesam-cs-slimliner-fix/",
   "sourceTitle": "E/VOLUMEN tetőprofil",
   "matchedCode": "E/VOLUMEN tetőprofil",
@@ -10417,14 +10422,19 @@
   "specs": {
    "Anyag": "extrudált alumínium",
    "Profil": "Volumen",
-   "Hossz": "7800 mm"
+   "Hossz": "7800 mm",
+   "Profilméret": "120 × 163 mm (alul 35 mm)",
+   "Tömeg": "5,65 kg/m",
+   "Ix": "595,0 cm⁴",
+   "Iy": "207,2 cm⁴"
   },
   "images": [
+   "/termekkepek/e-volumen-tetoprofil-900301-7800-meretrajz.webp",
    "/termekkepek/e-volumen-tetoprofil-900301-7800-1.webp"
   ]
  },
  "e-volumen-tetoprofil-900301-8500": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/en/products/sesam/sesam-cs-slimliner-fix/",
   "sourceTitle": "E/VOLUMEN tetőprofil",
   "matchedCode": "E/VOLUMEN tetőprofil",
@@ -10432,14 +10442,19 @@
   "specs": {
    "Anyag": "extrudált alumínium",
    "Profil": "Volumen",
-   "Hossz": "8500 mm"
+   "Hossz": "8500 mm",
+   "Profilméret": "120 × 163 mm (alul 35 mm)",
+   "Tömeg": "5,65 kg/m",
+   "Ix": "595,0 cm⁴",
+   "Iy": "207,2 cm⁴"
   },
   "images": [
+   "/termekkepek/e-volumen-tetoprofil-900301-8500-meretrajz.webp",
    "/termekkepek/e-volumen-tetoprofil-900301-8500-1.webp"
   ]
  },
  "e-volumen-tetoprofil-900301-9000": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/en/products/sesam/sesam-cs-slimliner-fix/",
   "sourceTitle": "E/VOLUMEN tetőprofil",
   "matchedCode": "E/VOLUMEN tetőprofil",
@@ -10447,14 +10462,19 @@
   "specs": {
    "Anyag": "extrudált alumínium",
    "Profil": "Volumen",
-   "Hossz": "9000 mm"
+   "Hossz": "9000 mm",
+   "Profilméret": "120 × 163 mm (alul 35 mm)",
+   "Tömeg": "5,65 kg/m",
+   "Ix": "595,0 cm⁴",
+   "Iy": "207,2 cm⁴"
   },
   "images": [
+   "/termekkepek/e-volumen-tetoprofil-900301-9000-meretrajz.webp",
    "/termekkepek/e-volumen-tetoprofil-900301-9000-1.webp"
   ]
  },
  "e-volumen-tetoprofil-900301-9400": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/en/products/sesam/sesam-cs-slimliner-fix/",
   "sourceTitle": "E/VOLUMEN tetőprofil",
   "matchedCode": "E/VOLUMEN tetőprofil",
@@ -10462,14 +10482,19 @@
   "specs": {
    "Anyag": "extrudált alumínium",
    "Profil": "Volumen",
-   "Hossz": "9400 mm"
+   "Hossz": "9400 mm",
+   "Profilméret": "120 × 163 mm (alul 35 mm)",
+   "Tömeg": "5,65 kg/m",
+   "Ix": "595,0 cm⁴",
+   "Iy": "207,2 cm⁴"
   },
   "images": [
+   "/termekkepek/e-volumen-tetoprofil-900301-9400-meretrajz.webp",
    "/termekkepek/e-volumen-tetoprofil-900301-9400-1.webp"
   ]
  },
  "e-volumen-tetoprofil-900301-9600": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/en/products/sesam/sesam-cs-slimliner-fix/",
   "sourceTitle": "E/VOLUMEN tetőprofil",
   "matchedCode": "E/VOLUMEN tetőprofil",
@@ -10477,9 +10502,14 @@
   "specs": {
    "Anyag": "extrudált alumínium",
    "Profil": "Volumen",
-   "Hossz": "9600 mm"
+   "Hossz": "9600 mm",
+   "Profilméret": "120 × 163 mm (alul 35 mm)",
+   "Tömeg": "5,65 kg/m",
+   "Ix": "595,0 cm⁴",
+   "Iy": "207,2 cm⁴"
   },
   "images": [
+   "/termekkepek/e-volumen-tetoprofil-900301-9600-meretrajz.webp",
    "/termekkepek/e-volumen-tetoprofil-900301-9600-1.webp"
   ]
  },
