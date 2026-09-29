@@ -72,7 +72,8 @@ INSERT = {"e69004740-cs-compact-tetokereszttarto-2550-mm": [("data/forras/edscha
           # Versus Omega MICRO TRIKE: az alkatrész-áttekintő rajz első képként (a PDF-néző kiemelése, fejléc és
           # oldalszám nélkül; eredeti: versus_micro_trike_lap.png)
           "versus-micro-trike-toloteto-rendszer": [("data/forras/versus_micro_trike.png", "attekinto", 0)],
-          "versus-duo-trike-l-toloteto-rendszer": [("data/forras/versus_duo_trike_light.png", "attekinto", 0)]}
+          "versus-duo-trike-l-toloteto-rendszer": [("data/forras/versus_duo_trike_light.png", "attekinto", 0)],
+          "e38067930-compact-csuklopant-650-mm": [("data/forras/edscha_csuklopant_650_1.png", "foto1", 1)]}
 
 
 def main():
