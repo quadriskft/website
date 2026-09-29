@@ -65,7 +65,10 @@ INSERT = {"e69004740-cs-compact-tetokereszttarto-2550-mm": [("data/forras/edscha
           # a Compact CS tolótető áttekintő rajza a fő alkatrészekkel (a meglévő fotók után)
           "e-compact-cs-toloteto-rendszer": [("data/forras/edscha_compact_cs_attekinto.png", "attekinto", 99)],
           "e-compact-fix-teto-rendszer": [("data/forras/edscha_compact_fix_attekinto.png", "attekinto", 99)],
-          "e422552-tetokereszttarto-2550-mm": [("data/forras/edscha_tetokereszttarto_422552.png", "foto", 1)]}
+          "e422552-tetokereszttarto-2550-mm": [("data/forras/edscha_tetokereszttarto_422552.png", "foto", 1)],
+          # a 130-as és a 190-es lezáró ugyanazt a fotót kapja (a kék keret nélkül)
+          "e69000690-130-as-lezaro-2550-mm": [("data/forras/edscha_lezaro_2550.png", "foto", 1)],
+          "e69001370-190-es-lezaro-2550-mm": [("data/forras/edscha_lezaro_2550.png", "foto", 1)]}
 
 
 def main():
