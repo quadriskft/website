@@ -64,7 +64,8 @@ const GROUP_ORDER = [
   'ponyvas-oldalfal-profilok-es-szegok', 'elhuzhato-roloponyvas-rendszer', 'hatso-ajtok-es-athajto-rampak', 'italszallito-kit',
   'zart-dobozos-es-hutos-profilok', 'acel-profilok', 'platos-alkatreszek-es-kiegeszitok', 'ponyvarendszer-kiegeszitok',
   'acel-es-alu-rakoncak-es-szegok', 'dobozos-felepitmeny-alkatreszek', 'rakomanyrogzites', 'sarvedok-szerszamosladak',
-  'kedergumik', 'csuszasmentes-retegelt-padlo', 'gumiszonyegek', 'szellozes-tetoablakok-vilagitas', 'uvegszalas-polieszter',
+  'kedergumik', 'csuszasmentes-retegelt-padlo', 'gumiszonyegek', 'szellozes-tetoablakok-vilagitas', 'specialis-felepitmeny-alkatreszek',
+  'uvegszalas-polieszter',
   'billencs-alkatreszek',
 ];
 const groupRank = (slug) => (GROUP_ORDER.includes(slug) ? GROUP_ORDER.indexOf(slug) : GROUP_ORDER.length);
