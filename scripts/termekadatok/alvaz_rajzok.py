@@ -26,6 +26,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from common import ENRICHMENT, ROOT  # noqa: E402
 
 W, H, MARGIN = 1200, 840, 50
+CLEAN_SECOND = {}
 # slug -> (alkategória, a profil legnagyobb befoglaló mérete mm-ben – a rajz méretszámai alapján)
 PROFILES = {
     "202274-u-100x50x50x5-mm-profil": ("hossztartok", 100),
@@ -62,13 +63,20 @@ REPAIR = {
     "202388-15-70-mm-keretprofil-elox-cd": [(165, 300, 166, 1218, 4), (196, 300, 198, 1218, 4),  # a hosszú szár (nyújtás után)
                                             (665, 317, 978, 319, 4)],  # a vízszintes szár szakadozott felső vonala
 }
+# méretezés nélküli forrásrajzok: a fő befoglaló méretek (szélesség, magasság) felrajzolása – a profil
+# befoglalója a forrásképen (x0, y0, x1, y1) és a méretszámok; 203183: ESAL 13183 „Parabici da 250 mm”, 250 × 25
+DIMS = {"203183-250-25-mm-alafutasgatlo-elox-profil": ((26, 119, 974, 214), "250", "25")}
+# régi segédvonalas szkennelt rajzok tisztán újrarajzolva: csak a profil (a vékony jelölések nélkül) és a fő
+# méretek; mindkét kép (tömör és körvonalas) így készül. (szélesség mm, magasság mm, a szélesség csak a felső részé)
+CLEAN = {"202388-15-70-mm-keretprofil-elox-cd": ("40", "109", 40)}
 # törésvonallal rövidítve rajzolt profilok valós arányra nyújtása: (sor, beszúrt sorok száma) – a beszúrt
 # sorok a megadott sor másolatai; 202388: a [40] szélesség 498 px (12,45 px/mm), így a [109] magasság 1357 px
 STRETCH = {"202388-15-70-mm-keretprofil-elox-cd": (620, 518)}
 # a gerincbe lógó régi méretszám törlése (fehérrel), mielőtt a falvonalakat meghúzzuk: (x0, y0, x1, y1)
 ERASE = {"202387-i-70-kereszttarto": [(498, 222, 590, 256)],
          # 206941: a jobb fal mélyítése mellett futó felesleges vonal, a bal fal és a horony kívülre lógó jelölései
-         "206941-cd-100x30-mm-alafutasgatlo-elox-profil": [(273, 372, 282, 500), (8, 480, 27, 510), (133, 598, 150, 616)]}
+         "206941-cd-100x30-mm-alafutasgatlo-elox-profil": [(273, 372, 282, 500), (8, 480, 27, 510), (133, 598, 150, 616),
+                                                           (138, 226, 186, 237), (248, 226, 272, 237)]}  # + a bordázat fölötti körjelölés
 # a falrészeket apró jelölések darabolják, ezért itt minden vékony zárt rész kitöltendő (a számjegyek belseje nincs benne)
 FILL_ALL = {"206941-cd-100x30-mm-alafutasgatlo-elox-profil": (20, 230, 285, 990)}  # a profil területe (x0, y0, x1, y1)
 # a kitöltés által eltakart méretszámok újraírása: (szöveg, x, y közép) a forráskép képpontjaiban
@@ -139,25 +147,67 @@ def normalize(rgb, thick=0.03, fill_all=None):
     return out.astype(np.uint8), prof
 
 
+def add_dims(rgb, box, wtext, htext, wspan=None, top=False, fsize=46, lw=2):
+    """Etalon-stílusú méretvonalak nyilakkal: szélesség a profil alatt (top: fölött; wspan: csak a profil egy
+    részének szélessége, képpontban), magasság a profil bal oldalán."""
+    pad = 160
+    img = Image.fromarray(rgb.astype(np.uint8)).convert("RGB")
+    canvas = Image.new("RGB", (img.width + 2 * pad, img.height + 2 * pad), "white")
+    canvas.paste(img, (pad, pad))
+    d = ImageDraw.Draw(canvas)
+    fnt = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", fsize)
+    x0, y0, x1, y1 = (v + pad for v in box)
+    col, a = (0, 0, 0), 16 * fsize / 46
+    off = 70 * fsize / 46
+
+    def arrow(p, q):  # nyílhegy p-ben, q felé mutató vonal irányából
+        vx, vy = q[0] - p[0], q[1] - p[1]
+        n = (vx * vx + vy * vy) ** 0.5 or 1
+        ux, uy = vx / n, vy / n
+        d.polygon([p, (p[0] + ux * a - uy * a / 3, p[1] + uy * a + ux * a / 3), (p[0] + ux * a + uy * a / 3, p[1] + uy * a - ux * a / 3)], fill=col)
+
+    wx1 = x0 + wspan if wspan else x1
+    edge, yd = (y0, y0 - off) if top else (y1, y1 + off)  # szélesség
+    sgn = -1 if top else 1
+    d.line([(x0, edge + 8 * sgn), (x0, yd + 14 * sgn)], fill=col, width=lw)
+    d.line([(wx1, edge + 8 * sgn), (wx1, yd + 14 * sgn)], fill=col, width=lw)
+    d.line([(x0, yd), (wx1, yd)], fill=col, width=lw)
+    arrow((x0, yd), (wx1, yd)); arrow((wx1, yd), (x0, yd))
+    d.text(((x0 + wx1) / 2, yd - 8), wtext, fill=col, font=fnt, anchor="mb")
+    xd = x0 - off  # magasság
+    d.line([(x0 - 8, y0), (xd - 14, y0)], fill=col, width=lw)
+    d.line([(x0 - 8, y1), (xd - 14, y1)], fill=col, width=lw)
+    d.line([(xd, y0), (xd, y1)], fill=col, width=lw)
+    arrow((xd, y0), (xd, y1)); arrow((xd, y1), (xd, y0))
+    t = Image.new("L", (int(fsize * 4), int(fsize * 1.5)), 0)
+    ImageDraw.Draw(t).text((t.width / 2, t.height / 2), htext, fill=255, font=fnt, anchor="mm")
+    t = t.rotate(90, expand=True)
+    canvas.paste(Image.new("RGB", t.size, col), (int(xd - t.width - 6), int((y0 + y1) / 2 - t.height / 2)), t)
+    return np.asarray(canvas).astype(np.float32)
+
+
 def ink_crop(g, pad=12):
     ys, xs = np.where(g < 235)
     return g[max(ys.min() - pad, 0): ys.max() + pad, max(xs.min() - pad, 0): xs.max() + pad]
 
 
-def source_image(entry):
+def source_image(entry, slug=""):
     for u in entry.get("images", []):
-        if "/3d/" not in u and not u.endswith("-rajz.webp"):
+        if "/3d/" not in u and not u.endswith(("-rajz.webp", "-korvonal.webp")):
             return u
-    return None
+    # a CLEAN rajzoknál az eredeti szkennelt rajz már nincs a képek között, de a fájl megvan
+    orig = f"/termekkepek/{slug}-1.webp"
+    return orig if (ROOT / "public" / orig.lstrip("/")).exists() else None
 
 
 def main():
     data = json.loads(ENRICHMENT.read_text())
     CACHE.mkdir(parents=True, exist_ok=True)
     items = {}
+    CLEAN_SECOND.clear()
     for slug, (cat, mm) in PROFILES.items():
         e = data.get(slug)
-        src = source_image(e or {})
+        src = source_image(e or {}, slug)
         if not src:
             print("  nincs rajz:", slug)
             continue
@@ -165,6 +215,8 @@ def main():
         if not keep.exists():
             Image.open(ROOT / "public" / src.lstrip("/")).save(keep)
         rgb = load(keep)
+        if slug in DIMS:
+            rgb = add_dims(rgb, *DIMS[slug])
         if slug in STRETCH:
             y, n = STRETCH[slug]
             rgb = np.concatenate([rgb[:y], np.repeat(rgb[y:y + 1], n, axis=0), rgb[y:]], axis=0)
@@ -182,6 +234,26 @@ def main():
             for text, x, y in LABELS[slug]:
                 d.text((x, y), text, fill=0, font=fnt, anchor="mb")
             g = np.asarray(im)
+        if slug in CLEAN:
+            wt, ht, wmm = CLEAN[slug]
+            solid = (g < 110).astype(np.uint8)
+            body = cv2.morphologyEx(solid, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (15, 15)))
+            n, lab, st, _ = cv2.connectedComponentsWithStats(body, connectivity=8)
+            body = lab == 1 + int(np.argmax(st[1:, cv2.CC_STAT_AREA]))
+            body = cv2.GaussianBlur(body.astype(np.float32), (0, 0), 4) > 0.5  # a szkennelés recés széleinek simítása
+            ys, xs = np.where(body)
+            box = (xs.min(), ys.min(), xs.max(), ys.max())
+            ppm = (ys.max() - ys.min()) / float(ht)
+            base = np.full(g.shape + (3,), 255, np.float32)
+            filled = base.copy(); filled[body] = 0
+            outline = base.copy()
+            cnts, _ = cv2.findContours(body.astype(np.uint8), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
+            cv2.drawContours(outline, cnts, -1, (0, 0, 0), max(3, int(ppm / 2.5)))
+            fs, lw = int(ppm * 7), max(2, int(ppm / 3))
+            g = add_dims(filled, box, wt, ht, wmm * ppm, top=True, fsize=fs, lw=lw).mean(axis=2).astype(np.uint8)
+            second = add_dims(outline, box, wt, ht, wmm * ppm, top=True, fsize=fs, lw=lw).mean(axis=2).astype(np.uint8)
+            prof = max(box[2] - box[0], box[3] - box[1]) + 0.0
+            CLEAN_SECOND[slug] = ink_crop(second)
         g = ink_crop(g)
         items[slug] = (cat, mm, g, prof)
     # alkategóriánként közös arány: px / mm = a legszűkebb (a vászonra épp ráférő) érték
@@ -203,6 +275,14 @@ def main():
         canvas = Image.new("L", (W, H), 255)
         canvas.paste(img, ((W - img.width) // 2, (H - img.height) // 2))
         rel = f"/termekkepek/{slug}-rajz.webp"
+        if slug in CLEAN_SECOND:  # a második (körvonalas) kép ugyanazzal a nagyítással, az eredeti szkennelt rajz helyett
+            s2 = CLEAN_SECOND[slug]
+            im2 = Image.fromarray(s2).resize((max(1, round(s2.shape[1] * f)), max(1, round(s2.shape[0] * f))), Image.LANCZOS)
+            c2 = Image.new("L", (W, H), 255)
+            c2.paste(im2, ((W - im2.width) // 2, (H - im2.height) // 2))
+            rel2 = f"/termekkepek/{slug}-korvonal.webp"
+            c2.convert("RGB").save(ROOT / "public" / rel2.lstrip("/"), "WEBP", quality=90)
+            data[slug]["images"] = [rel, rel2]
         canvas.convert("RGB").save(ROOT / "public" / rel.lstrip("/"), "WEBP", quality=90)
         e = data[slug]
         e["images"] = [rel] + [u for u in e["images"] if u != rel]
