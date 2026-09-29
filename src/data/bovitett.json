@@ -170,6 +170,12 @@
    "slug": "szelloztetes-kiegeszitok",
    "name": "Kiegészítők és vezérlés",
    "source": "G&C termékek"
+  },
+  {
+   "group": "aluminium-lemezek",
+   "slug": "elox-lemez",
+   "name": "Eloxált lemez",
+   "source": "Quadris kérés"
   }
  ],
  "renameGroups": {
@@ -14431,6 +14437,36 @@
    "group": "szellozes-tetoablakok-vilagitas",
    "category": "vilagitas",
    "source": "G&C termékek"
+  },
+  "s-2x1000x2000-mm-elox-alu-lemez-en-aw-5002": {
+   "group": "aluminium-lemezek",
+   "category": "elox-lemez",
+   "source": "Quadris kérés"
+  },
+  "s-2x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14": {
+   "group": "aluminium-lemezek",
+   "category": "elox-lemez",
+   "source": "Quadris kérés"
+  },
+  "s-2x1500x3000-mm-elox-alu-lemez-en-aw-5005-h12-h14-h24": {
+   "group": "aluminium-lemezek",
+   "category": "elox-lemez",
+   "source": "Quadris kérés"
+  },
+  "s-3x1000x2000-mm-elox-alu-lemez-en-aw-5002": {
+   "group": "aluminium-lemezek",
+   "category": "elox-lemez",
+   "source": "Quadris kérés"
+  },
+  "s-3x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14": {
+   "group": "aluminium-lemezek",
+   "category": "elox-lemez",
+   "source": "Quadris kérés"
+  },
+  "s-3x1500x3000-mm-elox-alu-lemez-en-aw-5005a-h14": {
+   "group": "aluminium-lemezek",
+   "category": "elox-lemez",
+   "source": "Quadris kérés"
   }
  }
 }

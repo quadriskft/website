@@ -125,6 +125,62 @@ def drawing(kind, a, b=0, t=0, c=0):
     return img
 
 
+def pattern_face(img, top, pattern):
+    """A lemez felső lapjára rajzolja a mintát (sematikusan, felnagyított mintaosztással):
+    quintett = 5 csepp / cella, duett = 2 csepp / cella, váltakozó irányban; diamond = gyémánt (rombusz) rács;
+    rizs = sűrű, rendezetlen apró szemcsék. A mintát síkban rajzoljuk, majd affin leképezéssel a ferde lapra."""
+    import numpy as np
+    P, Q = 1400, 700  # a sík minta mérete (hossz × szélesség) képpontban
+    tex = Image.new("RGB", (P, Q), (205, 210, 216))
+    d = ImageDraw.Draw(tex)
+    hi, lo = (246, 248, 250), (132, 138, 146)  # csillanás és árnyék: domború kiemelkedés hatás
+
+    def drop(cx, cy, length, ang, width=12):
+        # csepp: kihegyesedő végű lencse, árnyékkal és csillanással
+        ca, sa = math.cos(ang), math.sin(ang)
+        pts = [(length / 2 * math.cos(t), width / 2 * math.sin(t) ** 1.0) for t in [i * math.pi / 12 for i in range(24)]]
+        for off, col in ((4, lo), (0, hi)):
+            d.polygon([(cx + x * ca - y * sa + off, cy + x * sa + y * ca + off) for x, y in pts], fill=col)
+        d.polygon([(cx + x * ca * 0.8 - y * 0.35 * sa + 1, cy + x * sa * 0.8 + y * 0.35 * ca + 1) for x, y in pts], fill=(214, 219, 225))
+
+    if pattern in ("quintett", "duett"):
+        cell = 170 if pattern == "quintett" else 150
+        n, gap = (5, 24) if pattern == "quintett" else (2, 38)
+        for j, cy in enumerate(range(cell // 2, Q + cell, cell)):
+            for i, cx in enumerate(range(cell // 2, P + cell, cell)):
+                if pattern == "quintett":  # 5 párhuzamos csepp, a szomszédos cellákban 90°-kal elforgatva
+                    ang = 0 if (i + j) % 2 else math.pi / 2
+                    for k in range(n):
+                        o = (k - (n - 1) / 2) * gap
+                        drop(cx + (o if ang else 0), cy + (0 if ang else o), cell * 0.66, ang, 14)
+                else:  # duett: 2 csepp ±45°-ban
+                    ang = math.radians(28) if (i + j) % 2 else math.radians(-28)  # a ferde vetítés miatt laposabb szög
+                    for k in range(n):
+                        o = (k - 0.5) * gap
+                        drop(cx + o * math.cos(ang + math.pi / 2), cy + o * math.sin(ang + math.pi / 2), cell * 0.72, ang, 18)
+    elif pattern == "diamond":
+        c = 78
+        for j, cy in enumerate(range(0, Q + c, c)):
+            for cx in range(-c, P + c, c):
+                x = cx + (c // 2 if j % 2 else 0)
+                r = c * 0.36
+                d.polygon([(x + 2, cy - r + 2), (x + r + 2, cy + 2), (x + 2, cy + r + 2), (x - r + 2, cy + 2)], fill=lo)
+                d.polygon([(x, cy - r), (x + r, cy), (x, cy + r), (x - r, cy)], fill=(222, 226, 231), outline=hi)
+    elif pattern == "rizs":
+        rnd = np.random.default_rng(7)
+        for _ in range(1500):
+            cx, cy, a = rnd.uniform(0, P), rnd.uniform(0, Q), rnd.uniform(0, math.pi)
+            drop(cx, cy, 30, a, 11)
+    # affin leképezés: a sík (x, y) -> top[0] + x/P·(top[1]-top[0]) + y/Q·(top[3]-top[0])
+    o, u, v = np.array(top[0]), np.array(top[1]) - np.array(top[0]), np.array(top[3]) - np.array(top[0])
+    m = np.linalg.inv(np.array([[u[0] / P, v[0] / Q], [u[1] / P, v[1] / Q]]))
+    coeffs = (m[0, 0], m[0, 1], -(m[0] @ o), m[1, 0], m[1, 1], -(m[1] @ o))
+    warped = tex.transform(img.size, Image.AFFINE, coeffs, resample=Image.BICUBIC, fillcolor=(255, 255, 255))
+    mask = Image.new("L", img.size, 0)
+    ImageDraw.Draw(mask).polygon(top, fill=255)
+    img.paste(warped, (0, 0), mask)
+
+
 def sheet(w, l, t, colour, length_label=None, pattern=None):
     """Lemez / tábla / tekercs ferde axonometrikus rajza a méretekkel (hossz, szélesség, vastagság)."""
     W, H = 1000, 750
@@ -144,6 +200,9 @@ def sheet(w, l, t, colour, length_label=None, pattern=None):
     d.polygon([(x0, y0), (x0 + lx, y0), (x0 + lx, y0 + th), (x0, y0 + th)], fill=shade(colour, 0.72), outline="black")
     d.polygon([(x0 + lx, y0), (x0 + lx + wx, y0 + wy), (x0 + lx + wx, y0 + wy + th), (x0 + lx, y0 + th)], fill=shade(colour, 0.55), outline="black")
     d.polygon(top, fill=colour, outline="black")
+    if pattern:
+        pattern_face(img, top, pattern)
+        d.polygon(top, outline="black")
     for pts in ([top[0], top[1]], [top[1], top[2]]):
         d.line(pts, fill="black", width=3)
     dim_h(d, x0, x0 + lx, y0 + th + 70, length_label or hu(l), fnt)
@@ -203,10 +262,11 @@ def parse(p):
             pass
         elif elox:
             specs["Felület"] = "eloxált"
-        elif "rízs" in low:
-            specs["Felület"] = "rízsmintás (csúszásgátló)"
+        elif "rízs" in low or "rizs" in low:
+            specs["Felület"] = "rizsmintás (csúszásgátló)"
         colour = (243, 243, 240) if r else (205, 210, 216)
-        pattern = ("diamond" if "diamond" in low else "drop") if tp else None
+        pattern = ("diamond" if "diamond" in low else "duett" if "duett" in low else "rizs" if re.search(r"r[ií]zs", low)
+                   else "quintett" if (tp or "cseppmint" in low) else None)
         return specs, ("sheet", f(w), f(l) if l else 0, f(t), colour, None if l else "tekercs", pattern)
     # rétegelt lemez: "L 12x1500x2500 mm rétegelt lemez fenolos"
     m = re.match(rf"L\s*(?:MDF\s*)?{NUM}\s*[xX]\s*{NUM}\s*[xX]\s*{NUM}", n)
