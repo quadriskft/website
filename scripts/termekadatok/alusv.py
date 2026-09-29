@@ -74,9 +74,14 @@ EXTRA = {
 }
 # a Quadris kérésére minden MAX-os első oszlop a „Pillar profile CS MAX front” (66OAP17714) méretezett rajzát
 # kapja; a többi adat (tömeg, hossz, felület) az azonos hosszúságú, eloxált MAX front tételé (None: csak az anyag)
-IMAGE_ONLY = {"66177137": "66OAP17714", "66177147": "66OAP17714", "66177300": "66OAP17714"}
-DATA_FROM = {"66177147": "662AP17730", "66177137": "662AP17714", "66177300": "662AP17712"}
-PROFILE_SIZE = {"Szélesség": "127,0 mm", "Magasság": "177,0 mm"}  # a rajz szerint (a 3000 mm-es tételnél nincs megadva)
+# ugyanígy a MAX-os hátsó oszlopok (3000 és 3300 mm) a 3150 mm-es „Pillar profile CS MAX rear” (66OZ035255) rajzát
+IMAGE_ONLY = {"66177137": "66OAP17714", "66177147": "66OAP17714", "66177300": "66OAP17714",
+              "6635245": "66OZ035255", "6635300": "66OZ035255"}
+DATA_FROM = {"66177147": "662AP17730", "66177137": "662AP17714", "66177300": "662AP17712",
+             "6635245": "662AZ03025", "6635300": "662AZ03526"}
+# a profil befoglaló méretei a rajz szerint (a hosszváltozatok adatlapján nem mindig szerepelnek)
+PROFILE_SIZE = {"66OAP17714": {"Szélesség": "127,0 mm", "Magasság": "177,0 mm"},
+                "66OZ035255": {"Szélesség": "265,0 mm", "Magasság": "35,0 mm"}}
 
 
 def remove_badge(data):
@@ -112,7 +117,7 @@ def image_only_specs(code, info):
     if not data:
         return {k: v for k, v in info["specs"].items() if k == "Anyag"}
     specs = {**data["specs"]}
-    for k, v in PROFILE_SIZE.items():
+    for k, v in PROFILE_SIZE.get(IMAGE_ONLY[code], {}).items():
         specs.setdefault(k, v)
     return specs
 

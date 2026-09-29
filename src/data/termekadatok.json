@@ -8098,18 +8098,6 @@
    "/termekkepek/6612226-hatso-oszlop-128-35-alu-elox-d-1.webp"
   ]
  },
- "6613211-max-os-elso-elox-oszlop-it": {
-  "source": "Alu-SV",
-  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/10000287_pillar-profile-cs-max-front--3000mm--al",
-  "sourceTitle": "Pillar profile CS MAX front, 3000mm, Al",
-  "matchedCode": "66OAP17714",
-  "specs": {
-   "Anyag": "EN AW 6063"
-  },
-  "images": [
-   "/termekkepek/6613211-max-os-elso-elox-oszlop-it-1.webp"
-  ]
- },
  "6613365-al-eco-merevito-profil-natur": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000017_edscha-cs/910092720_al-eco-sheet-profile-counterpart",
@@ -8352,6 +8340,24 @@
    "/termekkepek/6621640-or-midi-hatso-oszlop-alu-elox-1.webp"
   ]
  },
+ "6635245-max-os-hatso-elox-oszlop-3000-mm": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/10000293_pillar-profile-cs-max-rear--3150mm--anod",
+  "sourceTitle": "Pillar profile CS MAX rear, 3150mm, anod",
+  "matchedCode": "66OZ035255",
+  "specs": {
+   "Anyag": "EN AW 6063",
+   "Felület": "eloxált (0,010mm)",
+   "Tömeg": "18,18 kg",
+   "Hossz": "3 000,0 mm",
+   "Mértékegység": "db",
+   "Szélesség": "265,0 mm",
+   "Magasság": "35,0 mm"
+  },
+  "images": [
+   "/termekkepek/6635245-max-os-hatso-elox-oszlop-3000-mm-1.webp"
+  ]
+ },
  "6635255-max-os-hatso-elox-oszlop-3150-mm": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/10000293_pillar-profile-cs-max-rear--3150mm--anod",
@@ -8368,6 +8374,24 @@
   },
   "images": [
    "/termekkepek/6635255-max-os-hatso-elox-oszlop-3150-mm-1.webp"
+  ]
+ },
+ "6635300-max-os-hatso-elox-oszlop-3300-mm": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/13000002_side-pillars--front-and-rear-al-pillars/10000293_pillar-profile-cs-max-rear--3150mm--anod",
+  "sourceTitle": "Pillar profile CS MAX rear, 3150mm, anod",
+  "matchedCode": "66OZ035255",
+  "specs": {
+   "Anyag": "EN AW 6063",
+   "Felület": "eloxált (0,010mm)",
+   "Tömeg": "19,998 kg",
+   "Hossz": "3 300,0 mm",
+   "Szélesség": "265,0 mm",
+   "Magasság": "35,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/6635300-max-os-hatso-elox-oszlop-3300-mm-1.webp"
   ]
  },
  "6639604-max-hatso-oszlop-exl-elox": {
