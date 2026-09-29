@@ -304,5 +304,11 @@
  },
  "207315-i-108-kereszttarto": {
   "order": 6
+ },
+ "s-2x1000x2000-mm-elox-alu-lemez-en-aw-5002": {
+  "name": "S 2x1000x2000 mm ELOX Alu lemez EN AW-5005",
+  "specs": {
+   "Ötvözet": "EN AW-5005"
+  }
  }
 }
