@@ -61,7 +61,9 @@ INSERT = {"e69004740-cs-compact-tetokereszttarto-2550-mm": [("data/forras/edscha
           "e69004670-compact-fix-tetokereszttarto-2550-mm": [("data/forras/edscha_compact_fix_tetokereszttarto.png", "foto", 1)],
           # TailWing: a katalógusoldal két fotója a zöld felirattal, a német sor nélkül (edscha_tailwing.png)
           "e-tailwing-1200-mm": [("data/forras/edscha_tailwing.png", "foto", 1)],
-          "e-tailwing-400-900-mm": [("data/forras/edscha_tailwing.png", "foto", 1)]}
+          "e-tailwing-400-900-mm": [("data/forras/edscha_tailwing.png", "foto", 1)],
+          # a Compact CS tolótető áttekintő rajza a fő alkatrészekkel (a meglévő fotók után)
+          "e-compact-cs-toloteto-rendszer": [("data/forras/edscha_compact_cs_attekinto.png", "attekinto", 99)]}
 
 
 def main():
