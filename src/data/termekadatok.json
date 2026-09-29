@@ -3133,6 +3133,23 @@
    "/termekkepek/226001-zart-padlo-profil-30-200-mm-2.webp"
   ]
  },
+ "226821-21-padlo-profil-200-mm": {
+  "source": "Quadris gyári rajz",
+  "sourceTitle": "BODEGA TB48968 – műhelyrajz",
+  "matchedCode": "TB48968",
+  "specs": {
+   "Cikkszám (gyártói)": "TB48968",
+   "Tömeg": "2,686 kg/fm",
+   "Keresztmetszet": "994,6 mm²",
+   "Teljes szélesség": "238 mm",
+   "Magasság": "21 mm",
+   "Anyag": "EN AW-6063 T66",
+   "Kivitel": "nyitott, bordás padlóprofil T-talpakkal"
+  },
+  "images": [
+   "/termekkepek/226821-21-padlo-profil-200-mm-rajz.webp"
+  ]
+ },
  "226830-300-mm-mono-profil-elox": {
   "source": "Metra",
   "sourceUrl": "https://www.metraluminium.it",

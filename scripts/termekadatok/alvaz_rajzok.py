@@ -64,6 +64,7 @@ PROFILES = {
     "227543-30-padlo-profil-200-mm": ("padlo-profilok", 200),
     "227543-30-padlo-profil-200-mm-elox": ("padlo-profilok", 200),
     "222910-30-padlo-profil-200-mm-exl": ("padlo-profilok", 210.4),  # Exlabesa EXL-29100
+    "226821-21-padlo-profil-200-mm": ("padlo-profilok", 238),  # BODEGA TB48968 (küldött műhelyrajz)
     "225630-55-padlo-profil-250-mm-zart": ("padlo-profilok", 283),  # Exlabesa EXL-5630 (a 250-es lapon túl a szélső hornyok)
     "222233-rampa-szego-g-profil": ("rampa-profilok", 80),
     "220192-also-rampa-indito-profil": ("rampa-profilok", 120),  # Profilpol 22.21.88168
@@ -133,7 +134,8 @@ REDIM = {"227543-30-padlo-profil-200-mm": ("200", "30", 5), "227543-30-padlo-pro
          "225549-400-mm-peremes-oldalfal-elox": ("400", "25", 13, True),
          "227075-200-mm-mono-profil-teli-szakalas-elox": ("200", "25", 0, True),
          "222910-30-padlo-profil-200-mm-exl": ("200", "30", 0, True),  # EXL-29100: kis felbontású lapkép
-         "225630-55-padlo-profil-250-mm-zart": ("250", "54,5", 0, True)}  # EXL-5630
+         "225630-55-padlo-profil-250-mm-zart": ("250", "54,5", 0, True),  # EXL-5630
+         "226821-21-padlo-profil-200-mm": ("238", "21", 0, True)}  # TB48968: csak a fő befoglaló méretek
 # színes kitöltésű rajzok, amelyeken a méretnyilak a falhoz tapadnak: csak a (világoskék) kitöltés és 1 px-es
 # környezete (a körvonal) marad, feketén – a méretvonalak és feliratok törlődnek, a méreteket a REDIM rajzolja újra
 FILL_ONLY = {"222910-30-padlo-profil-200-mm-exl", "225630-55-padlo-profil-250-mm-zart"
@@ -152,6 +154,9 @@ ERASE = {"202387-i-70-kereszttarto": [(498, 222, 590, 256)],
          "206941-cd-100x30-mm-alafutasgatlo-elox-profil": [(273, 372, 282, 500), (8, 480, 27, 510), (133, 598, 150, 616),
                                                            (138, 226, 186, 237), (248, 226, 272, 237)],  # + a bordázat fölötti körjelölés
          "227046-n-koztes-200-mm-profil": [(600, 50, 760, 210)],  # az Alu-SV „N” (natúr) jelölése
+         # 226821: a lapra tapadó méretnyíl, a felületjelölő pöttyök és a tengelyjelölő „X” (300 dpi-s kivágás)
+         "226821-21-padlo-profil-200-mm": [(445, 233, 470, 265), (497, 234, 518, 280), (643, 332, 662, 352), (678, 333, 700, 354),
+                                           (683, 380, 708, 405), (1154, 275, 1176, 305)],
          "208755-hossztarto-talpas-140-6-magas-120-10-60-8-mm": [(410, 834, 555, 896)],  # a talp alatti „8” méret (zárt sávja befeketedne)
          "228153-u-25-mm-szego-profil-elox-b": [(0, 580, 428, 686)],  # „TB28153 724 gr./ml.”
          "227046-ck10-koztes-200-mm-elox-profil": [(0, 0, 244, 1000), (244, 15, 282, 34)],  # a régi méretvonal
@@ -170,6 +175,10 @@ ROTATE = {"227046-ck10-koztes-200-mm-elox-profil": -1, "223350-350-mm-mono-profi
 # a forráskép közvetlenül a veszteségmentes eredeti kivágásból (nem a termék webp-képéből)
 SOURCE_FILE = {"222910-30-padlo-profil-200-mm-exl": "data/forras/exlabesa_carroceria/29100.png",
                "225630-55-padlo-profil-250-mm-zart": "data/forras/exlabesa_carroceria/5630.png"}
+# vonalkázott metszetű műhelyrajzok: a vonalkázás kis zárt celláinak kitöltése, a vékony méret-, szaggatott és
+# segédvonalak leválasztása (nyitás), csak a profil marad; a lap teteje fölé nyúló segédvonal-csonkok levágva.
+# A termék képei közül az eredeti (zsúfolt) műhelyrajz kimarad.
+HATCHED = {"226821-21-padlo-profil-200-mm"}
 # kis felbontású forrásképek helyett nagyobb felbontású kivágás a beszállítói PDF-ből:
 # slug -> (modul, oldal, kivágás [pt], dpi); 225549: a „TB25549 4116 gr./ml.” felirat nélkül
 HIRES = {"223350-350-mm-mono-profil-szakalas-elox": ("metra", 22, (305, 95, 420, 672), 600),
@@ -319,6 +328,26 @@ def add_dims(rgb, box, wtext, htext, wspan=None, top=False, fsize=46, lw=2, wx=N
     return np.asarray(canvas).astype(np.float32)
 
 
+def hatched_silhouette(rgb, cell=1500, k=13):
+    """Vonalkázott metszet → tömör sziluett (fekete a fehéren)."""
+    ink = (rgb.mean(axis=2) < 150).astype(np.uint8)
+    free = 1 - ink
+    n, lab, st, _ = cv2.connectedComponentsWithStats(free, connectivity=4)
+    h, w = ink.shape
+    small = [i for i in range(1, n) if st[i, cv2.CC_STAT_AREA] < cell and st[i, 0] > 0 and st[i, 1] > 0
+             and st[i, 0] + st[i, 2] < w and st[i, 1] + st[i, 3] < h]
+    ink[np.isin(lab, small)] = 1  # a vonalkázás cellái
+    body = cv2.morphologyEx(ink, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k)))
+    n, lab, st, _ = cv2.connectedComponentsWithStats(body, connectivity=8)
+    body = lab == 1 + int(np.argmax(st[1:, cv2.CC_STAT_AREA]))
+    rows = body.sum(axis=1)
+    top = int(np.argmax(rows > 0.3 * rows.max()))  # a (fogazott) lap teteje
+    body[:max(top - 2, 0)] = False  # a fölé nyúló segédvonal-csonkok
+    out = np.full(rgb.shape, 255, np.float32)
+    out[body] = 0
+    return out
+
+
 def ink_crop(g, pad=12):
     ys, xs = np.where(g < 235)
     return g[max(ys.min() - pad, 0): ys.max() + pad, max(xs.min() - pad, 0): xs.max() + pad]
@@ -353,6 +382,9 @@ def main():
                 constellium.render(CONSTELLIUM[slug]).save(keep)
             finally:
                 cfg.update(saved)
+        if slug in HATCHED:  # a küldött műhelyrajz 300 dpi-s kivágása (nem a kicsinyített termékkép)
+            import kuldott_rajzok
+            kuldott_rajzok.render(slug).save(keep)
         if slug in SOURCE_FILE:
             Image.open(ROOT / SOURCE_FILE[slug]).convert("RGB").save(keep)
         if slug in HIRES and not keep.exists():
@@ -379,6 +411,8 @@ def main():
             sub = (rgb[y0:y1, x0:x1].mean(axis=2) < 170).astype(np.uint8)
             sub = cv2.morphologyEx(sub, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k)))
             rgb[y0:y1, x0:x1][sub > 0] = 0
+        if slug in HATCHED:
+            rgb = hatched_silhouette(rgb)
         if slug in FILL_ONLY:
             r, gg, b = rgb[..., 0], rgb[..., 1], rgb[..., 2]
             fill = ((gg > 140) & (b > 170) & (r < 170) & (b - r > 60)).astype(np.uint8)
@@ -481,7 +515,7 @@ def main():
             data[slug]["images"] = [rel, rel2]
         canvas.convert("RGB").save(ROOT / "public" / rel.lstrip("/"), "WEBP", quality=90)
         e = data[slug]
-        e["images"] = [rel] + [u for u in e["images"] if u != rel]
+        e["images"] = [rel] + [u for u in e["images"] if u != rel and slug not in HATCHED]
     ENRICHMENT.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n")
     print(f"alváz profilok: {len(items)} egységes rajz;", ", ".join(f"{c}: {v:.2f} px/mm" for c, v in scale.items()))
 
