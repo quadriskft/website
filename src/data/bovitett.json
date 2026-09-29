@@ -14115,6 +14115,25 @@
    ],
    "sourceUrl": "https://gnc-systems.com/en/products/switch-square/",
    "source": "G&C termékek"
+  },
+  {
+   "slug": "386083-csattakaro-muanyag-2-csavaros-10-db",
+   "code": "386083",
+   "name": "Csattakaró, műanyag, 2 csavaros (10 db/csomag)",
+   "group": "italszallito-kit",
+   "category": "italszallito-kit",
+   "specs": {
+    "Cikkszám (gyártói)": "ADAICO 0901251",
+    "Anyag": "műanyag takaró, rozsdamentes acél csavarok",
+    "Menet": "M6",
+    "Kiszerelés": "10 db/csomag",
+    "Tömeg": "0,20 kg/csomag"
+   },
+   "description": "Műanyag csattakaró két csavarral és anyával az ADA-Slider ponyvarendszerhez (ADAICO „Buckle cover plastic 2 bolts/nut”).",
+   "images": [
+    "/termekkepek/386083-csattakaro-muanyag-2-csavaros-10-db-1.webp"
+   ],
+   "source": "ADAICO"
   }
  ],
  "moves": {

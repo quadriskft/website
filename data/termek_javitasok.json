@@ -316,5 +316,62 @@
   "specs": {
    "Ötvözet": "EN AW-5005"
   }
+ },
+ "21-ada-slider-teto-rendszer": {
+  "order": 1
+ },
+ "211372-ada-s-zarszerkezet-italszallito": {
+  "order": 2
+ },
+ "211385-ada-s-zarszerkezet-ellendarab": {
+  "order": 3
+ },
+ "212061-ada-s-hajlitott-acel-lemezke": {
+  "order": 4
+ },
+ "212064-ada-s-2-m-pvc-tekercs": {
+  "order": 5
+ },
+ "212113-ada-ponyva-gorgo-felso": {
+  "order": 6
+ },
+ "212123-ada-ajto-profil-felso-gorgo": {
+  "order": 7
+ },
+ "212133-ada-ponyva-gorgo-also": {
+  "order": 8
+ },
+ "386083-csattakaro-muanyag-2-csavaros-10-db": {
+  "order": 9
+ },
+ "212143-ada-ajto-profil-also-gorgo-l": {
+  "order": 10
+ },
+ "212153-ada-ajto-profil-also-gorgo-r": {
+  "order": 11
+ },
+ "212404-ada-s-tetosin-7000-mm": {
+  "order": 12
+ },
+ "212406-ada-s-tetosin-6000-mm": {
+  "order": 13
+ },
+ "212408-ada-s-tetosin-5000-mm": {
+  "order": 14
+ },
+ "212410-ada-s-tetosin-4000-mm": {
+  "order": 15
+ },
+ "212427-ada-s-ajto-profil-2100-mm-elox": {
+  "order": 16
+ },
+ "212429-ada-s-ajto-profil-2400-mm-elox": {
+  "order": 17
+ },
+ "212431-ada-s-ajto-profil-2800-mm-elox": {
+  "order": 18
+ },
+ "214202-ada-s-ajtoprofil-takarogumi-10-m-tekercs": {
+  "order": 19
  }
 }
