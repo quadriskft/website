@@ -4,7 +4,7 @@ A beszállítói rajzok (Constellium, Exlabesa, Ital Accessori, Alu-SV, ESAL, BO
 stílusa vegyes: körvonalas, szürkével vagy kékkel kitöltött, szkennelt. Ez a szkript mindegyiket az etalon
 stílusára hozza:
   * a profil fala tömör fekete (a zárt, vékony falrészek kitöltése – a nagy üregek fehérek maradnak;
-    a nyitott körvonalú szkennelt rajzok, pl. 202387, 202388 körvonalasak maradnak),
+    a szkennelt rajzok megszakított (töréssel ábrázolt) falvonalait előbb meghosszabbítjuk, így zárt a körvonal),
   * szürkeárnyalatos, fehér hátterű rajz, a méretvonalak és méretszámok megmaradnak,
   * egységes 1200 × 840-es vászon, középre igazítva,
   * méretarányosan: egy alkategórián belül minden profil ugyanazzal a mm → képpont aránnyal jelenik meg
@@ -56,6 +56,12 @@ PROFILES = {
     "205535-ives-alafutasgatlo-vegzaro-elox-profil": ("egyedi", None),  # ívelt végzáró, nem keresztmetszet
     "201094-targonca-utkozo-profil": ("targonca-utkozo", 37.5),
 }
+# szkennelt rajzok megszakított falvonalai: (x0, y0, x1, y1, vastagság) a forráskép képpontjaiban
+REPAIR = {
+    "202387-i-70-kereszttarto": [(523, 150, 523, 530, 5), (566, 150, 566, 530, 5)],  # a gerinc törésjele
+    "202388-15-70-mm-keretprofil-elox-cd": [(165, 300, 166, 700, 4), (196, 300, 198, 700, 4),  # a hosszú szár törésjele
+                                            (665, 317, 978, 319, 4)],  # a vízszintes szár szakadozott felső vonala
+}
 CACHE = ROOT / ".cache" / "alvaz_rajzok"  # a forrásrajzok másolata (a kimenet külön fájl, de biztos, ami biztos)
 
 
@@ -69,7 +75,11 @@ def load(path):
     return np.asarray(img.convert("RGB")).astype(np.float32)
 
 
-def normalize(rgb):
+# a nagyobb felbontású szkennelt rajzok vastagabb falúak (képpontban) – itt nagyobb falvastagságig töltünk
+THICK = {"202387-i-70-kereszttarto": 0.05, "202388-15-70-mm-keretprofil-elox-cd": 0.05}
+
+
+def normalize(rgb, thick=0.03):
     """Szürkeárnyalatos, tömör fekete falú rajz + a profil (vastag részek) befoglaló mérete képpontban."""
     L = rgb.mean(axis=2)
     sat = rgb.max(axis=2) - rgb.min(axis=2)
@@ -77,6 +87,8 @@ def normalize(rgb):
     ys, xs = np.where(ink)
     size = max(xs.max() - xs.min(), ys.max() - ys.min())
     # zárt fehér/világos területek: a vékonyak (profilfal) kitöltendők, a nagyok (üreg, méretvonal-keret) nem
+    if thick > 0.03:  # szkennelt rajz: az 1–2 képpontos szakadások bezárása
+        ink = cv2.morphologyEx(ink.astype(np.uint8), cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))) > 0
     free = (~ink).astype(np.uint8)
     n, lab, stats, _ = cv2.connectedComponentsWithStats(free, connectivity=4)
     dist = cv2.distanceTransform(free, cv2.DIST_L2, 3)
@@ -88,7 +100,7 @@ def normalize(rgb):
             continue  # a háttér
         comp = lab == i
         r = dist[comp].max()
-        if r < 0.03 * size and area / max(r, 1) ** 2 > 10:
+        if r < thick * size and area / max(r, 1) ** 2 > 10:
             fill |= comp
     out = L.copy()
     out = np.clip((out - 40) * 255 / (215 - 40), 0, 255)  # világos szürke háttér -> fehér, vonalak sötétebbre
@@ -136,7 +148,10 @@ def main():
         keep = CACHE / f"{slug}.png"
         if not keep.exists():
             Image.open(ROOT / "public" / src.lstrip("/")).save(keep)
-        g, prof = normalize(load(keep))
+        rgb = load(keep)
+        for x0, y0, x1, y1, t in REPAIR.get(slug, []):
+            cv2.line(rgb, (x0, y0), (x1, y1), (0, 0, 0), t)
+        g, prof = normalize(rgb, THICK.get(slug, 0.03))
         g = ink_crop(g)
         items[slug] = (cat, mm, g, prof)
     # alkategóriánként közös arány: px / mm = a legszűkebb (a vászonra épp ráférő) érték
