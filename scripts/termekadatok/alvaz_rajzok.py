@@ -185,7 +185,8 @@ ERASE = {"202387-i-70-kereszttarto": [(498, 222, 590, 256)],
                                                            (138, 226, 186, 237), (248, 226, 272, 237)],  # + a bordázat fölötti körjelölés
          "227046-n-koztes-200-mm-profil": [(600, 50, 760, 210)],  # az Alu-SV „N” (natúr) jelölése
          # sarokoszlopok: a régi (apró) méretvonalak és számok – helyettük új fő méretek (DIMS)
-         "6612225-elso-oszlop-90-70-alu-elox-d": [(0, 0, 92, 745), (0, 656, 1000, 745), (980, 355, 1000, 745)],
+         "6612225-elso-oszlop-90-70-alu-elox-d": [(0, 0, 92, 745), (0, 656, 1000, 745), (980, 355, 1000, 745),
+                                                  (92, 644, 150, 656)],  # a [70] méret alsó segédvonalának csonkja
          "6612226-hatso-oszlop-128-35-alu-elox-d": [(0, 0, 1000, 108), (868, 108, 1000, 340)],
          "6639604-max-hatso-oszlop-exl-elox": [(915, 0, 1000, 218), (0, 135, 1000, 218), (45, 33, 90, 118),
                                                 (490, 70, 514, 94), (620, 95, 660, 117)],
@@ -207,7 +208,7 @@ FILL_ALL = {"206941-cd-100x30-mm-alafutasgatlo-elox-profil": (20, 230, 285, 990)
 CLOSE_BOX = {"208755-hossztarto-talpas-140-6-magas-120-10-60-8-mm": [(445, 55, 495, 155, 11)],
              # szkennelt körvonalas sarokoszlopok: a fal két vonala közti rés kitöltése a profil területén
              "6612225-elso-oszlop-90-70-alu-elox-d": [(90, 15, 995, 655, 13)],
-             "6612226-hatso-oszlop-128-35-alu-elox-d": [(15, 108, 866, 330, 13)]}  # a profil területe (x0, y0, x1, y1)
+             "6612226-hatso-oszlop-128-35-alu-elox-d": [(15, 108, 866, 330, 19)]}  # a profil területe (x0, y0, x1, y1)
 # álló rajzok fekvőre forgatása (np.rot90 k: 1 = balra, -1 = jobbra), hogy kitöltsék a fekvő vásznat; az irány
 # olyan, hogy a rajz fő (hosszanti) méretszáma olvasható legyen
 ROTATE = {"227046-ck10-koztes-200-mm-elox-profil": -1, "223350-350-mm-mono-profil-szakalas-elox": -1,
@@ -234,6 +235,8 @@ WALL_MM = {"25-mm-vastag-oldalfal-rendszerek": 4, "25-mm-mono-profilok": 4, "sze
            "aluminium-billencs-oldalfalak": 4, "sarok-oszlopok": 5}
 # termékenkénti eltérés a kitöltendő falvastagságtól (mm)
 WALL_SLUG = {"66k0800-alu-zartszelveny-80x35-4r-elox": 1}  # tömör falú forrás: a segédvonalak mellé ne töltsön
+# szkennelt, hullámos falú rajzok: erősebb egyenesítés, tengelyre igazított élek
+SNAP = {"6612225-elso-oszlop-90-70-alu-elox-d", "6612226-hatso-oszlop-128-35-alu-elox-d"}
 # halvány (szürke vonalas) forrásrajzok besötétítése a feldolgozás előtt
 DARKEN = {"6639604-max-hatso-oszlop-exl-elox", "6639692-max-elso-oszlop-exl-elox"}
 # alkategóriák, ahol nem közös a lépték: minden rajz egyenként tölti ki a vásznat (a Quadris kérése: 6613553 mintájára)
@@ -263,7 +266,7 @@ THICK = {"202387-i-70-kereszttarto": 0.05, "202388-15-70-mm-keretprofil-elox-cd"
          "6612225-elso-oszlop-90-70-alu-elox-d": 0.05, "6612226-hatso-oszlop-128-35-alu-elox-d": 0.05}  # szken: szakadások bezárása  # tömör forrásrajz: a C-horony üres marad
 
 
-def normalize(rgb, thick=0.03, fill_all=None, rmax=None):
+def normalize(rgb, thick=0.03, fill_all=None, rmax=None, snap=False):
     """Szürkeárnyalatos, tömör fekete falú rajz + a profil (vastag részek) befoglaló mérete képpontban."""
     L = rgb.mean(axis=2)
     sat = rgb.max(axis=2) - rgb.min(axis=2)
@@ -303,7 +306,7 @@ def normalize(rgb, thick=0.03, fill_all=None, rmax=None):
         x1 = max(stats[i, 0] + stats[i, 2] for i in keep)
         y1 = max(stats[i, 1] + stats[i, 3] for i in keep)
         prof = max(x1 - x0, y1 - y0)
-        out = straighten(out, np.isin(lab, keep), size)
+        out = straighten(out, np.isin(lab, keep), size, snap)
     else:
         prof = size
     return out.astype(np.uint8), prof
@@ -316,7 +319,26 @@ def polygonize(mask, eps):
     return [cv2.approxPolyDP(c, eps, True) for c in cnts], hier
 
 
-def straighten(out, core, size):
+def snap_axes(poly, tol_deg=6):
+    """Közel vízszintes / függőleges szakaszok pontosan vízszintesre / függőlegesre igazítása (a sarkok így
+    derékszögűek maradnak): a szakasz két végpontja a közös (átlagolt) y, ill. x koordinátát kapja."""
+    p = poly.reshape(-1, 2).astype(np.float32)
+    n = len(p)
+    for _ in range(2):
+        for i in range(n):
+            a, b = p[i], p[(i + 1) % n]
+            dx, dy = b[0] - a[0], b[1] - a[1]
+            ang = abs(np.degrees(np.arctan2(dy, dx))) % 180
+            if min(ang, 180 - ang) < tol_deg:
+                y = (a[1] + b[1]) / 2
+                a[1] = b[1] = y
+            elif abs(ang - 90) < tol_deg:
+                x = (a[0] + b[0]) / 2
+                a[0] = b[0] = x
+    return np.round(p).astype(np.int32).reshape(-1, 1, 2)
+
+
+def straighten(out, core, size, snap=False):
     """A profilfalak újrarajzolása precíz, élsimított sokszögként. A falhoz tartozó sötét terület: a tömör
     részek, amelyek a profil fő részével összefüggnek (a vékony méretvonalak – 1–2 px – nem)."""
     solid = (out < 110).astype(np.uint8)
@@ -325,7 +347,16 @@ def straighten(out, core, size):
     ids = np.unique(lab[core & (thick > 0)])
     mask = np.isin(lab, ids[ids > 0])
     eps = max(0.8, size / 1000)  # kis tűrés: az egyenesek kiegyenesednek, az ívek simák maradnak
+    if snap:  # szkennelt rajz: a tikkjelek / dudorok le, durvább tűrés, tengelyre igazított élek
+        mask = cv2.morphologyEx(mask.astype(np.uint8), cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7))) > 0
+        holes = (~mask).astype(np.uint8)  # apró zárt lyukak (szkennelési hibák) kitöltése
+        n_h, lab_h, st_h, _ = cv2.connectedComponentsWithStats(holes, connectivity=4)
+        small = [i for i in range(1, n_h) if st_h[i, cv2.CC_STAT_AREA] < (size * 0.03) ** 2]
+        mask = mask | np.isin(lab_h, small)
+        eps = max(2.0, size * 0.004)
     polys, hier = polygonize(mask, eps)
+    if snap:
+        polys = [snap_axes(p) for p in polys]
     res = out.astype(np.float32).copy()
     res[cv2.dilate(mask.astype(np.uint8), np.ones((3, 3), np.uint8)) > 0] = 255
     canvas = np.full(out.shape, 255, np.uint8)
@@ -484,7 +515,7 @@ def main():
         if cat in WALL_MM:  # a falvastagság mm-ben: előbb a lépték (px/mm) a profil befoglalójából
             _, prof0 = normalize(rgb, THICK.get(slug, 0.03), FILL_ALL.get(slug))
             wall = WALL_SLUG.get(slug, WALL_MM[cat])
-            g, prof = normalize(rgb, THICK.get(slug, 0.03), FILL_ALL.get(slug), rmax=wall / 2 * prof0 / mm)
+            g, prof = normalize(rgb, THICK.get(slug, 0.03), FILL_ALL.get(slug), rmax=wall / 2 * prof0 / mm, snap=slug in SNAP)
         else:
             g, prof = normalize(rgb, THICK.get(slug, 0.03), FILL_ALL.get(slug))
         if slug in LABELS:
