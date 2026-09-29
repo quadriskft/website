@@ -71,6 +71,30 @@ PROFILES = {
     "220190-rampa-felso-zaro-profil-225-30-mm": ("rampa-profilok", 225),  # Profilpol 22.21.0679
     "203492-autoszallito-padlo-keret-profil-30-mm": ("autoszallito-profilok", 130),
     "207776-30-padlo-profil-220-mm-ex": ("autoszallito-profilok", 233.5),
+    # Alumínium sarok oszlopok: a 6613553 mintájára egyenként a vászonra illesztve (FIT_EACH); a mm érték itt csak
+    # a falvastagság-küszöbhöz (WALL_MM) kell – a profil legnagyobb befoglaló mérete
+    "661090-midi-elso-oszlop-lift-elox-135": ("sarok-oszlopok", 167),
+    "6612225-elso-oszlop-90-70-alu-elox-d": ("sarok-oszlopok", 90),
+    "6612226-hatso-oszlop-128-35-alu-elox-d": ("sarok-oszlopok", 128),
+    "6613365-al-eco-merevito-profil-natur": ("sarok-oszlopok", 116),
+    "6613366-al-eco-120-mm-kulso-palast-profil-elox": ("sarok-oszlopok", 120),
+    "6613553-mini-hatso-oszlop-elox-111-mm": ("sarok-oszlopok", 111),
+    "6613554-mini-hatso-oszlop-elox-110-166": ("sarok-oszlopok", 166),
+    "6613555-mini-hatso-oszlop-hn-elox-110-138": ("sarok-oszlopok", 138),
+    "6613575-mini-elso-100-alu-oszlop-elox": ("sarok-oszlopok", 100),
+    "6613576-mini-elso-flat-alu-oszlop-elox": ("sarok-oszlopok", 143.5),
+    "6614358-midi-hatso-u-szegos-oszlop-elox": ("sarok-oszlopok", 227.5),
+    "66177137-max-os-elso-elox-oszlop-3150-mm": ("sarok-oszlopok", 177),
+    "66177147-max-os-elso-elox-oszlop-3000-mm": ("sarok-oszlopok", 177),
+    "66177300-max-os-elso-elox-oszlop-3300-mm": ("sarok-oszlopok", 177),
+    "662000-midi-hatso-lift-oszlop-elox": ("sarok-oszlopok", 214),
+    "6635245-max-os-hatso-elox-oszlop-3000-mm": ("sarok-oszlopok", 265),
+    "6635255-max-os-hatso-elox-oszlop-3150-mm": ("sarok-oszlopok", 265),
+    "6635300-max-os-hatso-elox-oszlop-3300-mm": ("sarok-oszlopok", 265),
+    "6639604-max-hatso-oszlop-exl-elox": ("sarok-oszlopok", 257.5),
+    "6639692-max-elso-oszlop-exl-elox": ("sarok-oszlopok", 175),
+    "663980-midi-elso-oszlop-flat-elox-246": ("sarok-oszlopok", 246),
+    "66k0800-alu-zartszelveny-80x35-4r-elox": ("sarok-oszlopok", 80),
     # Ponyvás oldalfal profilok és szegők (az álló rajzok fekvőre forgatva, l. ROTATE)
     "227045-koztes-ponyvas-200-mm-elox-profil": ("25-mm-vastag-oldalfal-rendszerek", 208),
     "227045-n-koztes-ponyvas-200-mm-profil": ("25-mm-vastag-oldalfal-rendszerek", 208),
@@ -116,6 +140,11 @@ REPAIR = {
 # méretezés nélküli forrásrajzok: a fő befoglaló méretek (szélesség, magasság) felrajzolása – a profil
 # befoglalója a forrásképen (x0, y0, x1, y1) és a méretszámok; 203183: ESAL 13183 „Parabici da 250 mm”, 250 × 25
 DIMS = {"203183-250-25-mm-alafutasgatlo-elox-profil": ((26, 119, 974, 214), "250", "25"),
+        # sarokoszlopok: a szkennelt / halvány rajzok apró méretezése (ERASE) helyett a fő befoglaló méretek
+        "6612225-elso-oszlop-90-70-alu-elox-d": ((97, 20, 990, 650), "90", "70"),
+        "6612226-hatso-oszlop-128-35-alu-elox-d": ((20, 112, 862, 325), "128", "35"),
+        "6639604-max-hatso-oszlop-exl-elox": ((12, 12, 910, 130), "257,5", "35"),
+        "6639692-max-elso-oszlop-exl-elox": ((88, 15, 915, 648), "175", "133,5"),
         # 227046-ck10: a Constellium-rajz apró feliratú, messze futó méretvonala (ERASE) helyett; a forgatás után felül
         "227046-ck10-koztes-200-mm-elox-profil": ((245, 24, 373, 977), "", "(222,03)")}
 # régi segédvonalas szkennelt rajzok tisztán újrarajzolva a gyártói méretekből (profil_vektor.py) és a fő
@@ -135,7 +164,8 @@ REDIM = {"227543-30-padlo-profil-200-mm": ("200", "30", 5), "227543-30-padlo-pro
          "227075-200-mm-mono-profil-teli-szakalas-elox": ("200", "25", 0, True),
          "222910-30-padlo-profil-200-mm-exl": ("200", "30", 0, True),  # EXL-29100: kis felbontású lapkép
          "225630-55-padlo-profil-250-mm-zart": ("250", "54,5", 0, True),  # EXL-5630
-         "226821-21-padlo-profil-200-mm": ("238", "21", 0, True)}  # TB48968: csak a fő befoglaló méretek
+         "226821-21-padlo-profil-200-mm": ("238", "21", 0, True),  # TB48968: csak a fő befoglaló méretek
+}
 # színes kitöltésű rajzok, amelyeken a méretnyilak a falhoz tapadnak: csak a (világoskék) kitöltés és 1 px-es
 # környezete (a körvonal) marad, feketén – a méretvonalak és feliratok törlődnek, a méreteket a REDIM rajzolja újra
 FILL_ONLY = {"222910-30-padlo-profil-200-mm-exl", "225630-55-padlo-profil-250-mm-zart"
@@ -154,6 +184,16 @@ ERASE = {"202387-i-70-kereszttarto": [(498, 222, 590, 256)],
          "206941-cd-100x30-mm-alafutasgatlo-elox-profil": [(273, 372, 282, 500), (8, 480, 27, 510), (133, 598, 150, 616),
                                                            (138, 226, 186, 237), (248, 226, 272, 237)],  # + a bordázat fölötti körjelölés
          "227046-n-koztes-200-mm-profil": [(600, 50, 760, 210)],  # az Alu-SV „N” (natúr) jelölése
+         # sarokoszlopok: a régi (apró) méretvonalak és számok – helyettük új fő méretek (DIMS)
+         "6612225-elso-oszlop-90-70-alu-elox-d": [(0, 0, 92, 745), (0, 656, 1000, 745), (980, 355, 1000, 745)],
+         "6612226-hatso-oszlop-128-35-alu-elox-d": [(0, 0, 1000, 108), (868, 108, 1000, 340)],
+         "6639604-max-hatso-oszlop-exl-elox": [(915, 0, 1000, 218), (0, 135, 1000, 218), (45, 33, 90, 118),
+                                                (490, 70, 514, 94), (620, 95, 660, 117)],
+         "6639692-max-elso-oszlop-exl-elox": [(0, 0, 86, 729), (0, 652, 980, 729), (918, 490, 980, 652), (755, 498, 918, 506),
+                                               (254, 312, 295, 342), (366, 447, 402, 500), (366, 512, 385, 540),
+                                               (360, 575, 410, 626), (655, 468, 680, 500), (655, 515, 670, 532), (752, 556, 795, 580)],
+         # 6613575: a 35-ös méret segédvonala a profil ívelt aljával zárt sávot alkotna (befeketedne)
+         "6613575-mini-elso-100-alu-oszlop-elox": [(515, 418, 630, 425)],
          # 226821: a lapra tapadó méretnyíl, a felületjelölő pöttyök és a tengelyjelölő „X” (300 dpi-s kivágás)
          "226821-21-padlo-profil-200-mm": [(445, 233, 470, 265), (497, 234, 518, 280), (643, 332, 662, 352), (678, 333, 700, 354),
                                            (683, 380, 708, 405), (1154, 275, 1176, 305)],
@@ -164,7 +204,10 @@ ERASE = {"202387-i-70-kereszttarto": [(498, 222, 590, 256)],
 # a falrészeket apró jelölések darabolják, ezért itt minden vékony zárt rész kitöltendő (a számjegyek belseje nincs benne)
 FILL_ALL = {"206941-cd-100x30-mm-alafutasgatlo-elox-profil": (20, 230, 285, 990)}
 # szkennelési fehér pöttyök a tömör falban: a dobozon belül morfológiai zárás (x0, y0, x1, y1, kernel px)
-CLOSE_BOX = {"208755-hossztarto-talpas-140-6-magas-120-10-60-8-mm": [(445, 55, 495, 155, 11)]}  # a profil területe (x0, y0, x1, y1)
+CLOSE_BOX = {"208755-hossztarto-talpas-140-6-magas-120-10-60-8-mm": [(445, 55, 495, 155, 11)],
+             # szkennelt körvonalas sarokoszlopok: a fal két vonala közti rés kitöltése a profil területén
+             "6612225-elso-oszlop-90-70-alu-elox-d": [(90, 15, 995, 655, 13)],
+             "6612226-hatso-oszlop-128-35-alu-elox-d": [(15, 108, 866, 330, 13)]}  # a profil területe (x0, y0, x1, y1)
 # álló rajzok fekvőre forgatása (np.rot90 k: 1 = balra, -1 = jobbra), hogy kitöltsék a fekvő vásznat; az irány
 # olyan, hogy a rajz fő (hosszanti) méretszáma olvasható legyen
 ROTATE = {"227046-ck10-koztes-200-mm-elox-profil": -1, "223350-350-mm-mono-profil-szakalas-elox": -1,
@@ -188,7 +231,13 @@ HIRES = {"223350-350-mm-mono-profil-szakalas-elox": ("metra", 22, (305, 95, 420,
 # a hosszú, vékony (oldalfal) profiloknál a rajz méretéhez mért küszöb a kamrákat és a méretvonalak melletti
 # sávokat is kitöltené: itt a kitöltendő fal legnagyobb vastagsága mm-ben adott (alkategóriánként)
 WALL_MM = {"25-mm-vastag-oldalfal-rendszerek": 4, "25-mm-mono-profilok": 4, "szego-profilok": 4,
-           "aluminium-billencs-oldalfalak": 4}
+           "aluminium-billencs-oldalfalak": 4, "sarok-oszlopok": 5}
+# termékenkénti eltérés a kitöltendő falvastagságtól (mm)
+WALL_SLUG = {}
+# halvány (szürke vonalas) forrásrajzok besötétítése a feldolgozás előtt
+DARKEN = {"6639604-max-hatso-oszlop-exl-elox", "6639692-max-elso-oszlop-exl-elox"}
+# alkategóriák, ahol nem közös a lépték: minden rajz egyenként tölti ki a vásznat (a Quadris kérése: 6613553 mintájára)
+FIT_EACH = {"sarok-oszlopok"}
 # a kitöltés által eltakart méretszámok újraírása: (szöveg, x, y közép) a forráskép képpontjaiban
 LABELS = {
     "202387-i-70-kereszttarto": [("[50]", 700, 245)],  # eredetileg a gerincen belül állt
@@ -210,7 +259,8 @@ def load(path):
 
 # a nagyobb felbontású szkennelt rajzok vastagabb falúak (képpontban) – itt nagyobb falvastagságig töltünk
 THICK = {"202387-i-70-kereszttarto": 0.05, "202388-15-70-mm-keretprofil-elox-cd": 0.05,
-         "220190-rampa-felso-zaro-profil-225-30-mm": 0.004}  # tömör forrásrajz: a C-horony üres marad
+         "220190-rampa-felso-zaro-profil-225-30-mm": 0.004,
+         "6612225-elso-oszlop-90-70-alu-elox-d": 0.05, "6612226-hatso-oszlop-128-35-alu-elox-d": 0.05}  # szken: szakadások bezárása  # tömör forrásrajz: a C-horony üres marad
 
 
 def normalize(rgb, thick=0.03, fill_all=None, rmax=None):
@@ -405,12 +455,15 @@ def main():
                 rgb[257:260, x0:x1] = 0  # a méretvonal folytatása a törölt szám alatt (a 202387 méretvonala a 258. sorban)
         for x0, y0, x1, y1, t in REPAIR.get(slug, []):
             cv2.line(rgb, (x0, y0), (x1, y1), (0, 0, 0), t)
-        if slug in DIMS:
-            rgb = add_dims(rgb, *DIMS[slug])
+        if slug in DARKEN:
+            L = rgb.mean(axis=2, keepdims=True)
+            rgb = np.clip(255 - (255 - L) * 10, 0, 255).repeat(3, axis=2)
         for x0, y0, x1, y1, k in CLOSE_BOX.get(slug, []):
             sub = (rgb[y0:y1, x0:x1].mean(axis=2) < 170).astype(np.uint8)
             sub = cv2.morphologyEx(sub, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k)))
             rgb[y0:y1, x0:x1][sub > 0] = 0
+        if slug in DIMS:
+            rgb = add_dims(rgb, *DIMS[slug])
         if slug in HATCHED:
             rgb = hatched_silhouette(rgb)
         if slug in FILL_ONLY:
@@ -430,7 +483,8 @@ def main():
             rgb = np.ascontiguousarray(np.rot90(rgb, ROTATE[slug]))
         if cat in WALL_MM:  # a falvastagság mm-ben: előbb a lépték (px/mm) a profil befoglalójából
             _, prof0 = normalize(rgb, THICK.get(slug, 0.03), FILL_ALL.get(slug))
-            g, prof = normalize(rgb, THICK.get(slug, 0.03), FILL_ALL.get(slug), rmax=WALL_MM[cat] / 2 * prof0 / mm)
+            wall = WALL_SLUG.get(slug, WALL_MM[cat])
+            g, prof = normalize(rgb, THICK.get(slug, 0.03), FILL_ALL.get(slug), rmax=wall / 2 * prof0 / mm)
         else:
             g, prof = normalize(rgb, THICK.get(slug, 0.03), FILL_ALL.get(slug))
         if slug in LABELS:
@@ -480,7 +534,7 @@ def main():
             polys, hier = polygonize(body, 0.8)
             base = np.full(g.shape + (3,), 255, np.float32)
             cv2.drawContours(base, polys, -1, (0, 0, 0), thickness=cv2.FILLED, lineType=cv2.LINE_AA, hierarchy=hier)
-            wx = (box[2] - (roff + float(wt)) * ppm, box[2] - roff * ppm)  # a 200-as méret a padló felső lapjáé
+            wx = (box[2] - (roff + float(wt.replace(",", "."))) * ppm, box[2] - roff * ppm)  # a 200-as méret a padló felső lapjáé
             fs = int(ppm * (13 if by_width else 7))  # a hosszú (mono) profiloknál is olvasható méretszám
             g = add_dims(base, box, wt, ht, fsize=fs, lw=max(2, int(fs / 20)), wx=wx).mean(axis=2).astype(np.uint8)
             prof = max(box[2] - box[0], box[3] - box[1]) + 0.0
@@ -500,7 +554,7 @@ def main():
             (ROOT / "public" / rel.lstrip("/")).unlink(missing_ok=True)
             data[slug]["images"] = [u for u in data[slug]["images"] if u != rel]
             continue
-        f = min((W - 2 * MARGIN) / g.shape[1], (H - 2 * MARGIN) / g.shape[0]) if mm is None else scale[cat] * mm / prof
+        f = min((W - 2 * MARGIN) / g.shape[1], (H - 2 * MARGIN) / g.shape[0]) if mm is None or cat in FIT_EACH else scale[cat] * mm / prof
         img = Image.fromarray(g).resize((max(1, round(g.shape[1] * f)), max(1, round(g.shape[0] * f))), Image.LANCZOS)
         canvas = Image.new("L", (W, H), 255)
         canvas.paste(img, ((W - img.width) // 2, (H - img.height) // 2))
