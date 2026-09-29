@@ -411,5 +411,40 @@
   "code": "",
   "date": "2026-09-29",
   "reason": "G&C rendbetétel: duplikátum (ugyanaz, mint az Elektromos tetőablak 24V 530×530 – 90-5000-E)"
+ },
+ "gc-rooftop-ventilators": {
+  "name": "Tetőventilátor",
+  "supplier": "G&C termékek",
+  "code": "02-0200",
+  "date": "2026-09-29",
+  "reason": "Quadris kérés: 02-0200 nem kell"
+ },
+ "gc-winglet": {
+  "name": "Winglet tetőventilátor",
+  "supplier": "G&C termékek",
+  "code": "02-5000",
+  "date": "2026-09-29",
+  "reason": "Quadris kérés: 02-5000 nem kell"
+ },
+ "tetoablak-uveg-970x530": {
+  "name": "Tetőablak üveg 970×530",
+  "supplier": "G&C termékek",
+  "code": "90-8060-DG",
+  "date": "2026-09-29",
+  "reason": "Quadris kérés: 90-8060 nem kell"
+ },
+ "tetoablak-manualis-530x530": {
+  "name": "Tetőablak 530×530, manuális (D / DG)",
+  "supplier": "G&C termékek",
+  "code": "90-5000-D / 90-5000-DG",
+  "date": "2026-09-29",
+  "reason": "Quadris kérés: 90-5000-DG kétszer szerepelt – a szellőzés › Tetőablakok példány marad"
+ },
+ "tetoablak-manualis-970x530": {
+  "name": "Tetőablak 970×530, manuális (D / DG)",
+  "supplier": "G&C termékek",
+  "code": "90-6000-D / 90-6000-DG",
+  "date": "2026-09-29",
+  "reason": "Quadris kérés: 90-6000-DG kétszer szerepelt – a szellőzés › Tetőablakok példány marad"
  }
 }

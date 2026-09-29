@@ -131,14 +131,14 @@
   },
   {
    "group": "szellozes-tetoablakok-vilagitas",
-   "slug": "tetoablakok",
-   "name": "Tetőablakok",
+   "slug": "belso-szellozok-es-racsok",
+   "name": "Belső szellőzők és rácsok",
    "source": "G&C termékek"
   },
   {
    "group": "szellozes-tetoablakok-vilagitas",
-   "slug": "belso-szellozok-es-racsok",
-   "name": "Belső szellőzők és rácsok",
+   "slug": "tetoablakok",
+   "name": "Tetőablakok",
    "source": "G&C termékek"
   },
   {

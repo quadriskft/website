@@ -329,8 +329,8 @@ def rubberselect():
 GC_GROUP = "szellozes-tetoablakok-vilagitas"
 GC_CATS = {  # gyártói kategória -> (slug, név, leírás)
     "roofto-ventilators": ("tetoventilatorok", "Tetőventilátorok", "Tetőventilátor lószállító, dobozos és személyszállító felépítményekhez: hatékony légcsere, 12/24 V-os és motor nélküli kivitelben."),
-    "roof-hatches": ("tetoablakok", "Tetőablakok", "Kézi és elektromos tetőablak felépítményekhez: természetes fény és szellőzés, vészkijáratként is."),
     "internal-ventilation-valve": ("belso-szellozok-es-racsok", "Belső szellőzők és rácsok", "Belső szellőzőszelepek, rácsok és takarók a légáram szabályozásához."),
+    "roof-hatches": ("tetoablakok", "Tetőablakok", "Kézi és elektromos tetőablak felépítményekhez: természetes fény és szellőzés, vészkijáratként is."),
     "axial-radial-ventilators": ("axial-es-radial-ventilatorok", "Axiál- és radiálventilátorok", "Beépíthető axiál- és radiálventilátorok kényszerszellőzéshez."),
     "lighting": ("vilagitas", "Belső világítás", "LED belső világítás felépítményekbe, 12/24 V."),
     "ceiling-flow": ("mennyezeti-legelosztok", "Mennyezeti légelosztók", "Mennyezeti légelosztó egyenletes, huzatmentes szellőzéshez."),
