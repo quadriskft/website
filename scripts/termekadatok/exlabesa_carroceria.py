@@ -2,7 +2,7 @@
 azok a padlóprofilok, amelyek a lengyel standard katalógusban (exlabesa.py) nem szerepelnek.
 
 A katalógus lapjai szöveg nélküliek (képek), ezért az adatok kézzel rögzítettek a lapról; a profil rajza a
-data/forras/exlabesa_carroceria/<EXL-szám>.png kivágásból (a Quadris által küldött lapképből, <szám>_lap.png) kerül a termékhez, ha a fájl megvan.
+data/forras/exlabesa_carroceria/<EXL-szám>.png kivágásból (a Quadris által küldött lapképekből, <szám>_lap.png) kerül a termékhez, ha a fájl megvan.
 
 A Quadris kérésére: 225630/55 (padló profil 250 mm zárt) = EXL-5630; 222910/30 (padló profil 200 mm) = EXL-29100.
 

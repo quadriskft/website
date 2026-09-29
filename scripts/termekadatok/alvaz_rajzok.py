@@ -64,6 +64,7 @@ PROFILES = {
     "227543-30-padlo-profil-200-mm": ("padlo-profilok", 200),
     "227543-30-padlo-profil-200-mm-elox": ("padlo-profilok", 200),
     "222910-30-padlo-profil-200-mm-exl": ("padlo-profilok", 210.4),  # Exlabesa EXL-29100
+    "225630-55-padlo-profil-250-mm-zart": ("padlo-profilok", 283),  # Exlabesa EXL-5630 (a 250-es lapon túl a szélső hornyok)
     "222233-rampa-szego-g-profil": ("rampa-profilok", 80),
     "220192-also-rampa-indito-profil": ("rampa-profilok", 120),  # Profilpol 22.21.88168
     "220190-rampa-felso-zaro-profil-225-30-mm": ("rampa-profilok", 225),  # Profilpol 22.21.0679
@@ -131,13 +132,15 @@ REDIM = {"227543-30-padlo-profil-200-mm": ("200", "30", 5), "227543-30-padlo-pro
          "226830-300-mm-mono-profil-elox": ("300", "25", 0, True),
          "225549-400-mm-peremes-oldalfal-elox": ("400", "25", 13, True),
          "227075-200-mm-mono-profil-teli-szakalas-elox": ("200", "25", 0, True),
-         "222910-30-padlo-profil-200-mm-exl": ("200", "30", 0, True)}  # EXL-29100: kis felbontású lapkép
-# színes kitöltésű rajzok, amelyeken a méretnyilak a falhoz tapadnak: csak a (világoskék) kitöltés és 2 px-es
-# környezete (a körvonal) marad, a méretvonalak és feliratok törlődnek – a méreteket a REDIM rajzolja újra
-FILL_ONLY = {"222910-30-padlo-profil-200-mm-exl"
+         "222910-30-padlo-profil-200-mm-exl": ("200", "30", 0, True),  # EXL-29100: kis felbontású lapkép
+         "225630-55-padlo-profil-250-mm-zart": ("250", "54,5", 0, True)}  # EXL-5630
+# színes kitöltésű rajzok, amelyeken a méretnyilak a falhoz tapadnak: csak a (világoskék) kitöltés és 1 px-es
+# környezete (a körvonal) marad, feketén – a méretvonalak és feliratok törlődnek, a méreteket a REDIM rajzolja újra
+FILL_ONLY = {"222910-30-padlo-profil-200-mm-exl", "225630-55-padlo-profil-250-mm-zart"
 }
 # kis felbontású forrásképek nagyítása a feldolgozás előtt (a vékony falak így nem tűnnek el)
-UPSCALE = {"227075-200-mm-mono-profil-teli-szakalas-elox": 3, "222910-30-padlo-profil-200-mm-exl": 4}
+UPSCALE = {"227075-200-mm-mono-profil-teli-szakalas-elox": 3, "222910-30-padlo-profil-200-mm-exl": 4,
+           "225630-55-padlo-profil-250-mm-zart": 4}
 # Constellium rajzok: a forrás a constellium.py profilkiválasztása (csak a profil körvonala, a méretek nélkül)
 CONSTELLIUM = {"227543-30-padlo-profil-200-mm": "7543", "227543-30-padlo-profil-200-mm-elox": "7543"}
 # törésvonallal rövidítve rajzolt profilok valós arányra nyújtása: (sor, beszúrt sorok száma) – a beszúrt
@@ -164,6 +167,9 @@ ROTATE = {"227046-ck10-koztes-200-mm-elox-profil": -1, "223350-350-mm-mono-profi
           "226830-300-mm-mono-profil-elox": -1, "247152-bill-felso-profil-200-30-mm-elox": 1,
           "247158-billencs-kozepso-200x30-mm-profil": 1, "247162-bill-koztes-profil-100-30-mm-elox": 1,
           "247174-bill-also-hosszu-szakalas-profil-150-30-elox": 1, "247180-billencs-also-profil-200-45-mm-30-mm-elox": 1}
+# a forráskép közvetlenül a veszteségmentes eredeti kivágásból (nem a termék webp-képéből)
+SOURCE_FILE = {"222910-30-padlo-profil-200-mm-exl": "data/forras/exlabesa_carroceria/29100.png",
+               "225630-55-padlo-profil-250-mm-zart": "data/forras/exlabesa_carroceria/5630.png"}
 # kis felbontású forrásképek helyett nagyobb felbontású kivágás a beszállítói PDF-ből:
 # slug -> (modul, oldal, kivágás [pt], dpi); 225549: a „TB25549 4116 gr./ml.” felirat nélkül
 HIRES = {"223350-350-mm-mono-profil-szakalas-elox": ("metra", 22, (305, 95, 420, 672), 600),
@@ -347,6 +353,8 @@ def main():
                 constellium.render(CONSTELLIUM[slug]).save(keep)
             finally:
                 cfg.update(saved)
+        if slug in SOURCE_FILE:
+            Image.open(ROOT / SOURCE_FILE[slug]).convert("RGB").save(keep)
         if slug in HIRES and not keep.exists():
             import importlib
             import pymupdf
@@ -374,7 +382,14 @@ def main():
         if slug in FILL_ONLY:
             r, gg, b = rgb[..., 0], rgb[..., 1], rgb[..., 2]
             fill = ((gg > 140) & (b > 170) & (r < 170) & (b - r > 60)).astype(np.uint8)
-            rgb[cv2.dilate(fill, np.ones((5, 5), np.uint8)) == 0] = 255
+            blue = (b - r > 40) & (rgb.mean(axis=2) < 240)  # minden kékes képpont (kitöltés, körvonal, méretvonal)
+            near = blue & (cv2.dilate(fill, np.ones((3, 3), np.uint8)) > 0)  # … de csak közvetlenül a kitöltés mellett
+            wide = blue & (cv2.dilate(fill, np.ones((5, 5), np.uint8)) > 0)
+            # a méretvonalak falkeresztezésénél maradt rések bezárása, a falon kívüli nyílhegyek nélkül
+            close = cv2.morphologyEx(near.astype(np.uint8), cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7)))
+            prof_mask = (close > 0) & wide
+            rgb[...] = 255
+            rgb[prof_mask] = 0
         if slug in UPSCALE:
             rgb = cv2.resize(rgb, None, fx=UPSCALE[slug], fy=UPSCALE[slug], interpolation=cv2.INTER_CUBIC)
         if slug in ROTATE:
@@ -417,7 +432,14 @@ def main():
             # a vékony méret- és segédvonalak (2–3 px) nyitással eltűnnek, a 2,5 mm-es falak (≈18 px) maradnak
             body = cv2.morphologyEx(solid, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7)))
             n, lab, st, _ = cv2.connectedComponentsWithStats(body, connectivity=8)
-            body = lab == 1 + int(np.argmax(st[1:, cv2.CC_STAT_AREA]))
+            if slug in FILL_ONLY:  # csak a profil maradt a képen: minden jelentős darab a profilé
+                big = st[1:, cv2.CC_STAT_AREA].max()
+                body = np.isin(lab, [i for i in range(1, n) if st[i, cv2.CC_STAT_AREA] >= 0.002 * big])
+                # a méretvonalak helyén maradt hajszálrések bezárása a falban
+                body = cv2.morphologyEx(body.astype(np.uint8), cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (9, 9)))
+                body = cv2.morphologyEx(body, cv2.MORPH_CLOSE, np.ones((1, 25), np.uint8)) > 0  # a vízszintes lapok résein át
+            else:
+                body = lab == 1 + int(np.argmax(st[1:, cv2.CC_STAT_AREA]))
             ys, xs = np.where(body)
             box = (xs.min(), ys.min(), xs.max(), ys.max())
             ppm = (xs.max() - xs.min()) / mm if by_width else (ys.max() - ys.min()) / float(ht or 30)
