@@ -10323,7 +10323,7 @@
   ]
  },
  "e-small-tetoprofil-6600-mm": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/en/products/sesam/sesam-cs-slimliner-fix/",
   "sourceTitle": "E/Small tetőprofil",
   "matchedCode": "E/Small tetőprofil",
@@ -10331,14 +10331,21 @@
   "specs": {
    "Anyag": "extrudált alumínium",
    "Profil": "Small",
-   "Hossz": "6600 mm"
+   "Hossz": "6600 mm",
+   "Profilméret": "58,5 × 95 mm (alul 44,4 mm)",
+   "Tömeg": "3 kg/m",
+   "Ix": "82,7 cm⁴",
+   "Iy": "33,9 cm⁴",
+   "Rajzszám (gyári)": "900931"
   },
   "images": [
+   "/termekkepek/e-small-tetoprofil-6600-mm-meretrajz.webp",
+   "/termekkepek/e-small-tetoprofil-6600-mm-tetoszerkezet.webp",
    "/termekkepek/e-small-tetoprofil-6600-mm-1.webp"
   ]
  },
  "e-small-tetoprofil-7800-mm": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/en/products/sesam/sesam-cs-slimliner-fix/",
   "sourceTitle": "E/Small tetőprofil",
   "matchedCode": "E/Small tetőprofil",
@@ -10346,14 +10353,21 @@
   "specs": {
    "Anyag": "extrudált alumínium",
    "Profil": "Small",
-   "Hossz": "7800 mm"
+   "Hossz": "7800 mm",
+   "Profilméret": "58,5 × 95 mm (alul 44,4 mm)",
+   "Tömeg": "3 kg/m",
+   "Ix": "82,7 cm⁴",
+   "Iy": "33,9 cm⁴",
+   "Rajzszám (gyári)": "900931"
   },
   "images": [
+   "/termekkepek/e-small-tetoprofil-7800-mm-meretrajz.webp",
+   "/termekkepek/e-small-tetoprofil-7800-mm-tetoszerkezet.webp",
    "/termekkepek/e-small-tetoprofil-7800-mm-1.webp"
   ]
  },
  "e-small-tetoprofil-8200-mm": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/en/products/sesam/sesam-cs-slimliner-fix/",
   "sourceTitle": "E/Small tetőprofil",
   "matchedCode": "E/Small tetőprofil",
@@ -10361,9 +10375,16 @@
   "specs": {
    "Anyag": "extrudált alumínium",
    "Profil": "Small",
-   "Hossz": "8200 mm"
+   "Hossz": "8200 mm",
+   "Profilméret": "58,5 × 95 mm (alul 44,4 mm)",
+   "Tömeg": "3 kg/m",
+   "Ix": "82,7 cm⁴",
+   "Iy": "33,9 cm⁴",
+   "Rajzszám (gyári)": "900931"
   },
   "images": [
+   "/termekkepek/e-small-tetoprofil-8200-mm-meretrajz.webp",
+   "/termekkepek/e-small-tetoprofil-8200-mm-tetoszerkezet.webp",
    "/termekkepek/e-small-tetoprofil-8200-mm-1.webp"
   ]
  },

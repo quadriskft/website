@@ -7,7 +7,7 @@ termékekhez, amelyeknek a forrás-katalógusa nincs meg nálunk. A kivágás k�
   E/COMPACT tetőprofil 900407 (mind az öt hossz) – az Edscha Compact sín méretezett rajza (43 × 112 mm) első képként,
     a meglévő (edscha_compact.py) képek elé: data/forras/edscha_compact_sin.png (a küldött lapkép kivágva,
     4× nagyítva, a szürke háttér fehérre cserélve; az eredeti: edscha_compact_sin_lap.png)
-  E/VOLUMEN tetőprofil 900301 (mind a hat hossz) – a Volumen sín („Alu-Träger”) méretezett rajza első képként:
+  E/Small tetőprofil 900931 (mind a három hossz) és E/VOLUMEN tetőprofil 900301 (mind a hat hossz) – a Volumen sín („Alu-Träger”) méretezett rajza első képként:
     data/forras/edscha_volumen_sin.png (a küldött 900301-es lap bal oldali rajza, 3× nagyítva; eredeti: …_lap.png)
 
 Használat: python3 scripts/termekadatok/kuldott_kepek.py
@@ -44,6 +44,13 @@ PREPEND.update({slug: ([("data/forras/edscha_volumen_sin.png", "meretrajz"),
                         ("data/forras/edscha_volumen_tetoszerkezet.png", "tetoszerkezet")],
                        {"Profilméret": "120 × 163 mm (alul 35 mm)", "Tömeg": "5,65 kg/m", "Ix": "595,0 cm⁴", "Iy": "207,2 cm⁴"})
                 for slug in VOLUMEN})
+# E/Small tetőprofil (Edscha 900931) – a küldött lapról: profilrajz + tetőszerkezet (edscha_small_*.png)
+SMALL = [f"e-small-tetoprofil-{n}-mm" for n in (6600, 7800, 8200)]
+PREPEND.update({slug: ([("data/forras/edscha_small_sin.png", "meretrajz"),
+                        ("data/forras/edscha_small_tetoszerkezet.png", "tetoszerkezet")],
+                       {"Profilméret": "58,5 × 95 mm (alul 44,4 mm)", "Tömeg": "3 kg/m", "Ix": "82,7 cm⁴", "Iy": "33,9 cm⁴",
+                        "Rajzszám (gyári)": "900931"})
+                for slug in SMALL})
 
 
 def main():
