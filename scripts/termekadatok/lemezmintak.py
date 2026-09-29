@@ -4,6 +4,7 @@ A Klöckner webáruház minden „Warzenblech” változatnál ugyanazt a (Duett
 Quintett (öt csepp, a Quadris-megnevezésben „cseppmintás”) lemezeknél ezt a Quadris által küldött
 cseppmintás lemez fotójára (data/forras/cseppmintas_lemez_quadris.webp) cseréljük, a gyémántmintásnál pedig
 a Quadris által küldött gyémántmintás fotóra (data/forras/diamond_lemez_quadris.webp). A Duett lemez fotója marad.
+A rizsmintás lemezek (bármely forrásból) első képe a Quadris által küldött rizsmintás fotó (data/forras/rizs_lemez_quadris.webp).
 
 Használat: python3 scripts/termekadatok/lemezmintak.py
 """
@@ -20,6 +21,7 @@ from common import ENRICHMENT, ROOT  # noqa: E402
 
 QUINTETT_IMG = "/termekkepek/minta-quintett.webp"
 DIAMOND_IMG = "/termekkepek/minta-diamond.webp"
+RIZS_IMG = "/termekkepek/minta-rizs.webp"
 
 
 def quadris_photo(name="cseppmintas_lemez_quadris.webp"):
@@ -36,8 +38,13 @@ def main():
     dst = ROOT / "public" / QUINTETT_IMG.lstrip("/")
     quadris_photo().save(dst, "WEBP", quality=90)
     Image.open(ROOT / "data/forras/diamond_lemez_quadris.webp").save(ROOT / "public" / DIAMOND_IMG.lstrip("/"), "WEBP", quality=90)
+    Image.open(ROOT / "data/forras/rizs_lemez_quadris.webp").save(ROOT / "public" / RIZS_IMG.lstrip("/"), "WEBP", quality=90)
     n = 0
     for slug, e in data.items():
+        if slug.startswith("s-") and "rizs-mintas" in slug:
+            e["images"] = [RIZS_IMG] + [i for i in e.get("images", []) if i != RIZS_IMG]
+            n += 1
+            continue
         if not slug.startswith("s-") or e.get("source") != "Klöckner":
             continue
         pattern = (e.get("specs") or {}).get("Minta", "")
