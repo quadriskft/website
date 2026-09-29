@@ -10780,7 +10780,7 @@
   ]
  },
  "e42587-csuklopant-700-mm": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/globalassets/documents/pdfs/sesam/new_25/sesam_komponenten-u-ersatzteilkatalog_04-2024.pdf#page=5",
   "sourceTitle": "SESAM alkatrész-katalógus 2024/04: Folding plate Type 2 L=700mm",
   "matchedCode": "194258700",
@@ -10789,7 +10789,8 @@
    "Méret": "700 mm"
   },
   "images": [
-   "/termekkepek/e42587-csuklopant-700-mm-1.webp"
+   "/termekkepek/e42587-csuklopant-700-mm-1.webp",
+   "/termekkepek/e42587-csuklopant-700-mm-foto1.webp"
   ]
  },
  "e50502-edscha-takarogumi-tetoprofilhoz": {

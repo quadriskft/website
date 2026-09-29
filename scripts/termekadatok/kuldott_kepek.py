@@ -74,7 +74,8 @@ INSERT = {"e69004740-cs-compact-tetokereszttarto-2550-mm": [("data/forras/edscha
           "versus-micro-trike-toloteto-rendszer": [("data/forras/versus_micro_trike.png", "attekinto", 0)],
           "versus-duo-trike-l-toloteto-rendszer": [("data/forras/versus_duo_trike_light.png", "attekinto", 0)],
           "e38067930-compact-csuklopant-650-mm": [("data/forras/edscha_csuklopant_650_1.png", "foto1", 1),
-                                                  ("data/forras/edscha_csuklopant_650_2.png", "foto2", 2)]}
+                                                  ("data/forras/edscha_csuklopant_650_2.png", "foto2", 2)],
+          "e42587-csuklopant-700-mm": [("data/forras/edscha_csuklopant_700_1.png", "foto1", 1)]}
 
 
 def main():
