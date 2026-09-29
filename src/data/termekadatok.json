@@ -10181,7 +10181,7 @@
   ]
  },
  "e-compact-tetoprofil-900407-5000": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/en/products/edscha-ts/commercial-vehicle-roof-systems/curtain-sider-verdecke/compact-neu/",
   "sourceTitle": "E/COMPACT tetőprofil",
   "matchedCode": "E/COMPACT tetőprofil",
@@ -10189,15 +10189,20 @@
   "specs": {
    "Anyag": "extrudált alumínium",
    "Rendszer": "Compact",
-   "Hossz": "5000 mm"
+   "Hossz": "5000 mm",
+   "Profilméret": "43 × 112 mm (alul 33 mm)",
+   "Tömeg": "2,88 kg/m",
+   "Ix": "112,5 cm⁴",
+   "Iy": "13,3 cm⁴"
   },
   "images": [
+   "/termekkepek/e-compact-tetoprofil-900407-5000-meretrajz.webp",
    "/termekkepek/e-compact-tetoprofil-900407-5000-1.webp",
    "/termekkepek/e-compact-tetoprofil-900407-5000-2.webp"
   ]
  },
  "e-compact-tetoprofil-900407-5600": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/en/products/edscha-ts/commercial-vehicle-roof-systems/curtain-sider-verdecke/compact-neu/",
   "sourceTitle": "E/COMPACT tetőprofil",
   "matchedCode": "E/COMPACT tetőprofil",
@@ -10205,15 +10210,20 @@
   "specs": {
    "Anyag": "extrudált alumínium",
    "Rendszer": "Compact",
-   "Hossz": "5600 mm"
+   "Hossz": "5600 mm",
+   "Profilméret": "43 × 112 mm (alul 33 mm)",
+   "Tömeg": "2,88 kg/m",
+   "Ix": "112,5 cm⁴",
+   "Iy": "13,3 cm⁴"
   },
   "images": [
+   "/termekkepek/e-compact-tetoprofil-900407-5600-meretrajz.webp",
    "/termekkepek/e-compact-tetoprofil-900407-5600-1.webp",
    "/termekkepek/e-compact-tetoprofil-900407-5600-2.webp"
   ]
  },
  "e-compact-tetoprofil-900407-6600": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/en/products/edscha-ts/commercial-vehicle-roof-systems/curtain-sider-verdecke/compact-neu/",
   "sourceTitle": "E/COMPACT tetőprofil",
   "matchedCode": "E/COMPACT tetőprofil",
@@ -10221,15 +10231,20 @@
   "specs": {
    "Anyag": "extrudált alumínium",
    "Rendszer": "Compact",
-   "Hossz": "6600 mm"
+   "Hossz": "6600 mm",
+   "Profilméret": "43 × 112 mm (alul 33 mm)",
+   "Tömeg": "2,88 kg/m",
+   "Ix": "112,5 cm⁴",
+   "Iy": "13,3 cm⁴"
   },
   "images": [
+   "/termekkepek/e-compact-tetoprofil-900407-6600-meretrajz.webp",
    "/termekkepek/e-compact-tetoprofil-900407-6600-1.webp",
    "/termekkepek/e-compact-tetoprofil-900407-6600-2.webp"
   ]
  },
  "e-compact-tetoprofil-900407-7800": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/en/products/edscha-ts/commercial-vehicle-roof-systems/curtain-sider-verdecke/compact-neu/",
   "sourceTitle": "E/COMPACT tetőprofil",
   "matchedCode": "E/COMPACT tetőprofil",
@@ -10237,15 +10252,20 @@
   "specs": {
    "Anyag": "extrudált alumínium",
    "Rendszer": "Compact",
-   "Hossz": "7800 mm"
+   "Hossz": "7800 mm",
+   "Profilméret": "43 × 112 mm (alul 33 mm)",
+   "Tömeg": "2,88 kg/m",
+   "Ix": "112,5 cm⁴",
+   "Iy": "13,3 cm⁴"
   },
   "images": [
+   "/termekkepek/e-compact-tetoprofil-900407-7800-meretrajz.webp",
    "/termekkepek/e-compact-tetoprofil-900407-7800-1.webp",
    "/termekkepek/e-compact-tetoprofil-900407-7800-2.webp"
   ]
  },
  "e-compact-tetoprofil-900407-8000": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/en/products/edscha-ts/commercial-vehicle-roof-systems/curtain-sider-verdecke/compact-neu/",
   "sourceTitle": "E/COMPACT tetőprofil",
   "matchedCode": "E/COMPACT tetőprofil",
@@ -10253,9 +10273,14 @@
   "specs": {
    "Anyag": "extrudált alumínium",
    "Rendszer": "Compact",
-   "Hossz": "8000 mm"
+   "Hossz": "8000 mm",
+   "Profilméret": "43 × 112 mm (alul 33 mm)",
+   "Tömeg": "2,88 kg/m",
+   "Ix": "112,5 cm⁴",
+   "Iy": "13,3 cm⁴"
   },
   "images": [
+   "/termekkepek/e-compact-tetoprofil-900407-8000-meretrajz.webp",
    "/termekkepek/e-compact-tetoprofil-900407-8000-1.webp",
    "/termekkepek/e-compact-tetoprofil-900407-8000-2.webp"
   ]
