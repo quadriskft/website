@@ -133,7 +133,10 @@ export function getCategory(groupSlug, categorySlug) {
 }
 
 export function productsIn(groupSlug, categorySlug) {
-  return products.filter((p) => p.group === groupSlug && (!categorySlug || p.category === categorySlug));
+  const list = products.filter((p) => p.group === groupSlug && (!categorySlug || p.category === categorySlug));
+  // kézi sorrend (data/termek_javitasok.json „order”): ezek elöl, a megadott sorrendben; a többi az eredeti sorrendben
+  const rank = (p) => fixes[p.slug]?.order ?? Infinity;
+  return list.map((p, i) => [p, i]).sort((a, b) => rank(a[0]) - rank(b[0]) || a[1] - b[1]).map(([p]) => p);
 }
 
 // Főkategória kép (scripts/csoportkepek.py állítja elő)

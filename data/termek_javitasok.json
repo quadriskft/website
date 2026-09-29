@@ -247,5 +247,29 @@
   "specs": {
    "Szín": "fehér"
   }
+ },
+ "207316-u-90-hossztarto": {
+  "name": "\"U\" 90 Hossztartó, klamnizható",
+  "order": 1
+ },
+ "207317-u-108-hossztarto": {
+  "name": "\"U\" 108 Hossztartó, klamnizható",
+  "order": 2
+ },
+ "207327-tl-110-60-60-hossztarto-ex": {
+  "name": "\"TL\" 110/60/60 Hossztartó EX, klamnizható",
+  "order": 3
+ },
+ "209695-u-110-60-hossztarto-duplanutolt-ex": {
+  "name": "\"U\" 110/60 Hossztartó duplanútolt EX, klamnizható",
+  "order": 4
+ },
+ "202850-u-130-hossztarto-k": {
+  "name": "\"U\" 130 Hossztartó K, klamnizható",
+  "order": 5
+ },
+ "202386-u-130-hossztarto": {
+  "name": "\"U\" 130 Hossztartó, klamnizható",
+  "order": 6
  }
 }
