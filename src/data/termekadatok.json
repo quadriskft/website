@@ -2062,6 +2062,23 @@
    "/termekkepek/208477-cd2-100x30-mm-alafutasgatlo-elox-profil-1.webp"
   ]
  },
+ "208755-hossztarto-talpas-140-6-magas-120-10-60-8-mm": {
+  "source": "Quadris gyári rajz",
+  "sourceTitle": "Constellium 8755 – traverzní profil",
+  "matchedCode": "8755",
+  "specs": {
+   "Cikkszám (gyártói)": "8755",
+   "Tömeg": "7,106 kg/fm",
+   "Magasság": "139,5 ± 0,5 mm",
+   "Talpszélesség": "120 mm",
+   "Gerincvastagság": "6 mm",
+   "Kivitel": "talpas hossztartó (traverz) profil"
+  },
+  "images": [
+   "/termekkepek/208755-hossztarto-talpas-140-6-magas-120-10-60-8-mm-rajz.webp",
+   "/termekkepek/208755-hossztarto-talpas-140-6-magas-120-10-60-8-mm-1.webp"
+  ]
+ },
  "209695-u-110-60-hossztarto-duplanutolt-ex": {
   "source": "Exlabesa",
   "sourceUrl": "https://www.exlabesa.com",

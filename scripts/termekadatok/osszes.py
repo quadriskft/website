@@ -14,7 +14,7 @@ HERE = Path(__file__).parent
 sys.path.insert(0, str(HERE))
 from common import ENRICHMENT, IMAGE_DIR  # noqa: E402
 
-SCRIPTS = ["ital_accessori", "woocommerce", "fts_katalogus", "pastore", "caralu", "alusv", "adaico", "adaico_katalogus", "sandprofile", "sandprofile_kiegeszites", "sitemap_kereso", "parlok", "jonesco", "gnc", "gnc_szinek", "pommier", "pommier_katalogus", "reall", "cimaplast", "metra", "bodega", "exlabesa", "exlabesa_carroceria", "kety", "polser", "versus", "versus_dtl", "versus_katalogus", "edscha", "bmc", "alcomet", "kloeckner", "dost", "plasticpadana", "copar", "industrilas", "edscha_compact", "adaico_slider", "mpsteel", "cargoframes", "wistra", "miederhoff", "takler", "constellium", "esal_pianali", "profilpol", "nevbol", "lemezmintak", "alvaz_rajzok"]
+SCRIPTS = ["ital_accessori", "woocommerce", "fts_katalogus", "pastore", "caralu", "alusv", "adaico", "adaico_katalogus", "sandprofile", "sandprofile_kiegeszites", "sitemap_kereso", "parlok", "jonesco", "gnc", "gnc_szinek", "pommier", "pommier_katalogus", "reall", "cimaplast", "metra", "bodega", "exlabesa", "exlabesa_carroceria", "kety", "polser", "versus", "versus_dtl", "versus_katalogus", "edscha", "bmc", "alcomet", "kloeckner", "dost", "plasticpadana", "copar", "industrilas", "edscha_compact", "adaico_slider", "mpsteel", "cargoframes", "wistra", "miederhoff", "takler", "constellium", "esal_pianali", "profilpol", "kuldott_rajzok", "nevbol", "lemezmintak", "alvaz_rajzok"]
 
 for name in SCRIPTS + ["szoveg_eltavolitas"]:
     print(f"\n=== {name} ===", flush=True)

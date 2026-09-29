@@ -38,6 +38,7 @@ PROFILES = {
     "203548-u-140x60x60x7-mm-profil": ("hossztartok", 140),
     "205162-u-80x60x5-mm-aluprofil": ("hossztartok", 80),
     "207316-u-90-hossztarto": ("hossztartok", 90),
+    "208755-hossztarto-talpas-140-6-magas-120-10-60-8-mm": ("hossztartok", 139.5),  # Constellium 8755 (küldött lap)
     "207317-u-108-hossztarto": ("hossztartok", 108),
     "207327-tl-110-60-60-hossztarto-ex": ("hossztartok", 110),
     "209695-u-110-60-hossztarto-duplanutolt-ex": ("hossztartok", 110),
@@ -148,11 +149,14 @@ ERASE = {"202387-i-70-kereszttarto": [(498, 222, 590, 256)],
          "206941-cd-100x30-mm-alafutasgatlo-elox-profil": [(273, 372, 282, 500), (8, 480, 27, 510), (133, 598, 150, 616),
                                                            (138, 226, 186, 237), (248, 226, 272, 237)],  # + a bordázat fölötti körjelölés
          "227046-n-koztes-200-mm-profil": [(600, 50, 760, 210)],  # az Alu-SV „N” (natúr) jelölése
+         "208755-hossztarto-talpas-140-6-magas-120-10-60-8-mm": [(410, 834, 555, 896)],  # a talp alatti „8” méret (zárt sávja befeketedne)
          "228153-u-25-mm-szego-profil-elox-b": [(0, 580, 428, 686)],  # „TB28153 724 gr./ml.”
          "227046-ck10-koztes-200-mm-elox-profil": [(0, 0, 244, 1000), (244, 15, 282, 34)],  # a régi méretvonal
 }
 # a falrészeket apró jelölések darabolják, ezért itt minden vékony zárt rész kitöltendő (a számjegyek belseje nincs benne)
-FILL_ALL = {"206941-cd-100x30-mm-alafutasgatlo-elox-profil": (20, 230, 285, 990)}  # a profil területe (x0, y0, x1, y1)
+FILL_ALL = {"206941-cd-100x30-mm-alafutasgatlo-elox-profil": (20, 230, 285, 990)}
+# szkennelési fehér pöttyök a tömör falban: a dobozon belül morfológiai zárás (x0, y0, x1, y1, kernel px)
+CLOSE_BOX = {"208755-hossztarto-talpas-140-6-magas-120-10-60-8-mm": [(445, 55, 495, 155, 11)]}  # a profil területe (x0, y0, x1, y1)
 # álló rajzok fekvőre forgatása (np.rot90 k: 1 = balra, -1 = jobbra), hogy kitöltsék a fekvő vásznat; az irány
 # olyan, hogy a rajz fő (hosszanti) méretszáma olvasható legyen
 ROTATE = {"227046-ck10-koztes-200-mm-elox-profil": -1, "223350-350-mm-mono-profil-szakalas-elox": -1,
@@ -363,6 +367,10 @@ def main():
             cv2.line(rgb, (x0, y0), (x1, y1), (0, 0, 0), t)
         if slug in DIMS:
             rgb = add_dims(rgb, *DIMS[slug])
+        for x0, y0, x1, y1, k in CLOSE_BOX.get(slug, []):
+            sub = (rgb[y0:y1, x0:x1].mean(axis=2) < 170).astype(np.uint8)
+            sub = cv2.morphologyEx(sub, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k)))
+            rgb[y0:y1, x0:x1][sub > 0] = 0
         if slug in FILL_ONLY:
             r, gg, b = rgb[..., 0], rgb[..., 1], rgb[..., 2]
             fill = ((gg > 140) & (b > 170) & (r < 170) & (b - r > 60)).astype(np.uint8)
