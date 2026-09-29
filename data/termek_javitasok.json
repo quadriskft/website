@@ -571,35 +571,40 @@
  "6613553-mini-hatso-oszlop-elox-111-mm": {
   "specs": {
    "Hossz": "2500 mm",
-   "Tömeg": "2,918 kg/m",
+   "Tömeg": "7,29 kg/db (2500 mm)",
+   "Fajlagos tömeg": "2,918 kg/m",
    "Mértékegység": "db"
   }
  },
  "6613554-mini-hatso-oszlop-elox-110-166": {
   "specs": {
    "Hossz": "2500 mm",
-   "Tömeg": "3,181 kg/m",
+   "Tömeg": "7,95 kg/db (2500 mm)",
+   "Fajlagos tömeg": "3,181 kg/m",
    "Mértékegység": "db"
   }
  },
  "6613555-mini-hatso-oszlop-hn-elox-110-138": {
   "specs": {
    "Hossz": "2500 mm",
-   "Tömeg": "2,908 kg/m",
+   "Tömeg": "7,27 kg/db (2500 mm)",
+   "Fajlagos tömeg": "2,908 kg/m",
    "Mértékegység": "db"
   }
  },
  "6613575-mini-elso-100-alu-oszlop-elox": {
   "specs": {
    "Hossz": "2500 mm",
-   "Tömeg": "2,228 kg/m",
+   "Tömeg": "5,57 kg/db (2500 mm)",
+   "Fajlagos tömeg": "2,228 kg/m",
    "Mértékegység": "db"
   }
  },
  "6613576-mini-elso-flat-alu-oszlop-elox": {
   "specs": {
    "Hossz": "2500 mm",
-   "Tömeg": "2,818 kg/m",
+   "Tömeg": "7,04 kg/db (2500 mm)",
+   "Fajlagos tömeg": "2,818 kg/m",
    "Mértékegység": "db"
   }
  }
