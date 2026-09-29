@@ -1,0 +1,35 @@
+{
+ "_leiras": "Azonos profil több gyári hosszban (a Quadris kérése: egy kártyán, a rendelésnél választható hosszal, darabra – nem méretre vágva). A tagok sorrendje a választó sorrendje; a listákban az első tag képviseli a családot a család nevével.",
+ "e-compact-tetoprofil-900407": {
+  "name": "E/COMPACT tetőprofil 900407",
+  "label": "Hossz",
+  "members": {
+   "e-compact-tetoprofil-900407-5000": "5000 mm",
+   "e-compact-tetoprofil-900407-5600": "5600 mm",
+   "e-compact-tetoprofil-900407-6600": "6600 mm",
+   "e-compact-tetoprofil-900407-7800": "7800 mm",
+   "e-compact-tetoprofil-900407-8000": "8000 mm"
+  }
+ },
+ "e-small-tetoprofil": {
+  "name": "E/Small tetőprofil",
+  "label": "Hossz",
+  "members": {
+   "e-small-tetoprofil-6600-mm": "6600 mm",
+   "e-small-tetoprofil-7800-mm": "7800 mm",
+   "e-small-tetoprofil-8200-mm": "8200 mm"
+  }
+ },
+ "e-volumen-tetoprofil-900301": {
+  "name": "E/VOLUMEN tetőprofil 900301",
+  "label": "Hossz",
+  "members": {
+   "e-volumen-tetoprofil-900301-7800": "7800 mm",
+   "e-volumen-tetoprofil-900301-8500": "8500 mm",
+   "e-volumen-tetoprofil-900301-9000": "9000 mm",
+   "e-volumen-tetoprofil-900301-9400": "9400 mm",
+   "e-volumen-tetoprofil-900301-9600": "9600 mm",
+   "e-volumen-tetoprofil-900301-10000": "10000 mm"
+  }
+ }
+}

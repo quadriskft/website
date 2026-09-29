@@ -3,6 +3,7 @@ import extra from '../data/termekadatok.json';
 import extended from '../data/bovitett.json';
 import deleted from '../../data/torolt_termekek.json';
 import fixes from '../../data/termek_javitasok.json';
+import families from '../../data/termek_csaladok.json';
 
 // FONTOS: a termékadatokban lévő beszállító (supplier, supplierCode, source…) belső adat,
 // a weboldalon soha nem jelenik meg.
@@ -63,8 +64,22 @@ for (const c of extended.categories ?? []) {
   const g = groupList.find((x) => x.slug === c.group);
   if (g && !g.categories.some((x) => x.slug === c.slug)) g.categories.push({ slug: c.slug, name: c.name });
 }
+// Termékcsaládok (data/termek_csaladok.json): azonos profil több gyári hosszban – a listákban egy kártya
+// (az első tag, a család nevével), a termékoldalon hosszválasztó; darabra rendelhető, nem méretre vágva
+const familyBySlug = new Map();
+for (const [id, f] of Object.entries(families)) {
+  if (id.startsWith('_')) continue;
+  const members = Object.entries(f.members).map(([slug, value]) => ({ slug, value })).filter((m) => !deleted[m.slug]);
+  const fam = { id, name: f.name, label: f.label ?? 'Méret', members, leader: members[0]?.slug };
+  for (const m of members) familyBySlug.set(m.slug, fam);
+}
+export function familyOf(slug) {
+  return familyBySlug.get(slug) ?? null;
+}
+const hiddenMember = (p) => { const f = familyBySlug.get(p.slug); return f && f.leader !== p.slug; };
+
 const counts = new Map();
-for (const p of products) counts.set(`${p.group}/${p.category}`, (counts.get(`${p.group}/${p.category}`) ?? 0) + 1);
+for (const p of products.filter((x) => !hiddenMember(x))) counts.set(`${p.group}/${p.category}`, (counts.get(`${p.group}/${p.category}`) ?? 0) + 1);
 // A termékcsoportok sorrendje (a Quadris kérése szerint); a listában nem szereplők utánuk, ABC sorrendben
 const GROUP_ORDER = [
   'aluminium-lemezek', 'ipari-felgyartmanyok', 'aluminium-alvaz-profilok', 'aluminium-padlo-profilok',
@@ -152,7 +167,9 @@ export function getCategory(groupSlug, categorySlug) {
 }
 
 export function productsIn(groupSlug, categorySlug) {
-  const list = products.filter((p) => p.group === groupSlug && (!categorySlug || p.category === categorySlug));
+  const list = products
+    .filter((p) => p.group === groupSlug && (!categorySlug || p.category === categorySlug) && !hiddenMember(p))
+    .map((p) => (familyBySlug.has(p.slug) ? { ...p, name: familyBySlug.get(p.slug).name, family: true } : p));
   // kézi sorrend (data/termek_javitasok.json „order”): ezek elöl, a megadott sorrendben; a többi az eredeti sorrendben
   const rank = (p) => fixes[p.slug]?.order ?? Infinity;
   return list.map((p, i) => [p, i]).sort((a, b) => rank(a[0]) - rank(b[0]) || a[1] - b[1]).map(([p]) => p);
@@ -190,7 +207,8 @@ export function isProfile(p) {
 
 // Böngészőnek küldhető termékadat (belső mezők nélkül)
 export function publicProduct(p) {
-  return { slug: p.slug, code: p.code, name: p.name, group: p.group, image: p.images?.[0] ?? '', ...(p.codeLabel ? { codeLabel: p.codeLabel } : {}), ...(isProfile(p) ? { profile: true } : {}) };
+  return { slug: p.slug, code: p.code, name: p.name, group: p.group, image: p.images?.[0] ?? '', ...(p.codeLabel ? { codeLabel: p.codeLabel } : {}),
+    ...(p.family ? { variants: true } : isProfile(p) ? { profile: true } : {}) };
 }
 
 export const stats = {

@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import ProductVisual from '../../components/ProductVisual.astro';
-import { products, getGroup, getCategory, productsIn, publicProduct, isProfile } from '../../lib/catalog.js';
+import { products, getGroup, getCategory, productsIn, publicProduct, isProfile, familyOf } from '../../lib/catalog.js';
 import { SITE, abs, absPage } from '../../lib/site.js';
 
 export function getStaticPaths() {
@@ -13,11 +13,15 @@ export function getStaticPaths() {
 const { product } = Astro.props;
 const group = getGroup(product.group);
 const category = getCategory(product.group, product.category);
-const specs = Object.entries(product.specs ?? {});
+// termékcsaládnál a hossz a választóból jön, a műszaki adatok között nem szerepel
+const specs = Object.entries(product.specs ?? {}).filter(([k]) => !(familyOf(product.slug) && /^(hossz|szálhossz)/i.test(k)));
 const gallery = product.images?.length > 1 ? product.images : [];
 const related = productsIn(product.group, product.category).filter((p) => p.slug !== product.slug).slice(0, 8);
 const showCategory = category && category.name !== group.name;
-const profile = isProfile(product);
+// termékcsalád (azonos profil több gyári hosszban): hosszválasztó, darabra rendelhető – nem méretre vágva
+const family = familyOf(product.slug);
+const familyMembers = family ? family.members.map((m) => ({ ...m, product: products.find((p) => p.slug === m.slug) })).filter((m) => m.product) : [];
+const profile = !family && isProfile(product);
 // gyári szálhossz (ha ismert) – tájékoztató a méretsorok mellé
 const stockLength = profile
   ? (specs.find(([k]) => /szálhossz|gyártási hossz|^hossz/i.test(k))?.[1] ?? product.name.match(/(\d{1,2} ?\d{3})\s*mm\b(?!.*mm)/)?.[1])
@@ -70,14 +74,36 @@ const jsonLd = [
 
       <div class="info">
         <span class="eyebrow">{showCategory ? category.name : group.name}</span>
-        <h1 class="product-title">{product.name}</h1>
+        <h1 class="product-title">{family ? family.name : product.name}</h1>
         {product.code && (
           <p class="code-line">{product.codeLabel ?? 'Cikkszám'}: <strong>{product.code}</strong>
             <button type="button" class="copy" data-copy={product.code} aria-label="Cikkszám másolása"><Icon name="Copy" size={15} /></button>
           </p>
         )}
 
-        {profile ? (
+        {family ? (
+          <div class="order card variant-order" id="rendeles">
+            <h2 class="cut-title"><Icon name="Ruler" size={20} /> Rendelhető méretek</h2>
+            <p class="muted small">Gyári hosszban, darabra rendelhető – ezt a terméket nem vágjuk méretre.</p>
+            <label class="variant-label" for="variant">{family.label}</label>
+            <select id="variant" class="input variant-select" data-variant>
+              {familyMembers.map((m) => (
+                <option value={m.slug} selected={m.slug === product.slug} data-product={JSON.stringify({ ...publicProduct({ ...m.product, family: true }), name: `${family.name} – ${m.value}` })}>{m.value}</option>
+              ))}
+            </select>
+            <div class="order-row">
+              <div class="qty" data-qty>
+                <button type="button" data-step="-1" aria-label="Kevesebb"><Icon name="Minus" /></button>
+                <input type="number" id="qty" min="1" max="99999" value="1" inputmode="numeric" aria-label="Darab" />
+                <button type="button" data-step="1" aria-label="Több"><Icon name="Plus" /></button>
+              </div>
+              <button type="button" class="btn btn-primary add-main" data-variant-add data-add-to-quote={JSON.stringify({ ...publicProduct({ ...product, family: true }), name: `${family.name} – ${familyMembers.find((m) => m.slug === product.slug)?.value}` })} data-qty-from="#qty">
+                <Icon name="ClipboardList" /> <span class="label">Ajánlatkérőbe</span>
+              </button>
+            </div>
+            <p class="muted small">Árat nem tüntetünk fel – tegye az ajánlatkérőbe, és személyre szabott ajánlatot küldünk mennyiség és szállítási igény alapján.</p>
+          </div>
+        ) : profile ? (
           <div class="order card cut-order" id="meretre" data-cut-order data-product={JSON.stringify(publicProduct(product))}>
             <h2 class="cut-title"><Icon name="Ruler" size={20} /> Kért méretek</h2>
             <p class="muted small">Adja meg, milyen hosszúságú szálakból hány darabra van szüksége – méretre vágást is vállalunk.{stockLength && <> Gyári szálhossz: <strong>{stockLength}{/\d$/.test(String(stockLength)) ? ' mm' : ''}</strong>.</>}</p>
@@ -162,6 +188,18 @@ const jsonLd = [
 
 <script>
   import { quote, clampQty, clampLen, normalizeCuts, totalPcs } from '../../scripts/quote.js';
+
+  // termékcsalád: a választott hossz kerül az ajánlatkérőbe (a cím és az URL is követi)
+  const variant = document.querySelector('[data-variant]');
+  if (variant) {
+    const addBtn = document.querySelector('[data-variant-add]');
+    variant.addEventListener('change', () => {
+      const opt = variant.selectedOptions[0];
+      addBtn.dataset.addToQuote = opt.dataset.product;
+      history.replaceState(null, '', `/termek/${opt.value}${location.hash}`);
+      window.dispatchEvent(new CustomEvent('quote:change'));
+    });
+  }
 
   const input = document.querySelector('#qty');
   if (input) {
@@ -295,6 +333,9 @@ const jsonLd = [
   .cut-error { color: #d63a3a; font-size: 0.88rem; margin: 8px 0 0; }
   .cut-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 16px 0 10px; }
   .order-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .variant-order { display: grid; gap: 10px; }
+  .variant-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .variant-select { font-size: 1rem; padding: 12px 14px; }
   .add-main { flex: 1; min-width: 200px; }
   .add-main:global(.in-quote) { background: linear-gradient(135deg, #17b978, #0e8a58); }
   .small { font-size: 0.86rem; margin: 14px 0 0; }
