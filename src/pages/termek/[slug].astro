@@ -24,12 +24,12 @@ const stockLength = profile
   : null;
 const description = product.description || `${product.name}${product.code ? ` (cikkszám: ${product.code})` : ''} – ${group.name}. Kérjen ajánlatot online a ${SITE.name}-tól.`;
 const crumbs = [
-  ['Főoldal', '/'], ['Termékek', '/termekek'], [group.name, `/termekek/${group.slug}`],
+  ['Főoldal', '/'], ['Termékkatalógus', '/termekek'], [group.name, `/termekek/${group.slug}`],
   ...(showCategory ? [[category.name, `/termekek/${group.slug}#${category.slug}`]] : []),
   [product.name, `/termek/${product.slug}`],
 ];
-// látható morzsamenü: Főoldal › Főkategória › Alkategória › termék; „Vissza” = egy szinttel feljebb
-const navCrumbs = crumbs.filter(([name]) => name !== 'Termékek');
+// látható morzsamenü: Főoldal › Termékkatalógus › Főkategória › Alkategória › termék; „Vissza” = egy szinttel feljebb
+const navCrumbs = crumbs;
 const backTo = showCategory
   ? { href: `/termekek/${group.slug}#${category.slug}`, label: category.name }
   : { href: `/termekek/${group.slug}`, label: group.name };

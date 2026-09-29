@@ -16,7 +16,7 @@ const single = sections.length === 1;
 const jsonLd = [
   {
     '@type': 'BreadcrumbList',
-    itemListElement: [['Főoldal', '/'], ['Termékek', '/termekek'], [group.name, `/termekek/${group.slug}`]]
+    itemListElement: [['Főoldal', '/'], ['Termékkatalógus', '/termekek'], [group.name, `/termekek/${group.slug}`]]
       .map(([name, url], i) => ({ '@type': 'ListItem', position: i + 1, name, item: absPage(url) })),
   },
   {
@@ -31,7 +31,7 @@ const jsonLd = [
   },
 ];
 ---
-<Base crumbs={[['Főoldal', '/'], [group.name, `/termekek/${group.slug}`]]} back={{ href: '/', label: 'Főoldal' }} title={group.name} description={`${group.name}: ${meta.text ?? ''} ${group.count} termék – kérjen ajánlatot online a Quadristól.`} image={groupImage(group.slug)} jsonLd={jsonLd}>
+<Base crumbs={[['Főoldal', '/'], ['Termékkatalógus', '/termekek'], [group.name, `/termekek/${group.slug}`]]} back={{ href: '/termekek', label: 'Termékkatalógus' }} title={group.name} description={`${group.name}: ${meta.text ?? ''} ${group.count} termék – kérjen ajánlatot online a Quadristól.`} image={groupImage(group.slug)} jsonLd={jsonLd}>
   <section class="page-head">
     <div class="container">
       <div class="gh">
