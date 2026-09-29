@@ -68,6 +68,8 @@ ERASE = {"202387-i-70-kereszttarto": [(498, 222, 590, 256)]}
 LABELS = {
     "202387-i-70-kereszttarto": [("[50]", 700, 245)],  # eredetileg a gerincen belül állt
 }
+# az etalon (eredeti) rajz marad: a méretaránynál számít, de nem készül belőle új kép
+KEEP_ORIGINAL = {"207315-i-108-kereszttarto"}
 CACHE = ROOT / ".cache" / "alvaz_rajzok"  # a forrásrajzok másolata (a kimenet külön fájl, de biztos, ami biztos)
 
 
@@ -179,6 +181,11 @@ def main():
         ppm = fit * prof / mm  # ennél a nagyításnál ennyi képpont jut 1 mm-re
         scale[cat] = min(scale.get(cat, 1e9), ppm)
     for slug, (cat, mm, g, prof) in items.items():
+        if slug in KEEP_ORIGINAL:
+            rel = f"/termekkepek/{slug}-rajz.webp"
+            (ROOT / "public" / rel.lstrip("/")).unlink(missing_ok=True)
+            data[slug]["images"] = [u for u in data[slug]["images"] if u != rel]
+            continue
         f = min((W - 2 * MARGIN) / g.shape[1], (H - 2 * MARGIN) / g.shape[0]) if mm is None else scale[cat] * mm / prof
         img = Image.fromarray(g).resize((max(1, round(g.shape[1] * f)), max(1, round(g.shape[0] * f))), Image.LANCZOS)
         canvas = Image.new("L", (W, H), 255)
