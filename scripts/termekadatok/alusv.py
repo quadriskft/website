@@ -69,16 +69,49 @@ EXTRA = {
     # Constellium Děčín alvázprofilok: az Alu-SV kód vége a Constellium-szám (6600… natúr, 6612… eloxált)
     "207315": "6600007315", "207318": "6612007318", "207319": "6600007319",
     "237460": "6600007460", "237460/n": "6600007460",
+    # a Quadris kérésére: 6613576 (MINI első FLAT oszlop) = „Pillar CS MINI profile head-on 2023 anod”
+    "6613576": "6612014347",
 }
+# csak a rajz (és az anyag) átvétele – a hossz / tömeg / felület az Alu-SV tételé, nem a mi változatunké:
+# a Quadris kérésére minden MAX-os első oszlop a „Pillar profile CS MAX front” (66OAP17714) rajzát kapja
+IMAGE_ONLY = {"66177137": "66OAP17714", "66177147": "66OAP17714", "66177300": "66OAP17714", "6613211": "66OAP17714"}
+
+
+def remove_badge(data):
+    """Az Alu-SV rajzain lévő sárgászöld „N” (natúr) jelölés eltávolítása: a kör és a benne lévő betű fehér lesz."""
+    import io
+
+    import cv2
+    import numpy as np
+    from PIL import Image
+    img = Image.open(io.BytesIO(data))
+    if img.mode in ("RGBA", "LA", "P"):  # átlátszó háttér -> fehér
+        img = img.convert("RGBA")
+        bg = Image.new("RGB", img.size, "white")
+        bg.paste(img, mask=img.split()[-1])
+        img = bg
+    a = np.asarray(img.convert("RGB")).copy()
+    r, g, b = (a[..., i].astype(int) for i in range(3))
+    badge = ((r > 150) & (g > 190) & (b < 120) & (g - b > 100)).astype(np.uint8)
+    n, lab, st, _ = cv2.connectedComponentsWithStats(badge, connectivity=8)
+    for i in range(1, n):
+        x, y, w, h, area = st[i]
+        if area < 150 or not 0.6 < w / h < 1.6:
+            continue
+        mask = np.zeros(badge.shape, np.uint8)
+        cv2.ellipse(mask, (x + w // 2, y + h // 2), (w // 2 + 3, h // 2 + 3), 0, 0, 360, 1, -1)
+        a[mask > 0] = 255
+    return Image.fromarray(a)
 
 
 def main():
     products = load_products(SUPPLIER)
-    products += [p for p in load_products() if p["code"] in EXTRA and p not in products]
+    products += [p for p in load_products() if (p["code"] in EXTRA or p["code"] in IMAGE_ONLY) and p not in products]
     enrichment, missing = {}, []
     for p in products:
         info, code = None, None
-        for c in ([EXTRA[p["code"]]] if p["code"] in EXTRA else []) + code_candidates(p):
+        forced = EXTRA.get(p["code"]) or IMAGE_ONLY.get(p["code"])
+        for c in ([forced] if forced else []) + ([] if p["code"] in IMAGE_ONLY else code_candidates(p)):
             try:
                 info = lookup(c)
             except Exception as err:  # noqa: BLE001
@@ -94,7 +127,7 @@ def main():
         # a "full" és a normál rajz ugyanaz a kép: csak az elsőt mentjük
         for url in info["images"][:1]:
             try:
-                images.append(save_image(fetch(url), p["slug"]))
+                images.append(save_image(remove_badge(fetch(url)), p["slug"]))
             except Exception as err:  # noqa: BLE001
                 print("  képhiba:", url, err)
         enrichment[p["slug"]] = {
@@ -102,7 +135,8 @@ def main():
             "sourceUrl": info["url"],
             "sourceTitle": info["title"],
             "matchedCode": code,
-            "specs": {**info["specs"], **({"Felület": "eloxált"} if "elox" in p["name"].lower() and info["specs"].get("Felület") == "natúr" else {})},
+            "specs": ({k: v for k, v in info["specs"].items() if k == "Anyag"} if p["code"] in IMAGE_ONLY else
+                      {**info["specs"], **({"Felület": "eloxált"} if "elox" in p["name"].lower() and info["specs"].get("Felület") == "natúr" else {})}),
             "images": images,
         }
     update_enrichment(enrichment, SUPPLIER)
