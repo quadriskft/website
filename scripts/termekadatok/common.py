@@ -70,11 +70,23 @@ def fetch(url, cache=True, timeout=40):
     raise last
 
 
+PROTECTED_FILE = ROOT / "data/vedett_kepek.json"
+_protected = None
+
+
+def is_protected(path):
+    """Védett (kézzel feljavított) termékkép-e – data/vedett_kepek.json; ezeket a szkriptek nem írják felül, nem törlik."""
+    global _protected
+    if _protected is None:
+        _protected = set(json.loads(PROTECTED_FILE.read_text())["kepek"]) if PROTECTED_FILE.exists() else set()
+    return Path(str(path)).name in _protected
+
+
 def clear_images(slug):
-    """A termék korábban mentett képeinek törlése (csak pontosan a slug-hoz tartozókat)."""
+    """A termék korábban mentett képeinek törlése (csak pontosan a slug-hoz tartozókat, a védettek kivételével)."""
     rx = re.compile(rf"{re.escape(slug)}-\d+\.webp")
     for f in IMAGE_DIR.glob(f"{slug}-*.webp"):
-        if rx.fullmatch(f.name):
+        if rx.fullmatch(f.name) and not is_protected(f):
             f.unlink()
 
 
@@ -92,6 +104,8 @@ def save_image(img, slug, index=1):
     img.thumbnail((MAX_IMAGE, MAX_IMAGE), Image.LANCZOS)
     IMAGE_DIR.mkdir(parents=True, exist_ok=True)
     name = f"{slug}-{index}.webp"
+    if is_protected(name) and (IMAGE_DIR / name).exists():  # a kézzel feljavított kép marad
+        return f"/termekkepek/{name}"
     img.save(IMAGE_DIR / name, "WEBP", quality=82, method=6)
     return f"/termekkepek/{name}"
 

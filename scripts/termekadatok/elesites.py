@@ -16,7 +16,7 @@ from pathlib import Path
 from PIL import Image, ImageFilter
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import ENRICHMENT, ROOT  # noqa: E402
+from common import ENRICHMENT, ROOT, is_protected  # noqa: E402
 
 TARGET, MAX_SCALE = 800, 6
 DONE = ROOT / "data/elesitett_kepek.json"
@@ -60,7 +60,7 @@ def main():
     done = json.loads(DONE.read_text()) if DONE.exists() else {}
     n = 0
     for f in targets():
-        if not f.exists() or done.get(f.name) == digest(f):
+        if not f.exists() or is_protected(f) or done.get(f.name) == digest(f):
             continue
         sharpen(f)
         done[f.name] = digest(f)

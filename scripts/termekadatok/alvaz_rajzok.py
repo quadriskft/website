@@ -23,7 +23,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import ENRICHMENT, ROOT  # noqa: E402
+from common import ENRICHMENT, ROOT, is_protected  # noqa: E402
 from profil_vektor import VECTOR, rasterize  # noqa: E402
 
 W, H, MARGIN = 1200, 840, 50
@@ -582,7 +582,8 @@ def main():
     for slug, (cat, mm, g, prof) in items.items():
         if slug in KEEP_ORIGINAL:
             rel = f"/termekkepek/{slug}-rajz.webp"
-            (ROOT / "public" / rel.lstrip("/")).unlink(missing_ok=True)
+            if not is_protected(rel):
+                (ROOT / "public" / rel.lstrip("/")).unlink(missing_ok=True)
             data[slug]["images"] = [u for u in data[slug]["images"] if u != rel]
             continue
         f = min((W - 2 * MARGIN) / g.shape[1], (H - 2 * MARGIN) / g.shape[0]) if mm is None or cat in FIT_EACH else scale[cat] * mm / prof
@@ -596,9 +597,11 @@ def main():
             c2 = Image.new("L", (W, H), 255)
             c2.paste(im2, ((W - im2.width) // 2, (H - im2.height) // 2))
             rel2 = f"/termekkepek/{slug}-korvonal.webp"
-            c2.convert("RGB").save(ROOT / "public" / rel2.lstrip("/"), "WEBP", quality=90)
+            if not is_protected(rel2):
+                c2.convert("RGB").save(ROOT / "public" / rel2.lstrip("/"), "WEBP", quality=90)
             data[slug]["images"] = [rel, rel2]
-        canvas.convert("RGB").save(ROOT / "public" / rel.lstrip("/"), "WEBP", quality=90)
+        if not is_protected(rel):  # a kézzel feljavított rajz marad
+            canvas.convert("RGB").save(ROOT / "public" / rel.lstrip("/"), "WEBP", quality=90)
         e = data[slug]
         # a kézzel feltöltött 3D profilkép (<slug>-3d.webp) mindig a rajz után, 2. képként marad – a letöltő
         # szkriptek (pl. alusv.py) újrafuttatáskor csak a saját képeiket írják a listába

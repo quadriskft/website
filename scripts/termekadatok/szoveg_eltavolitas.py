@@ -19,6 +19,9 @@ import numpy as np
 from PIL import Image
 from scipy import ndimage
 
+sys.path.insert(0, str(Path(__file__).parent))
+from common import is_protected  # noqa: E402  (a védett, kézzel feljavított képekhez nem nyúl)
+
 ROOT = Path(__file__).resolve().parents[2]
 MIN_GLYPHS = 6
 KEEP_DRAWING = __import__("os").environ.get("RAJZSZURO", "1") == "1"
@@ -308,7 +311,7 @@ def main():
                 continue
             img = Image.open(f)
             out, did = clean(img)
-            if not did:
+            if not did or is_protected(f):
                 continue
             changed += 1
             if probe:

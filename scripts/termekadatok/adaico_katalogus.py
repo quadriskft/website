@@ -19,7 +19,7 @@ import pymupdf
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import CACHE, ROOT, clear_images, fetch, load_enrichment, load_products, save_image, update_enrichment  # noqa: E402
+from common import CACHE, ROOT, clear_images, fetch, is_protected, load_enrichment, load_products, save_image, update_enrichment  # noqa: E402
 
 SOURCE = "ADAICO katalógus"
 URL = "https://www.adaico.com/en/downloadcatalogues/download?id=ADAICO_2025_EDS.pdf"
@@ -83,7 +83,9 @@ def main():
             src = existing.get(SAME_IMAGES[p["slug"]], {}).get("images", [])
             images = []
             for i, u in enumerate(src, 1):
-                shutil.copyfile(ROOT / "public" / u.lstrip("/"), ROOT / f"public/termekkepek/{p['slug']}-{i}.webp")
+                dst = ROOT / f"public/termekkepek/{p['slug']}-{i}.webp"
+                if not (is_protected(dst) and dst.exists()):
+                    shutil.copyfile(ROOT / "public" / u.lstrip("/"), dst)
                 images.append(f"/termekkepek/{p['slug']}-{i}.webp")
         else:
             images = [save_image(render(doc[pno - 1], b), p["slug"], i) for i, b in enumerate(boxes, 1)]

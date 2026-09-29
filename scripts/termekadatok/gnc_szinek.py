@@ -19,7 +19,7 @@ import numpy as np
 from PIL import Image, ImageDraw
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import ROOT  # noqa: E402
+from common import ROOT, is_protected  # noqa: E402
 
 # slug -> (forráskép slug, cél: 'fekete' | 'feher' | 'szurke' | 'feher_sotet_reszek')
 RECOLOR = {
@@ -106,6 +106,8 @@ def main():
         if not keep.exists():
             keep.write_bytes(src_path.read_bytes())
         out = recolor(Image.open(keep), target)
+        if is_protected(dst_img[0]):  # kézzel feljavított kép: marad
+            continue
         out.save(ROOT / "public" / dst_img[0].lstrip("/"), "WEBP", quality=90)
         print(f"  {slug}: {src} → {target}")
 
