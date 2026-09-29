@@ -2912,7 +2912,8 @@
    "Anyag": "alumínium, eloxált",
    "Méret": "60 × 30 mm",
    "Falvastagság": "2,5 mm",
-   "Tömeg": "1,147 kg/fm (elméleti)"
+   "Tömeg": "1,147 kg/fm (elméleti)",
+   "Sarokrádiusz": "külső R2,5, belső éles"
   },
   "images": [
    "/termekkepek/3d/222891-zartszelveny-60x30x2-5-r2-5-elox-1.webp",
@@ -3425,7 +3426,8 @@
    "Tömeg": "0,929 kg/fm",
    "Anyag": "alumínium, eloxált",
    "Szabványméret": "60 x 30 x 2 mm",
-   "Profil": "zártszelvény"
+   "Profil": "zártszelvény",
+   "Sarokrádiusz": "külső R3 / belső R1"
   },
   "images": [
    "/termekkepek/3d/227576-zartszelveny-60x30x2-mm-or3-ir1-elox-1.webp",
@@ -4774,7 +4776,8 @@
    "Anyag": "alumínium",
    "Méret": "80 × 50 mm",
    "Falvastagság": "4 mm",
-   "Tömeg": "2,635 kg/fm (elméleti)"
+   "Tömeg": "2,635 kg/fm (elméleti)",
+   "Sarokrádiusz": "külső R4, belső éles"
   },
   "images": [
    "/termekkepek/3d/251659-80x50x4-mm-r4-alu-zartszelveny-1.webp",
@@ -5250,7 +5253,8 @@
    "Tömeg": "2,344 kg/fm",
    "Anyag": "alumínium",
    "Szabványméret": "150 x 25 x 2.5 R2/R5 mm",
-   "Profil": "zártszelvény"
+   "Profil": "zártszelvény",
+   "Sarokrádiusz": "külső R2, belső éles"
   },
   "images": [
    "/termekkepek/3d/253734-150x25x2-5-r2-alu-zartszelveny-1.webp",
@@ -5270,7 +5274,8 @@
    "Tömeg": "0,772 kg/fm",
    "Anyag": "alumínium",
    "Szabványméret": "50 x 30 x 2 R5/R2 mm",
-   "Profil": "zártszelvény"
+   "Profil": "zártszelvény",
+   "Sarokrádiusz": "külső R5 / belső R3"
   },
   "images": [
    "/termekkepek/3d/253812-50x30x2-r5-alu-zartszelveny-6000-mm-1.webp",
@@ -5399,7 +5404,8 @@
    "Tömeg": "1,798 kg/fm",
    "Anyag": "alumínium",
    "Szabványméret": "80 x 40 x 3 R5/R2 mm",
-   "Profil": "zártszelvény"
+   "Profil": "zártszelvény",
+   "Sarokrádiusz": "külső R5 / belső R2"
   },
   "images": [
    "/termekkepek/3d/255207-80x40x3-mm-r5-alu-zartszelveny-1.webp",
@@ -5419,7 +5425,8 @@
    "Tömeg": "1,190 kg/fm",
    "Anyag": "alumínium",
    "Szabványméret": "40 x 40 x 3 R2 mm",
-   "Profil": "zártszelvény"
+   "Profil": "zártszelvény",
+   "Sarokrádiusz": "külső R2, belső éles"
   },
   "images": [
    "/termekkepek/3d/255340-40x40x3-r2-mm-alu-zartszelveny-1.webp",
@@ -5439,7 +5446,8 @@
    "Tömeg": "4,054 kg/fm",
    "Anyag": "alumínium",
    "Szabványméret": "100 x 100 x 4 R7/R3 mm",
-   "Profil": "zártszelvény"
+   "Profil": "zártszelvény",
+   "Sarokrádiusz": "külső R7 / belső R3"
   },
   "images": [
    "/termekkepek/3d/255472-100x100x4-mm-r7-3-alu-zartszelveny-1.webp",
@@ -5479,7 +5487,8 @@
    "Tömeg": "1,133 kg/fm",
    "Anyag": "alumínium",
    "Szabványméret": "60 x 30 x 2.5 R2.5 mm",
-   "Profil": "zártszelvény"
+   "Profil": "zártszelvény",
+   "Sarokrádiusz": "külső R2,5, belső éles"
   },
   "images": [
    "/termekkepek/3d/255610-60x30x2-5-r2-5-mm-alu-zartszelveny-1.webp",
@@ -5519,7 +5528,8 @@
    "Tömeg": "1,959 kg/fm",
    "Anyag": "alumínium",
    "Szabványméret": "60 x 40 x 4 R4 mm",
-   "Profil": "zártszelvény"
+   "Profil": "zártszelvény",
+   "Sarokrádiusz": "külső R4 / belső R2"
   },
   "images": [
    "/termekkepek/3d/256468-60x40x4-mm-r4-2-alu-zartszelveny-1.webp",
@@ -5579,7 +5589,8 @@
    "Tömeg": "2,635 kg/fm",
    "Anyag": "alumínium",
    "Szabványméret": "80 x 50 x 4 mm",
-   "Profil": "zártszelvény"
+   "Profil": "zártszelvény",
+   "Sarokrádiusz": "külső R3, belső éles"
   },
   "images": [
    "/termekkepek/3d/258418-80x50x4-mm-r3-alu-zartszelveny-1.webp",
@@ -5597,7 +5608,8 @@
    "Anyag": "alumínium",
    "Méret": "60 × 40 mm",
    "Falvastagság": "2,5 mm",
-   "Tömeg": "1,282 kg/fm (elméleti)"
+   "Tömeg": "1,282 kg/fm (elméleti)",
+   "Sarokrádiusz": "külső R2, belső éles"
   },
   "images": [
    "/termekkepek/3d/258455-60x40x2-5-r2-alu-zartszelveny-1.webp",

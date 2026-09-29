@@ -163,10 +163,29 @@ function sheetMats(it) {
 
 const V = (x, y) => new THREE.Vector2(x, y);
 function poly(pts) { return new THREE.Shape(pts.map(([x, y]) => V(x, y))); }
-function section(kind, a, b, t) {
+// lekerekített sarkú téglalap (x, y, w, h, r sugár); hole = óramutató járásával ellentétes irány a lyukakhoz
+function roundRect(p, x, y, w, h, r, hole) {
+  r = Math.min(r, w / 2, h / 2);
+  const c = [[x + w - r, y + r, -0.5], [x + w - r, y + h - r, 0], [x + r, y + h - r, 0.5], [x + r, y + r, 1]];
+  const seq = hole ? [...c].reverse() : c;
+  seq.forEach(([cx, cy, s], i) => {
+    const a0 = s * Math.PI, a1 = a0 + (hole ? -0.5 : 0.5) * Math.PI;
+    const [from, to] = hole ? [a0 + 0.5 * Math.PI, a0] : [a0, a1];
+    if (r > 0) p.absarc(cx, cy, r, from, to, !!hole);
+    else if (i === 0) p.moveTo(cx, cy); else p.lineTo(cx, cy);
+  });
+  p.closePath();
+  return p;
+}
+function section(kind, a, b, t, ro = 0, ri = 0) {
   t = t || Math.min(a, b || a) * 0.06;
   switch (kind) {
-    case 'rhs': { const s = poly([[0, 0], [a, 0], [a, b], [0, b]]); s.holes.push(new THREE.Path([V(t, t), V(t, b - t), V(a - t, b - t), V(a - t, t)])); return s; }
+    case 'rhs': {
+      if (!ro && !ri) { const s = poly([[0, 0], [a, 0], [a, b], [0, b]]); s.holes.push(new THREE.Path([V(t, t), V(t, b - t), V(a - t, b - t), V(a - t, t)])); return s; }
+      const s = roundRect(new THREE.Shape(), 0, 0, a, b, ro, false);
+      s.holes.push(roundRect(new THREE.Path(), t, t, a - 2 * t, b - 2 * t, ri, true));
+      return s;
+    }
     case 'flat': return poly([[0, 0], [a, 0], [a, b], [0, b]]);
     case 'L': return poly([[0, 0], [a, 0], [a, t], [t, t], [t, b], [0, b]]);
     case 'U': return poly([[0, 0], [a, 0], [a, b], [a - t, b], [a - t, t], [t, t], [t, b], [0, b]]);
@@ -207,11 +226,11 @@ function setup() {
 function add(geo, mat) { const m = new THREE.Mesh(geo, mat); m.castShadow = m.receiveShadow = true; scene.add(m); return m; }
 
 function buildProfile(it) {
-  const [kind, a, b0, t] = it.draw;
+  const [kind, a, b0, t, ro, ri] = it.draw;
   const b = kind === 'tube' || kind === 'rod' ? a : b0;
   const k = 1 / Math.max(a, b);
   const len = 3.6;
-  const s = section(kind, a, b, t);
+  const s = section(kind, a, b, t, ro, ri);
   const bevel = Math.min(a, b) * k * 0.008;
   const geo = new THREE.ExtrudeGeometry(s, { depth: len / k, bevelEnabled: true, bevelThickness: bevel / k, bevelSize: bevel / k * 0.6, bevelSegments: 3, curveSegments: 64 });
   geo.scale(k, k, k); geo.translate(-a * k / 2, 0, -len / 2); geo.computeVertexNormals();

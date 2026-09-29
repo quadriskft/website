@@ -61,7 +61,7 @@ def dim_v(img, d, x, y0, y1, label, fnt):
     img.paste(t, (int(x + 10), int((y0 + y1) / 2 - t.height / 2)), t)
 
 
-def drawing(kind, a, b=0, t=0, c=0):
+def drawing(kind, a, b=0, t=0, ro=0, ri=0):
     """Méretezett keresztmetszet (fekete kitöltés, mint a gyári katalógusokban)."""
     W, H, M = 1000, 750, 150
     img = Image.new("RGB", (W, H), "white")
@@ -89,9 +89,9 @@ def drawing(kind, a, b=0, t=0, c=0):
     w, h = a * s, b * s
     x0, y0 = (W - w) / 2, (H - h) / 2 + 20
     ts = max((t or min(a, b) * 0.06) * s, 4)
-    if kind == "rhs":
-        d.rectangle([x0, y0, x0 + w, y0 + h], fill="black")
-        d.rectangle([x0 + ts, y0 + ts, x0 + w - ts, y0 + h - ts], fill="white")
+    if kind == "rhs":  # ro/ri: külső/belső sarokrádiusz (mm)
+        d.rounded_rectangle([x0, y0, x0 + w, y0 + h], radius=ro * s, fill="black")
+        d.rounded_rectangle([x0 + ts, y0 + ts, x0 + w - ts, y0 + h - ts], radius=ri * s, fill="white")
     elif kind == "flat":
         d.rectangle([x0, y0, x0 + w, y0 + h], fill="black")
     elif kind == "L":
@@ -229,6 +229,29 @@ def sheet(w, l, t, colour, length_label=None, pattern=None):
 
 # ---------------------------------------------------------------- megnevezés-értelmezés
 
+def corner_radii(low, t):
+    """Zártszelvény sarokrádiusza a névből: „R7/3”, „R7/R3”, „OR3/IR1” = külső/belső; egyetlen „R5” = külső,
+    ekkor a belső a falvastagsággal kisebb (koncentrikus ív). Nincs megadva -> None."""
+    m = re.search(r"\bor\s*(\d+(?:[.,]\d+)?)\s*/\s*ir\s*(\d+(?:[.,]\d+)?)", low) or \
+        re.search(r"\br\s*(\d+(?:[.,]\d+)?)\s*/\s*r?\s*(\d+(?:[.,]\d+)?)", low)
+    if m:
+        return f(m.group(1)), f(m.group(2))
+    m = re.search(r"\br\s*(\d+(?:[.,]\d+)?)", low)
+    if m:
+        ro = f(m.group(1))
+        return ro, max(ro - t, 0)
+    return None
+
+
+def rhs(specs, low, a, b, t):
+    """Zártszelvény rajzadat; ha a névben sarokrádiusz van, azzal lekerekítve (és az adatlapon is)."""
+    r = corner_radii(low, t)
+    if not r:
+        return ("rhs", a, b, t)
+    specs["Sarokrádiusz"] = f"külső R{hu(r[0])} / belső R{hu(r[1])}" if r[1] else f"külső R{hu(r[0])}, belső éles"
+    return ("rhs", a, b, t, *r)
+
+
 def parse(p):
     n = p["name"].replace("×", "x")
     low = n.lower()
@@ -330,10 +353,8 @@ def parse(p):
     if m:
         a, b, t = f(m.group(1)), f(m.group(2)), f(m.group(3))
         specs.update({"Méret": f"{hu(a)} × {hu(b)} mm", "Falvastagság": f"{hu(t)} mm"})
-        if m.group(4):
-            specs["Sarokrádiusz"] = f"R{m.group(4)}"
         specs["Tömeg"] = f"{hu((2 * (a + b) - 4 * t) * t * AL / 1000, 3)} kg/fm (elméleti)"
-        return specs, ("rhs", a, b, t)
+        return specs, rhs(specs, low, a, b, t)
     m = re.search(rf"{NUM}\s*x\s*{NUM}\s*(?:mm)?\s*alu\s*lapos", low)
     if m:
         a, b = f(m.group(1)), f(m.group(2))
@@ -378,7 +399,7 @@ def parse(p):
         a, b, t = f(m.group(1)), f(m.group(2)), f(m.group(3))
         specs.update({"Méret": f"{hu(a)} × {hu(b)} mm", "Falvastagság": f"{hu(t)} mm",
                       "Tömeg": f"{hu((2 * (a + b) - 4 * t) * t * AL / 1000, 3)} kg/fm (elméleti)"})
-        return specs, ("rhs", a, b, t)
+        return specs, rhs(specs, low, a, b, t)
     m = re.search(rf"{NUM}\s*x\s*{NUM}\s*(?:mm)?\s*ponyvatartó zártszelvény", low)
     if m:
         a, b = f(m.group(1)), f(m.group(2))
