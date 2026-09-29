@@ -20,7 +20,7 @@ const showCategory = category && category.name !== group.name;
 const profile = isProfile(product);
 // gyári szálhossz (ha ismert) – tájékoztató a méretsorok mellé
 const stockLength = profile
-  ? (specs.find(([k]) => /szálhossz|gyártási hossz|^hossz/i.test(k))?.[1] ?? product.name.match(/(\d[\d ]{2,5})\s*mm\b(?!.*mm)/)?.[1])
+  ? (specs.find(([k]) => /szálhossz|gyártási hossz|^hossz/i.test(k))?.[1] ?? product.name.match(/(\d{1,2} ?\d{3})\s*mm\b(?!.*mm)/)?.[1])
   : null;
 const description = product.description || `${product.name}${product.code ? ` (cikkszám: ${product.code})` : ''} – ${group.name}. Kérjen ajánlatot online a ${SITE.name}-tól.`;
 const crumbs = [

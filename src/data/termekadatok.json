@@ -3056,6 +3056,23 @@
    "/termekkepek/225549-400-mm-peremes-oldalfal-elox-1.webp"
   ]
  },
+ "225630-55-padlo-profil-250-mm-zart": {
+  "source": "Exlabesa carrocería",
+  "sourceTitle": "Exlabesa EXL-5630",
+  "matchedCode": "EXL-5630",
+  "specs": {
+   "Cikkszám (gyártói)": "EXL-5630",
+   "Tömeg": "6,359 kg/fm",
+   "Kerület": "1595 mm",
+   "Szélesség": "250 mm",
+   "Magasság": "54,5 mm",
+   "Falvastagság": "2,5 / 3,0 / 4,0 mm",
+   "Ix": "119,07 cm⁴",
+   "Iy": "1412,20 cm⁴",
+   "Kivitel": "zárt (többkamrás) padlóprofil"
+  },
+  "images": []
+ },
  "226001-zart-padlo-profil-30-200-mm": {
   "source": "ESAL padlóprofil",
   "sourceUrl": "https://esalforli.com/public/Catalogo-Sponde-2020-Esal-Forli.pdf#page=69",
