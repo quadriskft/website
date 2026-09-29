@@ -233,7 +233,7 @@ HIRES = {"223350-350-mm-mono-profil-szakalas-elox": ("metra", 22, (305, 95, 420,
 WALL_MM = {"25-mm-vastag-oldalfal-rendszerek": 4, "25-mm-mono-profilok": 4, "szego-profilok": 4,
            "aluminium-billencs-oldalfalak": 4, "sarok-oszlopok": 5}
 # termékenkénti eltérés a kitöltendő falvastagságtól (mm)
-WALL_SLUG = {}
+WALL_SLUG = {"66k0800-alu-zartszelveny-80x35-4r-elox": 1}  # tömör falú forrás: a segédvonalak mellé ne töltsön
 # halvány (szürke vonalas) forrásrajzok besötétítése a feldolgozás előtt
 DARKEN = {"6639604-max-hatso-oszlop-exl-elox", "6639692-max-elso-oszlop-exl-elox"}
 # alkategóriák, ahol nem közös a lépték: minden rajz egyenként tölti ki a vásznat (a Quadris kérése: 6613553 mintájára)
