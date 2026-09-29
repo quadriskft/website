@@ -446,5 +446,12 @@
   "code": "90-6000-D / 90-6000-DG",
   "date": "2026-09-29",
   "reason": "Quadris kérés: 90-6000-DG kétszer szerepelt – a szellőzés › Tetőablakok példány marad"
+ },
+ "e-sesam-fix-volumen-kit": {
+  "name": "E/SESAM FIX Volumen KIT",
+  "supplier": "Edscha",
+  "code": "",
+  "date": "2026-09-29",
+  "reason": "Quadris kérés: nem kell"
  }
 }
