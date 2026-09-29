@@ -22,7 +22,8 @@ const excelProducts = catalog.products.map((p) => {
   };
   // kézi javítások (data/termek_javitasok.json): név, (gyártói) cikkszám, műszaki adat
   const f = fixes[p.slug];
-  return f ? { ...merged, ...(f.name ? { name: f.name } : {}), ...(f.code ? { code: f.code } : {}), ...(f.codeLabel ? { codeLabel: f.codeLabel } : {}), specs: { ...merged.specs, ...(f.specs ?? {}) } } : merged;
+  return f ? { ...merged, ...(f.name ? { name: f.name } : {}), ...(f.code ? { code: f.code } : {}), ...(f.codeLabel ? { codeLabel: f.codeLabel } : {}),
+    ...(f.orderNote ? { orderNote: f.orderNote } : {}), specs: withoutNull({ ...merged.specs, ...(f.specs ?? {}) }) } : merged;
 });
 
 // A beszállítók teljes kínálatából felvett további termékek (scripts/termekadatok/teljes_kinalat.py)
@@ -37,8 +38,14 @@ const extendedProducts = (extended.products ?? []).map((p) => {
   const e = extra[p.slug];
   const merged = e ? { ...out, images: e.images?.length ? e.images : out.images, specs: { ...out.specs, ...(e.specs ?? {}) } } : out;
   const f = fixes[p.slug];
-  return f ? { ...merged, ...(f.name ? { name: f.name } : {}), ...(f.code ? { code: f.code } : {}), specs: { ...merged.specs, ...(f.specs ?? {}) } } : merged;
+  return f ? { ...merged, ...(f.name ? { name: f.name } : {}), ...(f.code ? { code: f.code } : {}),
+    ...(f.orderNote ? { orderNote: f.orderNote } : {}), specs: withoutNull({ ...merged.specs, ...(f.specs ?? {}) }) } : merged;
 });
+
+// kézi javításban a null értékű műszaki adat törlendő (pl. a darabra adott termék gyári szálhossza)
+function withoutNull(specs) {
+  return Object.fromEntries(Object.entries(specs).filter(([, v]) => v !== null));
+}
 
 function gncColor(p) {
   const s = `${p.name} ${p.code ?? ''}`.toLowerCase();

@@ -607,5 +607,63 @@
    "Fajlagos tömeg": "2,818 kg/m",
    "Mértékegység": "db"
   }
+ },
+ "661090-midi-elso-oszlop-lift-elox-135": {
+  "specs": {
+   "Mértékegység": "db",
+   "Hossz": "2800 mm (igény szerint más hosszban is)",
+   "Tömeg": "15,51 kg/db (2800 mm)",
+   "Fajlagos tömeg": "5,539 kg/m"
+  },
+  "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben."
+ },
+ "6614358-midi-hatso-u-szegos-oszlop-elox": {
+  "specs": {
+   "Mértékegység": "db",
+   "Hossz": "2800 mm (igény szerint más hosszban is)",
+   "Tömeg": "15,16 kg/db (2800 mm)",
+   "Fajlagos tömeg": "5,413 kg/m"
+  },
+  "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben."
+ },
+ "662000-midi-hatso-lift-oszlop-elox": {
+  "specs": {
+   "Mértékegység": "db",
+   "Hossz": "2800 mm (igény szerint más hosszban is)",
+   "Tömeg": "14,46 kg/db (2800 mm)",
+   "Fajlagos tömeg": "5,163 kg/m"
+  },
+  "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben."
+ },
+ "663980-midi-elso-oszlop-flat-elox-246": {
+  "specs": {
+   "Mértékegység": "db",
+   "Hossz": "2800 mm (igény szerint más hosszban is)",
+   "Tömeg": "18,72 kg/db (2800 mm)",
+   "Fajlagos tömeg": "6,685 kg/m"
+  },
+  "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben."
+ },
+ "6621620-or-midi-elso-oszlop-alu-elox": {
+  "specs": {
+   "Tömeg [kg/fm]": null,
+   "Gyári szálhossz [mm]": null,
+   "Hossz": "2800 mm (igény szerint más hosszban is)",
+   "Tömeg": "11,15 kg/db (2800 mm)",
+   "Fajlagos tömeg": "3,981 kg/m",
+   "Mértékegység": "db"
+  },
+  "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben."
+ },
+ "6621640-or-midi-hatso-oszlop-alu-elox": {
+  "specs": {
+   "Tömeg [kg/fm]": null,
+   "Gyári szálhossz [mm]": null,
+   "Hossz": "2800 mm (igény szerint más hosszban is)",
+   "Tömeg": "10,59 kg/db (2800 mm)",
+   "Fajlagos tömeg": "3,782 kg/m",
+   "Mértékegység": "db"
+  },
+  "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben."
  }
 }
