@@ -199,7 +199,10 @@ const HARD_NO = /dugó|végz[aá]r|kupak|(^|\s)csavar(\s|ok|$)|bilincs|adapter|k
 const PROFILE_NAME = /profil|hossztartó|kereszttartó|szelvény|laposrúd|(^|\s)sín(\s|$)|sínek|tetősín|"c" sín|(^|\s)cső(\s|$)|csövek|kéder|(^|[\s-])léc(\s|$)|oszlop|tömítés|takarógumi|zsanér \d{4}/i;
 const SOFT_NO = /(^|[\s"(])(tartó|konzol|kengyel|lapka|sarokelem|összekötő|elem|zár|zsanér|görgő|kocsi|rúd|szegő)(\s|$)/i;
 // darabra (gyári hosszban) adott termékek: nem kapnak méretre vágós rendelőlapot (a Quadris kérése)
-const PIECE_ONLY = (p) => ['edscha', 'versus'].includes(p.category) && /kereszt?tartó/i.test(p.name);
+// – az alumínium sarokoszlopok is, kivéve a méretre vágva adott profilokat (a slug eleje = a Quadris-cikkszám)
+const CORNER_POST_CUT = ['6612225-', '6612226-', '66k0800-', '6639604-', '6639692-'];
+const PIECE_ONLY = (p) => (['edscha', 'versus'].includes(p.category) && /kereszt?tartó/i.test(p.name))
+  || (p.category === 'aluminium-sarok-oszlopok' && !CORNER_POST_CUT.some((c) => p.slug.startsWith(c)));
 export function isProfile(p) {
   if (NO_PROFILE_GROUPS.has(p.group) || HARD_NO.test(p.name) || PIECE_ONLY(p)) return false;
   if (PROFILE_GROUPS.has(p.group) || /profil|hossztartó|kereszttartó|szelvény/i.test(p.name)) return true;

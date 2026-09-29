@@ -74,8 +74,8 @@ EXTRA = {
 }
 # a Quadris kérésére minden MAX-os első oszlop a „Pillar profile CS MAX front” (66OAP17714) méretezett rajzát
 # kapja; a többi adat (tömeg, hossz, felület) az azonos hosszúságú, eloxált MAX front tételé (None: csak az anyag)
-IMAGE_ONLY = {"66177137": "66OAP17714", "66177147": "66OAP17714", "66177300": "66OAP17714", "6613211": "66OAP17714"}
-DATA_FROM = {"66177147": "662AP17730", "66177137": "662AP17714", "66177300": "662AP17712", "6613211": None}
+IMAGE_ONLY = {"66177137": "66OAP17714", "66177147": "66OAP17714", "66177300": "66OAP17714"}
+DATA_FROM = {"66177147": "662AP17730", "66177137": "662AP17714", "66177300": "662AP17712"}
 PROFILE_SIZE = {"Szélesség": "127,0 mm", "Magasság": "177,0 mm"}  # a rajz szerint (a 3000 mm-es tételnél nincs megadva)
 
 
