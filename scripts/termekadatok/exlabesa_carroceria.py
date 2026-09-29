@@ -2,7 +2,7 @@
 azok a padlóprofilok, amelyek a lengyel standard katalógusban (exlabesa.py) nem szerepelnek.
 
 A katalógus lapjai szöveg nélküliek (képek), ezért az adatok kézzel rögzítettek a lapról; a profil rajza a
-data/forras/exlabesa_carroceria/<EXL-szám>.png kivágásból kerül a termékhez, ha a fájl megvan.
+data/forras/exlabesa_carroceria/<EXL-szám>.png kivágásból (a Quadris által küldött lapképből, <szám>_lap.png) kerül a termékhez, ha a fájl megvan.
 
 A Quadris kérésére: 225630/55 (padló profil 250 mm zárt) = EXL-5630; 222910/30 (padló profil 200 mm) = EXL-29100.
 
@@ -25,6 +25,10 @@ ITEMS = {
         "Tömeg": "6,359 kg/fm", "Kerület": "1595 mm", "Szélesség": "250 mm", "Magasság": "54,5 mm",
         "Falvastagság": "2,5 / 3,0 / 4,0 mm", "Ix": "119,07 cm⁴", "Iy": "1412,20 cm⁴",
         "Kivitel": "zárt (többkamrás) padlóprofil"}),
+    "222910-30-padlo-profil-200-mm-exl": ("29100", {
+        "Tömeg": "3,980 kg/fm", "Kerület": "878 mm", "Szélesség": "200 mm (teljes: 210,4 mm)", "Magasság": "30 mm",
+        "Falvastagság": "3,0 / 3,5 / 3,9 mm", "Ix": "542,81 cm⁴", "Iy": "20,57 cm⁴",
+        "Kivitel": "nyitott, bordás padlóprofil három T-gerinccel"}),
 }
 
 

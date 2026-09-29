@@ -62,6 +62,7 @@ PROFILES = {
     "226001-zart-padlo-profil-30-200-mm": ("padlo-profilok", 200),  # ESAL 11258
     "227543-30-padlo-profil-200-mm": ("padlo-profilok", 200),
     "227543-30-padlo-profil-200-mm-elox": ("padlo-profilok", 200),
+    "222910-30-padlo-profil-200-mm-exl": ("padlo-profilok", 210.4),  # Exlabesa EXL-29100
     "222233-rampa-szego-g-profil": ("rampa-profilok", 80),
     "220192-also-rampa-indito-profil": ("rampa-profilok", 120),  # Profilpol 22.21.88168
     "220190-rampa-felso-zaro-profil-225-30-mm": ("rampa-profilok", 225),  # Profilpol 22.21.0679
@@ -129,9 +130,13 @@ REDIM = {"227543-30-padlo-profil-200-mm": ("200", "30", 5), "227543-30-padlo-pro
          "226830-300-mm-mono-profil-elox": ("300", "25", 0, True),
          "225549-400-mm-peremes-oldalfal-elox": ("400", "25", 13, True),
          "227075-200-mm-mono-profil-teli-szakalas-elox": ("200", "25", 0, True),
+         "222910-30-padlo-profil-200-mm-exl": ("200", "30", 0, True)}  # EXL-29100: kis felbontású lapkép
+# színes kitöltésű rajzok, amelyeken a méretnyilak a falhoz tapadnak: csak a (világoskék) kitöltés és 2 px-es
+# környezete (a körvonal) marad, a méretvonalak és feliratok törlődnek – a méreteket a REDIM rajzolja újra
+FILL_ONLY = {"222910-30-padlo-profil-200-mm-exl"
 }
 # kis felbontású forrásképek nagyítása a feldolgozás előtt (a vékony falak így nem tűnnek el)
-UPSCALE = {"227075-200-mm-mono-profil-teli-szakalas-elox": 3}
+UPSCALE = {"227075-200-mm-mono-profil-teli-szakalas-elox": 3, "222910-30-padlo-profil-200-mm-exl": 4}
 # Constellium rajzok: a forrás a constellium.py profilkiválasztása (csak a profil körvonala, a méretek nélkül)
 CONSTELLIUM = {"227543-30-padlo-profil-200-mm": "7543", "227543-30-padlo-profil-200-mm-elox": "7543"}
 # törésvonallal rövidítve rajzolt profilok valós arányra nyújtása: (sor, beszúrt sorok száma) – a beszúrt
@@ -358,6 +363,10 @@ def main():
             cv2.line(rgb, (x0, y0), (x1, y1), (0, 0, 0), t)
         if slug in DIMS:
             rgb = add_dims(rgb, *DIMS[slug])
+        if slug in FILL_ONLY:
+            r, gg, b = rgb[..., 0], rgb[..., 1], rgb[..., 2]
+            fill = ((gg > 140) & (b > 170) & (r < 170) & (b - r > 60)).astype(np.uint8)
+            rgb[cv2.dilate(fill, np.ones((5, 5), np.uint8)) == 0] = 255
         if slug in UPSCALE:
             rgb = cv2.resize(rgb, None, fx=UPSCALE[slug], fy=UPSCALE[slug], interpolation=cv2.INTER_CUBIC)
         if slug in ROTATE:

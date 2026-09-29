@@ -2903,6 +2903,26 @@
    "/termekkepek/222891-zartszelveny-60x30x2-5-r2-5-elox-1.webp"
   ]
  },
+ "222910-30-padlo-profil-200-mm-exl": {
+  "source": "Exlabesa carrocería",
+  "sourceTitle": "Exlabesa EXL-29100",
+  "matchedCode": "EXL-29100",
+  "specs": {
+   "Cikkszám (gyártói)": "EXL-29100",
+   "Tömeg": "3,980 kg/fm",
+   "Kerület": "878 mm",
+   "Szélesség": "200 mm (teljes: 210,4 mm)",
+   "Magasság": "30 mm",
+   "Falvastagság": "3,0 / 3,5 / 3,9 mm",
+   "Ix": "542,81 cm⁴",
+   "Iy": "20,57 cm⁴",
+   "Kivitel": "nyitott, bordás padlóprofil három T-gerinccel"
+  },
+  "images": [
+   "/termekkepek/222910-30-padlo-profil-200-mm-exl-rajz.webp",
+   "/termekkepek/222910-30-padlo-profil-200-mm-exl-1.webp"
+  ]
+ },
  "222923-60x1-5-mm-ponyvacso": {
   "source": "ALCOMET",
   "sourceUrl": "",
