@@ -271,5 +271,38 @@
  "202386-u-130-hossztarto": {
   "name": "\"U\" 130 Hossztartó, klamnizható",
   "order": 6
+ },
+ "205162-u-80x60x5-mm-aluprofil": {
+  "order": 7
+ },
+ "203432-u-90x50x50x5-mm-profil": {
+  "order": 8
+ },
+ "202274-u-100x50x50x5-mm-profil": {
+  "order": 9
+ },
+ "203548-u-140x60x60x7-mm-profil": {
+  "order": 10
+ },
+ "202869-u-160x80x80x8-mm-profil": {
+  "order": 11
+ },
+ "202387-i-70-kereszttarto": {
+  "order": 1
+ },
+ "206441-i-gerenda-profil-80x60-50x8-6-mm": {
+  "order": 2
+ },
+ "207319-i-90-kereszttarto": {
+  "order": 3
+ },
+ "200392-i-90-60-kereszttarto-ex": {
+  "order": 4
+ },
+ "2073902-i-90-csavarozhato-kereszttarto": {
+  "order": 5
+ },
+ "207315-i-108-kereszttarto": {
+  "order": 6
  }
 }
