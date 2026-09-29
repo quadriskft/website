@@ -310,5 +310,11 @@
   "specs": {
    "Ötvözet": "EN AW-5005"
   }
+ },
+ "s-3x1000x2000-mm-elox-alu-lemez-en-aw-5002": {
+  "name": "S 3x1000x2000 mm ELOX Alu lemez EN AW-5005",
+  "specs": {
+   "Ötvözet": "EN AW-5005"
+  }
  }
 }
