@@ -59,6 +59,7 @@ PROFILES = {
     "201094-targonca-utkozo-profil": ("targonca-utkozo", 37.5),
     # Alumínium padló profilok (a kulcs első tagja az alkategória, a lépték alkategóriánként közös)
     "221902-bordazott-padlo-profil-200-40-mm": ("padlo-profilok", 200),
+    "226001-zart-padlo-profil-30-200-mm": ("padlo-profilok", 200),  # ESAL 11258
     "227543-30-padlo-profil-200-mm": ("padlo-profilok", 200),
     "227543-30-padlo-profil-200-mm-elox": ("padlo-profilok", 200),
     "222233-rampa-szego-g-profil": ("rampa-profilok", 80),
@@ -80,7 +81,8 @@ CLEAN = {"202388-15-70-mm-keretprofil-elox-cd": ("40", "109", 40)}
 # apró, olvashatatlan méretezésű rajzok: csak a profil marad meg (a régi méretvonalak nélkül), és az etalon
 # stílusában új fő méretek kerülnek rá: (szélesség mm, magasság mm)
 # (szélesség, magasság, a szélesség-méret jobb végének távolsága a profil jobb szélétől mm-ben)
-REDIM = {"227543-30-padlo-profil-200-mm": ("200", "30", 5), "227543-30-padlo-profil-200-mm-elox": ("200", "30", 5)}
+REDIM = {"227543-30-padlo-profil-200-mm": ("200", "30", 5), "227543-30-padlo-profil-200-mm-elox": ("200", "30", 5),
+         "226001-zart-padlo-profil-30-200-mm": ("200", "30", 15)}
 # Constellium rajzok: a forrás a constellium.py profilkiválasztása (csak a profil körvonala, a méretek nélkül)
 CONSTELLIUM = {"227543-30-padlo-profil-200-mm": "7543", "227543-30-padlo-profil-200-mm-elox": "7543"}
 # törésvonallal rövidítve rajzolt profilok valós arányra nyújtása: (sor, beszúrt sorok száma) – a beszúrt
