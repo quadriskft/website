@@ -10,6 +10,8 @@ termékekhez, amelyeknek a forrás-katalógusa nincs meg nálunk. A kivágás k�
   E/Small tetőprofil 900931 (mind a három hossz) és E/VOLUMEN tetőprofil 900301 (mind a hat hossz) – a Volumen sín („Alu-Träger”) méretezett rajza első képként:
     data/forras/edscha_volumen_sin.png (a küldött 900301-es lap bal oldali rajza, 3× nagyítva; eredeti: …_lap.png)
 
+  E69004740 CS-Compact tetőkereszttartó – a küldött két termékfotó második képként (edscha_cs_compact_tetokereszttarto.png)
+
 Használat: python3 scripts/termekadatok/kuldott_kepek.py
 """
 
@@ -53,6 +55,10 @@ PREPEND.update({slug: ([("data/forras/edscha_small_sin.png", "meretrajz"),
                 for slug in SMALL})
 
 
+# a meglévő képek közé adott helyre beszúrt képek: slug -> [(kép, képnév-utótag, hely (0 = első))]
+INSERT = {"e69004740-cs-compact-tetokereszttarto-2550-mm": [("data/forras/edscha_cs_compact_tetokereszttarto.png", "foto", 1)]}
+
+
 def main():
     enrichment = {}
     for p in load_products():
@@ -70,6 +76,14 @@ def main():
         front = [save_image(Image.open(ROOT / src).convert("RGB"), slug, suffix) for src, suffix in drawings]
         rest = [u for u in prev.get("images", []) if u not in front]
         enrichment[slug] = {**prev, "source": SOURCE, "specs": {**prev.get("specs", {}), **specs}, "images": front + rest}
+    for slug, items in INSERT.items():
+        prev = enrichment.get(slug) or old.get(slug, {})
+        images = list(prev.get("images", []))
+        for src, suffix, pos in items:
+            url = save_image(Image.open(ROOT / src).convert("RGB"), slug, suffix)
+            images = [u for u in images if u != url]
+            images.insert(min(pos, len(images)), url)
+        enrichment[slug] = {**prev, "source": SOURCE, "images": images}
     update_enrichment(enrichment, SOURCE)
     print(f"{SOURCE}: {len(enrichment)} termék")
 
