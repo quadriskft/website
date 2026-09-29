@@ -46,7 +46,7 @@ PROFILES = {
     "2073902-i-90-csavarozhato-kereszttarto": ("kereszttartok", 90),
     "206441-i-gerenda-profil-80x60-50x8-6-mm": ("kereszttartok", 80),
     "2018652-18-mm-keretprofil-erositett-elox": ("keret-profilok", 126.5),
-    "202388-15-70-mm-keretprofil-elox-cd": ("keret-profilok", 100),
+    "202388-15-70-mm-keretprofil-elox-cd": ("keret-profilok", 109),
     "203004-30-mm-keretprofil-elox": ("keret-profilok", 124.5),
     "207318-keret-profil-90-18mm-elox": ("keret-profilok", 117.5),
     "203183-250-25-mm-alafutasgatlo-elox-profil": ("alafutasgatlo-profilok", 250),
@@ -59,9 +59,12 @@ PROFILES = {
 # szkennelt rajzok megszakított falvonalai: (x0, y0, x1, y1, vastagság) a forráskép képpontjaiban
 REPAIR = {
     "202387-i-70-kereszttarto": [(523, 150, 523, 530, 5), (566, 150, 566, 530, 5)],  # a gerinc törésjele
-    "202388-15-70-mm-keretprofil-elox-cd": [(165, 300, 166, 700, 4), (196, 300, 198, 700, 4),  # a hosszú szár törésjele
+    "202388-15-70-mm-keretprofil-elox-cd": [(165, 300, 166, 1218, 4), (196, 300, 198, 1218, 4),  # a hosszú szár (nyújtás után)
                                             (665, 317, 978, 319, 4)],  # a vízszintes szár szakadozott felső vonala
 }
+# törésvonallal rövidítve rajzolt profilok valós arányra nyújtása: (sor, beszúrt sorok száma) – a beszúrt
+# sorok a megadott sor másolatai; 202388: a [40] szélesség 498 px (12,45 px/mm), így a [109] magasság 1357 px
+STRETCH = {"202388-15-70-mm-keretprofil-elox-cd": (620, 518)}
 # a gerincbe lógó régi méretszám törlése (fehérrel), mielőtt a falvonalakat meghúzzuk: (x0, y0, x1, y1)
 ERASE = {"202387-i-70-kereszttarto": [(498, 222, 590, 256)]}
 # a kitöltés által eltakart méretszámok újraírása: (szöveg, x, y közép) a forráskép képpontjaiban
@@ -157,6 +160,9 @@ def main():
         if not keep.exists():
             Image.open(ROOT / "public" / src.lstrip("/")).save(keep)
         rgb = load(keep)
+        if slug in STRETCH:
+            y, n = STRETCH[slug]
+            rgb = np.concatenate([rgb[:y], np.repeat(rgb[y:y + 1], n, axis=0), rgb[y:]], axis=0)
         for x0, y0, x1, y1 in ERASE.get(slug, []):
             rgb[y0:y1, x0:x1] = 255
             rgb[257:260, x0:x1] = 0  # a méretvonal folytatása a törölt szám alatt (a 202387 méretvonala a 258. sorban)
