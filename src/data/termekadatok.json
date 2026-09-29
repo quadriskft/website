@@ -10191,17 +10191,25 @@
   ]
  },
  "e-ponyvagorgo-85810": {
-  "source": "Edscha Compact",
-  "sourceUrl": "https://www.edschats.com#page=7",
-  "sourceTitle": "Edscha Compact alkatrész-katalógus 2018: 40 38 085 810",
-  "matchedCode": "40 38 085 810",
+  "source": "Quadris katalóguslap",
+  "sourceTitle": "Claro catalogue 2019, 131. oldal – RTE-003",
+  "matchedCode": "RTE-003",
   "specs": {
-   "Cikkszám (gyári)": "40 38 085 810",
-   "Megnevezés (gyári)": "Seitenplanenroller ohne Clip – oldalponyva-görgő klip nélkül",
-   "Rendszer": "Edscha Compact / CS-Lite"
+   "Cikkszám (gyártói)": "RTE-003",
+   "Gyártó": "Claro",
+   "Kivitel": "kétgörgős ponyvagörgő, hosszlyukas rögzítőlappal",
+   "Méret": "75 × 52 mm",
+   "Görgőátmérő": "31,5 mm",
+   "Teljes vastagság": "17 mm",
+   "Lapvastagság": "5 mm",
+   "Hosszlyuk": "52 × 8 mm",
+   "Tömeg": "176 g/db",
+   "Kiszerelés": "110 db/karton",
+   "Minősítés": "DEKRA approved"
   },
   "images": [
-   "/termekkepek/e-ponyvagorgo-85810-1.webp"
+   "/termekkepek/e-ponyvagorgo-85810-1.webp",
+   "/termekkepek/e-ponyvagorgo-85810-2.webp"
   ]
  },
  "e-sesam-fix-volumen-kit": {
