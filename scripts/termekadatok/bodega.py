@@ -27,8 +27,8 @@ ITEMS = {  # kód -> (oldal, kivágás [pt], műszaki adatok)
 }
 
 
-def render(page, box):
-    zoom = 240 / 72
+def render(page, box, dpi=240):
+    zoom = dpi / 72
     pix = page.get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), clip=pymupdf.Rect(*box), alpha=False)
     img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
     g = np.asarray(img.convert("L")) < 225

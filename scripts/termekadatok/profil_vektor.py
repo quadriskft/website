@@ -79,7 +79,16 @@ def profile_202388():
     return unary_union(parts)
 
 
-VECTOR = {"202388-15-70-mm-keretprofil-elox-cd": profile_202388}
+def profile_226915n():
+    """226915/n (30 mm-es U szegő, natúr) – a szkennelt Constellium-rajz méretei: külső szélesség 35,5, magasság 40,
+    falvastagság a rajzon mérve kb. 2,5 mm, a külső alsó sarkok lekerekítettek."""
+    t = 2.5
+    h = t / 2
+    line = fillet([(h, 0), (h, 40 - h), (35.5 - h, 40 - h), (35.5 - h, 0)], 2.0)
+    return LineString(line).buffer(h, cap_style="flat", join_style="round", quad_segs=16)
+
+
+VECTOR = {"202388-15-70-mm-keretprofil-elox-cd": profile_202388, "226915-n-30-mm-u-szego-profil": profile_226915n}
 
 
 def rasterize(geom, ppm, pad):

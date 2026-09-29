@@ -45,8 +45,8 @@ EXTRA = {
 COMMON = {"Ötvözet": "EN AW-6060 / EN AW-6005A", "Állapot": "T5 – T6"}
 
 
-def render(page, box, blanks=()):
-    zoom = 240 / 72
+def render(page, box, blanks=(), dpi=240):
+    zoom = dpi / 72
     pix = page.get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), clip=pymupdf.Rect(*box), alpha=False)
     img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
     for bx0, by0, bx1, by1 in blanks:

@@ -2728,6 +2728,7 @@
    "Felület": "natúr"
   },
   "images": [
+   "/termekkepek/220326-n-u-25-mm-szego-profil-m-rajz.webp",
    "/termekkepek/220326-n-u-25-mm-szego-profil-m-1.webp"
   ]
  },
@@ -2746,6 +2747,7 @@
    "Felület": "eloxált"
   },
   "images": [
+   "/termekkepek/220326-u-25-mm-szego-profil-elox-m-rajz.webp",
    "/termekkepek/220326-u-25-mm-szego-profil-elox-m-1.webp"
   ]
  },
@@ -2812,6 +2814,7 @@
    "Szálhossz": "6 m"
   },
   "images": [
+   "/termekkepek/222020-h-szego-kiugros-25-mm-elox-rajz.webp",
    "/termekkepek/222020-h-szego-kiugros-25-mm-elox-1.webp"
   ]
  },
@@ -2879,6 +2882,7 @@
    "Mértékegység": "méter"
   },
   "images": [
+   "/termekkepek/222528-u-szego-zartszelveny-erositessel-25-mm-elox-rajz.webp",
    "/termekkepek/222528-u-szego-zartszelveny-erositessel-25-mm-elox-1.webp"
   ]
  },
@@ -2977,6 +2981,7 @@
    "Felület": "eloxált"
   },
   "images": [
+   "/termekkepek/223350-350-mm-mono-profil-szakalas-elox-rajz.webp",
    "/termekkepek/223350-350-mm-mono-profil-szakalas-elox-1.webp"
   ]
  },
@@ -2997,6 +3002,7 @@
    "Felület": "eloxált"
   },
   "images": [
+   "/termekkepek/223367-400-mm-peremes-monoprofil-elox-rajz.webp",
    "/termekkepek/223367-400-mm-peremes-monoprofil-elox-1.webp"
   ]
  },
@@ -3046,6 +3052,7 @@
    "Felület": "eloxált"
   },
   "images": [
+   "/termekkepek/225549-400-mm-peremes-oldalfal-elox-rajz.webp",
    "/termekkepek/225549-400-mm-peremes-oldalfal-elox-1.webp"
   ]
  },
@@ -3086,6 +3093,7 @@
    "Felület": "eloxált"
   },
   "images": [
+   "/termekkepek/226830-300-mm-mono-profil-elox-rajz.webp",
    "/termekkepek/226830-300-mm-mono-profil-elox-1.webp"
   ]
  },
@@ -3115,6 +3123,7 @@
    "Gyári szálhossz [mm]": "6000"
   },
   "images": [
+   "/termekkepek/226915-30-mm-szego-profil-elox-rajz.webp",
    "/termekkepek/226915-30-mm-szego-profil-elox-1.webp"
   ]
  },
@@ -3135,7 +3144,8 @@
    "Felület": "natúr"
   },
   "images": [
-   "/termekkepek/226915-n-30-mm-u-szego-profil-1.webp"
+   "/termekkepek/226915-n-30-mm-u-szego-profil-rajz.webp",
+   "/termekkepek/226915-n-30-mm-u-szego-profil-korvonal.webp"
   ]
  },
  "227045-koztes-ponyvas-200-mm-elox-profil": {
@@ -3153,6 +3163,7 @@
    "Mértékegység": "méter"
   },
   "images": [
+   "/termekkepek/227045-koztes-ponyvas-200-mm-elox-profil-rajz.webp",
    "/termekkepek/227045-koztes-ponyvas-200-mm-elox-profil-1.webp"
   ]
  },
@@ -3171,6 +3182,7 @@
    "Mértékegység": "méter"
   },
   "images": [
+   "/termekkepek/227045-n-koztes-ponyvas-200-mm-profil-rajz.webp",
    "/termekkepek/227045-n-koztes-ponyvas-200-mm-profil-1.webp"
   ]
  },
@@ -3190,6 +3202,7 @@
    "Felület": "eloxált"
   },
   "images": [
+   "/termekkepek/227046-ck10-koztes-200-mm-elox-profil-rajz.webp",
    "/termekkepek/227046-ck10-koztes-200-mm-elox-profil-1.webp"
   ]
  },
@@ -3208,6 +3221,7 @@
    "Mértékegység": "m Version: central"
   },
   "images": [
+   "/termekkepek/227046-koztes-200-mm-elox-profil-rajz.webp",
    "/termekkepek/227046-koztes-200-mm-elox-profil-1.webp"
   ]
  },
@@ -3226,6 +3240,7 @@
    "Mértékegység": "m Version: central"
   },
   "images": [
+   "/termekkepek/227046-n-koztes-200-mm-profil-rajz.webp",
    "/termekkepek/227046-n-koztes-200-mm-profil-1.webp"
   ]
  },
@@ -3244,6 +3259,7 @@
    "Mértékegység": "méter"
   },
   "images": [
+   "/termekkepek/227047-felso-200-mm-elox-profil-rajz.webp",
    "/termekkepek/227047-felso-200-mm-elox-profil-1.webp"
   ]
  },
@@ -3262,6 +3278,7 @@
    "Mértékegység": "méter"
   },
   "images": [
+   "/termekkepek/227047-n-felso-200-mm-profil-rajz.webp",
    "/termekkepek/227047-n-felso-200-mm-profil-1.webp"
   ]
  },
@@ -3277,6 +3294,7 @@
    "Szálhossz": "7,5 m"
   },
   "images": [
+   "/termekkepek/227075-200-mm-mono-profil-teli-szakalas-elox-rajz.webp",
    "/termekkepek/227075-200-mm-mono-profil-teli-szakalas-elox-1.webp"
   ]
  },
@@ -3373,6 +3391,7 @@
    "Mértékegység": "méter"
   },
   "images": [
+   "/termekkepek/227783-also-szakallas-200-mm-elox-profil-rajz.webp",
    "/termekkepek/227783-also-szakallas-200-mm-elox-profil-1.webp"
   ]
  },
@@ -3391,6 +3410,7 @@
    "Mértékegység": "méter"
   },
   "images": [
+   "/termekkepek/227784-also-tomiteses-200-mm-elox-profil-rajz.webp",
    "/termekkepek/227784-also-tomiteses-200-mm-elox-profil-1.webp"
   ]
  },
@@ -3409,6 +3429,7 @@
    "Mértékegység": "m Version: central"
   },
   "images": [
+   "/termekkepek/227785-koztes-100-mm-elox-profil-rajz.webp",
    "/termekkepek/227785-koztes-100-mm-elox-profil-1.webp"
   ]
  },
@@ -3427,6 +3448,7 @@
    "Mértékegység": "méter"
   },
   "images": [
+   "/termekkepek/227948-also-tomiteses-100-mm-elox-profil-rajz.webp",
    "/termekkepek/227948-also-tomiteses-100-mm-elox-profil-1.webp"
   ]
  },
@@ -3443,6 +3465,7 @@
    "Felület": "eloxált"
   },
   "images": [
+   "/termekkepek/228153-u-25-mm-szego-profil-elox-b-rajz.webp",
    "/termekkepek/228153-u-25-mm-szego-profil-elox-b-1.webp"
   ]
  },
@@ -3461,6 +3484,7 @@
    "Mértékegység": "méter"
   },
   "images": [
+   "/termekkepek/228197-also-szakallas-100-mm-elox-profil-rajz.webp",
    "/termekkepek/228197-also-szakallas-100-mm-elox-profil-1.webp"
   ]
  },
@@ -3479,6 +3503,7 @@
    "Mértékegység": "méter"
   },
   "images": [
+   "/termekkepek/228240-felso-100-mm-elox-profil-rajz.webp",
    "/termekkepek/228240-felso-100-mm-elox-profil-1.webp"
   ]
  },
@@ -4216,6 +4241,7 @@
    "Mértékegység": "m Version: central"
   },
   "images": [
+   "/termekkepek/243240-billencs-kozepso-200x40-mm-rajz.webp",
    "/termekkepek/243240-billencs-kozepso-200x40-mm-1.webp"
   ]
  },
@@ -4231,6 +4257,7 @@
    "Szálhossz": "6 m"
   },
   "images": [
+   "/termekkepek/245085-bill-u-szego-30-mm-40-60-elox-rajz.webp",
    "/termekkepek/245085-bill-u-szego-30-mm-40-60-elox-1.webp"
   ]
  },
@@ -4247,6 +4274,7 @@
    "Mértékegység": "méter"
   },
   "images": [
+   "/termekkepek/245240-billencs-also-200x40-mm-rajz.webp",
    "/termekkepek/245240-billencs-also-200x40-mm-1.webp"
   ]
  },
@@ -4261,6 +4289,7 @@
    "Gyári szálhossz [mm]": "6100 / 7650"
   },
   "images": [
+   "/termekkepek/247152-bill-felso-profil-200-30-mm-elox-rajz.webp",
    "/termekkepek/247152-bill-felso-profil-200-30-mm-elox-1.webp"
   ]
  },
@@ -4275,6 +4304,7 @@
    "Gyári szálhossz [mm]": "6100 / 7650"
   },
   "images": [
+   "/termekkepek/247158-billencs-kozepso-200x30-mm-profil-rajz.webp",
    "/termekkepek/247158-billencs-kozepso-200x30-mm-profil-1.webp"
   ]
  },
@@ -4289,6 +4319,7 @@
    "Gyári szálhossz [mm]": "7650"
   },
   "images": [
+   "/termekkepek/247162-bill-koztes-profil-100-30-mm-elox-rajz.webp",
    "/termekkepek/247162-bill-koztes-profil-100-30-mm-elox-1.webp"
   ]
  },
@@ -4303,6 +4334,7 @@
    "Gyári szálhossz [mm]": "6100 / 7650"
   },
   "images": [
+   "/termekkepek/247174-bill-also-hosszu-szakalas-profil-150-30-elox-rajz.webp",
    "/termekkepek/247174-bill-also-hosszu-szakalas-profil-150-30-elox-1.webp"
   ]
  },
@@ -4317,6 +4349,7 @@
    "Gyári szálhossz [mm]": "7650"
   },
   "images": [
+   "/termekkepek/247180-billencs-also-profil-200-45-mm-30-mm-elox-rajz.webp",
    "/termekkepek/247180-billencs-also-profil-200-45-mm-30-mm-elox-1.webp"
   ]
  },
@@ -4335,6 +4368,7 @@
    "Mértékegység": "méter"
   },
   "images": [
+   "/termekkepek/247243-billencs-felso-200x40-mm-rajz.webp",
    "/termekkepek/247243-billencs-felso-200x40-mm-1.webp"
   ]
  },
