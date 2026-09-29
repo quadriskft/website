@@ -384,5 +384,89 @@
  "gc-roof-hatches-manual-big": {
   "order": 4,
   "name": "Tetőablak 970×530, manuális (DG)"
+ },
+ "e-compact-cs-toloteto-rendszer": {
+  "order": 1
+ },
+ "e-compact-fix-teto-rendszer": {
+  "order": 2
+ },
+ "e-compact-tetoprofil-900407-5000": {
+  "order": 3
+ },
+ "e69004670-compact-fix-tetokereszttarto-2550-mm": {
+  "order": 4
+ },
+ "e69004740-cs-compact-tetokereszttarto-2550-mm": {
+  "order": 5
+ },
+ "e4069000940-elhuzo-kocsi-compact-normal-2550-mm": {
+  "order": 6
+ },
+ "e4069000940-elhuzo-kocsi-compact-tw-1200-mm": {
+  "order": 7
+ },
+ "e4069002960-elhuzo-kocsi-compact-small-2550-mm": {
+  "order": 8
+ },
+ "e4069009030-130-as-compact-normal-lezaro-2550-mm": {
+  "order": 9
+ },
+ "e4038069900-compact-lezaro-ponyvahoz-2550-mm": {
+  "order": 10
+ },
+ "e38067930-compact-csuklopant-650-mm": {
+  "order": 11
+ },
+ "e4038068710-biztosito-keszlt-compact": {
+  "order": 12
+ },
+ "e40696690-inditoprofil-keszlet-compact": {
+  "order": 13
+ },
+ "e87370-edscha-takaro-gumi-compact-110": {
+  "order": 14
+ },
+ "e-ponyvagorgo-85810": {
+  "order": 15
+ },
+ "e-small-tetoprofil-6600-mm": {
+  "order": 16
+ },
+ "e-tailwing-1200-mm": {
+  "order": 17
+ },
+ "e-tailwing-400-900-mm": {
+  "order": 18
+ },
+ "e-volumen-tetoprofil-900301-7800": {
+  "order": 19
+ },
+ "e210422558-elhuzo-kocsi-2550-mm": {
+  "order": 20
+ },
+ "e235421-szerelo-keszlet": {
+  "order": 21
+ },
+ "e422552-tetokereszttarto-2550-mm": {
+  "order": 22
+ },
+ "e422590-csavarozhato-tetokereszttarto-2550": {
+  "order": 23
+ },
+ "e42587-csuklopant-700-mm": {
+  "order": 24
+ },
+ "e50502-edscha-takarogumi-tetoprofilhoz": {
+  "order": 25
+ },
+ "e62430-elhuzo-rud": {
+  "order": 26
+ },
+ "e69000690-130-as-lezaro-2550-mm": {
+  "order": 27
+ },
+ "e69001370-190-es-lezaro-2550-mm": {
+  "order": 28
  }
 }
