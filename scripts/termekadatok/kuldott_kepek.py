@@ -58,7 +58,10 @@ PREPEND.update({slug: ([("data/forras/edscha_small_sin.png", "meretrajz"),
 
 # a meglévő képek közé adott helyre beszúrt képek: slug -> [(kép, képnév-utótag, hely (0 = első))]
 INSERT = {"e69004740-cs-compact-tetokereszttarto-2550-mm": [("data/forras/edscha_cs_compact_tetokereszttarto.png", "foto", 1)],
-          "e69004670-compact-fix-tetokereszttarto-2550-mm": [("data/forras/edscha_compact_fix_tetokereszttarto.png", "foto", 1)]}
+          "e69004670-compact-fix-tetokereszttarto-2550-mm": [("data/forras/edscha_compact_fix_tetokereszttarto.png", "foto", 1)],
+          # TailWing: a katalógusoldal két fotója a zöld felirattal, a német sor nélkül (edscha_tailwing.png)
+          "e-tailwing-1200-mm": [("data/forras/edscha_tailwing.png", "foto", 1)],
+          "e-tailwing-400-900-mm": [("data/forras/edscha_tailwing.png", "foto", 1)]}
 
 
 def main():

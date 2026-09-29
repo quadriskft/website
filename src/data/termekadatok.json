@@ -10389,7 +10389,7 @@
   ]
  },
  "e-tailwing-1200-mm": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/globalassets/documents/pdfs/sesam/new_25/sesam_komponenten-u-ersatzteilkatalog_04-2024.pdf#page=89",
   "sourceTitle": "SESAM alkatrész-katalógus 2024/04: Construction kit TailWing Slimliner (901-1200mm)",
   "matchedCode": "210420570",
@@ -10398,11 +10398,12 @@
    "Méret": "901–1200 mm"
   },
   "images": [
-   "/termekkepek/e-tailwing-1200-mm-1.webp"
+   "/termekkepek/e-tailwing-1200-mm-1.webp",
+   "/termekkepek/e-tailwing-1200-mm-foto.webp"
   ]
  },
  "e-tailwing-400-900-mm": {
-  "source": "Edscha",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.edschats.com/globalassets/documents/pdfs/sesam/new_25/sesam_komponenten-u-ersatzteilkatalog_04-2024.pdf#page=89",
   "sourceTitle": "SESAM alkatrész-katalógus 2024/04: Construction kit TailWing Slimliner (400-900mm)",
   "matchedCode": "210420560",
@@ -10411,7 +10412,8 @@
    "Méret": "400–900 mm"
   },
   "images": [
-   "/termekkepek/e-tailwing-400-900-mm-1.webp"
+   "/termekkepek/e-tailwing-400-900-mm-1.webp",
+   "/termekkepek/e-tailwing-400-900-mm-foto.webp"
   ]
  },
  "e-volumen-tetoprofil-900301-10000": {
