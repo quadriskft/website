@@ -72,9 +72,11 @@ EXTRA = {
     # a Quadris kérésére: 6613576 (MINI első FLAT oszlop) = „Pillar CS MINI profile head-on 2023 anod”
     "6613576": "6612014347",
 }
-# csak a rajz (és az anyag) átvétele – a hossz / tömeg / felület az Alu-SV tételé, nem a mi változatunké:
-# a Quadris kérésére minden MAX-os első oszlop a „Pillar profile CS MAX front” (66OAP17714) rajzát kapja
+# a Quadris kérésére minden MAX-os első oszlop a „Pillar profile CS MAX front” (66OAP17714) méretezett rajzát
+# kapja; a többi adat (tömeg, hossz, felület) az azonos hosszúságú, eloxált MAX front tételé (None: csak az anyag)
 IMAGE_ONLY = {"66177137": "66OAP17714", "66177147": "66OAP17714", "66177300": "66OAP17714", "6613211": "66OAP17714"}
+DATA_FROM = {"66177147": "662AP17730", "66177137": "662AP17714", "66177300": "662AP17712", "6613211": None}
+PROFILE_SIZE = {"Szélesség": "127,0 mm", "Magasság": "177,0 mm"}  # a rajz szerint (a 3000 mm-es tételnél nincs megadva)
 
 
 def remove_badge(data):
@@ -102,6 +104,17 @@ def remove_badge(data):
         cv2.ellipse(mask, (x + w // 2, y + h // 2), (w // 2 + 3, h // 2 + 3), 0, 0, 360, 1, -1)
         a[mask > 0] = 255
     return Image.fromarray(a)
+
+
+def image_only_specs(code, info):
+    """A rajzot adó tétel helyett az azonos hosszúságú tétel adatai (ha van), a profil befoglaló méreteivel."""
+    data = lookup(DATA_FROM[code]) if DATA_FROM.get(code) else None
+    if not data:
+        return {k: v for k, v in info["specs"].items() if k == "Anyag"}
+    specs = {**data["specs"]}
+    for k, v in PROFILE_SIZE.items():
+        specs.setdefault(k, v)
+    return specs
 
 
 def main():
@@ -135,7 +148,7 @@ def main():
             "sourceUrl": info["url"],
             "sourceTitle": info["title"],
             "matchedCode": code,
-            "specs": ({k: v for k, v in info["specs"].items() if k == "Anyag"} if p["code"] in IMAGE_ONLY else
+            "specs": (image_only_specs(p["code"], info) if p["code"] in IMAGE_ONLY else
                       {**info["specs"], **({"Felület": "eloxált"} if "elox" in p["name"].lower() and info["specs"].get("Felület") == "natúr" else {})}),
             "images": images,
         }
