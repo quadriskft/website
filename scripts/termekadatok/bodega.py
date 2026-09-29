@@ -22,7 +22,8 @@ PDF = ROOT / "data/forras/bodega_bordwaendekatalog_30.pdf"
 ITEMS = {  # kód -> (oldal, kivágás [pt], műszaki adatok)
     "TB25549": (7, (145, 95, 252, 785), {"Tömeg": "4,116 kg/fm", "Magasság": "400 mm", "Vastagság": "25 mm", "Kivitel": "peremes oldalfal-profil"}),
     "TB28153": (10, (50, 520, 178, 745), {"Tömeg": "0,724 kg/fm", "Belső szélesség": "29,5 mm", "Magasság": "40 mm", "Kivitel": "U-szegő 25 mm-es oldalfalhoz"}),
-    "TB27833": (15, (42, 505, 367, 680), {"Tömeg": "1,246 kg/fm", "Méret": "100 × 30 mm", "Kivitel": "aláfutásgátló profil"}),
+    "TB27833": (15, (42, 505, 367, 640),  # a cikkszám és a tömeg felirata nélkül
+                {"Tömeg": "1,246 kg/fm", "Méret": "100 × 30 mm", "Kivitel": "aláfutásgátló profil"}),
 }
 
 
