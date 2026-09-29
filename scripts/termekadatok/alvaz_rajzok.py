@@ -66,7 +66,11 @@ REPAIR = {
 # sorok a megadott sor másolatai; 202388: a [40] szélesség 498 px (12,45 px/mm), így a [109] magasság 1357 px
 STRETCH = {"202388-15-70-mm-keretprofil-elox-cd": (620, 518)}
 # a gerincbe lógó régi méretszám törlése (fehérrel), mielőtt a falvonalakat meghúzzuk: (x0, y0, x1, y1)
-ERASE = {"202387-i-70-kereszttarto": [(498, 222, 590, 256)]}
+ERASE = {"202387-i-70-kereszttarto": [(498, 222, 590, 256)],
+         # 206941: a jobb fal mélyítése mellett futó felesleges vonal, a bal fal és a horony kívülre lógó jelölései
+         "206941-cd-100x30-mm-alafutasgatlo-elox-profil": [(273, 372, 282, 500), (8, 480, 27, 510), (133, 598, 150, 616)]}
+# a falrészeket apró jelölések darabolják, ezért itt minden vékony zárt rész kitöltendő (a számjegyek belseje nincs benne)
+FILL_ALL = {"206941-cd-100x30-mm-alafutasgatlo-elox-profil": (20, 230, 285, 990)}  # a profil területe (x0, y0, x1, y1)
 # a kitöltés által eltakart méretszámok újraírása: (szöveg, x, y közép) a forráskép képpontjaiban
 LABELS = {
     "202387-i-70-kereszttarto": [("[50]", 700, 245)],  # eredetileg a gerincen belül állt
@@ -90,7 +94,7 @@ def load(path):
 THICK = {"202387-i-70-kereszttarto": 0.05, "202388-15-70-mm-keretprofil-elox-cd": 0.05}
 
 
-def normalize(rgb, thick=0.03):
+def normalize(rgb, thick=0.03, fill_all=None):
     """Szürkeárnyalatos, tömör fekete falú rajz + a profil (vastag részek) befoglaló mérete képpontban."""
     L = rgb.mean(axis=2)
     sat = rgb.max(axis=2) - rgb.min(axis=2)
@@ -111,7 +115,8 @@ def normalize(rgb, thick=0.03):
             continue  # a háttér
         comp = lab == i
         r = dist[comp].max()
-        if r < thick * size and area / max(r, 1) ** 2 > 10:
+        inside = fill_all and fill_all[0] <= x and x + bw <= fill_all[2] and fill_all[1] <= y and y + bh <= fill_all[3]
+        if r < thick * size and (area / max(r, 1) ** 2 > 10 or (inside and area > 8)):
             fill |= comp
     out = L.copy()
     out = np.clip((out - 40) * 255 / (215 - 40), 0, 255)  # világos szürke háttér -> fehér, vonalak sötétebbre
@@ -165,10 +170,11 @@ def main():
             rgb = np.concatenate([rgb[:y], np.repeat(rgb[y:y + 1], n, axis=0), rgb[y:]], axis=0)
         for x0, y0, x1, y1 in ERASE.get(slug, []):
             rgb[y0:y1, x0:x1] = 255
-            rgb[257:260, x0:x1] = 0  # a méretvonal folytatása a törölt szám alatt (a 202387 méretvonala a 258. sorban)
+            if slug.startswith("202387"):
+                rgb[257:260, x0:x1] = 0  # a méretvonal folytatása a törölt szám alatt (a 202387 méretvonala a 258. sorban)
         for x0, y0, x1, y1, t in REPAIR.get(slug, []):
             cv2.line(rgb, (x0, y0), (x1, y1), (0, 0, 0), t)
-        g, prof = normalize(rgb, THICK.get(slug, 0.03))
+        g, prof = normalize(rgb, THICK.get(slug, 0.03), FILL_ALL.get(slug))
         if slug in LABELS:
             im = Image.fromarray(g)
             d = ImageDraw.Draw(im)
