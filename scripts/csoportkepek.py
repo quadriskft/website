@@ -10,7 +10,7 @@ Használat: python3 scripts/csoportkepek.py [render_mappa]
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageChops
+from PIL import Image, ImageChops, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "public/csoportkepek"
@@ -22,7 +22,7 @@ PHOTOS = {
     "acel-profilok": ["cover", "../data/forras/cargoframes/cargoframes_kit_keret.jpg"],  # Cargo Frames összeszerelt acél plató-keret
     "platos-alkatreszek-es-kiegeszitok": ["termekkepek/451721-horganyzott-nagykonzol-man-50-mm-1.webp", "termekkepek/m12x140-rugos-felfuggesztes-1.webp"],
     "acel-es-alu-rakoncak-es-szegok": ["termekkepek/351190-alu-rakonca-magasito-elox-1900-mm-1.webp", "termekkepek/352240-ellendarabos-szego-400mm-r-l-1.webp"],
-    "elhuzhato-roloponyvas-rendszer": ["termekkepek/6613211-max-os-elso-elox-oszlop-it-1.webp"],
+    "elhuzhato-roloponyvas-rendszer": ["cover", "../data/forras/roloponyvas_kategoria.png"],  # a Quadris által küldött kép (298×198)
     "ponyvarendszer-kiegeszitok": ["termekkepek/380184-ada-racsnis-feszito-kocka-adapterhez-r-1.webp"],
     "dobozos-felepitmeny-alkatreszek": ["termekkepek/714859-sullyesztett-inox-rudzar-25-16-mm-pl-1.webp"],
     "rakomanyrogzites": ["termekkepek/123412-spanifer-l-8-m-5000-kg-dupla-kampos-1.webp"],
@@ -62,6 +62,8 @@ def cover(im):
     im = im.convert("RGB")
     scale = max(W / im.width, H / im.height)
     im = im.resize((round(im.width * scale), round(im.height * scale)), Image.LANCZOS)
+    if scale > 1.5:  # erős nagyításnál enyhe élesítés
+        im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=60, threshold=2))
     left, top = (im.width - W) // 2, (im.height - H) // 2
     return im.crop((left, top, left + W, top + H))
 
