@@ -75,11 +75,11 @@ EXTRA = {
 # a Quadris kérésére minden MAX-os első oszlop a „Pillar pr. CS MAX front 3000mm, Al anod” (662AP17730) részletesen
 # méretezett rajzát
 # kapja; a többi adat (tömeg, hossz, felület) az azonos hosszúságú, eloxált MAX front tételé (None: csak az anyag)
-# ugyanígy a MAX-os hátsó oszlopok (3000 és 3300 mm) a 3150 mm-es „Pillar profile CS MAX rear” (66OZ035255) rajzát
+# ugyanígy a MAX-os hátsó oszlopok a „Pillar profile CS MAX rear” (66OZ035255) rajzát, az adatok a 662AZ… soroztól
 IMAGE_ONLY = {"66177137": "662AP17730", "66177147": "662AP17730", "66177300": "662AP17730",
-              "6635245": "66OZ035255", "6635300": "66OZ035255"}
+              "6635245": "66OZ035255", "6635300": "66OZ035255", "6635255": "66OZ035255"}
 DATA_FROM = {"66177147": "662AP17730", "66177137": "662AP17714", "66177300": "662AP17712",
-             "6635245": "662AZ03025", "6635300": "662AZ03526"}
+             "6635245": "662AZ03025", "6635300": "662AZ03526", "6635255": "662AZ03525"}
 # a profil befoglaló méretei a rajz szerint (a hosszváltozatok adatlapján nem mindig szerepelnek)
 PROFILE_SIZE = {"662AP17730": {"Szélesség": "127,0 mm", "Magasság": "177,0 mm"},
                 "66OZ035255": {"Szélesség": "265,0 mm", "Magasság": "35,0 mm"}}
