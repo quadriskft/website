@@ -11,7 +11,7 @@ const { product } = Astro.props;
     <h3>{product.name}</h3>
   </a>
   <div class="product-foot">
-    <span class="muted code">{product.code ? `Cikkszám: ${product.code}` : ' '}</span>
+    <span class="muted code">{product.code ? `${product.codeLabel ?? 'Cikkszám'}: ${product.code}` : ' '}</span>
     <button type="button" class="add-btn" data-add-to-quote={JSON.stringify(publicProduct(product))} aria-label={`${product.name} – ajánlatkérőbe`}>
       <Icon name="Plus" size={16} class="i-add" />
       <Icon name="Check" size={16} class="i-added" />

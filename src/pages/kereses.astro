@@ -50,14 +50,14 @@ import Icon from '../components/Icon.astro';
   const tile = '<svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 8.7 5 8.7-5"/></svg>';
 
   const card = (p) => {
-    const data = esc(JSON.stringify({ slug: p.slug, code: p.code, name: p.name, group: p.group, image: p.image }));
+    const data = esc(JSON.stringify({ slug: p.slug, code: p.code, ...(p.codeLabel ? { codeLabel: p.codeLabel } : {}), name: p.name, group: p.group, image: p.image }));
     const visual = p.image
       ? `<div class="product-visual"><img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy"></div>`
       : `<div class="product-visual placeholder">${tile}</div>`;
     return `<article class="card hoverable product-card s-card">
       <a href="/termek/${p.slug}" class="s-link">${visual}<h3>${esc(p.name)}</h3></a>
       <p class="muted s-group">${esc(p.groupName)}</p>
-      <div class="s-foot"><span class="muted">${p.code ? 'Cikkszám: ' + esc(p.code) : '&nbsp;'}</span>
+      <div class="s-foot"><span class="muted">${p.code ? esc(p.codeLabel || 'Cikkszám') + ': ' + esc(p.code) : '&nbsp;'}</span>
       <button type="button" class="add-btn" data-add-to-quote="${data}">${plus}${check}<span class="label">Ajánlatkérőbe</span></button></div>
     </article>`;
   };

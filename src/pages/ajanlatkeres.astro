@@ -116,7 +116,7 @@ import { SITE } from '../lib/site.js';
         <div class="thumb${i.image ? ' has-img' : ''}">${i.image ? `<img src="${esc(i.image)}" alt="">` : i.custom ? icon.spark : icon.box}</div>
         <div class="item-main">
           ${i.custom ? `<span class="item-name">${esc(i.name)}</span><span class="tag">Egyedi tétel</span>` : `<a class="item-name" href="/termek/${esc(i.slug)}">${esc(i.name)}</a>`}
-          ${i.code ? `<span class="muted item-code">Cikkszám: ${esc(i.code)}</span>` : ''}
+          ${i.code ? `<span class="muted item-code">${esc(i.codeLabel || 'Cikkszám')}: ${esc(i.code)}</span>` : ''}
           ${i.cuts?.length ? `<div class="cuts" data-cuts>
             <div class="cuts-head"><span>Hossz [mm]</span><span>Darab</span><span></span></div>
             ${i.cuts.map((c) => cutRow(c.len, c.pcs)).join('')}

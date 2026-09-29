@@ -8,6 +8,7 @@ export function GET() {
     products: products.map((p) => ({
       slug: p.slug,
       code: p.code,
+      ...(p.codeLabel ? { codeLabel: p.codeLabel } : {}),
       name: p.name,
       group: p.group,
       categoryName: categoryNames.get(`${p.group}/${p.category}`) ?? '',

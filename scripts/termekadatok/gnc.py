@@ -22,6 +22,10 @@ from common import clear_images, fetch, load_products, save_image, update_enrich
 SUPPLIER = "G&C termékek"
 BASE = "https://gnc-systems.com"
 CODE = re.compile(r"\b\d{2}-\d{4}(?:-[A-Z0-9]{1,4})?\b")
+BROCHURE = "https://gnc-systems.com/wp-content/uploads/2024/01/GC-PRODUCTBROCHURE-06-2013-LR-{}.pdf"
+# A kézi (sötétített üvegű, D/DG) tetőablakoknak nincs saját termékoldaluk (a honlapon a „manual small”
+# oldal valójában az elektromos ablakot mutatja) – ezekhez a prospektus megfelelő oldala a forrás.
+MANUAL_HATCH = {"90-5000-DG": BROCHURE.format(35), "90-6000-DG": BROCHURE.format(36)}
 
 HEADERS = [  # (a fejléc kezdete kisbetűvel, magyar címke)
     ("part", None), ("description", None),
@@ -127,7 +131,8 @@ def pdf_specs(pdf_url, code):
                 continue
             heads = rows[0]
             for row in rows[1:]:
-                if not row or (row[0] or "").strip().upper() != code.upper():
+                # a prospektusban a kézi ablakok kódja "-LUS" (laza/külön csomagolt) toldással szerepel
+                if not row or re.sub(r"-LUS$", "", (row[0] or "").strip().upper()) != code.upper():
                     continue
                 for h, v in zip(heads[1:], row[1:]):
                     lab = label(h)
@@ -157,6 +162,9 @@ def main():
         hit = (next((x for x in pages if code in x["codes"]), None)
                or next((x for x in pages if code in x["parts"]), None)
                or next((x for x in pages if base and (base in x["codes"] or base in x["parts"])), None))
+        if code in MANUAL_HATCH:  # a saját oldal nélküli kézi tetőablak: a képe a talált oldalé, az adatai a prospektusé
+            hit = {**(hit or {}), "url": MANUAL_HATCH[code], "pdfs": [MANUAL_HATCH[code]],
+                   "title": f"G&C prospektus: Roof Hatch Manual {'530 × 530' if code.startswith('90-5000') else '970 × 530'}"}
         if not hit:
             missing.append((p, code))
             continue
@@ -169,7 +177,7 @@ def main():
             extras += ex
         clear_images(p["slug"])
         images = []
-        if hit["image"]:
+        if hit.get("image"):
             try:
                 images.append(save_image(fetch(hit["image"]), p["slug"], 1))
             except Exception as err:  # noqa: BLE001

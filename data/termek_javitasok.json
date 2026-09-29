@@ -1,0 +1,251 @@
+{
+ "_megjegyzes": "Kézi javítások a katalógushoz (név, gyártói cikkszám, műszaki adat). A src/lib/catalog.js alkalmazza.",
+ "tetoventilator-manualis-feher": {
+  "name": "Tetőventilátor, manuális, fehér",
+  "code": "02-1030",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fehér"
+  }
+ },
+ "tetoventilator-manualis-fekete": {
+  "name": "Tetőventilátor, manuális, fekete",
+  "code": "02-1030-ZW",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fekete"
+  }
+ },
+ "le-mans-tetoventilator-12v": {
+  "name": "„Le Mans” tetőventilátor 12V, fehér",
+  "code": "02-2200",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fehér"
+  }
+ },
+ "02-2200-zw-le-mans-tetoventilator-12v": {
+  "name": "„Le Mans” tetőventilátor 12V, fekete",
+  "code": "02-2200-ZW",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fekete"
+  }
+ },
+ "le-mans-tetoventilator-24v": {
+  "name": "„Le Mans” tetőventilátor 24V, fehér",
+  "code": "02-2300",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fehér"
+  }
+ },
+ "tetoventillator-motor-nelkul-abs-feher": {
+  "name": "Tetőventilátor motor nélkül, ABS, fehér",
+  "code": "02-2900",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fehér"
+  }
+ },
+ "turbo-iii-tetoventilator-feher": {
+  "name": "„TURBO III” tetőventilátor, fehér",
+  "code": "02-6000",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fehér"
+  }
+ },
+ "turbo-iii-tetoventilator-fekete": {
+  "name": "„TURBO III” tetőventilátor, fekete",
+  "code": "02-6100",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fekete"
+  }
+ },
+ "turbo-ii-tetoventilator-feher": {
+  "name": "„TURBO II” tetőventilátor, fehér",
+  "code": "02-7000",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fehér"
+  }
+ },
+ "turbo-ii-tetoventilator-fekete": {
+  "name": "„TURBO II” tetőventilátor, fekete",
+  "code": "02-7100",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fekete"
+  }
+ },
+ "tetoablak-vezerloegyseg-24v": {
+  "name": "Tetőablak vezérlőegység 24V",
+  "code": "30-6000",
+  "codeLabel": "Gyártói cikkszám"
+ },
+ "ventillator-belso-takaro-szurke": {
+  "name": "Ventilátor belső takaró, szürke",
+  "code": "35-2100",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "szürke"
+  }
+ },
+ "ventillator-belso-takaro": {
+  "name": "Ventilátor belső takaró, fehér",
+  "code": "35-2110",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fehér"
+  }
+ },
+ "12v-led-ventillator-belso-takaro": {
+  "name": "Ventilátor belső takaró 12V LED-del",
+  "code": "35-2185",
+  "codeLabel": "Gyártói cikkszám"
+ },
+ "ventillator-belso-takaro-elem": {
+  "name": "Ventilátor belső takaró elem 24V LED-del",
+  "code": "35-2195-LED-24V",
+  "codeLabel": "Gyártói cikkszám"
+ },
+ "ventillator-belso-takaro-12-24v-led": {
+  "name": "Ventilátor belső takaró 12/24V LED-del, fehér",
+  "code": "35-2200",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fehér"
+  }
+ },
+ "manualis-belso-takaro-feher": {
+  "name": "Manuális belső takaró, fehér",
+  "code": "35-2400",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fehér"
+  }
+ },
+ "manualis-belso-takaro-szurke": {
+  "name": "Manuális belső takaró, szürke",
+  "code": "35-2410",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "szürke"
+  }
+ },
+ "ventillator-also-takaro-elem-12-24v-feher": {
+  "name": "Ventilátor alsó takaró elem 12/24V, fehér",
+  "code": "35-2500",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fehér"
+  }
+ },
+ "belso-takaro-flower-power-szurke": {
+  "name": "Belső takaró „Flower Power”, szürke",
+  "code": "35-2810",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "szürke"
+  }
+ },
+ "belso-12v-os-led-takaro-flower-power-feher": {
+  "name": "Belső takaró „Flower Power” 12V LED-del, fehér",
+  "code": "35-2900",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fehér"
+  }
+ },
+ "belso-24-v-os-led-vilagitassal-flower-power-feher": {
+  "name": "Belső takaró „Flower Power” 24V LED-del, fehér",
+  "code": "35-2905",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fehér"
+  }
+ },
+ "belso-12v-os-led-takaro-flower-power-szurke": {
+  "name": "Belső takaró „Flower Power” 12V LED-del, szürke",
+  "code": "35-2910",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "szürke"
+  }
+ },
+ "belso-24-v-os-led-vilagitassal-flower-power-szurke": {
+  "name": "Belső takaró „Flower Power” 24V LED-del, szürke",
+  "code": "35-2915",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "szürke"
+  }
+ },
+ "szellozo-racs-410x100-mm": {
+  "name": "Szellőzőrács 410×100 mm",
+  "code": "35-4010",
+  "codeLabel": "Gyártói cikkszám"
+ },
+ "harom-allasos-kapcsolo-ventilatorhoz": {
+  "name": "Háromállású kapcsoló ventilátorhoz",
+  "code": "89-4008",
+  "codeLabel": "Gyártói cikkszám"
+ },
+ "tetoablak-manualis-530x530": {
+  "name": "Tetőablak 530×530, manuális (D / DG)",
+  "code": "90-5000-D / 90-5000-DG",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Működtetés": "kézi (manuális)",
+   "Változatok": "D / DG – sötétített üveggel"
+  }
+ },
+ "elektromos-tetoablak-24v-530x530": {
+  "name": "Tetőablak 530×530, elektromos 24V (E)",
+  "code": "90-5000-E",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Működtetés": "elektromos, 24V (vezérlőegység: 30-6000)"
+  }
+ },
+ "tetoablak-manualis-970x530": {
+  "name": "Tetőablak 970×530, manuális (D / DG)",
+  "code": "90-6000-D / 90-6000-DG",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Működtetés": "kézi (manuális)",
+   "Változatok": "D / DG – sötétített üveggel"
+  }
+ },
+ "elektromos-tetoablak-24v-970x530": {
+  "name": "Tetőablak 970×530, elektromos 24V (E)",
+  "code": "90-6000-E",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Működtetés": "elektromos, 24V (vezérlőegység: 30-6000)"
+  }
+ },
+ "tetoablak-uveg-970x530": {
+  "name": "Tetőablak üveg 970×530",
+  "code": "90-8060-DG",
+  "codeLabel": "Gyártói cikkszám"
+ },
+ "ledes-lampa-kerek-feher": {
+  "name": "LED lámpa, kerek, fehér",
+  "code": "92-GC01",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fehér"
+  }
+ },
+ "ledes-lampa-szogletes-feher-12-24v": {
+  "name": "LED lámpa, szögletes 12/24V, fehér",
+  "code": "92-GC05-HP",
+  "codeLabel": "Gyártói cikkszám",
+  "specs": {
+   "Szín": "fehér"
+  }
+ }
+}

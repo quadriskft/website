@@ -16034,22 +16034,30 @@
  },
  "tetoablak-manualis-530x530": {
   "source": "G&C termékek",
-  "sourceUrl": "https://gnc-systems.com/en/products/electric-round/",
-  "sourceTitle": "Roof Hatch Manual Small",
+  "sourceUrl": "https://gnc-systems.com/wp-content/uploads/2024/01/GC-PRODUCTBROCHURE-06-2013-LR-35.pdf",
+  "sourceTitle": "G&C prospektus: Roof Hatch Manual 530 × 530",
   "matchedCode": "90-5000-DG",
   "sourceDescription": "Glass Dome homologated ECE 43R; Suits roof thickness 30mm - 70mm; High Quality Gaskets; Internal frame easy to mount in outside frame; Pre-drilled mounting holes in outside frame",
-  "specs": {},
+  "specs": {
+   "Nyílásméret [mm]": "530 × 530",
+   "Sarokrádiusz": "R80",
+   "Üveg": "UV-áteresztés 6%, hőáteresztés 16%, fényáteresztés 17%"
+  },
   "images": [
    "/termekkepek/tetoablak-manualis-530x530-1.webp"
   ]
  },
  "tetoablak-manualis-970x530": {
   "source": "G&C termékek",
-  "sourceUrl": "https://gnc-systems.com/en/products/roof-hatches-manual-big/",
-  "sourceTitle": "Roof Hatches Manual Large",
+  "sourceUrl": "https://gnc-systems.com/wp-content/uploads/2024/01/GC-PRODUCTBROCHURE-06-2013-LR-36.pdf",
+  "sourceTitle": "G&C prospektus: Roof Hatch Manual 970 × 530",
   "matchedCode": "90-6000-DG",
   "sourceDescription": "Emergency exit according EC2001/85; Glass Dome homologated ECE 43R; Suits roof thickness 30mm - 70mm; High Quality Gaskets; Internal frame easy to mount in outside frame; Pre-drilled mounting holes in outside frame; With breakglass hammer",
-  "specs": {},
+  "specs": {
+   "Nyílásméret [mm]": "970 × 530",
+   "Sarokrádiusz": "R80",
+   "Üveg": "UV-áteresztés 6%, hőáteresztés 16%, fényáteresztés 17%"
+  },
   "images": [
    "/termekkepek/tetoablak-manualis-970x530-1.webp"
   ]

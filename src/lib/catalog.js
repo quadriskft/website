@@ -2,6 +2,7 @@ import catalog from '../data/catalog.json';
 import extra from '../data/termekadatok.json';
 import extended from '../data/bovitett.json';
 import deleted from '../../data/torolt_termekek.json';
+import fixes from '../../data/termek_javitasok.json';
 
 // FONTOS: a termékadatokban lévő beszállító (supplier, supplierCode, source…) belső adat,
 // a weboldalon soha nem jelenik meg.
@@ -12,20 +13,32 @@ const excelProducts = catalog.products.map((p) => {
   const e = extra[p.slug];
   const move = extended.moves?.[p.slug];
   const out = move ? { ...p, group: move.group, category: move.category } : p;
-  if (!e) return out;
-  return {
+  const merged = !e ? out : {
     ...out,
     images: e.images?.length ? e.images : p.images,
     specs: { ...(e.specs ?? {}), ...p.specs },
     description: p.description || e.description || '',
   };
+  // kézi javítások (data/termek_javitasok.json): név, (gyártói) cikkszám, műszaki adat
+  const f = fixes[p.slug];
+  return f ? { ...merged, ...(f.name ? { name: f.name } : {}), ...(f.code ? { code: f.code } : {}), ...(f.codeLabel ? { codeLabel: f.codeLabel } : {}), specs: { ...merged.specs, ...(f.specs ?? {}) } } : merged;
 });
 
 // A beszállítók teljes kínálatából felvett további termékek (scripts/termekadatok/teljes_kinalat.py)
 const extendedProducts = (extended.products ?? []).map((p) => ({
   slug: p.slug, code: p.code, name: p.name, group: p.group, category: p.category,
   specs: p.specs ?? {}, images: p.images ?? [], description: p.description ?? '', documents: [], supplier: p.source,
+  // a G&C teljes kínálatából felvett termékek kódja a gyártói cikkszám, a színe a névből / kódból (ZW = fekete)
+  ...(p.source === 'G&C termékek' ? { codeLabel: 'Gyártói cikkszám', specs: { ...(gncColor(p) ? { Szín: gncColor(p) } : {}), ...(p.specs ?? {}) } } : {}),
 }));
+
+function gncColor(p) {
+  const s = `${p.name} ${p.code ?? ''}`.toLowerCase();
+  if (/fekete|-zw\b|\bzw\b/.test(s)) return 'fekete';
+  if (/fehér/.test(s)) return 'fehér';
+  if (/szürke/.test(s)) return 'szürke';
+  return null;
+}
 
 // A Quadris által törlésre jelölt termékek (data/torolt_termekek.json) sehol nem jelennek meg
 export const products = [...excelProducts, ...extendedProducts].filter((p) => !deleted[p.slug]);
@@ -155,7 +168,7 @@ export function isProfile(p) {
 
 // Böngészőnek küldhető termékadat (belső mezők nélkül)
 export function publicProduct(p) {
-  return { slug: p.slug, code: p.code, name: p.name, group: p.group, image: p.images?.[0] ?? '', ...(isProfile(p) ? { profile: true } : {}) };
+  return { slug: p.slug, code: p.code, name: p.name, group: p.group, image: p.images?.[0] ?? '', ...(p.codeLabel ? { codeLabel: p.codeLabel } : {}), ...(isProfile(p) ? { profile: true } : {}) };
 }
 
 export const stats = {

@@ -397,5 +397,19 @@
   "code": "",
   "date": "2026-09-28",
   "reason": "Quadris ellenőrzés (termek_ellenorzes.xlsx): TÖRÖLHETŐ = IGEN"
+ },
+ "02-2200-le-mans-tetoventilator-12v": {
+  "name": "02-2200- \"Le Mans\" tetőventilátor (12V)",
+  "supplier": "G&C termékek",
+  "code": "02-2200",
+  "date": "2026-09-29",
+  "reason": "G&C rendbetétel: duplikátum (ugyanaz, mint a „Le Mans” tetőventilátor 12V, fehér – 02-2200)"
+ },
+ "90-5000-e-tetoablak-24v-53x530": {
+  "name": "90-5000-E Tetőablak 24V 53x530",
+  "supplier": "G&C termékek",
+  "code": "",
+  "date": "2026-09-29",
+  "reason": "G&C rendbetétel: duplikátum (ugyanaz, mint az Elektromos tetőablak 24V 530×530 – 90-5000-E)"
  }
 }
