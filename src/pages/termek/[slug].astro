@@ -14,7 +14,7 @@ const { product } = Astro.props;
 const group = getGroup(product.group);
 const category = getCategory(product.group, product.category);
 // termékcsaládnál a hossz a választóból jön, a műszaki adatok között nem szerepel
-const specs = Object.entries(product.specs ?? {}).filter(([k]) => !(familyOf(product.slug) && /^(hossz|szálhossz)/i.test(k)));
+const specs = Object.entries(product.specs ?? {}).filter(([k]) => !(familyOf(product.slug) && /^(hossz|szálhossz|gyári hossz)/i.test(k)));
 const gallery = product.images?.length > 1 ? product.images : [];
 const related = productsIn(product.group, product.category).filter((p) => p.slug !== product.slug).slice(0, 8);
 const showCategory = category && category.name !== group.name;

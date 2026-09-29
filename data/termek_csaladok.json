@@ -31,5 +31,25 @@
    "e-volumen-tetoprofil-900301-9600": "9600 mm",
    "e-volumen-tetoprofil-900301-10000": "10000 mm"
   }
+ },
+ "v35991-tetosin-micro-trike": {
+  "name": "V35991 Tetősín MICRO TRIKE",
+  "label": "Hossz",
+  "members": {
+   "v35991-6800-mm-tetosin-micro-trike": "6800 mm",
+   "v35991-7500-mm-tetosin-micro-trike": "7500 mm",
+   "v35991-7800-mm-tetosin-micro-trike": "7800 mm",
+   "v35991-8200-mm-tetosin-micro-trike": "8200 mm",
+   "v35991-8500-mm-tetosin-micro-trike": "8500 mm"
+  }
+ },
+ "v162-238-teto-sin-duo-trike-light": {
+  "name": "V162-238 Tető sín DUO TRIKE Light",
+  "label": "Hossz",
+  "members": {
+   "v162-238-8500-mm-teto-sin-duo-trike-light": "8500 mm",
+   "v162-238-9600-mm-teto-sin-duo-trike-light": "9600 mm",
+   "v162-238-10000-mm-teto-sin-duo-trike-light": "10000 mm"
+  }
  }
 }

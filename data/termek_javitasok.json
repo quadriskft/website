@@ -468,5 +468,104 @@
  },
  "e69001370-190-es-lezaro-2550-mm": {
   "order": 28
+ },
+ "versus-micro-trike-toloteto-rendszer": {
+  "order": 1
+ },
+ "v35991-6800-mm-tetosin-micro-trike": {
+  "order": 2
+ },
+ "versus-duo-trike-l-toloteto-rendszer": {
+  "order": 3
+ },
+ "v162-238-8500-mm-teto-sin-duo-trike-light": {
+  "order": 4
+ },
+ "versus-pico-toloteto-rendszer": {
+  "order": 5
+ },
+ "v162-08700-tetosin-pico": {
+  "order": 6
+ },
+ "v144-01006-elhuzo-rud": {
+  "order": 7
+ },
+ "v144-10001-szerelo-keszlet-dtl-mt": {
+  "order": 8
+ },
+ "v144-10022-csavarkeszlet-fekete-lezarohoz-dtl-mt": {
+  "order": 9
+ },
+ "v144-10037-112-07003-mt-hatso-lezaro-ponyvahoz": {
+  "order": 10
+ },
+ "v144-10048-fix-keresztarto-csavarkeszlet": {
+  "order": 11
+ },
+ "v154-03013-oszlop-sin-osszekoto-keszlet-dtl": {
+  "order": 12
+ },
+ "v154-03041-oszlop-sin-osszekoto-keszlet-mt": {
+  "order": 13
+ },
+ "v193-11001-fekete-lezaro-mt": {
+  "order": 14
+ },
+ "v193-14001-fekete-lezaro-dtl": {
+  "order": 15
+ },
+ "v214-47201-elhuzokocsi-dtl-mt": {
+  "order": 16
+ },
+ "v224-01001-gorgos-kereszttarto-ponyvahoz": {
+  "order": 17
+ },
+ "v224-41211-fix-kereszttarto-ponyvahoz": {
+  "order": 18
+ },
+ "v242-01004-400-mm-piros-csuklo": {
+  "order": 19
+ },
+ "v242-01007-700-mm-piros-csuklo": {
+  "order": 20
+ },
+ "v242-01065-650-mm-piros-csuklo": {
+  "order": 21
+ },
+ "v242-14109-tomites-9-m-dtl": {
+  "order": 22
+ },
+ "v242-14116-takaro-gumi-dtl": {
+  "order": 23
+ },
+ "v242-14121-takaro-gumi-dtl": {
+  "order": 24
+ },
+ "v242-14128-tomites-dtl": {
+  "order": 25
+ },
+ "v242-14165-takaro-gumi-dtl-16-5m": {
+  "order": 26
+ },
+ "v242-15109-tomites-9-m-mt": {
+  "order": 27
+ },
+ "v242-15114-tomites-14-m-mt": {
+  "order": 28
+ },
+ "v262-05007-rakonca-pasz": {
+  "order": 29
+ },
+ "v264-01001-rakonca-kocsi": {
+  "order": 30
+ },
+ "v284-10024-ponyvagorgo": {
+  "order": 31
+ },
+ "v324-47201-hatso-teleszkops-lezaro-fix-mt": {
+  "order": 32
+ },
+ "t-rakonca-gorgo": {
+  "order": 33
  }
 }
