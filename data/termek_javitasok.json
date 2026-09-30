@@ -694,5 +694,20 @@
  },
  "352202-egymasbazarodo-zar-ellendarab": {
   "order": 3
+ },
+ "222923-60x1-5-mm-ponyvacso": {
+  "alsoIn": [
+   "ipari-felgyartmanyok/cso-rud"
+  ]
+ },
+ "222985-d50-mm-alu-cso": {
+  "alsoIn": [
+   "ipari-felgyartmanyok/cso-rud"
+  ]
+ },
+ "223520-ponyvacso-35x2-mm": {
+  "alsoIn": [
+   "ipari-felgyartmanyok/cso-rud"
+  ]
  }
 }

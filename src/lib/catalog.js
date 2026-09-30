@@ -85,8 +85,16 @@ export function familyOf(slug) {
 }
 const hiddenMember = (p) => { const f = familyBySlug.get(p.slug); return f && f.leader !== p.slug; };
 
+// kézi javításban („alsoIn”: ["csoport/alkategória", …]) a termék a saját helye mellett ezekben is megjelenik
+const alsoIn = (p) => fixes[p.slug]?.alsoIn ?? [];
+const inPlace = (p, groupSlug, categorySlug) =>
+  (p.group === groupSlug && (!categorySlug || p.category === categorySlug)) ||
+  alsoIn(p).some((k) => (categorySlug ? k === `${groupSlug}/${categorySlug}` : k.startsWith(`${groupSlug}/`)));
+
 const counts = new Map();
-for (const p of products.filter((x) => !hiddenMember(x))) counts.set(`${p.group}/${p.category}`, (counts.get(`${p.group}/${p.category}`) ?? 0) + 1);
+for (const p of products.filter((x) => !hiddenMember(x))) {
+  for (const k of [`${p.group}/${p.category}`, ...alsoIn(p)]) counts.set(k, (counts.get(k) ?? 0) + 1);
+}
 // A termékcsoportok sorrendje (a Quadris kérése szerint); a listában nem szereplők utánuk, ABC sorrendben
 const GROUP_ORDER = [
   'aluminium-lemezek', 'ipari-felgyartmanyok', 'aluminium-alvaz-profilok', 'aluminium-padlo-profilok',
@@ -175,20 +183,20 @@ export function getCategory(groupSlug, categorySlug) {
 
 export function productsIn(groupSlug, categorySlug) {
   const list = products
-    .filter((p) => p.group === groupSlug && (!categorySlug || p.category === categorySlug) && !hiddenMember(p))
+    .filter((p) => inPlace(p, groupSlug, categorySlug) && !hiddenMember(p))
     .map((p) => (familyBySlug.has(p.slug) ? { ...p, name: familyBySlug.get(p.slug).name, family: true } : p));
   // kézi sorrend (data/termek_javitasok.json „order”): ezek elöl, a megadott sorrendben; a többi az eredeti sorrendben
   const rank = (p) => fixes[p.slug]?.order ?? Infinity;
-  const bySize = SIZE_SORTED_GROUPS.has(groupSlug);
+  const bySize = SIZE_SORTED.has(groupSlug) || SIZE_SORTED.has(`${groupSlug}/${categorySlug}`);
   return list
     .map((p, i) => [p, i])
     .sort((a, b) => rank(a[0]) - rank(b[0]) || (bySize && compareSizes(a[0].name, b[0].name)) || a[1] - b[1])
     .map(([p]) => p);
 }
 
-// Ezekben a főkategóriákban a termékek a névben szereplő méret szerint növekvő sorrendben állnak
+// Ezekben a főkategóriákban / alkategóriákban a termékek a névben szereplő méret szerint növekvő sorrendben állnak
 // (első méret, egyezésnél a második, harmadik …; pl. 20x20x3 < 25x25x2 < 30x20x1,5 < 30x20x2).
-const SIZE_SORTED_GROUPS = new Set(['ipari-felgyartmanyok']);
+const SIZE_SORTED = new Set(['ipari-felgyartmanyok', 'ponyvarendszer-kiegeszitok/ponyvacsovek']);
 
 function sizesOf(name) {
   const m = name.match(/\d+(?:[.,]\d+)?(?:\s*x\s*\d+(?:[.,]\d+)?)*/i);
