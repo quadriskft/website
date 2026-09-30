@@ -720,6 +720,49 @@
   "specs": {
    "Szélesség": "33 mm",
    "Magasság": "61 mm"
-  }
+  },
+  "order": 13
+ },
+ "222137-u-25-mm-szego-profil-elox": {
+  "order": 1
+ },
+ "222137-n-u-25-mm-szego-profil": {
+  "order": 2
+ },
+ "222528-u-szego-zartszelveny-erositessel-25-mm-elox": {
+  "order": 3
+ },
+ "226915-30-mm-szego-profil-elox": {
+  "order": 4
+ },
+ "226915-n-30-mm-u-szego-profil": {
+  "order": 5
+ },
+ "225455-u-35-mm-szego-profil-elox": {
+  "order": 6
+ },
+ "225455-n-u-35-mm-szego-profil": {
+  "order": 7
+ },
+ "226215-u-40-mm-szego-profil": {
+  "order": 8
+ },
+ "226240-tomiteses-u-szego-40-mm": {
+  "order": 9
+ },
+ "226701-tomites-40-u-szegohoz": {
+  "order": 10
+ },
+ "222139-h-szego-25-mm-elox": {
+  "order": 11
+ },
+ "222139-n-h-szego-25-mm": {
+  "order": 12
+ },
+ "223085-h-szego-kiugros-30-mm-elox": {
+  "order": 14
+ },
+ "221746-h-toldo-szego-profil-elox": {
+  "order": 15
  }
 }
