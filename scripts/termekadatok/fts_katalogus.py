@@ -75,6 +75,7 @@ MANUAL = {  # ("foto", oldal, kép befoglaló téglalapja) = beágyazott fotó; 
     # a Quadris kérésére: 352540 = TL35 alumínium oszlop (Art. 35250400), 352240 = TL35 sarokoszlop (Art. 35220400)
     "352540-egymasba-zarodo-z-zar-400": [("foto", 139, (303, 133, 431, 351))],
     "352240-ellendarabos-szego-400mm-r-l": [("foto", 139, (244, 363, 328, 589))],
+    "352260-ellendarabos-szego-600mm-r-l": [("foto", 139, (244, 363, 328, 589))],  # 35220600, ugyanaz a sarokoszlop
     # TIR zsanérok (3-16 … 3-23. oldal): fotó + méretrajz; a garnitúra = zsanér (anya) + csap (apa)
     "152711-menetes-lapka-30mm": [TIR["lapka30"][0], TIR["lapka30"][1]],
     "152751-tir-zsaner-alu-haz": list(TIR["aluhaz"]),
@@ -102,6 +103,7 @@ MANUAL_SPECS = {
     "152901-tir-zsaner-garnitura-nagy-horg": {"Tartalom": "BM nehéz TIR zsanér (H=20) + 70 mm osztású menetes lapka, csap + 95 mm osztású menetes lapka", "Kivitel": "horganyzott"},
     "352540-egymasba-zarodo-z-zar-400": {"Magasság": "400 mm", "Anyag": "alumínium (TL35)", "Kivitel": "jobb/bal"},
     "352240-ellendarabos-szego-400mm-r-l": {"Magasság": "400 mm", "Anyag": "alumínium (TL35 sarokoszlop)", "Kivitel": "jobb/bal"},
+    "352260-ellendarabos-szego-600mm-r-l": {"Magasság": "600 mm", "Anyag": "alumínium (TL35 sarokoszlop)", "Kivitel": "jobb/bal"},
 }
 SKIP_SLUGS = set()
 
