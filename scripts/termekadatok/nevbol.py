@@ -475,6 +475,7 @@ def material(specs, name):
 # a Quadris által küldött katalógusrajz első képként (a gyártói cikkszám nélkül kivágva): slug -> (kép, adatok)
 CATALOG_FIRST = {
     "227686-50x35x3-5-mm-r4-oszlop-profil-elox": ("data/forras/caralu_1011345_rajz.png", {"Tömeg": "1,609 kg/m"}),  # Car-Alu 1011345
+    "223219-100x25-mm-ponyvatarto-zartszelveny-elox": ("data/forras/metra_3219_rajz.png", {"Tömeg": "0,985 kg/m"}),  # Metra R 3219
 }
 
 

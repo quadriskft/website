@@ -3190,9 +3190,11 @@
   "matchedCode": "",
   "specs": {
    "Anyag": "alumínium, eloxált",
-   "Méret": "100 × 25 mm"
+   "Méret": "100 × 25 mm",
+   "Tömeg": "0,985 kg/m"
   },
   "images": [
+   "/termekkepek/223219-100x25-mm-ponyvatarto-zartszelveny-elox-meretrajz.webp",
    "/termekkepek/3d/223219-100x25-mm-ponyvatarto-zartszelveny-elox-1.webp",
    "/termekkepek/3d/223219-100x25-mm-ponyvatarto-zartszelveny-elox-2.webp",
    "/termekkepek/223219-100x25-mm-ponyvatarto-zartszelveny-elox-1.webp"
