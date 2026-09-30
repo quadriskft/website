@@ -488,5 +488,96 @@
   "code": "351155",
   "date": "2026-09-30",
   "reason": "Quadris kérés: most nem kell (lehet, hogy később visszakerül)"
+ },
+ "224230-koztes-250-mm-elox-profil-cd": {
+  "name": "Köztes 250 mm elox profil CD",
+  "supplier": "Constellium Decin",
+  "code": "224230",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: a Platós és ponyvás oldalfal profilok, szegő profilok csoportból kivéve"
+ },
+ "226253-koztes-ponyvas-200-mm-elox-profil-b": {
+  "name": "Köztes ponyvás 200 mm elox profil B",
+  "supplier": "BODEGA",
+  "code": "226253",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: a Platós és ponyvás oldalfal profilok, szegő profilok csoportból kivéve"
+ },
+ "227045-n-koztes-ponyvas-200-mm-profil": {
+  "name": "Köztes ponyvás 200 mm profil",
+  "supplier": "Constellium Decin",
+  "code": "227045/n",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: a Platós és ponyvás oldalfal profilok, szegő profilok csoportból kivéve"
+ },
+ "227046-n-koztes-200-mm-profil": {
+  "name": "Köztes 200 mm profil",
+  "supplier": "Constellium Decin",
+  "code": "227046/n",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: a Platós és ponyvás oldalfal profilok, szegő profilok csoportból kivéve"
+ },
+ "227047-n-felso-200-mm-profil": {
+  "name": "Felső 200 mm profil",
+  "supplier": "Constellium Decin",
+  "code": "227047/n",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: a Platós és ponyvás oldalfal profilok, szegő profilok csoportból kivéve"
+ },
+ "224004-400-mm-peremes-oldalfal-elox": {
+  "name": "400 mm peremes oldalfal elox",
+  "supplier": "Takler",
+  "code": "224004",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: a Platós és ponyvás oldalfal profilok, szegő profilok csoportból kivéve"
+ },
+ "224004-400-mm-peremes-oldalfal-elox-2": {
+  "name": "224004/ 400 mm peremes oldalfal elox",
+  "supplier": "Takler",
+  "code": "224004/400",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: a Platós és ponyvás oldalfal profilok, szegő profilok csoportból kivéve"
+ },
+ "225549-400-mm-peremes-oldalfal-elox": {
+  "name": "400 mm peremes oldalfal elox",
+  "supplier": "BODEGA",
+  "code": "225549",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: a Platós és ponyvás oldalfal profilok, szegő profilok csoportból kivéve"
+ },
+ "223001-u-25-mm-szego-profil-elox-t": {
+  "name": "\"u\" 25 mm szegő profil elox T",
+  "supplier": "Takler",
+  "code": "223001",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: a Platós és ponyvás oldalfal profilok, szegő profilok csoportból kivéve"
+ },
+ "223001-n-u-25-mm-szego-profil-t": {
+  "name": "\"u\" 25 mm szegő profil T",
+  "supplier": "Takler",
+  "code": "223001/N",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: a Platós és ponyvás oldalfal profilok, szegő profilok csoportból kivéve"
+ },
+ "223003-h-szego-25-mm-elox-t": {
+  "name": "\"h\" szegő 25 mm elox T",
+  "supplier": "Takler",
+  "code": "223003",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: a Platós és ponyvás oldalfal profilok, szegő profilok csoportból kivéve"
+ },
+ "223003-n-h-szego-25-mm-t": {
+  "name": "\"h\" szegő 25 mm T",
+  "supplier": "Takler",
+  "code": "223003/n",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: a Platós és ponyvás oldalfal profilok, szegő profilok csoportból kivéve"
+ },
+ "228153-u-25-mm-szego-profil-elox-b": {
+  "name": "\"u\" 25 mm szegő profil elox B",
+  "supplier": "BODEGA",
+  "code": "228153",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: a Platós és ponyvás oldalfal profilok, szegő profilok csoportból kivéve"
  }
 }
