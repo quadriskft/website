@@ -3160,6 +3160,19 @@
    1.5
   ]
  },
+ "223032-spitz-profil-100-mm": {
+  "source": "Quadris katalóguslap",
+  "specs": {
+   "Szélesség": "110 mm",
+   "Magasság": "25 mm",
+   "Falvastagság": "1,4 mm",
+   "Tömeg": "1,028 kg/m",
+   "Ötvözet": "EN AW-6060 T66"
+  },
+  "images": [
+   "/termekkepek/223032-spitz-profil-100-mm-meretrajz.webp"
+  ]
+ },
  "223085-h-szego-kiugros-30-mm-elox": {
   "source": "Quadris katalóguslap",
   "specs": {
