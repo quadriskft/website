@@ -89,6 +89,9 @@ INSERT["222020-h-szego-kiugros-25-mm-elox"] = [("data/forras/esal_50020_foto.png
 PREPEND.update({slug: ([("data/forras/u_szego_2137_rajz.png", "meretrajz")],
                        {"Magasság": "40 mm", "Szélesség": "25,5 mm", "Tömeg": "0,788 kg/m"})
                 for slug in ("222137-u-25-mm-szego-profil-elox", "222137-n-u-25-mm-szego-profil")})
+# 221746 H toldó – szegő profil elox (Car-Alu 1011414): a Quadris által küldött katalógusrajz (a cikkszámok nélkül)
+PREPEND["221746-h-toldo-szego-profil-elox"] = ([("data/forras/caralu_1011414_rajz.png", "meretrajz")],
+                                               {"Szélesség": "77,8 mm", "Magasság": "25,5 mm", "Tömeg": "1,2 kg/m"})
 # 226915 és 226915/n (30 mm U szegő): a Quadris kérésére csak az Alu-SV 6600006915 rajza (a korábbi RE-ALL /
 # Constellium-rajzok a kezi_kepsorrend.json „kizart” listáján)
 INSERT.update({slug: [("data/forras/alusv_6600006915_rajz.png", "alusv", 0)]
