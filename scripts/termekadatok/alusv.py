@@ -1,6 +1,6 @@
 """ALU-SV (CZ/SK) – keresés rendelési szám alapján, majd a termékoldal adatai és képe.
 
-Használat: python3 scripts/termekadatok/alusv.py
+Használat: python3 scripts/termekadatok/alusv.py [Quadris-kód …]   (kóddal csak azokat frissíti)
 """
 
 import html
@@ -85,6 +85,53 @@ PROFILE_SIZE = {"662AP17730": {"Szélesség": "127,0 mm", "Magasság": "177,0 mm
                 "66OZ035255": {"Szélesség": "265,0 mm", "Magasság": "35,0 mm"}}
 
 
+# a Quadris kérésére ezekhez a rajz mellé az Alu-SV termékfotója is (elöl)
+PHOTO = {"117774", "117775", "117776", "117777", "117787"}
+# a szerelt kötőelemek rajzán az Alu-SV alkatrész-cikkszámai helyett a Quadris-cikkszám / magyar megnevezés
+# (6600107775 = 117775, 6600117776 = 117776, 6600107776 = 117774; a csavar és az alátét gyári kódja helyett a neve):
+# Quadris-kód -> [(a régi felirat keresési téglalapja a rajzon, új szöveg, igazítás: l = bal, r = jobb)]
+RELABEL = {
+    "117777": [((583, 40, 760, 65), "117775", "l"), ((583, 178, 760, 203), "117776", "l"),
+               ((492, 415, 640, 441), "alátét", "l"), ((492, 510, 640, 534), "csavar", "l")],
+    "117787": [((520, 28, 700, 60), "117775", "l"), ((70, 230, 252, 262), "117774", "r"),
+               ((70, 278, 252, 308), "csavar", "r"), ((568, 234, 745, 266), "alátét", "l")],
+}
+FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
+
+
+def relabel(img, items):
+    """A rajz feliratainak cseréje: a régi szöveg (a vízszintes mutatóvonal nélkül) fehérre, helyére az új, azonos magassággal."""
+    import numpy as np
+    from PIL import ImageDraw, ImageFont
+    a = np.asarray(img.convert("L"))
+    d = ImageDraw.Draw(img)
+    for (x0, y0, x1, y1), new, align in items:
+        dark = a[y0:y1, x0:x1] < 160
+        cols = [x for x in range(dark.shape[1]) if dark[:, x].sum() > 3]  # a mutatóvonal oszlopai kimaradnak
+        rows = np.where(dark[:, cols].any(1))[0]
+        bx0, by0, bx1, by1 = x0 + min(cols), y0 + rows.min(), x0 + max(cols), y0 + rows.max()
+        d.rectangle([bx0 - 1, by0 - 2, bx1 + 1, by1 + 2], fill="white")
+        fnt = ImageFont.truetype(FONT, round((by1 - by0 + 1) / 0.72))
+        w = d.textlength(new, font=fnt)
+        d.text((bx0 if align == "l" else bx1 - w, by1 + 1), new, font=fnt, fill="black", anchor="ls")
+    return img
+
+
+def trim_photo(data):
+    """A termékfotó körüli nagy fehér rész levágása (5% margóval)."""
+    import io
+
+    import numpy as np
+    from PIL import Image
+    img = Image.open(io.BytesIO(data)).convert("RGB")
+    ys, xs = np.where(np.asarray(img.convert("L")) < 235)
+    img = img.crop((xs.min(), ys.min(), xs.max() + 1, ys.max() + 1))
+    m = int(max(img.size) * 0.05)
+    bg = Image.new("RGB", (img.width + 2 * m, img.height + 2 * m), "white")
+    bg.paste(img, (m, m))
+    return bg
+
+
 def remove_badge(data):
     """Az Alu-SV rajzain lévő sárgászöld „N” (natúr) jelölés eltávolítása: a kör és a benne lévő betű fehér lesz."""
     import io
@@ -123,9 +170,12 @@ def image_only_specs(code, info):
     return specs
 
 
-def main():
+def main(only=None):
+    """only: csak ezek a Quadris-kódok (kézi frissítéshez); ilyenkor a többi Alu-SV bejegyzés érintetlen marad."""
     products = load_products(SUPPLIER)
     products += [p for p in load_products() if (p["code"] in EXTRA or p["code"] in IMAGE_ONLY) and p not in products]
+    if only:
+        products = [p for p in products if p["code"] in only]
     enrichment, missing = {}, []
     for p in products:
         info, code = None, None
@@ -146,9 +196,15 @@ def main():
         # a "full" és a normál rajz ugyanaz a kép: csak az elsőt mentjük
         for url in info["images"][:1]:
             try:
-                images.append(save_image(remove_badge(fetch(url)), p["slug"]))
+                img = remove_badge(fetch(url))
+                images.append(save_image(relabel(img, RELABEL[p["code"]]) if p["code"] in RELABEL else img, p["slug"]))
             except Exception as err:  # noqa: BLE001
                 print("  képhiba:", url, err)
+        if p["code"] in PHOTO:
+            try:
+                images.insert(0, save_image(trim_photo(fetch(f"{BASE}/common/images/product/photo/full/{code}.jpg")), p["slug"], 2))
+            except Exception as err:  # noqa: BLE001
+                print("  fotóhiba:", code, err)
         enrichment[p["slug"]] = {
             "source": SUPPLIER,
             "sourceUrl": info["url"],
@@ -158,11 +214,11 @@ def main():
                       {**info["specs"], **({"Felület": "eloxált"} if "elox" in p["name"].lower() and info["specs"].get("Felület") == "natúr" else {})}),
             "images": images,
         }
-    update_enrichment(enrichment, SUPPLIER)
+    update_enrichment(enrichment, None if only else SUPPLIER)
     print(f"{SUPPLIER}: {len(enrichment)}/{len(products)} egyezés")
     for p in missing:
         print(f"  NINCS: {p['supplierCode'] or '-':>16}  {p['name']}")
 
 
 if __name__ == "__main__":
-    main()
+    main(set(sys.argv[1:]) or None)
