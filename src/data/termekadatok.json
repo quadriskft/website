@@ -3306,6 +3306,18 @@
    "/termekkepek/226001-zart-padlo-profil-30-200-mm-2.webp"
   ]
  },
+ "226215-u-40-mm-szego-profil": {
+  "source": "Quadris katalóguslap",
+  "specs": {
+   "Szélesség": "50 mm",
+   "Magasság": "50,5 mm",
+   "Belső nyílás": "40,5 mm",
+   "Tömeg": "2,53 kg/m"
+  },
+  "images": [
+   "/termekkepek/226215-u-40-mm-szego-profil-meretrajz.webp"
+  ]
+ },
  "226821-21-padlo-profil-200-mm": {
   "source": "Quadris gyári rajz",
   "sourceTitle": "BODEGA TB48968 – műhelyrajz",
