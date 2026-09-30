@@ -478,6 +478,7 @@ CATALOG_FIRST = {
     "223219-100x25-mm-ponyvatarto-zartszelveny-elox": ("data/forras/metra_3219_rajz.png", {"Tömeg": "0,985 kg/m"}),  # Metra R 3219
     "222266-100x25-mm-ponyvatarto-zartszelveny-gk": ("data/forras/kety_w2266_rajz.png", {"Falvastagság": "1,3 mm"}),  # Grupa Kęty W2266
     "220233-150x25-mm-ponyvatarto-zartszelveny": ("data/forras/exlabesa_20233_rajz.png", {"Falvastagság": "1,3 mm", "Tömeg": "1,275 kg/m"}),  # Exlabesa EXL-20.233 (feketén)
+    "222185-100x25-mm-ponyvatarto-zartszelveny-merevitett": ("data/forras/allco_2185_rajz.png", {"Tömeg": "1,034 kg/m"}),  # Allco VZ2185UN
 }
 
 
