@@ -3049,9 +3049,11 @@
   "matchedCode": "",
   "specs": {
    "Anyag": "alumínium",
-   "Méret": "100 × 25 mm"
+   "Méret": "100 × 25 mm",
+   "Falvastagság": "1,3 mm"
   },
   "images": [
+   "/termekkepek/222266-100x25-mm-ponyvatarto-zartszelveny-gk-meretrajz.webp",
    "/termekkepek/3d/222266-100x25-mm-ponyvatarto-zartszelveny-gk-1.webp",
    "/termekkepek/3d/222266-100x25-mm-ponyvatarto-zartszelveny-gk-2.webp",
    "/termekkepek/222266-100x25-mm-ponyvatarto-zartszelveny-gk-1.webp"
