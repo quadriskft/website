@@ -21,7 +21,9 @@ W, H, PAD = 800, 560, 36
 PHOTOS = {
     "acel-profilok": ["cover", "../data/forras/cargoframes/cargoframes_kit_keret.jpg"],  # Cargo Frames összeszerelt acél plató-keret
     "platos-alkatreszek-es-kiegeszitok": ["termekkepek/451721-horganyzott-nagykonzol-man-50-mm-1.webp", "termekkepek/m12x140-rugos-felfuggesztes-1.webp"],
-    # "acel-es-alu-rakoncak-es-szegok": a Quadris új képet küld (addig nincs csoportkép, a weboldal ikont mutat)
+    # a Quadris által küldött három kép (narancs jelölőpontok és az ADA vízjel nélkül), azonos magasságban egymás mellett
+    "acel-es-alu-rakoncak-es-szegok": ["row", "../data/forras/rakonca_csoportkep_1.png", "../data/forras/rakonca_csoportkep_2.png",
+                                       "../data/forras/rakonca_csoportkep_3.png"],
     "elhuzhato-roloponyvas-rendszer": ["small", "../data/forras/roloponyvas_kategoria.png"],  # a Quadris által küldött kép (298×198)
     "ponyvarendszer-kiegeszitok": ["termekkepek/380184-ada-racsnis-feszito-kocka-adapterhez-r-1.webp"],
     "dobozos-felepitmeny-alkatreszek": ["termekkepek/714859-sullyesztett-inox-rudzar-25-16-mm-pl-1.webp"],
@@ -58,6 +60,24 @@ def compose(images):
     return canvas
 
 
+def row(images, gap=28):
+    """Képek egymás mellett, azonos magasságra méretezve (a szélesebbek nem zsugorodnak a keskenyebbek miatt)."""
+    ims = [trim(im) for im in images]
+    h = H - 2 * PAD
+    ims = [im.resize((round(im.width * h / im.height), h), Image.LANCZOS) for im in ims]
+    total = sum(im.width for im in ims) + gap * (len(ims) - 1)
+    if total > W - 2 * PAD:
+        k = (W - 2 * PAD) / total
+        ims = [im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS) for im in ims]
+        gap, total = round(gap * k), W - 2 * PAD
+    canvas = Image.new("RGB", (W, H), "white")
+    x = (W - total) // 2
+    for im in ims:
+        canvas.paste(im, (x, (H - im.height) // 2))
+        x += im.width + gap
+    return canvas
+
+
 def cover(im):
     im = im.convert("RGB")
     scale = max(W / im.width, H / im.height)
@@ -89,6 +109,8 @@ def main():
     for group, paths in PHOTOS.items():
         if paths[0] == "cover":
             img = cover(Image.open(ROOT / "public" / paths[1]))
+        elif paths[0] == "row":
+            img = row([Image.open(ROOT / "public" / p) for p in paths[1:]])
         elif paths[0] == "small":
             img = small(Image.open(ROOT / "public" / paths[1]))
         else:
