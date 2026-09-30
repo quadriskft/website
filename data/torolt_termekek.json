@@ -593,5 +593,152 @@
   "code": "220326/n",
   "date": "2026-09-30",
   "reason": "Quadris kérés: kivéve"
+ },
+ "250301-30x10-mm-alu-lapos-profil": {
+  "name": "30x10 mm Alu lapos profil",
+  "supplier": "ALCOMET",
+  "code": "250301",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "250305-30x5-mm-alu-lapos-profil": {
+  "name": "30x5 mm Alu lapos profil",
+  "supplier": "Klöckner",
+  "code": "250305",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "250403-40x40x3-alu-l-profil": {
+  "name": "40x40x3 Alu \"L\" profil",
+  "supplier": "RE-ALL",
+  "code": "250403",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "250405-40x5-mm-alu-lapos-profil": {
+  "name": "40x5 mm Alu lapos profil",
+  "supplier": "Klöckner",
+  "code": "250405",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "251310-18x2-alu-cso": {
+  "name": "18x2 Alu cső",
+  "supplier": "ALCOMET",
+  "code": "251310",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "251883-30x20x1-5-alu-zartszelveny": {
+  "name": "30x20x1,5 alu zártszelvény",
+  "supplier": "ALCOMET",
+  "code": "251883",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "252003-20x3-mm-alu-lapos-profil": {
+  "name": "20x3 mm Alu lapos profil",
+  "supplier": "Klöckner",
+  "code": "252003",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "252229-40x40x4-alu-zartszelveny": {
+  "name": "40x40x4 alu zártszelvény",
+  "supplier": "Klöckner",
+  "code": "252229",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "252502-25x25x2-alu-l-profil": {
+  "name": "25x25x2 Alu \"L\" profil",
+  "supplier": "RE-ALL",
+  "code": "252502",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "252535-60x40x3-alu-zartszelveny": {
+  "name": "60x40x3 alu zártszelvény",
+  "supplier": "BODEGA",
+  "code": "252535",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "252687-60x40x4-alu-zartszelveny": {
+  "name": "60x40x4 alu zártszelvény",
+  "supplier": "ALCOMET",
+  "code": "252687",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "252763-80x40x3-alu-zartszelveny": {
+  "name": "80x40x3 alu zártszelvény",
+  "supplier": "ALCOMET",
+  "code": "252763",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "252764-80x40x4-alu-zartszelveny": {
+  "name": "80x40x4 alu zártszelvény",
+  "supplier": "ALCOMET",
+  "code": "252764",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "252798-150x30x3-mm-alu-zartszelveny": {
+  "name": "150x30x3 mm alu zártszelvény",
+  "supplier": "ALCOMET",
+  "code": "252798",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "252981-20x20x3-alu-zartszelveny": {
+  "name": "20x20x3 alu zártszelvény",
+  "supplier": "BODEGA",
+  "code": "252981",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "253020-30x20x2-alu-zartszelveny": {
+  "name": "30x20x2 alu zártszelvény",
+  "supplier": "ALCOMET",
+  "code": "253020",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "253337-50x50x4-alu-zartszelveny": {
+  "name": "50x50x4 alu zártszelvény",
+  "supplier": "Klöckner",
+  "code": "253337",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "255004-100x50x4-mm-alu-zartszelveny": {
+  "name": "100x50x4 mm Alu zártszelvény",
+  "supplier": "ESAL",
+  "code": "255004",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "255032-50x30x2-5-alu-zartszelveny-6000-mm": {
+  "name": "50x30x2,5 Alu zártszelvény 6000 mm",
+  "supplier": "EXAL",
+  "code": "255032",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "255473-80x80x4-mm-alu-zartszelveny": {
+  "name": "80x80x4 mm Alu zártszelvény",
+  "supplier": "ALCOMET",
+  "code": "255473",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
+ },
+ "255610-60x30x2-5-r2-5-mm-alu-zartszelveny": {
+  "name": "60x30x2,5 R2,5 mm alu zártszelvény",
+  "supplier": "ALCOMET",
+  "code": "255610",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: az Ipari félgyártmányokból kivéve"
  }
 }
