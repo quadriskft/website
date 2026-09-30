@@ -669,7 +669,8 @@
  "451030-th-kiskonzol-iveco": {
   "name": "Tűzihorganyzott kiskonzol IVECO",
   "specs": {
-   "Kivitel": "tűzihorganyzott"
+   "Kivitel": "tűzihorganyzott",
+   "Tömeg": "0,345 kg"
   },
   "order": 1
  },

@@ -17351,7 +17351,8 @@
   "sourceTitle": "a 456610 kiskonzol képei (azonos méretű, tűzihorganyzott kivitel)",
   "matchedCode": "",
   "specs": {
-   "Kivitel": "tűzihorganyzott"
+   "Kivitel": "tűzihorganyzott",
+   "Tömeg": "0,345 kg"
   },
   "images": [
    "/termekkepek/456610-horganyzott-kiskonzol-iveco-1.webp",
