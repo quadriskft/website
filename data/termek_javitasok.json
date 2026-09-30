@@ -773,5 +773,19 @@
    "Gerinc vastagsága": "8 mm",
    "Szálhossz": null
   }
+ },
+ "729629-huspalya-c-sin-elox-6000-mm": {
+  "specs": {
+   "Szélesség": "52 mm",
+   "Magasság": "40 mm",
+   "Nyílás": "20 mm"
+  }
+ },
+ "729630-huspalya-c-sin-elox-7000-mm": {
+  "specs": {
+   "Szélesség": "52 mm",
+   "Magasság": "40 mm",
+   "Nyílás": "20 mm"
+  }
  }
 }

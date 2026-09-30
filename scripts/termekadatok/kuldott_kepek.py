@@ -111,6 +111,9 @@ PREPEND["245005-bill-400-30-mm-mono-profil-elox"] = ([("data/forras/takler_t1500
                                                      "Tömeg": "5,513 kg/m"})
 # 245085 Bill. „u” szegő 30 mm (40/60) elox: a RE-ALL katalógus méretezett rajza első képként (a táblázat nélkül)
 INSERT["245085-bill-u-szego-30-mm-40-60-elox"] = [("data/forras/reall_245085_rajz.png", "meretrajz", 0)]
+# 729629 / 729630 húspálya C-sín: a Quadris által küldött katalógusrajz (a gyártói cikkszám nélkül) első képként
+for _slug in ("729629-huspalya-c-sin-elox-6000-mm", "729630-huspalya-c-sin-elox-7000-mm"):
+    INSERT[_slug] = [("data/forras/huspalya_8543_rajz.png", "meretrajz", 0)]
 # 226915 és 226915/n (30 mm U szegő): a Quadris kérésére csak az Alu-SV 6600006915 rajza (a korábbi RE-ALL /
 # Constellium-rajzok a kezi_kepsorrend.json „kizart” listáján)
 INSERT.update({slug: [("data/forras/alusv_6600006915_rajz.png", "alusv", 0)]

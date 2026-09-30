@@ -9237,7 +9237,7 @@
   ]
  },
  "729629-huspalya-c-sin-elox-6000-mm": {
-  "source": "ESAL",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://esalforli.com/public/Catalogo-Sponde-2020-Esal-Forli.pdf#page=73",
   "sourceTitle": "ESAL 9629",
   "matchedCode": "9629",
@@ -9248,11 +9248,12 @@
    "Szálhossz": "6 m"
   },
   "images": [
+   "/termekkepek/729629-huspalya-c-sin-elox-6000-mm-meretrajz.webp",
    "/termekkepek/729629-huspalya-c-sin-elox-6000-mm-1.webp"
   ]
  },
  "729630-huspalya-c-sin-elox-7000-mm": {
-  "source": "ESAL",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://esalforli.com/public/Catalogo-Sponde-2020-Esal-Forli.pdf#page=73",
   "sourceTitle": "ESAL 9629",
   "matchedCode": "9629",
@@ -9263,6 +9264,7 @@
    "Szálhossz": "7 m"
   },
   "images": [
+   "/termekkepek/729630-huspalya-c-sin-elox-7000-mm-meretrajz.webp",
    "/termekkepek/729630-huspalya-c-sin-elox-7000-mm-1.webp"
   ]
  },
