@@ -1404,7 +1404,21 @@
    "Tömeg": "0,040 kg"
   },
   "images": [
-   "/termekkepek/152711-menetes-lapka-30mm-1.webp"
+   "/termekkepek/152711-menetes-lapka-30mm-1.webp",
+   "/termekkepek/152711-menetes-lapka-30mm-2.webp"
+  ]
+ },
+ "152751-tir-zsaner-alu-haz": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf",
+  "specs": {
+   "Anyag": "alumínium",
+   "Kivitel": "eloxált, letört éllel",
+   "Tömeg": "0,055 kg"
+  },
+  "images": [
+   "/termekkepek/152751-tir-zsaner-alu-haz-1.webp",
+   "/termekkepek/152751-tir-zsaner-alu-haz-2.webp"
   ]
  },
  "152760-tir-zsaner-apa-resz-alu-hoz": {
@@ -1418,8 +1432,22 @@
   },
   "images": [
    "/termekkepek/152760-tir-zsaner-apa-resz-alu-hoz-1.webp",
-   "/termekkepek/152760-tir-zsaner-apa-resz-alu-hoz-2.webp",
-   "/termekkepek/152760-tir-zsaner-apa-resz-alu-hoz-3.webp"
+   "/termekkepek/152760-tir-zsaner-apa-resz-alu-hoz-2.webp"
+  ]
+ },
+ "152761-tir-zsaner-garnitura-alu-hazas": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf",
+  "specs": {
+   "Tartalom": "alumínium zsanérház + horganyzott csap Ø12 + menetes lapka (30 mm osztás)"
+  },
+  "images": [
+   "/termekkepek/152761-tir-zsaner-garnitura-alu-hazas-1.webp",
+   "/termekkepek/152761-tir-zsaner-garnitura-alu-hazas-2.webp",
+   "/termekkepek/152761-tir-zsaner-garnitura-alu-hazas-3.webp",
+   "/termekkepek/152761-tir-zsaner-garnitura-alu-hazas-4.webp",
+   "/termekkepek/152761-tir-zsaner-garnitura-alu-hazas-5.webp",
+   "/termekkepek/152761-tir-zsaner-garnitura-alu-hazas-6.webp"
   ]
  },
  "152781-tir-zsaner-lapka-70mm": {
@@ -1450,6 +1478,24 @@
    "/termekkepek/152791-tir-zsaner-lapka-50mm-2.webp"
   ]
  },
+ "152811-tir-zsaner-garnitura-horg": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf",
+  "specs": {
+   "Tartalom": "BM könnyű TIR zsanér + 50 mm osztású menetes lapka, csap + 70 mm osztású menetes lapka",
+   "Kivitel": "horganyzott"
+  },
+  "images": [
+   "/termekkepek/152811-tir-zsaner-garnitura-horg-1.webp",
+   "/termekkepek/152811-tir-zsaner-garnitura-horg-2.webp",
+   "/termekkepek/152811-tir-zsaner-garnitura-horg-3.webp",
+   "/termekkepek/152811-tir-zsaner-garnitura-horg-4.webp",
+   "/termekkepek/152811-tir-zsaner-garnitura-horg-5.webp",
+   "/termekkepek/152811-tir-zsaner-garnitura-horg-6.webp",
+   "/termekkepek/152811-tir-zsaner-garnitura-horg-7.webp",
+   "/termekkepek/152811-tir-zsaner-garnitura-horg-8.webp"
+  ]
+ },
  "152814-tir-zsaner-garnitura-th": {
   "source": "FTS",
   "sourceUrl": "https://www.fts-farina.it/prodotto/cerniera-tir-leggera-bm/",
@@ -1457,11 +1503,19 @@
   "sourceDescription": "",
   "matchedCode": "15281410",
   "specs": {
+   "Tartalom": "BM könnyű TIR zsanér + 50 mm osztású menetes lapka, csap + 70 mm osztású menetes lapka",
    "Kivitel": "horganyzott a caldo",
    "Tömeg": "0,210 kg"
   },
   "images": [
-   "/termekkepek/152814-tir-zsaner-garnitura-th-1.webp"
+   "/termekkepek/152814-tir-zsaner-garnitura-th-1.webp",
+   "/termekkepek/152814-tir-zsaner-garnitura-th-2.webp",
+   "/termekkepek/152814-tir-zsaner-garnitura-th-3.webp",
+   "/termekkepek/152814-tir-zsaner-garnitura-th-4.webp",
+   "/termekkepek/152814-tir-zsaner-garnitura-th-5.webp",
+   "/termekkepek/152814-tir-zsaner-garnitura-th-6.webp",
+   "/termekkepek/152814-tir-zsaner-garnitura-th-7.webp",
+   "/termekkepek/152814-tir-zsaner-garnitura-th-8.webp"
   ]
  },
  "152815-1-tir-zsaner-anya": {
@@ -1475,7 +1529,8 @@
    "Tömeg": "0,210 kg"
   },
   "images": [
-   "/termekkepek/152815-1-tir-zsaner-anya-1.webp"
+   "/termekkepek/152815-1-tir-zsaner-anya-1.webp",
+   "/termekkepek/152815-1-tir-zsaner-anya-2.webp"
   ]
  },
  "152815-2-tir-zsaner-apa": {
@@ -1489,7 +1544,26 @@
    "Tömeg": "0,240 kg"
   },
   "images": [
-   "/termekkepek/152815-2-tir-zsaner-apa-1.webp"
+   "/termekkepek/152815-2-tir-zsaner-apa-1.webp",
+   "/termekkepek/152815-2-tir-zsaner-apa-2.webp"
+  ]
+ },
+ "152815-tir-zsaner-garnitura-dc": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf",
+  "specs": {
+   "Tartalom": "BM könnyű TIR zsanér + 50 mm osztású menetes lapka, csap + 70 mm osztású menetes lapka",
+   "Kivitel": "dacromet bevonatú"
+  },
+  "images": [
+   "/termekkepek/152815-tir-zsaner-garnitura-dc-1.webp",
+   "/termekkepek/152815-tir-zsaner-garnitura-dc-2.webp",
+   "/termekkepek/152815-tir-zsaner-garnitura-dc-3.webp",
+   "/termekkepek/152815-tir-zsaner-garnitura-dc-4.webp",
+   "/termekkepek/152815-tir-zsaner-garnitura-dc-5.webp",
+   "/termekkepek/152815-tir-zsaner-garnitura-dc-6.webp",
+   "/termekkepek/152815-tir-zsaner-garnitura-dc-7.webp",
+   "/termekkepek/152815-tir-zsaner-garnitura-dc-8.webp"
   ]
  },
  "152823-tir-zsaner-garnitura-rm": {
@@ -1499,11 +1573,37 @@
   "sourceDescription": "",
   "matchedCode": "15282310",
   "specs": {
+   "Tartalom": "BM könnyű TIR zsanér + 50 mm osztású menetes lapka, csap + 70 mm osztású menetes lapka",
    "Kivitel": "rozsdamentes",
    "Tömeg": "0,210 kg"
   },
   "images": [
-   "/termekkepek/152823-tir-zsaner-garnitura-rm-1.webp"
+   "/termekkepek/152823-tir-zsaner-garnitura-rm-1.webp",
+   "/termekkepek/152823-tir-zsaner-garnitura-rm-2.webp",
+   "/termekkepek/152823-tir-zsaner-garnitura-rm-3.webp",
+   "/termekkepek/152823-tir-zsaner-garnitura-rm-4.webp",
+   "/termekkepek/152823-tir-zsaner-garnitura-rm-5.webp",
+   "/termekkepek/152823-tir-zsaner-garnitura-rm-6.webp",
+   "/termekkepek/152823-tir-zsaner-garnitura-rm-7.webp",
+   "/termekkepek/152823-tir-zsaner-garnitura-rm-8.webp"
+  ]
+ },
+ "152901-tir-zsaner-garnitura-nagy-horg": {
+  "source": "FTS",
+  "sourceUrl": "https://www.fts-farina.it/wp-content/uploads/2023/11/FTS_CATALOGO_2024_low_compressed_compressed.pdf",
+  "specs": {
+   "Tartalom": "BM nehéz TIR zsanér (H=20) + 70 mm osztású menetes lapka, csap + 95 mm osztású menetes lapka",
+   "Kivitel": "horganyzott"
+  },
+  "images": [
+   "/termekkepek/152901-tir-zsaner-garnitura-nagy-horg-1.webp",
+   "/termekkepek/152901-tir-zsaner-garnitura-nagy-horg-2.webp",
+   "/termekkepek/152901-tir-zsaner-garnitura-nagy-horg-3.webp",
+   "/termekkepek/152901-tir-zsaner-garnitura-nagy-horg-4.webp",
+   "/termekkepek/152901-tir-zsaner-garnitura-nagy-horg-5.webp",
+   "/termekkepek/152901-tir-zsaner-garnitura-nagy-horg-6.webp",
+   "/termekkepek/152901-tir-zsaner-garnitura-nagy-horg-7.webp",
+   "/termekkepek/152901-tir-zsaner-garnitura-nagy-horg-8.webp"
   ]
  },
  "200392-i-90-60-kereszttarto-ex": {
@@ -6198,6 +6298,8 @@
   "sourceDescription": "",
   "matchedCode": "35220400",
   "specs": {
+   "Magasság": "400 mm",
+   "Anyag": "alumínium (TL35 sarokoszlop)",
    "Kivitel": "H.400"
   },
   "images": [
@@ -6223,7 +6325,11 @@
   "sourceTitle": "35100500 – Montante Centrale per Piantone TL35 – 35250400",
   "sourceDescription": "",
   "matchedCode": "35250400",
-  "specs": {},
+  "specs": {
+   "Magasság": "400 mm",
+   "Anyag": "alumínium (TL35)",
+   "Kivitel": "jobb/bal"
+  },
   "images": [
    "/termekkepek/352540-egymasba-zarodo-z-zar-400-1.webp"
   ]

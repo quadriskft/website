@@ -18,7 +18,7 @@ from pathlib import Path
 
 import numpy as np
 import pymupdf
-from PIL import Image
+from PIL import Image, ImageDraw
 
 sys.path.insert(0, str(Path(__file__).parent))
 from common import clear_images, fetch, load_enrichment, load_products, save_image, update_enrichment  # noqa: E402
@@ -30,6 +30,29 @@ FINISH = [(r"zincat[oa] a caldo|hot galvani[sz]ed", "tűzihorganyzott"), (r"zinc
           (r"inox|stainless", "rozsdamentes acél"), (r"grezz[oa]|raw", "nyers"), (r"verniciat[oa]|painted", "festett"),
           (r"dacromet", "dacromet bevonatú"), (r"cataforesi|cataphoresis", "kataforézis bevonatú"), (r"nero|black", "fekete")]
 
+
+# TIR zsanér-alkatrészek a katalógusban: (fotó, méretrajz)
+TIR = {
+    "aluhaz": (("foto", 71, (294, 166, 400, 271)), ("rajz", 71, (364, 224, 552, 308), [(294, 166, 394, 247)])),       # 15275101
+    "csap12": (("foto", 72, (356, 183, 552, 273)), ("rajz", 72, (328, 324, 568, 512))),       # 15276110
+    "lapka30": (("foto", 72, (295, 593, 404, 667)), ("rajz", 72, (100, 656, 248, 732))),      # 15270110
+    "bm_anya": (("foto", 76, (86, 215, 278, 356)), ("rajz", 76, (44, 352, 300, 444))),        # 1528…10 könnyű BM zsanér
+    "bm_apa": (("foto", 76, (87, 554, 271, 688)), ("rajz", 76, (44, 692, 288, 808))),         # 1528…10 könnyű BM csap
+    "lapka50": (("foto", 76, (383, 242, 513, 326)), ("rajz", 76, (372, 364, 542, 432))),      # 15279110
+    "lapka70": (("foto", 76, (363, 573, 521, 675)), ("rajz", 76, (352, 696, 528, 780))),      # 15278110
+    "nehez_anya": (("foto", 77, (207, 540, 457, 712)), ("rajz", 77, (48, 714, 304, 808))),    # 15291110 (H=20)
+    "nehez_apa": (("foto", 78, (75, 185, 296, 348)), ("rajz", 78, (56, 352, 320, 464))),      # 15290110
+    "lapka95": (("foto", 78, (363, 192, 544, 306)), ("rajz", 78, (340, 320, 580, 416))),      # 15284110
+}
+
+
+def garnitura(*parts):
+    """Garnitúra képei: előbb az alkatrészek fotói, utána a méretrajzaik (a katalógus sorrendjében)."""
+    return [TIR[k][0] for k in parts] + [TIR[k][1] for k in parts]
+
+
+# a garnitúrák a zsanérral (anya), a csappal (apa) és a hozzájuk tartozó menetes lapkákkal (a katalógus párosítása szerint)
+GARN_BM = garnitura("bm_anya", "lapka50", "bm_apa", "lapka70")
 
 # Kézzel ellenőrzött kivágások (oldal, [x0, y0, x1, y1] pontban) azokhoz a termékekhez, amelyeknek a
 # webáruházban nincs ép képe (pl. a Z-zárak beépítési rajza a webshopban a szélén le van vágva).
@@ -49,21 +72,51 @@ MANUAL = {  # ("foto", oldal, kép befoglaló téglalapja) = beágyazott fotó; 
     "308155-th-alafutasgatlo-konzol-710-mm": [("rajz", 268, (60, 503, 215, 805))],
     "828010-nyers-zsaner-bak-csavar": [("foto", 315, (358, 555, 473, 653))],
     "145010-50-mm-es-gombcsuklo-keszlet-3-5t": [("foto", 111, (51, 165, 292, 320))],
+    # a Quadris kérésére: 352540 = TL35 alumínium oszlop (Art. 35250400), 352240 = TL35 sarokoszlop (Art. 35220400)
+    "352540-egymasba-zarodo-z-zar-400": [("foto", 139, (303, 133, 431, 351))],
+    "352240-ellendarabos-szego-400mm-r-l": [("foto", 139, (244, 363, 328, 589))],
+    # TIR zsanérok (3-16 … 3-23. oldal): fotó + méretrajz; a garnitúra = zsanér (anya) + csap (apa)
+    "152711-menetes-lapka-30mm": [TIR["lapka30"][0], TIR["lapka30"][1]],
+    "152751-tir-zsaner-alu-haz": list(TIR["aluhaz"]),
+    "152760-tir-zsaner-apa-resz-alu-hoz": list(TIR["csap12"]),
+    "152761-tir-zsaner-garnitura-alu-hazas": garnitura("aluhaz", "csap12", "lapka30"),
+    "152791-tir-zsaner-lapka-50mm": list(TIR["lapka50"]),
+    "152781-tir-zsaner-lapka-70mm": list(TIR["lapka70"]),
+    "152811-tir-zsaner-garnitura-horg": GARN_BM,
+    "152814-tir-zsaner-garnitura-th": GARN_BM,
+    "152815-tir-zsaner-garnitura-dc": GARN_BM,
+    "152823-tir-zsaner-garnitura-rm": GARN_BM,
+    "152815-1-tir-zsaner-anya": list(TIR["bm_anya"]),
+    "152815-2-tir-zsaner-apa": list(TIR["bm_apa"]),
+    "152901-tir-zsaner-garnitura-nagy-horg": garnitura("nehez_anya", "lapka70", "nehez_apa", "lapka95"),
 }
-SKIP_SLUGS = {"152811-tir-zsaner-garnitura-horg"}  # az Excel kódja egy másik termékre (lapka) mutat
+GARN_BM_TXT = "BM könnyű TIR zsanér + 50 mm osztású menetes lapka, csap + 70 mm osztású menetes lapka"
+# a katalógus adatai azokhoz, amelyeket a webáruház nem ad (a garnitúránál: zsanér + csap)
+MANUAL_SPECS = {
+    "152751-tir-zsaner-alu-haz": {"Anyag": "alumínium", "Kivitel": "eloxált, letört éllel", "Tömeg": "0,055 kg"},
+    "152761-tir-zsaner-garnitura-alu-hazas": {"Tartalom": "alumínium zsanérház + horganyzott csap Ø12 + menetes lapka (30 mm osztás)"},
+    "152811-tir-zsaner-garnitura-horg": {"Tartalom": GARN_BM_TXT, "Kivitel": "horganyzott"},
+    "152815-tir-zsaner-garnitura-dc": {"Tartalom": GARN_BM_TXT, "Kivitel": "dacromet bevonatú"},
+    "152814-tir-zsaner-garnitura-th": {"Tartalom": GARN_BM_TXT},
+    "152823-tir-zsaner-garnitura-rm": {"Tartalom": GARN_BM_TXT},
+    "152901-tir-zsaner-garnitura-nagy-horg": {"Tartalom": "BM nehéz TIR zsanér (H=20) + 70 mm osztású menetes lapka, csap + 95 mm osztású menetes lapka", "Kivitel": "horganyzott"},
+    "352540-egymasba-zarodo-z-zar-400": {"Magasság": "400 mm", "Anyag": "alumínium (TL35)", "Kivitel": "jobb/bal"},
+    "352240-ellendarabos-szego-400mm-r-l": {"Magasság": "400 mm", "Anyag": "alumínium (TL35 sarokoszlop)", "Kivitel": "jobb/bal"},
+}
+SKIP_SLUGS = set()
 
 
 def manual_images(doc, slug):
     import ital_accessori as ia
     out = []
-    for n, (kind, pno, box) in enumerate(MANUAL[slug], start=1):
+    for n, (kind, pno, box, *mask) in enumerate(MANUAL[slug], start=1):
         pg, rect = doc[pno - 1], pymupdf.Rect(*box)
         img = None
         if kind == "foto":
             cl = next((c for c in ia.image_clusters(pg, []) if abs(c[0].x0 - rect.x0) < 3 and abs(c[0].y0 - rect.y0) < 3), None)
             img = ia.extract(pg, cl) if cl else None
         if img is None:
-            img = render(pg, rect)
+            img = render(pg, rect, mask[0] if mask else ())
         if img is not None:
             out.append(save_image(img, slug, n))
     return out
@@ -141,10 +194,13 @@ def photo(page, rect, art_rect):
     return img
 
 
-def render(page, rect):
+def render(page, rect, mask=()):
+    """A téglalap renderelése; a mask téglalapjai (pl. a rajzba belógó szomszédos fotó) fehérek lesznek."""
     zoom = 220 / 72
     pix = page.get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), clip=rect, alpha=False)
     img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+    for m in mask:
+        ImageDraw.Draw(img).rectangle([(m[0] - rect.x0) * zoom, (m[1] - rect.y0) * zoom, (m[2] - rect.x0) * zoom, (m[3] - rect.y0) * zoom], fill="white")
     g = np.asarray(img.convert("L")) < 225
     ys, xs = np.where(g)
     if len(xs) < 100:
@@ -179,6 +235,7 @@ def main():
 
     enrichment = load_enrichment()
     products = load_products(SUPPLIER)
+    products += [p for p in load_products() if p["slug"] in MANUAL and p not in products]  # pl. Ital Accessori-ként felvett TIR alkatrész
     updates, stats = {}, {"kép": 0, "adat": 0, "új": 0, "kihagyott kép": 0}
     for p in products:
         if p["slug"] in SKIP_SLUGS:
@@ -187,7 +244,7 @@ def main():
             entry = dict(enrichment.get(p["slug"], {}))
             entry.setdefault("source", SUPPLIER)
             entry.setdefault("sourceUrl", PDF)
-            entry.setdefault("specs", {})
+            entry["specs"] = {**MANUAL_SPECS.get(p["slug"], {}), **(entry.get("specs") or {})}
             clear_images(p["slug"])
             entry["images"] = manual_images(doc, p["slug"])
             updates[p["slug"]] = entry
