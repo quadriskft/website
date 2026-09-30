@@ -219,10 +219,21 @@ export function productsIn(groupSlug, categorySlug) {
   // kézi sorrend (data/termek_javitasok.json „order”): ezek elöl, a megadott sorrendben; a többi az eredeti sorrendben
   const rank = (p) => fixes[p.slug]?.order ?? Infinity;
   const bySize = SIZE_SORTED.has(groupSlug) || SIZE_SORTED.has(`${groupSlug}/${categorySlug}`);
-  return list
+  const sorted = list
     .map((p, i) => [p, i])
     .sort((a, b) => rank(a[0]) - rank(b[0]) || (bySize && compareSizes(a[0].name, b[0].name)) || a[1] - b[1])
     .map(([p]) => p);
+  // kézi javításban „after”: a termék a megadott termék (slug) után áll (több ilyen: a javítások sorrendjében)
+  for (const [slug, f] of Object.entries(fixes)) {
+    if (!f.after) continue;
+    const i = sorted.findIndex((p) => p.slug === slug);
+    if (i < 0 || !sorted.some((p) => p.slug === f.after)) continue;
+    const [item] = sorted.splice(i, 1);
+    let j = sorted.findIndex((p) => p.slug === f.after);
+    while (j + 1 < sorted.length && fixes[sorted[j + 1].slug]?.after === f.after) j++;  // a már odatettek mögé
+    sorted.splice(j + 1, 0, item);
+  }
+  return sorted;
 }
 
 // Ezekben a főkategóriákban / alkategóriákban a termékek a névben szereplő méret szerint növekvő sorrendben állnak

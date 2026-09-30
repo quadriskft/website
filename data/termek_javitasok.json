@@ -709,5 +709,11 @@
   "alsoIn": [
    "ipari-felgyartmanyok/cso-rud"
   ]
+ },
+ "245240-billencs-also-200x40-mm": {
+  "after": "247243-billencs-felso-200x40-mm"
+ },
+ "243240-billencs-kozepso-200x40-mm": {
+  "after": "247243-billencs-felso-200x40-mm"
  }
 }
