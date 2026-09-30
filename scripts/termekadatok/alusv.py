@@ -97,6 +97,7 @@ PHOTO = {"117774", "117775", "117776", "117777", "117787",
 PAIR = {"3562974": "62974ZP001"}
 # a képek végére a hozzá tartozó alkatrész fotója és rajza (a Quadris kérésére): kód vagy slug -> Alu-SV cikkszám
 ACCESSORY = {k: "6298K00009" for k in ("356297", "3562974", "356297b-alu-kozepso-rakonca-400-mm-80-np")}  # AluGrip fészek, tűzihorganyzott
+ACCESSORY["356287"] = "6298K00005"
 PAIR_SPECS = {"3562974": {"Kivitel": "bal és jobb oldali (pár)", "Hossz": None}}
 # a szerelt kötőelemek rajzán az Alu-SV alkatrész-cikkszámai helyett a Quadris-cikkszám / magyar megnevezés
 # (6600107775 = 117775, 6600117776 = 117776, 6600107776 = 117774; a csavar és az alátét gyári kódja helyett a neve):
