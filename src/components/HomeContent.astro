@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-import { groups, stats, roundedCount, groupImage } from '../lib/catalog.js';
+import { groups, stats, roundedCount, groupImage, GROUP_META } from '../lib/catalog.js';
 
 // A főoldal tartalma. hero: 'split' (szöveg + videó egymás mellett) vagy 'video' (teljes szélességű, sötétített videó, rajta a szöveg)
 const { hero = 'split' } = Astro.props;
@@ -102,7 +102,8 @@ const SHORT = {
         {groups.map((g) => (
           <a href={`/termekek/${g.slug}`} class="card group-card">
             <div class="group-media">
-              <img src={groupImage(g.slug)} alt="" loading="lazy" width="800" height="560" />
+              {groupImage(g.slug) ? <img src={groupImage(g.slug)} alt="" loading="lazy" width="800" height="560" />
+                : <span class="media-empty"><Icon name={GROUP_META[g.slug]?.icon ?? 'Package'} size={44} /></span>}
             </div>
             <h3>{g.name}</h3>
             <p class="muted">{SHORT[g.slug] ?? ''}</p>
@@ -240,6 +241,7 @@ const SHORT = {
   .group-media { position: relative; margin: 0 -16px 12px; aspect-ratio: 10 / 7; background: #fff; border-bottom: 1px solid var(--line); overflow: hidden; }
   .group-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
   .group-card:hover .group-media img { transform: scale(1.05); }
+  .media-empty { display: grid; place-items: center; width: 100%; height: 100%; color: var(--line-strong); background: linear-gradient(135deg, #fbfcfd, #eef1f4); }
   .group-card h3 { font-size: 0.98rem; margin-bottom: 4px; }
   .group-card p { font-size: 0.84rem; line-height: 1.45; margin: 0 0 10px; flex: 1; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
   .group-count { display: inline-flex; align-items: center; gap: 6px; font-size: 0.86rem; font-weight: 600; color: var(--accent); }

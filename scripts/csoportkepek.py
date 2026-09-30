@@ -21,7 +21,7 @@ W, H, PAD = 800, 560, 36
 PHOTOS = {
     "acel-profilok": ["cover", "../data/forras/cargoframes/cargoframes_kit_keret.jpg"],  # Cargo Frames összeszerelt acél plató-keret
     "platos-alkatreszek-es-kiegeszitok": ["termekkepek/451721-horganyzott-nagykonzol-man-50-mm-1.webp", "termekkepek/m12x140-rugos-felfuggesztes-1.webp"],
-    "acel-es-alu-rakoncak-es-szegok": ["termekkepek/351190-alu-rakonca-magasito-elox-1900-mm-1.webp", "termekkepek/352240-ellendarabos-szego-400mm-r-l-1.webp"],
+    # "acel-es-alu-rakoncak-es-szegok": a Quadris új képet küld (addig nincs csoportkép, a weboldal ikont mutat)
     "elhuzhato-roloponyvas-rendszer": ["small", "../data/forras/roloponyvas_kategoria.png"],  # a Quadris által küldött kép (298×198)
     "ponyvarendszer-kiegeszitok": ["termekkepek/380184-ada-racsnis-feszito-kocka-adapterhez-r-1.webp"],
     "dobozos-felepitmeny-alkatreszek": ["termekkepek/714859-sullyesztett-inox-rudzar-25-16-mm-pl-1.webp"],

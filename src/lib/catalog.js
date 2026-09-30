@@ -1,3 +1,4 @@
+import { existsSync } from 'node:fs';
 import catalog from '../data/catalog.json';
 import extra from '../data/termekadatok.json';
 import extended from '../data/bovitett.json';
@@ -87,13 +88,14 @@ for (const [from, to, after] of CATEGORY_COPIES) {
 // Alkategóriák kézi sorrendje (a Quadris kérése szerint): [alkategória, amely után kerüljön]; a többi marad
 const CATEGORY_MOVES = {
   'platos-alkatreszek-es-kiegeszitok': [['fellepo', 'z-zarak']],
+  'acel-es-alu-rakoncak-es-szegok': [['dg', null]],  // null = a végére
 };
 for (const g of groupList) {
   for (const [slug, after] of CATEGORY_MOVES[g.slug] ?? []) {
     const i = g.categories.findIndex((c) => c.slug === slug);
     if (i < 0) continue;
     const [c] = g.categories.splice(i, 1);
-    const j = g.categories.findIndex((x) => x.slug === after);
+    const j = after ? g.categories.findIndex((x) => x.slug === after) : -1;
     g.categories.splice(j < 0 ? g.categories.length : j + 1, 0, c);
   }
 }
@@ -243,9 +245,9 @@ function compareSizes(a, b) {
   return 0;
 }
 
-// Főkategória kép (scripts/csoportkepek.py állítja elő)
+// Főkategória kép (scripts/csoportkepek.py állítja elő); ha nincs (a Quadris újat küld), null -> ikonos helykitöltő
 export function groupImage(slug) {
-  return `/csoportkepek/${slug}.webp`;
+  return existsSync(`${process.cwd()}/public/csoportkepek/${slug}.webp`) ? `/csoportkepek/${slug}.webp` : null;
 }
 
 export function groupIcon(slug) {
