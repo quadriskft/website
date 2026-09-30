@@ -665,5 +665,18 @@
    "Mértékegység": "db"
   },
   "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben."
+ },
+ "451030-th-kiskonzol-iveco": {
+  "name": "Tűzihorganyzott kiskonzol IVECO",
+  "specs": {
+   "Kivitel": "tűzihorganyzott"
+  },
+  "order": 1
+ },
+ "456610-horganyzott-kiskonzol-iveco": {
+  "order": 2
+ },
+ "456610-r-nyers-kiskonzol-iveco": {
+  "order": 3
  }
 }

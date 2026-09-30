@@ -17344,5 +17344,18 @@
    "/termekkepek/versus-pico-toloteto-rendszer-1.webp",
    "/termekkepek/versus-pico-toloteto-rendszer-2.webp"
   ]
+ },
+ "451030-th-kiskonzol-iveco": {
+  "source": "Quadris kérés",
+  "sourceUrl": "",
+  "sourceTitle": "a 456610 kiskonzol képei (azonos méretű, tűzihorganyzott kivitel)",
+  "matchedCode": "",
+  "specs": {
+   "Kivitel": "tűzihorganyzott"
+  },
+  "images": [
+   "/termekkepek/456610-horganyzott-kiskonzol-iveco-1.webp",
+   "/termekkepek/456610-horganyzott-kiskonzol-iveco-2.webp"
+  ]
  }
 }
