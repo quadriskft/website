@@ -122,6 +122,11 @@ PREPEND["222005-spitz-profil-150-mm-magas-t"] = ([("data/forras/allco_2180_rajz.
 PREPEND["223032-spitz-profil-100-mm"] = ([("data/forras/bodega_53032_rajz.png", "meretrajz")],
                                          {"Szélesség": "110 mm", "Magasság": "25 mm", "Falvastagság": "1,4 mm",
                                           "Tömeg": "1,028 kg/m", "Ötvözet": "EN AW-6060 T66"})
+# 226887 Spitz profil 140 mm magas (Exlabesa EXL-6886): a Quadris által küldött katalógusrajz feketén, a kód és a
+# háttérminta nélkül
+PREPEND["226887-spitz-profil-140-mm-magas"] = ([("data/forras/exlabesa_6886_rajz.png", "meretrajz")],
+                                               {"Szélesség": "140 mm", "Magasság": "25 mm", "Falvastagság": "1,6 mm",
+                                                "Tömeg": "1,682 kg/m"})
 # 226915 és 226915/n (30 mm U szegő): a Quadris kérésére csak az Alu-SV 6600006915 rajza (a korábbi RE-ALL /
 # Constellium-rajzok a kezi_kepsorrend.json „kizart” listáján)
 INSERT.update({slug: [("data/forras/alusv_6600006915_rajz.png", "alusv", 0)]

@@ -3398,6 +3398,18 @@
    "/termekkepek/226830-300-mm-mono-profil-elox-1.webp"
   ]
  },
+ "226887-spitz-profil-140-mm-magas": {
+  "source": "Quadris katalóguslap",
+  "specs": {
+   "Szélesség": "140 mm",
+   "Magasság": "25 mm",
+   "Falvastagság": "1,6 mm",
+   "Tömeg": "1,682 kg/m"
+  },
+  "images": [
+   "/termekkepek/226887-spitz-profil-140-mm-magas-meretrajz.webp"
+  ]
+ },
  "226900-100x25-mm-ponyvatarto-zartszelveny-d": {
   "source": "Quadris adatok",
   "sourceUrl": "",
