@@ -2940,6 +2940,28 @@
    "/termekkepek/222020-h-szego-kiugros-25-mm-elox-1.webp"
   ]
  },
+ "222139-h-szego-25-mm-elox": {
+  "source": "Quadris katalóguslap",
+  "specs": {
+   "Magasság": "60 mm",
+   "Szélesség": "25,5 mm",
+   "Tömeg": "0,923 kg/m"
+  },
+  "images": [
+   "/termekkepek/222139-h-szego-25-mm-elox-meretrajz.webp"
+  ]
+ },
+ "222139-n-h-szego-25-mm": {
+  "source": "Quadris katalóguslap",
+  "specs": {
+   "Magasság": "60 mm",
+   "Szélesség": "25,5 mm",
+   "Tömeg": "0,923 kg/m"
+  },
+  "images": [
+   "/termekkepek/222139-n-h-szego-25-mm-meretrajz.webp"
+  ]
+ },
  "222185-100x25-mm-ponyvatarto-zartszelveny-merevitett": {
   "source": "Quadris adatok",
   "sourceUrl": "",

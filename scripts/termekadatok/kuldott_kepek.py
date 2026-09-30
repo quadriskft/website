@@ -77,6 +77,10 @@ INSERT = {"e69004740-cs-compact-tetokereszttarto-2550-mm": [("data/forras/edscha
                                                   ("data/forras/edscha_csuklopant_650_2.png", "foto2", 2)],
           "e42587-csuklopant-700-mm": [("data/forras/edscha_csuklopant_700_1.png", "foto1", 1),
                                        ("data/forras/edscha_csuklopant_700_2.png", "foto2", 2)]}
+# 222139 és 222139/n („h” szegő 25 mm): a Quadris által küldött katalógusrajz (a gyártói kód nélkül kivágva)
+PREPEND.update({slug: ([("data/forras/h_szego_2139_rajz.png", "meretrajz")],
+                       {"Magasság": "60 mm", "Szélesség": "25,5 mm", "Tömeg": "0,923 kg/m"})
+                for slug in ("222139-h-szego-25-mm-elox", "222139-n-h-szego-25-mm")})
 # 226915 és 226915/n (30 mm U szegő): a Quadris kérésére csak az Alu-SV 6600006915 rajza (a korábbi RE-ALL /
 # Constellium-rajzok a kezi_kepsorrend.json „kizart” listáján)
 INSERT.update({slug: [("data/forras/alusv_6600006915_rajz.png", "alusv", 0)]
