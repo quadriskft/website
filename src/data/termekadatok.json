@@ -6066,6 +6066,25 @@
    "/termekkepek/35014251-2-400-as-billencs-elso-rakonca-r-l-1.webp"
   ]
  },
+ "351142-alu-rakonca-magasito-elox": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000006_pillars/910192129_extender-alugrip-lite-anod",
+  "sourceTitle": "Extender ALUGRIP LITE anod",
+  "matchedCode": "62K1135401",
+  "specs": {
+   "Anyag": "Al / acél",
+   "Felület": "eloxált/horganyzott",
+   "Tömeg": "1,05 kg",
+   "Hossz": "338,5 mm",
+   "Szélesség": "109,0 mm",
+   "Magasság": "35,0 mm",
+   "Mértékegység": "db"
+  },
+  "images": [
+   "/termekkepek/351142-alu-rakonca-magasito-elox-2.webp",
+   "/termekkepek/351142-alu-rakonca-magasito-elox-1.webp"
+  ]
+ },
  "351190-alu-rakonca-magasito-elox-1900-mm": {
   "source": "Profilpol",
   "sourceUrl": "https://profilpolsystem.pl/en/product/adjustable-400-center-post-tripod-1900-mm/",
@@ -6531,6 +6550,7 @@
    "Mértékegység": "db"
   },
   "images": [
+   "/termekkepek/356287-alu-kozepso-rakonca-400-mm-60-billeno-toldassal-2.webp",
    "/termekkepek/356287-alu-kozepso-rakonca-400-mm-60-billeno-toldassal-1.webp"
   ]
  },
@@ -6549,7 +6569,29 @@
    "Mértékegység": "db"
   },
   "images": [
+   "/termekkepek/356297-alu-kozepso-rakonca-400-mm-80-2.webp",
    "/termekkepek/356297-alu-kozepso-rakonca-400-mm-80-1.webp"
+  ]
+ },
+ "3562974-alu-hatso-400-mm-rakonca-l-r": {
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000006_pillars/39000542_rear-pillar-alugrip-400-left-anod.",
+  "sourceTitle": "Rear pillar AluGrip 400 left anod.",
+  "matchedCode": "62974ZL001",
+  "specs": {
+   "Anyag": "Al / acél",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "2,79 kg",
+   "Szélesség": "145,0 mm",
+   "Magasság": "35,0 mm",
+   "Mértékegység": "db",
+   "Kivitel": "bal és jobb oldali (pár)"
+  },
+  "images": [
+   "/termekkepek/3562974-alu-hatso-400-mm-rakonca-l-r-2.webp",
+   "/termekkepek/3562974-alu-hatso-400-mm-rakonca-l-r-4.webp",
+   "/termekkepek/3562974-alu-hatso-400-mm-rakonca-l-r-1.webp",
+   "/termekkepek/3562974-alu-hatso-400-mm-rakonca-l-r-3.webp"
   ]
  },
  "356297b-alu-kozepso-rakonca-400-mm-80-np": {
@@ -6567,6 +6609,7 @@
    "Mértékegység": "db"
   },
   "images": [
+   "/termekkepek/356297b-alu-kozepso-rakonca-400-mm-80-np-2.webp",
    "/termekkepek/356297b-alu-kozepso-rakonca-400-mm-80-np-1.webp"
   ]
  },

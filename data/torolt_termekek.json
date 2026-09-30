@@ -481,5 +481,12 @@
   "code": "352260",
   "date": "2026-09-30",
   "reason": "Quadris kérés: nem kell"
+ },
+ "351155-alu-rakonca-top-kuplung": {
+  "name": "Alu rakonca Top-kuplung",
+  "supplier": "Alu-SV",
+  "code": "351155",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: most nem kell (lehet, hogy később visszakerül)"
  }
 }

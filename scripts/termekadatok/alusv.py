@@ -71,6 +71,10 @@ EXTRA = {
     "237460": "6600007460", "237460/n": "6600007460",
     # a Quadris kérésére: 6613576 (MINI első FLAT oszlop) = „Pillar CS MINI profile head-on 2023 anod”
     "6613576": "6612014347",
+    # a Quadris kérésére: 3562974 alu hátsó 400 mm rakonca L-R = AluGrip 400 hátsó bal + jobb
+    "3562974": "62974ZL001",
+    # 351142 alu rakonca magasító elox = Extender ALUGRIP LITE anod (a Quadris kérésére; az Excel kódja 62K113542B)
+    "351142": "62K1135401",
 }
 # a Quadris kérésére minden MAX-os első oszlop a „Pillar pr. CS MAX front 3000mm, Al anod” (662AP17730) részletesen
 # méretezett rajzát
@@ -86,7 +90,12 @@ PROFILE_SIZE = {"662AP17730": {"Szélesség": "127,0 mm", "Magasság": "177,0 mm
 
 
 # a Quadris kérésére ezekhez a rajz mellé az Alu-SV termékfotója is (elöl)
-PHOTO = {"117774", "117775", "117776", "117777", "117787"}
+PHOTO = {"117774", "117775", "117776", "117777", "117787",
+         # alu rakoncák (a kód nélküli tételnél a slug)
+         "351142", "356287", "356297", "356297b-alu-kozepso-rakonca-400-mm-80-np", "3562974"}
+# jobb/bal pár: a termék a bal (EXTRA) mellé a jobb oldali tétel fotóját és rajzát is kapja; a hossz a kettőnél eltér
+PAIR = {"3562974": "62974ZP001"}
+PAIR_SPECS = {"3562974": {"Kivitel": "bal és jobb oldali (pár)", "Hossz": None}}
 # a szerelt kötőelemek rajzán az Alu-SV alkatrész-cikkszámai helyett a Quadris-cikkszám / magyar megnevezés
 # (6600107775 = 117775, 6600117776 = 117776, 6600107776 = 117774; a csavar és az alátét gyári kódja helyett a neve):
 # Quadris-kód -> [(a régi felirat keresési téglalapja a rajzon, új szöveg, igazítás: l = bal, r = jobb)]
@@ -175,7 +184,7 @@ def main(only=None):
     products = load_products(SUPPLIER)
     products += [p for p in load_products() if (p["code"] in EXTRA or p["code"] in IMAGE_ONLY) and p not in products]
     if only:
-        products = [p for p in products if p["code"] in only]
+        products = [p for p in products if p["code"] in only or p["slug"] in only]
     enrichment, missing = {}, []
     for p in products:
         info, code = None, None
@@ -200,11 +209,20 @@ def main(only=None):
                 images.append(save_image(relabel(img, RELABEL[p["code"]]) if p["code"] in RELABEL else img, p["slug"]))
             except Exception as err:  # noqa: BLE001
                 print("  képhiba:", url, err)
-        if p["code"] in PHOTO:
+        pair = PAIR.get(p["code"])
+        if pair:  # a pár rajza a saját rajz után
             try:
-                images.insert(0, save_image(trim_photo(fetch(f"{BASE}/common/images/product/photo/full/{code}.jpg")), p["slug"], 2))
+                images.append(save_image(remove_badge(fetch(f"{BASE}/common/images/product/drawing/full/{pair.lower()}.gif")), p["slug"], 3))
             except Exception as err:  # noqa: BLE001
-                print("  fotóhiba:", code, err)
+                print("  képhiba:", pair, err)
+        if p["code"] in PHOTO or p["slug"] in PHOTO:  # a fotók elöl (a pár fotója a saját után)
+            photos = []
+            for c, n in [(code, 2)] + ([(pair, 4)] if pair else []):
+                try:
+                    photos.append(save_image(trim_photo(fetch(f"{BASE}/common/images/product/photo/full/{c.lower()}.jpg")), p["slug"], n))
+                except Exception as err:  # noqa: BLE001
+                    print("  fotóhiba:", c, err)
+            images = photos + images
         enrichment[p["slug"]] = {
             "source": SUPPLIER,
             "sourceUrl": info["url"],
@@ -214,6 +232,11 @@ def main(only=None):
                       {**info["specs"], **({"Felület": "eloxált"} if "elox" in p["name"].lower() and info["specs"].get("Felület") == "natúr" else {})}),
             "images": images,
         }
+        for k, v in PAIR_SPECS.get(p["code"], {}).items():
+            if v is None:
+                enrichment[p["slug"]]["specs"].pop(k, None)
+            else:
+                enrichment[p["slug"]]["specs"][k] = v
     update_enrichment(enrichment, None if only else SUPPLIER)
     print(f"{SUPPLIER}: {len(enrichment)}/{len(products)} egyezés")
     for p in missing:
