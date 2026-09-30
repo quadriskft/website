@@ -770,7 +770,8 @@
    "Tömeg": "1,817 kg/fm",
    "Magasság": "60 mm (a rövidebb szár 40 mm)",
    "Belső szélesség": "30,5 mm",
-   "Gerinc vastagsága": "8 mm"
+   "Gerinc vastagsága": "8 mm",
+   "Szálhossz": null
   }
  }
 }
