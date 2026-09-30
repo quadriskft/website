@@ -764,5 +764,13 @@
  },
  "221746-h-toldo-szego-profil-elox": {
   "order": 15
+ },
+ "245085-bill-u-szego-30-mm-40-60-elox": {
+  "specs": {
+   "Tömeg": "1,817 kg/fm",
+   "Magasság": "60 mm (a rövidebb szár 40 mm)",
+   "Belső szélesség": "30,5 mm",
+   "Gerinc vastagsága": "8 mm"
+  }
  }
 }
