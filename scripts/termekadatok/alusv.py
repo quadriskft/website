@@ -95,6 +95,8 @@ PHOTO = {"117774", "117775", "117776", "117777", "117787",
          "351142", "356287", "356297", "356297b-alu-kozepso-rakonca-400-mm-80-np", "3562974"}
 # jobb/bal pár: a termék a bal (EXTRA) mellé a jobb oldali tétel fotóját és rajzát is kapja; a hossz a kettőnél eltér
 PAIR = {"3562974": "62974ZP001"}
+# a képek végére a hozzá tartozó alkatrész fotója és rajza (a Quadris kérésére): kód vagy slug -> Alu-SV cikkszám
+ACCESSORY = {k: "6298K00009" for k in ("356297", "3562974", "356297b-alu-kozepso-rakonca-400-mm-80-np")}  # AluGrip fészek, tűzihorganyzott
 PAIR_SPECS = {"3562974": {"Kivitel": "bal és jobb oldali (pár)", "Hossz": None}}
 # a szerelt kötőelemek rajzán az Alu-SV alkatrész-cikkszámai helyett a Quadris-cikkszám / magyar megnevezés
 # (6600107775 = 117775, 6600117776 = 117776, 6600107776 = 117774; a csavar és az alátét gyári kódja helyett a neve):
@@ -223,6 +225,13 @@ def main(only=None):
                 except Exception as err:  # noqa: BLE001
                     print("  fotóhiba:", c, err)
             images = photos + images
+        acc = ACCESSORY.get(p["code"]) or ACCESSORY.get(p["slug"])
+        if acc:
+            for kind, ext, n, prep in (("photo", "jpg", 5, trim_photo), ("drawing", "gif", 6, remove_badge)):
+                try:
+                    images.append(save_image(prep(fetch(f"{BASE}/common/images/product/{kind}/full/{acc.lower()}.{ext}")), p["slug"], n))
+                except Exception as err:  # noqa: BLE001
+                    print("  kiegészítő kép hiba:", acc, err)
         enrichment[p["slug"]] = {
             "source": SUPPLIER,
             "sourceUrl": info["url"],
