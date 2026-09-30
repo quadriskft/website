@@ -3549,9 +3549,11 @@
   "specs": {
    "Anyag": "alumínium, eloxált",
    "Méret": "50 × 35 mm",
-   "Falvastagság": "3,5 mm"
+   "Falvastagság": "3,5 mm",
+   "Tömeg": "1,609 kg/m"
   },
   "images": [
+   "/termekkepek/227686-50x35x3-5-mm-r4-oszlop-profil-elox-meretrajz.webp",
    "/termekkepek/3d/227686-50x35x3-5-mm-r4-oszlop-profil-elox-1.webp",
    "/termekkepek/3d/227686-50x35x3-5-mm-r4-oszlop-profil-elox-2.webp",
    "/termekkepek/227686-50x35x3-5-mm-r4-oszlop-profil-elox-1.webp"

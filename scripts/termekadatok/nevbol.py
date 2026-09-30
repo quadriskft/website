@@ -17,7 +17,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 sys.path.insert(0, str(Path(__file__).parent))
-from common import clear_images, load_enrichment, load_products, save_image, update_enrichment  # noqa: E402
+from common import ROOT, clear_images, load_enrichment, load_products, save_image, update_enrichment  # noqa: E402
 
 SOURCE = "Quadris adatok"
 AL = 2.70  # g/cm³
@@ -472,9 +472,18 @@ def material(specs, name):
     return "elox" if "elox" in a else "alu"
 
 
+# a Quadris által küldött katalógusrajz első képként (a gyártói cikkszám nélkül kivágva): slug -> (kép, adatok)
+CATALOG_FIRST = {
+    "227686-50x35x3-5-mm-r4-oszlop-profil-elox": ("data/forras/caralu_1011345_rajz.png", {"Tömeg": "1,609 kg/m"}),  # Car-Alu 1011345
+}
+
+
 def with_renders(slug, drawing_img):
     renders = [f"/termekkepek/3d/{slug}-{i}.webp" for i in (1, 2) if (RENDER_DIR / f"{slug}-{i}.webp").exists()]
-    return renders + [drawing_img]
+    first = []
+    if slug in CATALOG_FIRST:
+        first = [save_image(Image.open(ROOT / CATALOG_FIRST[slug][0]).convert("RGB"), slug, "meretrajz")]
+    return first + renders + [drawing_img]
 
 
 def main():
@@ -503,6 +512,7 @@ def main():
             continue
         if len(specs) < 2:
             continue
+        specs.update(CATALOG_FIRST.get(p["slug"], (None, {}))[1])
         images = []
         if draw:
             clear_images(p["slug"])
