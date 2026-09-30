@@ -71,6 +71,19 @@ for (const c of extended.categories ?? []) {
   const g = groupList.find((x) => x.slug === c.group);
   if (g && !g.categories.some((x) => x.slug === c.slug)) g.categories.push({ slug: c.slug, name: c.name });
 }
+// Egész alkategória megjelenítése egy másik csoportban is (a termékek a helyükön maradnak):
+// [forrás "csoport/alkategória", cél "csoport/alkategória", amely alkategória után kerüljön]
+const CATEGORY_COPIES = [
+  ['platos-alkatreszek-es-kiegeszitok/kotoelemek', 'aluminium-alvaz-profilok/kotoelemek', 'hossztartok'],
+];
+for (const [from, to, after] of CATEGORY_COPIES) {
+  const [fg, fc] = from.split('/'), [tg, tc] = to.split('/');
+  const src = groupList.find((x) => x.slug === fg)?.categories.find((c) => c.slug === fc);
+  const g = groupList.find((x) => x.slug === tg);
+  if (!src || !g || g.categories.some((c) => c.slug === tc)) continue;
+  const j = g.categories.findIndex((c) => c.slug === after);
+  g.categories.splice(j < 0 ? g.categories.length : j + 1, 0, { slug: tc, name: src.name });
+}
 // Alkategóriák kézi sorrendje (a Quadris kérése szerint): [alkategória, amely után kerüljön]; a többi marad
 const CATEGORY_MOVES = {
   'platos-alkatreszek-es-kiegeszitok': [['fellepo', 'z-zarak']],
@@ -99,7 +112,10 @@ export function familyOf(slug) {
 const hiddenMember = (p) => { const f = familyBySlug.get(p.slug); return f && f.leader !== p.slug; };
 
 // kézi javításban („alsoIn”: ["csoport/alkategória", …]) a termék a saját helye mellett ezekben is megjelenik
-const alsoIn = (p) => fixes[p.slug]?.alsoIn ?? [];
+const alsoIn = (p) => [
+  ...(fixes[p.slug]?.alsoIn ?? []),
+  ...CATEGORY_COPIES.filter(([from]) => from === `${p.group}/${p.category}`).map(([, to]) => to),
+];
 const inPlace = (p, groupSlug, categorySlug) =>
   (p.group === groupSlug && (!categorySlug || p.category === categorySlug)) ||
   alsoIn(p).some((k) => (categorySlug ? k === `${groupSlug}/${categorySlug}` : k.startsWith(`${groupSlug}/`)));
