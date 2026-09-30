@@ -684,5 +684,15 @@
   "specs": {
    "Kivitel": "tűzihorganyzott"
   }
+ },
+ "352240-ellendarabos-szego-400mm-r-l": {
+  "name": "Ellendarabos szegő 400 mm R+L, egymásba záródó zárhoz",
+  "order": 2
+ },
+ "352540-egymasba-zarodo-z-zar-400": {
+  "order": 1
+ },
+ "352202-egymasbazarodo-zar-ellendarab": {
+  "order": 3
  }
 }
