@@ -3318,6 +3318,17 @@
    "/termekkepek/226215-u-40-mm-szego-profil-meretrajz.webp"
   ]
  },
+ "226240-tomiteses-u-szego-40-mm": {
+  "source": "Quadris katalóguslap",
+  "specs": {
+   "Szélesség": "85 mm",
+   "Belső nyílás": "40,5 mm",
+   "Tömeg": "2,71 kg/m"
+  },
+  "images": [
+   "/termekkepek/226240-tomiteses-u-szego-40-mm-meretrajz.webp"
+  ]
+ },
  "226821-21-padlo-profil-200-mm": {
   "source": "Quadris gyári rajz",
   "sourceTitle": "BODEGA TB48968 – műhelyrajz",

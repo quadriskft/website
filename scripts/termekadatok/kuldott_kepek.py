@@ -99,6 +99,9 @@ PREPEND["223085-h-szego-kiugros-30-mm-elox"] = ([("data/forras/fudicar_30907_raj
 PREPEND["226215-u-40-mm-szego-profil"] = ([("data/forras/fudicar_40215_rajz.png", "meretrajz")],
                                           {"Szélesség": "50 mm", "Magasság": "50,5 mm", "Belső nyílás": "40,5 mm",
                                            "Tömeg": "2,53 kg/m"})
+# 226240 tömítéses „u” szegő 40 mm (Fudicar 40738): a Quadris által küldött katalógusrajz (a cikkszám nélkül)
+PREPEND["226240-tomiteses-u-szego-40-mm"] = ([("data/forras/fudicar_40738_rajz.png", "meretrajz")],
+                                             {"Szélesség": "85 mm", "Belső nyílás": "40,5 mm", "Tömeg": "2,71 kg/m"})
 # 226915 és 226915/n (30 mm U szegő): a Quadris kérésére csak az Alu-SV 6600006915 rajza (a korábbi RE-ALL /
 # Constellium-rajzok a kezi_kepsorrend.json „kizart” listáján)
 INSERT.update({slug: [("data/forras/alusv_6600006915_rajz.png", "alusv", 0)]
