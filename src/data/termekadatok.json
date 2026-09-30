@@ -2935,6 +2935,17 @@
    "/termekkepek/222001-100x25-mm-ponyvatarto-zartszelveny-t-1.webp"
   ]
  },
+ "222005-spitz-profil-150-mm-magas-t": {
+  "source": "Quadris katalóguslap",
+  "specs": {
+   "Magasság": "150 mm",
+   "Szélesség": "25 mm",
+   "Tömeg": "1,547 kg/m"
+  },
+  "images": [
+   "/termekkepek/222005-spitz-profil-150-mm-magas-t-meretrajz.webp"
+  ]
+ },
  "222020-h-szego-kiugros-25-mm-elox": {
   "source": "Quadris katalóguslap",
   "sourceUrl": "https://esalforli.com/public/Catalogo-Sponde-2020-Esal-Forli.pdf#page=58",

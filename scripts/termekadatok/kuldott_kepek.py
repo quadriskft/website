@@ -114,6 +114,9 @@ INSERT["245085-bill-u-szego-30-mm-40-60-elox"] = [("data/forras/reall_245085_raj
 # 729629 / 729630 húspálya C-sín: a Quadris által küldött katalógusrajz (a gyártói cikkszám nélkül) első képként
 for _slug in ("729629-huspalya-c-sin-elox-6000-mm", "729630-huspalya-c-sin-elox-7000-mm"):
     INSERT[_slug] = [("data/forras/huspalya_8543_rajz.png", "meretrajz", 0)]
+# 222005 Spitz profil 150 mm magas T (Allco VZ2180UN): a Quadris által küldött katalógusrajz (a gyártói kód nélkül)
+PREPEND["222005-spitz-profil-150-mm-magas-t"] = ([("data/forras/allco_2180_rajz.png", "meretrajz")],
+                                                 {"Magasság": "150 mm", "Szélesség": "25 mm", "Tömeg": "1,547 kg/m"})
 # 226915 és 226915/n (30 mm U szegő): a Quadris kérésére csak az Alu-SV 6600006915 rajza (a korábbi RE-ALL /
 # Constellium-rajzok a kezi_kepsorrend.json „kizart” listáján)
 INSERT.update({slug: [("data/forras/alusv_6600006915_rajz.png", "alusv", 0)]
