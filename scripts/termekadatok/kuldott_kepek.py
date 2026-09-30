@@ -81,6 +81,10 @@ INSERT = {"e69004740-cs-compact-tetokereszttarto-2550-mm": [("data/forras/edscha
 PREPEND.update({slug: ([("data/forras/h_szego_2139_rajz.png", "meretrajz")],
                        {"Magasság": "60 mm", "Szélesség": "25,5 mm", "Tömeg": "0,923 kg/m"})
                 for slug in ("222139-h-szego-25-mm-elox", "222139-n-h-szego-25-mm")})
+# 222020 „h” szegő kiugrós 25 mm elox (ESAL 50020): a Sponde 2020 katalógus 59. oldaláról a fotó és a méretezett
+# rajz (33 × 61 mm) a meglévő képek elé
+INSERT["222020-h-szego-kiugros-25-mm-elox"] = [("data/forras/esal_50020_foto.png", "foto", 0),
+                                               ("data/forras/esal_50020_rajz.png", "meretrajz", 1)]
 # 226915 és 226915/n (30 mm U szegő): a Quadris kérésére csak az Alu-SV 6600006915 rajza (a korábbi RE-ALL /
 # Constellium-rajzok a kezi_kepsorrend.json „kizart” listáján)
 INSERT.update({slug: [("data/forras/alusv_6600006915_rajz.png", "alusv", 0)]

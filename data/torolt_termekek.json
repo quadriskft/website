@@ -579,5 +579,19 @@
   "code": "228153",
   "date": "2026-09-30",
   "reason": "Quadris kérés: a Platós és ponyvás oldalfal profilok, szegő profilok csoportból kivéve"
+ },
+ "220326-u-25-mm-szego-profil-elox-m": {
+  "name": "\"u\" 25 mm szegő profil elox M",
+  "supplier": "Metra",
+  "code": "220326",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: kivéve"
+ },
+ "220326-n-u-25-mm-szego-profil-m": {
+  "name": "\"u\" 25 mm szegő profil M",
+  "supplier": "Metra",
+  "code": "220326/n",
+  "date": "2026-09-30",
+  "reason": "Quadris kérés: kivéve"
  }
 }

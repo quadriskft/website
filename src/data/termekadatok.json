@@ -2925,7 +2925,7 @@
   ]
  },
  "222020-h-szego-kiugros-25-mm-elox": {
-  "source": "ESAL",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://esalforli.com/public/Catalogo-Sponde-2020-Esal-Forli.pdf#page=58",
   "sourceTitle": "ESAL 50020",
   "matchedCode": "50020",
@@ -2936,6 +2936,8 @@
    "Szálhossz": "6 m"
   },
   "images": [
+   "/termekkepek/222020-h-szego-kiugros-25-mm-elox-foto.webp",
+   "/termekkepek/222020-h-szego-kiugros-25-mm-elox-meretrajz.webp",
    "/termekkepek/222020-h-szego-kiugros-25-mm-elox-rajz.webp",
    "/termekkepek/222020-h-szego-kiugros-25-mm-elox-1.webp"
   ]
