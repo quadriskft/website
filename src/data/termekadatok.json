@@ -2942,6 +2942,28 @@
    "/termekkepek/222020-h-szego-kiugros-25-mm-elox-1.webp"
   ]
  },
+ "222137-n-u-25-mm-szego-profil": {
+  "source": "Quadris katalóguslap",
+  "specs": {
+   "Magasság": "40 mm",
+   "Szélesség": "25,5 mm",
+   "Tömeg": "0,788 kg/m"
+  },
+  "images": [
+   "/termekkepek/222137-n-u-25-mm-szego-profil-meretrajz.webp"
+  ]
+ },
+ "222137-u-25-mm-szego-profil-elox": {
+  "source": "Quadris katalóguslap",
+  "specs": {
+   "Magasság": "40 mm",
+   "Szélesség": "25,5 mm",
+   "Tömeg": "0,788 kg/m"
+  },
+  "images": [
+   "/termekkepek/222137-u-25-mm-szego-profil-elox-meretrajz.webp"
+  ]
+ },
  "222139-h-szego-25-mm-elox": {
   "source": "Quadris katalóguslap",
   "specs": {

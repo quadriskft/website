@@ -85,6 +85,10 @@ PREPEND.update({slug: ([("data/forras/h_szego_2139_rajz.png", "meretrajz")],
 # rajz (33 × 61 mm) a meglévő képek elé
 INSERT["222020-h-szego-kiugros-25-mm-elox"] = [("data/forras/esal_50020_foto.png", "foto", 0),
                                                ("data/forras/esal_50020_rajz.png", "meretrajz", 1)]
+# 222137 és 222137/n („u” szegő 25 mm, Allco VZ2137SP): a Quadris által küldött katalógusrajz (a gyártói kód nélkül)
+PREPEND.update({slug: ([("data/forras/u_szego_2137_rajz.png", "meretrajz")],
+                       {"Magasság": "40 mm", "Szélesség": "25,5 mm", "Tömeg": "0,788 kg/m"})
+                for slug in ("222137-u-25-mm-szego-profil-elox", "222137-n-u-25-mm-szego-profil")})
 # 226915 és 226915/n (30 mm U szegő): a Quadris kérésére csak az Alu-SV 6600006915 rajza (a korábbi RE-ALL /
 # Constellium-rajzok a kezi_kepsorrend.json „kizart” listáján)
 INSERT.update({slug: [("data/forras/alusv_6600006915_rajz.png", "alusv", 0)]
