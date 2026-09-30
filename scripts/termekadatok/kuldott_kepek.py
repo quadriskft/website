@@ -77,6 +77,10 @@ INSERT = {"e69004740-cs-compact-tetokereszttarto-2550-mm": [("data/forras/edscha
                                                   ("data/forras/edscha_csuklopant_650_2.png", "foto2", 2)],
           "e42587-csuklopant-700-mm": [("data/forras/edscha_csuklopant_700_1.png", "foto1", 1),
                                        ("data/forras/edscha_csuklopant_700_2.png", "foto2", 2)]}
+# 226915 és 226915/n (30 mm U szegő): a Quadris kérésére csak az Alu-SV 6600006915 rajza (a korábbi RE-ALL /
+# Constellium-rajzok a kezi_kepsorrend.json „kizart” listáján)
+INSERT.update({slug: [("data/forras/alusv_6600006915_rajz.png", "alusv", 0)]
+               for slug in ("226915-30-mm-szego-profil-elox", "226915-n-30-mm-u-szego-profil")})
 # a normál (peremes és nem peremes) Z-zárak utolsó képe: a jobb (R) és bal (L) zárak helye a platón – a Quadris
 # által küldött vázlat feljavítva (nagyítva, tisztított vonalak, kiemelt oszlopok, R/L jelvény; eredeti: …_eredeti.png)
 INSERT.update({slug: [("data/forras/z_zar_beepites_rl.png", "beepites", 99)] for slug in (

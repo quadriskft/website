@@ -3293,7 +3293,7 @@
   ]
  },
  "226915-30-mm-szego-profil-elox": {
-  "source": "RE-ALL",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/16-17.pdf#page=15",
   "sourceTitle": "RE-ALL katalógus 16-17.pdf",
   "matchedCode": "1700120",
@@ -3303,12 +3303,11 @@
    "Gyári szálhossz [mm]": "6000"
   },
   "images": [
-   "/termekkepek/226915-30-mm-szego-profil-elox-rajz.webp",
-   "/termekkepek/226915-30-mm-szego-profil-elox-1.webp"
+   "/termekkepek/226915-30-mm-szego-profil-elox-alusv.webp"
   ]
  },
  "226915-n-30-mm-u-szego-profil": {
-  "source": "Constellium rajz",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://www.constellium.com",
   "sourceTitle": "Constellium Děčín profilrajz 6915 (Transport2024, 67. oldal)",
   "matchedCode": "6915",
@@ -3324,8 +3323,7 @@
    "Felület": "natúr"
   },
   "images": [
-   "/termekkepek/226915-n-30-mm-u-szego-profil-rajz.webp",
-   "/termekkepek/226915-n-30-mm-u-szego-profil-korvonal.webp"
+   "/termekkepek/226915-n-30-mm-u-szego-profil-alusv.webp"
   ]
  },
  "227045-koztes-ponyvas-200-mm-elox-profil": {
