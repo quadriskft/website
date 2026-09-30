@@ -77,6 +77,12 @@ INSERT = {"e69004740-cs-compact-tetokereszttarto-2550-mm": [("data/forras/edscha
                                                   ("data/forras/edscha_csuklopant_650_2.png", "foto2", 2)],
           "e42587-csuklopant-700-mm": [("data/forras/edscha_csuklopant_700_1.png", "foto1", 1),
                                        ("data/forras/edscha_csuklopant_700_2.png", "foto2", 2)]}
+# a normál (peremes és nem peremes) Z-zárak utolsó képe: a jobb (R) és bal (L) zárak helye a platón – a Quadris
+# által küldött vázlat feljavítva (nagyítva, tisztított vonalak, kiemelt oszlopok, R/L jelvény; eredeti: …_eredeti.png)
+INSERT.update({slug: [("data/forras/z_zar_beepites_rl.png", "beepites", 99)] for slug in (
+    "354400-nem-peremes-400-z-zar-r-l", "354500-nem-peremes-500-mm-z-zar-r-l", "354600-nem-peremes-600-mm-z-zar-r-l",
+    "354800-nem-peremes-800-mm-z-zar-r-l", "357400-peremes-z-zar-400-mm-r-l", "357500-peremes-z-zar-500-mm-r-l",
+    "357401-peremes-z-zar-600-mm-r-l")})
 
 
 def main():
