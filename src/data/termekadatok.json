@@ -4534,7 +4534,7 @@
   ]
  },
  "245085-bill-u-szego-30-mm-40-60-elox": {
-  "source": "ESAL",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "https://esalforli.com/public/Catalogo-Sponde-2020-Esal-Forli.pdf#page=36",
   "sourceTitle": "ESAL 50085",
   "matchedCode": "50085",
@@ -4545,6 +4545,7 @@
    "Szálhossz": "6 m"
   },
   "images": [
+   "/termekkepek/245085-bill-u-szego-30-mm-40-60-elox-meretrajz.webp",
    "/termekkepek/245085-bill-u-szego-30-mm-40-60-elox-rajz.webp",
    "/termekkepek/245085-bill-u-szego-30-mm-40-60-elox-1.webp"
   ]
