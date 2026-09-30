@@ -71,6 +71,19 @@ for (const c of extended.categories ?? []) {
   const g = groupList.find((x) => x.slug === c.group);
   if (g && !g.categories.some((x) => x.slug === c.slug)) g.categories.push({ slug: c.slug, name: c.name });
 }
+// Alkategóriák kézi sorrendje (a Quadris kérése szerint): [alkategória, amely után kerüljön]; a többi marad
+const CATEGORY_MOVES = {
+  'platos-alkatreszek-es-kiegeszitok': [['fellepo', 'z-zarak']],
+};
+for (const g of groupList) {
+  for (const [slug, after] of CATEGORY_MOVES[g.slug] ?? []) {
+    const i = g.categories.findIndex((c) => c.slug === slug);
+    if (i < 0) continue;
+    const [c] = g.categories.splice(i, 1);
+    const j = g.categories.findIndex((x) => x.slug === after);
+    g.categories.splice(j < 0 ? g.categories.length : j + 1, 0, c);
+  }
+}
 // Termékcsaládok (data/termek_csaladok.json): azonos profil több gyári hosszban – a listákban egy kártya
 // (az első tag, a család nevével), a termékoldalon hosszválasztó; darabra rendelhető, nem méretre vágva
 const familyBySlug = new Map();
