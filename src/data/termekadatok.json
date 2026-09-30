@@ -4520,6 +4520,19 @@
    "/termekkepek/243240-billencs-kozepso-200x40-mm-1.webp"
   ]
  },
+ "245005-bill-400-30-mm-mono-profil-elox": {
+  "source": "Quadris katalóguslap",
+  "specs": {
+   "Magasság": "400 mm",
+   "Vastagság": "30 mm",
+   "Ötvözet": "EN AW-6060",
+   "Tömeg": "5,513 kg/m"
+  },
+  "images": [
+   "/termekkepek/245005-bill-400-30-mm-mono-profil-elox-foto.webp",
+   "/termekkepek/245005-bill-400-30-mm-mono-profil-elox-meretrajz.webp"
+  ]
+ },
  "245085-bill-u-szego-30-mm-40-60-elox": {
   "source": "ESAL",
   "sourceUrl": "https://esalforli.com/public/Catalogo-Sponde-2020-Esal-Forli.pdf#page=36",

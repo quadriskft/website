@@ -104,6 +104,11 @@ PREPEND["226240-tomiteses-u-szego-40-mm"] = ([("data/forras/fudicar_40738_rajz.p
                                              {"Szélesség": "85 mm", "Belső nyílás": "40,5 mm", "Tömeg": "2,71 kg/m"})
 # 226701 tömítés 40 „u” szegőhöz (Fudicar 63738): a Quadris által küldött katalógusrajz (a felirat nélkül), a szegőben
 PREPEND["226701-tomites-40-u-szegohoz"] = ([("data/forras/fudicar_63738_tomites.png", "rajz")], {})
+# 245005 Bill. 400/30 mm mono profil elox (Takler T1 5005): a Quadris által küldött katalóguslap fotója és méretrajza
+PREPEND["245005-bill-400-30-mm-mono-profil-elox"] = ([("data/forras/takler_t15005_foto.png", "foto"),
+                                                     ("data/forras/takler_t15005_rajz.png", "meretrajz")],
+                                                    {"Magasság": "400 mm", "Vastagság": "30 mm", "Ötvözet": "EN AW-6060",
+                                                     "Tömeg": "5,513 kg/m"})
 # 226915 és 226915/n (30 mm U szegő): a Quadris kérésére csak az Alu-SV 6600006915 rajza (a korábbi RE-ALL /
 # Constellium-rajzok a kezi_kepsorrend.json „kizart” listáján)
 INSERT.update({slug: [("data/forras/alusv_6600006915_rajz.png", "alusv", 0)]
