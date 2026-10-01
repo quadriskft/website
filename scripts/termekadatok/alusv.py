@@ -79,6 +79,8 @@ EXTRA = {
     "237870": "6612007870",
     # a Quadris kérésére: 237971 (hűtős keretprofil nyitott, elox) = Alu-SV 6612007971
     "237971": "6612007971",
+    # a Quadris kérésére (kód nélküli tétel, a slug a kulcs): M1 001 "C" sín = Alu-SV 6612013701, egy az egyben
+    "m1-001-c-sin-aluminium": "6612013701",
 }
 # a Quadris kérésére minden MAX-os első oszlop a „Pillar pr. CS MAX front 3000mm, Al anod” (662AP17730) részletesen
 # méretezett rajzát
@@ -191,13 +193,13 @@ def image_only_specs(code, info):
 def main(only=None):
     """only: csak ezek a Quadris-kódok (kézi frissítéshez); ilyenkor a többi Alu-SV bejegyzés érintetlen marad."""
     products = load_products(SUPPLIER)
-    products += [p for p in load_products() if (p["code"] in EXTRA or p["code"] in IMAGE_ONLY) and p not in products]
+    products += [p for p in load_products() if (p["code"] in EXTRA or p["slug"] in EXTRA or p["code"] in IMAGE_ONLY) and p not in products]
     if only:
         products = [p for p in products if p["code"] in only or p["slug"] in only]
     enrichment, missing = {}, []
     for p in products:
         info, code = None, None
-        forced = EXTRA.get(p["code"]) or IMAGE_ONLY.get(p["code"])
+        forced = EXTRA.get(p["code"]) or EXTRA.get(p["slug"]) or IMAGE_ONLY.get(p["code"])
         for c in ([forced] if forced else []) + ([] if p["code"] in IMAGE_ONLY else code_candidates(p)):
             try:
                 info = lookup(c)
