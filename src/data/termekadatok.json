@@ -1672,11 +1672,11 @@
    "Profil típusa": "nyitott",
    "Magasság": "126,5 mm",
    "Szélesség": "40 mm (felső rész), 28 mm (alsó perem)",
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Falvastagság": "3 mm"
   },
   "images": [
-   "/termekkepek/2018652-18-mm-keretprofil-erositett-elox-rajz.webp",
-   "/termekkepek/2018652-18-mm-keretprofil-erositett-elox-1.webp"
+   "/termekkepek/2018652-18-mm-keretprofil-erositett-elox-meretrajz.webp"
   ]
  },
  "202274-u-100x50x50x5-mm-profil": {
@@ -1976,11 +1976,11 @@
    "Profil típusa": "zárt (üreges)",
    "Magasság": "100 mm",
    "Szélesség": "30,3 mm",
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Falvastagság": "1,9 mm"
   },
   "images": [
-   "/termekkepek/206941-cd-100x30-mm-alafutasgatlo-elox-profil-rajz.webp",
-   "/termekkepek/206941-cd-100x30-mm-alafutasgatlo-elox-profil-1.webp"
+   "/termekkepek/206941-cd-100x30-mm-alafutasgatlo-elox-profil-meretrajz.webp"
   ]
  },
  "207315-i-108-kereszttarto": {
@@ -2139,11 +2139,11 @@
    "Tömeg": "1,246 kg/fm",
    "Méret": "100 × 30 mm",
    "Kivitel": "aláfutásgátló profil",
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Falvastagság": "1,7 mm"
   },
   "images": [
-   "/termekkepek/207833-100x30-mm-alafutasgatlo-elox-profil-rajz.webp",
-   "/termekkepek/207833-100x30-mm-alafutasgatlo-elox-profil-1.webp"
+   "/termekkepek/207833-100x30-mm-alafutasgatlo-elox-profil-meretrajz.webp"
   ]
  },
  "208477-cd2-100x30-mm-alafutasgatlo-elox-profil": {
@@ -5068,6 +5068,7 @@
    "Sarokrádiusz": "külső R4, belső éles"
   },
   "images": [
+   "/termekkepek/251659-80x50x4-mm-r4-alu-zartszelveny-meretrajz.webp",
    "/termekkepek/3d/251659-80x50x4-mm-r4-alu-zartszelveny-1.webp",
    "/termekkepek/3d/251659-80x50x4-mm-r4-alu-zartszelveny-2.webp",
    "/termekkepek/251659-80x50x4-mm-r4-alu-zartszelveny-1.webp"
@@ -8452,12 +8453,12 @@
    "Profil típusa": "zárt (üreges)",
    "Szélesség": "90 mm",
    "Magasság": "70 mm",
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Falvastagság": "3 mm"
   },
   "images": [
-   "/termekkepek/6612225-elso-oszlop-90-70-alu-elox-d-rajz.webp",
-   "/termekkepek/6612225-elso-oszlop-90-70-alu-elox-d-3d.webp",
-   "/termekkepek/6612225-elso-oszlop-90-70-alu-elox-d-1.webp"
+   "/termekkepek/6612225-elso-oszlop-90-70-alu-elox-d-meretrajz.webp",
+   "/termekkepek/6612225-elso-oszlop-90-70-alu-elox-d-3d.webp"
   ]
  },
  "6612226-hatso-oszlop-128-35-alu-elox-d": {
@@ -8474,12 +8475,12 @@
    "Profil típusa": "zárt (üreges)",
    "Szélesség": "128 mm",
    "Magasság": "35 mm",
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Falvastagság": "3 mm"
   },
   "images": [
-   "/termekkepek/6612226-hatso-oszlop-128-35-alu-elox-d-rajz.webp",
-   "/termekkepek/6612226-hatso-oszlop-128-35-alu-elox-d-3d.webp",
-   "/termekkepek/6612226-hatso-oszlop-128-35-alu-elox-d-1.webp"
+   "/termekkepek/6612226-hatso-oszlop-128-35-alu-elox-d-meretrajz.webp",
+   "/termekkepek/6612226-hatso-oszlop-128-35-alu-elox-d-3d.webp"
   ]
  },
  "6613365-al-eco-merevito-profil-natur": {
