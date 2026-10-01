@@ -55,15 +55,6 @@ DECIN = {
         ("clear", [(603.3, 430), (607, 430), (607, 444), (603.3, 444)]),
         ("fill", [(556, 432.9), (597.4, 432.9), (603.2, 436.5), (603.2, 441.8), (595.6, 441.8), (594.2, 439.6), (556, 439.6)]),
     ], "40", "126,5", "3", ("h", 0.72), 0.12, 5),
-    # 206941: a jobb oldali (30,3-as) méret segédvonala a fal 1 mm-es mélyítése mellett fut – kivéve; a felső bordázat a
-    # „A” részletkör nélkül, öt egyforma horonnyal újrarajzolva; a horony alsó falának szakadása pótolva
-    "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("6941", 40, 3, [
-        ("clear", [(568.6, 489), (578, 489), (578, 688), (568.6, 688)]),
-        ("clear", [(472, 425), (566, 425), (566, 434.5), (472, 434.5)]),
-        ("fill", [(476, 434.5), (562, 434.5), (562, 446.2), (476, 446.2)]),
-        *[("clear", [(c - 3.6, 434.4), (c + 3.6, 434.4), (c + 2.6, 438.9), (c - 2.6, 438.9)]) for c in (490.2, 504.5, 518.8, 533.1, 547.4)],
-        ("fill", [(475, 620.7), (508.5, 620.7), (508.5, 626.6), (475, 626.6)]),
-    ], "30,3", "100", "1,9", ("h", 0.80), None, 9, 4),
     # 6612225: a 2 mm-es lemez lekerekített vége a jelölések nélkül újrarajzolva
     "6612225-elso-oszlop-90-70-alu-elox-d": ("12225", 110, 12, [
         ("clear", [(555, 262), (580, 262), (580, 286), (555, 286)]),
@@ -71,6 +62,45 @@ DECIN = {
     ], "90", "70", "3", ("v", 0.45), None, 15, 4),
     "2073902-i-90-csavarozhato-kereszttarto": ("10902", 90, 3, [], "85", "90", "3", ("h", 0.40), None, 5, 4),
 }
+
+
+# a gyári rajz méreteiből (mm) vektorosan felépített profil – ahol a szken segédvonalai a körvonalba olvadnak:
+# slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
+VECTOR = {
+    "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+}
+
+
+def profil_6941():
+    """Constellium Děčín 6941 (CD 100×30 aláfutásgátló): 30,3 × 100, fal 1,9, felül 3,3 mm-es bordázott fal öt
+    horonnyal, jobb oldalt 1 mm-es mélyítés (15°-os átmenetekkel), bal oldalt 8,5 mm-es horony 19 mm magas belső
+    zsebbel. Külső sarkok R3, az üreg sarkai R2, a horony sarkai R1 (a rajz z / y / x jelölései szerint)."""
+    from shapely.geometry import Polygon, box
+    outer = Polygon([(0, 0), (30.3, 0), (30.3, 16.0), (29.22, 18.6), (29.22, 83.6), (30.3, 86.2), (30.3, 100), (0, 100)])
+    outer = outer.buffer(-3, join_style=1).buffer(3, join_style=1)
+    cav = Polygon([(1.92, 3.32), (28.38, 3.32), (28.38, 15.9), (27.36, 18.5), (27.36, 83.7), (28.38, 86.3), (28.38, 98.13),
+                   (1.92, 98.13), (1.92, 61.4), (12.33, 61.4), (12.33, 38.6), (1.92, 38.6)])
+    cav = cav.buffer(-2, join_style=1).buffer(2, join_style=1).buffer(1, join_style=1).buffer(-1, join_style=1)
+    pocket = box(1.92, 40.4, 10.44, 59.5).buffer(-1, join_style=1).buffer(1, join_style=1)
+    mouth = box(-1, 45.8, 3, 54.3)
+    slot = pocket.union(mouth).buffer(0.4, join_style=1).buffer(-0.4, join_style=1)
+    grooves = [Polygon([(c - 1.05, -1), (c + 1.05, -1), (c + 1.05, 0), (c + 0.75, 1.4), (c - 0.75, 1.4), (c - 1.05, 0)])
+               for c in (7.0, 11.15, 15.3, 19.47, 23.63)]
+    prof = outer.difference(cav).difference(slot)
+    for g in grooves:
+        prof = prof.difference(g)
+    return prof
+
+
+def vector_mask(geom, scale=30):
+    x0, y0, x1, y1 = geom.bounds
+    m = np.zeros((round((y1 - y0) * scale) + 1, round((x1 - x0) * scale) + 1), np.uint8)
+    polys = getattr(geom, "geoms", [geom])
+    for p in polys:
+        cv2.fillPoly(m, [np.round((np.array(p.exterior.coords) - (x0, y0)) * scale).astype(np.int32)], 1)
+        for r in p.interiors:
+            cv2.fillPoly(m, [np.round((np.array(r.coords) - (x0, y0)) * scale).astype(np.int32)], 0)
+    return m > 0
 
 
 def decin_mask(code, cav_px, r, edits=(), k=None, smooth=0):
@@ -211,7 +241,7 @@ def sketch_mask(path, scale=4, wipe=()):
     return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
-def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000, outline=False):
+def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000, outline=False, eps=None):
     H0, W0 = m.shape
     for fx0, fy0, fx1, fy1 in erase:
         m[int(fy0 * H0):int(fy1 * H0), int(fx0 * W0):int(fx1 * W0)] = False
@@ -221,7 +251,7 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000,
     k = target / max(H0, W0)
     big = cv2.resize(m.astype(np.uint8) * 255, (round(W0 * k), round(H0 * k)), interpolation=cv2.INTER_LINEAR) > 127
     cnts, hier = cv2.findContours(big.astype(np.uint8), cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
-    polys = [cv2.approxPolyDP(c, 2.0 if outline else 1.2, True) for c in cnts]
+    polys = [cv2.approxPolyDP(c, eps or (2.0 if outline else 1.2), True) for c in cnts]
     ML, MT, MR, MB = 170, 170, 150, 150
     h, w = big.shape
     canvas = np.full((h + MT + MB, w + ML + MR, 3), 255, np.uint8)
@@ -313,6 +343,14 @@ def main():
         url = save_image(img, slug, "meretrajz")
         data[slug]["images"] = [url]  # csak a Decin-rajz: minden korábbi kép (régi rajzok, 3D) törölve
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
+    for slug, (fn, wt, ht, tt, where) in VECTOR.items():
+        if slug not in data:
+            continue
+        img, *_ = render_mask(vector_mask(globals()[fn]()), wt, ht, tt, where, outline=True, eps=0.5)
+        url = save_image(img, slug, "meretrajz")
+        data[slug]["images"] = [url]
+        data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
+        print(slug, "vektoros")
     for slug, (src, wt, ht, tt, where) in BLUE.items():
         if slug not in data:
             continue
@@ -332,7 +370,7 @@ def main():
         data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "vázlatból")
-    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(BLUE) + list(SKETCH) if s in data})
+    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(VECTOR) + list(BLUE) + list(SKETCH) if s in data})
 
 
 if __name__ == "__main__":
