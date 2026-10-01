@@ -63,6 +63,7 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "231381-25-mm-diszlec-alu-3000-mm": ("profil_231381", "25", "5", "", None),
     "225040-koztes-250-mm-elox-profil": ("profil_225040", "272,2", "25", "1,7", ("v", 0.47),
                                          dict(hdims=[(0, 260.5 / 272.2, "260,5"), (17.3 / 272.2, 267.3 / 272.2, "250")],
                                               walls=[("hx", 0.5, 89.8 / 272.2, "1,8")])),
@@ -77,6 +78,12 @@ VECTOR = {
     "6612226-hatso-oszlop-128-35-alu-elox-d": ("profil_12226", "128", "35", "3", ("v", 0.75)),
     "6612225-elso-oszlop-90-70-alu-elox-d": ("profil_12225", "90", "70", "3", ("v", 0.45), [(34.79 / 70, 1, "35")]),  # a lemez felső síkja
 }
+
+
+# a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
+PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (370, 110, 575, 240))}
+# adatok a küldött adatlapról
+SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"}}
 
 
 # új adatlap (eddig nem volt képe): slug -> (forrás, URL, forrás címe)
@@ -305,6 +312,20 @@ def profil_225040():
     ]
     g = unary_union(parts).buffer(0.4, join_style=1).buffer(-0.4, join_style=1)
     return affinity.affine_transform(g, [0, 1, 1, 0, 0, 0])  # (x, y) -> (y, x): a hossz vízszintesen
+
+
+def profil_231381():
+    """231381 (25 mm díszléc / ponyvafeszítő rúd profil) a küldött adatlap rajza szerint: 25 × 5, tömör, felül
+    lapos ív, alul enyhén homorú, a két vége lekerekített (a végeken kb. 2,2 mm vastag)."""
+    from shapely.geometry import Point, Polygon
+    from shapely.ops import unary_union
+    xs = np.linspace(1.1, 23.9, 60)
+    top = [(x, 2.2 + 2.8 * (1 - abs((x - 12.5) / 11.4) ** 2.6)) for x in xs]  # középen laposabb ív
+    bot = [(x, 0.45 * (1 - ((x - 12.5) / 11.4) ** 2)) for x in xs[::-1]]
+    body = Polygon(top + bot)
+    g = unary_union([body, Point(1.1, 1.1).buffer(1.1, 32), Point(23.9, 1.1).buffer(1.1, 32)])
+    from shapely import affinity
+    return affinity.affine_transform(g, [1, 0, 0, -1, 0, 5])  # y lefelé
 
 
 def vector_mask(geom, scale=30):
@@ -712,7 +733,20 @@ def main():
         img, *_ = render_mask(m.copy(), wt, ht, tt, where, outline=True, eps=0.5, **kw)
         fill, *_ = render_mask(m.copy(), wt, ht, tt, where, eps=0.5, **kw)  # kitöltött, mint a 227046
         data[slug]["images"] = [save_image(img, slug, "meretrajz"), save_image(fill, slug, "kitoltott")]
-        data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
+        if slug in PHOTOS:  # a küldött adatlap a forrás (a gyártói cikkszám nem jelenik meg)
+            data[slug].update({"source": "Quadris katalóguslap", "sourceUrl": "", "sourceTitle": ""})
+            data[slug].pop("matchedCode", None)
+            src, box_ = PHOTOS[slug]
+            ph = np.asarray(Image.open(ROOT / src).convert("RGB").crop(box_)).astype(np.float32)
+            ph = np.clip((ph - 0) * 255 / np.maximum(ph.max(axis=(0, 1)), 1), 0, 255)  # a szürkés háttér fehérre
+            ph[ph.min(axis=2) > 232] = 255
+            data[slug]["images"].append(save_image(Image.fromarray(ph.astype(np.uint8)), slug, "foto"))
+        if slug in SPEC_FIX:
+            data[slug].setdefault("specs", {}).update(SPEC_FIX[slug])
+        if tt:  # tömör profilnál nincs falvastagság
+            data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
+        else:
+            data[slug].get("specs", {}).pop("Falvastagság", None)
         print(slug, "vektoros")
     for slugs, (src, crop, wt, ht, bt) in EDSCHA_BLUE.items():
         m = blue_mask(src, scale=4, crop=crop, smooth=1.5)
