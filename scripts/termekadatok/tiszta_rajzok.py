@@ -63,8 +63,8 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
-    "237461-50x260-mm-l-belso-vedoprofil-elox": ("profil_7461", "260", "50", "2,5", ("h", 0.75)),
-    "237461-n-50x260-mm-l-belso-vedoprofil": ("profil_7461", "260", "50", "2,5", ("h", 0.75)),
+    "237461-50x260-mm-l-belso-vedoprofil-elox": ("profil_7461", "260", "50", "2,5", ("h", 0.3), dict(walls=[("hx", 0.62, 0.005, "3")])),
+    "237461-n-50x260-mm-l-belso-vedoprofil": ("profil_7461", "260", "50", "2,5", ("h", 0.3), dict(walls=[("hx", 0.62, 0.005, "3")])),
     "237000-25x25-mm-ives-sarokprofil-elox": ("profil_237000", "66,5", "66,5", "3", ("h", 0.8),
                                               dict(idims=[("v", 60 / 66.5, 3.2 / 66.5, 28.3 / 66.5, "25"),
                                                           ("h", 60 / 66.5, 3.2 / 66.5, 28.3 / 66.5, "25")])),
@@ -408,14 +408,14 @@ def profil_237000():
 
 def profil_7461():
     """237461 (50×260 mm-es L belső védőprofil, Constellium 7461): 50 magas, 260 hosszú, a lemez 2 vastag; a
-    sarok kívül R7,5, belül R5; a 2,5 mm-es függőleges szár a tetejétől 7,5 mm-re 15 mm hosszon 2-re vékonyodik, a
+    sarok kívül R7,5, belül R5; a 3 mm-es függőleges szár a tetejétől 7,5 mm-re 15 mm hosszon 2,5-re vékonyodik, a
     teteje R3; a lemezen három 20 mm-es, felül egyenes kiemelt borda (4 mm-ig, alul 2 db 8,5 mm-es zsebbel)
     57,4 / 119,8 / 182,3 mm-nél, a végén zsebbel és lejtővel záródó perem (a gyári rajz és a Quadris által küldött részletek szerint)."""
     from shapely.geometry import Point, Polygon
     from shapely.ops import unary_union
-    # a szár 2,5 vastag; a tetejétől 7,5 mm-re 15 mm hosszon belül 2-re vékonyodik (ferde felső, lekerekített alsó
+    # a szár 3 vastag; a tetejétől 7,5 mm-re 15 mm hosszon belül 2,5-re vékonyodik (ferde felső, lekerekített alsó
     # átmenet), a teteje belül R3-mal lekerekített
-    pts = [(0, 0, 0.2), (2.5, 0, 2.3), (2.5, 7.5, 0), (2, 8, 0), (2, 22.5, 0.6), (2.5, 23, 0.6), (2.5, 48, 5),
+    pts = [(0, 0, 0.2), (3, 0, 2.8), (3, 7.5, 0), (2.5, 8, 0), (2.5, 22.5, 0.6), (3, 23, 0.6), (3, 48, 5),
            (260, 48, 0), (260, 50, 0), (0, 50, 7.5)]
     base = Polygon(fillet([(x, y) for x, y, _ in pts], [r for *_, r in pts]))
     from shapely.geometry import box
