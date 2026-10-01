@@ -63,6 +63,8 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "388008-27mm-feszito-cso-alu-profil": ("profil_8008", "26,5", "27", "2", ("h", 0.5),
+                                           dict(idims=[("h", 0.3, 10.9 / 26.5, 24.9 / 26.5, "ø14")])),
     "238645-kulso-l-profil-140x80mm-elox": ("profil_8645", "80", "140", "2,5", ("v", 0.6),
                                             dict(walls=[("hx", 0.5, 0.01, "2,5")])),
     "238087-70x110-mm-l-kulso-elox": ("profil_8087", "70", "110", "2", ("h", 0.3)),
@@ -156,10 +158,13 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
 PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (370, 110, 575, 240)),
           "232134-285-mm-i-koptato-profil-elox": ("data/forras/232134_lap.png", (95, 95, 250, 580)),
           "237000-25x25-mm-ives-sarokprofil-elox": ("data/forras/237000_lap.png", (390, 20, 535, 170)),
-          "237005-142-mm-i-koptato-profil-elox": ("data/forras/237005_lap.png", (430, 80, 585, 385))}
+          "237005-142-mm-i-koptato-profil-elox": ("data/forras/237005_lap.png", (430, 80, 585, 385)),
+          "388008-27mm-feszito-cso-alu-profil": ("data/forras/388008_lap.png", (135, 195, 307, 325))}
 # adatok a küldött adatlapról
 SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
             "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"},
+            "388008-27mm-feszito-cso-alu-profil": {"Tömeg": "0,608 kg/fm", "Méret": "26,5 × 27 mm", "Belső furat": "Ø14 mm",
+                                                   "Anyag": "alumínium EN AW-6060", "Kivitel": "ponyvafeszítő cső"},
             "237005-142-mm-i-koptato-profil-elox": {"Tömeg": "1,153 kg/fm", "Magasság": "142 mm", "Anyag": "alumínium EN AW-6060, eloxált",
                                                     "Kivitel": "bordázott lapos profil"},
             "234235-35x35-mm-ives-sarokprofil-elox-d": {"Tömeg": "1,412 kg/fm", "Anyag": "alumínium 6060 T6, eloxált", "Belső nyílás": "34,5 mm",
@@ -177,7 +182,8 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
                                              {"Tömeg": "3,853 kg/fm", "Ötvözet": "EN AW-6063 T66", "Felület": "eloxált"}),
        "2015290-15-mm-keretprofil-elox": ("BODEGA", "https://www.bodega.it", "Bodega 50290 gyári rajz",
                                           {"Tömeg": "1,763 kg/fm", "Ötvözet": "EN AW-6060 T6", "Felület": "eloxált"}),
-       "237005-142-mm-i-koptato-profil-elox": ("Quadris katalóguslap", "", "", {"Felület": "eloxált"})}
+       "237005-142-mm-i-koptato-profil-elox": ("Quadris katalóguslap", "", "", {"Felület": "eloxált"}),
+       "388008-27mm-feszito-cso-alu-profil": ("Quadris katalóguslap", "", "", {"Felület": "natúr"})}
 
 
 def profil_6941():
@@ -491,6 +497,18 @@ def profil_8645():
     c = 2.5 / math.tan(math.radians(30))
     P = [(0, 0, 7.5), (80 - c, 0, 0), (80, 2.5, 0), (2.5, 2.5, 5), (2.5, 140, 0), (0, 140 - c, 0)]
     return Polygon(fillet([(x, y) for x, y, _ in P], [r for *_, r in P]))
+
+
+def profil_8008():
+    """388008 (27 mm-es feszítő cső, T1 8008): Ø27-es kör, a nyitott oldalon 26,5-re levágva; benne a Ø14-es furat
+    (4,4 mm-rel a nyílás felé tolva) 7,5 mm-es réssel kifelé, mögötte félhold alakú üreg lekerekített végekkel; a
+    falak 2 mm-esek – a keresztmetszet így 224 mm², a lap 0,608 kg/fm tömegéből 225 mm²."""
+    from shapely.geometry import Point, box
+    O, B, w = (13.5, 13.5), (17.9, 13.5), 2.0
+    g = Point(O).buffer(13.5, 256).intersection(box(0, 0, 26.5, 27))
+    cres = Point(O).buffer(13.5 - w, 256).difference(Point(B).buffer(7 + w, 256)).buffer(-1.1).buffer(1.1)
+    g = g.difference(cres).difference(Point(B).buffer(7, 256)).difference(box(B[0], 13.5 - 3.75, 30, 13.5 + 3.75))
+    return g.buffer(0.4, join_style=1).buffer(-0.4, join_style=1)
 
 
 def profil_7461():
