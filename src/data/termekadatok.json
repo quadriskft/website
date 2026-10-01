@@ -1658,6 +1658,16 @@
    "/termekkepek/201094-targonca-utkozo-profil-1.webp"
   ]
  },
+ "2018290-18-mm-keretprofil-elox": {
+  "source": "Quadris gyári rajz",
+  "sourceUrl": "",
+  "specs": {
+   "Falvastagság": "2,4 mm"
+  },
+  "images": [
+   "/termekkepek/2018290-18-mm-keretprofil-elox-meretrajz.webp"
+  ]
+ },
  "2018652-18-mm-keretprofil-erositett-elox": {
   "source": "Constellium rajz",
   "sourceUrl": "https://www.constellium.com",

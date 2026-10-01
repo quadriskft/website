@@ -34,6 +34,14 @@ ITEMS = {
 }
 
 
+# a gyári lap kis, sraffozott keresztmetszet-vázlatából (data/forras/…): slug -> (vázlat, szélesség, magasság,
+# falvastagság, a falméret helye)
+SKETCH = {
+    "2018290-18-mm-keretprofil-elox": ("data/forras/bodega_50042_vazlat.png", "68", "135,5", "2,4", ("h", 0.55),
+                                       [(120, 231, 162, 236), (169, 231, 190, 236), (127, 236, 134, 292), (146, 320, 158, 347)]),
+}
+
+
 def body_mask(slug):
     """A profil maszkja az alvaz_rajzok.py lépéseivel (méretek rárajzolása nélkül)."""
     cat, mm = A.PROFILES[slug]
@@ -84,7 +92,28 @@ def runs(v):
 
 
 def render(slug, wtext, htext, ttext, where, erase, wtop=None, target=1000):
-    m = body_mask(slug)
+    return render_mask(body_mask(slug), wtext, htext, ttext, where, erase, wtop, target)
+
+
+def sketch_mask(path, scale=4, wipe=()):
+    """Sraffozott falú, méretvonalak nélküli kis vázlatból (pl. a gyári lap sarkában lévő keresztmetszet) a profil:
+    a sraffozás bezárása, a vékony tengely- és szaggatott vonalak, jelölések eltávolítása."""
+    im = Image.open(ROOT / path).convert("L")
+    a = np.asarray(im).copy()
+    for x0, y0, x1, y1 in wipe:  # tengelyek, jelölések (a forráskép képpontjaiban)
+        a[y0:y1, x0:x1] = 255
+    im = Image.fromarray(a)
+    g = np.asarray(im.resize((im.width * scale, im.height * scale), Image.LANCZOS))
+    ink = (g < 170).astype(np.uint8)
+    ink = cv2.morphologyEx(ink, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2 * scale + 1,) * 2))
+    body = cv2.morphologyEx(ink, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2 * scale + 3,) * 2))
+    n, lab, st, _ = cv2.connectedComponentsWithStats(body, connectivity=8)
+    m = lab == 1 + int(np.argmax(st[1:, 4]))
+    ys, xs = np.where(m)
+    return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+
+
+def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000):
     H0, W0 = m.shape
     for fx0, fy0, fx1, fy1 in erase:
         m[int(fy0 * H0):int(fy1 * H0), int(fx0 * W0):int(fx1 * W0)] = False
@@ -95,7 +124,7 @@ def render(slug, wtext, htext, ttext, where, erase, wtop=None, target=1000):
     big = cv2.resize(m.astype(np.uint8) * 255, (round(W0 * k), round(H0 * k)), interpolation=cv2.INTER_LINEAR) > 127
     cnts, hier = cv2.findContours(big.astype(np.uint8), cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
     polys = [cv2.approxPolyDP(c, 1.2, True) for c in cnts]
-    ML, MT, MR, MB = 170, 170, 90, 150
+    ML, MT, MR, MB = 170, 170, 150, 150
     h, w = big.shape
     canvas = np.full((h + MT + MB, w + ML + MR, 3), 255, np.uint8)
     shifted = [p + np.array([[ML, MT]]) for p in polys]
@@ -174,7 +203,14 @@ def main():
         e["images"] = [url] + [u for u in e.get("images", []) if u != url]
         e.setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "falvastagság:", tt)
-    update_enrichment({s: data[s] for s in ITEMS if s in data})
+    for slug, (src, wt, ht, tt, where, wipe) in SKETCH.items():
+        data.setdefault(slug, {"source": "Quadris gyári rajz", "sourceUrl": "", "specs": {}, "images": []})
+        img, *_ = render_mask(sketch_mask(src, wipe=wipe), wt, ht, tt, where)
+        url = save_image(img, slug, "meretrajz")
+        data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
+        data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
+        print(slug, "vázlatból")
+    update_enrichment({s: data[s] for s in list(ITEMS) + list(SKETCH) if s in data})
 
 
 if __name__ == "__main__":
