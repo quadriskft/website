@@ -284,10 +284,66 @@ GRAY = {
 }
 
 
+# kettős körvonalas (szürke) Edscha-lapból, kitöltött fekete rajz (227046 mintájára) + a 3D-hez a körvonal:
+# slugok -> (forráskép, outline_mask beállításai, szélesség, magasság, alsó szélesség)
+OUTLINE = {  # (az E/VOLUMEN a Quadris kérésére a kék profilból készül – EDSCHA_BLUE)
+    tuple(f"e-small-tetoprofil-{n}-mm" for n in (6600, 7800, 8200)):
+        ("data/forras/edscha_small_sin.png",
+         dict(keep=(117, 165, 324, 493), erase=[(117, 150, 128, 327), (150, 150, 162, 192), (313, 150, 326, 167),
+                                                (166, 410, 174, 466), (258, 432, 267, 500)], cav=11, r=2, shrink=2),
+         "58,5", "95", None),
+}
+
+
+# az Edscha-lap tetőszerkezet-rajzának kék profilja feketére színezve (a Quadris kérésére ez a legjobb forrás):
+# slugok -> (forráskép, kivágás, szélesség, magasság, alsó szélesség vagy None)
+EDSCHA_BLUE = {
+    tuple(f"e-volumen-tetoprofil-900301-{n}" for n in (7800, 8500, 9000, 9400, 9600, 10000)):
+        ("data/forras/edscha_volumen_tetoszerkezet.png", (255, 125, 665, 660), "120", "163", "35"),
+}
+
+
 # színes (kék kitöltésű) gyári rajzból: slug -> (forráskép, szélesség, magasság, falvastagság vagy None = mérve, a falméret helye)
 BLUE = {
     "207833-100x30-mm-alafutasgatlo-elox-profil": ("data/forras/207833_100x30_kek.png", "100", "30", None, ("v", 0.25)),
 }
+
+
+def outline_mask(path, keep, erase=(), cav=14, holes=(), scale=4, r=0, shrink=0):
+    """Vékony, kettős körvonallal rajzolt (szürke kitöltésű) profilkép maszkja: a körvonal a megadott területen
+    (keep = x0, y0, x1, y1; erase = kitörlendő méret- / tengelyvonalak), a vonalpárok közti keskeny sáv a fal,
+    a széles fehér tartomány üreg; holes = keskeny üregek, amelyeket a szélesség alapján nem lehet felismerni."""
+    g = np.asarray(Image.open(ROOT / path).convert("L")).astype(np.uint8)
+    m = np.zeros_like(g)
+    x0, y0, x1, y1 = keep
+    m[y0:y1, x0:x1] = g[y0:y1, x0:x1] < 245
+    for ex0, ey0, ex1, ey1 in erase:
+        m[ey0:ey1, ex0:ex1] = 0
+    m = cv2.morphologyEx(m, cv2.MORPH_OPEN, np.ones((3, 3), np.uint8))
+    n, lab, st, _ = cv2.connectedComponentsWithStats(m, connectivity=8)
+    ink = np.pad((lab == 1 + int(np.argmax(st[1:, 4]))).astype(np.uint8), 10)
+    se = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2 * r + 1, 2 * r + 1))
+    if r:
+        ink = cv2.dilate(ink, se)  # a körvonal kis szakadásainak bezárása
+    white = 1 - ink
+    n, lab, _, _ = cv2.connectedComponentsWithStats(white, connectivity=4)
+    outside = lab == lab[0, 0]
+    # üreg csak ott marad, ahová egy cav átmérőjű kör befér: a keskeny rések, falközi csíkok kitöltve
+    hole = cv2.morphologyEx(((white > 0) & ~outside).astype(np.uint8), cv2.MORPH_OPEN,
+                            cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (cav, cav))) > 0
+    solid = ~outside & ~hole
+    if r:
+        solid = cv2.erode(solid.astype(np.uint8), se) > 0
+    if shrink:  # a körvonal vastagságának fele a fal két oldalán (a fal a vonalak közepéig tart)
+        solid = cv2.erode(solid.astype(np.uint8), cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2 * shrink + 1,) * 2)) > 0
+    for hx0, hy0, hx1, hy1 in holes:
+        solid[hy0 + 10:hy1 + 10, hx0 + 10:hx1 + 10] = False
+    big = cv2.resize(solid.astype(np.float32), None, fx=scale, fy=scale, interpolation=cv2.INTER_LINEAR)
+    big = cv2.GaussianBlur(big, (0, 0), scale * 0.6) > 0.5
+    n, lab, st, _ = cv2.connectedComponentsWithStats(big.astype(np.uint8), connectivity=8)
+    big = lab == 1 + int(np.argmax(st[1:, 4]))
+    ys, xs = np.where(big)
+    return big[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
 def gray_mask(path, scale=6, inset=6):
@@ -303,11 +359,17 @@ def gray_mask(path, scale=6, inset=6):
     return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
-def blue_mask(path, scale=4):
-    """A kék kitöltésű profil maszkja (a fekete méretek, szaggatott vonal és felirat nélkül), felnagyítva."""
+def blue_mask(path, scale=4, crop=None, smooth=0):
+    """A kék kitöltésű profil maszkja (a fekete méretek, szaggatott vonal és felirat nélkül), felnagyítva;
+    crop = (x0, y0, x1, y1) a lap kivágása (pl. a tetőszerkezet-rajz kék profilja a szürke elemek mellett)."""
     a = np.asarray(Image.open(ROOT / path).convert("RGB")).astype(np.float32)
+    if crop:
+        a = a[crop[1]:crop[3], crop[0]:crop[2]]
     blue = np.clip((a[:, :, 2] - a[:, :, 0] - 20) / 80, 0, 1)
-    big = cv2.resize(blue, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC) > 0.5
+    big = cv2.resize(blue, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
+    if smooth:
+        big = cv2.GaussianBlur(big, (0, 0), smooth)
+    big = big > 0.5
     n, lab, st, _ = cv2.connectedComponentsWithStats(big.astype(np.uint8), connectivity=8)
     m = lab == 1 + int(np.argmax(st[1:, 4]))
     ys, xs = np.where(m)
@@ -451,12 +513,12 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000,
     dim((xd, y0), (xd, y1))
     vtext(xd, y0, y1, htext)
     if bottom:  # alsó szélességméret: a legalsó sor bal szélétől a profil jobb széléig (pl. az alsó doboz)
-        cols = np.where(big[-max(2, h // 100):].any(axis=0))[0]
-        xa, yb = ML + cols.min(), y1 + 75
+        cols = np.where(big[-max(2, h // 60):].any(axis=0))[0]
+        xa, xb, yb = ML + cols.min(), ML + cols.max(), y1 + 75
         d.line([(xa, y1 + 10), (xa, yb + 16)], fill="black", width=2)
-        d.line([(x1, y1 + 10), (x1, yb + 16)], fill="black", width=2)
-        dim((xa, yb), (x1, yb))
-        d.text(((xa + x1) / 2, yb + 8), bottom, font=F, fill="black", anchor="mt")
+        d.line([(xb, y1 + 10), (xb, yb + 16)], fill="black", width=2)
+        dim((xa, yb), (xb, yb))
+        d.text(((xa + xb) / 2, yb + 8), bottom, font=F, fill="black", anchor="mt")
     if where is None:
         return img, 0, k, (W0, H0), (xw - x0) / k
     # falvastagság
@@ -521,6 +583,22 @@ def main():
         data[slug]["images"] = [save_image(img, slug, "meretrajz"), save_image(fill, slug, "kitoltott")]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "vektoros")
+    for slugs, (src, crop, wt, ht, bt) in EDSCHA_BLUE.items():
+        m = blue_mask(src, scale=4, crop=crop, smooth=1.5)
+        img, *_ = render_mask(m, wt, ht, "", None, eps=1.0, bottom=bt)
+        for slug in slugs:
+            if slug in data:
+                url = save_image(img, slug, "meretrajz")
+                data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
+                print(slug, "kék profilból")
+    for slugs, (src, cfg, wt, ht, bt) in OUTLINE.items():
+        m = outline_mask(src, **cfg)
+        img, *_ = render_mask(m.copy(), wt, ht, "", None, eps=1.0, bottom=bt)
+        for slug in slugs:
+            if slug in data:
+                url = save_image(img, slug, "meretrajz")
+                data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
+                print(slug, "körvonalas képből")
     for slugs, (src, wt, ht, bt) in GRAY.items():
         m = gray_mask(src)
         m = cv2.erode(m.astype(np.uint8), np.ones((5, 5), np.uint8))  # a forrás sötét körvonala kívül van
@@ -550,7 +628,7 @@ def main():
         data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "vázlatból")
-    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(VECTOR) + [x for k in GRAY for x in k] + list(BLUE) + list(SKETCH) if s in data})
+    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(VECTOR) + [x for k in GRAY for x in k] + [x for k in OUTLINE for x in k] + [x for k in EDSCHA_BLUE for x in k] + list(BLUE) + list(SKETCH) if s in data})
 
 
 if __name__ == "__main__":

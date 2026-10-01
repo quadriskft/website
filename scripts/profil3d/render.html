@@ -230,7 +230,9 @@ function buildProfile(it) {
   const b = kind === 'tube' || kind === 'rod' ? a : b0;
   const k = 1 / Math.max(a, b);
   const len = 3.6;
-  const s = section(kind, a, b, t, ro, ri);
+  // tetszőleges keresztmetszet: it.contours = [külső kontúr, ...lyukak] mm-ben (y felfelé)
+  const s = it.contours ? (() => { const sh = poly(it.contours[0]); for (const h of it.contours.slice(1)) sh.holes.push(new THREE.Path(h.map(([x, y]) => V(x, y)))); return sh; })()
+    : section(kind, a, b, t, ro, ri);
   const bevel = Math.min(a, b) * k * 0.008;
   const geo = new THREE.ExtrudeGeometry(s, { depth: len / k, bevelEnabled: true, bevelThickness: bevel / k, bevelSize: bevel / k * 0.6, bevelSegments: 3, curveSegments: 64 });
   geo.scale(k, k, k); geo.translate(-a * k / 2, 0, -len / 2); geo.computeVertexNormals();
