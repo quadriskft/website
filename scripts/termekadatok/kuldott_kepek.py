@@ -131,7 +131,8 @@ PREPEND["226887-spitz-profil-140-mm-magas"] = ([("data/forras/exlabesa_6886_rajz
 # befoglaló méretek (40 × 40), a többi méret- és segédvonal nélkül
 PREPEND.update({slug: ([("data/forras/bodega_54550_rajz.png", "meretrajz")],
                        {"Szélesség": "40 mm", "Magasság": "40 mm", "Belső szélesség": "35 mm",
-                        "Falvastagság": "2,5 mm (fenék 4 mm)"})
+                        "Falvastagság": "2,5 mm (fenék 4 mm)", "Tömeg": "0,897 kg/m", "Ötvözet": "EN AW-6060 T6",
+                        "Keresztmetszet": "332,3 mm²"})
                 for slug in ("225455-u-35-mm-szego-profil-elox", "225455-n-u-35-mm-szego-profil")})
 # 226915 és 226915/n (30 mm U szegő): a Quadris kérésére csak az Alu-SV 6600006915 rajza (a korábbi RE-ALL /
 # Constellium-rajzok a kezi_kepsorrend.json „kizart” listáján)

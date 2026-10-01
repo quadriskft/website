@@ -3288,7 +3288,10 @@
    "Szélesség": "40 mm",
    "Magasság": "40 mm",
    "Belső szélesség": "35 mm",
-   "Falvastagság": "2,5 mm (fenék 4 mm)"
+   "Falvastagság": "2,5 mm (fenék 4 mm)",
+   "Tömeg": "0,897 kg/m",
+   "Ötvözet": "EN AW-6060 T6",
+   "Keresztmetszet": "332,3 mm²"
   },
   "images": [
    "/termekkepek/225455-n-u-35-mm-szego-profil-meretrajz.webp"
@@ -3300,7 +3303,10 @@
    "Szélesség": "40 mm",
    "Magasság": "40 mm",
    "Belső szélesség": "35 mm",
-   "Falvastagság": "2,5 mm (fenék 4 mm)"
+   "Falvastagság": "2,5 mm (fenék 4 mm)",
+   "Tömeg": "0,897 kg/m",
+   "Ötvözet": "EN AW-6060 T6",
+   "Keresztmetszet": "332,3 mm²"
   },
   "images": [
    "/termekkepek/225455-u-35-mm-szego-profil-elox-meretrajz.webp"
