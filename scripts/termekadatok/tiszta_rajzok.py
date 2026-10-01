@@ -415,13 +415,20 @@ def profil_7461():
     from shapely.ops import unary_union
     pts = [(0, 0, 1.2), (2.5, 0, 1.2), (2.5, 15, 0.5), (2, 16, 0.5), (2, 48, 5), (260, 48, 0), (260, 50, 0), (0, 50, 7.5)]
     base = Polygon(fillet([(x, y) for x, y, _ in pts], [r for *_, r in pts]))
-    ribs, grooves = [], []
+    from shapely.geometry import LineString, box
+
+    def dip(c):  # U alakú bemélyedés a lemez középvonalán: függőleges oldalak, lekerekített alj
+        arc = [(c - 1.5 * math.cos(a), 47.5 + 1.5 * math.sin(a)) for a in np.linspace(0, math.pi, 13)]
+        return [(c - 1.5, 47)] + arc + [(c + 1.5, 47)]
+
+    # a borda a 2 mm-es lemez felhajlítása (2 mm-rel feljebb, 2 mm-es rámpákkal), benne két U bemélyedés 8,5 osztással;
+    # a lemez végig 2 mm vastag, alatta üreg
+    g = base
     for x0 in (57.4, 119.8, 182.3):
-        ribs.append(Polygon([(x0, 48), (x0 + 2, 46), (x0 + 18, 46), (x0 + 20, 48)]))
-        grooves += [Point(x0 + 5.75, 46).buffer(2, 32), Point(x0 + 14.25, 46).buffer(2, 32)]
-    ribs.append(Polygon([(244, 48), (246, 46), (253, 46), (260, 47.4), (260, 48)]))  # a záró perem
-    grooves.append(Point(250, 46).buffer(2, 32))
-    g = unary_union([base] + ribs).difference(unary_union(grooves))
+        line = [(x0 - 0.5, 49), (x0 + 2, 47)] + dip(x0 + 5.75) + dip(x0 + 14.25) + [(x0 + 18, 47), (x0 + 20.5, 49)]
+        g = g.difference(box(x0, 47.9, x0 + 20, 50.1)).union(LineString(line).buffer(1, cap_style=2, join_style=1))
+    end = [(243.5, 49), (246, 47)] + dip(250) + [(253, 47), (259.4, 47.9)]  # a záró perem: felhajlás, horony, lejtő
+    g = g.difference(box(244, 47.9, 261, 50.1)).union(LineString(end).buffer(1, cap_style=1, join_style=1))
     return g.buffer(0.3, join_style=1).buffer(-0.3, join_style=1)
 
 
