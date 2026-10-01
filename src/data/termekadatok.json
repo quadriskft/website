@@ -4293,18 +4293,20 @@
   ]
  },
  "237000-25x25-mm-ives-sarokprofil-elox": {
-  "source": "Quadris adatok",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "",
-  "sourceTitle": "25x25 mm íves sarokprofil elox",
-  "matchedCode": "",
+  "sourceTitle": "",
   "specs": {
-   "Anyag": "alumínium, eloxált",
-   "Szárak": "25 × 25 mm"
+   "Anyag": "alumínium EN AW-6060, eloxált",
+   "Szárak": "25 × 25 mm",
+   "Tömeg": "1,99 kg/fm",
+   "Méret": "66,5 × 66,5 mm",
+   "Belső méret": "25 mm (mindkét szár)"
   },
   "images": [
-   "/termekkepek/3d/237000-25x25-mm-ives-sarokprofil-elox-1.webp",
-   "/termekkepek/3d/237000-25x25-mm-ives-sarokprofil-elox-2.webp",
-   "/termekkepek/237000-25x25-mm-ives-sarokprofil-elox-1.webp"
+   "/termekkepek/237000-25x25-mm-ives-sarokprofil-elox-meretrajz.webp",
+   "/termekkepek/237000-25x25-mm-ives-sarokprofil-elox-kitoltott.webp",
+   "/termekkepek/237000-25x25-mm-ives-sarokprofil-elox-foto.webp"
   ]
  },
  "237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox": {

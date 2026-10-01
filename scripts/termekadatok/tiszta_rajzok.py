@@ -63,6 +63,9 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "237000-25x25-mm-ives-sarokprofil-elox": ("profil_237000", "66,5", "66,5", "", None,
+                                              dict(idims=[("v", 60 / 66.5, 3.2 / 66.5, 28.3 / 66.5, "25"),
+                                                          ("h", 60 / 66.5, 3.2 / 66.5, 28.3 / 66.5, "25")])),
     "231381-25-mm-diszlec-alu-3000-mm": ("profil_231381", "25", "5", "", None),
     "225040-koztes-250-mm-elox-profil": ("profil_225040", "272,2", "25", "1,7", ("v", 0.47),
                                          dict(hdims=[(0, 260.5 / 272.2, "260,5"), (17.3 / 272.2, 267.3 / 272.2, "250")],
@@ -107,10 +110,13 @@ RAW = {"236825-80x80-mm-l-profil-elox": ("data/forras/236825_rajz.png", (16, 170
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
 PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (370, 110, 575, 240)),
-          "232134-285-mm-i-koptato-profil-elox": ("data/forras/232134_lap.png", (95, 95, 250, 580))}
+          "232134-285-mm-i-koptato-profil-elox": ("data/forras/232134_lap.png", (95, 95, 250, 580)),
+          "237000-25x25-mm-ives-sarokprofil-elox": ("data/forras/237000_lap.png", (390, 20, 535, 170))}
 # adatok a küldött adatlapról
 SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
-            "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"}}
+            "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"},
+            "237000-25x25-mm-ives-sarokprofil-elox": {"Tömeg": "1,99 kg/fm", "Anyag": "alumínium EN AW-6060, eloxált",
+                                                      "Méret": "66,5 × 66,5 mm", "Belső méret": "25 mm (mindkét szár)"}}
 
 
 # új adatlap (eddig nem volt képe): slug -> (forrás, URL, forrás címe)
@@ -353,6 +359,28 @@ def profil_231381():
     g = unary_union([body, Point(1.1, 1.1).buffer(1.1, 32), Point(23.9, 1.1).buffer(1.1, 32)])
     from shapely import affinity
     return affinity.affine_transform(g, [1, 0, 0, -1, 0, 5])  # y lefelé
+
+
+def profil_237000():
+    """237000 (25×25 mm-es íves sarokprofil): 66,5 × 66,5, két, a végein nyitott U-csatorna 25 mm belső
+    szélességgel (a fal kb. 3,2 mm), a belső falak a sarokban keresztezik egymást (zárt négyzetes üreg), a külső
+    sarok R15-tel ívelt, a falvégek ferdén letörtek (az Exlabesa / ESAL rajz szerint)."""
+    from shapely.geometry import Polygon, box
+    from shapely.ops import unary_union
+    t, L, W = 3.2, 66.5, 31.5
+
+    def wall(x0, y0, x1, y1, tip):  # fal ferde véggel (tip: "x" = a jobb vége, "y" = az alsó vége letörve)
+        if tip == "x":
+            return Polygon([(x0, y0), (x1, y0), (x1 - 1.2, y1), (x0, y1)])
+        return Polygon([(x0, y0), (x1, y0), (x1, y1 - 1.2), (x0, y1)])
+
+    parts = [wall(0, 0, L, t, "x"), wall(0, W - t, L, W, "x"), wall(0, 0, t, L, "y"), wall(W - t, 0, W, L, "y")]
+    g = unary_union(parts)
+    from shapely.geometry import Point
+    q = box(0, 0, 15, 15)
+    arc = q.intersection(Point(15, 15).buffer(15, 96)).difference(Point(15, 15).buffer(15 - t, 96))
+    g = g.difference(q).union(arc)  # a külső sarok R15-tel ívelt, a fal végig egyforma vastag
+    return g.buffer(0.3, join_style=1).buffer(-0.3, join_style=1)
 
 
 def vector_mask(geom, scale=30):
@@ -605,7 +633,7 @@ def sketch_mask(path, scale=4, wipe=()):
 
 
 def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000, outline=False, eps=None, vdims=(), bottom=None,
-                hdims=(), walls=()):
+                hdims=(), walls=(), idims=()):
     H0, W0 = m.shape
     for fx0, fy0, fx1, fy1 in erase:
         m[int(fy0 * H0):int(fy1 * H0), int(fx0 * W0):int(fx1 * W0)] = False
@@ -698,6 +726,16 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000,
                 d.line([(ML + a, ya), (ML + b, ya)], fill="black", width=2)
                 d.text((ML + b + 62, ya), text, font=F, fill="black", anchor="lm")
                 break
+    # belső méretek a profilon belül: ("v", x-arány, y0-arány, y1-arány, felirat) / ("h", y-arány, x0, x1, felirat)
+    for kind, f, a0, a1, text in idims:
+        if kind == "v":
+            xx = x0 + f * w
+            dim((xx, y0 + a0 * h), (xx, y0 + a1 * h))
+            d.text((xx - 10, y0 + (a0 + a1) / 2 * h), text, font=F, fill="black", anchor="rm")
+        else:
+            yy = y0 + f * h
+            dim((x0 + a0 * w, yy), (x0 + a1 * w, yy))
+            d.text((x0 + (a0 + a1) / 2 * w, yy - 8), text, font=F, fill="black", anchor="mb")
     if where is None:
         return img, 0, k, (W0, H0), (xw - x0) / k
     # falvastagság
