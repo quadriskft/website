@@ -63,6 +63,8 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("profil_8005", "70", "18", "2", ("v", 9 / 70),
+                                                     dict(idims=[("h", 0.5, 2 / 70, 16 / 70, "ø14")])),
     "388008-27mm-feszito-cso-alu-profil": ("profil_8008", "26,5", "27", "2", ("h", 0.5),
                                            dict(idims=[("h", 0.3, 10.9 / 26.5, 24.9 / 26.5, "ø14")])),
     "238645-kulso-l-profil-140x80mm-elox": ("profil_8645", "80", "140", "2,5", ("v", 0.6),
@@ -164,13 +166,15 @@ PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (37
           "237000-25x25-mm-ives-sarokprofil-elox": ("data/forras/237000_lap.png", (390, 20, 535, 170)),
           "237005-142-mm-i-koptato-profil-elox": ("data/forras/237005_lap.png", (430, 80, 585, 385))}
 # a vektoros profilból készült saját 3D render (scripts/profil3d, contours) a rajzok után: slug -> nézetek
-RENDER3D = {"388008-27mm-feszito-cso-alu-profil": [2]}  # a katalóguslap fotója túl kicsi és elmosódott
+RENDER3D = {"388008-27mm-feszito-cso-alu-profil": [2], "388005-ponyvabeakaszto-alu-profil-70-mm-elox": [2]}  # a katalóguslap fotója túl kicsi és elmosódott
 # élesítendő termékképek (PHOTOS)
 # (slug -> a kivágásban kifehérítendő téglalapok, pl. a ráérő méretfelirat)
 SHARPEN = {}
 # adatok a küldött adatlapról
 SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
             "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"},
+            "388005-ponyvabeakaszto-alu-profil-70-mm-elox": {"Tömeg": "0,853 kg/fm", "Méret": "70 × 18 mm", "Furat": "Ø14 mm",
+                                                             "Anyag": "alumínium EN AW-6060", "Kivitel": "ponyvabeakasztó profil"},
             "388008-27mm-feszito-cso-alu-profil": {"Tömeg": "0,608 kg/fm", "Méret": "26,5 × 27 mm", "Belső furat": "Ø14 mm",
                                                    "Anyag": "alumínium EN AW-6060", "Kivitel": "ponyvafeszítő cső"},
             "237005-142-mm-i-koptato-profil-elox": {"Tömeg": "1,153 kg/fm", "Magasság": "142 mm", "Anyag": "alumínium EN AW-6060, eloxált",
@@ -191,7 +195,8 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
        "2015290-15-mm-keretprofil-elox": ("BODEGA", "https://www.bodega.it", "Bodega 50290 gyári rajz",
                                           {"Tömeg": "1,763 kg/fm", "Ötvözet": "EN AW-6060 T6", "Felület": "eloxált"}),
        "237005-142-mm-i-koptato-profil-elox": ("Quadris katalóguslap", "", "", {"Felület": "eloxált"}),
-       "388008-27mm-feszito-cso-alu-profil": ("Quadris katalóguslap", "", "", {"Felület": "natúr"})}
+       "388008-27mm-feszito-cso-alu-profil": ("Quadris katalóguslap", "", "", {"Felület": "natúr"}),
+       "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("Quadris katalóguslap", "", "", {"Felület": "eloxált"})}
 
 
 def profil_6941():
@@ -517,6 +522,26 @@ def profil_8008():
     cres = Point(O).buffer(13.5 - w, 256).difference(Point(B).buffer(7 + w, 256)).buffer(-1.1).buffer(1.1)
     g = g.difference(cres).difference(Point(B).buffer(7, 256)).difference(box(B[0], 13.5 - 3.75, 30, 13.5 + 3.75))
     return g.buffer(0.4, join_style=1).buffer(-0.4, join_style=1)
+
+
+def profil_8005():
+    """388005 (70 mm-es ponyvabeakasztó, T1 8005): 70 × 18; balra a Ø14-es furatú, 2 mm falú, felfelé nyitott C
+    (lekerekített véggel), mellette a vele szemben nyitott ív (R9 / R6,2), ebből indul a 2,8 vastag felső lap 70-ig és
+    a 2,7 vastag alsó perem 33-ig; a keresztmetszet így 316 mm², a lap 0,853 kg/fm tömegéből 316 mm²."""
+    from shapely.geometry import Point, Polygon, box
+
+    def sector(c, r, a0, a1, n=90):
+        return Polygon([c] + [(c[0] + r * math.cos(math.radians(a0 + (a1 - a0) * i / n)),
+                               c[1] + r * math.sin(math.radians(a0 + (a1 - a0) * i / n))) for i in range(n + 1)])
+
+    L, Rc, tip = (9, 9), (25, 9), -61
+    A = Point(L).buffer(9, 256).difference(Point(L).buffer(7, 256)).difference(sector(L, 20, tip, 0))
+    B = sector(Rc, 9, 90, 270).difference(Point(Rc).buffer(6.2, 256))
+    E = box(9, 9, 25, 18).difference(Point(L).buffer(7, 256)).difference(Point(Rc).buffer(6.2, 256))
+    g = A.union(B).union(E).union(box(25, 0, 70, 2.8)).union(box(25, 15.3, 33, 18))
+    a = math.radians(tip)
+    g = g.union(Point(L[0] + 8 * math.cos(a), L[1] + 8 * math.sin(a)).buffer(1, 64))
+    return g.buffer(0.3, join_style=1).buffer(-0.6, join_style=1).buffer(0.3, join_style=1)
 
 
 def profil_7461():
