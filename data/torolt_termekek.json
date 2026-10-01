@@ -789,5 +789,12 @@
   "code": "226115",
   "date": "2026-10-01",
   "reason": "Quadris kérés: most nem kell, kivéve"
+ },
+ "232121-35x35-mm-ives-sarokprofil-elox": {
+  "name": "35x35 mm íves sarokprofil elox",
+  "supplier": "RE-ALL",
+  "code": "232121",
+  "date": "2026-10-01",
+  "reason": "Quadris kérés: törölve"
  }
 }
