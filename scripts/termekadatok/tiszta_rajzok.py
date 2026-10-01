@@ -162,11 +162,12 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
 PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (370, 110, 575, 240)),
           "232134-285-mm-i-koptato-profil-elox": ("data/forras/232134_lap.png", (95, 95, 250, 580)),
           "237000-25x25-mm-ives-sarokprofil-elox": ("data/forras/237000_lap.png", (390, 20, 535, 170)),
-          "237005-142-mm-i-koptato-profil-elox": ("data/forras/237005_lap.png", (430, 80, 585, 385)),
-          "388008-27mm-feszito-cso-alu-profil": ("data/forras/388008_lap.png", (128, 192, 307, 325))}
+          "237005-142-mm-i-koptato-profil-elox": ("data/forras/237005_lap.png", (430, 80, 585, 385))}
+# a vektoros profilból készült saját 3D render (scripts/profil3d, contours) a rajzok után: slug -> nézetek
+RENDER3D = {"388008-27mm-feszito-cso-alu-profil": [2]}  # a katalóguslap fotója túl kicsi és elmosódott
 # élesítendő termékképek (PHOTOS)
 # (slug -> a kivágásban kifehérítendő téglalapok, pl. a ráérő méretfelirat)
-SHARPEN = {"388008-27mm-feszito-cso-alu-profil": [(0, 0, 90, 9)]}
+SHARPEN = {}
 # adatok a küldött adatlapról
 SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
             "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"},
@@ -988,6 +989,10 @@ def main():
                 ph[ph.min(axis=2) > 232] = 255
                 ph = Image.fromarray(ph.astype(np.uint8))
             data[slug]["images"].append(save_image(ph, slug, "foto"))
+        for v in RENDER3D.get(slug, []):
+            u = f"/termekkepek/3d/{slug}-{v}.webp"
+            if (ROOT / "public" / u.lstrip("/")).exists():
+                data[slug]["images"].append(u)
         if slug in SPEC_FIX:
             data[slug].setdefault("specs", {}).update(SPEC_FIX[slug])
         if tt:  # tömör profilnál nincs falvastagság
