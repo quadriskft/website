@@ -4154,17 +4154,20 @@
   ]
  },
  "232134-285-mm-i-koptato-profil-elox": {
-  "source": "ESAL",
-  "sourceUrl": "https://esalforli.com/public/Catalogo-Sponde-2020-Esal-Forli.pdf#page=74",
-  "sourceTitle": "ESAL 2134",
-  "matchedCode": "2134",
+  "source": "Quadris katalóguslap",
+  "sourceUrl": "",
+  "sourceTitle": "",
   "specs": {
    "Anyag": "alumínium EN AW-6060 T5",
    "Felület": "eloxált (ARS, 10 µm)",
-   "Tömeg": "2,073 kg/fm"
+   "Tömeg": "2,073 kg/fm",
+   "Magasság": "285 mm",
+   "Szálhossz": "6,7 / 7,5 m"
   },
   "images": [
-   "/termekkepek/232134-285-mm-i-koptato-profil-elox-1.webp"
+   "/termekkepek/232134-285-mm-i-koptato-profil-elox-meretrajz.webp",
+   "/termekkepek/232134-285-mm-i-koptato-profil-elox-kitoltott.webp",
+   "/termekkepek/232134-285-mm-i-koptato-profil-elox-foto.webp"
   ]
  },
  "232156-50x174-mm-l-belso-vedoprofil": {

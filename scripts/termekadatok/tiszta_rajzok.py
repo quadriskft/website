@@ -80,10 +80,30 @@ VECTOR = {
 }
 
 
+# katalóguslapon fekete (sötét) kitöltésű profilrajz: slug -> (forráskép, kivágás, elforgatás fokban, szélesség, magasság)
+DARK = {"232134-285-mm-i-koptato-profil-elox": ("data/forras/232134_lap.png", (284, 60, 318, 618), 90, "285", None)}
+
+
+def dark_mask(path, crop, rot=0, scale=8):
+    """Katalóguslap fekete profilrajzának maszkja (a kék méretvonal és a felirat nélkül), elforgatva, felnagyítva."""
+    a = np.asarray(Image.open(ROOT / path).convert("RGB")).astype(np.float32)[crop[1]:crop[3], crop[0]:crop[2]]
+    dark = np.clip((110 - a.max(axis=2)) / 60, 0, 1)
+    big = cv2.resize(dark, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
+    big = cv2.GaussianBlur(big, (0, 0), scale * 0.3) > 0.5
+    if rot:
+        big = np.rot90(big, rot // 90)
+    n, lab, st, _ = cv2.connectedComponentsWithStats(big.astype(np.uint8), connectivity=8)
+    m = lab == 1 + int(np.argmax(st[1:, 4]))
+    ys, xs = np.where(m)
+    return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+
+
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
-PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (370, 110, 575, 240))}
+PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (370, 110, 575, 240)),
+          "232134-285-mm-i-koptato-profil-elox": ("data/forras/232134_lap.png", (95, 95, 250, 580))}
 # adatok a küldött adatlapról
-SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"}}
+SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
+            "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"}}
 
 
 # új adatlap (eddig nem volt képe): slug -> (forrás, URL, forrás címe)
@@ -637,12 +657,13 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000,
             d.line([(x0 - 10, yy), (xi - 16, yy)], fill="black", width=2)
         dim((xi, ya), (xi, yb))
         vtext(xi, ya, yb, text)
-    # magasság: balra
+    # magasság: balra (htext nélkül elmarad)
     xd = x0 - (165 if vdims else 85)
-    d.line([(x0 - 10, y0), (xd - 16, y0)], fill="black", width=2)
-    d.line([(x0 - 10, y1), (xd - 16, y1)], fill="black", width=2)
-    dim((xd, y0), (xd, y1))
-    vtext(xd, y0, y1, htext)
+    if htext:
+        d.line([(x0 - 10, y0), (xd - 16, y0)], fill="black", width=2)
+        d.line([(x0 - 10, y1), (xd - 16, y1)], fill="black", width=2)
+        dim((xd, y0), (xd, y1))
+        vtext(xd, y0, y1, htext)
     if bottom:  # alsó szélességméret: a legalsó sor bal szélétől a profil jobb széléig (pl. az alsó doboz)
         cols = np.where(big[-max(2, h // 60):].any(axis=0))[0]
         xa, xb, yb = ML + cols.min(), ML + cols.max(), y1 + 75
@@ -748,6 +769,22 @@ def main():
         else:
             data[slug].get("specs", {}).pop("Falvastagság", None)
         print(slug, "vektoros")
+    for slug, (src, crop, rot, wt, ht) in DARK.items():
+        if slug not in data:
+            continue
+        m = dark_mask(src, crop, rot)
+        img, *_ = render_mask(m.copy(), wt, ht, "", None, eps=0.8, outline=True)
+        fill, *_ = render_mask(m.copy(), wt, ht, "", None, eps=0.8)
+        data[slug]["images"] = [save_image(img, slug, "meretrajz"), save_image(fill, slug, "kitoltott")]
+        data[slug].update({"source": "Quadris katalóguslap", "sourceUrl": "", "sourceTitle": ""})
+        data[slug].pop("matchedCode", None)
+        if slug in PHOTOS:
+            src2, box_ = PHOTOS[slug]
+            ph = np.asarray(Image.open(ROOT / src2).convert("RGB").crop(box_)).astype(np.float32)
+            ph[ph.min(axis=2) > 232] = 255
+            data[slug]["images"].append(save_image(Image.fromarray(ph.astype(np.uint8)), slug, "foto"))
+        data[slug].setdefault("specs", {}).update(SPEC_FIX.get(slug, {}))
+        print(slug, "sötét profilrajzból")
     for slugs, (src, crop, wt, ht, bt) in EDSCHA_BLUE.items():
         m = blue_mask(src, scale=4, crop=crop, smooth=1.5)
         img, *_ = render_mask(m, wt, ht, "", None, eps=1.0, bottom=bt)
@@ -793,7 +830,7 @@ def main():
         data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "vázlatból")
-    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(VECTOR) + [x for k in GRAY for x in k] + [x for k in OUTLINE for x in k] + [x for k in EDSCHA_BLUE for x in k] + list(BLUE) + list(SKETCH) if s in data})
+    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(VECTOR) + [x for k in GRAY for x in k] + [x for k in OUTLINE for x in k] + [x for k in EDSCHA_BLUE for x in k] + list(DARK) + list(BLUE) + list(SKETCH) if s in data})
 
 
 if __name__ == "__main__":
