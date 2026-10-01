@@ -607,7 +607,8 @@ def main():
         # szkriptek (pl. alusv.py) újrafuttatáskor csak a saját képeiket írják a listába
         d3 = f"/termekkepek/{slug}-3d.webp"
         extra3d = [d3] if (ROOT / "public" / d3.lstrip("/")).exists() else []
-        e["images"] = [rel] + extra3d + [u for u in e["images"] if u not in (rel, d3) and slug not in HATCHED]
+        # (a műhelyrajzos profiloknál csak a küldött részletrajzok – <slug>-reszlet-*.webp – maradnak a rajz mellett)
+        e["images"] = [rel] + extra3d + [u for u in e["images"] if u not in (rel, d3) and (slug not in HATCHED or "-reszlet-" in u)]
     ENRICHMENT.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n")
     print(f"alváz profilok: {len(items)} egységes rajz;", ", ".join(f"{c}: {v:.2f} px/mm" for c, v in scale.items()))
 

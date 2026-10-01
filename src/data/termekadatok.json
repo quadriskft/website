@@ -3400,7 +3400,7 @@
   ]
  },
  "226821-21-padlo-profil-200-mm": {
-  "source": "Quadris gyári rajz",
+  "source": "Quadris katalóguslap",
   "sourceTitle": "BODEGA TB48968 – műhelyrajz",
   "matchedCode": "TB48968",
   "specs": {
@@ -3413,7 +3413,9 @@
    "Kivitel": "nyitott, bordás padlóprofil T-talpakkal"
   },
   "images": [
-   "/termekkepek/226821-21-padlo-profil-200-mm-rajz.webp"
+   "/termekkepek/226821-21-padlo-profil-200-mm-rajz.webp",
+   "/termekkepek/226821-21-padlo-profil-200-mm-reszlet-talp.webp",
+   "/termekkepek/226821-21-padlo-profil-200-mm-reszlet-felulet.webp"
   ]
  },
  "226830-300-mm-mono-profil-elox": {

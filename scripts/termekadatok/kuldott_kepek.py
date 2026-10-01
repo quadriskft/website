@@ -134,6 +134,9 @@ PREPEND.update({slug: ([("data/forras/bodega_54550_rajz.png", "meretrajz")],
                         "Falvastagság": "2,5 mm (fenék 4 mm)", "Tömeg": "0,897 kg/m", "Ötvözet": "EN AW-6060 T6",
                         "Keresztmetszet": "332,3 mm²"})
                 for slug in ("225455-u-35-mm-szego-profil-elox", "225455-n-u-35-mm-szego-profil")})
+# 226821/21 padló profil (Bodega 48968): a küldött két részletrajz (T-talp és bordás felület) 90°-kal elforgatva, a rajz után
+INSERT["226821-21-padlo-profil-200-mm"] = [("data/forras/bodega_48968_reszlet_talp.png", "reszlet-talp", 99),
+                                           ("data/forras/bodega_48968_reszlet_felulet.png", "reszlet-felulet", 99)]
 # 226915 és 226915/n (30 mm U szegő): a Quadris kérésére csak az Alu-SV 6600006915 rajza (a korábbi RE-ALL /
 # Constellium-rajzok a kezi_kepsorrend.json „kizart” listáján)
 INSERT.update({slug: [("data/forras/alusv_6600006915_rajz.png", "alusv", 0)]
