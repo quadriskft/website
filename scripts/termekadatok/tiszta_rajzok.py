@@ -13,7 +13,7 @@ from pathlib import Path
 
 import cv2
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 sys.path.insert(0, str(Path(__file__).parent))
 import alvaz_rajzok as A  # noqa: E402
@@ -161,7 +161,10 @@ PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (37
           "232134-285-mm-i-koptato-profil-elox": ("data/forras/232134_lap.png", (95, 95, 250, 580)),
           "237000-25x25-mm-ives-sarokprofil-elox": ("data/forras/237000_lap.png", (390, 20, 535, 170)),
           "237005-142-mm-i-koptato-profil-elox": ("data/forras/237005_lap.png", (430, 80, 585, 385)),
-          "388008-27mm-feszito-cso-alu-profil": ("data/forras/388008_lap.png", (135, 195, 307, 325))}
+          "388008-27mm-feszito-cso-alu-profil": ("data/forras/388008_lap.png", (128, 192, 307, 325))}
+# élesítendő termékképek (PHOTOS)
+# (slug -> a kivágásban kifehérítendő téglalapok, pl. a ráérő méretfelirat)
+SHARPEN = {"388008-27mm-feszito-cso-alu-profil": [(0, 0, 90, 9)]}
 # adatok a küldött adatlapról
 SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
             "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"},
@@ -968,8 +971,21 @@ def main():
             src, box_ = PHOTOS[slug]
             ph = np.asarray(Image.open(ROOT / src).convert("RGB").crop(box_)).astype(np.float32)
             ph = np.clip((ph - 0) * 255 / np.maximum(ph.max(axis=(0, 1)), 1), 0, 255)  # a szürkés háttér fehérre
-            ph[ph.min(axis=2) > 232] = 255
-            data[slug]["images"].append(save_image(Image.fromarray(ph.astype(np.uint8)), slug, "foto"))
+            if slug in SHARPEN:  # a kis, elmosódott termékkép felnagyítva és élesítve (a Quadris kérésére)
+                for ex0, ey0, ex1, ey1 in SHARPEN[slug]:
+                    ph[ey0:ey1, ex0:ex1] = 255
+                big = Image.fromarray(np.clip(ph, 0, 255).astype(np.uint8)).resize((ph.shape[1] * 5, ph.shape[0] * 5), Image.BICUBIC)
+                big = big.filter(ImageFilter.GaussianBlur(1.5)).filter(ImageFilter.UnsharpMask(radius=5, percent=180, threshold=1))
+                b = np.asarray(big).astype(np.float32)
+                w = np.clip((b.min(axis=2, keepdims=True) - 212) / 30, 0, 1)  # lágy átmenet a fehér háttérbe
+                b = b * (1 - w) + 255 * w
+                ys, xs = np.where(b.min(axis=2) < 235)
+                ph = Image.fromarray(b.astype(np.uint8)).crop((max(xs.min() - 30, 0), max(ys.min() - 30, 0),
+                                                               min(xs.max() + 30, b.shape[1]), min(ys.max() + 30, b.shape[0])))
+            else:
+                ph[ph.min(axis=2) > 232] = 255
+                ph = Image.fromarray(ph.astype(np.uint8))
+            data[slug]["images"].append(save_image(ph, slug, "foto"))
         if slug in SPEC_FIX:
             data[slug].setdefault("specs", {}).update(SPEC_FIX[slug])
         if tt:  # tömör profilnál nincs falvastagság
