@@ -98,6 +98,13 @@ def dark_mask(path, crop, rot=0, scale=8):
     return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
+# a Quadris által küldött gyári rajz önmagában (csak ez a kép; a fejléc a gyártói számmal kivágva, fekete-fehérre
+# tisztítva): slug -> (forráskép, kivágás, adatok)
+RAW = {"236825-80x80-mm-l-profil-elox": ("data/forras/236825_rajz.png", (16, 170, 656, 718),
+                                          {"Méret": "80 × 80 mm", "Falvastagság": "2,5 mm", "Tömeg": "1,027 kg/fm",
+                                           "Anyag": "alumínium AlMgSi0,5 F25, eloxált"})}
+
+
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
 PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (370, 110, 575, 240)),
           "232134-285-mm-i-koptato-profil-elox": ("data/forras/232134_lap.png", (95, 95, 250, 580))}
@@ -769,6 +776,15 @@ def main():
         else:
             data[slug].get("specs", {}).pop("Falvastagság", None)
         print(slug, "vektoros")
+    for slug, (src, crop, specs) in RAW.items():
+        if slug not in data:
+            continue
+        g = np.asarray(Image.open(ROOT / src).convert("L").crop(crop)).astype(np.float32)
+        g = np.clip((g - 60) * 255 / (200 - 60), 0, 255)  # fekete vonalak, fehér háttér
+        data[slug]["images"] = [save_image(Image.fromarray(g.astype(np.uint8)), slug, "gyari-rajz")]
+        data[slug].update({"source": "Quadris gyári rajz", "sourceUrl": "", "sourceTitle": ""})
+        data[slug].setdefault("specs", {}).update(specs)
+        print(slug, "gyári rajz")
     for slug, (src, crop, rot, wt, ht) in DARK.items():
         if slug not in data:
             continue
@@ -830,7 +846,7 @@ def main():
         data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "vázlatból")
-    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(VECTOR) + [x for k in GRAY for x in k] + [x for k in OUTLINE for x in k] + [x for k in EDSCHA_BLUE for x in k] + list(DARK) + list(BLUE) + list(SKETCH) if s in data})
+    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(VECTOR) + [x for k in GRAY for x in k] + [x for k in OUTLINE for x in k] + [x for k in EDSCHA_BLUE for x in k] + list(DARK) + list(RAW) + list(BLUE) + list(SKETCH) if s in data})
 
 
 if __name__ == "__main__":

@@ -4278,18 +4278,18 @@
   ]
  },
  "236825-80x80-mm-l-profil-elox": {
-  "source": "Quadris adatok",
+  "source": "Quadris gyári rajz",
   "sourceUrl": "",
-  "sourceTitle": "80x80 mm L profil elox",
+  "sourceTitle": "",
   "matchedCode": "",
   "specs": {
-   "Anyag": "alumínium, eloxált",
-   "Méret": "80 × 80 mm"
+   "Anyag": "alumínium AlMgSi0,5 F25, eloxált",
+   "Méret": "80 × 80 mm",
+   "Falvastagság": "2,5 mm",
+   "Tömeg": "1,027 kg/fm"
   },
   "images": [
-   "/termekkepek/3d/236825-80x80-mm-l-profil-elox-1.webp",
-   "/termekkepek/3d/236825-80x80-mm-l-profil-elox-2.webp",
-   "/termekkepek/236825-80x80-mm-l-profil-elox-1.webp"
+   "/termekkepek/236825-80x80-mm-l-profil-elox-gyari-rajz.webp"
   ]
  },
  "237000-25x25-mm-ives-sarokprofil-elox": {
