@@ -153,7 +153,9 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             # az eloxált változathoz is csak a natúr (237767/n) méretrajza kell, a korábbi képek és 3D nélkül
             "237767-60x60-l-profil-elox": [("public/termekkepek/237767-n-60x60-l-profil-1.webp", "rajz")],
             # a Quadris által küldött lap rajza változtatás nélkül (csak a gyári kód és a szöveg kivágva)
-            "380025-pwp-racsnis-feszito-kocka-adapter-r": [("data/forras/380025_rajz.png", "rajz")]}
+            "380025-pwp-racsnis-feszito-kocka-adapter-r": [("data/forras/380025_rajz.png", "rajz")],
+            # a küldött lap mindkét képe változtatás nélkül (a gyári kód és a szöveg kivágva), a rajz elöl
+            "380045-34mm-feszito-cso-alu-profil": [("data/forras/380045_rajz.png", "rajz"), ("data/forras/380045_3d.png", "3d-lap")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
