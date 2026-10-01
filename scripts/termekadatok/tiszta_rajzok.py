@@ -108,6 +108,13 @@ RAW = {"236825-80x80-mm-l-profil-elox": ("data/forras/236825_rajz.png", (16, 170
                                            "Anyag": "alumínium AlMgSi0,5 F25, eloxált"})}
 
 
+# a gyári lapon lévő szürke (kitöltött) profilnézet feketére színezve, a lap méreteivel; vonalas + kitöltött:
+# slug -> (forráskép, kivágás, szélesség, magasság, falvastagság, a falméret helye, render_mask további beállításai)
+GRAYVIEW = {"234235-35x35-mm-ives-sarokprofil-elox-d": (
+    "data/forras/234235_rajz_forgatott.png", (640, 160, 865, 360), None, "86", "1,5", ("v", 0.75),
+    dict(vdims=[(0, 69.7 / 86, "69,7"), (0, 38.9 / 86, "38,9")]))}
+
+
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
 PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (370, 110, 575, 240)),
           "232134-285-mm-i-koptato-profil-elox": ("data/forras/232134_lap.png", (95, 95, 250, 580)),
@@ -115,6 +122,8 @@ PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (37
 # adatok a küldött adatlapról
 SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
             "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"},
+            "234235-35x35-mm-ives-sarokprofil-elox-d": {"Tömeg": "1,412 kg/fm", "Anyag": "alumínium 6060 T6, eloxált",
+                                                        "Magasság": "86 mm", "Keresztmetszet": "523 mm²"},
             "237000-25x25-mm-ives-sarokprofil-elox": {"Tömeg": "1,99 kg/fm", "Anyag": "alumínium EN AW-6060, eloxált",
                                                       "Méret": "66,5 × 66,5 mm", "Belső méret": "25 mm (mindkét szár)"}}
 
@@ -517,14 +526,14 @@ def outline_mask(path, keep, erase=(), cav=14, holes=(), scale=4, r=0, shrink=0)
     return big[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
-def fill_mask(path, keep, thr=205, scale=6):
+def fill_mask(path, keep, thr=205, scale=6, blur=0.35):
     """Szürkén kitöltött profilkép (a falak tömören szürkék, az üregek fehérek) maszkja: a küszöbnél sötétebb
     képpontok a megadott területen, felnagyítva és simítva – a feketére színezés egyszerű megfelelője."""
     a = np.asarray(Image.open(ROOT / path).convert("L")).astype(np.float32)
     x0, y0, x1, y1 = keep
     a = 255 - a[y0:y1, x0:x1]
     big = cv2.resize(a, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
-    big = cv2.GaussianBlur(big, (0, 0), scale * 0.35) > 255 - thr
+    big = cv2.GaussianBlur(big, (0, 0), scale * blur) > 255 - thr
     n, lab, st, _ = cv2.connectedComponentsWithStats(big.astype(np.uint8), connectivity=8)
     m = lab == 1 + int(np.argmax(st[1:, 4]))
     ys, xs = np.where(m)
@@ -644,7 +653,7 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000,
     big = cv2.resize(m.astype(np.uint8) * 255, (round(W0 * k), round(H0 * k)), interpolation=cv2.INTER_LINEAR) > 127
     cnts, hier = cv2.findContours(big.astype(np.uint8), cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
     polys = [cv2.approxPolyDP(c, eps or (2.0 if outline else 1.2), True) for c in cnts]
-    ML, MT, MR, MB = 170 + (80 if vdims else 0), 170, 150, 150 + (40 if bottom else 0) + 75 * len(hdims)
+    ML, MT, MR, MB = 170 + 80 * len(vdims), 170, 150, 150 + (40 if bottom else 0) + 75 * len(hdims)
     h, w = big.shape
     canvas = np.full((h + MT + MB, w + ML + MR, 3), 255, np.uint8)
     shifted = [p + np.array([[ML, MT]]) for p in polys]
@@ -673,12 +682,13 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000,
 
     x0, y0, x1, y1 = ML, MT, ML + w, MT + h
     xw = x1 if wtop is None else ML + max(np.where(big[: int(wtop * h)].any(axis=0))[0]) + 1
-    # szélesség: felül
+    # szélesség: felül (wtext nélkül elmarad)
     yd = y0 - 75
-    d.line([(x0, y0 - 10), (x0, yd - 16)], fill="black", width=2)
-    d.line([(xw, y0 - 10), (xw, yd - 16)], fill="black", width=2)
-    dim((x0, yd), (xw, yd))
-    d.text(((x0 + xw) / 2, yd - 8), wtext, font=F, fill="black", anchor="mb")
+    if wtext:
+        d.line([(x0, y0 - 10), (x0, yd - 16)], fill="black", width=2)
+        d.line([(xw, y0 - 10), (xw, yd - 16)], fill="black", width=2)
+        dim((x0, yd), (xw, yd))
+        d.text(((x0 + xw) / 2, yd - 8), wtext, font=F, fill="black", anchor="mb")
     def vtext(xd, ya, yb, text):
         t = Image.new("RGBA", (220, 60), (255, 255, 255, 0))
         ImageDraw.Draw(t).text((110, 30), text, font=F, fill="black", anchor="mm")
@@ -686,14 +696,14 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000,
         img.paste(t, (int(xd - 48), int((ya + yb) / 2 - t.height / 2)), t)
 
     # további függőleges méretek (a magasság töredékeként: felső, alsó, felirat), a teljes magasság mellett belül
-    for fa, fb, text in vdims:
-        xi, ya, yb = x0 - 85, y0 + fa * h, y0 + fb * h
+    for i, (fa, fb, text) in enumerate(vdims):
+        xi, ya, yb = x0 - 85 - 80 * i, y0 + fa * h, y0 + fb * h
         for yy in (ya, yb):
             d.line([(x0 - 10, yy), (xi - 16, yy)], fill="black", width=2)
         dim((xi, ya), (xi, yb))
         vtext(xi, ya, yb, text)
     # magasság: balra (htext nélkül elmarad)
-    xd = x0 - (165 if vdims else 85)
+    xd = x0 - 85 - 80 * len(vdims)
     if htext:
         d.line([(x0 - 10, y0), (xd - 16, y0)], fill="black", width=2)
         d.line([(x0 - 10, y1), (xd - 16, y1)], fill="black", width=2)
@@ -814,6 +824,17 @@ def main():
         else:
             data[slug].get("specs", {}).pop("Falvastagság", None)
         print(slug, "vektoros")
+    for slug, (src, keep, wt, ht, tt, where, kw) in GRAYVIEW.items():
+        if slug not in data:
+            continue
+        m = fill_mask(src, keep, thr=215, blur=0.7)
+        img, *_ = render_mask(m.copy(), wt, ht, tt, where, outline=True, eps=0.8, **kw)
+        fill, *_ = render_mask(m.copy(), wt, ht, tt, where, eps=0.8, **kw)
+        data[slug]["images"] = [save_image(img, slug, "meretrajz"), save_image(fill, slug, "kitoltott")]
+        data[slug].update({"source": "Quadris gyári rajz", "sourceUrl": "", "sourceTitle": ""})
+        data[slug].setdefault("specs", {}).update(SPEC_FIX.get(slug, {}))
+        data[slug]["specs"]["Falvastagság"] = f"{tt} mm"
+        print(slug, "szürke nézetből")
     for slug, (src, crop, specs) in RAW.items():
         if slug not in data:
             continue
@@ -884,7 +905,7 @@ def main():
         data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "vázlatból")
-    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(VECTOR) + [x for k in GRAY for x in k] + [x for k in OUTLINE for x in k] + [x for k in EDSCHA_BLUE for x in k] + list(DARK) + list(RAW) + list(BLUE) + list(SKETCH) if s in data})
+    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(VECTOR) + [x for k in GRAY for x in k] + [x for k in OUTLINE for x in k] + [x for k in EDSCHA_BLUE for x in k] + list(DARK) + list(RAW) + list(GRAYVIEW) + list(BLUE) + list(SKETCH) if s in data})
 
 
 if __name__ == "__main__":

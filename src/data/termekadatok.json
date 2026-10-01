@@ -4227,18 +4227,21 @@
   ]
  },
  "234235-35x35-mm-ives-sarokprofil-elox-d": {
-  "source": "Quadris adatok",
+  "source": "Quadris gyári rajz",
   "sourceUrl": "",
-  "sourceTitle": "35x35 mm íves sarokprofil elox D",
+  "sourceTitle": "",
   "matchedCode": "",
   "specs": {
-   "Anyag": "alumínium, eloxált",
-   "Szárak": "35 × 35 mm"
+   "Anyag": "alumínium 6060 T6, eloxált",
+   "Szárak": "35 × 35 mm",
+   "Tömeg": "1,412 kg/fm",
+   "Magasság": "86 mm",
+   "Keresztmetszet": "523 mm²",
+   "Falvastagság": "1,5 mm"
   },
   "images": [
-   "/termekkepek/3d/234235-35x35-mm-ives-sarokprofil-elox-d-1.webp",
-   "/termekkepek/3d/234235-35x35-mm-ives-sarokprofil-elox-d-2.webp",
-   "/termekkepek/234235-35x35-mm-ives-sarokprofil-elox-d-1.webp"
+   "/termekkepek/234235-35x35-mm-ives-sarokprofil-elox-d-meretrajz.webp",
+   "/termekkepek/234235-35x35-mm-ives-sarokprofil-elox-d-kitoltott.webp"
   ]
  },
  "236817-n-r50-ives-felso-profil": {
