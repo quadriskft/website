@@ -44,6 +44,7 @@ SKETCH = {
 #          [("erase", x0, y0, x1, y1) / ("line", x0, y0, x1, y1)], szélesség, magasság, falvastagság, a falméret helye,
 #          [a szélesség csak a felső sávé])
 # A kettős vonallal rajzolt falak közti keskeny fehér sávok a profil anyaga, a széles fehér tartományok az üregek.
+# A Quadris kérésére vonalas rajz (a gyári laphoz hasonlóan): a kitöltött profil külső és belső körvonala.
 DECIN = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("6941", 40, 3, [], "30,3", "100", "1,9", ("h", 0.80)),
     "2018652-18-mm-keretprofil-erositett-elox": ("8652", 40, 3, [], "40", "126,5", "3", ("h", 0.72), 0.12),
@@ -167,7 +168,7 @@ def sketch_mask(path, scale=4, wipe=()):
     return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
-def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000):
+def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000, outline=False):
     H0, W0 = m.shape
     for fx0, fy0, fx1, fy1 in erase:
         m[int(fy0 * H0):int(fy1 * H0), int(fx0 * W0):int(fx1 * W0)] = False
@@ -177,12 +178,15 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000)
     k = target / max(H0, W0)
     big = cv2.resize(m.astype(np.uint8) * 255, (round(W0 * k), round(H0 * k)), interpolation=cv2.INTER_LINEAR) > 127
     cnts, hier = cv2.findContours(big.astype(np.uint8), cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
-    polys = [cv2.approxPolyDP(c, 1.2, True) for c in cnts]
+    polys = [cv2.approxPolyDP(c, 2.0 if outline else 1.2, True) for c in cnts]
     ML, MT, MR, MB = 170, 170, 150, 150
     h, w = big.shape
     canvas = np.full((h + MT + MB, w + ML + MR, 3), 255, np.uint8)
     shifted = [p + np.array([[ML, MT]]) for p in polys]
-    cv2.drawContours(canvas, shifted, -1, (0, 0, 0), thickness=cv2.FILLED, lineType=cv2.LINE_AA, hierarchy=hier)
+    if outline:  # vonalas rajz, mint a gyári lapon: a profil külső és belső körvonala
+        cv2.drawContours(canvas, shifted, -1, (0, 0, 0), thickness=4, lineType=cv2.LINE_AA)
+    else:
+        cv2.drawContours(canvas, shifted, -1, (0, 0, 0), thickness=cv2.FILLED, lineType=cv2.LINE_AA, hierarchy=hier)
     img = Image.fromarray(canvas)
     d = ImageDraw.Draw(img)
     F = ImageFont.truetype(FONT, 36)
@@ -261,7 +265,7 @@ def main():
         if slug not in data:
             continue
         m = decin_mask(code, cav, r, edits)
-        img, px, k, _, wpx = render_mask(m.copy(), wt, ht, tt, where, wtop=opt[0] if opt else None)
+        img, px, k, _, wpx = render_mask(m.copy(), wt, ht, tt, where, wtop=opt[0] if opt else None, outline=True)
         print(slug, "mért fal:", round(px / (wpx * k) * float(wt.replace(",", ".")), 2), "mm")
         url = save_image(img, slug, "meretrajz")
         data[slug]["images"] = [url]  # csak a Decin-rajz: minden korábbi kép (régi rajzok, 3D) törölve
