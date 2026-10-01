@@ -3420,6 +3420,21 @@
    "/termekkepek/226240-tomiteses-u-szego-40-mm-meretrajz.webp"
   ]
  },
+ "226671-400-mm-gumis-oldalfal-elox": {
+  "source": "BODEGA",
+  "sourceUrl": "https://www.bodega.it",
+  "sourceTitle": "Bodega TB36671 gyári rajz",
+  "specs": {
+   "Tömeg": "3,853 kg/fm",
+   "Ötvözet": "EN AW-6063 T66",
+   "Felület": "eloxált",
+   "Falvastagság": "1,7 mm"
+  },
+  "images": [
+   "/termekkepek/226671-400-mm-gumis-oldalfal-elox-meretrajz.webp",
+   "/termekkepek/226671-400-mm-gumis-oldalfal-elox-kitoltott.webp"
+  ]
+ },
  "226701-tomites-40-u-szegohoz": {
   "source": "Quadris katalóguslap",
   "specs": {},

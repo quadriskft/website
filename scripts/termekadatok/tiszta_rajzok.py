@@ -63,6 +63,7 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "226671-400-mm-gumis-oldalfal-elox": ("profil_36671", "400", "25", "1,7", ("v", 0.5)),
     "208477-cd2-100x30-mm-alafutasgatlo-elox-profil": ("profil_8477", "30,2", "100", "1,5", ("h", 0.85)),
     "2015290-15-mm-keretprofil-elox": ("profil_50290", "132", "68", "2,4", ("v", 0.45)),
     "6612226-hatso-oszlop-128-35-alu-elox-d": ("profil_12226", "128", "35", "3", ("v", 0.75)),
@@ -71,7 +72,9 @@ VECTOR = {
 
 
 # új adatlap (eddig nem volt képe): slug -> (forrás, URL, forrás címe)
-NEW = {"2015290-15-mm-keretprofil-elox": ("BODEGA", "https://www.bodega.it", "Bodega 50290 gyári rajz",
+NEW = {"226671-400-mm-gumis-oldalfal-elox": ("BODEGA", "https://www.bodega.it", "Bodega TB36671 gyári rajz",
+                                             {"Tömeg": "3,853 kg/fm", "Ötvözet": "EN AW-6063 T66", "Felület": "eloxált"}),
+       "2015290-15-mm-keretprofil-elox": ("BODEGA", "https://www.bodega.it", "Bodega 50290 gyári rajz",
                                           {"Tömeg": "1,763 kg/fm", "Ötvözet": "EN AW-6060 T6", "Felület": "eloxált"})}
 
 
@@ -213,6 +216,28 @@ def profil_8477():
     for n in notches:
         prof = prof.difference(n)
     return prof
+
+
+def profil_36671():
+    """Bodega TB36671 (400 mm-es gumis oldalfal): 400 × 25, falvastagság 1,7. Bal oldalt 18,5 mm-es csatlakozó fej
+    (felül lekerekített végű, alul T-horony, belül üreg) és 2,5 mm-es fal, utána a 119,4 mm-es zárt rész, 70°-os
+    ferde fallal (kívül R6,7, belül R5) le a középső, egyrétegű 1,7 mm-es lemezre, majd tükrösen a 130,4 mm-es zárt
+    rész a jobb véggel (a szaggatott vonal – a gumi – nincs a profil része)."""
+    from shapely.geometry import Point, Polygon, box
+    t = math.tan(math.radians(70))
+
+    def P(pts):
+        return Polygon(fillet([(x, y) for x, y, _ in pts], [r for *_, r in pts]))
+
+    outer = P([(0, 0, 0.5), (119.4, 0, 6.7), (119.4 + 23.3 / t, 23.3, 1), (269.6 - 23.3 / t, 23.3, 1), (269.6, 0, 6.7),
+               (400, 0, 1), (400, 25, 1), (0, 25, 0.5)])
+    o = 1.7 / math.sin(math.radians(70))
+    left = P([(21, 1.7, 1), (119.4 - o + 1.7 / t, 1.7, 5), (119.4 - o + 23.3 / t, 23.3, 1), (21, 23.3, 1)])
+    right = P([(269.6 + o - 1.7 / t, 1.7, 5), (398.3, 1.7, 1), (398.3, 23.3, 1), (269.6 + o - 23.3 / t, 23.3, 1)])
+    head = P([(10, 1.7, 1), (18.5, 1.7, 1), (18.5, 23.3, 1), (10, 23.3, 1)])
+    slot_top = box(-1, 2.15, 3.5, 6.15).union(Point(3.5, 4.15).buffer(2, 32))
+    slot_bot = box(-1, 19.85, 2.5, 21.85).union(box(2.5, 18.6, 6, 23.1).buffer(-0.4, join_style=1).buffer(0.4, join_style=1))
+    return outer.difference(left).difference(right).difference(head).difference(slot_top).difference(slot_bot)
 
 
 def vector_mask(geom, scale=30):
