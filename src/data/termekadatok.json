@@ -1663,7 +1663,10 @@
   "sourceUrl": "https://www.bodega.it",
   "sourceTitle": "Bodega 50290 gyári rajz",
   "specs": {
-   "Falvastagság": "2,4 mm"
+   "Falvastagság": "2,4 mm",
+   "Tömeg": "1,763 kg/fm",
+   "Ötvözet": "EN AW-6060 T6",
+   "Felület": "eloxált"
   },
   "images": [
    "/termekkepek/2015290-15-mm-keretprofil-elox-meretrajz.webp",

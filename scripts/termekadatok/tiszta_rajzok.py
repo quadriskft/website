@@ -70,7 +70,8 @@ VECTOR = {
 
 
 # új adatlap (eddig nem volt képe): slug -> (forrás, URL, forrás címe)
-NEW = {"2015290-15-mm-keretprofil-elox": ("BODEGA", "https://www.bodega.it", "Bodega 50290 gyári rajz")}
+NEW = {"2015290-15-mm-keretprofil-elox": ("BODEGA", "https://www.bodega.it", "Bodega 50290 gyári rajz",
+                                          {"Tömeg": "1,763 kg/fm", "Ötvözet": "EN AW-6060 T6", "Felület": "eloxált"})}
 
 
 def profil_6941():
@@ -455,6 +456,8 @@ def main():
     for slug, (fn, wt, ht, tt, where, *vd) in VECTOR.items():
         if slug not in data and slug in NEW:
             data[slug] = {"source": NEW[slug][0], "sourceUrl": NEW[slug][1], "sourceTitle": NEW[slug][2], "specs": {}, "images": []}
+        if slug in NEW:
+            data[slug]["specs"].update(NEW[slug][3])
         if slug not in data:
             continue
         m = vector_mask(globals()[fn]())
