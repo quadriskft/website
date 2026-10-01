@@ -55,7 +55,7 @@ DECIN = {
         ("clear", [(603.3, 430), (607, 430), (607, 444), (603.3, 444)]),
         ("fill", [(556, 432.9), (597.4, 432.9), (603.2, 436.5), (603.2, 441.8), (595.6, 441.8), (594.2, 439.6), (556, 439.6)]),
     ], "40", "126,5", "3", ("h", 0.72), 0.12, 5),
-    "2073902-i-90-csavarozhato-kereszttarto": ("10902", 90, 3, [], "85", "90", "3", ("h", 0.40), None, 5, 4),
+    "2073902-i-90-csavarozhato-kereszttarto": ("10902", 90, 3, [], "85", "90", "3", ("h", 0.40), None, 5, 6),
 }
 
 
@@ -195,7 +195,7 @@ def decin_mask(code, cav_px, r, edits=(), k=None, smooth=0):
     m = lab == 1 + int(np.argmax(st[1:, 4]))
     n, lab, st, _ = cv2.connectedComponentsWithStats((~m).astype(np.uint8), connectivity=4)
     for i in range(1, n):  # apró lyukak (szkennelési pöttyök) a profil anyagában
-        if st[i, 4] < 400:
+        if st[i, 4] < 3000:
             m[lab == i] = True
     ys, xs = np.where(m)
     return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
@@ -414,14 +414,17 @@ def main():
         img, px, k, _, wpx = render_mask(m.copy(), wt, ht, tt, where, wtop=opt[0] if opt else None, outline=True)
         print(slug, "mért fal:", round(px / (wpx * k) * float(wt.replace(",", ".")), 2), "mm")
         url = save_image(img, slug, "meretrajz")
-        data[slug]["images"] = [url]  # csak a Decin-rajz: minden korábbi kép (régi rajzok, 3D) törölve
+        fill, *_ = render_mask(m.copy(), wt, ht, tt, where, wtop=opt[0] if opt else None)  # kitöltött, mint a 227046
+        # csak a Decin-rajz (vonalas + kitöltött): minden korábbi kép (régi rajzok, 3D) törölve
+        data[slug]["images"] = [url, save_image(fill, slug, "kitoltott")]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
     for slug, (fn, wt, ht, tt, where, *vd) in VECTOR.items():
         if slug not in data:
             continue
-        img, *_ = render_mask(vector_mask(globals()[fn]()), wt, ht, tt, where, outline=True, eps=0.5, vdims=vd[0] if vd else ())
-        url = save_image(img, slug, "meretrajz")
-        data[slug]["images"] = [url]
+        m = vector_mask(globals()[fn]())
+        img, *_ = render_mask(m.copy(), wt, ht, tt, where, outline=True, eps=0.5, vdims=vd[0] if vd else ())
+        fill, *_ = render_mask(m.copy(), wt, ht, tt, where, eps=0.5, vdims=vd[0] if vd else ())  # kitöltött, mint a 227046
+        data[slug]["images"] = [save_image(img, slug, "meretrajz"), save_image(fill, slug, "kitoltott")]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "vektoros")
     for slug, (src, wt, ht, tt, where) in BLUE.items():
