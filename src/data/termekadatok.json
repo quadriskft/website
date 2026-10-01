@@ -1685,9 +1685,7 @@
    "Felület": "eloxált",
    "Falvastagság": "3 mm"
   },
-  "images": [
-   "/termekkepek/2018652-18-mm-keretprofil-erositett-elox-meretrajz.webp"
-  ]
+  "images": []
  },
  "202274-u-100x50x50x5-mm-profil": {
   "source": "ALCOMET",
@@ -1989,9 +1987,7 @@
    "Felület": "eloxált",
    "Falvastagság": "1,9 mm"
   },
-  "images": [
-   "/termekkepek/206941-cd-100x30-mm-alafutasgatlo-elox-profil-meretrajz.webp"
-  ]
+  "images": []
  },
  "207315-i-108-kereszttarto": {
   "source": "Alu-SV",
@@ -8468,10 +8464,7 @@
    "Felület": "eloxált",
    "Falvastagság": "3 mm"
   },
-  "images": [
-   "/termekkepek/6612225-elso-oszlop-90-70-alu-elox-d-meretrajz.webp",
-   "/termekkepek/6612225-elso-oszlop-90-70-alu-elox-d-3d.webp"
-  ]
+  "images": []
  },
  "6612226-hatso-oszlop-128-35-alu-elox-d": {
   "source": "Constellium rajz",
@@ -8490,10 +8483,7 @@
    "Felület": "eloxált",
    "Falvastagság": "3 mm"
   },
-  "images": [
-   "/termekkepek/6612226-hatso-oszlop-128-35-alu-elox-d-meretrajz.webp",
-   "/termekkepek/6612226-hatso-oszlop-128-35-alu-elox-d-3d.webp"
-  ]
+  "images": []
  },
  "6613365-al-eco-merevito-profil-natur": {
   "source": "Alu-SV",

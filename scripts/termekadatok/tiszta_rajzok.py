@@ -44,13 +44,7 @@ SKETCH = {
 #          [a szélesség csak a felső sávé])
 # A kettős vonallal rajzolt falak közti keskeny fehér sávok a profil anyaga, a széles fehér tartományok az üregek.
 # A Quadris kérésére vonalas rajz (a gyári laphoz hasonlóan): a kitöltött profil külső és belső körvonala.
-DECIN = {
-    "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("6941", 40, 3, [], "30,3", "100", "1,9", ("h", 0.80)),
-    "2018652-18-mm-keretprofil-erositett-elox": ("8652", 40, 3, [], "40", "126,5", "3", ("h", 0.72), 0.12),
-    "6612225-elso-oszlop-90-70-alu-elox-d": ("12225", 110, 12, [], "90", "70", "3", ("v", 0.45)),
-    "6612226-hatso-oszlop-128-35-alu-elox-d": ("12226", 110, 12, [("erase", 145, 66, 272, 440), ("line", 1446, 74, 1446, 236),
-                                                                  ("line", 1409, 216, 1409, 236)], "128", "35", "3", ("v", 0.75)),
-}
+DECIN = {}  # a Quadris kérésére a 206941, 2018652, 6612225, 6612226 rajza törölve – új forrást keres
 
 
 def decin_mask(code, cav_px, r, edits=()):

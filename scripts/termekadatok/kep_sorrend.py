@@ -35,7 +35,7 @@ def main():
                 print(f"  hiányzó kép kivéve: {slug}: {u}")
                 missing += 1
         d3 = f"/termekkepek/{slug}-3d.webp"
-        if (ROOT / "public" / d3.lstrip("/")).exists() and is_protected(d3):
+        if (ROOT / "public" / d3.lstrip("/")).exists() and is_protected(d3) and d3.rsplit("/", 1)[-1] not in kizart:
             rest = [u for u in exists if u != d3]
             pos = 1 if rest and rest[0].endswith(("-rajz.webp", "-meretrajz.webp")) else 0
             new = rest[:pos] + [d3] + rest[pos:]
