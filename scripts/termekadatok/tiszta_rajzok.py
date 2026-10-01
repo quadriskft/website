@@ -44,17 +44,25 @@ SKETCH = {
 #          [a szélesség csak a felső sávé])
 # A kettős vonallal rajzolt falak közti keskeny fehér sávok a profil anyaga, a széles fehér tartományok az üregek.
 # A Quadris kérésére vonalas rajz (a gyári laphoz hasonlóan): a kitöltött profil külső és belső körvonala.
-DECIN = {}  # a Quadris kérésére a 206941, 2018652, 6612225, 6612226 rajza törölve – új forrást keres
+# (a 206941, 6612225, 6612226 rajza a Quadris kérésére törölve – új forrást keres)
+DECIN = {
+    # az alsó, ferde fülecske vékony: kisebb simítás, hogy megmaradjon
+    # az alsó, ferde fülecske és a talp letört vége a szkenből nem jön ki tisztán: kézzel pótolva
+    "2018652-18-mm-keretprofil-erositett-elox": ("8652", 40, 3, [
+        ("fill", [(553.8, 436), (557.5, 436), (558.6, 440.3), (567.6, 457.0), (566.6, 459.3), (564.2, 459.2), (553.8, 440.6)]),
+        ("clear", [(597.4, 432.9), (597.4, 430), (607, 430), (607, 436.5), (603.2, 436.5)]),
+        ("clear", [(559, 439.7), (594.2, 439.7), (595.6, 441.8), (595.6, 445), (561.8, 445), (559.2, 440.4)]),
+        ("clear", [(603.3, 430), (607, 430), (607, 444), (603.3, 444)]),
+        ("fill", [(556, 432.9), (597.4, 432.9), (603.2, 436.5), (603.2, 441.8), (595.6, 441.8), (594.2, 439.6), (556, 439.6)]),
+    ], "40", "126,5", "3", ("h", 0.72), 0.12, 5),
+}
 
 
-def decin_mask(code, cav_px, r, edits=()):
-    img = np.asarray(_decin_lines(C, code)).copy()
-    for kind, x0, y0, x1, y1 in edits:
-        if kind == "erase":
-            img[y0:y1, x0:x1] = 255
-        else:
-            cv2.line(img, (x0, y0), (x1, y1), 0, 4)
-    ink = np.pad((img < 128).astype(np.uint8), 40)
+def decin_mask(code, cav_px, r, edits=(), k=None):
+    cfg = C.DRAWINGS[code]
+    img = np.asarray(_decin_lines(C, code))
+    P = 40
+    ink = np.pad((img < 128).astype(np.uint8), P)
     se = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2 * r + 1, 2 * r + 1))
     ink = cv2.dilate(ink, se)  # a szkennelt vonalak kis szakadásainak bezárása
     white = (1 - ink).astype(np.uint8)
@@ -67,8 +75,12 @@ def decin_mask(code, cav_px, r, edits=()):
             solid[comp] = False
     m = cv2.erode(solid.astype(np.uint8), se)
     m = cv2.morphologyEx(m, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (11, 11)))  # kettős vonal maradéka
-    k = 15 if r > 5 else 13
+    k = k or (15 if r > 5 else 13)
     m = cv2.morphologyEx(m, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k)))  # jelölések, csonkok
+    x0, y0 = cfg["crop"][:2]
+    for kind, poly in edits:  # kézi javítás a PDF-oldal koordinátáiban [pt]: ("fill" / "clear", sokszög)
+        pts = np.array([[round((x - x0) * C.ZOOM) + P, round((y - y0) * C.ZOOM) + P] for x, y in poly], np.int32)
+        cv2.fillPoly(m, [pts], 1 if kind == "fill" else 0, lineType=cv2.LINE_8)
     n, lab, st, _ = cv2.connectedComponentsWithStats(m, connectivity=8)
     m = lab == 1 + int(np.argmax(st[1:, 4]))
     ys, xs = np.where(m)
@@ -81,7 +93,7 @@ def _decin_lines(C, code):
     saved = {k: cfg.get(k) for k in ("keep", "draw", "bold")}
     cfg.update(keep=[], draw=[], bold=1)
     try:
-        return C.render(code)
+        return C.render(code, trim=False)
     finally:
         for k, v in saved.items():
             if v is None:
@@ -274,7 +286,7 @@ def main():
     for slug, (code, cav, r, edits, wt, ht, tt, where, *opt) in DECIN.items():
         if slug not in data:
             continue
-        m = decin_mask(code, cav, r, edits)
+        m = decin_mask(code, cav, r, edits, opt[1] if len(opt) > 1 else None)
         img, px, k, _, wpx = render_mask(m.copy(), wt, ht, tt, where, wtop=opt[0] if opt else None, outline=True)
         print(slug, "mért fal:", round(px / (wpx * k) * float(wt.replace(",", ".")), 2), "mm")
         url = save_image(img, slug, "meretrajz")
