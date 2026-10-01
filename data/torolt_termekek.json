@@ -796,5 +796,19 @@
   "code": "232121",
   "date": "2026-10-01",
   "reason": "Quadris kérés: törölve"
+ },
+ "232125-dobozos-keret-elox-or-130-mm-nyitott": {
+  "name": "Dobozos keret elox OR 130 mm nyitott",
+  "supplier": "RE-ALL",
+  "code": "232125",
+  "date": "2026-10-01",
+  "reason": "Quadris kérés: törölve"
+ },
+ "232156-50x174-mm-l-belso-vedoprofil": {
+  "name": "50x174 mm L Belső védőprofil",
+  "supplier": "RE-ALL",
+  "code": "232156",
+  "date": "2026-10-01",
+  "reason": "Quadris kérés: törölve"
  }
 }
