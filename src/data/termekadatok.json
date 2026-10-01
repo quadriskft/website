@@ -4574,18 +4574,23 @@
   ]
  },
  "237905-n-25x35-mm-ives-sarokprofil-r50": {
-  "source": "Quadris adatok",
+  "source": "Quadris gyári rajz",
   "sourceUrl": "",
-  "sourceTitle": "25x35 mm íves sarokprofil R50",
+  "sourceTitle": "",
   "matchedCode": "",
   "specs": {
-   "Anyag": "alumínium",
-   "Szárak": "25 × 35 mm"
+   "Anyag": "alumínium 6060",
+   "Szárak": "25 × 35 mm",
+   "Falvastagság": "2,5 mm",
+   "Méret": "102 × 92 mm",
+   "Tömeg": "2,092 kg/fm",
+   "Belső nyílás": "25,5 mm",
+   "Ív": "R50"
   },
   "images": [
-   "/termekkepek/3d/237905-n-25x35-mm-ives-sarokprofil-r50-1.webp",
-   "/termekkepek/3d/237905-n-25x35-mm-ives-sarokprofil-r50-2.webp",
-   "/termekkepek/237905-n-25x35-mm-ives-sarokprofil-r50-1.webp"
+   "/termekkepek/237905-n-25x35-mm-ives-sarokprofil-r50-kitoltott.webp",
+   "/termekkepek/237905-n-25x35-mm-ives-sarokprofil-r50-meretrajz.webp",
+   "/termekkepek/237905-n-25x35-mm-ives-sarokprofil-r50-gyari-rajz.webp"
   ]
  },
  "237971-hutos-keretprofil-nyitott-elox": {

@@ -63,6 +63,8 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "237905-n-25x35-mm-ives-sarokprofil-r50": ("profil_7905", "102", "92", "2,5", ("h", 0.85),
+                                               dict(idims=[("h", 0.72, 2.5 / 102, 28 / 102, "25,5")])),
     "237005-142-mm-i-koptato-profil-elox": ("profil_7005", "142", None, "", None),
     "237461-50x260-mm-l-belso-vedoprofil-elox": ("profil_7461", "260", "50", "2,5", ("v", 0.6), dict(walls=[("hx", 0.62, 0.005, "3")])),
     "237461-n-50x260-mm-l-belso-vedoprofil": ("profil_7461", "260", "50", "2,5", ("v", 0.6), dict(walls=[("hx", 0.62, 0.005, "3")])),
@@ -112,6 +114,9 @@ RAW = {"236825-80x80-mm-l-profil-elox": ("data/forras/236825_rajz.png", (16, 170
        "237461-50x260-mm-l-belso-vedoprofil-elox": ("data/forras/237461_rajz.png", (12, 136, 740, 445),
                                                     {"Méret": "50 × 260 mm", "Falvastagság": "2 mm", "Tömeg": "1,962 kg/fm",
                                                      "Anyag": "alumínium 6060, eloxált"}),
+       "237905-n-25x35-mm-ives-sarokprofil-r50": ("data/forras/237905_rajz.webp", (150, 292, 770, 724),
+                                                  {"Méret": "102 × 92 mm", "Falvastagság": "2,5 mm", "Tömeg": "2,092 kg/fm",
+                                                   "Belső nyílás": "25,5 mm", "Ív": "R50", "Anyag": "alumínium 6060"}),
        "237461-n-50x260-mm-l-belso-vedoprofil": ("data/forras/237461_rajz.png", (12, 136, 740, 445),
                                                  {"Méret": "50 × 260 mm", "Falvastagság": "2 mm", "Tömeg": "1,962 kg/fm",
                                                   "Anyag": "alumínium 6060"})}
@@ -428,6 +433,19 @@ def profil_7005():
     for c in (10.8, 43.4, 98.6, 131.2):  # hornyok a hátoldalon
         g = g.difference(box(c - nw / 2, hi - nd, c + nw / 2, hi + 1))
     return g.buffer(0.15, join_style=1).buffer(-0.3, join_style=1).buffer(0.15, join_style=1)
+
+
+def profil_7905():
+    """237905 (25×35 mm-es íves sarokprofil R50, Alcan Děčín 7905): 102 × 92, falvastagság 2,5; kívül R50-es ív a bal
+    falból a felső perembe, zárt kamra (jobb oldali fal x = 51,5–54, alatta a 38–40,5 magasságú borda 77-ig, a belső
+    fal x = 28–30,5 y = 70-ig, a bal alsó borda y = 47,5–50); a 25,5 mm-es nyílás a bal fal és a belső fal között."""
+    from shapely.geometry import Point, box
+    disk = lambda r: Point(50, 50).buffer(r, 256)
+    outer = disk(50).intersection(box(0, 0, 54, 40.5).union(box(0, 0, 30.5, 50))).union(box(50, 0, 54, 40.5))
+    hole = disk(47.5).intersection(box(0, 0, 51.5, 38).union(box(0, 0, 28, 47.5))).union(box(50, 2.5, 51.5, 38))
+    g = outer.difference(hole).union(box(54, 0, 102, 2.5)).union(box(54, 38, 77, 40.5))
+    g = g.union(box(28, 50, 30.5, 70)).union(box(0, 50, 2.5, 92))
+    return g.buffer(1.2, join_style=1).buffer(-1.7, join_style=1).buffer(0.5, join_style=1)
 
 
 def profil_7461():
