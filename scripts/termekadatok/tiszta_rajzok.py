@@ -409,27 +409,28 @@ def profil_237000():
 def profil_7461():
     """237461 (50×260 mm-es L belső védőprofil, Constellium 7461): 50 magas, 260 hosszú, falvastagság 2; a sarok
     kívül R7,5, belül R5 (ott 2,5 vastag); a függőleges szár felső 15 mm-e 2,5 vastag, lekerekített véggel; a lemezen
-    három 20 mm-es kiemelt borda (4 mm-ig, 2-2 R2 horonnyal, 8,5 osztással) 57,4 / 119,8 / 182,3 mm-nél, a végén
-    horonnyal és lejtővel záródó perem (a gyári rajz és a Quadris által küldött részletek szerint)."""
+    három 20 mm-es, felül egyenes kiemelt borda (4 mm-ig, alul 2 db 8,5 mm-es zsebbel) 57,4 / 119,8 / 182,3 mm-nél, a
+    végén zsebbel és lejtővel záródó perem (a gyári rajz és a Quadris által küldött részletek szerint)."""
     from shapely.geometry import Point, Polygon
     from shapely.ops import unary_union
     pts = [(0, 0, 1.2), (2.5, 0, 1.2), (2.5, 15, 0.5), (2, 16, 0.5), (2, 48, 5), (260, 48, 0), (260, 50, 0), (0, 50, 7.5)]
     base = Polygon(fillet([(x, y) for x, y, _ in pts], [r for *_, r in pts]))
-    from shapely.geometry import LineString, box
+    from shapely.geometry import box
 
-    def dip(c):  # U alakú bemélyedés a lemez középvonalán: függőleges oldalak, lekerekített alj
-        arc = [(c - 1.5 * math.cos(a), 47.5 + 1.5 * math.sin(a)) for a in np.linspace(0, math.pi, 13)]
-        return [(c - 1.5, 47)] + arc + [(c + 1.5, 47)]
+    def pocket(xa, xb):  # alulról nyitott zseb: lekerekített (R1,5) felső sarkok, 2 mm anyag marad felette
+        r = 1.5
+        return Polygon(fillet([(xa, 50.5), (xa, 48), (xb, 48), (xb, 50.5)], [0, r, r, 0]))
 
-    # a borda a 2 mm-es lemez felhajlítása (2 mm-rel feljebb, 2 mm-es rámpákkal), benne két U bemélyedés 8,5 osztással;
-    # a lemez végig 2 mm vastag, alatta üreg
+    # a borda felül egyenes, 20 mm-es kiemelt sáv (2 mm-rel feljebb, 45°-os 2 mm-es rámpákkal); alul két 8,5 mm-es
+    # zseb, köztük 3 mm-es középső borda a lemez aljáig
     g = base
     for x0 in (57.4, 119.8, 182.3):
-        line = [(x0 - 0.5, 49), (x0 + 2, 47)] + dip(x0 + 5.75) + dip(x0 + 14.25) + [(x0 + 18, 47), (x0 + 20.5, 49)]
-        g = g.difference(box(x0, 47.9, x0 + 20, 50.1)).union(LineString(line).buffer(1, cap_style=2, join_style=1))
-    end = [(243.5, 49), (246, 47)] + dip(250) + [(253, 47), (259.4, 47.9)]  # a záró perem: felhajlás, horony, lejtő
-    g = g.difference(box(244, 47.9, 261, 50.1)).union(LineString(end).buffer(1, cap_style=1, join_style=1))
-    return g.buffer(0.3, join_style=1).buffer(-0.3, join_style=1)
+        g = g.union(Polygon([(x0 - 2, 48.5), (x0 - 2, 48), (x0, 46), (x0 + 20, 46), (x0 + 22, 48), (x0 + 22, 48.5)]))
+        g = g.difference(pocket(x0, x0 + 8.5)).difference(pocket(x0 + 11.5, x0 + 20))
+    # záró perem: 2 mm rámpa, 8 mm egyenes, 7 mm lejtő a végéig; alul 8,5 mm-es zseb 2 mm-rel a rámpa kezdete után
+    g = g.union(Polygon([(243, 48.5), (243, 48), (245, 46), (253, 46), (260, 48), (260, 48.5)]))
+    g = g.difference(pocket(245, 253.5))
+    return g.buffer(0.6, join_style=1).buffer(-1.0, join_style=1).buffer(0.4, join_style=1)
 
 
 def vector_mask(geom, scale=30):
