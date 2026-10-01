@@ -251,10 +251,31 @@ def _decin_lines(C, code):
                 cfg[k] = v
 
 
+# szürke kitöltésű, méret nélküli gyári képből, kitöltött fekete rajz a 227046 mintájára:
+# slugok -> (forráskép, szélesség, magasság, alsó szélesség)
+GRAY = {
+    tuple(f"e-compact-tetoprofil-900407-{n}" for n in (5000, 5600, 6600, 7800, 8000)):
+        ("data/forras/e_compact_a.png", "43", "112", "33"),
+}
+
+
 # színes (kék kitöltésű) gyári rajzból: slug -> (forráskép, szélesség, magasság, falvastagság vagy None = mérve, a falméret helye)
 BLUE = {
     "207833-100x30-mm-alafutasgatlo-elox-profil": ("data/forras/207833_100x30_kek.png", "100", "30", None, ("v", 0.25)),
 }
+
+
+def gray_mask(path, scale=6, inset=6):
+    """Szürke kitöltésű, sötét körvonalú (méret nélküli) profilkép maszkja: a nem fehér képpontok legnagyobb
+    összefüggő tartománya (a lapkeret nélkül), felnagyítva és simítva."""
+    a = np.asarray(Image.open(ROOT / path).convert("L")).astype(np.float32)
+    a = a[inset:-inset, inset:-inset]
+    big = cv2.resize(255 - a, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
+    big = cv2.GaussianBlur(big, (0, 0), scale * 0.4) > 20
+    n, lab, st, _ = cv2.connectedComponentsWithStats(big.astype(np.uint8), connectivity=8)
+    m = lab == 1 + int(np.argmax(st[1:, 4]))
+    ys, xs = np.where(m)
+    return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
 def blue_mask(path, scale=4):
@@ -339,7 +360,7 @@ def sketch_mask(path, scale=4, wipe=()):
     return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
-def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000, outline=False, eps=None, vdims=()):
+def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000, outline=False, eps=None, vdims=(), bottom=None):
     H0, W0 = m.shape
     for fx0, fy0, fx1, fy1 in erase:
         m[int(fy0 * H0):int(fy1 * H0), int(fx0 * W0):int(fx1 * W0)] = False
@@ -350,7 +371,7 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000,
     big = cv2.resize(m.astype(np.uint8) * 255, (round(W0 * k), round(H0 * k)), interpolation=cv2.INTER_LINEAR) > 127
     cnts, hier = cv2.findContours(big.astype(np.uint8), cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
     polys = [cv2.approxPolyDP(c, eps or (2.0 if outline else 1.2), True) for c in cnts]
-    ML, MT, MR, MB = 170 + (80 if vdims else 0), 170, 150, 150
+    ML, MT, MR, MB = 170 + (80 if vdims else 0), 170, 150, 150 + (40 if bottom else 0)
     h, w = big.shape
     canvas = np.full((h + MT + MB, w + ML + MR, 3), 255, np.uint8)
     shifted = [p + np.array([[ML, MT]]) for p in polys]
@@ -404,6 +425,15 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000,
     d.line([(x0 - 10, y1), (xd - 16, y1)], fill="black", width=2)
     dim((xd, y0), (xd, y1))
     vtext(xd, y0, y1, htext)
+    if bottom:  # alsó szélességméret: a legalsó sor bal szélétől a profil jobb széléig (pl. az alsó doboz)
+        cols = np.where(big[-max(2, h // 100):].any(axis=0))[0]
+        xa, yb = ML + cols.min(), y1 + 75
+        d.line([(xa, y1 + 10), (xa, yb + 16)], fill="black", width=2)
+        d.line([(x1, y1 + 10), (x1, yb + 16)], fill="black", width=2)
+        dim((xa, yb), (x1, yb))
+        d.text(((xa + x1) / 2, yb + 8), bottom, font=F, fill="black", anchor="mt")
+    if where is None:
+        return img, 0, k, (W0, H0), (xw - x0) / k
     # falvastagság
     kind, frac = where
     if kind == "h":  # a bal oldali falon át, adott magasságban
@@ -466,6 +496,16 @@ def main():
         data[slug]["images"] = [save_image(img, slug, "meretrajz"), save_image(fill, slug, "kitoltott")]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "vektoros")
+    for slugs, (src, wt, ht, bt) in GRAY.items():
+        m = gray_mask(src)
+        m = cv2.erode(m.astype(np.uint8), np.ones((5, 5), np.uint8))  # a forrás sötét körvonala kívül van
+        m = cv2.GaussianBlur(m.astype(np.float32), (0, 0), 3) > 0.5  # a kis kép recéinek kisimítása
+        img, *_ = render_mask(m, wt, ht, "", None, eps=1.0, bottom=bt)
+        for slug in slugs:
+            if slug in data:
+                url = save_image(img, slug, "meretrajz")
+                data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
+                print(slug, "szürke képből")
     for slug, (src, wt, ht, tt, where) in BLUE.items():
         if slug not in data:
             continue
@@ -485,7 +525,7 @@ def main():
         data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "vázlatból")
-    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(VECTOR) + list(BLUE) + list(SKETCH) if s in data})
+    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(VECTOR) + [x for k in GRAY for x in k] + list(BLUE) + list(SKETCH) if s in data})
 
 
 if __name__ == "__main__":
