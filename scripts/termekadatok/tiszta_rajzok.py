@@ -116,6 +116,11 @@ GRAYVIEW = {"234235-35x35-mm-ives-sarokprofil-elox-d": (
          idims=[("h", 0.66, 0.5736, 0.9553, "34,5")]))}  # a belső nyílás
 
 
+# kész képek a Quadris kérésére, ebben a sorrendben (a többi kép kikerül): slug -> [(forráskép, utótag)]
+IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"),  # a megszűnt 5000 mm-es változat képe
+                                           ("data/forras/alu_zsaner_tiszta.png", "meretrajz")]}  # idegen cikkszámok nélkül
+
+
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
 PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (370, 110, 575, 240)),
           "232134-285-mm-i-koptato-profil-elox": ("data/forras/232134_lap.png", (95, 95, 250, 580)),
@@ -825,6 +830,10 @@ def main():
         else:
             data[slug].get("specs", {}).pop("Falvastagság", None)
         print(slug, "vektoros")
+    for slug, items in IMAGESET.items():
+        if slug in data:
+            data[slug]["images"] = [save_image(Image.open(ROOT / src), slug, suf) for src, suf in items]
+            print(slug, "képkészlet")
     for slug, (src, keep, wt, ht, tt, where, kw) in GRAYVIEW.items():
         if slug not in data:
             continue
@@ -906,7 +915,7 @@ def main():
         data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "vázlatból")
-    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(VECTOR) + [x for k in GRAY for x in k] + [x for k in OUTLINE for x in k] + [x for k in EDSCHA_BLUE for x in k] + list(DARK) + list(RAW) + list(GRAYVIEW) + list(BLUE) + list(SKETCH) if s in data})
+    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(VECTOR) + [x for k in GRAY for x in k] + [x for k in OUTLINE for x in k] + [x for k in EDSCHA_BLUE for x in k] + list(DARK) + list(RAW) + list(GRAYVIEW) + list(IMAGESET) + list(BLUE) + list(SKETCH) if s in data})
 
 
 if __name__ == "__main__":

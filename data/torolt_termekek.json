@@ -810,5 +810,12 @@
   "code": "232156",
   "date": "2026-10-01",
   "reason": "Quadris kérés: törölve"
+ },
+ "237310-20-dupla-alu-zsaner-5000-mm": {
+  "name": "Dupla alu zsanér 5000 mm",
+  "supplier": "",
+  "code": "237310/20",
+  "date": "2026-10-01",
+  "reason": "Quadris kérés: csak a sima (hossz nélküli) maradjon"
  }
 }
