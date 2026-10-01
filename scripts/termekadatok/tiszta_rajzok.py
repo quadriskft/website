@@ -55,6 +55,15 @@ DECIN = {
         ("clear", [(603.3, 430), (607, 430), (607, 444), (603.3, 444)]),
         ("fill", [(556, 432.9), (597.4, 432.9), (603.2, 436.5), (603.2, 441.8), (595.6, 441.8), (594.2, 439.6), (556, 439.6)]),
     ], "40", "126,5", "3", ("h", 0.72), 0.12, 5),
+    # 206941: a jobb oldali (30,3-as) méret segédvonala a fal 1 mm-es mélyítése mellett fut – kivéve; a felső bordázat a
+    # „A” részletkör nélkül, öt egyforma horonnyal újrarajzolva; a horony alsó falának szakadása pótolva
+    "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("6941", 40, 3, [
+        ("clear", [(568.6, 489), (578, 489), (578, 688), (568.6, 688)]),
+        ("clear", [(472, 425), (566, 425), (566, 434.5), (472, 434.5)]),
+        ("fill", [(476, 434.5), (562, 434.5), (562, 446.2), (476, 446.2)]),
+        *[("clear", [(c - 3.6, 434.4), (c + 3.6, 434.4), (c + 2.6, 438.9), (c - 2.6, 438.9)]) for c in (490.2, 504.5, 518.8, 533.1, 547.4)],
+        ("fill", [(475, 620.7), (508.5, 620.7), (508.5, 626.6), (475, 626.6)]),
+    ], "30,3", "100", "1,9", ("h", 0.80), None, 9, 4),
     "2073902-i-90-csavarozhato-kereszttarto": ("10902", 90, 3, [], "85", "90", "3", ("h", 0.40), None, 5, 4),
 }
 
@@ -86,6 +95,10 @@ def decin_mask(code, cav_px, r, edits=(), k=None, smooth=0):
         m = (cv2.GaussianBlur(m.astype(np.float32), (0, 0), smooth) > 0.5).astype(np.uint8)
     n, lab, st, _ = cv2.connectedComponentsWithStats(m, connectivity=8)
     m = lab == 1 + int(np.argmax(st[1:, 4]))
+    n, lab, st, _ = cv2.connectedComponentsWithStats((~m).astype(np.uint8), connectivity=4)
+    for i in range(1, n):  # apró lyukak (szkennelési pöttyök) a profil anyagában
+        if st[i, 4] < 400:
+            m[lab == i] = True
     ys, xs = np.where(m)
     return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
