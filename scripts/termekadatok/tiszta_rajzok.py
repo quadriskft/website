@@ -63,8 +63,8 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
-    "237461-50x260-mm-l-belso-vedoprofil-elox": ("profil_7461", "260", "50", "2,5", ("h", 0.3), dict(walls=[("hx", 0.62, 0.005, "3")])),
-    "237461-n-50x260-mm-l-belso-vedoprofil": ("profil_7461", "260", "50", "2,5", ("h", 0.3), dict(walls=[("hx", 0.62, 0.005, "3")])),
+    "237461-50x260-mm-l-belso-vedoprofil-elox": ("profil_7461", "260", "50", "2,5", ("v", 0.6), dict(walls=[("hx", 0.62, 0.005, "3")])),
+    "237461-n-50x260-mm-l-belso-vedoprofil": ("profil_7461", "260", "50", "2,5", ("v", 0.6), dict(walls=[("hx", 0.62, 0.005, "3")])),
     "237000-25x25-mm-ives-sarokprofil-elox": ("profil_237000", "66,5", "66,5", "3", ("h", 0.8),
                                               dict(idims=[("v", 60 / 66.5, 3.2 / 66.5, 28.3 / 66.5, "25"),
                                                           ("h", 60 / 66.5, 3.2 / 66.5, 28.3 / 66.5, "25")])),
