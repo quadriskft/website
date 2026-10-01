@@ -3282,6 +3282,30 @@
    "/termekkepek/223563-tomites-also-zaroprofilhoz-1.webp"
   ]
  },
+ "225455-n-u-35-mm-szego-profil": {
+  "source": "Quadris katalóguslap",
+  "specs": {
+   "Szélesség": "40 mm",
+   "Magasság": "40 mm",
+   "Belső szélesség": "35 mm",
+   "Falvastagság": "2,5 mm (fenék 4 mm)"
+  },
+  "images": [
+   "/termekkepek/225455-n-u-35-mm-szego-profil-meretrajz.webp"
+  ]
+ },
+ "225455-u-35-mm-szego-profil-elox": {
+  "source": "Quadris katalóguslap",
+  "specs": {
+   "Szélesség": "40 mm",
+   "Magasság": "40 mm",
+   "Belső szélesség": "35 mm",
+   "Falvastagság": "2,5 mm (fenék 4 mm)"
+  },
+  "images": [
+   "/termekkepek/225455-u-35-mm-szego-profil-elox-meretrajz.webp"
+  ]
+ },
  "225549-400-mm-peremes-oldalfal-elox": {
   "source": "BODEGA",
   "sourceUrl": "https://www.bodega.it",

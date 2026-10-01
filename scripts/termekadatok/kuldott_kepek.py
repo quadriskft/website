@@ -127,6 +127,12 @@ PREPEND["223032-spitz-profil-100-mm"] = ([("data/forras/bodega_53032_rajz.png", 
 PREPEND["226887-spitz-profil-140-mm-magas"] = ([("data/forras/exlabesa_6886_rajz.png", "meretrajz")],
                                                {"Szélesség": "140 mm", "Magasság": "25 mm", "Falvastagság": "1,6 mm",
                                                 "Tömeg": "1,682 kg/m"})
+# 225455 és 225455/n („u” 35 mm szegő, Bodega 54550): a gyári rajz alapján újrarajzolva – csak a profil és a
+# befoglaló méretek (40 × 40), a többi méret- és segédvonal nélkül
+PREPEND.update({slug: ([("data/forras/bodega_54550_rajz.png", "meretrajz")],
+                       {"Szélesség": "40 mm", "Magasság": "40 mm", "Belső szélesség": "35 mm",
+                        "Falvastagság": "2,5 mm (fenék 4 mm)"})
+                for slug in ("225455-u-35-mm-szego-profil-elox", "225455-n-u-35-mm-szego-profil")})
 # 226915 és 226915/n (30 mm U szegő): a Quadris kérésére csak az Alu-SV 6600006915 rajza (a korábbi RE-ALL /
 # Constellium-rajzok a kezi_kepsorrend.json „kizart” listáján)
 INSERT.update({slug: [("data/forras/alusv_6600006915_rajz.png", "alusv", 0)]
