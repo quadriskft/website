@@ -761,5 +761,33 @@
   "code": "2221513",
   "date": "2026-10-01",
   "reason": "Quadris kérés: most nem kell, kivéve"
+ },
+ "224230-n-koztes-250-mm-profil-cd": {
+  "name": "Köztes 250 mm profil CD",
+  "supplier": "Constellium Decin",
+  "code": "224230/n",
+  "date": "2026-10-01",
+  "reason": "Quadris kérés: most nem kell, kivéve"
+ },
+ "226113-felso-200-mm-elox-profil-b": {
+  "name": "Felső 200 mm elox profil B",
+  "supplier": "BODEGA",
+  "code": "226113",
+  "date": "2026-10-01",
+  "reason": "Quadris kérés: most nem kell, kivéve"
+ },
+ "226114-koztes-200-mm-elox-profil-b": {
+  "name": "Köztes 200 mm elox profil B",
+  "supplier": "BODEGA",
+  "code": "226114",
+  "date": "2026-10-01",
+  "reason": "Quadris kérés: most nem kell, kivéve"
+ },
+ "226115-also-tomiteses-200-mm-elox-profil": {
+  "name": "Alsó tömítéses 200 mm elox profil",
+  "supplier": "Allco",
+  "code": "226115",
+  "date": "2026-10-01",
+  "reason": "Quadris kérés: most nem kell, kivéve"
  }
 }
