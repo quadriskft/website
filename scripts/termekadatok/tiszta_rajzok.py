@@ -63,7 +63,7 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
-    "6612225-elso-oszlop-90-70-alu-elox-d": ("profil_12225", "90", "70", "3", ("v", 0.45)),
+    "6612225-elso-oszlop-90-70-alu-elox-d": ("profil_12225", "90", "70", "3", ("v", 0.45), [(34.79 / 70, 1, "35")]),  # a lemez felső síkja
 }
 
 
@@ -279,7 +279,7 @@ def sketch_mask(path, scale=4, wipe=()):
     return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
-def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000, outline=False, eps=None):
+def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000, outline=False, eps=None, vdims=()):
     H0, W0 = m.shape
     for fx0, fy0, fx1, fy1 in erase:
         m[int(fy0 * H0):int(fy1 * H0), int(fx0 * W0):int(fx1 * W0)] = False
@@ -290,7 +290,7 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000,
     big = cv2.resize(m.astype(np.uint8) * 255, (round(W0 * k), round(H0 * k)), interpolation=cv2.INTER_LINEAR) > 127
     cnts, hier = cv2.findContours(big.astype(np.uint8), cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
     polys = [cv2.approxPolyDP(c, eps or (2.0 if outline else 1.2), True) for c in cnts]
-    ML, MT, MR, MB = 170, 170, 150, 150
+    ML, MT, MR, MB = 170 + (80 if vdims else 0), 170, 150, 150
     h, w = big.shape
     canvas = np.full((h + MT + MB, w + ML + MR, 3), 255, np.uint8)
     shifted = [p + np.array([[ML, MT]]) for p in polys]
@@ -325,15 +325,25 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000,
     d.line([(xw, y0 - 10), (xw, yd - 16)], fill="black", width=2)
     dim((x0, yd), (xw, yd))
     d.text(((x0 + xw) / 2, yd - 8), wtext, font=F, fill="black", anchor="mb")
+    def vtext(xd, ya, yb, text):
+        t = Image.new("RGBA", (220, 60), (255, 255, 255, 0))
+        ImageDraw.Draw(t).text((110, 30), text, font=F, fill="black", anchor="mm")
+        t = t.rotate(90, expand=True)
+        img.paste(t, (int(xd - 48), int((ya + yb) / 2 - t.height / 2)), t)
+
+    # további függőleges méretek (a magasság töredékeként: felső, alsó, felirat), a teljes magasság mellett belül
+    for fa, fb, text in vdims:
+        xi, ya, yb = x0 - 85, y0 + fa * h, y0 + fb * h
+        for yy in (ya, yb):
+            d.line([(x0 - 10, yy), (xi - 16, yy)], fill="black", width=2)
+        dim((xi, ya), (xi, yb))
+        vtext(xi, ya, yb, text)
     # magasság: balra
-    xd = x0 - 85
+    xd = x0 - (165 if vdims else 85)
     d.line([(x0 - 10, y0), (xd - 16, y0)], fill="black", width=2)
     d.line([(x0 - 10, y1), (xd - 16, y1)], fill="black", width=2)
     dim((xd, y0), (xd, y1))
-    t = Image.new("RGBA", (220, 60), (255, 255, 255, 0))
-    ImageDraw.Draw(t).text((110, 30), htext, font=F, fill="black", anchor="mm")
-    t = t.rotate(90, expand=True)
-    img.paste(t, (int(xd - 48), int((y0 + y1) / 2 - t.height / 2)), t)
+    vtext(xd, y0, y1, htext)
     # falvastagság
     kind, frac = where
     if kind == "h":  # a bal oldali falon át, adott magasságban
@@ -381,10 +391,10 @@ def main():
         url = save_image(img, slug, "meretrajz")
         data[slug]["images"] = [url]  # csak a Decin-rajz: minden korábbi kép (régi rajzok, 3D) törölve
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
-    for slug, (fn, wt, ht, tt, where) in VECTOR.items():
+    for slug, (fn, wt, ht, tt, where, *vd) in VECTOR.items():
         if slug not in data:
             continue
-        img, *_ = render_mask(vector_mask(globals()[fn]()), wt, ht, tt, where, outline=True, eps=0.5)
+        img, *_ = render_mask(vector_mask(globals()[fn]()), wt, ht, tt, where, outline=True, eps=0.5, vdims=vd[0] if vd else ())
         url = save_image(img, slug, "meretrajz")
         data[slug]["images"] = [url]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
