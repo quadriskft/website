@@ -63,6 +63,12 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "225040-koztes-250-mm-elox-profil": ("profil_225040", "272,2", "25", "1,7", ("v", 0.47),
+                                         dict(hdims=[(0, 260.5 / 272.2, "260,5"), (17.3 / 272.2, 267.3 / 272.2, "250")],
+                                              walls=[("hx", 0.5, 89.8 / 272.2, "1,8")])),
+    "225040-n-koztes-250-mm-profil": ("profil_225040", "272,2", "25", "1,7", ("v", 0.47),
+                                      dict(hdims=[(0, 260.5 / 272.2, "260,5"), (17.3 / 272.2, 267.3 / 272.2, "250")],
+                                           walls=[("hx", 0.5, 89.8 / 272.2, "1,8")])),
     "226795-400-mm-peremes-gumis-oldalfal-elox": ("profil_36795", "408", "27,5", "1,7", ("v", 0.5),
                                                   [(2.5 / 27.5, 1, "25")]),
     "226671-400-mm-gumis-oldalfal-elox": ("profil_36671", "400", "25", "1,7", ("v", 0.5)),
@@ -74,7 +80,9 @@ VECTOR = {
 
 
 # új adatlap (eddig nem volt képe): slug -> (forrás, URL, forrás címe)
-NEW = {"226795-400-mm-peremes-gumis-oldalfal-elox": ("BODEGA", "https://www.bodega.it", "Bodega TB36795 gyári rajz",
+NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári profilrajz (225040)", {"Felület": "eloxált"}),
+       "225040-n-koztes-250-mm-profil": ("Quadris gyári rajz", "", "Gyári profilrajz (225040)", {"Felület": "natúr"}),
+       "226795-400-mm-peremes-gumis-oldalfal-elox": ("BODEGA", "https://www.bodega.it", "Bodega TB36795 gyári rajz",
                                                      {"Tömeg": "3,956 kg/fm", "Ötvözet": "EN AW-6060 T66", "Felület": "eloxált"}),
        "226671-400-mm-gumis-oldalfal-elox": ("BODEGA", "https://www.bodega.it", "Bodega TB36671 gyári rajz",
                                              {"Tömeg": "3,853 kg/fm", "Ötvözet": "EN AW-6063 T66", "Felület": "eloxált"}),
@@ -272,6 +280,31 @@ def profil_36795():
     groove = P([(25.8, -0.5, 0), (30.4, -0.5, 0), (30.4, 0.9, 0.3), (32.2, 1.4, 0.4), (32.2, 3.3, 0.5),
                 (24, 3.3, 0.5), (24, 1.4, 0.4), (25.8, 0.9, 0.3)])  # fecskefarok: fent szűkebb
     return outer.difference(left).difference(right).difference(groove)
+
+
+def profil_225040():
+    """225040 / 225040/n (köztes 250 mm-es profil) a gyári rajz méreteiből: 25 mm vastag (két 1,7 mm-es fal), a
+    hosszirányú méretek 272,2 / 260,5 / 250,2 / 250, a három üreg 65 / 75,5 / 65 mm, a bordák 1,8 mm-esek. Felül
+    a bal falon L alakú kar (a hosszabb fal tetején kis fog), alul a jobb fal végén kampó, a bal fal alján
+    kissé kiugró talp és egy kis fog. A rajzon függőleges; itt vízszintesen (a rajz teteje balra)."""
+    from shapely import affinity
+    from shapely.geometry import Polygon, box
+    from shapely.ops import unary_union
+
+    def rbox(x0, y0, x1, y1, r=0):
+        b = box(x0, y0, x1, y1)
+        return b.buffer(-r, join_style=1).buffer(r, join_style=1) if r else b
+
+    parts = [
+        rbox(0, 17.3, 1.7, 267.3, 0.8), rbox(1.3, 265.5, 3.3, 272.2, 0.8),  # bal fal és a talp
+        Polygon([(1.7, 254.5), (4.0, 257), (1.7, 257.4)]),  # kis fog a bal fal belső oldalán
+        box(23.3, 0, 25, 250.2), Polygon([(23.3, 0.3), (21.7, 0.9), (23.3, 4.6)]),  # jobb fal, felül kis fog
+        box(1.7, 22.4, 23.3, 24.2), box(1.7, 88.9, 23.3, 90.7), box(1.7, 166.4, 23.3, 168.2), box(1.7, 232.9, 23.3, 234.7),
+        rbox(7, 3.3, 9, 23, 0.4), rbox(2, 3.3, 9, 5, 0.8),  # L alakú kar felül
+        rbox(18.7, 248.5, 25, 250.2, 0.3), rbox(18.7, 248.5, 20.4, 260.5, 0.8),  # kampó alul
+    ]
+    g = unary_union(parts).buffer(0.4, join_style=1).buffer(-0.4, join_style=1)
+    return affinity.affine_transform(g, [0, 1, 1, 0, 0, 0])  # (x, y) -> (y, x): a hossz vízszintesen
 
 
 def vector_mask(geom, scale=30):
@@ -523,7 +556,8 @@ def sketch_mask(path, scale=4, wipe=()):
     return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
-def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000, outline=False, eps=None, vdims=(), bottom=None):
+def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000, outline=False, eps=None, vdims=(), bottom=None,
+                hdims=(), walls=()):
     H0, W0 = m.shape
     for fx0, fy0, fx1, fy1 in erase:
         m[int(fy0 * H0):int(fy1 * H0), int(fx0 * W0):int(fx1 * W0)] = False
@@ -534,7 +568,7 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000,
     big = cv2.resize(m.astype(np.uint8) * 255, (round(W0 * k), round(H0 * k)), interpolation=cv2.INTER_LINEAR) > 127
     cnts, hier = cv2.findContours(big.astype(np.uint8), cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
     polys = [cv2.approxPolyDP(c, eps or (2.0 if outline else 1.2), True) for c in cnts]
-    ML, MT, MR, MB = 170 + (80 if vdims else 0), 170, 150, 150 + (40 if bottom else 0)
+    ML, MT, MR, MB = 170 + (80 if vdims else 0), 170, 150, 150 + (40 if bottom else 0) + 75 * len(hdims)
     h, w = big.shape
     canvas = np.full((h + MT + MB, w + ML + MR, 3), 255, np.uint8)
     shifted = [p + np.array([[ML, MT]]) for p in polys]
@@ -595,6 +629,26 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000,
         d.line([(xb, y1 + 10), (xb, yb + 16)], fill="black", width=2)
         dim((xa, yb), (xb, yb))
         d.text(((xa + xb) / 2, yb + 8), bottom, font=F, fill="black", anchor="mt")
+    # további vízszintes méretek alul, egymás alatt (a szélesség töredékeként: bal, jobb, felirat)
+    for i, (fa, fb, text) in enumerate(hdims):
+        xa, xb, yb = x0 + fa * w, x0 + fb * w, y1 + 75 * (i + 1)
+        for xx in (xa, xb):
+            d.line([(xx, y1 + 10), (xx, yb + 16)], fill="black", width=2)
+        dim((xa, yb), (xb, yb))
+        d.text(((xa + xb) / 2, yb - 6), text, font=F, fill="black", anchor="mb")
+    # további falvastagságok: ("hx", sor-arány, x-arány, felirat) = vízszintes méret az adott sorban, azon a falon át,
+    # amely az x-arány helyén van (pl. egy belső, függőleges borda)
+    for kind, rf, xf, text in walls:
+        row = int(rf * h)
+        col = int(xf * w)
+        for a, b in runs(big[row]):
+            if a - 3 <= col <= b + 3:
+                ya = MT + row
+                pointer((ML + a - 55, ya), (ML + a, ya))
+                pointer((ML + b + 55, ya), (ML + b, ya))
+                d.line([(ML + a, ya), (ML + b, ya)], fill="black", width=2)
+                d.text((ML + b + 62, ya), text, font=F, fill="black", anchor="lm")
+                break
     if where is None:
         return img, 0, k, (W0, H0), (xw - x0) / k
     # falvastagság
@@ -654,8 +708,9 @@ def main():
         if slug not in data:
             continue
         m = vector_mask(globals()[fn]())
-        img, *_ = render_mask(m.copy(), wt, ht, tt, where, outline=True, eps=0.5, vdims=vd[0] if vd else ())
-        fill, *_ = render_mask(m.copy(), wt, ht, tt, where, eps=0.5, vdims=vd[0] if vd else ())  # kitöltött, mint a 227046
+        kw = vd[0] if vd and isinstance(vd[0], dict) else {"vdims": vd[0] if vd else ()}
+        img, *_ = render_mask(m.copy(), wt, ht, tt, where, outline=True, eps=0.5, **kw)
+        fill, *_ = render_mask(m.copy(), wt, ht, tt, where, eps=0.5, **kw)  # kitöltött, mint a 227046
         data[slug]["images"] = [save_image(img, slug, "meretrajz"), save_image(fill, slug, "kitoltott")]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "vektoros")

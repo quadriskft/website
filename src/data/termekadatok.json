@@ -3310,6 +3310,32 @@
    "/termekkepek/223563-tomites-also-zaroprofilhoz-1.webp"
   ]
  },
+ "225040-koztes-250-mm-elox-profil": {
+  "source": "Quadris gyári rajz",
+  "sourceUrl": "",
+  "sourceTitle": "Gyári profilrajz (225040)",
+  "specs": {
+   "Felület": "eloxált",
+   "Falvastagság": "1,7 mm"
+  },
+  "images": [
+   "/termekkepek/225040-koztes-250-mm-elox-profil-meretrajz.webp",
+   "/termekkepek/225040-koztes-250-mm-elox-profil-kitoltott.webp"
+  ]
+ },
+ "225040-n-koztes-250-mm-profil": {
+  "source": "Quadris gyári rajz",
+  "sourceUrl": "",
+  "sourceTitle": "Gyári profilrajz (225040)",
+  "specs": {
+   "Felület": "natúr",
+   "Falvastagság": "1,7 mm"
+  },
+  "images": [
+   "/termekkepek/225040-n-koztes-250-mm-profil-meretrajz.webp",
+   "/termekkepek/225040-n-koztes-250-mm-profil-kitoltott.webp"
+  ]
+ },
  "225455-n-u-35-mm-szego-profil": {
   "source": "Quadris katalóguslap",
   "specs": {
