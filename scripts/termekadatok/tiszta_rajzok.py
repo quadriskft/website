@@ -105,7 +105,13 @@ def dark_mask(path, crop, rot=0, scale=8):
 # tisztítva): slug -> (forráskép, kivágás, adatok)
 RAW = {"236825-80x80-mm-l-profil-elox": ("data/forras/236825_rajz.png", (16, 170, 656, 718),
                                           {"Méret": "80 × 80 mm", "Falvastagság": "2,5 mm", "Tömeg": "1,027 kg/fm",
-                                           "Anyag": "alumínium AlMgSi0,5 F25, eloxált"})}
+                                           "Anyag": "alumínium AlMgSi0,5 F25, eloxált"}),
+       "237461-50x260-mm-l-belso-vedoprofil-elox": ("data/forras/237461_rajz.png", (12, 136, 740, 445),
+                                                    {"Méret": "50 × 260 mm", "Falvastagság": "2 mm", "Tömeg": "1,962 kg/fm",
+                                                     "Anyag": "alumínium 6060, eloxált"}),
+       "237461-n-50x260-mm-l-belso-vedoprofil": ("data/forras/237461_rajz.png", (12, 136, 740, 445),
+                                                 {"Méret": "50 × 260 mm", "Falvastagság": "2 mm", "Tömeg": "1,962 kg/fm",
+                                                  "Anyag": "alumínium 6060"})}
 
 
 # a gyári lapon lévő szürke (kitöltött) profilnézet feketére színezve, a lap méreteivel; vonalas + kitöltött:

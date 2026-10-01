@@ -4395,33 +4395,33 @@
   ]
  },
  "237461-50x260-mm-l-belso-vedoprofil-elox": {
-  "source": "Quadris adatok",
+  "source": "Quadris gyári rajz",
   "sourceUrl": "",
-  "sourceTitle": "50x260 mm L Belső védőprofil elox",
+  "sourceTitle": "",
   "matchedCode": "",
   "specs": {
-   "Anyag": "alumínium, eloxált",
-   "Méret": "50 × 260 mm"
+   "Anyag": "alumínium 6060, eloxált",
+   "Méret": "50 × 260 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "1,962 kg/fm"
   },
   "images": [
-   "/termekkepek/3d/237461-50x260-mm-l-belso-vedoprofil-elox-1.webp",
-   "/termekkepek/3d/237461-50x260-mm-l-belso-vedoprofil-elox-2.webp",
-   "/termekkepek/237461-50x260-mm-l-belso-vedoprofil-elox-1.webp"
+   "/termekkepek/237461-50x260-mm-l-belso-vedoprofil-elox-gyari-rajz.webp"
   ]
  },
  "237461-n-50x260-mm-l-belso-vedoprofil": {
-  "source": "Quadris adatok",
+  "source": "Quadris gyári rajz",
   "sourceUrl": "",
-  "sourceTitle": "50x260 mm L Belső védőprofil",
+  "sourceTitle": "",
   "matchedCode": "",
   "specs": {
-   "Anyag": "alumínium",
-   "Méret": "50 × 260 mm"
+   "Anyag": "alumínium 6060",
+   "Méret": "50 × 260 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "1,962 kg/fm"
   },
   "images": [
-   "/termekkepek/3d/237461-n-50x260-mm-l-belso-vedoprofil-1.webp",
-   "/termekkepek/3d/237461-n-50x260-mm-l-belso-vedoprofil-2.webp",
-   "/termekkepek/237461-n-50x260-mm-l-belso-vedoprofil-1.webp"
+   "/termekkepek/237461-n-50x260-mm-l-belso-vedoprofil-gyari-rajz.webp"
   ]
  },
  "237712-13-dupla-alu-csiga-zsaner-u-25-mm-elox": {
