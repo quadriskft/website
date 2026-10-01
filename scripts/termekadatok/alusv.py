@@ -75,6 +75,8 @@ EXTRA = {
     "3562974": "62974ZL001",
     # 351142 alu rakonca magasító elox = Extender ALUGRIP LITE anod (a Quadris kérésére; az Excel kódja 62K113542B)
     "351142": "62K1135401",
+    # a Quadris kérésére: 237870 (25×25 mm utánfutó sarokprofil, elox) = Alu-SV 6612007870
+    "237870": "6612007870",
 }
 # a Quadris kérésére minden MAX-os első oszlop a „Pillar pr. CS MAX front 3000mm, Al anod” (662AP17730) részletesen
 # méretezett rajzát
@@ -98,7 +100,9 @@ PAIR = {"3562974": "62974ZP001"}
 # a képek végére a hozzá tartozó alkatrész fotója és rajza (a Quadris kérésére): kód vagy slug -> Alu-SV cikkszám
 ACCESSORY = {k: "6298K00009" for k in ("356297", "3562974", "356297b-alu-kozepso-rakonca-400-mm-80-np")}  # AluGrip fészek, tűzihorganyzott
 ACCESSORY["356287"] = "6298K00005"
-PAIR_SPECS = {"3562974": {"Kivitel": "bal és jobb oldali (pár)", "Hossz": None}}
+PAIR_SPECS = {"3562974": {"Kivitel": "bal és jobb oldali (pár)", "Hossz": None},
+              # a rajz szerinti méretek (az Alu-SV adatlapján nem szerepelnek)
+              "237870": {"Szélesség": "60 mm", "Magasság": "60 mm", "Szárak": "25 × 25 mm", "Falvastagság": "3 / 2 mm"}}
 # a szerelt kötőelemek rajzán az Alu-SV alkatrész-cikkszámai helyett a Quadris-cikkszám / magyar megnevezés
 # (6600107775 = 117775, 6600117776 = 117776, 6600107776 = 117774; a csavar és az alátét gyári kódja helyett a neve):
 # Quadris-kód -> [(a régi felirat keresési téglalapja a rajzon, új szöveg, igazítás: l = bal, r = jobb)]

@@ -4537,17 +4537,22 @@
   ]
  },
  "237870-25x25-mm-utanfuto-sarokprofil-elox": {
-  "source": "Quadris adatok",
-  "sourceUrl": "",
-  "sourceTitle": "25x25 mm utánfutó sarokprofil elox",
-  "matchedCode": "",
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000001_closed-body-aluminum-profiles/1528_profile-l-25x60x60mm--anodized",
+  "sourceTitle": "Profile L 25x60x60mm, anodized",
+  "matchedCode": "6612007870",
   "specs": {
-   "Anyag": "alumínium, eloxált",
-   "Szárak": "25 × 25 mm"
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "1,485 kg",
+   "Hossz": "7 500,0 mm",
+   "Mértékegység": "méter",
+   "Szélesség": "60 mm",
+   "Magasság": "60 mm",
+   "Szárak": "25 × 25 mm",
+   "Falvastagság": "3 / 2 mm"
   },
   "images": [
-   "/termekkepek/3d/237870-25x25-mm-utanfuto-sarokprofil-elox-1.webp",
-   "/termekkepek/3d/237870-25x25-mm-utanfuto-sarokprofil-elox-2.webp",
    "/termekkepek/237870-25x25-mm-utanfuto-sarokprofil-elox-1.webp"
   ]
  },
