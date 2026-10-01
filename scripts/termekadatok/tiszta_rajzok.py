@@ -126,7 +126,9 @@ GRAYVIEW = {"234235-35x35-mm-ives-sarokprofil-elox-d": (
 
 # kész képek a Quadris kérésére, ebben a sorrendben (a többi kép kikerül): slug -> [(forráskép, utótag)]
 IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"),  # a megszűnt 5000 mm-es változat képe
-                                           ("data/forras/alu_zsaner_tiszta.png", "meretrajz")]}  # idegen cikkszámok nélkül
+                                           ("data/forras/alu_zsaner_tiszta.png", "meretrajz")],  # idegen cikkszámok nélkül
+            # az eloxált változathoz is csak a natúr (237767/n) méretrajza kell, a korábbi képek és 3D nélkül
+            "237767-60x60-l-profil-elox": [("public/termekkepek/237767-n-60x60-l-profil-1.webp", "rajz")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
