@@ -17,6 +17,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 sys.path.insert(0, str(Path(__file__).parent))
 import alvaz_rajzok as A  # noqa: E402
+import constellium as C  # noqa: E402
 from common import ROOT, load_enrichment, save_image, update_enrichment  # noqa: E402
 
 FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
@@ -26,11 +27,7 @@ FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
 #          törlendő maradványok a profil-maszkon [(x0, y0, x1, y1) arányban],
 #          [opcionális: a szélesség mérete csak a felső sávé (a magasság ennyi része) – pl. kinyúló kar nélkül])
 ITEMS = {
-    "2018652-18-mm-keretprofil-erositett-elox": ("40", "126,5", "3", ("h", 0.72), [], 0.12),  # a 40 a felső részé
-    "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("30,3", "100", "1,9", ("h", 0.80), []),
     "207833-100x30-mm-alafutasgatlo-elox-profil": ("100", "30", None, ("v", 0.25), []),
-    "6612225-elso-oszlop-90-70-alu-elox-d": ("90", "70", "3", ("h", 0.20), [(0.968, 0.0, 1.0, 1.0)]),
-    "6612226-hatso-oszlop-128-35-alu-elox-d": ("128", "35", "3", ("v", 0.80), []),
 }
 
 
@@ -40,6 +37,63 @@ SKETCH = {
     "2018290-18-mm-keretprofil-elox": ("data/forras/bodega_50042_vazlat.png", "68", "135,5", "2,4", ("h", 0.55),
                                        [(120, 231, 162, 236), (169, 231, 190, 236), (127, 236, 134, 292), (146, 320, 158, 347)]),
 }
+
+
+# a Constellium Děčín (Aluminium Děčín) gyári profilrajzaiból (constellium.py: a profil körvonala méretek nélkül):
+# slug -> (profilszám, üreg-küszöb [px], résáthidalás sugara [px], javítások a körvonalképen
+#          [("erase", x0, y0, x1, y1) / ("line", x0, y0, x1, y1)], szélesség, magasság, falvastagság, a falméret helye,
+#          [a szélesség csak a felső sávé])
+# A kettős vonallal rajzolt falak közti keskeny fehér sávok a profil anyaga, a széles fehér tartományok az üregek.
+DECIN = {
+    "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("6941", 40, 3, [], "30,3", "100", "1,9", ("h", 0.80)),
+    "2018652-18-mm-keretprofil-erositett-elox": ("8652", 40, 3, [], "40", "126,5", "3", ("h", 0.72), 0.12),
+    "6612225-elso-oszlop-90-70-alu-elox-d": ("12225", 110, 12, [], "90", "70", "3", ("v", 0.45)),
+    "6612226-hatso-oszlop-128-35-alu-elox-d": ("12226", 110, 12, [("erase", 145, 66, 272, 440), ("line", 1446, 74, 1446, 236),
+                                                                  ("line", 1409, 216, 1409, 236)], "128", "35", "3", ("v", 0.75)),
+}
+
+
+def decin_mask(code, cav_px, r, edits=()):
+    img = np.asarray(_decin_lines(C, code)).copy()
+    for kind, x0, y0, x1, y1 in edits:
+        if kind == "erase":
+            img[y0:y1, x0:x1] = 255
+        else:
+            cv2.line(img, (x0, y0), (x1, y1), 0, 4)
+    ink = np.pad((img < 128).astype(np.uint8), 40)
+    se = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2 * r + 1, 2 * r + 1))
+    ink = cv2.dilate(ink, se)  # a szkennelt vonalak kis szakadásainak bezárása
+    white = (1 - ink).astype(np.uint8)
+    n, lab, _, _ = cv2.connectedComponentsWithStats(white, connectivity=4)
+    dist = cv2.distanceTransform(white, cv2.DIST_L2, 3)
+    solid = np.ones_like(ink, bool)
+    for i in range(1, n):
+        comp = lab == i
+        if i == lab[0, 0] or dist[comp].max() > cav_px / 2:  # külső tér vagy üreg
+            solid[comp] = False
+    m = cv2.erode(solid.astype(np.uint8), se)
+    m = cv2.morphologyEx(m, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (11, 11)))  # kettős vonal maradéka
+    k = 15 if r > 5 else 13
+    m = cv2.morphologyEx(m, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k)))  # jelölések, csonkok
+    n, lab, st, _ = cv2.connectedComponentsWithStats(m, connectivity=8)
+    m = lab == 1 + int(np.argmax(st[1:, 4]))
+    ys, xs = np.where(m)
+    return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+
+
+def _decin_lines(C, code):
+    """A profil körvonala a constellium.py beállításaival, a megtartott méretek és pótlások nélkül."""
+    cfg = C.DRAWINGS[code]
+    saved = {k: cfg.get(k) for k in ("keep", "draw", "bold")}
+    cfg.update(keep=[], draw=[], bold=1)
+    try:
+        return C.render(code)
+    finally:
+        for k, v in saved.items():
+            if v is None:
+                cfg.pop(k, None)
+            else:
+                cfg[k] = v
 
 
 def body_mask(slug):
@@ -203,6 +257,15 @@ def main():
         e["images"] = [url] + [u for u in e.get("images", []) if u != url]
         e.setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "falvastagság:", tt)
+    for slug, (code, cav, r, edits, wt, ht, tt, where, *opt) in DECIN.items():
+        if slug not in data:
+            continue
+        m = decin_mask(code, cav, r, edits)
+        img, px, k, _, wpx = render_mask(m.copy(), wt, ht, tt, where, wtop=opt[0] if opt else None)
+        print(slug, "mért fal:", round(px / (wpx * k) * float(wt.replace(",", ".")), 2), "mm")
+        url = save_image(img, slug, "meretrajz")
+        data[slug]["images"] = [url]  # csak a Decin-rajz: minden korábbi kép (régi rajzok, 3D) törölve
+        data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
     for slug, (src, wt, ht, tt, where, wipe) in SKETCH.items():
         data.setdefault(slug, {"source": "Quadris gyári rajz", "sourceUrl": "", "specs": {}, "images": []})
         img, *_ = render_mask(sketch_mask(src, wipe=wipe), wt, ht, tt, where)
@@ -210,7 +273,7 @@ def main():
         data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "vázlatból")
-    update_enrichment({s: data[s] for s in list(ITEMS) + list(SKETCH) if s in data})
+    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(SKETCH) if s in data})
 
 
 if __name__ == "__main__":
