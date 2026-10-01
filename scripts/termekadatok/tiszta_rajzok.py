@@ -270,7 +270,40 @@ def profil_36795():
               (22.8, 23.3, 1)])
     right = P([(xr - 23.3 / t + o, 1.7, 2.5), (406.3, 1.7, 1.5), (406.3, 23.3, 1.5), (xr - 1.7 / t + o, 23.3, 1.3)])
     groove = P([(25, -0.5, 0), (30.5, -0.5, 0), (30.5, 0, 0.5), (28.75, 4, 0.5), (26.75, 4, 0.5), (25, 0, 0.5)])
-    return outer.difference(left).difference(right).difference(groove)
+    body = outer.difference(left).difference(right).difference(groove)
+    # a fej (x < 45 mm) a Quadris által küldött nagyított részletről, a vonalkázott keresztmetszetből
+    from shapely.geometry import box as _box
+    head = traced_head("data/forras/bodega_36795_fej.png", 60.48, crop=(450, 590, 1160, 870), origin=(5, 43), k=8.72)
+    return body.difference(_box(-5, -5, 38, 30)).union(head.intersection(_box(-5, -5, 38.3, 30))).buffer(0.05).buffer(-0.05)
+
+
+def traced_head(path, angle, crop, origin, k):
+    """Vonalkázott (metszet) részlet a gyári rajzról: elforgatás vízszintesre (2× nagyítva), a vonalkázás bezárása,
+    a legnagyobb tartomány a kis lyukak kitöltésével; vissza mm-ben (origin = a 0 pont a kivágásban, k = px/mm)."""
+    from shapely.geometry import Polygon
+    from shapely.ops import unary_union
+    im = Image.open(ROOT / path).convert("L").rotate(angle, expand=True, fillcolor=255, resample=Image.BICUBIC)
+    im = im.resize((im.width * 2, im.height * 2), Image.LANCZOS)
+    g = np.asarray(im)[crop[1]:crop[3], crop[0]:crop[2]]
+    ink = (g < 150).astype(np.uint8)
+    m = cv2.morphologyEx(ink, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7)))
+    m = cv2.morphologyEx(m, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7)))
+    n, lab, st, _ = cv2.connectedComponentsWithStats(m, connectivity=8)
+    m = (lab == 1 + int(np.argmax(st[1:, 4]))).astype(np.uint8)
+    n, lab, st, _ = cv2.connectedComponentsWithStats(1 - m, connectivity=4)
+    for i in range(1, n):
+        if st[i, 4] < 3000:
+            m[lab == i] = 1
+    m = cv2.morphologyEx(m, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5)))
+    cnts, hier = cv2.findContours(m, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_SIMPLE)
+    polys = []
+    for i, c in enumerate(cnts):
+        if hier[0][i][3] < 0 and len(c) > 2:
+            # a lyukak csak a vonalkázás hézagai (a részleten nincs zárt üreg)
+            polys.append(Polygon([((x - origin[0]) / k, (y - origin[1]) / k) for x, y in c[:, 0]]).buffer(0))
+    u = unary_union(polys)
+    u = u.buffer(0.5, join_style=1).buffer(-0.5, join_style=1).buffer(-0.3, join_style=1).buffer(0.3, join_style=1)
+    return u.buffer(-0.3, join_style=1)  # a körvonal vastagsága a vonalkázott terület szélén
 
 
 def vector_mask(geom, scale=30):
