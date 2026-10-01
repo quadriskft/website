@@ -63,6 +63,8 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "226795-400-mm-peremes-gumis-oldalfal-elox": ("profil_36795", "408", "27,5", "1,7", ("v", 0.5),
+                                                  [(2.5 / 27.5, 1, "25")]),
     "226671-400-mm-gumis-oldalfal-elox": ("profil_36671", "400", "25", "1,7", ("v", 0.5)),
     "208477-cd2-100x30-mm-alafutasgatlo-elox-profil": ("profil_8477", "30,2", "100", "1,5", ("h", 0.85)),
     "2015290-15-mm-keretprofil-elox": ("profil_50290", "132", "68", "2,4", ("v", 0.45)),
@@ -72,7 +74,9 @@ VECTOR = {
 
 
 # új adatlap (eddig nem volt képe): slug -> (forrás, URL, forrás címe)
-NEW = {"226671-400-mm-gumis-oldalfal-elox": ("BODEGA", "https://www.bodega.it", "Bodega TB36671 gyári rajz",
+NEW = {"226795-400-mm-peremes-gumis-oldalfal-elox": ("BODEGA", "https://www.bodega.it", "Bodega TB36795 gyári rajz",
+                                                     {"Tömeg": "3,956 kg/fm", "Ötvözet": "EN AW-6060 T66", "Felület": "eloxált"}),
+       "226671-400-mm-gumis-oldalfal-elox": ("BODEGA", "https://www.bodega.it", "Bodega TB36671 gyári rajz",
                                              {"Tömeg": "3,853 kg/fm", "Ötvözet": "EN AW-6063 T66", "Felület": "eloxált"}),
        "2015290-15-mm-keretprofil-elox": ("BODEGA", "https://www.bodega.it", "Bodega 50290 gyári rajz",
                                           {"Tömeg": "1,763 kg/fm", "Ötvözet": "EN AW-6060 T6", "Felület": "eloxált"})}
@@ -243,6 +247,30 @@ def profil_36671():
                   (3.6, 22.7, 0.3), (2.5, 22.7, 0.5), (2.5, 26, 0), (-1, 26, 0)])
     prof = outer.difference(left).difference(right).difference(head.union(mouth)).difference(slot_top).difference(slot_bot)
     return prof.buffer(0.25, join_style=1).buffer(-0.25, join_style=1)
+
+
+def profil_36795():
+    """Bodega TB36795 (400 mm-es peremes gumis oldalfal): 408 (a 8 mm-es peremmel) × 25 (+2,5 mm perem felül),
+    falvastagság 1,7. Balra a perem (10,5 × 2,5, vége R1,25) és a 10 mm-es fej: balra nyitott, 3 mm-es ajkakkal
+    (4,5 / 10 / 4,5), 2 mm-es belső fallal; mellette a felső lemezen fecskefarok-horony (2 → 5,5, mélység 4) 28 mm-re
+    a perem végétől; két zárt rész alul (128,9 – 142,2 – 128,9), 78°-os ferde falakkal, középen csak a felső lemez."""
+    from shapely.geometry import Polygon
+    t = math.tan(math.radians(78))
+    o = 1.7 / math.sin(math.radians(78))
+
+    def P(pts):
+        return Polygon(fillet([(x, y) for x, y, _ in pts], [r for *_, r in pts]))
+
+    xl, xr = 8 + 128.9, 408 - 128.9  # a zárt részek alsó belső sarka
+    outer = P([(0, -2.5, 1.2), (10.5, -2.5, 0.5), (10.5, 0, 0.5), (408, 0, 2.5), (408, 25, 2.5), (xr, 25, 3),
+               (xr - 23.3 / t, 1.7, 2.5), (xl + 23.3 / t, 1.7, 2.5), (xl, 25, 3), (8, 25, 1), (8, 17.5, 0.5),
+               (11, 17.5, 0.5), (11, 22, 1), (18, 22, 1), (18, 3, 1), (11, 3, 1), (11, 7.5, 0.5), (8, 7.5, 0.5),
+               (8, 0, 0.5), (0, 0, 0.5)])
+    left = P([(20, 6, 1), (33, 6, 0.5), (37, 1.7, 1), (xl + 23.3 / t - o, 1.7, 2.5), (xl + 1.7 / t - o, 23.3, 1.3),
+              (20, 23.3, 1)])
+    right = P([(xr - 23.3 / t + o, 1.7, 2.5), (406.3, 1.7, 1.5), (406.3, 23.3, 1.5), (xr - 1.7 / t + o, 23.3, 1.3)])
+    groove = P([(27, -0.5, 0), (29, -0.5, 0), (29, 0, 0.3), (30.75, 4, 0.5), (25.25, 4, 0.5), (27, 0, 0.3)])
+    return outer.difference(left).difference(right).difference(groove)
 
 
 def vector_mask(geom, scale=30):

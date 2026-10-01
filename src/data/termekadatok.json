@@ -3442,6 +3442,21 @@
    "/termekkepek/226701-tomites-40-u-szegohoz-rajz.webp"
   ]
  },
+ "226795-400-mm-peremes-gumis-oldalfal-elox": {
+  "source": "BODEGA",
+  "sourceUrl": "https://www.bodega.it",
+  "sourceTitle": "Bodega TB36795 gyári rajz",
+  "specs": {
+   "Tömeg": "3,956 kg/fm",
+   "Ötvözet": "EN AW-6060 T66",
+   "Felület": "eloxált",
+   "Falvastagság": "1,7 mm"
+  },
+  "images": [
+   "/termekkepek/226795-400-mm-peremes-gumis-oldalfal-elox-meretrajz.webp",
+   "/termekkepek/226795-400-mm-peremes-gumis-oldalfal-elox-kitoltott.webp"
+  ]
+ },
  "226821-21-padlo-profil-200-mm": {
   "source": "Quadris katalóguslap",
   "sourceTitle": "BODEGA TB48968 – műhelyrajz",
