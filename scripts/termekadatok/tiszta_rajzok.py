@@ -63,6 +63,7 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "208477-cd2-100x30-mm-alafutasgatlo-elox-profil": ("profil_8477", "30,2", "100", "1,5", ("h", 0.85)),
     "2015290-15-mm-keretprofil-elox": ("profil_50290", "132", "68", "2,4", ("v", 0.45)),
     "6612226-hatso-oszlop-128-35-alu-elox-d": ("profil_12226", "128", "35", "3", ("v", 0.75)),
     "6612225-elso-oszlop-90-70-alu-elox-d": ("profil_12225", "90", "70", "3", ("v", 0.45), [(34.79 / 70, 1, "35")]),  # a lemez felső síkja
@@ -188,6 +189,30 @@ def profil_50290():
     shape = shape.buffer(0.4 * K).buffer(-0.4 * K)  # a csatlakozások kis lekerekítése
     from shapely import affinity
     return affinity.affine_transform(shape, [1 / K, 0, 0, 1 / K, -247.5 / K, -134.5 / K])
+
+
+def profil_8477():
+    """Constellium (Alusuisse) Děčín 8477 (CD2 100×30 aláfutásgátló): a gyári rajz körvonalpontjaiból [pt]
+    (30,2 mm = 97,3 pt, 100 mm = 292 pt). Falvastagság 1,5 (a rajz szerint), külső sarkok R4 / belső R2,5,
+    felül két 45°-os horony, jobb oldalt 1,4 mm-es, 20°-os átmenetű mélyítés 15 mm-re a végektől,
+    bal oldalt 10,5 mm-es horony 19,8 mm-es belső zsebbel (a zseb falain egy-egy kis félkör bemetszéssel)."""
+    from shapely.geometry import Point, Polygon
+
+    def mm(x, y):
+        return ((x - 392.0) / 3.222, (y - 517.0) / 2.92)
+
+    pts = [(392, 517, 4), (409.5, 517, 0.5), (413.5, 522, 0.3), (421, 522, 0.3), (425, 517, 0.5), (455, 517, 0.5),
+           (458.5, 522.2, 0.3), (466.5, 522.2, 0.3), (470.5, 517, 0.5), (489.3, 517, 4), (489.3, 560.8, 1),
+           (484.7, 572, 1), (484.7, 754, 1), (489.3, 765.2, 1), (489.3, 809, 4), (392, 809, 4),
+           (392, 678.2, 0.3), (397.6, 678.2, 0.3), (397.6, 691.2, 0.5), (427.1, 691.2, 0.5), (427.1, 633.7, 0.5),
+           (397.6, 633.7, 0.5), (397.6, 647.7, 0.3), (392, 647.7, 0.3)]
+    outer = Polygon(fillet([mm(x, y) for x, y, _ in pts], [r for *_, r in pts]))
+    cav = outer.buffer(-1.5, join_style=1)
+    notches = [Point(*mm(410, 633.7)).buffer(0.5, 24), Point(*mm(410, 691.2)).buffer(0.5, 24)]
+    prof = outer.difference(cav)
+    for n in notches:
+        prof = prof.difference(n)
+    return prof
 
 
 def vector_mask(geom, scale=30):

@@ -2187,11 +2187,12 @@
    "Profil típusa": "zárt (üreges)",
    "Magasság": "100 mm",
    "Szélesség": "30,2 mm",
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Falvastagság": "1,5 mm"
   },
   "images": [
-   "/termekkepek/208477-cd2-100x30-mm-alafutasgatlo-elox-profil-rajz.webp",
-   "/termekkepek/208477-cd2-100x30-mm-alafutasgatlo-elox-profil-1.webp"
+   "/termekkepek/208477-cd2-100x30-mm-alafutasgatlo-elox-profil-meretrajz.webp",
+   "/termekkepek/208477-cd2-100x30-mm-alafutasgatlo-elox-profil-kitoltott.webp"
   ]
  },
  "208755-hossztarto-talpas-140-6-magas-120-10-60-8-mm": {
