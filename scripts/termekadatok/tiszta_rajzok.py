@@ -294,7 +294,7 @@ OUTLINE = {  # (az E/VOLUMEN a Quadris kérésére a kék profilból készül �
          "58,5", "95", None),
     # Versus Micro Trike tetősín (V35991, öt hossz): a katalóguslap szürke profilja feketére színezve
     tuple(f"v35991-{n}-mm-tetosin-micro-trike" for n in (6800, 7500, 7800, 8200, 8500)):
-        ("data/forras/versus_micro_trike.png", dict(keep=(40, 106, 332, 392), fill=True), "109", "103", "60"),
+        ("data/forras/versus_micro_trike_sin.png", dict(keep=(40, 106, 332, 392), fill=True), "109", "103", "60"),
 }
 
 
