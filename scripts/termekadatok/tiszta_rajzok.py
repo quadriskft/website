@@ -27,7 +27,6 @@ FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
 #          törlendő maradványok a profil-maszkon [(x0, y0, x1, y1) arányban],
 #          [opcionális: a szélesség mérete csak a felső sávé (a magasság ennyi része) – pl. kinyúló kar nélkül])
 ITEMS = {
-    "207833-100x30-mm-alafutasgatlo-elox-profil": ("100", "30", None, ("v", 0.25), []),
 }
 
 
@@ -95,6 +94,23 @@ def _decin_lines(C, code):
                 cfg.pop(k, None)
             else:
                 cfg[k] = v
+
+
+# színes (kék kitöltésű) gyári rajzból: slug -> (forráskép, szélesség, magasság, falvastagság vagy None = mérve, a falméret helye)
+BLUE = {
+    "207833-100x30-mm-alafutasgatlo-elox-profil": ("data/forras/207833_100x30_kek.png", "100", "30", None, ("v", 0.25)),
+}
+
+
+def blue_mask(path, scale=4):
+    """A kék kitöltésű profil maszkja (a fekete méretek, szaggatott vonal és felirat nélkül), felnagyítva."""
+    a = np.asarray(Image.open(ROOT / path).convert("RGB")).astype(np.float32)
+    blue = np.clip((a[:, :, 2] - a[:, :, 0] - 20) / 80, 0, 1)
+    big = cv2.resize(blue, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC) > 0.5
+    n, lab, st, _ = cv2.connectedComponentsWithStats(big.astype(np.uint8), connectivity=8)
+    m = lab == 1 + int(np.argmax(st[1:, 4]))
+    ys, xs = np.where(m)
+    return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
 def body_mask(slug):
@@ -270,6 +286,18 @@ def main():
         url = save_image(img, slug, "meretrajz")
         data[slug]["images"] = [url]  # csak a Decin-rajz: minden korábbi kép (régi rajzok, 3D) törölve
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
+    for slug, (src, wt, ht, tt, where) in BLUE.items():
+        if slug not in data:
+            continue
+        m = blue_mask(src)
+        if tt is None:
+            _, px, k, _, wpx = render_mask(m.copy(), wt, ht, "", where)
+            tt = f"{px / (wpx * k) * float(wt.replace(',', '.')):.1f}".replace(".", ",")
+        img, *_ = render_mask(m.copy(), wt, ht, tt, where)
+        url = save_image(img, slug, "meretrajz")
+        data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
+        data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
+        print(slug, "kék rajzból, fal:", tt)
     for slug, (src, wt, ht, tt, where, wipe) in SKETCH.items():
         data.setdefault(slug, {"source": "Quadris gyári rajz", "sourceUrl": "", "specs": {}, "images": []})
         img, *_ = render_mask(sketch_mask(src, wipe=wipe), wt, ht, tt, where)
@@ -277,7 +305,7 @@ def main():
         data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "vázlatból")
-    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(SKETCH) if s in data})
+    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(BLUE) + list(SKETCH) if s in data})
 
 
 if __name__ == "__main__":
