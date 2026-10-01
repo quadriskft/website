@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import ProductCard from '../../components/ProductCard.astro';
-import { groups, GROUP_META, productsIn, groupImage } from '../../lib/catalog.js';
+import { groups, GROUP_META, productsIn, groupImage, CATEGORY_LOGOS } from '../../lib/catalog.js';
 import { absPage } from '../../lib/site.js';
 
 export function getStaticPaths() {
@@ -49,7 +49,7 @@ const jsonLd = [
         <nav aria-label="Kategóriák">
           <h2 class="side-title">Kategóriák</h2>
           <ul>
-            {sections.map((c) => <li><a href={`#${c.slug}`}>{c.name}<span>{c.count}</span></a></li>)}
+            {sections.map((c) => <li><a href={`#${c.slug}`}>{CATEGORY_LOGOS[c.slug] && <img class="cat-logo-sm" src={CATEGORY_LOGOS[c.slug].src} alt="" />}{c.name}<span>{c.count}</span></a></li>)}
           </ul>
         </nav>
       </aside>
@@ -62,7 +62,13 @@ const jsonLd = [
       </div>
       {sections.map((c) => (
         <section class="cat-section" id={c.slug} data-cat data-cat-name={c.name}>
-          {!single && <h2>{c.name} <span class="muted">{c.count}</span></h2>}
+          {!single && (
+            <h2 class="cat-title">
+              {CATEGORY_LOGOS[c.slug] && <img class="cat-logo" src={CATEGORY_LOGOS[c.slug].src} alt={CATEGORY_LOGOS[c.slug].alt} />}
+              {(!CATEGORY_LOGOS[c.slug] || CATEGORY_LOGOS[c.slug].text) && <span>{c.name}</span>}
+              <span class="muted">{c.count}</span>
+            </h2>
+          )}
           <div class="grid grid-products">
             {c.items.map((p) => <ProductCard product={p} />)}
           </div>
@@ -161,6 +167,9 @@ const jsonLd = [
   .cat-section { margin-bottom: 44px; }
   .cat-section h2 { font-size: 1.35rem; display: flex; align-items: baseline; gap: 10px; padding-bottom: 12px; margin-bottom: 18px; border-bottom: 1px solid var(--line); }
   .cat-section h2 .muted { font-size: 0.95rem; font-weight: 500; }
+  .cat-section h2.cat-title { align-items: center; }
+  .cat-logo { height: 44px; width: auto; display: block; background: #fff; border-radius: 4px; }
+  .cat-logo-sm { height: 16px; width: auto; vertical-align: -3px; margin-right: 6px; background: #fff; border-radius: 2px; }
   .no-hit { padding: 24px; border: 1px dashed var(--line-strong); border-radius: var(--radius); }
   @media (max-width: 960px) {
     .layout { flex-direction: column; gap: 16px; }

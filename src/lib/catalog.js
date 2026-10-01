@@ -59,11 +59,19 @@ function gncColor(p) {
 // A Quadris által törlésre jelölt termékek (data/torolt_termekek.json) sehol nem jelennek meg
 export const products = [...excelProducts, ...extendedProducts].filter((p) => !deleted[p.slug]);
 
+// Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
+const CATEGORY_RENAMES = { versus: 'Versus-Omega' };
+// Gyártói alkategóriák logója (a gyártó honlapjáról): a címben a név elé / helyett jelenik meg
+export const CATEGORY_LOGOS = {
+  versus: { src: '/logok/versus-omega.svg', alt: 'Versus-Omega', text: true },
+  edscha: { src: '/logok/edscha.png', alt: 'Edscha Trailer Systems', text: false },
+};
+
 // Csoportok és kategóriák: Excel + új csoportok/kategóriák, darabszámok újraszámolva, üresek elhagyva
 const groupList = catalog.groups.map((g) => ({
   slug: g.slug,
   name: extended.renameGroups?.[g.slug] ?? g.name,
-  categories: g.categories.map((c) => ({ slug: c.slug, name: c.name })),
+  categories: g.categories.map((c) => ({ slug: c.slug, name: CATEGORY_RENAMES[c.slug] ?? c.name })),
 }));
 for (const g of extended.groups ?? []) {
   groupList.push({ slug: g.slug, name: g.name, categories: [] });
