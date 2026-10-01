@@ -63,6 +63,8 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "237461-50x260-mm-l-belso-vedoprofil-elox": ("profil_7461", "260", "50", "2", ("v", 0.6)),
+    "237461-n-50x260-mm-l-belso-vedoprofil": ("profil_7461", "260", "50", "2", ("v", 0.6)),
     "237000-25x25-mm-ives-sarokprofil-elox": ("profil_237000", "66,5", "66,5", "3", ("h", 0.8),
                                               dict(idims=[("v", 60 / 66.5, 3.2 / 66.5, 28.3 / 66.5, "25"),
                                                           ("h", 60 / 66.5, 3.2 / 66.5, 28.3 / 66.5, "25")])),
@@ -401,6 +403,25 @@ def profil_237000():
     q = box(0, 0, 15, 15)
     arc = q.intersection(Point(15, 15).buffer(15, 96)).difference(Point(15, 15).buffer(15 - t, 96))
     g = g.difference(q).union(arc)  # a külső sarok R15-tel ívelt, a fal végig egyforma vastag
+    return g.buffer(0.3, join_style=1).buffer(-0.3, join_style=1)
+
+
+def profil_7461():
+    """237461 (50×260 mm-es L belső védőprofil, Constellium 7461): 50 magas, 260 hosszú, falvastagság 2; a sarok
+    kívül R7,5, belül R5 (ott 2,5 vastag); a függőleges szár felső 15 mm-e 2,5 vastag, lekerekített véggel; a lemezen
+    három 20 mm-es kiemelt borda (4 mm-ig, 2-2 R2 horonnyal, 8,5 osztással) 57,4 / 119,8 / 182,3 mm-nél, a végén
+    horonnyal és lejtővel záródó perem (a gyári rajz és a Quadris által küldött részletek szerint)."""
+    from shapely.geometry import Point, Polygon
+    from shapely.ops import unary_union
+    pts = [(0, 0, 1.2), (2.5, 0, 1.2), (2.5, 15, 0.5), (2, 16, 0.5), (2, 48, 5), (260, 48, 0), (260, 50, 0), (0, 50, 7.5)]
+    base = Polygon(fillet([(x, y) for x, y, _ in pts], [r for *_, r in pts]))
+    ribs, grooves = [], []
+    for x0 in (57.4, 119.8, 182.3):
+        ribs.append(Polygon([(x0, 48), (x0 + 2, 46), (x0 + 18, 46), (x0 + 20, 48)]))
+        grooves += [Point(x0 + 5.75, 46).buffer(2, 32), Point(x0 + 14.25, 46).buffer(2, 32)]
+    ribs.append(Polygon([(244, 48), (246, 46), (253, 46), (260, 47.4), (260, 48)]))  # a záró perem
+    grooves.append(Point(250, 46).buffer(2, 32))
+    g = unary_union([base] + ribs).difference(unary_union(grooves))
     return g.buffer(0.3, join_style=1).buffer(-0.3, join_style=1)
 
 
@@ -856,7 +877,10 @@ def main():
             continue
         g = np.asarray(Image.open(ROOT / src).convert("L").crop(crop)).astype(np.float32)
         g = np.clip((g - 60) * 255 / (200 - 60), 0, 255)  # fekete vonalak, fehér háttér
-        data[slug]["images"] = [save_image(Image.fromarray(g.astype(np.uint8)), slug, "gyari-rajz")]
+        url = save_image(Image.fromarray(g.astype(np.uint8)), slug, "gyari-rajz")
+        # ha a méretekből rajzolt (VECTOR) kép is van, a gyári rajz utánuk jön; különben ez az egyetlen kép
+        prev = [u for u in data[slug].get("images", []) if u.endswith(("-meretrajz.webp", "-kitoltott.webp"))] if slug in VECTOR else []
+        data[slug]["images"] = prev + [url]
         data[slug].update({"source": "Quadris gyári rajz", "sourceUrl": "", "sourceTitle": ""})
         data[slug].setdefault("specs", {}).update(specs)
         print(slug, "gyári rajz")
