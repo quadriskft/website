@@ -112,7 +112,8 @@ RAW = {"236825-80x80-mm-l-profil-elox": ("data/forras/236825_rajz.png", (16, 170
 # slug -> (forráskép, kivágás, szélesség, magasság, falvastagság, a falméret helye, render_mask további beállításai)
 GRAYVIEW = {"234235-35x35-mm-ives-sarokprofil-elox-d": (
     "data/forras/234235_rajz_forgatott.png", (640, 160, 865, 360), None, "86", "1,5", ("v", 0.75),
-    dict(vdims=[(0, 69.7 / 86, "69,7"), (0, 38.9 / 86, "38,9")]))}
+    dict(vdims=[(0, 69.7 / 86, "69,7"), (0, 38.9 / 86, "38,9")],
+         idims=[("h", 0.66, 0.5736, 0.9553, "34,5")]))}  # a belső nyílás
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
@@ -122,7 +123,7 @@ PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (37
 # adatok a küldött adatlapról
 SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
             "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"},
-            "234235-35x35-mm-ives-sarokprofil-elox-d": {"Tömeg": "1,412 kg/fm", "Anyag": "alumínium 6060 T6, eloxált",
+            "234235-35x35-mm-ives-sarokprofil-elox-d": {"Tömeg": "1,412 kg/fm", "Anyag": "alumínium 6060 T6, eloxált", "Belső nyílás": "34,5 mm",
                                                         "Magasság": "86 mm", "Keresztmetszet": "523 mm²"},
             "237000-25x25-mm-ives-sarokprofil-elox": {"Tömeg": "1,99 kg/fm", "Anyag": "alumínium EN AW-6060, eloxált",
                                                       "Méret": "66,5 × 66,5 mm", "Belső méret": "25 mm (mindkét szár)"}}
