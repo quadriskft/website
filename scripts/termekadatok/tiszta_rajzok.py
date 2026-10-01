@@ -153,7 +153,7 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             # az eloxált változathoz is csak a natúr (237767/n) méretrajza kell, a korábbi képek és 3D nélkül
             "237767-60x60-l-profil-elox": [("public/termekkepek/237767-n-60x60-l-profil-1.webp", "rajz")],
             # a Quadris által küldött lap rajza változtatás nélkül (csak a gyári kód és a szöveg kivágva)
-            "380025-pwp-racsnis-feszito-kocka-adapter-r": [("data/forras/380025_rajz.png", "rajz")],
+            "380033-ponyvabeakaszto-alu-profil-60-mm-elox": [("data/forras/380033_rajz.png", "rajz")],
             # a küldött lap mindkét képe változtatás nélkül (a gyári kód és a szöveg kivágva), a rajz elöl
             "380045-34mm-feszito-cso-alu-profil": [("data/forras/380045_rajz.png", "rajz"), ("data/forras/380045_3d.png", "3d-lap")]}
 
@@ -191,9 +191,7 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
        "2015290-15-mm-keretprofil-elox": ("BODEGA", "https://www.bodega.it", "Bodega 50290 gyári rajz",
                                           {"Tömeg": "1,763 kg/fm", "Ötvözet": "EN AW-6060 T6", "Felület": "eloxált"}),
        "237005-142-mm-i-koptato-profil-elox": ("Quadris katalóguslap", "", "", {"Felület": "eloxált"}),
-       "388008-27mm-feszito-cso-alu-profil": ("Quadris katalóguslap", "", "", {"Felület": "natúr"}),
-       "380025-pwp-racsnis-feszito-kocka-adapter-r": ("Quadris katalóguslap", "", "",
-                                                      {"Tömeg": "0,962 kg/fm", "Magasság": "61 mm", "Szálhossz": "6 / 6,6 m"})}
+       "388008-27mm-feszito-cso-alu-profil": ("Quadris katalóguslap", "", "", {"Felület": "natúr"})}
 
 
 def profil_6941():
