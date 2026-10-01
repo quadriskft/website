@@ -55,10 +55,11 @@ DECIN = {
         ("clear", [(603.3, 430), (607, 430), (607, 444), (603.3, 444)]),
         ("fill", [(556, 432.9), (597.4, 432.9), (603.2, 436.5), (603.2, 441.8), (595.6, 441.8), (594.2, 439.6), (556, 439.6)]),
     ], "40", "126,5", "3", ("h", 0.72), 0.12, 5),
+    "2073902-i-90-csavarozhato-kereszttarto": ("10902", 90, 3, [], "85", "90", "3", ("h", 0.40), None, 5, 4),
 }
 
 
-def decin_mask(code, cav_px, r, edits=(), k=None):
+def decin_mask(code, cav_px, r, edits=(), k=None, smooth=0):
     cfg = C.DRAWINGS[code]
     img = np.asarray(_decin_lines(C, code))
     P = 40
@@ -81,6 +82,8 @@ def decin_mask(code, cav_px, r, edits=(), k=None):
     for kind, poly in edits:  # kézi javítás a PDF-oldal koordinátáiban [pt]: ("fill" / "clear", sokszög)
         pts = np.array([[round((x - x0) * C.ZOOM) + P, round((y - y0) * C.ZOOM) + P] for x, y in poly], np.int32)
         cv2.fillPoly(m, [pts], 1 if kind == "fill" else 0, lineType=cv2.LINE_8)
+    if smooth:  # a szkennelés recésségének kisimítása
+        m = (cv2.GaussianBlur(m.astype(np.float32), (0, 0), smooth) > 0.5).astype(np.uint8)
     n, lab, st, _ = cv2.connectedComponentsWithStats(m, connectivity=8)
     m = lab == 1 + int(np.argmax(st[1:, 4]))
     ys, xs = np.where(m)
@@ -286,7 +289,7 @@ def main():
     for slug, (code, cav, r, edits, wt, ht, tt, where, *opt) in DECIN.items():
         if slug not in data:
             continue
-        m = decin_mask(code, cav, r, edits, opt[1] if len(opt) > 1 else None)
+        m = decin_mask(code, cav, r, edits, opt[1] if len(opt) > 1 else None, opt[2] if len(opt) > 2 else 0)
         img, px, k, _, wpx = render_mask(m.copy(), wt, ht, tt, where, wtop=opt[0] if opt else None, outline=True)
         print(slug, "mért fal:", round(px / (wpx * k) * float(wt.replace(",", ".")), 2), "mm")
         url = save_image(img, slug, "meretrajz")
