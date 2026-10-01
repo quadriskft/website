@@ -116,7 +116,12 @@ RAW = {"236825-80x80-mm-l-profil-elox": ("data/forras/236825_rajz.png", (16, 170
                                                      "Anyag": "alumínium 6060, eloxált"}),
        "237905-n-25x35-mm-ives-sarokprofil-r50": ("data/forras/237905_rajz.webp", (150, 292, 770, 724),
                                                   {"Méret": "102 × 92 mm", "Falvastagság": "2,5 mm", "Tömeg": "2,092 kg/fm",
-                                                   "Belső nyílás": "25,5 mm", "Ív": "R50", "Anyag": "alumínium 6060"}),
+                                                   "Belső nyílás": "25,5 mm", "Ív": "R50", "Anyag": "alumínium 6060"},
+                                                  # az R2, R1,5 felirat, az x / y sarokjelek és a jelmagyarázat nélkül
+                                                  [(219, 190, 246, 219), (261, 229, 310, 264), (315, 104, 328, 118),
+                                                   (342, 105, 356, 121), (315, 202, 328, 216), (341, 198, 355, 215),
+                                                   (158, 235, 171, 248), (231, 235, 244, 248), (156, 259, 169, 274),
+                                                   (230, 259, 243, 274), (420, 380, 540, 432)]),
        "237461-n-50x260-mm-l-belso-vedoprofil": ("data/forras/237461_rajz.png", (12, 136, 740, 445),
                                                  {"Méret": "50 × 260 mm", "Falvastagság": "2 mm", "Tömeg": "1,962 kg/fm",
                                                   "Anyag": "alumínium 6060"})}
@@ -925,11 +930,13 @@ def main():
         data[slug].setdefault("specs", {}).update(SPEC_FIX.get(slug, {}))
         data[slug]["specs"]["Falvastagság"] = f"{tt} mm"
         print(slug, "szürke nézetből")
-    for slug, (src, crop, specs) in RAW.items():
+    for slug, (src, crop, specs, *er) in RAW.items():
         if slug not in data:
             continue
         g = np.asarray(Image.open(ROOT / src).convert("L").crop(crop)).astype(np.float32)
         g = np.clip((g - 60) * 255 / (200 - 60), 0, 255)  # fekete vonalak, fehér háttér
+        for ex0, ey0, ex1, ey1 in (er[0] if er else ()):  # a Quadris kérésére kivett feliratok (a kivágáson belül)
+            g[ey0:ey1, ex0:ex1] = 255
         url = save_image(Image.fromarray(g.astype(np.uint8)), slug, "gyari-rajz")
         # ha a méretekből rajzolt (VECTOR) kép is van, a gyári rajz utánuk jön; különben ez az egyetlen kép
         prev = [u for u in data[slug].get("images", []) if u.endswith(("-meretrajz.webp", "-kitoltott.webp"))] if slug in VECTOR else []
