@@ -251,9 +251,9 @@ def profil_36671():
 
 def profil_36795():
     """Bodega TB36795 (400 mm-es peremes gumis oldalfal): 408 (a 8 mm-es peremmel) × 25 (+2,5 mm perem felül),
-    falvastagság 1,7. Balra a perem (10,5 × 2,5, vége R1,25) és a 10 mm-es fej: balra nyitott, 3 mm-es ajkakkal
-    (4,5 / 10 / 4,5), 2 mm-es belső fallal; mellette a felső lemezen fecskefarok-horony (2 → 5,5, mélység 4) 28 mm-re
-    a perem végétől; két zárt rész alul (128,9 – 142,2 – 128,9), 78°-os ferde falakkal, középen csak a felső lemez."""
+    falvastagság 1,7. Balra a perem (10,5 × 2,5, vége R1,25) és a fej (a Quadris által küldött
+    nagyított részlet szerint): balra nyitott, 3 mm-es ajkakkal, 10 mm-es üreggel és 2 mm-es belső fallal; mellette a
+    felső lemez megvastagított részén felfelé szélesedő horony (5,5 → 2, mélység 4) 28 mm-re a perem végétől; két zárt rész alul (128,9 – 142,2 – 128,9), 78°-os ferde falakkal, középen csak a felső lemez."""
     from shapely.geometry import Polygon
     t = math.tan(math.radians(78))
     o = 1.7 / math.sin(math.radians(78))
@@ -264,12 +264,12 @@ def profil_36795():
     xl, xr = 8 + 128.9, 408 - 128.9  # a zárt részek alsó belső sarka
     outer = P([(0, -2.5, 1.2), (10.5, -2.5, 0.5), (10.5, 0, 0.5), (408, 0, 2.5), (408, 25, 2.5), (xr, 25, 3),
                (xr - 23.3 / t, 1.7, 2.5), (xl + 23.3 / t, 1.7, 2.5), (xl, 25, 3), (8, 25, 1), (8, 17.5, 0.5),
-               (11, 17.5, 0.5), (11, 22, 1), (18, 22, 1), (18, 3, 1), (11, 3, 1), (11, 7.5, 0.5), (8, 7.5, 0.5),
-               (8, 0, 0.5), (0, 0, 0.5)])
-    left = P([(20, 6, 1), (33, 6, 0.5), (37, 1.7, 1), (xl + 23.3 / t - o, 1.7, 2.5), (xl + 1.7 / t - o, 23.3, 1.3),
-              (20, 23.3, 1)])
+               (10.9, 17.5, 0.5), (10.9, 21.7, 1), (20.7, 21.7, 1), (20.7, 3.2, 2.5), (10.9, 3.2, 1), (10.9, 7.4, 0.5),
+               (8, 7.4, 0.5), (8, 0, 0.5), (0, 0, 0.5)])
+    left = P([(22.8, 6.8, 1), (33.5, 6.8, 0.5), (35.9, 1.7, 1), (xl + 23.3 / t - o, 1.7, 2.5), (xl + 1.7 / t - o, 23.3, 1.3),
+              (22.8, 23.3, 1)])
     right = P([(xr - 23.3 / t + o, 1.7, 2.5), (406.3, 1.7, 1.5), (406.3, 23.3, 1.5), (xr - 1.7 / t + o, 23.3, 1.3)])
-    groove = P([(27, -0.5, 0), (29, -0.5, 0), (29, 0, 0.3), (30.75, 4, 0.5), (25.25, 4, 0.5), (27, 0, 0.3)])
+    groove = P([(25, -0.5, 0), (30.5, -0.5, 0), (30.5, 0, 0.5), (28.75, 4, 0.5), (26.75, 4, 0.5), (25, 0, 0.5)])
     return outer.difference(left).difference(right).difference(groove)
 
 
