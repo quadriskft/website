@@ -234,10 +234,15 @@ def profil_36671():
     o = 1.7 / math.sin(math.radians(70))
     left = P([(21, 1.7, 1), (119.4 - o + 1.7 / t, 1.7, 5), (119.4 - o + 23.3 / t, 23.3, 1), (21, 23.3, 1)])
     right = P([(269.6 + o - 1.7 / t, 1.7, 5), (398.3, 1.7, 1), (398.3, 23.3, 1), (269.6 + o - 23.3 / t, 23.3, 1)])
-    head = P([(10, 1.7, 1), (18.5, 1.7, 1), (18.5, 23.3, 1), (10, 23.3, 1)])
-    slot_top = box(-1, 2.15, 3.5, 6.15).union(Point(3.5, 4.15).buffer(2, 32))
-    slot_bot = box(-1, 19.85, 2.5, 21.85).union(box(2.5, 18.6, 6, 23.1).buffer(-0.4, join_style=1).buffer(0.4, join_style=1))
-    return outer.difference(left).difference(right).difference(head).difference(slot_top).difference(slot_bot)
+    # a fej (a Quadris által küldött nagyított részlet szerint): balra nyitott C – felső kar lefelé nyíló, felül
+    # lekerekített (R2) horonnyal, belül üreg, alsó kar balra nyíló T-horonnyal
+    head = P([(10.1, 1.8, 1), (18.5, 1.8, 1), (18.5, 23.2, 1), (10.1, 23.2, 1)])
+    mouth = box(-1, 8.2, 12, 16.9)  # a fej üregébe nyílik
+    slot_top = box(2.85, 4.9, 7.05, 8.6).union(Point(4.95, 4.9).buffer(2.1, 32))
+    slot_bot = P([(-1, 19.1, 0), (5.3, 19.1, 0.3), (5.3, 18.6, 0.3), (6.4, 18.6, 0.5), (6.4, 22.3, 0.5), (3.6, 22.3, 0.3),
+                  (3.6, 22.7, 0.3), (2.5, 22.7, 0.5), (2.5, 26, 0), (-1, 26, 0)])
+    prof = outer.difference(left).difference(right).difference(head.union(mouth)).difference(slot_top).difference(slot_bot)
+    return prof.buffer(0.25, join_style=1).buffer(-0.25, join_style=1)
 
 
 def vector_mask(geom, scale=30):
