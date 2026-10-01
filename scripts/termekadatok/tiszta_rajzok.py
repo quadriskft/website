@@ -839,7 +839,7 @@ def main():
         url = save_image(img, slug, "meretrajz")
         fill, *_ = render_mask(m.copy(), wt, ht, tt, where, wtop=opt[0] if opt else None)  # kitöltött, mint a 227046
         # csak a Decin-rajz (vonalas + kitöltött): minden korábbi kép (régi rajzok, 3D) törölve
-        data[slug]["images"] = [url, save_image(fill, slug, "kitoltott")]
+        data[slug]["images"] = [save_image(fill, slug, "kitoltott"), url]  # a fekete az első
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
     for slug, (fn, wt, ht, tt, where, *vd) in VECTOR.items():
         if slug not in data and slug in NEW:
@@ -852,7 +852,7 @@ def main():
         kw = vd[0] if vd and isinstance(vd[0], dict) else {"vdims": vd[0] if vd else ()}
         img, *_ = render_mask(m.copy(), wt, ht, tt, where, outline=True, eps=0.5, **kw)
         fill, *_ = render_mask(m.copy(), wt, ht, tt, where, eps=0.5, **kw)  # kitöltött, mint a 227046
-        data[slug]["images"] = [save_image(img, slug, "meretrajz"), save_image(fill, slug, "kitoltott")]
+        data[slug]["images"] = [save_image(fill, slug, "kitoltott"), save_image(img, slug, "meretrajz")]  # a fekete az első
         if slug in PHOTOS:  # a küldött adatlap a forrás (a gyártói cikkszám nem jelenik meg)
             data[slug].update({"source": "Quadris katalóguslap", "sourceUrl": "", "sourceTitle": ""})
             data[slug].pop("matchedCode", None)
@@ -878,7 +878,7 @@ def main():
         m = fill_mask(src, keep, thr=215, blur=0.7)
         img, *_ = render_mask(m.copy(), wt, ht, tt, where, outline=True, eps=0.8, **kw)
         fill, *_ = render_mask(m.copy(), wt, ht, tt, where, eps=0.8, **kw)
-        data[slug]["images"] = [save_image(img, slug, "meretrajz"), save_image(fill, slug, "kitoltott")]
+        data[slug]["images"] = [save_image(fill, slug, "kitoltott"), save_image(img, slug, "meretrajz")]  # a fekete az első
         data[slug].update({"source": "Quadris gyári rajz", "sourceUrl": "", "sourceTitle": ""})
         data[slug].setdefault("specs", {}).update(SPEC_FIX.get(slug, {}))
         data[slug]["specs"]["Falvastagság"] = f"{tt} mm"
@@ -901,7 +901,7 @@ def main():
         m = dark_mask(src, crop, rot)
         img, *_ = render_mask(m.copy(), wt, ht, "", None, eps=0.8, outline=True)
         fill, *_ = render_mask(m.copy(), wt, ht, "", None, eps=0.8)
-        data[slug]["images"] = [save_image(img, slug, "meretrajz"), save_image(fill, slug, "kitoltott")]
+        data[slug]["images"] = [save_image(fill, slug, "kitoltott"), save_image(img, slug, "meretrajz")]  # a fekete az első
         data[slug].update({"source": "Quadris katalóguslap", "sourceUrl": "", "sourceTitle": ""})
         data[slug].pop("matchedCode", None)
         if slug in PHOTOS:
