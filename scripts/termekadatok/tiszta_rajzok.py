@@ -292,6 +292,9 @@ OUTLINE = {  # (az E/VOLUMEN a Quadris kérésére a kék profilból készül �
          dict(keep=(117, 165, 324, 493), erase=[(117, 150, 128, 327), (150, 150, 162, 192), (313, 150, 326, 167),
                                                 (166, 410, 174, 466), (258, 432, 267, 500)], cav=11, r=2, shrink=2),
          "58,5", "95", None),
+    # Versus Micro Trike tetősín (V35991, öt hossz): a katalóguslap szürke profilja feketére színezve
+    tuple(f"v35991-{n}-mm-tetosin-micro-trike" for n in (6800, 7500, 7800, 8200, 8500)):
+        ("data/forras/versus_micro_trike.png", dict(keep=(40, 106, 332, 392), fill=True), "109", "103", "60"),
 }
 
 
@@ -344,6 +347,20 @@ def outline_mask(path, keep, erase=(), cav=14, holes=(), scale=4, r=0, shrink=0)
     big = lab == 1 + int(np.argmax(st[1:, 4]))
     ys, xs = np.where(big)
     return big[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+
+
+def fill_mask(path, keep, thr=205, scale=6):
+    """Szürkén kitöltött profilkép (a falak tömören szürkék, az üregek fehérek) maszkja: a küszöbnél sötétebb
+    képpontok a megadott területen, felnagyítva és simítva – a feketére színezés egyszerű megfelelője."""
+    a = np.asarray(Image.open(ROOT / path).convert("L")).astype(np.float32)
+    x0, y0, x1, y1 = keep
+    a = 255 - a[y0:y1, x0:x1]
+    big = cv2.resize(a, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
+    big = cv2.GaussianBlur(big, (0, 0), scale * 0.35) > 255 - thr
+    n, lab, st, _ = cv2.connectedComponentsWithStats(big.astype(np.uint8), connectivity=8)
+    m = lab == 1 + int(np.argmax(st[1:, 4]))
+    ys, xs = np.where(m)
+    return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
 def gray_mask(path, scale=6, inset=6):
@@ -592,7 +609,7 @@ def main():
                 data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
                 print(slug, "kék profilból")
     for slugs, (src, cfg, wt, ht, bt) in OUTLINE.items():
-        m = outline_mask(src, **cfg)
+        m = fill_mask(src, cfg["keep"]) if cfg.get("fill") else outline_mask(src, **cfg)
         img, *_ = render_mask(m.copy(), wt, ht, "", None, eps=1.0, bottom=bt)
         for slug in slugs:
             if slug in data:
