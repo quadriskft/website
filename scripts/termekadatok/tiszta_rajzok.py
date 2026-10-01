@@ -63,6 +63,7 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "237005-142-mm-i-koptato-profil-elox": ("profil_7005", "142", None, "", None),
     "237461-50x260-mm-l-belso-vedoprofil-elox": ("profil_7461", "260", "50", "2,5", ("v", 0.6), dict(walls=[("hx", 0.62, 0.005, "3")])),
     "237461-n-50x260-mm-l-belso-vedoprofil": ("profil_7461", "260", "50", "2,5", ("v", 0.6), dict(walls=[("hx", 0.62, 0.005, "3")])),
     "237000-25x25-mm-ives-sarokprofil-elox": ("profil_237000", "66,5", "66,5", "3", ("h", 0.8),
@@ -134,10 +135,13 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
 PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (370, 110, 575, 240)),
           "232134-285-mm-i-koptato-profil-elox": ("data/forras/232134_lap.png", (95, 95, 250, 580)),
-          "237000-25x25-mm-ives-sarokprofil-elox": ("data/forras/237000_lap.png", (390, 20, 535, 170))}
+          "237000-25x25-mm-ives-sarokprofil-elox": ("data/forras/237000_lap.png", (390, 20, 535, 170)),
+          "237005-142-mm-i-koptato-profil-elox": ("data/forras/237005_lap.png", (430, 80, 585, 385))}
 # adatok a küldött adatlapról
 SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
             "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"},
+            "237005-142-mm-i-koptato-profil-elox": {"Tömeg": "1,153 kg/fm", "Magasság": "142 mm", "Anyag": "alumínium EN AW-6060, eloxált",
+                                                    "Kivitel": "bordázott lapos profil"},
             "234235-35x35-mm-ives-sarokprofil-elox-d": {"Tömeg": "1,412 kg/fm", "Anyag": "alumínium 6060 T6, eloxált", "Belső nyílás": "34,5 mm",
                                                         "Magasság": "86 mm", "Keresztmetszet": "523 mm²"},
             "237000-25x25-mm-ives-sarokprofil-elox": {"Tömeg": "1,99 kg/fm", "Anyag": "alumínium EN AW-6060, eloxált",
@@ -152,7 +156,8 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
        "226671-400-mm-gumis-oldalfal-elox": ("BODEGA", "https://www.bodega.it", "Bodega TB36671 gyári rajz",
                                              {"Tömeg": "3,853 kg/fm", "Ötvözet": "EN AW-6063 T66", "Felület": "eloxált"}),
        "2015290-15-mm-keretprofil-elox": ("BODEGA", "https://www.bodega.it", "Bodega 50290 gyári rajz",
-                                          {"Tömeg": "1,763 kg/fm", "Ötvözet": "EN AW-6060 T6", "Felület": "eloxált"})}
+                                          {"Tömeg": "1,763 kg/fm", "Ötvözet": "EN AW-6060 T6", "Felület": "eloxált"}),
+       "237005-142-mm-i-koptato-profil-elox": ("Quadris katalóguslap", "", "", {"Felület": "eloxált"})}
 
 
 def profil_6941():
@@ -406,6 +411,23 @@ def profil_237000():
     arc = q.intersection(Point(15, 15).buffer(15, 96)).difference(Point(15, 15).buffer(15 - t, 96))
     g = g.difference(q).union(arc)  # a külső sarok R15-tel ívelt, a fal végig egyforma vastag
     return g.buffer(0.3, join_style=1).buffer(-0.3, join_style=1)
+
+
+def profil_7005():
+    """237005 (142 mm-es I koptató profil, bordázott lapos profil, T1 7005): a kiosztás a küldött katalóguslap
+    rajzáról (szimmetrikus: két szélén és középen kívül két-két kiemelt sáv, a hátoldalon négy horony, a végek
+    elöl ferdén élezve); a katalógusrajz vastagságban nem méretarányos, ezért a vastagság az 1,153 kg/fm tömegből
+    (kb. 427 mm²): kiemelt sáv 4, mélyebb rész 2,2 mm."""
+    from shapely.geometry import Polygon, box
+    hi, lo, e, nw, nd = 4.0, 2.25, 1.0, 2.5, 1.0
+    d = hi - lo
+    pts = [(0, hi - e), (7.5, 0), (15.5, 0), (15.5 + d, d), (29.8, d), (29.8 + d, 0), (53.8, 0), (53.8 + d, d),
+           (88.2 - d, d), (88.2, 0), (112.2 - d, 0), (112.2, d), (126.5 - d, d), (126.5, 0), (134.5, 0), (142, hi - e),
+           (142, hi), (0, hi)]
+    g = Polygon(pts)
+    for c in (10.8, 43.4, 98.6, 131.2):  # hornyok a hátoldalon
+        g = g.difference(box(c - nw / 2, hi - nd, c + nw / 2, hi + 1))
+    return g.buffer(0.15, join_style=1).buffer(-0.3, join_style=1).buffer(0.15, join_style=1)
 
 
 def profil_7461():

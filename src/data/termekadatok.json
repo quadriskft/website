@@ -4314,6 +4314,23 @@
    "/termekkepek/237000-25x25-mm-ives-sarokprofil-elox-foto.webp"
   ]
  },
+ "237005-142-mm-i-koptato-profil-elox": {
+  "source": "Quadris katalóguslap",
+  "sourceUrl": "",
+  "sourceTitle": "",
+  "specs": {
+   "Felület": "eloxált",
+   "Tömeg": "1,153 kg/fm",
+   "Magasság": "142 mm",
+   "Anyag": "alumínium EN AW-6060, eloxált",
+   "Kivitel": "bordázott lapos profil"
+  },
+  "images": [
+   "/termekkepek/237005-142-mm-i-koptato-profil-elox-kitoltott.webp",
+   "/termekkepek/237005-142-mm-i-koptato-profil-elox-meretrajz.webp",
+   "/termekkepek/237005-142-mm-i-koptato-profil-elox-foto.webp"
+  ]
+ },
  "237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox": {
   "source": "Quadris adatok",
   "sourceUrl": "",
