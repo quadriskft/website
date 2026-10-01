@@ -151,7 +151,9 @@ GRAYVIEW = {"234235-35x35-mm-ives-sarokprofil-elox-d": (
 IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"),  # a megszűnt 5000 mm-es változat képe
                                            ("data/forras/alu_zsaner_tiszta.png", "meretrajz")],  # idegen cikkszámok nélkül
             # az eloxált változathoz is csak a natúr (237767/n) méretrajza kell, a korábbi képek és 3D nélkül
-            "237767-60x60-l-profil-elox": [("public/termekkepek/237767-n-60x60-l-profil-1.webp", "rajz")]}
+            "237767-60x60-l-profil-elox": [("public/termekkepek/237767-n-60x60-l-profil-1.webp", "rajz")],
+            # a Quadris által küldött lap rajza változtatás nélkül (csak a gyári kód és a szöveg kivágva)
+            "380025-pwp-racsnis-feszito-kocka-adapter-r": [("data/forras/380025_rajz.png", "rajz")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
@@ -183,7 +185,9 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
        "2015290-15-mm-keretprofil-elox": ("BODEGA", "https://www.bodega.it", "Bodega 50290 gyári rajz",
                                           {"Tömeg": "1,763 kg/fm", "Ötvözet": "EN AW-6060 T6", "Felület": "eloxált"}),
        "237005-142-mm-i-koptato-profil-elox": ("Quadris katalóguslap", "", "", {"Felület": "eloxált"}),
-       "388008-27mm-feszito-cso-alu-profil": ("Quadris katalóguslap", "", "", {"Felület": "natúr"})}
+       "388008-27mm-feszito-cso-alu-profil": ("Quadris katalóguslap", "", "", {"Felület": "natúr"}),
+       "380025-pwp-racsnis-feszito-kocka-adapter-r": ("Quadris katalóguslap", "", "",
+                                                      {"Tömeg": "0,962 kg/fm", "Magasság": "61 mm", "Szálhossz": "6 / 6,6 m"})}
 
 
 def profil_6941():
@@ -974,6 +978,9 @@ def main():
             data[slug].get("specs", {}).pop("Falvastagság", None)
         print(slug, "vektoros")
     for slug, items in IMAGESET.items():
+        if slug not in data and slug in NEW:
+            data[slug] = {"source": NEW[slug][0], "sourceUrl": NEW[slug][1], "sourceTitle": NEW[slug][2],
+                          "specs": dict(NEW[slug][3]), "images": []}
         if slug in data:
             data[slug]["images"] = [save_image(Image.open(ROOT / src), slug, suf) for src, suf in items]
             print(slug, "képkészlet")
