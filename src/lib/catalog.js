@@ -84,6 +84,11 @@ for (const c of extended.categories ?? []) {
 // [forrás "csoport/alkategória", cél "csoport/alkategória", amely alkategória után kerüljön]
 const CATEGORY_COPIES = [
   ['platos-alkatreszek-es-kiegeszitok/kotoelemek', 'aluminium-alvaz-profilok/kotoelemek', 'hossztartok'],
+  // a ponyvarendszer-profilok a platós és ponyvás oldalfal profilok között is, a billencs oldalfalak előtt
+  ['ponyvarendszer-kiegeszitok/ponyvacsovek', 'ponyvas-oldalfal-profilok-es-szegok/ponyvacsovek', 'szego-profilok'],
+  ['ponyvarendszer-kiegeszitok/spitzprofilok', 'ponyvas-oldalfal-profilok-es-szegok/spitzprofilok', 'ponyvacsovek'],
+  ['ponyvarendszer-kiegeszitok/ponyvatarto-zartszelvenyek', 'ponyvas-oldalfal-profilok-es-szegok/ponyvatarto-zartszelvenyek', 'spitzprofilok'],
+  ['ponyvarendszer-kiegeszitok/spanner-profil', 'ponyvas-oldalfal-profilok-es-szegok/spanner-profil', 'ponyvatarto-zartszelvenyek'],
 ];
 for (const [from, to, after] of CATEGORY_COPIES) {
   const [fg, fc] = from.split('/'), [tg, tc] = to.split('/');
