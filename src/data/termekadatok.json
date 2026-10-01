@@ -4692,18 +4692,20 @@
   ]
  },
  "238645-kulso-l-profil-140x80mm-elox": {
-  "source": "Quadris adatok",
+  "source": "Quadris gyári rajz",
   "sourceUrl": "",
-  "sourceTitle": "Külső \"L\" profil 140x80mm elox",
+  "sourceTitle": "",
   "matchedCode": "",
   "specs": {
-   "Anyag": "alumínium, eloxált",
-   "Méret": "140 × 80 mm"
+   "Anyag": "alumínium 6060, eloxált",
+   "Méret": "140 × 80 mm",
+   "Falvastagság": "2,5 mm",
+   "Tömeg": "1,428 kg/fm"
   },
   "images": [
-   "/termekkepek/3d/238645-kulso-l-profil-140x80mm-elox-1.webp",
-   "/termekkepek/3d/238645-kulso-l-profil-140x80mm-elox-2.webp",
-   "/termekkepek/238645-kulso-l-profil-140x80mm-elox-1.webp"
+   "/termekkepek/238645-kulso-l-profil-140x80mm-elox-kitoltott.webp",
+   "/termekkepek/238645-kulso-l-profil-140x80mm-elox-meretrajz.webp",
+   "/termekkepek/238645-kulso-l-profil-140x80mm-elox-gyari-rajz.webp"
   ]
  },
  "243240-billencs-kozepso-200x40-mm": {

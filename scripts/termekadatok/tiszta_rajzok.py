@@ -63,6 +63,8 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "238645-kulso-l-profil-140x80mm-elox": ("profil_8645", "80", "140", "2,5", ("v", 0.6),
+                                            dict(walls=[("hx", 0.5, 0.01, "2,5")])),
     "238087-70x110-mm-l-kulso-elox": ("profil_8087", "70", "110", "2", ("h", 0.3)),
     "237905-n-25x35-mm-ives-sarokprofil-r50": ("profil_7905", "102", "92", "2,5", ("h", 0.85),
                                                dict(idims=[("h", 0.72, 2.5 / 102, 28 / 102, "25,5")])),
@@ -115,6 +117,10 @@ RAW = {"236825-80x80-mm-l-profil-elox": ("data/forras/236825_rajz.png", (16, 170
        "237461-50x260-mm-l-belso-vedoprofil-elox": ("data/forras/237461_rajz.png", (12, 136, 740, 445),
                                                     {"Méret": "50 × 260 mm", "Falvastagság": "2 mm", "Tömeg": "1,962 kg/fm",
                                                      "Anyag": "alumínium 6060, eloxált"}),
+       "238645-kulso-l-profil-140x80mm-elox": ("data/forras/238645_rajz.png", (125, 195, 500, 660),
+                                               {"Méret": "140 × 80 mm", "Falvastagság": "2,5 mm", "Tömeg": "1,428 kg/fm",
+                                                "Anyag": "alumínium 6060, eloxált"},
+                                               [(170, 425, 375, 465)]),  # a „NEKÓT.HRANY R 0,3” felirat nélkül
        "238087-70x110-mm-l-kulso-elox": ("data/forras/238087_rajz.png", (226, 245, 600, 672),
                                          {"Méret": "70 × 110 mm", "Falvastagság": "2 mm", "Tömeg": "1,087 kg/fm",
                                           "Anyag": "alumínium 6060, eloxált"}),
@@ -475,6 +481,16 @@ def profil_8087():
               (2, y(hi - 1.5), 0), (0.5, y(hi), 0)]
     P += [(0.5, 14, 0), (0, 13.5, 0)]
     return Polygon(fillet([(x, yy) for x, yy, _ in P], [r for *_, r in P]))
+
+
+def profil_8645():
+    """238645 (140×80 mm-es külső L profil, Constellium Děčín 8645): mindkét szár 2,5 vastag, a sarok kívül R7,5,
+    belül R5 (a rajz szerint; így a keresztmetszet 526 mm², a rajzon 527 mm²); a szárak vége 30°-os élre futó
+    letöréssel, a csúcs a belső oldalon (a 80 és a 140 a csúcsig értendő)."""
+    from shapely.geometry import Polygon
+    c = 2.5 / math.tan(math.radians(30))
+    P = [(0, 0, 7.5), (80 - c, 0, 0), (80, 2.5, 0), (2.5, 2.5, 5), (2.5, 140, 0), (0, 140 - c, 0)]
+    return Polygon(fillet([(x, y) for x, y, _ in P], [r for *_, r in P]))
 
 
 def profil_7461():
