@@ -77,6 +77,8 @@ EXTRA = {
     "351142": "62K1135401",
     # a Quadris kérésére: 237870 (25×25 mm utánfutó sarokprofil, elox) = Alu-SV 6612007870
     "237870": "6612007870",
+    # a Quadris kérésére: 237971 (hűtős keretprofil nyitott, elox) = Alu-SV 6612007971
+    "237971": "6612007971",
 }
 # a Quadris kérésére minden MAX-os első oszlop a „Pillar pr. CS MAX front 3000mm, Al anod” (662AP17730) részletesen
 # méretezett rajzát

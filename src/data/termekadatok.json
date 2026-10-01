@@ -4572,20 +4572,16 @@
   ]
  },
  "237971-hutos-keretprofil-nyitott-elox": {
-  "source": "Constellium rajz",
-  "sourceUrl": "https://www.constellium.com",
-  "sourceTitle": "Constellium Děčín profilrajz 7971 (Transport2024B, 24. oldal)",
-  "matchedCode": "7971",
+  "source": "Alu-SV",
+  "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000001_closed-body-aluminum-profiles/1530_box-siding-profile-108-anodized",
+  "sourceTitle": "Box siding profile 108 anodized",
+  "matchedCode": "6612007971",
   "specs": {
-   "Profilszám (gyártói)": "7971",
-   "Ötvözet": "AlMgSi0,5 (≈ EN AW-6060) F22",
-   "Tömeg": "2,981 kg/fm",
-   "Kerület": "568 mm",
-   "Keresztmetszet": "1 100 mm²",
-   "Profil típusa": "nyitott",
-   "Magasság": "187,5 mm",
-   "Szélesség": "73,8 mm",
-   "Felület": "eloxált"
+   "Anyag": "EN AW 6060",
+   "Felület": "eloxált (0,015mm)",
+   "Tömeg": "2,981 kg",
+   "Hossz": "7 500,0 mm",
+   "Mértékegység": "méter"
   },
   "images": [
    "/termekkepek/237971-hutos-keretprofil-nyitott-elox-1.webp"

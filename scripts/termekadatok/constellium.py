@@ -214,8 +214,8 @@ SPECS = {
 EXTRA_SLUGS = {"226915-n-30-mm-u-szego-profil": "6915"}  # 30 mm U szegő profil (rajz: Transport2024, 67. oldal)
 # kód nélküli Quadris-termékek: a slug számrésze a profilszám utolsó 4 számjegye (mint pl. 202386 = 12386, 237846 = 7846),
 # és a rajz méretei is egyeznek a megnevezéssel
-NO_CODE = {"231543-dobozos-keret-elox-134-80": "11543",  # 134 mm magas, 80 mm a peremtől lefelé
-           "237971-hutos-keretprofil-nyitott-elox": "7971"}  # OTEVŘENÝ (nyitott) keretprofil
+# (a 237971 hűtős keretprofil a Quadris kérésére az Alu-SV 6612007971 rajzát kapja, lásd alusv.py)
+NO_CODE = {"231543-dobozos-keret-elox-134-80": "11543"}  # 134 mm magas, 80 mm a peremtől lefelé
 
 
 def _poly(b):
