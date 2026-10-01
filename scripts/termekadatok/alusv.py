@@ -106,6 +106,8 @@ ACCESSORY = {k: "6298K00009" for k in ("356297", "3562974", "356297b-alu-kozepso
 ACCESSORY["356287"] = "6298K00005"
 PAIR_SPECS = {"3562974": {"Kivitel": "bal és jobb oldali (pár)", "Hossz": None},
               # a rajz szerinti méretek (az Alu-SV adatlapján nem szerepelnek)
+              # a Quadris szerint natúr (az Alu-SV adatlapja eloxáltat ír)
+              "m1-001-c-sin-aluminium": {"Felület": "natúr"},
               "237870": {"Szélesség": "60 mm", "Magasság": "60 mm", "Szárak": "25 × 25 mm", "Falvastagság": "3 / 2 mm"}}
 # a szerelt kötőelemek rajzán az Alu-SV alkatrész-cikkszámai helyett a Quadris-cikkszám / magyar megnevezés
 # (6600107775 = 117775, 6600117776 = 117776, 6600107776 = 117774; a csavar és az alátét gyári kódja helyett a neve):
@@ -250,7 +252,7 @@ def main(only=None):
                       {**info["specs"], **({"Felület": "eloxált"} if "elox" in p["name"].lower() and info["specs"].get("Felület") == "natúr" else {})}),
             "images": images,
         }
-        for k, v in PAIR_SPECS.get(p["code"], {}).items():
+        for k, v in (PAIR_SPECS.get(p["code"]) or PAIR_SPECS.get(p["slug"], {})).items():
             if v is None:
                 enrichment[p["slug"]]["specs"].pop(k, None)
             else:
