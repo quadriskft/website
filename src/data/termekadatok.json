@@ -4434,15 +4434,17 @@
   "sourceTitle": "Exlabesa katalógus EXL-37712",
   "matchedCode": "EXL-37712",
   "specs": {
-   "Tömeg": "1,104 kg/fm",
-   "Kerület": "331 mm",
-   "Szélesség": "60,2 mm",
+   "Tömeg": "1,104 kg/fm (237712) / 0,959 kg/fm (237713)",
+   "Kerület": "331 mm (237712) / 295 mm (237713)",
+   "Szélesség": "60,2 mm (237712) / 51,5 mm (237713)",
    "Belső méret (U)": "25,1 mm",
    "Kivitel": "csigás zsanérprofil 25 mm-es falhoz",
    "Felület": "eloxált"
   },
   "images": [
-   "/termekkepek/237712-13-dupla-alu-csiga-zsaner-u-25-mm-elox-1.webp"
+   "/termekkepek/237712-13-dupla-alu-csiga-zsaner-u-25-mm-elox-par.webp",
+   "/termekkepek/237712-13-dupla-alu-csiga-zsaner-u-25-mm-elox-1.webp",
+   "/termekkepek/237712-13-dupla-alu-csiga-zsaner-u-25-mm-elox-2.webp"
   ]
  },
  "237767-60x60-l-profil-elox": {
