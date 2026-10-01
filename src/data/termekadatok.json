@@ -4628,18 +4628,20 @@
   ]
  },
  "238087-70x110-mm-l-kulso-elox": {
-  "source": "Quadris adatok",
+  "source": "Quadris gyári rajz",
   "sourceUrl": "",
-  "sourceTitle": "70x110 mm L külső elox",
+  "sourceTitle": "",
   "matchedCode": "",
   "specs": {
-   "Anyag": "alumínium, eloxált",
-   "Méret": "70 × 110 mm"
+   "Anyag": "alumínium 6060, eloxált",
+   "Méret": "70 × 110 mm",
+   "Falvastagság": "2 mm",
+   "Tömeg": "1,087 kg/fm"
   },
   "images": [
-   "/termekkepek/3d/238087-70x110-mm-l-kulso-elox-1.webp",
-   "/termekkepek/3d/238087-70x110-mm-l-kulso-elox-2.webp",
-   "/termekkepek/238087-70x110-mm-l-kulso-elox-1.webp"
+   "/termekkepek/238087-70x110-mm-l-kulso-elox-kitoltott.webp",
+   "/termekkepek/238087-70x110-mm-l-kulso-elox-meretrajz.webp",
+   "/termekkepek/238087-70x110-mm-l-kulso-elox-gyari-rajz.webp"
   ]
  },
  "238170-or-ajto-keret-elox-70x30x65-25mm": {

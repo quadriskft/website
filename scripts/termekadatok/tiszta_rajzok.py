@@ -63,6 +63,7 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "238087-70x110-mm-l-kulso-elox": ("profil_8087", "70", "110", "2", ("h", 0.3)),
     "237905-n-25x35-mm-ives-sarokprofil-r50": ("profil_7905", "102", "92", "2,5", ("h", 0.85),
                                                dict(idims=[("h", 0.72, 2.5 / 102, 28 / 102, "25,5")])),
     "237005-142-mm-i-koptato-profil-elox": ("profil_7005", "142", None, "", None),
@@ -114,6 +115,9 @@ RAW = {"236825-80x80-mm-l-profil-elox": ("data/forras/236825_rajz.png", (16, 170
        "237461-50x260-mm-l-belso-vedoprofil-elox": ("data/forras/237461_rajz.png", (12, 136, 740, 445),
                                                     {"Méret": "50 × 260 mm", "Falvastagság": "2 mm", "Tömeg": "1,962 kg/fm",
                                                      "Anyag": "alumínium 6060, eloxált"}),
+       "238087-70x110-mm-l-kulso-elox": ("data/forras/238087_rajz.png", (226, 245, 600, 672),
+                                         {"Méret": "70 × 110 mm", "Falvastagság": "2 mm", "Tömeg": "1,087 kg/fm",
+                                          "Anyag": "alumínium 6060, eloxált"}),
        "237905-n-25x35-mm-ives-sarokprofil-r50": ("data/forras/237905_rajz.webp", (150, 292, 770, 724),
                                                   {"Méret": "102 × 92 mm", "Falvastagság": "2,5 mm", "Tömeg": "2,092 kg/fm",
                                                    "Belső nyílás": "25,5 mm", "Ív": "R50", "Anyag": "alumínium 6060"},
@@ -451,6 +455,26 @@ def profil_7905():
     g = outer.difference(hole).union(box(54, 0, 102, 2.5)).union(box(54, 38, 77, 40.5))
     g = g.union(box(28, 50, 30.5, 70)).union(box(0, 50, 2.5, 92))
     return g.buffer(1.2, join_style=1).buffer(-1.7, join_style=1).buffer(0.5, join_style=1)
+
+
+def profil_8087():
+    """238087 (70×110 mm-es külső L profil, Alcan Děčín 8087): a fal 2 vastag; a sarokban kívül 13,5 mm-en 2,5
+    vastag (45°-os átmenettel), a külső sarok R5; a vízszintes szár végén 5 mm hosszú, 4 mm vastag perem 50°-os
+    alsó lejtővel; a függőleges száron két borda (a belső oldal 2 mm-rel kifelé, a külső 1,5 mm-rel befelé tolva,
+    ott 2,5 vastag, a külső oldalon 90°-os, 0,3 mm-es V-horonnyal): alul a láb 4 mm vastag, 20 mm magas (alsó
+    élén letörés és R1), fent 47,5–62,5 mm-nél; a keresztmetszet így 406 mm² (a rajzon 401 mm²)."""
+    from shapely.geometry import Polygon
+    r50 = 2 / math.tan(math.radians(50))
+    y = lambda b: 110 - b  # a rajz alulról mért méreteiből
+    P = [(0, 0, 5), (13.5, 0, 0), (14, 0.5, 0), (70, 0.5, 0.3), (70, 4.5, 0.3), (65, 4.5, 0), (65 - r50, 2.5, 0),
+         (2.5, 2.5, 0.5), (2.5, y(64.5), 0), (4.5, y(62.5), 0), (4.5, y(47.5), 0), (2.5, y(45.5), 0),
+         (2.5, y(22), 0), (4.5, y(20), 0), (4.5, 110, 1), (3.5, 110, 0), (0.5, y(1.8), 0)]
+    for lo, hi in ((5, 20), (47.5, 62.5)):  # a külső oldal behúzásai, alulról felfelé
+        mid = (lo + 1.5 + hi - 1.5) / 2
+        P += [(0.5, y(lo), 0), (2, y(lo + 1.5), 0), (2, y(mid - 0.3), 0), (2.3, y(mid), 0), (2, y(mid + 0.3), 0),
+              (2, y(hi - 1.5), 0), (0.5, y(hi), 0)]
+    P += [(0.5, 14, 0), (0, 13.5, 0)]
+    return Polygon(fillet([(x, yy) for x, yy, _ in P], [r for *_, r in P]))
 
 
 def profil_7461():
