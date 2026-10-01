@@ -1658,6 +1658,18 @@
    "/termekkepek/201094-targonca-utkozo-profil-1.webp"
   ]
  },
+ "2015290-15-mm-keretprofil-elox": {
+  "source": "BODEGA",
+  "sourceUrl": "https://www.bodega.it",
+  "sourceTitle": "Bodega 50290 gyári rajz",
+  "specs": {
+   "Falvastagság": "2,4 mm"
+  },
+  "images": [
+   "/termekkepek/2015290-15-mm-keretprofil-elox-meretrajz.webp",
+   "/termekkepek/2015290-15-mm-keretprofil-elox-kitoltott.webp"
+  ]
+ },
  "2018290-18-mm-keretprofil-elox": {
   "source": "Quadris gyári rajz",
   "sourceUrl": "",

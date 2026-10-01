@@ -63,9 +63,14 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "2015290-15-mm-keretprofil-elox": ("profil_50290", "132", "68", "2,4", ("v", 0.45)),
     "6612226-hatso-oszlop-128-35-alu-elox-d": ("profil_12226", "128", "35", "3", ("v", 0.75)),
     "6612225-elso-oszlop-90-70-alu-elox-d": ("profil_12225", "90", "70", "3", ("v", 0.45), [(34.79 / 70, 1, "35")]),  # a lemez felső síkja
 }
+
+
+# új adatlap (eddig nem volt képe): slug -> (forrás, URL, forrás címe)
+NEW = {"2015290-15-mm-keretprofil-elox": ("BODEGA", "https://www.bodega.it", "Bodega 50290 gyári rajz")}
 
 
 def profil_6941():
@@ -153,6 +158,35 @@ def profil_12226():
     cav = mm([(336.1, 774.0, 2), (461.4, 774.0, 2), (461.4, 859.0, 1), (336.1, 859.0, 1)])
     shape = Polygon(fillet([(x, y) for x, y, _ in outer], [r for *_, r in outer]))
     return shape.difference(Polygon(fillet([(x, y) for x, y, _ in cav], [r for *_, r in cav])))
+
+
+def profil_50290():
+    """Bodega 50290 (15 mm keretprofil): a gyári rajz (data/forras/bodega_50290.png, 7,098 px/mm) körvonalpontjaiból.
+    A bal oldali ív R25 (falvastagság 2,4, a vége R1,2), a függőleges fül alján Ø4 gömbölyítés, a jobb oldali horog
+    a rajz sugaraival (R5 / R4,5 / R2 / R1 / R0,5), a 30°-os fog és az alsó, keskenyedő láb (alul R0,9)."""
+    from shapely.geometry import Point, Polygon
+    from shapely.ops import unary_union
+
+    pts = [(392, 134.5, 0), (1184, 134.5, 2), (1184, 232.8, 2), (1088.3, 232.8, 4.5), (1088.3, 331.2, 4.5),
+           (1183.5, 363.9, 2), (1183.5, 404, 0.5), (1166.5, 418, 0.5), (1155, 378, 0.7), (1145, 378, 0.7),
+           (1135, 416.5, 0.5), (1079, 412.5, 0), (1079, 425.5, 0), (1065.5, 616.7, 0.9), (1052, 616.7, 0.9),
+           (1052, 394.4, 2), (1118, 397.5, 1), (1129.5, 362.5, 1), (1071.7, 341.9, 5), (1071.7, 215.4, 5),
+           (1166.7, 215.4, 1), (1166.7, 151.5, 1), (410.7, 151.5, 1.5), (410.7, 318, 0), (393.3, 318, 0), (393.3, 151.5, 0)]
+    K = 7.098
+    main = Polygon(fillet([(x, y) for x, y, _ in pts], [r * K for *_, r in pts]))
+    c, ro, ri = np.array([392, 134.5 + 25 * K]), 25 * K, 22.6 * K
+    a0, a1 = math.atan2(213.3 - c[1], 255.2 - c[0]), -math.pi / 2
+    if a0 > 0:
+        a0 -= 2 * math.pi
+    ang = np.linspace(a0, a1, 80)
+    lip = Polygon([tuple(c + ro * np.array([math.cos(a), math.sin(a)])) for a in ang] +
+                  [tuple(c + ri * np.array([math.cos(a), math.sin(a)])) for a in ang[::-1]])
+    cap = Point(255.2, 213.3).buffer(1.2 * K, 32)
+    bulb = Point(396.7, 318.3).buffer(2 * K, 48)
+    shape = unary_union([main, lip, cap, bulb]).difference(Point(1078.5, 419).buffer(6.5, 32))
+    shape = shape.buffer(0.4 * K).buffer(-0.4 * K)  # a csatlakozások kis lekerekítése
+    from shapely import affinity
+    return affinity.affine_transform(shape, [1 / K, 0, 0, 1 / K, -247.5 / K, -134.5 / K])
 
 
 def vector_mask(geom, scale=30):
@@ -419,6 +453,8 @@ def main():
         data[slug]["images"] = [url, save_image(fill, slug, "kitoltott")]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
     for slug, (fn, wt, ht, tt, where, *vd) in VECTOR.items():
+        if slug not in data and slug in NEW:
+            data[slug] = {"source": NEW[slug][0], "sourceUrl": NEW[slug][1], "sourceTitle": NEW[slug][2], "specs": {}, "images": []}
         if slug not in data:
             continue
         m = vector_mask(globals()[fn]())
