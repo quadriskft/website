@@ -55,11 +55,6 @@ DECIN = {
         ("clear", [(603.3, 430), (607, 430), (607, 444), (603.3, 444)]),
         ("fill", [(556, 432.9), (597.4, 432.9), (603.2, 436.5), (603.2, 441.8), (595.6, 441.8), (594.2, 439.6), (556, 439.6)]),
     ], "40", "126,5", "3", ("h", 0.72), 0.12, 5),
-    # 6612225: a 2 mm-es lemez lekerekített vége a jelölések nélkül újrarajzolva
-    "6612225-elso-oszlop-90-70-alu-elox-d": ("12225", 110, 12, [
-        ("clear", [(555, 262), (580, 262), (580, 286), (555, 286)]),
-        ("fill", [(555, 268.4), (572, 268.4), (573.3, 269.8), (573.7, 273.4), (573.3, 277), (572, 278.4), (555, 278.4)]),
-    ], "90", "70", "3", ("v", 0.45), None, 15, 4),
     "2073902-i-90-csavarozhato-kereszttarto": ("10902", 90, 3, [], "85", "90", "3", ("h", 0.40), None, 5, 4),
 }
 
@@ -68,6 +63,7 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "6612225-elso-oszlop-90-70-alu-elox-d": ("profil_12225", "90", "70", "3", ("v", 0.45)),
 }
 
 
@@ -90,6 +86,48 @@ def profil_6941():
     for g in grooves:
         prof = prof.difference(g)
     return prof
+
+
+def fillet(pts, radii, n=12):
+    """Sokszög lekerekítése: minden csúcs a megadott sugarú, mindkét élhez érintő ívvel (domború és homorú is)."""
+    out = []
+    P = [np.array(p, float) for p in pts]
+    for i, (p, r) in enumerate(zip(P, radii)):
+        if not r:
+            out.append(tuple(p))
+            continue
+        a, b = P[i - 1], P[(i + 1) % len(P)]
+        u, v = (a - p) / np.linalg.norm(a - p), (b - p) / np.linalg.norm(b - p)
+        th = math.acos(max(-1.0, min(1.0, float(u @ v))))
+        d = r / math.tan(th / 2)
+        bis = (u + v) / np.linalg.norm(u + v)
+        c = p + bis * (r / math.sin(th / 2))
+        t1, t2 = p + u * d, p + v * d
+        a1, a2 = math.atan2(*(t1 - c)[::-1]), math.atan2(*(t2 - c)[::-1])
+        da = (a2 - a1 + math.pi) % (2 * math.pi) - math.pi
+        out += [tuple(c + r * np.array([math.cos(a1 + da * k / n), math.sin(a1 + da * k / n)])) for k in range(n + 1)]
+    return out
+
+
+def profil_12225():
+    """Constellium Děčín 12225 (első oszlop 90/70): a gyári rajz körvonalának pontjai [pt] mm-re átszámítva
+    (a szken vízszintes és függőleges léptéke eltér: 90 mm = 469,3 pt, 70 mm = 330,6 pt). Sarkok a rajz jelölései
+    szerint: z = R3, y = R2, x = R1, a többi él R0,5; a 2 mm-es lemez vége lekerekített."""
+    from shapely.geometry import Polygon
+
+    def mm(pts):
+        return [((x - 104.4) / 5.2144, (y - 105.0) / 4.7229, r) for x, y, r in pts]
+
+    outer = mm([(104.4, 105, 0.5), (127.3, 105, 0.5), (127.3, 155, 0), (125.4, 155, 0), (125.4, 203, 0), (128, 203, 0),
+                (128, 269.3, 2), (573.7, 269.3, 0.9), (573.7, 278.5, 0.9), (469.4, 278.5, 1), (469.4, 332.2, 0.5),
+                (453.6, 332.2, 0.5), (453.6, 307.8, 0.3), (438, 307.8, 0.5), (438, 301.5, 0.5), (453.6, 301.5, 0.3),
+                (453.6, 283.4, 2), (409.7, 283.4, 2), (409.7, 419.6, 2), (453.6, 419.6, 2), (453.6, 401.4, 0.3),
+                (438, 401.4, 0.5), (438, 395, 0.5), (453.6, 395, 0.3), (453.6, 370.9, 0.5), (469.4, 370.9, 0.5),
+                (469.4, 435.2, 3), (136.5, 435.2, 1.5), (146.0, 388.5, 0.5), (161.5, 388.5, 0.5), (155.2, 421, 1),
+                (191.1, 421, 1), (191.1, 350.3, 1), (104.4, 350.3, 3)])
+    cav = mm([(120.8, 289, 2), (393.8, 289, 2), (393.8, 420, 2), (206.8, 420, 2), (206.8, 336.1, 1), (120.8, 336.1, 2)])
+    shape = Polygon(fillet([(x, y) for x, y, _ in outer], [r for *_, r in outer]))
+    return shape.difference(Polygon(fillet([(x, y) for x, y, _ in cav], [r for *_, r in cav])))
 
 
 def vector_mask(geom, scale=30):
