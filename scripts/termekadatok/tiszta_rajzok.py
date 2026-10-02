@@ -229,7 +229,9 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             "102439-dugo-spitzprofilhoz-150-mm-magas": [("data/forras/102439_foto.png", "1")],
             # a küldött lap rajza (a táblázat a gyári kóddal levágva), élsimítva nagyítva
             "380034-ponyvabeakaszto-alu-profil-80-mm-elox": [("data/forras/380034_rajz.png", "rajz")],
-            "380035-ponyvabeakaszto-alu-profil-55-mm-elox": [("data/forras/380035_rajz.png", "rajz")]}
+            "380035-ponyvabeakaszto-alu-profil-55-mm-elox": [("data/forras/380035_rajz.png", "rajz")],
+            # a küldött lap 3D képe és méretezett rajza (a fejléc nélkül, nagyítva)
+            "380018-ss-also-adapter-27-es-csohoz-kocka": [("data/forras/380018ss_foto.png", "1"), ("data/forras/380018ss_rajz.png", "rajz")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
@@ -245,6 +247,8 @@ SHARPEN = {}
 # adatok a küldött adatlapról
 SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
             "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"},
+            "380018-ss-also-adapter-27-es-csohoz-kocka": {"Tömeg": None, "Csőátmérő": "Ø27 mm", "Magasság": "55 mm",
+                                                          "Négyszög csatlakozás": "13 × 13 mm", "Anyag": "rozsdamentes acél"},
             "388005-ponyvabeakaszto-alu-profil-70-mm-elox": {"Tömeg": "0,853 kg/fm", "Méret": "70 × 18 mm", "Furat": "Ø14 mm",
                                                              "Anyag": "alumínium EN AW-6060", "Kivitel": "ponyvabeakasztó profil"},
             "388008-27mm-feszito-cso-alu-profil": {"Tömeg": "0,608 kg/fm", "Méret": "26,5 × 27 mm", "Belső furat": "Ø14 mm",
@@ -1135,6 +1139,11 @@ def main():
                           "specs": dict(NEW[slug][3]), "images": []}
         if slug in data:
             data[slug]["images"] = [save_image(Image.open(ROOT / src), slug, suf) for src, suf in items]
+            for k, v in SPEC_FIX.get(slug, {}).items():  # None: a hibás adat törlése
+                if v is None:
+                    data[slug].setdefault("specs", {}).pop(k, None)
+                else:
+                    data[slug].setdefault("specs", {})[k] = v
             print(slug, "képkészlet")
     for slug, (src, keep, wt, ht, tt, where, kw) in GRAYVIEW.items():
         if slug not in data:

@@ -7093,10 +7093,14 @@
   "sourceDescription": "",
   "matchedCode": "34480018",
   "specs": {
-   "Tömeg": "0"
+   "Csőátmérő": "Ø27 mm",
+   "Magasság": "55 mm",
+   "Négyszög csatlakozás": "13 × 13 mm",
+   "Anyag": "rozsdamentes acél"
   },
   "images": [
-   "/termekkepek/380018-ss-also-adapter-27-es-csohoz-kocka-1.webp"
+   "/termekkepek/380018-ss-also-adapter-27-es-csohoz-kocka-1.webp",
+   "/termekkepek/380018-ss-also-adapter-27-es-csohoz-kocka-rajz.webp"
   ]
  },
  "380019-felso-adapter-27-es-csohoz": {
