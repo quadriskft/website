@@ -226,7 +226,9 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             "e87370-edscha-takaro-gumi-compact-110": [("data/forras/e87370_rajz.png", "rajz"),
                                                       ("public/termekkepek/3d/e87370-edscha-takaro-gumi-compact-110-2.webp", "3d")],
             # a küldött lap termékképe (a gyári kód és a szöveg nélkül)
-            "102439-dugo-spitzprofilhoz-150-mm-magas": [("data/forras/102439_foto.png", "1")]}
+            "102439-dugo-spitzprofilhoz-150-mm-magas": [("data/forras/102439_foto.png", "1")],
+            # a küldött lap rajza (a táblázat a gyári kóddal levágva), élsimítva nagyítva
+            "380034-ponyvabeakaszto-alu-profil-80-mm-elox": [("data/forras/380034_rajz.png", "rajz")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
