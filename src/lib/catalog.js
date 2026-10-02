@@ -13,7 +13,8 @@ import families from '../../data/termek_csaladok.json';
 // képekkel és műszaki adatokkal (scripts/termekadatok/).
 const excelProducts = catalog.products.map((p) => {
   const e = extra[p.slug];
-  const move = extended.moves?.[p.slug];
+  // áthelyezés: kézi javítás („move”: {group, category}) vagy a bővített kínálat átsorolása
+  const move = fixes[p.slug]?.move ?? extended.moves?.[p.slug];
   const out = move ? { ...p, group: move.group, category: move.category } : p;
   const merged = !e ? out : {
     ...out,

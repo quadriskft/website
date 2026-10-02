@@ -218,7 +218,9 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             # a Quadris által küldött lap rajza változtatás nélkül (csak a gyári kód és a szöveg kivágva)
             "380033-ponyvabeakaszto-alu-profil-60-mm-elox": [("data/forras/380033_rajz.png", "rajz")],
             # a küldött lap mindkét képe változtatás nélkül (a gyári kód és a szöveg kivágva), a rajz elöl
-            "380045-34mm-feszito-cso-alu-profil": [("data/forras/380045_rajz.png", "rajz"), ("data/forras/380045_3d.png", "3d-lap")]}
+            "380045-34mm-feszito-cso-alu-profil": [("data/forras/380045_rajz.png", "rajz"), ("data/forras/380045_3d.png", "3d-lap")],
+            # a küldött lap fotója és rajza (a gyári cikkszám és a fejléc nélkül)
+            "t-rakonca-gorgo": [("data/forras/t_rakonca_gorgo_foto.png", "1"), ("data/forras/t_rakonca_gorgo_rajz.png", "rajz")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
@@ -258,7 +260,9 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
        "237005-142-mm-i-koptato-profil-elox": ("Quadris katalóguslap", "", "", {"Felület": "eloxált"}),
        "388008-27mm-feszito-cso-alu-profil": ("Quadris katalóguslap", "", "", {"Felület": "natúr"}),
        "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("Quadris katalóguslap", "", "", {"Felület": "eloxált"}),
-       "203101-spanner-profil": ("Quadris gyári rajz", "", "", {"Felület": "natúr"})}
+       "203101-spanner-profil": ("Quadris gyári rajz", "", "", {"Felület": "natúr"}),
+       "t-rakonca-gorgo": ("Quadris katalóguslap", "", "", {"Tömeg": "243 g/db", "Méret": "90 × 96 mm", "Görgő": "Ø24 mm",
+                                                            "Lemezvastagság": "5 mm", "Furat": "Ø10,5 mm", "Csomagolás": "70 db/doboz"})}
 
 
 def profil_6941():

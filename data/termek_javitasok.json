@@ -566,7 +566,11 @@
   "order": 32
  },
  "t-rakonca-gorgo": {
-  "order": 33
+  "order": 33,
+  "move": {
+   "group": "elhuzhato-roloponyvas-rendszer",
+   "category": "edscha"
+  }
  },
  "6613553-mini-hatso-oszlop-elox-111-mm": {
   "specs": {
