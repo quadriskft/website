@@ -101,6 +101,8 @@ PHOTO = {"117774", "117775", "117776", "117777", "117787",
          "351142", "356287", "356297", "356297b-alu-kozepso-rakonca-400-mm-80-np", "3562974",
          # festett (fekete) szegecselhető deszkatartó zseb
          "100021"}
+# a fotón csak a sötét (fekete) termék maradjon, a mellette látható szürke profil nélkül (a Quadris kérésére)
+PHOTO_DARK_ONLY = {"100021"}
 # jobb/bal pár: a termék a bal (EXTRA) mellé a jobb oldali tétel fotóját és rajzát is kapja; a hossz a kettőnél eltér
 PAIR = {"3562974": "62974ZP001"}
 # a képek végére a hozzá tartozó alkatrész fotója és rajza (a Quadris kérésére): kód vagy slug -> Alu-SV cikkszám
@@ -141,14 +143,26 @@ def relabel(img, items):
     return img
 
 
-def trim_photo(data):
-    """A termékfotó körüli nagy fehér rész levágása (5% margóval)."""
+def trim_photo(data, dark_only=False):
+    """A termékfotó körüli nagy fehér rész levágása (5% margóval). dark_only: csak a sötét (fekete) termék marad,
+    a fotón mellette látható világosszürke (beépítési) profil nélkül – a sötét rész befoglaló téglalapjára vágva."""
     import io
 
     import numpy as np
     from PIL import Image
     img = Image.open(io.BytesIO(data)).convert("RGB")
-    ys, xs = np.where(np.asarray(img.convert("L")) < 235)
+    g = np.asarray(img.convert("L"))
+    if dark_only:
+        import cv2
+        dark = cv2.morphologyEx((g < 90).astype(np.uint8), cv2.MORPH_CLOSE, np.ones((15, 15), np.uint8))
+        n, lab, st, _ = cv2.connectedComponentsWithStats(dark, connectivity=8)
+        i = 1 + int(np.argmax(st[1:, 4]))
+        keep = cv2.dilate((lab == i).astype(np.uint8), np.ones((5, 5), np.uint8)) > 0
+        a = np.asarray(img).copy()
+        a[~keep] = 255  # minden más (a szürke profil) fehér
+        img = Image.fromarray(a)
+        g = np.asarray(img.convert("L"))
+    ys, xs = np.where(g < 235)
     img = img.crop((xs.min(), ys.min(), xs.max() + 1, ys.max() + 1))
     m = int(max(img.size) * 0.05)
     bg = Image.new("RGB", (img.width + 2 * m, img.height + 2 * m), "white")
@@ -234,7 +248,8 @@ def main(only=None):
             photos = []
             for c, n in [(code, 2)] + ([(pair, 4)] if pair else []):
                 try:
-                    photos.append(save_image(trim_photo(fetch(f"{BASE}/common/images/product/photo/full/{c.lower()}.jpg")), p["slug"], n))
+                    photos.append(save_image(trim_photo(fetch(f"{BASE}/common/images/product/photo/full/{c.lower()}.jpg"),
+                                                        p["code"] in PHOTO_DARK_ONLY), p["slug"], n))
                 except Exception as err:  # noqa: BLE001
                     print("  fotóhiba:", c, err)
             images = photos + images
