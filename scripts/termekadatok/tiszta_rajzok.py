@@ -264,7 +264,7 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
        "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("Quadris katalóguslap", "", "", {"Felület": "eloxált"}),
        "203101-spanner-profil": ("Quadris gyári rajz", "", "", {"Felület": "natúr"}),
        "t-rakonca-gorgo": ("Quadris katalóguslap", "", "", {"Tömeg": "243 g/db", "Méret": "90 × 96 mm", "Görgő": "Ø24 mm",
-                                                            "Lemezvastagság": "5 mm", "Furat": "Ø10,5 mm", "Csomagolás": "70 db/doboz"}),
+                                                            "Lemezvastagság": "5 mm", "Furat": "Ø10,5 mm"}),
        "e87370-edscha-takaro-gumi-compact-110": ("Quadris katalóguslap", "", "", {"Szélesség": "100 mm", "Szín": "fekete",
                                                                                   "Rendszer": "Edscha COMPACT"})}
 
