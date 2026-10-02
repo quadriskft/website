@@ -830,5 +830,59 @@
  },
  "6639604-max-hatso-oszlop-exl-elox": {
   "order": 19
+ },
+ "100001-dugo-perforalt-acel-kerethez": {
+  "order": 1
+ },
+ "100516-100x25-dugo-zartszelvenyhez": {
+  "order": 2
+ },
+ "102439-dugo-spitzprofilhoz-150-mm-magas": {
+  "order": 3
+ },
+ "103055-100-x-30-mm-dugo-alafutasgatlohoz": {
+  "order": 4
+ },
+ "104285-d60-csodugo": {
+  "order": 5
+ },
+ "100591-ives-alafutasgatlo-vegzaro-pvc": {
+  "order": 6
+ },
+ "100021-100x25-mm-festett-szegecselheto-deszkatarto-zseb": {
+  "order": 7
+ },
+ "104130-100x25-mm-horganyzott-szegecselheto-deszkatarto-zseb": {
+  "order": 8
+ },
+ "107409-465x25-mm-festett-szegecselheto-deszkatarto-zseb": {
+  "order": 9
+ },
+ "100451-deszkatarto-zseb": {
+  "order": 10
+ },
+ "106107-alu-elox-szeg-deszkatarto-l-25x19x32-mm": {
+  "order": 11
+ },
+ "105510-d35-mm-gumiagy": {
+  "order": 12
+ },
+ "106220-d35-mm-acel-tarto": {
+  "order": 13
+ },
+ "101100-d50-mm-gumiagy-acel-tarto": {
+  "order": 14
+ },
+ "106060-d60-as-acel-csodugotarto-feszek": {
+  "order": 15
+ },
+ "100110-seprutarto-80-mm": {
+  "order": 16
+ },
+ "106282-targoncautkozo-profil-rogzito-csavar-keszlet": {
+  "order": 17
+ },
+ "106731-lezaro-csiga-zsanerhoz": {
+  "order": 18
  }
 }
