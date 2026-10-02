@@ -883,6 +883,10 @@
   "order": 17
  },
  "106731-lezaro-csiga-zsanerhoz": {
-  "order": 18
+  "move": {
+   "group": "zart-dobozos-es-hutos-profilok",
+   "category": "zart-dobozos-es-hutos-profilok"
+  },
+  "after": "237712-13-dupla-alu-csiga-zsaner-u-25-mm-elox"
  }
 }
