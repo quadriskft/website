@@ -233,8 +233,8 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             # a küldött lap 3D képe és méretezett rajza (a fejléc nélkül, nagyítva)
             "380018-ss-also-adapter-27-es-csohoz-kocka": [("data/forras/380018ss_foto.png", "1"), ("data/forras/380018ss_rajz.png", "rajz")],
             # az FTS sárga 3D képe horganyzott acél színre átszínezve (a Quadris kérésére), utána az FTS rajza
-            "380011-felso-adapter-34-es-csohoz": [("data/forras/380011_horganyzott.png", "1"), ("data/forras/380011_rajz.png", "2")],
-            "380017-also-adapter-34-es-csohoz": [("data/forras/380017_horganyzott.png", "1"), ("data/forras/380017_rajz.png", "2")]}
+            "380011-felso-adapter-34-es-csohoz": [("data/forras/380011_horganyzott.png", "1"), ("data/forras/380011_rajz_nagy.png", "2")],
+            "380017-also-adapter-34-es-csohoz": [("data/forras/380017_horganyzott.png", "1"), ("data/forras/380017_rajz_nagy.png", "2")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
