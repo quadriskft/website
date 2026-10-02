@@ -10925,7 +10925,6 @@
   "sourceTitle": "Claro catalogue 2019, 131. oldal – RTE-003",
   "matchedCode": "RTE-003",
   "specs": {
-   "Cikkszám (gyártói)": "RTE-003",
    "Gyártó": "Claro",
    "Kivitel": "kétgörgős ponyvagörgő, hosszlyukas rögzítőlappal",
    "Méret": "75 × 52 mm",
@@ -10934,7 +10933,6 @@
    "Lapvastagság": "5 mm",
    "Hosszlyuk": "52 × 8 mm",
    "Tömeg": "176 g/db",
-   "Kiszerelés": "110 db/karton",
    "Minősítés": "DEKRA approved"
   },
   "images": [

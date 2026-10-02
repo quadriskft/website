@@ -32,7 +32,7 @@ ITEMS = {
         "Claro catalogue 2019, 131. oldal – RTE-003", "RTE-003",
         {"Gyártó": "Claro", "Kivitel": "kétgörgős ponyvagörgő, hosszlyukas rögzítőlappal",
          "Méret": "75 × 52 mm", "Görgőátmérő": "31,5 mm", "Teljes vastagság": "17 mm", "Lapvastagság": "5 mm",
-         "Hosszlyuk": "52 × 8 mm", "Tömeg": "176 g/db", "Kiszerelés": "110 db/karton", "Minősítés": "DEKRA approved"}),
+         "Hosszlyuk": "52 × 8 mm", "Tömeg": "176 g/db", "Minősítés": "DEKRA approved"}),
 }
 
 
@@ -159,7 +159,7 @@ def main():
         im = Image.open(ROOT / src).convert("RGB")
         images = [save_image(im.crop(b), p["slug"], i) for i, b in enumerate(boxes, 1)]
         enrichment[p["slug"]] = {"source": SOURCE, "sourceTitle": title, "matchedCode": code,
-                                 "specs": {"Cikkszám (gyártói)": code, **specs}, "images": images}
+                                 "specs": dict(specs), "images": images}  # a gyártói cikkszám nem jelenik meg
     old = load_enrichment()
     for slug, (drawings, specs) in PREPEND.items():
         prev = old.get(slug, {})
