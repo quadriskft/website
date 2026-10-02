@@ -113,6 +113,8 @@ const MAT = {
   alu: () => [metal(0xc9ced5, 0.34, 60), new THREE.MeshPhysicalMaterial({ color: 0xd9dde2, metalness: 1, roughness: 0.48 })],
   elox: () => [metal(0xdde1e6, 0.24, 36, 0.35), new THREE.MeshPhysicalMaterial({ color: 0xe4e7eb, metalness: 1, roughness: 0.42 })],
   steel: () => { const n = noise(150, 70); return [new THREE.MeshPhysicalMaterial({ color: 0x5c636c, metalness: 0.85, roughness: 1, roughnessMap: n, bumpMap: n, bumpScale: 0.2 }), new THREE.MeshPhysicalMaterial({ color: 0x9aa1a9, metalness: 1, roughness: 0.4 })]; },
+  // fekete gumi / PVC (takaró gumik): matt, nem fémes
+  rubber: () => { const n = noise(90, 90); return [new THREE.MeshPhysicalMaterial({ color: 0x1b1c1e, metalness: 0, roughness: 0.62, roughnessMap: n, clearcoat: 0.25, clearcoatRoughness: 0.5 }), new THREE.MeshPhysicalMaterial({ color: 0x232426, metalness: 0, roughness: 0.55 })]; },
   galv: () => { const n = noise(110, 110, 128); return [new THREE.MeshPhysicalMaterial({ color: 0xb8bec4, metalness: 0.9, roughness: 1, roughnessMap: n }), new THREE.MeshPhysicalMaterial({ color: 0xc8cdd2, metalness: 1, roughness: 0.4 })]; },
 };
 

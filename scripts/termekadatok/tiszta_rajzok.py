@@ -222,7 +222,9 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             # a küldött lap fotója és rajza (a gyári cikkszám és a fejléc nélkül)
             "t-rakonca-gorgo": [("data/forras/t_rakonca_gorgo_foto.png", "1"), ("data/forras/t_rakonca_gorgo_rajz.png", "rajz")],
             # a küldött lap rajza és fotója (a gyári cikkszám-címke kitakarva)
-            "e87370-edscha-takaro-gumi-compact-110": [("data/forras/e87370_rajz.png", "rajz"), ("data/forras/e87370_foto.png", "1")]}
+            # (a lap fotója túl kicsi: helyette a rajz profiljából készült 3D render, scripts/profil3d, „rubber” anyag)
+            "e87370-edscha-takaro-gumi-compact-110": [("data/forras/e87370_rajz.png", "rajz"),
+                                                      ("public/termekkepek/3d/e87370-edscha-takaro-gumi-compact-110-2.webp", "3d")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
