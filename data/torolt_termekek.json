@@ -817,5 +817,12 @@
   "code": "237310/20",
   "date": "2026-10-01",
   "reason": "Quadris kérés: csak a sima (hossz nélküli) maradjon"
+ },
+ "214174-gumitomites-acel-c-sinhez": {
+  "name": "Gumitömítés acél \"C\" sínhez",
+  "supplier": "ADAICO",
+  "code": "214174",
+  "date": "2026-10-02",
+  "reason": "a Quadris kérésére: nem kell"
  }
 }

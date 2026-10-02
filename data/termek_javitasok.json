@@ -574,7 +574,8 @@
    "Tömeg": "7,29 kg/db (2500 mm)",
    "Fajlagos tömeg": "2,918 kg/m",
    "Mértékegység": "db"
-  }
+  },
+  "order": 5
  },
  "6613554-mini-hatso-oszlop-elox-110-166": {
   "specs": {
@@ -582,7 +583,8 @@
    "Tömeg": "7,95 kg/db (2500 mm)",
    "Fajlagos tömeg": "3,181 kg/m",
    "Mértékegység": "db"
-  }
+  },
+  "order": 6
  },
  "6613555-mini-hatso-oszlop-hn-elox-110-138": {
   "specs": {
@@ -590,7 +592,8 @@
    "Tömeg": "7,27 kg/db (2500 mm)",
    "Fajlagos tömeg": "2,908 kg/m",
    "Mértékegység": "db"
-  }
+  },
+  "order": 7
  },
  "6613575-mini-elso-100-alu-oszlop-elox": {
   "specs": {
@@ -598,7 +601,8 @@
    "Tömeg": "5,57 kg/db (2500 mm)",
    "Fajlagos tömeg": "2,228 kg/m",
    "Mértékegység": "db"
-  }
+  },
+  "order": 3
  },
  "6613576-mini-elso-flat-alu-oszlop-elox": {
   "specs": {
@@ -606,7 +610,8 @@
    "Tömeg": "7,04 kg/db (2500 mm)",
    "Fajlagos tömeg": "2,818 kg/m",
    "Mértékegység": "db"
-  }
+  },
+  "order": 4
  },
  "661090-midi-elso-oszlop-lift-elox-135": {
   "specs": {
@@ -615,7 +620,8 @@
    "Tömeg": "15,51 kg/db (2800 mm)",
    "Fajlagos tömeg": "5,539 kg/m"
   },
-  "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben."
+  "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben.",
+  "order": 8
  },
  "6614358-midi-hatso-u-szegos-oszlop-elox": {
   "specs": {
@@ -624,7 +630,8 @@
    "Tömeg": "15,16 kg/db (2800 mm)",
    "Fajlagos tömeg": "5,413 kg/m"
   },
-  "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben."
+  "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben.",
+  "order": 11
  },
  "662000-midi-hatso-lift-oszlop-elox": {
   "specs": {
@@ -633,7 +640,8 @@
    "Tömeg": "14,46 kg/db (2800 mm)",
    "Fajlagos tömeg": "5,163 kg/m"
   },
-  "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben."
+  "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben.",
+  "order": 10
  },
  "663980-midi-elso-oszlop-flat-elox-246": {
   "specs": {
@@ -642,7 +650,8 @@
    "Tömeg": "18,72 kg/db (2800 mm)",
    "Fajlagos tömeg": "6,685 kg/m"
   },
-  "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben."
+  "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben.",
+  "order": 9
  },
  "6621620-or-midi-elso-oszlop-alu-elox": {
   "specs": {
@@ -787,5 +796,35 @@
    "Magasság": "40 mm",
    "Nyílás": "20 mm"
   }
+ },
+ "6612225-elso-oszlop-90-70-alu-elox-d": {
+  "order": 1
+ },
+ "6612226-hatso-oszlop-128-35-alu-elox-d": {
+  "order": 2
+ },
+ "66177147-max-os-elso-elox-oszlop-3000-mm": {
+  "order": 12
+ },
+ "66177137-max-os-elso-elox-oszlop-3150-mm": {
+  "order": 13
+ },
+ "66177300-max-os-elso-elox-oszlop-3300-mm": {
+  "order": 14
+ },
+ "6639692-max-elso-oszlop-exl-elox": {
+  "order": 15
+ },
+ "6635245-max-os-hatso-elox-oszlop-3000-mm": {
+  "order": 16
+ },
+ "6635255-max-os-hatso-elox-oszlop-3150-mm": {
+  "order": 17
+ },
+ "6635300-max-os-hatso-elox-oszlop-3300-mm": {
+  "order": 18
+ },
+ "6639604-max-hatso-oszlop-exl-elox": {
+  "order": 19
  }
 }
