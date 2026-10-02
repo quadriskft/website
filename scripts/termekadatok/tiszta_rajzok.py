@@ -224,7 +224,9 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             # a küldött lap rajza és fotója (a gyári cikkszám-címke kitakarva)
             # (a lap fotója túl kicsi: helyette a rajz profiljából készült 3D render, scripts/profil3d, „rubber” anyag)
             "e87370-edscha-takaro-gumi-compact-110": [("data/forras/e87370_rajz.png", "rajz"),
-                                                      ("public/termekkepek/3d/e87370-edscha-takaro-gumi-compact-110-2.webp", "3d")]}
+                                                      ("public/termekkepek/3d/e87370-edscha-takaro-gumi-compact-110-2.webp", "3d")],
+            # a küldött lap termékképe (a gyári kód és a szöveg nélkül)
+            "102439-dugo-spitzprofilhoz-150-mm-magas": [("data/forras/102439_foto.png", "1")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
@@ -268,7 +270,8 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
        "t-rakonca-gorgo": ("Quadris katalóguslap", "", "", {"Tömeg": "243 g/db", "Méret": "90 × 96 mm", "Görgő": "Ø24 mm",
                                                             "Lemezvastagság": "5 mm", "Furat": "Ø10,5 mm"}),
        "e87370-edscha-takaro-gumi-compact-110": ("Quadris katalóguslap", "", "", {"Szélesség": "100 mm", "Szín": "fekete",
-                                                                                  "Rendszer": "Edscha COMPACT"})}
+                                                                                  "Rendszer": "Edscha COMPACT"}),
+       "102439-dugo-spitzprofilhoz-150-mm-magas": ("Quadris katalóguslap", "", "", {"Anyag": "PVC", "Szín": "fekete"})}
 
 
 def profil_6941():
