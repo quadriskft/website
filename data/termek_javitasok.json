@@ -888,5 +888,113 @@
    "category": "zart-dobozos-es-hutos-profilok"
   },
   "after": "237712-13-dupla-alu-csiga-zsaner-u-25-mm-elox"
+ },
+ "388008-27mm-feszito-cso-alu-profil": {
+  "order": 1
+ },
+ "3840-2900-sstavg-27-mm-feszito-alu-cso": {
+  "order": 2
+ },
+ "380045-34mm-feszito-cso-alu-profil": {
+  "order": 3
+ },
+ "380035-ponyvabeakaszto-alu-profil-55-mm-elox": {
+  "order": 4
+ },
+ "380033-ponyvabeakaszto-alu-profil-60-mm-elox": {
+  "order": 5
+ },
+ "388005-ponyvabeakaszto-alu-profil-70-mm-elox": {
+  "order": 6
+ },
+ "380034-ponyvabeakaszto-alu-profil-80-mm-elox": {
+  "order": 7
+ },
+ "380011-felso-adapter-34-es-csohoz": {
+  "order": 8
+ },
+ "380017-also-adapter-34-es-csohoz": {
+  "order": 9
+ },
+ "380018-ss-also-adapter-27-es-csohoz-kocka": {
+  "order": 10
+ },
+ "380019-felso-adapter-27-es-csohoz": {
+  "order": 11
+ },
+ "380020-ss-also-adapter-27-es-csohoz-szogletes": {
+  "order": 12
+ },
+ "380021-ss-also-adapter-27-es-csohoz": {
+  "order": 13
+ },
+ "380022-also-adapter-27-es-csohoz-pwp-kocka": {
+  "order": 14
+ },
+ "380024-pwp-racsnis-feszito-kocka-adapter-l": {
+  "order": 15
+ },
+ "380025-pwp-racsnis-feszito-kocka-adapter-r": {
+  "order": 16
+ },
+ "380060-racsnis-feszito-r": {
+  "order": 17
+ },
+ "380061-racsnis-feszito-l": {
+  "order": 18
+ },
+ "380070-71-racsnis-feszito-kocka-adapterhez-j-b-h": {
+  "order": 19
+ },
+ "380080-pwp-racsnis-feszito-sliccelt-r": {
+  "order": 20
+ },
+ "380081-pwp-racsnis-feszito-sliccelt-l": {
+  "order": 21
+ },
+ "380090-w-racsnis-feszito-quadrat-r": {
+  "order": 22
+ },
+ "380091-w-racsnis-feszito-quadrat-l": {
+  "order": 23
+ },
+ "380184-ada-racsnis-feszito-kocka-adapterhez-r": {
+  "order": 24
+ },
+ "380186-ada-racsnis-feszito-kocka-adapterhez-l": {
+  "order": 25
+ },
+ "380190-ada-handy-feszito-sliccelt-adapterhez-r": {
+  "order": 26
+ },
+ "380192-ada-handy-feszito-sliccelt-adapterhez-l": {
+  "order": 27
+ },
+ "380194-ada-handy-feszito-kocka-adapterhez-r": {
+  "order": 28
+ },
+ "380196-ada-handy-feszito-kocka-adapterhez-l": {
+  "order": 29
+ },
+ "380810-tts-racsnis-feszito-ketoldalas": {
+  "order": 30
+ },
+ "381071-feszito-kocka-sliccelt-adapterhez-ts": {
+  "order": 31
+ },
+ "381073-feszito-kocka-szogletes-adapterhez": {
+  "order": 32
+ },
+ "381074-feszito-kocka-szogletes-adap-60x30x30-10": {
+  "order": 33
+ },
+ "381420-tekero-kurbli": {
+  "order": 34
+ },
+ "383148-direktspanner": {
+  "order": 35
+ },
+ "38400-cb27-hsd-kezi-heveder-szurke-bilinccsel-keszlet": {
+  "order": 36
  }
 }
