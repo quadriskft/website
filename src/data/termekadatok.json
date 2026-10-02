@@ -1848,6 +1848,24 @@
    "/termekkepek/203004-30-mm-keretprofil-elox-1.webp"
   ]
  },
+ "203101-spanner-profil": {
+  "source": "Quadris gyári rajz",
+  "sourceUrl": "",
+  "sourceTitle": "",
+  "specs": {
+   "Felület": "natúr",
+   "Falvastagság": "5 mm",
+   "Méret": "35 × 70 mm",
+   "Tömeg": "1,53 kg/fm",
+   "Keresztmetszet": "565 mm²",
+   "Anyag": "alumínium EN AW-6063 T66"
+  },
+  "images": [
+   "/termekkepek/203101-spanner-profil-kitoltott.webp",
+   "/termekkepek/203101-spanner-profil-meretrajz.webp",
+   "/termekkepek/203101-spanner-profil-gyari-rajz.webp"
+  ]
+ },
  "203183-250-25-mm-alafutasgatlo-elox-profil": {
   "source": "ESAL",
   "sourceUrl": "https://esalforli.com/public/Catalogo-Sponde-2020-Esal-Forli.pdf#page=55",

@@ -63,6 +63,7 @@ DECIN = {
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "203101-spanner-profil": ("profil_3101", "35", "70", "5", ("h", 0.3)),
     "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("profil_8005", "70", "18", "2", ("v", 9 / 70),
                                                      dict(idims=[("h", 0.5, 2 / 70, 16 / 70, "ø14")])),
     "388008-27mm-feszito-cso-alu-profil": ("profil_8008", "26,5", "27", "2", ("h", 0.5),
@@ -178,6 +179,9 @@ RAW = {"236825-80x80-mm-l-profil-elox": ("data/forras/236825_rajz.png", (16, 170
                                                    "Anyag": "alumínium 6060, eloxált"},
                                                   # a fejléc (gyártó, profilszám) és az X / Y / Z jelmagyarázat, megjegyzések nélkül
                                                   [(762, 0, 1448, 236), (1100, 768, 1448, 924)]),
+       "203101-spanner-profil": ("data/forras/203101_rajz.png", (180, 90, 470, 522),
+                                  {"Méret": "35 × 70 mm", "Tömeg": "1,53 kg/fm", "Keresztmetszet": "565 mm²",
+                                   "Anyag": "alumínium EN AW-6063 T66"}),
        "238645-kulso-l-profil-140x80mm-elox": ("data/forras/238645_rajz.png", (125, 195, 500, 660),
                                                {"Méret": "140 × 80 mm", "Falvastagság": "2,5 mm", "Tömeg": "1,428 kg/fm",
                                                 "Anyag": "alumínium 6060, eloxált"},
@@ -253,7 +257,8 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
                                           {"Tömeg": "1,763 kg/fm", "Ötvözet": "EN AW-6060 T6", "Felület": "eloxált"}),
        "237005-142-mm-i-koptato-profil-elox": ("Quadris katalóguslap", "", "", {"Felület": "eloxált"}),
        "388008-27mm-feszito-cso-alu-profil": ("Quadris katalóguslap", "", "", {"Felület": "natúr"}),
-       "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("Quadris katalóguslap", "", "", {"Felület": "eloxált"})}
+       "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("Quadris katalóguslap", "", "", {"Felület": "eloxált"}),
+       "203101-spanner-profil": ("Quadris gyári rajz", "", "", {"Felület": "natúr"})}
 
 
 def profil_6941():
@@ -599,6 +604,34 @@ def profil_8005():
     a = math.radians(tip)
     g = g.union(Point(L[0] + 8 * math.cos(a), L[1] + 8 * math.sin(a)).buffer(1, 64))
     return g.buffer(0.3, join_style=1).buffer(-0.6, join_style=1).buffer(0.3, join_style=1)
+
+
+def profil_3101():
+    """203101 (spanner profil, Kęty B3101): 35 × 70; felül a 2 × R2-es gyöngy (5 × 5,4), a perem felső síkja 3 mm-rel
+    lejjebb, 5 mm vastag (10 mm-től 45°-kal), a jobb oldali fal 5 vastag (x = 30–35) 40 mm hosszan, R5-ös belső
+    sarkokkal; alul 10°-os egyenesből R20 / R24-es ív fut az R4-es gömbvégbe (R3-mal); a keresztmetszet így 558 mm²,
+    a rajzon 565 mm²."""
+    from shapely.geometry import Point, Polygon, box
+    yt, yb = 2.94, 42.94
+    C = np.array([23.984, 65.19])  # az R20 / R24 ív középpontja: érinti a 10°-os egyenest és az R4-es gömböt
+    P = np.array([35, yb])
+    d = np.array([-math.cos(math.radians(10)), math.sin(math.radians(10))])
+    T1 = P + ((C - P) @ d) * d
+    a1 = math.degrees(math.atan2(T1[1] - C[1], T1[0] - C[0]))
+    arc = lambda r, a0, a1_: [tuple(C + r * np.array([math.cos(math.radians(a)), math.sin(math.radians(a))]))
+                              for a in np.linspace(a0, a1_, 40)]
+    d2 = np.array([math.cos(math.radians(15)), -math.sin(math.radians(15))])
+    Q = np.array([26.1, 39.2])
+    T2 = Q + ((C - Q) @ d2) * d2
+    a2 = math.degrees(math.atan2(T2[1] - C[1], T2[0] - C[0]))
+    inner, outer = arc(20, a1, -165 if a1 < 0 else 195), arc(24, 182, a2 + 360 if a2 < 0 else a2)
+    K = Q + ((30 - Q[0]) / d2[0]) * d2
+    pts = [(5, yt), (35, yt), (35, yb)] + inner + outer + [tuple(K), (30, yt + 5), (12.6, yt + 5), (10, 5.4), (5, 5.4)]
+    rr = [0.5, 0.2, 0.2] + [0] * (len(inner) + len(outer)) + [5, 5, 1, 1, 0]
+    g = Polygon(fillet(pts, rr)).buffer(0)
+    g = g.union(Polygon(fillet([(0, 0), (5, 0), (5, 5.4), (0, 5.4)], [2, 2, 0, 2]))).union(Point(4, 66).buffer(4, 128))
+    g = g.buffer(1.5, join_style=1).buffer(-1.5, join_style=1)
+    return g.union(g.buffer(3, join_style=1).buffer(-3, join_style=1).intersection(box(0, 55, 14, 70)))
 
 
 def profil_7461():
