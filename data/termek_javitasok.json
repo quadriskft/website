@@ -832,7 +832,10 @@
   "order": 19
  },
  "100001-dugo-perforalt-acel-kerethez": {
-  "order": 1
+  "move": {
+   "group": "acel-profilok",
+   "category": "acel-keret"
+  }
  },
  "100516-100x25-dugo-zartszelvenyhez": {
   "order": 2
