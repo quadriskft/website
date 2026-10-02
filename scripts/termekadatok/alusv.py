@@ -98,7 +98,9 @@ PROFILE_SIZE = {"662AP17730": {"Szélesség": "127,0 mm", "Magasság": "177,0 mm
 # a Quadris kérésére ezekhez a rajz mellé az Alu-SV termékfotója is (elöl)
 PHOTO = {"117774", "117775", "117776", "117777", "117787",
          # alu rakoncák (a kód nélküli tételnél a slug)
-         "351142", "356287", "356297", "356297b-alu-kozepso-rakonca-400-mm-80-np", "3562974"}
+         "351142", "356287", "356297", "356297b-alu-kozepso-rakonca-400-mm-80-np", "3562974",
+         # festett (fekete) szegecselhető deszkatartó zseb
+         "100021"}
 # jobb/bal pár: a termék a bal (EXTRA) mellé a jobb oldali tétel fotóját és rajzát is kapja; a hossz a kettőnél eltér
 PAIR = {"3562974": "62974ZP001"}
 # a képek végére a hozzá tartozó alkatrész fotója és rajza (a Quadris kérésére): kód vagy slug -> Alu-SV cikkszám
