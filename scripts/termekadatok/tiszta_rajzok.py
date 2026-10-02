@@ -113,6 +113,58 @@ def dark_mask(path, crop, rot=0, scale=8):
     return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
+def trace_mask(path, crop, erode_mm, height_mm, rot=0, erase=(), scale=6, cav=60):
+    """Kettős körvonallal rajzolt gyári főnézet maszkja: a kis feliratok (pl. z / x / y sarokjelek) és a vékony
+    méret- és részletkörvonalak kiszűrése, a körvonalak közti falak kitöltése (az üregek, ahová cav px-es kör befér,
+    üresek), végül a vonalvastagság felének visszavétele (erode_mm), hogy a falak a névleges vastagságúak legyenek."""
+    g = np.asarray(Image.open(ROOT / path).convert("L")).astype(np.float32)
+    for ex0, ey0, ex1, ey1 in erase:  # a falhoz érő méretnyilak (a forrás koordinátáiban)
+        g[ey0:ey1, ex0:ex1] = 255
+    a = g[crop[1]:crop[3], crop[0]:crop[2]].copy()
+    n, lab, st, _ = cv2.connectedComponentsWithStats((a < 150).astype(np.uint8), connectivity=4)
+    for i in range(1, n):
+        if st[i, 4] < 90:
+            a[lab == i] = 255
+    big = cv2.resize(a, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
+    el = lambda d: cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (d, d))
+    ink = cv2.morphologyEx((big < 140).astype(np.uint8), cv2.MORPH_OPEN, el(10))
+    n, lab, st, _ = cv2.connectedComponentsWithStats(ink, connectivity=8)
+    ink = np.isin(lab, [i for i in range(1, n) if st[i, 4] > 2000]).astype(np.uint8)
+    white = 1 - np.pad(ink, 20)
+    n, lab, _, _ = cv2.connectedComponentsWithStats(white, connectivity=4)
+    outside = lab == lab[0, 0]
+    hole = cv2.morphologyEx(((white > 0) & ~outside).astype(np.uint8), cv2.MORPH_OPEN, el(cav)) > 0
+    solid = cv2.morphologyEx((~outside & ~hole).astype(np.uint8), cv2.MORPH_OPEN, el(19))
+    n, lab, st, _ = cv2.connectedComponentsWithStats(solid, connectivity=8)
+    m = (lab == 1 + int(np.argmax(st[1:, 4]))).astype(np.uint8)
+    n, lab, st, _ = cv2.connectedComponentsWithStats(1 - m, connectivity=4)  # apró zárványok (sarokjelek helye) kitöltve
+    for i in range(1, n):
+        if st[i, 4] < 3000 and lab[0, 0] != i:
+            m[lab == i] = 1
+    ys, xs = np.where(m)
+    r = round(erode_mm * (ys.max() - ys.min() + 1) / height_mm)
+    m = cv2.morphologyEx(cv2.erode(m, el(2 * r + 1)), cv2.MORPH_OPEN, el(13)) > 0
+    # a hosszú, egyenes falakra tapadt méretnyíl-maradványok (apró pöttyök) kiszűrése: a végek (a részletek) kivételével
+    # csak az marad, amibe a fal mentén vagy arra merőlegesen 2 mm-es szakasz befér
+    k = (ys.max() - ys.min() + 1) / height_mm
+    L = int(2 * k)
+    keep = cv2.morphologyEx(m.astype(np.uint8), cv2.MORPH_OPEN, np.ones((L, 1), np.uint8)) | \
+        cv2.morphologyEx(m.astype(np.uint8), cv2.MORPH_OPEN, np.ones((1, L), np.uint8))
+    lo, hi = ys.min() + int(26 * k), ys.max() - int(26 * k)
+    m[lo:hi] = keep[lo:hi] > 0
+    if rot:
+        m = np.rot90(m, rot // 90)
+    ys, xs = np.where(m)
+    return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+
+
+# gyári főnézetből kirajzolt profil (trace_mask): slug -> (forrás, kivágás, visszavétel [mm], magasság a forráson [mm],
+# forgatás, szélesség, magasság, falvastagság, a falméret helye)
+TRACE = {"227046-ck10-koztes-200-mm-elox-profil": ("data/forras/227046_ck10_rajz.webp", (246, 50, 351, 868), 0.5, 222.03,
+                                                   -90, "222,03", "25", "1,2", ("v", 0.5),
+                                                   [(230, 602, 255, 608), (264, 602, 300, 608), (300, 623, 342, 629)])}
+
+
 # a Quadris által küldött gyári rajz önmagában (csak ez a kép; a fejléc a gyártói számmal kivágva, fekete-fehérre
 # tisztítva): slug -> (forráskép, kivágás, adatok)
 RAW = {"236825-80x80-mm-l-profil-elox": ("data/forras/236825_rajz.png", (16, 170, 656, 718),
@@ -121,6 +173,11 @@ RAW = {"236825-80x80-mm-l-profil-elox": ("data/forras/236825_rajz.png", (16, 170
        "237461-50x260-mm-l-belso-vedoprofil-elox": ("data/forras/237461_rajz.png", (12, 136, 740, 445),
                                                     {"Méret": "50 × 260 mm", "Falvastagság": "2 mm", "Tömeg": "1,962 kg/fm",
                                                      "Anyag": "alumínium 6060, eloxált"}),
+       "227046-ck10-koztes-200-mm-elox-profil": ("data/forras/227046_ck10_rajz.webp", (14, 14, 1462, 938),
+                                                  {"Falvastagság": "1,2 mm", "Tömeg": "1,903 kg/fm", "Keresztmetszet": "704 mm²",
+                                                   "Anyag": "alumínium 6060, eloxált"},
+                                                  # a fejléc (gyártó, profilszám) és az X / Y / Z jelmagyarázat, megjegyzések nélkül
+                                                  [(762, 0, 1448, 236), (1100, 768, 1448, 924)]),
        "238645-kulso-l-profil-140x80mm-elox": ("data/forras/238645_rajz.png", (125, 195, 500, 660),
                                                {"Méret": "140 × 80 mm", "Falvastagság": "2,5 mm", "Tömeg": "1,428 kg/fm",
                                                 "Anyag": "alumínium 6060, eloxált"},
@@ -1041,6 +1098,17 @@ def main():
         data[slug].setdefault("specs", {}).update(SPEC_FIX.get(slug, {}))
         data[slug]["specs"]["Falvastagság"] = f"{tt} mm"
         print(slug, "szürke nézetből")
+    for slug, (src, crop, ero, hmm, rot, wt, ht, tt, where, er) in TRACE.items():
+        if slug not in data:
+            continue
+        m = trace_mask(src, crop, ero, hmm, rot, er)
+        img, *_ = render_mask(m.copy(), wt, ht, tt, where, outline=True, eps=0.8)
+        fill, *_ = render_mask(m.copy(), wt, ht, tt, where, eps=0.8)
+        data[slug]["images"] = [save_image(fill, slug, "kitoltott"), save_image(img, slug, "meretrajz")]  # a fekete az első
+        data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
+        data[slug]["specs"].pop("Profilszám (gyártói)", None)  # a gyártói profilszám nem jelenik meg
+        data[slug].pop("matchedCode", None)
+        print(slug, "gyári főnézetből")
     for slug, (src, crop, specs, *er) in RAW.items():
         if slug not in data:
             continue
@@ -1050,7 +1118,7 @@ def main():
             g[ey0:ey1, ex0:ex1] = 255
         url = save_image(Image.fromarray(g.astype(np.uint8)), slug, "gyari-rajz")
         # ha a méretekből rajzolt (VECTOR) kép is van, a gyári rajz utánuk jön; különben ez az egyetlen kép
-        prev = [u for u in data[slug].get("images", []) if u.endswith(("-meretrajz.webp", "-kitoltott.webp"))] if slug in VECTOR else []
+        prev = [u for u in data[slug].get("images", []) if u.endswith(("-meretrajz.webp", "-kitoltott.webp"))] if slug in VECTOR or slug in TRACE else []
         data[slug]["images"] = prev + [url]
         data[slug].update({"source": "Quadris gyári rajz", "sourceUrl": "", "sourceTitle": ""})
         data[slug].setdefault("specs", {}).update(specs)

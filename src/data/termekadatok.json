@@ -3623,23 +3623,24 @@
   ]
  },
  "227046-ck10-koztes-200-mm-elox-profil": {
-  "source": "Constellium rajz",
-  "sourceUrl": "https://www.constellium.com",
-  "sourceTitle": "Constellium Děčín profilrajz 12579 (Transport2024, 33. oldal)",
-  "matchedCode": "12579",
+  "source": "Quadris gyári rajz",
+  "sourceUrl": "",
+  "sourceTitle": "",
   "specs": {
-   "Profilszám (gyártói)": "12579",
    "Ötvözet": "EN AW-6060",
    "Tömeg": "1,903 kg/fm",
    "Kerület": "618 mm",
    "Keresztmetszet": "704 mm²",
    "Profil típusa": "zárt (üreges)",
    "Magasság": "222 mm (teljes), 200 mm beépítési magasság",
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Falvastagság": "1,2 mm",
+   "Anyag": "alumínium 6060, eloxált"
   },
   "images": [
-   "/termekkepek/227046-ck10-koztes-200-mm-elox-profil-rajz.webp",
-   "/termekkepek/227046-ck10-koztes-200-mm-elox-profil-1.webp"
+   "/termekkepek/227046-ck10-koztes-200-mm-elox-profil-kitoltott.webp",
+   "/termekkepek/227046-ck10-koztes-200-mm-elox-profil-meretrajz.webp",
+   "/termekkepek/227046-ck10-koztes-200-mm-elox-profil-gyari-rajz.webp"
   ]
  },
  "227046-koztes-200-mm-elox-profil": {
