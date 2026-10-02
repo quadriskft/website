@@ -106,6 +106,21 @@
    "/termekkepek/056402-2-reszes-rugos-ajtokiakaszto-szet-3.webp"
   ]
  },
+ "100001-dugo-perforalt-acel-kerethez": {
+  "source": "Quadris gyári rajz",
+  "sourceUrl": "",
+  "sourceTitle": "",
+  "specs": {
+   "Furat": "Ø14 mm",
+   "Magasság": "27,5 mm",
+   "Fej szélessége": "17,5 mm",
+   "Anyag": "műanyag"
+  },
+  "images": [
+   "/termekkepek/100001-dugo-perforalt-acel-kerethez-1.webp",
+   "/termekkepek/100001-dugo-perforalt-acel-kerethez-rajz.webp"
+  ]
+ },
  "100021-100x25-mm-festett-szegecselheto-deszkatarto-zseb": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/4000018_pevne-plachtove-konstrukce/7000310_holder-of-tarp.-prof.-riveting-black",

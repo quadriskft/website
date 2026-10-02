@@ -234,7 +234,9 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             "380018-ss-also-adapter-27-es-csohoz-kocka": [("data/forras/380018ss_foto.png", "1"), ("data/forras/380018ss_rajz.png", "rajz")],
             # az FTS sárga 3D képe horganyzott acél színre átszínezve (a Quadris kérésére), utána az FTS rajza
             "380011-felso-adapter-34-es-csohoz": [("data/forras/380011_horganyzott.png", "1"), ("data/forras/380011_rajz_nagy.png", "2")],
-            "380017-also-adapter-34-es-csohoz": [("data/forras/380017_horganyzott.png", "1"), ("data/forras/380017_rajz_nagy.png", "2")]}
+            "380017-also-adapter-34-es-csohoz": [("data/forras/380017_horganyzott.png", "1"), ("data/forras/380017_rajz_nagy.png", "2")],
+            # a Quadris által küldött 3D kép és méretezett rajz
+            "100001-dugo-perforalt-acel-kerethez": [("data/forras/100001_3d.png", "1"), ("data/forras/100001_rajz.png", "rajz")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
@@ -281,7 +283,9 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
                                                             "Lemezvastagság": "5 mm", "Furat": "Ø10,5 mm"}),
        "e87370-edscha-takaro-gumi-compact-110": ("Quadris katalóguslap", "", "", {"Szélesség": "100 mm", "Szín": "fekete",
                                                                                   "Rendszer": "Edscha COMPACT"}),
-       "102439-dugo-spitzprofilhoz-150-mm-magas": ("Quadris katalóguslap", "", "", {"Anyag": "PVC", "Szín": "fekete"})}
+       "102439-dugo-spitzprofilhoz-150-mm-magas": ("Quadris katalóguslap", "", "", {"Anyag": "PVC", "Szín": "fekete"}),
+       "100001-dugo-perforalt-acel-kerethez": ("Quadris gyári rajz", "", "", {"Furat": "Ø14 mm", "Magasság": "27,5 mm",
+                                                                         "Fej szélessége": "17,5 mm", "Anyag": "műanyag"})}
 
 
 def profil_6941():
