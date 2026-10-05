@@ -68,6 +68,11 @@ export const CATEGORY_LOGOS = {
   edscha: { src: '/logok/edscha.png', alt: 'Edscha Trailer Systems', text: false },
 };
 
+// Főcsoport logója (a gyártó weboldaláról): a csoport oldalának fejlécében és a katalógus csoportkártyáján
+export const GROUP_LOGOS = {
+  'szellozes-tetoablakok-vilagitas': { src: '/logok/gnc-systems.png', alt: 'G&C Systems' },
+};
+
 // Csoportok és kategóriák: Excel + új csoportok/kategóriák, darabszámok újraszámolva, üresek elhagyva
 const groupList = catalog.groups.map((g) => ({
   slug: g.slug,

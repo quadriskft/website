@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import ProductCard from '../../components/ProductCard.astro';
-import { groups, GROUP_META, productsIn, groupImage, CATEGORY_LOGOS } from '../../lib/catalog.js';
+import { groups, GROUP_META, productsIn, groupImage, CATEGORY_LOGOS, GROUP_LOGOS } from '../../lib/catalog.js';
 import { absPage } from '../../lib/site.js';
 
 export function getStaticPaths() {
@@ -39,6 +39,7 @@ const jsonLd = [
           <h1>{group.name}</h1>
           <p class="lead">{meta.text} <span class="muted">{group.count} termék.</span></p>
         </div>
+        {GROUP_LOGOS[group.slug] && <img class="group-logo" src={GROUP_LOGOS[group.slug].src} alt={GROUP_LOGOS[group.slug].alt} />}
       </div>
     </div>
   </section>
@@ -168,6 +169,7 @@ const jsonLd = [
   .cat-section h2 { font-size: 1.35rem; display: flex; align-items: baseline; gap: 10px; padding-bottom: 12px; margin-bottom: 18px; border-bottom: 1px solid var(--line); }
   .cat-section h2 .muted { font-size: 0.95rem; font-weight: 500; }
   .cat-section h2.cat-title { align-items: center; }
+  .group-logo { height: 72px; width: auto; flex: none; margin-left: auto; }
   .cat-logo { height: 44px; width: auto; display: block; background: #fff; border-radius: 4px; }
   .cat-logo-sm { height: 16px; width: auto; vertical-align: -3px; margin-right: 6px; background: #fff; border-radius: 2px; }
   .no-hit { padding: 24px; border: 1px dashed var(--line-strong); border-radius: var(--radius); }

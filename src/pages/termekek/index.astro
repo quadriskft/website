@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
-import { groups, stats, groupImage, GROUP_META, CATEGORY_LOGOS } from '../../lib/catalog.js';
+import { groups, stats, groupImage, GROUP_META, CATEGORY_LOGOS, GROUP_LOGOS } from '../../lib/catalog.js';
 ---
 <Base crumbs={[['Főoldal', '/'], ['Termékkatalógus', '/termekek']]} back={{ href: '/', label: 'Főoldal' }} title="Termékkatalógus" description={`${stats.products} termék ${stats.groups} termékcsoportban jármű- és lószállító felépítmény gyártóknak.`}>
   <section class="page-head">
@@ -24,6 +24,7 @@ import { groups, stats, groupImage, GROUP_META, CATEGORY_LOGOS } from '../../lib
               <h2>{g.name}</h2>
               <span class="muted">{g.count} termék</span>
             </span>
+            {GROUP_LOGOS[g.slug] && <img class="cg-logo" src={GROUP_LOGOS[g.slug].src} alt={GROUP_LOGOS[g.slug].alt} />}
           </a>
           <ul class="cg-cats">
             {g.categories.map((c) => (
@@ -37,6 +38,7 @@ import { groups, stats, groupImage, GROUP_META, CATEGORY_LOGOS } from '../../lib
 </Base>
 
 <style>
+  .cg-logo { height: 40px; width: auto; flex: none; margin-left: auto; }
   .chip-logo { height: 15px; width: auto; vertical-align: -3px; margin-right: 5px; background: #fff; border-radius: 2px; }
   .catalog-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
   .catalog-group { padding: 0 22px 22px; overflow: hidden; }
