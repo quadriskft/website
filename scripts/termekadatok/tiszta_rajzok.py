@@ -238,7 +238,9 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             # a Quadris által küldött 3D kép és méretezett rajz
             "100001-dugo-perforalt-acel-kerethez": [("data/forras/100001_3d.png", "1"), ("data/forras/100001_rajz.png", "rajz")],
             # a Quadris által küldött fotó (a feszítő csövek végével)
-            "3840-2900-sstavg-27-mm-feszito-alu-cso": [("data/forras/3840_2900_foto.png", "1")]}
+            "3840-2900-sstavg-27-mm-feszito-alu-cso": [("data/forras/3840_2900_foto.png", "1")],
+            # az Ital Accessori fekete dobozképe pirosra átszínezve (a doboz és a fedél is; a Quadris kérésére)
+            "j258207-p-p-porolto-tarto-6-kg-os": [("data/forras/j258207_piros.png", "1")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
