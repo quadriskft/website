@@ -239,8 +239,11 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             "100001-dugo-perforalt-acel-kerethez": [("data/forras/100001_3d.png", "1"), ("data/forras/100001_rajz.png", "rajz")],
             # a Quadris által küldött fotó (a feszítő csövek végével)
             "3840-2900-sstavg-27-mm-feszito-alu-cso": [("data/forras/3840_2900_foto.png", "1")],
-            # az Ital Accessori fekete dobozképe pirosra átszínezve (a doboz és a fedél is; a Quadris kérésére)
-            "j258207-p-p-porolto-tarto-6-kg-os": [("data/forras/j258207_piros.png", "1")]}
+            # P/P (piros/piros): az Ital Accessori fekete dobozképe MI-vel 4x nagyítva (EDSR), a teljes doboz tiszta pirosra
+            # átszínezve, az alatta lévő tükröződés nélkül (a Quadris kérésére)
+            "j258207-p-p-porolto-tarto-6-kg-os": [("data/forras/j258207_piros.png", "1")],
+            # P/F (piros fedél / fekete doboz): a Quadris által küldött kép (MI-vel 4x nagyítva) és méretrajz
+            "j258217-p-f-porolto-tarto-6-kg-os": [("data/forras/j258217_foto.png", "1"), ("data/forras/j258217_rajz.png", "rajz")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
@@ -256,6 +259,8 @@ SHARPEN = {}
 # adatok a küldött adatlapról
 SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
             "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"},
+            "j258217-p-f-porolto-tarto-6-kg-os": {"Szín": "piros fedél, fekete doboz", "Méret": "550 × 244 × 204 mm"},
+            "j258207-p-p-porolto-tarto-6-kg-os": {"Szín": "piros"},
             "380018-ss-also-adapter-27-es-csohoz-kocka": {"Tömeg": None, "Csőátmérő": "Ø27 mm", "Magasság": "55 mm",
                                                           "Négyszög csatlakozás": "13 × 13 mm", "Anyag": "rozsdamentes acél"},
             "388005-ponyvabeakaszto-alu-profil-70-mm-elox": {"Tömeg": "0,853 kg/fm", "Méret": "70 × 18 mm", "Furat": "Ø14 mm",

@@ -12857,11 +12857,13 @@
   "specs": {
    "Anyag": "műanyag",
    "Mértékegység": "db",
-   "Szín": "červeno-čierna red-black",
-   "Tömeg": "2,400 kg"
+   "Szín": "piros fedél, fekete doboz",
+   "Tömeg": "2,400 kg",
+   "Méret": "550 × 244 × 204 mm"
   },
   "images": [
-   "/termekkepek/j258217-p-f-porolto-tarto-6-kg-os-1.webp"
+   "/termekkepek/j258217-p-f-porolto-tarto-6-kg-os-1.webp",
+   "/termekkepek/j258217-p-f-porolto-tarto-6-kg-os-rajz.webp"
   ]
  },
  "j258412-felul-nyilo-p-porolto-tarto-6-kg-os": {
