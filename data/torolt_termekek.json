@@ -852,5 +852,19 @@
   "code": "231726/n",
   "date": "2026-10-09",
   "reason": "a Quadris kérésére: nem kell"
+ },
+ "232010-20x10-l-profil-natur": {
+  "name": "20x10 \"L\" Profil natúr",
+  "supplier": "RE-ALL",
+  "code": "232010",
+  "date": "2026-10-09",
+  "reason": "a Quadris kérésére: nem kell"
+ },
+ "232189-50x170-mm-l-belso-vedoprofil-elox": {
+  "name": "50x170 mm L Belső védőprofil elox",
+  "supplier": "Constellium Decin",
+  "code": "232189",
+  "date": "2026-10-09",
+  "reason": "a Quadris kérésére: nem kell"
  }
 }
