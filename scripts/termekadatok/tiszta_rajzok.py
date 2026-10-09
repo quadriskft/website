@@ -77,6 +77,9 @@ VECTOR = {
     "237847-n-h-ajtoszego-30-mm-d": ("profil_7847", "34,25", "93", "2", ("h", 0.3),
                                      dict(idims=[("h", 12 / 93, 2 / 34.25, 14 / 34.25, "12"),
                                                  ("h", 50 / 93, 2 / 34.25, 32.25 / 34.25, "30,5")])),
+    "238170-or-ajto-keret-elox-70x30x65-25mm": ("profil_8170", "70", "65", "2,35", ("h", 0.94),
+                                                dict(vdims=[(0, 30 / 65, "30")], bottom="30,2",
+                                                     idims=[("h", 38 / 65, 2.35 / 70, 27.85 / 70, "25,5")])),
     "203101-spanner-profil": ("profil_3101", "35", "70", "5", ("h", 0.3)),
     "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("profil_8005", "70", "18", "2", ("v", 9 / 70),
                                                      dict(idims=[("h", 0.5, 2 / 70, 16 / 70, "ø14")])),
@@ -286,7 +289,9 @@ RENDER3D = {"388008-27mm-feszito-cso-alu-profil": [2], "388005-ponyvabeakaszto-a
 # (slug -> a kivágásban kifehérítendő téglalapok, pl. a ráérő méretfelirat)
 SHARPEN = {}
 # adatok a küldött adatlapról
-SPEC_FIX = {"237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox": {"Talp": "45 × 4 mm"},
+SPEC_FIX = {"238170-or-ajto-keret-elox-70x30x65-25mm": {"Doboz": "70 × 30 mm", "Magasság": "65 mm", "U belső nyílás": "25,5 mm",
+                                                       "U külső szélesség": "30,2 mm", "Falvastagság": "2,35 mm (U lábak)"},
+            "237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox": {"Talp": "45 × 4 mm"},
             "106731-lezaro-csiga-zsanerhoz": {"Kivitel": "bal oldali", "Szélesség": "55 mm", "Magasság": "47 mm"},
             "231543-dobozos-keret-elox-134-80": {"Falvastagság": "3–4 mm (perem 3 mm, alsó fal 3,5 mm, felső fal 4 mm)"},
             "231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
@@ -716,6 +721,18 @@ def profil_7847():
     pts = [(0, 0, 3), (16, 0, 3), (16, 28, 5), (34.25, 28, 0.5), (34.25, 93, 0.3), (32.25, 93, 1.9), (32.25, 31, 2),
            (14, 31, 8), (14, 3, 1.5), (2, 3, 1.5), (2, 55, 1.9), (0, 55, 0.3)]
     return Polygon(fillet([(x, y) for x, y, _ in pts], [r for *_, r in pts]))
+
+
+def profil_8170():
+    """238170 (OR ajtó keret 70×30×65/25, RE-ALL 18-00170): felül 70 × 30-as zárt doboz (3 mm-es fal, a lap 1,944 kg/fm
+    tömegéből), alatta balra a 30,2 széles, 25,5 belső nyílású U két 2,35 mm-es lába 65-ig; a lábak külső oldalán a
+    katalógusrajz szerinti 0,5 mm-es bemélyedés."""
+    from shapely.geometry import box
+    g = box(0, 0, 70, 30).difference(box(3, 3, 67, 27))
+    g = g.union(box(0, 30, 2.35, 65)).union(box(27.85, 30, 30.2, 65))
+    for x0, x1 in ((0, 0.5), (29.7, 30.2)):
+        g = g.difference(box(x0 - 0.1, 47.5, x1 + 0.1, 57.5) if x0 == 0 else box(x0, 47.5, x1 + 0.1, 57.5))
+    return g.buffer(0.3, join_style=1).buffer(-0.3, join_style=1)
 
 
 def profil_8005():

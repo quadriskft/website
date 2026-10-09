@@ -4806,10 +4806,16 @@
   "matchedCode": "1800170",
   "specs": {
    "Tömeg [kg/fm]": "1,944",
-   "Gyári szálhossz [mm]": "7600"
+   "Gyári szálhossz [mm]": "7600",
+   "Falvastagság": "2,35 mm",
+   "Doboz": "70 × 30 mm",
+   "Magasság": "65 mm",
+   "U belső nyílás": "25,5 mm",
+   "U külső szélesség": "30,2 mm"
   },
   "images": [
-   "/termekkepek/238170-or-ajto-keret-elox-70x30x65-25mm-1.webp"
+   "/termekkepek/238170-or-ajto-keret-elox-70x30x65-25mm-kitoltott.webp",
+   "/termekkepek/238170-or-ajto-keret-elox-70x30x65-25mm-meretrajz.webp"
   ]
  },
  "238209-lamella-profil-200-mm-ex": {
