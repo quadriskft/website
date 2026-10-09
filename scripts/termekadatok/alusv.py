@@ -81,6 +81,8 @@ EXTRA = {
     "237971": "6612007971",
     # a Quadris kérésére (kód nélküli tétel, a slug a kulcs): M1 001 "C" sín = Alu-SV 6612013701, egy az egyben
     "m1-001-c-sin-aluminium": "6612013701",
+    # a Quadris kérésére: 233176 esőcsatorna elox nagy = Alu-SV 6612003176
+    "233176": "6612003176",
 }
 # a Quadris kérésére minden MAX-os első oszlop a „Pillar pr. CS MAX front 3000mm, Al anod” (662AP17730) részletesen
 # méretezett rajzát
