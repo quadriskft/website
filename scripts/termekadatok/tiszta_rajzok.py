@@ -85,7 +85,6 @@ VECTOR = {
                                                       hdims=[(0, 30.5 / 80, "30,5"), (6.5 / 80, 28 / 80, "21,5"),
                                                              (25.5 / 80, 52 / 80, "26,5"), (52 / 80, 1, "28")],
                                                       idims=[("vr", 66 / 80, 7 / 35, 32.5 / 35, "25,5")])),
-    "238067-tomites-a-szego-profilhoz": ("profil_220306", None, "9", "", None, dict(bottom="20")),
     "203101-spanner-profil": ("profil_3101", "35", "70", "5", ("h", 0.3)),
     "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("profil_8005", "70", "18", "2", ("v", 9 / 70),
                                                      dict(idims=[("h", 0.5, 2 / 70, 16 / 70, "ø14")])),
@@ -281,6 +280,8 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             # a jobbos kivitel a termékcsalád második tagja (data/termek_csaladok.json, „clone”)
             # a Quadris kérésére az ESAL Forlì katalógus (48. oldal) 13836-os rajza és fotója, a gyári kód nélkül
             "232125-dobozos-keret-elox-or-130-mm-nyitott": [("data/forras/232125_rajz.png", "rajz"), ("data/forras/232125_foto.png", "1")],
+            # a Quadris által küldött rajz változtatás nélkül (a Quadris kérésére az eredeti)
+            "238067-tomites-a-szego-profilhoz": [("data/forras/238067_rajz.png", "rajz")],
             "106731-lezaro-csiga-zsanerhoz": [("data/forras/106731_bal_rajz_tiszta.png", "rajz"), ("data/forras/106731_bal_foto.png", "1")],
             "106731-lezaro-csiga-zsanerhoz-jobb": [("data/forras/106731_jobb_rajz_tiszta.png", "rajz"), ("data/forras/106731_jobb_foto.png", "1")]}
 
