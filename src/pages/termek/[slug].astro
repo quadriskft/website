@@ -83,10 +83,10 @@ const jsonLd = [
 
         {family ? (
           <div class="order card variant-order" id="rendeles">
-            <h2 class="cut-title"><Icon name="Ruler" size={20} /> Rendelhető méretek</h2>
-            <p class="muted small">Gyári hosszban, darabra rendelhető – ezt a terméket nem vágjuk méretre.</p>
+            <h2 class="cut-title"><Icon name="Ruler" size={20} /> {family.title ?? 'Rendelhető méretek'}</h2>
+            <p class="muted small">{family.note ?? 'Gyári hosszban, darabra rendelhető – ezt a terméket nem vágjuk méretre.'}</p>
             <label class="variant-label" for="variant">{family.label}</label>
-            <select id="variant" class="input variant-select" data-variant>
+            <select id="variant" class="input variant-select" data-variant data-variant-navigate={family.clone ? '' : undefined}>
               {familyMembers.map((m) => (
                 <option value={m.slug} selected={m.slug === product.slug} data-product={JSON.stringify({ ...publicProduct({ ...m.product, family: true }), name: `${family.name} – ${m.value}` })}>{m.value}</option>
               ))}
@@ -196,6 +196,11 @@ const jsonLd = [
     const addBtn = document.querySelector('[data-variant-add]');
     variant.addEventListener('change', () => {
       const opt = variant.selectedOptions[0];
+      // kivitelenként saját képek (pl. bal / jobb): a választott kivitel oldala töltődik be
+      if ('variantNavigate' in variant.dataset) {
+        location.href = `/termek/${opt.value}#rendeles`;
+        return;
+      }
       addBtn.dataset.addToQuote = opt.dataset.product;
       history.replaceState(null, '', `/termek/${opt.value}${location.hash}`);
       window.dispatchEvent(new CustomEvent('quote:change'));

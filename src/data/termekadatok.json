@@ -367,13 +367,33 @@
   "sourceTitle": "Pommier katalógus 2023–24, 329. o.: Hinge stop, gray plastic (for 1636731 / 1636761)",
   "matchedCode": "1636765DR/GA",
   "specs": {
-   "Pommier cikkszám": "1636765DR (jobbos) / 1636765GA (balos)",
    "Anyag": "szürke műanyag",
    "Tömeg [kg]": "0,035",
-   "Illeszkedik": "1636731 / 1636761 alu zsanérprofilhoz"
+   "Illeszkedik": "alu zsanérprofilhoz",
+   "Kivitel": "bal oldali",
+   "Szélesség": "55 mm",
+   "Magasság": "47 mm"
   },
   "images": [
+   "/termekkepek/106731-lezaro-csiga-zsanerhoz-rajz.webp",
    "/termekkepek/106731-lezaro-csiga-zsanerhoz-1.webp"
+  ]
+ },
+ "106731-lezaro-csiga-zsanerhoz-jobb": {
+  "source": "Quadris méretrajz",
+  "sourceUrl": "",
+  "sourceTitle": "",
+  "specs": {
+   "Kivitel": "jobb oldali",
+   "Szélesség": "55 mm",
+   "Magasság": "47 mm",
+   "Anyag": "szürke műanyag",
+   "Tömeg [kg]": "0,035",
+   "Illeszkedik": "alu zsanérprofilhoz"
+  },
+  "images": [
+   "/termekkepek/106731-lezaro-csiga-zsanerhoz-jobb-rajz.webp",
+   "/termekkepek/106731-lezaro-csiga-zsanerhoz-jobb-1.webp"
   ]
  },
  "107045-sarok-elem-25-25-r-profilhoz": {
@@ -8097,13 +8117,12 @@
   "sourceTitle": "Pommier katalógus 2023–24, 523. o.: Gasket in 20 m rolls for panel width from 70 to 90 mm",
   "matchedCode": "580611208",
   "specs": {
-   "Pommier cikkszám": "580611208",
    "Anyag": "EPDM gumi",
    "Panelvastagság [mm]": "70–90",
    "Méret": "45 × 80 mm (teljes magasság 92 mm)",
    "Tömeg [kg]": "0,647",
    "Kiszerelés": "20 m-es tekercs",
-   "Rögzítőprofil": "741209031 alumínium",
+   "Rögzítőprofil": "alumínium",
    "Hézag [mm]": "16/18"
   },
   "images": [

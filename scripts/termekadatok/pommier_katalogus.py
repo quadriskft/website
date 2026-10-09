@@ -36,14 +36,13 @@ ITEMS = {  # slug -> (Pommier referencia, cím, PDF-oldal, [kivágások pt-ben],
     "106731-lezaro-csiga-zsanerhoz": (
         "1636765DR/GA", "Hinge stop, gray plastic (for 1636731 / 1636761)", 331,
         [(88, 110, 155, 222)],
-        {"Pommier cikkszám": "1636765DR (jobbos) / 1636765GA (balos)", "Anyag": "szürke műanyag",
-         "Tömeg [kg]": "0,035", "Illeszkedik": "1636731 / 1636761 alu zsanérprofilhoz"}),
+        {"Anyag": "szürke műanyag", "Tömeg [kg]": "0,035", "Illeszkedik": "alu zsanérprofilhoz"}),
     "511208-70-90-mm-es-gumi-tomites-pfg": (
         "580611208", "Gasket in 20 m rolls for panel width from 70 to 90 mm", 525,
         [(306, 328, 462, 446)],
-        {"Pommier cikkszám": "580611208", "Anyag": "EPDM gumi", "Panelvastagság [mm]": "70–90",
+        {"Anyag": "EPDM gumi", "Panelvastagság [mm]": "70–90",
          "Méret": "45 × 80 mm (teljes magasság 92 mm)", "Tömeg [kg]": "0,647", "Kiszerelés": "20 m-es tekercs",
-         "Rögzítőprofil": "741209031 alumínium", "Hézag [mm]": "16/18"}),
+         "Rögzítőprofil": "alumínium", "Hézag [mm]": "16/18"}),
 }
 
 

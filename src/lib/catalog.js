@@ -57,8 +57,17 @@ function gncColor(p) {
   return null;
 }
 
+// Egy cikkszám több kivitelben (pl. bal / jobb), a családban „clone”: a hiányzó tagok az első tag másolatai,
+// saját képekkel / adatokkal (termekadatok.json a tag slugjával)
+const cloneProducts = Object.entries(families).filter(([id, f]) => !id.startsWith('_') && f.clone).flatMap(([, f]) => {
+  const [baseSlug, ...rest] = Object.keys(f.members);
+  const base = [...excelProducts, ...extendedProducts].find((p) => p.slug === baseSlug);
+  if (!base) return [];
+  return rest.map((slug) => ({ ...base, slug, images: extra[slug]?.images ?? base.images, specs: { ...base.specs, ...(extra[slug]?.specs ?? {}) } }));
+});
+
 // A Quadris által törlésre jelölt termékek (data/torolt_termekek.json) sehol nem jelennek meg
-export const products = [...excelProducts, ...extendedProducts].filter((p) => !deleted[p.slug]);
+export const products = [...excelProducts, ...extendedProducts, ...cloneProducts].filter((p) => !deleted[p.slug]);
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
 const CATEGORY_RENAMES = { versus: 'Versus-Omega' };
@@ -124,7 +133,7 @@ const familyBySlug = new Map();
 for (const [id, f] of Object.entries(families)) {
   if (id.startsWith('_')) continue;
   const members = Object.entries(f.members).map(([slug, value]) => ({ slug, value })).filter((m) => !deleted[m.slug]);
-  const fam = { id, name: f.name, label: f.label ?? 'Méret', members, leader: members[0]?.slug };
+  const fam = { id, name: f.name, label: f.label ?? 'Méret', title: f.title, note: f.note, clone: !!f.clone, members, leader: members[0]?.slug };
   for (const m of members) familyBySlug.set(m.slug, fam);
 }
 export function familyOf(slug) {

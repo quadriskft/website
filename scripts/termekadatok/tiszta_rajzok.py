@@ -257,7 +257,11 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             # a Quadris kérésére az ESAL Forlì katalógus (88. oldal) tömítésrajza és fotója, a gyári kód nélkül
             "234002-tomites-a-szego-profilhoz-or": [("data/forras/234002_rajz.png", "rajz"), ("data/forras/234002_foto.png", "1")],
             # a Quadris által küldött méretrajz (a holland megjegyzés a gyári kóddal és a jelölése kivéve)
-            "235215-dobozos-keretprofil-ivelt-elox": [("data/forras/235215_rajz.png", "rajz")]}
+            "235215-dobozos-keretprofil-ivelt-elox": [("data/forras/235215_rajz.png", "rajz")],
+            # a Quadris által küldött rajz és fotó kivitelenként (MI-vel 4x nagyítva, a gyári kód és mutatóvonala kivéve);
+            # a jobbos kivitel a termékcsalád második tagja (data/termek_csaladok.json, „clone”)
+            "106731-lezaro-csiga-zsanerhoz": [("data/forras/106731_bal_rajz.png", "rajz"), ("data/forras/106731_bal_foto.png", "1")],
+            "106731-lezaro-csiga-zsanerhoz-jobb": [("data/forras/106731_jobb_rajz.png", "rajz"), ("data/forras/106731_jobb_foto.png", "1")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
@@ -271,7 +275,8 @@ RENDER3D = {"388008-27mm-feszito-cso-alu-profil": [2], "388005-ponyvabeakaszto-a
 # (slug -> a kivágásban kifehérítendő téglalapok, pl. a ráérő méretfelirat)
 SHARPEN = {}
 # adatok a küldött adatlapról
-SPEC_FIX = {"231543-dobozos-keret-elox-134-80": {"Falvastagság": "3–4 mm (perem 3 mm, alsó fal 3,5 mm, felső fal 4 mm)"},
+SPEC_FIX = {"106731-lezaro-csiga-zsanerhoz": {"Kivitel": "bal oldali", "Szélesség": "55 mm", "Magasság": "47 mm"},
+            "231543-dobozos-keret-elox-134-80": {"Falvastagság": "3–4 mm (perem 3 mm, alsó fal 3,5 mm, felső fal 4 mm)"},
             "231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
             "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"},
             "j258217-p-f-porolto-tarto-6-kg-os": {"Szín": "piros fedél, fekete doboz", "Méret": "550 × 244 × 204 mm"},
@@ -318,6 +323,9 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
        "235215-dobozos-keretprofil-ivelt-elox": ("Quadris méretrajz", "", "", {"Magasság": "134,5 mm", "Szélesség": "30,5 mm",
                                                                         "Falvastagság": "2–3 mm", "Belső szélesség": "25,5 mm",
                                                                         "Perem": "35 mm", "Felület": "eloxált"}),
+       "106731-lezaro-csiga-zsanerhoz-jobb": ("Quadris méretrajz", "", "", {"Kivitel": "jobb oldali", "Szélesség": "55 mm", "Magasság": "47 mm",
+                                                                     "Anyag": "szürke műanyag", "Tömeg [kg]": "0,035",
+                                                                     "Illeszkedik": "alu zsanérprofilhoz"}),
        "100001-dugo-perforalt-acel-kerethez": ("Quadris gyári rajz", "", "", {"Furat": "Ø14 mm", "Magasság": "27,5 mm",
                                                                          "Fej szélessége": "17,5 mm", "Anyag": "műanyag"})}
 

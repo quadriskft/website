@@ -51,5 +51,16 @@
    "v162-238-9600-mm-teto-sin-duo-trike-light": "9600 mm",
    "v162-238-10000-mm-teto-sin-duo-trike-light": "10000 mm"
   }
+ },
+ "106731-lezaro-csiga-zsanerhoz": {
+  "name": "Lezáró csiga zsanérhoz",
+  "label": "Kivitel",
+  "title": "Rendelhető kivitelek",
+  "note": "Darabra rendelhető – válassza ki, hogy bal vagy jobb oldali kivitelt kér.",
+  "clone": true,
+  "members": {
+   "106731-lezaro-csiga-zsanerhoz": "bal oldali",
+   "106731-lezaro-csiga-zsanerhoz-jobb": "jobb oldali"
+  }
  }
 }
