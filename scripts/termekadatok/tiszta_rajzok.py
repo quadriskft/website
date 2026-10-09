@@ -80,6 +80,11 @@ VECTOR = {
     "238170-or-ajto-keret-elox-70x30x65-25mm": ("profil_8170", "70", "65", "2,35", ("h", 0.94),
                                                 dict(vdims=[(0, 30 / 65, "30")], bottom="30,2",
                                                      idims=[("h", 38 / 65, 2.35 / 70, 27.85 / 70, "25,5")])),
+    "238066-cs-tomiteses-ajtoszego-25-mm-elox": ("profil_223132", "80", "35", "2,5", ("h", 0.6),
+                                                 dict(vdims=[(0, 7 / 35, "7"), (4.5 / 35, 1, "30,5")],
+                                                      hdims=[(0, 30.5 / 80, "30,5"), (6.5 / 80, 28 / 80, "21,5"),
+                                                             (25.5 / 80, 52 / 80, "26,5"), (52 / 80, 1, "28")],
+                                                      idims=[("vr", 66 / 80, 7 / 35, 32.5 / 35, "25,5")])),
     "203101-spanner-profil": ("profil_3101", "35", "70", "5", ("h", 0.3)),
     "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("profil_8005", "70", "18", "2", ("v", 9 / 70),
                                                      dict(idims=[("h", 0.5, 2 / 70, 16 / 70, "ø14")])),
@@ -351,6 +356,9 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
        "235426-specialis-h-szego-profil": ("Quadris méretrajz", "", "", {"Szélesség": "58 mm", "Magasság": "44,5 mm",
                                                                   "Falvastagság": "2,5 mm", "Tömeg": "0,923 kg/fm",
                                                                   "Keresztmetszet": "341,7 mm²"}),
+       "238066-cs-tomiteses-ajtoszego-25-mm-elox": ("Quadris méretrajz", "", "", {"Szélesség": "80 mm", "Magasság": "35 mm",
+                                                                           "Falvastagság": "2,5 mm", "Doboz belső magassága": "25,5 mm",
+                                                                           "Felület": "eloxált"}),
        "100001-dugo-perforalt-acel-kerethez": ("Quadris gyári rajz", "", "", {"Furat": "Ø14 mm", "Magasság": "27,5 mm",
                                                                          "Fej szélessége": "17,5 mm", "Anyag": "műanyag"})}
 
@@ -740,6 +748,18 @@ def profil_8170():
     g = g.union(box(0, 29, 2.35, 65)).union(box(27.85, 29, 30.2, 65))
     for x0, x1 in ((0, 0.5), (29.7, 30.2)):
         g = g.difference(box(x0 - 0.1, 47.5, x1 + 0.1, 57.5) if x0 == 0 else box(x0, 47.5, x1 + 0.1, 57.5))
+    return g.buffer(0.3, join_style=1).buffer(-0.3, join_style=1)
+
+
+def profil_223132():
+    """238066 (CS tömítéses ajtószegő 25 mm, ALSAP 223132): 80 széles, 35 magas; a 2,5 mm-es függőleges fal (x 25,5…28)
+    tetején balra a 30,5 mm-es, 2,5 vastag perem, a végén 7 mm-es horoggal, alatta a kis belső fül (a 21,5 mm-es
+    csatorna széle); a fal mellett jobbra a 30,5 mm magas, 2,5 mm falú, jobbra nyitott doboz a 26,5 / 28 mm-es
+    osztással (középső fal x 49,5…52)."""
+    from shapely.geometry import box
+    g = box(0, 0, 30.5, 2.5).union(box(0, 0, 2.5, 7)).union(box(4.5, 2.5, 6.5, 5))
+    g = g.union(box(25.5, 0, 28, 35)).union(box(28, 0, 30.5, 7))
+    g = g.union(box(25.5, 4.5, 80, 7)).union(box(25.5, 32.5, 80, 35)).union(box(49.5, 4.5, 52, 35))
     return g.buffer(0.3, join_style=1).buffer(-0.3, join_style=1)
 
 

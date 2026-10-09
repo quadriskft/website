@@ -4783,6 +4783,22 @@
    "/termekkepek/238043-kalap-profil-natur-35-87-mm-1.webp"
   ]
  },
+ "238066-cs-tomiteses-ajtoszego-25-mm-elox": {
+  "source": "Quadris méretrajz",
+  "sourceUrl": "",
+  "sourceTitle": "",
+  "specs": {
+   "Szélesség": "80 mm",
+   "Magasság": "35 mm",
+   "Falvastagság": "2,5 mm",
+   "Doboz belső magassága": "25,5 mm",
+   "Felület": "eloxált"
+  },
+  "images": [
+   "/termekkepek/238066-cs-tomiteses-ajtoszego-25-mm-elox-kitoltott.webp",
+   "/termekkepek/238066-cs-tomiteses-ajtoszego-25-mm-elox-meretrajz.webp"
+  ]
+ },
  "238087-70x110-mm-l-kulso-elox": {
   "source": "Quadris gyári rajz",
   "sourceUrl": "",
