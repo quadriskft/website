@@ -4222,20 +4222,22 @@
   ]
  },
  "232125-dobozos-keret-elox-or-130-mm-nyitott": {
-  "source": "ESAL katalógus",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "",
-  "sourceTitle": "ESAL Forlì Sponde 2020, 48. oldal",
+  "sourceTitle": "",
   "specs": {
    "Ötvözet": "EN AW-6060 T5",
    "Tömeg [kg/fm]": "1,365",
    "Gyári szálhossz [mm]": "7500",
    "Magasság": "120 mm",
    "Szélesség": "60 mm",
-   "Belső méret": "35 mm"
+   "Belső méret": "35 mm",
+   "Falvastagság": "2,5 mm"
   },
   "images": [
-   "/termekkepek/232125-dobozos-keret-elox-or-130-mm-nyitott-rajz.webp",
-   "/termekkepek/232125-dobozos-keret-elox-or-130-mm-nyitott-1.webp"
+   "/termekkepek/232125-dobozos-keret-elox-or-130-mm-nyitott-kitoltott.webp",
+   "/termekkepek/232125-dobozos-keret-elox-or-130-mm-nyitott-meretrajz.webp",
+   "/termekkepek/232125-dobozos-keret-elox-or-130-mm-nyitott-foto.webp"
   ]
  },
  "232134-285-mm-i-koptato-profil-elox": {

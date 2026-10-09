@@ -85,6 +85,8 @@ VECTOR = {
                                                       hdims=[(0, 30.5 / 80, "30,5"), (6.5 / 80, 28 / 80, "21,5"),
                                                              (25.5 / 80, 52 / 80, "26,5"), (52 / 80, 1, "28")],
                                                       idims=[("vr", 66 / 80, 7 / 35, 32.5 / 35, "25,5")])),
+    "232125-dobozos-keret-elox-or-130-mm-nyitott": ("profil_13836", "60", "120", "2,5", ("h", 0.75),
+                                                    dict(idims=[("h", 25 / 120, 2.5 / 60, 37.5 / 60, "35")])),
     "203101-spanner-profil": ("profil_3101", "35", "70", "5", ("h", 0.3)),
     "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("profil_8005", "70", "18", "2", ("v", 9 / 70),
                                                      dict(idims=[("h", 0.5, 2 / 70, 16 / 70, "ø14")])),
@@ -278,8 +280,6 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             "235215-dobozos-keretprofil-ivelt-elox": [("data/forras/235215_rajz.png", "rajz")],
             # a Quadris által küldött rajz (csiga_rajz.py: élesítve, az oldalnézet és a számok újrarajzolva) és fotó kivitelenként;
             # a jobbos kivitel a termékcsalád második tagja (data/termek_csaladok.json, „clone”)
-            # a Quadris kérésére az ESAL Forlì katalógus (48. oldal) 13836-os rajza és fotója, a gyári kód nélkül
-            "232125-dobozos-keret-elox-or-130-mm-nyitott": [("data/forras/232125_rajz.png", "rajz"), ("data/forras/232125_foto.png", "1")],
             # a Quadris által küldött rajz változtatás nélkül (a Quadris kérésére az eredeti)
             "238067-tomites-a-szego-profilhoz": [("data/forras/238067_rajz.png", "rajz")],
             "106731-lezaro-csiga-zsanerhoz": [("data/forras/106731_bal_rajz_tiszta.png", "rajz"), ("data/forras/106731_bal_foto.png", "1")],
@@ -287,7 +287,8 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
-PHOTOS = {"237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox": ("data/forras/237301_foto.png", (0, 0, 880, 2432)),  # vízjel kivéve, MI-vel 4x
+PHOTOS = {"232125-dobozos-keret-elox-or-130-mm-nyitott": ("data/forras/232125_foto.png", (0, 0, 748, 827)),  # ESAL 13836 fotója
+          "237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox": ("data/forras/237301_foto.png", (0, 0, 880, 2432)),  # vízjel kivéve, MI-vel 4x
           "231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (370, 110, 575, 240)),
           "232134-285-mm-i-koptato-profil-elox": ("data/forras/232134_lap.png", (95, 95, 250, 580)),
           "237000-25x25-mm-ives-sarokprofil-elox": ("data/forras/237000_lap.png", (390, 20, 535, 170)),
@@ -781,6 +782,19 @@ def profil_220306():
         .buffer(-1.2, join_style=1).buffer(1.2, join_style=1)
     g = base.union(stem).union(lip).union(bulb).difference(hollow)
     return g.buffer(0.3, join_style=1).buffer(-0.3, join_style=1)  # a belső sarkok lekerekítve
+
+
+def profil_13836():
+    """232125 (dobozos keret OR 120 mm nyitott, ESAL 13836): 120 magas, 60 széles; a 2,5 mm-es függőleges fal tetején
+    letörés, alján a jobbra kinyúló kis talp; 40 mm-nél a 60 mm-es, 3 mm vastag kar (lekerekített véggel, a fal mellett
+    alul kis hornnyal), rajta a fal belső oldalától 35 mm-re (a Quadris adata) a 2,5 mm-es felálló szár letört véggel.
+    A katalógusrajz ferde, lépcsős szárai a Quadris kérésére egyenesen."""
+    from shapely.geometry import Point, Polygon, box
+    wall = Polygon([(0, 1.6), (1.2, 0), (2.5, 0), (2.5, 116.5), (4.8, 118), (4.8, 120), (0, 120)])
+    arm = box(0, 40, 59, 43).union(Point(59, 41.5).buffer(1.5, 64))
+    leg = Polygon([(37.5, 10), (40, 11.6), (40, 40.5), (37.5, 40.5)])
+    g = wall.union(arm).union(leg).difference(Point(4.0, 43.6).buffer(1.2, 64))
+    return g.buffer(0.3, join_style=1).buffer(-0.3, join_style=1)
 
 
 def profil_8005():
