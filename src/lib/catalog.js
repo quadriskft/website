@@ -66,8 +66,15 @@ const cloneProducts = Object.entries(families).filter(([id, f]) => !id.startsWit
   return rest.map((slug) => ({ ...base, slug, images: extra[slug]?.images ?? base.images, specs: { ...base.specs, ...(extra[slug]?.specs ?? {}) } }));
 });
 
+// A beszállító / gyártó saját cikk- vagy profilszáma a műszaki adatok között sem jelenik meg (a Quadris kérése)
+const SUPPLIER_CODE_SPEC = /^(cikkszám|profilszám) \((gyártói|gyári)\)$/i;
+const withoutSupplierCodes = (p) =>
+  Object.keys(p.specs ?? {}).some((k) => SUPPLIER_CODE_SPEC.test(k))
+    ? { ...p, specs: Object.fromEntries(Object.entries(p.specs).filter(([k]) => !SUPPLIER_CODE_SPEC.test(k))) }
+    : p;
+
 // A Quadris által törlésre jelölt termékek (data/torolt_termekek.json) sehol nem jelennek meg
-export const products = [...excelProducts, ...extendedProducts, ...cloneProducts].filter((p) => !deleted[p.slug]);
+export const products = [...excelProducts, ...extendedProducts, ...cloneProducts].filter((p) => !deleted[p.slug]).map(withoutSupplierCodes);
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
 const CATEGORY_RENAMES = { versus: 'Versus-Omega' };

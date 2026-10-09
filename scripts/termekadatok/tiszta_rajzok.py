@@ -69,6 +69,14 @@ VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
     "235426-specialis-h-szego-profil": ("profil_4026", "58", "44,5", "2,5", ("h", 0.65)),
     "237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox": ("profil_7301", "45", "300", "2,8", ("h", 0.35)),
+    "237846-n-tomiteses-ajtoszego-30-mm-d": ("profil_7846", "34,35", "65", "2", ("h", 0.75),
+                                             dict(idims=[("vr", 3.4 / 34.35, 4.5 / 65, 24.5 / 65, "20"),
+                                                         ("h", 9 / 65, 2.5 / 34.35, 7.5 / 34.35, "5"),
+                                                         ("vr", 8.75 / 34.35, 8 / 65, 21 / 65, "13"),
+                                                         ("h", 40 / 65, 2 / 34.35, 32.35 / 34.35, "30,5")])),
+    "237847-n-h-ajtoszego-30-mm-d": ("profil_7847", "34,25", "93", "2", ("h", 0.3),
+                                     dict(idims=[("h", 12 / 93, 2 / 34.25, 14 / 34.25, "12"),
+                                                 ("h", 50 / 93, 2 / 34.25, 32.25 / 34.25, "30,5")])),
     "203101-spanner-profil": ("profil_3101", "35", "70", "5", ("h", 0.3)),
     "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("profil_8005", "70", "18", "2", ("v", 9 / 70),
                                                      dict(idims=[("h", 0.5, 2 / 70, 16 / 70, "ø14")])),
@@ -689,6 +697,27 @@ def profil_7301():
     return g.buffer(0.25, join_style=1).buffer(-0.25, join_style=1)
 
 
+def profil_7846():
+    """237846 (tömítéses ajtószegő 30 mm, Constellium Děčín 7846): 65 magas, 34,35 széles; a 2 mm-es függőleges fal
+    tetején a tömítés U-hornya (belül 5 × 20, a két 2,5 mm-es horog között 13 mm-es nyílás), alatta a 3 mm-es kar és a
+    18 mm-es, 2 mm vastag külső szár. Sarkok a rajz szerint: R3, x = R1, a szárvégek R2,5, a többi R0,3."""
+    from shapely.geometry import Polygon
+    pts = [(0, 0, 1), (10, 0, 3), (10, 8, 0.3), (7.5, 8, 0.3), (7.5, 4.5, 0.3), (2.5, 4.5, 0.3), (2.5, 24.5, 0.3),
+           (7.5, 24.5, 0.3), (7.5, 21, 0.3), (10, 21, 0.3), (10, 28, 1), (34.35, 28, 1), (34.35, 46, 0.3),
+           (32.35, 46, 1.9), (32.35, 31, 0.3), (2, 31, 0.3), (2, 65, 0.3), (0, 65, 1.9)]
+    return Polygon(fillet([(x, y) for x, y, _ in pts], [r for *_, r in pts]))
+
+
+def profil_7847():
+    """237847 (H ajtószegő 30 mm, Constellium Děčín 7847): 93 magas, 34,25 széles; felül a 12 mm belső szélességű U
+    (2 mm-es szárak, 3 mm-es gerinc, a bal szár 55 mm hosszú), a jobb szár R5 / R8 ívvel a 3 mm-es karba fordul, a kar
+    végén a 65 mm-es, 2 mm vastag külső szár. Sarkok a rajz szerint: R3, x = R1,5, R2, a szárvégek R2,5."""
+    from shapely.geometry import Polygon
+    pts = [(0, 0, 3), (16, 0, 3), (16, 28, 5), (34.25, 28, 0.5), (34.25, 93, 0.3), (32.25, 93, 1.9), (32.25, 31, 2),
+           (14, 31, 8), (14, 3, 1.5), (2, 3, 1.5), (2, 55, 1.9), (0, 55, 0.3)]
+    return Polygon(fillet([(x, y) for x, y, _ in pts], [r for *_, r in pts]))
+
+
 def profil_8005():
     """388005 (70 mm-es ponyvabeakasztó, T1 8005): 70 × 18; balra a Ø14-es furatú, 2 mm falú, felfelé nyitott C
     (lekerekített véggel), mellette a vele szemben nyitott ív (R9 / R6,2), ebből indul a 2,8 vastag felső lap 70-ig és
@@ -1128,10 +1157,11 @@ def render_mask(m, wtext, htext, ttext, where, erase=(), wtop=None, target=1000,
                 break
     # belső méretek a profilon belül: ("v", x-arány, y0-arány, y1-arány, felirat) / ("h", y-arány, x0, x1, felirat)
     for kind, f, a0, a1, text in idims:
-        if kind == "v":
+        if kind in ("v", "vr"):  # vr: a felirat a méretvonaltól jobbra
             xx = x0 + f * w
             dim((xx, y0 + a0 * h), (xx, y0 + a1 * h))
-            d.text((xx - 10, y0 + (a0 + a1) / 2 * h), text, font=F, fill="black", anchor="rm")
+            d.text((xx + (10 if kind == "vr" else -10), y0 + (a0 + a1) / 2 * h), text, font=F, fill="black",
+                   anchor="lm" if kind == "vr" else "rm")
         else:
             yy = y0 + f * h
             dim((x0 + a0 * w, yy), (x0 + a1 * w, yy))

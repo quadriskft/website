@@ -4678,10 +4678,12 @@
    "Profil típusa": "nyitott",
    "Magasság": "65 mm",
    "Szélesség": "34,35 mm",
-   "Felület": "natúr"
+   "Felület": "natúr",
+   "Falvastagság": "2 mm"
   },
   "images": [
-   "/termekkepek/237846-n-tomiteses-ajtoszego-30-mm-d-1.webp"
+   "/termekkepek/237846-n-tomiteses-ajtoszego-30-mm-d-kitoltott.webp",
+   "/termekkepek/237846-n-tomiteses-ajtoszego-30-mm-d-meretrajz.webp"
   ]
  },
  "237847-n-h-ajtoszego-30-mm-d": {
@@ -4698,10 +4700,12 @@
    "Profil típusa": "nyitott",
    "Magasság": "93 mm",
    "Szélesség": "34,25 mm",
-   "Felület": "natúr"
+   "Felület": "natúr",
+   "Falvastagság": "2 mm"
   },
   "images": [
-   "/termekkepek/237847-n-h-ajtoszego-30-mm-d-1.webp"
+   "/termekkepek/237847-n-h-ajtoszego-30-mm-d-kitoltott.webp",
+   "/termekkepek/237847-n-h-ajtoszego-30-mm-d-meretrajz.webp"
   ]
  },
  "237870-25x25-mm-utanfuto-sarokprofil-elox": {
