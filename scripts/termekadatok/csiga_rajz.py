@@ -28,7 +28,13 @@ def iso():
     """A térbeli nézet a vonalak és a szürke kitöltés simított maszkjából, éles szélekkel (a méretvonalak nélkül)."""
     g = np.asarray(Image.open(ROOT / "data/forras/106731_bal_rajz.png").convert("L")).astype(np.float32)
     g = g[:, :560].copy()
-    g[486:600, 230:317] = 255  # a 25-ös méret vonalai és száma (újrarajzolva)
+    g[494:600, 230:317] = 255  # a 25-ös méret vonalai és száma (újrarajzolva)
+    g[468:494, 304:317] = 255
+    # a lap alja, ahol a gyári kód mutatóvonala keresztezte: a szürke kitöltés és a két körvonal folytonosan
+    g[485:489, 198:240] = 200
+    g[492:503, 186:246] = 255
+    cv2.line(g, (200, 482), (228, 482), 60, 4)
+    cv2.polylines(g, [np.array([(184, 494), (226, 493), (240, 490), (250, 484)], np.int32)], False, 60, 5)
     g = cv2.resize(g, None, fx=K, fy=K, interpolation=cv2.INTER_CUBIC)
 
     def alpha(mask, sigma):
@@ -106,7 +112,7 @@ def graphics():
     d.line([p0, p1], fill="black", width=2)
     texts.append(("0,5×90°", (p1[0] + 4, p1[1] + 4), "lt", 0))
     # a térbeli nézet 25-ös mérete (a fül hossza): függőleges segédvonalak, a térbeli tengellyel párhuzamos méretvonal
-    a, b = (257 * K, 486 * K), (311 * K, 486 * K)
+    a, b = (257 * K, 490 * K), (311 * K, 474 * K)
     da, db = (257 * K, 588 * K), (311 * K, 560 * K)
     d.line([a, (da[0], da[1] + 10)], fill="black", width=2)
     d.line([b, (db[0], db[1] + 10)], fill="black", width=2)
