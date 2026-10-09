@@ -58,6 +58,10 @@ DECIN = {
     "2073902-i-90-csavarozhato-kereszttarto": ("10902", 90, 3, [], "85", "90", "3", ("h", 0.40), None, 5, 6),
 }
 
+# egyszerű (üreg nélküli) Decin-profil: a körvonal belseje kitöltve, a rávágott segédvonalak, mérethatárolók és
+# osztásjelek lesimítva (a Quadris kérésére): slug -> (profilszám, szélesség, magasság)
+DECIN_SOLID = {"231543-dobozos-keret-elox-134-80": ("11543", "60", "134")}
+
 
 # a gyári rajz méreteiből (mm) vektorosan felépített profil – ahol a szken segédvonalai a körvonalba olvadnak:
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
@@ -761,6 +765,21 @@ def decin_mask(code, cav_px, r, edits=(), k=None, smooth=0):
     return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
+def decin_solid_mask(code):
+    """A Decin-körvonal kitöltve: a külső tartományon kívül minden anyag; a vékony segédvonalak és osztásjelek nyitással
+    eltűnnek, a körvonal fél vastagsága visszavéve, a maradék csipkézettség simítva."""
+    ink = np.pad(np.asarray(_decin_lines(C, code).convert("L")) < 128, 20).astype(np.uint8)
+    el = lambda d: cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (d, d))
+    n, lab, _, _ = cv2.connectedComponentsWithStats(1 - ink, connectivity=4)
+    solid = cv2.morphologyEx((lab != lab[0, 0]).astype(np.uint8), cv2.MORPH_OPEN, el(17))
+    n, lab, st, _ = cv2.connectedComponentsWithStats(solid, connectivity=8)
+    m = cv2.erode((lab == 1 + int(np.argmax(st[1:, 4]))).astype(np.uint8), el(3))
+    m = cv2.morphologyEx(cv2.morphologyEx(m, cv2.MORPH_OPEN, el(9)), cv2.MORPH_CLOSE, el(9))
+    m = cv2.GaussianBlur(m.astype(np.float32), (0, 0), 3) > 0.5
+    ys, xs = np.where(m)
+    return m[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+
+
 def _decin_lines(C, code):
     """A profil körvonala a constellium.py beállításaival, a megtartott méretek és pótlások nélkül."""
     cfg = C.DRAWINGS[code]
@@ -1120,6 +1139,16 @@ def main():
         # csak a Decin-rajz (vonalas + kitöltött): minden korábbi kép (régi rajzok, 3D) törölve
         data[slug]["images"] = [save_image(fill, slug, "kitoltott"), url]  # a fekete az első
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
+    for slug, (code, wt, ht) in DECIN_SOLID.items():
+        if slug not in data:
+            continue
+        m = decin_solid_mask(code)
+        fill, *_ = render_mask(m.copy(), wt, ht, None, None, eps=1.6)
+        img, *_ = render_mask(m.copy(), wt, ht, None, None, outline=True, eps=1.6)
+        data[slug]["images"] = [save_image(fill, slug, "kitoltott"), save_image(img, slug, "meretrajz")]  # a fekete az első
+        data[slug]["specs"].pop("Profilszám (gyártói)", None)  # a gyártói profilszám nem jelenik meg
+        data[slug].pop("matchedCode", None)
+        print(slug, "kitöltött Decin-körvonalból")
     for slug, (fn, wt, ht, tt, where, *vd) in VECTOR.items():
         if slug not in data and slug in NEW:
             data[slug] = {"source": NEW[slug][0], "sourceUrl": NEW[slug][1], "sourceTitle": NEW[slug][2], "specs": {}, "images": []}
@@ -1273,7 +1302,7 @@ def main():
         data[slug]["images"] = [url] + [u for u in data[slug].get("images", []) if u != url]
         data[slug].setdefault("specs", {})["Falvastagság"] = f"{tt} mm"
         print(slug, "vázlatból")
-    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(VECTOR) + [x for k in GRAY for x in k] + [x for k in OUTLINE for x in k] + [x for k in EDSCHA_BLUE for x in k] + list(DARK) + list(RAW) + list(GRAYVIEW) + list(IMAGESET) + list(BLUE) + list(SKETCH) if s in data})
+    update_enrichment({s: data[s] for s in list(ITEMS) + list(DECIN) + list(DECIN_SOLID) + list(VECTOR) + [x for k in GRAY for x in k] + [x for k in OUTLINE for x in k] + [x for k in EDSCHA_BLUE for x in k] + list(DARK) + list(RAW) + list(GRAYVIEW) + list(IMAGESET) + list(BLUE) + list(SKETCH) if s in data})
 
 
 if __name__ == "__main__":

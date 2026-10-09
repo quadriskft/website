@@ -4080,9 +4080,7 @@
   "source": "Constellium rajz",
   "sourceUrl": "https://www.constellium.com",
   "sourceTitle": "Constellium Děčín profilrajz 11543 (Transport2024B, 38. oldal)",
-  "matchedCode": "11543",
   "specs": {
-   "Profilszám (gyártói)": "11543",
    "Ötvözet": "EN AW-6060 T6",
    "Tömeg": "1,743 kg/fm",
    "Kerület": "389 mm",
@@ -4093,7 +4091,8 @@
    "Felület": "eloxált"
   },
   "images": [
-   "/termekkepek/231543-dobozos-keret-elox-134-80-1.webp"
+   "/termekkepek/231543-dobozos-keret-elox-134-80-kitoltott.webp",
+   "/termekkepek/231543-dobozos-keret-elox-134-80-meretrajz.webp"
   ]
  },
  "231725-belga-h-szego-25-mm-elox": {
