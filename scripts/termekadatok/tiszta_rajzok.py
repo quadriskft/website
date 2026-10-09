@@ -85,6 +85,7 @@ VECTOR = {
                                                       hdims=[(0, 30.5 / 80, "30,5"), (6.5 / 80, 28 / 80, "21,5"),
                                                              (25.5 / 80, 52 / 80, "26,5"), (52 / 80, 1, "28")],
                                                       idims=[("vr", 66 / 80, 7 / 35, 32.5 / 35, "25,5")])),
+    "238067-tomites-a-szego-profilhoz": ("profil_220306", None, "9", "", None, dict(bottom="20")),
     "203101-spanner-profil": ("profil_3101", "35", "70", "5", ("h", 0.3)),
     "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("profil_8005", "70", "18", "2", ("v", 9 / 70),
                                                      dict(idims=[("h", 0.5, 2 / 70, 16 / 70, "ø14")])),
@@ -359,6 +360,8 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
        "238066-cs-tomiteses-ajtoszego-25-mm-elox": ("Quadris méretrajz", "", "", {"Szélesség": "80 mm", "Magasság": "35 mm",
                                                                            "Falvastagság": "2,5 mm", "Doboz belső magassága": "25,5 mm",
                                                                            "Felület": "eloxált"}),
+       "238067-tomites-a-szego-profilhoz": ("Quadris méretrajz", "", "", {"Anyag": "gumi", "Szín": "fekete", "Szélesség": "20 mm",
+                                                                   "Magasság": "9 mm"}),
        "100001-dugo-perforalt-acel-kerethez": ("Quadris gyári rajz", "", "", {"Furat": "Ø14 mm", "Magasság": "27,5 mm",
                                                                          "Fej szélessége": "17,5 mm", "Anyag": "műanyag"})}
 
@@ -761,6 +764,22 @@ def profil_223132():
     g = g.union(box(25.5, 0, 28, 35)).union(box(28, 0, 30.5, 7))
     g = g.union(box(25.5, 4.5, 80, 7)).union(box(25.5, 32.5, 80, 35)).union(box(49.5, 4.5, 52, 35))
     return g.buffer(0.3, join_style=1).buffer(-0.3, join_style=1)
+
+
+def profil_220306():
+    """238067 (tömítés a szegő profilhoz, ALSAP 220306): 20 mm-es, 1,2 mm vastag talp, rajta jobbra a 9 mm magas,
+    üreges tömítőcső (1,2–1,4 mm fal, a jobb oldalán kis orral), balra a talpból induló száron az 5 mm-rel kinyúló,
+    enyhén lejtő ajak (a küldött rajz arányai szerint)."""
+    from shapely.geometry import Polygon, box
+    base = box(0, 7.8, 20, 9).buffer(-0.5, join_style=1).buffer(0.5, join_style=1)
+    stem = box(4.4, 3.8, 5.6, 8)
+    lip = Polygon([(-5, 3.0), (5.6, 3.8), (5.6, 5.0), (-5, 4.2)]).buffer(-0.55, join_style=1).buffer(0.55, join_style=1)
+    bulb = Polygon([(6.4, 8), (6.4, 2.0), (7.0, 0.8), (8.5, 0.15), (16.5, 0), (18.0, 0.6), (19.0, 2.0), (20.1, 3.4),
+                    (20.1, 4.6), (19.2, 5.4), (18.6, 5.4), (18.6, 8)]).buffer(-1.2, join_style=1).buffer(1.2, join_style=1)
+    hollow = Polygon([(7.8, 7.8), (7.8, 2.3), (8.4, 1.4), (9.5, 1.2), (16.6, 1.1), (17.4, 1.8), (17.4, 7.8)]) \
+        .buffer(-1.2, join_style=1).buffer(1.2, join_style=1)
+    g = base.union(stem).union(lip).union(bulb).difference(hollow)
+    return g.buffer(0.3, join_style=1).buffer(-0.3, join_style=1)  # a belső sarkok lekerekítve
 
 
 def profil_8005():
