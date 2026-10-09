@@ -293,7 +293,7 @@ SHARPEN = {}
 # adatok a küldött adatlapról
 SPEC_FIX = {"232125-dobozos-keret-elox-or-130-mm-nyitott": {"Tömeg [kg/fm]": "1,365", "Gyári szálhossz [mm]": "7500",
                                                            "Magasság": "120 mm", "Szélesség": "60 mm",
-                                                           "Ötvözet": "EN AW-6060 T5"},
+                                                           "Ötvözet": "EN AW-6060 T5", "Belső méret": "35 mm"},
             "238170-or-ajto-keret-elox-70x30x65-25mm": {"Doboz": "70 × 30 mm", "Magasság": "65 mm", "U belső nyílás": "25,5 mm",
                                                        "U külső szélesség": "30,2 mm", "Falvastagság": "2,35 mm (U lábak)"},
             "237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox": {"Talp": "45 × 4 mm"},
