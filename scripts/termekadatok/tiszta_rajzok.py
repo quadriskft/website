@@ -260,10 +260,10 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             "234002-tomites-a-szego-profilhoz-or": [("data/forras/234002_rajz.png", "rajz"), ("data/forras/234002_foto.png", "1")],
             # a Quadris által küldött méretrajz (a holland megjegyzés a gyári kóddal és a jelölése kivéve)
             "235215-dobozos-keretprofil-ivelt-elox": [("data/forras/235215_rajz.png", "rajz")],
-            # a Quadris által küldött rajz és fotó kivitelenként (MI-vel 4x nagyítva, a gyári kód és mutatóvonala kivéve);
+            # a Quadris által küldött rajz (csiga_rajz.py: élesítve, az oldalnézet és a számok újrarajzolva) és fotó kivitelenként;
             # a jobbos kivitel a termékcsalád második tagja (data/termek_csaladok.json, „clone”)
-            "106731-lezaro-csiga-zsanerhoz": [("data/forras/106731_bal_rajz.png", "rajz"), ("data/forras/106731_bal_foto.png", "1")],
-            "106731-lezaro-csiga-zsanerhoz-jobb": [("data/forras/106731_jobb_rajz.png", "rajz"), ("data/forras/106731_jobb_foto.png", "1")]}
+            "106731-lezaro-csiga-zsanerhoz": [("data/forras/106731_bal_rajz_tiszta.png", "rajz"), ("data/forras/106731_bal_foto.png", "1")],
+            "106731-lezaro-csiga-zsanerhoz-jobb": [("data/forras/106731_jobb_rajz_tiszta.png", "rajz"), ("data/forras/106731_jobb_foto.png", "1")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
