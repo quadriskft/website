@@ -727,9 +727,12 @@ def profil_8170():
     """238170 (OR ajtó keret 70×30×65/25, RE-ALL 18-00170): felül 70 × 30-as zárt doboz (3 mm-es fal, a lap 1,944 kg/fm
     tömegéből), alatta balra a 30,2 széles, 25,5 belső nyílású U két 2,35 mm-es lába 65-ig; a lábak külső oldalán a
     katalógusrajz szerinti 0,5 mm-es bemélyedés."""
-    from shapely.geometry import box
-    g = box(0, 0, 70, 30).difference(box(3, 3, 67, 27))
-    g = g.union(box(0, 30, 2.35, 65)).union(box(27.85, 30, 30.2, 65))
+    from shapely.geometry import Polygon, box
+    outer = [(0, 0, 3), (70, 0, 3), (70, 30, 3), (0, 30, 0)]  # a doboz külső sarkai ívesek (a katalógusrajz szerint)
+    inner = [(3, 3, 1), (67, 3, 1), (67, 27, 1), (3, 27, 1)]
+    g = Polygon(fillet([(x, y) for x, y, _ in outer], [r for *_, r in outer])).difference(
+        Polygon(fillet([(x, y) for x, y, _ in inner], [r for *_, r in inner])))
+    g = g.union(box(0, 29, 2.35, 65)).union(box(27.85, 29, 30.2, 65))
     for x0, x1 in ((0, 0.5), (29.7, 30.2)):
         g = g.difference(box(x0 - 0.1, 47.5, x1 + 0.1, 57.5) if x0 == 0 else box(x0, 47.5, x1 + 0.1, 57.5))
     return g.buffer(0.3, join_style=1).buffer(-0.3, join_style=1)
