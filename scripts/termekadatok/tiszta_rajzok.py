@@ -245,7 +245,9 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             # P/F (piros fedél / fekete doboz): a Quadris által küldött kép (MI-vel 4x nagyítva) és méretrajz
             "j258217-p-f-porolto-tarto-6-kg-os": [("data/forras/j258217_foto.png", "1"), ("data/forras/j258217_rajz.png", "rajz")],
             # a Quadris kérésére az Exlabesa katalógus EXL-37715 rajza (32. oldal), a gyári kód nélkül
-            "231726-b-tomiteses-ajtoszego-25-mm-elox": [("data/forras/exl37715_rajz.png", "rajz")]}
+            "231726-b-tomiteses-ajtoszego-25-mm-elox": [("data/forras/exl37715_rajz.png", "rajz")],
+            # a Quadris által küldött méretrajz
+            "231729-b-front-tomiteses-u-ajtoszego-25-mm-elox": [("data/forras/231729_rajz.png", "rajz")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
@@ -297,6 +299,8 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
                                                                                   "Rendszer": "Edscha COMPACT"}),
        "102439-dugo-spitzprofilhoz-150-mm-magas": ("Quadris katalóguslap", "", "", {"Anyag": "PVC", "Szín": "fekete"}),
        "3840-2900-sstavg-27-mm-feszito-alu-cso": ("Quadris fotó", "", "", {}),
+       "231729-b-front-tomiteses-u-ajtoszego-25-mm-elox": ("Quadris méretrajz", "", "", {"Szélesség": "26,4 mm", "Magasság": "52,8 mm",
+                                                                                     "Belső nyílás": "25,3 mm", "Felület": "eloxált"}),
        "100001-dugo-perforalt-acel-kerethez": ("Quadris gyári rajz", "", "", {"Furat": "Ø14 mm", "Magasság": "27,5 mm",
                                                                          "Fej szélessége": "17,5 mm", "Anyag": "műanyag"})}
 
