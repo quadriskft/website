@@ -4132,10 +4132,13 @@
   "specs": {
    "Hossz": "7,00 m",
    "Felület": "eloxált",
-   "Anyag": "alumínium"
+   "Anyag": "alumínium",
+   "Tömeg": "1,330 kg/fm",
+   "Szélesség": "71 mm",
+   "Belső méret (U)": "25,1 mm"
   },
   "images": [
-   "/termekkepek/231726-b-tomiteses-ajtoszego-25-mm-elox-1.webp"
+   "/termekkepek/231726-b-tomiteses-ajtoszego-25-mm-elox-rajz.webp"
   ]
  },
  "231791-15-3x26-mm-l-profil-elox": {
