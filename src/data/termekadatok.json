@@ -4483,20 +4483,20 @@
   ]
  },
  "237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox": {
-  "source": "Quadris adatok",
+  "source": "Quadris katalóguslap",
   "sourceUrl": "",
-  "sourceTitle": "45x300x3 mm L Belső bokaléc védőprofil elox",
-  "matchedCode": "",
+  "sourceTitle": "",
   "specs": {
    "Anyag": "alumínium, eloxált",
    "Méret": "45 × 300 mm",
-   "Falvastagság": "3 mm",
-   "Tömeg": "2,77 kg/fm (elméleti)"
+   "Falvastagság": "2,8 mm",
+   "Tömeg": "2,77 kg/fm (elméleti)",
+   "Talp": "45 × 4 mm"
   },
   "images": [
-   "/termekkepek/3d/237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox-1.webp",
-   "/termekkepek/3d/237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox-2.webp",
-   "/termekkepek/237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox-1.webp"
+   "/termekkepek/237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox-kitoltott.webp",
+   "/termekkepek/237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox-meretrajz.webp",
+   "/termekkepek/237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox-foto.webp"
   ]
  },
  "237310-20-dupla-alu-zsaner": {

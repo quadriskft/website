@@ -68,6 +68,7 @@ DECIN_SOLID = {"231543-dobozos-keret-elox-134-80": ("11543", "60", "134")}
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
     "235426-specialis-h-szego-profil": ("profil_4026", "58", "44,5", "2,5", ("h", 0.65)),
+    "237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox": ("profil_7301", "45", "300", "2,8", ("h", 0.35)),
     "203101-spanner-profil": ("profil_3101", "35", "70", "5", ("h", 0.3)),
     "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("profil_8005", "70", "18", "2", ("v", 9 / 70),
                                                      dict(idims=[("h", 0.5, 2 / 70, 16 / 70, "ø14")])),
@@ -266,7 +267,8 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
-PHOTOS = {"231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (370, 110, 575, 240)),
+PHOTOS = {"237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox": ("data/forras/237301_foto.png", (0, 0, 880, 2432)),  # vízjel kivéve, MI-vel 4x
+          "231381-25-mm-diszlec-alu-3000-mm": ("data/forras/231381_lap.png", (370, 110, 575, 240)),
           "232134-285-mm-i-koptato-profil-elox": ("data/forras/232134_lap.png", (95, 95, 250, 580)),
           "237000-25x25-mm-ives-sarokprofil-elox": ("data/forras/237000_lap.png", (390, 20, 535, 170)),
           "237005-142-mm-i-koptato-profil-elox": ("data/forras/237005_lap.png", (430, 80, 585, 385))}
@@ -276,7 +278,8 @@ RENDER3D = {"388008-27mm-feszito-cso-alu-profil": [2], "388005-ponyvabeakaszto-a
 # (slug -> a kivágásban kifehérítendő téglalapok, pl. a ráérő méretfelirat)
 SHARPEN = {}
 # adatok a küldött adatlapról
-SPEC_FIX = {"106731-lezaro-csiga-zsanerhoz": {"Kivitel": "bal oldali", "Szélesség": "55 mm", "Magasság": "47 mm"},
+SPEC_FIX = {"237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox": {"Talp": "45 × 4 mm"},
+            "106731-lezaro-csiga-zsanerhoz": {"Kivitel": "bal oldali", "Szélesség": "55 mm", "Magasság": "47 mm"},
             "231543-dobozos-keret-elox-134-80": {"Falvastagság": "3–4 mm (perem 3 mm, alsó fal 3,5 mm, felső fal 4 mm)"},
             "231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
             "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"},
@@ -669,6 +672,21 @@ def profil_4026():
     for x in (50.2, 52.2):
         g = g.difference(Polygon([(x - 0.3, 15.5), (x, 15.2), (x + 0.3, 15.5), (x + 0.3, 16), (x - 0.3, 16)]))
     return g.buffer(0.5, join_style=1).buffer(-1, join_style=1).buffer(0.5, join_style=1)
+
+
+def profil_7301():
+    """237301 (45 × 300 mm-es L belső bokaléc védőprofil): 300 magas, 2,8 mm-es fal, alul 45 mm-es, 4 mm vastag talp
+    (belül R3, kívül R4 hajlattal), a fal teteje kívül letörve; a fal belső oldalán a gyári rajz szerinti 0,6 mm-es
+    vastagabb sávok, a külső oldalon a 0,5 mm-es bemélyedések."""
+    from shapely.geometry import Point, Polygon, box
+    g = box(42.2, 0, 45, 300).difference(Polygon([(43.4, 0), (45, 0), (45, 6)])).union(box(0, 296, 45, 300))
+    for y0, y1 in ((0, 12.6), (28.4, 63.3), (139.6, 175.6), (252, 296)):  # belső vastagabb sávok
+        g = g.union(box(41.6, y0, 42.2, y1))
+    for y0, y1 in ((30.7, 60), (143, 172), (255, 285)):  # külső bemélyedések
+        g = g.difference(box(44.5, y0, 45.1, y1))
+    g = g.union(box(38.6, 292.4, 41.6, 296).difference(Point(38.6, 292.4).buffer(3, 128)))  # belső hajlat R3
+    g = g.difference(box(41, 296, 45.1, 300.1).difference(Point(41, 296).buffer(4, 128)))  # külső hajlat R4
+    return g.buffer(0.25, join_style=1).buffer(-0.25, join_style=1)
 
 
 def profil_8005():
