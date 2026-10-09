@@ -271,7 +271,8 @@ RENDER3D = {"388008-27mm-feszito-cso-alu-profil": [2], "388005-ponyvabeakaszto-a
 # (slug -> a kivágásban kifehérítendő téglalapok, pl. a ráérő méretfelirat)
 SHARPEN = {}
 # adatok a küldött adatlapról
-SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
+SPEC_FIX = {"231543-dobozos-keret-elox-134-80": {"Falvastagság": "3–4 mm (perem 3 mm, alsó fal 3,5 mm, felső fal 4 mm)"},
+            "231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag": "alumínium EN AW-6060", "Méret": "25 × 5 mm"},
             "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"},
             "j258217-p-f-porolto-tarto-6-kg-os": {"Szín": "piros fedél, fekete doboz", "Méret": "550 × 244 × 204 mm"},
             "j258207-p-p-porolto-tarto-6-kg-os": {"Szín": "piros"},
@@ -1152,6 +1153,7 @@ def main():
         img, *_ = render_mask(m.copy(), wt, ht, None, None, outline=True, eps=1.6)
         data[slug]["images"] = [save_image(fill, slug, "kitoltott"), save_image(img, slug, "meretrajz")]  # a fekete az első
         data[slug]["specs"].pop("Profilszám (gyártói)", None)  # a gyártói profilszám nem jelenik meg
+        data[slug]["specs"].update(SPEC_FIX.get(slug, {}))
         data[slug].pop("matchedCode", None)
         print(slug, "kitöltött Decin-körvonalból")
     for slug, (fn, wt, ht, tt, where, *vd) in VECTOR.items():
