@@ -831,5 +831,19 @@
   "code": "231305/n",
   "date": "2026-10-09",
   "reason": "a Quadris kérésére: nem kell"
+ },
+ "231308-an-tomiteses-ajtoszego-30-mm-elox": {
+  "name": "AN Tömítéses ajtószegő 30 mm elox",
+  "supplier": "ALSAP",
+  "code": "231308",
+  "date": "2026-10-09",
+  "reason": "a Quadris kérésére: nem kell"
+ },
+ "231309-an-h-ajtoszego-30-mm-elox": {
+  "name": "AN \"h\" ajtószegő 30 mm elox",
+  "supplier": "ALSAP",
+  "code": "231309",
+  "date": "2026-10-09",
+  "reason": "a Quadris kérésére: nem kell"
  }
 }
