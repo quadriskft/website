@@ -255,7 +255,9 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             # a Quadris által küldött rajz (MI-vel 4x nagyítva); a korábbi Car-Alu kép nem ehhez a termékhez tartozott
             "232460-tomites-az-u-ajtoszego-profilhoz": [("data/forras/232460_rajz.png", "rajz")],
             # a Quadris kérésére az ESAL Forlì katalógus (88. oldal) tömítésrajza és fotója, a gyári kód nélkül
-            "234002-tomites-a-szego-profilhoz-or": [("data/forras/234002_rajz.png", "rajz"), ("data/forras/234002_foto.png", "1")]}
+            "234002-tomites-a-szego-profilhoz-or": [("data/forras/234002_rajz.png", "rajz"), ("data/forras/234002_foto.png", "1")],
+            # a Quadris által küldött méretrajz (a holland megjegyzés a gyári kóddal és a jelölése kivéve)
+            "235215-dobozos-keretprofil-ivelt-elox": [("data/forras/235215_rajz.png", "rajz")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
@@ -312,6 +314,9 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
                                                                                      "Belső nyílás": "25,3 mm", "Felület": "eloxált"}),
        "234002-tomites-a-szego-profilhoz-or": ("ESAL katalógus", "", "", {"Anyag": "gumi", "Szín": "fekete", "Szélesség": "19 mm",
                                                                       "Magasság": "17 mm", "Talp szélessége": "14 mm"}),
+       "235215-dobozos-keretprofil-ivelt-elox": ("Quadris méretrajz", "", "", {"Magasság": "134,5 mm", "Szélesség": "30,5 mm",
+                                                                        "Falvastagság": "2–3 mm", "Belső szélesség": "25,5 mm",
+                                                                        "Perem": "35 mm", "Felület": "eloxált"}),
        "100001-dugo-perforalt-acel-kerethez": ("Quadris gyári rajz", "", "", {"Furat": "Ø14 mm", "Magasság": "27,5 mm",
                                                                          "Fej szélessége": "17,5 mm", "Anyag": "műanyag"})}
 
