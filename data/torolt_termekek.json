@@ -873,5 +873,26 @@
   "code": "233901",
   "date": "2026-10-09",
   "reason": "a Quadris kérésére: nem kell"
+ },
+ "2346457-35x35-mm-specialis-teto-profil-elox-ht": {
+  "name": "35x35 mm Speciális tető profil elox HT",
+  "supplier": "BODEGA",
+  "code": "2346457",
+  "date": "2026-10-09",
+  "reason": "a Quadris kérésére: nem kell"
+ },
+ "235339-25x35-mm-specialis-teto-profil-elox-ih": {
+  "name": "25x35 mm Speciális tető profil elox IH",
+  "supplier": "BODEGA",
+  "code": "235339",
+  "date": "2026-10-09",
+  "reason": "a Quadris kérésére: nem kell"
+ },
+ "235427-25x35-mm-specialis-teto-profil": {
+  "name": "25x35 mm Speciális tető profil",
+  "supplier": "BODEGA",
+  "code": "235427",
+  "date": "2026-10-09",
+  "reason": "a Quadris kérésére: nem kell"
  }
 }
