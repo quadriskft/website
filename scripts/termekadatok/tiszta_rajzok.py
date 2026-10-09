@@ -67,6 +67,7 @@ DECIN_SOLID = {"231543-dobozos-keret-elox-134-80": ("11543", "60", "134")}
 # slug -> (építő függvény neve, szélesség, magasság, falvastagság, a falméret helye)
 VECTOR = {
     "206941-cd-100x30-mm-alafutasgatlo-elox-profil": ("profil_6941", "30,3", "100", "1,9", ("h", 0.80)),
+    "235426-specialis-h-szego-profil": ("profil_4026", "58", "44,5", "2,5", ("h", 0.65)),
     "203101-spanner-profil": ("profil_3101", "35", "70", "5", ("h", 0.3)),
     "388005-ponyvabeakaszto-alu-profil-70-mm-elox": ("profil_8005", "70", "18", "2", ("v", 9 / 70),
                                                      dict(idims=[("h", 0.5, 2 / 70, 16 / 70, "ø14")])),
@@ -326,6 +327,9 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
        "106731-lezaro-csiga-zsanerhoz-jobb": ("Quadris méretrajz", "", "", {"Kivitel": "jobb oldali", "Szélesség": "55 mm", "Magasság": "47 mm",
                                                                      "Anyag": "szürke műanyag", "Tömeg [kg]": "0,035",
                                                                      "Illeszkedik": "alu zsanérprofilhoz"}),
+       "235426-specialis-h-szego-profil": ("Quadris méretrajz", "", "", {"Szélesség": "58 mm", "Magasság": "44,5 mm",
+                                                                  "Falvastagság": "2,5 mm", "Tömeg": "0,923 kg/fm",
+                                                                  "Keresztmetszet": "341,7 mm²"}),
        "100001-dugo-perforalt-acel-kerethez": ("Quadris gyári rajz", "", "", {"Furat": "Ø14 mm", "Magasság": "27,5 mm",
                                                                          "Fej szélessége": "17,5 mm", "Anyag": "műanyag"})}
 
@@ -653,6 +657,18 @@ def profil_8008():
     cres = Point(O).buffer(13.5 - w, 256).difference(Point(B).buffer(7 + w, 256)).buffer(-1.1).buffer(1.1)
     g = g.difference(cres).difference(Point(B).buffer(7, 256)).difference(box(B[0], 13.5 - 3.75, 30, 13.5 + 3.75))
     return g.buffer(0.4, join_style=1).buffer(-0.4, join_style=1)
+
+
+def profil_4026():
+    """235426 (speciális H szegő, Bodega TB54026): 58 × 44,5; a 2,5 mm-es függőleges fal (x 18…20,5) tetején balra a
+    20,5 mm-es felső perem, jobbra a fal közepén (13 mm-rel lejjebb) és alján a 37,5 / 40 mm-es karok, mind 2,5 vastag;
+    az alsó kar vége 33,7°-ban letörve, a középső kar alján két 0,3 × 90°-os jelölőhorony; a sarkok R0,5 / R1."""
+    from shapely.geometry import Polygon
+    g = Polygon([(0, 0), (20.5, 0), (20.5, 13), (58, 13), (58, 15.5), (20.5, 15.5), (20.5, 42), (58, 42), (58, 42.8),
+                 (56.86, 44.5), (18, 44.5), (18, 2.5), (0, 2.5)])
+    for x in (50.2, 52.2):
+        g = g.difference(Polygon([(x - 0.3, 15.5), (x, 15.2), (x + 0.3, 15.5), (x + 0.3, 16), (x - 0.3, 16)]))
+    return g.buffer(0.5, join_style=1).buffer(-1, join_style=1).buffer(0.5, join_style=1)
 
 
 def profil_8005():

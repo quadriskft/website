@@ -4380,6 +4380,22 @@
    "/termekkepek/235215-dobozos-keretprofil-ivelt-elox-rajz.webp"
   ]
  },
+ "235426-specialis-h-szego-profil": {
+  "source": "Quadris méretrajz",
+  "sourceUrl": "",
+  "sourceTitle": "",
+  "specs": {
+   "Szélesség": "58 mm",
+   "Magasság": "44,5 mm",
+   "Falvastagság": "2,5 mm",
+   "Tömeg": "0,923 kg/fm",
+   "Keresztmetszet": "341,7 mm²"
+  },
+  "images": [
+   "/termekkepek/235426-specialis-h-szego-profil-kitoltott.webp",
+   "/termekkepek/235426-specialis-h-szego-profil-meretrajz.webp"
+  ]
+ },
  "236817-n-r50-ives-felso-profil": {
   "source": "Alu-SV",
   "sourceUrl": "https://www.alu-sv.com/en/goods.ep/19000001_closed-body-aluminum-profiles/16000141_edge-profile-r50--outdoor",
