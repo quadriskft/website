@@ -4270,10 +4270,13 @@
   "sourceTitle": "RUBBER TBV AANSLAGPROFIEL Rol 50 m Deliverd by 1 roll Black, rubber",
   "matchedCode": "1021543-R50",
   "specs": {
-   "Anyag": "alumínium"
+   "Anyag": "gumi",
+   "Szín": "fekete",
+   "Szélesség": "35 mm",
+   "Magasság": "43 mm"
   },
   "images": [
-   "/termekkepek/232460-tomites-az-u-ajtoszego-profilhoz-1.webp"
+   "/termekkepek/232460-tomites-az-u-ajtoszego-profilhoz-rajz.webp"
   ]
  },
  "233837-or-tomiteses-ajtoszego-35-mm-elox": {

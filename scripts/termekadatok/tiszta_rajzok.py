@@ -247,7 +247,9 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             # a Quadris kérésére az Exlabesa katalógus EXL-37715 rajza (32. oldal), a gyári kód nélkül
             "231726-b-tomiteses-ajtoszego-25-mm-elox": [("data/forras/exl37715_rajz.png", "rajz")],
             # a Quadris által küldött méretrajz
-            "231729-b-front-tomiteses-u-ajtoszego-25-mm-elox": [("data/forras/231729_rajz.png", "rajz")]}
+            "231729-b-front-tomiteses-u-ajtoszego-25-mm-elox": [("data/forras/231729_rajz.png", "rajz")],
+            # a Quadris által küldött rajz (MI-vel 4x nagyítva); a korábbi Car-Alu kép nem ehhez a termékhez tartozott
+            "232460-tomites-az-u-ajtoszego-profilhoz": [("data/forras/232460_rajz.png", "rajz")]}
 
 
 # a rajz mellé a küldött adatlap termékfotója (kivágva, a háttér fehérre): slug -> (forráskép, kivágás)
@@ -265,6 +267,7 @@ SPEC_FIX = {"231381-25-mm-diszlec-alu-3000-mm": {"Tömeg": "0,211 kg/fm", "Anyag
             "232134-285-mm-i-koptato-profil-elox": {"Tömeg": "2,073 kg/fm", "Magasság": "285 mm", "Szálhossz": "6,7 / 7,5 m"},
             "j258217-p-f-porolto-tarto-6-kg-os": {"Szín": "piros fedél, fekete doboz", "Méret": "550 × 244 × 204 mm"},
             "j258207-p-p-porolto-tarto-6-kg-os": {"Szín": "piros"},
+            "232460-tomites-az-u-ajtoszego-profilhoz": {"Anyag": "gumi", "Szín": "fekete", "Szélesség": "35 mm", "Magasság": "43 mm"},
             "231726-b-tomiteses-ajtoszego-25-mm-elox": {"Tömeg": "1,330 kg/fm", "Szélesség": "71 mm", "Belső méret (U)": "25,1 mm"},
             "380018-ss-also-adapter-27-es-csohoz-kocka": {"Tömeg": None, "Csőátmérő": "Ø27 mm", "Magasság": "55 mm",
                                                           "Négyszög csatlakozás": "13 × 13 mm", "Anyag": "rozsdamentes acél"},

@@ -999,5 +999,8 @@
  },
  "38400-cb27-hsd-kezi-heveder-szurke-bilinccsel-keszlet": {
   "order": 36
+ },
+ "232460-tomites-az-u-ajtoszego-profilhoz": {
+  "after": "231729-b-front-tomiteses-u-ajtoszego-25-mm-elox"
  }
 }
