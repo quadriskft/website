@@ -4222,18 +4222,18 @@
   ]
  },
  "232125-dobozos-keret-elox-or-130-mm-nyitott": {
-  "source": "RE-ALL",
-  "sourceUrl": "https://www.re-all.it/images/catalogo-pdf/2026/21.pdf#page=5",
-  "sourceTitle": "RE-ALL katalógus 21.pdf",
-  "matchedCode": "2100025",
+  "source": "ESAL katalógus",
+  "sourceUrl": "",
+  "sourceTitle": "ESAL Forlì Sponde 2020, 48. oldal",
   "specs": {
-   "Ötvözet": "EN AW-6060 T6",
-   "Tömeg [kg/fm]": "1,390",
+   "Ötvözet": "EN AW-6060 T5",
+   "Tömeg [kg/fm]": "1,365",
    "Gyári szálhossz [mm]": "7500",
-   "Magasság": "130 mm",
-   "Szélesség": "58 mm"
+   "Magasság": "120 mm",
+   "Szélesség": "60 mm"
   },
   "images": [
+   "/termekkepek/232125-dobozos-keret-elox-or-130-mm-nyitott-rajz.webp",
    "/termekkepek/232125-dobozos-keret-elox-or-130-mm-nyitott-1.webp"
   ]
  },

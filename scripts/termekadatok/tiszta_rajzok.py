@@ -273,6 +273,8 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             "235215-dobozos-keretprofil-ivelt-elox": [("data/forras/235215_rajz.png", "rajz")],
             # a Quadris által küldött rajz (csiga_rajz.py: élesítve, az oldalnézet és a számok újrarajzolva) és fotó kivitelenként;
             # a jobbos kivitel a termékcsalád második tagja (data/termek_csaladok.json, „clone”)
+            # a Quadris kérésére az ESAL Forlì katalógus (48. oldal) 13836-os rajza és fotója, a gyári kód nélkül
+            "232125-dobozos-keret-elox-or-130-mm-nyitott": [("data/forras/232125_rajz.png", "rajz"), ("data/forras/232125_foto.png", "1")],
             "106731-lezaro-csiga-zsanerhoz": [("data/forras/106731_bal_rajz_tiszta.png", "rajz"), ("data/forras/106731_bal_foto.png", "1")],
             "106731-lezaro-csiga-zsanerhoz-jobb": [("data/forras/106731_jobb_rajz_tiszta.png", "rajz"), ("data/forras/106731_jobb_foto.png", "1")]}
 
@@ -289,7 +291,10 @@ RENDER3D = {"388008-27mm-feszito-cso-alu-profil": [2], "388005-ponyvabeakaszto-a
 # (slug -> a kivágásban kifehérítendő téglalapok, pl. a ráérő méretfelirat)
 SHARPEN = {}
 # adatok a küldött adatlapról
-SPEC_FIX = {"238170-or-ajto-keret-elox-70x30x65-25mm": {"Doboz": "70 × 30 mm", "Magasság": "65 mm", "U belső nyílás": "25,5 mm",
+SPEC_FIX = {"232125-dobozos-keret-elox-or-130-mm-nyitott": {"Tömeg [kg/fm]": "1,365", "Gyári szálhossz [mm]": "7500",
+                                                           "Magasság": "120 mm", "Szélesség": "60 mm",
+                                                           "Ötvözet": "EN AW-6060 T5"},
+            "238170-or-ajto-keret-elox-70x30x65-25mm": {"Doboz": "70 × 30 mm", "Magasság": "65 mm", "U belső nyílás": "25,5 mm",
                                                        "U külső szélesség": "30,2 mm", "Falvastagság": "2,35 mm (U lábak)"},
             "237301-45x300x3-mm-l-belso-bokalec-vedoprofil-elox": {"Talp": "45 × 4 mm"},
             "106731-lezaro-csiga-zsanerhoz": {"Kivitel": "bal oldali", "Szélesség": "55 mm", "Magasság": "47 mm"},
