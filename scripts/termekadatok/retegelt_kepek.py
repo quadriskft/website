@@ -2,6 +2,7 @@
 minden érintett termék első képe lesz, a meglévő képek (3D renderek) utána maradnak.
 
 - HEXA (hexa mintás, fenolos): a csoport korábbi kezdőképe (hexa mintás lemezek renderje)
+- fenolos (nem HEXA): a Quadris által küldött fotó (MI-vel 4x nagyítva)
 
 Használat: python3 scripts/termekadatok/retegelt_kepek.py   (utána kep_sorrend.py)
 """
@@ -17,6 +18,7 @@ from common import ROOT, load_enrichment, save_image, update_enrichment  # noqa:
 # lemezfajta -> (forráskép, a slug feltétele, a kép utótagja)
 KINDS = [
     ("data/forras/retegelt_hexa_lemez.png", lambda s: s.endswith("-hexa"), "hexa"),
+    ("data/forras/retegelt_fenolos_lemez.png", lambda s: "fenol" in s and not s.endswith("-hexa"), "fenolos"),
 ]
 
 
