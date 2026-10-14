@@ -75,6 +75,7 @@ const jsonLd = [
       <div class="info">
         <span class="eyebrow">{showCategory ? category.name : group.name}</span>
         <h1 class="product-title">{family ? family.name : product.name}</h1>
+        {product.stock && <p class="stock-line"><Icon name="BadgeCheck" size={18} /> Raktárról rendelhető</p>}
         {product.code && (
           <p class="code-line">{product.codeLabel ?? 'Cikkszám'}: <strong>{product.code}</strong>
             <button type="button" class="copy" data-copy={product.code} aria-label="Cikkszám másolása"><Icon name="Copy" size={15} /></button>
@@ -343,6 +344,8 @@ const jsonLd = [
   .cut-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 16px 0 10px; }
   .order-row { display: flex; gap: 12px; flex-wrap: wrap; }
   .variant-order { display: grid; gap: 10px; }
+  .stock-line { display: inline-flex; align-items: center; gap: 6px; margin: 4px 0 8px; padding: 4px 12px; border-radius: 999px;
+    background: rgba(18, 163, 107, 0.1); color: var(--ok); font-weight: 700; font-size: 0.9rem; }
   .qty-unit { font-weight: 600; color: var(--muted); align-self: center; }
   .order-note { display: flex; align-items: center; gap: 6px; margin: 10px 0 0; font-size: 0.9rem; font-weight: 600; color: var(--accent); }
   .variant-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }

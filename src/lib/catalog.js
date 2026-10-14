@@ -95,8 +95,15 @@ function withCarton(p) {
   return { ...p, specs, orderNote: note, unit: 'karton', cartonM: c.karton_m };
 }
 
+// Raktárról rendelhető: a Quadris saját (Excel) táblázatában szereplő tételek ezekben a csoportokban – a listákban elöl
+// állnak és jelölést kapnak (a beszállítók teljes kínálatából felvett tételek rendelésre)
+const STOCK_GROUPS = new Set(['kedergumik']);
+const excelSlugs = new Set(catalog.products.map((p) => p.slug));
+const withStock = (p) => (STOCK_GROUPS.has(p.group) && excelSlugs.has(p.slug) ? { ...p, stock: true } : p);
+
 // A Quadris által törlésre jelölt termékek (data/torolt_termekek.json) sehol nem jelennek meg
-export const products = [...excelProducts, ...extendedProducts, ...cloneProducts].filter((p) => !deleted[p.slug]).map(withoutSupplierCodes).map(withCarton);
+export const products = [...excelProducts, ...extendedProducts, ...cloneProducts].filter((p) => !deleted[p.slug])
+  .map(withoutSupplierCodes).map(withCarton).map(withStock);
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
 const CATEGORY_RENAMES = { versus: 'Versus-Omega' };
@@ -290,6 +297,8 @@ export function productsIn(groupSlug, categorySlug) {
     while (j + 1 < sorted.length && fixes[sorted[j + 1].slug]?.after === f.after) j++;  // a már odatettek mögé
     sorted.splice(j + 1, 0, item);
   }
+  // a raktárról rendelhető tételek elöl (a sorrendjük egyébként megmarad)
+  if (STOCK_GROUPS.has(groupSlug)) return [...sorted.filter((p) => p.stock), ...sorted.filter((p) => !p.stock)];
   return sorted;
 }
 
