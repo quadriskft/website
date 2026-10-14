@@ -87,12 +87,13 @@ def main():
     products = json.loads((ROOT / "src/data/catalog.json").read_text())["products"]
     products += json.loads((ROOT / "src/data/bovitett.json").read_text()).get("products", [])
     torolt = json.loads((ROOT / "data/torolt_termekek.json").read_text())
+    javitasok = json.loads((ROOT / "data/termek_javitasok.json").read_text())  # a kézzel pótolt cikkszámok
     out, nincs = {}, []
     for p in products:
         if p["group"] != "kedergumik" or p["slug"] in KIVETEL or p["slug"] in torolt:
             continue
         specs = {**(p.get("specs") or {}), **(data.get(p["slug"], {}).get("specs") or {})}
-        code = norm(p.get("code") or "") or norm(p["name"])
+        code = norm(javitasok.get(p["slug"], {}).get("code") or p.get("code") or "") or norm(p["name"])
         unit, mo = JAVITAS.get(code) or cat.get(code, (None, None))
         if not meters(unit):
             unit, mo = specs.get("Kiszerelés [m]"), specs.get("Minimális rendelés [m]")

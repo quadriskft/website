@@ -1017,5 +1017,107 @@
    "group": "kedergumik",
    "category": "mono-profilok"
   }
+ },
+ "a1-013-elkeder-kicsi-fekete-9-5x6-5mm": {
+  "code": "A1 013"
+ },
+ "a1-015-keder-gumi": {
+  "code": "A1 015"
+ },
+ "a1-105-2-lepkes-gumi-58-3x26-6-1-0-2-5-fekete": {
+  "code": "A1 105/2"
+ },
+ "a1-105-4-lepkes-gumi-58-3x26-6-2-0-4-0-fekete": {
+  "code": "A1 105/4"
+ },
+ "a1-134-2-dupla-szakallas-kedergumi-18-2x24-1-0-2-5-fekete": {
+  "code": "A1 134/2"
+ },
+ "a1-134-4-dupla-szakallas-kedergumi-18-2x24-2-5-4-0-fekete": {
+  "code": "A1 134/4"
+ },
+ "a1-503-nagy-gobos-kedergumi": {
+  "code": "A1 503"
+ },
+ "a1-536-kis-gobos-kedergumi-14-6x16-fekete": {
+  "code": "A1 536"
+ },
+ "a1-549-mini-gobos-kedergumi-13x11-8-2-mm": {
+  "code": "A1 549"
+ },
+ "a2-106-2-28-mm-duplagobos-kedergumi": {
+  "code": "A2 106/2"
+ },
+ "a2-125-felul-gobos-keder-gumi-49-35-20-mm": {
+  "code": "A2 125"
+ },
+ "a2-127-lepkes-gumi-15-38-6-mm": {
+  "code": "A2 127"
+ },
+ "a2-254-kedergumi-14-5x21-8-fekete": {
+  "code": "A2 254"
+ },
+ "a2-255-nagy-gobos-kedergumi-fekete-20-mm": {
+  "code": "A2 255"
+ },
+ "a2-513-felso-gobos-keder-21-5x11-mm": {
+  "code": "A2 513"
+ },
+ "a2-539-kozepes-gobos-kedergumi-14-6x18-7-fekete": {
+  "code": "A2 539"
+ },
+ "a2-540-kedergumi-16x19-2-2-0-4-0-fekete": {
+  "code": "A2 540"
+ },
+ "a2-541-kedergumi-16x19-2-4-0-6-0-fekete": {
+  "code": "A2 541"
+ },
+ "a2-554-nagygobos-keder-22-6": {
+  "code": "A2 554"
+ },
+ "elkeder-13x10-fekete": {
+  "code": "A3 007"
+ },
+ "kedergumi-14-5x20-5-2-0-4-0-fekete": {
+  "code": "A3 224/4"
+ },
+ "felso-gobos-kedergumi-32x14x20-8-fekete": {
+  "code": "A3 321"
+ },
+ "lepkes-gumi-76-8-80-4-7-fekete": {
+  "code": "A4 166"
+ },
+ "d1-119-epdm-21mm-p-profil": {
+  "code": "D1 119"
+ },
+ "d1-128-omega-gumi-19-8x40x24-epdm-fekete": {
+  "code": "D1 128"
+ },
+ "d1-133-omega-gumi-19-8x28x24-epdm-fekete": {
+  "code": "D1 133"
+ },
+ "d2-167-elvedo-lec-epdm-fekete": {
+  "code": "D2 167"
+ },
+ "d2-528-talpas-15-5-mm-20-5-20-epdm-fekete": {
+  "code": "D2 528"
+ },
+ "e2-546-af-moos-gumi-ontapados": {
+  "code": "E2 546-AF"
+ },
+ "e2-701-af-moos-gumi-epdm-ontapados": {
+  "code": "E2 701-AF"
+ },
+ "epdm-1030-moosgumi": {
+  "code": "EPDM 1030"
+ },
+ "epdm-1530-moosgumi": {
+  "code": "EPDM 1530"
+ },
+ "epdm-3030-af-moosgumi": {
+  "code": "EPDM 3030-AF"
+ },
+ "m1-001-c-sin-aluminium": {
+  "code": "M1 001"
  }
 }
