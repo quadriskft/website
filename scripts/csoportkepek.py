@@ -33,6 +33,8 @@ PHOTOS = {
     "billencs-alkatreszek": ["termekkepek/146012-szivattyu-12v-1.webp"],
     "gumiszonyegek": ["cover", "termekkepek/rs-stud-mat-1.webp"],
     "szellozes-tetoablakok-vilagitas": ["termekkepek/gc-le-mans-ll-1.webp", "termekkepek/ledes-lampa-kerek-feher-1.webp"],
+    # a Quadris által küldött fotó (MI-vel 4x nagyítva); a korábbi hexa mintás render a HEXA lemezeknél (retegelt_kepek.py)
+    "csuszasmentes-retegelt-padlo": ["cover", "../data/forras/retegelt_csuszasmentes_csoportkep.png"],
     "italszallito-kit": ["termekkepek/212427-ada-s-ajto-profil-2100-mm-elox-1.webp"],
 }
 
