@@ -268,19 +268,7 @@
   "karton_m": 50.1,
   "gyartoi_min_m": 2404.8
  },
- "sp-withbutyl": {
-  "karton": "50,1",
-  "karton_m": 50.1
- },
  "sp-a4-253-bu": {
-  "karton": "1x50,1",
-  "karton_m": 50.1
- },
- "sp-steelcarrier": {
-  "karton": "1x50,1",
-  "karton_m": 50.1
- },
- "sp-unbroken": {
   "karton": "1x50,1",
   "karton_m": 50.1
  },
@@ -289,36 +277,12 @@
   "karton_m": 100.0,
   "gyartoi_min_m": 6000.0
  },
- "sp-tpe": {
-  "karton": "2x50",
-  "karton_m": 100.0
- },
- "sp-stainlessstealwire": {
-  "karton": "2x50",
-  "karton_m": 100.0
- },
- "sp-carrier": {
-  "karton": "2x50",
-  "karton_m": 100.0
- },
  "sp-a3-521": {
   "karton": "100",
   "karton_m": 100.0,
   "gyartoi_min_m": 4000.0
  },
- "sp-centerbar": {
-  "karton": "100",
-  "karton_m": 100.0
- },
  "sp-a4-782": {
-  "karton": "100",
-  "karton_m": 100.0
- },
- "sp-firesafetystandard": {
-  "karton": "100",
-  "karton_m": 100.0
- },
- "sp-nff16-101": {
   "karton": "100",
   "karton_m": 100.0
  },
@@ -332,18 +296,10 @@
   "karton_m": 100.0,
   "gyartoi_min_m": 4000.0
  },
- "sp-wirecarrier": {
-  "karton": "100",
-  "karton_m": 100.0
- },
  "sp-a3-550": {
   "karton": "100",
   "karton_m": 100.0,
   "gyartoi_min_m": 4000.0
- },
- "sp-broken": {
-  "karton": "100",
-  "karton_m": 100.0
  },
  "sp-a4-808-bu": {
   "karton": "100",
@@ -386,18 +342,6 @@
  "sp-a1-119": {
   "karton": "50",
   "karton_m": 50.0
- },
- "sp-withepdmsoftrubber": {
-  "karton": "25",
-  "karton_m": 25.0
- },
- "sp-tube505shorea": {
-  "karton": "25",
-  "karton_m": 25.0
- },
- "sp-steelcarrierbroken": {
-  "karton": "25",
-  "karton_m": 25.0
  },
  "sp-a3-073": {
   "karton": "25",
@@ -520,10 +464,6 @@
   "karton_m": 300.0,
   "gyartoi_min_m": 6000.0
  },
- "sp-centrebar": {
-  "karton": "3x100",
-  "karton_m": 300.0
- },
  "sp-a1-512": {
   "karton": "100",
   "karton_m": 100.0
@@ -532,14 +472,6 @@
   "karton": "100",
   "karton_m": 100.0,
   "gyartoi_min_m": 4000.0
- },
- "sp-withslidingvarnish": {
-  "karton": "100",
-  "karton_m": 100.0
- },
- "sp-coating": {
-  "karton": "100",
-  "karton_m": 100.0
  },
  "sp-a1-513": {
   "karton": "2x50",
@@ -554,10 +486,6 @@
   "karton_m": 100.0
  },
  "sp-a2-513nbr": {
-  "karton": "2x50",
-  "karton_m": 100.0
- },
- "sp-oilresistant": {
   "karton": "2x50",
   "karton_m": 100.0
  },
@@ -903,10 +831,6 @@
   "karton_m": 100.0,
   "gyartoi_min_m": 4000.0
  },
- "sp-brokenor": {
-  "karton": "100",
-  "karton_m": 100.0
- },
  "sp-a3-074": {
   "karton": "2x50",
   "karton_m": 100.0,
@@ -921,10 +845,6 @@
   "karton_m": 100.0
  },
  "sp-a3-518": {
-  "karton": "2x50",
-  "karton_m": 100.0
- },
- "sp-one-sidedbroken": {
   "karton": "2x50",
   "karton_m": 100.0
  },

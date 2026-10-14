@@ -1041,5 +1041,159 @@
   "code": "E1 530D",
   "date": "2026-10-14",
   "reason": "a Quadris kérésére: a Moosgumi profilok nem kellenek"
+ },
+ "sp-withbutyl": {
+  "name": "Élvédő profil WITHBUTYL – ivory, 2,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "WITHBUTYL",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-steelcarrier": {
+  "name": "Élvédő profil STEELCARRIER – fehér, 2,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "STEELCARRIER",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-unbroken": {
+  "name": "Élvédő profil UNBROKEN – fehér, 2,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "UNBROKEN",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-tpe": {
+  "name": "Élvédő profil (TPE) – fehér, 1,0-2,5 mm",
+  "supplier": "Sand-Profile",
+  "code": "(TPE)",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-stainlessstealwire": {
+  "name": "Élvédő profil STAINLESSSTEALWIRE – pearl-, 1,0-2,5 mm",
+  "supplier": "Sand-Profile",
+  "code": "STAINLESSSTEALWIRE",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-carrier": {
+  "name": "Élvédő profil CARRIER – pearl-, 1,0-2,5 mm",
+  "supplier": "Sand-Profile",
+  "code": "CARRIER",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-centerbar": {
+  "name": "Élvédő profil CENTERBAR – fekete, 1,0-2,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "CENTERBAR",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-firesafetystandard": {
+  "name": "Élvédő profil (FIRESAFETYSTANDARD – schwarz, 1,0-2,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "(FIRESAFETYSTANDARD",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-nff16-101": {
+  "name": "Élvédő profil NFF16-101) – schwarz, 1,0-2,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "NFF16-101)",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-wirecarrier": {
+  "name": "Élvédő profil WIRECARRIER – fekete, 5,0-6,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "WIRECARRIER",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-broken": {
+  "name": "Élvédő profil BROKEN – fekete, 5,0–8,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "BROKEN",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-withepdmsoftrubber": {
+  "name": "Élvédő tömítőprofil WITHEPDMSOFTRUBBER – fekete, 2,0–4,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "WITHEPDMSOFTRUBBER",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-tube505shorea": {
+  "name": "Élvédő tömítőprofil TUBE50±5SHOREA – fekete, 2,0–4,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "TUBE50±5SHOREA",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-steelcarrierbroken": {
+  "name": "Élvédő tömítőprofil STEELCARRIERBROKEN – fekete, 2,0–4,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "STEELCARRIERBROKEN",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-withpu-foamandwire": {
+  "name": "Élvédő tömítőprofil WITHPU-FOAMANDWIRE – fekete, 1,0–2,5 mm",
+  "supplier": "Sand-Profile",
+  "code": "WITHPU-FOAMANDWIRE",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-centrebar": {
+  "name": "Kéderprofil CENTREBAR – fekete, 1,0-2,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "CENTREBAR",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-withslidingvarnish": {
+  "name": "Kéderprofil WITHSLIDINGVARNISH – fekete, 1,0-2,5 mm",
+  "supplier": "Sand-Profile",
+  "code": "WITHSLIDINGVARNISH",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-coating": {
+  "name": "Kéderprofil COATING – fekete, 1,0-2,5 mm",
+  "supplier": "Sand-Profile",
+  "code": "COATING",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-oilresistant": {
+  "name": "Kéderprofil OILRESISTANT – fekete, 1,0–3,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "OILRESISTANT",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-withoutmetal": {
+  "name": "Kéderprofil WITHOUTMETAL – fekete, 4,0-6,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "WITHOUTMETAL",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-brokenor": {
+  "name": "Kéderprofil BROKENOR – fekete, 2,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "BROKENOR",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "sp-one-sidedbroken": {
+  "name": "Kéderprofil ONE-SIDEDBROKEN – fekete, 1,25-2.,0 mm",
+  "supplier": "Sand-Profile",
+  "code": "ONE-SIDEDBROKEN",
+  "date": "2026-10-14",
+  "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
  }
 }
