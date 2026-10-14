@@ -201,5 +201,38 @@
    "kedergumi-14-5x20-5-2-0-4-0-fekete": "A3 224/4 – 2,0–4,0 mm lemezvastagsághoz",
    "sp-a3-224-6": "A3 224/6 – 5,0–6,0 mm lemezvastagsághoz"
   }
+ },
+ "butil-a3-363": {
+  "name": "Élvédő tömítőprofil A3 363",
+  "label": "Kivitel",
+  "title": "Rendelhető kivitelek",
+  "note": "A -BU végű kivitel butil tömítőanyaggal készül (a profilba töltött butil tömítés a résmentes, vízzáró illesztéshez); válassza ki a kívánt kivitelt.",
+  "navigate": true,
+  "members": {
+   "sp-a3-363": "A3 363 – butil tömítés nélkül",
+   "sp-a3-363-bu": "A3 363-BU – butil tömítőanyaggal"
+  }
+ },
+ "butil-a3-725": {
+  "name": "Kéderprofil A3 725 – fekete",
+  "label": "Kivitel",
+  "title": "Rendelhető kivitelek",
+  "note": "A -BU végű kivitel butil tömítőanyaggal készül (a profilba töltött butil tömítés a résmentes, vízzáró illesztéshez); válassza ki a kívánt kivitelt.",
+  "navigate": true,
+  "members": {
+   "sp-a3-725": "A3 725 – butil tömítés nélkül",
+   "sp-a3-725-bu": "A3 725-BU – butil tömítőanyaggal"
+  }
+ },
+ "butil-a3-467": {
+  "name": "Kéderprofil A3 467 – fekete",
+  "label": "Kivitel",
+  "title": "Rendelhető kivitelek",
+  "note": "A -BU végű kivitel butil tömítőanyaggal készül (a profilba töltött butil tömítés a résmentes, vízzáró illesztéshez); válassza ki a kívánt kivitelt.",
+  "navigate": true,
+  "members": {
+   "sp-a3-467": "A3 467 – butil tömítés nélkül",
+   "sp-a3-467-bu": "A3 467-BU – butil tömítőanyaggal"
+  }
  }
 }
