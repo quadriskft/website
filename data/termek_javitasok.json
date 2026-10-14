@@ -1005,5 +1005,17 @@
  },
  "232125-dobozos-keret-elox-or-130-mm-nyitott": {
   "name": "Dobozos keret elox OR 120 mm nyitott"
+ },
+ "sp-d1-135": {
+  "move": {
+   "group": "kedergumik",
+   "category": "mono-profilok"
+  }
+ },
+ "sp-m1-001": {
+  "move": {
+   "group": "kedergumik",
+   "category": "mono-profilok"
+  }
  }
 }

@@ -30,8 +30,9 @@ const excelProducts = catalog.products.map((p) => {
 
 // A beszállítók teljes kínálatából felvett további termékek (scripts/termekadatok/teljes_kinalat.py)
 const extendedProducts = (extended.products ?? []).map((p) => {
+  const move = fixes[p.slug]?.move;  // kézi áthelyezés, mint az Excel-termékeknél
   const out = {
-    slug: p.slug, code: p.code, name: p.name, group: p.group, category: p.category,
+    slug: p.slug, code: p.code, name: p.name, group: move?.group ?? p.group, category: move?.category ?? p.category,
     specs: p.specs ?? {}, images: p.images ?? [], description: p.description ?? '', documents: [], supplier: p.source,
     // a G&C teljes kínálatából felvett termékek kódja a gyártói cikkszám, a színe a névből / kódból (ZW = fekete)
     ...(p.source === 'G&C termékek' ? { codeLabel: 'Gyártói cikkszám', specs: { ...(gncColor(p) ? { Szín: gncColor(p) } : {}), ...(p.specs ?? {}) } } : {}),
