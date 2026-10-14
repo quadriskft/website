@@ -1,0 +1,1243 @@
+{
+ "_leiras": "A Quadris kérése: ezeknél a termékeknél a legkisebb rendelhető mennyiség egy karton (a kartont nem bontjuk meg), és ahol a gyártó 1000 m vagy afölötti minimumot ad meg, azt is feltüntetjük.",
+ "a1-013-elkeder-kicsi-fekete-9-5x6-5mm": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "a1-015-keder-gumi": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "a1-105-2-lepkes-gumi-58-3x26-6-1-0-2-5-fekete": {
+  "karton": "25",
+  "karton_m": 25.0
+ },
+ "a1-105-4-lepkes-gumi-58-3x26-6-2-0-4-0-fekete": {
+  "karton": "25",
+  "karton_m": 25.0
+ },
+ "a1-134-2-dupla-szakallas-kedergumi-18-2x24-1-0-2-5-fekete": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 1000.0
+ },
+ "a1-134-4-dupla-szakallas-kedergumi-18-2x24-2-5-4-0-fekete": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "a1-503-nagy-gobos-kedergumi": {
+  "karton": "1x50",
+  "karton_m": 50.0
+ },
+ "a1-536-kis-gobos-kedergumi-14-6x16-fekete": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "a1-549-mini-gobos-kedergumi-13x11-8-2-mm": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "a2-106-2-28-mm-duplagobos-kedergumi": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "a2-125-felul-gobos-keder-gumi-49-35-20-mm": {
+  "karton": "25",
+  "karton_m": 25.0
+ },
+ "a2-127-lepkes-gumi-15-38-6-mm": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "a2-254-kedergumi-14-5x21-8-fekete": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "a2-255-nagy-gobos-kedergumi-fekete-20-mm": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "a2-513-felso-gobos-keder-21-5x11-mm": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "a2-539-kozepes-gobos-kedergumi-14-6x18-7-fekete": {
+  "karton": "4x25",
+  "karton_m": 100.0
+ },
+ "a2-540-kedergumi-16x19-2-2-0-4-0-fekete": {
+  "karton": "3x25",
+  "karton_m": 75.0
+ },
+ "a2-541-kedergumi-16x19-2-4-0-6-0-fekete": {
+  "karton": "3x25",
+  "karton_m": 75.0
+ },
+ "a2-554-nagygobos-keder-22-6": {
+  "karton": "2x25",
+  "karton_m": 50.0
+ },
+ "elkeder-13x10-fekete": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "kedergumi-14-5x20-5-2-0-4-0-fekete": {
+  "karton": "75",
+  "karton_m": 75.0
+ },
+ "felso-gobos-kedergumi-32x14x20-8-fekete": {
+  "karton": "51",
+  "karton_m": 51.0
+ },
+ "d1-119-epdm-21mm-p-profil": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "d1-128-omega-gumi-19-8x40x24-epdm-fekete": {
+  "karton": "30",
+  "karton_m": 30.0
+ },
+ "d1-133-omega-gumi-19-8x28x24-epdm-fekete": {
+  "karton": "30",
+  "karton_m": 30.0
+ },
+ "d2-167-elvedo-lec-epdm-fekete": {
+  "karton": "40",
+  "karton_m": 40.0
+ },
+ "d2-528-talpas-15-5-mm-20-5-20-epdm-fekete": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "epdm-1030-moosgumi": {
+  "karton": "25",
+  "karton_m": 25.0
+ },
+ "epdm-1530-moosgumi": {
+  "karton": "25",
+  "karton_m": 25.0
+ },
+ "epdm-3030-af-moosgumi": {
+  "karton": "20",
+  "karton_m": 20.0
+ },
+ "sp-a1-009": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-010": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-011": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 1500.0
+ },
+ "sp-a1-012": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-014": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-034": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-023-2": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-023-4": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a2-051": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-032": {
+  "karton": "4x50",
+  "karton_m": 200.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a1-016": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-017": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-022": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-044": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a3-634": {
+  "karton": "10x120",
+  "karton_m": 1200.0
+ },
+ "sp-a1-021": {
+  "karton": "50,1",
+  "karton_m": 50.1
+ },
+ "sp-a1-019-8": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-020-8": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-019-10": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-020-10": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 1500.0
+ },
+ "sp-a2-078": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-037": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 6000.0
+ },
+ "sp-a1-024-2": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 6000.0
+ },
+ "sp-a1-024-4": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-024-6": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-018": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-030": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 6000.0
+ },
+ "sp-a3-046": {
+  "karton": "200",
+  "karton_m": 200.0,
+  "gyartoi_min_m": 8000.0
+ },
+ "sp-a1-077": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a2-813": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a1-075": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 2000.0
+ },
+ "sp-a3-087": {
+  "karton": "10x120",
+  "karton_m": 1200.0,
+  "gyartoi_min_m": 2400.0
+ },
+ "sp-a3-490": {
+  "karton": "50,1",
+  "karton_m": 50.1,
+  "gyartoi_min_m": 1503.0
+ },
+ "sp-a3-362-bu": {
+  "karton": "50,1",
+  "karton_m": 50.1,
+  "gyartoi_min_m": 2404.8
+ },
+ "sp-withbutyl": {
+  "karton": "50,1",
+  "karton_m": 50.1
+ },
+ "sp-a4-253-bu": {
+  "karton": "1x50,1",
+  "karton_m": 50.1
+ },
+ "sp-steelcarrier": {
+  "karton": "1x50,1",
+  "karton_m": 50.1
+ },
+ "sp-unbroken": {
+  "karton": "1x50,1",
+  "karton_m": 50.1
+ },
+ "sp-a2-257": {
+  "karton": "2x50",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 6000.0
+ },
+ "sp-tpe": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-stainlessstealwire": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-carrier": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a3-521": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-centerbar": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a4-782": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-firesafetystandard": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-nff16-101": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a2-613": {
+  "karton": "2x100",
+  "karton_m": 200.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a3-444": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-wirecarrier": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a3-550": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-broken": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a4-808-bu": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a1-107": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a2-158": {
+  "karton": "200",
+  "karton_m": 200.0,
+  "gyartoi_min_m": 2000.0
+ },
+ "sp-a1-102": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a1-117": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a1-104-2": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a1-104-4": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a1-104-6": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a1-110": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a1-119": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-withepdmsoftrubber": {
+  "karton": "25",
+  "karton_m": 25.0
+ },
+ "sp-tube505shorea": {
+  "karton": "25",
+  "karton_m": 25.0
+ },
+ "sp-steelcarrierbroken": {
+  "karton": "25",
+  "karton_m": 25.0
+ },
+ "sp-a3-073": {
+  "karton": "25",
+  "karton_m": 25.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a1-105-6": {
+  "karton": "25",
+  "karton_m": 25.0
+ },
+ "sp-a1-101": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-114": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a2-196": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 5000.0
+ },
+ "sp-a1-109": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a1-100": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a1-121-2": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 1000.0
+ },
+ "sp-a1-121-4": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a1-121-6": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 1000.0
+ },
+ "sp-a1-108": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a2-139": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 2000.0
+ },
+ "sp-a1-134-6": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a2-106-4": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a2-106-6": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 1000.0
+ },
+ "sp-a1-162": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 2000.0
+ },
+ "sp-a2-124": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 2000.0
+ },
+ "sp-a1-103": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a2-256": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a1-132": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a3-339": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 1000.0
+ },
+ "sp-a3-363": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a3-363-bu": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a3-530": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 6000.0
+ },
+ "sp-a2-544": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a2-518": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a3-432": {
+  "karton": "3x100",
+  "karton_m": 300.0,
+  "gyartoi_min_m": 6000.0
+ },
+ "sp-centrebar": {
+  "karton": "3x100",
+  "karton_m": 300.0
+ },
+ "sp-a1-512": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a3-196": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-withslidingvarnish": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-coating": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a1-513": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a1-517": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a2-513epdm": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a2-513nbr": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-oilresistant": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a4-466-bu": {
+  "karton": "75",
+  "karton_m": 75.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a3-280": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a1-538": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a2-514": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a2-546": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a2-516-2": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a2-516-4": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a3-806": {
+  "karton": "2x25",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a1-525": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a3-289": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a4-421": {
+  "karton": "3x25",
+  "karton_m": 75.0,
+  "gyartoi_min_m": 4500.0
+ },
+ "sp-a4-422": {
+  "karton": "3x25",
+  "karton_m": 75.0,
+  "gyartoi_min_m": 4500.0
+ },
+ "sp-a4-423": {
+  "karton": "3x25",
+  "karton_m": 75.0,
+  "gyartoi_min_m": 4500.0
+ },
+ "sp-a4-807": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a3-500": {
+  "karton": "75",
+  "karton_m": 75.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a3-807": {
+  "karton": "2x25",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3600.0
+ },
+ "sp-a3-860": {
+  "karton": "2x25",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a2-533": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a2-507": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a2-545": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a2-506s": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a3-471": {
+  "karton": "4x50",
+  "karton_m": 200.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a1-549epdm": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a1-550nbr": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a3-379": {
+  "karton": "2x50",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a3-767": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a3-911": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a4-713": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a4-803": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a3-297": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a3-229": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a3-361-4": {
+  "karton": "75",
+  "karton_m": 75.0,
+  "gyartoi_min_m": 4500.0
+ },
+ "sp-a3-361-6": {
+  "karton": "75",
+  "karton_m": 75.0,
+  "gyartoi_min_m": 4500.0
+ },
+ "sp-a3-752": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 5000.0
+ },
+ "sp-a3-224-2": {
+  "karton": "75",
+  "karton_m": 75.0,
+  "gyartoi_min_m": 4500.0
+ },
+ "sp-a3-224-6": {
+  "karton": "75",
+  "karton_m": 75.0
+ },
+ "sp-a3-169": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a3-812": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3600.0
+ },
+ "sp-a3-757": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a3-114": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a3-547": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a2-558-cr": {
+  "karton": "3x25",
+  "karton_m": 75.0
+ },
+ "sp-a3-813": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3600.0
+ },
+ "sp-a3-145": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a3-549": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a4-844-bu": {
+  "karton": "75",
+  "karton_m": 75.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a3-725": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a3-725-bu": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a3-104": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a4-576": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a3-729": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a3-578": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a3-467": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a3-467-bu": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a3-348": {
+  "karton": "75",
+  "karton_m": 75.0,
+  "gyartoi_min_m": 3600.0
+ },
+ "sp-a4-714": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a4-718-bu": {
+  "karton": "35",
+  "karton_m": 35.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a3-560": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a4-949": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a2-548": {
+  "karton": "2x25",
+  "karton_m": 50.0
+ },
+ "sp-a3-156": {
+  "karton": "52",
+  "karton_m": 52.0,
+  "gyartoi_min_m": 3120.0
+ },
+ "sp-a4-667-bu": {
+  "karton": "35",
+  "karton_m": 35.0,
+  "gyartoi_min_m": 2800.0
+ },
+ "sp-a1-502": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a4-322": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-a1-501": {
+  "karton": "3x50",
+  "karton_m": 150.0
+ },
+ "sp-a1-521": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a3-592": {
+  "karton": "2x25",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a3-605": {
+  "karton": "2x25",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a1-500": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-a2-612": {
+  "karton": "2x20",
+  "karton_m": 40.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a3-655": {
+  "karton": "2x20",
+  "karton_m": 40.0,
+  "gyartoi_min_m": 2400.0
+ },
+ "sp-a2-511": {
+  "karton": "3x50",
+  "karton_m": 150.0
+ },
+ "sp-a3-343": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-brokenor": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a3-074": {
+  "karton": "2x50",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-a3-228": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a2-523": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a3-518": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-one-sidedbroken": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a3-276": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 2400.0
+ },
+ "sp-a1-520": {
+  "karton": "2x50",
+  "karton_m": 100.0
+ },
+ "sp-a1-526": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 2500.0
+ },
+ "sp-a1-528": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-b1-134": {
+  "karton": "15",
+  "karton_m": 15.0,
+  "gyartoi_min_m": 2100.0
+ },
+ "sp-b2-173": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 2500.0
+ },
+ "sp-c1-200": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-b1-117": {
+  "karton": "15",
+  "karton_m": 15.0
+ },
+ "sp-b2-149": {
+  "karton": "15",
+  "karton_m": 15.0,
+  "gyartoi_min_m": 2100.0
+ },
+ "sp-b2-144": {
+  "karton": "25",
+  "karton_m": 25.0
+ },
+ "sp-b1-155": {
+  "karton": "18",
+  "karton_m": 18.0
+ },
+ "sp-d2-553": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-d1-013": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-d1-123": {
+  "karton": "25",
+  "karton_m": 25.0
+ },
+ "sp-d2-499": {
+  "karton": "25",
+  "karton_m": 25.0,
+  "gyartoi_min_m": 2700.0
+ },
+ "sp-d2-199": {
+  "karton": "8x48",
+  "karton_m": 384.0,
+  "gyartoi_min_m": 1920.0
+ },
+ "sp-d1-020": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-d1-021": {
+  "karton": "4x100",
+  "karton_m": 400.0
+ },
+ "sp-d1-010": {
+  "karton": "2x100",
+  "karton_m": 200.0
+ },
+ "sp-d1-011": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-d1-012": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-d2-539": {
+  "karton": "200",
+  "karton_m": 200.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-d1-028": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-d1-022": {
+  "karton": "3x100",
+  "karton_m": 300.0
+ },
+ "sp-d1-024": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-d1-014": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-d1-034": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-d1-025": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-d1-015": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-d1-026": {
+  "karton": "3x40",
+  "karton_m": 120.0
+ },
+ "sp-d2-358": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 6400.0
+ },
+ "sp-d2-335": {
+  "karton": "4x50",
+  "karton_m": 200.0,
+  "gyartoi_min_m": 6600.0
+ },
+ "sp-a4-635": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-a4-800": {
+  "karton": "2x50",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 2400.0
+ },
+ "sp-d3-453": {
+  "karton": "3x50",
+  "karton_m": 150.0
+ },
+ "sp-d3-321": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-g1-104": {
+  "karton": "7x20",
+  "karton_m": 140.0
+ },
+ "sp-g1-101": {
+  "karton": "7x20",
+  "karton_m": 140.0
+ },
+ "sp-g1-106": {
+  "karton": "7x20",
+  "karton_m": 140.0
+ },
+ "sp-g1-108": {
+  "karton": "5x20",
+  "karton_m": 100.0
+ },
+ "sp-d1-127": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-d2-274": {
+  "karton": "200",
+  "karton_m": 200.0,
+  "gyartoi_min_m": 1500.0
+ },
+ "sp-d2-363": {
+  "karton": "200",
+  "karton_m": 200.0,
+  "gyartoi_min_m": 6000.0
+ },
+ "sp-d2-169e": {
+  "karton": "8x150",
+  "karton_m": 1200.0,
+  "gyartoi_min_m": 2400.0
+ },
+ "sp-d2-419": {
+  "karton": "200",
+  "karton_m": 200.0,
+  "gyartoi_min_m": 7200.0
+ },
+ "sp-d2-545": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-d2-544": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 6000.0
+ },
+ "sp-d2-311": {
+  "karton": "200",
+  "karton_m": 200.0,
+  "gyartoi_min_m": 6000.0
+ },
+ "sp-d2-184": {
+  "karton": "75",
+  "karton_m": 75.0,
+  "gyartoi_min_m": 4500.0
+ },
+ "sp-d2-537": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 5000.0
+ },
+ "sp-d2-382": {
+  "karton": "50",
+  "karton_m": 50.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-d2-538": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 8000.0
+ },
+ "sp-d3-041-afh": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-d3-061-bu": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 5000.0
+ },
+ "sp-d2-541": {
+  "karton": "150",
+  "karton_m": 150.0,
+  "gyartoi_min_m": 3600.0
+ },
+ "sp-d2-421": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 3600.0
+ },
+ "sp-d2-390": {
+  "karton": "200",
+  "karton_m": 200.0,
+  "gyartoi_min_m": 4000.0
+ },
+ "sp-d3-024-afh": {
+  "karton": "5x25",
+  "karton_m": 125.0
+ },
+ "sp-d2-999-afh": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-d2-421-afh": {
+  "karton": "100",
+  "karton_m": 100.0,
+  "gyartoi_min_m": 3600.0
+ },
+ "sp-d3-013-afh": {
+  "karton": "4x25",
+  "karton_m": 100.0
+ },
+ "sp-d2-528-afh": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-d2-998-afh": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-d2-193": {
+  "karton": "40",
+  "karton_m": 40.0,
+  "gyartoi_min_m": 3000.0
+ },
+ "sp-e-d2407": {
+  "karton": "50",
+  "karton_m": 50.0
+ },
+ "sp-d1-135": {
+  "karton": "30",
+  "karton_m": 30.0
+ },
+ "sp-m1-001": {
+  "karton": "5",
+  "karton_m": 5.0
+ },
+ "sp-d1-137": {
+  "karton": "100",
+  "karton_m": 100.0
+ },
+ "sp-d2-230": {
+  "karton": "50,1",
+  "karton_m": 50.1
+ },
+ "sp-d2-796": {
+  "karton": "200",
+  "karton_m": 200.0,
+  "gyartoi_min_m": 6000.0
+ }
+}

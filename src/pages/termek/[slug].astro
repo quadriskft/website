@@ -124,9 +124,10 @@ const jsonLd = [
             <div class="order-row">
               <div class="qty" data-qty>
                 <button type="button" data-step="-1" aria-label="Kevesebb"><Icon name="Minus" /></button>
-                <input type="number" id="qty" min="1" max="99999" value="1" inputmode="numeric" aria-label="Mennyiség" />
+                <input type="number" id="qty" min="1" max="99999" value="1" inputmode="numeric" aria-label={product.unit ? `Mennyiség (${product.unit})` : 'Mennyiség'} />
                 <button type="button" data-step="1" aria-label="Több"><Icon name="Plus" /></button>
               </div>
+              {product.unit && <span class="qty-unit">{product.unit}</span>}
               <button type="button" class="btn btn-primary add-main" data-add-to-quote={JSON.stringify(publicProduct(product))} data-qty-from="#qty">
                 <Icon name="ClipboardList" /> <span class="label">Ajánlatkérőbe</span>
               </button>
@@ -340,6 +341,7 @@ const jsonLd = [
   .cut-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 16px 0 10px; }
   .order-row { display: flex; gap: 12px; flex-wrap: wrap; }
   .variant-order { display: grid; gap: 10px; }
+  .qty-unit { font-weight: 600; color: var(--muted); align-self: center; }
   .order-note { display: flex; align-items: center; gap: 6px; margin: 10px 0 0; font-size: 0.9rem; font-weight: 600; color: var(--accent); }
   .variant-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
   .variant-select { font-size: 1rem; padding: 12px 14px; }

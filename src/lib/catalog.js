@@ -5,6 +5,7 @@ import extended from '../data/bovitett.json';
 import deleted from '../../data/torolt_termekek.json';
 import fixes from '../../data/termek_javitasok.json';
 import families from '../../data/termek_csaladok.json';
+import cartons from '../../data/kedergumi_kiszereles.json';
 
 // FONTOS: a termékadatokban lévő beszállító (supplier, supplierCode, source…) belső adat,
 // a weboldalon soha nem jelenik meg.
@@ -74,8 +75,28 @@ const withoutSupplierCodes = (p) =>
     ? { ...p, specs: Object.fromEntries(Object.entries(p.specs).filter(([k]) => !SUPPLIER_CODE_SPEC.test(k))) }
     : p;
 
+// Gumi- és kéderprofilok: kartonra rendelhetők, a kartont nem bontjuk meg (data/kedergumi_kiszereles.json,
+// scripts/termekadatok/sandprofile_kiszereles.py); a gyártói 1000 m feletti minimum is feltüntetve
+const huNum = (n) => n.toLocaleString('hu-HU', { maximumFractionDigits: 2 });
+function withCarton(p) {
+  const c = cartons[p.slug];
+  if (!c || typeof c !== 'object') return p;
+  const parts = c.karton.split('x');
+  const unitText = parts.length === 2 ? `${parts[0]} × ${parts[1]} m = ${huNum(c.karton_m)} m` : `${huNum(c.karton_m)} m`;
+  const specs = Object.fromEntries(Object.entries(p.specs ?? {}).filter(([k]) => !/^(kiszerelés|minimális rendelés)/i.test(k)));
+  specs['Kiszerelés (1 karton)'] = unitText;
+  specs['Minimális rendelés'] = `1 karton (${huNum(c.karton_m)} m)`;
+  let note = `Kartonra rendelhető: 1 karton = ${unitText}. A kartont nem bontjuk meg – a mennyiség kartonban értendő.`;
+  if (c.gyartoi_min_m) {
+    const n = Math.ceil(c.gyartoi_min_m / c.karton_m);
+    specs['Gyártói minimális rendelés'] = `${huNum(c.gyartoi_min_m)} m (${n} karton)`;
+    note += ` A gyártó minimális rendelési mennyisége ${huNum(c.gyartoi_min_m)} m (${n} karton).`;
+  }
+  return { ...p, specs, orderNote: note, unit: 'karton', cartonM: c.karton_m };
+}
+
 // A Quadris által törlésre jelölt termékek (data/torolt_termekek.json) sehol nem jelennek meg
-export const products = [...excelProducts, ...extendedProducts, ...cloneProducts].filter((p) => !deleted[p.slug]).map(withoutSupplierCodes);
+export const products = [...excelProducts, ...extendedProducts, ...cloneProducts].filter((p) => !deleted[p.slug]).map(withoutSupplierCodes).map(withCarton);
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
 const CATEGORY_RENAMES = { versus: 'Versus-Omega' };
@@ -321,6 +342,7 @@ const CORNER_POST_CUT = ['6612225-', '6612226-', '66k0800-', '6639604-', '663969
 const PIECE_ONLY = (p) => (['edscha', 'versus'].includes(p.category) && /kereszt?tartó/i.test(p.name))
   || (p.category === 'aluminium-sarok-oszlopok' && !CORNER_POST_CUT.some((c) => p.slug.startsWith(c)));
 export function isProfile(p) {
+  if (p.unit) return false;  // kartonra rendelhető (gumi- és kéderprofilok): nem méretre vágott
   if (NO_PROFILE_GROUPS.has(p.group) || HARD_NO.test(p.name) || PIECE_ONLY(p)) return false;
   if (PROFILE_GROUPS.has(p.group) || /profil|hossztartó|kereszttartó|szelvény/i.test(p.name)) return true;
   if (SOFT_NO.test(p.name)) return false;
@@ -330,6 +352,7 @@ export function isProfile(p) {
 // Böngészőnek küldhető termékadat (belső mezők nélkül)
 export function publicProduct(p) {
   return { slug: p.slug, code: p.code, name: p.name, group: p.group, image: p.images?.[0] ?? '', ...(p.codeLabel ? { codeLabel: p.codeLabel } : {}),
+    ...(p.unit ? { unit: p.unit, cartonM: p.cartonM } : {}),
     ...(p.family ? { variants: true } : isProfile(p) ? { profile: true } : {}) };
 }
 
