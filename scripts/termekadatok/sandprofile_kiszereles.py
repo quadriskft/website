@@ -26,8 +26,8 @@ from common import ROOT, load_enrichment  # noqa: E402
 PDF = ROOT / ".cache/letoltes/https_www.sandprofile.com_media_gesamtkatalog_en.pdf"
 OUT = ROOT / "data/kedergumi_kiszereles.json"
 KIVETEL = {"m1-001-c-sin-aluminium"}  # alumínium sín, méterre (a Quadris kérésére kimarad)
-# a katalógus nyilvánvaló elírásai (a hasonló profilok 50,1 m-es kiszerelése alapján)
-JAVITAS = {"D2 230": ("50,1", "100,2")}
+# kézi javítások a katalógushoz képest (a D2 230 501 m / 1002 m-es adata a Quadris szerint helyes)
+JAVITAS = {}
 CODE = re.compile(r"^([A-Z]\d{1,2})\s?(\d{3}(?:/\d+)?)")
 
 

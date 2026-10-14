@@ -1152,8 +1152,9 @@
   "karton_m": 100.0
  },
  "sp-d2-230": {
-  "karton": "50,1",
-  "karton_m": 50.1
+  "karton": "501",
+  "karton_m": 501.0,
+  "gyartoi_min_m": 1002.0
  },
  "sp-d2-796": {
   "karton": "200",
