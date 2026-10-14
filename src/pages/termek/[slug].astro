@@ -86,7 +86,7 @@ const jsonLd = [
             <h2 class="cut-title"><Icon name="Ruler" size={20} /> {family.title ?? 'Rendelhető méretek'}</h2>
             <p class="muted small">{family.note ?? 'Gyári hosszban, darabra rendelhető – ezt a terméket nem vágjuk méretre.'}</p>
             <label class="variant-label" for="variant">{family.label}</label>
-            <select id="variant" class="input variant-select" data-variant data-variant-navigate={family.clone ? '' : undefined}>
+            <select id="variant" class="input variant-select" data-variant data-variant-navigate={family.navigate ? '' : undefined}>
               {familyMembers.map((m) => (
                 <option value={m.slug} selected={m.slug === product.slug} data-product={JSON.stringify({ ...publicProduct({ ...m.product, family: true }), name: `${family.name} – ${m.value}` })}>{m.value}</option>
               ))}
@@ -97,10 +97,12 @@ const jsonLd = [
                 <input type="number" id="qty" min="1" max="99999" value="1" inputmode="numeric" aria-label="Darab" />
                 <button type="button" data-step="1" aria-label="Több"><Icon name="Plus" /></button>
               </div>
+              {product.unit && <span class="qty-unit">{product.unit}</span>}
               <button type="button" class="btn btn-primary add-main" data-variant-add data-add-to-quote={JSON.stringify({ ...publicProduct({ ...product, family: true }), name: `${family.name} – ${familyMembers.find((m) => m.slug === product.slug)?.value}` })} data-qty-from="#qty">
                 <Icon name="ClipboardList" /> <span class="label">Ajánlatkérőbe</span>
               </button>
             </div>
+            {product.orderNote && <p class="order-note"><Icon name="Ruler" size={16} /> {product.orderNote}</p>}
             <p class="muted small">Árat nem tüntetünk fel – tegye az ajánlatkérőbe, és személyre szabott ajánlatot küldünk mennyiség és szállítási igény alapján.</p>
           </div>
         ) : profile ? (

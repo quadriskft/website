@@ -62,5 +62,143 @@
    "106731-lezaro-csiga-zsanerhoz": "bal oldali",
    "106731-lezaro-csiga-zsanerhoz-jobb": "jobb oldali"
   }
+ },
+ "lemezvastagsag-a1-105": {
+  "name": "A1 105 Lepkés gumi 58,3x26,6 fekete",
+  "label": "Kivitel (a / jel utáni szám: lemezvastagság)",
+  "title": "Rendelhető kivitelek",
+  "note": "A cikkszámban a / jel utáni szám azt a lemezvastagság-tartományt jelöli, amelyre a profil alkalmazható – válassza ki a lemezének megfelelő kivitelt.",
+  "navigate": true,
+  "members": {
+   "a1-105-2-lepkes-gumi-58-3x26-6-1-0-2-5-fekete": "A1 105/2 – 1,0–2,5 mm lemezvastagsághoz",
+   "a1-105-4-lepkes-gumi-58-3x26-6-2-0-4-0-fekete": "A1 105/4 – 2,0–4,0 mm lemezvastagsághoz",
+   "sp-a1-105-6": "A1 105/6 – 4,0–6,0 mm lemezvastagsághoz"
+  }
+ },
+ "lemezvastagsag-a1-134": {
+  "name": "A1 134 Dupla szakállas kédergumi 18,2x24 fekete",
+  "label": "Kivitel (a / jel utáni szám: lemezvastagság)",
+  "title": "Rendelhető kivitelek",
+  "note": "A cikkszámban a / jel utáni szám azt a lemezvastagság-tartományt jelöli, amelyre a profil alkalmazható – válassza ki a lemezének megfelelő kivitelt.",
+  "navigate": true,
+  "members": {
+   "a1-134-2-dupla-szakallas-kedergumi-18-2x24-1-0-2-5-fekete": "A1 134/2 – 1,0–2,5 mm lemezvastagsághoz",
+   "a1-134-4-dupla-szakallas-kedergumi-18-2x24-2-5-4-0-fekete": "A1 134/4 – 2,5–4,0 mm lemezvastagsághoz",
+   "sp-a1-134-6": "A1 134/6 – 4,0–6,0 mm lemezvastagsághoz"
+  }
+ },
+ "lemezvastagsag-a2-106": {
+  "name": "A2 106 (28 mm) duplagöbös kédergumi",
+  "label": "Kivitel (a / jel utáni szám: lemezvastagság)",
+  "title": "Rendelhető kivitelek",
+  "note": "A cikkszámban a / jel utáni szám azt a lemezvastagság-tartományt jelöli, amelyre a profil alkalmazható – válassza ki a lemezének megfelelő kivitelt.",
+  "navigate": true,
+  "members": {
+   "a2-106-2-28-mm-duplagobos-kedergumi": "A2 106/2 – 1,0–2,5 mm lemezvastagsághoz",
+   "sp-a2-106-4": "A2 106/4 – 2,5–4,0 mm lemezvastagsághoz",
+   "sp-a2-106-6": "A2 106/6 – 4,0–6,0 mm lemezvastagsághoz"
+  }
+ },
+ "lemezvastagsag-a1-023": {
+  "name": "Élvédő profil A1 023 – fekete",
+  "label": "Kivitel (a / jel utáni szám: lemezvastagság)",
+  "title": "Rendelhető kivitelek",
+  "note": "A cikkszámban a / jel utáni szám azt a lemezvastagság-tartományt jelöli, amelyre a profil alkalmazható – válassza ki a lemezének megfelelő kivitelt.",
+  "navigate": true,
+  "members": {
+   "sp-a1-023-2": "A1 023/2 – 1,0–2,5 mm lemezvastagsághoz",
+   "sp-a1-023-4": "A1 023/4 – 2,0–4,0 mm lemezvastagsághoz"
+  }
+ },
+ "lemezvastagsag-a1-019": {
+  "name": "Élvédő profil A1 019 – fekete",
+  "label": "Kivitel (a / jel utáni szám: lemezvastagság)",
+  "title": "Rendelhető kivitelek",
+  "note": "A cikkszámban a / jel utáni szám azt a lemezvastagság-tartományt jelöli, amelyre a profil alkalmazható – válassza ki a lemezének megfelelő kivitelt.",
+  "navigate": true,
+  "members": {
+   "sp-a1-019-8": "A1 019/8 – 6,0–8,0 mm lemezvastagsághoz",
+   "sp-a1-019-10": "A1 019/10 – 8,0–10,0 mm lemezvastagsághoz"
+  }
+ },
+ "lemezvastagsag-a1-020": {
+  "name": "Élvédő profil A1 020 – világosszürke",
+  "label": "Kivitel (a / jel utáni szám: lemezvastagság)",
+  "title": "Rendelhető kivitelek",
+  "note": "A cikkszámban a / jel utáni szám azt a lemezvastagság-tartományt jelöli, amelyre a profil alkalmazható – válassza ki a lemezének megfelelő kivitelt.",
+  "navigate": true,
+  "members": {
+   "sp-a1-020-8": "A1 020/8 – 6,0–8,0 mm lemezvastagsághoz",
+   "sp-a1-020-10": "A1 020/10 – 8,0–10,0 mm lemezvastagsághoz"
+  }
+ },
+ "lemezvastagsag-a1-024": {
+  "name": "Élvédő profil A1 024 – fekete",
+  "label": "Kivitel (a / jel utáni szám: lemezvastagság)",
+  "title": "Rendelhető kivitelek",
+  "note": "A cikkszámban a / jel utáni szám azt a lemezvastagság-tartományt jelöli, amelyre a profil alkalmazható – válassza ki a lemezének megfelelő kivitelt.",
+  "navigate": true,
+  "members": {
+   "sp-a1-024-2": "A1 024/2 – 1,0–2,5 mm lemezvastagsághoz",
+   "sp-a1-024-4": "A1 024/4 – 2,0–4,0 mm lemezvastagsághoz",
+   "sp-a1-024-6": "A1 024/6 – 4,0–6,0 mm lemezvastagsághoz"
+  }
+ },
+ "lemezvastagsag-a1-104": {
+  "name": "Élvédő tömítőprofil A1 104 – fekete",
+  "label": "Kivitel (a / jel utáni szám: lemezvastagság)",
+  "title": "Rendelhető kivitelek",
+  "note": "A cikkszámban a / jel utáni szám azt a lemezvastagság-tartományt jelöli, amelyre a profil alkalmazható – válassza ki a lemezének megfelelő kivitelt.",
+  "navigate": true,
+  "members": {
+   "sp-a1-104-2": "A1 104/2 – 1,0–2,5 mm lemezvastagsághoz",
+   "sp-a1-104-4": "A1 104/4 – 2,0–4,0 mm lemezvastagsághoz",
+   "sp-a1-104-6": "A1 104/6 – 4,0–6,0 mm lemezvastagsághoz"
+  }
+ },
+ "lemezvastagsag-a1-121": {
+  "name": "Élvédő tömítőprofil A1 121 – fekete",
+  "label": "Kivitel (a / jel utáni szám: lemezvastagság)",
+  "title": "Rendelhető kivitelek",
+  "note": "A cikkszámban a / jel utáni szám azt a lemezvastagság-tartományt jelöli, amelyre a profil alkalmazható – válassza ki a lemezének megfelelő kivitelt.",
+  "navigate": true,
+  "members": {
+   "sp-a1-121-2": "A1 121/2 – 1,0–2,5 mm lemezvastagsághoz",
+   "sp-a1-121-4": "A1 121/4 – 2,5–4,0 mm lemezvastagsághoz",
+   "sp-a1-121-6": "A1 121/6 – 4,0–6,0 mm lemezvastagsághoz"
+  }
+ },
+ "lemezvastagsag-a2-516": {
+  "name": "Kéderprofil A2 516 – fekete",
+  "label": "Kivitel (a / jel utáni szám: lemezvastagság)",
+  "title": "Rendelhető kivitelek",
+  "note": "A cikkszámban a / jel utáni szám azt a lemezvastagság-tartományt jelöli, amelyre a profil alkalmazható – válassza ki a lemezének megfelelő kivitelt.",
+  "navigate": true,
+  "members": {
+   "sp-a2-516-2": "A2 516/2 – 1,0–2,5 mm lemezvastagsághoz",
+   "sp-a2-516-4": "A2 516/4 – 2,0–4,0 mm lemezvastagsághoz"
+  }
+ },
+ "lemezvastagsag-a3-361": {
+  "name": "Kéderprofil A3 361 – fekete",
+  "label": "Kivitel (a / jel utáni szám: lemezvastagság)",
+  "title": "Rendelhető kivitelek",
+  "note": "A cikkszámban a / jel utáni szám azt a lemezvastagság-tartományt jelöli, amelyre a profil alkalmazható – válassza ki a lemezének megfelelő kivitelt.",
+  "navigate": true,
+  "members": {
+   "sp-a3-361-4": "A3 361/4 – 2,0–4,0 mm lemezvastagsághoz",
+   "sp-a3-361-6": "A3 361/6 – 5,0–6,0 mm lemezvastagsághoz"
+  }
+ },
+ "lemezvastagsag-a3-224": {
+  "name": "Kéderprofil A3 224 – fekete",
+  "label": "Kivitel (a / jel utáni szám: lemezvastagság)",
+  "title": "Rendelhető kivitelek",
+  "note": "A cikkszámban a / jel utáni szám azt a lemezvastagság-tartományt jelöli, amelyre a profil alkalmazható – válassza ki a lemezének megfelelő kivitelt.",
+  "navigate": true,
+  "members": {
+   "sp-a3-224-2": "A3 224/2 – 1,0–2,5 mm lemezvastagsághoz",
+   "sp-a3-224-6": "A3 224/6 – 5,0–6,0 mm lemezvastagsághoz"
+  }
  }
 }
