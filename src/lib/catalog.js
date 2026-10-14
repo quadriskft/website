@@ -273,7 +273,7 @@ export function productsIn(groupSlug, categorySlug) {
 
 // Ezekben a főkategóriákban / alkategóriákban a termékek a névben szereplő méret szerint növekvő sorrendben állnak
 // (első méret, egyezésnél a második, harmadik …; pl. 20x20x3 < 25x25x2 < 30x20x1,5 < 30x20x2).
-const SIZE_SORTED = new Set(['ipari-felgyartmanyok', 'ponyvarendszer-kiegeszitok/ponyvacsovek']);
+const SIZE_SORTED = new Set(['ipari-felgyartmanyok', 'ponyvarendszer-kiegeszitok/ponyvacsovek', 'csuszasmentes-retegelt-padlo/retegelt-lemezek']);
 
 function sizesOf(name) {
   const m = name.match(/\d+(?:[.,]\d+)?(?:\s*x\s*\d+(?:[.,]\d+)?)*/i);
