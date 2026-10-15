@@ -5,11 +5,14 @@
 - általános gumiszőnyegek (sima felületű, S/S): tekercs fotója (MI-vel 4x nagyítva); a mintás Amoeba és
   Diamond nem kapja meg
 - Amoeba gumiszőnyegek: mintás tekercs fotója (Lanczos-nagyítással)
+- istálló szőnyegek: a Quadris által küldött 3 fotó (tekercs, rétegek, kigöngyölt tekercs), Lanczos-nagyítással;
+  az utánfutó-/lószállító és az állattartó szőnyeg nem kapja meg
 - Cobra / CBR szőnyegek: mintás tekercs fotója (Lanczos-nagyítással: az MI a finom mintát csíkossá torzította)
 
 Használat: python3 scripts/termekadatok/gumiszonyeg_kepek.py   (utána kep_sorrend.py)
 """
 
+import json
 import sys
 from pathlib import Path
 
@@ -19,25 +22,32 @@ sys.path.insert(0, str(Path(__file__).parent))
 from common import ROOT, load_enrichment, save_image, update_enrichment  # noqa: E402
 
 KONNYITETT = {"g-17-1750x1550-mm-rampaszonyeg"}
-# (forráskép, a slug feltétele)
+ISTALLO = ["data/forras/istallo_szonyeg_foto_%d.png" % i for i in (1, 2, 3)]
+# (forráskép vagy forrásképek listája, a slug feltétele)
 KINDS = [
     ("data/forras/rampaszonyeg_foto.png", lambda s: s.endswith("rampaszonyeg") and s not in KONNYITETT),
     ("data/forras/altalanos_gumiszonyeg_foto.png", lambda s: "-s-s-altalanos-gumi" in s),
     ("data/forras/amoeba_gumiszonyeg_foto.png", lambda s: "-amoeba-gumiszonyeg" in s),
+    (ISTALLO, lambda s: "istallo-szonyeg" in s or s.startswith("istallo-gumiszonyeg")),
     ("data/forras/cobra_gumiszonyeg_foto.png", lambda s: "-cobra-szonyeg-" in s or "-cbr-szonyeg-" in s),
 ]
 
 
 def main():
     data = load_enrichment()
+    # a bővített kínálat termékei (még nincs termékadat-bejegyzésük): a meglévő képeik utána maradnak
+    extended = {p["slug"]: p for p in json.loads((ROOT / "src/data/bovitett.json").read_text()).get("products", [])}
+    for slug, p in extended.items():
+        if slug not in data and any(match(slug) for _, match in KINDS):
+            data[slug] = {"source": "Quadris fotó", "sourceUrl": "", "sourceTitle": "", "specs": {}, "images": list(p.get("images", []))}
     updates = {}
     for src, match in KINDS:
-        img = Image.open(ROOT / src)
+        srcs = src if isinstance(src, list) else [src]
         for slug, e in data.items():
             if not match(slug):
                 continue
-            url = save_image(img, slug, "foto")
-            e["images"] = [url] + [u for u in e.get("images", []) if u != url]
+            urls = [save_image(Image.open(ROOT / f), slug, "foto" if len(srcs) == 1 else f"foto-{i}") for i, f in enumerate(srcs, 1)]
+            e["images"] = urls + [u for u in e.get("images", []) if u not in urls]
             updates[slug] = e
             print(slug)
     update_enrichment(updates)
