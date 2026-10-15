@@ -1032,7 +1032,10 @@
    "group": "kedergumik",
    "category": "elvedo-profilok"
   },
-  "noStock": true
+  "noStock": true,
+  "specs": {
+   "Anyag": "PVC"
+  }
  },
  "a1-105-2-lepkes-gumi-58-3x26-6-1-0-2-5-fekete": {
   "code": "A1 105/2",
@@ -1287,5 +1290,239 @@
    "category": "egyeb-keder-es-tomitogumik"
   },
   "order": 29
+ },
+ "sp-a3-521": {
+  "move": {
+   "group": "kedergumik",
+   "category": "elvedo-profilok-epdm"
+  },
+  "specs": {
+   "Anyag": "EPDM"
+  }
+ },
+ "sp-a4-782": {
+  "move": {
+   "group": "kedergumik",
+   "category": "elvedo-profilok-epdm"
+  },
+  "specs": {
+   "Anyag": "EPDM"
+  }
+ },
+ "sp-a2-613": {
+  "move": {
+   "group": "kedergumik",
+   "category": "elvedo-profilok-epdm"
+  },
+  "specs": {
+   "Anyag": "EPDM"
+  }
+ },
+ "sp-a3-444": {
+  "move": {
+   "group": "kedergumik",
+   "category": "elvedo-profilok-epdm"
+  },
+  "specs": {
+   "Anyag": "EPDM"
+  }
+ },
+ "sp-a3-550": {
+  "move": {
+   "group": "kedergumik",
+   "category": "elvedo-profilok-epdm"
+  },
+  "specs": {
+   "Anyag": "EPDM"
+  }
+ },
+ "sp-a4-808-bu": {
+  "move": {
+   "group": "kedergumik",
+   "category": "elvedo-profilok-epdm"
+  },
+  "specs": {
+   "Anyag": "EPDM"
+  }
+ },
+ "sp-a1-009": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-010": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-011": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-012": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-014": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-034": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-023-2": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-023-4": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a2-051": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-032": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-016": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-017": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-022": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-044": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a3-634": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-021": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-019-8": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-019-10": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-020-8": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-020-10": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a2-078": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-037": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-024-2": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-024-4": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-024-6": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-018": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-030": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a3-046": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-077": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a2-813": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a1-075": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a3-087": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a3-490": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a3-362-bu": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a4-253-bu": {
+  "specs": {
+   "Anyag": "PVC"
+  }
+ },
+ "sp-a2-257": {
+  "specs": {
+   "Anyag": "PVC"
+  }
  }
 }

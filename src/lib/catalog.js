@@ -106,7 +106,7 @@ export const products = [...excelProducts, ...extendedProducts, ...cloneProducts
   .map(withoutSupplierCodes).map(withCarton).map(withStock);
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
-const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik' };
+const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik', 'elvedo-profilok': 'Élvédő profilok – PVC' };
 // Gyártói alkategóriák logója (a gyártó honlapjáról): a címben a név elé / helyett jelenik meg
 export const CATEGORY_LOGOS = {
   versus: { src: '/logok/versus-omega.svg', alt: 'Versus-Omega', text: true },
@@ -129,7 +129,17 @@ for (const g of extended.groups ?? []) {
 }
 for (const c of extended.categories ?? []) {
   const g = groupList.find((x) => x.slug === c.group);
-  if (g && !g.categories.some((x) => x.slug === c.slug)) g.categories.push({ slug: c.slug, name: c.name });
+  if (g && !g.categories.some((x) => x.slug === c.slug)) g.categories.push({ slug: c.slug, name: CATEGORY_RENAMES[c.slug] ?? c.name });
+}
+// A Quadris által kért saját alkategóriák: [csoport, slug, név, amely alkategória után kerüljön]
+const QUADRIS_CATEGORIES = [
+  ['kedergumik', 'elvedo-profilok-epdm', 'Élvédő profilok – EPDM', 'elvedo-profilok'],
+];
+for (const [gs, slug, name, after] of QUADRIS_CATEGORIES) {
+  const g = groupList.find((x) => x.slug === gs);
+  if (!g || g.categories.some((c) => c.slug === slug)) continue;
+  const j = g.categories.findIndex((c) => c.slug === after);
+  g.categories.splice(j < 0 ? g.categories.length : j + 1, 0, { slug, name });
 }
 // Egész alkategória megjelenítése egy másik csoportban is (a termékek a helyükön maradnak):
 // [forrás "csoport/alkategória", cél "csoport/alkategória", amely alkategória után kerüljön]
