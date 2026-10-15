@@ -36,6 +36,8 @@ DRAWINGS = {
 }
 # a Quadris-cikkszámos termék a cikkszám nélküli (a G&C teljes kínálatából felvett, törölt) párja fotóját kapja
 PHOTO_FROM = {"ledes-lampa-kerek-feher": "gc-lighting-round", "ledes-lampa-szogletes-feher-12-24v": "gc-lighting-rectangle"}
+# a Quadris által küldött fotó (MI-vel 4x nagyítva) az első kép, a korábbi fotó a rajz után marad
+PHOTO_FILE = {"ventillator-belso-takaro-12-24v-led": "data/forras/gnc_35-2200_foto.png"}
 PRODUCTS = {
     "le-mans": ["le-mans-tetoventilator-12v", "02-2200-zw-le-mans-tetoventilator-12v", "le-mans-tetoventilator-24v",
                 "tetoventillator-motor-nelkul-abs-feher"],
@@ -90,6 +92,9 @@ def main():
                 twin = next(p for p in extended if p["slug"] == PHOTO_FROM[slug])
                 photo = save_image(Image.open(ROOT / "public" / twin["images"][0].lstrip("/")), slug, 1)
                 e["images"] = [photo] + [u for u in e.get("images", []) if u != photo and u not in twin["images"]]
+            if slug in PHOTO_FILE:
+                photo = save_image(Image.open(ROOT / PHOTO_FILE[slug]), slug, "foto")
+                e["images"] = [photo] + [u for u in e.get("images", []) if u != photo]
             url = save_image(img, slug, "meretrajz")
             imgs = [u for u in e.get("images", []) if u != url]
             e["images"] = imgs[:1] + [url] + imgs[1:]  # a fotó után
