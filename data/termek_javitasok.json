@@ -64,7 +64,8 @@
   "codeLabel": "Gyártói cikkszám",
   "specs": {
    "Szín": "fekete"
-  }
+  },
+  "noStock": true
  },
  "turbo-ii-tetoventilator-feher": {
   "name": "„TURBO II” tetőventilátor, fehér",
@@ -80,7 +81,8 @@
   "codeLabel": "Gyártói cikkszám",
   "specs": {
    "Szín": "fekete"
-  }
+  },
+  "noStock": true
  },
  "tetoablak-vezerloegyseg-24v": {
   "name": "Tetőablak vezérlőegység 24V",
