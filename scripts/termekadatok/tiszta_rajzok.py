@@ -282,6 +282,8 @@ IMAGESET = {"237310-20-dupla-alu-zsaner": [("data/forras/alu_zsaner_ab.png", "1"
             # a jobbos kivitel a termékcsalád második tagja (data/termek_csaladok.json, „clone”)
             # a Quadris által küldött rajz változtatás nélkül (a Quadris kérésére az eredeti)
             "238067-tomites-a-szego-profilhoz": [("data/forras/238067_rajz.png", "rajz")],
+            # a Quadris által küldött gyári rajz (a gyártói felirat, cikkszám és jelmagyarázat nélkül)
+            "lepkes-gumi-76-8-80-4-7-fekete": [("data/forras/a4166_rajz.png", "rajz")],
             "106731-lezaro-csiga-zsanerhoz": [("data/forras/106731_bal_rajz_tiszta.png", "rajz"), ("data/forras/106731_bal_foto.png", "1")],
             "106731-lezaro-csiga-zsanerhoz-jobb": [("data/forras/106731_jobb_rajz_tiszta.png", "rajz"), ("data/forras/106731_jobb_foto.png", "1")]}
 
@@ -364,6 +366,9 @@ NEW = {"225040-koztes-250-mm-elox-profil": ("Quadris gyári rajz", "", "Gyári p
                                                                            "Felület": "eloxált"}),
        "238067-tomites-a-szego-profilhoz": ("Quadris méretrajz", "", "", {"Anyag": "gumi", "Szín": "fekete", "Szélesség": "20 mm",
                                                                    "Magasság": "9 mm"}),
+       "lepkes-gumi-76-8-80-4-7-fekete": ("Quadris gyári rajz", "", "", {"Anyag": "EPDM, moosgumi (szivacsgumi) ajakkal", "Szín": "fekete",
+                                                                 "Magasság": "60,8 mm", "Ajak hossza": "80 mm",
+                                                                 "Befogó szélessége": "10,5 mm"}),
        "100001-dugo-perforalt-acel-kerethez": ("Quadris gyári rajz", "", "", {"Furat": "Ø14 mm", "Magasság": "27,5 mm",
                                                                          "Fej szélessége": "17,5 mm", "Anyag": "műanyag"})}
 

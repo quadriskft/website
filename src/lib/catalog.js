@@ -106,7 +106,7 @@ export const products = [...excelProducts, ...extendedProducts, ...cloneProducts
   .map(withoutSupplierCodes).map(withCarton).map(withStock);
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
-const CATEGORY_RENAMES = { versus: 'Versus-Omega' };
+const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik' };
 // Gyártói alkategóriák logója (a gyártó honlapjáról): a címben a név elé / helyett jelenik meg
 export const CATEGORY_LOGOS = {
   versus: { src: '/logok/versus-omega.svg', alt: 'Versus-Omega', text: true },
@@ -169,7 +169,7 @@ const familyBySlug = new Map();
 for (const [id, f] of Object.entries(families)) {
   if (id.startsWith('_')) continue;
   const members = Object.entries(f.members).map(([slug, value]) => ({ slug, value })).filter((m) => !deleted[m.slug]);
-  const fam = { id, name: f.name, label: f.label ?? 'Méret', title: f.title, note: f.note, clone: !!f.clone, navigate: !!(f.clone || f.navigate), members, leader: members[0]?.slug };
+  const fam = { id, name: f.name, label: f.label ?? 'Méret', title: f.title, note: f.note, clone: !!f.clone, navigate: !!(f.clone || f.navigate), members, leader: (f.leader && members.some((m) => m.slug === f.leader) ? f.leader : members[0]?.slug) };
   for (const m of members) familyBySlug.set(m.slug, fam);
 }
 export function familyOf(slug) {

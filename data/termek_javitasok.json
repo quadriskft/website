@@ -1019,105 +1019,241 @@
   }
  },
  "a1-013-elkeder-kicsi-fekete-9-5x6-5mm": {
-  "code": "A1 013"
+  "code": "A1 013",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a1-015-keder-gumi": {
-  "code": "A1 015"
+  "code": "A1 015",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a1-105-2-lepkes-gumi-58-3x26-6-1-0-2-5-fekete": {
-  "code": "A1 105/2"
+  "code": "A1 105/2",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a1-105-4-lepkes-gumi-58-3x26-6-2-0-4-0-fekete": {
-  "code": "A1 105/4"
+  "code": "A1 105/4",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a1-134-2-dupla-szakallas-kedergumi-18-2x24-1-0-2-5-fekete": {
-  "code": "A1 134/2"
+  "code": "A1 134/2",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a1-134-4-dupla-szakallas-kedergumi-18-2x24-2-5-4-0-fekete": {
-  "code": "A1 134/4"
+  "code": "A1 134/4",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a1-503-nagy-gobos-kedergumi": {
-  "code": "A1 503"
+  "code": "A1 503",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a1-536-kis-gobos-kedergumi-14-6x16-fekete": {
-  "code": "A1 536"
+  "code": "A1 536",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a1-549-mini-gobos-kedergumi-13x11-8-2-mm": {
-  "code": "A1 549"
+  "code": "A1 549",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a2-106-2-28-mm-duplagobos-kedergumi": {
-  "code": "A2 106/2"
+  "code": "A2 106/2",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a2-125-felul-gobos-keder-gumi-49-35-20-mm": {
-  "code": "A2 125"
+  "code": "A2 125",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a2-127-lepkes-gumi-15-38-6-mm": {
-  "code": "A2 127"
+  "code": "A2 127",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a2-254-kedergumi-14-5x21-8-fekete": {
-  "code": "A2 254"
+  "code": "A2 254",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a2-255-nagy-gobos-kedergumi-fekete-20-mm": {
-  "code": "A2 255"
+  "code": "A2 255",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a2-513-felso-gobos-keder-21-5x11-mm": {
-  "code": "A2 513"
+  "code": "A2 513",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a2-539-kozepes-gobos-kedergumi-14-6x18-7-fekete": {
-  "code": "A2 539"
+  "code": "A2 539",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a2-540-kedergumi-16x19-2-2-0-4-0-fekete": {
-  "code": "A2 540"
+  "code": "A2 540",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a2-541-kedergumi-16x19-2-4-0-6-0-fekete": {
-  "code": "A2 541"
+  "code": "A2 541",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "a2-554-nagygobos-keder-22-6": {
-  "code": "A2 554"
+  "code": "A2 554",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "elkeder-13x10-fekete": {
-  "code": "A3 007"
+  "code": "A3 007",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "kedergumi-14-5x20-5-2-0-4-0-fekete": {
-  "code": "A3 224/4"
+  "code": "A3 224/4",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "felso-gobos-kedergumi-32x14x20-8-fekete": {
-  "code": "A3 321"
+  "code": "A3 321",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "lepkes-gumi-76-8-80-4-7-fekete": {
-  "code": "A4 166"
+  "code": "A4 166",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "d1-119-epdm-21mm-p-profil": {
-  "code": "D1 119"
+  "code": "D1 119",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "d1-128-omega-gumi-19-8x40x24-epdm-fekete": {
-  "code": "D1 128"
+  "code": "D1 128",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "d1-133-omega-gumi-19-8x28x24-epdm-fekete": {
-  "code": "D1 133"
+  "code": "D1 133",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "d2-167-elvedo-lec-epdm-fekete": {
-  "code": "D2 167"
+  "code": "D2 167",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "d2-528-talpas-15-5-mm-20-5-20-epdm-fekete": {
-  "code": "D2 528"
+  "code": "D2 528",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "e2-546-af-moos-gumi-ontapados": {
-  "code": "E2 546-AF"
+  "code": "E2 546-AF",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "e2-701-af-moos-gumi-epdm-ontapados": {
-  "code": "E2 701-AF"
+  "code": "E2 701-AF",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "epdm-1030-moosgumi": {
-  "code": "EPDM 1030"
+  "code": "EPDM 1030",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "epdm-1530-moosgumi": {
-  "code": "EPDM 1530"
+  "code": "EPDM 1530",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "epdm-3030-af-moosgumi": {
-  "code": "EPDM 3030-AF"
+  "code": "EPDM 3030-AF",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  },
  "m1-001-c-sin-aluminium": {
-  "code": "M1 001"
+  "code": "M1 001",
+  "move": {
+   "group": "kedergumik",
+   "category": "egyeb-keder-es-tomitogumik"
+  }
  }
 }
