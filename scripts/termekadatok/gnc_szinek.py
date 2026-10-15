@@ -30,7 +30,7 @@ RECOLOR = {
     "ventillator-belso-takaro": ("ventillator-belso-takaro-szurke", "feher"),
     "ventillator-belso-takaro-12-24v-led": ("ventillator-belso-takaro-szurke", "feher"),
     "ventillator-belso-takaro-szurke": ("ventillator-belso-takaro-szurke", "szurke"),
-    "manualis-belso-takaro-szurke": ("manualis-belso-takaro-feher", "szurke"),
+    "manualis-belso-takaro-szurke": ("manualis-belso-takaro-feher", "szurke", "korong"),  # a lágy árnyék nélkül
     "belso-12v-os-led-takaro-flower-power-feher": ("belso-12v-os-led-takaro-flower-power-szurke", "feher_sotet_reszek"),
     "belso-24-v-os-led-vilagitassal-flower-power-feher": ("belso-12v-os-led-takaro-flower-power-szurke", "feher_sotet_reszek"),
 }
@@ -50,7 +50,37 @@ def product_mask(a, limit=238):
     return np.asarray(bg) != 128
 
 
-def recolor(img, target):
+def disk_mask(lum):
+    """Lapos, kerek termék (pl. belső takaró) körvonala: a felülnézeti ellipszis a tiszta felső ívből és a sötét
+    alsó peremből illesztve (a kettő közti eltolás a korong vastagsága), így a lágy árnyék nem a termék része."""
+    H, W = lum.shape
+    top, bot = [], []
+    for x in range(int(W * 0.09), int(W * 0.92), 4):
+        t, b = np.where(lum[:, x] < 246)[0], np.where(lum[:, x] < 200)[0]
+        if len(t):
+            top.append((x, t.min()))
+        if len(b):
+            bot.append((x, b.max()))
+    top, bot = np.array(top, float), np.array(bot, float)
+    cy = (top[:, 1].min() + bot[:, 1].max()) / 2
+    top, bot = top[top[:, 1] < cy - 60], bot[bot[:, 1] > cy + 60]
+    best = None
+    for t in range(0, 60, 2):
+        P = np.vstack([top, bot - [0, t]]).astype(np.float32)
+        e = cv2.fitEllipse(P.reshape(-1, 1, 2))
+        (ex, ey), (w, h), ang = e
+        M = cv2.ellipse2Poly((int(ex), int(ey)), (int(w / 2), int(h / 2)), int(ang), 0, 360, 2)
+        d = np.mean([np.min(np.hypot(*(M - p).T)) for p in P])
+        if best is None or d < best[0]:
+            best = (d, t, e)
+    _, t, ((ex, ey), (w, h), ang) = best
+    mask = np.zeros((H, W), np.uint8)
+    for dy in range(t + 1):
+        cv2.ellipse(mask, ((ex, ey + dy), (w, h), ang), 255, -1)
+    return mask > 0
+
+
+def recolor(img, target, disk=False):
     rgba = img.convert("RGBA")
     a = np.asarray(rgba).astype(float)
     rgb, alpha = a[..., :3], a[..., 3]
@@ -60,7 +90,9 @@ def recolor(img, target):
     # világos forrásnál a háttér a tiszta fehér (a termék csillanása ne „folyjon ki” a háttérbe),
     # és csak a legnagyobb összefüggő folt a termék (a lágy árnyék apró foltjai nem)
     mask = product_mask(rgb, 246) & (alpha > 0) if light_src else mask0
-    if light_src:
+    if disk:
+        mask = disk_mask(lum)
+    elif light_src:
         # a lágy árnyék vékony peremét morfológiai nyitással leválasztjuk, majd a legnagyobb folt a termék
         m8 = cv2.morphologyEx(mask.astype(np.uint8), cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (9, 9)))
         n, labels, stats, _ = cv2.connectedComponentsWithStats(m8, connectivity=8)
@@ -88,6 +120,9 @@ def recolor(img, target):
         w = np.ones_like(lum) if light_src else np.clip((200 - lum) / 45, 0, 1)  # átmenet az árnyék felé
         blend = rgb * (1 - w[..., None]) + np.repeat(new[..., None], 3, axis=2) * w[..., None]
         out[mask] = blend[mask]
+    if disk:  # a háttér (a lágy árnyékkal együtt) tiszta fehér, a körvonal élsimítva
+        soft = cv2.GaussianBlur(mask.astype(np.float32), (0, 0), 1.2)[..., None]
+        out = out * soft + 255 * (1 - soft)
     res = np.dstack([np.clip(out, 0, 255), alpha]).astype(np.uint8)
     return Image.fromarray(res, "RGBA")
 
@@ -95,7 +130,7 @@ def recolor(img, target):
 def main():
     enrichment = json.loads((ROOT / "src/data/termekadatok.json").read_text())
     ORIG.mkdir(parents=True, exist_ok=True)
-    for slug, (src, target) in RECOLOR.items():
+    for slug, (src, target, *mode) in RECOLOR.items():
         src_img = enrichment.get(src, {}).get("images", [])
         dst_img = enrichment.get(slug, {}).get("images", [])
         if not src_img or not dst_img:
@@ -105,7 +140,7 @@ def main():
         keep = ORIG / f"{src}.webp"
         if not keep.exists():
             keep.write_bytes(src_path.read_bytes())
-        out = recolor(Image.open(keep), target)
+        out = recolor(Image.open(keep), target, disk="korong" in mode)
         if is_protected(dst_img[0]):  # kézzel feljavított kép: marad
             continue
         out.save(ROOT / "public" / dst_img[0].lstrip("/"), "WEBP", quality=90)
