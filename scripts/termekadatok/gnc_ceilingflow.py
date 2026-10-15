@@ -32,7 +32,7 @@ SPECS = {
     "Zajszint [dB(A)]": "35 (alacsony) – 47 (magas fokozat)",
     "Méret": "595 × 595 mm (álmennyezeti kazetta helyére)",
     "Beépítési magasság": "166 mm",
-    "Szín": "fekete (24-0008) / fehér (24-0009)",
+    "Szín": "fehér / fekete",
     "Anyag": "újrahasznosítható ABS",
     "Motor": "kefe nélküli, rövidzárlat és túlfeszültség elleni védelemmel",
     "Távirányító": "tartozék (távirányító nélkül is működtethető)",
@@ -64,10 +64,10 @@ def main():
     # az adatlap képei: a fekete változat (a fehér alatt, jobbra) és a távirányító
     black = next(img for (x0, y0, x1, y1), img in by_pos.items() if x0 > 100 and y0 > 250 and x1 < 320)
     remote = next(img for (x0, y0, x1, y1), img in by_pos.items() if 170 < x0 < 200 and y0 > 190 and x1 < 270)
-    images = [save_image(black, SLUG, 1)]
-    for suffix, path in WEB:
-        images.append(save_image(Image.open(io.BytesIO(fetch(UP + path))), SLUG, suffix))
-    images.append(save_image(remote, SLUG, "taviranyito"))
+    web = {suffix: save_image(Image.open(io.BytesIO(fetch(UP + path))), SLUG, suffix) for suffix, path in WEB}
+    # a Quadris kérésére a fehér változat elöl (a G&C adatlapja szerint a 24-0008 a fekete, a 24-0009 a fehér)
+    images = [web["feher"], web["feher-alulrol"], save_image(black, SLUG, "fekete"), web["meretrajz"],
+              save_image(remote, SLUG, "taviranyito")]
 
     docs = ROOT / "public/dokumentumok"
     docs.mkdir(parents=True, exist_ok=True)

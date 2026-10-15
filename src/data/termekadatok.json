@@ -12495,9 +12495,9 @@
   "sourceUrl": "https://gnc-systems.com/en/products/ceilingflow/",
   "sourceTitle": "",
   "images": [
-   "/termekkepek/gc-ceilingflow-1.webp",
    "/termekkepek/gc-ceilingflow-feher.webp",
    "/termekkepek/gc-ceilingflow-feher-alulrol.webp",
+   "/termekkepek/gc-ceilingflow-fekete.webp",
    "/termekkepek/gc-ceilingflow-meretrajz.webp",
    "/termekkepek/gc-ceilingflow-taviranyito.webp"
   ],
@@ -12507,7 +12507,7 @@
    "Zajszint [dB(A)]": "35 (alacsony) – 47 (magas fokozat)",
    "Méret": "595 × 595 mm (álmennyezeti kazetta helyére)",
    "Beépítési magasság": "166 mm",
-   "Szín": "fekete (24-0008) / fehér (24-0009)",
+   "Szín": "fehér / fekete",
    "Anyag": "újrahasznosítható ABS",
    "Motor": "kefe nélküli, rövidzárlat és túlfeszültség elleni védelemmel",
    "Távirányító": "tartozék (távirányító nélkül is működtethető)",

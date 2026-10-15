@@ -25,7 +25,7 @@ from common import ROOT, is_protected  # noqa: E402
 RECOLOR = {
     "tetoventilator-manualis-fekete": ("tetoventilator-manualis-feher", "fekete"),
     "02-2200-zw-le-mans-tetoventilator-12v": ("le-mans-tetoventilator-12v", "fekete"),
-    "turbo-iii-tetoventilator-feher": ("turbo-iii-tetoventilator-fekete", "feher"),
+    "turbo-iii-tetoventilator-feher": ("turbo-iii-tetoventilator-fekete", "feher", "kontraszt"),  # a Quadris kérésére élesebb
     "turbo-ii-tetoventilator-feher": ("turbo-ii-tetoventilator-fekete", "feher"),
     "ventillator-belso-takaro": ("ventillator-belso-takaro-szurke", "feher"),
     "ventillator-belso-takaro-12-24v-led": ("ventillator-belso-takaro-szurke", "feher"),
@@ -80,7 +80,37 @@ def disk_mask(lum):
     return mask > 0
 
 
-def recolor(img, target, disk=False):
+def white_from_dark(img):
+    """Fekete fotóból kontrasztos fehér változat (Turbo III): a termék körvonala a sötét test és a fölötte lévő
+    fedélsáv uniója (a világos fedél tónusa átfed a lágy árnyékéval, ezért nem elég a világosság); a körvonalon
+    kívül tiszta fehér, belül a tónusok 140–244 közé képezve (a fedél a háttér alatt marad, így a széle látszik)."""
+    rgba = img.convert("RGBA")
+    a = np.asarray(rgba).astype(float)
+    rgb, alpha = a[..., :3], a[..., 3]
+    lum = rgb.mean(axis=2)
+    el = lambda d: cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (d, d))
+    body = cv2.morphologyEx((lum < 60).astype(np.uint8), cv2.MORPH_CLOSE, el(31))
+    n, lab, st, _ = cv2.connectedComponentsWithStats(body, connectivity=8)
+    body = (lab == 1 + int(np.argmax(st[1:, cv2.CC_STAT_AREA]))).astype(np.uint8)
+    ys = np.where(body.any(axis=1))[0]
+    lid = ((lum < 205) & (np.arange(lum.shape[0])[:, None] < ys.min() + 25)).astype(np.uint8)
+    sil = cv2.morphologyEx(body | lid, cv2.MORPH_CLOSE, el(15)) * 255
+    cnts, _ = cv2.findContours(sil, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    cv2.drawContours(sil, cnts, -1, 255, thickness=-1)
+    sil = cv2.GaussianBlur(sil.astype(np.float32) / 255, (0, 0), 1.0)
+    p1, p99 = np.percentile(lum[sil > 0.5], [1, 99])
+    t = np.clip((lum - p1) / max(p99 - p1, 1), 0, 1) ** 0.8
+    new = 140 + t * (244 - 140)
+    out = new[..., None] * sil[..., None] + 255 * (1 - sil[..., None])
+    res = Image.fromarray(np.dstack([np.repeat(np.clip(out, 0, 255), 3, axis=2), alpha]).astype(np.uint8), "RGBA")
+    from PIL import ImageFilter
+    sharp = res.convert("RGB").filter(ImageFilter.UnsharpMask(radius=2, percent=80, threshold=2))
+    return Image.merge("RGBA", (*sharp.split(), res.split()[3]))
+
+
+def recolor(img, target, disk=False, contrast=False):
+    if contrast and target == "feher":
+        return white_from_dark(img)
     rgba = img.convert("RGBA")
     a = np.asarray(rgba).astype(float)
     rgb, alpha = a[..., :3], a[..., 3]
@@ -110,7 +140,7 @@ def recolor(img, target, disk=False):
         w = np.clip((170 - lum) / 30, 0, 1)
         out[dark] = rgb[dark] * (1 - w[dark][:, None]) + np.repeat(new[dark][:, None], 3, axis=1) * w[dark][:, None]
     else:
-        lo, hi = RANGE[target]
+        lo, hi = (105, 250) if contrast and target == "feher" else RANGE[target]  # kontraszt: mélyebb árnyékok
         # sötétből világosba: csak a termék sötét részei (a világos, lágy árnyék a háttéren maradjon)
         body = mask if light_src else mask & (lum < 170)
         vals = lum[body]
@@ -124,7 +154,12 @@ def recolor(img, target, disk=False):
         soft = cv2.GaussianBlur(mask.astype(np.float32), (0, 0), 1.2)[..., None]
         out = out * soft + 255 * (1 - soft)
     res = np.dstack([np.clip(out, 0, 255), alpha]).astype(np.uint8)
-    return Image.fromarray(res, "RGBA")
+    img = Image.fromarray(res, "RGBA")
+    if contrast:  # élesítés
+        from PIL import ImageFilter
+        rgb_s = img.convert("RGB").filter(ImageFilter.UnsharpMask(radius=2, percent=90, threshold=2))
+        img = Image.merge("RGBA", (*rgb_s.split(), img.split()[3]))
+    return img
 
 
 def main():
@@ -140,7 +175,7 @@ def main():
         keep = ORIG / f"{src}.webp"
         if not keep.exists():
             keep.write_bytes(src_path.read_bytes())
-        out = recolor(Image.open(keep), target, disk="korong" in mode)
+        out = recolor(Image.open(keep), target, disk="korong" in mode, contrast="kontraszt" in mode)
         if is_protected(dst_img[0]):  # kézzel feljavított kép: marad
             continue
         out.save(ROOT / "public" / dst_img[0].lstrip("/"), "WEBP", quality=90)
