@@ -157,7 +157,9 @@
   "code": "35-2900",
   "codeLabel": "Gyártói cikkszám",
   "specs": {
-   "Szín": "fehér"
+   "Szín": "fehér",
+   "LED-ek száma": "30 db: 21 fehér + 9 kék",
+   "Átmérő": "280 mm"
   }
  },
  "belso-24-v-os-led-vilagitassal-flower-power-feher": {
@@ -165,7 +167,9 @@
   "code": "35-2905",
   "codeLabel": "Gyártói cikkszám",
   "specs": {
-   "Szín": "fehér"
+   "Szín": "fehér",
+   "LED-ek száma": "30 db: 21 fehér + 9 kék",
+   "Átmérő": "280 mm"
   }
  },
  "belso-12v-os-led-takaro-flower-power-szurke": {
@@ -173,7 +177,9 @@
   "code": "35-2910",
   "codeLabel": "Gyártói cikkszám",
   "specs": {
-   "Szín": "szürke"
+   "Szín": "szürke",
+   "LED-ek száma": "30 db: 21 fehér + 9 kék",
+   "Átmérő": "280 mm"
   }
  },
  "belso-24-v-os-led-vilagitassal-flower-power-szurke": {
@@ -181,7 +187,9 @@
   "code": "35-2915",
   "codeLabel": "Gyártói cikkszám",
   "specs": {
-   "Szín": "szürke"
+   "Szín": "szürke",
+   "LED-ek száma": "30 db: 21 fehér + 9 kék",
+   "Átmérő": "280 mm"
   }
  },
  "szellozo-racs-410x100-mm": {
@@ -240,7 +248,16 @@
   "code": "92-GC01",
   "codeLabel": "Gyártói cikkszám",
   "specs": {
-   "Szín": "fehér"
+   "Szín": "fehér",
+   "LED típusa": "Everlight 67-21",
+   "Színhőmérséklet": "kb. 5000 K",
+   "Feszültség": "12 / 24 V DC (230 V AC opcionális)",
+   "Tompítás": "50 %-os fokozat bekötéssel; kék éjszakai fény külön",
+   "Bekötés": "fekete: föld; piros: + 100 %; fehér: + 50 %; kék: + éjszakai fény (kék)",
+   "Ütésállóság": "IK10 (vandálbiztos)",
+   "LED-ek száma": "30 db: 24 fehér + 6 kék",
+   "Védettség": "IP67 (IP66 opcionális)",
+   "Méret": "Ø150 mm"
   }
  },
  "ledes-lampa-szogletes-feher-12-24v": {
@@ -248,7 +265,17 @@
   "code": "92-GC05-HP",
   "codeLabel": "Gyártói cikkszám",
   "specs": {
-   "Szín": "fehér"
+   "Szín": "fehér",
+   "LED típusa": "Everlight 67-21",
+   "Színhőmérséklet": "kb. 5000 K",
+   "Feszültség": "12 / 24 V DC (230 V AC opcionális)",
+   "Tompítás": "50 %-os fokozat bekötéssel; kék éjszakai fény külön",
+   "Bekötés": "fekete: föld; piros: + 100 %; fehér: + 50 %; kék: + éjszakai fény (kék)",
+   "Ütésállóság": "IK10 (vandálbiztos)",
+   "LED-ek száma": "51 db: 39 fehér + 12 kék",
+   "Védettség": "IP66 (IP67 opcionális)",
+   "Méret": "350 × 140 mm",
+   "Magasság": "136 mm"
   }
  },
  "207316-u-90-hossztarto": {
