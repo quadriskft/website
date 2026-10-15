@@ -1567,5 +1567,13 @@
   "specs": {
    "Anyag": "PVC"
   }
+ },
+ "gc-ceilingflow": {
+  "code": "24-0009",
+  "name": "Ceilingflow mennyezeti légelosztó, fehér",
+  "specs": {
+   "Szín": "fehér",
+   "Változatok": "24-0009 (fehér), 24-0008 (fekete)"
+  }
  }
 }
