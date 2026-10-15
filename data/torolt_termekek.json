@@ -1209,5 +1209,26 @@
   "code": "",
   "date": "2026-10-15",
   "reason": "a Quadris kérésére: cikkszám nélküli duplikátum (a fotója a 92-GC05-HP, ill. 92-GC01 terméké)"
+ },
+ "12v-led-ventillator-belso-takaro": {
+  "name": "12V-LED ventillátor belső takaró",
+  "supplier": "G&C termékek",
+  "code": "",
+  "date": "2026-10-15",
+  "reason": "Quadris kérése: nincs (nem forgalmazott)"
+ },
+ "ventillator-belso-takaro-elem": {
+  "name": "Ventillátor belső takaró elem",
+  "supplier": "G&C termékek",
+  "code": "",
+  "date": "2026-10-15",
+  "reason": "Quadris kérése: nincs (nem forgalmazott)"
+ },
+ "szellozo-racs-410x100-mm": {
+  "name": "Szellőző rács 410x100 mm",
+  "supplier": "G&C termékek",
+  "code": "",
+  "date": "2026-10-15",
+  "reason": "Quadris kérése: nincs (nem forgalmazott)"
  }
 }
