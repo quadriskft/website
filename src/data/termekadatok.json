@@ -65,7 +65,8 @@
    "Anyag (fedél)": "PA6/fekete RAL 9005"
   },
   "images": [
-   "/termekkepek/02-2200-zw-le-mans-tetoventilator-12v-1.webp"
+   "/termekkepek/02-2200-zw-le-mans-tetoventilator-12v-1.webp",
+   "/termekkepek/02-2200-zw-le-mans-tetoventilator-12v-meretrajz.webp"
   ]
  },
  "041280-uzemanyag-beonto-nagy": {
@@ -1039,6 +1040,15 @@
   "images": [
    "/termekkepek/129711-rakomanyrogzito-kengyel-2500-dan-ts-1.webp",
    "/termekkepek/129711-rakomanyrogzito-kengyel-2500-dan-ts-2.webp"
+  ]
+ },
+ "12v-led-ventillator-belso-takaro": {
+  "source": "G&C rajz",
+  "sourceUrl": "",
+  "sourceTitle": "",
+  "specs": {},
+  "images": [
+   "/termekkepek/12v-led-ventillator-belso-takaro-meretrajz.webp"
   ]
  },
  "140004-t4-bolcso": {
@@ -10841,7 +10851,8 @@
    "Anyag": "ABS"
   },
   "images": [
-   "/termekkepek/belso-12v-os-led-takaro-flower-power-feher-1.webp"
+   "/termekkepek/belso-12v-os-led-takaro-flower-power-feher-1.webp",
+   "/termekkepek/belso-12v-os-led-takaro-flower-power-feher-meretrajz.webp"
   ]
  },
  "belso-12v-os-led-takaro-flower-power-szurke": {
@@ -10856,7 +10867,8 @@
    "Anyag": "ABS"
   },
   "images": [
-   "/termekkepek/belso-12v-os-led-takaro-flower-power-szurke-1.webp"
+   "/termekkepek/belso-12v-os-led-takaro-flower-power-szurke-1.webp",
+   "/termekkepek/belso-12v-os-led-takaro-flower-power-szurke-meretrajz.webp"
   ]
  },
  "belso-24-v-os-led-vilagitassal-flower-power-feher": {
@@ -10871,7 +10883,8 @@
    "Anyag": "ABS"
   },
   "images": [
-   "/termekkepek/belso-24-v-os-led-vilagitassal-flower-power-feher-1.webp"
+   "/termekkepek/belso-24-v-os-led-vilagitassal-flower-power-feher-1.webp",
+   "/termekkepek/belso-24-v-os-led-vilagitassal-flower-power-feher-meretrajz.webp"
   ]
  },
  "belso-24-v-os-led-vilagitassal-flower-power-szurke": {
@@ -10886,7 +10899,8 @@
    "Anyag": "ABS"
   },
   "images": [
-   "/termekkepek/belso-24-v-os-led-vilagitassal-flower-power-szurke-1.webp"
+   "/termekkepek/belso-24-v-os-led-vilagitassal-flower-power-szurke-1.webp",
+   "/termekkepek/belso-24-v-os-led-vilagitassal-flower-power-szurke-meretrajz.webp"
   ]
  },
  "belso-takaro-flower-power-szurke": {
@@ -10900,7 +10914,8 @@
    "Anyag": "ABS"
   },
   "images": [
-   "/termekkepek/belso-takaro-flower-power-szurke-1.webp"
+   "/termekkepek/belso-takaro-flower-power-szurke-1.webp",
+   "/termekkepek/belso-takaro-flower-power-szurke-meretrajz.webp"
   ]
  },
  "d1-119-epdm-21mm-p-profil": {
@@ -12486,6 +12501,16 @@
   "images": [
    "/termekkepek/gc-electric-round-1.webp",
    "/termekkepek/gc-electric-round-2.webp"
+  ]
+ },
+ "gc-le-mans-ll": {
+  "source": "G&C rajz",
+  "sourceUrl": "",
+  "sourceTitle": "",
+  "specs": {},
+  "images": [
+   "/termekkepek/gc-le-mans-ll-1.webp",
+   "/termekkepek/gc-le-mans-ll-meretrajz.webp"
   ]
  },
  "gc-roof-hatches-manual-big": {
@@ -15280,7 +15305,8 @@
    "Anyag (fedél)": "PA6/fehér RAL 9010"
   },
   "images": [
-   "/termekkepek/le-mans-tetoventilator-12v-1.webp"
+   "/termekkepek/le-mans-tetoventilator-12v-1.webp",
+   "/termekkepek/le-mans-tetoventilator-12v-meretrajz.webp"
   ]
  },
  "le-mans-tetoventilator-24v": {
@@ -15301,7 +15327,8 @@
    "Anyag (fedél)": "PA6/fehér RAL 9010"
   },
   "images": [
-   "/termekkepek/le-mans-tetoventilator-24v-1.webp"
+   "/termekkepek/le-mans-tetoventilator-24v-1.webp",
+   "/termekkepek/le-mans-tetoventilator-24v-meretrajz.webp"
   ]
  },
  "lepkes-gumi-76-8-80-4-7-fekete": {
@@ -15408,7 +15435,8 @@
    "Tömeg": "0,5 kg"
   },
   "images": [
-   "/termekkepek/manualis-belso-takaro-feher-1.webp"
+   "/termekkepek/manualis-belso-takaro-feher-1.webp",
+   "/termekkepek/manualis-belso-takaro-feher-meretrajz.webp"
   ]
  },
  "manualis-belso-takaro-szurke": {
@@ -15423,7 +15451,8 @@
    "Tömeg": "0,5 kg"
   },
   "images": [
-   "/termekkepek/manualis-belso-takaro-szurke-1.webp"
+   "/termekkepek/manualis-belso-takaro-szurke-1.webp",
+   "/termekkepek/manualis-belso-takaro-szurke-meretrajz.webp"
   ]
  },
  "mp-cem-inox-feszek": {
@@ -17424,7 +17453,8 @@
    "Szín": "fehér"
   },
   "images": [
-   "/termekkepek/tetoventilator-manualis-feher-1.webp"
+   "/termekkepek/tetoventilator-manualis-feher-1.webp",
+   "/termekkepek/tetoventilator-manualis-feher-meretrajz.webp"
   ]
  },
  "tetoventilator-manualis-fekete": {
@@ -17440,7 +17470,8 @@
    "Szín": "fekete"
   },
   "images": [
-   "/termekkepek/tetoventilator-manualis-fekete-1.webp"
+   "/termekkepek/tetoventilator-manualis-fekete-1.webp",
+   "/termekkepek/tetoventilator-manualis-fekete-meretrajz.webp"
   ]
  },
  "tetoventillator-motor-nelkul-abs-feher": {
@@ -17456,7 +17487,8 @@
    "Anyag (fedél)": "PA6/fehér RAL 9010"
   },
   "images": [
-   "/termekkepek/tetoventillator-motor-nelkul-abs-feher-1.webp"
+   "/termekkepek/tetoventillator-motor-nelkul-abs-feher-1.webp",
+   "/termekkepek/tetoventillator-motor-nelkul-abs-feher-meretrajz.webp"
   ]
  },
  "turbo-ii-tetoventilator-feher": {
@@ -17471,7 +17503,8 @@
    "Anyag": "ABS"
   },
   "images": [
-   "/termekkepek/turbo-ii-tetoventilator-feher-1.webp"
+   "/termekkepek/turbo-ii-tetoventilator-feher-1.webp",
+   "/termekkepek/turbo-ii-tetoventilator-feher-meretrajz.webp"
   ]
  },
  "turbo-ii-tetoventilator-fekete": {
@@ -17486,7 +17519,8 @@
    "Anyag": "ABS"
   },
   "images": [
-   "/termekkepek/turbo-ii-tetoventilator-fekete-1.webp"
+   "/termekkepek/turbo-ii-tetoventilator-fekete-1.webp",
+   "/termekkepek/turbo-ii-tetoventilator-fekete-meretrajz.webp"
   ]
  },
  "turbo-iii-tetoventilator-feher": {
@@ -17500,7 +17534,8 @@
    "Tömeg": "0,55 kg"
   },
   "images": [
-   "/termekkepek/turbo-iii-tetoventilator-feher-1.webp"
+   "/termekkepek/turbo-iii-tetoventilator-feher-1.webp",
+   "/termekkepek/turbo-iii-tetoventilator-feher-meretrajz.webp"
   ]
  },
  "turbo-iii-tetoventilator-fekete": {
@@ -17514,7 +17549,8 @@
    "Tömeg": "0,55 kg"
   },
   "images": [
-   "/termekkepek/turbo-iii-tetoventilator-fekete-1.webp"
+   "/termekkepek/turbo-iii-tetoventilator-fekete-1.webp",
+   "/termekkepek/turbo-iii-tetoventilator-fekete-meretrajz.webp"
   ]
  },
  "v144-01006-elhuzo-rud": {
@@ -18085,7 +18121,8 @@
    "Tömeg": "0,6 kg"
   },
   "images": [
-   "/termekkepek/ventillator-also-takaro-elem-12-24v-feher-1.webp"
+   "/termekkepek/ventillator-also-takaro-elem-12-24v-feher-1.webp",
+   "/termekkepek/ventillator-also-takaro-elem-12-24v-feher-meretrajz.webp"
   ]
  },
  "ventillator-belso-takaro": {
@@ -18100,7 +18137,8 @@
    "Tömeg": "0,4 kg"
   },
   "images": [
-   "/termekkepek/ventillator-belso-takaro-1.webp"
+   "/termekkepek/ventillator-belso-takaro-1.webp",
+   "/termekkepek/ventillator-belso-takaro-meretrajz.webp"
   ]
  },
  "ventillator-belso-takaro-12-24v-led": {
@@ -18115,7 +18153,8 @@
    "Tömeg": "0,7 kg"
   },
   "images": [
-   "/termekkepek/ventillator-belso-takaro-12-24v-led-1.webp"
+   "/termekkepek/ventillator-belso-takaro-12-24v-led-1.webp",
+   "/termekkepek/ventillator-belso-takaro-12-24v-led-meretrajz.webp"
   ]
  },
  "ventillator-belso-takaro-szurke": {
@@ -18130,7 +18169,8 @@
    "Tömeg": "0,4 kg"
   },
   "images": [
-   "/termekkepek/ventillator-belso-takaro-szurke-1.webp"
+   "/termekkepek/ventillator-belso-takaro-szurke-1.webp",
+   "/termekkepek/ventillator-belso-takaro-szurke-meretrajz.webp"
   ]
  },
  "versus-duo-trike-l-toloteto-rendszer": {
