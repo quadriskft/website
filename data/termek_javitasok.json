@@ -1239,49 +1239,49 @@
   "code": "D2 528",
   "move": {
    "group": "kedergumik",
-   "category": "egyeb-keder-es-tomitogumik"
+   "category": "tomitoprofilok"
   },
-  "order": 23
+  "noStock": true
  },
  "e2-546-af-moos-gumi-ontapados": {
   "code": "E2 546-AF",
   "move": {
    "group": "kedergumik",
-   "category": "egyeb-keder-es-tomitogumik"
+   "category": "moosgumi-profilok"
   },
-  "order": 24
+  "noStock": true
  },
  "e2-701-af-moos-gumi-epdm-ontapados": {
   "code": "E2 701-AF",
   "move": {
    "group": "kedergumik",
-   "category": "egyeb-keder-es-tomitogumik"
+   "category": "moosgumi-profilok"
   },
-  "order": 25
+  "noStock": true
  },
  "epdm-1030-moosgumi": {
   "code": "EPDM 1030",
   "move": {
    "group": "kedergumik",
-   "category": "egyeb-keder-es-tomitogumik"
+   "category": "moosgumi-profilok"
   },
-  "order": 26
+  "noStock": true
  },
  "epdm-1530-moosgumi": {
   "code": "EPDM 1530",
   "move": {
    "group": "kedergumik",
-   "category": "egyeb-keder-es-tomitogumik"
+   "category": "moosgumi-profilok"
   },
-  "order": 27
+  "noStock": true
  },
  "epdm-3030-af-moosgumi": {
   "code": "EPDM 3030-AF",
   "move": {
    "group": "kedergumik",
-   "category": "egyeb-keder-es-tomitogumik"
+   "category": "moosgumi-profilok"
   },
-  "order": 28
+  "noStock": true
  },
  "m1-001-c-sin-aluminium": {
   "code": "M1 001",
