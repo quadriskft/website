@@ -14,7 +14,8 @@
   "codeLabel": "Gyártói cikkszám",
   "specs": {
    "Szín": "fekete"
-  }
+  },
+  "noStock": true
  },
  "le-mans-tetoventilator-12v": {
   "name": "„Le Mans” tetőventilátor 12V, fehér",
@@ -30,7 +31,8 @@
   "codeLabel": "Gyártói cikkszám",
   "specs": {
    "Szín": "fekete"
-  }
+  },
+  "noStock": true
  },
  "le-mans-tetoventilator-24v": {
   "name": "„Le Mans” tetőventilátor 24V, fehér",
@@ -92,7 +94,8 @@
   "codeLabel": "Gyártói cikkszám",
   "specs": {
    "Szín": "szürke"
-  }
+  },
+  "noStock": true
  },
  "ventillator-belso-takaro": {
   "name": "Ventilátor belső takaró, fehér",
@@ -105,7 +108,8 @@
  "12v-led-ventillator-belso-takaro": {
   "name": "Ventilátor belső takaró 12V LED-del",
   "code": "35-2185",
-  "codeLabel": "Gyártói cikkszám"
+  "codeLabel": "Gyártói cikkszám",
+  "noStock": true
  },
  "ventillator-belso-takaro-elem": {
   "name": "Ventilátor belső takaró elem 24V LED-del",
@@ -118,7 +122,8 @@
   "codeLabel": "Gyártói cikkszám",
   "specs": {
    "Szín": "fehér"
-  }
+  },
+  "noStock": true
  },
  "manualis-belso-takaro-feher": {
   "name": "Manuális belső takaró, fehér",
@@ -134,7 +139,8 @@
   "codeLabel": "Gyártói cikkszám",
   "specs": {
    "Szín": "szürke"
-  }
+  },
+  "noStock": true
  },
  "ventillator-also-takaro-elem-12-24v-feher": {
   "name": "Ventilátor alsó takaró elem 12/24V, fehér",
@@ -150,7 +156,8 @@
   "codeLabel": "Gyártói cikkszám",
   "specs": {
    "Szín": "szürke"
-  }
+  },
+  "noStock": true
  },
  "belso-12v-os-led-takaro-flower-power-feher": {
   "name": "Belső takaró „Flower Power” 12V LED-del, fehér",
@@ -160,7 +167,8 @@
    "Szín": "fehér",
    "LED-ek száma": "30 db: 21 fehér + 9 kék",
    "Átmérő": "280 mm"
-  }
+  },
+  "noStock": true
  },
  "belso-24-v-os-led-vilagitassal-flower-power-feher": {
   "name": "Belső takaró „Flower Power” 24V LED-del, fehér",
@@ -170,7 +178,8 @@
    "Szín": "fehér",
    "LED-ek száma": "30 db: 21 fehér + 9 kék",
    "Átmérő": "280 mm"
-  }
+  },
+  "noStock": true
  },
  "belso-12v-os-led-takaro-flower-power-szurke": {
   "name": "Belső takaró „Flower Power” 12V LED-del, szürke",
@@ -180,7 +189,8 @@
    "Szín": "szürke",
    "LED-ek száma": "30 db: 21 fehér + 9 kék",
    "Átmérő": "280 mm"
-  }
+  },
+  "noStock": true
  },
  "belso-24-v-os-led-vilagitassal-flower-power-szurke": {
   "name": "Belső takaró „Flower Power” 24V LED-del, szürke",
@@ -190,12 +200,14 @@
    "Szín": "szürke",
    "LED-ek száma": "30 db: 21 fehér + 9 kék",
    "Átmérő": "280 mm"
-  }
+  },
+  "noStock": true
  },
  "szellozo-racs-410x100-mm": {
   "name": "Szellőzőrács 410×100 mm",
   "code": "35-4010",
-  "codeLabel": "Gyártói cikkszám"
+  "codeLabel": "Gyártói cikkszám",
+  "noStock": true
  },
  "harom-allasos-kapcsolo-ventilatorhoz": {
   "name": "Háromállású kapcsoló ventilátorhoz",
