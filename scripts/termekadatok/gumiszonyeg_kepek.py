@@ -4,6 +4,7 @@
 - rámpaszőnyegek: a normál (merevítő bordás) rámpaszőnyeg fotója, a könnyített G 17 kivételével
 - általános gumiszőnyegek (sima felületű, S/S): tekercs fotója (MI-vel 4x nagyítva); a mintás Amoeba és
   Diamond nem kapja meg
+- Cobra / CBR szőnyegek: mintás tekercs fotója (Lanczos-nagyítással: az MI a finom mintát csíkossá torzította)
 
 Használat: python3 scripts/termekadatok/gumiszonyeg_kepek.py   (utána kep_sorrend.py)
 """
@@ -21,6 +22,7 @@ KONNYITETT = {"g-17-1750x1550-mm-rampaszonyeg"}
 KINDS = [
     ("data/forras/rampaszonyeg_foto.png", lambda s: s.endswith("rampaszonyeg") and s not in KONNYITETT),
     ("data/forras/altalanos_gumiszonyeg_foto.png", lambda s: "-s-s-altalanos-gumi" in s),
+    ("data/forras/cobra_gumiszonyeg_foto.png", lambda s: "-cobra-szonyeg-" in s or "-cbr-szonyeg-" in s),
 ]
 
 
