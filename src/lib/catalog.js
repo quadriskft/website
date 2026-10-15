@@ -97,7 +97,8 @@ function withCarton(p) {
 
 // Raktárról rendelhető: a Quadris saját (Excel) táblázatában szereplő tételek ezekben a csoportokban – a listákban elöl
 // állnak és jelölést kapnak (a beszállítók teljes kínálatából felvett tételek rendelésre)
-const STOCK_GROUPS = new Set(['kedergumik']);
+const STOCK_GROUPS = new Set(['kedergumik', 'szellozes-tetoablakok-vilagitas']);
+const STOCK_FIRST = new Set(['kedergumik']);  // ezekben a raktári tételek elöl is állnak
 const excelSlugs = new Set(catalog.products.map((p) => p.slug));
 const withStock = (p) => (STOCK_GROUPS.has(p.group) && excelSlugs.has(p.slug) && !fixes[p.slug]?.noStock ? { ...p, stock: true } : p);  // noStock: a Quadris kérésére nem raktári
 
@@ -308,7 +309,7 @@ export function productsIn(groupSlug, categorySlug) {
     sorted.splice(j + 1, 0, item);
   }
   // a raktárról rendelhető tételek elöl (a sorrendjük egyébként megmarad)
-  if (STOCK_GROUPS.has(groupSlug)) return [...sorted.filter((p) => p.stock), ...sorted.filter((p) => !p.stock)];
+  if (STOCK_FIRST.has(groupSlug)) return [...sorted.filter((p) => p.stock), ...sorted.filter((p) => !p.stock)];
   return sorted;
 }
 

@@ -31,7 +31,11 @@ DRAWINGS = {
     "belso-takaro": ("web", "2024/01/35-2120-tekening.jpg"),
     "manualis-takaro": ("web", "2024/01/35-2400-tekening-scaled.jpg"),
     "flower-power": ("web", "2024/01/35-2820-tekening-scaled.jpg"),
+    "led-kerek": ("web", "2024/01/92-GC01-tekening-scaled.jpg"),
+    "led-szogletes": ("web", "2024/01/92-GC05-tekening-scaled.jpg"),
 }
+# a Quadris-cikkszámos termék a cikkszám nélküli (a G&C teljes kínálatából felvett, törölt) párja fotóját kapja
+PHOTO_FROM = {"ledes-lampa-kerek-feher": "gc-lighting-round", "ledes-lampa-szogletes-feher-12-24v": "gc-lighting-rectangle"}
 PRODUCTS = {
     "le-mans": ["le-mans-tetoventilator-12v", "02-2200-zw-le-mans-tetoventilator-12v", "le-mans-tetoventilator-24v",
                 "tetoventillator-motor-nelkul-abs-feher"],
@@ -42,6 +46,8 @@ PRODUCTS = {
     "belso-takaro": ["ventillator-belso-takaro-szurke", "ventillator-belso-takaro", "ventillator-belso-takaro-12-24v-led",
                      "12v-led-ventillator-belso-takaro"],
     "manualis-takaro": ["manualis-belso-takaro-feher", "manualis-belso-takaro-szurke", "ventillator-also-takaro-elem-12-24v-feher"],
+    "led-kerek": ["ledes-lampa-kerek-feher"],
+    "led-szogletes": ["ledes-lampa-szogletes-feher-12-24v"],
     "flower-power": ["belso-takaro-flower-power-szurke", "belso-12v-os-led-takaro-flower-power-feher",
                      "belso-24-v-os-led-vilagitassal-flower-power-feher", "belso-12v-os-led-takaro-flower-power-szurke",
                      "belso-24-v-os-led-vilagitassal-flower-power-szurke"],
@@ -80,6 +86,10 @@ def main():
                     print("  nincs termék:", slug)
                     continue
                 e = {"source": "G&C rajz", "sourceUrl": "", "sourceTitle": "", "specs": {}, "images": list(ext.get("images", []))}
+            if slug in PHOTO_FROM:
+                twin = next(p for p in extended if p["slug"] == PHOTO_FROM[slug])
+                photo = save_image(Image.open(ROOT / "public" / twin["images"][0].lstrip("/")), slug, 1)
+                e["images"] = [photo] + [u for u in e.get("images", []) if u != photo and u not in twin["images"]]
             url = save_image(img, slug, "meretrajz")
             imgs = [u for u in e.get("images", []) if u != url]
             e["images"] = imgs[:1] + [url] + imgs[1:]  # a fotó után

@@ -1195,5 +1195,19 @@
   "code": "ONE-SIDEDBROKEN",
   "date": "2026-10-14",
   "reason": "a Quadris kérésére: hibásan beolvasott Sand-Profile katalógus-szövegrész, nem valódi termék"
+ },
+ "gc-lighting-rectangle": {
+  "name": "LED lámpa, szögletes",
+  "supplier": "G&C termékek",
+  "code": "",
+  "date": "2026-10-15",
+  "reason": "a Quadris kérésére: cikkszám nélküli duplikátum (a fotója a 92-GC05-HP, ill. 92-GC01 terméké)"
+ },
+ "gc-lighting-round": {
+  "name": "LED lámpa, kerek",
+  "supplier": "G&C termékek",
+  "code": "",
+  "date": "2026-10-15",
+  "reason": "a Quadris kérésére: cikkszám nélküli duplikátum (a fotója a 92-GC05-HP, ill. 92-GC01 terméké)"
  }
 }
