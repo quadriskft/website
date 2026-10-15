@@ -104,7 +104,7 @@ function withCarton(p) {
 const STOCK_GROUPS = new Set(['kedergumik', 'szellozes-tetoablakok-vilagitas']);
 const STOCK_FIRST = new Set(['kedergumik']);  // ezekben a raktári tételek elöl is állnak
 const excelSlugs = new Set(catalog.products.map((p) => p.slug));
-const withStock = (p) => (STOCK_GROUPS.has(p.group) && excelSlugs.has(p.slug) && !fixes[p.slug]?.noStock ? { ...p, stock: true } : p);  // noStock: a Quadris kérésére nem raktári
+const withStock = (p) => (STOCK_GROUPS.has(p.group) && (excelSlugs.has(p.slug) || fixes[p.slug]?.stock) && !fixes[p.slug]?.noStock ? { ...p, stock: true } : p);  // stock: kézzel raktárinak jelölve  // noStock: a Quadris kérésére nem raktári
 
 // A Quadris által törlésre jelölt termékek (data/torolt_termekek.json) sehol nem jelennek meg
 export const products = [...excelProducts, ...extendedProducts, ...cloneProducts].filter((p) => !deleted[p.slug])

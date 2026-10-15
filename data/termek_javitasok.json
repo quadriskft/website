@@ -406,11 +406,13 @@
  },
  "gc-electric-round": {
   "order": 2,
-  "name": "Tetőablak 530×530, manuális (DG)"
+  "name": "Tetőablak 530×530, manuális (DG)",
+  "stock": true
  },
  "gc-roof-hatches-manual-big": {
   "order": 4,
-  "name": "Tetőablak 970×530, manuális (DG)"
+  "name": "Tetőablak 970×530, manuális (DG)",
+  "stock": true
  },
  "e-compact-cs-toloteto-rendszer": {
   "order": 1
