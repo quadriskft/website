@@ -12490,6 +12490,46 @@
    "/termekkepek/g-8x2000mm-cobra-szonyeg-1-nylon-1.webp"
   ]
  },
+ "gc-ceilingflow": {
+  "source": "G&C termékek",
+  "sourceUrl": "https://gnc-systems.com/en/products/ceilingflow/",
+  "sourceTitle": "",
+  "images": [
+   "/termekkepek/gc-ceilingflow-1.webp",
+   "/termekkepek/gc-ceilingflow-feher.webp",
+   "/termekkepek/gc-ceilingflow-feher-alulrol.webp",
+   "/termekkepek/gc-ceilingflow-meretrajz.webp",
+   "/termekkepek/gc-ceilingflow-taviranyito.webp"
+  ],
+  "specs": {
+   "Feszültség [V]": "220–230",
+   "Teljesítmény [W]": "27 (alacsony) – 41 (magas fokozat)",
+   "Zajszint [dB(A)]": "35 (alacsony) – 47 (magas fokozat)",
+   "Méret": "595 × 595 mm (álmennyezeti kazetta helyére)",
+   "Beépítési magasság": "166 mm",
+   "Szín": "fekete (24-0008) / fehér (24-0009)",
+   "Anyag": "újrahasznosítható ABS",
+   "Motor": "kefe nélküli, rövidzárlat és túlfeszültség elleni védelemmel",
+   "Távirányító": "tartozék (távirányító nélkül is működtethető)",
+   "Bekötés": "dugaszolható (Plug & Play), szerelési munka nélkül",
+   "Tanúsítvány": "CE, RoHS, LVD",
+   "Kiegészítő": "keret tömör mennyezethez: 24-0013 (fehér), 24-0113 (fekete)"
+  },
+  "description": "Professzionális mennyezeti ventilátor irodákba, műhelyekbe, bemutatótermekbe, üzletekbe, iskolákba, konyhákba, tárgyalókba és szerverszobákba. Az álmennyezet egy kazettája helyére illeszthető: a lapot kivesszük, a Ceilingflow-t a helyére tesszük, és csak be kell dugni – nincs szerelési költség. Nyáron kellemes, huzatmentes légmozgással hűt, télen a mennyezet alatt összegyűlő meleg levegőt egyenletesen elosztja a helyiségben. Halk, kis fogyasztású, a fokozatok távirányítóval állíthatók; tömör vagy ipari mennyezethez külön keret kapható. Könnyen áthelyezhető átrendezéskor, költözéskor vagy bérelt helyiségben.",
+  "documents": [
+   {
+    "title": "Ceilingflow műszaki adatlap (PDF, angol)",
+    "url": "/dokumentumok/ceilingflow-adatlap.pdf"
+   }
+  ],
+  "videos": [
+   {
+    "title": "A Ceilingflow beszerelése (videó)",
+    "url": "/video/ceilingflow-telepites.mp4",
+    "poster": "/video/ceilingflow-telepites.jpg"
+   }
+  ]
+ },
  "gc-electric-round": {
   "source": "G&C tetőablak képek",
   "sourceUrl": "https://gnc-systems.com/en/products/electric-round/",

@@ -148,7 +148,7 @@ const jsonLd = [
       </div>
     </div>
 
-    {(product.description || specs.length > 0 || product.documents?.length > 0) && (
+    {(product.description || specs.length > 0 || product.documents?.length > 0 || product.videos?.length > 0) && (
       <div class="details">
         {product.description && (
           <section class="card detail">
@@ -164,6 +164,17 @@ const jsonLd = [
                 {specs.map(([key, value]) => <tr><th scope="row">{key}</th><td>{value}</td></tr>)}
               </tbody>
             </table>
+          </section>
+        )}
+        {product.videos?.length > 0 && (
+          <section class="card detail">
+            <h2>Videó</h2>
+            {product.videos.map((v) => (
+              <figure class="video">
+                <video controls preload="none" playsinline poster={v.poster} src={v.url} aria-label={v.title}></video>
+                <figcaption class="muted small">{v.title}</figcaption>
+              </figure>
+            ))}
           </section>
         )}
         {product.documents?.length > 0 && (
@@ -346,6 +357,9 @@ const jsonLd = [
   .variant-order { display: grid; gap: 10px; }
   .stock-line { display: inline-flex; align-items: center; gap: 6px; margin: 4px 0 8px; padding: 4px 12px; border-radius: 999px;
     background: rgba(18, 163, 107, 0.1); color: var(--ok); font-weight: 700; font-size: 0.9rem; }
+  .video { margin: 0; }
+  .video video { width: 100%; max-height: 420px; border-radius: 12px; background: #000; display: block; }
+  .video figcaption { margin-top: 6px; }
   .qty-unit { font-weight: 600; color: var(--muted); align-self: center; }
   .order-note { display: flex; align-items: center; gap: 6px; margin: 10px 0 0; font-size: 0.9rem; font-weight: 600; color: var(--accent); }
   .variant-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }

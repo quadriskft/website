@@ -22,6 +22,8 @@ const excelProducts = catalog.products.map((p) => {
     images: e.images?.length ? e.images : p.images,
     specs: { ...(e.specs ?? {}), ...p.specs },
     description: p.description || e.description || '',
+    ...(e.documents?.length ? { documents: [...(p.documents ?? []), ...e.documents] } : {}),
+    ...(e.videos?.length ? { videos: e.videos } : {}),
   };
   // kézi javítások (data/termek_javitasok.json): név, (gyártói) cikkszám, műszaki adat
   const f = fixes[p.slug];
@@ -40,7 +42,9 @@ const extendedProducts = (extended.products ?? []).map((p) => {
   };
   // ha egy letöltő szkript képeket / adatokat adott hozzá (termekadatok.json), és a kézi javítások
   const e = extra[p.slug];
-  const merged = e ? { ...out, images: e.images?.length ? e.images : out.images, specs: { ...out.specs, ...(e.specs ?? {}) } } : out;
+  const merged = e ? { ...out, images: e.images?.length ? e.images : out.images, specs: { ...out.specs, ...(e.specs ?? {}) },
+    ...(e.description ? { description: e.description } : {}), ...(e.documents?.length ? { documents: e.documents } : {}),
+    ...(e.videos?.length ? { videos: e.videos } : {}) } : out;
   const f = fixes[p.slug];
   return f ? { ...merged, ...(f.name ? { name: f.name } : {}), ...(f.code ? { code: f.code } : {}),
     ...(f.orderNote ? { orderNote: f.orderNote } : {}), specs: withoutNull({ ...merged.specs, ...(f.specs ?? {}) }) } : merged;
