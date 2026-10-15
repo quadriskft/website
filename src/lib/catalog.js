@@ -99,7 +99,7 @@ function withCarton(p) {
 // állnak és jelölést kapnak (a beszállítók teljes kínálatából felvett tételek rendelésre)
 const STOCK_GROUPS = new Set(['kedergumik']);
 const excelSlugs = new Set(catalog.products.map((p) => p.slug));
-const withStock = (p) => (STOCK_GROUPS.has(p.group) && excelSlugs.has(p.slug) ? { ...p, stock: true } : p);
+const withStock = (p) => (STOCK_GROUPS.has(p.group) && excelSlugs.has(p.slug) && !fixes[p.slug]?.noStock ? { ...p, stock: true } : p);  // noStock: a Quadris kérésére nem raktári
 
 // A Quadris által törlésre jelölt termékek (data/torolt_termekek.json) sehol nem jelennek meg
 export const products = [...excelProducts, ...extendedProducts, ...cloneProducts].filter((p) => !deleted[p.slug])

@@ -1029,8 +1029,9 @@
   "code": "A1 015",
   "move": {
    "group": "kedergumik",
-   "category": "egyeb-keder-es-tomitogumik"
-  }
+   "category": "elvedo-profilok"
+  },
+  "noStock": true
  },
  "a1-105-2-lepkes-gumi-58-3x26-6-1-0-2-5-fekete": {
   "code": "A1 105/2",
@@ -1078,8 +1079,9 @@
   "code": "A1 549",
   "move": {
    "group": "kedergumik",
-   "category": "egyeb-keder-es-tomitogumik"
-  }
+   "category": "gista-kederprofilok"
+  },
+  "noStock": true
  },
  "a2-106-2-28-mm-duplagobos-kedergumi": {
   "code": "A2 106/2",
@@ -1141,8 +1143,9 @@
   "code": "A2 541",
   "move": {
    "group": "kedergumik",
-   "category": "egyeb-keder-es-tomitogumik"
-  }
+   "category": "gista-kederprofilok"
+  },
+  "noStock": true
  },
  "a2-554-nagygobos-keder-22-6": {
   "code": "A2 554",
