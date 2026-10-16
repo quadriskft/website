@@ -8,6 +8,7 @@
 - istálló szőnyegek: a Quadris által küldött 3 fotó (tekercs, rétegek, kigöngyölt tekercs), Lanczos-nagyítással;
   az utánfutó-/lószállító és az állattartó szőnyeg nem kapja meg
 - Diamond mintás gumi (G 3x2200x10000): tekercs fotója (Lanczos-nagyítással)
+- víztiszta PVC (G 3/4/5x1000 mm): tekercs fotója (Lanczos-nagyítással)
 - Cobra / CBR szőnyegek: mintás tekercs fotója (Lanczos-nagyítással: az MI a finom mintát csíkossá torzította)
 
 Használat: python3 scripts/termekadatok/gumiszonyeg_kepek.py   (utána kep_sorrend.py)
@@ -30,6 +31,7 @@ KINDS = [
     ("data/forras/altalanos_gumiszonyeg_foto.png", lambda s: "-s-s-altalanos-gumi" in s),
     ("data/forras/amoeba_gumiszonyeg_foto.png", lambda s: "-amoeba-gumiszonyeg" in s),
     ("data/forras/diamond_gumiszonyeg_foto.png", lambda s: "-diamond-mintas-gumi" in s),
+    ("data/forras/pvc_viztiszta_foto.png", lambda s: s.startswith("g-") and "-pvc-attlatszo-viztiszta" in s),
     (ISTALLO, lambda s: "istallo-szonyeg" in s or s.startswith("istallo-gumiszonyeg")),
     ("data/forras/cobra_gumiszonyeg_foto.png", lambda s: "-cobra-szonyeg-" in s or "-cbr-szonyeg-" in s),
 ]
