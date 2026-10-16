@@ -10,6 +10,7 @@
 - Diamond mintás gumi (G 3x2200x10000): tekercs fotója (Lanczos-nagyítással)
 - víztiszta PVC (G 3/4/5x1000 mm): tekercs fotója (Lanczos-nagyítással)
 - Soft gumi lapok (1000×2000 mm): egymásra rakott lapok fotója (Lanczos-nagyítással)
+- tekercses Soft gumi (8x1000, 10x1000): tekercs fotója
 - Cobra / CBR szőnyegek: mintás tekercs fotója (Lanczos-nagyítással: az MI a finom mintát csíkossá torzította)
 
 Használat: python3 scripts/termekadatok/gumiszonyeg_kepek.py   (utána kep_sorrend.py)
@@ -34,6 +35,7 @@ KINDS = [
     ("data/forras/diamond_gumiszonyeg_foto.png", lambda s: "-diamond-mintas-gumi" in s),
     ("data/forras/pvc_viztiszta_foto.png", lambda s: s.startswith("g-") and "-pvc-attlatszo-viztiszta" in s),
     ("data/forras/soft_gumi_lap_foto.png", lambda s: s.endswith("x1000x2000-soft-gumi-lap")),
+    ("data/forras/soft_gumi_tekercs_foto.png", lambda s: s.endswith("x1000-soft-gumi")),
     (ISTALLO, lambda s: "istallo-szonyeg" in s or s.startswith("istallo-gumiszonyeg")),
     ("data/forras/cobra_gumiszonyeg_foto.png", lambda s: "-cobra-szonyeg-" in s or "-cbr-szonyeg-" in s),
 ]
