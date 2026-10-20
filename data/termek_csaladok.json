@@ -275,5 +275,56 @@
    "pol-frigoser-high-gloss-2-0x2500-mm": "2500 mm",
    "pol-frigoser-high-gloss-2-0x2600-mm": "2600 mm"
   }
+ },
+ "polydet-high-gloss-1-5-corona": {
+  "name": "POLYDET High Gloss 1,5 mm Corona",
+  "label": "Szélesség",
+  "title": "Rendelhető szélességek",
+  "note": "1,5 mm vastag POLYDET üvegszálas poliészter lemez (magasfényű, Corona felület) – az alábbi szélességekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Szélesség",
+   "Vastagság"
+  ],
+  "members": {
+   "polydet-high-gloss-1600-1-5-corona": "1600 mm",
+   "polydet-high-gloss-1900-1-5-corona": "1900 mm",
+   "polydet-high-gloss-2000-1-5-corona": "2000 mm",
+   "polydet-high-gloss-2100-1-5-corona": "2100 mm",
+   "polydet-high-gloss-2200-1-5-corona": "2200 mm",
+   "polydet-high-gloss-2300-1-5-corona": "2300 mm"
+  }
+ },
+ "polydet-performance-plus-1-8-corona": {
+  "name": "POLYDET Performance Plus 1,8 mm CORONA",
+  "label": "Szélesség",
+  "title": "Rendelhető szélességek",
+  "note": "1,8 mm vastag POLYDET üvegszálas poliészter lemez (Performance Plus, Corona felület) – az alábbi szélességekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Szélesség",
+   "Vastagság"
+  ],
+  "members": {
+   "polydet-performance-plus-2100-1-8-corona": "2100 mm",
+   "polydet-performance-plus-2200-1-8-corona": "2200 mm",
+   "polydet-performance-plus-2300-1-8-corona": "2300 mm",
+   "polydet-performance-plus-2500-1-8-corona": "2500 mm"
+  }
+ },
+ "polydet-performance-plus-1-5-roughened": {
+  "name": "POLYDET Performance Plus 1,5 mm Roughened",
+  "label": "Szélesség",
+  "title": "Rendelhető szélességek",
+  "note": "1,5 mm vastag POLYDET üvegszálas poliészter lemez (Performance Plus, érdesített (roughened) felület) – az alábbi szélességekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Szélesség",
+   "Vastagság"
+  ],
+  "members": {
+   "polydet-performance-plus-2000-1-5-roughened": "2000 mm",
+   "polydet-performance-plus-2200-1-5-roughened": "2200 mm"
+  }
  }
 }
