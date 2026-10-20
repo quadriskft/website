@@ -1766,5 +1766,15 @@
  "acel-oldalfal-bakskt-400": {
   "code": "BAKSkT 400",
   "name": "Acél oldalfal BAKSkT 400 mm"
+ },
+ "502501-szimpla-gorgos-gumiutkozo-d100-118": {
+  "specs": {
+   "Kivitel": "vízszintes görgős ütköző, horganyzott acél ház",
+   "Ház (Sz × M × Mé)": "110 × 115 × 90 mm",
+   "Görgő átmérő": "Ø100 mm",
+   "Görgő szélesség": "80 mm",
+   "Rögzítő furatok": "4 × Ø13 mm (osztás 44 × 52 mm)",
+   "Tömeg": "3,6 kg"
+  }
  }
 }
