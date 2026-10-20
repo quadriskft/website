@@ -37,8 +37,9 @@ PHOTOS = {
     "csuszasmentes-retegelt-padlo": ["cover", "../data/forras/retegelt_csuszasmentes_csoportkep.png"],
     # a Quadris által küldött kép, a feliratos doboz előtt levágva
     "kedergumik": ["cover", "../data/forras/kedergumi_csoportkep.png"],
-    # a Quadris kérésére: a piros szegélyes 4 szárnyú hátsó ajtó és az áthajtó rámpa fotója egymás mellett
-    "hatso-ajtok-es-athajto-rampak": ["pair", "termekkepek/hatso-ajto-alu-elox-4-szarnyu-foto.webp", "termekkepek/athajto-rampa-foto.webp"],
+    # a Quadris kérésére: a piros szegélyes 4 szárnyú hátsó ajtó (a rámpa a termékkártyán már látszik), teljes
+    # magasságban, a két oldalon a saját elmosott képével
+    "hatso-ajtok-es-athajto-rampak": ["blur", "../data/forras/hatso_ajto_4szarnyu_csoportkep.png"],  # MI-vel 4x nagyítva
     "italszallito-kit": ["termekkepek/212427-ada-s-ajto-profil-2100-mm-elox-1.webp"],
 }
 
@@ -106,6 +107,20 @@ def small(im, frac=0.72):
     return canvas
 
 
+def blur(im):
+    """Álló fotó a képkocka teljes magasságában, a két oldalon a saját elmosott, kinagyított képével."""
+    im = im.convert("RGB")
+    k = max(W / im.width, H / im.height)
+    bg = im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS)
+    x, y = (bg.width - W) // 2, (bg.height - H) // 2
+    bg = bg.crop((x, y, x + W, y + H)).filter(ImageFilter.GaussianBlur(22))
+    bg = Image.blend(bg, Image.new("RGB", (W, H), (30, 30, 30)), 0.3)
+    k = H / im.height
+    fg = im.resize((round(im.width * k), H), Image.LANCZOS).filter(ImageFilter.UnsharpMask(radius=2, percent=50, threshold=2))
+    bg.paste(fg, ((W - fg.width) // 2, 0))
+    return bg
+
+
 def pair(images, gap=12):
     """Két fotó egymás mellett a fél képkockákban: a kitöltés és a teljes kép közötti méretben (kevés vágás,
     kevés fehér sáv)."""
@@ -132,6 +147,8 @@ def main():
             img = cover(Image.open(ROOT / "public" / paths[1]))
         elif paths[0] == "row":
             img = row([Image.open(ROOT / "public" / p) for p in paths[1:]])
+        elif paths[0] == "blur":
+            img = blur(Image.open(ROOT / "public" / paths[1]))
         elif paths[0] == "pair":
             img = pair([Image.open(ROOT / "public" / p) for p in paths[1:]])
         elif paths[0] == "small":
