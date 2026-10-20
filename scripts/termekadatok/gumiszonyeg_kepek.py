@@ -8,7 +8,7 @@
 - istálló szőnyegek: a Quadris által küldött 3 fotó (tekercs, rétegek, kigöngyölt tekercs), Lanczos-nagyítással;
   az utánfutó-/lószállító és az állattartó szőnyeg nem kapja meg
 - Diamond mintás gumi (G 3x2200x10000): tekercs fotója (Lanczos-nagyítással)
-- víztiszta PVC (G 3/4/5x1000 mm): tekercs fotója (Lanczos-nagyítással)
+- víztiszta PVC (G 3/4/5x1000 mm): tekercs fotója (Lanczos-nagyítással); a 3D renderek a Quadris kérésére kikerülnek
 - Soft gumi lapok (1000×2000 mm): egymásra rakott lapok fotója (Lanczos-nagyítással)
 - tekercses Soft gumi (8x1000, 10x1000): tekercs fotója
 - Cobra / CBR szőnyegek: mintás tekercs fotója (Lanczos-nagyítással: az MI a finom mintát csíkossá torzította)
@@ -63,6 +63,8 @@ def main():
                 continue
             urls = [save_image(Image.open(ROOT / f), slug, "foto" if len(srcs) == 1 else f"foto-{i}") for i, f in enumerate(srcs, 1)]
             rest = [u for u in e.get("images", []) if u not in urls]
+            if "-pvc-attlatszo-viztiszta" in slug:
+                rest = [u for u in rest if "/3d/" not in u]
             e["images"] = urls + rest
             updates[slug] = e
             print(slug)
