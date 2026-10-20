@@ -2,7 +2,8 @@
 diavetítés-képei „videószerűen” – a gyártó neve a weboldalon sehol nem jelenik meg (a leírásban, a fájlnevekben
 sem; a gyártói dokumentumok nem kerülnek fel).
 
-- a diavetítés 3 sávja fotókra bontva: az 1–2. sáv fotói a 2 szárnyú, a 3. sávé a 4 szárnyú ajtót mutatják; mindkét
+- a diavetítés 3 sávja fotókra bontva: az 1–2. sáv fotói és a 3. sáv első fotója a 2 szárnyú, a 3. sáv többi fotója
+  a 4 szárnyú ajtót mutatja; mindkét
   termék csak a saját fotóiból kap áttűnéses, folyamatosan ismétlődő, hang nélküli WebM videót (a fő kép helyén)
 - kártyakép: a 2 szárnyúnál a hátulnézet (1. sáv, 1. fotó), a 4 szárnyúnál a 4 lamellás hátulnézet (3. sáv, 3. fotó)
 - magyar leírás és műszaki adatok
@@ -93,13 +94,14 @@ def video(frames, name):
 def main():
     slides = [cv2.imdecode(np.frombuffer(fetch(BASE + s), np.uint8), cv2.IMREAD_COLOR) for s in SLIDES]
     photos = [[sl[:, a:b] for a, b in zip(cuts, cuts[1:])] for sl, cuts in zip(slides, PANELS)]
-    two, four = photos[0] + photos[1], photos[2]
+    # a 3. sáv első fotója (kinyitott egy nagy ajtószárny) a 2 szárnyú ajtót mutatja (a Quadris jelzése szerint)
+    two, four = photos[0] + photos[1] + photos[2][:1], photos[2][1:]
     rgb = lambda a: Image.fromarray(np.ascontiguousarray(a[..., ::-1]))  # noqa: E731
     data = load_enrichment()
     out = {}
     for slug, ph, card, name, kivitel in (
         (SLUG, two, two[0], "hatso-ajto-2-szarnyu", "2 szárnyú"),
-        (SLUG4, four, four[2], "hatso-ajto-4-szarnyu", "4 szárnyú (2 + 2 ajtószárny)"),
+        (SLUG4, four, four[1], "hatso-ajto-4-szarnyu", "4 szárnyú (2 + 2 ajtószárny)"),
     ):
         e = data.get(slug, {})
         e.update({"source": "", "sourceUrl": "", "sourceTitle": "",
