@@ -28,7 +28,8 @@ const excelProducts = catalog.products.map((p) => {
   // kézi javítások (data/termek_javitasok.json): név, (gyártói) cikkszám, műszaki adat
   const f = fixes[p.slug];
   return f ? { ...merged, ...(f.name ? { name: f.name } : {}), ...(f.code ? { code: f.code } : {}), ...(f.codeLabel ? { codeLabel: f.codeLabel } : {}),
-    ...(f.orderNote ? { orderNote: f.orderNote } : {}), specs: withoutNull({ ...merged.specs, ...(f.specs ?? {}) }) } : merged;
+    ...(f.orderNote ? { orderNote: f.orderNote } : {}), ...(f.description ? { description: f.description } : {}),
+    specs: withoutNull({ ...merged.specs, ...(f.specs ?? {}) }) } : merged;
 });
 
 // A beszállítók teljes kínálatából felvett további termékek (scripts/termekadatok/teljes_kinalat.py)
@@ -47,7 +48,8 @@ const extendedProducts = (extended.products ?? []).map((p) => {
     ...(e.videos?.length ? { videos: e.videos } : {}) } : out;
   const f = fixes[p.slug];
   return f ? { ...merged, ...(f.name ? { name: f.name } : {}), ...(f.code ? { code: f.code } : {}),
-    ...(f.orderNote ? { orderNote: f.orderNote } : {}), specs: withoutNull({ ...merged.specs, ...(f.specs ?? {}) }) } : merged;
+    ...(f.orderNote ? { orderNote: f.orderNote } : {}), ...(f.description ? { description: f.description } : {}),
+    specs: withoutNull({ ...merged.specs, ...(f.specs ?? {}) }) } : merged;
 });
 
 // kézi javításban a null értékű műszaki adat törlendő (pl. a darabra adott termék gyári szálhossza)

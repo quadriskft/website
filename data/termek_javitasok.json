@@ -1575,5 +1575,32 @@
    "Szín": "fehér",
    "Változatok": "24-0009 (fehér), 24-0008 (fekete)"
   }
+ },
+ "g-4x1200x10000-2t-s-s-altalanos-gumiszonyeg": {
+  "specs": {
+   "Felület": "mindkét oldala sima (S/S)",
+   "Szövetbetét": "2 réteg (2T)"
+  },
+  "description": "Általános célú gumiszőnyeg 2 szövetbetéttel (2T) erősítve, mindkét oldalán sima felülettel (S/S). Jelölések: 2T = 2 szövetbetét a gumiban, S/S = mindkét oldal sima."
+ },
+ "g-4x1400x10000-2t-s-s-altalanos-gumiszonyeg": {
+  "specs": {
+   "Felület": "mindkét oldala sima (S/S)",
+   "Szövetbetét": "2 réteg (2T)"
+  },
+  "description": "Általános célú gumiszőnyeg 2 szövetbetéttel (2T) erősítve, mindkét oldalán sima felülettel (S/S). Jelölések: 2T = 2 szövetbetét a gumiban, S/S = mindkét oldal sima."
+ },
+ "g-5x1400x10m-2t-s-s-altalanos-gumi": {
+  "specs": {
+   "Felület": "mindkét oldala sima (S/S)",
+   "Szövetbetét": "2 réteg (2T)"
+  },
+  "description": "Általános célú gumiszőnyeg 2 szövetbetéttel (2T) erősítve, mindkét oldalán sima felülettel (S/S). Jelölések: 2T = 2 szövetbetét a gumiban, S/S = mindkét oldal sima."
+ },
+ "g-4x1400x10000-s-s-altalanos-gumiszonyeg": {
+  "specs": {
+   "Felület": "mindkét oldala sima (S/S)"
+  },
+  "description": "Általános célú gumiszőnyeg mindkét oldalán sima felülettel (S/S). Jelölések: 2T = 2 szövetbetét a gumiban, S/S = mindkét oldal sima."
  }
 }
