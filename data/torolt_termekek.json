@@ -1293,5 +1293,19 @@
   "code": "HVTT 800",
   "date": "2026-10-20",
   "reason": "duplikátum: ugyanez a típus a Quadris Excel-termékei között szerepel (a típustáblázatban az Excel-termék)"
+ },
+ "acel-oldalfal-hvak-400": {
+  "name": "Acél oldalfal HVAK 400 mm",
+  "supplier": "Fuhrmann",
+  "code": "HVAK 400",
+  "date": "2026-10-20",
+  "reason": "Quadris kérése: a gyártói katalógusban nem szerepel"
+ },
+ "acel-oldalfal-hvak-450": {
+  "name": "Acél oldalfal HVAK 450 mm",
+  "supplier": "Fuhrmann",
+  "code": "HVAK 450",
+  "date": "2026-10-20",
+  "reason": "Quadris kérése: a gyártói katalógusban nem szerepel"
  }
 }

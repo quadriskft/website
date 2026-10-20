@@ -2869,26 +2869,12 @@
    "kg/m"
   ],
   "rows": {
-   "acel-oldalfal-hvak-400": [
-    "HVAK 400",
-    "400 mm",
-    "magasító",
-    "2,0 mm",
-    "11,7"
-   ],
    "acel-oldalfal-2-mm": [
     "HVAKkT 400",
     "400 mm",
     "magasító",
     "2,0 mm",
     "12,0"
-   ],
-   "acel-oldalfal-hvak-450": [
-    "HVAK 450",
-    "450 mm",
-    "magasító",
-    "2,0 mm",
-    "12,7"
    ],
    "acel-oldalfal-hvak-500": [
     "HVAK 500",
@@ -2924,11 +2910,9 @@
    "max": 13500,
    "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
   },
-  "leader": "acel-oldalfal-hvak-400",
+  "leader": "acel-oldalfal-hvak-500",
   "members": {
-   "acel-oldalfal-hvak-400": "HVAK 400 – 400 mm",
    "acel-oldalfal-2-mm": "HVAKkT 400 – 400 mm",
-   "acel-oldalfal-hvak-450": "HVAK 450 – 450 mm",
    "acel-oldalfal-hvak-500": "HVAK 500 – 500 mm",
    "hvak600-acel-oldalfal-2-mm": "HVAK 600 – 600 mm",
    "acel-oldalfal-hvakt-600": "HVAKT 600 – 600 mm",
