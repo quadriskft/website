@@ -86,6 +86,19 @@ const jsonLd = [
           <div class="order card variant-order" id="rendeles">
             <h2 class="cut-title"><Icon name="Ruler" size={20} /> {family.title ?? 'Rendelhető méretek'}</h2>
             <p class="muted small">{family.note ?? 'Gyári hosszban, darabra rendelhető – ezt a terméket nem vágjuk méretre.'}</p>
+            {family.table && (
+              <table class="variant-table">
+                <thead><tr>{family.table.map((k) => <th scope="col">{k}</th>)}<th></th></tr></thead>
+                <tbody>
+                  {familyMembers.map((m) => (
+                    <tr class:list={[{ current: m.slug === product.slug }]}>
+                      {family.table.map((k) => <td>{m.product.specs?.[k] ?? (k === family.label ? m.value : '–')}</td>)}
+                      <td>{m.slug === product.slug ? <span class="muted">kiválasztva</span> : <a href={`/termek/${m.slug}#rendeles`}>Kiválaszt</a>}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
             <label class="variant-label" for="variant">{family.label}</label>
             <select id="variant" class="input variant-select" data-variant data-variant-navigate={family.navigate ? '' : undefined}>
               {familyMembers.map((m) => (
@@ -364,6 +377,11 @@ const jsonLd = [
   .order-note { display: flex; align-items: center; gap: 6px; margin: 10px 0 0; font-size: 0.9rem; font-weight: 600; color: var(--accent); }
   .variant-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
   .variant-select { font-size: 1rem; padding: 12px 14px; }
+  .variant-table { width: 100%; border-collapse: collapse; margin: 4px 0 16px; font-size: 0.92rem; }
+  .variant-table th, .variant-table td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  .variant-table th { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .variant-table td:last-child { text-align: right; white-space: nowrap; }
+  .variant-table tr.current td { font-weight: 700; background: color-mix(in srgb, var(--accent) 8%, transparent); }
   .add-main { flex: 1; min-width: 200px; }
   .add-main:global(.in-quote) { background: linear-gradient(135deg, #17b978, #0e8a58); }
   .small { font-size: 0.86rem; margin: 14px 0 0; }

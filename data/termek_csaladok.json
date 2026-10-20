@@ -235,5 +235,45 @@
    "sp-a3-467": "A3 467 – butil tömítés nélkül",
    "sp-a3-467-bu": "A3 467-BU – butil tömítőanyaggal"
   }
+ },
+ "pol-frigoser-high-gloss-1-5": {
+  "name": "POL Frigoser High Gloss 1,5 mm",
+  "label": "Szélesség",
+  "title": "Rendelhető szélességek",
+  "note": "1,5 mm vastag, magasfényű gélbevonatos üvegszálas poliészter lemez – az alábbi szélességekben rendelhető (tábla max. 12 m, tekercs 60–300 m).",
+  "navigate": true,
+  "table": [
+   "Szélesség",
+   "Vastagság",
+   "Tömeg"
+  ],
+  "members": {
+   "pol-frigoser-high-gloss-1-5x1900-mm": "1900 mm",
+   "pol-frigoser-high-gloss-1-5x2000-mm": "2000 mm",
+   "pol-frigoser-high-gloss-1-5x2100-mm": "2100 mm",
+   "pol-frigoser-high-gloss-1-5x2200-mm": "2200 mm",
+   "pol-frigoser-high-gloss-1-5x2300-mm": "2300 mm",
+   "pol-frigoser-high-gloss-1-5x2400-mm": "2400 mm",
+   "pol-frigoser-high-gloss-1-5x2500-mm": "2500 mm",
+   "pol-frigoser-high-gloss-1-5x2600-mm": "2600 mm"
+  }
+ },
+ "pol-frigoser-high-gloss-2-0": {
+  "name": "POL Frigoser High Gloss 2,0 mm",
+  "label": "Szélesség",
+  "title": "Rendelhető szélességek",
+  "note": "2,0 mm vastag, magasfényű gélbevonatos üvegszálas poliészter lemez – az alábbi szélességekben rendelhető (tábla max. 12 m, tekercs 60–300 m).",
+  "navigate": true,
+  "table": [
+   "Szélesség",
+   "Vastagság",
+   "Tömeg"
+  ],
+  "members": {
+   "pol-frigoser-high-gloss-2-0x2300-mm": "2300 mm",
+   "pol-frigoser-high-gloss-2-0x2400-mm": "2400 mm",
+   "pol-frigoser-high-gloss-2-0x2500-mm": "2500 mm",
+   "pol-frigoser-high-gloss-2-0x2600-mm": "2600 mm"
+  }
  }
 }
