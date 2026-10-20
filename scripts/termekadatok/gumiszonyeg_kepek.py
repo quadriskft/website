@@ -2,7 +2,7 @@
 (3D renderek, rajz) utána maradnak.
 
 - rámpaszőnyegek: a normál (merevítő bordás) rámpaszőnyeg fotója, a könnyített G 17 kivételével; a 3D renderek
-  a Quadris kérésére kikerülnek (fotó + méretrajz marad)
+  a Quadris kérésére kikerülnek (fotó + méretrajz marad; a G 17-nél csak a méretrajz)
 - általános gumiszőnyegek (sima felületű, S/S): tekercs fotója (MI-vel 4x nagyítva); a mintás Amoeba és
   Diamond nem kapja meg
 - Amoeba gumiszőnyegek: mintás tekercs fotója (Lanczos-nagyítással)
@@ -50,6 +50,10 @@ def main():
         if slug not in data and any(match(slug) for _, match in KINDS):
             data[slug] = {"source": "Quadris fotó", "sourceUrl": "", "sourceTitle": "", "specs": {}, "images": list(p.get("images", []))}
     updates = {}
+    for slug in KONNYITETT:
+        if slug in data:
+            data[slug]["images"] = [u for u in data[slug].get("images", []) if "/3d/" not in u]
+            updates[slug] = data[slug]
     for src, match in KINDS:
         srcs = src if isinstance(src, list) else [src]
         for slug, e in data.items():
