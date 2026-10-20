@@ -5,6 +5,7 @@ import ProductCard from '../../components/ProductCard.astro';
 import ProductVisual from '../../components/ProductVisual.astro';
 import { products, getGroup, getCategory, productsIn, publicProduct, isProfile, familyOf } from '../../lib/catalog.js';
 import { SITE, abs, absPage } from '../../lib/site.js';
+import orderForms from '../../../data/rendelesi_adatlapok.json';
 
 export function getStaticPaths() {
   return products.map((product) => ({ params: { slug: product.slug }, props: { product } }));
@@ -18,6 +19,8 @@ const specs = Object.entries(product.specs ?? {}).filter(([k]) => !(familyOf(pro
 const gallery = product.images?.length > 1 ? product.images : [];
 // folyamatosan ismétlődő, hang nélküli diavetítés-videó (pl. gyártói képek „videószerűen”): a fő kép helyén
 const heroVideo = product.videos?.find((v) => v.loop);
+// rendelési adatlap (konfigurátor, data/rendelesi_adatlapok.json)
+const orderForm = orderForms[product.slug];
 const videos = (product.videos ?? []).filter((v) => v !== heroVideo);
 const related = productsIn(product.group, product.category).filter((p) => p.slug !== product.slug).slice(0, 8);
 const showCategory = category && category.name !== group.name;
@@ -150,6 +153,43 @@ const jsonLd = [
             </div>
             <p class="muted small">Árat nem tüntetünk fel – személyre szabott ajánlatot küldünk mennyiség, méret és szállítási igény alapján.</p>
           </div>
+        ) : orderForm ? (
+          <form class="order card config-order" id="rendeles" data-config-form data-product={JSON.stringify(publicProduct(product))} novalidate>
+            <h2 class="cut-title"><Icon name="ClipboardList" size={20} /> {orderForm.title}</h2>
+            <p class="muted small">{orderForm.intro}</p>
+            <div class="config-grid">
+              {orderForm.fields.map((f) => (
+                <div class="config-field" data-field={f.id} data-label={f.label} data-unit={f.unit} data-required={f.required ? '' : undefined}>
+                  <label for={`cf-${f.id}`}>{f.label}{f.required && ' *'}{f.unit && <span class="muted"> [{f.unit}]</span>}</label>
+                  {f.type === 'select' ? (
+                    <select id={`cf-${f.id}`} class="input" data-value>
+                      {f.required && <option value="">– válasszon –</option>}
+                      {f.options.map((o) => <option value={o}>{o}</option>)}
+                      {f.egyeb && <option value="__egyeb">Egyéb…</option>}
+                    </select>
+                  ) : (
+                    <input id={`cf-${f.id}`} class="input" data-value type={f.type === 'number' ? 'number' : 'text'} min={f.min} max={f.max}
+                      inputmode={f.type === 'number' ? 'numeric' : undefined} placeholder={f.placeholder} maxlength="80" />
+                  )}
+                  {f.egyeb && <input class="input config-other" data-other type={f.egyebUnit ? 'number' : 'text'} min={f.egyebMin} max={f.egyebMax} data-unit={f.egyebUnit}
+                    inputmode={f.egyebUnit ? 'numeric' : undefined} maxlength="80" placeholder={f.egyebUnit ? `Méret (${f.egyebUnit})` : 'Adja meg'} hidden />}
+                  {f.hint && <small class="muted">{f.hint}</small>}
+                </div>
+              ))}
+            </div>
+            <label class="cut-note-label" for="cf-note">Megjegyzés</label>
+            <textarea id="cf-note" class="input cut-note" rows="2" maxlength="300" placeholder="Egyéb kérés, eltérés a fentiektől…" data-config-note></textarea>
+            <p class="cut-error" data-config-error hidden>Töltse ki a *-gal jelölt mezőket.</p>
+            <div class="order-row">
+              <div class="qty" data-qty>
+                <button type="button" data-step="-1" aria-label="Kevesebb"><Icon name="Minus" /></button>
+                <input type="number" id="qty" min="1" max="99999" value="1" inputmode="numeric" aria-label="Darab (ajtó)" />
+                <button type="button" data-step="1" aria-label="Több"><Icon name="Plus" /></button>
+              </div>
+              <button type="submit" class="btn btn-primary add-main"><Icon name="ClipboardList" /> <span class="label">Ajánlatkérőbe</span></button>
+            </div>
+            <p class="muted small">Árat nem tüntetünk fel – a megadott adatok alapján személyre szabott ajánlatot küldünk.</p>
+          </form>
         ) : (
           <div class="order card">
             <div class="order-row">
@@ -234,6 +274,50 @@ const jsonLd = [
 
 <script>
   import { quote, clampQty, clampLen, normalizeCuts, totalPcs } from '../../scripts/quote.js';
+
+  // rendelési adatlap: a kitöltött adatok (config) külön ajánlatkérő-tételként – több eltérő ajtó is kérhető
+  const cform = document.querySelector('[data-config-form]');
+  if (cform) {
+    cform.querySelectorAll('select[data-value]').forEach((sel) =>
+      sel.addEventListener('change', () => {
+        const other = sel.parentElement.querySelector('[data-other]');
+        if (other) other.hidden = sel.value !== '__egyeb';
+      }),
+    );
+    cform.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const config = [];
+      let bad = null;
+      cform.querySelectorAll('[data-field]').forEach((f) => {
+        const input = f.querySelector('[data-value]');
+        let el = input;
+        let v = input.value.trim();
+        if (v === '__egyeb') {
+          el = f.querySelector('[data-other]');
+          v = el.value.trim();
+        }
+        const num = el.type === 'number';
+        const unit = el.dataset.unit ?? f.dataset.unit;
+        const invalid = ('required' in f.dataset && !v) || (num && v && (!(Number(v) > 0) || (el.min && Number(v) < Number(el.min)) || (el.max && Number(v) > Number(el.max))));
+        f.classList.toggle('invalid', !!invalid);
+        if (invalid && !bad) bad = el;
+        if (v) config.push({ label: f.dataset.label, value: num && unit ? `${v} ${unit}` : v });
+      });
+      cform.querySelector('[data-config-error]').hidden = !bad;
+      if (bad) {
+        bad.focus();
+        return;
+      }
+      const base = JSON.parse(cform.dataset.product);
+      const note = cform.querySelector('[data-config-note]').value.trim();
+      const height = config.find((c) => /magasság/i.test(c.label))?.value;
+      const width = config.find((c) => /szélesség/i.test(c.label))?.value;
+      quote.add({ ...base, slug: `${base.slug}~${Date.now()}`, page: base.slug, config,
+        name: `${base.name}${height || width ? ` – ${[width && `szél. ${width}`, height && `belső mag. ${height}`].filter(Boolean).join(', ')}` : ''}` },
+        Number(document.querySelector('#qty').value) || 1, note);
+      window.dispatchEvent(new CustomEvent('quote:toast', { detail: `Hozzáadva az ajánlatkérőhöz: ${base.name}` }));
+    });
+  }
 
   // termékcsalád: a választott hossz kerül az ajánlatkérőbe (a cím és az URL is követi)
   const variant = document.querySelector('[data-variant]');
@@ -396,6 +480,12 @@ const jsonLd = [
   .order-note { display: flex; align-items: center; gap: 6px; margin: 10px 0 0; font-size: 0.9rem; font-weight: 600; color: var(--accent); }
   .variant-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
   .variant-select { font-size: 1rem; padding: 12px 14px; }
+  .config-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px 16px; margin: 14px 0 6px; }
+  .config-field { display: grid; gap: 5px; align-content: start; }
+  .config-field label { font-size: 0.82rem; font-weight: 600; color: var(--text-2); }
+  .config-field .input { padding: 10px 12px; font-size: 0.95rem; }
+  .config-field small { font-size: 0.78rem; }
+  .config-field:global(.invalid) .input { border-color: #d33; }
   .note-field { display: grid; gap: 6px; margin-top: 14px; }
   .note-field .field-error { display: none; margin: 0; color: #d33; font-size: 0.85rem; font-weight: 600; }
   .note-field:global(.invalid) .field-error { display: block; }

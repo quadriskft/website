@@ -1,0 +1,199 @@
+{
+ "_leiras": "Rendelési adatlapok (konfigurátor) a termékoldalon, a Quadris kérésére. A kitöltött adatok tételenként az ajánlatkérőbe és az e-mailbe kerülnek. Mezőtípus: number (szám, mértékegységgel), select (választás; 'egyeb': true esetén „Egyéb” + szöveg), text.",
+ "hatso-ajto-alu-elox": {
+  "title": "Rendelési adatlap – 2 szárnyú hátsó ajtó",
+  "intro": "Adja meg a rendeléshez szükséges adatokat – ezek alapján pontos ajánlatot készítünk. A *-gal jelölt mezők kitöltése kötelező.",
+  "fields": [
+   {
+    "id": "magassag",
+    "label": "Belső portálmagasság",
+    "type": "number",
+    "unit": "mm",
+    "required": true,
+    "min": 500,
+    "max": 4000,
+    "placeholder": "pl. 2400"
+   },
+   {
+    "id": "szelesseg",
+    "label": "Külső portálszélesség",
+    "type": "select",
+    "required": true,
+    "options": [
+     "2550 mm",
+     "2570 mm"
+    ],
+    "egyeb": true,
+    "egyebUnit": "mm",
+    "hint": "Gyártható: 1945–2645 mm",
+    "egyebMin": 1945,
+    "egyebMax": 2645
+   },
+   {
+    "id": "felulet",
+    "label": "Felületkezelés",
+    "type": "select",
+    "options": [
+     "natúr alumínium",
+     "eloxált",
+     "RAL festés egy oldalon",
+     "RAL festés két oldalon",
+     "Arktisz-fehér festés egy oldalon",
+     "Arktisz-fehér festés két oldalon"
+    ]
+   },
+   {
+    "id": "ral",
+    "label": "RAL szín (festés esetén)",
+    "type": "text",
+    "placeholder": "pl. RAL 9010"
+   },
+   {
+    "id": "szarny",
+    "label": "Ajtószárny",
+    "type": "select",
+    "options": [
+     "pár (bal + jobb)",
+     "csak bal",
+     "csak jobb"
+    ]
+   },
+   {
+    "id": "zarszam",
+    "label": "Zárak száma szárnyanként",
+    "type": "select",
+    "options": [
+     "2",
+     "1"
+    ]
+   },
+   {
+    "id": "zarhely",
+    "label": "Zárak helye",
+    "type": "select",
+    "options": [
+     "XL tanúsítás szerint",
+     "a zsanérokhoz közel"
+    ],
+    "egyeb": true
+   },
+   {
+    "id": "zartipus",
+    "label": "Zárrúd átmérője",
+    "type": "select",
+    "options": [
+     "16 mm",
+     "18 mm",
+     "süllyesztett nyomógombos zár, 16 mm, rozsdamentes"
+    ]
+   },
+   {
+    "id": "zsanerszam",
+    "label": "Zsanérok száma szárnyanként",
+    "type": "select",
+    "options": [
+     "4",
+     "5"
+    ]
+   },
+   {
+    "id": "zsanerpant",
+    "label": "Zsanérpánt",
+    "type": "select",
+    "options": [
+     "zsanérpánt nélkül",
+     "acél, csavarozható",
+     "acél, csavarozható, RAL festett",
+     "alu profil, szegecselhető, peremmel",
+     "alu profil, szegecselhető, perem nélkül",
+     "acél, hegeszthető"
+    ]
+   },
+   {
+    "id": "oszlop",
+    "label": "Ajtótípus (oszlophoz)",
+    "type": "select",
+    "options": [
+     "25 mm-es oszlophoz",
+     "egyéb oszlophoz"
+    ]
+   },
+   {
+    "id": "oszlopszel",
+    "label": "Oszlopszélesség (egyéb oszlop esetén)",
+    "type": "number",
+    "unit": "mm"
+   },
+   {
+    "id": "rogzito",
+    "label": "Ajtórögzítő",
+    "type": "select",
+    "options": [
+     "nincs",
+     "470 mm, horganyzott",
+     "490 mm, alumínium"
+    ]
+   },
+   {
+    "id": "tabla",
+    "label": "Fényvisszaverő tábla",
+    "type": "select",
+    "options": [
+     "nincs",
+     "matrica, gépjármű 565×130 mm",
+     "alumínium, gépjármű 565×130 mm",
+     "matrica, pótkocsi 565×195 mm",
+     "alumínium, pótkocsi 565×195 mm"
+    ]
+   },
+   {
+    "id": "csik",
+    "label": "Fényvisszaverő csík",
+    "type": "select",
+    "options": [
+     "nincs",
+     "sárga",
+     "piros",
+     "fehér"
+    ]
+   },
+   {
+    "id": "kozepso",
+    "label": "Középső takaróléc",
+    "type": "select",
+    "options": [
+     "nem",
+     "igen"
+    ]
+   },
+   {
+    "id": "zajcsokkentett",
+    "label": "Zajcsökkentett kivitel",
+    "type": "select",
+    "options": [
+     "nem",
+     "igen"
+    ]
+   },
+   {
+    "id": "beepitve",
+    "label": "Felépítménybe építve szállítva",
+    "type": "select",
+    "options": [
+     "nem",
+     "igen",
+     "nem, csak az oszlopokra szerelve"
+    ]
+   },
+   {
+    "id": "szereles",
+    "label": "Szerelést kér",
+    "type": "select",
+    "options": [
+     "nem",
+     "igen"
+    ]
+   }
+  ]
+ }
+}

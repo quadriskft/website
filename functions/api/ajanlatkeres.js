@@ -37,6 +37,8 @@ export function parseRequest(body) {
       len: Math.min(Math.max(Math.round(Number(c?.len)) || 0, 0), 30000),
       pcs: Math.min(Math.max(Math.round(Number(c?.pcs)) || 1, 1), 99999),
     })).filter((c) => c.len > 0),
+    // rendelési adatlap (pl. hátsó ajtó): címke–érték párok
+    config: (Array.isArray(i?.config) ? i.config : []).slice(0, 40).map((c) => ({ label: str(c?.label, 80), value: str(c?.value, 120) })).filter((c) => c.label && c.value),
     custom: Boolean(i?.custom),
     url: /^https?:\/\//.test(String(i?.url ?? '')) ? str(i.url, 300) : '',
   })).filter((i) => i.name);
@@ -67,7 +69,7 @@ export function buildEmail({ customer, items, message }) {
     subject,
     '',
     ...fields.map(([k, v]) => `${k}: ${v}`),
-    ...(isQuote ? ['', 'Tételek:', ...items.map((i, n) => `${n + 1}. ${i.code ? `[${i.code}] ` : ''}${i.name}${i.custom ? ' (EGYEDI)' : ''} – ${i.qty} ${i.unit || 'db'}${i.cuts?.length ? ` (${cutsText(i.cuts)})` : ''}${i.note ? ` – ${i.note}` : ''}`)] : []),
+    ...(isQuote ? ['', 'Tételek:', ...items.map((i, n) => `${n + 1}. ${i.code ? `[${i.code}] ` : ''}${i.name}${i.custom ? ' (EGYEDI)' : ''} – ${i.qty} ${i.unit || 'db'}${i.cuts?.length ? ` (${cutsText(i.cuts)})` : ''}${i.note ? ` – ${i.note}` : ''}${i.config.length ? `\n   ${i.config.map((c) => `${c.label}: ${c.value}`).join('; ')}` : ''}`)] : []),
     ...(message ? ['', 'Megjegyzés / üzenet:', message] : []),
   ].join('\n');
 
@@ -77,7 +79,7 @@ export function buildEmail({ customer, items, message }) {
   <table style="border-collapse:collapse;margin-bottom:18px;">${fields.map(([k, v]) => `<tr><td style="${td}color:#5b6776;">${k}</td><td style="${td}"><strong>${escapeHtml(v)}</strong></td></tr>`).join('')}</table>
   ${isQuote ? `<table style="border-collapse:collapse;width:100%;max-width:760px;">
     <tr style="background:#0b1726;color:#fff;"><th style="${td}text-align:left;">#</th><th style="${td}text-align:left;">Cikkszám</th><th style="${td}text-align:left;">Megnevezés</th><th style="${td}text-align:right;">Menny.</th><th style="${td}text-align:left;">Megjegyzés</th></tr>
-    ${items.map((i, n) => `<tr><td style="${td}">${n + 1}</td><td style="${td}">${escapeHtml(i.code || '–')}</td><td style="${td}">${i.url ? `<a href="${escapeHtml(i.url)}">${escapeHtml(i.name)}</a>` : escapeHtml(i.name)}${i.custom ? ' <em style="color:#2f6bff;">(egyedi tétel)</em>' : ''}</td><td style="${td}text-align:right;"><strong>${i.qty}</strong> ${escapeHtml(i.unit || 'db')}</td><td style="${td}">${i.cuts?.length ? `<strong>Méretek:</strong> ${escapeHtml(cutsText(i.cuts))}${i.note ? '<br>' : ''}` : ''}${escapeHtml(i.note)}</td></tr>`).join('')}
+    ${items.map((i, n) => `<tr><td style="${td}">${n + 1}</td><td style="${td}">${escapeHtml(i.code || '–')}</td><td style="${td}">${i.url ? `<a href="${escapeHtml(i.url)}">${escapeHtml(i.name)}</a>` : escapeHtml(i.name)}${i.custom ? ' <em style="color:#2f6bff;">(egyedi tétel)</em>' : ''}</td><td style="${td}text-align:right;"><strong>${i.qty}</strong> ${escapeHtml(i.unit || 'db')}</td><td style="${td}">${i.cuts?.length ? `<strong>Méretek:</strong> ${escapeHtml(cutsText(i.cuts))}${i.note ? '<br>' : ''}` : ''}${escapeHtml(i.note)}${i.config.length ? `${i.note || i.cuts?.length ? '<br>' : ''}<table style="border-collapse:collapse;font-size:13px;">${i.config.map((c) => `<tr><td style="padding:1px 10px 1px 0;color:#5b6776;">${escapeHtml(c.label)}</td><td style="padding:1px 0;"><strong>${escapeHtml(c.value)}</strong></td></tr>`).join('')}</table>` : ''}</td></tr>`).join('')}
   </table>` : ''}
   ${message ? `<h3 style="margin:20px 0 6px;">Megjegyzés / üzenet</h3><p style="white-space:pre-wrap;margin:0;">${escapeHtml(message)}</p>` : ''}
   </body></html>`;
