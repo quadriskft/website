@@ -12550,6 +12550,92 @@
    "/termekkepek/harom-allasos-kapcsolo-ventilatorhoz-1.webp"
   ]
  },
+ "hatso-ajto-alu-elox": {
+  "source": "ProCar",
+  "sourceUrl": "https://www.procaritalia.eu/procar/Aries.html",
+  "sourceTitle": "ARIES",
+  "specs": {
+   "Ajtólap": "7 önhordó alumínium lamella, szerkezeti ragasztással",
+   "Felület": "eloxált alumínium",
+   "Szélesség": "2550 mm (fix)",
+   "Magasság": "igény szerint",
+   "Tanúsítvány": "DIN EN 12642 Code XL (DEKRA)",
+   "Zsanérok": "eloxált alumínium, horganyzott acél csap, kopásálló PE persely; 4 vagy 5 db 100 mm-es",
+   "Zárak": "2 vagy 4 felső/alsó zár horganyzott acélból (kérésre AISI 304 rozsdamentes)",
+   "Tömítés": "EPDM, körbefutó; középen háromajkú tömítés eloxált alu takaróléccel",
+   "Kivitel": "2 vagy 4 szárnyú; összeszerelve vagy könnyen összeszerelhető készletként",
+   "Opció": "dupla zárás, alumínium zsanérpánt"
+  },
+  "images": [
+   "/termekkepek/hatso-ajto-alu-elox-aries.webp"
+  ],
+  "description": "ProCar ARIES alumínium hátsóajtó-rendszer haszonjárművek felépítményeihez. Az ajtólap 7 önhordó, eloxált alumínium lamellából áll, amelyeket szerkezeti ragasztó köt össze; a lamellák a felső és alsó homloklemezhez nagy szilárdságú horganyzott acél szegecsekkel kapcsolódnak. A kerület menti keret elhagyásával kisebb tömeg mellett nagyobb merevséget és igényes megjelenést ad. Az ARIES ajtó a DEKRA által kiadott DIN EN 12642 Code XL rakományrögzítési tanúsítvánnyal rendelkezik. A zárórúd a panelbe süllyesztve, kívülről nem látható; a zsanérok az ajtóval egy síkban, a felépítmény teljes szélességét kihasználva szerelhetők.",
+  "documents": [
+   {
+    "title": "ARIES hátsóajtó-rendszer – katalógus (PDF)",
+    "url": "/dokumentumok/aries-katalogus.pdf"
+   },
+   {
+    "title": "DEKRA-tanúsítvány – DIN EN 12642 Code XL (PDF)",
+    "url": "/dokumentumok/aries-tanusitvany.pdf"
+   },
+   {
+    "title": "Szerelési útmutató (PDF, olasz)",
+    "url": "/dokumentumok/aries-szerelesi-utmutato.pdf"
+   }
+  ],
+  "videos": [
+   {
+    "title": "ARIES hátsó ajtó – képek a gyártótól",
+    "url": "/video/aries-hatso-ajto.webm",
+    "poster": "/video/aries-hatso-ajto.jpg",
+    "loop": true
+   }
+  ]
+ },
+ "hatso-ajto-alu-elox-4-szarnyu": {
+  "source": "ProCar",
+  "sourceUrl": "https://www.procaritalia.eu/procar/Aries.html",
+  "sourceTitle": "ARIES",
+  "specs": {
+   "Ajtólap": "7 önhordó alumínium lamella, szerkezeti ragasztással",
+   "Felület": "eloxált alumínium",
+   "Szélesség": "2550 mm (fix)",
+   "Magasság": "igény szerint",
+   "Tanúsítvány": "DIN EN 12642 Code XL (DEKRA)",
+   "Zsanérok": "eloxált alumínium, horganyzott acél csap, kopásálló PE persely; 4 vagy 5 db 100 mm-es",
+   "Zárak": "2 vagy 4 felső/alsó zár horganyzott acélból (kérésre AISI 304 rozsdamentes)",
+   "Tömítés": "EPDM, körbefutó; középen háromajkú tömítés eloxált alu takaróléccel",
+   "Kivitel": "4 szárnyú (2 + 2 ajtószárny); összeszerelve vagy készletként",
+   "Opció": "dupla zárás, alumínium zsanérpánt"
+  },
+  "images": [
+   "/termekkepek/hatso-ajto-alu-elox-aries.webp"
+  ],
+  "description": "ProCar ARIES alumínium hátsóajtó-rendszer, 4 szárnyú kivitel, haszonjárművek felépítményeihez. Az ajtólap 7 önhordó, eloxált alumínium lamellából áll, amelyeket szerkezeti ragasztó köt össze; a lamellák a felső és alsó homloklemezhez nagy szilárdságú horganyzott acél szegecsekkel kapcsolódnak. A kerület menti keret elhagyásával kisebb tömeg mellett nagyobb merevséget és igényes megjelenést ad. Az ARIES ajtó a DEKRA által kiadott DIN EN 12642 Code XL rakományrögzítési tanúsítvánnyal rendelkezik. A zárórúd a panelbe süllyesztve, kívülről nem látható; a zsanérok az ajtóval egy síkban, a felépítmény teljes szélességét kihasználva szerelhetők.",
+  "documents": [
+   {
+    "title": "ARIES hátsóajtó-rendszer – katalógus (PDF)",
+    "url": "/dokumentumok/aries-katalogus.pdf"
+   },
+   {
+    "title": "DEKRA-tanúsítvány – DIN EN 12642 Code XL (PDF)",
+    "url": "/dokumentumok/aries-tanusitvany.pdf"
+   },
+   {
+    "title": "Szerelési útmutató (PDF, olasz)",
+    "url": "/dokumentumok/aries-szerelesi-utmutato.pdf"
+   }
+  ],
+  "videos": [
+   {
+    "title": "ARIES hátsó ajtó – képek a gyártótól",
+    "url": "/video/aries-hatso-ajto.webm",
+    "poster": "/video/aries-hatso-ajto.jpg",
+    "loop": true
+   }
+  ]
+ },
  "hv400-acel-oldalfal-2-mm": {
   "source": "Ital Accessori",
   "matchedCode": "114050",

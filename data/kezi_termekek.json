@@ -1,0 +1,16 @@
+{
+ "_leiras": "A Quadris kérésére kézzel felvett termékek (nem szerepelnek az Excel-táblázatban és a beszállítói kínálatban). Mezők mint a bővített kínálatban: slug, name, code, group, category, specs, images, description; a képeket / adatokat a termekadatok.json egészítheti ki.",
+ "products": [
+  {
+   "slug": "hatso-ajto-alu-elox-4-szarnyu",
+   "name": "Hátsó ajtó alu elox – 4 szárnyú",
+   "code": "",
+   "group": "hatso-ajtok-es-athajto-rampak",
+   "category": "4-szarnyu",
+   "source": "ProCar",
+   "specs": {},
+   "images": [],
+   "description": ""
+  }
+ ]
+}

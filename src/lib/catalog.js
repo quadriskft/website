@@ -6,6 +6,7 @@ import deleted from '../../data/torolt_termekek.json';
 import fixes from '../../data/termek_javitasok.json';
 import families from '../../data/termek_csaladok.json';
 import cartons from '../../data/kedergumi_kiszereles.json';
+import manual from '../../data/kezi_termekek.json';
 
 // FONTOS: a termékadatokban lévő beszállító (supplier, supplierCode, source…) belső adat,
 // a weboldalon soha nem jelenik meg.
@@ -33,7 +34,8 @@ const excelProducts = catalog.products.map((p) => {
 });
 
 // A beszállítók teljes kínálatából felvett további termékek (scripts/termekadatok/teljes_kinalat.py)
-const extendedProducts = (extended.products ?? []).map((p) => {
+// a kézzel felvett termékek (data/kezi_termekek.json) ugyanúgy, mint a bővített kínálat termékei
+const extendedProducts = [...(extended.products ?? []), ...(manual.products ?? [])].map((p) => {
   const move = fixes[p.slug]?.move;  // kézi áthelyezés, mint az Excel-termékeknél
   const out = {
     slug: p.slug, code: p.code, name: p.name, group: move?.group ?? p.group, category: move?.category ?? p.category,
@@ -141,6 +143,7 @@ for (const c of extended.categories ?? []) {
 // A Quadris által kért saját alkategóriák: [csoport, slug, név, amely alkategória után kerüljön]
 const QUADRIS_CATEGORIES = [
   ['kedergumik', 'elvedo-profilok-epdm', 'Élvédő profilok – EPDM', 'elvedo-profilok'],
+  ['hatso-ajtok-es-athajto-rampak', '4-szarnyu', '4 szárnyú', '2-szarnyu'],
 ];
 for (const [gs, slug, name, after] of QUADRIS_CATEGORIES) {
   const g = groupList.find((x) => x.slug === gs);
