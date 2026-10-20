@@ -1923,34 +1923,181 @@
    "epdm-moosgumi-szivacsgumi-em-20-0-1-2-2": "20 mm – 1200 mm × 2 m"
   }
  },
- "gumi-granulatum-lapok-sf-6-0-gumigranul-tum-padl-lap-6-mm-sf-6-0": {
-  "name": "Gumigranulátum padlólap 6 mm (SF 6/0)",
-  "label": "Méret",
-  "title": "Rendelhető méretek",
-  "note": "6 mm vastag – az alábbi méretekben rendelhető.",
+ "gumi-granulatum-gumigranul-tum-v-d-lap-gumigranul-tum-v-d-lap": {
+  "name": "Gumigranulátum védőlap",
+  "label": "Vastagság és méret",
+  "title": "Rendelhető vastagságok és méretek",
+  "note": "Gumigranulátum védőlap – válassza ki a kívánt vastagságot és méretet.",
   "navigate": true,
   "table": [
-   "Méret",
-   "Vastagság [mm]"
+   "Vastagság",
+   "Szélesség",
+   "Hossz",
+   "Szín"
   ],
+  "rows": {
+   "gumigranulatum-vedolap-pm730-5-0-1-25-10": [
+    "5 mm",
+    "1250 mm",
+    "10 m",
+    "fekete, színes szemcsékkel"
+   ],
+   "gumigranulatum-vedolap-pm730-6-0-1-25-10": [
+    "6 mm",
+    "1250 mm",
+    "10 m",
+    "fekete, színes szemcsékkel"
+   ],
+   "gumigranulatum-vedolap-pm730-8-0-1-25-10": [
+    "8 mm",
+    "1250 mm",
+    "10 m",
+    "fekete, színes szemcsékkel"
+   ],
+   "gumigranulatum-vedolap-pm730-10-0-1-25-10": [
+    "10 mm",
+    "1250 mm",
+    "10 m",
+    "fekete, színes szemcsékkel"
+   ],
+   "gumigranulatum-vedolap-pm730-15-0-1-25-10": [
+    "15 mm",
+    "1250 mm",
+    "10 m",
+    "fekete, színes szemcsékkel"
+   ],
+   "gumigranulatum-vedolap-pm730-20-0-1-25-10": [
+    "20 mm",
+    "1250 mm",
+    "10 m",
+    "fekete, színes szemcsékkel"
+   ]
+  },
   "members": {
-   "gumigranulatum-padlolap-sf-6-0-1-25-10": "1,25 × 10 m – fekete, kék pöttyös",
-   "gumigranulatum-padlolap-sf-6-0-1-25-10-2": "1,25 × 10 m – fekete, szürke pöttyös"
+   "gumigranulatum-vedolap-pm730-5-0-1-25-10": "5 mm – 1250 mm × 10 m – fekete, színes szemcsékkel",
+   "gumigranulatum-vedolap-pm730-6-0-1-25-10": "6 mm – 1250 mm × 10 m – fekete, színes szemcsékkel",
+   "gumigranulatum-vedolap-pm730-8-0-1-25-10": "8 mm – 1250 mm × 10 m – fekete, színes szemcsékkel",
+   "gumigranulatum-vedolap-pm730-10-0-1-25-10": "10 mm – 1250 mm × 10 m – fekete, színes szemcsékkel",
+   "gumigranulatum-vedolap-pm730-15-0-1-25-10": "15 mm – 1250 mm × 10 m – fekete, színes szemcsékkel",
+   "gumigranulatum-vedolap-pm730-20-0-1-25-10": "20 mm – 1250 mm × 10 m – fekete, színes szemcsékkel"
   }
  },
- "gumi-granulatum-lapok-sf-8-0-gumigranul-tum-padl-lap-8-mm-sf-8-0": {
-  "name": "Gumigranulátum padlólap 8 mm (SF 8/0)",
-  "label": "Méret",
-  "title": "Rendelhető méretek",
-  "note": "8 mm vastag – az alábbi méretekben rendelhető.",
+ "gumi-granulatum-er-s-tett-gumigranul-tum-v-d-lap-er-s-tett-gumigranul-tum-v-d-lap": {
+  "name": "Erősített gumigranulátum védőlap",
+  "label": "Vastagság és méret",
+  "title": "Rendelhető vastagságok és méretek",
+  "note": "Erősített gumigranulátum védőlap – válassza ki a kívánt vastagságot és méretet.",
   "navigate": true,
   "table": [
-   "Méret",
-   "Vastagság [mm]"
+   "Vastagság",
+   "Szélesség",
+   "Hossz",
+   "Szín"
   ],
+  "rows": {
+   "erositett-gumigranulatum-vedolap-pm850-3-0-1-25-10": [
+    "3 mm",
+    "1250 mm",
+    "10 m",
+    "fekete"
+   ],
+   "erositett-gumigranulatum-vedolap-pm850-4-0-1-25-10": [
+    "4 mm",
+    "1250 mm",
+    "10 m",
+    "fekete"
+   ],
+   "erositett-gumigranulatum-vedolap-pm850-5-0-1-25-10": [
+    "5 mm",
+    "1250 mm",
+    "10 m",
+    "fekete"
+   ],
+   "erositett-gumigranulatum-vedolap-pm850-6-0-1-25-10": [
+    "6 mm",
+    "1250 mm",
+    "10 m",
+    "fekete"
+   ],
+   "erositett-gumigranulatum-vedolap-pm850-8-0-1-25-10": [
+    "8 mm",
+    "1250 mm",
+    "10 m",
+    "fekete"
+   ],
+   "erositett-gumigranulatum-vedolap-pm850-10-0-1-25-10": [
+    "10 mm",
+    "1250 mm",
+    "10 m",
+    "fekete"
+   ]
+  },
   "members": {
-   "gumigranulatum-padlolap-sf-8-0-1-25-10": "1,25 × 10 m – fekete, kék pöttyös",
-   "gumigranulatum-padlolap-sf-8-0-1-25-10-2": "1,25 × 10 m – fekete, szürke pöttyös"
+   "erositett-gumigranulatum-vedolap-pm850-3-0-1-25-10": "3 mm – 1250 mm × 10 m – fekete",
+   "erositett-gumigranulatum-vedolap-pm850-4-0-1-25-10": "4 mm – 1250 mm × 10 m – fekete",
+   "erositett-gumigranulatum-vedolap-pm850-5-0-1-25-10": "5 mm – 1250 mm × 10 m – fekete",
+   "erositett-gumigranulatum-vedolap-pm850-6-0-1-25-10": "6 mm – 1250 mm × 10 m – fekete",
+   "erositett-gumigranulatum-vedolap-pm850-8-0-1-25-10": "8 mm – 1250 mm × 10 m – fekete",
+   "erositett-gumigranulatum-vedolap-pm850-10-0-1-25-10": "10 mm – 1250 mm × 10 m – fekete"
+  }
+ },
+ "gumi-granulatum-gumigranul-tum-padl-lap-gumigranul-tum-padl-lap": {
+  "name": "Gumigranulátum padlólap",
+  "label": "Vastagság és méret",
+  "title": "Rendelhető vastagságok és méretek",
+  "note": "Gumigranulátum padlólap – válassza ki a kívánt vastagságot és méretet.",
+  "navigate": true,
+  "table": [
+   "Vastagság",
+   "Szélesség",
+   "Hossz",
+   "Szín"
+  ],
+  "rows": {
+   "gumigranulatum-padlolap-sfb-6-0-1-25-10": [
+    "6 mm",
+    "1250 mm",
+    "10 m",
+    "fekete"
+   ],
+   "gumigranulatum-padlolap-sf-6-0-1-25-10": [
+    "6 mm",
+    "1250 mm",
+    "10 m",
+    "fekete, kék pöttyös"
+   ],
+   "gumigranulatum-padlolap-sf-6-0-1-25-10-2": [
+    "6 mm",
+    "1250 mm",
+    "10 m",
+    "fekete, szürke pöttyös"
+   ],
+   "gumigranulatum-padlolap-sfb-8-0-1-25-10": [
+    "8 mm",
+    "1250 mm",
+    "10 m",
+    "fekete"
+   ],
+   "gumigranulatum-padlolap-sf-8-0-1-25-10": [
+    "8 mm",
+    "1250 mm",
+    "10 m",
+    "fekete, kék pöttyös"
+   ],
+   "gumigranulatum-padlolap-sf-8-0-1-25-10-2": [
+    "8 mm",
+    "1250 mm",
+    "10 m",
+    "fekete, szürke pöttyös"
+   ]
+  },
+  "members": {
+   "gumigranulatum-padlolap-sfb-6-0-1-25-10": "6 mm – 1250 mm × 10 m – fekete",
+   "gumigranulatum-padlolap-sf-6-0-1-25-10": "6 mm – 1250 mm × 10 m – fekete, kék pöttyös",
+   "gumigranulatum-padlolap-sf-6-0-1-25-10-2": "6 mm – 1250 mm × 10 m – fekete, szürke pöttyös",
+   "gumigranulatum-padlolap-sfb-8-0-1-25-10": "8 mm – 1250 mm × 10 m – fekete",
+   "gumigranulatum-padlolap-sf-8-0-1-25-10": "8 mm – 1250 mm × 10 m – fekete, kék pöttyös",
+   "gumigranulatum-padlolap-sf-8-0-1-25-10-2": "8 mm – 1250 mm × 10 m – fekete, szürke pöttyös"
   }
  }
 }

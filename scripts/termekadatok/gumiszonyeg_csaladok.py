@@ -5,7 +5,7 @@ A család kulcsa: alkategória + típus + vastagság.
 - a bővített kínálat (Gummitrading-adatok): a típus a cikkszám első szava (pl. SM, SMM, 4012G, PU70), a név a
   vastagság előtti rész; a méret a név végéről (a ≤ 3 számú szélesség méterben értendő)
 - a Quadris Excel-termékei (G …): a név a méretek nélkül, a vastagság az első szám
-A víztiszta PVC (a PVC függönycsíkkal együtt), a PU lemezek (típusonként), az EPDM moosgumi és a gumilemezek (gumilemez, gumilap, szövetbetétes gumilemez 1, ill. 2 betéttel külön) a Quadris kérésére vastagságtól függetlenül egy-egy termék: a G tekercsek (3/4/5 mm) és a
+A víztiszta PVC (a PVC függönycsíkkal együtt), a PU lemezek (típusonként), az EPDM moosgumi, a gumigranulátum lapok (színnel) és a gumilemezek (gumilemez, gumilap, szövetbetétes gumilemez 1, ill. 2 betéttel külön) a Quadris kérésére vastagságtól függetlenül egy-egy termék: a G tekercsek (3/4/5 mm) és a
 víztiszta PVC lemezek (1–7 mm, minden méret) – a táblázatban vastagság, szélesség, hossz.
 Csak a legalább 2 tagú csoportokból lesz család; a már családba sorolt és a törölt termékek kimaradnak.
 Kimenet: data/termek_csaladok.json „gumi-…” kulcsai (újragenerálva).
@@ -23,7 +23,7 @@ from common import ROOT  # noqa: E402
 
 GROUP = "gumiszonyegek"
 COLORS = {"Black": "fekete", "Black with blue dots": "fekete, kék pöttyös", "Black with grey dots": "fekete, szürke pöttyös",
-          "fekete": "fekete", "Grey": "szürke"}
+          "fekete": "fekete", "Grey": "szürke", "Black interspersed with colours": "fekete, színes szemcsékkel"}
 OUT = ROOT / "data/termek_csaladok.json"
 
 
@@ -51,7 +51,7 @@ def extended_key(p):
 
 def pvc_key(p):
     """Víztiszta PVC és gumilemezek: vastagságtól független család (a vastagság a táblázat egyik oszlopa)."""
-    if p["category"] in ("gumilemezek", "pu-lemezek", "moosgumi"):
+    if p["category"] in ("gumilemezek", "pu-lemezek", "moosgumi", "granulatum-lapok"):
         m = re.match(r"^(.*?) ([\d,]+) mm, ([\d,]+)×([\d,/]+) mm$", p["name"])
         if not m:
             return None
@@ -63,6 +63,10 @@ def pvc_key(p):
         else:
             wmm, lm = w, hu(num(l) / 1000)
         first = float(l.split("/")[0].replace(",", "."))
+        if p["category"] == "granulatum-lapok":  # a padlólapok színben is különböznek (SF / SFB)
+            color = COLORS.get((p.get("specs") or {}).get("Szín", ""), "")
+            return (("granulatum", name), name, f"{th} mm – {wmm} mm × {lm} m – {color}", (num(th), color), th,
+                    [f"{th} mm", f"{wmm} mm", f"{lm} m", color])
         return (("lemez", name), name, f"{th} mm – {wmm} mm × {lm} m", (num(th), num(wmm), first), th,
                 [f"{th} mm", f"{wmm} mm", f"{lm} m"])
     m = re.match(r"^PVC függönycsík (\d+) mm, (\d+)×(\d+) mm$", p["name"])
@@ -152,7 +156,7 @@ def main():
                 "name": name, "label": "Csíkszélesség" if key[1] == "klem" else "Vastagság és méret",
                 "title": "Rendelhető méretek" if key[1] == "klem" else "Rendelhető vastagságok és méretek",
                 "note": ("Víztiszta, átlátszó PVC" if name.startswith("Víztiszta") else name) + " – válassza ki a kívánt vastagságot és méretet.",
-                "navigate": True, "table": ["Csíkszélesség"] if key[1] == "klem" else ["Vastagság", "Szélesség", "Hossz"],
+                "navigate": True, "table": ["Csíkszélesség"] if key[1] == "klem" else ["Vastagság", "Szélesség", "Hossz"] + (["Szín"] if key[0] == "granulatum" else []),
                 "rows": {s: g["rows"][s] for s in values}, "members": values,
             }
             n += 1
