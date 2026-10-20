@@ -19,7 +19,8 @@ SRC = ROOT / "data/forras/acel_oldalfal_3d"
 # típusánál a 3D kép után, második képként
 ATTEKINTO = {"data/forras/acel_oldalfal_b_attekinto.png": ["acel-oldalfal-b-300", "acel-oldalfal-b-400", "acel-oldalfal-bkt-400",
                                                           "acel-oldalfal-b-450", "acel-oldalfal-b-500", "acel-oldalfal-b-600",
-                                                          "acel-oldalfal-btt-800"]}
+                                                          "acel-oldalfal-btt-800"],
+             "data/forras/acel_oldalfal_bn_attekinto.png": ["acel-oldalfal-bnkt-400", "acel-oldalfal-bnskt-400", "acel-oldalfal-bn-450", "acel-oldalfal-bn-500", "acel-oldalfal-bns-500", "acel-oldalfal-bn-600", "acel-oldalfal-bns-600", "acel-oldalfal-bntt-800"]}
 
 
 def main():

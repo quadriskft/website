@@ -87,7 +87,7 @@ def main():
             if cat not in CATS or p["slug"] in deleted:
                 continue
             sp = {**(p.get("specs") or {}), **(extra.get(p["slug"], {}).get("specs") or {})}
-            code = (p.get("code") or sp.get("Típus") or "").strip()
+            code = (fixes.get(p["slug"], {}).get("code") or p.get("code") or sp.get("Típus") or "").strip()
             m = re.match(r"^([A-Za-z\-]+(?: ?(?:HEAVY|LIGHT))?)\s*(\d{3,4})?$", code)
             if not m:
                 print("  nem értelmezhető típus:", p["slug"], code)
@@ -110,7 +110,7 @@ def main():
             rows.append(it)
         if len(rows) < 2:
             continue
-        rows.sort(key=lambda i: (i[2], i[1]))
+        rows.sort(key=lambda i: (i[2], i[1].upper()))
         # a kártyán a legkisebb típus élesített 3D képe (a beszállítói termék; az Excel-termék képe rajz)
         leader = next((r[3] for r in rows if not r[4]), rows[0][3])
         fams[f"acel-oldalfal-{sid}"] = {

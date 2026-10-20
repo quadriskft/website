@@ -1710,5 +1710,13 @@
    "group": "acel-profilok",
    "category": "lezerhegesztett-acel-oldalfalak"
   }
+ },
+ "acel-oldalfal-bnkt-400": {
+  "code": "BNkT 400",
+  "name": "Acél oldalfal BNkT 400 mm"
+ },
+ "acel-oldalfal-bnskt-400": {
+  "code": "BNSkT 400",
+  "name": "Acél oldalfal BNSkT 400 mm"
  }
 }

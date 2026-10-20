@@ -2772,19 +2772,19 @@
     "2,0 mm",
     "12,4"
    ],
-   "acel-oldalfal-bakskt-400": [
-    "BAKSkt 400",
-    "400 mm",
-    "magasító",
-    "2,0 mm",
-    "12,9"
-   ],
    "acel-oldalfal-bakkt-400": [
     "BAKkt 400",
     "400 mm",
     "magasító",
     "2,0 mm",
     "12,7"
+   ],
+   "acel-oldalfal-bakskt-400": [
+    "BAKSkt 400",
+    "400 mm",
+    "magasító",
+    "2,0 mm",
+    "12,9"
    ],
    "acel-oldalfal-bak-450": [
     "BAK 450",
@@ -2844,8 +2844,8 @@
   "leader": "acel-oldalfal-bak-400",
   "members": {
    "acel-oldalfal-bak-400": "BAK 400 – 400 mm",
-   "acel-oldalfal-bakskt-400": "BAKSkt 400 – 400 mm",
    "acel-oldalfal-bakkt-400": "BAKkt 400 – 400 mm",
+   "acel-oldalfal-bakskt-400": "BAKSkt 400 – 400 mm",
    "acel-oldalfal-bak-450": "BAK 450 – 450 mm",
    "acel-oldalfal-bak-500": "BAK 500 – 500 mm",
    "acel-oldalfal-baks-500": "BAKS 500 – 500 mm",
@@ -2950,14 +2950,14 @@
   ],
   "rows": {
    "acel-oldalfal-bnkt-400": [
-    "BNKT 400",
+    "BNkT 400",
     "400 mm",
     "alap",
     "2,0 mm",
     "12,3"
    ],
    "acel-oldalfal-bnskt-400": [
-    "BNSKT 400",
+    "BNSkT 400",
     "400 mm",
     "alap",
     "2,0 mm",
@@ -3013,8 +3013,8 @@
   },
   "leader": "acel-oldalfal-bnkt-400",
   "members": {
-   "acel-oldalfal-bnkt-400": "BNKT 400 – 400 mm",
-   "acel-oldalfal-bnskt-400": "BNSKT 400 – 400 mm",
+   "acel-oldalfal-bnkt-400": "BNkT 400 – 400 mm",
+   "acel-oldalfal-bnskt-400": "BNSkT 400 – 400 mm",
    "acel-oldalfal-bn-450": "BN 450 – 450 mm",
    "acel-oldalfal-bn-500": "BN 500 – 500 mm",
    "acel-oldalfal-bns-500": "BNS 500 – 500 mm",
