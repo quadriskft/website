@@ -2177,8 +2177,8 @@
    "acel-oldalfal-fox-rock-light": "FOX-ROCK LIGHT – 800 mm"
   }
  },
- "acel-oldalfal-foxl-hv": {
-  "name": "Acél oldalfal FOX L – HV / HVAK / HVN (Heavy Duty)",
+ "acel-oldalfal-foxl-bak-hvak": {
+  "name": "Acél oldalfal FOXL BAK / HVAK (Heavy Duty)",
   "label": "Típus",
   "title": "Rendelhető típusok",
   "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
@@ -2191,12 +2191,12 @@
    "kg/m"
   ],
   "rows": {
-   "acel-oldalfal-foxlhv-400": [
-    "FOXLHV 400",
+   "acel-oldalfal-foxlbak-400": [
+    "FOXLBAK 400",
     "400 mm",
-    "alap",
-    "2,5 mm",
-    "12,5"
+    "magasító",
+    "2,5 [3,0] mm",
+    "15,6"
    ],
    "acel-oldalfal-foxlhvak-400": [
     "FOXLHVAK 400",
@@ -2205,19 +2205,12 @@
     "2,5 [3,0] mm",
     "14,5"
    ],
-   "acel-oldalfal-foxlhvn-400": [
-    "FOXLHVN 400",
-    "400 mm",
-    "alap",
-    "2,5 & 3,0 mm",
-    "13,6"
-   ],
-   "acel-oldalfal-foxlhv-500": [
-    "FOXLHV 500",
+   "acel-oldalfal-foxlbak-500": [
+    "FOXLBAK 500",
     "500 mm",
-    "alap",
-    "2,5 mm",
-    "14,5"
+    "magasító",
+    "2,5 [3,0] mm",
+    "17,6"
    ],
    "acel-oldalfal-foxlhvak-500": [
     "FOXLHVAK 500",
@@ -2226,19 +2219,12 @@
     "2,5 [3,0] mm",
     "16,5"
    ],
-   "acel-oldalfal-foxlhvn-500": [
-    "FOXLHVN 500",
-    "500 mm",
-    "alap",
-    "2,5 & 3,0 mm",
-    "15,6"
-   ],
-   "acel-oldalfal-foxlhv-600": [
-    "FOXLHV 600",
+   "acel-oldalfal-foxlbak-600": [
+    "FOXLBAK 600",
     "600 mm",
-    "alap",
-    "2,5 mm",
-    "16,5"
+    "magasító",
+    "2,5 [3,0] mm",
+    "19,5"
    ],
    "acel-oldalfal-foxlhvak-600": [
     "FOXLHVAK 600",
@@ -2247,19 +2233,12 @@
     "2,5 [3,0] mm",
     "18,5"
    ],
-   "acel-oldalfal-foxlhvn-600": [
-    "FOXLHVN 600",
-    "600 mm",
-    "alap",
-    "2,5 & 3,0 mm",
-    "17,6"
-   ],
-   "acel-oldalfal-foxlhv-700": [
-    "FOXLHV 700",
+   "acel-oldalfal-foxlbak-700": [
+    "FOXLBAK 700",
     "700 mm",
-    "alap",
-    "2,5 mm",
-    "18,6"
+    "magasító",
+    "2,5 [3,0] mm",
+    "21,5"
    ],
    "acel-oldalfal-foxlhvak-700": [
     "FOXLHVAK 700",
@@ -2268,19 +2247,12 @@
     "2,5 [3,0] mm",
     "20,3"
    ],
-   "acel-oldalfal-foxlhvn-700": [
-    "FOXLHVN 700",
-    "700 mm",
-    "alap",
-    "2,5 & 3,0 mm",
-    "20"
-   ],
-   "acel-oldalfal-foxlhv-800": [
-    "FOXLHV 800",
+   "acel-oldalfal-foxlbak-800": [
+    "FOXLBAK 800",
     "800 mm",
-    "alap",
-    "2,5 mm",
-    "20,4"
+    "magasító",
+    "2,5 [3,0] mm",
+    "25,9"
    ],
    "acel-oldalfal-foxlhvak-800": [
     "FOXLHVAK 800",
@@ -2288,6 +2260,106 @@
     "magasító",
     "2,5 [3,0] mm",
     "21,9"
+   ]
+  },
+  "lengths": {
+   "options": [
+    2500,
+    5000,
+    6000
+   ],
+   "hint": "Gyártási hosszak: 2500, 5000 vagy 6000 mm. Több hossz is megadható."
+  },
+  "leader": "acel-oldalfal-foxlbak-400",
+  "members": {
+   "acel-oldalfal-foxlbak-400": "FOXLBAK 400 – 400 mm",
+   "acel-oldalfal-foxlhvak-400": "FOXLHVAK 400 – 400 mm",
+   "acel-oldalfal-foxlbak-500": "FOXLBAK 500 – 500 mm",
+   "acel-oldalfal-foxlhvak-500": "FOXLHVAK 500 – 500 mm",
+   "acel-oldalfal-foxlbak-600": "FOXLBAK 600 – 600 mm",
+   "acel-oldalfal-foxlhvak-600": "FOXLHVAK 600 – 600 mm",
+   "acel-oldalfal-foxlbak-700": "FOXLBAK 700 – 700 mm",
+   "acel-oldalfal-foxlhvak-700": "FOXLHVAK 700 – 700 mm",
+   "acel-oldalfal-foxlbak-800": "FOXLBAK 800 – 800 mm",
+   "acel-oldalfal-foxlhvak-800": "FOXLHVAK 800 – 800 mm"
+  }
+ },
+ "acel-oldalfal-foxl-bn-hvn": {
+  "name": "Acél oldalfal FOXL BN / HVN (Heavy Duty)",
+  "label": "Típus",
+  "title": "Rendelhető típusok",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "navigate": true,
+  "table": [
+   "Típus",
+   "Magasság",
+   "Kivitel",
+   "Lemez",
+   "kg/m"
+  ],
+  "rows": {
+   "acel-oldalfal-foxlbn-400": [
+    "FOXLBN 400",
+    "400 mm",
+    "alap",
+    "2,5 & 3,0 mm",
+    "14,6"
+   ],
+   "acel-oldalfal-foxlhvn-400": [
+    "FOXLHVN 400",
+    "400 mm",
+    "alap",
+    "2,5 & 3,0 mm",
+    "13,6"
+   ],
+   "acel-oldalfal-foxlbn-500": [
+    "FOXLBN 500",
+    "500 mm",
+    "alap",
+    "2,5 & 3,0 mm",
+    "16,7"
+   ],
+   "acel-oldalfal-foxlhvn-500": [
+    "FOXLHVN 500",
+    "500 mm",
+    "alap",
+    "2,5 & 3,0 mm",
+    "15,6"
+   ],
+   "acel-oldalfal-foxlbn-600": [
+    "FOXLBN 600",
+    "600 mm",
+    "alap",
+    "2,5 & 3,0 mm",
+    "18,7"
+   ],
+   "acel-oldalfal-foxlhvn-600": [
+    "FOXLHVN 600",
+    "600 mm",
+    "alap",
+    "2,5 & 3,0 mm",
+    "17,6"
+   ],
+   "acel-oldalfal-foxlbn-700": [
+    "FOXLBN 700",
+    "700 mm",
+    "alap",
+    "2,5 & 3,0 mm",
+    "20,8"
+   ],
+   "acel-oldalfal-foxlhvn-700": [
+    "FOXLHVN 700",
+    "700 mm",
+    "alap",
+    "2,5 & 3,0 mm",
+    "20"
+   ],
+   "acel-oldalfal-foxlbn-800": [
+    "FOXLBN 800",
+    "800 mm",
+    "alap",
+    "2,5 & 3,0 mm",
+    "22,6"
    ],
    "acel-oldalfal-foxlhvn-800": [
     "FOXLHVN 800",
@@ -2305,27 +2377,22 @@
    ],
    "hint": "Gyártási hosszak: 2500, 5000 vagy 6000 mm. Több hossz is megadható."
   },
-  "leader": "acel-oldalfal-foxlhv-400",
+  "leader": "acel-oldalfal-foxlbn-400",
   "members": {
-   "acel-oldalfal-foxlhv-400": "FOXLHV 400 – 400 mm",
-   "acel-oldalfal-foxlhvak-400": "FOXLHVAK 400 – 400 mm",
+   "acel-oldalfal-foxlbn-400": "FOXLBN 400 – 400 mm",
    "acel-oldalfal-foxlhvn-400": "FOXLHVN 400 – 400 mm",
-   "acel-oldalfal-foxlhv-500": "FOXLHV 500 – 500 mm",
-   "acel-oldalfal-foxlhvak-500": "FOXLHVAK 500 – 500 mm",
+   "acel-oldalfal-foxlbn-500": "FOXLBN 500 – 500 mm",
    "acel-oldalfal-foxlhvn-500": "FOXLHVN 500 – 500 mm",
-   "acel-oldalfal-foxlhv-600": "FOXLHV 600 – 600 mm",
-   "acel-oldalfal-foxlhvak-600": "FOXLHVAK 600 – 600 mm",
+   "acel-oldalfal-foxlbn-600": "FOXLBN 600 – 600 mm",
    "acel-oldalfal-foxlhvn-600": "FOXLHVN 600 – 600 mm",
-   "acel-oldalfal-foxlhv-700": "FOXLHV 700 – 700 mm",
-   "acel-oldalfal-foxlhvak-700": "FOXLHVAK 700 – 700 mm",
+   "acel-oldalfal-foxlbn-700": "FOXLBN 700 – 700 mm",
    "acel-oldalfal-foxlhvn-700": "FOXLHVN 700 – 700 mm",
-   "acel-oldalfal-foxlhv-800": "FOXLHV 800 – 800 mm",
-   "acel-oldalfal-foxlhvak-800": "FOXLHVAK 800 – 800 mm",
+   "acel-oldalfal-foxlbn-800": "FOXLBN 800 – 800 mm",
    "acel-oldalfal-foxlhvn-800": "FOXLHVN 800 – 800 mm"
   }
  },
- "acel-oldalfal-foxl-b": {
-  "name": "Acél oldalfal FOX L – B / BAK / BN (Heavy Duty)",
+ "acel-oldalfal-foxl-b-hv": {
+  "name": "Acél oldalfal FOXL B / HV (Heavy Duty)",
   "label": "Típus",
   "title": "Rendelhető típusok",
   "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
@@ -2345,19 +2412,12 @@
     "2,5 mm",
     "13,6"
    ],
-   "acel-oldalfal-foxlbak-400": [
-    "FOXLBAK 400",
-    "400 mm",
-    "magasító",
-    "2,5 [3,0] mm",
-    "15,6"
-   ],
-   "acel-oldalfal-foxlbn-400": [
-    "FOXLBN 400",
+   "acel-oldalfal-foxlhv-400": [
+    "FOXLHV 400",
     "400 mm",
     "alap",
-    "2,5 & 3,0 mm",
-    "14,6"
+    "2,5 mm",
+    "12,5"
    ],
    "acel-oldalfal-foxlb-500": [
     "FOXLB 500",
@@ -2366,19 +2426,12 @@
     "2,5 mm",
     "15,7"
    ],
-   "acel-oldalfal-foxlbak-500": [
-    "FOXLBAK 500",
-    "500 mm",
-    "magasító",
-    "2,5 [3,0] mm",
-    "17,6"
-   ],
-   "acel-oldalfal-foxlbn-500": [
-    "FOXLBN 500",
+   "acel-oldalfal-foxlhv-500": [
+    "FOXLHV 500",
     "500 mm",
     "alap",
-    "2,5 & 3,0 mm",
-    "16,7"
+    "2,5 mm",
+    "14,5"
    ],
    "acel-oldalfal-foxlb-600": [
     "FOXLB 600",
@@ -2387,19 +2440,12 @@
     "2,5 mm",
     "17,5"
    ],
-   "acel-oldalfal-foxlbak-600": [
-    "FOXLBAK 600",
-    "600 mm",
-    "magasító",
-    "2,5 [3,0] mm",
-    "19,5"
-   ],
-   "acel-oldalfal-foxlbn-600": [
-    "FOXLBN 600",
+   "acel-oldalfal-foxlhv-600": [
+    "FOXLHV 600",
     "600 mm",
     "alap",
-    "2,5 & 3,0 mm",
-    "18,7"
+    "2,5 mm",
+    "16,5"
    ],
    "acel-oldalfal-foxlb-700": [
     "FOXLB 700",
@@ -2408,19 +2454,12 @@
     "2,5 mm",
     "18,6"
    ],
-   "acel-oldalfal-foxlbak-700": [
-    "FOXLBAK 700",
-    "700 mm",
-    "magasító",
-    "2,5 [3,0] mm",
-    "21,5"
-   ],
-   "acel-oldalfal-foxlbn-700": [
-    "FOXLBN 700",
+   "acel-oldalfal-foxlhv-700": [
+    "FOXLHV 700",
     "700 mm",
     "alap",
-    "2,5 & 3,0 mm",
-    "20,8"
+    "2,5 mm",
+    "18,6"
    ],
    "acel-oldalfal-foxlb-800": [
     "FOXLB 800",
@@ -2429,19 +2468,12 @@
     "2,5 mm",
     "21,5"
    ],
-   "acel-oldalfal-foxlbak-800": [
-    "FOXLBAK 800",
-    "800 mm",
-    "magasító",
-    "2,5 [3,0] mm",
-    "25,9"
-   ],
-   "acel-oldalfal-foxlbn-800": [
-    "FOXLBN 800",
+   "acel-oldalfal-foxlhv-800": [
+    "FOXLHV 800",
     "800 mm",
     "alap",
-    "2,5 & 3,0 mm",
-    "22,6"
+    "2,5 mm",
+    "20,4"
    ],
    "acel-oldalfal-foxlb-900": [
     "FOXLB 900",
@@ -2469,93 +2501,21 @@
   "leader": "acel-oldalfal-foxlb-400",
   "members": {
    "acel-oldalfal-foxlb-400": "FOXLB 400 – 400 mm",
-   "acel-oldalfal-foxlbak-400": "FOXLBAK 400 – 400 mm",
-   "acel-oldalfal-foxlbn-400": "FOXLBN 400 – 400 mm",
+   "acel-oldalfal-foxlhv-400": "FOXLHV 400 – 400 mm",
    "acel-oldalfal-foxlb-500": "FOXLB 500 – 500 mm",
-   "acel-oldalfal-foxlbak-500": "FOXLBAK 500 – 500 mm",
-   "acel-oldalfal-foxlbn-500": "FOXLBN 500 – 500 mm",
+   "acel-oldalfal-foxlhv-500": "FOXLHV 500 – 500 mm",
    "acel-oldalfal-foxlb-600": "FOXLB 600 – 600 mm",
-   "acel-oldalfal-foxlbak-600": "FOXLBAK 600 – 600 mm",
-   "acel-oldalfal-foxlbn-600": "FOXLBN 600 – 600 mm",
+   "acel-oldalfal-foxlhv-600": "FOXLHV 600 – 600 mm",
    "acel-oldalfal-foxlb-700": "FOXLB 700 – 700 mm",
-   "acel-oldalfal-foxlbak-700": "FOXLBAK 700 – 700 mm",
-   "acel-oldalfal-foxlbn-700": "FOXLBN 700 – 700 mm",
+   "acel-oldalfal-foxlhv-700": "FOXLHV 700 – 700 mm",
    "acel-oldalfal-foxlb-800": "FOXLB 800 – 800 mm",
-   "acel-oldalfal-foxlbak-800": "FOXLBAK 800 – 800 mm",
-   "acel-oldalfal-foxlbn-800": "FOXLBN 800 – 800 mm",
+   "acel-oldalfal-foxlhv-800": "FOXLHV 800 – 800 mm",
    "acel-oldalfal-foxlb-900": "FOXLB 900 – 900 mm",
    "acel-oldalfal-foxlb-1000": "FOXLB 1000 – 1000 mm"
   }
  },
- "acel-oldalfal-foxhv": {
-  "name": "Acél oldalfal FOX HV (Heavy Duty)",
-  "label": "Típus",
-  "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
-  "navigate": true,
-  "table": [
-   "Típus",
-   "Magasság",
-   "Kivitel",
-   "Lemez",
-   "kg/m"
-  ],
-  "rows": {
-   "acel-oldalfal-foxhv-600": [
-    "FOXHV 600",
-    "600 mm",
-    "alap",
-    "4,0 mm",
-    "31,5"
-   ],
-   "acel-oldalfal-foxhv-700": [
-    "FOXHV 700",
-    "700 mm",
-    "alap",
-    "4,0 mm",
-    "34,7"
-   ],
-   "acel-oldalfal-foxhv-800": [
-    "FOXHV 800",
-    "800 mm",
-    "alap",
-    "4,0 mm",
-    "37,9"
-   ],
-   "acel-oldalfal-foxhv-900": [
-    "FOXHV 900",
-    "900 mm",
-    "alap",
-    "4,0 mm",
-    "41,1"
-   ],
-   "acel-oldalfal-foxhv-1000": [
-    "FOXHV 1000",
-    "1000 mm",
-    "alap",
-    "4,0 mm",
-    "44,3"
-   ]
-  },
-  "lengths": {
-   "options": [
-    2500,
-    5000,
-    6000
-   ],
-   "hint": "Gyártási hosszak: 2500, 5000 vagy 6000 mm. Több hossz is megadható."
-  },
-  "leader": "acel-oldalfal-foxhv-600",
-  "members": {
-   "acel-oldalfal-foxhv-600": "FOXHV 600 – 600 mm",
-   "acel-oldalfal-foxhv-700": "FOXHV 700 – 700 mm",
-   "acel-oldalfal-foxhv-800": "FOXHV 800 – 800 mm",
-   "acel-oldalfal-foxhv-900": "FOXHV 900 – 900 mm",
-   "acel-oldalfal-foxhv-1000": "FOXHV 1000 – 1000 mm"
-  }
- },
- "acel-oldalfal-foxb": {
-  "name": "Acél oldalfal FOX B (Heavy Duty)",
+ "acel-oldalfal-fox-b-hv": {
+  "name": "Acél oldalfal FOX B / HV (Heavy Duty)",
   "label": "Típus",
   "title": "Rendelhető típusok",
   "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
@@ -2575,12 +2535,26 @@
     "4,0 mm",
     "32,2"
    ],
+   "acel-oldalfal-foxhv-600": [
+    "FOXHV 600",
+    "600 mm",
+    "alap",
+    "4,0 mm",
+    "31,5"
+   ],
    "acel-oldalfal-foxb-700": [
     "FOXB 700",
     "700 mm",
     "alap",
     "4,0 mm",
     "35,4"
+   ],
+   "acel-oldalfal-foxhv-700": [
+    "FOXHV 700",
+    "700 mm",
+    "alap",
+    "4,0 mm",
+    "34,7"
    ],
    "acel-oldalfal-foxb-800": [
     "FOXB 800",
@@ -2589,6 +2563,13 @@
     "4,0 mm",
     "38,6"
    ],
+   "acel-oldalfal-foxhv-800": [
+    "FOXHV 800",
+    "800 mm",
+    "alap",
+    "4,0 mm",
+    "37,9"
+   ],
    "acel-oldalfal-foxb-900": [
     "FOXB 900",
     "900 mm",
@@ -2596,12 +2577,26 @@
     "4,0 mm",
     "41,8"
    ],
+   "acel-oldalfal-foxhv-900": [
+    "FOXHV 900",
+    "900 mm",
+    "alap",
+    "4,0 mm",
+    "41,1"
+   ],
    "acel-oldalfal-foxb-1000": [
     "FOXB 1000",
     "1000 mm",
     "alap",
     "4,0 mm",
     "45"
+   ],
+   "acel-oldalfal-foxhv-1000": [
+    "FOXHV 1000",
+    "1000 mm",
+    "alap",
+    "4,0 mm",
+    "44,3"
    ]
   },
   "lengths": {
@@ -2615,10 +2610,15 @@
   "leader": "acel-oldalfal-foxb-600",
   "members": {
    "acel-oldalfal-foxb-600": "FOXB 600 – 600 mm",
+   "acel-oldalfal-foxhv-600": "FOXHV 600 – 600 mm",
    "acel-oldalfal-foxb-700": "FOXB 700 – 700 mm",
+   "acel-oldalfal-foxhv-700": "FOXHV 700 – 700 mm",
    "acel-oldalfal-foxb-800": "FOXB 800 – 800 mm",
+   "acel-oldalfal-foxhv-800": "FOXHV 800 – 800 mm",
    "acel-oldalfal-foxb-900": "FOXB 900 – 900 mm",
-   "acel-oldalfal-foxb-1000": "FOXB 1000 – 1000 mm"
+   "acel-oldalfal-foxhv-900": "FOXHV 900 – 900 mm",
+   "acel-oldalfal-foxb-1000": "FOXB 1000 – 1000 mm",
+   "acel-oldalfal-foxhv-1000": "FOXHV 1000 – 1000 mm"
   }
  },
  "acel-oldalfal-fhd": {
@@ -2663,8 +2663,280 @@
    "acel-oldalfal-fhd-800": "FHD 800 – 800 mm"
   }
  },
- "acel-oldalfal-bn": {
-  "name": "Acél oldalfal BN rendszer (lézerhegesztett)",
+ "acel-oldalfal-kiegeszito": {
+  "name": "Acél oldalfal – kiegészítő profilok (lézerhegesztett)",
+  "label": "Típus",
+  "title": "Rendelhető típusok",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "navigate": true,
+  "table": [
+   "Típus",
+   "Magasság",
+   "Kivitel",
+   "Lemez",
+   "kg/m"
+  ],
+  "rows": {
+   "acel-oldalfal-bak-300": [
+    "BAK 300",
+    "300 mm",
+    "magasító",
+    "2,0 mm",
+    "10,6"
+   ],
+   "acel-oldalfal-hvak-300": [
+    "HVAK 300",
+    "300 mm",
+    "magasító",
+    "2,0 mm",
+    "10,1"
+   ],
+   "acel-oldalfal-hvkt-350": [
+    "HVkT 350",
+    "350 mm",
+    "magasító",
+    "2,0 mm",
+    "10,4"
+   ],
+   "acel-oldalfal-hvd-400": [
+    "HVD 400",
+    "400 mm",
+    "alap",
+    "2,0 mm",
+    "11,0"
+   ],
+   "acel-oldalfal-hvd-500": [
+    "HVD 500",
+    "500 mm",
+    "alap",
+    "2,0 mm",
+    "11,7"
+   ],
+   "acel-oldalfal-hvd-600": [
+    "HVD 600",
+    "600 mm",
+    "alap",
+    "2,0 mm",
+    "14,3"
+   ],
+   "acel-oldalfal-hv-800": [
+    "HV 800",
+    "800 mm",
+    "alap",
+    "2,0 mm",
+    "17,5"
+   ],
+   "acel-oldalfal-hv-900": [
+    "HV 900",
+    "900 mm",
+    "alap",
+    "2,0 mm",
+    "19,1"
+   ]
+  },
+  "lengths": {
+   "min": 500,
+   "max": 13500,
+   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
+  },
+  "leader": "acel-oldalfal-bak-300",
+  "members": {
+   "acel-oldalfal-bak-300": "BAK 300 – 300 mm",
+   "acel-oldalfal-hvak-300": "HVAK 300 – 300 mm",
+   "acel-oldalfal-hvkt-350": "HVkT 350 – 350 mm",
+   "acel-oldalfal-hvd-400": "HVD 400 – 400 mm",
+   "acel-oldalfal-hvd-500": "HVD 500 – 500 mm",
+   "acel-oldalfal-hvd-600": "HVD 600 – 600 mm",
+   "acel-oldalfal-hv-800": "HV 800 – 800 mm",
+   "acel-oldalfal-hv-900": "HV 900 – 900 mm"
+  }
+ },
+ "acel-oldalfal-bak-baks": {
+  "name": "Acél oldalfal BAK / BAKS (lézerhegesztett)",
+  "label": "Típus",
+  "title": "Rendelhető típusok",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "navigate": true,
+  "table": [
+   "Típus",
+   "Magasság",
+   "Kivitel",
+   "Lemez",
+   "kg/m"
+  ],
+  "rows": {
+   "acel-oldalfal-bak-400": [
+    "BAK 400",
+    "400 mm",
+    "magasító",
+    "2,0 mm",
+    "12,4"
+   ],
+   "acel-oldalfal-bakskt-400": [
+    "BAKSkt 400",
+    "400 mm",
+    "magasító",
+    "2,0 mm",
+    "12,9"
+   ],
+   "acel-oldalfal-bakkt-400": [
+    "BAKkt 400",
+    "400 mm",
+    "magasító",
+    "2,0 mm",
+    "12,7"
+   ],
+   "acel-oldalfal-bak-450": [
+    "BAK 450",
+    "450 mm",
+    "magasító",
+    "2,0 mm",
+    "13,4"
+   ],
+   "acel-oldalfal-bak-500": [
+    "BAK 500",
+    "500 mm",
+    "magasító",
+    "2,0 mm",
+    "14,2"
+   ],
+   "acel-oldalfal-baks-500": [
+    "BAKS 500",
+    "500 mm",
+    "magasító",
+    "2,0 mm",
+    "14,4"
+   ],
+   "acel-oldalfal-bak-600": [
+    "BAK 600",
+    "600 mm",
+    "magasító",
+    "2,0 / 2,5 mm",
+    "15,8 / 19,8"
+   ],
+   "acel-oldalfal-baks-600": [
+    "BAKS 600",
+    "600 mm",
+    "magasító",
+    "2,0 / 2,5 mm",
+    "16 / 20"
+   ],
+   "acel-oldalfal-bakt-600": [
+    "BAKT 600",
+    "600 mm",
+    "magasító",
+    "2,5 mm",
+    "20,2"
+   ],
+   "acel-oldalfal-baktt-800": [
+    "BAKTT 800",
+    "800 mm",
+    "magasító",
+    "2,5 mm",
+    "24,6"
+   ]
+  },
+  "lengths": {
+   "min": 500,
+   "max": 13500,
+   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
+  },
+  "leader": "acel-oldalfal-bak-400",
+  "members": {
+   "acel-oldalfal-bak-400": "BAK 400 – 400 mm",
+   "acel-oldalfal-bakskt-400": "BAKSkt 400 – 400 mm",
+   "acel-oldalfal-bakkt-400": "BAKkt 400 – 400 mm",
+   "acel-oldalfal-bak-450": "BAK 450 – 450 mm",
+   "acel-oldalfal-bak-500": "BAK 500 – 500 mm",
+   "acel-oldalfal-baks-500": "BAKS 500 – 500 mm",
+   "acel-oldalfal-bak-600": "BAK 600 – 600 mm",
+   "acel-oldalfal-baks-600": "BAKS 600 – 600 mm",
+   "acel-oldalfal-bakt-600": "BAKT 600 – 600 mm",
+   "acel-oldalfal-baktt-800": "BAKTT 800 – 800 mm"
+  }
+ },
+ "acel-oldalfal-hvak": {
+  "name": "Acél oldalfal HVAK (lézerhegesztett)",
+  "label": "Típus",
+  "title": "Rendelhető típusok",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "navigate": true,
+  "table": [
+   "Típus",
+   "Magasság",
+   "Kivitel",
+   "Lemez",
+   "kg/m"
+  ],
+  "rows": {
+   "acel-oldalfal-hvak-400": [
+    "HVAK 400",
+    "400 mm",
+    "magasító",
+    "2,0 mm",
+    "11,7"
+   ],
+   "acel-oldalfal-2-mm": [
+    "HVAKKT 400",
+    "400 mm",
+    "magasító",
+    "2,0 mm",
+    "12,0"
+   ],
+   "acel-oldalfal-hvak-450": [
+    "HVAK 450",
+    "450 mm",
+    "magasító",
+    "2,0 mm",
+    "12,7"
+   ],
+   "acel-oldalfal-hvak-500": [
+    "HVAK 500",
+    "500 mm",
+    "alap",
+    "2,0 mm",
+    "11,4"
+   ],
+   "hvak600-acel-oldalfal-2-mm": [
+    "HVAK 600",
+    "600 mm",
+    "magasító",
+    "2,0 mm",
+    "15,2"
+   ],
+   "acel-oldalfal-hvakt-600": [
+    "HVAKT 600",
+    "600 mm",
+    "alap",
+    "2,0 mm",
+    "15,5"
+   ],
+   "acel-oldalfal-2-mm-2": [
+    "HVAKTT 800",
+    "800 mm",
+    "magasító",
+    "2,0 mm",
+    "19,0"
+   ]
+  },
+  "lengths": {
+   "min": 500,
+   "max": 13500,
+   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
+  },
+  "leader": "acel-oldalfal-2-mm",
+  "members": {
+   "acel-oldalfal-hvak-400": "HVAK 400 – 400 mm",
+   "acel-oldalfal-2-mm": "HVAKKT 400 – 400 mm",
+   "acel-oldalfal-hvak-450": "HVAK 450 – 450 mm",
+   "acel-oldalfal-hvak-500": "HVAK 500 – 500 mm",
+   "hvak600-acel-oldalfal-2-mm": "HVAK 600 – 600 mm",
+   "acel-oldalfal-hvakt-600": "HVAKT 600 – 600 mm",
+   "acel-oldalfal-2-mm-2": "HVAKTT 800 – 800 mm"
+  }
+ },
+ "acel-oldalfal-bn-bns": {
+  "name": "Acél oldalfal BN / BNS (lézerhegesztett)",
   "label": "Típus",
   "title": "Rendelhető típusok",
   "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
@@ -2751,168 +3023,8 @@
    "acel-oldalfal-bntt-800": "BNTT 800 – 800 mm"
   }
  },
- "acel-oldalfal-b": {
-  "name": "Acél oldalfal B rendszer (lézerhegesztett)",
-  "label": "Típus",
-  "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
-  "navigate": true,
-  "table": [
-   "Típus",
-   "Magasság",
-   "Kivitel",
-   "Lemez",
-   "kg/m"
-  ],
-  "rows": {
-   "acel-oldalfal-b-300": [
-    "B 300",
-    "300 mm",
-    "alap",
-    "2,0 mm",
-    "10"
-   ],
-   "acel-oldalfal-bak-300": [
-    "BAK 300",
-    "300 mm",
-    "magasító",
-    "2,0 mm",
-    "10,6"
-   ],
-   "acel-oldalfal-b-400": [
-    "B 400",
-    "400 mm",
-    "alap",
-    "2,0 mm",
-    "11,6"
-   ],
-   "acel-oldalfal-bak-400": [
-    "BAK 400",
-    "400 mm",
-    "magasító",
-    "2,0 mm",
-    "12,4"
-   ],
-   "acel-oldalfal-bakskt-400": [
-    "BAKSkt 400",
-    "400 mm",
-    "magasító",
-    "2,0 mm",
-    "12,9"
-   ],
-   "acel-oldalfal-bakkt-400": [
-    "BAKkt 400",
-    "400 mm",
-    "magasító",
-    "2,0 mm",
-    "12,7"
-   ],
-   "acel-oldalfal-b-450": [
-    "B 450",
-    "450 mm",
-    "alap",
-    "2,0 mm",
-    "12,6"
-   ],
-   "acel-oldalfal-bak-450": [
-    "BAK 450",
-    "450 mm",
-    "magasító",
-    "2,0 mm",
-    "13,4"
-   ],
-   "acel-oldalfal-b-500": [
-    "B 500",
-    "500 mm",
-    "alap",
-    "2,0 / 2,5 mm",
-    "13,4 / 16,8"
-   ],
-   "acel-oldalfal-bak-500": [
-    "BAK 500",
-    "500 mm",
-    "magasító",
-    "2,0 mm",
-    "14,2"
-   ],
-   "acel-oldalfal-baks-500": [
-    "BAKS 500",
-    "500 mm",
-    "magasító",
-    "2,0 mm",
-    "14,4"
-   ],
-   "acel-oldalfal-b-600": [
-    "B 600",
-    "600 mm",
-    "alap",
-    "2,0 / 2,5 mm",
-    "15 / 18,8"
-   ],
-   "acel-oldalfal-bak-600": [
-    "BAK 600",
-    "600 mm",
-    "magasító",
-    "2,0 / 2,5 mm",
-    "15,8 / 19,8"
-   ],
-   "acel-oldalfal-baks-600": [
-    "BAKS 600",
-    "600 mm",
-    "magasító",
-    "2,0 / 2,5 mm",
-    "16 / 20"
-   ],
-   "acel-oldalfal-bakt-600": [
-    "BAKT 600",
-    "600 mm",
-    "magasító",
-    "2,5 mm",
-    "20,2"
-   ],
-   "acel-oldalfal-baktt-800": [
-    "BAKTT 800",
-    "800 mm",
-    "magasító",
-    "2,5 mm",
-    "24,6"
-   ],
-   "acel-oldalfal-btt-800": [
-    "BTT 800",
-    "800 mm",
-    "alap",
-    "2,5 mm",
-    "23,6"
-   ]
-  },
-  "lengths": {
-   "min": 500,
-   "max": 13500,
-   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
-  },
-  "leader": "acel-oldalfal-b-300",
-  "members": {
-   "acel-oldalfal-b-300": "B 300 – 300 mm",
-   "acel-oldalfal-bak-300": "BAK 300 – 300 mm",
-   "acel-oldalfal-b-400": "B 400 – 400 mm",
-   "acel-oldalfal-bak-400": "BAK 400 – 400 mm",
-   "acel-oldalfal-bakskt-400": "BAKSkt 400 – 400 mm",
-   "acel-oldalfal-bakkt-400": "BAKkt 400 – 400 mm",
-   "acel-oldalfal-b-450": "B 450 – 450 mm",
-   "acel-oldalfal-bak-450": "BAK 450 – 450 mm",
-   "acel-oldalfal-b-500": "B 500 – 500 mm",
-   "acel-oldalfal-bak-500": "BAK 500 – 500 mm",
-   "acel-oldalfal-baks-500": "BAKS 500 – 500 mm",
-   "acel-oldalfal-b-600": "B 600 – 600 mm",
-   "acel-oldalfal-bak-600": "BAK 600 – 600 mm",
-   "acel-oldalfal-baks-600": "BAKS 600 – 600 mm",
-   "acel-oldalfal-bakt-600": "BAKT 600 – 600 mm",
-   "acel-oldalfal-baktt-800": "BAKTT 800 – 800 mm",
-   "acel-oldalfal-btt-800": "BTT 800 – 800 mm"
-  }
- },
  "acel-oldalfal-hvn": {
-  "name": "Acél oldalfal HVN rendszer (lézerhegesztett)",
+  "name": "Acél oldalfal HVN (lézerhegesztett)",
   "label": "Típus",
   "title": "Rendelhető típusok",
   "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
@@ -2983,8 +3095,8 @@
    "acel-oldalfal-hvntt-800": "HVNTT 800 – 800 mm"
   }
  },
- "acel-oldalfal-hvd": {
-  "name": "Acél oldalfal HVD rendszer (lézerhegesztett)",
+ "acel-oldalfal-b": {
+  "name": "Acél oldalfal B (lézerhegesztett)",
   "label": "Típus",
   "title": "Rendelhető típusok",
   "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
@@ -2997,26 +3109,47 @@
    "kg/m"
   ],
   "rows": {
-   "acel-oldalfal-hvd-400": [
-    "HVD 400",
+   "acel-oldalfal-b-300": [
+    "B 300",
+    "300 mm",
+    "alap",
+    "2,0 mm",
+    "10"
+   ],
+   "acel-oldalfal-b-400": [
+    "B 400",
     "400 mm",
     "alap",
     "2,0 mm",
-    "11,0"
+    "11,6"
    ],
-   "acel-oldalfal-hvd-500": [
-    "HVD 500",
+   "acel-oldalfal-b-450": [
+    "B 450",
+    "450 mm",
+    "alap",
+    "2,0 mm",
+    "12,6"
+   ],
+   "acel-oldalfal-b-500": [
+    "B 500",
     "500 mm",
     "alap",
-    "2,0 mm",
-    "11,7"
+    "2,0 / 2,5 mm",
+    "13,4 / 16,8"
    ],
-   "acel-oldalfal-hvd-600": [
-    "HVD 600",
+   "acel-oldalfal-b-600": [
+    "B 600",
     "600 mm",
     "alap",
-    "2,0 mm",
-    "14,3"
+    "2,0 / 2,5 mm",
+    "15 / 18,8"
+   ],
+   "acel-oldalfal-btt-800": [
+    "BTT 800",
+    "800 mm",
+    "alap",
+    "2,5 mm",
+    "23,6"
    ]
   },
   "lengths": {
@@ -3024,15 +3157,18 @@
    "max": 13500,
    "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
   },
-  "leader": "acel-oldalfal-hvd-400",
+  "leader": "acel-oldalfal-b-300",
   "members": {
-   "acel-oldalfal-hvd-400": "HVD 400 – 400 mm",
-   "acel-oldalfal-hvd-500": "HVD 500 – 500 mm",
-   "acel-oldalfal-hvd-600": "HVD 600 – 600 mm"
+   "acel-oldalfal-b-300": "B 300 – 300 mm",
+   "acel-oldalfal-b-400": "B 400 – 400 mm",
+   "acel-oldalfal-b-450": "B 450 – 450 mm",
+   "acel-oldalfal-b-500": "B 500 – 500 mm",
+   "acel-oldalfal-b-600": "B 600 – 600 mm",
+   "acel-oldalfal-btt-800": "BTT 800 – 800 mm"
   }
  },
  "acel-oldalfal-hv": {
-  "name": "Acél oldalfal HV rendszer (lézerhegesztett)",
+  "name": "Acél oldalfal HV (lézerhegesztett)",
   "label": "Típus",
   "title": "Rendelhető típusok",
   "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
@@ -3052,13 +3188,6 @@
     "2,0 mm",
     "9,3"
    ],
-   "acel-oldalfal-hvak-300": [
-    "HVAK 300",
-    "300 mm",
-    "magasító",
-    "2,0 mm",
-    "10,1"
-   ],
    "acel-oldalfal-hv-350": [
     "HV 350",
     "350 mm",
@@ -3066,33 +3195,12 @@
     "2,0 mm",
     "10,1"
    ],
-   "acel-oldalfal-hvkt-350": [
-    "HVkT 350",
-    "350 mm",
-    "magasító",
-    "2,0 mm",
-    "10,4"
-   ],
    "hv400-acel-oldalfal-2-mm": [
     "HV 400",
     "400 mm",
     "alap",
     "2,0 mm",
     "10,9"
-   ],
-   "acel-oldalfal-hvak-400": [
-    "HVAK 400",
-    "400 mm",
-    "magasító",
-    "2,0 mm",
-    "11,7"
-   ],
-   "acel-oldalfal-2-mm": [
-    "HVAKKT 400",
-    "400 mm",
-    "magasító",
-    "2,0 mm",
-    "12,0"
    ],
    "acel-oldalfal-hvkt-400": [
     "HVkT 400",
@@ -3108,26 +3216,12 @@
     "2,0 mm",
     "11,9"
    ],
-   "acel-oldalfal-hvak-450": [
-    "HVAK 450",
-    "450 mm",
-    "magasító",
-    "2,0 mm",
-    "12,7"
-   ],
    "hv500-acel-oldalfal-2-mm": [
     "HV 500",
     "500 mm",
     "alap",
     "2,0 mm",
     "12,8"
-   ],
-   "acel-oldalfal-hvak-500": [
-    "HVAK 500",
-    "500 mm",
-    "alap",
-    "2,0 mm",
-    "11,4"
    ],
    "hv600-acel-oldalfal-2-mm": [
     "HV 600",
@@ -3136,47 +3230,12 @@
     "2,0 mm",
     "14,3"
    ],
-   "hvak600-acel-oldalfal-2-mm": [
-    "HVAK 600",
-    "600 mm",
-    "magasító",
-    "2,0 mm",
-    "15,2"
-   ],
-   "acel-oldalfal-hvakt-600": [
-    "HVAKT 600",
-    "600 mm",
-    "alap",
-    "2,0 mm",
-    "15,5"
-   ],
-   "acel-oldalfal-hv-800": [
-    "HV 800",
-    "800 mm",
-    "alap",
-    "2,0 mm",
-    "17,5"
-   ],
-   "acel-oldalfal-2-mm-2": [
-    "HVAKTT 800",
-    "800 mm",
-    "magasító",
-    "2,0 mm",
-    "19,0"
-   ],
    "acel-oldalfal-2-mm-3": [
     "HVTT 800",
     "800 mm",
     "alap",
     "2,0 mm",
     "18,3"
-   ],
-   "acel-oldalfal-hv-900": [
-    "HV 900",
-    "900 mm",
-    "alap",
-    "2,0 mm",
-    "19,1"
    ],
    "acel-oldalfal-hvw-1000": [
     "HVW 1000",
@@ -3194,24 +3253,13 @@
   "leader": "hv400-acel-oldalfal-2-mm",
   "members": {
    "acel-oldalfal-hv-300": "HV 300 – 300 mm",
-   "acel-oldalfal-hvak-300": "HVAK 300 – 300 mm",
    "acel-oldalfal-hv-350": "HV 350 – 350 mm",
-   "acel-oldalfal-hvkt-350": "HVkT 350 – 350 mm",
    "hv400-acel-oldalfal-2-mm": "HV 400 – 400 mm",
-   "acel-oldalfal-hvak-400": "HVAK 400 – 400 mm",
-   "acel-oldalfal-2-mm": "HVAKKT 400 – 400 mm",
    "acel-oldalfal-hvkt-400": "HVkT 400 – 400 mm",
    "acel-oldalfal-hv-450": "HV 450 – 450 mm",
-   "acel-oldalfal-hvak-450": "HVAK 450 – 450 mm",
    "hv500-acel-oldalfal-2-mm": "HV 500 – 500 mm",
-   "acel-oldalfal-hvak-500": "HVAK 500 – 500 mm",
    "hv600-acel-oldalfal-2-mm": "HV 600 – 600 mm",
-   "hvak600-acel-oldalfal-2-mm": "HVAK 600 – 600 mm",
-   "acel-oldalfal-hvakt-600": "HVAKT 600 – 600 mm",
-   "acel-oldalfal-hv-800": "HV 800 – 800 mm",
-   "acel-oldalfal-2-mm-2": "HVAKTT 800 – 800 mm",
    "acel-oldalfal-2-mm-3": "HVTT 800 – 800 mm",
-   "acel-oldalfal-hv-900": "HV 900 – 900 mm",
    "acel-oldalfal-hvw-1000": "HVW 1000 – 1000 mm"
   }
  }

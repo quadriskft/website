@@ -2,8 +2,8 @@
 a termékoldalon táblázatban a típusok (alap / magasító / kerettel …) magasság szerint.
 
 Rendeléskor hossz × darab sorok (a gyártói hosszakból választva, ill. a lézerhegesztetteknél 500–13 500 mm).
-Rendszerek: lézerhegesztett B, BN, HV, HVN, HVD; Heavy Duty FHD, FOX B, FOX HV, FOX L (B / BAK / BN),
-FOX L (HV / HVAK / HVN), FOX-ROCK. A Quadris Excel-termékei (HV 400 …, „Acél oldalfal 2 mm”) a saját rendszerükben
+Csoportok a gyártó katalógusa szerint: lézerhegesztett B, BN / BNS, HV, HVN, BAK / BAKS, HVAK, kiegészítő profilok;
+Heavy Duty FOXL B / HV, FOXL BN / HVN, FOXL BAK / HVAK, FHD, FOX B / HV, FOX-ROCK. A Quadris Excel-termékei (HV 400 …, „Acél oldalfal 2 mm”) a saját rendszerükben
 a gyártói azonos típus helyén szerepelnek (a beszállítói duplikátum kimarad).
 Kimenet: data/termek_csaladok.json „acel-oldalfal-…” kulcsai (újragenerálva).
 
@@ -20,27 +20,33 @@ from common import ROOT  # noqa: E402
 
 OUT = ROOT / "data/termek_csaladok.json"
 CATS = ("lezerhegesztett-acel-oldalfalak", "heavy-duty-acel-oldalfalak", "acel-oldalfalak")
-SYSTEMS = [  # (azonosító, név, a típusbetűk feltétele)
-    ("fox-rock", "Acél oldalfal FOX-ROCK (Heavy Duty)", lambda s: s.startswith("FOX-ROCK")),
-    ("foxl-hv", "Acél oldalfal FOX L – HV / HVAK / HVN (Heavy Duty)", lambda s: s.startswith("FOXLHV")),
-    ("foxl-b", "Acél oldalfal FOX L – B / BAK / BN (Heavy Duty)", lambda s: s.startswith("FOXLB")),
-    ("foxhv", "Acél oldalfal FOX HV (Heavy Duty)", lambda s: s.startswith("FOXHV")),
-    ("foxb", "Acél oldalfal FOX B (Heavy Duty)", lambda s: s.startswith("FOXB")),
-    ("fhd", "Acél oldalfal FHD (Heavy Duty)", lambda s: s.startswith("FHD")),
-    ("bn", "Acél oldalfal BN rendszer (lézerhegesztett)", lambda s: s.startswith("BN")),
-    ("b", "Acél oldalfal B rendszer (lézerhegesztett)", lambda s: s.startswith("B")),
-    ("hvn", "Acél oldalfal HVN rendszer (lézerhegesztett)", lambda s: s.startswith("HVN")),
-    ("hvd", "Acél oldalfal HVD rendszer (lézerhegesztett)", lambda s: s.startswith("HVD")),
-    ("hv", "Acél oldalfal HV rendszer (lézerhegesztett)", lambda s: s.startswith("HV")),
+# a gyártó katalógusa (2016_Prospekt_Stahlbordwaende_GE) szerinti típuscsoportok; a feltétel a szóköz nélküli,
+# nagybetűs típuskódot kapja (pl. „BAKSKT400”); a kiegészítő profilokat a katalógus külön oldalon hozza
+ZUSATZ = {"BAK300", "HVAK300", "HVKT350", "HV800", "HV900", "HVD400", "HVD500", "HVD600", "BTT600", "HVTT600",
+          "HVAKTT600", "BAKTT600", "BTD940", "HVTD940", "HVOS350", "HVOS400"}
+SYSTEMS = [  # (azonosító, név, feltétel)
+    ("fox-rock", "Acél oldalfal FOX-ROCK (Heavy Duty)", lambda c: c.startswith("FOX-ROCK")),
+    ("foxl-bak-hvak", "Acél oldalfal FOXL BAK / HVAK (Heavy Duty)", lambda c: re.match(r"FOXL(BAK|HVAK)\d", c)),
+    ("foxl-bn-hvn", "Acél oldalfal FOXL BN / HVN (Heavy Duty)", lambda c: re.match(r"FOXL(BN|HVN)\d", c)),
+    ("foxl-b-hv", "Acél oldalfal FOXL B / HV (Heavy Duty)", lambda c: re.match(r"FOXL(B|HV)\d", c)),
+    ("fox-b-hv", "Acél oldalfal FOX B / HV (Heavy Duty)", lambda c: re.match(r"FOX(B|HV)\d", c)),
+    ("fhd", "Acél oldalfal FHD (Heavy Duty)", lambda c: c.startswith("FHD")),
+    ("kiegeszito", "Acél oldalfal – kiegészítő profilok (lézerhegesztett)", lambda c: c in ZUSATZ),
+    ("bak-baks", "Acél oldalfal BAK / BAKS (lézerhegesztett)", lambda c: c.startswith("BAK")),
+    ("hvak", "Acél oldalfal HVAK (lézerhegesztett)", lambda c: c.startswith("HVAK")),
+    ("bn-bns", "Acél oldalfal BN / BNS (lézerhegesztett)", lambda c: c.startswith("BN")),
+    ("hvn", "Acél oldalfal HVN (lézerhegesztett)", lambda c: c.startswith("HVN")),
+    ("b", "Acél oldalfal B (lézerhegesztett)", lambda c: c.startswith("B")),
+    ("hv", "Acél oldalfal HV (lézerhegesztett)", lambda c: c.startswith("HV")),
 ]
 
 
-# gyártási hosszak a gyártói prospektus szerint: Heavy Duty 2500 / 5000 / 6000 mm (FHD: 2500 / 5000 mm),
+# gyártási hosszak a gyártói katalógus szerint: Heavy Duty 2500 / 5000 / 6000 mm (FHD: 2500 / 5000 mm),
 # a lézerhegesztett profilok 0,5–13,5 m között tetszőleges hosszban
 LIGHT = {"min": 500, "max": 13500, "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."}
 HEAVY = {"options": [2500, 5000, 6000], "hint": "Gyártási hosszak: 2500, 5000 vagy 6000 mm. Több hossz is megadható."}
 LENGTHS = {"fhd": {"options": [2500, 5000], "hint": "Gyártási hosszak: 2500 vagy 5000 mm. Több hossz is megadható."},
-           "foxb": HEAVY, "foxhv": HEAVY, "foxl-b": HEAVY, "foxl-hv": HEAVY, "fox-rock": HEAVY}
+           "fox-b-hv": HEAVY, "foxl-b-hv": HEAVY, "foxl-bn-hvn": HEAVY, "foxl-bak-hvak": HEAVY, "fox-rock": HEAVY}
 
 
 def usage(code):
@@ -80,8 +86,8 @@ def main():
             if not m:
                 print("  nem értelmezhető típus:", p["slug"], code)
                 continue
-            letters = m.group(1).replace(" ", "").upper()
-            sysid = next((sid for sid, _, cond in SYSTEMS if cond(letters)), None)
+            key = code.replace(" ", "").replace('"', "").upper()
+            sysid = next((sid for sid, _, cond in SYSTEMS if cond(key)), None)
             height = int(spec(sp, "Magasság [mm]", "Magasság").split()[0] or 0) if spec(sp, "Magasság [mm]", "Magasság") else 0
             items.append((sysid, re.sub(r"\s+", " ", code), height, p["slug"], is_excel, sp))
     fams = {k: v for k, v in json.loads(OUT.read_text()).items() if not k.startswith("acel-oldalfal-")}
