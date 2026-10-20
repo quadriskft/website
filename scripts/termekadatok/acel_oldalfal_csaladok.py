@@ -1,6 +1,7 @@
 """Acél oldalfalak a gyártó típusrendszere szerint termékcsaládokba (a Quadris kérésére): rendszerenként egy termék,
 a termékoldalon táblázatban a típusok (alap / magasító / kerettel …) magasság szerint.
 
+Rendeléskor hossz × darab sorok (a gyártói hosszakból választva, ill. a lézerhegesztetteknél 500–13 500 mm).
 Rendszerek: lézerhegesztett B, BN, HV, HVN, HVD; Heavy Duty FHD, FOX B, FOX HV, FOX L (B / BAK / BN),
 FOX L (HV / HVAK / HVN), FOX-ROCK. A Quadris Excel-termékei (HV 400 …, „Acél oldalfal 2 mm”) a saját rendszerükben
 a gyártói azonos típus helyén szerepelnek (a beszállítói duplikátum kimarad).
@@ -32,6 +33,14 @@ SYSTEMS = [  # (azonosító, név, a típusbetűk feltétele)
     ("hvd", "Acél oldalfal HVD rendszer (lézerhegesztett)", lambda s: s.startswith("HVD")),
     ("hv", "Acél oldalfal HV rendszer (lézerhegesztett)", lambda s: s.startswith("HV")),
 ]
+
+
+# gyártási hosszak a gyártói prospektus szerint: Heavy Duty 2500 / 5000 / 6000 mm (FHD: 2500 / 5000 mm),
+# a lézerhegesztett profilok 0,5–13,5 m között tetszőleges hosszban
+LIGHT = {"min": 500, "max": 13500, "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."}
+HEAVY = {"options": [2500, 5000, 6000], "hint": "Gyártási hosszak: 2500, 5000 vagy 6000 mm. Több hossz is megadható."}
+LENGTHS = {"fhd": {"options": [2500, 5000], "hint": "Gyártási hosszak: 2500 vagy 5000 mm. Több hossz is megadható."},
+           "foxb": HEAVY, "foxhv": HEAVY, "foxl-b": HEAVY, "foxl-hv": HEAVY, "fox-rock": HEAVY}
 
 
 def usage(code):
@@ -100,6 +109,7 @@ def main():
                             (spec(r[5], "Lemezvastagság [mm]") + " mm") if spec(r[5], "Lemezvastagság [mm]") else spec(r[5], "Falvastagság") or "–",
                             spec(r[5], "Tömeg [kg/m]") or spec(r[5], "Tömeg").replace(" kg/fm", "") or "–"]
                      for r in rows},
+            "lengths": LENGTHS.get(sid, LIGHT),
             "leader": leader,
             "members": {r[3]: f"{r[1]} – {r[2]} mm" if r[2] else r[1] for r in rows},
         }

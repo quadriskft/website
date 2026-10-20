@@ -2163,6 +2163,14 @@
     "47 | 54 | 59"
    ]
   },
+  "lengths": {
+   "options": [
+    2500,
+    5000,
+    6000
+   ],
+   "hint": "Gyártási hosszak: 2500, 5000 vagy 6000 mm. Több hossz is megadható."
+  },
   "leader": "acel-oldalfal-fox-rock-heavy",
   "members": {
    "acel-oldalfal-fox-rock-heavy": "FOX-ROCK HEAVY – 800 mm",
@@ -2288,6 +2296,14 @@
     "2,5 & 3,0 mm",
     "21,9"
    ]
+  },
+  "lengths": {
+   "options": [
+    2500,
+    5000,
+    6000
+   ],
+   "hint": "Gyártási hosszak: 2500, 5000 vagy 6000 mm. Több hossz is megadható."
   },
   "leader": "acel-oldalfal-foxlhv-400",
   "members": {
@@ -2442,6 +2458,14 @@
     "30,4"
    ]
   },
+  "lengths": {
+   "options": [
+    2500,
+    5000,
+    6000
+   ],
+   "hint": "Gyártási hosszak: 2500, 5000 vagy 6000 mm. Több hossz is megadható."
+  },
   "leader": "acel-oldalfal-foxlb-400",
   "members": {
    "acel-oldalfal-foxlb-400": "FOXLB 400 – 400 mm",
@@ -2513,6 +2537,14 @@
     "44,3"
    ]
   },
+  "lengths": {
+   "options": [
+    2500,
+    5000,
+    6000
+   ],
+   "hint": "Gyártási hosszak: 2500, 5000 vagy 6000 mm. Több hossz is megadható."
+  },
   "leader": "acel-oldalfal-foxhv-600",
   "members": {
    "acel-oldalfal-foxhv-600": "FOXHV 600 – 600 mm",
@@ -2572,6 +2604,14 @@
     "45"
    ]
   },
+  "lengths": {
+   "options": [
+    2500,
+    5000,
+    6000
+   ],
+   "hint": "Gyártási hosszak: 2500, 5000 vagy 6000 mm. Több hossz is megadható."
+  },
   "leader": "acel-oldalfal-foxb-600",
   "members": {
    "acel-oldalfal-foxb-600": "FOXB 600 – 600 mm",
@@ -2609,6 +2649,13 @@
     "3,0 mm",
     "28,7"
    ]
+  },
+  "lengths": {
+   "options": [
+    2500,
+    5000
+   ],
+   "hint": "Gyártási hosszak: 2500 vagy 5000 mm. Több hossz is megadható."
   },
   "leader": "acel-oldalfal-fhd-600",
   "members": {
@@ -2686,6 +2733,11 @@
     "2,5 mm",
     "24,1"
    ]
+  },
+  "lengths": {
+   "min": 500,
+   "max": 13500,
+   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
   },
   "leader": "acel-oldalfal-bnkt-400",
   "members": {
@@ -2833,6 +2885,11 @@
     "23,6"
    ]
   },
+  "lengths": {
+   "min": 500,
+   "max": 13500,
+   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
+  },
   "leader": "acel-oldalfal-b-300",
   "members": {
    "acel-oldalfal-b-300": "B 300 – 300 mm",
@@ -2911,6 +2968,11 @@
     "18,7"
    ]
   },
+  "lengths": {
+   "min": 500,
+   "max": 13500,
+   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
+  },
   "leader": "acel-oldalfal-hvn-400",
   "members": {
    "acel-oldalfal-hvn-400": "HVN 400 – 400 mm",
@@ -2956,6 +3018,11 @@
     "2,0 mm",
     "14,3"
    ]
+  },
+  "lengths": {
+   "min": 500,
+   "max": 13500,
+   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
   },
   "leader": "acel-oldalfal-hvd-400",
   "members": {
@@ -3118,6 +3185,11 @@
     "2,0 mm",
     "20,7"
    ]
+  },
+  "lengths": {
+   "min": 500,
+   "max": 13500,
+   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
   },
   "leader": "hv400-acel-oldalfal-2-mm",
   "members": {

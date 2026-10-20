@@ -125,17 +125,37 @@ const jsonLd = [
                 <p class="field-error">Adja meg a kért méretet.</p>
               </div>
             )}
-            <div class="order-row">
-              <div class="qty" data-qty>
-                <button type="button" data-step="-1" aria-label="Kevesebb"><Icon name="Minus" /></button>
-                <input type="number" id="qty" min="1" max="99999" value="1" inputmode="numeric" aria-label="Darab" />
-                <button type="button" data-step="1" aria-label="Több"><Icon name="Plus" /></button>
+            {family.lengths ? (
+              <div class="cut-order family-lengths" data-cut-order
+                data-product={JSON.stringify({ ...publicProduct({ ...product, family: true }), name: `${family.name} – ${familyMembers.find((m) => m.slug === product.slug)?.value}` })}
+                data-lengths={family.lengths.options ? JSON.stringify(family.lengths.options) : undefined}
+                data-min={family.lengths.min} data-max={family.lengths.max}>
+                <p class="variant-label lengths-title">Rendelt hosszak és darabszámok</p>
+                <p class="muted small lengths-hint">{family.lengths.hint}</p>
+                <div class="cut-head" aria-hidden="true"><span>Hossz [mm]</span><span>Darab</span><span></span></div>
+                <div class="cut-rows" data-cut-rows></div>
+                <button type="button" class="add-row" data-add-row><Icon name="Plus" size={18} /> Másik hossz hozzáadása</button>
+                <label class="cut-note-label" for="cut-note">Megjegyzés</label>
+                <textarea id="cut-note" class="input cut-note" rows="2" maxlength="300" placeholder="pl. felületkezelés, szállítási határidő…" data-cut-note></textarea>
+                <p class="cut-error" data-cut-error hidden>{family.lengths.options ? 'Válasszon hosszt és adja meg a darabszámot.' : `Adjon meg legalább egy hosszt (${family.lengths.min}–${family.lengths.max} mm).`}</p>
+                <div class="cut-actions">
+                  <span class="muted small" data-cut-total></span>
+                  <button type="button" class="btn btn-primary" data-add-cuts><Icon name="ClipboardList" /> <span>Ajánlatkérőbe</span></button>
+                </div>
               </div>
-              {product.unit && <span class="qty-unit">{product.unit}</span>}
-              <button type="button" class="btn btn-primary add-main" data-variant-add data-add-to-quote={JSON.stringify({ ...publicProduct({ ...product, family: true }), name: `${family.name} – ${familyMembers.find((m) => m.slug === product.slug)?.value}` })} data-qty-from="#qty" data-note-from={family.input ? '#kert-meret' : undefined}>
-                <Icon name="ClipboardList" /> <span class="label">Ajánlatkérőbe</span>
-              </button>
-            </div>
+            ) : (
+            <div class="order-row">
+                <div class="qty" data-qty>
+                  <button type="button" data-step="-1" aria-label="Kevesebb"><Icon name="Minus" /></button>
+                  <input type="number" id="qty" min="1" max="99999" value="1" inputmode="numeric" aria-label="Darab" />
+                  <button type="button" data-step="1" aria-label="Több"><Icon name="Plus" /></button>
+                </div>
+                {product.unit && <span class="qty-unit">{product.unit}</span>}
+                <button type="button" class="btn btn-primary add-main" data-variant-add data-add-to-quote={JSON.stringify({ ...publicProduct({ ...product, family: true }), name: `${family.name} – ${familyMembers.find((m) => m.slug === product.slug)?.value}` })} data-qty-from="#qty" data-note-from={family.input ? '#kert-meret' : undefined}>
+                  <Icon name="ClipboardList" /> <span class="label">Ajánlatkérőbe</span>
+                </button>
+              </div>
+            )}
             {product.orderNote && <p class="order-note"><Icon name="Ruler" size={16} /> {product.orderNote}</p>}
             <p class="muted small">Árat nem tüntetünk fel – tegye az ajánlatkérőbe, és személyre szabott ajánlatot küldünk mennyiség és szállítási igény alapján.</p>
           </div>
@@ -362,6 +382,10 @@ const jsonLd = [
   const order = document.querySelector('[data-cut-order]');
   if (order) {
     const product = JSON.parse(order.dataset.product);
+    // termékcsalád gyártói hosszakkal (választólista) vagy hossztartománnyal (pl. acél oldalfalak)
+    const options = order.dataset.lengths ? JSON.parse(order.dataset.lengths) : null;
+    const minLen = Number(order.dataset.min) || 1;
+    const maxLen = Number(order.dataset.max) || 30000;
     const rows = order.querySelector('[data-cut-rows]');
     const note = order.querySelector('[data-cut-note]');
     const totalEl = order.querySelector('[data-cut-total]');
@@ -370,7 +394,10 @@ const jsonLd = [
     const addRow = (len = '', pcs = 1, focus = false) => {
       const row = document.createElement('div');
       row.className = 'cut-row';
-      row.innerHTML = `<input class="input" type="number" min="1" max="30000" step="1" inputmode="numeric" placeholder="pl. 6000" aria-label="Hossz (mm)" data-len value="${len}">
+      const lenField = options
+        ? `<select class="input" aria-label="Hossz (mm)" data-len><option value="">– hossz –</option>${options.map((o) => `<option value="${o}"${String(o) === String(len) ? ' selected' : ''}>${o} mm</option>`).join('')}</select>`
+        : `<input class="input" type="number" min="${minLen}" max="${maxLen}" step="1" inputmode="numeric" placeholder="pl. 6000" aria-label="Hossz (mm)" data-len value="${len}">`;
+      row.innerHTML = `${lenField}
         <input class="input" type="number" min="1" max="99999" step="1" inputmode="numeric" aria-label="Darab" data-pcs value="${pcs}">
         <button type="button" class="row-remove" aria-label="Sor törlése" data-remove-row>${x}</button>`;
       rows.append(row);
@@ -410,7 +437,7 @@ const jsonLd = [
     });
     order.querySelector('[data-add-cuts]').addEventListener('click', () => {
       const cuts = normalizeCuts(read());
-      if (!cuts.length) {
+      if (!cuts.length || cuts.some((c) => c.len < minLen || c.len > maxLen)) {
         errorEl.hidden = false;
         rows.querySelector('[data-len]')?.focus();
         return;
@@ -489,6 +516,9 @@ const jsonLd = [
   .config-field .input { padding: 10px 12px; font-size: 0.95rem; }
   .config-field small { font-size: 0.78rem; }
   .config-field:global(.invalid) .input { border-color: #d33; }
+  .family-lengths { margin-top: 16px; }
+  .family-lengths .lengths-title { margin: 0; }
+  .family-lengths .lengths-hint { margin: 4px 0 10px; }
   .note-field { display: grid; gap: 6px; margin-top: 14px; }
   .note-field .field-error { display: none; margin: 0; color: #d33; font-size: 0.85rem; font-weight: 600; }
   .note-field:global(.invalid) .field-error { display: block; }
