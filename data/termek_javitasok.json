@@ -1668,5 +1668,47 @@
    "group": "gumiszonyegek",
    "category": "viztiszta-pvc"
   }
+ },
+ "hv400-acel-oldalfal-2-mm": {
+  "move": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak"
+  }
+ },
+ "hv500-acel-oldalfal-2-mm": {
+  "move": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak"
+  }
+ },
+ "hv600-acel-oldalfal-2-mm": {
+  "move": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak"
+  }
+ },
+ "hvak600-acel-oldalfal-2-mm": {
+  "move": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak"
+  }
+ },
+ "acel-oldalfal-2-mm": {
+  "move": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak"
+  }
+ },
+ "acel-oldalfal-2-mm-2": {
+  "move": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak"
+  }
+ },
+ "acel-oldalfal-2-mm-3": {
+  "move": {
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak"
+  }
  }
 }

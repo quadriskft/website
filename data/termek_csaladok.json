@@ -2924,7 +2924,7 @@
    "max": 13500,
    "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
   },
-  "leader": "acel-oldalfal-2-mm",
+  "leader": "acel-oldalfal-hvak-400",
   "members": {
    "acel-oldalfal-hvak-400": "HVAK 400 – 400 mm",
    "acel-oldalfal-2-mm": "HVAKKT 400 – 400 mm",
@@ -3250,7 +3250,7 @@
    "max": 13500,
    "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
   },
-  "leader": "hv400-acel-oldalfal-2-mm",
+  "leader": "acel-oldalfal-hv-300",
   "members": {
    "acel-oldalfal-hv-300": "HV 300 – 300 mm",
    "acel-oldalfal-hv-350": "HV 350 – 350 mm",

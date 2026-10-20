@@ -105,7 +105,8 @@ def main():
         if len(rows) < 2:
             continue
         rows.sort(key=lambda i: (i[2], i[1]))
-        leader = next((r[3] for r in rows if r[4]), rows[0][3])
+        # a kártyán a legkisebb típus élesített 3D képe (a beszállítói termék; az Excel-termék képe rajz)
+        leader = next((r[3] for r in rows if not r[4]), rows[0][3])
         fams[f"acel-oldalfal-{sid}"] = {
             "name": name, "label": "Típus", "title": "Rendelhető típusok",
             "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); "
