@@ -2,7 +2,7 @@
 
 - kezdőkép: a Quadris által küldött fotó (raklapos áthajtás), a gyártói (METALMEC) vízjel alatt levágva, 2x
   Lanczos-nagyítással
-- második kép: a hosszhoz tartozó méretrajz (940 mm: athajto-rampa, 1065 mm: athajto-rampa-1065 – kézzel felvett
+- második kép: a hosszhoz tartozó méretrajz, harmadik a másik hossz rajza (940 mm: athajto-rampa, 1065 mm: athajto-rampa-1065 – kézzel felvett
   termék, data/kezi_termekek.json); a két hossz egy termékcsaládban, táblázatból választható
 - műszaki adatok a rajzról
 
@@ -34,6 +34,9 @@ def main():
         if slug in RAJZ:
             src, hossz = RAJZ[slug]
             imgs.append(save_image(Image.open(ROOT / src), slug, "meretrajz"))
+            # 3. képként a másik hossz rajza is (a Quadris kérésére mindkét méretrajz látható)
+            other = next(k for k in RAJZ if k != slug)
+            imgs.append(save_image(Image.open(ROOT / RAJZ[other][0]), slug, f"meretrajz-{RAJZ[other][1]}"))
             e["specs"] = {**e.get("specs", {}), "Hossz": f"{hossz} mm", "Magasság (profil)": "40 mm",
                           "Felhajtó él": "250 mm (ebből 200 mm lejtős)", "Zsanércsap": "Ø17 mm",
                           "Zsanérosztás": "186 mm", "Anyag": "alumínium, rácsos (üreges) profil, bordázott felület"}
