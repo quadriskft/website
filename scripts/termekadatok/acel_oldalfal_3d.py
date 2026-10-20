@@ -20,6 +20,7 @@ SRC = ROOT / "data/forras/acel_oldalfal_3d"
 ATTEKINTO = {"data/forras/acel_oldalfal_b_attekinto.png": ["acel-oldalfal-b-300", "acel-oldalfal-b-400", "acel-oldalfal-bkt-400",
                                                           "acel-oldalfal-b-450", "acel-oldalfal-b-500", "acel-oldalfal-b-600",
                                                           "acel-oldalfal-btt-800"],
+             "data/forras/acel_oldalfal_hv_attekinto.png": ["acel-oldalfal-hv-300", "acel-oldalfal-hv-350", "hv400-acel-oldalfal-2-mm", "acel-oldalfal-hvkt-400", "acel-oldalfal-hv-450", "hv500-acel-oldalfal-2-mm", "hv600-acel-oldalfal-2-mm", "acel-oldalfal-2-mm-3", "acel-oldalfal-hvw-1000"],
              "data/forras/acel_oldalfal_bn_attekinto.png": ["acel-oldalfal-bnkt-400", "acel-oldalfal-bnskt-400", "acel-oldalfal-bn-450", "acel-oldalfal-bn-500", "acel-oldalfal-bns-500", "acel-oldalfal-bn-600", "acel-oldalfal-bns-600", "acel-oldalfal-bntt-800"]}
 
 

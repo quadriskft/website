@@ -86,7 +86,9 @@ def main():
             cat = (fixes.get(p["slug"], {}).get("move") or moves.get(p["slug"]) or {}).get("category", p["category"])
             if cat not in CATS or p["slug"] in deleted:
                 continue
-            sp = {**(p.get("specs") or {}), **(extra.get(p["slug"], {}).get("specs") or {})}
+            sp = {**(p.get("specs") or {}), **(extra.get(p["slug"], {}).get("specs") or {}),
+                  **(fixes.get(p["slug"], {}).get("specs") or {})}
+            sp = {k: v for k, v in sp.items() if v is not None}
             code = (fixes.get(p["slug"], {}).get("code") or p.get("code") or sp.get("Típus") or "").strip()
             m = re.match(r"^([A-Za-z\-]+(?: ?(?:HEAVY|LIGHT))?)\s*(\d{3,4})?$", code)
             if not m:

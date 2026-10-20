@@ -1673,18 +1673,36 @@
   "move": {
    "group": "acel-profilok",
    "category": "lezerhegesztett-acel-oldalfalak"
+  },
+  "specs": {
+   "Falvastagság": null,
+   "Tömeg": null,
+   "Lemezvastagság [mm]": "1,25 / 1,5 / 2,0",
+   "Tömeg [kg/m]": "6,8 / 8,2 / 10,9"
   }
  },
  "hv500-acel-oldalfal-2-mm": {
   "move": {
    "group": "acel-profilok",
    "category": "lezerhegesztett-acel-oldalfalak"
+  },
+  "specs": {
+   "Falvastagság": null,
+   "Tömeg": null,
+   "Lemezvastagság [mm]": "1,5 / 2,0",
+   "Tömeg [kg/m]": "9,6 / 12,8"
   }
  },
  "hv600-acel-oldalfal-2-mm": {
   "move": {
    "group": "acel-profilok",
    "category": "lezerhegesztett-acel-oldalfalak"
+  },
+  "specs": {
+   "Falvastagság": null,
+   "Tömeg": null,
+   "Lemezvastagság [mm]": "1,5 / 2,0",
+   "Tömeg [kg/m]": "10,8 / 14,3"
   }
  },
  "hvak600-acel-oldalfal-2-mm": {
