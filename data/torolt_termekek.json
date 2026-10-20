@@ -1321,5 +1321,12 @@
   "code": "BAK 400",
   "date": "2026-10-20",
   "reason": "Quadris kérése: a gyártói katalógusban nem szerepel"
+ },
+ "103654-ontott-sarokelem": {
+  "name": "Öntött sarokelem",
+  "supplier": "Alu-SV",
+  "code": "103654",
+  "date": "2026-10-20",
+  "reason": "Quadris kérése: nem kell"
  }
 }
