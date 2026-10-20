@@ -1259,49 +1259,390 @@
    "gumilap-nr-sbr-sbr-100-0-1x1-1-1": "100 mm – 1000 mm × 1 m"
   }
  },
- "gumi-pu-lemezek-ppu90-3-0-pr-mium-poliuret-n-pu-lemez-3-mm": {
-  "name": "Prémium poliuretán (PU) lemez 3 mm",
-  "label": "Méret",
-  "title": "Rendelhető méretek",
-  "note": "3 mm vastag – az alábbi méretekben rendelhető.",
+ "gumi-lemez-pr-mium-poliuret-n-pu-lemez-pr-mium-poliuret-n-pu-lemez": {
+  "name": "Prémium poliuretán (PU) lemez",
+  "label": "Vastagság és méret",
+  "title": "Rendelhető vastagságok és méretek",
+  "note": "Prémium poliuretán (PU) lemez – válassza ki a kívánt vastagságot és méretet.",
   "navigate": true,
   "table": [
-   "Méret",
-   "Vastagság [mm]"
+   "Vastagság",
+   "Szélesség",
+   "Hossz"
   ],
+  "rows": {
+   "premium-poliuretan-pu-lemez-ppu90-3-0-1000-2000": [
+    "3 mm",
+    "1000 mm",
+    "2 m"
+   ],
+   "premium-poliuretan-pu-lemez-ppu90-3-0-1000-4000": [
+    "3 mm",
+    "1000 mm",
+    "4 m"
+   ],
+   "premium-poliuretan-pu-lemez-ppu90-6-0-1000-2000": [
+    "6 mm",
+    "1000 mm",
+    "2 m"
+   ],
+   "premium-poliuretan-pu-lemez-ppu90-6-0-1000-4000": [
+    "6 mm",
+    "1000 mm",
+    "4 m"
+   ],
+   "premium-poliuretan-pu-lemez-ppu90-10-0-1000-2000": [
+    "10 mm",
+    "1000 mm",
+    "2 m"
+   ],
+   "premium-poliuretan-pu-lemez-ppu90-10-0-1000-4000": [
+    "10 mm",
+    "1000 mm",
+    "4 m"
+   ]
+  },
   "members": {
-   "premium-poliuretan-pu-lemez-ppu90-3-0-1000-2000": "1000 × 2000 mm",
-   "premium-poliuretan-pu-lemez-ppu90-3-0-1000-4000": "1000 × 4000 mm"
+   "premium-poliuretan-pu-lemez-ppu90-3-0-1000-2000": "3 mm – 1000 mm × 2 m",
+   "premium-poliuretan-pu-lemez-ppu90-3-0-1000-4000": "3 mm – 1000 mm × 4 m",
+   "premium-poliuretan-pu-lemez-ppu90-6-0-1000-2000": "6 mm – 1000 mm × 2 m",
+   "premium-poliuretan-pu-lemez-ppu90-6-0-1000-4000": "6 mm – 1000 mm × 4 m",
+   "premium-poliuretan-pu-lemez-ppu90-10-0-1000-2000": "10 mm – 1000 mm × 2 m",
+   "premium-poliuretan-pu-lemez-ppu90-10-0-1000-4000": "10 mm – 1000 mm × 4 m"
   }
  },
- "gumi-pu-lemezek-ppu90-6-0-pr-mium-poliuret-n-pu-lemez-6-mm": {
-  "name": "Prémium poliuretán (PU) lemez 6 mm",
-  "label": "Méret",
-  "title": "Rendelhető méretek",
-  "note": "6 mm vastag – az alábbi méretekben rendelhető.",
+ "gumi-lemez-kop-s-ll-poliuret-n-pu-lemez-kop-s-ll-poliuret-n-pu-lemez": {
+  "name": "Kopásálló poliuretán (PU) lemez",
+  "label": "Vastagság és méret",
+  "title": "Rendelhető vastagságok és méretek",
+  "note": "Kopásálló poliuretán (PU) lemez – válassza ki a kívánt vastagságot és méretet.",
   "navigate": true,
   "table": [
-   "Méret",
-   "Vastagság [mm]"
+   "Vastagság",
+   "Szélesség",
+   "Hossz"
   ],
+  "rows": {
+   "kopasallo-poliuretan-pu-lemez-pur63-6-0-1400-10000": [
+    "6 mm",
+    "1400 mm",
+    "10 m"
+   ],
+   "kopasallo-poliuretan-pu-lemez-pur63-8-0-1400-10000": [
+    "8 mm",
+    "1400 mm",
+    "10 m"
+   ],
+   "kopasallo-poliuretan-pu-lemez-pur63-10-0-1400-10000": [
+    "10 mm",
+    "1400 mm",
+    "10 m"
+   ]
+  },
   "members": {
-   "premium-poliuretan-pu-lemez-ppu90-6-0-1000-2000": "1000 × 2000 mm",
-   "premium-poliuretan-pu-lemez-ppu90-6-0-1000-4000": "1000 × 4000 mm"
+   "kopasallo-poliuretan-pu-lemez-pur63-6-0-1400-10000": "6 mm – 1400 mm × 10 m",
+   "kopasallo-poliuretan-pu-lemez-pur63-8-0-1400-10000": "8 mm – 1400 mm × 10 m",
+   "kopasallo-poliuretan-pu-lemez-pur63-10-0-1400-10000": "10 mm – 1400 mm × 10 m"
   }
  },
- "gumi-pu-lemezek-ppu90-10-0-pr-mium-poliuret-n-pu-lemez-10-mm": {
-  "name": "Prémium poliuretán (PU) lemez 10 mm",
-  "label": "Méret",
-  "title": "Rendelhető méretek",
-  "note": "10 mm vastag – az alábbi méretekben rendelhető.",
+ "gumi-lemez-poliuret-n-pu-lemez-70-shore-a-poliuret-n-pu-lemez-70-shore-a": {
+  "name": "Poliuretán (PU) lemez 70 Shore A",
+  "label": "Vastagság és méret",
+  "title": "Rendelhető vastagságok és méretek",
+  "note": "Poliuretán (PU) lemez 70 Shore A – válassza ki a kívánt vastagságot és méretet.",
   "navigate": true,
   "table": [
-   "Méret",
-   "Vastagság [mm]"
+   "Vastagság",
+   "Szélesség",
+   "Hossz"
   ],
+  "rows": {
+   "poliuretan-pu-lemez-70-shore-a-pu70-1-0-1-2-4": [
+    "1 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-70-shore-a-pu70-2-0-1-2-4": [
+    "2 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-70-shore-a-pu70-3-0-1-2-4": [
+    "3 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-70-shore-a-pu70-4-0-1-2-4": [
+    "4 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-70-shore-a-pu70-5-0-1-2-4": [
+    "5 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-70-shore-a-pu70-6-0-1-2-4": [
+    "6 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-70-shore-a-pu70-8-0-1-2-4": [
+    "8 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-70-shore-a-pu70-10-0-1-2-4": [
+    "10 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-70-shore-a-pu70-12-0-1-2-4": [
+    "12 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-70-shore-a-pu70-14-0-1-2-4": [
+    "14 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-70-shore-a-pu70-15-0-1-2-4": [
+    "15 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-70-shore-a-pu70-20-0-1-2-4": [
+    "20 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-70-shore-a-pu70-25-0-1-2": [
+    "25 mm",
+    "1000 mm",
+    "2 m"
+   ],
+   "poliuretan-pu-lemez-70-shore-a-pu70-30-0-1-2": [
+    "30 mm",
+    "1000 mm",
+    "2 m"
+   ]
+  },
   "members": {
-   "premium-poliuretan-pu-lemez-ppu90-10-0-1000-2000": "1000 × 2000 mm",
-   "premium-poliuretan-pu-lemez-ppu90-10-0-1000-4000": "1000 × 4000 mm"
+   "poliuretan-pu-lemez-70-shore-a-pu70-1-0-1-2-4": "1 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-70-shore-a-pu70-2-0-1-2-4": "2 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-70-shore-a-pu70-3-0-1-2-4": "3 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-70-shore-a-pu70-4-0-1-2-4": "4 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-70-shore-a-pu70-5-0-1-2-4": "5 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-70-shore-a-pu70-6-0-1-2-4": "6 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-70-shore-a-pu70-8-0-1-2-4": "8 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-70-shore-a-pu70-10-0-1-2-4": "10 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-70-shore-a-pu70-12-0-1-2-4": "12 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-70-shore-a-pu70-14-0-1-2-4": "14 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-70-shore-a-pu70-15-0-1-2-4": "15 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-70-shore-a-pu70-20-0-1-2-4": "20 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-70-shore-a-pu70-25-0-1-2": "25 mm – 1000 mm × 2 m",
+   "poliuretan-pu-lemez-70-shore-a-pu70-30-0-1-2": "30 mm – 1000 mm × 2 m"
+  }
+ },
+ "gumi-lemez-poliuret-n-pu-lemez-80-shore-a-poliuret-n-pu-lemez-80-shore-a": {
+  "name": "Poliuretán (PU) lemez 80 Shore A",
+  "label": "Vastagság és méret",
+  "title": "Rendelhető vastagságok és méretek",
+  "note": "Poliuretán (PU) lemez 80 Shore A – válassza ki a kívánt vastagságot és méretet.",
+  "navigate": true,
+  "table": [
+   "Vastagság",
+   "Szélesség",
+   "Hossz"
+  ],
+  "rows": {
+   "poliuretan-pu-lemez-80-shore-a-pu80-1-0-1-2-4": [
+    "1 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-80-shore-a-pu80-2-0-1-2-4": [
+    "2 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-80-shore-a-pu80-3-0-1-2-4": [
+    "3 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-80-shore-a-pu80-4-0-1-2-4": [
+    "4 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-80-shore-a-pu80-5-0-1-2-4": [
+    "5 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-80-shore-a-pu80-6-0-1-2-4": [
+    "6 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-80-shore-a-pu80-8-0-1-2-4": [
+    "8 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-80-shore-a-pu80-10-0-1-2-4": [
+    "10 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-80-shore-a-pu80-12-0-1-2-4": [
+    "12 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-80-shore-a-pu80-14-0-1-2-4": [
+    "14 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-80-shore-a-pu80-15-0-1-2-4": [
+    "15 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-80-shore-a-pu80-20-0-1-2-4": [
+    "20 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-80-shore-a-pu80-25-0-1-2": [
+    "25 mm",
+    "1000 mm",
+    "2 m"
+   ],
+   "poliuretan-pu-lemez-80-shore-a-pu80-30-0-1-2": [
+    "30 mm",
+    "1000 mm",
+    "2 m"
+   ]
+  },
+  "members": {
+   "poliuretan-pu-lemez-80-shore-a-pu80-1-0-1-2-4": "1 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-80-shore-a-pu80-2-0-1-2-4": "2 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-80-shore-a-pu80-3-0-1-2-4": "3 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-80-shore-a-pu80-4-0-1-2-4": "4 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-80-shore-a-pu80-5-0-1-2-4": "5 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-80-shore-a-pu80-6-0-1-2-4": "6 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-80-shore-a-pu80-8-0-1-2-4": "8 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-80-shore-a-pu80-10-0-1-2-4": "10 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-80-shore-a-pu80-12-0-1-2-4": "12 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-80-shore-a-pu80-14-0-1-2-4": "14 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-80-shore-a-pu80-15-0-1-2-4": "15 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-80-shore-a-pu80-20-0-1-2-4": "20 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-80-shore-a-pu80-25-0-1-2": "25 mm – 1000 mm × 2 m",
+   "poliuretan-pu-lemez-80-shore-a-pu80-30-0-1-2": "30 mm – 1000 mm × 2 m"
+  }
+ },
+ "gumi-lemez-poliuret-n-pu-lemez-90-shore-a-poliuret-n-pu-lemez-90-shore-a": {
+  "name": "Poliuretán (PU) lemez 90 Shore A",
+  "label": "Vastagság és méret",
+  "title": "Rendelhető vastagságok és méretek",
+  "note": "Poliuretán (PU) lemez 90 Shore A – válassza ki a kívánt vastagságot és méretet.",
+  "navigate": true,
+  "table": [
+   "Vastagság",
+   "Szélesség",
+   "Hossz"
+  ],
+  "rows": {
+   "poliuretan-pu-lemez-90-shore-a-pu90-1-0-1-2-4": [
+    "1 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-90-shore-a-pu90-2-0-1-2-4": [
+    "2 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-90-shore-a-pu90-3-0-1-2-4": [
+    "3 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-90-shore-a-pu90-4-0-1-2-4": [
+    "4 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-90-shore-a-pu90-5-0-1-2-4": [
+    "5 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-90-shore-a-pu90-6-0-1-2-4": [
+    "6 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-90-shore-a-pu90-8-0-1-2-4": [
+    "8 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-90-shore-a-pu90-10-0-1-2-4": [
+    "10 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-90-shore-a-pu90-12-0-1-2-4": [
+    "12 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-90-shore-a-pu90-14-0-1-2-4": [
+    "14 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-90-shore-a-pu90-15-0-1-2-4": [
+    "15 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-90-shore-a-pu90-20-0-1-2-4": [
+    "20 mm",
+    "1000 mm",
+    "2 / 4 m"
+   ],
+   "poliuretan-pu-lemez-90-shore-a-pu90-25-0-1-2": [
+    "25 mm",
+    "1000 mm",
+    "2 m"
+   ],
+   "poliuretan-pu-lemez-90-shore-a-pu90-30-0-1-2": [
+    "30 mm",
+    "1000 mm",
+    "2 m"
+   ]
+  },
+  "members": {
+   "poliuretan-pu-lemez-90-shore-a-pu90-1-0-1-2-4": "1 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-90-shore-a-pu90-2-0-1-2-4": "2 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-90-shore-a-pu90-3-0-1-2-4": "3 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-90-shore-a-pu90-4-0-1-2-4": "4 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-90-shore-a-pu90-5-0-1-2-4": "5 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-90-shore-a-pu90-6-0-1-2-4": "6 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-90-shore-a-pu90-8-0-1-2-4": "8 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-90-shore-a-pu90-10-0-1-2-4": "10 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-90-shore-a-pu90-12-0-1-2-4": "12 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-90-shore-a-pu90-14-0-1-2-4": "14 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-90-shore-a-pu90-15-0-1-2-4": "15 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-90-shore-a-pu90-20-0-1-2-4": "20 mm – 1000 mm × 2 / 4 m",
+   "poliuretan-pu-lemez-90-shore-a-pu90-25-0-1-2": "25 mm – 1000 mm × 2 m",
+   "poliuretan-pu-lemez-90-shore-a-pu90-30-0-1-2": "30 mm – 1000 mm × 2 m"
   }
  },
  "gumi-pvc-lemez-v-ztiszta-pvc-lemez": {

@@ -5,7 +5,7 @@ A család kulcsa: alkategória + típus + vastagság.
 - a bővített kínálat (Gummitrading-adatok): a típus a cikkszám első szava (pl. SM, SMM, 4012G, PU70), a név a
   vastagság előtti rész; a méret a név végéről (a ≤ 3 számú szélesség méterben értendő)
 - a Quadris Excel-termékei (G …): a név a méretek nélkül, a vastagság az első szám
-A víztiszta PVC és a gumilemezek (gumilemez, gumilap, szövetbetétes gumilemez 1, ill. 2 betéttel külön) a Quadris kérésére vastagságtól függetlenül egy-egy termék: a G tekercsek (3/4/5 mm) és a
+A víztiszta PVC, a PU lemezek (típusonként) és a gumilemezek (gumilemez, gumilap, szövetbetétes gumilemez 1, ill. 2 betéttel külön) a Quadris kérésére vastagságtól függetlenül egy-egy termék: a G tekercsek (3/4/5 mm) és a
 víztiszta PVC lemezek (1–7 mm, minden méret) – a táblázatban vastagság, szélesség, hossz.
 Csak a legalább 2 tagú csoportokból lesz család; a már családba sorolt és a törölt termékek kimaradnak.
 Kimenet: data/termek_csaladok.json „gumi-…” kulcsai (újragenerálva).
@@ -51,16 +51,20 @@ def extended_key(p):
 
 def pvc_key(p):
     """Víztiszta PVC és gumilemezek: vastagságtól független család (a vastagság a táblázat egyik oszlopa)."""
-    if p["category"] == "gumilemezek":
-        m = re.match(r"^(.*?) ([\d,]+) mm, ([\d,]+)×([\d,]+) mm$", p["name"])
+    if p["category"] in ("gumilemezek", "pu-lemezek"):
+        m = re.match(r"^(.*?) ([\d,]+) mm, ([\d,]+)×([\d,/]+) mm$", p["name"])
         if not m:
             return None
         base, th, w, l = m.groups()
         ins = re.search(r"/(\d)", p.get("code") or "")
         name = base + (f" – {ins.group(1)} szövetbetéttel" if base.startswith("Szövetbetétes") and ins else "")
-        wmm = f"{num(w) * 1000:g}"
-        return (("lemez", name), name, f"{th} mm – {wmm} mm × {l} m", (num(th), num(w), num(l)), th,
-                [f"{th} mm", f"{wmm} mm", f"{l} m"])
+        if num(w) <= 3:  # méterben megadott szélesség és hossz
+            wmm, lm = f"{num(w) * 1000:g}", l.replace("/", " / ")
+        else:
+            wmm, lm = w, hu(num(l) / 1000)
+        first = float(l.split("/")[0].replace(",", "."))
+        return (("lemez", name), name, f"{th} mm – {wmm} mm × {lm} m", (num(th), num(wmm), first), th,
+                [f"{th} mm", f"{wmm} mm", f"{lm} m"])
     if p["category"] != "viztiszta-pvc":
         return None
     m = re.match(r"^G (\d+)x(\d+) mm PVC", p["name"])
