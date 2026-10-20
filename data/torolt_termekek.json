@@ -1244,5 +1244,54 @@
   "code": "",
   "date": "2026-10-20",
   "reason": "Quadris kérése: az áthajtó rámpa két hosszban, egyedi szélességgel rendelhető – a külön termék nem kell"
+ },
+ "acel-oldalfal-hv-400": {
+  "name": "Acél oldalfal HV 400 mm",
+  "supplier": "Fuhrmann",
+  "code": "HV 400",
+  "date": "2026-10-20",
+  "reason": "duplikátum: ugyanez a típus a Quadris Excel-termékei között szerepel (a típustáblázatban az Excel-termék)"
+ },
+ "acel-oldalfal-hvakkt-400": {
+  "name": "Acél oldalfal HVAKkT 400 mm",
+  "supplier": "Fuhrmann",
+  "code": "HVAKkT 400",
+  "date": "2026-10-20",
+  "reason": "duplikátum: ugyanez a típus a Quadris Excel-termékei között szerepel (a típustáblázatban az Excel-termék)"
+ },
+ "acel-oldalfal-hv-500": {
+  "name": "Acél oldalfal HV 500 mm",
+  "supplier": "Fuhrmann",
+  "code": "HV 500",
+  "date": "2026-10-20",
+  "reason": "duplikátum: ugyanez a típus a Quadris Excel-termékei között szerepel (a típustáblázatban az Excel-termék)"
+ },
+ "acel-oldalfal-hv-600": {
+  "name": "Acél oldalfal HV 600 mm",
+  "supplier": "Fuhrmann",
+  "code": "HV 600",
+  "date": "2026-10-20",
+  "reason": "duplikátum: ugyanez a típus a Quadris Excel-termékei között szerepel (a típustáblázatban az Excel-termék)"
+ },
+ "acel-oldalfal-hvak-600": {
+  "name": "Acél oldalfal HVAK 600 mm",
+  "supplier": "Fuhrmann",
+  "code": "HVAK 600",
+  "date": "2026-10-20",
+  "reason": "duplikátum: ugyanez a típus a Quadris Excel-termékei között szerepel (a típustáblázatban az Excel-termék)"
+ },
+ "acel-oldalfal-hvaktt-800": {
+  "name": "Acél oldalfal HVAKTT 800 mm",
+  "supplier": "Fuhrmann",
+  "code": "HVAKTT 800",
+  "date": "2026-10-20",
+  "reason": "duplikátum: ugyanez a típus a Quadris Excel-termékei között szerepel (a típustáblázatban az Excel-termék)"
+ },
+ "acel-oldalfal-hvtt-800": {
+  "name": "Acél oldalfal HVTT 800 mm",
+  "supplier": "Fuhrmann",
+  "code": "HVTT 800",
+  "date": "2026-10-20",
+  "reason": "duplikátum: ugyanez a típus a Quadris Excel-termékei között szerepel (a típustáblázatban az Excel-termék)"
  }
 }
