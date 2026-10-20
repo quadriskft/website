@@ -37,8 +37,8 @@ PHOTOS = {
     "csuszasmentes-retegelt-padlo": ["cover", "../data/forras/retegelt_csuszasmentes_csoportkep.png"],
     # a Quadris által küldött kép, a feliratos doboz előtt levágva
     "kedergumik": ["cover", "../data/forras/kedergumi_csoportkep.png"],
-    # a Quadris kérésére: a 2 szárnyú hátsó ajtó és az áthajtó rámpa fotója egymás mellett
-    "hatso-ajtok-es-athajto-rampak": ["pair", "termekkepek/hatso-ajto-alu-elox-foto.webp", "termekkepek/athajto-rampa-foto.webp"],
+    # a Quadris kérésére: a piros szegélyes 4 szárnyú hátsó ajtó és az áthajtó rámpa fotója egymás mellett
+    "hatso-ajtok-es-athajto-rampak": ["pair", "termekkepek/hatso-ajto-alu-elox-4-szarnyu-foto.webp", "termekkepek/athajto-rampa-foto.webp"],
     "italszallito-kit": ["termekkepek/212427-ada-s-ajto-profil-2100-mm-elox-1.webp"],
 }
 
