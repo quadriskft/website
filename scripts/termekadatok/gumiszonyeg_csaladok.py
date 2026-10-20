@@ -5,6 +5,8 @@ A család kulcsa: alkategória + típus + vastagság.
 - a bővített kínálat (Gummitrading-adatok): a típus a cikkszám első szava (pl. SM, SMM, 4012G, PU70), a név a
   vastagság előtti rész; a méret a név végéről (a ≤ 3 számú szélesség méterben értendő)
 - a Quadris Excel-termékei (G …): a név a méretek nélkül, a vastagság az első szám
+A víztiszta PVC a Quadris kérésére vastagságtól függetlenül egy-egy termék: a G tekercsek (3/4/5 mm) és a
+víztiszta PVC lemezek (1–7 mm, minden méret) – a táblázatban vastagság, szélesség, hossz.
 Csak a legalább 2 tagú csoportokból lesz család; a már családba sorolt és a törölt termékek kimaradnak.
 Kimenet: data/termek_csaladok.json „gumi-…” kulcsai (újragenerálva).
 
@@ -47,6 +49,22 @@ def extended_key(p):
     return (p["category"], typ, base, th), f"{base} {th} mm", size, sort, th
 
 
+def pvc_key(p):
+    """Víztiszta PVC: vastagságtól független család (a vastagság a táblázat egyik oszlopa)."""
+    if p["category"] != "viztiszta-pvc":
+        return None
+    m = re.match(r"^G (\d+)x(\d+) mm PVC", p["name"])
+    if m:
+        th, w = m.groups()
+        return ("pvc", "G"), "Víztiszta PVC tekercs", f"{th} mm – {w} mm × 20 m", (num(th), num(w)), th, [f"{th} mm", f"{w} mm", "20 m"]
+    m = re.match(r"^Víztiszta PVC lemez (\d+) mm, ([\d,]+)×(\d+) mm$", p["name"])
+    if m:
+        th, w, l = m.groups()
+        wmm = f"{num(w) * 1000:g}"
+        return ("pvc", "lemez"), "Víztiszta PVC lemez", f"{th} mm – {wmm} mm × {l} m", (num(th), num(w), num(l)), th, [f"{th} mm", f"{wmm} mm", f"{l} m"]
+    return None
+
+
 def excel_key(p):
     name = p["name"]
     r = re.match(r"^G (?:(\d+)/)?(\d+)x(\d+)(?: mm)? R[aá]mpasz[őo]nyeg$", name)
@@ -76,13 +94,17 @@ def main():
         for p in src:
             if p["group"] != GROUP or p["slug"] in deleted or p["slug"] in taken:
                 continue
-            k = keyf(p)
+            k = pvc_key(p) or keyf(p)
             if k is None:
                 print("  nem értelmezhető név:", p["name"])
                 continue
-            key, name, size, sort, th = k
+            key, name, size, sort, th = k[:5]
+            row = k[5] if len(k) > 5 else None
             color = COLORS.get((p.get("specs") or {}).get("Szín", ""), "")
-            groups.setdefault(key, {"name": name, "th": th, "ext": keyf is extended_key, "members": []})["members"].append((sort, p["slug"], size, color))
+            g = groups.setdefault(key, {"name": name, "th": th, "ext": keyf is extended_key, "rows": {}, "members": []})
+            g["members"].append((sort, p["slug"], size, color))
+            if row:
+                g["rows"][p["slug"]] = row
     names = {}
     for key, g in groups.items():
         names.setdefault(g["name"], []).append(key)
@@ -103,6 +125,15 @@ def main():
         tag = f"{ins.group(1)} szövetbetéttel" if ins else key[1]
         name = g["name"] + (f" ({tag})" if len(names[g["name"]]) > 1 else "")
         fid = "gumi-" + re.sub(r"[^a-z0-9]+", "-", f"{key[0]} {key[1]} {name}".lower()).strip("-")
+        if g["rows"]:  # víztiszta PVC: vastagság szerint is választható
+            fams[fid] = {
+                "name": name, "label": "Vastagság és méret", "title": "Rendelhető vastagságok és méretek",
+                "note": "Víztiszta, átlátszó PVC – válassza ki a kívánt vastagságot és méretet.",
+                "navigate": True, "table": ["Vastagság", "Szélesség", "Hossz"],
+                "rows": {s: g["rows"][s] for s in values}, "members": values,
+            }
+            n += 1
+            continue
         fams[fid] = {
             "name": name, "label": "Méret", "title": "Rendelhető méretek",
             "note": (f"{hu(num(g['th']))} mm vastag – az" if g["th"] else "Az") + " alábbi méretekben rendelhető.",

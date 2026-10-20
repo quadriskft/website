@@ -92,7 +92,9 @@ const jsonLd = [
                 <tbody>
                   {familyMembers.map((m) => (
                     <tr class:list={[{ current: m.slug === product.slug }]}>
-                      {family.table.map((k) => <td>{m.product.specs?.[k] ?? (k === family.label ? m.value : '–')}</td>)}
+                      {family.rows?.[m.slug]
+                        ? family.rows[m.slug].map((c) => <td>{c}</td>)
+                        : family.table.map((k) => <td>{m.product.specs?.[k] ?? (k === family.label ? m.value : '–')}</td>)}
                       <td>{m.slug === product.slug ? <span class="muted">kiválasztva</span> : <a href={`/termek/${m.slug}#rendeles`}>Kiválaszt</a>}</td>
                     </tr>
                   ))}

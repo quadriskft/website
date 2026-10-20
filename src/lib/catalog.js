@@ -186,7 +186,7 @@ const familyBySlug = new Map();
 for (const [id, f] of Object.entries(families)) {
   if (id.startsWith('_')) continue;
   const members = Object.entries(f.members).map(([slug, value]) => ({ slug, value })).filter((m) => !deleted[m.slug]);
-  const fam = { id, name: f.name, label: f.label ?? 'Méret', title: f.title, note: f.note, table: f.table, clone: !!f.clone, navigate: !!(f.clone || f.navigate), members, leader: (f.leader && members.some((m) => m.slug === f.leader) ? f.leader : members[0]?.slug) };
+  const fam = { id, name: f.name, label: f.label ?? 'Méret', title: f.title, note: f.note, table: f.table, rows: f.rows, clone: !!f.clone, navigate: !!(f.clone || f.navigate), members, leader: (f.leader && members.some((m) => m.slug === f.leader) ? f.leader : members[0]?.slug) };
   for (const m of members) familyBySlug.set(m.slug, fam);
 }
 export function familyOf(slug) {
