@@ -15,6 +15,7 @@ from common import ROOT, load_enrichment, save_image, update_enrichment  # noqa:
 # slug -> a termék képei sorrendben (data/forras/…)
 KEPEK = {
     "502501-szimpla-gorgos-gumiutkozo-d100-118": ["502501_foto.png", "502501_rajz.png"],
+    "502502-dupla-gorgos-gumiutkozo-222x115": ["502502_foto.png", "502502_rajz.png"],
 }
 
 
