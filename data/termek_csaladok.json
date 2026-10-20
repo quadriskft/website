@@ -326,5 +326,919 @@
    "polydet-performance-plus-2000-1-5-roughened": "2000 mm",
    "polydet-performance-plus-2200-1-5-roughened": "2200 mm"
   }
+ },
+ "gumi-rampa-g-r-mpasz-nyeg": {
+  "name": "Rámpaszőnyeg",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "Az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret"
+  ],
+  "members": {
+   "g-1400x1400-rampaszonyeg": "1400 × 1400 mm",
+   "g-1600x1400-mm-rampaszonyeg": "1600 × 1400 mm",
+   "g-1750x1540-mm-rampaszonyeg": "1750 × 1540 mm",
+   "g-1750x1550-mm-rampaszonyeg": "1750 × 1550 mm",
+   "g-1800x1400-rampaszonyeg": "1800 × 1400 mm",
+   "g-1800x1600-rampaszonyeg": "1800 × 1600 mm",
+   "g-2000x1400-mm-rampaszonyeg": "2000 × 1400 mm",
+   "g-2000x1600-mm-rampaszonyeg": "2000 × 1600 mm",
+   "g-2200x1400-rampaszonyeg": "2200 × 1400 mm",
+   "g-2400x1400-rampaszonyeg": "2400 × 1400 mm",
+   "g-2400x2000-rampaszonyeg": "2400 × 2000 mm"
+  }
+ },
+ "gumi-altalanos-gumi-szonyeg-g-amoeba-gumisz-nyeg-3-mm": {
+  "name": "Amoeba gumiszőnyeg 3 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "3 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság"
+  ],
+  "members": {
+   "g-3x1200x10000-mm-amoeba-gumiszonyeg": "1200 × 10000 mm",
+   "g-3x1500x10000-mm-amoeba-gumiszonyeg": "1500 × 10000 mm"
+  }
+ },
+ "gumi-altalanos-gumi-szonyeg-g-ltal-nos-gumisz-nyeg-2t-s-s-4-mm": {
+  "name": "Általános gumiszőnyeg 2T S/S 4 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "4 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság"
+  ],
+  "members": {
+   "g-4x1200x10000-2t-s-s-altalanos-gumiszonyeg": "1200 × 10000 mm",
+   "g-4x1400x10000-2t-s-s-altalanos-gumiszonyeg": "1400 × 10000 mm"
+  }
+ },
+ "gumi-istallo-szonyeg-g-ist-ll-sz-nyeg-17-mm": {
+  "name": "Istálló szőnyeg 17 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "17 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság"
+  ],
+  "members": {
+   "g-17x900x1200-mm-istallo-szonyeg": "900 × 1200 mm",
+   "g-17x1830x1220-mm-istallo-szonyeg": "1830 × 1220 mm"
+  }
+ },
+ "gumi-istallo-szonyeg-g-ist-ll-sz-nyeg-rs-10-m-es-tekercs-6-mm": {
+  "name": "Istálló szőnyeg RS (10 m-es tekercs) 6 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "6 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság"
+  ],
+  "members": {
+   "g-6x1650-mm-istallo-szonyeg-l-10-m-rs": "1650 mm",
+   "g-6x2000mm-istallo-szonyeg-l-10-m-rs": "2000 mm"
+  }
+ },
+ "gumi-istallo-szonyeg-g-ist-ll-sz-nyeg-8-mm": {
+  "name": "Istálló szőnyeg 8 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "8 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság"
+  ],
+  "members": {
+   "g-8x1650-istallo-szonyeg": "1650 mm",
+   "g-8x2000-istallo-szonyeg": "2000 mm"
+  }
+ },
+ "gumi-cobra-szonyeg-g-cobra-sz-nyeg-2-nylon-6-mm": {
+  "name": "COBRA szőnyeg 2 nylon 6 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "6 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság"
+  ],
+  "members": {
+   "g-6x1450mm-cobra-szonyeg-2-nylon": "1450 mm",
+   "g-6x2000mm-cobra-szonyeg-2-nylon": "2000 mm"
+  }
+ },
+ "gumi-noppos-gumi-sm-3-0-noppos-gumisz-nyeg-3-mm": {
+  "name": "Noppos gumiszőnyeg 3 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "3 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "noppos-gumiszonyeg-sm-3-0-0-4-400-10000": "400 × 10000 mm",
+   "noppos-gumiszonyeg-sm-3-0-0-5-500-10000": "500 × 10000 mm",
+   "noppos-gumiszonyeg-sm-3-0-0-6-600-10000": "600 × 10000 mm",
+   "noppos-gumiszonyeg-sm-3-0-0-7-700-10000": "700 × 10000 mm",
+   "noppos-gumiszonyeg-sm-3-0-0-8-800-10000": "800 × 10000 mm",
+   "noppos-gumiszonyeg-sm-3-0-1000-10000": "1000 × 10000 mm",
+   "noppos-gumiszonyeg-sm-3-0-1200-10000": "1200 × 10000 mm",
+   "noppos-gumiszonyeg-sm-3-0-1400-10000": "1400 × 10000 mm",
+   "noppos-gumiszonyeg-sm-3-0-1500-10000": "1500 × 10000 mm",
+   "noppos-gumiszonyeg-sm-3-0-2-2000-10000": "2000 × 10000 mm"
+  }
+ },
+ "gumi-noppos-gumi-km-8-1-n-gyzetes-noppos-gumisz-nyeg-8-mm": {
+  "name": "Négyzetes noppos gumiszőnyeg 8 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "8 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "negyzetes-noppos-gumiszonyeg-km-8-1-1000-10000": "1000 × 10000 mm",
+   "negyzetes-noppos-gumiszonyeg-km-8-1-1200-10000": "1200 × 10000 mm"
+  }
+ },
+ "gumi-bordas-es-mintas-gumiszonyegek-fr-3-0-finombord-s-gumisz-nyeg-3-mm-fr-3-0": {
+  "name": "Finombordás gumiszőnyeg 3 mm (FR 3/0)",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "3 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "finombordas-gumiszonyeg-fr-3-0-1000-10000": "1000 × 10000 mm",
+   "finombordas-gumiszonyeg-fr-3-0-1200-10000": "1200 × 10000 mm",
+   "finombordas-gumiszonyeg-fr-3-0-1-8-1800-10000": "1800 × 10000 mm",
+   "finombordas-gumiszonyeg-fr-3-0-2-2000-10000": "2000 × 10000 mm"
+  }
+ },
+ "gumi-bordas-es-mintas-gumiszonyegek-comr-3-0-kombi-bord-s-gumisz-nyeg-3-mm": {
+  "name": "Kombi bordás gumiszőnyeg 3 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "3 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "kombi-bordas-gumiszonyeg-comr-3-0-1200-10000": "1200 × 10000 mm",
+   "kombi-bordas-gumiszonyeg-comr-3-0-1400-10000": "1400 × 10000 mm",
+   "kombi-bordas-gumiszonyeg-comr-3-0-1500-10000": "1500 × 10000 mm"
+  }
+ },
+ "gumi-bordas-es-mintas-gumiszonyegek-mr-3-0-sz-les-bord-s-gumisz-nyeg-3-mm": {
+  "name": "Széles bordás gumiszőnyeg 3 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "3 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "szeles-bordas-gumiszonyeg-mr-3-0-1000-10000": "1000 × 10000 mm",
+   "szeles-bordas-gumiszonyeg-mr-3-0-1200-10000": "1200 × 10000 mm"
+  }
+ },
+ "gumi-bordas-es-mintas-gumiszonyegek-wr-6-0-nagybord-s-gumisz-nyeg-6-mm": {
+  "name": "Nagybordás gumiszőnyeg 6 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "6 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "nagybordas-gumiszonyeg-wr-6-0-1000-10000": "1000 × 10000 mm",
+   "nagybordas-gumiszonyeg-wr-6-0-1200-10000": "1200 × 10000 mm"
+  }
+ },
+ "gumi-bordas-es-mintas-gumiszonyegek-fm-3-0-halsz-lkamint-s-gumisz-nyeg-3-mm": {
+  "name": "Halszálkamintás gumiszőnyeg 3 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "3 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "halszalkamintas-gumiszonyeg-fm-3-0-1000-10000": "1000 × 10000 mm",
+   "halszalkamintas-gumiszonyeg-fm-3-0-1200-10000": "1200 × 10000 mm"
+  }
+ },
+ "gumi-bordas-es-mintas-gumiszonyegek-cm-3-0-kockamint-s-gumisz-nyeg-3-mm": {
+  "name": "Kockamintás gumiszőnyeg 3 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "3 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "kockamintas-gumiszonyeg-cm-3-0-1000-10000": "1000 × 10000 mm",
+   "kockamintas-gumiszonyeg-cm-3-0-1200-10000": "1200 × 10000 mm",
+   "kockamintas-gumiszonyeg-cm-3-0-1400-10000": "1400 × 10000 mm",
+   "kockamintas-gumiszonyeg-cm-3-0-2-2000-10000": "2000 × 10000 mm"
+  }
+ },
+ "gumi-bordas-es-mintas-gumiszonyegek-cm-5-0-kockamint-s-gumisz-nyeg-5-mm": {
+  "name": "Kockamintás gumiszőnyeg 5 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "5 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "kockamintas-gumiszonyeg-cm-5-0-1400-10000": "1400 × 10000 mm",
+   "kockamintas-gumiszonyeg-cm-5-0-2-2000-10000": "2000 × 10000 mm"
+  }
+ },
+ "gumi-bordas-es-mintas-gumiszonyegek-hm-6-0-kalap-cs-t-s-mint-s-gumisz-nyeg-6-mm": {
+  "name": "Kalapácsütés-mintás gumiszőnyeg 6 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "6 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "kalapacsutes-mintas-gumiszonyeg-hm-6-0-1650-10000": "1650 × 10000 mm",
+   "kalapacsutes-mintas-gumiszonyeg-hm-6-0-1800-10000": "1800 × 10000 mm",
+   "kalapacsutes-mintas-gumiszonyeg-hm-6-0-2000-10000": "2000 × 10000 mm"
+  }
+ },
+ "gumi-bordas-es-mintas-gumiszonyegek-hm-8-0-kalap-cs-t-s-mint-s-gumisz-nyeg-8-mm": {
+  "name": "Kalapácsütés-mintás gumiszőnyeg 8 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "8 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "kalapacsutes-mintas-gumiszonyeg-hm-8-0-1650-10000": "1650 × 10000 mm",
+   "kalapacsutes-mintas-gumiszonyeg-hm-8-0-1800-10000": "1800 × 10000 mm",
+   "kalapacsutes-mintas-gumiszonyeg-hm-8-0-2000-10000": "2000 × 10000 mm"
+  }
+ },
+ "gumi-bordas-es-mintas-gumiszonyegek-hm-10-0-kalap-cs-t-s-mint-s-gumisz-nyeg-10-mm": {
+  "name": "Kalapácsütés-mintás gumiszőnyeg 10 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "10 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "kalapacsutes-mintas-gumiszonyeg-hm-10-0-1800-10000": "1800 × 10000 mm",
+   "kalapacsutes-mintas-gumiszonyeg-hm-10-0-2000-10000": "2000 × 10000 mm",
+   "kalapacsutes-mintas-gumiszonyeg-hm-10-0-2-5-2500-10000": "2500 × 10000 mm"
+  }
+ },
+ "gumi-lyukacsos-gumiszonyegek-rm-22-0-lyukacsos-gy-r-s-gumisz-nyeg-22-mm": {
+  "name": "Lyukacsos (gyűrűs) gumiszőnyeg 22 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "22 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "lyukacsos-gyurus-gumiszonyeg-rm-22-0-0-4x0-6-400-600": "400 × 600 mm",
+   "lyukacsos-gyurus-gumiszonyeg-rm-22-0-0-5x1-500-1000": "500 × 1000 mm",
+   "lyukacsos-gyurus-gumiszonyeg-rm-22-0-0-75x1-750-1000": "750 × 1000 mm",
+   "lyukacsos-gyurus-gumiszonyeg-rm-22-0-0-8x1-2-800-1200": "800 × 1200 mm",
+   "lyukacsos-gyurus-gumiszonyeg-rm-22-0-1x1-1000-1000": "1000 × 1000 mm",
+   "lyukacsos-gyurus-gumiszonyeg-rm-22-0-1-5x1-1500-1000": "1500 × 1000 mm"
+  }
+ },
+ "gumi-lyukacsos-gumiszonyegek-rmr-22-0-lyukacsos-gumisz-nyeg-tekercsben-22-mm": {
+  "name": "Lyukacsos gumiszőnyeg tekercsben 22 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "22 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "lyukacsos-gumiszonyeg-tekercsben-rmr-22-0-0-4-400-10000": "400 × 10000 mm",
+   "lyukacsos-gumiszonyeg-tekercsben-rmr-22-0-0-5-500-10500": "500 × 10500 mm",
+   "lyukacsos-gumiszonyeg-tekercsben-rmr-22-0-0-6-600-10000": "600 × 10000 mm",
+   "lyukacsos-gumiszonyeg-tekercsben-rmr-22-0-0-8-800-10000": "800 × 10000 mm",
+   "lyukacsos-gumiszonyeg-tekercsben-rmr-22-0-1-1000-10500": "1000 × 10500 mm",
+   "lyukacsos-gumiszonyeg-tekercsben-rmr-22-0-1-2-1200-10000": "1200 × 10000 mm",
+   "lyukacsos-gumiszonyeg-tekercsben-rmr-22-0-1-5-1500-10000": "1500 × 10000 mm"
+  }
+ },
+ "gumi-lyukacsos-gumiszonyegek-rmr-10-0-k-nny-lyukacsos-gumisz-nyeg-tekercsben-10-mm": {
+  "name": "Könnyű lyukacsos gumiszőnyeg tekercsben 10 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "10 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "konnyu-lyukacsos-gumiszonyeg-tekercsben-rmr-10-0-0-9-900-10000": "900 × 10000 mm",
+   "konnyu-lyukacsos-gumiszonyeg-tekercsben-rmr-10-0-1-83-1830-10000": "1830 × 10000 mm"
+  }
+ },
+ "gumi-lyukacsos-gumiszonyegek-rmh-23-0-nagy-teherb-r-s-lyukacsos-gumisz-nyeg-23-mm": {
+  "name": "Nagy teherbírású lyukacsos gumiszőnyeg 23 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "23 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "nagy-teherbirasu-lyukacsos-gumiszonyeg-rmh-23-0-0-75x1-750-1000": "750 × 1000 mm",
+   "nagy-teherbirasu-lyukacsos-gumiszonyeg-rmh-23-0-1-5x1-1500-1000": "1500 × 1000 mm"
+  }
+ },
+ "gumi-munkahelyi-szonyegek-wp-15-0-munkahelyi-gumisz-nyeg-15-mm": {
+  "name": "Munkahelyi gumiszőnyeg 15 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "15 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "munkahelyi-gumiszonyeg-wp-15-0-0-6x0-9-600-900": "600 × 900 mm",
+   "munkahelyi-gumiszonyeg-wp-15-0-0-9x01-2-900-1200": "900 × 1200 mm"
+  }
+ },
+ "gumi-munkahelyi-szonyegek-wpy-15-0-munkahelyi-gumisz-nyeg-s-rga-szeg-llyel-15-mm": {
+  "name": "Munkahelyi gumiszőnyeg sárga szegéllyel 15 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "15 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "munkahelyi-gumiszonyeg-sarga-szegellyel-wpy-15-0-0-6x0-9-600-900": "600 × 900 mm",
+   "munkahelyi-gumiszonyeg-sarga-szegellyel-wpy-15-0-0-9x1-2-900-1200": "900 × 1200 mm"
+  }
+ },
+ "gumi-gumilemezek-sbr-1-0-gumilemez-nr-sbr-1-mm": {
+  "name": "Gumilemez NR/SBR 1 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "1 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilemez-nr-sbr-sbr-1-0-1-20": "1 × 20 m",
+   "gumilemez-nr-sbr-sbr-1-0-1-2-10": "1,2 × 10 m",
+   "gumilemez-nr-sbr-sbr-1-0-1-2-20": "1,2 × 20 m",
+   "gumilemez-nr-sbr-sbr-1-0-1-4-10": "1,4 × 10 m",
+   "gumilemez-nr-sbr-sbr-1-0-1-4-20": "1,4 × 20 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-1-5-0-gumilemez-nr-sbr-1-5-mm": {
+  "name": "Gumilemez NR/SBR 1,5 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "1,5 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilemez-nr-sbr-sbr-1-5-0-1-4-10": "1,4 × 10 m",
+   "gumilemez-nr-sbr-sbr-1-5-0-1-4-15": "1,4 × 15 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-2-0-gumilemez-nr-sbr-2-mm": {
+  "name": "Gumilemez NR/SBR 2 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "2 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilemez-nr-sbr-sbr-2-0-1-2-10": "1,2 × 10 m",
+   "gumilemez-nr-sbr-sbr-2-0-1-4-10": "1,4 × 10 m",
+   "gumilemez-nr-sbr-sbr-2-0-1-4-20": "1,4 × 20 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-3-0-gumilemez-nr-sbr-3-mm": {
+  "name": "Gumilemez NR/SBR 3 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "3 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilemez-nr-sbr-sbr-3-0-1-2-10": "1,2 × 10 m",
+   "gumilemez-nr-sbr-sbr-3-0-1-4-10": "1,4 × 10 m",
+   "gumilemez-nr-sbr-sbr-3-0-1-4-20": "1,4 × 20 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-4-0-gumilemez-nr-sbr-4-mm": {
+  "name": "Gumilemez NR/SBR 4 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "4 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilemez-nr-sbr-sbr-4-0-1-2-10": "1,2 × 10 m",
+   "gumilemez-nr-sbr-sbr-4-0-1-4-10": "1,4 × 10 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-5-0-gumilemez-nr-sbr-5-mm": {
+  "name": "Gumilemez NR/SBR 5 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "5 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilemez-nr-sbr-sbr-5-0-1-2-10": "1,2 × 10 m",
+   "gumilemez-nr-sbr-sbr-5-0-1-4-10": "1,4 × 10 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-6-0-gumilemez-nr-sbr-6-mm": {
+  "name": "Gumilemez NR/SBR 6 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "6 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilemez-nr-sbr-sbr-6-0-1-2-10": "1,2 × 10 m",
+   "gumilemez-nr-sbr-sbr-6-0-1-4-10": "1,4 × 10 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-8-0-gumilemez-nr-sbr-8-mm": {
+  "name": "Gumilemez NR/SBR 8 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "8 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilemez-nr-sbr-sbr-8-0-1-2-10": "1,2 × 10 m",
+   "gumilemez-nr-sbr-sbr-8-0-1-2-5": "1,2 × 5 m",
+   "gumilemez-nr-sbr-sbr-8-0-1-4-10": "1,4 × 10 m",
+   "gumilemez-nr-sbr-sbr-8-0-1-4-5": "1,4 × 5 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-10-0-gumilemez-nr-sbr-10-mm": {
+  "name": "Gumilemez NR/SBR 10 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "10 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilemez-nr-sbr-sbr-10-0-1-2-10": "1,2 × 10 m",
+   "gumilemez-nr-sbr-sbr-10-0-1-2-5": "1,2 × 5 m",
+   "gumilemez-nr-sbr-sbr-10-0-1-4-10": "1,4 × 10 m",
+   "gumilemez-nr-sbr-sbr-10-0-1-4-5": "1,4 × 5 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-12-0-gumilemez-nr-sbr-12-mm": {
+  "name": "Gumilemez NR/SBR 12 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "12 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilemez-nr-sbr-sbr-12-0-1-2-10": "1,2 × 10 m",
+   "gumilemez-nr-sbr-sbr-12-0-1-4-10": "1,4 × 10 m",
+   "gumilemez-nr-sbr-sbr-12-0-1-4-5": "1,4 × 5 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-15-0-gumilemez-nr-sbr-15-mm": {
+  "name": "Gumilemez NR/SBR 15 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "15 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilemez-nr-sbr-sbr-15-0-1-4-10": "1,4 × 10 m",
+   "gumilemez-nr-sbr-sbr-15-0-1-4-5": "1,4 × 5 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-20-0-gumilemez-nr-sbr-20-mm": {
+  "name": "Gumilemez NR/SBR 20 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "20 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilemez-nr-sbr-sbr-20-0-1-4-10": "1,4 × 10 m",
+   "gumilemez-nr-sbr-sbr-20-0-1-4-5": "1,4 × 5 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-25-0-gumilemez-nr-sbr-25-mm": {
+  "name": "Gumilemez NR/SBR 25 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "25 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilemez-nr-sbr-sbr-25-0-1-4-10": "1,4 × 10 m",
+   "gumilemez-nr-sbr-sbr-25-0-1-4-5": "1,4 × 5 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-30-0-gumilemez-nr-sbr-30-mm": {
+  "name": "Gumilemez NR/SBR 30 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "30 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilemez-nr-sbr-sbr-30-0-1-4-10": "1,4 × 10 m",
+   "gumilemez-nr-sbr-sbr-30-0-1-4-5": "1,4 × 5 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-2-1-sz-vetbet-tes-gumilemez-nr-sbr-2-mm": {
+  "name": "Szövetbetétes gumilemez NR/SBR 2 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "2 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "szovetbetetes-gumilemez-nr-sbr-sbr-2-1-1-2-10": "1,2 × 10 m",
+   "szovetbetetes-gumilemez-nr-sbr-sbr-2-1-1-4-10": "1,4 × 10 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-3-1-sz-vetbet-tes-gumilemez-nr-sbr-3-mm-1-sz-vetbet-ttel": {
+  "name": "Szövetbetétes gumilemez NR/SBR 3 mm (1 szövetbetéttel)",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "3 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "szovetbetetes-gumilemez-nr-sbr-sbr-3-1-1-2-10": "1,2 × 10 m",
+   "szovetbetetes-gumilemez-nr-sbr-sbr-3-1-1-4-10": "1,4 × 10 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-3-2-sz-vetbet-tes-gumilemez-nr-sbr-3-mm-2-sz-vetbet-ttel": {
+  "name": "Szövetbetétes gumilemez NR/SBR 3 mm (2 szövetbetéttel)",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "3 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "szovetbetetes-gumilemez-nr-sbr-sbr-3-2-1-2-10": "1,2 × 10 m",
+   "szovetbetetes-gumilemez-nr-sbr-sbr-3-2-1-4-10": "1,4 × 10 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-4-1-sz-vetbet-tes-gumilemez-nr-sbr-4-mm-1-sz-vetbet-ttel": {
+  "name": "Szövetbetétes gumilemez NR/SBR 4 mm (1 szövetbetéttel)",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "4 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "szovetbetetes-gumilemez-nr-sbr-sbr-4-1-1-2-10": "1,2 × 10 m",
+   "szovetbetetes-gumilemez-nr-sbr-sbr-4-1-1-4-10": "1,4 × 10 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-4-2-sz-vetbet-tes-gumilemez-nr-sbr-4-mm-2-sz-vetbet-ttel": {
+  "name": "Szövetbetétes gumilemez NR/SBR 4 mm (2 szövetbetéttel)",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "4 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "szovetbetetes-gumilemez-nr-sbr-sbr-4-2-1-2-10": "1,2 × 10 m",
+   "szovetbetetes-gumilemez-nr-sbr-sbr-4-2-1-4-10": "1,4 × 10 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-5-1-sz-vetbet-tes-gumilemez-nr-sbr-5-mm-1-sz-vetbet-ttel": {
+  "name": "Szövetbetétes gumilemez NR/SBR 5 mm (1 szövetbetéttel)",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "5 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "szovetbetetes-gumilemez-nr-sbr-sbr-5-1-1-2-10": "1,2 × 10 m",
+   "szovetbetetes-gumilemez-nr-sbr-sbr-5-1-1-4-10": "1,4 × 10 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-5-2-sz-vetbet-tes-gumilemez-nr-sbr-5-mm-2-sz-vetbet-ttel": {
+  "name": "Szövetbetétes gumilemez NR/SBR 5 mm (2 szövetbetéttel)",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "5 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "szovetbetetes-gumilemez-nr-sbr-sbr-5-2-1-2-10": "1,2 × 10 m",
+   "szovetbetetes-gumilemez-nr-sbr-sbr-5-2-1-4-10": "1,4 × 10 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-6-1-sz-vetbet-tes-gumilemez-nr-sbr-6-mm-1-sz-vetbet-ttel": {
+  "name": "Szövetbetétes gumilemez NR/SBR 6 mm (1 szövetbetéttel)",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "6 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "szovetbetetes-gumilemez-nr-sbr-sbr-6-1-1-2-10": "1,2 × 10 m",
+   "szovetbetetes-gumilemez-nr-sbr-sbr-6-1-1-4-10": "1,4 × 10 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-6-2-sz-vetbet-tes-gumilemez-nr-sbr-6-mm-2-sz-vetbet-ttel": {
+  "name": "Szövetbetétes gumilemez NR/SBR 6 mm (2 szövetbetéttel)",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "6 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "szovetbetetes-gumilemez-nr-sbr-sbr-6-2-1-2-10": "1,2 × 10 m",
+   "szovetbetetes-gumilemez-nr-sbr-sbr-6-2-1-4-10": "1,4 × 10 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-8-2-sz-vetbet-tes-gumilemez-nr-sbr-8-mm": {
+  "name": "Szövetbetétes gumilemez NR/SBR 8 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "8 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "szovetbetetes-gumilemez-nr-sbr-sbr-8-2-1-2-10": "1,2 × 10 m",
+   "szovetbetetes-gumilemez-nr-sbr-sbr-8-2-1-4-10": "1,4 × 10 m",
+   "szovetbetetes-gumilemez-nr-sbr-sbr-8-2-1-4-5": "1,4 × 5 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-10-2-sz-vetbet-tes-gumilemez-nr-sbr-10-mm": {
+  "name": "Szövetbetétes gumilemez NR/SBR 10 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "10 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "szovetbetetes-gumilemez-nr-sbr-sbr-10-2-1-4-10": "1,4 × 10 m",
+   "szovetbetetes-gumilemez-nr-sbr-sbr-10-2-1-4-5": "1,4 × 5 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-30-0-gumilap-nr-sbr-30-mm": {
+  "name": "Gumilap NR/SBR 30 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "30 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilap-nr-sbr-sbr-30-0-1x1-1-1": "1 × 1 m",
+   "gumilap-nr-sbr-sbr-30-0-1-4-2": "1,4 × 2 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-40-0-gumilap-nr-sbr-40-mm": {
+  "name": "Gumilap NR/SBR 40 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "40 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilap-nr-sbr-sbr-40-0-1x1-1-1": "1 × 1 m",
+   "gumilap-nr-sbr-sbr-40-0-1-4-2": "1,4 × 2 m"
+  }
+ },
+ "gumi-gumilemezek-sbr-50-0-gumilap-nr-sbr-50-mm": {
+  "name": "Gumilap NR/SBR 50 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "50 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumilap-nr-sbr-sbr-50-0-1x1-1-1": "1 × 1 m",
+   "gumilap-nr-sbr-sbr-50-0-1-4-2": "1,4 × 2 m"
+  }
+ },
+ "gumi-pu-lemezek-ppu90-3-0-pr-mium-poliuret-n-pu-lemez-3-mm": {
+  "name": "Prémium poliuretán (PU) lemez 3 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "3 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "premium-poliuretan-pu-lemez-ppu90-3-0-1000-2000": "1000 × 2000 mm",
+   "premium-poliuretan-pu-lemez-ppu90-3-0-1000-4000": "1000 × 4000 mm"
+  }
+ },
+ "gumi-pu-lemezek-ppu90-6-0-pr-mium-poliuret-n-pu-lemez-6-mm": {
+  "name": "Prémium poliuretán (PU) lemez 6 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "6 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "premium-poliuretan-pu-lemez-ppu90-6-0-1000-2000": "1000 × 2000 mm",
+   "premium-poliuretan-pu-lemez-ppu90-6-0-1000-4000": "1000 × 4000 mm"
+  }
+ },
+ "gumi-pu-lemezek-ppu90-10-0-pr-mium-poliuret-n-pu-lemez-10-mm": {
+  "name": "Prémium poliuretán (PU) lemez 10 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "10 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "premium-poliuretan-pu-lemez-ppu90-10-0-1000-2000": "1000 × 2000 mm",
+   "premium-poliuretan-pu-lemez-ppu90-10-0-1000-4000": "1000 × 4000 mm"
+  }
+ },
+ "gumi-granulatum-lapok-sf-6-0-gumigranul-tum-padl-lap-6-mm-sf-6-0": {
+  "name": "Gumigranulátum padlólap 6 mm (SF 6/0)",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "6 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumigranulatum-padlolap-sf-6-0-1-25-10": "1,25 × 10 m – fekete, kék pöttyös",
+   "gumigranulatum-padlolap-sf-6-0-1-25-10-2": "1,25 × 10 m – fekete, szürke pöttyös"
+  }
+ },
+ "gumi-granulatum-lapok-sf-8-0-gumigranul-tum-padl-lap-8-mm-sf-8-0": {
+  "name": "Gumigranulátum padlólap 8 mm (SF 8/0)",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "8 mm vastag – az alábbi méretekben rendelhető.",
+  "navigate": true,
+  "table": [
+   "Méret",
+   "Vastagság [mm]"
+  ],
+  "members": {
+   "gumigranulatum-padlolap-sf-8-0-1-25-10": "1,25 × 10 m – fekete, kék pöttyös",
+   "gumigranulatum-padlolap-sf-8-0-1-25-10-2": "1,25 × 10 m – fekete, szürke pöttyös"
+  }
  }
 }
