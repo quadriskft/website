@@ -1307,5 +1307,12 @@
   "code": "HVAK 450",
   "date": "2026-10-20",
   "reason": "Quadris kérése: a gyártói katalógusban nem szerepel"
+ },
+ "acel-oldalfal-bak-450": {
+  "name": "Acél oldalfal BAK 450 mm",
+  "supplier": "Fuhrmann",
+  "code": "BAK 450",
+  "date": "2026-10-20",
+  "reason": "Quadris kérése: a gyártói katalógusban nem szerepel"
  }
 }

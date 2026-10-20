@@ -2786,13 +2786,6 @@
     "2,0 mm",
     "12,9"
    ],
-   "acel-oldalfal-bak-450": [
-    "BAK 450",
-    "450 mm",
-    "magasító",
-    "2,0 mm",
-    "13,4"
-   ],
    "acel-oldalfal-bak-500": [
     "BAK 500",
     "500 mm",
@@ -2846,7 +2839,6 @@
    "acel-oldalfal-bak-400": "BAK 400 – 400 mm",
    "acel-oldalfal-bakkt-400": "BAKkT 400 – 400 mm",
    "acel-oldalfal-bakskt-400": "BAKSkT 400 – 400 mm",
-   "acel-oldalfal-bak-450": "BAK 450 – 450 mm",
    "acel-oldalfal-bak-500": "BAK 500 – 500 mm",
    "acel-oldalfal-baks-500": "BAKS 500 – 500 mm",
    "acel-oldalfal-bak-600": "BAK 600 – 600 mm",
