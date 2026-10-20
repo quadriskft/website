@@ -195,5 +195,202 @@
     ]
    }
   ]
+ },
+ "hatso-ajto-alu-elox-4-szarnyu": {
+  "title": "Rendelési adatlap – 4 szárnyú hátsó ajtó",
+  "intro": "Adja meg a rendeléshez szükséges adatokat – ezek alapján pontos ajánlatot készítünk. A *-gal jelölt mezők kitöltése kötelező.",
+  "fields": [
+   {
+    "id": "magassag",
+    "label": "Belső portálmagasság",
+    "type": "number",
+    "unit": "mm",
+    "required": true,
+    "min": 500,
+    "max": 4000,
+    "placeholder": "pl. 2400"
+   },
+   {
+    "id": "szelesseg",
+    "label": "Külső portálszélesség",
+    "type": "select",
+    "required": true,
+    "options": [
+     "2550 mm",
+     "2570 mm"
+    ],
+    "egyeb": true,
+    "egyebUnit": "mm",
+    "egyebMin": 1945,
+    "egyebMax": 2645,
+    "hint": "Gyártható: 1945–2645 mm"
+   },
+   {
+    "id": "felulet",
+    "label": "Felületkezelés",
+    "type": "select",
+    "options": [
+     "natúr alumínium",
+     "eloxált",
+     "RAL festés egy oldalon",
+     "RAL festés két oldalon",
+     "Arktisz-fehér festés egy oldalon",
+     "Arktisz-fehér festés két oldalon"
+    ]
+   },
+   {
+    "id": "ral",
+    "label": "RAL szín (festés esetén)",
+    "type": "text",
+    "placeholder": "pl. RAL 9010"
+   },
+   {
+    "id": "xl",
+    "label": "XL kivitel (DIN EN 12642 Code XL)",
+    "type": "select",
+    "options": [
+     "igen",
+     "nem"
+    ]
+   },
+   {
+    "id": "szarny",
+    "label": "Ajtószárnyak",
+    "type": "select",
+    "options": [
+     "pár (bal + jobb)",
+     "csak bal",
+     "csak jobb"
+    ]
+   },
+   {
+    "id": "zarszam",
+    "label": "Zárak száma szárnyanként",
+    "type": "select",
+    "options": [
+     "2",
+     "1"
+    ]
+   },
+   {
+    "id": "zartipus",
+    "label": "Zárrúd átmérője",
+    "type": "select",
+    "options": [
+     "16 mm",
+     "18 mm"
+    ]
+   },
+   {
+    "id": "zsaner5",
+    "label": "5 zsanér szárnyanként",
+    "type": "select",
+    "options": [
+     "nem (4 zsanér)",
+     "igen"
+    ]
+   },
+   {
+    "id": "zsanerpant",
+    "label": "Zsanérpánt",
+    "type": "select",
+    "options": [
+     "zsanérpánt nélkül",
+     "acél, csavarozható",
+     "acél, csavarozható, RAL festett",
+     "alu profil, szegecselhető, peremmel",
+     "alu profil, szegecselhető, perem nélkül",
+     "acél, hegeszthető"
+    ]
+   },
+   {
+    "id": "oszlop",
+    "label": "Ajtótípus (oszlophoz)",
+    "type": "select",
+    "options": [
+     "25 mm-es oszlophoz",
+     "35 mm-es oszlophoz",
+     "egyéb oszlophoz"
+    ]
+   },
+   {
+    "id": "rogzito",
+    "label": "Ajtórögzítő",
+    "type": "select",
+    "options": [
+     "nincs",
+     "470 mm, horganyzott",
+     "490 mm, alumínium"
+    ]
+   },
+   {
+    "id": "tabla",
+    "label": "Fényvisszaverő tábla",
+    "type": "select",
+    "options": [
+     "nincs",
+     "matrica, gépjármű 565×130 mm",
+     "alumínium, gépjármű 565×130 mm",
+     "matrica, pótkocsi 565×195 mm",
+     "alumínium, pótkocsi 565×195 mm"
+    ]
+   },
+   {
+    "id": "csik",
+    "label": "Fényvisszaverő csík",
+    "type": "select",
+    "options": [
+     "nincs",
+     "sárga",
+     "piros",
+     "fehér"
+    ]
+   },
+   {
+    "id": "kozepso",
+    "label": "Középső takaróléc",
+    "type": "select",
+    "options": [
+     "nem",
+     "igen"
+    ]
+   },
+   {
+    "id": "tomites",
+    "label": "Kiegészítő tömítés",
+    "type": "select",
+    "options": [
+     "nem",
+     "igen"
+    ]
+   },
+   {
+    "id": "zajcsokkentett",
+    "label": "Zajcsökkentett kivitel",
+    "type": "select",
+    "options": [
+     "nem",
+     "igen"
+    ]
+   },
+   {
+    "id": "beepitve",
+    "label": "Felépítménybe építve szállítva",
+    "type": "select",
+    "options": [
+     "nem",
+     "igen"
+    ]
+   },
+   {
+    "id": "szereles",
+    "label": "Szerelést kér",
+    "type": "select",
+    "options": [
+     "nem",
+     "igen"
+    ]
+   }
+  ]
  }
 }
