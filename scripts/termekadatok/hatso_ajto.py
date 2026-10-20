@@ -1,13 +1,13 @@
-"""Hátsó ajtó alu elox (2 és 4 szárnyú): a ProCar ARIES hátsóajtó-rendszer adatai a Quadris kérésére
-(https://www.procaritalia.eu/procar/Aries.html).
+"""Hátsó ajtó alu elox (2 és 4 szárnyú) a Quadris kérésére: a gyártó honlapjának (.cache/procar, belső forrás)
+diavetítés-képei „videószerűen” – a gyártó neve a weboldalon sehol nem jelenik meg (a leírásban, a fájlnevekben
+sem; a gyártói dokumentumok nem kerülnek fel).
 
-- a gyártói oldal diavetítésének 3 képe (11 fotó) „videószerűen”: áttűnéssel, folyamatosan ismétlődő, hang nélküli
-  WebM videóként (public/video/aries-hatso-ajto.webm + poszterkép), a termékoldalon a fő kép helyén; a listákban
-  a hátsó nézet fotója a termék képe
-- magyar leírás és műszaki adatok a gyártói szöveg alapján
-- dokumentumok: termékkatalógus, DEKRA-tanúsítvány (DIN EN 12642 Code XL), szerelési útmutató (PDF)
+- a diavetítés 3 sávja fotókra bontva: az 1–2. sáv fotói a 2 szárnyú, a 3. sávé a 4 szárnyú ajtót mutatják; mindkét
+  termék csak a saját fotóiból kap áttűnéses, folyamatosan ismétlődő, hang nélküli WebM videót (a fő kép helyén)
+- kártyakép: a 2 szárnyúnál a hátulnézet (1. sáv, 1. fotó), a 4 szárnyúnál a 4 lamellás hátulnézet (3. sáv, 3. fotó)
+- magyar leírás és műszaki adatok
 
-Használat: python3 scripts/termekadatok/procar_aries.py
+Használat: python3 scripts/termekadatok/hatso_ajto.py
 """
 
 import subprocess
@@ -23,21 +23,18 @@ from common import ROOT, fetch, load_enrichment, save_image, update_enrichment  
 
 SLUG = "hatso-ajto-alu-elox"
 SLUG4 = "hatso-ajto-alu-elox-4-szarnyu"  # kézzel felvett termék (data/kezi_termekek.json)
-BASE = "https://www.procaritalia.eu/procar/"
+BASE = "https://www.procaritalia.eu/procar/"  # csak letöltéshez; a weboldalon nem jelenik meg
 SLIDES = ["images/Aries.jpg", "images/Aries_1.jpg", "images/Aries_2.jpg"]
-DOCS = [("2017_Aries_A4_x_PROCAR.pdf", "aries-katalogus.pdf", "ARIES hátsóajtó-rendszer – katalógus (PDF)"),
-        ("certificato_web.pdf", "aries-tanusitvany.pdf", "DEKRA-tanúsítvány – DIN EN 12642 Code XL (PDF)"),
-        ("PORTA ARIES - ISTRUZIONI DI MONTAGGIO.pdf", "aries-szerelesi-utmutato.pdf", "Szerelési útmutató (PDF, olasz)")]
 # a diavetítés képei 2–5 fotóból összeállított sávok: a videó fotónként mutatja őket (4:3, elmosott háttérrel)
 PANELS = [[0, 552, 1105, 1650], [0, 572, 1245, 1650], [0, 375, 745, 1053, 1382, 1650]]
 W, H = 960, 720
 FPS, HOLD, FADE = 25, 2.5, 1.0
 
 DESCRIPTION = (
-    "ProCar ARIES alumínium hátsóajtó-rendszer haszonjárművek felépítményeihez. Az ajtólap 7 önhordó, eloxált "
+    "Alumínium hátsóajtó-rendszer haszonjárművek felépítményeihez. Az ajtólap 7 önhordó, eloxált "
     "alumínium lamellából áll, amelyeket szerkezeti ragasztó köt össze; a lamellák a felső és alsó homloklemezhez "
     "nagy szilárdságú horganyzott acél szegecsekkel kapcsolódnak. A kerület menti keret elhagyásával kisebb tömeg "
-    "mellett nagyobb merevséget és igényes megjelenést ad. Az ARIES ajtó a DEKRA által kiadott DIN EN 12642 Code XL "
+    "mellett nagyobb merevséget és igényes megjelenést ad. Az ajtó a DEKRA által kiadott DIN EN 12642 Code XL "
     "rakományrögzítési tanúsítvánnyal rendelkezik. A zárórúd a panelbe süllyesztve, kívülről nem látható; a zsanérok "
     "az ajtóval egy síkban, a felépítmény teljes szélességét kihasználva szerelhetők."
 )
@@ -50,7 +47,6 @@ SPECS = {
     "Zsanérok": "eloxált alumínium, horganyzott acél csap, kopásálló PE persely; 4 vagy 5 db 100 mm-es",
     "Zárak": "2 vagy 4 felső/alsó zár horganyzott acélból (kérésre AISI 304 rozsdamentes)",
     "Tömítés": "EPDM, körbefutó; középen háromajkú tömítés eloxált alu takaróléccel",
-    "Kivitel": "2 vagy 4 szárnyú; összeszerelve vagy könnyen összeszerelhető készletként",
     "Opció": "dupla zárás, alumínium zsanérpánt",
 }
 
@@ -86,28 +82,34 @@ def framed(img):
     return bg
 
 
-def main():
-    slides = [cv2.imdecode(np.frombuffer(fetch(BASE + s), np.uint8), cv2.IMREAD_COLOR) for s in SLIDES]
-    frames = [framed(sl[:, a:b]) for sl, cuts in zip(slides, PANELS) for a, b in zip(cuts, cuts[1:])]
+def video(frames, name):
     vdir = ROOT / "public/video"
     vdir.mkdir(parents=True, exist_ok=True)
-    slideshow(frames, vdir / "aries-hatso-ajto.webm")
-    cv2.imwrite(str(vdir / "aries-hatso-ajto.jpg"), frames[0], [cv2.IMWRITE_JPEG_QUALITY, 85])
-    card = save_image(Image.fromarray(np.ascontiguousarray(slides[2][:, 745:1053][..., ::-1])), SLUG, "aries")
-    ddir = ROOT / "public/dokumentumok"
-    ddir.mkdir(parents=True, exist_ok=True)
-    docs = []
-    for src, dst, title in DOCS:
-        (ddir / dst).write_bytes(fetch(BASE + src.replace(" ", "%20")))
-        docs.append({"title": title, "url": f"/dokumentumok/{dst}"})
+    slideshow(frames, vdir / f"{name}.webm")
+    cv2.imwrite(str(vdir / f"{name}.jpg"), frames[0], [cv2.IMWRITE_JPEG_QUALITY, 85])
+    return {"title": "Képek a hátsó ajtóról", "url": f"/video/{name}.webm", "poster": f"/video/{name}.jpg", "loop": True}
+
+
+def main():
+    slides = [cv2.imdecode(np.frombuffer(fetch(BASE + s), np.uint8), cv2.IMREAD_COLOR) for s in SLIDES]
+    photos = [[sl[:, a:b] for a, b in zip(cuts, cuts[1:])] for sl, cuts in zip(slides, PANELS)]
+    two, four = photos[0] + photos[1], photos[2]
+    rgb = lambda a: Image.fromarray(np.ascontiguousarray(a[..., ::-1]))  # noqa: E731
     data = load_enrichment()
-    e = data.get(SLUG, {"source": "ProCar", "sourceUrl": BASE + "Aries.html", "sourceTitle": "ARIES", "specs": {}, "images": []})
-    e.update({"images": [card], "description": DESCRIPTION, "specs": {**e.get("specs", {}), **SPECS}, "documents": docs,
-              "videos": [{"title": "ARIES hátsó ajtó – képek a gyártótól", "url": "/video/aries-hatso-ajto.webm",
-                          "poster": "/video/aries-hatso-ajto.jpg", "loop": True}]})
-    e4 = {**e, "images": [card], "specs": {**e["specs"], "Kivitel": "4 szárnyú (2 + 2 ajtószárny); összeszerelve vagy készletként"},
-          "description": DESCRIPTION.replace("hátsóajtó-rendszer", "hátsóajtó-rendszer, 4 szárnyú kivitel,", 1)}
-    update_enrichment({SLUG: e, SLUG4: e4})
+    out = {}
+    for slug, ph, card, name, kivitel in (
+        (SLUG, two, two[0], "hatso-ajto-2-szarnyu", "2 szárnyú"),
+        (SLUG4, four, four[2], "hatso-ajto-4-szarnyu", "4 szárnyú (2 + 2 ajtószárny)"),
+    ):
+        e = data.get(slug, {})
+        e.update({"source": "", "sourceUrl": "", "sourceTitle": "",
+                  "images": [save_image(rgb(card), slug, "foto")],
+                  "description": DESCRIPTION if slug == SLUG else DESCRIPTION.replace("hátsóajtó-rendszer", "hátsóajtó-rendszer, 4 szárnyú kivitel,", 1),
+                  "specs": {**SPECS, "Kivitel": f"{kivitel}; összeszerelve vagy könnyen összeszerelhető készletként"},
+                  "videos": [video([framed(p) for p in ph], name)]})
+        e.pop("documents", None)
+        out[slug] = e
+    update_enrichment(out)
     print(SLUG, SLUG4, "kész")
 
 
