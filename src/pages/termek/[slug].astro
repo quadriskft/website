@@ -28,6 +28,8 @@ const showCategory = category && category.name !== group.name;
 const family = familyOf(product.slug);
 const familyMembers = family ? family.members.map((m) => ({ ...m, product: products.find((p) => p.slug === m.slug) })).filter((m) => m.product) : [];
 const profile = !family && isProfile(product);
+// sok oszlopos típustáblázat / rendelési adatlap: kisebb fő kép, szélesebb rendelési rész (a „Kiválaszt” is látszik)
+const wideOrder = (family?.table?.length ?? 0) >= 4 || !!orderForm;
 // gyári szálhossz (ha ismert) – tájékoztató a méretsorok mellé
 const stockLength = profile
   ? (specs.find(([k]) => /szálhossz|gyártási hossz|^hossz/i.test(k))?.[1] ?? product.name.match(/(\d{1,2} ?\d{3})\s*mm\b(?!.*mm)/)?.[1])
@@ -64,7 +66,7 @@ const jsonLd = [
 <Base crumbs={navCrumbs} back={backTo} title={product.code ? `${product.name} (${product.code})` : product.name} description={description} image={product.images?.[0]} type="product" jsonLd={jsonLd}>
   <div class="container">
 
-    <div class="product">
+    <div class:list={['product', { 'wide-order': wideOrder }]}>
       <div class="media">
         {heroVideo
           ? <div class="hero-video"><video autoplay muted loop playsinline preload="auto" poster={heroVideo.poster} src={heroVideo.url} aria-label={heroVideo.title}></video></div>
@@ -435,6 +437,7 @@ const jsonLd = [
 
 <style>
   .product { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 48px; align-items: start; padding-top: 28px; }
+  .product.wide-order { grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr); gap: 32px; }
   .media { position: sticky; top: calc(var(--header-h) + 20px); }
   /* fémes keret a termékképen */
   .media :global(.product-visual) {
@@ -515,7 +518,7 @@ const jsonLd = [
   .related-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 20px; }
   .related-head h2 { font-size: 1.4rem; margin: 0; }
   @media (max-width: 860px) {
-    .product { grid-template-columns: 1fr; gap: 24px; }
+    .product, .product.wide-order { grid-template-columns: 1fr; gap: 24px; }
     .media { position: static; }
   }
 </style>
