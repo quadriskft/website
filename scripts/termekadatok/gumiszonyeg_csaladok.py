@@ -5,7 +5,7 @@ A család kulcsa: alkategória + típus + vastagság.
 - a bővített kínálat (Gummitrading-adatok): a típus a cikkszám első szava (pl. SM, SMM, 4012G, PU70), a név a
   vastagság előtti rész; a méret a név végéről (a ≤ 3 számú szélesség méterben értendő)
 - a Quadris Excel-termékei (G …): a név a méretek nélkül, a vastagság az első szám
-A víztiszta PVC a Quadris kérésére vastagságtól függetlenül egy-egy termék: a G tekercsek (3/4/5 mm) és a
+A víztiszta PVC és a gumilemezek (gumilemez, gumilap, szövetbetétes gumilemez 1, ill. 2 betéttel külön) a Quadris kérésére vastagságtól függetlenül egy-egy termék: a G tekercsek (3/4/5 mm) és a
 víztiszta PVC lemezek (1–7 mm, minden méret) – a táblázatban vastagság, szélesség, hossz.
 Csak a legalább 2 tagú csoportokból lesz család; a már családba sorolt és a törölt termékek kimaradnak.
 Kimenet: data/termek_csaladok.json „gumi-…” kulcsai (újragenerálva).
@@ -50,7 +50,17 @@ def extended_key(p):
 
 
 def pvc_key(p):
-    """Víztiszta PVC: vastagságtól független család (a vastagság a táblázat egyik oszlopa)."""
+    """Víztiszta PVC és gumilemezek: vastagságtól független család (a vastagság a táblázat egyik oszlopa)."""
+    if p["category"] == "gumilemezek":
+        m = re.match(r"^(.*?) ([\d,]+) mm, ([\d,]+)×([\d,]+) mm$", p["name"])
+        if not m:
+            return None
+        base, th, w, l = m.groups()
+        ins = re.search(r"/(\d)", p.get("code") or "")
+        name = base + (f" – {ins.group(1)} szövetbetéttel" if base.startswith("Szövetbetétes") and ins else "")
+        wmm = f"{num(w) * 1000:g}"
+        return (("lemez", name), name, f"{th} mm – {wmm} mm × {l} m", (num(th), num(w), num(l)), th,
+                [f"{th} mm", f"{wmm} mm", f"{l} m"])
     if p["category"] != "viztiszta-pvc":
         return None
     m = re.match(r"^G (\d+)x(\d+) mm PVC", p["name"])
@@ -128,7 +138,7 @@ def main():
         if g["rows"]:  # víztiszta PVC: vastagság szerint is választható
             fams[fid] = {
                 "name": name, "label": "Vastagság és méret", "title": "Rendelhető vastagságok és méretek",
-                "note": "Víztiszta, átlátszó PVC – válassza ki a kívánt vastagságot és méretet.",
+                "note": ("Víztiszta, átlátszó PVC" if "PVC" in name else name) + " – válassza ki a kívánt vastagságot és méretet.",
                 "navigate": True, "table": ["Vastagság", "Szélesség", "Hossz"],
                 "rows": {s: g["rows"][s] for s in values}, "members": values,
             }
