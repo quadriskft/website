@@ -1,7 +1,8 @@
 """Gumiszőnyegek fotói a Quadris kérésére: a küldött fotó az érintett termékek első képe lesz, a meglévő képek
 (3D renderek, rajz) utána maradnak.
 
-- rámpaszőnyegek: a normál (merevítő bordás) rámpaszőnyeg fotója, a könnyített G 17 kivételével
+- rámpaszőnyegek: a normál (merevítő bordás) rámpaszőnyeg fotója, a könnyített G 17 kivételével; a 3D renderek
+  a Quadris kérésére kikerülnek (fotó + méretrajz marad)
 - általános gumiszőnyegek (sima felületű, S/S): tekercs fotója (MI-vel 4x nagyítva); a mintás Amoeba és
   Diamond nem kapja meg
 - Amoeba gumiszőnyegek: mintás tekercs fotója (Lanczos-nagyítással)
@@ -55,7 +56,10 @@ def main():
             if not match(slug):
                 continue
             urls = [save_image(Image.open(ROOT / f), slug, "foto" if len(srcs) == 1 else f"foto-{i}") for i, f in enumerate(srcs, 1)]
-            e["images"] = urls + [u for u in e.get("images", []) if u not in urls]
+            rest = [u for u in e.get("images", []) if u not in urls]
+            if slug.endswith("rampaszonyeg"):
+                rest = [u for u in rest if "/3d/" not in u]
+            e["images"] = urls + rest
             updates[slug] = e
             print(slug)
     update_enrichment(updates)
