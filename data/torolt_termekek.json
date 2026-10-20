@@ -1230,5 +1230,12 @@
   "code": "",
   "date": "2026-10-15",
   "reason": "Quadris kérése: nincs (nem forgalmazott)"
+ },
+ "nagybordas-gumiszonyeg-wr-6-0-1000-10000-2": {
+  "name": "Nagybordás gumiszőnyeg 6 mm, 1000×10000 mm",
+  "supplier": "",
+  "code": "WR 6/0",
+  "date": "2026-10-20",
+  "reason": "Quadris kérése: azonos adatokkal kétszer szerepelt (duplikátum)"
  }
 }
