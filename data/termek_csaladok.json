@@ -2099,5 +2099,33 @@
    "gumigranulatum-padlolap-sf-8-0-1-25-10": "8 mm – 1250 mm × 10 m – fekete, kék pöttyös",
    "gumigranulatum-padlolap-sf-8-0-1-25-10-2": "8 mm – 1250 mm × 10 m – fekete, szürke pöttyös"
   }
+ },
+ "athajto-rampa": {
+  "name": "Áthajtó rámpa",
+  "label": "Hossz",
+  "title": "Rendelhető méretek",
+  "note": "Alumínium áthajtó rámpa, 40 mm magas rácsos profilból, Ø17 mm-es zsanércsappal – két hosszban rendelhető.",
+  "navigate": true,
+  "table": [
+   "Hossz",
+   "Magasság",
+   "Zsanércsap"
+  ],
+  "rows": {
+   "athajto-rampa": [
+    "940 mm",
+    "40 mm",
+    "Ø17 mm"
+   ],
+   "athajto-rampa-1065": [
+    "1065 mm",
+    "40 mm",
+    "Ø17 mm"
+   ]
+  },
+  "members": {
+   "athajto-rampa": "940 mm",
+   "athajto-rampa-1065": "1065 mm"
+  }
  }
 }

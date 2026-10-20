@@ -10843,9 +10843,34 @@
   "source": "Quadris fotó",
   "sourceUrl": "",
   "sourceTitle": "",
-  "specs": {},
+  "specs": {
+   "Hossz": "940 mm",
+   "Magasság (profil)": "40 mm",
+   "Felhajtó él": "250 mm (ebből 200 mm lejtős)",
+   "Zsanércsap": "Ø17 mm",
+   "Zsanérosztás": "186 mm",
+   "Anyag": "alumínium, rácsos (üreges) profil, bordázott felület"
+  },
   "images": [
-   "/termekkepek/athajto-rampa-foto.webp"
+   "/termekkepek/athajto-rampa-foto.webp",
+   "/termekkepek/athajto-rampa-meretrajz.webp"
+  ]
+ },
+ "athajto-rampa-1065": {
+  "source": "Quadris fotó",
+  "sourceUrl": "",
+  "sourceTitle": "",
+  "specs": {
+   "Hossz": "1065 mm",
+   "Magasság (profil)": "40 mm",
+   "Felhajtó él": "250 mm (ebből 200 mm lejtős)",
+   "Zsanércsap": "Ø17 mm",
+   "Zsanérosztás": "186 mm",
+   "Anyag": "alumínium, rácsos (üreges) profil, bordázott felület"
+  },
+  "images": [
+   "/termekkepek/athajto-rampa-1065-foto.webp",
+   "/termekkepek/athajto-rampa-1065-meretrajz.webp"
   ]
  },
  "belso-12v-os-led-takaro-flower-power-feher": {
