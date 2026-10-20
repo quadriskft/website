@@ -1,8 +1,7 @@
 """Gumiszőnyegek fotói a Quadris kérésére: a küldött fotó az érintett termékek első képe lesz, a meglévő képek
 (3D renderek, rajz) utána maradnak.
 
-- rámpaszőnyegek: a normál (merevítő bordás) rámpaszőnyeg fotója, a könnyített G 17 kivételével; a 3D renderek
-  a Quadris kérésére kikerülnek (fotó + méretrajz marad; a G 17-nél csak a méretrajz)
+- rámpaszőnyegek: a normál (merevítő bordás) rámpaszőnyeg fotója, a könnyített G 17 kivételével
 - általános gumiszőnyegek (sima felületű, S/S): tekercs fotója (MI-vel 4x nagyítva); a mintás Amoeba és
   Diamond nem kapja meg
 - Amoeba gumiszőnyegek: mintás tekercs fotója (Lanczos-nagyítással)
@@ -13,6 +12,8 @@
 - Soft gumi lapok (1000×2000 mm): egymásra rakott lapok fotója (Lanczos-nagyítással)
 - tekercses Soft gumi (8x1000, 10x1000): tekercs fotója
 - Cobra / CBR szőnyegek: mintás tekercs fotója (Lanczos-nagyítással: az MI a finom mintát csíkossá torzította)
+
+A szürke gumilap 3D renderek (scripts/profil3d, sheet [58, 58, 60]) a Quadris kérésére sehol nem jelennek meg.
 
 Használat: python3 scripts/termekadatok/gumiszonyeg_kepek.py   (utána kep_sorrend.py)
 """
@@ -50,10 +51,11 @@ def main():
         if slug not in data and any(match(slug) for _, match in KINDS):
             data[slug] = {"source": "Quadris fotó", "sourceUrl": "", "sourceTitle": "", "specs": {}, "images": list(p.get("images", []))}
     updates = {}
-    for slug in KONNYITETT:
-        if slug in data:
-            data[slug]["images"] = [u for u in data[slug].get("images", []) if "/3d/" not in u]
-            updates[slug] = data[slug]
+    profiles = json.loads((ROOT / "scripts/profil3d/profilok.json").read_text())
+    gray = {x["slug"] for x in profiles if x["draw"][0] == "sheet" and x["draw"][4] == [58, 58, 60]}
+    for slug in gray & data.keys():
+        data[slug]["images"] = [u for u in data[slug].get("images", []) if f"/3d/{slug}-" not in u]
+        updates[slug] = data[slug]
     for src, match in KINDS:
         srcs = src if isinstance(src, list) else [src]
         for slug, e in data.items():
@@ -61,8 +63,6 @@ def main():
                 continue
             urls = [save_image(Image.open(ROOT / f), slug, "foto" if len(srcs) == 1 else f"foto-{i}") for i, f in enumerate(srcs, 1)]
             rest = [u for u in e.get("images", []) if u not in urls]
-            if slug.endswith("rampaszonyeg"):
-                rest = [u for u in rest if "/3d/" not in u]
             e["images"] = urls + rest
             updates[slug] = e
             print(slug)
