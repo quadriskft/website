@@ -115,7 +115,7 @@ import { SITE } from '../lib/site.js';
         (i) => `<li class="item" data-slug="${esc(i.slug)}">
         <div class="thumb${i.image ? ' has-img' : ''}">${i.image ? `<img src="${esc(i.image)}" alt="">` : i.custom ? icon.spark : icon.box}</div>
         <div class="item-main">
-          ${i.custom ? `<span class="item-name">${esc(i.name)}</span><span class="tag">Egyedi tétel</span>` : `<a class="item-name" href="/termek/${esc(i.slug)}">${esc(i.name)}</a>`}
+          ${i.custom ? `<span class="item-name">${esc(i.name)}</span><span class="tag">Egyedi tétel</span>` : `<a class="item-name" href="/termek/${esc(i.page ?? i.slug)}">${esc(i.name)}</a>`}
           ${i.code ? `<span class="muted item-code">${esc(i.codeLabel || 'Cikkszám')}: ${esc(i.code)}</span>` : ''}
           ${i.cuts?.length ? `<div class="cuts" data-cuts>
             <div class="cuts-head"><span>Hossz [mm]</span><span>Darab</span><span></span></div>
@@ -259,7 +259,7 @@ import { SITE } from '../lib/site.js';
       customer: { name: data.name, company: data.company, email: data.email, phone: data.phone },
       message: data.message,
       website: data.website,
-      items: items.map((i) => ({ code: i.code, name: i.name, qty: i.qty, ...(i.unit ? { unit: unitText(i) } : {}), note: i.note, cuts: i.cuts ?? [], custom: !!i.custom, url: i.custom ? '' : `${location.origin}/termek/${i.slug}` })),
+      items: items.map((i) => ({ code: i.code, name: i.name, qty: i.qty, ...(i.unit ? { unit: unitText(i) } : {}), note: i.note, cuts: i.cuts ?? [], custom: !!i.custom, url: i.custom ? '' : `${location.origin}/termek/${i.page ?? i.slug}` })),
     };
     submitBtn.disabled = true;
     submitLabel.textContent = 'Küldés…';

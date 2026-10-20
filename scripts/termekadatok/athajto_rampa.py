@@ -17,7 +17,7 @@ from PIL import Image
 sys.path.insert(0, str(Path(__file__).parent))
 from common import ROOT, load_enrichment, save_image, update_enrichment  # noqa: E402
 
-SLUGS = ["athajto-rampa", "rampa-040x615x2500", "athajto-rampa-1065"]
+SLUGS = ["athajto-rampa", "athajto-rampa-1065"]
 RAJZ = {"athajto-rampa": ("data/forras/athajto_rampa_rajz_940.png", "940"),
         "athajto-rampa-1065": ("data/forras/athajto_rampa_rajz_1065.png", "1065")}
 FOTO = "data/forras/athajto_rampa_foto.png"

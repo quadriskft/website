@@ -112,6 +112,14 @@ const jsonLd = [
                 <option value={m.slug} selected={m.slug === product.slug} data-product={JSON.stringify({ ...publicProduct({ ...m.product, family: true }), name: `${family.name} – ${m.value}` })}>{m.value}</option>
               ))}
             </select>
+            {family.input && (
+              <div class="note-field" data-note-field>
+                <label class="variant-label" for="kert-meret">{family.input.label}</label>
+                <input id="kert-meret" class="input" type="number" min="1" max="99999" step="1" inputmode="numeric" placeholder={family.input.placeholder}
+                  data-note-prefix={family.input.prefix} data-note-suffix={family.input.suffix} />
+                <p class="field-error">Adja meg a kért méretet.</p>
+              </div>
+            )}
             <div class="order-row">
               <div class="qty" data-qty>
                 <button type="button" data-step="-1" aria-label="Kevesebb"><Icon name="Minus" /></button>
@@ -119,7 +127,7 @@ const jsonLd = [
                 <button type="button" data-step="1" aria-label="Több"><Icon name="Plus" /></button>
               </div>
               {product.unit && <span class="qty-unit">{product.unit}</span>}
-              <button type="button" class="btn btn-primary add-main" data-variant-add data-add-to-quote={JSON.stringify({ ...publicProduct({ ...product, family: true }), name: `${family.name} – ${familyMembers.find((m) => m.slug === product.slug)?.value}` })} data-qty-from="#qty">
+              <button type="button" class="btn btn-primary add-main" data-variant-add data-add-to-quote={JSON.stringify({ ...publicProduct({ ...product, family: true }), name: `${family.name} – ${familyMembers.find((m) => m.slug === product.slug)?.value}` })} data-qty-from="#qty" data-note-from={family.input ? '#kert-meret' : undefined}>
                 <Icon name="ClipboardList" /> <span class="label">Ajánlatkérőbe</span>
               </button>
             </div>
@@ -388,6 +396,10 @@ const jsonLd = [
   .order-note { display: flex; align-items: center; gap: 6px; margin: 10px 0 0; font-size: 0.9rem; font-weight: 600; color: var(--accent); }
   .variant-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
   .variant-select { font-size: 1rem; padding: 12px 14px; }
+  .note-field { display: grid; gap: 6px; margin-top: 14px; }
+  .note-field .field-error { display: none; margin: 0; color: #d33; font-size: 0.85rem; font-weight: 600; }
+  .note-field:global(.invalid) .field-error { display: block; }
+  .note-field:global(.invalid) input { border-color: #d33; }
   .variant-table { width: 100%; border-collapse: collapse; margin: 4px 0 16px; font-size: 0.92rem; }
   .variant-table th, .variant-table td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); }
   .variant-table th { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }

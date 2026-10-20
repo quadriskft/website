@@ -32,11 +32,14 @@ export const quote = {
   items: load,
   count: () => load().length,
   has: (slug) => load().some((i) => i.slug === slug),
-  add(product, qty = 1) {
+  add(product, qty = 1, note = '') {
     const items = load();
     const existing = items.find((i) => i.slug === product.slug);
-    if (existing) existing.qty = clampQty(existing.qty + qty);
-    else items.push({ ...product, qty: clampQty(qty), note: '' });
+    const n = String(note ?? '').trim();
+    if (existing) {
+      existing.qty = clampQty(existing.qty + qty);
+      if (n) existing.note = (existing.note ? `${existing.note}; ${n}` : n).slice(0, 300);
+    } else items.push({ ...product, qty: clampQty(qty), note: n.slice(0, 300) });
     save(items);
   },
   // Profil: hossz × darab méretsorok (cuts) és megjegyzés; ugyanazon hossz darabszáma összeadódik

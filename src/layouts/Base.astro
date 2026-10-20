@@ -187,12 +187,26 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
         const btn = e.target.closest('[data-add-to-quote]');
         if (!btn) return;
         e.preventDefault();
-        const product = JSON.parse(btn.dataset.addToQuote);
-        if ((product.profile || product.variants) && !btn.dataset.qtyFrom) {
-          location.href = `/termek/${product.slug}#${product.variants ? 'rendeles' : 'meretre'}`;
+        const base = JSON.parse(btn.dataset.addToQuote);
+        if ((base.profile || base.variants) && !btn.dataset.qtyFrom) {
+          location.href = `/termek/${base.slug}#${base.variants ? 'rendeles' : 'meretre'}`;
           return;
         }
-        if (quote.has(product.slug)) {
+        // a vevő által megadandó méret (pl. kért szélesség): méretenként külön tétel (a termékoldalra mutató
+        // „page” mezővel), így több szélesség is felvehető, mindegyik a saját darabszámával
+        const noteInput = btn.dataset.noteFrom ? document.querySelector(btn.dataset.noteFrom) : null;
+        let product = JSON.parse(btn.dataset.addToQuote);
+        if (noteInput) {
+          const v = noteInput.value.trim();
+          if (!v || (noteInput.type === 'number' && !(Number(v) > 0))) {
+            noteInput.focus();
+            noteInput.closest('[data-note-field]')?.classList.add('invalid');
+            return;
+          }
+          noteInput.closest('[data-note-field]')?.classList.remove('invalid');
+          const label = `${noteInput.dataset.notePrefix ?? ''}${v}${noteInput.dataset.noteSuffix ?? ''}`;
+          product = { ...product, slug: `${product.slug}~${v}`, page: product.slug, name: `${product.name}, ${label}` };
+        } else if (quote.has(product.slug)) {
           location.href = '/ajanlatkeres';
           return;
         }

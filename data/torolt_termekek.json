@@ -1237,5 +1237,12 @@
   "code": "WR 6/0",
   "date": "2026-10-20",
   "reason": "Quadris kérése: azonos adatokkal kétszer szerepelt (duplikátum)"
+ },
+ "rampa-040x615x2500": {
+  "name": "Rámpa 040x615x2500",
+  "supplier": "",
+  "code": "",
+  "date": "2026-10-20",
+  "reason": "Quadris kérése: az áthajtó rámpa két hosszban, egyedi szélességgel rendelhető – a külön termék nem kell"
  }
 }

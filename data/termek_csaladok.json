@@ -2104,7 +2104,7 @@
   "name": "Áthajtó rámpa",
   "label": "Hossz",
   "title": "Rendelhető méretek",
-  "note": "Alumínium áthajtó rámpa, 40 mm magas rácsos profilból, Ø17 mm-es zsanércsappal – két hosszban rendelhető.",
+  "note": "Alumínium áthajtó rámpa, 40 mm magas rácsos profilból, Ø17 mm-es zsanércsappal – két hosszban, a kívánt szélességben rendelhető. Adja meg a kért szélességet, és tegye az ajánlatkérőbe.",
   "navigate": true,
   "table": [
    "Hossz",
@@ -2126,6 +2126,12 @@
   "members": {
    "athajto-rampa": "940 mm",
    "athajto-rampa-1065": "1065 mm"
+  },
+  "input": {
+   "label": "Kért szélesség (mm)",
+   "placeholder": "pl. 1250",
+   "prefix": "",
+   "suffix": " mm széles"
   }
  }
 }
