@@ -1602,5 +1602,71 @@
    "Felület": "mindkét oldala sima (S/S)"
   },
   "description": "Általános célú gumiszőnyeg mindkét oldalán sima felülettel (S/S). Jelölések: 2T = 2 szövetbetét a gumiban, S/S = mindkét oldal sima."
+ },
+ "pvc-fuggonycsik-pvc-2x200-200-50": {
+  "move": {
+   "group": "gumiszonyegek",
+   "category": "viztiszta-pvc"
+  }
+ },
+ "pvc-fuggonycsik-pvc-2x300-300-50": {
+  "move": {
+   "group": "gumiszonyegek",
+   "category": "viztiszta-pvc"
+  }
+ },
+ "pvc-fuggonycsik-pvc-3x200-200-50": {
+  "move": {
+   "group": "gumiszonyegek",
+   "category": "viztiszta-pvc"
+  }
+ },
+ "pvc-fuggonycsik-pvc-3x300-300-50": {
+  "move": {
+   "group": "gumiszonyegek",
+   "category": "viztiszta-pvc"
+  }
+ },
+ "pvc-fuggonycsik-pvc-3x400-400-50": {
+  "move": {
+   "group": "gumiszonyegek",
+   "category": "viztiszta-pvc"
+  }
+ },
+ "pvc-fuggonycsik-pvc-4x300-300-50": {
+  "move": {
+   "group": "gumiszonyegek",
+   "category": "viztiszta-pvc"
+  }
+ },
+ "pvc-fuggonycsik-pvc-4x400-400-50": {
+  "move": {
+   "group": "gumiszonyegek",
+   "category": "viztiszta-pvc"
+  }
+ },
+ "felfuggeszto-keszlet-pvc-fuggonyhoz-pvcklem-200-200": {
+  "move": {
+   "group": "gumiszonyegek",
+   "category": "viztiszta-pvc"
+  }
+ },
+ "felfuggeszto-keszlet-pvc-fuggonyhoz-pvcklem-300-300": {
+  "move": {
+   "group": "gumiszonyegek",
+   "category": "viztiszta-pvc"
+  }
+ },
+ "felfuggeszto-keszlet-pvc-fuggonyhoz-pvcklem-400-400": {
+  "move": {
+   "group": "gumiszonyegek",
+   "category": "viztiszta-pvc"
+  }
+ },
+ "felfuggeszto-sin-pvc-fuggonyhoz-pvcrail-1": {
+  "move": {
+   "group": "gumiszonyegek",
+   "category": "viztiszta-pvc"
+  }
  }
 }

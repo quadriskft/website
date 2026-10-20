@@ -1763,6 +1763,166 @@
    "viztiszta-pvc-lemez-pvc-7x1500-1-5-10": "7 mm – 1500 mm × 10 m"
   }
  },
+ "gumi-pvc-fuggony-pvc-f-gg-nycs-k": {
+  "name": "PVC függönycsík",
+  "label": "Vastagság és méret",
+  "title": "Rendelhető vastagságok és méretek",
+  "note": "PVC függönycsík – válassza ki a kívánt vastagságot és méretet.",
+  "navigate": true,
+  "table": [
+   "Vastagság",
+   "Szélesség",
+   "Hossz"
+  ],
+  "rows": {
+   "pvc-fuggonycsik-pvc-2x200-200-50": [
+    "2 mm",
+    "200 mm",
+    "50 m"
+   ],
+   "pvc-fuggonycsik-pvc-2x300-300-50": [
+    "2 mm",
+    "300 mm",
+    "50 m"
+   ],
+   "pvc-fuggonycsik-pvc-3x200-200-50": [
+    "3 mm",
+    "200 mm",
+    "50 m"
+   ],
+   "pvc-fuggonycsik-pvc-3x300-300-50": [
+    "3 mm",
+    "300 mm",
+    "50 m"
+   ],
+   "pvc-fuggonycsik-pvc-3x400-400-50": [
+    "3 mm",
+    "400 mm",
+    "50 m"
+   ],
+   "pvc-fuggonycsik-pvc-4x300-300-50": [
+    "4 mm",
+    "300 mm",
+    "50 m"
+   ],
+   "pvc-fuggonycsik-pvc-4x400-400-50": [
+    "4 mm",
+    "400 mm",
+    "50 m"
+   ]
+  },
+  "members": {
+   "pvc-fuggonycsik-pvc-2x200-200-50": "2 mm – 200 mm × 50 m",
+   "pvc-fuggonycsik-pvc-2x300-300-50": "2 mm – 300 mm × 50 m",
+   "pvc-fuggonycsik-pvc-3x200-200-50": "3 mm – 200 mm × 50 m",
+   "pvc-fuggonycsik-pvc-3x300-300-50": "3 mm – 300 mm × 50 m",
+   "pvc-fuggonycsik-pvc-3x400-400-50": "3 mm – 400 mm × 50 m",
+   "pvc-fuggonycsik-pvc-4x300-300-50": "4 mm – 300 mm × 50 m",
+   "pvc-fuggonycsik-pvc-4x400-400-50": "4 mm – 400 mm × 50 m"
+  }
+ },
+ "gumi-pvc-klem-felf-ggeszt-k-szlet-pvc-f-gg-nyh-z": {
+  "name": "Felfüggesztő készlet PVC függönyhöz",
+  "label": "Csíkszélesség",
+  "title": "Rendelhető méretek",
+  "note": "Felfüggesztő készlet PVC függönyhöz – válassza ki a kívánt vastagságot és méretet.",
+  "navigate": true,
+  "table": [
+   "Csíkszélesség"
+  ],
+  "rows": {
+   "felfuggeszto-keszlet-pvc-fuggonyhoz-pvcklem-200-200": [
+    "200 mm"
+   ],
+   "felfuggeszto-keszlet-pvc-fuggonyhoz-pvcklem-300-300": [
+    "300 mm"
+   ],
+   "felfuggeszto-keszlet-pvc-fuggonyhoz-pvcklem-400-400": [
+    "400 mm"
+   ]
+  },
+  "members": {
+   "felfuggeszto-keszlet-pvc-fuggonyhoz-pvcklem-200-200": "200 mm széles csíkhoz",
+   "felfuggeszto-keszlet-pvc-fuggonyhoz-pvcklem-300-300": "300 mm széles csíkhoz",
+   "felfuggeszto-keszlet-pvc-fuggonyhoz-pvcklem-400-400": "400 mm széles csíkhoz"
+  }
+ },
+ "gumi-lemez-epdm-moosgumi-szivacsgumi-epdm-moosgumi-szivacsgumi": {
+  "name": "EPDM moosgumi (szivacsgumi)",
+  "label": "Vastagság és méret",
+  "title": "Rendelhető vastagságok és méretek",
+  "note": "EPDM moosgumi (szivacsgumi) – válassza ki a kívánt vastagságot és méretet.",
+  "navigate": true,
+  "table": [
+   "Vastagság",
+   "Szélesség",
+   "Hossz"
+  ],
+  "rows": {
+   "epdm-moosgumi-szivacsgumi-em-2-0-1-2-10": [
+    "2 mm",
+    "1200 mm",
+    "10 m"
+   ],
+   "epdm-moosgumi-szivacsgumi-em-3-0-1-2-10": [
+    "3 mm",
+    "1200 mm",
+    "10 m"
+   ],
+   "epdm-moosgumi-szivacsgumi-em-4-0-1-2-10": [
+    "4 mm",
+    "1200 mm",
+    "10 m"
+   ],
+   "epdm-moosgumi-szivacsgumi-em-5-0-1-2-10": [
+    "5 mm",
+    "1200 mm",
+    "10 m"
+   ],
+   "epdm-moosgumi-szivacsgumi-em-6-0-1-2-10": [
+    "6 mm",
+    "1200 mm",
+    "10 m"
+   ],
+   "epdm-moosgumi-szivacsgumi-em-8-0-1-2-10": [
+    "8 mm",
+    "1200 mm",
+    "10 m"
+   ],
+   "epdm-moosgumi-szivacsgumi-em-10-0-1-2-10": [
+    "10 mm",
+    "1200 mm",
+    "10 m"
+   ],
+   "epdm-moosgumi-szivacsgumi-em-12-0-1-2-2": [
+    "12 mm",
+    "1200 mm",
+    "2 m"
+   ],
+   "epdm-moosgumi-szivacsgumi-em-15-0-1-2": [
+    "15 mm",
+    "1000 mm",
+    "2 m"
+   ],
+   "epdm-moosgumi-szivacsgumi-em-20-0-1-2-2": [
+    "20 mm",
+    "1200 mm",
+    "2 m"
+   ]
+  },
+  "members": {
+   "epdm-moosgumi-szivacsgumi-em-2-0-1-2-10": "2 mm – 1200 mm × 10 m",
+   "epdm-moosgumi-szivacsgumi-em-3-0-1-2-10": "3 mm – 1200 mm × 10 m",
+   "epdm-moosgumi-szivacsgumi-em-4-0-1-2-10": "4 mm – 1200 mm × 10 m",
+   "epdm-moosgumi-szivacsgumi-em-5-0-1-2-10": "5 mm – 1200 mm × 10 m",
+   "epdm-moosgumi-szivacsgumi-em-6-0-1-2-10": "6 mm – 1200 mm × 10 m",
+   "epdm-moosgumi-szivacsgumi-em-8-0-1-2-10": "8 mm – 1200 mm × 10 m",
+   "epdm-moosgumi-szivacsgumi-em-10-0-1-2-10": "10 mm – 1200 mm × 10 m",
+   "epdm-moosgumi-szivacsgumi-em-12-0-1-2-2": "12 mm – 1200 mm × 2 m",
+   "epdm-moosgumi-szivacsgumi-em-15-0-1-2": "15 mm – 1000 mm × 2 m",
+   "epdm-moosgumi-szivacsgumi-em-20-0-1-2-2": "20 mm – 1200 mm × 2 m"
+  }
+ },
  "gumi-granulatum-lapok-sf-6-0-gumigranul-tum-padl-lap-6-mm-sf-6-0": {
   "name": "Gumigranulátum padlólap 6 mm (SF 6/0)",
   "label": "Méret",
