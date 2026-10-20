@@ -94,20 +94,27 @@ def landscape_drawing(page):
     return img.crop((max(start - 40, 0), max(ys.min() - 40, 0), min(end + 40, img.width), min(ys.max() + 40, img.height)))
 
 
-ANTRACIT = np.array([47, 51, 56], np.float32)  # sötét antracitszürke vonalak (a Quadris kérésére)
+ANTRACIT = np.array([30, 33, 37], np.float32)  # sötét antracitszürke vonalak (a Quadris kérésére)
 
 
-def contrast(img):
-    """Halvány, vékony vonalak: kissé vastagabbra (a 300 dpi-s képen 3 px-es minimumszűrő) és egységesen sötét
-    antracitszürkére – a kicsinyített képen is jól látszanak a kontúrok és a méretszámok."""
-    g = np.asarray(img.convert("L").filter(ImageFilter.MinFilter(3))).astype(np.float32)
-    a = np.clip((255 - g) / 255 * 2.6, 0, 1)[..., None]
+def contrast(img, line):
+    """Halvány, vékony vonalak: vastagítva (line px-es minimumszűrő) és egységesen sötét antracitszürkére."""
+    g = np.asarray(img.convert("L").filter(ImageFilter.MinFilter(line))).astype(np.float32)
+    a = np.clip((255 - g) / 255 * 3.5, 0, 1)[..., None]
     out = 255 * (1 - a) + ANTRACIT * a
     return Image.fromarray(out.astype(np.uint8))
 
 
+def web_versions(img):
+    """(megjelenítési, nagyítási) változat: a termékoldalon kicsinyítve is legalább ~3 px-es vonalak (1000 px),
+    a nagyításhoz 2600 px-es, mérsékelten vastagított, éles méretszámokkal."""
+    k = 1000 / max(img.size)
+    line = max(3, int(round(3.2 / k)) | 1)
+    return contrast(img, line), contrast(img, 3)
+
+
 def drawing(pdf_bytes, code=""):
-    img = contrast(page_drawing(pymupdf.open(stream=pdf_bytes, filetype="pdf")[0]))
+    img = page_drawing(pymupdf.open(stream=pdf_bytes, filetype="pdf")[0])
     if code in CROP:
         x0, y0, x1, y1 = CROP[code]
         img = img.crop((int(x0 * img.width), int(y0 * img.height), int(x1 * img.width), int(y1 * img.height)))
@@ -157,7 +164,9 @@ def main():
             continue
         slug = p["slug"]
         e = data.get(slug) or {"source": "", "sourceUrl": "", "sourceTitle": "", "specs": {}, "images": list(p.get("images", []))}
-        rajz = save_image(img, slug, "meretrajz", max_size=2600)  # nagyítva is olvasható méretszámok
+        show, big = web_versions(img)
+        rajz = save_image(show, slug, "meretrajz")
+        save_image(big, slug, "meretrajz-nagy", max_size=2600)  # a nagyító nézethez (a termékoldal ezt nyitja meg)
         imgs = [u for u in e.get("images", []) if u != rajz]
         e["images"] = imgs[:1] + [rajz] + imgs[1:]
         updates[slug] = e

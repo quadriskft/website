@@ -6,6 +6,7 @@ import ProductVisual from '../../components/ProductVisual.astro';
 import { products, getGroup, getCategory, productsIn, publicProduct, isProfile, familyOf } from '../../lib/catalog.js';
 import { SITE, abs, absPage } from '../../lib/site.js';
 import orderForms from '../../../data/rendelesi_adatlapok.json';
+import { existsSync } from 'node:fs';
 
 export function getStaticPaths() {
   return products.map((product) => ({ params: { slug: product.slug }, props: { product } }));
@@ -17,6 +18,11 @@ const category = getCategory(product.group, product.category);
 // termékcsaládnál a hossz a választóból jön, a műszaki adatok között nem szerepel
 const specs = Object.entries(product.specs ?? {}).filter(([k]) => !(familyOf(product.slug) && /^(hossz|szálhossz|gyári hossz)/i.test(k)));
 const gallery = product.images?.length > 1 ? product.images : [];
+// nagyításhoz külön, nagy felbontású változat (pl. méretezett rajz: <név>-nagy.webp)
+const zoomSrc = (src) => {
+  const big = src?.replace(/\.webp$/, '-nagy.webp');
+  return big && existsSync(`${process.cwd()}/public${big}`) ? big : undefined;
+};
 // folyamatosan ismétlődő, hang nélküli diavetítés-videó (pl. gyártói képek „videószerűen”): a fő kép helyén
 const heroVideo = product.videos?.find((v) => v.loop);
 // rendelési adatlap (konfigurátor, data/rendelesi_adatlapok.json)
@@ -72,12 +78,12 @@ const jsonLd = [
           ? <div class="hero-video"><video autoplay muted loop playsinline preload="auto" poster={heroVideo.poster} src={heroVideo.url} aria-label={heroVideo.title}></video></div>
           : <ProductVisual product={product} eager />}
         {product.images?.length > 0 && !heroVideo && (
-          <p class="zoom-hint muted"><Icon name="ZoomIn" size={16} /> Kattintson a képre a nagyításhoz</p>
+          <p class="zoom-hint muted" data-main-zoom={zoomSrc(product.images[0])}><Icon name="ZoomIn" size={16} /> Kattintson a képre a nagyításhoz</p>
         )}
         {gallery.length > 0 && (
           <div class="gallery">
             {gallery.map((src, i) => (
-              <button type="button" class:list={['thumb-btn', { active: i === 0 }]} data-src={src} aria-label={`${i + 1}. kép megjelenítése`}>
+              <button type="button" class:list={['thumb-btn', { active: i === 0 }]} data-src={src} data-zoom={zoomSrc(src)} aria-label={`${i + 1}. kép megjelenítése`}>
                 <img src={src} alt="" loading="lazy" />
               </button>
             ))}
@@ -404,7 +410,10 @@ const jsonLd = [
     lb.hidden = true;
     document.body.style.overflow = '';
   };
-  document.querySelector('.media .product-visual img')?.addEventListener('click', (e) => openLb(e.currentTarget.src));
+  const firstZoom = document.querySelector('.gallery .thumb-btn')?.dataset.zoom ?? document.querySelector('[data-main-zoom]')?.dataset.mainZoom;
+  const mainVisual = document.querySelector('.media .product-visual img');
+  if (mainVisual && firstZoom) mainVisual.dataset.zoom = firstZoom;
+  mainVisual?.addEventListener('click', (e) => openLb(e.currentTarget.dataset.zoom || e.currentTarget.src));
   lb.querySelectorAll('[data-lb-zoom]').forEach((b) => b.addEventListener('click', () => setScale(scale * (b.dataset.lbZoom === '1' ? 1.5 : 1 / 1.5))));
   lb.querySelector('[data-lb-fit]').addEventListener('click', () => setScale(fitScale()));
   lb.querySelector('[data-lb-close]').addEventListener('click', closeLb);
@@ -423,6 +432,7 @@ const jsonLd = [
     btn.addEventListener('click', () => {
       if (!mainImg) return;
       mainImg.src = btn.dataset.src;
+      mainImg.dataset.zoom = btn.dataset.zoom ?? '';
       document.querySelectorAll('.gallery .thumb-btn').forEach((b) => b.classList.toggle('active', b === btn));
     }),
   );
