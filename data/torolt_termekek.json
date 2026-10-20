@@ -1314,5 +1314,12 @@
   "code": "BAK 450",
   "date": "2026-10-20",
   "reason": "Quadris kérése: a gyártói katalógusban nem szerepel"
+ },
+ "acel-oldalfal-bak-400": {
+  "name": "Acél oldalfal BAK 400 mm",
+  "supplier": "Fuhrmann",
+  "code": "BAK 400",
+  "date": "2026-10-20",
+  "reason": "Quadris kérése: a gyártói katalógusban nem szerepel"
  }
 }

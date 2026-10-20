@@ -2765,13 +2765,6 @@
    "kg/m"
   ],
   "rows": {
-   "acel-oldalfal-bak-400": [
-    "BAK 400",
-    "400 mm",
-    "magasító",
-    "2,0 mm",
-    "12,4"
-   ],
    "acel-oldalfal-bakkt-400": [
     "BAKkT 400",
     "400 mm",
@@ -2834,9 +2827,8 @@
    "max": 13500,
    "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
   },
-  "leader": "acel-oldalfal-bak-400",
+  "leader": "acel-oldalfal-bakkt-400",
   "members": {
-   "acel-oldalfal-bak-400": "BAK 400 – 400 mm",
    "acel-oldalfal-bakkt-400": "BAKkT 400 – 400 mm",
    "acel-oldalfal-bakskt-400": "BAKSkT 400 – 400 mm",
    "acel-oldalfal-bak-500": "BAK 500 – 500 mm",
