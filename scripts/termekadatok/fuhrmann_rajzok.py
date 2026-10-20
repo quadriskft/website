@@ -54,22 +54,44 @@ def datasheets():
 CROP = {"FOXB 700": (0, 0, 0.33, 0.76)}
 
 
+def no_frame(dark):
+    """A keret és a fejléc hosszú vízszintes / függőleges vonalai (és közvetlen környezetük) nem tartalom."""
+    out = dark.copy()
+    h, w = dark.shape
+    for y in np.where(dark.sum(axis=1) > w * 0.85)[0]:  # csak a (majdnem) teljes szélességű vonal keret
+        out[max(y - 2, 0):y + 3, :] = False
+    for x in np.where(dark.sum(axis=0) > h * 0.85)[0]:
+        out[:, max(x - 2, 0):x + 3] = False
+    return out
+
+
+def whiten(img, mask):
+    """a keret- és fejlécvonalak (mask) fehérre – a kép többi része változatlan"""
+    a = np.asarray(img).copy()
+    a[mask] = 255
+    return Image.fromarray(a)
+
+
 def landscape_drawing(page):
     """Fekvő (Heavy Duty) adatlap: a bal oldali méretezett szelvényrajz – a jobb oldali 3D nézet, a megjegyzések
     és a fejléc nélkül. Raszteresen: a bal szélről induló tartalom és a 3D nézet közötti üres sávnál vágunk."""
     r = page.rect
-    bottom = r.height * 0.86
+    # A4 fekvő (FOX): a fejléc / megjegyzés a rajz alatt 86%-tól; A3 fekvő (FHD): a rajz lejjebb ér
+    bottom = r.height * (0.86 if r.width < 1000 else 0.95)
+    for d in page.get_drawings():  # a megjegyzés-doboz (bal alul, keretezett) a rajz alsó határa
+        b = d["rect"]
+        if b.x0 < r.width * 0.3 and b.y0 > r.height * 0.7 and r.width * 0.15 < b.width < r.width * 0.5 and b.height > 10:
+            bottom = min(bottom, b.y0 - 4)
     for x0, y0, x1, y1, text, *_ in page.get_text("blocks"):
         if re.search(r"Durchbiegung|Verdrehung|Maßtoleranz", text) and x0 < r.width * 0.4:
             bottom = min(bottom, y0 - 4)
-    clip = pymupdf.Rect(r.x0 + 14, r.y0 + 14, r.width * 0.6, bottom)
+    clip = pymupdf.Rect(r.x0 + 22, r.y0 + 22, r.width * 0.6, bottom)
     pix = page.get_pixmap(dpi=300, clip=clip)
     img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
     dark = np.asarray(img.convert("L")) < 215
     # a keret- és fejlécvonalak (a sáv nagy részén átfutó vízszintes / függőleges vonalak) nem számítanak tartalomnak
-    content = dark.copy()
-    content[dark.sum(axis=1) > img.width * 0.4, :] = False
-    content[:, dark.sum(axis=0) > img.height * 0.6] = False
+    content = no_frame(dark)
+    img = whiten(img, dark & ~content)
     colsum = content.sum(axis=0)
     cols = colsum > 2
     # tartalmi sávok (oszlopcsoportok) a köztük lévő ≥ 4%-os üres résekkel; a szelvényrajz az első magas sáv
@@ -91,6 +113,17 @@ def landscape_drawing(page):
     start, end, _ = next(c for c in clusters if c[2] > img.height * 0.4)
     part = content[:, start:end + 1]
     ys = np.where(part.any(axis=1))[0]
+    # a rajz alatti, üres sávval elválasztott megjegyzés (pl. „Durchbiegung …”) nem kell: a legmagasabb összefüggő sáv
+    segs, a = [], ys[0]
+    for p, q in zip(ys, ys[1:]):
+        if q - p > img.height * 0.03:
+            segs.append((a, p))
+            a = q
+    segs.append((a, ys[-1]))
+    lo, hi = max(segs, key=lambda t: t[1] - t[0])
+    ys = ys[(ys >= lo) & (ys <= hi)]
+    cols_in = np.where(part[lo:hi + 1].any(axis=0))[0]
+    start, end = start + cols_in.min(), start + cols_in.max()
     return img.crop((max(start - 40, 0), max(ys.min() - 40, 0), min(end + 40, img.width), min(ys.max() + 40, img.height)))
 
 
@@ -137,10 +170,13 @@ def page_drawing(page):
                 rc = it[1]
                 if rc.width > r.width * 0.6 and rc.height < r.height * 0.4 and r.height * 0.6 < rc.y0 < top:
                     top = rc.y0
-    clip = pymupdf.Rect(r.x0 + 32, r.y0 + 32, r.x1 - 32, top - 6)
+    # a teljes kereten belül (a keret- és fejlécvonalak kiszűrve), hogy a szélső méretszámok ne vesszenek el
+    clip = pymupdf.Rect(r.x0 + 8, r.y0 + 8, r.x1 - 8, top + 1)
     pix = page.get_pixmap(dpi=300, clip=clip)
     img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
-    a = np.asarray(img.convert("L")) < 200
+    dark = np.asarray(img.convert("L")) < 200
+    a = no_frame(dark)
+    img = whiten(img, dark & ~a)
     ys, xs = np.where(a)
     m = 40
     return img.crop((max(xs.min() - m, 0), max(ys.min() - m, 0), min(xs.max() + m, img.width), min(ys.max() + m, img.height)))
