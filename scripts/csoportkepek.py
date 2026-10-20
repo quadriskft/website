@@ -37,6 +37,8 @@ PHOTOS = {
     "csuszasmentes-retegelt-padlo": ["cover", "../data/forras/retegelt_csuszasmentes_csoportkep.png"],
     # a Quadris által küldött kép, a feliratos doboz előtt levágva
     "kedergumik": ["cover", "../data/forras/kedergumi_csoportkep.png"],
+    # a Quadris kérésére: a 2 szárnyú hátsó ajtó és az áthajtó rámpa fotója egymás mellett
+    "hatso-ajtok-es-athajto-rampak": ["pair", "termekkepek/hatso-ajto-alu-elox-foto.webp", "termekkepek/athajto-rampa-foto.webp"],
     "italszallito-kit": ["termekkepek/212427-ada-s-ajto-profil-2100-mm-elox-1.webp"],
 }
 
@@ -104,6 +106,21 @@ def small(im, frac=0.72):
     return canvas
 
 
+def pair(images, gap=12):
+    """Két fotó egymás mellett a fél képkockákban: a kitöltés és a teljes kép közötti méretben (kevés vágás,
+    kevés fehér sáv)."""
+    canvas = Image.new("RGB", (W, H), "white")
+    w = (W - gap) // 2
+    for i, im in enumerate(images):
+        im = im.convert("RGB")
+        k = (max(w / im.width, H / im.height) * min(w / im.width, H / im.height)) ** 0.5
+        im = im.resize((round(im.width * k), round(im.height * k)), Image.LANCZOS)
+        x, y = max((im.width - w) // 2, 0), max((im.height - H) // 2, 0)
+        im = im.crop((x, y, x + min(w, im.width), y + min(H, im.height)))
+        canvas.paste(im, (i * (w + gap) + (w - im.width) // 2, (H - im.height) // 2))
+    return canvas
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     done = []
@@ -115,6 +132,8 @@ def main():
             img = cover(Image.open(ROOT / "public" / paths[1]))
         elif paths[0] == "row":
             img = row([Image.open(ROOT / "public" / p) for p in paths[1:]])
+        elif paths[0] == "pair":
+            img = pair([Image.open(ROOT / "public" / p) for p in paths[1:]])
         elif paths[0] == "small":
             img = small(Image.open(ROOT / "public" / paths[1]))
         else:
