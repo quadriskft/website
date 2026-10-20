@@ -90,8 +90,9 @@ def clear_images(slug):
             f.unlink()
 
 
-def save_image(img, slug, index=1):
-    """PIL kép mentése WebP-be, fehér háttérre, max. MAX_IMAGE px. Visszaadja a webes útvonalat."""
+def save_image(img, slug, index=1, max_size=MAX_IMAGE):
+    """PIL kép mentése WebP-be, fehér háttérre, max. max_size px (alapból MAX_IMAGE; méretezett rajzoknál nagyobb,
+    hogy nagyítva a méretszámok olvashatók legyenek). Visszaadja a webes útvonalat."""
     if isinstance(img, (bytes, bytearray)):
         img = Image.open(io.BytesIO(img))
     if img.mode in ("RGBA", "LA", "P"):
@@ -101,7 +102,7 @@ def save_image(img, slug, index=1):
         img = bg
     else:
         img = img.convert("RGB")
-    img.thumbnail((MAX_IMAGE, MAX_IMAGE), Image.LANCZOS)
+    img.thumbnail((max_size, max_size), Image.LANCZOS)
     IMAGE_DIR.mkdir(parents=True, exist_ok=True)
     name = f"{slug}-{index}.webp"
     if is_protected(name) and (IMAGE_DIR / name).exists():  # a kézzel feljavított kép marad

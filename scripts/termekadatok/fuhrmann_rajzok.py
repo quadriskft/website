@@ -157,7 +157,7 @@ def main():
             continue
         slug = p["slug"]
         e = data.get(slug) or {"source": "", "sourceUrl": "", "sourceTitle": "", "specs": {}, "images": list(p.get("images", []))}
-        rajz = save_image(img, slug, "meretrajz")
+        rajz = save_image(img, slug, "meretrajz", max_size=2600)  # nagyítva is olvasható méretszámok
         imgs = [u for u in e.get("images", []) if u != rajz]
         e["images"] = imgs[:1] + [rajz] + imgs[1:]
         updates[slug] = e

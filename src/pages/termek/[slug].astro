@@ -71,6 +71,9 @@ const jsonLd = [
         {heroVideo
           ? <div class="hero-video"><video autoplay muted loop playsinline preload="auto" poster={heroVideo.poster} src={heroVideo.url} aria-label={heroVideo.title}></video></div>
           : <ProductVisual product={product} eager />}
+        {product.images?.length > 0 && !heroVideo && (
+          <p class="zoom-hint muted"><Icon name="ZoomIn" size={16} /> Kattintson a képre a nagyításhoz</p>
+        )}
         {gallery.length > 0 && (
           <div class="gallery">
             {gallery.map((src, i) => (
@@ -292,6 +295,16 @@ const jsonLd = [
       </section>
     )}
   </div>
+  <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Kép nagyítva">
+    <div class="lb-bar">
+      <button type="button" data-lb-zoom="-1" aria-label="Kicsinyítés"><Icon name="ZoomOut" /></button>
+      <span data-lb-level>100%</span>
+      <button type="button" data-lb-zoom="1" aria-label="Nagyítás"><Icon name="ZoomIn" /></button>
+      <button type="button" data-lb-fit aria-label="Teljes kép">Teljes kép</button>
+      <button type="button" data-lb-close aria-label="Bezárás"><Icon name="X" /></button>
+    </div>
+    <div class="lb-stage" data-lb-stage><img alt="" data-lb-img /></div>
+  </div>
 </Base>
 
 <script>
@@ -367,6 +380,42 @@ const jsonLd = [
     );
     input.addEventListener('change', () => (input.value = String(clampQty(input.value))));
   }
+
+  // Nagyítás: a fő képre kattintva teljes képernyőn, nagyítható / görgethető (méretezett rajzok méretszámai)
+  const lb = document.querySelector('[data-lightbox]');
+  const lbImg = lb.querySelector('[data-lb-img]');
+  const lbStage = lb.querySelector('[data-lb-stage]');
+  const lbLevel = lb.querySelector('[data-lb-level]');
+  let scale = 1;
+  const fitScale = () => Math.min((lbStage.clientWidth - 32) / lbImg.naturalWidth, (lbStage.clientHeight - 32) / lbImg.naturalHeight, 1);
+  const setScale = (s) => {
+    scale = Math.min(Math.max(s, 0.1), 4);
+    lbImg.style.width = `${Math.round(lbImg.naturalWidth * scale)}px`;
+    lbLevel.textContent = `${Math.round(scale * 100)}%`;
+  };
+  const openLb = (src) => {
+    lb.hidden = false;
+    document.body.style.overflow = 'hidden';
+    lbImg.onload = () => setScale(fitScale());
+    lbImg.src = src;
+    if (lbImg.complete && lbImg.naturalWidth) setScale(fitScale());
+  };
+  const closeLb = () => {
+    lb.hidden = true;
+    document.body.style.overflow = '';
+  };
+  document.querySelector('.media .product-visual img')?.addEventListener('click', (e) => openLb(e.currentTarget.src));
+  lb.querySelectorAll('[data-lb-zoom]').forEach((b) => b.addEventListener('click', () => setScale(scale * (b.dataset.lbZoom === '1' ? 1.5 : 1 / 1.5))));
+  lb.querySelector('[data-lb-fit]').addEventListener('click', () => setScale(fitScale()));
+  lb.querySelector('[data-lb-close]').addEventListener('click', closeLb);
+  lbImg.addEventListener('click', () => setScale(scale < 0.99 ? 1 : fitScale()));  // kattintás: 100% ↔ teljes kép
+  lbStage.addEventListener('click', (e) => { if (e.target === lbStage) closeLb(); });
+  lbStage.addEventListener('wheel', (e) => {
+    if (!e.ctrlKey && !e.metaKey) return;
+    e.preventDefault();
+    setScale(scale * (e.deltaY < 0 ? 1.15 : 1 / 1.15));
+  }, { passive: false });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !lb.hidden) closeLb(); });
 
   // Galéria: a bélyegképre kattintva az a kép jelenik meg nagyban
   const mainImg = document.querySelector('.media .product-visual img');
@@ -474,6 +523,16 @@ const jsonLd = [
   .media :global(.product-visual.placeholder svg) { width: 26%; height: 26%; }
   .hero-video { border-radius: 18px; overflow: hidden; background: #000; display: flex; align-items: center; aspect-ratio: 4 / 3; }
   .hero-video video { width: 100%; display: block; }
+  .media :global(.product-visual img) { cursor: zoom-in; }
+  .zoom-hint { display: flex; align-items: center; gap: 6px; margin: 8px 0 0; font-size: 0.82rem; }
+  .lightbox { position: fixed; inset: 0; z-index: 1000; background: rgba(12, 16, 22, 0.97); display: flex; flex-direction: column; }
+  .lightbox[hidden] { display: none; }
+  .lb-bar { display: flex; justify-content: flex-end; align-items: center; gap: 8px; padding: 10px 14px; color: #fff; }
+  .lb-bar button { background: rgba(255, 255, 255, 0.12); color: #fff; border: 0; border-radius: 10px; padding: 8px 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; font: inherit; font-size: 0.9rem; }
+  .lb-bar button:hover { background: rgba(255, 255, 255, 0.22); }
+  .lb-bar span { min-width: 52px; text-align: center; font-variant-numeric: tabular-nums; }
+  .lb-stage { flex: 1; overflow: auto; display: grid; place-items: center; padding: 16px; }
+  .lb-stage img { display: block; max-width: none; background: #fff; border-radius: 8px; cursor: zoom-in; }
   .gallery { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
   .thumb-btn { padding: 0; border: 2px solid transparent; border-radius: 10px; background: none; cursor: pointer; transition: border-color 0.2s; }
   .thumb-btn:hover { border-color: rgba(10, 108, 255, 0.4); }
