@@ -1715,7 +1715,9 @@
   "move": {
    "group": "acel-profilok",
    "category": "lezerhegesztett-acel-oldalfalak"
-  }
+  },
+  "code": "HVAKkT 400",
+  "name": "Acél oldalfal HVAKkT 400 mm"
  },
  "acel-oldalfal-2-mm-2": {
   "move": {
@@ -1736,5 +1738,33 @@
  "acel-oldalfal-bnskt-400": {
   "code": "BNSkT 400",
   "name": "Acél oldalfal BNSkT 400 mm"
+ },
+ "acel-oldalfal-bak-300": {
+  "specs": {
+   "Tömeg [kg/m]": "10,8"
+  }
+ },
+ "acel-oldalfal-hvd-500": {
+  "specs": {
+   "Tömeg [kg/m]": "12,7"
+  }
+ },
+ "acel-oldalfal-hvak-500": {
+  "specs": {
+   "Tömeg [kg/m]": "13,6"
+  }
+ },
+ "acel-oldalfal-hvn-500": {
+  "specs": {
+   "Tömeg [kg/m]": "13,2"
+  }
+ },
+ "acel-oldalfal-bakkt-400": {
+  "code": "BAKkT 400",
+  "name": "Acél oldalfal BAKkT 400 mm"
+ },
+ "acel-oldalfal-bakskt-400": {
+  "code": "BAKSkT 400",
+  "name": "Acél oldalfal BAKSkT 400 mm"
  }
 }

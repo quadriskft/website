@@ -10785,6 +10785,7 @@
   "sourceTitle": "Ital Accessori katalógus 205. oldal",
   "description": "Acél oldalfal profil belső tömítőléccel, billenős és platós felépítményekhez.",
   "images": [
+   "/termekkepek/acel-oldalfal-2-mm-attekinto.webp",
    "/termekkepek/acel-oldalfal-2-mm-1.webp"
   ]
  },
@@ -10801,6 +10802,7 @@
   "sourceTitle": "Ital Accessori katalógus 205. oldal",
   "description": "Acél oldalfal profil belső tömítőléccel, billenős és platós felépítményekhez.",
   "images": [
+   "/termekkepek/acel-oldalfal-2-mm-2-attekinto.webp",
    "/termekkepek/acel-oldalfal-2-mm-2-1.webp"
   ]
  },
@@ -10883,6 +10885,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-bak-300-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-bak-300-attekinto.webp",
    "/termekkepek/acel-oldalfal-bak-300-meretrajz.webp"
   ]
  },
@@ -10893,6 +10896,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-bak-400-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-bak-400-attekinto.webp",
    "/termekkepek/acel-oldalfal-bak-400-meretrajz.webp"
   ]
  },
@@ -10902,6 +10906,7 @@
   "sourceTitle": "",
   "specs": {},
   "images": [
+   "/termekkepek/acel-oldalfal-bak-450-attekinto.webp",
    "/termekkepek/acel-oldalfal-bak-450-meretrajz.webp"
   ]
  },
@@ -10912,6 +10917,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-bak-500-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-bak-500-attekinto.webp",
    "/termekkepek/acel-oldalfal-bak-500-meretrajz.webp"
   ]
  },
@@ -10922,6 +10928,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-bak-600-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-bak-600-attekinto.webp",
    "/termekkepek/acel-oldalfal-bak-600-meretrajz.webp"
   ]
  },
@@ -10932,6 +10939,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-bakkt-400-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-bakkt-400-attekinto.webp",
    "/termekkepek/acel-oldalfal-bakkt-400-meretrajz.webp"
   ]
  },
@@ -10942,6 +10950,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-baks-500-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-baks-500-attekinto.webp",
    "/termekkepek/acel-oldalfal-baks-500-meretrajz.webp"
   ]
  },
@@ -10952,6 +10961,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-baks-600-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-baks-600-attekinto.webp",
    "/termekkepek/acel-oldalfal-baks-600-meretrajz.webp"
   ]
  },
@@ -10962,6 +10972,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-bakskt-400-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-bakskt-400-attekinto.webp",
    "/termekkepek/acel-oldalfal-bakskt-400-meretrajz.webp"
   ]
  },
@@ -10972,6 +10983,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-bakt-600-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-bakt-600-attekinto.webp",
    "/termekkepek/acel-oldalfal-bakt-600-meretrajz.webp"
   ]
  },
@@ -10982,6 +10994,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-baktt-800-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-baktt-800-attekinto.webp",
    "/termekkepek/acel-oldalfal-baktt-800-meretrajz.webp"
   ]
  },
@@ -11600,6 +11613,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hv-800-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hv-800-attekinto.webp",
    "/termekkepek/acel-oldalfal-hv-800-meretrajz.webp"
   ]
  },
@@ -11610,6 +11624,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hv-900-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hv-900-attekinto.webp",
    "/termekkepek/acel-oldalfal-hv-900-meretrajz.webp"
   ]
  },
@@ -11620,6 +11635,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hvak-300-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hvak-300-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvak-300-meretrajz.webp"
   ]
  },
@@ -11630,6 +11646,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hvak-400-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hvak-400-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvak-400-meretrajz.webp"
   ]
  },
@@ -11639,6 +11656,7 @@
   "sourceTitle": "",
   "specs": {},
   "images": [
+   "/termekkepek/acel-oldalfal-hvak-450-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvak-450-meretrajz.webp"
   ]
  },
@@ -11649,6 +11667,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hvak-500-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hvak-500-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvak-500-meretrajz.webp"
   ]
  },
@@ -11679,6 +11698,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hvakt-600-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hvakt-600-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvakt-600-meretrajz.webp"
   ]
  },
@@ -11699,6 +11719,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hvd-400-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hvd-400-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvd-400-meretrajz.webp"
   ]
  },
@@ -11709,6 +11730,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hvd-500-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hvd-500-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvd-500-meretrajz.webp"
   ]
  },
@@ -11719,6 +11741,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hvd-600-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hvd-600-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvd-600-meretrajz.webp"
   ]
  },
@@ -11729,6 +11752,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hvkt-350-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hvkt-350-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvkt-350-meretrajz.webp"
   ]
  },
@@ -11750,6 +11774,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hvn-400-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hvn-400-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvn-400-meretrajz.webp"
   ]
  },
@@ -11760,6 +11785,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hvn-450-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hvn-450-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvn-450-meretrajz.webp"
   ]
  },
@@ -11770,6 +11796,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hvn-500-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hvn-500-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvn-500-meretrajz.webp"
   ]
  },
@@ -11780,6 +11807,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hvn-600-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hvn-600-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvn-600-meretrajz.webp"
   ]
  },
@@ -11790,6 +11818,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hvnkt-400-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hvnkt-400-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvnkt-400-meretrajz.webp"
   ]
  },
@@ -11800,6 +11829,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-hvntt-800-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-hvntt-800-attekinto.webp",
    "/termekkepek/acel-oldalfal-hvntt-800-meretrajz.webp"
   ]
  },
@@ -13712,6 +13742,7 @@
   "sourceTitle": "Ital Accessori katalógus 205. oldal",
   "description": "Acél oldalfal profil belső tömítőléccel, billenős és platós felépítményekhez.",
   "images": [
+   "/termekkepek/hvak600-acel-oldalfal-2-mm-attekinto.webp",
    "/termekkepek/hvak600-acel-oldalfal-2-mm-1.webp"
   ]
  },

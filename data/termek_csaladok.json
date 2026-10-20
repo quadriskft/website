@@ -2682,7 +2682,7 @@
     "300 mm",
     "magasító",
     "2,0 mm",
-    "10,6"
+    "10,8"
    ],
    "acel-oldalfal-hvak-300": [
     "HVAK 300",
@@ -2710,7 +2710,7 @@
     "500 mm",
     "alap",
     "2,0 mm",
-    "11,7"
+    "12,7"
    ],
    "acel-oldalfal-hvd-600": [
     "HVD 600",
@@ -2773,14 +2773,14 @@
     "12,4"
    ],
    "acel-oldalfal-bakkt-400": [
-    "BAKkt 400",
+    "BAKkT 400",
     "400 mm",
     "magasító",
     "2,0 mm",
     "12,7"
    ],
    "acel-oldalfal-bakskt-400": [
-    "BAKSkt 400",
+    "BAKSkT 400",
     "400 mm",
     "magasító",
     "2,0 mm",
@@ -2844,8 +2844,8 @@
   "leader": "acel-oldalfal-bak-400",
   "members": {
    "acel-oldalfal-bak-400": "BAK 400 – 400 mm",
-   "acel-oldalfal-bakkt-400": "BAKkt 400 – 400 mm",
-   "acel-oldalfal-bakskt-400": "BAKSkt 400 – 400 mm",
+   "acel-oldalfal-bakkt-400": "BAKkT 400 – 400 mm",
+   "acel-oldalfal-bakskt-400": "BAKSkT 400 – 400 mm",
    "acel-oldalfal-bak-450": "BAK 450 – 450 mm",
    "acel-oldalfal-bak-500": "BAK 500 – 500 mm",
    "acel-oldalfal-baks-500": "BAKS 500 – 500 mm",
@@ -2877,7 +2877,7 @@
     "11,7"
    ],
    "acel-oldalfal-2-mm": [
-    "HVAKKT 400",
+    "HVAKkT 400",
     "400 mm",
     "magasító",
     "2,0 mm",
@@ -2895,7 +2895,7 @@
     "500 mm",
     "alap",
     "2,0 mm",
-    "11,4"
+    "13,6"
    ],
    "hvak600-acel-oldalfal-2-mm": [
     "HVAK 600",
@@ -2927,7 +2927,7 @@
   "leader": "acel-oldalfal-hvak-400",
   "members": {
    "acel-oldalfal-hvak-400": "HVAK 400 – 400 mm",
-   "acel-oldalfal-2-mm": "HVAKKT 400 – 400 mm",
+   "acel-oldalfal-2-mm": "HVAKkT 400 – 400 mm",
    "acel-oldalfal-hvak-450": "HVAK 450 – 450 mm",
    "acel-oldalfal-hvak-500": "HVAK 500 – 500 mm",
    "hvak600-acel-oldalfal-2-mm": "HVAK 600 – 600 mm",
@@ -3063,7 +3063,7 @@
     "500 mm",
     "alap",
     "2,0 mm",
-    "11,2"
+    "13,2"
    ],
    "acel-oldalfal-hvn-600": [
     "HVN 600",
