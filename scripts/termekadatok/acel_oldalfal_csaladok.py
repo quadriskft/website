@@ -56,6 +56,11 @@ def usage(code):
     return "magasító" if "AK" in code.upper() else "alap"
 
 
+def dec1(v):
+    """kg/m egy tizedesre, ahogy a gyártói katalógusban (10 -> 10,0; 13,4 / 16,8 marad)"""
+    return re.sub(r"(?<![\d,])(\d+)(?![\d,])", r"\1,0", v) if v else v
+
+
 def short(v):
     return {"alap oldalfal": "alap", "magasító (ráépítő) oldalfal": "magasító"}.get(v, v)
 
@@ -71,6 +76,7 @@ def main():
     excel = json.loads((ROOT / "src/data/catalog.json").read_text())["products"]
     ext_all = json.loads((ROOT / "src/data/bovitett.json").read_text())
     extended, moves = ext_all["products"], ext_all.get("moves", {})
+    extended = extended + json.loads((ROOT / "data/kezi_termekek.json").read_text())["products"]
     fixes = json.loads((ROOT / "data/termek_javitasok.json").read_text())
     deleted = json.loads((ROOT / "data/torolt_termekek.json").read_text())
     extra = json.loads((ROOT / "src/data/termekadatok.json").read_text())
@@ -114,7 +120,7 @@ def main():
             "navigate": True, "table": ["Típus", "Magasság", "Kivitel", "Lemez", "kg/m"],
             "rows": {r[3]: [r[1], f"{r[2]} mm" if r[2] else "–", short(spec(r[5], "Felhasználás")) or usage(r[1]),
                             (spec(r[5], "Lemezvastagság [mm]") + " mm") if spec(r[5], "Lemezvastagság [mm]") else spec(r[5], "Falvastagság") or "–",
-                            spec(r[5], "Tömeg [kg/m]") or spec(r[5], "Tömeg").replace(" kg/fm", "") or "–"]
+                            dec1(spec(r[5], "Tömeg [kg/m]") or spec(r[5], "Tömeg").replace(" kg/fm", "")) or "–"]
                      for r in rows},
             "lengths": LENGTHS.get(sid, LIGHT),
             "leader": leader,

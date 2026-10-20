@@ -22,6 +22,22 @@
    "specs": {},
    "images": [],
    "description": ""
+  },
+  {
+   "slug": "acel-oldalfal-bkt-400",
+   "name": "Acél oldalfal BKT 400 mm",
+   "code": "BKT 400",
+   "group": "acel-profilok",
+   "category": "lezerhegesztett-acel-oldalfalak",
+   "source": "Fuhrmann",
+   "specs": {
+    "Lemezvastagság [mm]": "2,0",
+    "Tömeg [kg/m]": "11,9",
+    "Felhasználás": "alap oldalfal",
+    "Magasság [mm]": "400"
+   },
+   "images": [],
+   "description": "Lézerhegesztett acél oldalfal nagy oldalnyomásra: billencs és platós teherautó-felépítményekhez, mezőgazdasági billencsekhez (B típuscsalád, kerettel)."
   }
  ]
 }

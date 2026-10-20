@@ -184,8 +184,9 @@ def page_drawing(page):
 
 def main():
     extended = json.loads((ROOT / "src/data/bovitett.json").read_text())["products"]
+    extended += json.loads((ROOT / "data/kezi_termekek.json").read_text())["products"]  # pl. BKT 400 (kézzel felvett)
     fu = {p["code"]: p for p in extended if p.get("source") == "Fuhrmann"}
-    sheets = datasheets()
+    sheets = {**datasheets(), "BKT 400": "https://www.fuhrmann.at/files/stahlbordwaende/BKT400.pdf"}
     data = load_enrichment()
     updates, missing = {}, []
     for code, p in fu.items():

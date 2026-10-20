@@ -10827,6 +10827,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-b-300-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-b-300-attekinto.webp",
    "/termekkepek/acel-oldalfal-b-300-meretrajz.webp"
   ]
  },
@@ -10837,6 +10838,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-b-400-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-b-400-attekinto.webp",
    "/termekkepek/acel-oldalfal-b-400-meretrajz.webp"
   ]
  },
@@ -10847,6 +10849,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-b-450-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-b-450-attekinto.webp",
    "/termekkepek/acel-oldalfal-b-450-meretrajz.webp"
   ]
  },
@@ -10857,6 +10860,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-b-500-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-b-500-attekinto.webp",
    "/termekkepek/acel-oldalfal-b-500-meretrajz.webp"
   ]
  },
@@ -10867,6 +10871,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-b-600-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-b-600-attekinto.webp",
    "/termekkepek/acel-oldalfal-b-600-meretrajz.webp"
   ]
  },
@@ -10979,6 +10984,16 @@
    "/termekkepek/acel-oldalfal-baktt-800-meretrajz.webp"
   ]
  },
+ "acel-oldalfal-bkt-400": {
+  "source": "",
+  "sourceUrl": "",
+  "sourceTitle": "",
+  "specs": {},
+  "images": [
+   "/termekkepek/acel-oldalfal-bkt-400-attekinto.webp",
+   "/termekkepek/acel-oldalfal-bkt-400-meretrajz.webp"
+  ]
+ },
  "acel-oldalfal-bn-450": {
   "source": "",
   "sourceUrl": "",
@@ -11066,6 +11081,7 @@
   "specs": {},
   "images": [
    "/termekkepek/acel-oldalfal-btt-800-3d-eles.webp",
+   "/termekkepek/acel-oldalfal-btt-800-attekinto.webp",
    "/termekkepek/acel-oldalfal-btt-800-meretrajz.webp"
   ]
  },
