@@ -3238,5 +3238,21 @@
    "acel-oldalfal-2-mm-3": "HVTT 800 – 800 mm",
    "acel-oldalfal-hvw-1000": "HVW 1000 – 1000 mm"
   }
+ },
+ "gumis-zsaner": {
+  "name": "Gumis zsanér (Eli-Ti), eloxált alumínium",
+  "label": "Hossz",
+  "title": "Rendelhető hosszak",
+  "note": "Folyamatos, furatos eloxált alumínium zsanér gumibetéttel, 180°-ban nyíló – az alábbi gyári hosszakban, darabra rendelhető.",
+  "navigate": true,
+  "table": [
+   "Hossz",
+   "Tömeg"
+  ],
+  "members": {
+   "831245-gumis-zsaner-l-2500-mm": "2500 mm",
+   "831230-gumis-zsaner-l-3000-mm": "3000 mm",
+   "831440-gumis-zsaner-l-4000-mm": "4000 mm"
+  }
  }
 }

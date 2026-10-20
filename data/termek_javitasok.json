@@ -1787,5 +1787,38 @@
    "Tömeg": "5,5 kg"
   },
   "name": "Dupla görgős gumiütköző 190x115"
+ },
+ "831245-gumis-zsaner-l-2500-mm": {
+  "specs": {
+   "Kivitel": null,
+   "Hossz": "2500 mm",
+   "Tömeg": "3,700 kg",
+   "Anyag": "eloxált alumínium, gumibetéttel",
+   "Profil": "37 × 30 mm",
+   "Furatok": "Ø5 mm, 200 mm osztással",
+   "Nyitási szög": "180°"
+  }
+ },
+ "831230-gumis-zsaner-l-3000-mm": {
+  "specs": {
+   "Kivitel": null,
+   "Hossz": "3000 mm",
+   "Tömeg": "4,440 kg",
+   "Anyag": "eloxált alumínium, gumibetéttel",
+   "Profil": "37 × 30 mm",
+   "Furatok": "Ø5 mm, 200 mm osztással",
+   "Nyitási szög": "180°"
+  }
+ },
+ "831440-gumis-zsaner-l-4000-mm": {
+  "specs": {
+   "Kivitel": null,
+   "Hossz": "4000 mm",
+   "Tömeg": "5,920 kg",
+   "Anyag": "eloxált alumínium, gumibetéttel",
+   "Profil": "37 × 30 mm",
+   "Furatok": "Ø5 mm, 200 mm osztással",
+   "Nyitási szög": "180°"
+  }
  }
 }
