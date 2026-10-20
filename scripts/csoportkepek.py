@@ -10,7 +10,8 @@ Használat: python3 scripts/csoportkepek.py [render_mappa]
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageChops, ImageFilter
+import numpy as np
+from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "public/csoportkepek"
@@ -37,9 +38,10 @@ PHOTOS = {
     "csuszasmentes-retegelt-padlo": ["cover", "../data/forras/retegelt_csuszasmentes_csoportkep.png"],
     # a Quadris által küldött kép, a feliratos doboz előtt levágva
     "kedergumik": ["cover", "../data/forras/kedergumi_csoportkep.png"],
-    # a Quadris kérésére: a piros szegélyes 4 szárnyú hátsó ajtó (a rámpa a termékkártyán már látszik), teljes
-    # magasságban, a két oldalon a saját elmosott képével
-    "hatso-ajtok-es-athajto-rampak": ["blur", "../data/forras/hatso_ajto_4szarnyu_csoportkep.png"],  # MI-vel 4x nagyítva
+    # a Quadris által küldött rámpás kép (fejléc- és alsó csík nélkül, MI-vel 4x nagyítva, élesítve) és mellette
+    # a piros szegélyes 4 szárnyú hátsó ajtó (MI-vel 4x nagyítva), árnyékkal, a rámpás kép szürke hátterén
+    "hatso-ajtok-es-athajto-rampak": ["side", "../data/forras/athajto_rampak_csoportkep.png",
+                                      "../data/forras/hatso_ajto_4szarnyu_csoportkep.png"],
     "italszallito-kit": ["termekkepek/212427-ada-s-ajto-profil-2100-mm-elox-1.webp"],
 }
 
@@ -107,6 +109,26 @@ def small(im, frac=0.72):
     return canvas
 
 
+def side(collage, photo, bg=(228, 228, 228)):
+    """Termékkollázs (egyszínű háttéren) és mellette egy fotó árnyékkal, a kollázs hátterén, azonos magasságban."""
+    collage, photo = collage.convert("RGB"), photo.convert("RGB")
+    a = np.asarray(collage).astype(int)
+    ys, xs = np.where(np.abs(a - np.array(bg)).max(axis=2) > 12)
+    collage = collage.crop((xs.min() - 10, ys.min() - 10, xs.max() + 10, ys.max() + 10))
+    canvas = Image.new("RGB", (W, H), bg)
+    gap = 20
+    h = int((W - 3 * gap) / (collage.width / collage.height + photo.width / photo.height))
+    cw, pw = round(collage.width * h / collage.height), round(photo.width * h / photo.height)
+    y = (H - h) // 2
+    canvas.paste(collage.resize((cw, h), Image.LANCZOS), (gap, y))
+    shadow = Image.new("RGBA", (pw + 40, h + 40), (0, 0, 0, 0))
+    ImageDraw.Draw(shadow).rectangle((20, 24, pw + 20, h + 24), fill=(0, 0, 0, 90))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(9))
+    canvas.paste(shadow, (2 * gap + cw - 20, y - 20), shadow)
+    canvas.paste(photo.resize((pw, h), Image.LANCZOS), (2 * gap + cw, y))
+    return canvas
+
+
 def blur(im):
     """Álló fotó a képkocka teljes magasságában, a két oldalon a saját elmosott, kinagyított képével."""
     im = im.convert("RGB")
@@ -147,6 +169,8 @@ def main():
             img = cover(Image.open(ROOT / "public" / paths[1]))
         elif paths[0] == "row":
             img = row([Image.open(ROOT / "public" / p) for p in paths[1:]])
+        elif paths[0] == "side":
+            img = side(Image.open(ROOT / "public" / paths[1]), Image.open(ROOT / "public" / paths[2]))
         elif paths[0] == "blur":
             img = blur(Image.open(ROOT / "public" / paths[1]))
         elif paths[0] == "pair":
