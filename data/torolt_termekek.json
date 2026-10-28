@@ -1328,5 +1328,68 @@
   "code": "103654",
   "date": "2026-10-20",
   "reason": "Quadris kérése: nem kell"
+ },
+ "l-12x1250x2500-mm-natur-retegelt-lemez": {
+  "name": "L 12x1250x2500 mm Natúr rétegelt lemez",
+  "supplier": "BAYU",
+  "code": "",
+  "date": "2026-10-28",
+  "reason": "Quadris kérése: nem kell"
+ },
+ "l-12x1500x3000-mm-retegelt-lemez-fenolos": {
+  "name": "L 12x1500x3000 mm rétegelt lemez fenolos",
+  "supplier": "",
+  "code": "",
+  "date": "2026-10-28",
+  "reason": "Quadris kérése: nem kell"
+ },
+ "l-15x1250x2500-retegelt-lemez-natur": {
+  "name": "L 15x1250x2500 Rétegelt lemez Natúr",
+  "supplier": "Peri",
+  "code": "",
+  "date": "2026-10-28",
+  "reason": "Quadris kérése: nem kell"
+ },
+ "l-15x2130x1250-retegelt-lemez-fenolos": {
+  "name": "L 15x2130x1250 Rétegelt lemez, Fenolos",
+  "supplier": "",
+  "code": "",
+  "date": "2026-10-28",
+  "reason": "Quadris kérése: nem kell"
+ },
+ "l-18x1250x2200-retegelt-lemez-fenolos-hexa": {
+  "name": "L 18x1250x2200 Rétegelt lemez fenolos, HEXA",
+  "supplier": "Peri",
+  "code": "",
+  "date": "2026-10-28",
+  "reason": "Quadris kérése: nem kell"
+ },
+ "l-21x1250x2500-retegelt-lemez-fenolos-hexa": {
+  "name": "L 21x1250x2500 Rétegelt lemez fenolos HEXA",
+  "supplier": "Peri",
+  "code": "",
+  "date": "2026-10-28",
+  "reason": "Quadris kérése: nem kell"
+ },
+ "l-6-5x1250x2500-mm-natur-retegelt-lemez": {
+  "name": "L 6,5x1250x2500 mm Natúr rétegelt lemez",
+  "supplier": "BAYU",
+  "code": "",
+  "date": "2026-10-28",
+  "reason": "Quadris kérése: nem kell"
+ },
+ "l-6-5x1500x3000-mm-natur-retegelt-lemez": {
+  "name": "L 6,5x1500x3000 mm Natúr rétegelt lemez",
+  "supplier": "BAYU",
+  "code": "",
+  "date": "2026-10-28",
+  "reason": "Quadris kérése: nem kell"
+ },
+ "l-9x1500x3000-retegelt-lemez-fenolos": {
+  "name": "L 9x1500x3000 Rétegelt lemez fenolos",
+  "supplier": "",
+  "code": "",
+  "date": "2026-10-28",
+  "reason": "Quadris kérése: nem kell"
  }
 }

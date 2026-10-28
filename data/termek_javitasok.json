@@ -1821,61 +1821,49 @@
    "Nyitási szög": "180°"
   }
  },
- "l-6-5x1250x2500-mm-natur-retegelt-lemez": {
-  "order": 1
- },
  "l-6-5x1250x2500-mm-retegelt-lemez-fenolos": {
-  "order": 5
+  "order": 2
  },
  "l-15x1250x2200-retegelt-lemez-fenolos-hexa": {
-  "order": 14
+  "order": 11
  },
  "l-4x1250x2500-mm-film-film-retegelt-lemez": {
   "specs": {
    "Felület": "sima fenolfilm bevonat (csúszásmentes minta nélkül)"
   },
-  "order": 17
- },
- "l-mdf-6x2800x2070-mm": {
-  "order": 18
- },
- "l-9x1250x2500mm-natur-retegelt-lemez": {
-  "order": 2
- },
- "l-12x1250x2500-mm-natur-retegelt-lemez": {
-  "order": 3
- },
- "l-15x1250x2500-retegelt-lemez-natur": {
-  "order": 4
- },
- "l-9x1250x2500-retegelt-lemez-fenolos": {
-  "order": 6
- },
- "l-12x1250x2500-mm-retegelt-lemez-fenolos": {
-  "order": 7
- },
- "l-15x2130x1250-retegelt-lemez-fenolos": {
-  "order": 8
- },
- "l-18x1250x2500-retegelt-lemez-fenolos": {
-  "order": 9
- },
- "l-21x1250x2500-retegelt-lemez-fenolos": {
-  "order": 10
- },
- "l-24x1250x2500-retegelt-lemez-fenolos": {
-  "order": 11
- },
- "l-27x1250x2500-retegelt-lemez-fenolos": {
-  "order": 12
- },
- "l-30x1250x2500-retegelt-lemez-fenolos": {
   "order": 13
  },
- "l-18x1250x2200-retegelt-lemez-fenolos-hexa": {
-  "order": 15
+ "l-mdf-6x2800x2070-mm": {
+  "order": 14
  },
- "l-21x1250x2500-retegelt-lemez-fenolos-hexa": {
-  "order": 16
+ "l-9x1250x2500mm-natur-retegelt-lemez": {
+  "order": 1
+ },
+ "l-9x1250x2500-retegelt-lemez-fenolos": {
+  "order": 3
+ },
+ "l-12x1250x2500-mm-retegelt-lemez-fenolos": {
+  "order": 4
+ },
+ "l-18x1250x2500-retegelt-lemez-fenolos": {
+  "order": 6
+ },
+ "l-21x1250x2500-retegelt-lemez-fenolos": {
+  "order": 7
+ },
+ "l-24x1250x2500-retegelt-lemez-fenolos": {
+  "order": 8
+ },
+ "l-27x1250x2500-retegelt-lemez-fenolos": {
+  "order": 9
+ },
+ "l-30x1250x2500-retegelt-lemez-fenolos": {
+  "order": 10
+ },
+ "l-15x1250x2200-retegelt-lemez-fenolos": {
+  "order": 5
+ },
+ "l-18x1250x2500-retegelt-lemez-fenolos-hexa": {
+  "order": 12
  }
 }

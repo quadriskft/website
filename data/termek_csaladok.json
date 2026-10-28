@@ -3255,31 +3255,6 @@
    "831440-gumis-zsaner-l-4000-mm": "4000 mm"
   }
  },
- "retegelt-natur-6-5": {
-  "name": "Natúr rétegelt lemez – 6,5 mm",
-  "label": "Méret",
-  "title": "Rendelhető méretek",
-  "note": "Natúr, bevonat nélküli rétegelt falemez, 6,5 mm vastag – válassza ki a kívánt méretet.",
-  "navigate": true,
-  "table": [
-   "Szélesség",
-   "Hosszúság"
-  ],
-  "rows": {
-   "l-6-5x1250x2500-mm-natur-retegelt-lemez": [
-    "1250 mm",
-    "2500 mm"
-   ],
-   "l-6-5x1500x3000-mm-natur-retegelt-lemez": [
-    "1500 mm",
-    "3000 mm"
-   ]
-  },
-  "members": {
-   "l-6-5x1250x2500-mm-natur-retegelt-lemez": "1250 × 2500 mm",
-   "l-6-5x1500x3000-mm-natur-retegelt-lemez": "1500 × 3000 mm"
-  }
- },
  "retegelt-natur-9": {
   "name": "Natúr rétegelt lemez – 9 mm",
   "label": "Méret",
@@ -3298,46 +3273,6 @@
   },
   "members": {
    "l-9x1250x2500mm-natur-retegelt-lemez": "1250 × 2500 mm"
-  }
- },
- "retegelt-natur-12": {
-  "name": "Natúr rétegelt lemez – 12 mm",
-  "label": "Méret",
-  "title": "Rendelhető méretek",
-  "note": "Natúr, bevonat nélküli rétegelt falemez, 12 mm vastag – válassza ki a kívánt méretet.",
-  "navigate": true,
-  "table": [
-   "Szélesség",
-   "Hosszúság"
-  ],
-  "rows": {
-   "l-12x1250x2500-mm-natur-retegelt-lemez": [
-    "1250 mm",
-    "2500 mm"
-   ]
-  },
-  "members": {
-   "l-12x1250x2500-mm-natur-retegelt-lemez": "1250 × 2500 mm"
-  }
- },
- "retegelt-natur-15": {
-  "name": "Natúr rétegelt lemez – 15 mm",
-  "label": "Méret",
-  "title": "Rendelhető méretek",
-  "note": "Natúr, bevonat nélküli rétegelt falemez, 15 mm vastag – válassza ki a kívánt méretet.",
-  "navigate": true,
-  "table": [
-   "Szélesség",
-   "Hosszúság"
-  ],
-  "rows": {
-   "l-15x1250x2500-retegelt-lemez-natur": [
-    "1250 mm",
-    "2500 mm"
-   ]
-  },
-  "members": {
-   "l-15x1250x2500-retegelt-lemez-natur": "1250 × 2500 mm"
   }
  },
  "retegelt-fenolos-6-5": {
@@ -3383,16 +3318,11 @@
    "l-9x1500x2500-retegelt-lemez-fenolos": [
     "1500 mm",
     "2500 mm"
-   ],
-   "l-9x1500x3000-retegelt-lemez-fenolos": [
-    "1500 mm",
-    "3000 mm"
    ]
   },
   "members": {
    "l-9x1250x2500-retegelt-lemez-fenolos": "1250 × 2500 mm",
-   "l-9x1500x2500-retegelt-lemez-fenolos": "1500 × 2500 mm",
-   "l-9x1500x3000-retegelt-lemez-fenolos": "1500 × 3000 mm"
+   "l-9x1500x2500-retegelt-lemez-fenolos": "1500 × 2500 mm"
   }
  },
  "retegelt-fenolos-12": {
@@ -3413,16 +3343,11 @@
    "l-12x1500x2500-mm-retegelt-lemez-fenolos": [
     "1500 mm",
     "2500 mm"
-   ],
-   "l-12x1500x3000-mm-retegelt-lemez-fenolos": [
-    "1500 mm",
-    "3000 mm"
    ]
   },
   "members": {
    "l-12x1250x2500-mm-retegelt-lemez-fenolos": "1250 × 2500 mm",
-   "l-12x1500x2500-mm-retegelt-lemez-fenolos": "1500 × 2500 mm",
-   "l-12x1500x3000-mm-retegelt-lemez-fenolos": "1500 × 3000 mm"
+   "l-12x1500x2500-mm-retegelt-lemez-fenolos": "1500 × 2500 mm"
   }
  },
  "retegelt-fenolos-15": {
@@ -3436,10 +3361,6 @@
    "Hosszúság"
   ],
   "rows": {
-   "l-15x2130x1250-retegelt-lemez-fenolos": [
-    "1250 mm",
-    "2130 mm"
-   ],
    "l-15x1250x2200-retegelt-lemez-fenolos": [
     "1250 mm",
     "2200 mm"
@@ -3462,7 +3383,6 @@
    ]
   },
   "members": {
-   "l-15x2130x1250-retegelt-lemez-fenolos": "1250 × 2130 mm",
    "l-15x1250x2200-retegelt-lemez-fenolos": "1250 × 2200 mm",
    "l-15x1250x2500-retegelt-lemez-fenolos": "1250 × 2500 mm",
    "l-15x1500x2500-retegelt-lemez-fenolos": "1500 × 2500 mm",
@@ -3641,38 +3561,13 @@
    "Hosszúság"
   ],
   "rows": {
-   "l-18x1250x2200-retegelt-lemez-fenolos-hexa": [
-    "1250 mm",
-    "2200 mm"
-   ],
    "l-18x1250x2500-retegelt-lemez-fenolos-hexa": [
     "1250 mm",
     "2500 mm"
    ]
   },
   "members": {
-   "l-18x1250x2200-retegelt-lemez-fenolos-hexa": "1250 × 2200 mm",
    "l-18x1250x2500-retegelt-lemez-fenolos-hexa": "1250 × 2500 mm"
-  }
- },
- "retegelt-hexa-21": {
-  "name": "Csúszásmentes fenolos rétegelt lemez HEXA – 21 mm",
-  "label": "Méret",
-  "title": "Rendelhető méretek",
-  "note": "Rétegelt falemez, egy oldalon csúszásmentes, hatszögmintás (HEXA) fenolbevonattal, 21 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
-  "navigate": true,
-  "table": [
-   "Szélesség",
-   "Hosszúság"
-  ],
-  "rows": {
-   "l-21x1250x2500-retegelt-lemez-fenolos-hexa": [
-    "1250 mm",
-    "2500 mm"
-   ]
-  },
-  "members": {
-   "l-21x1250x2500-retegelt-lemez-fenolos-hexa": "1250 × 2500 mm"
   }
  }
 }
