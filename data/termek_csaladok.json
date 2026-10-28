@@ -3259,7 +3259,7 @@
   "name": "Natúr rétegelt lemez – 9 mm",
   "label": "Méret",
   "title": "Rendelhető méretek",
-  "note": "Natúr, bevonat nélküli rétegelt falemez, 9 mm vastag – válassza ki a kívánt méretet.",
+  "note": "Natúr, bevonat nélküli nyír rétegelt falemez, 9 mm vastag – válassza ki a kívánt méretet.",
   "navigate": true,
   "table": [
    "Szélesség",
@@ -3281,7 +3281,7 @@
   "name": "Csúszásmentes fenolos rétegelt lemez – 6,5 mm",
   "label": "Méret",
   "title": "Rendelhető méretek",
-  "note": "Rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 6,5 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
+  "note": "Nyír rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 6,5 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
   "navigate": true,
   "table": [
    "Szélesség",
@@ -3309,7 +3309,7 @@
   "name": "Csúszásmentes fenolos rétegelt lemez – 9 mm",
   "label": "Méret",
   "title": "Rendelhető méretek",
-  "note": "Rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 9 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
+  "note": "Nyír rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 9 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
   "navigate": true,
   "table": [
    "Szélesség",
@@ -3337,7 +3337,7 @@
   "name": "Csúszásmentes fenolos rétegelt lemez – 12 mm",
   "label": "Méret",
   "title": "Rendelhető méretek",
-  "note": "Rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 12 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
+  "note": "Nyír rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 12 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
   "navigate": true,
   "table": [
    "Szélesség",
@@ -3365,7 +3365,7 @@
   "name": "Csúszásmentes fenolos rétegelt lemez – 15 mm",
   "label": "Méret",
   "title": "Rendelhető méretek",
-  "note": "Rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 15 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
+  "note": "Nyír rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 15 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
   "navigate": true,
   "table": [
    "Szélesség",
@@ -3411,7 +3411,7 @@
   "name": "Csúszásmentes fenolos rétegelt lemez – 18 mm",
   "label": "Méret",
   "title": "Rendelhető méretek",
-  "note": "Rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 18 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
+  "note": "Nyír rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 18 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
   "navigate": true,
   "table": [
    "Szélesség",
@@ -3445,7 +3445,7 @@
   "name": "Csúszásmentes fenolos rétegelt lemez – 21 mm",
   "label": "Méret",
   "title": "Rendelhető méretek",
-  "note": "Rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 21 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
+  "note": "Nyír rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 21 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
   "navigate": true,
   "table": [
    "Szélesség",
@@ -3479,7 +3479,7 @@
   "name": "Csúszásmentes fenolos rétegelt lemez – 24 mm",
   "label": "Méret",
   "title": "Rendelhető méretek",
-  "note": "Rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 24 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
+  "note": "Nyír rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 24 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
   "navigate": true,
   "table": [
    "Szélesség",
@@ -3504,7 +3504,7 @@
   "name": "Csúszásmentes fenolos rétegelt lemez – 27 mm",
   "label": "Méret",
   "title": "Rendelhető méretek",
-  "note": "Rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 27 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
+  "note": "Nyír rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 27 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
   "navigate": true,
   "table": [
    "Szélesség",
@@ -3529,7 +3529,7 @@
   "name": "Csúszásmentes fenolos rétegelt lemez – 30 mm",
   "label": "Méret",
   "title": "Rendelhető méretek",
-  "note": "Rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 30 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
+  "note": "Nyír rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal, 30 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
   "navigate": true,
   "table": [
    "Szélesség",
@@ -3554,7 +3554,7 @@
   "name": "Csúszásmentes fenolos rétegelt lemez HEXA – 15 mm",
   "label": "Méret",
   "title": "Rendelhető méretek",
-  "note": "Rétegelt falemez, egy oldalon csúszásmentes, hatszögmintás (HEXA) fenolbevonattal, 15 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
+  "note": "Nyír rétegelt falemez, egy oldalon csúszásmentes, hatszögmintás (HEXA) fenolbevonattal, 15 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
   "navigate": true,
   "table": [
    "Szélesség",
@@ -3579,7 +3579,7 @@
   "name": "Csúszásmentes fenolos rétegelt lemez HEXA – 18 mm",
   "label": "Méret",
   "title": "Rendelhető méretek",
-  "note": "Rétegelt falemez, egy oldalon csúszásmentes, hatszögmintás (HEXA) fenolbevonattal, 18 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
+  "note": "Nyír rétegelt falemez, egy oldalon csúszásmentes, hatszögmintás (HEXA) fenolbevonattal, 18 mm vastag – válassza ki a kívánt méretet. Rétegelt lemez járó felületnek és gépjármű padlónak.",
   "navigate": true,
   "table": [
    "Szélesség",

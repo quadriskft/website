@@ -25,12 +25,12 @@ USE = "Rétegelt lemez járó felületnek és gépjármű padlónak."
 # rendelésre kapható méretek (a Quadris jelölése): a táblázatban külön oszlop, a műszaki adatoknál „Elérhetőség”
 TO_ORDER = {"l-12x1250x2500-mm-retegelt-lemez-fenolos", "l-12x1500x2500-mm-retegelt-lemez-fenolos", "l-15x1500x3000-retegelt-lemez-fenolos", "l-18x1500x3000-retegelt-lemez-fenolos", "l-21x1500x3000-mm-retegelt-lemez-fenolos", "l-6-5x1500x3000-mm-retegelt-lemez-fenol-bevonattal", "l-9x1250x2500mm-natur-retegelt-lemez", "l-9x1500x2500-retegelt-lemez-fenolos"}
 FAMILIES = {
-    "retegelt-natur": ("Natúr rétegelt lemez", "Natúr, bevonat nélküli rétegelt falemez",
+    "retegelt-natur": ("Natúr rétegelt lemez", "Natúr, bevonat nélküli nyír rétegelt falemez",
                        lambda n: "natúr" in n),
-    "retegelt-fenolos": ("Csúszásmentes fenolos rétegelt lemez", "Rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal",
+    "retegelt-fenolos": ("Csúszásmentes fenolos rétegelt lemez", "Nyír rétegelt falemez, egy oldalon csúszásmentes fenolbevonattal",
                          lambda n: "fenol" in n and "hexa" not in n),
     "retegelt-hexa": ("Csúszásmentes fenolos rétegelt lemez HEXA",
-                      "Rétegelt falemez, egy oldalon csúszásmentes, hatszögmintás (HEXA) fenolbevonattal",
+                      "Nyír rétegelt falemez, egy oldalon csúszásmentes, hatszögmintás (HEXA) fenolbevonattal",
                       lambda n: "fenol" in n and "hexa" in n),
 }
 

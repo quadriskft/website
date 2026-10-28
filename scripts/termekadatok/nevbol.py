@@ -298,7 +298,7 @@ def parse(p):
         if "mdf" in low:
             specs["Anyag"] = "MDF lap"
         else:
-            specs["Anyag"] = "rétegelt falemez"
+            specs["Anyag"] = "nyír rétegelt falemez"  # a Quadris kérésére: nyír
             specs["Ragasztás"] = "vízálló ragasztással"  # a Quadris kérésére minden rétegelt lemeznél
             # a fenolos lemezek (6,5 mm-től) a Quadris kérésére: „egy oldalon csúszásmentes fenolbevonat”
             specs["Felület"] = ("egy oldalon csúszásmentes fenolbevonat" if "fenol" in low
