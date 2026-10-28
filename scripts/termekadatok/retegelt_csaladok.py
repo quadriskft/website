@@ -20,7 +20,8 @@ from common import ROOT  # noqa: E402
 OUT = ROOT / "data/termek_csaladok.json"
 FIXES = ROOT / "data/termek_javitasok.json"
 CATEGORY = "retegelt-lemezek"
-# család kulcsa -> (név, megjegyzés, a név feltétele)
+# család kulcsa -> (név, megjegyzés, a név feltétele); a csúszásmentes lemezeknél a felhasználás (a Quadris kérése)
+USE = "Rétegelt lemez járó felületnek és gépjármű padlónak."
 FAMILIES = {
     "retegelt-natur": ("Natúr rétegelt lemez", "Natúr, bevonat nélküli rétegelt falemez",
                        lambda n: "natúr" in n),
@@ -59,7 +60,7 @@ def main():
             sizes.sort()
             fams[f"{fid}-{hu(t).replace(',', '-')}"] = {
                 "name": f"{name} – {hu(t)} mm", "label": "Méret", "title": "Rendelhető méretek",
-                "note": f"{note}, {hu(t)} mm vastag – válassza ki a kívánt méretet.",
+                "note": f"{note}, {hu(t)} mm vastag – válassza ki a kívánt méretet." + ("" if fid == "retegelt-natur" else f" {USE}"),
                 "navigate": True, "table": ["Szélesség", "Hosszúság"],
                 "rows": {s: [f"{a} mm", f"{b} mm"] for (a, b), s in sizes},
                 "members": {s: f"{a} × {b} mm" for (a, b), s in sizes},
