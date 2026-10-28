@@ -3748,5 +3748,73 @@
   "members": {
    "s-6x1250x2500-mm-alu-lemez-en-aw-5754-h22": "1250 × 2500 mm (EN AW-5754 H22)"
   }
+ },
+ "alu-elox-2": {
+  "name": "Eloxált alumínium lemez – 2 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "Eloxált alumínium lemez, 2 mm vastag – válassza ki a kívánt méretet és ötvözetet.",
+  "navigate": true,
+  "table": [
+   "Szélesség",
+   "Hosszúság",
+   "Ötvözet"
+  ],
+  "rows": {
+   "s-2x1000x2000-mm-elox-alu-lemez-en-aw-5002": [
+    "1000 mm",
+    "2000 mm",
+    "EN AW-5002"
+   ],
+   "s-2x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14": [
+    "1250 mm",
+    "2500 mm",
+    "EN AW-5005 H12/H14"
+   ],
+   "s-2x1500x3000-mm-elox-alu-lemez-en-aw-5005-h12-h14-h24": [
+    "1500 mm",
+    "3000 mm",
+    "EN AW-5005 H12/H14/H24"
+   ]
+  },
+  "members": {
+   "s-2x1000x2000-mm-elox-alu-lemez-en-aw-5002": "1000 × 2000 mm (EN AW-5002)",
+   "s-2x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14": "1250 × 2500 mm (EN AW-5005 H12/H14)",
+   "s-2x1500x3000-mm-elox-alu-lemez-en-aw-5005-h12-h14-h24": "1500 × 3000 mm (EN AW-5005 H12/H14/H24)"
+  }
+ },
+ "alu-elox-3": {
+  "name": "Eloxált alumínium lemez – 3 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "Eloxált alumínium lemez, 3 mm vastag – válassza ki a kívánt méretet és ötvözetet.",
+  "navigate": true,
+  "table": [
+   "Szélesség",
+   "Hosszúság",
+   "Ötvözet"
+  ],
+  "rows": {
+   "s-3x1000x2000-mm-elox-alu-lemez-en-aw-5002": [
+    "1000 mm",
+    "2000 mm",
+    "EN AW-5002"
+   ],
+   "s-3x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14": [
+    "1250 mm",
+    "2500 mm",
+    "EN AW-5005A H12/H14"
+   ],
+   "s-3x1500x3000-mm-elox-alu-lemez-en-aw-5005a-h14": [
+    "1500 mm",
+    "3000 mm",
+    "EN AW-5005 H12/H14"
+   ]
+  },
+  "members": {
+   "s-3x1000x2000-mm-elox-alu-lemez-en-aw-5002": "1000 × 2000 mm (EN AW-5002)",
+   "s-3x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14": "1250 × 2500 mm (EN AW-5005A H12/H14)",
+   "s-3x1500x3000-mm-elox-alu-lemez-en-aw-5005a-h14": "1500 × 3000 mm (EN AW-5005 H12/H14)"
+  }
  }
 }
