@@ -252,7 +252,7 @@ export const GROUP_META = {
   'sarvedok-szerszamosladak': { icon: 'Package', text: 'Sárvédők, szerszámosládák, sárfogók, poroltó- és víztartályok.' },
   'ipari-felgyartmanyok': { icon: 'Ruler', text: 'Zártszelvények, U- és L-profilok, csövek, rudak, laposprofilok.' },
   'aluminium-lemezek': { icon: 'SquareStack', text: 'Sima, cseppmintás és festett alumínium lemezek.' },
-  'csuszasmentes-retegelt-padlo': { icon: 'Layers', text: 'Natúr és csúszásmentes (fenolos, HEXA) rétegelt lemezek padlónak és falnak.' },
+  'csuszasmentes-retegelt-padlo': { icon: 'Layers', text: 'Felhasználás: felépítménygyártás, valamint járófelületek, színpad, pódium.' },
   'gumiszonyegek': { icon: 'Grid3x3', text: 'Istálló-, utánfutó-, rámpa- és munkahelyi gumiszőnyegek, gumi-, PU- és PVC lemezek, moosgumi.' },
   'kedergumik': { icon: 'Spline', text: 'Élvédő, tömítő-, kéder-, üvegvezető és moosgumi profilok felépítményekhez.' },
   'uvegszalas-polieszter': { icon: 'Sheet', text: 'Üvegszálas poliészter (GFK) lemezek és panelek.' },
