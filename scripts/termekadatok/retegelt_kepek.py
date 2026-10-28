@@ -2,7 +2,7 @@
 minden érintett termék első képe lesz, a meglévő képek (3D renderek) utána maradnak.
 
 - HEXA (hexa mintás, fenolos): a Quadris által küldött 3 fotó (a 2. zöld háttere fehérre cserélve); a korábbi
-  kezdőkép (barna render) a Quadris kérésére kikerült
+  kezdőkép (barna render) és a barna 3D renderek a Quadris kérésére kikerültek
 - fenolos (nem HEXA): a Quadris által küldött fotó (MI-vel 4x nagyítva)
 - film-film: a Quadris által küldött fotó (MI-vel 4x nagyítva)
 - natúr: a Quadris által küldött fotó (MI-vel 4x nagyítva)
@@ -39,7 +39,8 @@ def main():
                 continue
             urls = [save_image(img, slug, suffix if len(imgs) == 1 else f"{suffix}-{i}") for i, img in enumerate(imgs, 1)]
             old = f"/termekkepek/{slug}-{suffix}.webp"
-            e["images"] = urls + [u for u in e.get("images", []) if u not in urls and u != old]
+            e["images"] = urls + [u for u in e.get("images", []) if u not in urls and u != old
+                                  and not (suffix == "hexa" and "/3d/" in u)]
             updates[slug] = e
             print(slug, suffix)
     update_enrichment(updates)
