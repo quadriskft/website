@@ -115,7 +115,7 @@ export const products = [...excelProducts, ...extendedProducts, ...cloneProducts
   .map(withoutSupplierCodes).map(withCarton).map(withStock);
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
-const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik', 'elvedo-profilok': 'Élvédő profilok – PVC', 'sima-lemez': 'Natúr lemez', 'cseppmintas-lemez': 'Cseppmintás és dekor lemezek' };
+const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik', 'elvedo-profilok': 'Élvédő profilok – PVC', 'sima-lemez': 'Natúr lemez', 'cseppmintas-lemez': 'Cseppmintás és dekor lemezek', 'dobozok-tarto-konzolok': 'Szerszámosládák + tartó konzolok' };
 // Gyártói alkategóriák logója (a gyártó honlapjáról): a címben a név elé / helyett jelenik meg
 export const CATEGORY_LOGOS = {
   versus: { src: '/logok/versus-omega.svg', alt: 'Versus-Omega', text: true },
