@@ -299,9 +299,11 @@ def parse(p):
             specs["Anyag"] = "MDF lap"
         else:
             specs["Anyag"] = "rétegelt falemez"
-            specs["Felület"] = ("fenolfilm bevonatos" if re.search(r"fenol|film", low) else "natúr (bevonat nélkül)")
+            # a fenolos lemezek (6,5 mm-től) a Quadris kérésére: „egy oldalon csúszásmentes fenolbevonat”
+            specs["Felület"] = ("egy oldalon csúszásmentes fenolbevonat" if "fenol" in low
+                                else "fenolfilm bevonatos" if "film" in low else "natúr (bevonat nélkül)")
             if "hexa" in low:
-                specs["Felület"] += ", csúszásmentes hatszögmintás (HEXA)"
+                specs["Felület"] += " (hatszögmintás – HEXA)"
         colour = (176, 141, 99) if "mdf" in low else (104, 72, 44) if re.search(r"fenol|film", low) else (214, 180, 130)
         a, b = sorted((f(m.group(2)), f(m.group(3))))
         return specs, ("sheet", a, b, f(m.group(1)), colour, None)

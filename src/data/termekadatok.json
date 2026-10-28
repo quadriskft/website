@@ -15822,7 +15822,7 @@
    "Vastagság": "12 mm",
    "Méret": "1250 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-12x1250x2500-mm-retegelt-lemez-fenolos-fenolos.webp",
@@ -15840,7 +15840,7 @@
    "Vastagság": "12 mm",
    "Méret": "1500 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-12x1500x2500-mm-retegelt-lemez-fenolos-fenolos.webp",
@@ -15858,7 +15858,7 @@
    "Vastagság": "12 mm",
    "Méret": "1500 × 3000 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-12x1500x3000-mm-retegelt-lemez-fenolos-fenolos.webp",
@@ -15876,7 +15876,7 @@
    "Vastagság": "15 mm",
    "Méret": "1250 × 2200 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-15x1250x2200-retegelt-lemez-fenolos-fenolos.webp",
@@ -15894,10 +15894,12 @@
    "Vastagság": "15 mm",
    "Méret": "1250 × 2200 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat (hatszögmintás – HEXA)"
   },
   "images": [
-   "/termekkepek/l-15x1250x2200-retegelt-lemez-fenolos-hexa-hexa.webp",
+   "/termekkepek/l-15x1250x2200-retegelt-lemez-fenolos-hexa-hexa-1.webp",
+   "/termekkepek/l-15x1250x2200-retegelt-lemez-fenolos-hexa-hexa-2.webp",
+   "/termekkepek/l-15x1250x2200-retegelt-lemez-fenolos-hexa-hexa-3.webp",
    "/termekkepek/3d/l-15x1250x2200-retegelt-lemez-fenolos-hexa-1.webp",
    "/termekkepek/3d/l-15x1250x2200-retegelt-lemez-fenolos-hexa-2.webp",
    "/termekkepek/l-15x1250x2200-retegelt-lemez-fenolos-hexa-1.webp"
@@ -15912,7 +15914,7 @@
    "Vastagság": "15 mm",
    "Méret": "1250 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-15x1250x2500-retegelt-lemez-fenolos-fenolos.webp",
@@ -15930,10 +15932,12 @@
    "Vastagság": "15 mm",
    "Méret": "1250 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat (hatszögmintás – HEXA)"
   },
   "images": [
-   "/termekkepek/l-15x1250x2500-retegelt-lemez-fenolos-hexa-hexa.webp",
+   "/termekkepek/l-15x1250x2500-retegelt-lemez-fenolos-hexa-hexa-1.webp",
+   "/termekkepek/l-15x1250x2500-retegelt-lemez-fenolos-hexa-hexa-2.webp",
+   "/termekkepek/l-15x1250x2500-retegelt-lemez-fenolos-hexa-hexa-3.webp",
    "/termekkepek/3d/l-15x1250x2500-retegelt-lemez-fenolos-hexa-1.webp",
    "/termekkepek/3d/l-15x1250x2500-retegelt-lemez-fenolos-hexa-2.webp",
    "/termekkepek/l-15x1250x2500-retegelt-lemez-fenolos-hexa-1.webp"
@@ -15966,7 +15970,7 @@
    "Vastagság": "15 mm",
    "Méret": "1500 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-15x1500x2500-retegelt-lemez-fenolos-fenolos.webp",
@@ -15984,7 +15988,7 @@
    "Vastagság": "15 mm",
    "Méret": "1500 × 3000 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-15x1500x3000-retegelt-lemez-fenolos-fenolos.webp",
@@ -16002,7 +16006,7 @@
    "Vastagság": "15 mm",
    "Méret": "2130 × 1250 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-15x2130x1250-retegelt-lemez-fenolos-fenolos.webp",
@@ -16020,7 +16024,7 @@
    "Vastagság": "15 mm",
    "Méret": "2150 × 4000 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-15x2150x4000-retegelt-lemez-fenolos-fenolos.webp",
@@ -16038,10 +16042,12 @@
    "Vastagság": "18 mm",
    "Méret": "1250 × 2200 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat (hatszögmintás – HEXA)"
   },
   "images": [
-   "/termekkepek/l-18x1250x2200-retegelt-lemez-fenolos-hexa-hexa.webp",
+   "/termekkepek/l-18x1250x2200-retegelt-lemez-fenolos-hexa-hexa-1.webp",
+   "/termekkepek/l-18x1250x2200-retegelt-lemez-fenolos-hexa-hexa-2.webp",
+   "/termekkepek/l-18x1250x2200-retegelt-lemez-fenolos-hexa-hexa-3.webp",
    "/termekkepek/3d/l-18x1250x2200-retegelt-lemez-fenolos-hexa-1.webp",
    "/termekkepek/3d/l-18x1250x2200-retegelt-lemez-fenolos-hexa-2.webp",
    "/termekkepek/l-18x1250x2200-retegelt-lemez-fenolos-hexa-1.webp"
@@ -16056,7 +16062,7 @@
    "Vastagság": "18 mm",
    "Méret": "1250 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-18x1250x2500-retegelt-lemez-fenolos-fenolos.webp",
@@ -16074,10 +16080,12 @@
    "Vastagság": "18 mm",
    "Méret": "1250 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat (hatszögmintás – HEXA)"
   },
   "images": [
-   "/termekkepek/l-18x1250x2500-retegelt-lemez-fenolos-hexa-hexa.webp",
+   "/termekkepek/l-18x1250x2500-retegelt-lemez-fenolos-hexa-hexa-1.webp",
+   "/termekkepek/l-18x1250x2500-retegelt-lemez-fenolos-hexa-hexa-2.webp",
+   "/termekkepek/l-18x1250x2500-retegelt-lemez-fenolos-hexa-hexa-3.webp",
    "/termekkepek/3d/l-18x1250x2500-retegelt-lemez-fenolos-hexa-1.webp",
    "/termekkepek/3d/l-18x1250x2500-retegelt-lemez-fenolos-hexa-2.webp",
    "/termekkepek/l-18x1250x2500-retegelt-lemez-fenolos-hexa-1.webp"
@@ -16092,7 +16100,7 @@
    "Vastagság": "18 mm",
    "Méret": "1500 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-18x1500x2500-retegelt-lemez-fenolos-fenolos.webp",
@@ -16110,7 +16118,7 @@
    "Vastagság": "18 mm",
    "Méret": "1500 × 3000 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-18x1500x3000-retegelt-lemez-fenolos-fenolos.webp",
@@ -16128,7 +16136,7 @@
    "Vastagság": "21 mm",
    "Méret": "1250 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-21x1250x2500-retegelt-lemez-fenolos-fenolos.webp",
@@ -16146,10 +16154,12 @@
    "Vastagság": "21 mm",
    "Méret": "1250 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos, csúszásmentes hatszögmintás (HEXA)"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat (hatszögmintás – HEXA)"
   },
   "images": [
-   "/termekkepek/l-21x1250x2500-retegelt-lemez-fenolos-hexa-hexa.webp",
+   "/termekkepek/l-21x1250x2500-retegelt-lemez-fenolos-hexa-hexa-1.webp",
+   "/termekkepek/l-21x1250x2500-retegelt-lemez-fenolos-hexa-hexa-2.webp",
+   "/termekkepek/l-21x1250x2500-retegelt-lemez-fenolos-hexa-hexa-3.webp",
    "/termekkepek/3d/l-21x1250x2500-retegelt-lemez-fenolos-hexa-1.webp",
    "/termekkepek/3d/l-21x1250x2500-retegelt-lemez-fenolos-hexa-2.webp",
    "/termekkepek/l-21x1250x2500-retegelt-lemez-fenolos-hexa-1.webp"
@@ -16164,7 +16174,7 @@
    "Vastagság": "21 mm",
    "Méret": "1500 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-21x1500x2500-mm-retegelt-lemez-fenolos-fenolos.webp",
@@ -16182,7 +16192,7 @@
    "Vastagság": "21 mm",
    "Méret": "1500 × 3000 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-21x1500x3000-mm-retegelt-lemez-fenolos-fenolos.webp",
@@ -16200,7 +16210,7 @@
    "Vastagság": "24 mm",
    "Méret": "1250 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-24x1250x2500-retegelt-lemez-fenolos-fenolos.webp",
@@ -16218,7 +16228,7 @@
    "Vastagság": "24 mm",
    "Méret": "1500 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-24x1500x2500-retegelt-lemez-fenolos-fenolos.webp",
@@ -16236,7 +16246,7 @@
    "Vastagság": "27 mm",
    "Méret": "1250 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-27x1250x2500-retegelt-lemez-fenolos-fenolos.webp",
@@ -16254,7 +16264,7 @@
    "Vastagság": "27 mm",
    "Méret": "1500 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-27x1500x2500-retegelt-lemez-fenolos-fenolos.webp",
@@ -16272,7 +16282,7 @@
    "Vastagság": "30 mm",
    "Méret": "1250 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-30x1250x2500-retegelt-lemez-fenolos-fenolos.webp",
@@ -16290,7 +16300,7 @@
    "Vastagság": "30 mm",
    "Méret": "1500 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-30x1500x2500-retegelt-lemez-fenolos-fenolos.webp",
@@ -16344,7 +16354,7 @@
    "Vastagság": "6,5 mm",
    "Méret": "1250 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-6-5x1250x2500-mm-retegelt-lemez-fenolos-fenolos.webp",
@@ -16380,7 +16390,7 @@
    "Vastagság": "6,5 mm",
    "Méret": "1500 × 3000 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-6-5x1500x3000-mm-retegelt-lemez-fenol-bevonattal-fenolos.webp",
@@ -16398,7 +16408,7 @@
    "Vastagság": "9 mm",
    "Méret": "1250 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-9x1250x2500-retegelt-lemez-fenolos-fenolos.webp",
@@ -16434,7 +16444,7 @@
    "Vastagság": "9 mm",
    "Méret": "1500 × 2500 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-9x1500x2500-retegelt-lemez-fenolos-fenolos.webp",
@@ -16452,7 +16462,7 @@
    "Vastagság": "9 mm",
    "Méret": "1500 × 3000 mm",
    "Anyag": "rétegelt falemez",
-   "Felület": "fenolfilm bevonatos"
+   "Felület": "egy oldalon csúszásmentes fenolbevonat"
   },
   "images": [
    "/termekkepek/l-9x1500x3000-retegelt-lemez-fenolos-fenolos.webp",
