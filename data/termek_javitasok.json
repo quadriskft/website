@@ -1837,12 +1837,18 @@
   "order": 14
  },
  "l-9x1250x2500mm-natur-retegelt-lemez": {
+  "specs": {
+   "Elérhetőség": "rendelésre"
+  },
   "order": 1
  },
  "l-9x1250x2500-retegelt-lemez-fenolos": {
   "order": 3
  },
  "l-12x1250x2500-mm-retegelt-lemez-fenolos": {
+  "specs": {
+   "Elérhetőség": "rendelésre"
+  },
   "order": 4
  },
  "l-18x1250x2500-retegelt-lemez-fenolos": {
@@ -1865,5 +1871,35 @@
  },
  "l-18x1250x2500-retegelt-lemez-fenolos-hexa": {
   "order": 12
+ },
+ "l-6-5x1500x3000-mm-retegelt-lemez-fenol-bevonattal": {
+  "specs": {
+   "Elérhetőség": "rendelésre"
+  }
+ },
+ "l-15x1500x3000-retegelt-lemez-fenolos": {
+  "specs": {
+   "Elérhetőség": "rendelésre"
+  }
+ },
+ "l-18x1500x3000-retegelt-lemez-fenolos": {
+  "specs": {
+   "Elérhetőség": "rendelésre"
+  }
+ },
+ "l-21x1500x3000-mm-retegelt-lemez-fenolos": {
+  "specs": {
+   "Elérhetőség": "rendelésre"
+  }
+ },
+ "l-12x1500x2500-mm-retegelt-lemez-fenolos": {
+  "specs": {
+   "Elérhetőség": "rendelésre"
+  }
+ },
+ "l-9x1500x2500-retegelt-lemez-fenolos": {
+  "specs": {
+   "Elérhetőség": "rendelésre"
+  }
  }
 }

@@ -22,6 +22,8 @@ FIXES = ROOT / "data/termek_javitasok.json"
 CATEGORY = "retegelt-lemezek"
 # család kulcsa -> (név, megjegyzés, a név feltétele); a csúszásmentes lemezeknél a felhasználás (a Quadris kérése)
 USE = "Rétegelt lemez járó felületnek és gépjármű padlónak."
+# rendelésre kapható méretek (a Quadris jelölése): a táblázatban külön oszlop, a műszaki adatoknál „Elérhetőség”
+TO_ORDER = {"l-12x1250x2500-mm-retegelt-lemez-fenolos", "l-12x1500x2500-mm-retegelt-lemez-fenolos", "l-15x1500x3000-retegelt-lemez-fenolos", "l-18x1500x3000-retegelt-lemez-fenolos", "l-21x1500x3000-mm-retegelt-lemez-fenolos", "l-6-5x1500x3000-mm-retegelt-lemez-fenol-bevonattal", "l-9x1250x2500mm-natur-retegelt-lemez", "l-9x1500x2500-retegelt-lemez-fenolos"}
 FAMILIES = {
     "retegelt-natur": ("Natúr rétegelt lemez", "Natúr, bevonat nélküli rétegelt falemez",
                        lambda n: "natúr" in n),
@@ -61,8 +63,9 @@ def main():
             fams[f"{fid}-{hu(t).replace(',', '-')}"] = {
                 "name": f"{name} – {hu(t)} mm", "label": "Méret", "title": "Rendelhető méretek",
                 "note": f"{note}, {hu(t)} mm vastag – válassza ki a kívánt méretet." + ("" if fid == "retegelt-natur" else f" {USE}"),
-                "navigate": True, "table": ["Szélesség", "Hosszúság"],
-                "rows": {s: [f"{a} mm", f"{b} mm"] for (a, b), s in sizes},
+                "navigate": True, "table": ["Szélesség", "Hosszúság"] + (["Elérhetőség"] if any(s in TO_ORDER for _, s in sizes) else []),
+                "rows": {s: [f"{a} mm", f"{b} mm"] + (["rendelésre" if s in TO_ORDER else ""]
+                                                      if any(x in TO_ORDER for _, x in sizes) else []) for (a, b), s in sizes},
                 "members": {s: f"{a} × {b} mm" for (a, b), s in sizes},
             }
             order.append(sizes[0][1])
@@ -76,6 +79,8 @@ def main():
             del f["order"]
     for i, slug in enumerate(order, 1):
         fixes.setdefault(slug, {})["order"] = i
+    for slug in TO_ORDER:
+        fixes.setdefault(slug, {}).setdefault("specs", {})["Elérhetőség"] = "rendelésre"
     fixes = {k: v for k, v in fixes.items() if v}
     FIXES.write_text(json.dumps(fixes, ensure_ascii=False, indent=1) + "\n")
     OUT.write_text(json.dumps(fams, ensure_ascii=False, indent=1) + "\n")

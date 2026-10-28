@@ -3263,12 +3263,14 @@
   "navigate": true,
   "table": [
    "Szélesség",
-   "Hosszúság"
+   "Hosszúság",
+   "Elérhetőség"
   ],
   "rows": {
    "l-9x1250x2500mm-natur-retegelt-lemez": [
     "1250 mm",
-    "2500 mm"
+    "2500 mm",
+    "rendelésre"
    ]
   },
   "members": {
@@ -3283,16 +3285,19 @@
   "navigate": true,
   "table": [
    "Szélesség",
-   "Hosszúság"
+   "Hosszúság",
+   "Elérhetőség"
   ],
   "rows": {
    "l-6-5x1250x2500-mm-retegelt-lemez-fenolos": [
     "1250 mm",
-    "2500 mm"
+    "2500 mm",
+    ""
    ],
    "l-6-5x1500x3000-mm-retegelt-lemez-fenol-bevonattal": [
     "1500 mm",
-    "3000 mm"
+    "3000 mm",
+    "rendelésre"
    ]
   },
   "members": {
@@ -3308,16 +3313,19 @@
   "navigate": true,
   "table": [
    "Szélesség",
-   "Hosszúság"
+   "Hosszúság",
+   "Elérhetőség"
   ],
   "rows": {
    "l-9x1250x2500-retegelt-lemez-fenolos": [
     "1250 mm",
-    "2500 mm"
+    "2500 mm",
+    ""
    ],
    "l-9x1500x2500-retegelt-lemez-fenolos": [
     "1500 mm",
-    "2500 mm"
+    "2500 mm",
+    "rendelésre"
    ]
   },
   "members": {
@@ -3333,16 +3341,19 @@
   "navigate": true,
   "table": [
    "Szélesség",
-   "Hosszúság"
+   "Hosszúság",
+   "Elérhetőség"
   ],
   "rows": {
    "l-12x1250x2500-mm-retegelt-lemez-fenolos": [
     "1250 mm",
-    "2500 mm"
+    "2500 mm",
+    "rendelésre"
    ],
    "l-12x1500x2500-mm-retegelt-lemez-fenolos": [
     "1500 mm",
-    "2500 mm"
+    "2500 mm",
+    "rendelésre"
    ]
   },
   "members": {
@@ -3358,28 +3369,34 @@
   "navigate": true,
   "table": [
    "Szélesség",
-   "Hosszúság"
+   "Hosszúság",
+   "Elérhetőség"
   ],
   "rows": {
    "l-15x1250x2200-retegelt-lemez-fenolos": [
     "1250 mm",
-    "2200 mm"
+    "2200 mm",
+    ""
    ],
    "l-15x1250x2500-retegelt-lemez-fenolos": [
     "1250 mm",
-    "2500 mm"
+    "2500 mm",
+    ""
    ],
    "l-15x1500x2500-retegelt-lemez-fenolos": [
     "1500 mm",
-    "2500 mm"
+    "2500 mm",
+    ""
    ],
    "l-15x1500x3000-retegelt-lemez-fenolos": [
     "1500 mm",
-    "3000 mm"
+    "3000 mm",
+    "rendelésre"
    ],
    "l-15x2150x4000-retegelt-lemez-fenolos": [
     "2150 mm",
-    "4000 mm"
+    "4000 mm",
+    ""
    ]
   },
   "members": {
@@ -3398,20 +3415,24 @@
   "navigate": true,
   "table": [
    "Szélesség",
-   "Hosszúság"
+   "Hosszúság",
+   "Elérhetőség"
   ],
   "rows": {
    "l-18x1250x2500-retegelt-lemez-fenolos": [
     "1250 mm",
-    "2500 mm"
+    "2500 mm",
+    ""
    ],
    "l-18x1500x2500-retegelt-lemez-fenolos": [
     "1500 mm",
-    "2500 mm"
+    "2500 mm",
+    ""
    ],
    "l-18x1500x3000-retegelt-lemez-fenolos": [
     "1500 mm",
-    "3000 mm"
+    "3000 mm",
+    "rendelésre"
    ]
   },
   "members": {
@@ -3428,20 +3449,24 @@
   "navigate": true,
   "table": [
    "Szélesség",
-   "Hosszúság"
+   "Hosszúság",
+   "Elérhetőség"
   ],
   "rows": {
    "l-21x1250x2500-retegelt-lemez-fenolos": [
     "1250 mm",
-    "2500 mm"
+    "2500 mm",
+    ""
    ],
    "l-21x1500x2500-mm-retegelt-lemez-fenolos": [
     "1500 mm",
-    "2500 mm"
+    "2500 mm",
+    ""
    ],
    "l-21x1500x3000-mm-retegelt-lemez-fenolos": [
     "1500 mm",
-    "3000 mm"
+    "3000 mm",
+    "rendelésre"
    ]
   },
   "members": {
