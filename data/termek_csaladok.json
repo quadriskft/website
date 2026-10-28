@@ -3674,11 +3674,6 @@
     "2500 mm",
     "EN AW-1050 H14/H24"
    ],
-   "s-3x1250x2500-mm-alu-lemez-en-aw-5754-h22": [
-    "1250 mm",
-    "2500 mm",
-    "EN AW-5754 H111"
-   ],
    "s-3x1250x3200-mm-alu-lemez-en-aw-1050a-h14-h24": [
     "1250 mm",
     "3200 mm",
@@ -3722,7 +3717,6 @@
   },
   "members": {
    "s-3x1250x2500-mm-alu-lemez-en-aw-1050-h24": "1250 × 2500 mm (EN AW-1050 H14/H24)",
-   "s-3x1250x2500-mm-alu-lemez-en-aw-5754-h22": "1250 × 2500 mm (EN AW-5754 H111)",
    "s-3x1250x3200-mm-alu-lemez-en-aw-1050a-h14-h24": "1250 × 3200 mm (EN AW-1050A H14/H24)",
    "s-3x1250x5000-mm-alu-lemez-en-aw-1050a-h14-h24": "1250 × 5000 mm (EN AW-1050A H14/H24)",
    "s-3x1250x6000-mm-alu-lemez-en-aw-1050a-h14-h24": "1250 × 6000 mm (EN AW-1050A H14/H24)",
