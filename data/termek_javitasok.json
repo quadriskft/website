@@ -1820,5 +1820,20 @@
    "Furatok": "Ø5 mm, 200 mm osztással",
    "Nyitási szög": "180°"
   }
+ },
+ "l-6-5x1250x2500-mm-natur-retegelt-lemez": {
+  "order": 1
+ },
+ "l-6-5x1250x2500-mm-retegelt-lemez-fenolos": {
+  "order": 2
+ },
+ "l-15x1250x2200-retegelt-lemez-fenolos-hexa": {
+  "order": 3
+ },
+ "l-4x1250x2500-mm-film-film-retegelt-lemez": {
+  "order": 4
+ },
+ "l-mdf-6x2800x2070-mm": {
+  "order": 5
  }
 }
