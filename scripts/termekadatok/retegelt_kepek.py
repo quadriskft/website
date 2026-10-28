@@ -3,9 +3,9 @@ minden érintett termék első képe lesz, a meglévő képek (3D renderek) utá
 
 - HEXA (hexa mintás, fenolos): a Quadris által küldött 3 fotó (a 2. zöld háttere fehérre cserélve); a korábbi
   kezdőkép (barna render) és a barna 3D renderek a Quadris kérésére kikerültek
-- fenolos (nem HEXA): a Quadris által küldött fotó (MI-vel 4x nagyítva)
+- fenolos (nem HEXA): a Quadris által küldött fotó (generatív MI-vel nagyítva, Higgsfield)
 - film-film: a Quadris által küldött fotó (MI-vel 4x nagyítva)
-- natúr: a Quadris által küldött fotó (MI-vel 4x nagyítva)
+- natúr: a Quadris által küldött fotó (generatív MI-vel nagyítva, Higgsfield)
 
 Használat: python3 scripts/termekadatok/retegelt_kepek.py   (utána kep_sorrend.py)
 """
