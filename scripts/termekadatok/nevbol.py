@@ -299,6 +299,7 @@ def parse(p):
             specs["Anyag"] = "MDF lap"
         else:
             specs["Anyag"] = "rétegelt falemez"
+            specs["Ragasztás"] = "vízálló ragasztással"  # a Quadris kérésére minden rétegelt lemeznél
             # a fenolos lemezek (6,5 mm-től) a Quadris kérésére: „egy oldalon csúszásmentes fenolbevonat”
             specs["Felület"] = ("egy oldalon csúszásmentes fenolbevonat" if "fenol" in low
                                 else "fenolfilm bevonatos" if "film" in low else "natúr (bevonat nélkül)")
