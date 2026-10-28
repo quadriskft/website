@@ -115,7 +115,7 @@ export const products = [...excelProducts, ...extendedProducts, ...cloneProducts
   .map(withoutSupplierCodes).map(withCarton).map(withStock);
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
-const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik', 'elvedo-profilok': 'Élvédő profilok – PVC' };
+const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik', 'elvedo-profilok': 'Élvédő profilok – PVC', 'sima-lemez': 'Natúr lemez' };
 // Gyártói alkategóriák logója (a gyártó honlapjáról): a címben a név elé / helyett jelenik meg
 export const CATEGORY_LOGOS = {
   versus: { src: '/logok/versus-omega.svg', alt: 'Versus-Omega', text: true },
@@ -251,7 +251,7 @@ export const GROUP_META = {
   'rakomanyrogzites': { icon: 'Anchor', text: 'Rakományrögzítő sínek, rudak, hevederek és tartozékok.' },
   'sarvedok-szerszamosladak': { icon: 'Package', text: 'Sárvédők, szerszámosládák, sárfogók, poroltó- és víztartályok.' },
   'ipari-felgyartmanyok': { icon: 'Ruler', text: 'Zártszelvények, U- és L-profilok, csövek, rudak, laposprofilok.' },
-  'aluminium-lemezek': { icon: 'SquareStack', text: 'Sima, cseppmintás és festett alumínium lemezek.' },
+  'aluminium-lemezek': { icon: 'SquareStack', text: 'Natúr, cseppmintás, festett és eloxált alumínium lemezek.' },
   'csuszasmentes-retegelt-padlo': { icon: 'Layers', text: 'Felhasználás: felépítménygyártás, valamint járófelületek, színpad, pódium.' },
   'gumiszonyegek': { icon: 'Grid3x3', text: 'Istálló-, utánfutó-, rámpa- és munkahelyi gumiszőnyegek, gumi-, PU- és PVC lemezek, moosgumi.' },
   'kedergumik': { icon: 'Spline', text: 'Élvédő, tömítő-, kéder-, üvegvezető és moosgumi profilok felépítményekhez.' },

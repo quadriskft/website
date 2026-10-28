@@ -3594,5 +3594,171 @@
   "members": {
    "l-18x1250x2500-retegelt-lemez-fenolos-hexa": "1250 × 2500 mm"
   }
+ },
+ "alu-natur-1-5": {
+  "name": "Natúr alumínium lemez – 1,5 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "Natúr (felületkezelés nélküli) alumínium lemez, 1,5 mm vastag – válassza ki a kívánt méretet és ötvözetet.",
+  "navigate": true,
+  "table": [
+   "Szélesség",
+   "Hosszúság",
+   "Ötvözet"
+  ],
+  "rows": {
+   "s-1-5x1000x2000-mm-alu-lemez-en-aw-1050-h24": [
+    "1000 mm",
+    "2000 mm",
+    "EN AW-1050 H14/H24"
+   ],
+   "s-1-5x1250x2500-mm-alu-lemez-en-aw-1050-h24": [
+    "1250 mm",
+    "2500 mm",
+    "EN AW-1050 H14/H24"
+   ]
+  },
+  "members": {
+   "s-1-5x1000x2000-mm-alu-lemez-en-aw-1050-h24": "1000 × 2000 mm (EN AW-1050 H14/H24)",
+   "s-1-5x1250x2500-mm-alu-lemez-en-aw-1050-h24": "1250 × 2500 mm (EN AW-1050 H14/H24)"
+  }
+ },
+ "alu-natur-2": {
+  "name": "Natúr alumínium lemez – 2 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "Natúr (felületkezelés nélküli) alumínium lemez, 2 mm vastag – válassza ki a kívánt méretet és ötvözetet.",
+  "navigate": true,
+  "table": [
+   "Szélesség",
+   "Hosszúság",
+   "Ötvözet"
+  ],
+  "rows": {
+   "s-2x1000x2000-mm-alu-lemez-en-aw-1050-h24": [
+    "1000 mm",
+    "2000 mm",
+    "EN AW-1050 H14/H24"
+   ],
+   "s-2x1250x2500-mm-alu-lemez-en-aw-1050-h24": [
+    "1250 mm",
+    "2500 mm",
+    "EN AW-1050 H14/H24"
+   ],
+   "s-2x1250x2500-mm-alu-lemez-en-aw-5754-h22": [
+    "1250 mm",
+    "2500 mm",
+    "EN AW-5754 H22"
+   ],
+   "s-2x1500x3000-mm-alu-lemez-en-aw-1050-h24": [
+    "1500 mm",
+    "3000 mm",
+    "EN AW-1050 H14/H24"
+   ]
+  },
+  "members": {
+   "s-2x1000x2000-mm-alu-lemez-en-aw-1050-h24": "1000 × 2000 mm (EN AW-1050 H14/H24)",
+   "s-2x1250x2500-mm-alu-lemez-en-aw-1050-h24": "1250 × 2500 mm (EN AW-1050 H14/H24)",
+   "s-2x1250x2500-mm-alu-lemez-en-aw-5754-h22": "1250 × 2500 mm (EN AW-5754 H22)",
+   "s-2x1500x3000-mm-alu-lemez-en-aw-1050-h24": "1500 × 3000 mm (EN AW-1050 H14/H24)"
+  }
+ },
+ "alu-natur-3": {
+  "name": "Natúr alumínium lemez – 3 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "Natúr (felületkezelés nélküli) alumínium lemez, 3 mm vastag – válassza ki a kívánt méretet és ötvözetet.",
+  "navigate": true,
+  "table": [
+   "Szélesség",
+   "Hosszúság",
+   "Ötvözet"
+  ],
+  "rows": {
+   "s-3x1250x2500-mm-alu-lemez-en-aw-1050-h24": [
+    "1250 mm",
+    "2500 mm",
+    "EN AW-1050 H14/H24"
+   ],
+   "s-3x1250x2500-mm-alu-lemez-en-aw-5754-h22": [
+    "1250 mm",
+    "2500 mm",
+    "EN AW-5754 H111"
+   ],
+   "s-3x1250x3200-mm-alu-lemez-en-aw-1050a-h14-h24": [
+    "1250 mm",
+    "3200 mm",
+    "EN AW-1050A H14/H24"
+   ],
+   "s-3x1250x5000-mm-alu-lemez-en-aw-1050a-h14-h24": [
+    "1250 mm",
+    "5000 mm",
+    "EN AW-1050A H14/H24"
+   ],
+   "s-3x1250x6000-mm-alu-lemez-en-aw-1050a-h14-h24": [
+    "1250 mm",
+    "6000 mm",
+    "EN AW-1050A H14/H24"
+   ],
+   "s-3x1500x3000-mm-alu-lemez-en-aw-1050-h24": [
+    "1500 mm",
+    "3000 mm",
+    "EN AW-1050 H14/H24"
+   ],
+   "s-3x1500x3200-mm-alu-lemez-en-aw-1050a-h14-h24": [
+    "1500 mm",
+    "3200 mm",
+    "EN AW-1050A H14/H24"
+   ],
+   "s-3x1500x5000-mm-alu-lemez-en-aw-1050a-h14-h24": [
+    "1500 mm",
+    "5000 mm",
+    "EN AW-1050A H14/H24"
+   ],
+   "s-3x1500x6000-mm-alu-lemez-en-aw-1050a-h14-h24": [
+    "1500 mm",
+    "6000 mm",
+    "EN AW-1050A H14/H24"
+   ],
+   "s-3x2000x5000-mm-alu-lemez-en-573-3-al-mg-1-h14-h24": [
+    "2000 mm",
+    "5000 mm",
+    "EN AW-5754 H14/H24"
+   ]
+  },
+  "members": {
+   "s-3x1250x2500-mm-alu-lemez-en-aw-1050-h24": "1250 × 2500 mm (EN AW-1050 H14/H24)",
+   "s-3x1250x2500-mm-alu-lemez-en-aw-5754-h22": "1250 × 2500 mm (EN AW-5754 H111)",
+   "s-3x1250x3200-mm-alu-lemez-en-aw-1050a-h14-h24": "1250 × 3200 mm (EN AW-1050A H14/H24)",
+   "s-3x1250x5000-mm-alu-lemez-en-aw-1050a-h14-h24": "1250 × 5000 mm (EN AW-1050A H14/H24)",
+   "s-3x1250x6000-mm-alu-lemez-en-aw-1050a-h14-h24": "1250 × 6000 mm (EN AW-1050A H14/H24)",
+   "s-3x1500x3000-mm-alu-lemez-en-aw-1050-h24": "1500 × 3000 mm (EN AW-1050 H14/H24)",
+   "s-3x1500x3200-mm-alu-lemez-en-aw-1050a-h14-h24": "1500 × 3200 mm (EN AW-1050A H14/H24)",
+   "s-3x1500x5000-mm-alu-lemez-en-aw-1050a-h14-h24": "1500 × 5000 mm (EN AW-1050A H14/H24)",
+   "s-3x1500x6000-mm-alu-lemez-en-aw-1050a-h14-h24": "1500 × 6000 mm (EN AW-1050A H14/H24)",
+   "s-3x2000x5000-mm-alu-lemez-en-573-3-al-mg-1-h14-h24": "2000 × 5000 mm (EN AW-5754 H14/H24)"
+  }
+ },
+ "alu-natur-6": {
+  "name": "Natúr alumínium lemez – 6 mm",
+  "label": "Méret",
+  "title": "Rendelhető méretek",
+  "note": "Natúr (felületkezelés nélküli) alumínium lemez, 6 mm vastag – válassza ki a kívánt méretet és ötvözetet.",
+  "navigate": true,
+  "table": [
+   "Szélesség",
+   "Hosszúság",
+   "Ötvözet"
+  ],
+  "rows": {
+   "s-6x1250x2500-mm-alu-lemez-en-aw-5754-h22": [
+    "1250 mm",
+    "2500 mm",
+    "EN AW-5754 H22"
+   ]
+  },
+  "members": {
+   "s-6x1250x2500-mm-alu-lemez-en-aw-5754-h22": "1250 × 2500 mm (EN AW-5754 H22)"
+  }
  }
 }

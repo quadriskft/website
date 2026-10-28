@@ -1901,5 +1901,17 @@
   "specs": {
    "Elérhetőség": "rendelésre"
   }
+ },
+ "s-1-5x1000x2000-mm-alu-lemez-en-aw-1050-h24": {
+  "order": 1
+ },
+ "s-2x1000x2000-mm-alu-lemez-en-aw-1050-h24": {
+  "order": 2
+ },
+ "s-3x1250x2500-mm-alu-lemez-en-aw-1050-h24": {
+  "order": 3
+ },
+ "s-6x1250x2500-mm-alu-lemez-en-aw-5754-h22": {
+  "order": 4
  }
 }
