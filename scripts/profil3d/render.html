@@ -191,7 +191,17 @@ function section(kind, a, b, t, ro = 0, ri = 0) {
     case 'flat': return poly([[0, 0], [a, 0], [a, b], [0, b]]);
     case 'L': return poly([[0, 0], [a, 0], [a, t], [t, t], [t, b], [0, b]]);
     case 'U': return poly([[0, 0], [a, 0], [a, b], [a - t, b], [a - t, t], [t, t], [t, b], [0, b]]);
-    case 'C': return poly([[0, 0], [a, 0], [a, t], [t, t], [t, b - t], [a, b - t], [a, b], [0, b]]);
+    case 'C': {
+      if (!ri) return poly([[0, 0], [a, 0], [a, t], [t, t], [t, b - t], [a, b - t], [a, b], [0, b]]);
+      // hajlított C (hossztartó): ri belső sugár, a külső ri + t
+      const R = ri + t, s = new THREE.Shape();
+      s.moveTo(a, 0); s.lineTo(R, 0); s.absarc(R, R, R, 1.5 * Math.PI, Math.PI, true);
+      s.lineTo(0, b - R); s.absarc(R, b - R, R, Math.PI, 0.5 * Math.PI, true);
+      s.lineTo(a, b); s.lineTo(a, b - t); s.lineTo(R, b - t);
+      s.absarc(R, b - R, ri, 0.5 * Math.PI, Math.PI, false); s.lineTo(t, R);
+      s.absarc(R, R, ri, Math.PI, 1.5 * Math.PI, false); s.lineTo(a, t); s.closePath();
+      return s;
+    }
     case 'I': { const f = t * 1.4, w = t; return poly([[0, 0], [a, 0], [a, f], [a / 2 + w / 2, f], [a / 2 + w / 2, b - f], [a, b - f], [a, b], [0, b], [0, b - f], [a / 2 - w / 2, b - f], [a / 2 - w / 2, f], [0, f]]); }
     case 'arc': {
       const R = Math.min(a, b) * 0.55, s = new THREE.Shape();

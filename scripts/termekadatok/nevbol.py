@@ -529,6 +529,10 @@ def main():
             drawn += 1
         updates[p["slug"]] = {"source": SOURCE, "sourceUrl": "", "sourceTitle": p["name"], "matchedCode": "",
                               "specs": specs, "images": images}
+    # a hidegen hajlított acél hossztartó lekerekített sarkú (a Quadris által küldött rajz: belső sugár R5) – a 3D renderhez
+    for it in manifest:
+        if it["draw"][0] == "C" and "hossztarto" in it["slug"]:
+            it["draw"] = [*it["draw"][:4], 0, 5]
     MANIFEST.parent.mkdir(parents=True, exist_ok=True)
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False))
     # a más forrásúakat forrásuk megtartásával írjuk vissza
