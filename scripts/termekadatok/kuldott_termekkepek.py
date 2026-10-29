@@ -18,6 +18,9 @@ KEPEK = {
     "502501-szimpla-gorgos-gumiutkozo-d100-118": ["502501_foto.png", "502501_rajz.png"],
     "502502-dupla-gorgos-gumiutkozo-222x115": ["502502_foto.png", "502502_rajz.png"],
     "502500-szimpla-gorgos-gumiutkozo-d70-85": ["502500_foto.png", "+"],
+    # StopSpray sárvédő lap (logó nélküli kivitel): a gyártói kép a logó és a dombornyomott jelek nélkül, a méretrajz a
+    # méretekkel (a logó nélkül), a felület részletfotója
+    "jf556045-550-600x450-mm-sarvedo-lap-stopsray": ["stopspray_foto.png", "stopspray_rajz.png", "stopspray_reszlet.png"],
     # gumis zsanér (Eli-Ti): a gyártói adatlap képe nagyítva, a cikkszám-/csomagadat-fejléc és a feliratok nélkül
     **{s: ["gumis_zsaner_eli-ti.png"] for s in ("831245-gumis-zsaner-l-2500-mm", "831230-gumis-zsaner-l-3000-mm",
                                                 "831440-gumis-zsaner-l-4000-mm")},
