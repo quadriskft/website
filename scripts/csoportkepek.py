@@ -42,6 +42,8 @@ PHOTOS = {
     # a piros szegélyes 4 szárnyú hátsó ajtó (MI-vel 4x nagyítva), árnyékkal, a rámpás kép szürke hátterén
     "hatso-ajtok-es-athajto-rampak": ["side", "../data/forras/athajto_rampak_csoportkep.png",
                                       "../data/forras/hatso_ajto_4szarnyu_csoportkep.png"],
+    # a Quadris által küldött dobozos felépítmény fotó (a háttérben álló dobozok nélkül, MI-vel nagyítva, élesítve)
+    "zart-dobozos-es-hutos-profilok": ["../data/forras/dobozos_profilok_csoportkep.png"],
     "italszallito-kit": ["termekkepek/212427-ada-s-ajto-profil-2100-mm-elox-1.webp"],
 }
 
