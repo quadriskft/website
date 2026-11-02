@@ -23,21 +23,26 @@ def profile_row(path):
     ys, xs = np.where(np.array(src)[..., 3] > 40)
     src = src.crop((xs.min() - 10, ys.min() - 10, xs.max() + 10, ys.max() + 10))
     rgb, al = src.convert("RGB"), src.split()[3]
-    rgb = ImageEnhance.Color(ImageEnhance.Contrast(rgb).enhance(1.25)).enhance(1.25)
+    # lágy, matt hatás (a Quadris mintafotója szerint): a tárgy átlagos tónusa ~185, a felső lapok sem égnek ki
+    a = np.array(rgb).astype(np.float32)
+    obj = np.array(al) > 128
+    gam = np.log(185 / 255) / np.log(max(a[obj].mean(), 1) / 255)
+    rgb = Image.fromarray((255 * (a / 255) ** gam).clip(0, 255).astype(np.uint8))
+    rgb = ImageEnhance.Contrast(rgb).enhance(1.12)
     a = np.array(rgb).astype(np.float32)
     e = cv2.Canny(cv2.GaussianBlur(a.astype(np.uint8), (0, 0), 0.9), 35, 100).astype(np.float32) / 255
     e = np.maximum(e, cv2.Canny((np.array(al) > 128).astype(np.uint8) * 255, 50, 150).astype(np.float32) / 255)
-    a = a * (1 - 0.35 * cv2.GaussianBlur(e, (0, 0), 0.6)[..., None])  # vékony sötét kontúr, mint a katalógusképen
-    row = Image.fromarray(a.clip(0, 255).astype(np.uint8)).filter(ImageFilter.UnsharpMask(1.2, 70, 2)).convert("RGBA")
+    a = a * (1 - 0.22 * cv2.GaussianBlur(e, (0, 0), 0.6)[..., None])  # vékony sötét kontúr, mint a katalógusképen
+    row = Image.fromarray(a.clip(0, 255).astype(np.uint8)).filter(ImageFilter.UnsharpMask(1.0, 40, 2)).convert("RGBA")
     row.putalpha(al)
     return row
 
 
 def side_walls():
     top = Image.open(ROOT / "data/forras/oldalfal_katalogus.png").convert("RGB")
-    t = np.array(ImageEnhance.Contrast(top).enhance(1.35)).astype(np.float32)
+    t = np.array(ImageEnhance.Contrast(top).enhance(1.1)).astype(np.float32)
     obj = (np.array(top).min(2) < 244)[..., None]
-    t = np.where(obj, t + np.array([-4, 0, 8], np.float32), 255)  # enyhe hideg fémes tónus, mint a renderen
+    t = np.where(obj, t + np.array([-2, 0, 3], np.float32), 255)  # enyhe hideg fémes tónus, mint a renderen
     top = Image.fromarray(t.clip(0, 255).astype(np.uint8)).filter(ImageFilter.UnsharpMask(1.2, 60, 2))
     m = (np.array(top).min(2) < 246).astype(np.float32)
     w = m.shape[1]
