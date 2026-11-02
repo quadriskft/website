@@ -52,8 +52,26 @@ def side_walls():
     return out
 
 
+def match_colors(row, walls):
+    """A profilsor színe és tónusa az oldalfalakéhoz igazítva (Lab-színtérben átlag és szórás szerint)."""
+    def lab(img):
+        return cv2.cvtColor(np.array(img.convert("RGB")), cv2.COLOR_RGB2LAB).astype(np.float32)
+    ra, wa = np.array(row)[..., 3] > 128, np.array(walls)[..., 3] > 128
+    rl, wl = lab(row), lab(walls)
+    out = rl.copy()
+    for c in range(3):
+        rm, rs = rl[..., c][ra].mean(), rl[..., c][ra].std() + 1e-3
+        wm, ws = wl[..., c][wa].mean(), wl[..., c][wa].std()
+        out[..., c] = (rl[..., c] - rm) / rs * ws + wm
+    rgb = cv2.cvtColor(out.clip(0, 255).astype(np.uint8), cv2.COLOR_LAB2RGB)
+    res = Image.fromarray(rgb).convert("RGBA")
+    res.putalpha(row.split()[3])
+    return res
+
+
 def main():
     row, walls = profile_row(sys.argv[1]), side_walls()
+    row = match_colors(row, walls)
     canvas = Image.new("RGBA", (W, H), (255, 255, 255, 255))
     th, rh, gap = 470, 330, 14
     tw = round(walls.width * th / walls.height)
