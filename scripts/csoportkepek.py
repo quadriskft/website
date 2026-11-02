@@ -44,7 +44,9 @@ PHOTOS = {
                                       "../data/forras/hatso_ajto_4szarnyu_csoportkep.png"],
     # a Quadris által küldött dobozos felépítmény fotó (a háttérben álló dobozok nélkül, MI-vel nagyítva, élesítve)
     "zart-dobozos-es-hutos-profilok": ["../data/forras/dobozos_profilok_csoportkep.png"],
-    "italszallito-kit": ["termekkepek/212427-ada-s-ajto-profil-2100-mm-elox-1.webp"],
+    # a Quadris által küldött két italszállító fotó egymás mellett (a felső autó sörreklámja fehér dobozra cserélve,
+    # MI-vel nagyítva, élesítve)
+    "italszallito-kit": ["row", "../data/forras/italszallito_csoportkep_1.png", "../data/forras/italszallito_csoportkep_2.png"],
 }
 
 
