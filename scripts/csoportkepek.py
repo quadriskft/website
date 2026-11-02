@@ -190,3 +190,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# Oldalsávi képek (a csoportoldalon a kategórialista alatt): public/csoportkepek/oldalsav/<csoport>.webp
+# - aluminium-alvaz-profilok: a Quadris által küldött kép (összeszerelt alváz + 4 profil), fehér szélek levágva, élesítve
