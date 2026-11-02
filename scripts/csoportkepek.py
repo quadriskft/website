@@ -193,4 +193,5 @@ if __name__ == "__main__":
 
 # Oldalsávi képek (a csoportoldalon a kategórialista alatt): public/csoportkepek/oldalsav/<csoport>.webp
 # - aluminium-alvaz-profilok: a Quadris által küldött kép (összeszerelt alváz + 4 profil), fehér szélek levágva, élesítve
-# - hatso-ajtok-es-athajto-rampak: a Quadris által küldött két ajtókép (4 szárnyú, 2 szárnyú) egymás alatt
+# - hatso-ajtok-es-athajto-rampak: a Quadris által küldött két ajtókép (2 szárnyú felül, 4 szárnyú alul) kicsinyítve
+# - aluminium-padlo-profilok: a Quadris által küldött kép (padlóprofil-rendszer két változata), a felső szegély levágva
