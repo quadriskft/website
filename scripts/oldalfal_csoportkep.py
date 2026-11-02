@@ -73,12 +73,14 @@ def main():
     row, walls = profile_row(sys.argv[1]), side_walls()
     row = match_colors(row, walls)
     canvas = Image.new("RGBA", (W, H), (255, 255, 255, 255))
-    th, rh, gap = 470, 330, 14
+    # a kártyákon 16:9-re (katalógus) és 10:7-re (főoldal) vágva jelenik meg: a tartalom a középső 16:9-es sávba kerül
+    th, rh, gap = 360, 250, 14
     tw = round(walls.width * th / walls.height)
-    canvas.alpha_composite(walls.resize((tw, th), Image.LANCZOS), ((W - tw) // 2, 8))
-    rw = min(W - 40, round(row.width * rh / row.height))
+    rw = min(W - 80, round(row.width * rh / row.height))
     rh = round(row.height * rw / row.width)
-    canvas.alpha_composite(row.resize((rw, rh), Image.LANCZOS), ((W - rw) // 2, 8 + th + gap))
+    y0 = (H - (th + gap + rh)) // 2
+    canvas.alpha_composite(walls.resize((tw, th), Image.LANCZOS), ((W - tw) // 2, y0))
+    canvas.alpha_composite(row.resize((rw, rh), Image.LANCZOS), ((W - rw) // 2, y0 + th + gap))
     canvas = canvas.convert("RGB").filter(ImageFilter.UnsharpMask(1.3, 90, 2))  # az egész kép élesítve
     canvas.save(ROOT / "public/csoportkepek/ponyvas-oldalfal-profilok-es-szegok.webp", "WEBP", quality=88, method=6)
 
