@@ -79,7 +79,8 @@ def main():
     rw = min(W - 40, round(row.width * rh / row.height))
     rh = round(row.height * rw / row.width)
     canvas.alpha_composite(row.resize((rw, rh), Image.LANCZOS), ((W - rw) // 2, 8 + th + gap))
-    canvas.convert("RGB").save(ROOT / "public/csoportkepek/ponyvas-oldalfal-profilok-es-szegok.webp", "WEBP", quality=88, method=6)
+    canvas = canvas.convert("RGB").filter(ImageFilter.UnsharpMask(1.3, 90, 2))  # az egész kép élesítve
+    canvas.save(ROOT / "public/csoportkepek/ponyvas-oldalfal-profilok-es-szegok.webp", "WEBP", quality=88, method=6)
 
 
 if __name__ == "__main__":
