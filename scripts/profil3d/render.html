@@ -310,7 +310,7 @@ window.renderRow = (items) => {
   setup();
   const bb = (c) => { const xs = c.map((p) => p[0]), ys = c.map((p) => p[1]); return [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)]; };
   const maxDim = Math.max(...items.map((it) => { const [x0, x1, y0, y1] = bb(it.contours[0]); return Math.max(x1 - x0, y1 - y0); }));
-  const k = 1 / maxDim, len = 1.8, dx = 1.15, dz = 0.95;
+  const k = 1 / maxDim, len = 3.4, dx = 0.78, dz = 0.9;
   items.forEach((it, i) => {
     const [x0, , y0] = bb(it.contours[0]);
     const sh = poly(it.contours[0]); for (const h of it.contours.slice(1)) sh.holes.push(new THREE.Path(h.map(([px, py]) => V(px, py))));
@@ -320,12 +320,12 @@ window.renderRow = (items) => {
     side.userData.tex?.forEach((t) => t.repeat.set(1 / 28, 1 / 2000));
     add(geo, [cap, side]);
   });
-  const W2 = 1800, H2 = 1100; renderer.setSize(W2, H2);
+  const W2 = 2600, H2 = 1500; renderer.setSize(W2, H2);
   const box = new THREE.Box3(); scene.children.filter((o) => o.isMesh && o.castShadow).forEach((m) => box.expandByObject(m));
   const c = box.getCenter(new THREE.Vector3()), sph = box.getBoundingSphere(new THREE.Sphere());
   const fov = 24, cam = new THREE.PerspectiveCamera(fov, W2 / H2, 0.01, 200);
-  const dist = sph.radius / Math.sin(THREE.MathUtils.degToRad(fov / 2)) * 0.72;
-  cam.position.copy(c).add(new THREE.Vector3(-1.35, 0.8, 1.0).normalize().multiplyScalar(dist)); cam.lookAt(c);
+  const dist = sph.radius / Math.sin(THREE.MathUtils.degToRad(fov / 2)) * 0.78;
+  cam.position.copy(c).add(new THREE.Vector3(-1.0, 0.85, 1.2).normalize().multiplyScalar(dist)); cam.lookAt(c);
   renderer.render(scene, cam);
   const url = renderer.domElement.toDataURL('image/png');
   renderer.setSize(W, H);
