@@ -44,9 +44,8 @@ PHOTOS = {
                                       "../data/forras/hatso_ajto_4szarnyu_csoportkep.png"],
     # a Quadris által küldött dobozos felépítmény fotó (a háttérben álló dobozok nélkül, MI-vel nagyítva, élesítve)
     "zart-dobozos-es-hutos-profilok": ["../data/forras/dobozos_profilok_csoportkep.png"],
-    # a Quadris által küldött két italszállító fotó egymás mellett (a MAN dobozos autó háttere MI-vel eltávolítva, a doboz felirata kivéve,
-    # MI-vel nagyítva, élesítve)
-    "italszallito-kit": ["row", "../data/forras/italszallito_csoportkep_1.png", "../data/forras/italszallito_csoportkep_2.png"],
+    # a Quadris által küldött kék italszállító fotó (oldalt nyitott ponyva, hátsó ajtók), MI-vel nagyítva, nagyban
+    "italszallito-kit": ["cover", "../data/forras/italszallito_csoportkep_2.png"],
 }
 
 
