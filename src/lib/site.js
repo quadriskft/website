@@ -24,8 +24,8 @@ export const SITE = {
   indexable: false,
   // a tesztoldal címe – amíg nincs saját domain, az abszolút linkek (megosztási kép, oldaltérkép) ezt használják
   previewUrl: 'https://website-9ib.pages.dev',
-  // Alapértelmezett megosztási kép (og:image / twitter:image). A méret a public/brand/og-image.png valós mérete (1200×630).
-  ogImage: { path: '/brand/og-image.png', width: 1200, height: 630, alt: 'Quadris Kft. – Felépítmény alkatrészek gyártóknak' },
+  // Alapértelmezett megosztási kép (og:image / twitter:image). A méret a public/brand/og-ponyvas.jpg valós mérete (1200×630).
+  ogImage: { path: '/brand/og-ponyvas.jpg', width: 1200, height: 630, alt: 'Quadris Kft. – Felépítmény alkatrészek gyártóknak' },
 };
 
 // Abszolút webcím (canonical, megosztás, oldaltérkép)
