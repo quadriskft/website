@@ -76,13 +76,6 @@ const SHORT = {
           );
         })}
       </div>
-      <div class="intro-foot">
-        <span class="muted">Járműfelépítmény- és lószállító-gyártóknak – mind a {groups.length} termékcsoport egy katalógusban.</span>
-        <span class="intro-foot-links">
-          <a href="/loszallito-felepitmenyek" class="link-arrow">Lószállító kínálat <Icon name="ArrowRight" size={16} /></a>
-          <a href="/termekek" class="link-arrow">Összes termékcsoport <Icon name="ArrowRight" size={16} /></a>
-        </span>
-      </div>
     </div>
   </section>
 
@@ -91,8 +84,7 @@ const SHORT = {
     <div class="container">
       <div class="section-head">
         <div>
-          <span class="eyebrow">Termékkatalógus</span>
-          <h2>{groups.length} termékcsoport, egy beszállító</h2>
+          <h2>Termékkategóriák</h2>
         </div>
         <a href="/termekek" class="btn btn-ghost">Összes termék <Icon name="ArrowRight" size={16} /></a>
       </div>
@@ -213,7 +205,7 @@ const SHORT = {
   @keyframes nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
 
   /* ---- Bevezető: középre zárt cím és gombok, alatta hat kiemelt termékcsoport ---- */
-  .intro { background: var(--bg); padding: 56px 0 40px; }
+  .intro { background: var(--bg); padding: 56px 0 48px; }
   .intro-inner { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px; }
   .intro h1 { margin: 0; max-width: 900px; font-size: clamp(2.2rem, 4.4vw, 4rem); line-height: 1.04; letter-spacing: -0.03em; color: var(--navy); text-wrap: balance; }
   .intro .lead { margin: 0; max-width: 720px; font-size: 1.2rem; }
@@ -224,8 +216,6 @@ const SHORT = {
   .intro-group-media { display: block; aspect-ratio: 4 / 3; background: var(--surface-3); }
   .intro-group-media img, .intro-group-media .media-empty { display: block; width: 100%; height: 100%; object-fit: cover; }
   .intro-group-name { padding: 12px 14px; font-size: 0.88rem; font-weight: 600; line-height: 1.3; }
-  .intro-foot { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; margin-top: 24px; font-size: 0.9rem; }
-  .intro-foot-links { display: flex; gap: 20px; flex-wrap: wrap; }
   .link-arrow { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 600; font-size: 0.88rem; }
 
   /* ---- Váltakozó sávok: világos hűvösszürke háttér, fent-lent vékony fémes él ---- */
@@ -302,7 +292,6 @@ const SHORT = {
     .grid-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
     .intro-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
     .intro-actions { flex-direction: column; width: 100%; }
-    .intro-foot { flex-direction: column; align-items: flex-start; gap: 12px; }
     .intro-actions .btn, .section-head .btn, .cta-inner .btn { width: 100%; justify-content: center; }
     .section-head .btn { margin-top: 4px; }
     .group-card h3 { font-size: 0.9rem; -webkit-line-clamp: 3; }
