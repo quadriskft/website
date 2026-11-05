@@ -49,6 +49,7 @@ body {
 }
 /* a fejléc fixed: a videós főoldalon (body.has-hero) a tartalom a fejléc alá fut, máshol helyet hagyunk neki */
 body:not(.has-hero) { padding-top: var(--header-h); }
+@media (max-width: 960px) { body.has-hero { padding-top: var(--header-h); } }
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }

@@ -406,7 +406,8 @@ const fontCss =
     transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
   }
   .site-header.scrolled { box-shadow: 0 8px 24px -18px rgba(11, 31, 58, 0.35); }
-  .site-header.transparent:not(.scrolled):not(.menu-open) {
+  /* az átlátszó (videó fölötti) állapot csak asztali méretben; mobilon a videó a fejléc alatt kezdődik, a fejléc fehér üveg */
+  @media (min-width: 961px) { .site-header.transparent:not(.scrolled):not(.menu-open) {
     --hd-bg: rgba(11, 31, 58, 0.18);
     --hd-line: rgba(255, 255, 255, 0.14);
     --hd-fg: #fff;
@@ -416,7 +417,7 @@ const fontCss =
     --hd-field-line: rgba(255, 255, 255, 0.28);
     --hd-ph: rgba(255, 255, 255, 0.7);
     box-shadow: none;
-  }
+  } }
   .header-inner { height: 100%; display: flex; align-items: center; gap: 28px; }
 
   .logo { display: inline-flex; flex: none; color: inherit; text-decoration: none !important; }
