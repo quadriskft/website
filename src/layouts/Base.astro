@@ -544,6 +544,8 @@ const fontCss = fallbackFace +
 
   /* ---------- Lábléc: navy ---------- */
   .site-footer { background: var(--navy); color: rgba(255, 255, 255, 0.78); margin-top: 48px; }
+  /* a főoldalon a sötétkék záró sáv közvetlenül a láblécbe megy át */
+  .has-hero .site-footer { margin-top: 0; border-top: 1px solid rgba(255, 255, 255, 0.12); }
   .footer-main {
     display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px 48px; padding-top: 56px; padding-bottom: 40px;
   }

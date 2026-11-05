@@ -58,9 +58,7 @@ const SHORT = {
     <div class="band-sheen" aria-hidden="true"></div>
     <div class="container">
       <div class="section-head">
-        <div>
-          <h2>Termékkategóriák</h2>
-        </div>
+        <h2 class="display">Termékkategóriák</h2>
         <a href="/termekek" class="btn btn-ghost">Összes termék <Icon name="ArrowRight" size={16} /></a>
       </div>
       <div class="grid grid-groups">
@@ -81,22 +79,18 @@ const SHORT = {
 
   <section class="section steps-section">
     <div class="container">
-      <span class="eyebrow">Így működik</span>
-      <h2>Ajánlat három lépésben</h2>
+      <h2 class="display">Ajánlat három lépésben</h2>
       <ol class="steps">
         <li>
-          <span class="step-no" aria-hidden="true">01</span>
-          <h3>Válogasson</h3>
+          <h3><span class="step-no" aria-hidden="true">1</span>Válogasson</h3>
           <p class="muted">Keressen név vagy cikkszám alapján, vagy böngésszen a termékcsoportok között.</p>
         </li>
         <li>
-          <span class="step-no" aria-hidden="true">02</span>
-          <h3>Tegye az ajánlatkérőbe</h3>
+          <h3><span class="step-no" aria-hidden="true">2</span>Tegye az ajánlatkérőbe</h3>
           <p class="muted">Adja meg a mennyiségeket. Ha valamit nem talál, egyedi tételként is felveheti.</p>
         </li>
         <li>
-          <span class="step-no" aria-hidden="true">03</span>
-          <h3>Küldje el</h3>
+          <h3><span class="step-no" aria-hidden="true">3</span>Küldje el</h3>
           <p class="muted">Egy kattintással elküldi a listát, kollégáink pedig személyre szabott ajánlattal jelentkeznek.</p>
         </li>
       </ol>
@@ -204,8 +198,10 @@ const SHORT = {
 
   /* ---- Termékcsoportok ---- */
   .groups-section { padding: 56px 0 64px; }
-  .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-bottom: 28px; flex-wrap: wrap; }
-  .section-head h2 { margin: 10px 0 0; }
+  .section-head { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; margin-bottom: 32px; }
+  .section-head h2 { margin: 0; }
+  /* nagy, középre zárt szekciócím – a bevezető címével azonos stílus */
+  .display { max-width: 900px; font-size: clamp(2.2rem, 4.4vw, 4rem); line-height: 1.04; letter-spacing: -0.03em; color: var(--navy); text-wrap: balance; }
   .grid-groups { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
   .group-card { padding: 0 16px 14px; display: flex !important; flex-direction: column; overflow: hidden; }
   .group-media { position: relative; margin: 0 -16px 12px; aspect-ratio: 10 / 7; background: #fff; border-bottom: 1px solid var(--line); overflow: hidden; }
@@ -221,10 +217,10 @@ const SHORT = {
 
   /* ---- Így működik ---- */
   .steps-section { padding: 64px 0; }
-  .steps-section h2 { margin: 10px 0 0; }
+  .steps-section h2 { margin: 0; text-align: center; margin-inline: auto; }
   .steps { list-style: none; padding: 0; margin: 32px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
   .steps li { border-top: 1px solid var(--line-strong); padding-top: 18px; }
-  .step-no { display: block; font-family: var(--font-head); font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1; color: rgba(10, 108, 255, 0.28); margin-bottom: 14px; }
+  .step-no { display: inline-block; min-width: 1.4em; margin-right: 6px; font-weight: 800; color: var(--accent); }
   .steps h3 { font-size: 1.05rem; margin: 0 0 6px; color: var(--navy); }
   .steps p { font-size: 0.93rem; line-height: 1.5; margin: 0; }
 
