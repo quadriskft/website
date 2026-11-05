@@ -45,17 +45,16 @@ const SHORT = {
 
   <section class="intro" id="bemutatkozas">
     <div class="container intro-inner">
-      <span class="eyebrow">Felépítmény-alkatrészek egy helyről</span>
       <h1>Minden alkatrész a&nbsp;felépítményhez –&nbsp;egy&nbsp;partnertől.</h1>
       <div class="intro-text">
-      <p class="lead">
-        Alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők és rakományrögzítés
-        jármű- és lószállító felépítmények gyártóinak. Állítsa össze a listáját online – mi elkészítjük az ajánlatot.
-      </p>
-      <div class="intro-actions">
-        <a href="/termekek" class="btn btn-primary">Termékkatalógus <Icon name="ArrowRight" size={16} /></a>
-        <a href="/ajanlatkeres" class="btn btn-ghost">Ajánlatkérés</a>
-      </div>
+        <div class="intro-item">
+          <p class="lead">Alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők és rakományrögzítés jármű- és lószállító felépítmények gyártóinak.</p>
+          <a href="/termekek" class="btn btn-primary">Termékkatalógus <Icon name="ArrowRight" size={16} /></a>
+        </div>
+        <div class="intro-item">
+          <p class="lead">Állítsa össze a listáját online – mi elkészítjük az ajánlatot.</p>
+          <a href="/ajanlatkeres" class="btn btn-ghost">Ajánlatkérés <Icon name="ArrowRight" size={16} /></a>
+        </div>
       </div>
     </div>
   </section>
@@ -204,11 +203,10 @@ const SHORT = {
   /* ---- Bevezető ---- */
   .intro { background: var(--bg); padding: 44px 0 40px; }
   .intro-inner { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); column-gap: 56px; align-items: center; }
-  .intro-inner > .eyebrow { grid-column: 1 / -1; }
-  .intro h1 { margin: 12px 0 0; color: var(--navy); text-wrap: balance; }
-  .intro .lead { margin: 0; }
-  .intro-text { padding-top: 12px; }
-  .intro-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+  .intro h1 { margin: 0; color: var(--navy); text-wrap: balance; }
+  .intro .lead { margin: 0 0 14px; font-size: 1.1rem; }
+  .intro-text { display: grid; gap: 22px; }
+  .intro-item + .intro-item { padding-top: 22px; border-top: 1px solid var(--line); }
 
   /* ---- Szegmens kártyák ---- */
   .segments-section { padding: 8px 0 40px; }
@@ -284,14 +282,14 @@ const SHORT = {
     .why { gap: 32px; }
     .steps { grid-template-columns: 1fr; gap: 20px; }
     .intro { padding: 36px 0 32px; }
-    .intro-inner { grid-template-columns: 1fr; }
+    .intro-inner { grid-template-columns: 1fr; row-gap: 20px; }
   }
   @media (max-width: 640px) {
     .hero-scroll { display: none; }
     .hero-top-shade { display: none; }
     .grid-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
     .segment { padding: 18px 16px; }
-    .intro-actions .btn, .section-head .btn, .cta-inner .btn { width: 100%; justify-content: center; }
+    .intro-item .btn, .section-head .btn, .cta-inner .btn { width: 100%; justify-content: center; }
     .section-head .btn { margin-top: 4px; }
     .group-card h3 { font-size: 0.9rem; -webkit-line-clamp: 3; }
     .group-card p { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
