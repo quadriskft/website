@@ -8,7 +8,7 @@ const { product } = Astro.props;
 <article class="card hoverable product-card" data-name={`${product.code} ${product.name}`.toLowerCase()}>
   <a href={`/termek/${product.slug}`} class="product-link">
     <ProductVisual product={product} />
-    {product.stock && <span class="stock-badge"><Icon name="BadgeCheck" size={14} /> Raktárról rendelhető</span>}
+    {product.stock && <span class="stock-badge">Raktárról rendelhető</span>}
     <h3>{product.name}</h3>
   </a>
   <div class="product-foot">
@@ -24,15 +24,15 @@ const { product } = Astro.props;
 <style>
   .product-card { display: flex; flex-direction: column; padding: 12px; }
   .product-link { color: inherit; text-decoration: none !important; display: block; flex: 1; }
-  h3 { font-size: 0.97rem; font-weight: 600; margin: 12px 4px 6px; line-height: 1.35; }
+  h3 { font-size: 0.97rem; font-weight: 600; margin: 12px 4px 6px; line-height: 1.35; color: var(--navy); }
   .product-link:hover h3 { color: var(--accent); }
-  .stock-badge { display: inline-flex; align-items: center; gap: 4px; margin: 10px 4px 0; padding: 3px 9px; border-radius: 999px;
+  .stock-badge { display: inline-flex; align-items: center; gap: 4px; margin: 10px 4px 0; padding: 3px 9px; border-radius: var(--radius-btn);
     background: rgba(18, 163, 107, 0.1); color: var(--ok); font-size: 0.72rem; font-weight: 700; }
   .product-foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 4px 2px; flex-wrap: wrap; }
   .code { font-size: 0.8rem; }
   .add-btn {
-    display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px;
-    border: 1px solid var(--line-strong); background: #fff; color: var(--text);
+    display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: var(--radius-btn);
+    border: 1px solid var(--line-strong); background: #fff; color: var(--navy);
     font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: all 0.2s ease;
   }
   .add-btn:hover { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }

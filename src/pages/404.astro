@@ -2,24 +2,34 @@
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 ---
-<Base title="Az oldal nem található">
-  <section class="section">
-    <div class="container nf">
-      <span class="code gradient-text">404</span>
+<Base title="Az oldal nem található" noindex>
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Hiba 404</span>
       <h1>Az oldal nem található</h1>
       <p class="lead">Lehet, hogy a termék átkerült egy másik csoportba. Próbálja a keresőt, vagy böngésszen a katalógusban.</p>
+    </div>
+  </section>
+  <section class="section-sm">
+    <div class="container nf">
       <form class="nf-search" action="/kereses" method="get" role="search">
         <input class="input" type="search" name="q" placeholder="Terméknév vagy cikkszám…" aria-label="Keresés" />
         <button class="btn btn-primary" type="submit"><Icon name="Search" /> Keresés</button>
       </form>
-      <a href="/termekek" class="btn btn-ghost">Termékkatalógus</a>
+      <div class="nf-links">
+        <a href="/termekek" class="btn btn-ghost">Termékkatalógus</a>
+        <a href="/" class="btn btn-ghost">Főoldal</a>
+      </div>
     </div>
   </section>
 </Base>
 
 <style>
-  .nf { text-align: center; display: grid; justify-items: center; gap: 8px; }
-  .code { font-family: var(--font-head); font-size: clamp(5rem, 14vw, 9rem); font-weight: 700; line-height: 1; }
-  .nf-search { display: flex; gap: 10px; width: min(520px, 100%); margin: 12px 0 8px; }
-  .nf-search .input { border-radius: 999px; }
+  .nf { display: grid; gap: 16px; max-width: 560px; }
+  .nf-search { display: flex; gap: 10px; width: 100%; }
+  .nf-search .input { flex: 1; min-width: 0; }
+  .nf-links { display: flex; gap: 10px; flex-wrap: wrap; }
+  @media (max-width: 520px) {
+    .nf-search { flex-direction: column; }
+  }
 </style>

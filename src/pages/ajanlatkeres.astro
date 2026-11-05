@@ -3,9 +3,10 @@ import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import { SITE } from '../lib/site.js';
 ---
-<Base title="Ajánlatkérés" description="Állítsa össze az ajánlatkérő listáját, és küldje el egy kattintással a Quadris Kft.-nek.">
+<Base crumbs={[['Főoldal', '/'], ['Ajánlatkérés', '/ajanlatkeres']]} back={{ href: '/', label: 'Főoldal' }} title="Ajánlatkérés" description="Állítsa össze az ajánlatkérő listáját, és küldje el egy kattintással a Quadris Kft.-nek.">
   <section class="page-head quote-head">
     <div class="container">
+      <span class="eyebrow">Ajánlatkérés</span>
       <h1>Ajánlatkérő lista</h1>
       <p class="lead">Ellenőrizze a tételeket, adja meg az elérhetőségét, és küldje el – hamarosan ajánlattal jelentkezünk.</p>
     </div>
@@ -20,7 +21,6 @@ import { SITE } from '../lib/site.js';
         </div>
         <ul class="items" data-items></ul>
         <div class="empty-state" data-empty>
-          <Icon name="ClipboardList" size={28} />
           <p><strong>Az ajánlatkérő lista üres.</strong></p>
           <p class="muted">Az „Ajánlatkérőbe” gombbal adhat hozzá termékeket a katalógusból.</p>
           <a href="/termekek" class="btn btn-primary btn-sm">Termékkatalógus <Icon name="ArrowRight" /></a>
@@ -28,7 +28,7 @@ import { SITE } from '../lib/site.js';
       </div>
 
       <form class="card custom-card" id="egyedi" data-custom>
-        <h2><Icon name="Sparkles" size={18} /> Egyedi tétel hozzáadása</h2>
+        <h2>Egyedi tétel hozzáadása</h2>
         <p class="muted">Nem találja? Írja le (méret, anyag, gyártó, cikkszám) – beszerezzük.</p>
         <div class="custom-row">
           <div class="field grow">
@@ -56,7 +56,7 @@ import { SITE } from '../lib/site.js';
         <label class="consent full"><input type="checkbox" name="consent" required /> <span>Hozzájárulok, hogy a {SITE.name} az ajánlatkérés teljesítése céljából kezelje a megadott adataimat. Részletek az <a href="/adatkezeles" target="_blank">adatkezelési tájékoztatóban</a>.</span></label>
       </div>
       <p class="form-error" data-error role="alert" hidden></p>
-      <button class="btn btn-primary submit" type="submit" data-submit><Icon name="Send" /> <span data-submit-label>Ajánlatkérés elküldése</span></button>
+      <button class="btn btn-primary submit" type="submit" data-submit><span data-submit-label>Ajánlatkérés elküldése</span></button>
       <div class="alt-actions">
         <button type="button" class="link-btn" data-print><Icon name="Printer" size={16} /> Lista nyomtatása / PDF</button>
         <button type="button" class="link-btn" data-copy-list><Icon name="Copy" size={16} /> Lista másolása</button>
@@ -293,26 +293,26 @@ import { SITE } from '../lib/site.js';
 </script>
 
 <style>
-  .quote-head { padding: 12px 0 10px; }
-  .quote-head h1 { font-size: clamp(1.4rem, 2.4vw, 1.8rem); margin: 0 0 4px; }
+  .quote-head { padding: 22px 0 20px; }
+  .quote-head .eyebrow { margin-bottom: 6px; }
+  .quote-head h1 { font-size: clamp(1.5rem, 2.6vw, 2rem); margin: 0 0 4px; }
   .quote-head .lead { font-size: 1.12rem; line-height: 1.35; margin: 0; max-width: none; }
   .quote-layout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(320px, 1fr); gap: 18px; align-items: start; padding-top: 14px; padding-bottom: 0; }
   .items-col { display: grid; gap: 14px; }
   .items-card, .custom-card, .form-card { padding: 16px 20px; }
   .items-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-  .items-head h2, .custom-card h2, .form-card h2 { font-size: 1.08rem; margin: 0; }
-  .custom-card h2 { display: flex; align-items: center; gap: 8px; margin-bottom: 2px; }
+  .items-head h2, .custom-card h2, .form-card h2 { font-size: 1.08rem; font-weight: 700; margin: 0; }
+  .custom-card h2 { margin-bottom: 2px; }
   .custom-card > p { font-size: 0.88rem; margin: 0 0 8px; }
-  .custom-card h2 :global(svg) { color: var(--accent); }
   .link-btn { display: inline-flex; align-items: center; gap: 6px; border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 0.88rem; padding: 4px; }
   .link-btn:hover { color: var(--accent); }
   .items { list-style: none; padding: 0; margin: 16px 0 0; }
   .items :global(.item) { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 16px; align-items: start; padding: 16px 0; border-top: 1px solid var(--line); }
-  .items :global(.thumb) { width: 64px; height: 56px; border-radius: 10px; display: grid; place-items: center; color: #7ea3d6; background: linear-gradient(160deg, #f6f9fe, #eaf1fb); border: 1px solid var(--line); }
+  .items :global(.thumb) { width: 64px; height: 56px; border-radius: var(--radius-sm); display: grid; place-items: center; color: #7ea3d6; background: linear-gradient(160deg, #f6f9fe, #eaf1fb); border: 1px solid var(--line); }
   .items :global(.thumb.has-img) { background: var(--tile); }
   .items :global(.thumb img) { max-width: 90%; max-height: 90%; object-fit: contain; }
   .items :global(.item-main) { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
-  .items :global(.item-name) { font-weight: 600; color: var(--text); }
+  .items :global(.item-name) { font-weight: 600; color: var(--navy); }
   .items :global(a.item-name:hover) { color: var(--accent); }
   .items :global(.item-code) { font-size: 0.84rem; }
   .items :global(.tag) { align-self: flex-start; font-size: 0.72rem; padding: 2px 8px; border-radius: 6px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
@@ -326,18 +326,17 @@ import { SITE } from '../lib/site.js';
   .items :global(.cuts-head), .items :global(.cut-row) { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) 34px; gap: 8px; align-items: center; }
   .items :global(.cuts-head) { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
   .items :global(.cut-row .input) { padding: 7px 10px; font-size: 0.9rem; width: 100%; }
-  .items :global(.cut-del) { width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 9px; background: transparent; color: var(--muted); display: grid; place-items: center; cursor: pointer; }
+  .items :global(.cut-del) { width: 34px; height: 34px; border: 1px solid var(--line); border-radius: var(--radius-btn); background: transparent; color: var(--muted); display: grid; place-items: center; cursor: pointer; }
   .items :global(.cut-del:hover) { color: #d63a3a; border-color: #d63a3a; }
-  .items :global(.cuts-add) { justify-self: start; display: inline-flex; align-items: center; gap: 6px; border: 1px dashed var(--accent); color: var(--accent); background: var(--accent-soft); border-radius: 9px; padding: 5px 10px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; }
+  .items :global(.cuts-add) { justify-self: start; display: inline-flex; align-items: center; gap: 6px; border: 1px dashed var(--accent); color: var(--accent); background: var(--accent-soft); border-radius: var(--radius-btn); padding: 5px 10px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; }
   .items :global(.qty-total) { display: flex; flex-direction: column; align-items: flex-end; font-size: 0.95rem; line-height: 1.3; white-space: nowrap; }
   .items :global(.qty-unit) { display: block; text-align: right; color: var(--muted); font-size: 0.8rem; margin-top: 4px; white-space: nowrap; }
   .items :global(.qty-total small) { color: var(--muted); font-size: 0.8rem; }
   .items :global(.item-side) { display: flex; align-items: center; gap: 8px; }
-  .items :global(.remove) { width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; display: grid; place-items: center; }
+  .items :global(.remove) { width: 40px; height: 40px; border-radius: var(--radius-btn); border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; display: grid; place-items: center; }
   .items :global(.remove:hover) { color: var(--danger); border-color: var(--danger); }
-  .empty-state { text-align: center; padding: 2px 10px 0; display: grid; justify-items: center; gap: 0; font-size: 0.92rem; }
+  .empty-state { text-align: center; padding: 14px 10px 4px; display: grid; justify-items: center; gap: 0; font-size: 0.92rem; }
   .empty-state p { margin: 0 0 6px; }
-  .empty-state > :global(svg) { color: var(--accent); margin-bottom: 4px; }
   .empty-state[hidden] { display: none; }
   .custom-row { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; }
   .grow { flex: 1; min-width: 220px; }
@@ -354,9 +353,9 @@ import { SITE } from '../lib/site.js';
   .hp { position: absolute; left: -9999px; }
   .consent { display: flex; gap: 8px; align-items: flex-start; font-size: 0.78rem; line-height: 1.45; color: var(--text-2); }
   .consent input { margin-top: 3px; accent-color: var(--accent); width: 16px; height: 16px; flex: none; }
-  .form-error { color: #b42318; background: #fef3f2; border: 1px solid #fecdca; padding: 12px 14px; border-radius: 10px; font-size: 0.92rem; }
+  .form-error { color: #b42318; background: #fef3f2; border: 1px solid #fecdca; padding: 12px 14px; border-radius: var(--radius-sm); font-size: 0.92rem; }
   .form-error :global(a) { color: #b42318; font-weight: 700; text-decoration: underline; }
-  .submit { width: 100%; padding: 12px; font-size: 0.97rem; }
+  .submit { width: 100%; padding: 13px; font-size: 0.82rem; }
   .alt-actions { display: flex; justify-content: center; gap: 16px; margin-top: 6px; flex-wrap: wrap; }
   .success { grid-column: 1 / -1; padding: 56px 24px; text-align: center; display: grid; justify-items: center; gap: 6px; }
   .success > :global(svg) { color: var(--ok); margin-bottom: 8px; }

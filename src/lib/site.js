@@ -17,12 +17,15 @@ export const SITE = {
   hosting: { name: 'Cloudflare, Inc.', address: '101 Townsend St, San Francisco, CA 94107, USA', web: 'https://www.cloudflare.com' },
   // e-mail kézbesítés az ajánlatkérő űrlaphoz (adatfeldolgozó)
   mailer: { name: 'Resend', web: 'https://resend.com' },
-  // Élesítéskor: a saját domain (pl. 'https://www.quadris.hu') és indexable: true,
-  // addig a tesztoldal nem kerül be a keresőkbe.
+  // ÉLESÍTÉSKOR KÖTELEZŐ ÁTÁLLÍTANI: url: 'https://www.quadris.hu', indexable: true.
+  // Amíg indexable: false, az oldal <meta name="robots" content="noindex, nofollow">-ot kap és a robots.txt
+  // mindent tilt, a canonical/og:url pedig a previewUrl-re mutat – így a Google NEM indexeli az oldalt.
   url: '',
   indexable: false,
   // a tesztoldal címe – amíg nincs saját domain, az abszolút linkek (megosztási kép, oldaltérkép) ezt használják
   previewUrl: 'https://website-9ib.pages.dev',
+  // Alapértelmezett megosztási kép (og:image / twitter:image). A méret a public/brand/og-image.png valós mérete (1200×630).
+  ogImage: { path: '/brand/og-image.png', width: 1200, height: 630, alt: 'Quadris Kft. – Felépítmény alkatrészek gyártóknak' },
 };
 
 // Abszolút webcím (canonical, megosztás, oldaltérkép)

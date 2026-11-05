@@ -1,17 +1,23 @@
 ---
-import '@fontsource-variable/archivo';
-import '@fontsource-variable/instrument-sans';
-import '@fontsource/cormorant-garamond/400.css';
-import '@fontsource/cormorant-garamond/500.css';
+// Inter: csak a latin és latin-ext subset (a magyar ő/ű a latin-ext-ben van); az `@fontsource-variable/inter` fő CSS-e
+// a cirill/görög/vietnámi @font-face-eket és woff2-ket is beemelné a buildbe
+import interLatin from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
+import interLatinExt from '@fontsource-variable/inter/files/inter-latin-ext-wght-normal.woff2?url';
 import '../styles/global.css';
 import Icon from '../components/Icon.astro';
-import { groups, GROUP_META } from '../lib/catalog.js';
+import { groups } from '../lib/catalog.js';
 import { SITE, abs, absPage } from '../lib/site.js';
 
-const { headerTheme = 'dark', crumbs = null, back = null, title, image = '/brand/og-image.png', type = 'website', jsonLd = [], noindex = false, description = 'Alkatrészek jármű- és lószállító felépítmény gyártóknak: alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők, rakományrögzítés. Kérjen ajánlatot online!' } = Astro.props;
+const { headerTheme = 'light', crumbs = null, back = null, title, image = '/brand/og-image.png', type = 'website', jsonLd = [], noindex = false, description = 'Alkatrészek jármű- és lószállító felépítmény gyártóknak: alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők, rakományrögzítés. Kérjen ajánlatot online!' } = Astro.props;
+// 'transparent': a főoldal videója fölé fekvő átlátszó fejléc ('dark' a korábbi név, azonos viselkedés)
+const transparentHeader = headerTheme === 'transparent' || headerTheme === 'dark';
 const pageTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} – ${SITE.tagline}`;
 const path = Astro.url.pathname;
 const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
+const fontFace = (url, range) => `@font-face{font-family:'Inter Variable';font-style:normal;font-display:swap;font-weight:100 900;src:url(${url}) format('woff2-variations');unicode-range:${range}}`;
+const fontCss =
+  fontFace(interLatinExt, 'U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF') +
+  fontFace(interLatin, 'U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD');
 ---
 <!doctype html>
 <html lang="hu">
@@ -30,12 +36,14 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     <meta property="og:image" content={abs(image)} />
     <meta property="og:locale" content="hu_HU" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#1c1d1f" />
+    <meta name="theme-color" content="#ffffff" />
+    <style is:inline set:html={fontCss}></style>
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    {transparentHeader && <link rel="preload" as="image" href="/video/quadris-ponyvas-poster.jpg" fetchpriority="high" />}
     <script type="application/ld+json" set:html={JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'Organization',
@@ -52,25 +60,24 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     })} />
     {jsonLd.map((d) => <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', ...d })} />)}
   </head>
-  <body id="top">
+  <body id="top" class:list={[{ 'has-hero': transparentHeader }]}>
     <a class="skip-link" href="#main">Ugrás a tartalomra</a>
-    <header class:list={['site-header', { 'header-dark': headerTheme === 'dark' }]}>
+    <header class:list={['site-header', { transparent: transparentHeader }]}>
       <div class="container header-inner">
-        <a class="logo" href="/" aria-label={`${SITE.name} – főoldal`}>
-          <img src="/brand/quadris-logo-fem.webp" alt={SITE.name} width="900" height="244" fetchpriority="high" />
-        </a>
+        <a class="logo" href="/" aria-label={`${SITE.name} – főoldal`}><span class="wordmark">QUADRIS</span></a>
 
         <nav class="main-nav" id="main-nav" aria-label="Fő menü">
           <a href="/rolunk" class:list={['nav-link', { active: isActive('/rolunk') }]}>Rólunk</a>
           <div class="nav-item has-mega">
-            <a href="/termekek" class:list={['nav-link', { active: isActive('/termekek') || isActive('/termek') }]}>Termékek <Icon name="ChevronDown" size={16} /></a>
-            <div class="mega">
-              <div class="mega-grid" style={`--mega-rows:${Math.ceil(groups.length / 2)}`}>
+            <a href="/termekek" class:list={['nav-link', { active: isActive('/termekek') || isActive('/termek') }]} aria-haspopup="true" aria-expanded="false" aria-controls="mega-termekek" data-mega-trigger>Termékek <Icon name="ChevronDown" size={16} /></a>
+            <div class="mega" id="mega-termekek">
+              <div class="mega-head">
+                <span class="eyebrow">Termékcsoportok</span>
+                <a href="/termekek" class="mega-all">Teljes katalógus →</a>
+              </div>
+              <div class="mega-grid">
                 {groups.map((g) => (
-                  <a href={`/termekek/${g.slug}`} class="mega-link">
-                    <Icon name={GROUP_META[g.slug]?.icon} size={18} />
-                    <span>{g.name}</span>
-                  </a>
+                  <a href={`/termekek/${g.slug}`} class="mega-link">{g.name}</a>
                 ))}
               </div>
             </div>
@@ -84,8 +91,8 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
             <input type="search" name="q" placeholder="Keressen terméknévre vagy cikkszámra…" aria-label="Termékkeresés" aria-autocomplete="list" aria-controls="search-suggest" />
             <div class="suggest" id="search-suggest" role="listbox" hidden></div>
           </form>
-          <a href="/ajanlatkeres" class="quote-btn" aria-label="Ajánlatkérő lista">
-            <Icon name="ClipboardList" size={20} />
+          <a href="/ajanlatkeres" class="btn btn-primary quote-btn" aria-label="Ajánlatkérő lista">
+            <Icon name="ClipboardList" size={18} />
             <span class="quote-label">Ajánlatkérő</span>
             <span class="quote-count" data-quote-count hidden>0</span>
           </a>
@@ -124,20 +131,35 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
 
     <footer class="site-footer">
       <div class="container footer-main">
-        <a href="/" class="footer-logo" aria-label={`${SITE.name} – főoldal`}><img src="/brand/quadris-logo-fem.webp" alt={SITE.name} width="900" height="244" loading="lazy" /></a>
-        <ul class="footer-contact">
-          <li><strong>{SITE.name}</strong></li>
-          {SITE.address && <li>{SITE.address}</li>}
-          {SITE.phone && <li><a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a></li>}
-          {SITE.email && <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>}
-          {SITE.openingHours && <li class="muted">{SITE.openingHours}</li>}
-          <li><a href="/kapcsolat">Üzenetküldés</a></li>
-        </ul>
+        <div class="footer-brand">
+          <a href="/" class="footer-logo" aria-label={`${SITE.name} – főoldal`}><span class="wordmark">QUADRIS</span></a>
+          <p class="footer-tagline">{SITE.tagline}</p>
+          {SITE.address && <p class="footer-address">{SITE.address}</p>}
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Elérhetőség</h4>
+          <ul class="footer-list">
+            {SITE.phone && <li><a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a></li>}
+            {SITE.email && <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>}
+            {SITE.openingHours && <li class="footer-muted">{SITE.openingHours}</li>}
+            <li><a href="/kapcsolat">Üzenetküldés</a></li>
+            <li><a href="/ajanlatkeres">Ajánlatkérő lista</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Információk</h4>
+          <ul class="footer-list">
+            <li><a href="/termekek">Termékkatalógus</a></li>
+            <li><a href="/rolunk">Rólunk</a></li>
+            <li><a href="/impresszum">Impresszum</a></li>
+            <li><a href="/adatkezeles">Adatkezelési tájékoztató</a></li>
+            <li><a href="/adatkezeles#sutik">Sütik</a></li>
+          </ul>
+        </div>
       </div>
       <div class="container footer-bottom">
         <span>© {new Date().getFullYear()} {SITE.name} Minden jog fenntartva.</span>
-        <span>Cégjegyzékszám: {SITE.companyRegNo} · Adószám: {SITE.taxNumber}</span>
-        <span class="legal-links"><a href="/impresszum">Impresszum</a> · <a href="/adatkezeles">Adatkezelési tájékoztató</a> · <a href="/adatkezeles#sutik">Sütik</a></span>
+        <span><span class="nowrap">Cégjegyzékszám: {SITE.companyRegNo}</span> · <span class="nowrap">Adószám: {SITE.taxNumber}</span></span>
       </div>
     </footer>
 
@@ -215,16 +237,45 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
         showToast(`Hozzáadva az ajánlatkérőhöz: ${product.name}`);
       });
 
-      // --- Mobil menü ---
+      // --- Fejléc: görgetési állapot (átlátszó → fehér üveg), mobil menü, mega menü ---
       const header = document.querySelector('.site-header');
       const toggle = document.querySelector('.menu-toggle');
-      toggle.addEventListener('click', () => {
-        const open = header.classList.toggle('menu-open');
+      const setMenu = (open) => {
+        header.classList.toggle('menu-open', open);
         toggle.setAttribute('aria-expanded', String(open));
+      };
+      toggle.addEventListener('click', () => setMenu(!header.classList.contains('menu-open')));
+      // kattintás a fejlécen (panelen) kívül: zár
+      document.addEventListener('click', (e) => {
+        if (header.classList.contains('menu-open') && !header.contains(e.target)) setMenu(false);
       });
+      // asztali méretre váltva a nyitott mobil menü állapota ne ragadjon be (átlátszó hero-fejléc)
+      const mobileMq = matchMedia('(max-width: 960px)');
+      mobileMq.addEventListener('change', () => { if (!mobileMq.matches) setMenu(false); });
       const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
       onScroll();
       window.addEventListener('scroll', onScroll, { passive: true });
+
+      const megaItem = document.querySelector('.has-mega');
+      const megaTrigger = megaItem.querySelector('[data-mega-trigger]');
+      // mobilon a mega statikusan, mindig kibontva látszik a menüpanelben → aria-expanded="true"
+      const syncMega = () => megaTrigger.setAttribute('aria-expanded', String(mobileMq.matches || megaItem.matches(':hover, :focus-within')));
+      ['mouseenter', 'mouseleave', 'focusin', 'focusout'].forEach((ev) => megaItem.addEventListener(ev, () => requestAnimationFrame(syncMega)));
+      mobileMq.addEventListener('change', syncMega);
+      syncMega();
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key !== 'Escape') return;
+        if (header.classList.contains('menu-open')) {
+          setMenu(false);
+          toggle.focus();
+        } else if (!mobileMq.matches && megaItem.matches(':focus-within')) {
+          // asztali mega: Escape-re a fókusz a triggerre kerül, majd elhagyja, így a :focus-within menü bezárul
+          megaTrigger.focus();
+          megaTrigger.blur();
+          requestAnimationFrame(syncMega);
+        }
+      });
 
       // --- Azonnali kereső a fejlécben ---
       const form = document.querySelector('.header-search');
@@ -280,9 +331,11 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
         if (!form.contains(e.target)) box.hidden = true;
       });
 
-      // --- „Fel” nyíl: kis görgetés után jelenik meg ---
+      // --- „Fel” nyíl: kis görgetés után jelenik meg; ha van hero (főoldal), csak annak teljes elhagyása után ---
       const toTop = document.querySelector('[data-to-top]');
-      const syncTop = () => toTop.classList.toggle('show', window.scrollY > 400);
+      const hero = document.querySelector('.hero-video');
+      const topThreshold = () => (hero ? Math.max(400, hero.getBoundingClientRect().height - 24) : 400);
+      const syncTop = () => toTop.classList.toggle('show', window.scrollY > topThreshold());
       window.addEventListener('scroll', syncTop, { passive: true });
       syncTop();
       toTop.addEventListener('click', (e) => {
@@ -295,31 +348,33 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
 </html>
 
 <style>
-  .skip-link { position: absolute; left: -999px; top: 8px; z-index: 200; background: var(--accent); color: #000; padding: 8px 14px; border-radius: 8px; }
+  .skip-link { position: absolute; left: -999px; top: 8px; z-index: 200; background: var(--navy); color: #fff; padding: 8px 14px; border-radius: var(--radius-btn); }
   .skip-link:focus { left: 8px; }
 
   /* Morzsamenü-sáv: a fejléc alatt, görgetéskor is látható */
   .crumbbar {
     position: sticky; top: var(--header-h); z-index: 40;
-    background: linear-gradient(180deg, rgba(247, 248, 250, 0.96) 0%, rgba(236, 239, 242, 0.96) 100%); backdrop-filter: saturate(160%) blur(12px); -webkit-backdrop-filter: saturate(160%) blur(12px);
-    border-bottom: 1px solid #c9cfd6; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset;
+    background: rgba(255, 255, 255, 0.92); backdrop-filter: saturate(140%) blur(12px); -webkit-backdrop-filter: saturate(140%) blur(12px);
+    border-bottom: 1px solid var(--line);
   }
   .crumbbar-inner { display: flex; align-items: center; gap: 14px; min-height: 48px; }
   .back-btn {
     flex: none; display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 14px 0 10px;
-    border: 1px solid var(--line-strong); border-radius: 999px; background: #fff; color: var(--text);
-    font-size: 0.9rem; font-weight: 600; text-decoration: none;
+    border: 1px solid var(--line-strong); border-radius: var(--radius-btn); background: #fff; color: var(--navy);
+    font-size: 0.88rem; font-weight: 600; text-decoration: none;
   }
   .back-btn:hover { border-color: var(--accent); color: var(--accent); }
   .crumb-trail { display: flex; align-items: center; gap: 8px; min-width: 0; overflow: hidden; white-space: nowrap; font-size: 0.9rem; }
   .crumb-trail a { color: var(--muted); text-decoration: none; overflow: hidden; text-overflow: ellipsis; }
   .crumb-trail a:hover { color: var(--accent); }
-  .crumb-trail a.current { color: var(--text); font-weight: 600; }
+  .crumb-trail a.current { color: var(--navy); font-weight: 600; }
   .crumb-trail .sep { color: var(--line-strong); flex: none; }
   @media (max-width: 640px) {
     .back-btn span { display: none; }
     .back-btn { padding: 0 9px; }
     .crumb-trail { font-size: 0.84rem; gap: 6px; }
+    /* keskeny kijelzőn csak a szülő és az aktuális szint látszik (a vissza-gomb megvan), hogy ne csonkolódjon minden elem ellipszissel */
+    .crumb-trail a:not(:nth-last-child(-n+5)), .crumb-trail .sep:not(:nth-last-child(-n+5)) { display: none; }
   }
 
   /* „Fel” nyíl */
@@ -329,150 +384,180 @@ const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
     opacity: 0; pointer-events: none; transform: translateY(12px); transition: opacity 0.2s ease, transform 0.2s ease;
   }
   .to-top.show { opacity: 1; pointer-events: auto; transform: none; }
-  .to-top:hover { filter: brightness(1.08); }
+  .to-top:hover { background: var(--accent-2); }
   :global(.toast.show) ~ .to-top { bottom: 92px; }
 
-  /* Fejléc egy sorban: a logó körül sötét grafit (mint a logó eredeti háttere), jobbra szálcsiszolt, világos fém */
+  /* ---------- Fejléc: fixed üvegsáv két állapottal ----------
+     alap (fehér üveg): belső oldalak, és a főoldal görgetve / nyitott mobil menüvel
+     átlátszó: a főoldal teteje (.transparent), a videó fölött fehér szöveggel        */
   .site-header {
-    --dark-end: max(330px, calc(50% - 300px));
-    position: sticky; top: 0; z-index: 50; height: var(--header-h);
-    background:
-      radial-gradient(ellipse 360px 130% at calc(var(--dark-end) - 170px) 50%, #313234 0%, rgba(49, 50, 52, 0) 72%),
-      linear-gradient(90deg, #1c1d1f 0%, #222325 calc(var(--dark-end) - 60px), #55595e calc(var(--dark-end) + 60px), #b9bfc6 calc(var(--dark-end) + 180px), #e3e6ea calc(var(--dark-end) + 320px), #f1f3f5 72%, #dde1e5 100%);
-    border-bottom: 1px solid #b7bec6;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 1px 0 rgba(255, 255, 255, 0.9);
-    transition: box-shadow 0.2s ease;
+    --hd-bg: rgba(255, 255, 255, 0.82);
+    --hd-line: var(--line);
+    --hd-fg: var(--navy);
+    --hd-fg-2: var(--text-2);
+    --hd-hover: var(--accent);
+    --hd-field: var(--surface-2);
+    --hd-field-line: var(--line-strong);
+    --hd-ph: var(--muted);
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50; height: var(--header-h);
+    background-color: var(--hd-bg); color: var(--hd-fg);
+    backdrop-filter: blur(14px) saturate(140%); -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border-bottom: 1px solid var(--hd-line);
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
   }
-  .site-header::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px; background: var(--metal); opacity: 0.8; pointer-events: none; }
-  .site-header.scrolled { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 8px 22px -14px rgba(18, 24, 33, 0.55); }
-  .logo { display: flex; flex: none; }
-  /* sötét változat (videós főoldal-teszt): a fejléc egybeolvad a sötétített videóval */
-  .site-header.header-dark { background: #1c1d1f; border-bottom-color: transparent; box-shadow: none; }
-  .site-header.header-dark::after { display: none; }
-  .site-header.header-dark.scrolled { box-shadow: 0 8px 22px -12px rgba(0, 0, 0, 0.7); }
-  .header-dark .nav-link { color: #d9dee4; }
-  .header-dark .nav-link:hover, .header-dark .nav-link.active { color: #fff; background: rgba(255, 255, 255, 0.1); }
-  .header-dark .header-search input { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.22); color: #fff; box-shadow: none; }
-  .header-dark .header-search input::placeholder { color: #aab2bc; }
-  .header-dark .header-search input:focus { background: #fff; color: var(--text); }
-  .header-dark .header-search :global(.search-icon) { color: #aab2bc; z-index: 1; }
-  .header-dark .menu-toggle { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.22); color: #fff; }
-  .logo { margin-left: 28px; }
-  .logo img { height: 66px; width: auto; filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5)); }
-  .header-inner { height: 100%; display: flex; align-items: center; gap: 16px; }
+  .site-header.scrolled { box-shadow: 0 8px 24px -18px rgba(11, 31, 58, 0.35); }
+  .site-header.transparent:not(.scrolled):not(.menu-open) {
+    --hd-bg: rgba(11, 31, 58, 0.18);
+    --hd-line: rgba(255, 255, 255, 0.14);
+    --hd-fg: #fff;
+    --hd-fg-2: rgba(255, 255, 255, 0.86);
+    --hd-hover: #fff;
+    --hd-field: rgba(255, 255, 255, 0.14);
+    --hd-field-line: rgba(255, 255, 255, 0.28);
+    --hd-ph: rgba(255, 255, 255, 0.7);
+    box-shadow: none;
+  }
+  .header-inner { height: 100%; display: flex; align-items: center; gap: 28px; }
 
-  /* a menüpontok egyenletesen elosztva a logó és a kereső között */
-  .main-nav { flex: 1 1 auto; display: flex; align-items: center; justify-content: space-evenly; gap: 4px; }
+  .logo { display: inline-flex; flex: none; color: inherit; text-decoration: none !important; }
+  .wordmark { font-weight: 800; font-size: 1.25rem; letter-spacing: 0.2em; text-transform: uppercase; line-height: 1; transition: color 0.25s ease; }
+
+  /* Menü: aláhúzott aktív pont */
+  .main-nav { flex: 1 1 auto; display: flex; align-items: center; gap: 32px; }
   .nav-link {
-    display: inline-flex; align-items: center; gap: 4px; padding: 8px 14px; border-radius: 999px;
-    color: var(--text-2); font-weight: 500; font-size: 0.95rem; text-decoration: none !important; white-space: nowrap;
+    position: relative; display: inline-flex; align-items: center; gap: 4px; height: var(--header-h); padding: 0 2px;
+    color: var(--hd-fg-2); font-weight: 500; font-size: 0.92rem; letter-spacing: 0.02em; text-decoration: none !important; white-space: nowrap;
+    transition: color 0.2s ease;
   }
-  .nav-link:hover, .nav-link.active { color: var(--text); background: rgba(255, 255, 255, 0.7); }
-  .nav-link.active { color: var(--accent); }
+  .nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--accent); opacity: 0; transition: opacity 0.2s ease; }
+  .nav-link:hover, .nav-link.active, .has-mega:focus-within > .nav-link { color: var(--hd-hover); }
+  .nav-link.active::after { opacity: 1; }
+  .nav-link :global(svg) { transition: transform 0.2s ease; }
+  .has-mega:hover > .nav-link :global(svg), .has-mega:focus-within > .nav-link :global(svg) { transform: rotate(180deg); }
   .nav-item { position: relative; }
-  .mega {
-    position: absolute; top: calc(100% + 10px); left: -120px; width: min(760px, 90vw);
-    background: #fff; border: 1px solid var(--line);
-    border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px;
-    opacity: 0; visibility: hidden; transform: translateY(6px); transition: all 0.18s ease;
-  }
-  .mega::before { content: ''; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
-  .has-mega:hover .mega, .has-mega:focus-within .mega { opacity: 1; visibility: visible; transform: none; }
-  .mega-grid { display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(var(--mega-rows), auto); grid-auto-flow: column; gap: 2px; }
-  .mega-link { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-radius: 10px; color: var(--text-2); font-size: 0.92rem; text-decoration: none !important; }
-  .mega-link:hover { background: var(--accent-soft); color: var(--text); }
-  .mega-link :global(svg) { color: var(--accent); flex: none; }
 
-  .header-actions { flex: none; justify-content: flex-end; display: flex; align-items: center; gap: 12px; }
-  .header-search { position: relative; flex: none; width: 360px; }  /* épp a helyőrző szövegnyi, utána zárul a félkör */
-  .header-search :global(.search-icon) { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
-  .header-search input {
-    width: 100%; height: 46px; padding: 0 14px 0 40px; border-radius: 999px; border: 1px solid var(--line-strong);
-    background: rgba(255, 255, 255, 0.85); color: var(--text); font-size: 0.92rem; box-shadow: inset 0 1px 2px rgba(18, 24, 33, 0.08);
+  /* Lenyíló Termékek-menü: ikon nélküli, 3 oszlopos */
+  .mega {
+    position: absolute; top: calc(100% - 1px); left: -24px; width: min(820px, calc(100vw - 40px));
+    background: #fff; color: var(--text); border: 1px solid var(--line); border-radius: 12px;
+    box-shadow: 0 24px 48px -24px rgba(11, 31, 58, 0.3), 0 2px 8px -4px rgba(11, 31, 58, 0.12); padding: 20px 24px;
+    opacity: 0; visibility: hidden; transform: translateY(8px);
+    transition: opacity 0.22s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.22s cubic-bezier(0.2, 0.7, 0.2, 1), visibility 0s linear 0.22s;
   }
-  .header-search input:focus { outline: none; border-color: var(--accent); background: #fff; box-shadow: 0 0 0 4px rgba(10, 108, 255, 0.1); }
+  /* Hover-intent: egérrel 120 ms késleltetéssel nyílik, hogy az átsuhanó kurzor (vagy oldalbetöltéskor ott álló egér) ne nyissa ki azonnal; billentyűzetről azonnal */
+  .has-mega:hover .mega { opacity: 1; visibility: visible; transform: none; transition-delay: 120ms; }
+  .has-mega:focus-within .mega { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
+  .mega-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-bottom: 12px; margin-bottom: 10px; border-bottom: 1px solid var(--line); }
+  .mega-all { font-size: 0.86rem; font-weight: 600; color: var(--accent); text-decoration: none !important; white-space: nowrap; }
+  .mega-all:hover { color: var(--accent-2); }
+  .mega-grid { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 28px; row-gap: 2px; }
+  .mega-link { display: block; padding: 8px 10px; border-radius: 6px; color: var(--text-2); font-size: 0.9rem; font-weight: 500; line-height: 1.35; text-decoration: none !important; transition: background 0.15s ease, color 0.15s ease; }
+  .mega-link:hover, .mega-link:focus-visible { background: var(--accent-soft); color: var(--navy); }
+
+  /* Jobb oldal: kereső üvegmező, Ajánlatkérő gomb, mobil menü gomb */
+  .header-actions { flex: none; display: flex; align-items: center; justify-content: flex-end; gap: 12px; }
+  .header-search { position: relative; flex: none; width: 340px; }
+  .header-search :global(.search-icon) { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--hd-ph); pointer-events: none; z-index: 1; transition: color 0.25s ease; }
+  .header-search input {
+    width: 100%; height: 40px; padding: 0 12px 0 38px; border-radius: var(--radius-btn); border: 1px solid var(--hd-field-line);
+    background: var(--hd-field); color: var(--hd-fg); font-size: 0.9rem;
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, box-shadow 0.2s ease;
+  }
+  .header-search input::placeholder { color: var(--hd-ph); }
+  .header-search input::-webkit-search-decoration { -webkit-appearance: none; }
+  .header-search input:focus { outline: none; background: #fff; color: var(--text); border-color: var(--accent); box-shadow: 0 0 0 3px rgba(10, 108, 255, 0.15); }
+  .header-search input:focus::placeholder { color: var(--muted); }
+  .header-search:focus-within :global(.search-icon) { color: var(--accent); }
   .suggest {
     position: absolute; top: calc(100% + 8px); left: 0; width: max(100%, 420px); max-width: calc(100vw - 32px);
-    background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+    background: #fff; color: var(--text); border: 1px solid var(--line); border-radius: 12px;
     box-shadow: var(--shadow); padding: 6px; z-index: 60;
   }
-  .suggest :global(a) { display: flex; flex-direction: column; padding: 9px 12px; border-radius: 10px; color: var(--text); text-decoration: none; }
+  .suggest :global(a) { display: flex; flex-direction: column; padding: 9px 12px; border-radius: 6px; color: var(--text); text-decoration: none; }
   .suggest :global(a:hover), .suggest :global(a.active) { background: var(--accent-soft); }
   .suggest :global(.s-name) { font-size: 0.92rem; font-weight: 500; }
   .suggest :global(.s-meta) { font-size: 0.78rem; color: var(--muted); }
-  .suggest :global(.s-all) { color: var(--accent); font-size: 0.88rem; font-weight: 600; border-top: 1px solid var(--line); border-radius: 0 0 10px 10px; margin-top: 4px; }
+  .suggest :global(.s-all) { color: var(--accent); font-size: 0.88rem; font-weight: 600; border-top: 1px solid var(--line); border-radius: 0 0 6px 6px; margin-top: 4px; }
   .suggest :global(.s-empty) { padding: 12px; font-size: 0.9rem; color: var(--muted); }
 
-  .quote-btn {
-    position: relative; display: inline-flex; align-items: center; gap: 8px; height: 42px; padding: 0 16px;
-    border-radius: 999px; background: var(--gradient); color: #fff; font-weight: 600; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase;
-    text-decoration: none !important; box-shadow: 0 10px 22px -12px rgba(10, 108, 255, 0.9); white-space: nowrap;
-  }
+  .quote-btn { position: relative; height: 40px; padding: 0 16px; gap: 8px; }
+  .quote-btn :global(svg) { width: 18px; height: 18px; }
   .quote-count {
-    min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px; background: #fff; color: var(--accent);
-    font-size: 0.78rem; font-weight: 700; display: inline-grid; place-items: center;
+    min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px; background: #fff; color: var(--accent);
+    font-size: 0.74rem; font-weight: 700; letter-spacing: 0; display: inline-grid; place-items: center;
   }
   .quote-count[hidden] { display: none; }
-  .menu-toggle { display: none; width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--line-strong); background: #fff; color: var(--text); cursor: pointer; place-items: center; }
+  .menu-toggle {
+    display: none; width: 40px; height: 40px; border-radius: var(--radius-btn); border: 1px solid var(--hd-field-line);
+    background: var(--hd-field); color: var(--hd-fg); cursor: pointer; place-items: center;
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+  }
   .menu-toggle :global(.i-close) { display: none; }
   .menu-open .menu-toggle :global(.i-open) { display: none; }
   .menu-open .menu-toggle :global(.i-close) { display: block; }
 
   @media (max-width: 1200px) {
-    .logo { margin-left: 0; }
-    .logo img { height: 54px; }
-    .nav-link { padding: 8px 10px; }
+    .main-nav { gap: 22px; }
+    .header-search { width: 280px; }
   }
   @media (max-width: 1100px) {
     .quote-label { display: none; }
-    .header-inner { gap: 16px; }
+    .header-inner { gap: 20px; }
   }
   @media (max-width: 960px) {
-    :root { --header-h: 64px; }
-    .logo { margin-left: 8px; }
-    .logo img { height: 46px; }
-    .site-header { --dark-end: 195px; }
-    .main-nav { margin-left: 0; }
+    .wordmark { font-size: 1.05rem; }
     .menu-toggle { display: grid; }
+    /* Mobil menü: fehér, teljes szélességű panel a fejléc alatt */
     .main-nav {
       position: absolute; top: 100%; left: 0; right: 0; max-height: calc(100vh - var(--header-h)); overflow-y: auto;
-      flex-direction: column; align-items: stretch; gap: 2px; padding: 12px 16px 20px;
-      background: #fff; border-bottom: 1px solid var(--line); box-shadow: var(--shadow);
-      transform: translateY(-8px); opacity: 0; visibility: hidden; transition: all 0.2s ease;
+      flex-direction: column; align-items: stretch; gap: 0; padding: 8px 20px 24px;
+      background: #fff; color: var(--text); border-bottom: 1px solid var(--line); box-shadow: 0 24px 48px -24px rgba(11, 31, 58, 0.3);
+      transform: translateY(-8px); opacity: 0; visibility: hidden; transition: transform 0.2s ease, opacity 0.2s ease, visibility 0s linear 0.2s;
     }
-    .menu-open .main-nav { transform: none; opacity: 1; visibility: visible; }
-    .header-dark .nav-link { color: var(--text-2); }
-    .header-dark .nav-link:hover, .header-dark .nav-link.active { color: var(--text); background: var(--surface-3); }
-    .nav-link { padding: 12px 14px; font-size: 1rem; }
-    .mega { position: static; width: auto; opacity: 1; visibility: inherit; transform: none; background: transparent; border: 0; box-shadow: none; padding: 0 0 8px 8px; }
+    .menu-open .main-nav { transform: none; opacity: 1; visibility: visible; transition-delay: 0s; }
+    .nav-link { height: auto; padding: 15px 0; font-size: 1rem; color: var(--navy); border-bottom: 1px solid var(--line); }
+    .nav-link::after { display: none; }
+    .nav-link:hover, .nav-link.active, .has-mega:focus-within > .nav-link { color: var(--accent); }
+    .has-mega > .nav-link { border-bottom: 0; }
+    .has-mega > .nav-link :global(svg) { display: none; }
+    /* a mega statikusan a menüben, 1 oszlopban */
+    .mega { position: static; width: auto; opacity: 1; visibility: inherit; transform: none; background: transparent; border: 0; border-radius: 0; box-shadow: none; padding: 0 0 14px; border-bottom: 1px solid var(--line); transition: none; }
     .has-mega:hover .mega, .has-mega:focus-within .mega { visibility: inherit; }  /* a zárt mobilmenü láthatatlan linkjei ne fogják el az érintést */
-    .mega-grid { grid-template-columns: 1fr; grid-template-rows: none; grid-auto-flow: row; }
+    .mega-head { padding: 0 0 6px; margin: 0; border: 0; }
+    .mega-head .eyebrow { display: none; }
+    .mega-grid { grid-template-columns: 1fr; row-gap: 0; }
+    .mega-link { padding: 9px 10px; }
+    .header-actions { flex: 1; }
     .header-search { width: auto; flex: 1; min-width: 0; }
-    .header-actions { flex: 1; justify-content: flex-end; }
     .suggest { position: fixed; left: 16px; right: 16px; width: auto; top: calc(var(--header-h) - 4px); }
   }
   @media (max-width: 560px) {
-    .logo { margin-left: 0; }
-    .logo img { height: 38px; }
-    .site-header { --dark-end: 145px; }
-    .header-inner { gap: 10px; }
+    .header-inner { gap: 12px; }
     .header-actions { gap: 8px; }
     .quote-btn { padding: 0 12px; }
   }
 
-  .site-footer { background: linear-gradient(180deg, #f6f7f9 0%, #eceff3 100%); color: var(--text-2); margin-top: 24px; border-top: 1px solid var(--line); }
-  .footer-main { display: flex; align-items: center; justify-content: space-between; gap: 16px 32px; flex-wrap: wrap; padding-top: 12px; padding-bottom: 10px; }
-  .footer-logo {
-    flex: none; display: inline-flex; padding: 6px 14px; border-radius: 12px;
-    background: radial-gradient(ellipse 70% 130% at 50% 45%, #313234 0%, #1c1d1f 100%); box-shadow: var(--shadow-sm);
+  /* ---------- Lábléc: navy ---------- */
+  .site-footer { background: var(--navy); color: rgba(255, 255, 255, 0.78); margin-top: 48px; }
+  .footer-main {
+    display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px 48px; padding-top: 56px; padding-bottom: 40px;
   }
-  .footer-logo img { height: 30px; width: auto; }
-  .footer-contact { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 0.88rem; }
-  .footer-contact strong { color: var(--text); }
-  .footer-contact .muted { color: var(--muted); }
-  .footer-contact a { color: var(--text-2); }
-  .footer-contact a:hover { color: var(--accent); }
-  .footer-bottom { border-top: 1px solid var(--line-strong); padding-top: 8px; padding-bottom: 10px; font-size: 0.8rem; color: var(--muted); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 24px; }
-  .footer-bottom .legal-links a { color: var(--text-2); }
-  .footer-bottom .legal-links a:hover { color: var(--accent); }
+  .footer-logo { display: inline-flex; color: #fff; text-decoration: none !important; margin-bottom: 14px; }
+  .footer-logo .wordmark { font-size: 1.25rem; }
+  .footer-tagline { color: #fff; font-weight: 500; margin: 0 0 6px; max-width: 360px; }
+  .footer-address { margin: 0; font-size: 0.92rem; }
+  .footer-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255, 255, 255, 0.55); margin: 4px 0 14px; }
+  .footer-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 0.94rem; }
+  .footer-list a { color: rgba(255, 255, 255, 0.86); text-decoration: none; }
+  .footer-list a:hover { color: #fff; text-decoration: underline; }
+  .footer-muted { color: rgba(255, 255, 255, 0.55); }
+  .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.12); padding-top: 18px; padding-bottom: 22px; font-size: 0.8rem; color: rgba(255, 255, 255, 0.55); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; }
+  .nowrap { white-space: nowrap; }
+  @media (max-width: 860px) {
+    .footer-main { grid-template-columns: 1fr 1fr; padding-top: 44px; }
+    .footer-brand { grid-column: 1 / -1; }
+  }
+  @media (max-width: 520px) {
+    .footer-main { grid-template-columns: 1fr; gap: 28px; }
+  }
 </style>
