@@ -2177,8 +2177,9 @@
  "203492-autoszallito-padlo-keret-profil-30-mm": {
   "name": "Autószállító keret profil",
   "move": {
-   "group": "aluminium-alvaz-profilok",
-   "category": "keret-profilok"
-  }
+   "group": "aluminium-padlo-profilok",
+   "category": "padlo-profilok"
+  },
+  "order": 9
  }
 }
