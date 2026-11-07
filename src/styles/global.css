@@ -1,20 +1,20 @@
 :root {
-  /* Arculat: éjkék háttér (Midnight Navy), tiszta fehér betű, korall-narancs kiemelés (Coral Orange) */
-  --bg: #002941;
-  --bg-2: #002941;
+  /* Arculat: acélkék háttér, tört fehér betű, korall-narancs kiemelés (Coral Orange) */
+  --bg: #1b4f7a;
+  --bg-2: #1b4f7a;
   --surface: #ffffff;
   --surface-2: #f5f7f9;
   --surface-3: #eef1f4;
   --line: rgba(255, 255, 255, 0.16);
   --line-strong: rgba(255, 255, 255, 0.3);
-  --text: #ffffff;
-  --text-2: rgba(255, 255, 255, 0.9);
-  --muted: rgba(255, 255, 255, 0.74);
+  --text: #f3f6fa;
+  --text-2: rgba(243, 246, 250, 0.92);
+  --muted: rgba(243, 246, 250, 0.78);
   --navy: #0b1f3a;
   /* --ink: címek és kiemelt szöveg; --link: szöveges linkek. Az éjkék háttéren fehér / korall, a fehér felületeken sötét / mélyebb korall */
-  --ink: #ffffff;
+  --ink: #f3f6fa;
   --link: #fd6e6e;
-  --link-hover: #ffffff;
+  --link-hover: #f3f6fa;
   --focus: #fd6e6e;
   --on-accent: #ffffff;
   --accent: #fd6e6e;
