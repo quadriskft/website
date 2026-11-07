@@ -6390,7 +6390,7 @@
   "source": "Ital Accessori",
   "matchedCode": "3052S",
   "specs": {
-   "Fokozatok": "5",
+   "Cilinderek száma": "5",
    "Löket": "1230 mm",
    "Rögzítés": "gömbfej (S típus)",
    "Max. üzemi nyomás": "200 bar",
@@ -6471,7 +6471,7 @@
   "specs": {
    "Kivitel": "teleszkópos, gömbfejes (S típus)",
    "Max. üzemi nyomás": "200 bar",
-   "Fokozatok": "5",
+   "Cilinderek száma": "5",
    "Löket": "1040 mm",
    "Olajmennyiség": "5 l",
    "Tömeg": "29 kg"
@@ -6489,7 +6489,7 @@
   "specs": {
    "Kivitel": "teleszkópos, gömbfejes (S típus)",
    "Max. üzemi nyomás": "200 bar",
-   "Fokozatok": "5",
+   "Cilinderek száma": "5",
    "Löket": "1190 mm",
    "Olajmennyiség": "6 l",
    "Tömeg": "31 kg"
@@ -7967,7 +7967,7 @@
   "specs": {
    "Kivitel": "teleszkópos, gömbfejes (S típus)",
    "Max. üzemi nyomás": "200 bar",
-   "Fokozatok": "5",
+   "Cilinderek száma": "5",
    "Löket": "1230 mm",
    "Olajmennyiség": "4,7 l",
    "Tömeg": "26 kg"
@@ -8715,7 +8715,7 @@
   "specs": {
    "Kivitel": "teleszkópos, gömbfejes (S típus)",
    "Max. üzemi nyomás": "200 bar",
-   "Fokozatok": "6",
+   "Cilinderek száma": "6",
    "Löket": "1245 mm",
    "Olajmennyiség": "5,5 l",
    "Tömeg": "28,5 kg"
@@ -8733,7 +8733,7 @@
   "specs": {
    "Kivitel": "teleszkópos, gömbfejes (S típus)",
    "Max. üzemi nyomás": "200 bar",
-   "Fokozatok": "6",
+   "Cilinderek száma": "6",
    "Löket": "1480 mm",
    "Olajmennyiség": "8,9 l",
    "Tömeg": "46 kg"
