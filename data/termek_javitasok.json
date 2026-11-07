@@ -480,7 +480,7 @@
  },
  "e40696690-inditoprofil-keszlet-compact": {
   "order": 10,
-  "name": "Compact indítóprofil készlet"
+  "name": "Compact indítóprofil"
  },
  "e87370-edscha-takaro-gumi-compact-110": {
   "order": 13,
@@ -770,7 +770,7 @@
   },
   "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben.",
   "order": 15,
-  "name": "MIDI első oszlop FLAT 246 mm, eloxált"
+  "name": "MIDI első oszlop FLAT, eloxált"
  },
  "6621620-or-midi-elso-oszlop-alu-elox": {
   "specs": {
@@ -968,7 +968,7 @@
  },
  "6639692-max-elso-oszlop-exl-elox": {
   "order": 10,
-  "name": "MAX első oszlop EXL, eloxált"
+  "name": "MAX első oszlop Q, eloxált"
  },
  "6635245-max-os-hatso-elox-oszlop-3000-mm": {
   "order": 13,
@@ -984,7 +984,7 @@
  },
  "6639604-max-hatso-oszlop-exl-elox": {
   "order": 14,
-  "name": "MAX hátsó oszlop EXL, eloxált"
+  "name": "MAX hátsó oszlop Q, eloxált"
  },
  "100001-dugo-perforalt-acel-kerethez": {
   "move": {
@@ -2873,7 +2873,7 @@
   "order": 8
  },
  "6613366-al-eco-120-mm-kulso-palast-profil-elox": {
-  "name": "AL/ECO külső palást profil 120 mm, eloxált",
+  "name": "Alumínium hátsó lezáró profil 120 mm esővetővel",
   "order": 1
  },
  "6613365-al-eco-merevito-profil-natur": {
