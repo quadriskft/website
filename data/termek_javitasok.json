@@ -431,191 +431,252 @@
   "stock": true
  },
  "e-compact-cs-toloteto-rendszer": {
-  "order": 1
+  "order": 3,
+  "name": "Compact CS tolótető rendszer"
  },
  "e-compact-fix-teto-rendszer": {
-  "order": 2
+  "order": 8,
+  "name": "Compact FIX tető rendszer"
  },
  "e-compact-tetoprofil-900407-5000": {
-  "order": 3
+  "order": 18,
+  "name": "Compact tetőprofil 5000 mm"
  },
  "e69004670-compact-fix-tetokereszttarto-2550-mm": {
-  "order": 4
+  "order": 9,
+  "name": "Compact FIX tetőkereszttartó 2550 mm"
  },
  "e69004740-cs-compact-tetokereszttarto-2550-mm": {
-  "order": 5
+  "order": 2,
+  "name": "Compact CS tetőkereszttartó 2550 mm"
  },
  "e4069000940-elhuzo-kocsi-compact-normal-2550-mm": {
-  "order": 6
+  "order": 5,
+  "name": "Compact elhúzó kocsi normál 2550 mm"
  },
  "e4069000940-elhuzo-kocsi-compact-tw-1200-mm": {
-  "order": 7
+  "order": 7,
+  "name": "Compact elhúzó kocsi TW 1200 mm"
  },
  "e4069002960-elhuzo-kocsi-compact-small-2550-mm": {
-  "order": 8
+  "order": 6,
+  "name": "Compact elhúzó kocsi SMALL 2550 mm"
  },
  "e4069009030-130-as-compact-normal-lezaro-2550-mm": {
-  "order": 9
+  "order": 11,
+  "name": "Compact lezáró normál 130, 2550 mm"
  },
  "e4038069900-compact-lezaro-ponyvahoz-2550-mm": {
-  "order": 10
+  "order": 12,
+  "name": "Compact lezáró ponyvához 2550 mm"
  },
  "e38067930-compact-csuklopant-650-mm": {
-  "order": 11
+  "order": 4,
+  "name": "Compact csuklópánt 650 mm"
  },
  "e4038068710-biztosito-keszlt-compact": {
-  "order": 12
+  "order": 1,
+  "name": "Compact biztosító készlet"
  },
  "e40696690-inditoprofil-keszlet-compact": {
-  "order": 13
+  "order": 10,
+  "name": "Compact indítóprofil készlet"
  },
  "e87370-edscha-takaro-gumi-compact-110": {
-  "order": 14
+  "order": 13,
+  "name": "Compact takaró gumi 110"
  },
  "e-ponyvagorgo-85810": {
-  "order": 19
+  "order": 24,
+  "name": "Ponyvagörgő"
  },
  "e-small-tetoprofil-6600-mm": {
-  "order": 15
+  "order": 27,
+  "name": "Small tetőprofil 6600 mm"
  },
  "e-tailwing-1200-mm": {
-  "order": 17
+  "order": 31,
+  "name": "TailWing 1200 mm"
  },
  "e-tailwing-400-900-mm": {
-  "order": 18
+  "order": 30,
+  "name": "TailWing 400–900 mm"
  },
  "e-volumen-tetoprofil-900301-7800": {
-  "order": 16
+  "order": 40,
+  "name": "Volumen tetőprofil 7800 mm"
  },
  "e210422558-elhuzo-kocsi-2550-mm": {
-  "order": 20
+  "order": 20,
+  "name": "Elhúzó kocsi 2550 mm"
  },
  "e235421-szerelo-keszlet": {
-  "order": 21
+  "order": 28,
+  "name": "Szerelő készlet"
  },
  "e422552-tetokereszttarto-2550-mm": {
-  "order": 22
+  "order": 33,
+  "name": "Tetőkereszttartó 2550 mm"
  },
  "e422590-csavarozhato-tetokereszttarto-2550": {
-  "order": 23
+  "order": 34,
+  "name": "Tetőkereszttartó csavarozható 2550 mm"
  },
  "e42587-csuklopant-700-mm": {
-  "order": 24
+  "order": 19,
+  "name": "Csuklópánt 700 mm"
  },
  "e50502-edscha-takarogumi-tetoprofilhoz": {
-  "order": 25
+  "order": 32,
+  "name": "Takarógumi tetőprofilhoz"
  },
  "e62430-elhuzo-rud": {
-  "order": 26
+  "order": 21,
+  "name": "Elhúzó rúd"
  },
  "e69000690-130-as-lezaro-2550-mm": {
-  "order": 27
+  "order": 23,
+  "name": "Lezáró 130, 2550 mm"
  },
  "e69001370-190-es-lezaro-2550-mm": {
-  "order": 28
+  "order": 22,
+  "name": "Lezáró 190, 2550 mm"
  },
  "versus-micro-trike-toloteto-rendszer": {
-  "order": 1
+  "order": 12,
+  "name": "MICRO TRIKE tolótető rendszer"
  },
  "v35991-6800-mm-tetosin-micro-trike": {
-  "order": 2
+  "order": 33,
+  "name": "Tetősín MICRO TRIKE 6800 mm"
  },
  "versus-duo-trike-l-toloteto-rendszer": {
-  "order": 3
+  "order": 2,
+  "name": "DUO TRIKE L tolótető rendszer"
  },
  "v162-238-8500-mm-teto-sin-duo-trike-light": {
-  "order": 4
+  "order": 28,
+  "name": "Tetősín DUO TRIKE Light 8500 mm"
  },
  "versus-pico-toloteto-rendszer": {
-  "order": 5
+  "order": 15,
+  "name": "PICO tolótető rendszer"
  },
  "v162-08700-tetosin-pico": {
-  "order": 6
+  "order": 34,
+  "name": "Tetősín PICO"
  },
  "v144-01006-elhuzo-rud": {
-  "order": 7
+  "order": 4,
+  "name": "Elhúzó rúd"
  },
  "v144-10001-szerelo-keszlet-dtl-mt": {
-  "order": 8
+  "order": 22,
+  "name": "Szerelő készlet DTL, MT"
  },
  "v144-10022-csavarkeszlet-fekete-lezarohoz-dtl-mt": {
-  "order": 9
+  "order": 1,
+  "name": "Csavarkészlet fekete lezáróhoz DTL, MT"
  },
  "v144-10037-112-07003-mt-hatso-lezaro-ponyvahoz": {
-  "order": 10
+  "order": 10,
+  "name": "Hátsó lezáró ponyvához MT"
  },
  "v144-10048-fix-keresztarto-csavarkeszlet": {
-  "order": 11
+  "order": 7,
+  "name": "FIX kereszttartó csavarkészlet"
  },
  "v154-03013-oszlop-sin-osszekoto-keszlet-dtl": {
-  "order": 12
+  "order": 13,
+  "name": "Oszlop–sín összekötő készlet DTL"
  },
  "v154-03041-oszlop-sin-osszekoto-keszlet-mt": {
-  "order": 13
+  "order": 14,
+  "name": "Oszlop–sín összekötő készlet MT"
  },
  "v193-11001-fekete-lezaro-mt": {
-  "order": 14
+  "order": 6,
+  "name": "Fekete lezáró MT"
  },
  "v193-14001-fekete-lezaro-dtl": {
-  "order": 15
+  "order": 5,
+  "name": "Fekete lezáró DTL"
  },
  "v214-47201-elhuzokocsi-dtl-mt": {
-  "order": 16
+  "order": 3,
+  "name": "Elhúzó kocsi DTL, MT"
  },
  "v224-01001-gorgos-kereszttarto-ponyvahoz": {
-  "order": 17
+  "order": 9,
+  "name": "Görgős kereszttartó ponyvához"
  },
  "v224-41211-fix-kereszttarto-ponyvahoz": {
-  "order": 18
+  "order": 8,
+  "name": "FIX kereszttartó ponyvához"
  },
  "v242-01004-400-mm-piros-csuklo": {
-  "order": 19
+  "order": 18,
+  "name": "Piros csukló 400 mm"
  },
  "v242-01007-700-mm-piros-csuklo": {
-  "order": 20
+  "order": 16,
+  "name": "Piros csukló 700 mm"
  },
  "v242-01065-650-mm-piros-csuklo": {
-  "order": 21
+  "order": 17,
+  "name": "Piros csukló 650 mm"
  },
  "v242-14109-tomites-9-m-dtl": {
-  "order": 22
+  "order": 36,
+  "name": "Tömítés DTL 9 m"
  },
  "v242-14116-takaro-gumi-dtl": {
-  "order": 23
+  "order": 23,
+  "name": "Takaró gumi DTL"
  },
  "v242-14121-takaro-gumi-dtl": {
-  "order": 24
+  "order": 24,
+  "name": "Takaró gumi DTL"
  },
  "v242-14128-tomites-dtl": {
-  "order": 25
+  "order": 35,
+  "name": "Tömítés DTL"
  },
  "v242-14165-takaro-gumi-dtl-16-5m": {
-  "order": 26
+  "order": 25,
+  "name": "Takaró gumi DTL 16,5 m"
  },
  "v242-15109-tomites-9-m-mt": {
-  "order": 27
+  "order": 38,
+  "name": "Tömítés MT 9 m"
  },
  "v242-15114-tomites-14-m-mt": {
-  "order": 28
+  "order": 37,
+  "name": "Tömítés MT 14 m"
  },
  "v262-05007-rakonca-pasz": {
-  "order": 29
+  "order": 21,
+  "name": "Rakonca pasz"
  },
  "v264-01001-rakonca-kocsi": {
-  "order": 30
+  "order": 20,
+  "name": "Rakonca kocsi"
  },
  "v284-10024-ponyvagorgo": {
-  "order": 31
+  "order": 19,
+  "name": "Ponyvagörgő"
  },
  "v324-47201-hatso-teleszkops-lezaro-fix-mt": {
-  "order": 32
+  "order": 11,
+  "name": "Hátsó teleszkópos lezáró FIX MT"
  },
  "t-rakonca-gorgo": {
-  "order": 33,
+  "order": 29,
   "move": {
    "group": "elhuzhato-roloponyvas-rendszer",
    "category": "edscha"
-  }
+  },
+  "name": "T-rakonca görgő"
  },
  "6613553-mini-hatso-oszlop-elox-111-mm": {
   "specs": {
@@ -624,7 +685,8 @@
    "Fajlagos tömeg": "2,918 kg/m",
    "Mértékegység": "db"
   },
-  "order": 5
+  "order": 21,
+  "name": "MINI hátsó oszlop 111 mm, eloxált"
  },
  "6613554-mini-hatso-oszlop-elox-110-166": {
   "specs": {
@@ -633,7 +695,8 @@
    "Fajlagos tömeg": "3,181 kg/m",
    "Mértékegység": "db"
   },
-  "order": 6
+  "order": 22,
+  "name": "MINI hátsó oszlop 110/166 mm, eloxált"
  },
  "6613555-mini-hatso-oszlop-hn-elox-110-138": {
   "specs": {
@@ -642,7 +705,8 @@
    "Fajlagos tömeg": "2,908 kg/m",
    "Mértékegység": "db"
   },
-  "order": 7
+  "order": 23,
+  "name": "MINI hátsó oszlop HN 110/138 mm, eloxált"
  },
  "6613575-mini-elso-100-alu-oszlop-elox": {
   "specs": {
@@ -651,7 +715,8 @@
    "Fajlagos tömeg": "2,228 kg/m",
    "Mértékegység": "db"
   },
-  "order": 3
+  "order": 19,
+  "name": "MINI első oszlop 100 mm, eloxált"
  },
  "6613576-mini-elso-flat-alu-oszlop-elox": {
   "specs": {
@@ -660,7 +725,8 @@
    "Fajlagos tömeg": "2,818 kg/m",
    "Mértékegység": "db"
   },
-  "order": 4
+  "order": 20,
+  "name": "MINI első oszlop FLAT, eloxált"
  },
  "661090-midi-elso-oszlop-lift-elox-135": {
   "specs": {
@@ -670,7 +736,8 @@
    "Fajlagos tömeg": "5,539 kg/m"
   },
   "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben.",
-  "order": 8
+  "order": 16,
+  "name": "MIDI első oszlop LIFT 135 mm, eloxált"
  },
  "6614358-midi-hatso-u-szegos-oszlop-elox": {
   "specs": {
@@ -680,7 +747,8 @@
    "Fajlagos tömeg": "5,413 kg/m"
   },
   "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben.",
-  "order": 11
+  "order": 18,
+  "name": "MIDI hátsó oszlop U szegős, eloxált"
  },
  "662000-midi-hatso-lift-oszlop-elox": {
   "specs": {
@@ -690,7 +758,8 @@
    "Fajlagos tömeg": "5,163 kg/m"
   },
   "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben.",
-  "order": 10
+  "order": 17,
+  "name": "MIDI hátsó oszlop LIFT, eloxált"
  },
  "663980-midi-elso-oszlop-flat-elox-246": {
   "specs": {
@@ -700,7 +769,8 @@
    "Fajlagos tömeg": "6,685 kg/m"
   },
   "orderNote": "Igény szerint más hosszban is rendelhető – adja meg a megjegyzésben.",
-  "order": 9
+  "order": 15,
+  "name": "MIDI első oszlop FLAT 246 mm, eloxált"
  },
  "6621620-or-midi-elso-oszlop-alu-elox": {
   "specs": {
@@ -877,34 +947,44 @@
   }
  },
  "6612225-elso-oszlop-90-70-alu-elox-d": {
-  "order": 1
+  "order": 5,
+  "name": "Első oszlop 90/70 mm D, eloxált"
  },
  "6612226-hatso-oszlop-128-35-alu-elox-d": {
-  "order": 2
+  "order": 6,
+  "name": "Hátsó oszlop 128/35 mm D, eloxált"
  },
  "66177147-max-os-elso-elox-oszlop-3000-mm": {
-  "order": 12
+  "order": 9,
+  "name": "MAX első oszlop 3000 mm, eloxált"
  },
  "66177137-max-os-elso-elox-oszlop-3150-mm": {
-  "order": 13
+  "order": 8,
+  "name": "MAX első oszlop 3150 mm, eloxált"
  },
  "66177300-max-os-elso-elox-oszlop-3300-mm": {
-  "order": 14
+  "order": 7,
+  "name": "MAX első oszlop 3300 mm, eloxált"
  },
  "6639692-max-elso-oszlop-exl-elox": {
-  "order": 15
+  "order": 10,
+  "name": "MAX első oszlop EXL, eloxált"
  },
  "6635245-max-os-hatso-elox-oszlop-3000-mm": {
-  "order": 16
+  "order": 13,
+  "name": "MAX hátsó oszlop 3000 mm, eloxált"
  },
  "6635255-max-os-hatso-elox-oszlop-3150-mm": {
-  "order": 17
+  "order": 12,
+  "name": "MAX hátsó oszlop 3150 mm, eloxált"
  },
  "6635300-max-os-hatso-elox-oszlop-3300-mm": {
-  "order": 18
+  "order": 11,
+  "name": "MAX hátsó oszlop 3300 mm, eloxált"
  },
  "6639604-max-hatso-oszlop-exl-elox": {
-  "order": 19
+  "order": 14,
+  "name": "MAX hátsó oszlop EXL, eloxált"
  },
  "100001-dugo-perforalt-acel-kerethez": {
   "move": {
@@ -2759,5 +2839,121 @@
  "223032-spitz-profil-100-mm": {
   "name": "Spitz profil 100 mm",
   "order": 10
+ },
+ "214312-7800mm-50x52-mm-acel-c-sin": {
+  "name": "Acél C sín 50x52 mm, 7800 mm",
+  "order": 1
+ },
+ "214312-6600mm-50x52-mm-acel-c-sin": {
+  "name": "Acél C sín 50x52 mm, 6600 mm",
+  "order": 2
+ },
+ "214312-5000mm-50x52-mm-acel-c-sin": {
+  "name": "Acél C sín 50x52 mm, 5000 mm",
+  "order": 3
+ },
+ "211110-ponyvagorgo-acel-sinhez": {
+  "name": "Ponyvagörgő acél sínhez",
+  "order": 4
+ },
+ "216516-ponyvagorgo-acel-sinhez-csapagyas": {
+  "name": "Ponyvagörgő acél sínhez, csapágyas",
+  "order": 5
+ },
+ "211115-ponyvagorgo-acel-sinhez-hajlitott": {
+  "name": "Ponyvagörgő acél sínhez, hajlított",
+  "order": 6
+ },
+ "211410-rakonca-kocsi-acel-c-sinhez": {
+  "name": "Rakonca kocsi acél C sínhez",
+  "order": 7
+ },
+ "214209-takaro-gumi-acel-c-sinhez-cp": {
+  "name": "Takaró gumi acél C sínhez CP",
+  "order": 8
+ },
+ "6613366-al-eco-120-mm-kulso-palast-profil-elox": {
+  "name": "AL/ECO külső palást profil 120 mm, eloxált",
+  "order": 1
+ },
+ "6613365-al-eco-merevito-profil-natur": {
+  "name": "AL/ECO merevítő profil, natúr",
+  "order": 2
+ },
+ "alu-elso-takaro-lemez": {
+  "name": "Alu első takaró lemez",
+  "order": 3
+ },
+ "66k0800-alu-zartszelveny-80x35-4r-elox": {
+  "name": "Alu zártszelvény 80x35/4R, eloxált",
+  "order": 4
+ },
+ "e-compact-tetoprofil-900407-8000": {
+  "name": "Compact tetőprofil 8000 mm",
+  "order": 14
+ },
+ "e-compact-tetoprofil-900407-7800": {
+  "name": "Compact tetőprofil 7800 mm",
+  "order": 15
+ },
+ "e-compact-tetoprofil-900407-6600": {
+  "name": "Compact tetőprofil 6600 mm",
+  "order": 16
+ },
+ "e-compact-tetoprofil-900407-5600": {
+  "name": "Compact tetőprofil 5600 mm",
+  "order": 17
+ },
+ "e-small-tetoprofil-8200-mm": {
+  "name": "Small tetőprofil 8200 mm",
+  "order": 25
+ },
+ "e-small-tetoprofil-7800-mm": {
+  "name": "Small tetőprofil 7800 mm",
+  "order": 26
+ },
+ "e-volumen-tetoprofil-900301-10000": {
+  "name": "Volumen tetőprofil 10000 mm",
+  "order": 35
+ },
+ "e-volumen-tetoprofil-900301-9600": {
+  "name": "Volumen tetőprofil 9600 mm",
+  "order": 36
+ },
+ "e-volumen-tetoprofil-900301-9400": {
+  "name": "Volumen tetőprofil 9400 mm",
+  "order": 37
+ },
+ "e-volumen-tetoprofil-900301-9000": {
+  "name": "Volumen tetőprofil 9000 mm",
+  "order": 38
+ },
+ "e-volumen-tetoprofil-900301-8500": {
+  "name": "Volumen tetőprofil 8500 mm",
+  "order": 39
+ },
+ "v162-238-10000-mm-teto-sin-duo-trike-light": {
+  "name": "Tetősín DUO TRIKE Light 10000 mm",
+  "order": 26
+ },
+ "v162-238-9600-mm-teto-sin-duo-trike-light": {
+  "name": "Tetősín DUO TRIKE Light 9600 mm",
+  "order": 27
+ },
+ "v35991-8500-mm-tetosin-micro-trike": {
+  "name": "Tetősín MICRO TRIKE 8500 mm",
+  "order": 29
+ },
+ "v35991-8200-mm-tetosin-micro-trike": {
+  "name": "Tetősín MICRO TRIKE 8200 mm",
+  "order": 30
+ },
+ "v35991-7800-mm-tetosin-micro-trike": {
+  "name": "Tetősín MICRO TRIKE 7800 mm",
+  "order": 31
+ },
+ "v35991-7500-mm-tetosin-micro-trike": {
+  "name": "Tetősín MICRO TRIKE 7500 mm",
+  "order": 32
  }
 }

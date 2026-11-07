@@ -1,7 +1,7 @@
 {
  "_leiras": "Azonos profil több gyári hosszban (a Quadris kérése: egy kártyán, a rendelésnél választható hosszal, darabra – nem méretre vágva). A tagok sorrendje a választó sorrendje; a listákban az első tag képviseli a családot a család nevével.",
  "e-compact-tetoprofil-900407": {
-  "name": "E/COMPACT tetőprofil 900407",
+  "name": "Compact tetőprofil",
   "label": "Hossz",
   "members": {
    "e-compact-tetoprofil-900407-5000": "5000 mm",
@@ -12,7 +12,7 @@
   }
  },
  "e-small-tetoprofil": {
-  "name": "E/Small tetőprofil",
+  "name": "Small tetőprofil",
   "label": "Hossz",
   "members": {
    "e-small-tetoprofil-6600-mm": "6600 mm",
@@ -21,7 +21,7 @@
   }
  },
  "e-volumen-tetoprofil-900301": {
-  "name": "E/VOLUMEN tetőprofil 900301",
+  "name": "Volumen tetőprofil",
   "label": "Hossz",
   "members": {
    "e-volumen-tetoprofil-900301-7800": "7800 mm",
@@ -33,7 +33,7 @@
   }
  },
  "v35991-tetosin-micro-trike": {
-  "name": "V35991 Tetősín MICRO TRIKE",
+  "name": "Tetősín MICRO TRIKE",
   "label": "Hossz",
   "members": {
    "v35991-6800-mm-tetosin-micro-trike": "6800 mm",
@@ -44,7 +44,7 @@
   }
  },
  "v162-238-teto-sin-duo-trike-light": {
-  "name": "V162-238 Tető sín DUO TRIKE Light",
+  "name": "Tetősín DUO TRIKE Light",
   "label": "Hossz",
   "members": {
    "v162-238-8500-mm-teto-sin-duo-trike-light": "8500 mm",
