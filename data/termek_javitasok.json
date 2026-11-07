@@ -2577,6 +2577,9 @@
  },
  "354424-top-kuplung": {
   "name": "Top-Kuplung",
-  "order": 34
+  "move": {
+   "group": "platos-alkatreszek-es-kiegeszitok",
+   "category": "kotoelemek"
+  }
  }
 }
