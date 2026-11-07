@@ -3784,10 +3784,8 @@
  },
  "3562974-alu-hatso-400-mm-rakonca": {
   "name": "Alu hátsó rakonca 400 mm",
-  "label": "Kivitel",
-  "title": "Rendelhető kivitelek",
-  "note": "Darabra rendelhető – válassza ki, hogy balos vagy jobbos kivitelt kér.",
   "clone": true,
+  "separate": true,
   "members": {
    "3562974-alu-hatso-400-mm-rakonca-l-r": "balos",
    "3562974-alu-hatso-400-mm-rakonca-jobbos": "jobbos"
