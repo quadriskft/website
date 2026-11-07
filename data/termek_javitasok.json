@@ -744,8 +744,8 @@
   }
  },
  "352240-ellendarabos-szego-400mm-r-l": {
-  "name": "Ellendarabos szegő 400 mm R+L, egymásba záródó zárhoz",
-  "order": 2
+  "name": "Ellendarabos szegő 400 mm, balos-jobbos, egymásba záródó zárhoz",
+  "order": 32
  },
  "352540-egymasba-zarodo-z-zar-400": {
   "order": 1
@@ -2278,5 +2278,305 @@
  "3562974-alu-hatso-400-mm-rakonca-jobbos": {
   "name": "Alu hátsó rakonca 400 mm jobbos",
   "order": 4.5
+ },
+ "147443-st-perforal-acel-keret-27-mm-vallal-l-7500": {
+  "name": "Acél keret perforált 27 mm vállal, 7500 mm",
+  "order": 1
+ },
+ "142211-aramtalanito-kapcsolo": {
+  "name": "Áramtalanító kapcsoló",
+  "order": 2
+ },
+ "142304-billencs-nyitokar-b": {
+  "name": "Billencs nyitókar balos",
+  "order": 3
+ },
+ "142303-billencs-nyitokar-j": {
+  "name": "Billencs nyitókar jobbos",
+  "order": 4
+ },
+ "770372-bil-150ce-vezerlo-220bar": {
+  "name": "Billencs vezérlő 150CE, 220 bar",
+  "order": 5
+ },
+ "771094-n-force-bil-vezerlo": {
+  "name": "Billencs vezérlő N-Force",
+  "order": 6
+ },
+ "771101-n-force-bil-vezerlo-nem-kapcsolos": {
+  "name": "Billencs vezérlő N-Force, nem kapcsolós",
+  "order": 7
+ },
+ "148110-biztosito-tuske": {
+  "name": "Biztosító tüske",
+  "order": 8
+ },
+ "140004-t4-bolcso": {
+  "name": "Bölcső T4",
+  "order": 9
+ },
+ "140005-t5-bolcso": {
+  "name": "Bölcső T5",
+  "order": 10
+ },
+ "140006-t6-bolcso": {
+  "name": "Bölcső T6",
+  "order": 11
+ },
+ "140008-t8-bolcso-d240": {
+  "name": "Bölcső T8 D240",
+  "order": 12
+ },
+ "143100-43-mm-gombcsuklo-keszlet-kicsi": {
+  "name": "Gömbcsukló készlet 43 mm, kicsi",
+  "order": 13
+ },
+ "145010-50-mm-es-gombcsuklo-keszlet-3-5t": {
+  "name": "Gömbcsukló készlet 50 mm, 3,5 t",
+  "order": 14
+ },
+ "140997-60-mm-es-gombcsuklo-keszlet": {
+  "name": "Gömbcsukló készlet 60 mm",
+  "order": 15
+ },
+ "140920-80-mm-es-gombcsuklo-keszlet": {
+  "name": "Gömbcsukló készlet 80 mm",
+  "order": 16
+ },
+ "146006-kabeles-tavkapcsolo": {
+  "name": "Kábeles távkapcsoló",
+  "order": 17
+ },
+ "146001-kapcsolotabla": {
+  "name": "Kapcsolótábla",
+  "order": 18
+ },
+ "142103-v-3-kardan": {
+  "name": "Kardán 3",
+  "order": 19
+ },
+ "3052-munkahenger-11t-05x1230x152": {
+  "name": "Munkahenger 11 t, 05x1230x152",
+  "order": 20
+ },
+ "515006-22t-munkahenger": {
+  "name": "Munkahenger 22 t",
+  "order": 21
+ },
+ "518009-25t-munkahenger": {
+  "name": "Munkahenger 25 t",
+  "order": 22
+ },
+ "5023-munkahenger-05x1240x112-5t": {
+  "name": "Munkahenger 5 t, 05x1240x112",
+  "order": 23
+ },
+ "6004-munkahenger-6t-06x1245x124": {
+  "name": "Munkahenger 6 t, 06x1245x124",
+  "order": 24
+ },
+ "3092-munkahenger-8t-05x1040x124": {
+  "name": "Munkahenger 8 t, 05x1040x124",
+  "order": 25
+ },
+ "3093-munkahenger-8t-05x1190x124": {
+  "name": "Munkahenger 8 t, 05x1190x124",
+  "order": 26
+ },
+ "6008-munkahenger-9t-06x1470x152": {
+  "name": "Munkahenger 9 t, 06x1470x152",
+  "order": 27
+ },
+ "770065-n-force-takaro-doboz": {
+  "name": "N-Force takaró doboz",
+  "order": 28
+ },
+ "779401-olaj-szuro-41l-acel": {
+  "name": "Olajszűrő 41 l, acél",
+  "order": 29
+ },
+ "770410-olaj-tartaly-40l": {
+  "name": "Olajtartály 40 l",
+  "order": 30
+ },
+ "140235-d35-zart-omega-lefogato": {
+  "name": "Omega lefogató zárt D35",
+  "order": 31
+ },
+ "140240-d40-zart-omega-lefogato": {
+  "name": "Omega lefogató zárt D40",
+  "order": 32
+ },
+ "140451-d45-5-zart-omega-lefogato": {
+  "name": "Omega lefogató zárt D45,5",
+  "order": 33
+ },
+ "140501-d50-zart-omega-lefogato": {
+  "name": "Omega lefogató zárt D50",
+  "order": 34
+ },
+ "140552-d55-zart-omega-lefogato": {
+  "name": "Omega lefogató zárt D55",
+  "order": 35
+ },
+ "145170-szelep1-2": {
+  "name": "Szelep 1/2\"",
+  "order": 36
+ },
+ "145260-szelep-22-3-4": {
+  "name": "Szelep 22, 3/4\"",
+  "order": 37
+ },
+ "146012-szivattyu-12v": {
+  "name": "Szivattyú 12 V",
+  "order": 38
+ },
+ "140319-szivattyu-24v-3000w-20l-1p3-1cc": {
+  "name": "Szivattyú 24 V, 3000 W, 20 l, 1P3.1CC",
+  "order": 39
+ },
+ "141219-utvalto-3-4": {
+  "name": "Útváltó 3/4\"",
+  "order": 40
+ },
+ "146002-vegallaskapcsolo": {
+  "name": "Végálláskapcsoló",
+  "order": 41
+ },
+ "146039-vegallaskapcsolo-elektromos-konzollal": {
+  "name": "Végálláskapcsoló elektromos konzollal",
+  "order": 42
+ },
+ "3521696-billencs-elso-rakonca-400-mm-b": {
+  "name": "Billencs első rakonca 400 mm balos",
+  "order": 1
+ },
+ "3526700-billencs-elso-rakonca-400-mm-b": {
+  "name": "Billencs első rakonca 400 mm balos",
+  "order": 2
+ },
+ "3521695-billencs-elso-rakonca-400-mm-j": {
+  "name": "Billencs első rakonca 400 mm jobbos",
+  "order": 3
+ },
+ "35014251-2-400-as-billencs-elso-rakonca-r-l": {
+  "name": "Billencs első rakonca 400 mm, balos-jobbos",
+  "order": 4
+ },
+ "352190-billencs-elso-rakonca-400-mm-j-b": {
+  "name": "Billencs első rakonca 400 mm, balos-jobbos",
+  "order": 5
+ },
+ "351704-bill-rakonca-500-mm-elso-j-b": {
+  "name": "Billencs első rakonca 500 mm, balos-jobbos",
+  "order": 6
+ },
+ "351372-bill-elso-rakonca-805x40-r-l": {
+  "name": "Billencs első rakonca 805x40 mm, balos-jobbos",
+  "order": 7
+ },
+ "35880-max-800-elso-rakonca-j-b": {
+  "name": "Billencs első rakonca MAX 800, balos-jobbos",
+  "order": 8
+ },
+ "3510204-sp-41-billencs-elso-rakonca-400-85-mm-b": {
+  "name": "Billencs első rakonca SP.41 400/85 mm balos",
+  "order": 9
+ },
+ "3510204-sp-41-billencs-elso-rakonca-400-85-mm-j": {
+  "name": "Billencs első rakonca SP.41 400/85 mm jobbos",
+  "order": 10
+ },
+ "352578-sp36-600-mm-bill-elso-rakonca-j-b": {
+  "name": "Billencs első rakonca SP36 600 mm, balos-jobbos",
+  "order": 11
+ },
+ "3521699-billencs-hatso-rakonca-400-mm-b-zseb": {
+  "name": "Billencs hátsó rakonca 400 mm, zsebbel, balos",
+  "order": 12
+ },
+ "3521904-billencs-hatso-rakonca-400-mm-b-zseb": {
+  "name": "Billencs hátsó rakonca 400 mm, zsebbel, balos",
+  "order": 13
+ },
+ "3521698-billencs-hatso-rakonca-400-mm-j-zseb": {
+  "name": "Billencs hátsó rakonca 400 mm, zsebbel, jobbos",
+  "order": 14
+ },
+ "3521903-billencs-hatso-rakonca-400-mm-j-zseb": {
+  "name": "Billencs hátsó rakonca 400 mm, zsebbel, jobbos",
+  "order": 15
+ },
+ "35014051-2-400-500-as-hatso-billencs-rakonca-r-l-acel-zsebbel": {
+  "name": "Billencs hátsó rakonca 400/500 mm, acél zsebbel, balos-jobbos",
+  "order": 16
+ },
+ "351707-bill-rakonca-500-mm-hatso-j-b": {
+  "name": "Billencs hátsó rakonca 500 mm, balos-jobbos",
+  "order": 17
+ },
+ "351375-bill-hatso-rakonca-805x40-zseb-r-l": {
+  "name": "Billencs hátsó rakonca 805x40 mm, zsebbel, balos-jobbos",
+  "order": 18
+ },
+ "3510207-sp-41-billencs-hatso-rakonca-400-120-mm-b": {
+  "name": "Billencs hátsó rakonca SP.41 400/120 mm balos",
+  "order": 19
+ },
+ "3510207-sp-41-billencs-hatso-rakonca-400-120-mm-j": {
+  "name": "Billencs hátsó rakonca SP.41 400/120 mm jobbos",
+  "order": 20
+ },
+ "352571-sp33-600-mm-bill-hatso-rakonca-j-b": {
+  "name": "Billencs hátsó rakonca SP33 600 mm, balos-jobbos",
+  "order": 21
+ },
+ "351706-bill-rakonca-500-mm-kozepso": {
+  "name": "Billencs középső rakonca 500 mm",
+  "order": 22
+ },
+ "351374-bill-kozepso-rakonca-805x40-zseb": {
+  "name": "Billencs középső rakonca 805x40 mm, zsebbel",
+  "order": 23
+ },
+ "3510206-sp-41-billencs-kozepso-rakonca-400-120-mm": {
+  "name": "Billencs középső rakonca SP.41 400/120 mm",
+  "order": 24
+ },
+ "352572-sp36-600-mm-bill-kozepso-rakonca": {
+  "name": "Billencs középső rakonca SP36 600 mm",
+  "order": 25
+ },
+ "3520902-billencs-koztes-rakonca-400-mm-zseb": {
+  "name": "Billencs köztes rakonca 400 mm, zsebbel",
+  "order": 26
+ },
+ "35800-max-800-koztes-rakonca": {
+  "name": "Billencs köztes rakonca MAX 800",
+  "order": 27
+ },
+ "351775-bill-rakonca-csap": {
+  "name": "Billencs rakonca csap",
+  "order": 28
+ },
+ "3510460-bill-rakonca-csap-sp-41-horg": {
+  "name": "Billencs rakonca csap SP.41, horganyzott",
+  "order": 29
+ },
+ "3514430-1-billencs-rakonca-szego-egyenes-r-l": {
+  "name": "Billencs rakonca szegő egyenes, balos-jobbos",
+  "order": 30
+ },
+ "3514400-1-billencs-rakonca-szego-haromszoges": {
+  "name": "Billencs rakonca szegő háromszöges",
+  "order": 31
+ },
+ "351201-potkerektarto-120-mm-tengelykozep": {
+  "name": "Pótkeréktartó 120 mm tengelyközép",
+  "order": 33
+ },
+ "354424-top-kuplung": {
+  "name": "Top-Kuplung",
+  "order": 34
  }
 }
