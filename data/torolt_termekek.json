@@ -1405,5 +1405,11 @@
   "code": "",
   "date": "2026-10-28",
   "reason": "Quadris kérése: nem kell"
+ },
+ "227543-30-padlo-profil-200-mm-elox": {
+  "name": "Padló profil 200 mm ELOX",
+  "code": "227543/30",
+  "date": "2026-11-07",
+  "reason": "a Quadris kérésére törölve"
  }
 }

@@ -17,7 +17,10 @@ const group = getGroup(product.group);
 const category = getCategory(product.group, product.category);
 // termékcsaládnál a hossz a választóból jön, a műszaki adatok között nem szerepel
 // a méretre vágott (lengths) családoknál a hossz nem adat, hanem választás; a lemezeknél a hossz a vastagság és szélesség után áll
-const specs0 = Object.entries(product.specs ?? {}).filter(([k]) => !(familyOf(product.slug)?.lengths && /^(hossz|szálhossz|gyári hossz)/i.test(k)));
+// a padló- és rámpaprofiloknál a gyári szálhossz nem jelenik meg (a Quadris kérése)
+const NO_STOCK_LENGTH_GROUPS = new Set(['aluminium-padlo-profilok']);
+const hideStock = NO_STOCK_LENGTH_GROUPS.has(product.group);
+const specs0 = Object.entries(product.specs ?? {}).filter(([k]) => !((familyOf(product.slug)?.lengths || hideStock) && /^(hossz|szálhossz|gyári hossz|gyári szálhossz)/i.test(k)));
 const hosszIdx = specs0.findIndex(([k]) => /^hossz/i.test(k));
 const szelIdx = specs0.findIndex(([k]) => /^szélesség/i.test(k));
 const specs = hosszIdx > -1 && szelIdx > -1 && hosszIdx !== szelIdx + 1
@@ -47,7 +50,7 @@ const wholeBar = profile && isWholeBar(product);
 // sok oszlopos típustáblázat / rendelési adatlap: kisebb fő kép, szélesebb rendelési rész (a „Kiválaszt” is látszik)
 const wideOrder = (family?.table?.length ?? 0) >= 4 || !!orderForm;
 // gyári szálhossz (ha ismert) – tájékoztató a méretsorok mellé
-const stockLength = profile
+const stockLength = profile && !hideStock
   ? (specs.find(([k]) => /szálhossz|gyártási hossz|^hossz/i.test(k))?.[1] ?? product.name.match(/(\d{1,2} ?\d{3})\s*mm\b(?!.*mm)/)?.[1])
   : null;
 // gyári szálhossz mm-ben a teljes szálas számításhoz (adatból, különben a csoport alapértelmezése)
