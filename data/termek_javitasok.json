@@ -2146,7 +2146,10 @@
   "name": "100x10 mm Alu lapos profil"
  },
  "251160-40x20-mm-alu-lapos-profil": {
-  "name": "40x20 mm Alu lapos profil"
+  "name": "40x20 mm Alu lapos profil",
+  "alsoIn": [
+   "ponyvas-oldalfal-profilok-es-szegok/aluminium-billencs-oldalfalak-40"
+  ]
  },
  "251210-120x10-mm-alu-lapos-profil": {
   "name": "120x10 mm Alu lapos profil"
