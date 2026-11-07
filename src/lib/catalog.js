@@ -363,7 +363,8 @@ const SOFT_NO = /(^|[\s"(])(tartó|konzol|kengyel|lapka|sarokelem|összekötő|e
 // – az alumínium sarokoszlopok is, kivéve a méretre vágva adott profilokat (a slug eleje = a Quadris-cikkszám)
 const CORNER_POST_CUT = ['6612225-', '6612226-', '66k0800-', '6639604-', '6639692-'];
 const PIECE_ONLY = (p) => (['edscha', 'versus'].includes(p.category) && /kereszt?tartó/i.test(p.name))
-  || (p.category === 'aluminium-sarok-oszlopok' && !CORNER_POST_CUT.some((c) => p.slug.startsWith(c)));
+  || (p.category === 'aluminium-sarok-oszlopok' && !CORNER_POST_CUT.some((c) => p.slug.startsWith(c)))
+  || p.category === 'acel-keret';  // acél keretek: gyári hosszban, darabra (a Quadris kérése: nincs méretre vágás)
 export function isProfile(p) {
   if (p.unit) return false;  // kartonra rendelhető (gumi- és kéderprofilok): nem méretre vágott
   if (NO_PROFILE_GROUPS.has(p.group) || HARD_NO.test(p.name) || PIECE_ONLY(p)) return false;
