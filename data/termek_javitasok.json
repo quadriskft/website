@@ -773,11 +773,19 @@
  },
  "245240-billencs-also-200x40-mm": {
   "name": "Billencs alsó profil 200x40 mm natúr",
-  "order": 1
+  "order": 1,
+  "move": {
+   "group": "ponyvas-oldalfal-profilok-es-szegok",
+   "category": "aluminium-billencs-oldalfalak-40"
+  }
  },
  "243240-billencs-kozepso-200x40-mm": {
   "name": "Billencs középső profil 200x40 mm natúr",
-  "order": 6
+  "order": 3,
+  "move": {
+   "group": "ponyvas-oldalfal-profilok-es-szegok",
+   "category": "aluminium-billencs-oldalfalak-40"
+  }
  },
  "222020-h-szego-kiugros-25-mm-elox": {
   "specs": {
@@ -852,7 +860,7 @@
    "Szálhossz": null
   },
   "name": "Billencs U szegő 30 mm (40/60), eloxált",
-  "order": 10
+  "order": 7
  },
  "729629-huspalya-c-sin-elox-6000-mm": {
   "specs": {
@@ -2679,31 +2687,35 @@
  },
  "247180-billencs-also-profil-200-45-mm-30-mm-elox": {
   "name": "Billencs alsó profil 200/30 mm, eloxált",
-  "order": 2
+  "order": 1
  },
  "247174-bill-also-hosszu-szakalas-profil-150-30-elox": {
   "name": "Billencs alsó profil 150/30 mm, hosszú peremes, eloxált",
-  "order": 3
+  "order": 2
  },
  "247243-billencs-felso-200x40-mm": {
   "name": "Billencs felső profil 200x40 mm natúr",
-  "order": 4
+  "order": 2,
+  "move": {
+   "group": "ponyvas-oldalfal-profilok-es-szegok",
+   "category": "aluminium-billencs-oldalfalak-40"
+  }
  },
  "247152-bill-felso-profil-200-30-mm-elox": {
   "name": "Billencs felső profil 200/30 mm, eloxált",
-  "order": 5
+  "order": 3
  },
  "247158-billencs-kozepso-200x30-mm-profil": {
   "name": "Billencs középső profil 200x30 mm eloxált",
-  "order": 7
+  "order": 4
  },
  "247162-bill-koztes-profil-100-30-mm-elox": {
   "name": "Billencs köztes profil 100/30 mm, eloxált",
-  "order": 8
+  "order": 5
  },
  "245005-bill-400-30-mm-mono-profil-elox": {
   "name": "Billencs mono profil 400/30 mm, eloxált",
-  "order": 9
+  "order": 6
  },
  "220233-150x25-mm-ponyvatarto-zartszelveny": {
   "name": "Ponyvatartó zártszelvény 150x25 mm",
