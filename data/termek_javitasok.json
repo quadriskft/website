@@ -2226,5 +2226,53 @@
  },
  "216003-adaico-rakonca-zseb-festett": {
   "name": "ADA Rakonca zseb festett"
+ },
+ "356287-alu-kozepso-rakonca-400-mm-60-billeno-toldassal": {
+  "name": "Alu középső rakonca 400 mm/60, billenő toldással",
+  "order": 1
+ },
+ "356297-alu-kozepso-rakonca-400-mm-80": {
+  "name": "Alu középső rakonca 400 mm/80",
+  "order": 2
+ },
+ "356297b-alu-kozepso-rakonca-400-mm-80-np": {
+  "name": "Alu középső rakonca 400 mm/80 NP",
+  "order": 3
+ },
+ "3562974-alu-hatso-400-mm-rakonca-l-r": {
+  "name": "Alu hátsó rakonca 400 mm L-R",
+  "order": 4
+ },
+ "351142-alu-rakonca-magasito-elox": {
+  "name": "Alu rakonca magasító, eloxált",
+  "order": 5
+ },
+ "351190-alu-rakonca-magasito-elox-1900-mm": {
+  "name": "Alu rakonca magasító 1900 mm, eloxált",
+  "order": 6
+ },
+ "227686-50x35x3-5-mm-r4-oszlop-profil-elox": {
+  "name": "Alu rakonca oszlop profil 50x35x3,5 mm R4, eloxált",
+  "order": 7
+ },
+ "355400-zbs-alu-toldo-csappal-67x80-30-mm": {
+  "name": "Alu rakonca toldó csappal 67x80/30 mm",
+  "order": 8
+ },
+ "351336-mx-rakoncaszegoprofil-elox": {
+  "name": "Alu rakonca szegőprofil MX, eloxált",
+  "order": 9
+ },
+ "357270-kg-oldalso-alu-szego-profil-elox": {
+  "name": "Alu szegő profil KG oldalsó, eloxált",
+  "order": 10
+ },
+ "357271-kg-hatso-alu-szegoprofil-elox": {
+  "name": "Alu szegő profil KG hátsó, eloxált",
+  "order": 11
+ },
+ "357272-kg-szego-tomites": {
+  "name": "Szegő tömítés KG",
+  "order": 12
  }
 }
