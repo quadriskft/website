@@ -2607,11 +2607,11 @@
  },
  "226671-400-mm-gumis-oldalfal-elox": {
   "name": "Mono profil 400 mm, eloxált, gumis",
-  "order": 2
+  "order": 3
  },
  "223367-400-mm-peremes-monoprofil-elox": {
   "name": "Mono profil 400 mm, peremes, eloxált Típus 2",
-  "order": 3
+  "order": 2
  },
  "223350-350-mm-mono-profil-szakalas-elox": {
   "name": "Mono profil 350 mm, peremes, eloxált",
