@@ -2236,11 +2236,11 @@
   "order": 2
  },
  "356297b-alu-kozepso-rakonca-400-mm-80-np": {
-  "name": "Alu középső rakonca 400 mm/80 NP",
+  "name": "Alu középső rakonca 400 mm/80 váll nélküli",
   "order": 3
  },
  "3562974-alu-hatso-400-mm-rakonca-l-r": {
-  "name": "Alu hátsó rakonca 400 mm L-R",
+  "name": "Alu hátsó rakonca 400 mm balos",
   "order": 4
  },
  "351142-alu-rakonca-magasito-elox": {
@@ -2274,5 +2274,9 @@
  "357272-kg-szego-tomites": {
   "name": "Szegő tömítés KG",
   "order": 12
+ },
+ "3562974-alu-hatso-400-mm-rakonca-jobbos": {
+  "name": "Alu hátsó rakonca 400 mm jobbos",
+  "order": 4
  }
 }

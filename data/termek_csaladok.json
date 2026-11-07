@@ -3781,5 +3781,16 @@
    "s-3x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14": "1250 × 2500 mm (EN AW-5005A H12/H14)",
    "s-3x1500x3000-mm-elox-alu-lemez-en-aw-5005a-h14": "1500 × 3000 mm (EN AW-5005 H12/H14)"
   }
+ },
+ "3562974-alu-hatso-400-mm-rakonca": {
+  "name": "Alu hátsó rakonca 400 mm",
+  "label": "Kivitel",
+  "title": "Rendelhető kivitelek",
+  "note": "Darabra rendelhető – válassza ki, hogy balos vagy jobbos kivitelt kér.",
+  "clone": true,
+  "members": {
+   "3562974-alu-hatso-400-mm-rakonca-l-r": "balos",
+   "3562974-alu-hatso-400-mm-rakonca-jobbos": "jobbos"
+  }
  }
 }
