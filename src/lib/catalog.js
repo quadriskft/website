@@ -240,7 +240,7 @@ const productsBySlug = new Map(products.map((p) => [p.slug, p]));
 export const GROUP_META = {
   'aluminium-alvaz-profilok': { icon: 'Frame', text: 'Méretre vágást vállalunk.' },
   'acel-profilok': { icon: 'Construction', text: 'Acél hossztartók, keretek, lézerhegesztett és Heavy Duty acél oldalfalak nagy terhelésű felépítményekhez.' },
-  'aluminium-padlo-profilok': { icon: 'Rows3', text: 'Padló-, rámpa- és autószállító profilok alumíniumból.' },
+  'aluminium-padlo-profilok': { icon: 'Rows3', text: 'Méretre vágást vállalunk.' },
   'ponyvas-oldalfal-profilok-es-szegok': { icon: 'Columns3', text: 'Oldalfal rendszerek, monó profilok, szegők és billencs oldalfalak.' },
   'platos-alkatreszek-es-kiegeszitok': { icon: 'Truck', text: 'Alváz konzolok, TIR zsanérok, Z-zárak, fellépők és pótkerék tartók.' },
   'acel-es-alu-rakoncak-es-szegok': { icon: 'PanelsTopLeft', text: 'Köztes, első és hátsó rakoncák acélból és alumíniumból.' },
