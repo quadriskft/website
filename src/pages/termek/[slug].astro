@@ -565,14 +565,14 @@ const jsonLd = [
   .lb-stage img { display: block; max-width: none; background: #fff; border-radius: 8px; cursor: zoom-in; }
   .gallery { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
   .thumb-btn { padding: 0; border: 2px solid transparent; border-radius: var(--radius-sm); background: none; cursor: pointer; transition: border-color 0.2s; }
-  .thumb-btn:hover { border-color: rgba(10, 108, 255, 0.4); }
+  .thumb-btn:hover { border-color: rgba(253, 97, 75, 0.4); }
   .thumb-btn.active { border-color: var(--accent); }
   /* világosszürke háttér + 1px keret: a fehér alapú, vékony vonalas műszaki rajzok is látszanak bélyegként */
   .gallery img { display: block; width: 88px; height: 72px; object-fit: contain; background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 4px; box-sizing: border-box; }
   .info h1 { font-size: clamp(1.7rem, 3.2vw, 2.5rem); margin: 12px 0 12px; }
   .code-line { display: flex; align-items: center; gap: 8px; color: var(--text-2); }
   .copy { border: 1px solid var(--line-strong); background: transparent; border-radius: var(--radius-btn); width: 30px; height: 30px; display: grid; place-items: center; cursor: pointer; color: var(--muted); }
-  .copy:hover { color: var(--accent); border-color: var(--accent); }
+  .copy:hover { color: var(--link); border-color: var(--accent); }
   .copy:global(.done) { color: var(--ok); border-color: var(--ok); }
   .order { padding: 22px; margin: 26px 0 20px; }
   .cut-title { font-size: 1.08rem; font-weight: 700; margin: 0 0 6px; }
@@ -582,8 +582,8 @@ const jsonLd = [
   .cut-order :global(.cut-row .input) { width: 100%; padding: 10px 12px; }
   .cut-order :global(.row-remove) { width: 36px; height: 36px; border-radius: var(--radius-btn); border: 1px solid var(--line); background: transparent; color: var(--muted); display: grid; place-items: center; cursor: pointer; }
   .cut-order :global(.row-remove:hover) { color: #d63a3a; border-color: #d63a3a; }
-  .add-row { margin-top: 10px; display: inline-flex; align-items: center; gap: 6px; border: 1px dashed var(--accent); color: var(--accent); background: var(--accent-soft); border-radius: var(--radius-btn); padding: 8px 14px; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; }
-  .add-row:hover { background: rgba(10, 108, 255, 0.14); }
+  .add-row { margin-top: 10px; display: inline-flex; align-items: center; gap: 6px; border: 1px dashed var(--accent); color: var(--link); background: var(--accent-soft); border-radius: var(--radius-btn); padding: 8px 14px; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; }
+  .add-row:hover { background: rgba(253, 97, 75, 0.14); }
   .cut-note-label { display: block; margin: 16px 0 6px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
   .cut-note { width: 100%; resize: vertical; min-height: 64px; }
   .cut-error { color: #d63a3a; font-size: 0.88rem; margin: 8px 0 0; }
@@ -596,7 +596,7 @@ const jsonLd = [
   .video video { width: 100%; max-height: 420px; border-radius: var(--radius-sm); background: #000; display: block; }
   .video figcaption { margin-top: 6px; }
   .qty-unit { font-weight: 600; color: var(--muted); align-self: center; }
-  .order-note { margin: 10px 0 0; font-size: 0.9rem; font-weight: 600; color: var(--accent-2); }
+  .order-note { margin: 10px 0 0; font-size: 0.9rem; font-weight: 600; color: var(--link-hover); }
   .variant-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
   .variant-select { font-size: 1rem; padding: 12px 14px; }
   .config-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px 16px; margin: 14px 0 6px; }

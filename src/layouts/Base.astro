@@ -368,14 +368,14 @@ const fontCss = fallbackFace +
   .crumbbar-inner { display: flex; align-items: center; gap: 14px; min-height: 48px; }
   .back-btn {
     flex: none; display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 14px 0 10px;
-    border: 1px solid var(--line-strong); border-radius: var(--radius-btn); background: #fff; color: var(--navy);
+    border: 1px solid var(--line-strong); border-radius: var(--radius-btn); background: #fff; color: var(--ink);
     font-size: 0.88rem; font-weight: 600; text-decoration: none;
   }
-  .back-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .back-btn:hover { border-color: var(--accent); color: var(--link); }
   .crumb-trail { display: flex; align-items: center; gap: 8px; min-width: 0; overflow: hidden; white-space: nowrap; font-size: 0.9rem; }
   .crumb-trail a { color: var(--muted); text-decoration: none; overflow: hidden; text-overflow: ellipsis; }
-  .crumb-trail a:hover { color: var(--accent); }
-  .crumb-trail a.current { color: var(--navy); font-weight: 600; }
+  .crumb-trail a:hover { color: var(--link); }
+  .crumb-trail a.current { color: var(--ink); font-weight: 600; }
   .crumb-trail .sep { color: var(--line-strong); flex: none; }
   @media (max-width: 640px) {
     .back-btn span { display: none; }
@@ -388,7 +388,7 @@ const fontCss = fallbackFace +
   /* „Fel” nyíl */
   .to-top {
     position: fixed; right: 20px; bottom: 20px; z-index: 90; width: 48px; height: 48px; border-radius: 50%;
-    display: grid; place-items: center; background: var(--accent); color: #fff; box-shadow: 0 10px 24px -10px rgba(10, 108, 255, 0.7);
+    display: grid; place-items: center; background: var(--accent); color: #fff; box-shadow: 0 10px 24px -10px rgba(253, 97, 75, 0.7);
     opacity: 0; pointer-events: none; transform: translateY(12px); transition: opacity 0.2s ease, transform 0.2s ease;
   }
   .to-top.show { opacity: 1; pointer-events: auto; transform: none; }
@@ -403,7 +403,7 @@ const fontCss = fallbackFace +
     --hd-line: var(--line);
     --hd-fg: var(--navy);
     --hd-fg-2: var(--text-2);
-    --hd-hover: var(--accent);
+    --hd-hover: var(--link);
     --hd-field: var(--surface-2);
     --hd-field-line: var(--line-strong);
     --hd-ph: var(--muted);
@@ -457,11 +457,11 @@ const fontCss = fallbackFace +
   .has-mega:hover .mega { opacity: 1; visibility: visible; transform: none; transition-delay: 120ms; }
   .has-mega:focus-within .mega { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
   .mega-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-bottom: 12px; margin-bottom: 10px; border-bottom: 1px solid var(--line); }
-  .mega-all { font-size: 0.86rem; font-weight: 600; color: var(--accent); text-decoration: none !important; white-space: nowrap; }
-  .mega-all:hover { color: var(--accent-2); }
+  .mega-all { font-size: 0.86rem; font-weight: 600; color: var(--link); text-decoration: none !important; white-space: nowrap; }
+  .mega-all:hover { color: var(--link-hover); }
   .mega-grid { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 28px; row-gap: 2px; }
   .mega-link { display: block; padding: 8px 10px; border-radius: 6px; color: var(--text-2); font-size: 0.9rem; font-weight: 500; line-height: 1.35; text-decoration: none !important; transition: background 0.15s ease, color 0.15s ease; }
-  .mega-link:hover, .mega-link:focus-visible { background: var(--accent-soft); color: var(--navy); }
+  .mega-link:hover, .mega-link:focus-visible { background: var(--accent-soft); color: var(--ink); }
 
   /* Jobb oldal: kereső üvegmező, Ajánlatkérő gomb, mobil menü gomb */
   .header-actions { flex: none; display: flex; align-items: center; justify-content: flex-end; gap: 12px; }
@@ -474,9 +474,9 @@ const fontCss = fallbackFace +
   }
   .header-search input::placeholder { color: var(--hd-ph); }
   .header-search input::-webkit-search-decoration { -webkit-appearance: none; }
-  .header-search input:focus { outline: none; background: #fff; color: var(--text); border-color: var(--accent); box-shadow: 0 0 0 3px rgba(10, 108, 255, 0.15); }
+  .header-search input:focus { outline: none; background: #fff; color: var(--text); border-color: var(--accent); box-shadow: 0 0 0 3px rgba(253, 97, 75, 0.15); }
   .header-search input:focus::placeholder { color: var(--muted); }
-  .header-search:focus-within :global(.search-icon) { color: var(--accent); }
+  .header-search:focus-within :global(.search-icon) { color: var(--link); }
   .suggest {
     position: absolute; top: calc(100% + 8px); left: 0; width: max(100%, 420px); max-width: calc(100vw - 32px);
     background: #fff; color: var(--text); border: 1px solid var(--line); border-radius: 12px;
@@ -486,13 +486,13 @@ const fontCss = fallbackFace +
   .suggest :global(a:hover), .suggest :global(a.active) { background: var(--accent-soft); }
   .suggest :global(.s-name) { font-size: 0.92rem; font-weight: 500; }
   .suggest :global(.s-meta) { font-size: 0.78rem; color: var(--muted); }
-  .suggest :global(.s-all) { color: var(--accent); font-size: 0.88rem; font-weight: 600; border-top: 1px solid var(--line); border-radius: 0 0 6px 6px; margin-top: 4px; }
+  .suggest :global(.s-all) { color: var(--link); font-size: 0.88rem; font-weight: 600; border-top: 1px solid var(--line); border-radius: 0 0 6px 6px; margin-top: 4px; }
   .suggest :global(.s-empty) { padding: 12px; font-size: 0.9rem; color: var(--muted); }
 
   .quote-btn { position: relative; height: 40px; padding: 0 16px; gap: 8px; }
   .quote-btn :global(svg) { width: 18px; height: 18px; }
   .quote-count {
-    min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px; background: #fff; color: var(--accent);
+    min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px; background: #fff; color: var(--link);
     font-size: 0.74rem; font-weight: 700; letter-spacing: 0; display: inline-grid; place-items: center;
   }
   .quote-count[hidden] { display: none; }
@@ -524,9 +524,9 @@ const fontCss = fallbackFace +
       transform: translateY(-8px); opacity: 0; visibility: hidden; transition: transform 0.2s ease, opacity 0.2s ease, visibility 0s linear 0.2s;
     }
     .menu-open .main-nav { transform: none; opacity: 1; visibility: visible; transition-delay: 0s; }
-    .nav-link { height: auto; padding: 15px 0; font-size: 1rem; color: var(--navy); border-bottom: 1px solid var(--line); }
+    .nav-link { height: auto; padding: 15px 0; font-size: 1rem; color: var(--ink); border-bottom: 1px solid var(--line); }
     .nav-link::after { display: none; }
-    .nav-link:hover, .nav-link.active, .has-mega:focus-within > .nav-link { color: var(--accent); }
+    .nav-link:hover, .nav-link.active, .has-mega:focus-within > .nav-link { color: var(--link); }
     .has-mega > .nav-link { border-bottom: 0; }
     .has-mega > .nav-link :global(svg) { display: none; }
     /* a mega statikusan a menüben, 1 oszlopban */

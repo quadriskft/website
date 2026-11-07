@@ -310,17 +310,17 @@ import { SITE } from '../lib/site.js';
   .custom-card h2 { margin-bottom: 2px; }
   .custom-card > p { font-size: 0.88rem; margin: 0 0 8px; }
   .link-btn { display: inline-flex; align-items: center; gap: 6px; border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 0.88rem; padding: 4px; }
-  .link-btn:hover { color: var(--accent); }
+  .link-btn:hover { color: var(--link); }
   .items { list-style: none; padding: 0; margin: 16px 0 0; }
   .items :global(.item) { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 16px; align-items: start; padding: 16px 0; border-top: 1px solid var(--line); }
   .items :global(.thumb) { width: 64px; height: 56px; border-radius: var(--radius-sm); display: grid; place-items: center; color: #7ea3d6; background: linear-gradient(160deg, #f6f9fe, #eaf1fb); border: 1px solid var(--line); }
   .items :global(.thumb.has-img) { background: var(--tile); }
   .items :global(.thumb img) { max-width: 90%; max-height: 90%; object-fit: contain; }
   .items :global(.item-main) { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
-  .items :global(.item-name) { font-weight: 600; color: var(--navy); }
-  .items :global(a.item-name:hover) { color: var(--accent); }
+  .items :global(.item-name) { font-weight: 600; color: var(--ink); }
+  .items :global(a.item-name:hover) { color: var(--link); }
   .items :global(.item-code) { font-size: 0.84rem; }
-  .items :global(.tag) { align-self: flex-start; font-size: 0.72rem; padding: 2px 8px; border-radius: 6px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .items :global(.tag) { align-self: flex-start; font-size: 0.72rem; padding: 2px 8px; border-radius: 6px; background: var(--accent-soft); color: var(--link); font-weight: 600; }
   .items :global(.config) { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 2px 14px; margin: 8px 0 0; font-size: 0.82rem; }
   .items :global(.config div) { display: flex; gap: 6px; }
   .items :global(.config dt) { color: var(--muted); }
@@ -333,7 +333,7 @@ import { SITE } from '../lib/site.js';
   .items :global(.cut-row .input) { padding: 7px 10px; font-size: 0.9rem; width: 100%; }
   .items :global(.cut-del) { width: 34px; height: 34px; border: 1px solid var(--line); border-radius: var(--radius-btn); background: transparent; color: var(--muted); display: grid; place-items: center; cursor: pointer; }
   .items :global(.cut-del:hover) { color: #d63a3a; border-color: #d63a3a; }
-  .items :global(.cuts-add) { justify-self: start; display: inline-flex; align-items: center; gap: 6px; border: 1px dashed var(--accent); color: var(--accent); background: var(--accent-soft); border-radius: var(--radius-btn); padding: 5px 10px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; }
+  .items :global(.cuts-add) { justify-self: start; display: inline-flex; align-items: center; gap: 6px; border: 1px dashed var(--accent); color: var(--link); background: var(--accent-soft); border-radius: var(--radius-btn); padding: 5px 10px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; }
   .items :global(.qty-total) { display: flex; flex-direction: column; align-items: flex-end; font-size: 0.95rem; line-height: 1.3; white-space: nowrap; }
   .items :global(.qty-unit) { display: block; text-align: right; color: var(--muted); font-size: 0.8rem; margin-top: 4px; white-space: nowrap; }
   .items :global(.qty-total small) { color: var(--muted); font-size: 0.8rem; }

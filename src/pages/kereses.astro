@@ -110,28 +110,28 @@ import Icon from '../components/Icon.astro';
 
 <style>
   .big-search { display: flex; align-items: center; gap: 10px; margin-top: 18px; padding: 6px 6px 6px 18px; max-width: 640px; border: 1px solid var(--line-strong); border-radius: var(--radius-sm); background: #fff; box-shadow: var(--shadow-sm); }
-  .big-search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(10, 108, 255, 0.1); }
+  .big-search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(253, 97, 75, 0.1); }
   .big-search > :global(svg) { color: var(--muted); flex: none; }
   .big-search input { flex: 1; min-width: 0; border: 0; background: transparent; height: 44px; outline: none; font-size: 1rem; }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
   .chips :global(.chip) { padding: 7px 14px; border-radius: var(--radius-btn); border: 1px solid var(--line-strong); background: transparent; color: var(--text-2); cursor: pointer; font-size: 0.86rem; }
-  .chips :global(.chip:hover) { border-color: var(--accent); color: var(--navy); }
-  .chips :global(.chip.active) { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  .chips :global(.chip:hover) { border-color: var(--accent); color: var(--ink); }
+  .chips :global(.chip.active) { background: var(--accent-soft); border-color: var(--accent); color: var(--link); }
   .more { margin: 28px auto 0; display: flex; }
   .empty { padding: 40px; text-align: center; max-width: 560px; margin: 20px auto; display: grid; justify-items: center; gap: 4px; }
   .empty h2 { font-size: 1.3rem; }
 
   #results :global(.s-card) { display: flex; flex-direction: column; padding: 12px; }
   #results :global(.s-link) { color: inherit; text-decoration: none; flex: 1; }
-  #results :global(.s-link:hover h3) { color: var(--accent); }
-  #results :global(h3) { font-size: 0.97rem; font-weight: 600; margin: 12px 4px 2px; line-height: 1.35; color: var(--navy); }
+  #results :global(.s-link:hover h3) { color: var(--link); }
+  #results :global(h3) { font-size: 0.97rem; font-weight: 600; margin: 12px 4px 2px; line-height: 1.35; color: var(--ink); }
   #results :global(.s-group) { font-size: 0.8rem; margin: 0 4px 8px; }
   #results :global(.s-foot) { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 4px 2px; font-size: 0.8rem; flex-wrap: wrap; }
   #results :global(.add-btn) {
     display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: var(--radius-btn); border: 1px solid var(--line-strong);
-    background: #fff; color: var(--navy); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer;
+    background: #fff; color: var(--ink); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer;
   }
-  #results :global(.add-btn:hover) { border-color: var(--accent); color: var(--accent); }
+  #results :global(.add-btn:hover) { border-color: var(--accent); color: var(--link); }
   #results :global(.add-btn .i-added) { display: none; }
   #results :global(.add-btn.in-quote) { border-color: rgba(18, 163, 107, 0.5); background: rgba(18, 163, 107, 0.08); color: var(--ok); }
   #results :global(.add-btn.in-quote .i-add) { display: none; }
