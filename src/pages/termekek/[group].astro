@@ -13,6 +13,12 @@ const { group } = Astro.props;
 const meta = GROUP_META[group.slug] ?? {};
 const sections = group.categories.map((c) => ({ ...c, items: productsIn(group.slug, c.slug) }));
 const single = sections.length === 1;
+// alkategória címe melletti rövid megjegyzés (a Quadris kérése)
+const CATEGORY_NOTES = {
+  'aluminium-alvaz-profilok/hossztartok': 'Ötvözött alumíniumból.',
+  'aluminium-alvaz-profilok/kereszttartok': 'Ötvözött alumíniumból.',
+  'aluminium-alvaz-profilok/keret-profilok': 'Ötvözött alumíniumból.',
+};
 const jsonLd = [
   {
     '@type': 'BreadcrumbList',
@@ -56,11 +62,6 @@ const jsonLd = [
       </aside>
     )}
     <div class="content">
-      <div class="filter">
-        <Icon name="ListFilter" size={18} />
-        <input type="search" class="filter-input" placeholder={`Szűrés ebben a csoportban (${group.count} termék)…`} data-placeholder-short={`Szűrés (${group.count} termék)…`} aria-label="Szűrés a csoporton belül" />
-        <span class="filter-count muted" aria-live="polite"></span>
-      </div>
       {sections.map((c) => (
         <section class="cat-section" id={c.slug} data-cat data-cat-name={c.name}>
           {!single && (
@@ -68,6 +69,7 @@ const jsonLd = [
               {CATEGORY_LOGOS[c.slug] && <img class="cat-logo" src={CATEGORY_LOGOS[c.slug].src} alt={CATEGORY_LOGOS[c.slug].alt} />}
               {(!CATEGORY_LOGOS[c.slug] || CATEGORY_LOGOS[c.slug].text) && <span>{c.name}</span>}
               <span class="muted">{c.count}</span>
+              {CATEGORY_NOTES[`${group.slug}/${c.slug}`] && <span class="cat-note muted">{CATEGORY_NOTES[`${group.slug}/${c.slug}`]}</span>}
             </h2>
           )}
           <div class="grid grid-products">
@@ -75,7 +77,6 @@ const jsonLd = [
           </div>
         </section>
       ))}
-      <p class="no-hit" hidden>Nincs a szűrésnek megfelelő termék ebben a csoportban. <a href="/ajanlatkeres#egyedi">Kérje egyedi tételként →</a></p>
     </div>
   </div>
 </Base>
@@ -124,30 +125,6 @@ const jsonLd = [
     }
   });
 
-  const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-  const input = document.querySelector('.filter-input');
-  // mobilon rövidebb placeholder, hogy ne csonkolódjon
-  const longPh = input.placeholder;
-  const mq = window.matchMedia('(max-width: 480px)');
-  const setPh = () => { input.placeholder = mq.matches ? input.dataset.placeholderShort ?? longPh : longPh; };
-  mq.addEventListener('change', setPh);
-  setPh();
-  const cards = [...document.querySelectorAll('.product-card')].map((el) => ({ el, text: norm(el.dataset.name ?? '') }));
-  const sections = [...document.querySelectorAll('[data-cat]')];
-  const count = document.querySelector('.filter-count');
-  const noHit = document.querySelector('.no-hit');
-  input.addEventListener('input', () => {
-    const terms = norm(input.value).split(/\s+/).filter(Boolean);
-    let shown = 0;
-    for (const c of cards) {
-      const ok = terms.every((t) => c.text.includes(t));
-      c.el.hidden = !ok;
-      if (ok) shown++;
-    }
-    sections.forEach((s) => (s.hidden = !s.querySelector('.product-card:not([hidden])')));
-    count.textContent = terms.length ? `${shown} találat` : '';
-    noHit.hidden = shown > 0;
-  });
 </script>
 
 <style>
@@ -166,19 +143,14 @@ const jsonLd = [
   .sidebar a span { color: var(--muted); font-size: 0.85rem; }
   .sidebar a:hover { background: var(--accent-soft); color: var(--navy); }
   .content { flex: 1; min-width: 0; }
-  .filter { position: relative; display: flex; align-items: center; gap: 10px; margin-bottom: 28px; padding: 0 16px; border: 1px solid var(--line-strong); border-radius: var(--radius-sm); background: #fff; max-width: 560px; }
-  .filter:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(10, 108, 255, 0.1); }
-  .filter > :global(svg) { color: var(--muted); flex: none; }
-  .filter input { flex: 1; min-width: 0; height: 44px; border: 0; background: transparent; outline: none; }
-  .filter-count { font-size: 0.85rem; white-space: nowrap; }
   .cat-section { margin-bottom: 44px; }
   .cat-section h2 { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.01em; display: flex; align-items: baseline; gap: 10px; padding-bottom: 12px; margin-bottom: 18px; border-bottom: 1px solid var(--line); }
   .cat-section h2 .muted { font-size: 0.95rem; font-weight: 500; }
   .cat-section h2.cat-title { align-items: center; }
+  .cat-note { font-size: 1.05rem; font-weight: 400; letter-spacing: 0; margin-left: 6px; }
   .group-logo { height: 72px; width: auto; flex: none; margin-left: auto; }
   .cat-logo { height: 44px; width: auto; display: block; background: #fff; border-radius: 4px; }
   .cat-logo-sm { height: 16px; width: auto; vertical-align: -3px; margin-right: 6px; background: #fff; border-radius: 2px; }
-  .no-hit { padding: 24px; border: 1px dashed var(--line-strong); border-radius: var(--radius); }
   @media (max-width: 960px) {
     .layout { flex-direction: column; gap: 16px; }
     .sidebar { position: static; flex: none; width: 100%; max-height: none; }
