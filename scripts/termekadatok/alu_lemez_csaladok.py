@@ -22,7 +22,7 @@ CATEGORY = "sima-lemez"  # az eloxált lemezek is innen kerülnek át az „Elox
 # család-előtag -> (név, megjegyzés, eloxált-e)
 KINDS = {
     "alu-natur": ("Natúr alumínium lemez", "Natúr (felületkezelés nélküli) alumínium lemez", False),
-    "alu-elox": ("Eloxált alumínium lemez", "Eloxált alumínium lemez", True),
+    "alu-elox": ("Eloxált védőfóliás alumínium lemez", "Eloxált, védőfóliás alumínium lemez", True),
 }
 
 

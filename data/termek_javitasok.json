@@ -350,14 +350,14 @@
   "order": 6
  },
  "s-2x1000x2000-mm-elox-alu-lemez-en-aw-5002": {
-  "name": "S 2x1000x2000 mm ELOX Alu lemez EN AW-5005",
+  "name": "S 2x1000x2000 mm Eloxált védőfóliás Alu lemez EN AW-5005",
   "specs": {
    "Ötvözet": "EN AW-5005"
   },
   "order": 5
  },
  "s-3x1000x2000-mm-elox-alu-lemez-en-aw-5002": {
-  "name": "S 3x1000x2000 mm ELOX Alu lemez EN AW-5005",
+  "name": "S 3x1000x2000 mm Eloxált védőfóliás Alu lemez EN AW-5005",
   "specs": {
    "Ötvözet": "EN AW-5005"
   },
@@ -1919,5 +1919,32 @@
  "jf556045-550-600x450-mm-sarvedo-lap-stopsray": {
   "name": "JF556045 550/600x450 mm sárvédő lap StopSpray",
   "description": "StopSpray sárvédő lap: a felcsapódó permetet megfogó fekete PVC lap a sárvédő alá."
+ },
+ "s-2x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14": {
+  "name": "S 2x1250x2500 mm Eloxált védőfóliás Alu lemez EN AW-5005A H14"
+ },
+ "s-2x1500x3000-mm-elox-alu-lemez-en-aw-5005-h12-h14-h24": {
+  "name": "S 2x1500x3000 mm Eloxált védőfóliás Alu lemez EN AW-5005 H12/H14/H24"
+ },
+ "s-3x1250x2500-mm-elox-alu-lemez-en-aw-5005a-h14": {
+  "name": "S 3x1250x2500 mm Eloxált védőfóliás Alu lemez EN AW-5005A H14"
+ },
+ "s-3x1500x3000-mm-elox-alu-lemez-en-aw-5005a-h14": {
+  "name": "S 3x1500x3000 mm Eloxált védőfóliás Alu lemez EN AW-5005A H14"
+ },
+ "s-1-2x1250x2500mm-feher-festett-lemez-ral9016": {
+  "name": "S 1,2x1250x2500mm Fehér védőfóliás festett lemez RAL9016"
+ },
+ "s-1-2x1500x2500mm-feher-festett-lemez-ral9016": {
+  "name": "S 1,2x1500x2500mm Fehér védőfóliás festett lemez RAL9016"
+ },
+ "s-1-2x1500x3000mm-feher-festett-lemez-ral9016": {
+  "name": "S 1,2x1500x3000mm Fehér védőfóliás festett lemez RAL9016"
+ },
+ "s-1-5x1500x3000mm-feher-festett-lemez-ral9010": {
+  "name": "S 1,5x1500x3000mm Fehér védőfóliás festett lemez RAL9010"
+ },
+ "s-2x1250x2500mm-feher-festett-lemez-ral9016": {
+  "name": "S 2x1250x2500mm Fehér védőfóliás festett lemez RAL9016"
  }
 }

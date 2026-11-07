@@ -3750,10 +3750,10 @@
   }
  },
  "alu-elox-2": {
-  "name": "Eloxált alumínium lemez – 2 mm",
+  "name": "Eloxált védőfóliás alumínium lemez – 2 mm",
   "label": "Méret",
   "title": "Rendelhető méretek",
-  "note": "Eloxált alumínium lemez, 2 mm vastag – válassza ki a kívánt méretet és ötvözetet.",
+  "note": "Eloxált, védőfóliás alumínium lemez, 2 mm vastag – válassza ki a kívánt méretet és ötvözetet.",
   "navigate": true,
   "table": [
    "Szélesség",
@@ -3784,10 +3784,10 @@
   }
  },
  "alu-elox-3": {
-  "name": "Eloxált alumínium lemez – 3 mm",
+  "name": "Eloxált védőfóliás alumínium lemez – 3 mm",
   "label": "Méret",
   "title": "Rendelhető méretek",
-  "note": "Eloxált alumínium lemez, 3 mm vastag – válassza ki a kívánt méretet és ötvözetet.",
+  "note": "Eloxált, védőfóliás alumínium lemez, 3 mm vastag – válassza ki a kívánt méretet és ötvözetet.",
   "navigate": true,
   "table": [
    "Szélesség",
