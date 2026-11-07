@@ -251,7 +251,7 @@ export const GROUP_META = {
   'dobozos-felepitmeny-alkatreszek': { icon: 'Lock', text: 'Zsanérok, zárak, tömítések, létrák, ütközők, ajtórögzítők, húspálya.' },
   'rakomanyrogzites': { icon: 'Anchor', text: 'Rakományrögzítő sínek, rudak, hevederek és tartozékok.' },
   'sarvedok-szerszamosladak': { icon: 'Package', text: 'Sárvédők, szerszámosládák, sárfogók, poroltó- és víztartályok.' },
-  'ipari-felgyartmanyok': { icon: 'Ruler', text: 'Zártszelvények, U- és L-profilok, csövek, rudak, laposprofilok.' },
+  'ipari-felgyartmanyok': { icon: 'Ruler', text: 'Méretre vágást vállalunk.' },
   'aluminium-lemezek': { icon: 'SquareStack', text: 'Elérhetők extra méretben is.' },
   'csuszasmentes-retegelt-padlo': { icon: 'Layers', text: 'Felhasználás: felépítménygyártás, valamint járófelületek, színpad, pódium.' },
   'gumiszonyegek': { icon: 'Grid3x3', text: 'Istálló-, utánfutó-, rámpa- és munkahelyi gumiszőnyegek, gumi-, PU- és PVC lemezek, moosgumi.' },
@@ -383,6 +383,16 @@ export function isProfile(p) {
   if (SOFT_NO.test(p.name)) return false;
   return PROFILE_NAME.test(p.name);
 }
+
+// Ezekben a csoportokban a kártyán nem jelenik meg a cikkszám (a Quadris kérése: ipari félgyártmányok)
+const NO_CODE_GROUPS = new Set(['ipari-felgyartmanyok', 'aluminium-alvaz-profilok']);
+export const codeShown = (p) => !!p.code && !NO_CODE_GROUPS.has(p.group);
+// Teljes szálban rendelhető profilok: a méretre vágott darabokat egész (gyári hosszú) szálakból számoljuk
+const WHOLE_BAR_GROUPS = new Set(['ipari-felgyartmanyok', 'aluminium-alvaz-profilok']);
+export const DEFAULT_STOCK_LENGTH = 6000;
+// a csoport saját termékei és az ide is besorolt (alsoIn) termékek, pl. ponyvacsövek a „Cső, rúd” alatt
+export const isWholeBar = (p) => WHOLE_BAR_GROUPS.has(p.group) || alsoIn(p).some((k) => [...WHOLE_BAR_GROUPS].some((g) => k.startsWith(`${g}/`)));
+export const codeHiddenInGroup = (groupSlug) => NO_CODE_GROUPS.has(groupSlug);
 
 // Böngészőnek küldhető termékadat (belső mezők nélkül)
 export function publicProduct(p) {

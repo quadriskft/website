@@ -77,7 +77,7 @@ import { SITE } from '../lib/site.js';
 </script>
 
 <script>
-  import { quote, clampQty, clampLen, normalizeCuts, cutsText } from '../scripts/quote.js';
+  import { quote, clampQty, clampLen, normalizeCuts, cutsText, totalPcs, metersOf } from '../scripts/quote.js';
 
   const $ = (sel) => document.querySelector(sel);
   const list = $('[data-items]');
@@ -98,6 +98,10 @@ import { SITE } from '../lib/site.js';
     spark: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2z"/></svg>',
   };
 
+  // méretsoros tétel összesítője: teljes szálas profilnál a szálak száma + a vágott darabok, egyébként darab + fm
+  const cutTotal = (i) => i.stock
+    ? `<div class="qty-total"><span><strong>${i.qty}</strong> szál</span><small>${totalPcs(i.cuts)} db vágott darab · ${metersOf(i.cuts).toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm</small><small>${i.stock.toLocaleString('hu-HU')} mm-es teljes szálból</small></div>`
+    : `<div class="qty-total"><span><strong>${i.qty}</strong> db</span><small>${metersOf(i.cuts).toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm</small></div>`;
   const cutRow = (len = '', pcs = 1) => `<div class="cut-row">
       <input class="input" type="number" min="1" max="30000" inputmode="numeric" placeholder="pl. 6000" aria-label="Hossz (mm)" data-cut-len value="${esc(len)}">
       <input class="input" type="number" min="1" max="99999" inputmode="numeric" aria-label="Darab" data-cut-pcs value="${esc(pcs)}">
@@ -126,7 +130,7 @@ import { SITE } from '../lib/site.js';
           <input class="note input" data-note placeholder="Megjegyzés a tételhez (pl. hossz, szín)…" value="${esc(i.note)}" maxlength="300">
         </div>
         <div class="item-side">
-          ${i.cuts?.length ? `<div class="qty-total"><span><strong>${i.qty}</strong> db</span><small>${(i.cuts.reduce((n, c) => n + c.len * c.pcs, 0) / 1000).toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm</small></div>` : `<div class="qty">
+          ${i.cuts?.length ? cutTotal(i) : `<div class="qty">
             <button type="button" data-step="-1" aria-label="Kevesebb">${icon.minus}</button>
             <input type="number" min="1" value="${i.qty}" data-qty inputmode="numeric" aria-label="Mennyiség">
             <button type="button" data-step="1" aria-label="Több">${icon.plus}</button>
@@ -188,7 +192,8 @@ import { SITE } from '../lib/site.js';
       if (cuts.length) {
         quote.update(li.dataset.slug, { cuts });
         const tot = li.querySelector('.qty-total');
-        if (tot) tot.innerHTML = `<span><strong>${quote.items().find((i) => i.slug === li.dataset.slug)?.qty ?? ''}</strong> db</span><small>${(cuts.reduce((n, c) => n + c.len * c.pcs, 0) / 1000).toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm</small>`;
+        const it = quote.items().find((i) => i.slug === li.dataset.slug);
+        if (tot && it) tot.outerHTML = cutTotal(it);
       }
     }
   });
@@ -230,7 +235,7 @@ import { SITE } from '../lib/site.js';
   const listText = () =>
     quote
       .items()
-      .map((i, n) => `${n + 1}. ${i.code ? `[${i.code}] ` : ''}${i.name}${i.custom ? ' (egyedi tétel)' : ''} – ${i.qty} ${i.unit ? unitText(i) : 'db'}${i.cuts?.length ? ` (${cutsText(i.cuts)})` : ''}${i.note ? ` – ${i.note}` : ''}${i.config?.length ? `\n   ${i.config.map((c) => `${c.label}: ${c.value}`).join('; ')}` : ''}`)
+      .map((i, n) => `${n + 1}. ${i.code ? `[${i.code}] ` : ''}${i.name}${i.custom ? ' (egyedi tétel)' : ''} – ${i.qty} ${i.unit ? unitText(i) : 'db'}${i.cuts?.length ? ` (${i.stock ? `${i.stock} mm-es szálból méretre vágva: ` : ''}${cutsText(i.cuts)})` : ''}${i.note ? ` – ${i.note}` : ''}${i.config?.length ? `\n   ${i.config.map((c) => `${c.label}: ${c.value}`).join('; ')}` : ''}`)
       .join('\n');
 
   $('[data-copy-list]').addEventListener('click', async () => {
@@ -260,7 +265,7 @@ import { SITE } from '../lib/site.js';
       customer: { name: data.name, company: data.company, email: data.email, phone: data.phone },
       message: data.message,
       website: data.website,
-      items: items.map((i) => ({ code: i.code, name: i.name, qty: i.qty, ...(i.unit ? { unit: unitText(i) } : {}), note: i.note, cuts: i.cuts ?? [], config: i.config ?? [], custom: !!i.custom, url: i.custom ? '' : `${location.origin}/termek/${i.page ?? i.slug}` })),
+      items: items.map((i) => ({ code: i.code, name: i.name, qty: i.qty, ...(i.unit ? { unit: unitText(i) } : {}), ...(i.stock ? { stock: i.stock } : {}), note: i.note, cuts: i.cuts ?? [], config: i.config ?? [], custom: !!i.custom, url: i.custom ? '' : `${location.origin}/termek/${i.page ?? i.slug}` })),
     };
     submitBtn.disabled = true;
     submitLabel.textContent = 'Küldés…';

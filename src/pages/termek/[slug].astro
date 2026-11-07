@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import ProductVisual from '../../components/ProductVisual.astro';
-import { products, getGroup, getCategory, productsIn, publicProduct, isProfile, familyOf } from '../../lib/catalog.js';
+import { products, getGroup, getCategory, productsIn, publicProduct, isProfile, familyOf, isWholeBar, DEFAULT_STOCK_LENGTH } from '../../lib/catalog.js';
 import { SITE, abs, absPage } from '../../lib/site.js';
 import orderForms from '../../../data/rendelesi_adatlapok.json';
 import { existsSync } from 'node:fs';
@@ -42,12 +42,17 @@ const showCategory = category && category.name !== group.name;
 const family = familyOf(product.slug);
 const familyMembers = family ? family.members.map((m) => ({ ...m, product: products.find((p) => p.slug === m.slug) })).filter((m) => m.product) : [];
 const profile = !family && isProfile(product);
+// teljes szálban rendelhető (ipari félgyártmányok): minimum egy gyári szál, vágás esetén is a teljes szál fizetendő
+const wholeBar = profile && isWholeBar(product);
 // sok oszlopos típustáblázat / rendelési adatlap: kisebb fő kép, szélesebb rendelési rész (a „Kiválaszt” is látszik)
 const wideOrder = (family?.table?.length ?? 0) >= 4 || !!orderForm;
 // gyári szálhossz (ha ismert) – tájékoztató a méretsorok mellé
 const stockLength = profile
   ? (specs.find(([k]) => /szálhossz|gyártási hossz|^hossz/i.test(k))?.[1] ?? product.name.match(/(\d{1,2} ?\d{3})\s*mm\b(?!.*mm)/)?.[1])
   : null;
+// gyári szálhossz mm-ben a teljes szálas számításhoz (adatból, különben a csoport alapértelmezése)
+const stockRaw = String(stockLength ?? '').replace(/\s/g, '').replace(',', '.');
+const stockMm = (/^\d+(\.\d+)?m$/.test(stockRaw) ? Math.round(parseFloat(stockRaw) * 1000) : Number(stockRaw.match(/\d{4,5}/)?.[0])) || DEFAULT_STOCK_LENGTH;
 const description = product.description || `${product.name}${product.code ? ` (cikkszám: ${product.code})` : ''} – ${group.name}. Kérjen ajánlatot online a ${SITE.name}-tól.`;
 const crumbs = [
   ['Főoldal', '/'], ['Termékkatalógus', '/termekek'], [group.name, `/termekek/${group.slug}`],
@@ -177,9 +182,13 @@ const jsonLd = [
             <p class="muted small">Árat nem tüntetünk fel – tegye az ajánlatkérőbe, és személyre szabott ajánlatot küldünk mennyiség és szállítási igény alapján.</p>
           </div>
         ) : profile ? (
-          <div class="order card cut-order" id="meretre" data-cut-order data-product={JSON.stringify(publicProduct(product))}>
+          <div class="order card cut-order" id="meretre" data-cut-order data-product={JSON.stringify(publicProduct(product))} data-stock={wholeBar ? stockMm : undefined}>
             <h2 class="cut-title">Kért méretek</h2>
-            <p class="muted small">Adja meg, milyen hosszúságú szálakból hány darabra van szüksége – méretre vágást is vállalunk.{stockLength && <> Gyári szálhossz: <strong>{stockLength}{/\d$/.test(String(stockLength)) ? ' mm' : ''}</strong>.</>}</p>
+            {wholeBar ? (
+              <p class="muted small">A minimális rendelési mennyiség <strong>egy teljes szál ({stockMm.toLocaleString('hu-HU')} mm)</strong>. Kérésre méretre vágjuk, de vágás esetén is a teljes szál fizetendő. Adja meg, milyen hosszúságú darabokból hány darabra van szüksége – kiszámoljuk, hány szál szükséges hozzá.</p>
+            ) : (
+              <p class="muted small">Adja meg, milyen hosszúságú szálakból hány darabra van szüksége – méretre vágást is vállalunk.{stockLength && <> Gyári szálhossz: <strong>{stockLength}{/\d$/.test(String(stockLength)) ? ' mm' : ''}</strong>.</>}</p>
+            )}
             <div class="cut-head" aria-hidden="true"><span>Hossz [mm]</span><span>Darab</span><span></span></div>
             <div class="cut-rows" data-cut-rows></div>
             <button type="button" class="add-row" data-add-row><Icon name="Plus" size={18} /> Másik méret hozzáadása</button>
@@ -322,7 +331,7 @@ const jsonLd = [
 </Base>
 
 <script>
-  import { quote, clampQty, clampLen, normalizeCuts, totalPcs } from '../../scripts/quote.js';
+  import { quote, clampQty, clampLen, normalizeCuts, totalPcs, barsNeeded } from '../../scripts/quote.js';
 
   // rendelési adatlap: a kitöltött adatok (config) külön ajánlatkérő-tételként – több eltérő ajtó is kérhető
   const cform = document.querySelector('[data-config-form]');
@@ -451,6 +460,7 @@ const jsonLd = [
     const product = JSON.parse(order.dataset.product);
     // termékcsalád gyártói hosszakkal (választólista) vagy hossztartománnyal (pl. acél oldalfalak)
     const options = order.dataset.lengths ? JSON.parse(order.dataset.lengths) : null;
+    const stock = Number(order.dataset.stock) || 0;  // teljes szálban rendelhető: gyári szálhossz (mm)
     const minLen = Number(order.dataset.min) || 1;
     const maxLen = Number(order.dataset.max) || 30000;
     const rows = order.querySelector('[data-cut-rows]');
@@ -475,7 +485,9 @@ const jsonLd = [
     const update = () => {
       const cuts = normalizeCuts(read());
       const m = cuts.reduce((n, c) => n + c.len * c.pcs, 0) / 1000;
-      totalEl.textContent = cuts.length ? `Összesen ${totalPcs(cuts)} db, ${m.toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm` : '';
+      totalEl.textContent = !cuts.length ? ''
+        : stock ? `Szükséges: ${barsNeeded(cuts, stock)} teljes szál (${totalPcs(cuts)} db vágott darab, ${m.toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm)`
+        : `Összesen ${totalPcs(cuts)} db, ${m.toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm`;
       rows.querySelectorAll('[data-remove-row]').forEach((b) => (b.hidden = rows.children.length < 2));
     };
     order.querySelector('[data-add-row]').addEventListener('click', () => addRow('', 1, true));
@@ -509,11 +521,11 @@ const jsonLd = [
         rows.querySelector('[data-len]')?.focus();
         return;
       }
-      quote.addCuts(product, cuts, note.value);
+      quote.addCuts(product, cuts, note.value, stock);
       rows.innerHTML = '';
       note.value = '';
       addRow();
-      window.dispatchEvent(new CustomEvent('quote:toast', { detail: `Hozzáadva az ajánlatkérőhöz: ${product.name} (${totalPcs(cuts)} db)` }));
+      window.dispatchEvent(new CustomEvent('quote:toast', { detail: `Hozzáadva az ajánlatkérőhöz: ${product.name} (${stock ? `${barsNeeded(cuts, stock)} szál, ${totalPcs(cuts)} db vágott darab` : `${totalPcs(cuts)} db`})` }));
     });
     addRow();
   }

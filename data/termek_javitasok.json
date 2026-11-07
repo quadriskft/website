@@ -756,17 +756,20 @@
  "222923-60x1-5-mm-ponyvacso": {
   "alsoIn": [
    "ipari-felgyartmanyok/cso-rud"
-  ]
+  ],
+  "name": "60x1,5 mm Alu ponyvacső"
  },
  "222985-d50-mm-alu-cso": {
   "alsoIn": [
    "ipari-felgyartmanyok/cso-rud"
-  ]
+  ],
+  "name": "50 mm Alu cső"
  },
  "223520-ponyvacso-35x2-mm": {
   "alsoIn": [
    "ipari-felgyartmanyok/cso-rud"
-  ]
+  ],
+  "name": "35x2 mm Alu ponyvacső"
  },
  "245240-billencs-also-200x40-mm": {
   "after": "247243-billencs-felso-200x40-mm"
@@ -1952,5 +1955,191 @@
   "specs": {
    "Ötvözet": "EN AW-5005"
   }
+ },
+ "222891-zartszelveny-60x30x2-5-r2-5-elox": {
+  "name": "60x30x2,5 mm R2,5 Alu zártszelvény, eloxált"
+ },
+ "227576-zartszelveny-60x30x2-mm-or3-ir1-elox": {
+  "name": "60x30x2 mm R3/1 Alu zártszelvény, eloxált"
+ },
+ "250503-100x50x3-mm-alu-zartszelveny": {
+  "name": "100x50x3 mm Alu zártszelvény"
+ },
+ "250890-40x20x2-mm-alu-zartszelveny": {
+  "name": "40x20x2 mm Alu zártszelvény"
+ },
+ "251316-40x25x4-mm-r-zartszelveny": {
+  "name": "40x25x4 mm R Alu zártszelvény"
+ },
+ "251659-80x50x4-mm-r4-alu-zartszelveny": {
+  "name": "80x50x4 mm R4 Alu zártszelvény"
+ },
+ "251883-30x20x1-5-alu-zartszelveny": {
+  "name": "30x20x1,5 mm Alu zártszelvény"
+ },
+ "252229-40x40x4-alu-zartszelveny": {
+  "name": "40x40x4 mm Alu zártszelvény"
+ },
+ "252242-40x30x2-alu-zartszelveny": {
+  "name": "40x30x2 mm Alu zártszelvény"
+ },
+ "252444-60x40x2-5-mm-alu-zartszelveny": {
+  "name": "60x40x2,5 mm Alu zártszelvény"
+ },
+ "252535-60x40x3-alu-zartszelveny": {
+  "name": "60x40x3 mm Alu zártszelvény"
+ },
+ "252672-80x20x2-alu-zartszelveny": {
+  "name": "80x20x2 mm Alu zártszelvény"
+ },
+ "252687-60x40x4-alu-zartszelveny": {
+  "name": "60x40x4 mm Alu zártszelvény"
+ },
+ "252763-80x40x3-alu-zartszelveny": {
+  "name": "80x40x3 mm Alu zártszelvény"
+ },
+ "252764-80x40x4-alu-zartszelveny": {
+  "name": "80x40x4 mm Alu zártszelvény"
+ },
+ "252798-150x30x3-mm-alu-zartszelveny": {
+  "name": "150x30x3 mm Alu zártszelvény"
+ },
+ "252981-20x20x3-alu-zartszelveny": {
+  "name": "20x20x3 mm Alu zártszelvény"
+ },
+ "253020-30x20x2-alu-zartszelveny": {
+  "name": "30x20x2 mm Alu zártszelvény"
+ },
+ "253295-30x30x2-alu-zartszelveny": {
+  "name": "30x30x2 mm Alu zártszelvény"
+ },
+ "253337-50x50x4-alu-zartszelveny": {
+  "name": "50x50x4 mm Alu zártszelvény"
+ },
+ "253535-35x35x3-mm-alu-zartszelveny": {
+  "name": "35x35x3 mm Alu zártszelvény"
+ },
+ "253734-150x25x2-5-r2-alu-zartszelveny": {
+  "name": "150x25x2,5 mm R2 Alu zártszelvény"
+ },
+ "253812-50x30x2-r5-alu-zartszelveny-6000-mm": {
+  "name": "50x30x2 mm R5 Alu zártszelvény",
+  "specs": {
+   "Szálhossz": "6000 mm"
+  }
+ },
+ "255004-100x50x4-mm-alu-zartszelveny": {
+  "name": "100x50x4 mm Alu zártszelvény"
+ },
+ "255032-50x30x2-5-alu-zartszelveny-6000-mm": {
+  "name": "50x30x2,5 mm Alu zártszelvény",
+  "specs": {
+   "Szálhossz": "6000 mm"
+  }
+ },
+ "255070-60x30x3-mm-alu-zartszelveny": {
+  "name": "60x30x3 mm Alu zártszelvény"
+ },
+ "255207-80x40x3-mm-r5-alu-zartszelveny": {
+  "name": "80x40x3 mm R5 Alu zártszelvény"
+ },
+ "255340-40x40x3-r2-mm-alu-zartszelveny": {
+  "name": "40x40x3 mm R2 Alu zártszelvény"
+ },
+ "255472-100x100x4-mm-r7-3-alu-zartszelveny": {
+  "name": "100x100x4 mm R7/3 Alu zártszelvény"
+ },
+ "255473-80x80x4-mm-alu-zartszelveny": {
+  "name": "80x80x4 mm Alu zártszelvény"
+ },
+ "255610-60x30x2-5-r2-5-mm-alu-zartszelveny": {
+  "name": "60x30x2,5 mm R2,5 Alu zártszelvény"
+ },
+ "256076-160x90x5-mm-alu-zartszelvany": {
+  "name": "160x90x5 mm Alu zártszelvény"
+ },
+ "256468-60x40x4-mm-r4-2-alu-zartszelveny": {
+  "name": "60x40x4 mm R4/2 Alu zártszelvény"
+ },
+ "258352-50x50x3-alu-zartszelveny": {
+  "name": "50x50x3 mm Alu zártszelvény"
+ },
+ "258354-25x25x2-alu-zartszelveny": {
+  "name": "25x25x2 mm Alu zártszelvény"
+ },
+ "258418-80x50x4-mm-r3-alu-zartszelveny": {
+  "name": "80x50x4 mm R3 Alu zártszelvény"
+ },
+ "258455-60x40x2-5-r2-alu-zartszelveny": {
+  "name": "60x40x2,5 mm R2 Alu zártszelvény"
+ },
+ "253030-30x30x3-mm-u-profil": {
+  "name": "30x30x3 mm Alu U profil"
+ },
+ "254979-60x50x50x5-mm-u-profil": {
+  "name": "60x50x50x5 mm Alu U profil"
+ },
+ "250297-50x50x5-alu-l-profil": {
+  "name": "50x50x5 mm Alu L profil"
+ },
+ "250403-40x40x3-alu-l-profil": {
+  "name": "40x40x3 mm Alu L profil"
+ },
+ "251010-100x100x8-alu-l-profil": {
+  "name": "100x100x8 mm Alu L profil"
+ },
+ "252502-25x25x2-alu-l-profil": {
+  "name": "25x25x2 mm Alu L profil"
+ },
+ "254020-40x20x2-alu-l-profil": {
+  "name": "40x20x2 mm Alu L profil"
+ },
+ "254508-20x20x2-alu-l-profil": {
+  "name": "20x20x2 mm Alu L profil"
+ },
+ "250202-20x2-alu-cso": {
+  "name": "20x2 mm Alu cső"
+ },
+ "251310-18x2-alu-cso": {
+  "name": "18x2 mm Alu cső"
+ },
+ "251530-18-mm-alu-rud": {
+  "name": "18 mm Alu rúd"
+ },
+ "250301-30x10-mm-alu-lapos-profil": {
+  "name": "30x10 mm Alu lapos profil"
+ },
+ "250305-30x5-mm-alu-lapos-profil": {
+  "name": "30x5 mm Alu lapos profil"
+ },
+ "250405-40x5-mm-alu-lapos-profil": {
+  "name": "40x5 mm Alu lapos profil"
+ },
+ "251048-100x10-mm-alu-lapos-profil": {
+  "name": "100x10 mm Alu lapos profil"
+ },
+ "251160-40x20-mm-alu-lapos-profil": {
+  "name": "40x20 mm Alu lapos profil"
+ },
+ "251210-120x10-mm-alu-lapos-profil": {
+  "name": "120x10 mm Alu lapos profil"
+ },
+ "251510-150x10-mm-alu-lapos-profil": {
+  "name": "150x10 mm Alu lapos profil"
+ },
+ "251742-50x5-mm-alu-lapos-profil": {
+  "name": "50x5 mm Alu lapos profil"
+ },
+ "252003-20x3-mm-alu-lapos-profil": {
+  "name": "20x3 mm Alu lapos profil"
+ },
+ "252251-40x10-mm-alu-lapos-profil": {
+  "name": "40x10 mm Alu lapos profil"
+ },
+ "252296-40x8-mm-alu-lapos-profil": {
+  "name": "40x8 mm Alu lapos profil"
+ },
+ "252417-30x8-mm-alu-lapos-profil": {
+  "name": "30x8 mm Alu lapos profil"
  }
 }

@@ -43,7 +43,9 @@ export const quote = {
     save(items);
   },
   // Profil: hossz × darab méretsorok (cuts) és megjegyzés; ugyanazon hossz darabszáma összeadódik
-  addCuts(product, cuts, note = '') {
+  // stock: gyári szálhossz (mm) – ha meg van adva, a tétel mennyisége a szükséges teljes szálak száma („szál”),
+  // a méretsorok (cuts) pedig a kért vágási lista
+  addCuts(product, cuts, note = '', stock = 0) {
     const clean = normalizeCuts(cuts);
     if (!clean.length) return;
     const items = load();
@@ -52,8 +54,12 @@ export const quote = {
       item = { ...product, qty: 0, note: '', cuts: [] };
       items.push(item);
     }
+    if (stock) {
+      item.stock = stock;
+      item.unit = 'szál';
+    }
     item.cuts = normalizeCuts([...(item.cuts ?? []), ...clean]);
-    item.qty = totalPcs(item.cuts);
+    item.qty = item.stock ? barsNeeded(item.cuts, item.stock) : totalPcs(item.cuts);
     const n = String(note ?? '').trim();
     if (n) item.note = (item.note ? `${item.note}; ${n}` : n).slice(0, 300);
     save(items);
@@ -70,7 +76,7 @@ export const quote = {
     Object.assign(item, changes);
     if ('cuts' in changes) {
       item.cuts = normalizeCuts(item.cuts);
-      if (item.cuts.length) item.qty = totalPcs(item.cuts);
+      if (item.cuts.length) item.qty = item.stock ? barsNeeded(item.cuts, item.stock) : totalPcs(item.cuts);
       else delete item.cuts;
     }
     if ('qty' in changes) item.qty = clampQty(item.qty);
@@ -110,6 +116,23 @@ export function normalizeCuts(cuts) {
 }
 
 export const totalPcs = (cuts) => (cuts ?? []).reduce((n, c) => n + c.pcs, 0);
+
+// Hány teljes (stock mm hosszú) szál kell a vágási listához: a darabokat csökkenő hossz szerint az első szálba tesszük,
+// amelybe még beférnek (first-fit decreasing); a szálnál hosszabb darab egész szálakat foglal.
+export function barsNeeded(cuts, stock) {
+  const bars = [];
+  let extra = 0;
+  for (const c of [...(cuts ?? [])].sort((a, b) => b.len - a.len)) {
+    for (let i = 0; i < c.pcs; i++) {
+      if (c.len > stock) { extra += Math.ceil(c.len / stock); continue; }
+      const bar = bars.find((rest) => rest >= c.len);
+      if (bar === undefined) bars.push(stock - c.len);
+      else bars[bars.indexOf(bar)] = bar - c.len;
+    }
+  }
+  return Math.min(bars.length + extra, 99999);
+}
+export const metersOf = (cuts) => (cuts ?? []).reduce((n, c) => n + c.len * c.pcs, 0) / 1000;
 
 // "3 db × 6000 mm, 2 db × 2500 mm"
 export const cutsText = (cuts) => (cuts ?? []).map((c) => `${c.pcs} db × ${c.len.toLocaleString('hu-HU')} mm`).join(', ');

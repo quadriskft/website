@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import ProductCard from '../../components/ProductCard.astro';
-import { groups, GROUP_META, productsIn, groupImage, sidebarImage, CATEGORY_LOGOS, GROUP_LOGOS } from '../../lib/catalog.js';
+import { groups, GROUP_META, productsIn, groupImage, sidebarImage, CATEGORY_LOGOS, GROUP_LOGOS, codeHiddenInGroup } from '../../lib/catalog.js';
 import { absPage } from '../../lib/site.js';
 
 export function getStaticPaths() {
@@ -73,7 +73,7 @@ const jsonLd = [
             </h2>
           )}
           <div class="grid grid-products">
-            {c.items.map((p) => <ProductCard product={p} />)}
+            {c.items.map((p) => <ProductCard product={p} hideCode={codeHiddenInGroup(group.slug)} />)}
           </div>
         </section>
       ))}

@@ -1,9 +1,9 @@
 ---
 import Icon from './Icon.astro';
 import ProductVisual from './ProductVisual.astro';
-import { publicProduct } from '../lib/catalog.js';
+import { publicProduct, codeShown } from '../lib/catalog.js';
 
-const { product } = Astro.props;
+const { product, hideCode = false } = Astro.props;
 ---
 <article class="card hoverable product-card" data-name={`${product.code} ${product.name}`.toLowerCase()}>
   <a href={`/termek/${product.slug}`} class="product-link">
@@ -12,7 +12,7 @@ const { product } = Astro.props;
     <h3>{product.name}</h3>
   </a>
   <div class="product-foot">
-    <span class="muted code">{product.code ? `${product.codeLabel ?? 'Cikkszám'}: ${product.code}` : ' '}</span>
+    <span class="muted code">{!hideCode && codeShown(product) ? `${product.codeLabel ?? 'Cikkszám'}: ${product.code}` : ' '}</span>
     <button type="button" class="add-btn" data-add-to-quote={JSON.stringify(publicProduct(product))} aria-label={`${product.name} – ajánlatkérőbe`}>
       <Icon name="Plus" size={16} class="i-add" />
       <Icon name="Check" size={16} class="i-added" />
