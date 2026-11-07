@@ -2602,19 +2602,19 @@
   }
  },
  "226795-400-mm-peremes-gumis-oldalfal-elox": {
-  "name": "Gumis oldalfal 400 mm, peremes, eloxált",
+  "name": "Mono profil 400 mm, peremes, eloxált Típus 1",
   "order": 1
  },
  "226671-400-mm-gumis-oldalfal-elox": {
-  "name": "Gumis oldalfal 400 mm, eloxált",
+  "name": "Mono profil 400 mm, eloxált, gumis",
   "order": 2
  },
  "223367-400-mm-peremes-monoprofil-elox": {
-  "name": "Mono profil 400 mm, peremes, eloxált",
+  "name": "Mono profil 400 mm, peremes, eloxált Típus 2",
   "order": 3
  },
  "223350-350-mm-mono-profil-szakalas-elox": {
-  "name": "Mono profil 350 mm, szakállas, eloxált",
+  "name": "Mono profil 350 mm, peremes, eloxált",
   "order": 4
  },
  "226830-300-mm-mono-profil-elox": {
@@ -2622,7 +2622,7 @@
   "order": 5
  },
  "227075-200-mm-mono-profil-teli-szakalas-elox": {
-  "name": "Mono profil 200 mm, teli szakállas, eloxált",
+  "name": "Mono profil 200 mm, peremes, eloxált",
   "order": 6
  },
  "227783-also-szakallas-200-mm-elox-profil": {
