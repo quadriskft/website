@@ -349,10 +349,6 @@ export function groupImage(slug) {
 }
 
 // A csoportoldal oldalsávjában, a kategórialista alatt megjelenő kép (a Quadris küldi): public/csoportkepek/oldalsav/<csoport>.webp
-export function sidebarImage(slug) {
-  return existsSync(`${process.cwd()}/public/csoportkepek/oldalsav/${slug}.webp`) ? `/csoportkepek/oldalsav/${slug}.webp` : null;
-}
-
 export function groupIcon(slug) {
   return GROUP_META[slug]?.icon ?? 'Package';
 }
@@ -384,15 +380,14 @@ export function isProfile(p) {
   return PROFILE_NAME.test(p.name);
 }
 
-// Ezekben a csoportokban a kártyán nem jelenik meg a cikkszám (a Quadris kérése: ipari félgyártmányok)
-const NO_CODE_GROUPS = new Set(['ipari-felgyartmanyok', 'aluminium-alvaz-profilok']);
-export const codeShown = (p) => !!p.code && !NO_CODE_GROUPS.has(p.group);
+// A kártyákon sehol nem jelenik meg a cikkszám (a Quadris kérése); a termékoldalon igen
+export const codeShown = () => false;
 // Teljes szálban rendelhető profilok: a méretre vágott darabokat egész (gyári hosszú) szálakból számoljuk
 const WHOLE_BAR_GROUPS = new Set(['ipari-felgyartmanyok', 'aluminium-alvaz-profilok']);
 export const DEFAULT_STOCK_LENGTH = 6000;
 // a csoport saját termékei és az ide is besorolt (alsoIn) termékek, pl. ponyvacsövek a „Cső, rúd” alatt
 export const isWholeBar = (p) => WHOLE_BAR_GROUPS.has(p.group) || alsoIn(p).some((k) => [...WHOLE_BAR_GROUPS].some((g) => k.startsWith(`${g}/`)));
-export const codeHiddenInGroup = (groupSlug) => NO_CODE_GROUPS.has(groupSlug);
+export const codeHiddenInGroup = () => true;
 
 // Böngészőnek küldhető termékadat (belső mezők nélkül)
 export function publicProduct(p) {
