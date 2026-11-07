@@ -383,7 +383,7 @@ export function isProfile(p) {
 // A kártyákon sehol nem jelenik meg a cikkszám (a Quadris kérése); a termékoldalon igen
 export const codeShown = () => false;
 // Teljes szálban rendelhető profilok: a méretre vágott darabokat egész (gyári hosszú) szálakból számoljuk
-const WHOLE_BAR_GROUPS = new Set(['ipari-felgyartmanyok', 'aluminium-alvaz-profilok']);
+const WHOLE_BAR_GROUPS = new Set(['ipari-felgyartmanyok']);
 export const DEFAULT_STOCK_LENGTH = 6000;
 // a csoport saját termékei és az ide is besorolt (alsoIn) termékek, pl. ponyvacsövek a „Cső, rúd” alatt
 export const isWholeBar = (p) => WHOLE_BAR_GROUPS.has(p.group) || alsoIn(p).some((k) => [...WHOLE_BAR_GROUPS].some((g) => k.startsWith(`${g}/`)));

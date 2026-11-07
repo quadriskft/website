@@ -103,7 +103,7 @@ import { SITE } from '../lib/site.js';
     ? `<div class="qty-total"><span><strong>${i.qty}</strong> szál</span><small>${totalPcs(i.cuts)} db vágott darab · ${metersOf(i.cuts).toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm</small><small>${i.stock.toLocaleString('hu-HU')} mm-es teljes szálból</small></div>`
     : `<div class="qty-total"><span><strong>${i.qty}</strong> db</span><small>${metersOf(i.cuts).toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm</small></div>`;
   const cutRow = (len = '', pcs = 1) => `<div class="cut-row">
-      <input class="input" type="number" min="1" max="30000" inputmode="numeric" placeholder="pl. 6000" aria-label="Hossz (mm)" data-cut-len value="${esc(len)}">
+      <input class="input" type="number" min="1" max="30000" inputmode="numeric" placeholder="mm" aria-label="Hossz (mm)" data-cut-len value="${esc(len)}">
       <input class="input" type="number" min="1" max="99999" inputmode="numeric" aria-label="Darab" data-cut-pcs value="${esc(pcs)}">
       <button type="button" class="cut-del" data-cut-del aria-label="Méret törlése">${icon.trash}</button>
     </div>`;

@@ -473,7 +473,7 @@ const jsonLd = [
       row.className = 'cut-row';
       const lenField = options
         ? `<select class="input" aria-label="Hossz (mm)" data-len><option value="">– hossz –</option>${options.map((o) => `<option value="${o}"${String(o) === String(len) ? ' selected' : ''}>${o} mm</option>`).join('')}</select>`
-        : `<input class="input" type="number" min="${minLen}" max="${maxLen}" step="1" inputmode="numeric" placeholder="pl. 6000" aria-label="Hossz (mm)" data-len value="${len}">`;
+        : `<input class="input" type="number" min="${minLen}" max="${maxLen}" step="1" inputmode="numeric" placeholder="mm" aria-label="Hossz (mm)" data-len value="${len}">`;
       row.innerHTML = `${lenField}
         <input class="input" type="number" min="1" max="99999" step="1" inputmode="numeric" aria-label="Darab" data-pcs value="${pcs}">
         <button type="button" class="row-remove" aria-label="Sor törlése" data-remove-row>${x}</button>`;
