@@ -2141,5 +2141,49 @@
  },
  "252417-30x8-mm-alu-lapos-profil": {
   "name": "30x8 mm Alu lapos profil"
+ },
+ "226821-21-padlo-profil-200-mm": {
+  "name": "Padló profil 200/21 mm",
+  "order": 1
+ },
+ "227543-30-padlo-profil-200-mm": {
+  "name": "Padló profil 200/30 mm, nyitott",
+  "order": 2
+ },
+ "227543-30-padlo-profil-200-mm-elox": {
+  "name": "Padló profil 200/30 mm, nyitott, eloxált",
+  "order": 3
+ },
+ "222910-30-padlo-profil-200-mm-exl": {
+  "name": "Padló profil 200/30 mm EXL",
+  "order": 4
+ },
+ "226001-zart-padlo-profil-30-200-mm": {
+  "name": "Padló profil 200/30 mm, zárt",
+  "order": 5
+ },
+ "221902-bordazott-padlo-profil-200-40-mm": {
+  "name": "Padló profil 200/40 mm, bordázott",
+  "order": 6
+ },
+ "207776-30-padlo-profil-220-mm-ex": {
+  "name": "Padló profil 220/30 mm EX",
+  "order": 7,
+  "move": {
+   "group": "aluminium-padlo-profilok",
+   "category": "padlo-profilok"
+  }
+ },
+ "225630-55-padlo-profil-250-mm-zart": {
+  "name": "Padló profil 250/55 mm, zárt",
+  "order": 8
+ },
+ "203492-autoszallito-padlo-keret-profil-30-mm": {
+  "name": "Padló profil keret 130 mm, autószállító",
+  "order": 9,
+  "move": {
+   "group": "aluminium-padlo-profilok",
+   "category": "padlo-profilok"
+  }
  }
 }
