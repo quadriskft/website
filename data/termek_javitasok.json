@@ -2181,5 +2181,41 @@
    "category": "padlo-profilok"
   },
   "order": 9
+ },
+ "141520-perf-pu00-acel-keret-110-15-2-5100": {
+  "name": "Acél keret PU00 110/15/2/5100 perforált"
+ },
+ "141722-acel-keret-109-21-3-6500": {
+  "name": "Acél keret 109/21/3/6500"
+ },
+ "141720-acel-keret-112-24-3-6500": {
+  "name": "Acél keret 112/24/3/6500"
+ },
+ "142730-pf50-acel-keret-140-27-3-2500-sima": {
+  "name": "Acél keret PF50 140/27/3/2500 sima"
+ },
+ "141520-pu00-acel-keret-110-15-2-5000": {
+  "name": "Acél keret PU00 110/15/2/5000"
+ },
+ "141521-pu00-acel-keret-115-21-3-mm": {
+  "name": "Acél keret PU00 115/21/3 mm"
+ },
+ "141527-pu00-acel-keret-115-27-3-7500": {
+  "name": "Acél keret PU00 115/27/3/7500"
+ },
+ "142130-pu00-acel-keret-140-21-3-7500": {
+  "name": "Acél keret PU00 140/21/3/7500"
+ },
+ "142430-pu00-acel-keret-140-24-3-7500": {
+  "name": "Acél keret PU00 140/24/3/7500"
+ },
+ "142730-pu00-acel-keret-140-27-3-7500": {
+  "name": "Acél keret PU00 140/27/3/7500"
+ },
+ "142730-pu00-acel-keret-140-27-3-8000": {
+  "name": "Acél keret PU00 140/27/3/8000"
+ },
+ "141224-pul0-acel-keret-112-24-3-mm": {
+  "name": "Acél keret PUL0 112/24/3 mm"
  }
 }
