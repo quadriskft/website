@@ -3712,7 +3712,7 @@
    "s-3x2000x5000-mm-alu-lemez-en-573-3-al-mg-1-h14-h24": [
     "2000 mm",
     "5000 mm",
-    "EN AW-5754 H14/H24"
+    "EN AW-5005 H14/H24"
    ]
   },
   "members": {
@@ -3724,7 +3724,7 @@
    "s-3x1500x3200-mm-alu-lemez-en-aw-1050a-h14-h24": "1500 × 3200 mm (EN AW-1050A H14/H24)",
    "s-3x1500x5000-mm-alu-lemez-en-aw-1050a-h14-h24": "1500 × 5000 mm (EN AW-1050A H14/H24)",
    "s-3x1500x6000-mm-alu-lemez-en-aw-1050a-h14-h24": "1500 × 6000 mm (EN AW-1050A H14/H24)",
-   "s-3x2000x5000-mm-alu-lemez-en-573-3-al-mg-1-h14-h24": "2000 × 5000 mm (EN AW-5754 H14/H24)"
+   "s-3x2000x5000-mm-alu-lemez-en-573-3-al-mg-1-h14-h24": "2000 × 5000 mm (EN AW-5005 H14/H24)"
   }
  },
  "alu-natur-6": {

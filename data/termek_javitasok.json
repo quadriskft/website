@@ -1946,5 +1946,11 @@
  },
  "s-2x1250x2500mm-feher-festett-lemez-ral9016": {
   "name": "S 2x1250x2500mm Fehér védőfóliás festett lemez RAL9016"
+ },
+ "s-3x2000x5000-mm-alu-lemez-en-573-3-al-mg-1-h14-h24": {
+  "name": "S 3x2000x5000 mm Alu lemez EN AW-5005 H14/H24",
+  "specs": {
+   "Ötvözet": "EN AW-5005"
+  }
  }
 }

@@ -274,7 +274,7 @@ def parse(p):
         if a:
             specs["Ötvözet"] = f"EN AW-{a.group(1)}"
         elif "Al-Mg" in n:
-            specs["Ötvözet"] = "EN AW-5754 (AlMg3) / Al-Mg-1 csoport"
+            specs["Ötvözet"] = "EN AW-5005"  # a Quadris szerint (3x2000x5000 mm lemez)
         h = re.search(r"\b(H\d{2}(?:/H\d{2})*)\b", n)
         if h:
             specs["Állapot"] = h.group(1)
