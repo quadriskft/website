@@ -1,29 +1,30 @@
 :root {
-  /* Arculat: azúr háttér (Azure Navy), fehér betű (Snowy White), korall kiemelés (Coral Red) */
-  --bg: #3283be;
-  --bg-2: #3283be;
+  /* Arculat: éjkék háttér (Midnight Navy), tiszta fehér betű, korall-narancs kiemelés (Coral Orange) */
+  --bg: #002941;
+  --bg-2: #002941;
   --surface: #ffffff;
   --surface-2: #f5f7f9;
   --surface-3: #eef1f4;
-  --line: rgba(254, 253, 254, 0.24);
-  --line-strong: rgba(254, 253, 254, 0.42);
-  --text: #fefdfe;
-  --text-2: rgba(254, 253, 254, 0.92);
-  --muted: rgba(254, 253, 254, 0.8);
+  --line: rgba(255, 255, 255, 0.16);
+  --line-strong: rgba(255, 255, 255, 0.3);
+  --text: #ffffff;
+  --text-2: rgba(255, 255, 255, 0.9);
+  --muted: rgba(255, 255, 255, 0.74);
   --navy: #0b1f3a;
-  /* --ink: címek és kiemelt szöveg; --link: szöveges linkek. Az azúr háttéren fehér, a fehér felületeken sötét / korall */
-  --ink: #fefdfe;
-  --link: #fefdfe;
-  --link-hover: #fefdfe;
-  --focus: #fefdfe;
-  --accent: #fd614b;
-  --accent-2: #e5492f;
-  --accent-soft: rgba(253, 97, 75, 0.14);
+  /* --ink: címek és kiemelt szöveg; --link: szöveges linkek. Az éjkék háttéren fehér / korall, a fehér felületeken sötét / mélyebb korall */
+  --ink: #ffffff;
+  --link: #fd6e6e;
+  --link-hover: #ffffff;
+  --focus: #fd6e6e;
+  --on-accent: #002941;
+  --accent: #fd6e6e;
+  --accent-2: #ff8787;
+  --accent-soft: rgba(253, 110, 110, 0.16);
   --ok: #12a36b;
   --danger: #e5484d;
   --tile: #ffffff;
   --metal: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #c9ced4 22%, #f4f6f8 50%, #c9ced4 78%, rgba(255, 255, 255, 0) 100%);
-  --gradient: linear-gradient(135deg, #fd7a66 0%, #e5492f 100%);
+  --gradient: linear-gradient(135deg, #ff8787 0%, #fd6e6e 100%);
   /* szálcsiszolt alumínium keret (kártyák, keretezett elemek) */
   --metal-frame: linear-gradient(135deg, #fbfcfd 0%, #b3bac3 14%, #f6f7f9 30%, #8e98a3 50%, #e4e8ec 66%, #9ea6b0 84%, #dfe3e8 100%);
   /* térhatás: külső sötét él, belső világos perem, alsó árnyék */
@@ -49,11 +50,11 @@
   --text: #121a26;
   --text-2: #3b4656;
   --muted: #5f6b79;
-  --ink: #0b1f3a;
-  --link: #c93a26;
-  --link-hover: #a52e1d;
-  --focus: #fd614b;
-  --accent-soft: rgba(253, 97, 75, 0.1);
+  --ink: #002941;
+  --link: #c23b3b;
+  --link-hover: #a32e2e;
+  --focus: #fd6e6e;
+  --accent-soft: rgba(253, 110, 110, 0.12);
   color: var(--text);
 }
 
@@ -94,7 +95,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px;
   font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--ink);
+  color: var(--link);
 }
 .eyebrow::before { content: ''; width: 16px; height: 2px; background: var(--accent); }
 .lead { font-family: var(--font-body); font-weight: 400; font-size: 1.2rem; line-height: 1.5; color: var(--text-2); max-width: 680px; }
@@ -109,10 +110,10 @@ button, input, select, textarea { font: inherit; color: inherit; }
   text-decoration: none !important;
 }
 .btn svg { width: 18px; height: 18px; flex: none; }
-.btn-primary { background: var(--accent); color: #fefdfe; box-shadow: 0 6px 16px -8px rgba(160, 40, 20, 0.55); }
+.btn-primary { background: var(--accent); color: var(--on-accent); font-weight: 700; box-shadow: 0 6px 18px -8px rgba(253, 110, 110, 0.6); }
 .btn-primary:hover { background: var(--accent-2); transform: translateY(-1px); }
 .btn-ghost { background: #fff; border-color: var(--line-strong); color: var(--navy); }
-.btn-ghost:hover { border-color: var(--accent); color: var(--link); background: #fff5f3; }
+.btn-ghost:hover { border-color: var(--accent); color: var(--link); background: #fff4f4; }
 .btn-light { background: #fff; color: var(--navy); }
 .btn-light:hover { background: var(--surface-2); transform: translateY(-1px); }
 .btn-sm { padding: 8px 14px; font-size: 0.74rem; }
@@ -127,16 +128,16 @@ button, input, select, textarea { font: inherit; color: inherit; }
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 a.card { color: inherit; text-decoration: none; display: block; }
-a.card:hover, .card.hoverable:hover { transform: translateY(-6px); box-shadow: 0 30px 50px -26px rgba(18, 24, 33, 0.45), var(--metal-bevel), 0 0 0 3px rgba(253, 97, 75, 0.75), 0 0 24px 4px rgba(253, 97, 75, 0.6); }
+a.card:hover, .card.hoverable:hover { transform: translateY(-6px); box-shadow: 0 30px 50px -26px rgba(18, 24, 33, 0.45), var(--metal-bevel), 0 0 0 3px rgba(253, 110, 110, 0.75), 0 0 24px 4px rgba(253, 110, 110, 0.6); }
 /* kis fémkeretes gomb (alkategóriák): nem mozdul, csak korall fény jelenik meg körülötte */
 .metal-chip {
   display: inline-flex; align-items: center; padding: 4px 11px; border-radius: 999px; font-size: 0.8rem; line-height: 1.35;
-  border: 2px solid transparent; color: var(--text-2); text-decoration: none !important;
+  border: 2px solid transparent; color: var(--text-2); font-weight: 600; text-decoration: none !important;
   background: linear-gradient(180deg, #ffffff, #f2f4f6) padding-box, var(--metal-frame) border-box;
   box-shadow: 0 1px 2px rgba(18, 24, 33, 0.12), inset 0 1px 0 #fff;
   transition: box-shadow 0.18s ease, color 0.18s ease;
 }
-.metal-chip:hover { color: var(--link); box-shadow: 0 0 0 3px rgba(253, 97, 75, 0.55), 0 0 14px rgba(253, 97, 75, 0.5); }
+.metal-chip:hover { color: var(--link); box-shadow: 0 0 0 3px rgba(253, 110, 110, 0.55), 0 0 14px rgba(253, 110, 110, 0.5); }
 .grid { display: grid; gap: 20px; }
 .grid-groups { grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); }
 .grid-products { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 18px; }
@@ -162,7 +163,7 @@ a.card:hover, .card.hoverable:hover { transform: translateY(-6px); box-shadow: 0
   border: 1px solid var(--line-strong); background: #fff; color: var(--text);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-.input:focus, .field input:focus, .field textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px rgba(253, 97, 75, 0.18); }
+.input:focus, .field input:focus, .field textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px rgba(253, 110, 110, 0.18); }
 .field textarea { min-height: 110px; resize: vertical; }
 ::placeholder { color: #8a9bb0; }
 
