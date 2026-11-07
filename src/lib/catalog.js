@@ -119,7 +119,7 @@ export const products = [...excelProducts, ...extendedProducts, ...cloneProducts
   .map(withoutSupplierCodes).map(withCarton).map(withStock);
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
-const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik', 'elvedo-profilok': 'Élvédő profilok – PVC', 'sima-lemez': 'Natúr lemezek', 'cseppmintas-lemez': 'Cseppmintás és bordás lemezek', 'festett-lemez': 'Védőfóliás festett lemezek', 'padlo-profilok': 'Padló és padló keret profilok', 'adaico-rakoncak': 'Ada rakoncák', 'dg': 'DG rakoncák', 'dobozok-tarto-konzolok': 'Szerszámosládák + tartó konzolok' };
+const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik', 'elvedo-profilok': 'Élvédő profilok – PVC', 'sima-lemez': 'Natúr lemezek', 'cseppmintas-lemez': 'Cseppmintás és bordás lemezek', 'festett-lemez': 'Védőfóliás festett lemezek', 'padlo-profilok': 'Padló és padló keret profilok', 'adaico-rakoncak': 'Ada rakoncák', 'dg': 'DG rakoncák', '25-mm-mono-profilok': '25 mm mono profilok', 'dobozok-tarto-konzolok': 'Szerszámosládák + tartó konzolok' };
 // Gyártói alkategóriák logója (a gyártó honlapjáról): a címben a név elé / helyett jelenik meg
 export const CATEGORY_LOGOS = {
   versus: { src: '/logok/versus-omega.svg', alt: 'Versus-Omega', text: true },
@@ -249,7 +249,7 @@ export const GROUP_META = {
   'aluminium-alvaz-profilok': { icon: 'Frame', text: 'Méretre vágást vállalunk.' },
   'acel-profilok': { icon: 'Construction', text: 'Acél hossztartók, keretek, lézerhegesztett és Heavy Duty acél oldalfalak nagy terhelésű felépítményekhez.' },
   'aluminium-padlo-profilok': { icon: 'Rows3', text: 'Méretre vágást vállalunk.' },
-  'ponyvas-oldalfal-profilok-es-szegok': { icon: 'Columns3', text: 'Oldalfal rendszerek, monó profilok, szegők és billencs oldalfalak.' },
+  'ponyvas-oldalfal-profilok-es-szegok': { icon: 'Columns3', text: 'Oldalfal rendszerek, mono profilok, szegők és billencs oldalfalak.' },
   'platos-alkatreszek-es-kiegeszitok': { icon: 'Truck', text: 'Alváz konzolok, TIR zsanérok, Z-zárak, fellépők és pótkerék tartók.' },
   'acel-es-alu-rakoncak-es-szegok': { icon: 'PanelsTopLeft', text: 'Köztes, első és hátsó rakoncák acélból és alumíniumból.' },
   'elhuzhato-roloponyvas-rendszer': { icon: 'Blinds', text: 'Elhúzható tető- és oldalponyva rendszerek, sarokoszlopok, C-sínek.' },
