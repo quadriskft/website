@@ -772,11 +772,11 @@
   "name": "35x2 mm Alu ponyvacső"
  },
  "245240-billencs-also-200x40-mm": {
-  "name": "Billencs alsó profil 200x40 mm",
+  "name": "Billencs alsó profil 200x40 mm natúr",
   "order": 1
  },
  "243240-billencs-kozepso-200x40-mm": {
-  "name": "Billencs középső profil 200x40 mm",
+  "name": "Billencs középső profil 200x40 mm natúr",
   "order": 6
  },
  "222020-h-szego-kiugros-25-mm-elox": {
@@ -2678,15 +2678,15 @@
   "order": 13
  },
  "247180-billencs-also-profil-200-45-mm-30-mm-elox": {
-  "name": "Billencs alsó profil 200+45/30 mm, eloxált",
+  "name": "Billencs alsó profil 200/30 mm, eloxált",
   "order": 2
  },
  "247174-bill-also-hosszu-szakalas-profil-150-30-elox": {
-  "name": "Billencs alsó profil 150/30 mm, hosszú szakállas, eloxált",
+  "name": "Billencs alsó profil 150/30 mm, hosszú peremes, eloxált",
   "order": 3
  },
  "247243-billencs-felso-200x40-mm": {
-  "name": "Billencs felső profil 200x40 mm",
+  "name": "Billencs felső profil 200x40 mm natúr",
   "order": 4
  },
  "247152-bill-felso-profil-200-30-mm-elox": {
@@ -2694,7 +2694,7 @@
   "order": 5
  },
  "247158-billencs-kozepso-200x30-mm-profil": {
-  "name": "Billencs középső profil 200x30 mm",
+  "name": "Billencs középső profil 200x30 mm eloxált",
   "order": 7
  },
  "247162-bill-koztes-profil-100-30-mm-elox": {
