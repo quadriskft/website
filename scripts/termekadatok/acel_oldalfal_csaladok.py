@@ -43,7 +43,8 @@ SYSTEMS = [  # (azonosító, név, feltétel)
 
 # gyártási hosszak a gyártói katalógus szerint: Heavy Duty 2500 / 5000 / 6000 mm (FHD: 2500 / 5000 mm),
 # a lézerhegesztett profilok 0,5–13,5 m között tetszőleges hosszban
-LIGHT = {"min": 500, "max": 13500, "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."}
+# lézerhegesztett rendszerek: nincs egyedi hossz megadása (a Quadris kérése), darabra rendelhetők
+LIGHT = None
 HEAVY = {"options": [2500, 5000, 6000], "hint": "Gyártási hosszak: 2500, 5000 vagy 6000 mm. Több hossz is megadható."}
 LENGTHS = {"fhd": {"options": [2500, 5000], "hint": "Gyártási hosszak: 2500 vagy 5000 mm. Több hossz is megadható."},
            "fox-b-hv": HEAVY, "foxl-b-hv": HEAVY, "foxl-bn-hvn": HEAVY, "foxl-bak-hvak": HEAVY, "fox-rock": HEAVY}
@@ -124,7 +125,7 @@ def main():
                             (spec(r[5], "Lemezvastagság [mm]") + " mm") if spec(r[5], "Lemezvastagság [mm]") else spec(r[5], "Falvastagság") or "–",
                             dec1(spec(r[5], "Tömeg [kg/m]") or spec(r[5], "Tömeg").replace(" kg/fm", "")) or "–"]
                      for r in rows},
-            "lengths": LENGTHS.get(sid, LIGHT),
+            **({"lengths": LENGTHS[sid]} if LENGTHS.get(sid, LIGHT) else {}),
             "leader": leader,
             "members": {r[3]: f"{r[1]} – {r[2]} mm" if r[2] else r[1] for r in rows},
         }

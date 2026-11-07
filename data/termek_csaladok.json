@@ -2734,11 +2734,6 @@
     "19,1"
    ]
   },
-  "lengths": {
-   "min": 500,
-   "max": 13500,
-   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
-  },
   "leader": "acel-oldalfal-bak-300",
   "members": {
    "acel-oldalfal-bak-300": "BAK 300 – 300 mm",
@@ -2822,11 +2817,6 @@
     "24,6"
    ]
   },
-  "lengths": {
-   "min": 500,
-   "max": 13500,
-   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
-  },
   "leader": "acel-oldalfal-bakkt-400",
   "members": {
    "acel-oldalfal-bakkt-400": "BAKkT 400 – 400 mm",
@@ -2888,11 +2878,6 @@
     "2,0 mm",
     "19,0"
    ]
-  },
-  "lengths": {
-   "min": 500,
-   "max": 13500,
-   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
   },
   "leader": "acel-oldalfal-hvak-500",
   "members": {
@@ -2974,11 +2959,6 @@
     "24,1"
    ]
   },
-  "lengths": {
-   "min": 500,
-   "max": 13500,
-   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
-  },
   "leader": "acel-oldalfal-bnkt-400",
   "members": {
    "acel-oldalfal-bnkt-400": "BNkT 400 – 400 mm",
@@ -3047,11 +3027,6 @@
     "2,0 mm",
     "18,7"
    ]
-  },
-  "lengths": {
-   "min": 500,
-   "max": 13500,
-   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
   },
   "leader": "acel-oldalfal-hvn-400",
   "members": {
@@ -3126,11 +3101,6 @@
     "2,5 mm",
     "23,6"
    ]
-  },
-  "lengths": {
-   "min": 500,
-   "max": 13500,
-   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
   },
   "leader": "acel-oldalfal-b-300",
   "members": {
@@ -3220,11 +3190,6 @@
     "2,0 mm",
     "20,7"
    ]
-  },
-  "lengths": {
-   "min": 500,
-   "max": 13500,
-   "hint": "Gyártási hossz: 500–13 500 mm között bármilyen hosszban (±1 mm). Több hossz is megadható."
   },
   "leader": "acel-oldalfal-hv-300",
   "members": {
