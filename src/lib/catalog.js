@@ -211,27 +211,19 @@ const counts = new Map();
 for (const p of products) {
   for (const k of [`${p.group}/${p.category}`, ...alsoIn(p)]) counts.set(k, (counts.get(k) ?? 0) + 1);
 }
-// A termékcsoportok sorrendje (a Quadris kérése szerint); a listában nem szereplők utánuk, ABC sorrendben
-const GROUP_ORDER = [
-  'aluminium-lemezek', 'ipari-felgyartmanyok', 'aluminium-alvaz-profilok', 'aluminium-padlo-profilok',
-  'ponyvas-oldalfal-profilok-es-szegok', 'elhuzhato-roloponyvas-rendszer', 'hatso-ajtok-es-athajto-rampak', 'italszallito-kit',
-  'zart-dobozos-es-hutos-profilok', 'acel-profilok', 'platos-alkatreszek-es-kiegeszitok', 'ponyvarendszer-kiegeszitok',
-  'acel-es-alu-rakoncak-es-szegok', 'dobozos-felepitmeny-alkatreszek', 'rakomanyrogzites', 'sarvedok-szerszamosladak',
-  'kedergumik', 'csuszasmentes-retegelt-padlo', 'gumiszonyegek', 'szellozes-tetoablakok-vilagitas', 'specialis-felepitmeny-alkatreszek',
-  'uvegszalas-polieszter',
-  'billencs-alkatreszek',
-];
-const groupRank = (slug) => (GROUP_ORDER.includes(slug) ? GROUP_ORDER.indexOf(slug) : GROUP_ORDER.length);
 
 export const groups = groupList
   .map((g) => {
+    // alkategóriák ABC sorrendben (a Quadris kérése)
     const categories = g.categories
       .map((c) => ({ ...c, count: counts.get(`${g.slug}/${c.slug}`) ?? 0 }))
-      .filter((c) => c.count > 0);
+      .filter((c) => c.count > 0)
+      .sort((a, b) => a.name.localeCompare(b.name, 'hu'));
     return { ...g, categories, count: categories.reduce((n, c) => n + c.count, 0) };
   })
   .filter((g) => g.count > 0)
-  .sort((a, b) => groupRank(a.slug) - groupRank(b.slug) || a.name.localeCompare(b.name, 'hu'));
+  // termékcsoportok ABC sorrendben (a Quadris kérése; a korábbi kézi GROUP_ORDER nem érvényes)
+  .sort((a, b) => a.name.localeCompare(b.name, 'hu'));
 
 const groupsBySlug = new Map(groups.map((g) => [g.slug, g]));
 const productsBySlug = new Map(products.map((p) => [p.slug, p]));
