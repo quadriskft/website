@@ -238,7 +238,7 @@ const productsBySlug = new Map(products.map((p) => [p.slug, p]));
 
 // Csoportonkénti ikon (Lucide) és rövid leírás
 export const GROUP_META = {
-  'aluminium-alvaz-profilok': { icon: 'Frame', text: 'Hossz- és kereszttartók, keretprofilok, aláfutásgátló profilok alumínium alvázakhoz.' },
+  'aluminium-alvaz-profilok': { icon: 'Frame', text: 'Méretre vágást vállalunk.' },
   'acel-profilok': { icon: 'Construction', text: 'Acél hossztartók, keretek, lézerhegesztett és Heavy Duty acél oldalfalak nagy terhelésű felépítményekhez.' },
   'aluminium-padlo-profilok': { icon: 'Rows3', text: 'Padló-, rámpa- és autószállító profilok alumíniumból.' },
   'ponyvas-oldalfal-profilok-es-szegok': { icon: 'Columns3', text: 'Oldalfal rendszerek, monó profilok, szegők és billencs oldalfalak.' },

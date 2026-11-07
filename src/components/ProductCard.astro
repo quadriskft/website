@@ -28,7 +28,8 @@ const { product, hideCode = false } = Astro.props;
   .product-link:hover h3 { color: var(--accent); }
   .stock-badge { display: inline-flex; align-items: center; gap: 4px; margin: 10px 4px 0; padding: 3px 9px; border-radius: var(--radius-btn);
     background: rgba(18, 163, 107, 0.1); color: var(--ok); font-size: 0.72rem; font-weight: 700; }
-  .product-foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 4px 2px; flex-wrap: wrap; }
+  .product-foot { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 4px 4px 2px; flex-wrap: wrap; }
+  .product-foot .code:empty, .product-foot .code { display: none; }
   .code { font-size: 0.8rem; }
   .add-btn {
     display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: var(--radius-btn);
