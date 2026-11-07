@@ -73,7 +73,11 @@ const cloneProducts = Object.entries(families).filter(([id, f]) => !id.startsWit
   const [baseSlug, ...rest] = Object.keys(f.members);
   const base = [...excelProducts, ...extendedProducts].find((p) => p.slug === baseSlug);
   if (!base) return [];
-  return rest.map((slug) => ({ ...base, slug, images: extra[slug]?.images ?? base.images, specs: { ...base.specs, ...(extra[slug]?.specs ?? {}) } }));
+  return rest.map((slug) => {
+    const f = fixes[slug];  // a másolat saját kézi javításai (pl. név: „… jobbos”)
+    return { ...base, slug, images: extra[slug]?.images ?? base.images, specs: { ...base.specs, ...(extra[slug]?.specs ?? {}), ...(f?.specs ?? {}) },
+      ...(f?.name ? { name: f.name } : {}), ...(f?.description ? { description: f.description } : {}) };
+  });
 });
 
 // A beszállító / gyártó saját cikk- vagy profilszáma a műszaki adatok között sem jelenik meg (a Quadris kérése)
