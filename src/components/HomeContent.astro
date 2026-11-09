@@ -51,6 +51,7 @@ function packChips(cats) {
     <div class="band-sheen" aria-hidden="true"></div>
     <div class="container">
       <div class="section-head">
+        <span class="brand-accent" aria-hidden="true"></span>
         <h2 class="display display-xl">Termékkategóriák</h2>
       </div>
       {/* Kategóriakártyák: kép, középre zárt név, alkategória-gombok; mobilon alatta balról jobbra húzható terméksáv */}
@@ -304,7 +305,8 @@ function packChips(cats) {
   /* a cím a felső fémes vonal és a teljes szélességű gomb között, függőlegesen középen áll */
   .groups-section { padding: 40px 0 64px; }
   .section-head { display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 40px; }
-  .display-xl { max-width: none; font-size: clamp(2.5rem, 6.4vw, 5.4rem); line-height: 1; }
+  .display-xl { max-width: none; font-size: clamp(2.1rem, 4.6vw, 3.8rem); line-height: 1; }
+  .section-head .brand-accent { margin-bottom: 16px; }
   /* Kategóriakártyák (asztalon rácsban, mobilon egy oszlopban): kép, középre zárt név, alkategória-gombok */
   .m-groups { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
   .m-block { min-width: 0; display: flex; flex-direction: column; }
@@ -335,7 +337,9 @@ function packChips(cats) {
 
   /* ---- CTA sáv ---- */
   .cta-section { background: var(--brand-gradient); color: var(--on-brand); padding: 56px 0; }
-  .cta-section .btn-light { background: var(--on-brand); color: var(--brand); }
+  /* ez is ajánlatkérés: piros */
+  .cta-section .btn-light { background: var(--tomato); color: #fff; box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.45); }
+  .cta-section .btn-light:hover { background: var(--tomato-2); }
   .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
   .cta-inner h2 { color: var(--on-brand); margin: 0 0 6px; font-size: clamp(1.4rem, 2.4vw, 1.9rem); }
   .cta-inner p { margin: 0; color: rgba(246, 243, 236, 0.84); font-size: 0.98rem; max-width: 620px; }
@@ -359,7 +363,8 @@ function packChips(cats) {
     .cta-inner .btn { width: 100%; justify-content: center; }
     .groups-section { padding-top: 28px; }
     .section-head { margin-bottom: 28px; }
-    .display-xl { font-size: clamp(2rem, 10.6vw, 3rem); }
+    .display-xl { font-size: clamp(1.8rem, 8.6vw, 2.4rem); }
+    .section-head .brand-accent { margin-bottom: 12px; }
     .cta-section { padding: 44px 0; }
     /* Mobil: egy kategória soronként, alatta húzható terméksáv */
     .m-groups { grid-template-columns: 1fr; gap: 30px; }
