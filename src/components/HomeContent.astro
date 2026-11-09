@@ -20,32 +20,6 @@ function packChips(cats) {
 
 // A főoldal tartalma: teljes szélességű videó-hero a fejléc alatt, majd a bemutatkozó és katalógus szekciók.
 
-// Rövid, egysoros összefoglaló a főoldali termékcsoport-kártyákra
-const SHORT = {
-  'acel-es-alu-rakoncak-es-szegok': 'Első, köztes és hátsó rakoncák.',
-  'acel-profilok': 'Hossztartók, keretek, oldalfalak.',
-  'aluminium-alvaz-profilok': 'Tartók, keretek, aláfutásgátlók.',
-  'aluminium-lemezek': 'Sima, mintás és festett lemezek.',
-  'aluminium-padlo-profilok': 'Padló- és rámpaprofilok.',
-  'billencs-alkatreszek': 'Munkahengerek, bölcsők, vezérlés.',
-  'csuszasmentes-retegelt-padlo': 'Rétegelt padló- és fallemezek.',
-  'dobozos-felepitmeny-alkatreszek': 'Zsanérok, zárak, tömítések.',
-  'elhuzhato-roloponyvas-rendszer': 'Elhúzható tető- és oldalponyvák.',
-  'gumiszonyegek': 'Istálló- és rámpaszőnyegek.',
-  'hatso-ajtok-es-athajto-rampak': 'Hátsó ajtók és rámpák.',
-  'ipari-felgyartmanyok': 'Zártszelvények, csövek, rudak.',
-  'italszallito-kit': 'Készlet italszállítókhoz.',
-  'kedergumik': 'Élvédő, tömítő, kéderprofilok.',
-  'platos-alkatreszek-es-kiegeszitok': 'Konzolok, zsanérok, zárak.',
-  'ponyvarendszer-kiegeszitok': 'Ponyvacsövek, tartók, feszítők.',
-  'ponyvas-oldalfal-profilok-es-szegok': 'Oldalfal-profilok és szegők.',
-  'rakomanyrogzites': 'Sínek, rudak, hevederek.',
-  'sarvedok-szerszamosladak': 'Sárvédők, ládák, tartályok.',
-  'specialis-felepitmeny-alkatreszek': 'Speciális zárak és szerelvények.',
-  'szellozes-tetoablakok-vilagitas': 'Szellőzők, tetőablakok, lámpák.',
-  'uvegszalas-polieszter': 'GFK lemezek és panelek.',
-  'zart-dobozos-es-hutos-profilok': 'Dobozos és hűtős profilok.',
-};
 
 ---
   <div class="hero-video">
@@ -79,20 +53,7 @@ const SHORT = {
       <div class="section-head">
         <h2 class="display display-xl">Termékkategóriák</h2>
       </div>
-      <div class="grid grid-groups">
-        {groups.map((g, i) => (
-          <a href={`/termekek/${g.slug}`} class="card group-card">
-            <div class="group-media">
-              {groupImage(g.slug) ? <img src={groupImage(g.slug)} alt="" loading="lazy" width="800" height="560" />
-                : <span class="media-empty" aria-hidden="true"></span>}
-            </div>
-            <h3>{g.name}</h3>
-            {SHORT[g.slug] && <p class="muted">{SHORT[g.slug]}</p>}
-            <span class="group-count">{g.count} termék <Icon name="ArrowRight" size={14} /></span>
-          </a>
-        ))}
-      </div>
-      {/* Mobil nézet: soronként egy kategória nagy képpel, alatta balról jobbra húzható terméksáv */}
+      {/* Kategóriakártyák: kép, középre zárt név, alkategória-gombok; mobilon alatta balról jobbra húzható terméksáv */}
       <div class="m-groups">
         {groups.map((g) => {
           const items = productsIn(g.slug);
@@ -344,22 +305,33 @@ const SHORT = {
   .groups-section { padding: 40px 0 64px; }
   .section-head { display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 40px; }
   .display-xl { max-width: none; font-size: clamp(2.5rem, 6.4vw, 5.4rem); line-height: 1; }
-  .m-groups { display: none; }
+  /* Kategóriakártyák (asztalon rácsban, mobilon egy oszlopban): kép, középre zárt név, alkategória-gombok */
+  .m-groups { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+  .m-block { min-width: 0; display: flex; flex-direction: column; }
+  .m-block > .m-group { flex: 1 1 auto; }
+  .m-group { display: block; padding: 0; overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+  .m-group:hover { transform: translateY(-4px); box-shadow: 0 30px 50px -26px rgba(18, 24, 33, 0.45), var(--metal-bevel), 0 0 0 3px rgba(14, 79, 85, 0.5), 0 0 22px 3px rgba(14, 79, 85, 0.45); }
+  .m-group-head { display: block; color: inherit; text-decoration: none !important; }
+  .m-group-media { aspect-ratio: 10 / 7; background: #fff; border-bottom: 1px solid var(--line); overflow: hidden; }
+  .m-group-media img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+  .m-group:hover .m-group-media img { transform: scale(1.04); }
+  /* a név középen, a kép alja és az alkategória-gombok teteje között függőlegesen is középre zárva */
+  .m-group-title { padding: 14px 14px; text-align: center; }
+  .m-group-title h3 { margin: 0; font-size: 1.12rem; font-weight: 600; line-height: 1.2; color: var(--navy); text-wrap: balance; }
+  .m-chips { list-style: none; margin: 0; padding: 0 10px 16px; display: flex; flex-wrap: wrap; gap: 7px; }
+  .m-chips .metal-chip { font-size: calc(0.78rem * var(--chip-scale, 1)); padding: 5px calc(9px * var(--chip-scale, 1)); white-space: nowrap; }
+  .m-chips .metal-chip .muted { margin-left: 5px; }
+  /* JS-sel sorokba rendezve: a sorok a kártya két széléig érnek, a gombok egyenletesen kitöltik */
+  .m-chips.is-packed { flex-direction: column; flex-wrap: nowrap; }
+  .m-chips :global(.m-chip-row) { display: flex; gap: 7px; }
+  .m-chips :global(.m-chip-row .metal-chip) { flex: 1 1 auto; justify-content: center; }
+  .m-strip { display: none; }
+  @media (max-width: 1180px) { .m-groups { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 900px) { .m-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   .section-head h2 { margin: 0; }
   /* nagy, középre zárt szekciócím – a bevezető címével azonos stílus */
   .display { max-width: 900px; font-family: var(--font-head); font-weight: 800; font-size: clamp(2.2rem, 4.4vw, 4rem); line-height: 1.04; letter-spacing: -0.03em; color: var(--navy); text-wrap: balance; }
-  .grid-groups { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
-  .group-card { padding: 0 16px 14px; display: flex !important; flex-direction: column; overflow: hidden; }
-  .group-media { position: relative; margin: 0 -16px 12px; aspect-ratio: 10 / 7; background: #fff; border-bottom: 1px solid var(--line); overflow: hidden; }
-  .group-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
-  .group-card:hover .group-media img { transform: scale(1.05); }
   .media-empty { display: block; width: 100%; height: 100%; background: linear-gradient(135deg, #fbfcfd, #eef1f4); }
-  .group-card h3 {
-    font-size: 0.95rem; font-weight: 600; color: var(--navy); line-height: 1.3; margin: 0 0 4px;
-    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
-  }
-  .group-card p { font-size: 0.82rem; line-height: 1.45; margin: 0 0 10px; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .group-count { display: inline-flex; align-items: center; gap: 5px; margin-top: auto; font-size: 0.8rem; font-weight: 600; color: var(--accent); }
 
   /* ---- CTA sáv ---- */
   .cta-section { background: var(--brand-gradient); color: var(--on-brand); padding: 56px 0; }
@@ -369,9 +341,7 @@ const SHORT = {
   .cta-inner p { margin: 0; color: rgba(246, 243, 236, 0.84); font-size: 0.98rem; max-width: 620px; }
 
   /* ---- Reszponzív ---- */
-  @media (max-width: 1180px) { .grid-groups { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
   @media (max-width: 960px) {
-    .grid-groups { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   }
   @media (max-width: 640px) {
     .hero-scroll { display: none; }
@@ -391,24 +361,13 @@ const SHORT = {
     .section-head { margin-bottom: 28px; }
     .display-xl { font-size: clamp(2rem, 10.6vw, 3rem); }
     .cta-section { padding: 44px 0; }
-    /* Mobil: egy kategória soronként, alatta húzható terméksáv (asztali rács elrejtve) */
-    .grid-groups { display: none; }
-    .m-groups { display: grid; gap: 30px; }
-    .m-block { min-width: 0; }
-    .m-group { display: block; padding: 0; overflow: hidden; }
-    .m-group-head { display: block; color: inherit; text-decoration: none !important; }
-    .m-group-media { aspect-ratio: 16 / 9; background: #fff; border-bottom: 1px solid var(--line); overflow: hidden; }
-    .m-group-media img { display: block; width: 100%; height: 100%; object-fit: cover; }
-    /* a név középen, a kép alja és az alkategória-gombok teteje között függőlegesen is középre zárva */
-    .m-group-title { padding: 16px 16px; text-align: center; }
-    .m-group-title h3 { margin: 0; font-size: 1.45rem; font-weight: 600; line-height: 1.2; color: var(--navy); text-wrap: balance; }
-    .m-chips { list-style: none; margin: 0; padding: 0 12px 18px; display: flex; flex-wrap: wrap; gap: 7px; }
-    .m-chips .metal-chip { font-size: calc(0.78rem * var(--chip-scale, 1)); padding: 5px calc(9px * var(--chip-scale, 1)); white-space: nowrap; }
-    /* JS-sel sorokba rendezve: a sorok a kártya két széléig érnek, a gombok egyenletesen kitöltik */
-    .m-chips.is-packed { flex-direction: column; flex-wrap: nowrap; }
-    .m-chips :global(.m-chip-row) { display: flex; gap: 7px; }
-    .m-chips :global(.m-chip-row .metal-chip) { flex: 1 1 auto; justify-content: center; }
-    .m-chips .metal-chip .muted { margin-left: 5px; }
+    /* Mobil: egy kategória soronként, alatta húzható terméksáv */
+    .m-groups { grid-template-columns: 1fr; gap: 30px; }
+    .m-group-media { aspect-ratio: 16 / 9; }
+    .m-block > .m-group { flex: none; }
+    .m-group-title { padding: 16px 16px; }
+    .m-group-title h3 { font-size: 1.45rem; }
+    .m-chips { padding: 0 12px 18px; }
     /* a kártya alatt, attól külön: balról jobbra húzható, egyenként fémkeretes termékkártyák */
     .m-strip { display: flex; gap: 10px; overflow-x: auto; margin: 0 -16px; padding: 12px 16px 6px; scroll-snap-type: x proximity; scroll-padding-left: 16px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
     /* automatikus lassú mozgás közben nincs rácsra igazítás (a kézi húzás után visszakapcsol) */
@@ -418,7 +377,6 @@ const SHORT = {
     .m-tile-img { display: block; aspect-ratio: 1; background: #fff; overflow: hidden; border-radius: 6px; }
     .m-tile-img img { display: block; width: 100%; height: 100%; object-fit: contain; }
     .m-tile-name { font-size: 0.8rem; font-weight: 500; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.6em; }
-    .m-tile-all { justify-content: center; align-items: center; text-align: center; gap: 8px; color: var(--accent); font-size: 0.82rem; font-weight: 600; }
   }
 
 </style>
