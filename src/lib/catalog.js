@@ -354,6 +354,11 @@ export function groupImage(slug) {
   return existsSync(`${process.cwd()}/public/csoportkepek/${slug}.webp`) ? `/csoportkepek/${slug}.webp` : null;
 }
 
+// A kategóriaoldal bal oldalsávjának alján álló kép (public/csoportkepek/oldalsav/<csoport>.webp), ha van
+export function sidebarImage(slug) {
+  return existsSync(`${process.cwd()}/public/csoportkepek/oldalsav/${slug}.webp`) ? `/csoportkepek/oldalsav/${slug}.webp` : null;
+}
+
 // A csoportoldal oldalsávjában, a kategórialista alatt megjelenő kép (a Quadris küldi): public/csoportkepek/oldalsav/<csoport>.webp
 export function groupIcon(slug) {
   return GROUP_META[slug]?.icon ?? 'Package';
