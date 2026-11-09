@@ -292,18 +292,18 @@ const SHORT = {
 
   /* ---- Bevezető: középre zárt cím és gombok, alatta hat kiemelt termékcsoport ---- */
   /* ---- Bevezető: kék blokk balra igazítva – állítás és két gomb ---- */
-  .intro { background: var(--brand); padding: 52px 0 44px; }
+  .intro { background: var(--brand-gradient); padding: 52px 0 44px; }
   .intro-inner { max-width: 760px; container-type: inline-size; display: flex; flex-direction: column; align-items: stretch; text-align: left; }
   .brand-accent { display: block; width: 44px; height: 4px; border-radius: 2px; background: #fd671c; margin-bottom: 18px; }
   /* 8.62 = a hosszabb sor („a felépítményéhez”) szélessége em-ben (Jost 700): a cím a tároló szélességét tölti ki */
   .brand-word { margin: 0; font-family: var(--font-head); font-weight: 700; font-size: min(calc(100cqi / 8.62), 5.2rem); line-height: 1.02; letter-spacing: -0.01em; color: var(--on-brand); white-space: nowrap; text-transform: none; }
-  .brand-tag { margin: 12px 0 0; font-size: clamp(1.15rem, 3.4cqi, 1.6rem); font-weight: 500; line-height: 1.3; color: rgba(16, 32, 58, 0.84); }
+  .brand-tag { margin: 12px 0 0; font-size: clamp(1.15rem, 3.4cqi, 1.6rem); font-weight: 500; line-height: 1.3; color: rgba(252, 255, 255, 0.84); }
   .intro-actions { display: flex; gap: 12px; margin-top: 28px; }
   .intro-actions .btn { justify-content: center; padding-top: 16px; padding-bottom: 16px; }
-  .btn-white { flex: 1 1 0; background: #fcffff; color: var(--on-brand); box-shadow: 0 8px 18px -10px rgba(0, 0, 0, 0.35); }
-  .btn-white:hover { background: #fff; color: var(--on-brand); transform: translateY(-1px); }
-  .btn-outline-light { flex: 0 1 auto; background: transparent; color: var(--on-brand); border-color: rgba(16, 32, 58, 0.55); }
-  .btn-outline-light:hover { background: rgba(16, 32, 58, 0.08); border-color: var(--on-brand); color: var(--on-brand); }
+  .btn-white { flex: 1 1 0; background: #fcffff; color: var(--brand); box-shadow: 0 8px 18px -10px rgba(0, 0, 0, 0.35); }
+  .btn-white:hover { background: #fff; color: var(--brand); transform: translateY(-1px); }
+  .btn-outline-light { flex: 0 1 auto; background: transparent; color: var(--on-brand); border-color: rgba(252, 255, 255, 0.55); }
+  .btn-outline-light:hover { background: rgba(252, 255, 255, 0.08); border-color: var(--on-brand); color: var(--on-brand); }
   .link-arrow { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 600; font-size: 0.88rem; }
 
   /* ---- Váltakozó sávok: világos hűvösszürke háttér, fent-lent vékony fémes él ---- */
@@ -355,11 +355,11 @@ const SHORT = {
   .why-card p { margin: 0; font-size: 0.94rem; line-height: 1.45; }
 
   /* ---- CTA sáv ---- */
-  .cta-section { background: var(--brand); color: var(--on-brand); padding: 56px 0; }
-  .cta-section .btn-light { color: var(--on-brand); }
+  .cta-section { background: var(--brand-gradient); color: var(--on-brand); padding: 56px 0; }
+  .cta-section .btn-light { color: var(--brand); }
   .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
   .cta-inner h2 { color: var(--on-brand); margin: 0 0 6px; font-size: clamp(1.4rem, 2.4vw, 1.9rem); }
-  .cta-inner p { margin: 0; color: rgba(16, 32, 58, 0.84); font-size: 0.98rem; max-width: 620px; }
+  .cta-inner p { margin: 0; color: rgba(252, 255, 255, 0.84); font-size: 0.98rem; max-width: 620px; }
 
   /* ---- Reszponzív ---- */
   @media (max-width: 1180px) { .grid-groups { grid-template-columns: repeat(4, minmax(0, 1fr)); } }

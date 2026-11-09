@@ -9,9 +9,10 @@
   --text: #121a26;
   --text-2: #3b4656;
   --muted: #6b7684;
-  --navy: #bdd967;  /* a címek és kiemelt szavak színe: a márkaszín (a Quadris kérése) */
-  --brand: #bdd967;  /* márkaszín: főoldali blokk, záró sáv, lábléc háttere */
-  --on-brand: #10203a;  /* szöveg a márkaszínű háttéren (a fehér nem olvasható rajta) */
+  --navy: #0e4f55;  /* a címek és kiemelt szavak színe: a márkaszín (Ocean Teal) */
+  --brand: #0e4f55;  /* márkaszín: Ocean Teal (RGB 14, 79, 85) */
+  --brand-gradient: linear-gradient(180deg, #2f6b77 0%, #1a5a63 45%, #0e4f55 100%);  /* felülről lefelé sötétedő háttér */
+  --on-brand: #fcffff;  /* szöveg a márkaszínű háttéren */
   --accent: #0a6cff;
   --accent-2: #0a4fc4;
   --accent-soft: rgba(10, 108, 255, 0.08);
