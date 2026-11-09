@@ -13,6 +13,8 @@
   --brand: #0e4f55;  /* márkaszín: Ocean Teal (RGB 14, 79, 85) */
   --brand-gradient: linear-gradient(180deg, #2f6b77 0%, #1a5a63 45%, #0e4f55 100%);  /* felülről lefelé sötétedő háttér */
   --on-brand: #fcffff;  /* szöveg a márkaszínű háttéren */
+  --tomato: #f2462e;  /* kiemelő szín (Tomato Red): mindig az ajánlatkérést jelzi */
+  --tomato-2: #d93a24;
   --accent: #0a6cff;
   --accent-2: #0a4fc4;
   --accent-soft: rgba(10, 108, 255, 0.08);

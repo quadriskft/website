@@ -294,10 +294,10 @@ const SHORT = {
   /* ---- Bevezető: kék blokk balra igazítva – állítás és két gomb ---- */
   .intro { background: var(--brand-gradient); padding: 52px 0 44px; }
   .intro-inner { max-width: 760px; container-type: inline-size; display: flex; flex-direction: column; align-items: stretch; text-align: left; }
-  .brand-accent { display: block; width: 44px; height: 4px; border-radius: 2px; background: #fd671c; margin-bottom: 18px; }
+  .brand-accent { display: block; width: 44px; height: 4px; border-radius: 2px; background: var(--tomato); margin-bottom: 18px; }
   /* 8.62 = a hosszabb sor („a felépítményéhez”) szélessége em-ben (Jost 700): a cím a tároló szélességét tölti ki */
   .brand-word { margin: 0; font-family: var(--font-head); font-weight: 700; font-size: min(calc(100cqi / 8.62), 5.2rem); line-height: 1.02; letter-spacing: -0.01em; color: var(--on-brand); white-space: nowrap; text-transform: none; }
-  .brand-tag { margin: 12px 0 0; font-size: clamp(1.15rem, 3.4cqi, 1.6rem); font-weight: 500; line-height: 1.3; color: rgba(252, 255, 255, 0.84); }
+  .brand-tag { margin: 12px 0 0; font-size: clamp(1.15rem, 3.4cqi, 1.6rem); font-weight: 500; line-height: 1.3; font-weight: 700; color: var(--tomato); }
   .intro-actions { display: flex; gap: 12px; margin-top: 28px; }
   .intro-actions .btn { justify-content: center; padding-top: 16px; padding-bottom: 16px; }
   .btn-white { flex: 1 1 0; background: #fcffff; color: var(--brand); box-shadow: 0 8px 18px -10px rgba(0, 0, 0, 0.35); }

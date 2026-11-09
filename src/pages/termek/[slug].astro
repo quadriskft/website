@@ -578,6 +578,9 @@ const jsonLd = [
   .copy:hover { color: var(--accent); border-color: var(--accent); }
   .copy:global(.done) { color: var(--ok); border-color: var(--ok); }
   .order { padding: 22px; margin: 26px 0 20px; }
+  /* a termékoldal fő művelete (Ajánlatkérőbe): kiemelő piros */
+  .order .btn-primary { background: var(--tomato); box-shadow: 0 6px 16px -8px rgba(242, 70, 46, 0.55); }
+  .order .btn-primary:hover { background: var(--tomato-2); }
   .cut-title { font-size: 1.08rem; font-weight: 700; margin: 0 0 6px; }
   .cut-head, .cut-order :global(.cut-row) { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) 36px; gap: 10px; align-items: center; }
   .cut-head { margin: 16px 0 6px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
