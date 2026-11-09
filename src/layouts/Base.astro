@@ -388,7 +388,7 @@ const fontCss = fallbackFace +
   /* „Fel” nyíl */
   .to-top {
     position: fixed; right: 20px; bottom: 20px; z-index: 90; width: 48px; height: 48px; border-radius: 50%;
-    display: grid; place-items: center; background: var(--accent); color: #fff; box-shadow: 0 10px 24px -10px rgba(10, 108, 255, 0.7);
+    display: grid; place-items: center; background: var(--accent); color: #fff; box-shadow: 0 10px 24px -10px rgba(14, 79, 85, 0.7);
     opacity: 0; pointer-events: none; transform: translateY(12px); transition: opacity 0.2s ease, transform 0.2s ease;
   }
   .to-top.show { opacity: 1; pointer-events: auto; transform: none; }
@@ -476,7 +476,7 @@ const fontCss = fallbackFace +
   }
   .header-search input::placeholder { color: var(--hd-ph); }
   .header-search input::-webkit-search-decoration { -webkit-appearance: none; }
-  .header-search input:focus { outline: none; background: #fff; color: var(--text); border-color: var(--accent); box-shadow: 0 0 0 3px rgba(10, 108, 255, 0.15); }
+  .header-search input:focus { outline: none; background: #fff; color: var(--text); border-color: var(--accent); box-shadow: 0 0 0 3px rgba(14, 79, 85, 0.15); }
   .header-search input:focus::placeholder { color: var(--muted); }
   .header-search:focus-within :global(.search-icon) { color: var(--accent); }
   .suggest {
@@ -491,7 +491,10 @@ const fontCss = fallbackFace +
   .suggest :global(.s-all) { color: var(--accent); font-size: 0.88rem; font-weight: 600; border-top: 1px solid var(--line); border-radius: 0 0 6px 6px; margin-top: 4px; }
   .suggest :global(.s-empty) { padding: 12px; font-size: 0.9rem; color: var(--muted); }
 
-  .quote-btn { position: relative; height: 40px; padding: 0 16px; gap: 8px; }
+  /* asztalon piros: a piros mindig az ajánlatkérést jelzi; a számláló fehér körben */
+  .quote-btn { position: relative; height: 40px; padding: 0 16px; gap: 8px; background: var(--tomato); box-shadow: 0 6px 16px -8px rgba(242, 70, 46, 0.55); }
+  .quote-btn:hover { background: var(--tomato-2); }
+  .quote-btn .quote-count { background: #fff; color: var(--tomato); }
   .quote-btn :global(svg) { width: 18px; height: 18px; }
   .quote-count {
     min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px; background: var(--tomato); color: #fff;
@@ -521,7 +524,7 @@ const fontCss = fallbackFace +
     .site-header { --hd-bg: #fcffff; backdrop-filter: none; -webkit-backdrop-filter: none; }
     .quote-btn { width: 40px; padding: 0; justify-content: center; background: var(--hd-field); color: var(--hd-fg); border: 1px solid var(--hd-field-line); box-shadow: none; }
     .quote-btn:hover { background: var(--hd-field); color: var(--accent); transform: none; }
-    .quote-count { position: absolute; top: -7px; right: -7px; }
+    .quote-btn .quote-count { position: absolute; top: -7px; right: -7px; background: var(--tomato); color: #fff; }
     .menu-toggle { display: grid; }
     /* Mobil menü: fehér, teljes szélességű panel a fejléc alatt */
     .main-nav {
