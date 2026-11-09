@@ -197,6 +197,71 @@ const SHORT = {
     }
   }
 
+  // Mobil kategóriakártyák alkategória-gombjai: a tényleges szélességek alapján a lehető legkevesebb sorba rendezve
+  // (a legszélesebbtől kezdve az első sorba, ahová még befér), a sorok a kártya két széléig egyenletesen kitöltve.
+  const chipLists = [...document.querySelectorAll<HTMLElement>('.m-chips')];
+  const chipStore = new Map(chipLists.map((ul) => [ul, [...ul.querySelectorAll<HTMLElement>('a.metal-chip')]]));
+  const GAP = 7;
+  const SCALES = [1, 0.94, 0.88, 0.84];  // ha kicsit kisebb betűvel kevesebb sor kell, azt választjuk
+  function layoutChips() {
+    for (const ul of chipLists) {
+      const chips = chipStore.get(ul)!;
+      let best: { rows: { items: HTMLElement[]; used: number }[]; scale: number } | null = null;
+      for (const scale of SCALES) {
+        // mérés: minden gomb külön, természetes szélességgel
+        ul.classList.remove('is-packed');
+        ul.style.setProperty('--chip-scale', String(scale));
+        ul.replaceChildren(...chips.map((a) => { const li = document.createElement('li'); li.append(a); return li; }));
+        const cs = getComputedStyle(ul);
+        const avail = ul.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+        if (avail <= 0) break;  // asztali nézetben rejtve
+        const sized = chips.map((a) => ({ a, w: Math.ceil(a.getBoundingClientRect().width) })).sort((x, y) => y.w - x.w);
+        // a legkevesebb sor keresése: k sorral próbálkozunk (az elméleti minimumtól felfelé), visszalépéses elosztással
+        const total = sized.reduce((n, c) => n + c.w + GAP, 0);
+        let rows: { items: HTMLElement[]; used: number }[] = [];
+        for (let k = Math.max(1, Math.ceil((total - GAP) / (avail + GAP))); k <= sized.length; k++) {
+          const bins: { items: HTMLElement[]; used: number }[] = Array.from({ length: k }, () => ({ items: [], used: 0 }));
+          let steps = 0;
+          const place = (i: number): boolean => {
+            if (i === sized.length) return true;
+            if (++steps > 20000) return false;
+            const c = sized[i];
+            const seen = new Set<number>();
+            for (const bin of bins) {
+              if (seen.has(bin.used)) continue;  // azonos telítettségű sorok felcserélhetők
+              seen.add(bin.used);
+              const add = (bin.items.length ? GAP : 0) + c.w;
+              if (bin.used + add > avail) continue;
+              bin.items.push(c.a); bin.used += add;
+              if (place(i + 1)) return true;
+              bin.items.pop(); bin.used -= add;
+            }
+            return false;
+          };
+          if (place(0)) { rows = bins.filter((x) => x.items.length); break; }
+        }
+        if (rows.length && (!best || rows.length < best.rows.length)) best = { rows, scale };
+      }
+      if (!best) continue;
+      best.rows.sort((x, y) => y.items.length - x.items.length);
+      ul.style.setProperty('--chip-scale', String(best.scale));
+      ul.replaceChildren(...best.rows.map((r) => { const li = document.createElement('li'); li.className = 'm-chip-row'; li.append(...r.items); return li; }));
+      ul.classList.add('is-packed');
+    }
+  }
+  if (chipLists.length) {
+    layoutChips();
+    document.fonts?.ready.then(layoutChips);
+    let chipTimer = 0;
+    let lastW = innerWidth;
+    addEventListener('resize', () => {
+      if (innerWidth === lastW) return;  // mobilon a címsor eltűnése csak a magasságot változtatja
+      lastW = innerWidth;
+      clearTimeout(chipTimer);
+      chipTimer = window.setTimeout(layoutChips, 150);
+    });
+  }
+
   // Hero „görgessen le” jel: amint a látogató görget, eltűnik, hogy ne ütközzön
   // a jobb alsó „vissza a tetejére” gombbal (két ellentétes nyíl ugyanabban a sarokban).
   const heroScroll = document.querySelector<HTMLElement>('.hero-scroll');
@@ -344,8 +409,12 @@ const SHORT = {
     .m-group-title h3 { margin: 0 0 2px; font-size: 1.3rem; font-weight: 600; line-height: 1.2; color: var(--navy); }
     .m-group-title .group-count { margin: 0; color: var(--muted); font-weight: 400; font-size: 0.92rem; }
     .m-group-title .group-count :global(svg) { display: none; }
-    .m-chips { list-style: none; margin: 0; padding: 10px 14px 18px; display: flex; flex-wrap: wrap; gap: 7px; }
-    .m-chips .metal-chip { font-size: 0.8rem; padding: 5px 10px; white-space: nowrap; }
+    .m-chips { list-style: none; margin: 0; padding: 10px 12px 18px; display: flex; flex-wrap: wrap; gap: 7px; }
+    .m-chips .metal-chip { font-size: calc(0.78rem * var(--chip-scale, 1)); padding: 5px calc(9px * var(--chip-scale, 1)); white-space: nowrap; }
+    /* JS-sel sorokba rendezve: a sorok a kártya két széléig érnek, a gombok egyenletesen kitöltik */
+    .m-chips.is-packed { flex-direction: column; flex-wrap: nowrap; }
+    .m-chips :global(.m-chip-row) { display: flex; gap: 7px; }
+    .m-chips :global(.m-chip-row .metal-chip) { flex: 1 1 auto; justify-content: center; }
     .m-chips .metal-chip .muted { margin-left: 5px; }
     .m-group:not(:has(.m-chips)) .m-group-title { padding-bottom: 16px; }
     /* a kártya alatt, attól külön: balról jobbra húzható, egyenként fémkeretes termékkártyák */
