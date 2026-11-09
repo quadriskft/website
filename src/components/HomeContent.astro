@@ -68,6 +68,7 @@ function packChips(cats) {
                 </div>
                 <div class="m-group-title">
                   <h3>{g.name}</h3>
+                  <span class="m-count metal-chip">{g.count} termék</span>
                 </div>
               </a>
               {g.categories.length > 1 && (
@@ -273,12 +274,12 @@ function packChips(cats) {
   /* ---- Bevezető: középre zárt cím és gombok, alatta hat kiemelt termékcsoport ---- */
   /* ---- Bevezető: kék blokk balra igazítva – állítás és két gomb ---- */
   .intro { background: var(--brand-gradient); padding: 52px 0 44px; }
-  .intro-inner { container-type: inline-size; display: flex; flex-direction: column; align-items: stretch; text-align: left; }
-  .brand-accent { display: block; width: 44px; height: 4px; border-radius: 2px; background: var(--tomato); margin-bottom: 18px; }
+  .intro-inner { container-type: inline-size; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .brand-accent { display: block; width: 72px; height: 4px; border-radius: 2px; background: var(--tomato); margin: 0 auto 20px; }
   /* 8.62 = a hosszabb sor („a felépítményéhez”) szélessége em-ben (Jost 700): a cím a tároló szélességét tölti ki */
   .brand-word { margin: 0; font-family: var(--font-head); font-weight: 700; font-size: min(calc(100cqi / 8.62), 5.2rem); line-height: 1.02; letter-spacing: -0.01em; color: var(--on-brand); white-space: nowrap; text-transform: none; }
   .brand-tag { margin: 12px 0 0; font-size: clamp(1.15rem, 3.4cqi, 1.6rem); font-weight: 500; line-height: 1.3; color: rgba(246, 243, 236, 0.9); }
-  .intro-actions { display: flex; gap: 12px; margin-top: 28px; max-width: 760px; }
+  .intro-actions { display: flex; gap: 12px; margin-top: 28px; width: 100%; max-width: 640px; }
   .intro-actions .btn { justify-content: center; padding-top: 16px; padding-bottom: 16px; }
   .btn-white { flex: 1 1 0; background: var(--on-brand); color: var(--brand); box-shadow: 0 8px 18px -10px rgba(0, 0, 0, 0.35); }
   .btn-white:hover { background: #fffdf8; color: var(--brand); transform: translateY(-1px); }
@@ -304,10 +305,10 @@ function packChips(cats) {
   /* ---- Termékcsoportok ---- */
   /* a cím a felső fémes vonal és a teljes szélességű gomb között, függőlegesen középen áll */
   .groups-section { padding: 40px 0 64px; }
-  /* balra igazítva, mint a főcím: a két piros csík ugyanazon a bal margón áll */
-  .section-head { display: flex; flex-direction: column; align-items: flex-start; text-align: left; margin-bottom: 32px; }
+  /* asztalon középre zárva (a főcímmel együtt), mobilon balra: a két piros csík mindig egy tengelyen áll */
+  .section-head { display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 36px; }
   .display-xl { max-width: none; font-size: clamp(2.1rem, 4.6vw, 3.8rem); line-height: 1; }
-  .section-head .brand-accent { margin-bottom: 16px; }
+  .section-head .brand-accent { margin: 0 auto 16px; }
   /* Kategóriakártyák (asztalon rácsban, mobilon egy oszlopban): kép, középre zárt név, alkategória-gombok */
   .m-groups { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
   .m-block { min-width: 0; display: flex; flex-direction: column; }
@@ -319,9 +320,11 @@ function packChips(cats) {
   .m-group-media img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
   .m-group:hover .m-group-media img { transform: scale(1.04); }
   /* a név középen, a kép alja és az alkategória-gombok teteje között függőlegesen is középre zárva */
-  .m-group-title { padding: 14px 14px; text-align: center; }
+  .m-group-title { padding: 14px 14px 18px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  /* asztalon az alkategória-gombok helyett egyetlen fémkeretes jelvény a termékszámmal */
+  .m-count { font-size: 0.82rem; padding: 5px 14px; }
   .m-group-title h3 { margin: 0; font-size: 1.12rem; font-weight: 600; line-height: 1.2; color: var(--navy); text-wrap: balance; }
-  .m-chips { list-style: none; margin: 0; padding: 0 10px 16px; display: flex; flex-wrap: wrap; gap: 7px; }
+  .m-chips { list-style: none; margin: 0; padding: 0 10px 16px; display: none; flex-wrap: wrap; gap: 7px; }
   .m-chips .metal-chip { font-size: calc(0.78rem * var(--chip-scale, 1)); padding: 5px calc(9px * var(--chip-scale, 1)); white-space: nowrap; }
   .m-chips .metal-chip .muted { margin-left: 5px; }
   /* JS-sel sorokba rendezve: a sorok a kártya két széléig érnek, a gombok egyenletesen kitöltik */
@@ -365,15 +368,20 @@ function packChips(cats) {
     .groups-section { padding-top: 28px; }
     .section-head { margin-bottom: 28px; }
     .display-xl { font-size: clamp(1.8rem, 8.6vw, 2.4rem); }
-    .section-head .brand-accent { margin-bottom: 12px; }
+    .section-head { align-items: flex-start; text-align: left; }
+    .section-head .brand-accent { margin: 0 0 12px; }
+    .intro-inner { align-items: stretch; text-align: left; }
+    .brand-accent { width: 44px; margin: 0 0 18px; }
+    .intro-actions { max-width: none; }
     .cta-section { padding: 44px 0; }
     /* Mobil: egy kategória soronként, alatta húzható terméksáv */
     .m-groups { grid-template-columns: 1fr; gap: 30px; }
     .m-group-media { aspect-ratio: 16 / 9; }
     .m-block > .m-group { flex: none; }
-    .m-group-title { padding: 16px 16px; }
+    .m-group-title { padding: 16px 16px; display: block; }
+    .m-count { display: none; }
     .m-group-title h3 { font-size: 1.45rem; }
-    .m-chips { padding: 0 12px 18px; }
+    .m-chips { display: flex; padding: 0 12px 18px; }
     /* a kártya alatt, attól külön: balról jobbra húzható, egyenként fémkeretes termékkártyák */
     .m-strip { display: flex; gap: 10px; overflow-x: auto; margin: 0 -16px; padding: 12px 16px 6px; scroll-snap-type: x proximity; scroll-padding-left: 16px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
     /* automatikus lassú mozgás közben nincs rácsra igazítás (a kézi húzás után visszakapcsol) */
