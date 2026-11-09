@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-import { groups, stats, roundedCount, groupImage, productsIn } from '../lib/catalog.js';
+import { groups, groupImage, productsIn } from '../lib/catalog.js';
 
 // Mobilon a kategóriakártya alatt vízszintesen húzható sávban a csoport összes terméke (a képek lusta betöltéssel)
 // A mobil kategóriakártya alkategória-gombjai: úgy rendezve, hogy soronként minél több férjen ki
@@ -130,38 +130,6 @@ const SHORT = {
           );
         })}
       </div>
-    </div>
-  </section>
-
-  <section class="section why-section band">
-    <div class="container">
-      <div class="why-head">
-        <span class="eyebrow">Miért a Quadris?</span>
-        <h2 class="display">Egy partner a teljes felépítményhez</h2>
-        <p class="lead">Nem kell tucatnyi gyártóval külön tárgyalnia: összegyűjtjük, egyeztetjük és egyben szállítjuk, amire a gyártósorának szüksége van.</p>
-      </div>
-      <ul class="why-grid">
-        <li class="card why-card">
-          <strong class="why-key">{roundedCount(stats.products)}</strong>
-          <h3>Széles választék</h3>
-          <p class="muted">Termék {roundedCount(stats.suppliers, 25)} gyártótól, egyetlen kapcsolattartóval.</p>
-        </li>
-        <li class="card why-card">
-          <strong class="why-key">Segítünk</strong>
-          <h3>Szakmai tanácsadás</h3>
-          <p class="muted">Segítünk kiválasztani a megfelelő profilt, zárat vagy rendszert.</p>
-        </li>
-        <li class="card why-card">
-          <strong class="why-key">3 lépés</strong>
-          <h3>Gyors ajánlat</h3>
-          <p class="muted">Online összeállított lista, gyors és átlátható árajánlat.</p>
-        </li>
-        <li class="card why-card">
-          <strong class="why-key">Egyedi</strong>
-          <h3>Egyedi igények</h3>
-          <p class="muted">Nem szerepel a katalógusban? Írja meg, és beszerezzük.</p>
-        </li>
-      </ul>
     </div>
   </section>
 
@@ -345,13 +313,13 @@ const SHORT = {
   .brand-accent { display: block; width: 44px; height: 4px; border-radius: 2px; background: var(--tomato); margin-bottom: 18px; }
   /* 8.62 = a hosszabb sor („a felépítményéhez”) szélessége em-ben (Jost 700): a cím a tároló szélességét tölti ki */
   .brand-word { margin: 0; font-family: var(--font-head); font-weight: 700; font-size: min(calc(100cqi / 8.62), 5.2rem); line-height: 1.02; letter-spacing: -0.01em; color: var(--on-brand); white-space: nowrap; text-transform: none; }
-  .brand-tag { margin: 12px 0 0; font-size: clamp(1.15rem, 3.4cqi, 1.6rem); font-weight: 500; line-height: 1.3; color: rgba(252, 255, 255, 0.9); }
+  .brand-tag { margin: 12px 0 0; font-size: clamp(1.15rem, 3.4cqi, 1.6rem); font-weight: 500; line-height: 1.3; color: rgba(246, 243, 236, 0.9); }
   .intro-actions { display: flex; gap: 12px; margin-top: 28px; }
   .intro-actions .btn { justify-content: center; padding-top: 16px; padding-bottom: 16px; }
-  .btn-white { flex: 1 1 0; background: #fcffff; color: var(--brand); box-shadow: 0 8px 18px -10px rgba(0, 0, 0, 0.35); }
-  .btn-white:hover { background: #fff; color: var(--brand); transform: translateY(-1px); }
-  .btn-outline-light { flex: 0 1 auto; background: transparent; color: var(--on-brand); border-color: rgba(252, 255, 255, 0.55); }
-  .btn-outline-light:hover { background: rgba(252, 255, 255, 0.08); border-color: var(--on-brand); color: var(--on-brand); }
+  .btn-white { flex: 1 1 0; background: var(--on-brand); color: var(--brand); box-shadow: 0 8px 18px -10px rgba(0, 0, 0, 0.35); }
+  .btn-white:hover { background: #fffdf8; color: var(--brand); transform: translateY(-1px); }
+  .btn-outline-light { flex: 0 1 auto; background: transparent; color: var(--on-brand); border-color: rgba(246, 243, 236, 0.55); }
+  .btn-outline-light:hover { background: rgba(246, 243, 236, 0.08); border-color: var(--on-brand); color: var(--on-brand); }
   .link-arrow { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 600; font-size: 0.88rem; }
 
   /* ---- Váltakozó sávok: világos hűvösszürke háttér, fent-lent vékony fémes él ---- */
@@ -391,29 +359,17 @@ const SHORT = {
   .group-card p { font-size: 0.82rem; line-height: 1.45; margin: 0 0 10px; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .group-count { display: inline-flex; align-items: center; gap: 5px; margin-top: auto; font-size: 0.8rem; font-weight: 600; color: var(--accent); }
 
-  /* ---- Miért a Quadris: középre zárt cím, négy fémkeretes kártya nagy kulcsszóval ---- */
-  .why-section { padding: 64px 0; }
-  .why-head { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; margin-bottom: 36px; }
-  .why-head h2 { margin: 0; }
-  .why-head .lead { margin: 0; max-width: 720px; }
-  .why-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
-  .why-card { display: flex !important; flex-direction: column; padding: 22px 20px 20px; }
-  .why-key { display: block; font-family: var(--font-head); font-size: 2.1rem; font-weight: 700; line-height: 1; color: var(--brand); margin-bottom: 14px; white-space: nowrap; }
-  .why-card h3 { margin: 0 0 6px; font-size: 1.08rem; color: var(--navy); }
-  .why-card p { margin: 0; font-size: 0.94rem; line-height: 1.45; }
-
   /* ---- CTA sáv ---- */
   .cta-section { background: var(--brand-gradient); color: var(--on-brand); padding: 56px 0; }
-  .cta-section .btn-light { color: var(--brand); }
+  .cta-section .btn-light { background: var(--on-brand); color: var(--brand); }
   .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
   .cta-inner h2 { color: var(--on-brand); margin: 0 0 6px; font-size: clamp(1.4rem, 2.4vw, 1.9rem); }
-  .cta-inner p { margin: 0; color: rgba(252, 255, 255, 0.84); font-size: 0.98rem; max-width: 620px; }
+  .cta-inner p { margin: 0; color: rgba(246, 243, 236, 0.84); font-size: 0.98rem; max-width: 620px; }
 
   /* ---- Reszponzív ---- */
   @media (max-width: 1180px) { .grid-groups { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
   @media (max-width: 960px) {
     .grid-groups { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
   @media (max-width: 640px) {
     .hero-scroll { display: none; }
@@ -428,10 +384,6 @@ const SHORT = {
     .intro-actions .btn { flex: none; font-size: clamp(0.9rem, 2.2svh, 1.02rem); }
     .btn-white { padding-top: clamp(14px, 2.3svh, 19px); padding-bottom: clamp(14px, 2.3svh, 19px); }
     .btn-outline-light { padding-top: clamp(10px, 1.6svh, 14px); padding-bottom: clamp(10px, 1.6svh, 14px); font-size: 0.82rem !important; }
-    .why-section { padding: 44px 0; }
-    .why-grid { grid-template-columns: 1fr; gap: 12px; }
-    .why-card { padding: 16px 18px; }
-    .why-key { font-size: 1.7rem; margin-bottom: 8px; }
     .cta-inner .btn { width: 100%; justify-content: center; }
     .groups-section { padding-top: 28px; }
     .section-head { margin-bottom: 28px; }

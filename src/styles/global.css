@@ -12,7 +12,7 @@
   --navy: #0e4f55;  /* a címek és kiemelt szavak színe: a márkaszín (Ocean Teal) */
   --brand: #0e4f55;  /* márkaszín: Ocean Teal (RGB 14, 79, 85) */
   --brand-gradient: linear-gradient(180deg, #2f6b77 0%, #1a5a63 45%, #0e4f55 100%);  /* felülről lefelé sötétedő háttér */
-  --on-brand: #fcffff;  /* szöveg a márkaszínű háttéren */
+  --on-brand: #f6f3ec;  /* szöveg a márkaszínű háttéren: meleg tört fehér */
   --tomato: #f2462e;  /* kiemelő szín (Tomato Red): mindig az ajánlatkérést jelzi */
   --tomato-2: #d93a24;
   --accent: #0e4f55;  /* linkek, gombok: a márkaszín (korábban világoskék) */

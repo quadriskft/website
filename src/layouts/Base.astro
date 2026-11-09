@@ -399,7 +399,7 @@ const fontCss = fallbackFace +
      alap (fehér üveg): belső oldalak, és a főoldal görgetve / nyitott mobil menüvel
      átlátszó: a főoldal teteje (.transparent), a videó fölött fehér szöveggel        */
   .site-header {
-    --hd-bg: rgba(252, 255, 255, 0.86);
+    --hd-bg: rgba(246, 243, 236, 0.86);
     --hd-line: var(--line);
     --hd-fg: var(--navy);
     --hd-fg-2: var(--text-2);
@@ -520,8 +520,8 @@ const fontCss = fallbackFace +
   }
   @media (max-width: 960px) {
     .wordmark { font-size: 1.4rem; }
-    /* mobilon a fejléc tömör, a szövegek fehérjével azonos (#FCFFFF); az ajánlatkérő gomb a menügombbal azonos kinézetű */
-    .site-header { --hd-bg: #fcffff; backdrop-filter: none; -webkit-backdrop-filter: none; }
+    /* mobilon a fejléc tömör, a színes háttéren álló szöveg tört fehérjével azonos; az ajánlatkérő gomb a menügombbal azonos kinézetű */
+    .site-header { --hd-bg: var(--on-brand); backdrop-filter: none; -webkit-backdrop-filter: none; }
     .quote-btn { width: 40px; padding: 0; justify-content: center; background: var(--hd-field); color: var(--hd-fg); border: 1px solid var(--hd-field-line); box-shadow: none; }
     .quote-btn:hover { background: var(--hd-field); color: var(--accent); transform: none; }
     .quote-btn .quote-count { position: absolute; top: -7px; right: -7px; background: var(--tomato); color: #fff; }
@@ -565,9 +565,9 @@ const fontCss = fallbackFace +
   }
 
   /* ---------- Lábléc: márkaszínű (Ocean Teal) háttér, fehér szöveg ---------- */
-  .site-footer { background: var(--brand); color: rgba(252, 255, 255, 0.96); margin-top: 48px; }
+  .site-footer { background: var(--brand); color: rgba(246, 243, 236, 0.96); margin-top: 48px; }
   /* a főoldalon a sötétkék záró sáv közvetlenül a láblécbe megy át */
-  .has-hero .site-footer { margin-top: 0; border-top: 1px solid rgba(252, 255, 255, 0.22); }
+  .has-hero .site-footer { margin-top: 0; border-top: 1px solid rgba(246, 243, 236, 0.22); }
   .footer-main {
     display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px 48px; padding-top: 56px; padding-bottom: 40px;
   }
@@ -575,12 +575,12 @@ const fontCss = fallbackFace +
   .footer-logo .wordmark { font-size: 1.25rem; }
   .footer-tagline { color: var(--on-brand); font-weight: 500; margin: 0 0 6px; max-width: 360px; }
   .footer-address { margin: 0; font-size: 0.92rem; }
-  .footer-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(252, 255, 255, 0.84); margin: 4px 0 14px; }
+  .footer-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(246, 243, 236, 0.84); margin: 4px 0 14px; }
   .footer-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 0.94rem; }
-  .footer-list a { color: rgba(252, 255, 255, 0.96); text-decoration: none; }
+  .footer-list a { color: rgba(246, 243, 236, 0.96); text-decoration: none; }
   .footer-list a:hover { color: var(--on-brand); text-decoration: underline; }
-  .footer-muted { color: rgba(252, 255, 255, 0.84); }
-  .footer-bottom { border-top: 1px solid rgba(252, 255, 255, 0.22); padding-top: 18px; padding-bottom: 22px; font-size: 0.8rem; color: rgba(252, 255, 255, 0.84); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; }
+  .footer-muted { color: rgba(246, 243, 236, 0.84); }
+  .footer-bottom { border-top: 1px solid rgba(246, 243, 236, 0.22); padding-top: 18px; padding-bottom: 22px; font-size: 0.8rem; color: rgba(246, 243, 236, 0.84); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; }
   .nowrap { white-space: nowrap; }
   @media (max-width: 860px) {
     .footer-main { grid-template-columns: 1fr 1fr; padding-top: 44px; }
