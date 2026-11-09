@@ -63,18 +63,13 @@ const SHORT = {
     <div class="container intro-inner">
       <div class="brand">
         <span class="brand-accent" aria-hidden="true"></span>
-        <h1 class="brand-word">Minden alkatrész<br />a felépítményhez</h1>
+        <h1 class="brand-word">Minden alkatrész<br />a felépítményéhez</h1>
         <p class="brand-tag">Egy partnertől.</p>
       </div>
       <div class="intro-actions">
         <a href="/termekek" class="btn btn-white">Termékkatalógus <Icon name="ArrowRight" size={16} /></a>
         <a href="/ajanlatkeres" class="btn btn-outline-light">Ajánlatkérés <Icon name="ArrowRight" size={16} /></a>
       </div>
-      <ol class="intro-steps" aria-label="Ajánlat három lépésben">
-        <li><span class="is-no" aria-hidden="true">1</span>Válogasson</li>
-        <li><span class="is-no" aria-hidden="true">2</span>Ajánlatkérőbe</li>
-        <li><span class="is-no" aria-hidden="true">3</span>Elküldi</li>
-      </ol>
     </div>
   </section>
 
@@ -299,12 +294,12 @@ const SHORT = {
   @keyframes nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
 
   /* ---- Bevezető: középre zárt cím és gombok, alatta hat kiemelt termékcsoport ---- */
-  /* ---- Bevezető: kék blokk balra igazítva – állítás, két gomb, egysoros lépések ---- */
+  /* ---- Bevezető: kék blokk balra igazítva – állítás és két gomb ---- */
   .intro { background: #0046de; padding: 52px 0 44px; }
   .intro-inner { max-width: 760px; container-type: inline-size; display: flex; flex-direction: column; align-items: stretch; text-align: left; }
   .brand-accent { display: block; width: 44px; height: 4px; border-radius: 2px; background: #fd671c; margin-bottom: 18px; }
-  /* 8.05 = a hosszabb sor („a felépítményhez”) szélessége em-ben (Jost 700): a cím a tároló szélességét tölti ki */
-  .brand-word { margin: 0; font-family: var(--font-head); font-weight: 700; font-size: min(calc(100cqi / 8.05), 5.4rem); line-height: 1.02; letter-spacing: -0.01em; color: #fcffff; white-space: nowrap; text-transform: none; }
+  /* 8.62 = a hosszabb sor („a felépítményéhez”) szélessége em-ben (Jost 700): a cím a tároló szélességét tölti ki */
+  .brand-word { margin: 0; font-family: var(--font-head); font-weight: 700; font-size: min(calc(100cqi / 8.62), 5.2rem); line-height: 1.02; letter-spacing: -0.01em; color: #fcffff; white-space: nowrap; text-transform: none; }
   .brand-tag { margin: 12px 0 0; font-size: clamp(1.15rem, 3.4cqi, 1.6rem); font-weight: 500; line-height: 1.3; color: rgba(252, 255, 255, 0.86); }
   .intro-actions { display: flex; gap: 12px; margin-top: 28px; }
   .intro-actions .btn { justify-content: center; padding-top: 16px; padding-bottom: 16px; }
@@ -312,10 +307,6 @@ const SHORT = {
   .btn-white:hover { background: #fff; color: #0036b0; transform: translateY(-1px); }
   .btn-outline-light { flex: 0 1 auto; background: transparent; color: #fcffff; border-color: rgba(252, 255, 255, 0.55); }
   .btn-outline-light:hover { background: rgba(252, 255, 255, 0.12); border-color: #fcffff; color: #fcffff; }
-  /* Ajánlat három lépésben – egy sorban, kicsiben */
-  .intro-steps { list-style: none; margin: 26px 0 0; padding: 16px 0 0; border-top: 1px solid rgba(252, 255, 255, 0.24); display: flex; flex-wrap: wrap; gap: 8px 22px; color: rgba(252, 255, 255, 0.9); font-size: 0.95rem; font-weight: 500; }
-  .intro-steps li { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
-  .is-no { flex: none; width: 22px; height: 22px; border-radius: 999px; background: #fd671c; color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 0.78rem; }
   .link-arrow { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 600; font-size: 0.88rem; }
 
   /* ---- Váltakozó sávok: világos hűvösszürke háttér, fent-lent vékony fémes él ---- */
@@ -382,17 +373,15 @@ const SHORT = {
     .hero-scroll { display: none; }
     .hero-top-shade { display: none; }
     /* mobilon a kék blokk a megnyitott képernyő aljáig ér (fejléc + 16:9 videó alatt) */
-    /* mobilon a kék blokk a megnyitott képernyő aljáig ér; a három egység között egyenlő a távolság */
+    /* mobilon a kék blokk a megnyitott képernyő aljáig ér; a cím és a gombok függőlegesen középen */
     .intro { padding: clamp(16px, 3.4svh, 34px) 0 clamp(14px, 2.6svh, 26px); min-height: calc(100svh - var(--header-h) - 56.25vw); display: flex; }
-    .intro-inner { flex: 1; justify-content: space-between; gap: 14px; }
+    .intro-inner { flex: 1; justify-content: center; gap: clamp(22px, 4.6svh, 44px); }
     .brand-accent { margin-bottom: clamp(10px, 2svh, 18px); }
     .brand-tag { margin-top: clamp(8px, 1.6svh, 14px); font-size: clamp(1.1rem, 2.9svh, 1.4rem); }
     .intro-actions { flex-direction: column; gap: 10px; margin-top: 0; }
     .intro-actions .btn { flex: none; font-size: clamp(0.9rem, 2.2svh, 1.02rem); }
     .btn-white { padding-top: clamp(14px, 2.3svh, 19px); padding-bottom: clamp(14px, 2.3svh, 19px); }
     .btn-outline-light { padding-top: clamp(10px, 1.6svh, 14px); padding-bottom: clamp(10px, 1.6svh, 14px); font-size: 0.82rem !important; }
-    .intro-steps { margin-top: 0; padding-top: clamp(10px, 1.8svh, 16px); justify-content: space-between; gap: 6px 8px; font-size: clamp(0.8rem, 3.5vw, 0.92rem); }
-    .intro-steps li { gap: 6px; }
     .why-section { padding: 44px 0; }
     .why-grid { grid-template-columns: 1fr; gap: 12px; }
     .why-card { padding: 16px 18px; }
