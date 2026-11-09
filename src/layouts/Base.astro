@@ -1,8 +1,8 @@
 ---
-// Inter: csak a latin és latin-ext subset (a magyar ő/ű a latin-ext-ben van); az `@fontsource-variable/inter` fő CSS-e
-// a cirill/görög/vietnámi @font-face-eket és woff2-ket is beemelné a buildbe
-import interLatin from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
-import interLatinExt from '@fontsource-variable/inter/files/inter-latin-ext-wght-normal.woff2?url';
+// Jost (a Quadris kérésére): csak a latin és latin-ext subset (a magyar ő/ű a latin-ext-ben van); a csomag fő CSS-e
+// a cirill @font-face-t és woff2-t is beemelné a buildbe
+import interLatin from '@fontsource-variable/jost/files/jost-latin-wght-normal.woff2?url';
+import interLatinExt from '@fontsource-variable/jost/files/jost-latin-ext-wght-normal.woff2?url';
 import '../styles/global.css';
 import Icon from '../components/Icon.astro';
 import { groups } from '../lib/catalog.js';
@@ -14,9 +14,9 @@ const transparentHeader = headerTheme === 'transparent' || headerTheme === 'dark
 const pageTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} – ${SITE.tagline}`;
 const path = Astro.url.pathname;
 const isActive = (prefix) => path === prefix || path.startsWith(prefix + '/');
-const fontFace = (url, range) => `@font-face{font-family:'Inter Variable';font-style:normal;font-display:swap;font-weight:100 900;src:url(${url}) format('woff2-variations');unicode-range:${range}}`;
-// tartalék: Arial az Inter metrikáira igazítva (size-adjust stb.), így a betűcsere alig látszik, a menü nem ugrik
-const fallbackFace = `@font-face{font-family:'Inter Fallback';src:local('Arial'),local('Helvetica Neue'),local('Liberation Sans');size-adjust:107.12%;ascent-override:90.49%;descent-override:22.56%;line-gap-override:0%}`;
+const fontFace = (url, range) => `@font-face{font-family:'Jost Variable';font-style:normal;font-display:swap;font-weight:100 900;src:url(${url}) format('woff2-variations');unicode-range:${range}}`;
+// tartalék: Arial a Jost metrikáira igazítva (size-adjust stb.), így a betűcsere alig látszik, a menü nem ugrik
+const fallbackFace = `@font-face{font-family:'Jost Fallback';src:local('Arial'),local('Helvetica Neue'),local('Liberation Sans');size-adjust:93.85%;ascent-override:114%;descent-override:40%;line-gap-override:0%}`;
 const fontCss = fallbackFace +
   fontFace(interLatinExt, 'U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF') +
   fontFace(interLatin, 'U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD');
@@ -536,13 +536,24 @@ const fontCss = fallbackFace +
     .mega-head .eyebrow { display: none; }
     .mega-grid { grid-template-columns: 1fr; row-gap: 0; }
     .mega-link { padding: 9px 10px; }
-    .header-actions { flex: 1; }
-    .header-search { width: auto; flex: 1; min-width: 0; }
-    .suggest { position: fixed; left: 16px; right: 16px; width: auto; top: calc(var(--header-h) - 4px); }
+    /* Mobil fejléc: balra a menü, középen a logó, jobbra az ajánlatkérő; a kereső a lenyíló menü tetején */
+    .header-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; }
+    .header-actions { display: contents; }
+    .menu-toggle { order: 1; justify-self: start; }
+    .logo { order: 2; justify-self: center; }
+    .quote-btn { order: 3; justify-self: end; }
+    .header-search {
+      position: absolute; top: 100%; left: 0; right: 0; width: auto; padding: 12px 20px; background: #fff; border-bottom: 1px solid var(--line);
+      opacity: 0; visibility: hidden; transform: translateY(-8px); transition: transform 0.2s ease, opacity 0.2s ease, visibility 0s linear 0.2s;
+    }
+    .menu-open .header-search { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
+    .header-search :global(.search-icon) { left: 32px; color: var(--muted); }
+    .header-search input { background: var(--surface-2); color: var(--text); border-color: var(--line-strong); height: 44px; }
+    .header-search input::placeholder { color: var(--muted); }
+    .main-nav { top: calc(100% + 69px); max-height: calc(100vh - var(--header-h) - 69px); }
+    .suggest { position: fixed; left: 16px; right: 16px; width: auto; top: calc(var(--header-h) + 64px); }
   }
   @media (max-width: 560px) {
-    .header-inner { gap: 12px; }
-    .header-actions { gap: 8px; }
     .quote-btn { padding: 0 12px; }
   }
 

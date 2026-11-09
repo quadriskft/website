@@ -1,6 +1,9 @@
 ---
 import Icon from './Icon.astro';
-import { groups, stats, roundedCount, groupImage } from '../lib/catalog.js';
+import { groups, stats, roundedCount, groupImage, productsIn } from '../lib/catalog.js';
+
+// Mobilon a kategóriakártya alatt vízszintesen húzható sávban a csoport első termékei
+const STRIP_MAX = 12;
 
 // A főoldal tartalma: teljes szélességű videó-hero a fejléc alatt, majd a bemutatkozó és katalógus szekciók.
 
@@ -45,11 +48,11 @@ const SHORT = {
 
   <section class="intro" id="bemutatkozas">
     <div class="container intro-inner">
-      <h1>Minden alkatrész a&nbsp;felépítményhez –&nbsp;egy&nbsp;partnertől.</h1>
-      <p class="lead">Alváz- és padlóprofilok, ponyvarendszerek, zárak, zsanérok, sárvédők és rakományrögzítés jármű- és lószállító felépítmények gyártóinak.</p>
+      <h1 class="brand-word">Quadris</h1>
+      <p class="brand-tag">Minden alkatrész a felépítményhez – egy partnertől.</p>
       <div class="intro-actions">
-        <a href="/termekek" class="btn btn-primary">Termékkatalógus <Icon name="ArrowRight" size={16} /></a>
-        <a href="/ajanlatkeres" class="btn btn-ghost">Ajánlatkérés online <Icon name="ArrowRight" size={16} /></a>
+        <a href="/termekek" class="btn btn-orange">Termékkatalógus <Icon name="ArrowRight" size={16} /></a>
+        <a href="/ajanlatkeres" class="btn btn-outline-light">Ajánlatkérés online <Icon name="ArrowRight" size={16} /></a>
       </div>
     </div>
   </section>
@@ -58,14 +61,14 @@ const SHORT = {
     <div class="band-sheen" aria-hidden="true"></div>
     <div class="container">
       <div class="section-head">
-        <h2 class="display">Termékkategóriák</h2>
-        <a href="/termekek" class="btn btn-ghost">Összes termék <Icon name="ArrowRight" size={16} /></a>
+        <h2 class="display display-xl">Termékkategóriák</h2>
+        <a href="/termekek" class="btn btn-ghost btn-wide">Összes termék <Icon name="ArrowRight" size={16} /></a>
       </div>
       <div class="grid grid-groups">
         {groups.map((g, i) => (
           <a href={`/termekek/${g.slug}`} class="card group-card">
             <div class="group-media">
-              {groupImage(g.slug) ? <img src={groupImage(g.slug)} alt="" loading={i < 6 ? 'eager' : 'lazy'} width="800" height="560" />
+              {groupImage(g.slug) ? <img src={groupImage(g.slug)} alt="" loading="lazy" width="800" height="560" />
                 : <span class="media-empty" aria-hidden="true"></span>}
             </div>
             <h3>{g.name}</h3>
@@ -73,6 +76,42 @@ const SHORT = {
             <span class="group-count">{g.count} termék <Icon name="ArrowRight" size={14} /></span>
           </a>
         ))}
+      </div>
+      {/* Mobil nézet: soronként egy kategória nagy képpel, alatta balról jobbra húzható terméksáv */}
+      <div class="m-groups">
+        {groups.map((g) => {
+          const items = productsIn(g.slug);
+          return (
+            <article class="card m-group">
+              <a href={`/termekek/${g.slug}`} class="m-group-head">
+                <div class="m-group-media">
+                  {groupImage(g.slug) ? <img src={groupImage(g.slug)} alt="" loading="lazy" width="800" height="560" />
+                    : <span class="media-empty" aria-hidden="true"></span>}
+                </div>
+                <div class="m-group-title">
+                  <h3>{g.name}</h3>
+                  <span class="group-count">{g.count} termék <Icon name="ArrowRight" size={14} /></span>
+                </div>
+              </a>
+              <div class="m-strip" role="list" aria-label={`${g.name} – termékek`}>
+                {items.slice(0, STRIP_MAX).map((p) => (
+                  <a href={`/termek/${p.slug}`} class="m-tile" role="listitem">
+                    <span class="m-tile-img">
+                      {p.images?.[0] ? <img src={p.images[0]} alt="" loading="lazy" decoding="async" /> : <span class="media-empty" aria-hidden="true"></span>}
+                    </span>
+                    <span class="m-tile-name">{p.name}</span>
+                  </a>
+                ))}
+                {items.length > STRIP_MAX && (
+                  <a href={`/termekek/${g.slug}`} class="m-tile m-tile-all" role="listitem">
+                    <span>Mind a {g.count} termék</span>
+                    <Icon name="ArrowRight" size={18} />
+                  </a>
+                )}
+              </div>
+            </article>
+          );
+        })}
       </div>
     </div>
   </section>
@@ -174,11 +213,18 @@ const SHORT = {
   @keyframes nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
 
   /* ---- Bevezető: középre zárt cím és gombok, alatta hat kiemelt termékcsoport ---- */
-  .intro { background: var(--bg); padding: 56px 0 52px; }
-  .intro-inner { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px; }
-  .intro h1 { margin: 0; max-width: 900px; font-size: clamp(2.2rem, 4.4vw, 4rem); line-height: 1.04; letter-spacing: -0.03em; color: var(--navy); text-wrap: balance; }
-  .intro .lead { margin: 0; max-width: 720px; font-size: 1.2rem; }
-  .intro-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 6px; }
+  /* ---- Bevezető: kék márkablokk; a Quadris felirat a gombok teljes szélességét kitölti ---- */
+  .intro { background: #0046de; padding: 52px 0 48px; }
+  .intro-inner { max-width: 760px; container-type: inline-size; display: flex; flex-direction: column; align-items: stretch; text-align: center; }
+  /* K = a „Quadris” szó szélessége em-ben (Jost 700): így a felirat pontosan a tároló szélességét tölti ki */
+  .brand-word { margin: 0; font-family: var(--font-head); font-weight: 700; font-size: calc(100cqi / 3.76); line-height: 0.82; letter-spacing: 0; color: #fcffff; white-space: nowrap; text-transform: none; }
+  .brand-tag { margin: 22px 0 0; font-size: clamp(1.05rem, 2.6cqi, 1.35rem); line-height: 1.35; color: #fcffff; }
+  .intro-actions { display: flex; gap: 14px; margin-top: 26px; }
+  .intro-actions .btn { flex: 1 1 0; justify-content: center; padding-top: 16px; padding-bottom: 16px; }
+  .btn-orange { background: #fd671c; color: #fff; box-shadow: 0 8px 18px -10px rgba(0, 0, 0, 0.45); }
+  .btn-orange:hover { background: #e9570f; color: #fff; transform: translateY(-1px); }
+  .btn-outline-light { background: transparent; color: #fcffff; border-color: rgba(252, 255, 255, 0.6); }
+  .btn-outline-light:hover { background: rgba(252, 255, 255, 0.12); border-color: #fcffff; color: #fcffff; }
   .link-arrow { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 600; font-size: 0.88rem; }
 
   /* ---- Váltakozó sávok: világos hűvösszürke háttér, fent-lent vékony fémes él ---- */
@@ -197,8 +243,12 @@ const SHORT = {
   @keyframes sheen { 0% { background-position: 110% 0; } 55%, 100% { background-position: -10% 0; } }
 
   /* ---- Termékcsoportok ---- */
-  .groups-section { padding: 56px 0 64px; }
-  .section-head { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; margin-bottom: 32px; }
+  /* a cím a felső fémes vonal és a teljes szélességű gomb között, függőlegesen középen áll */
+  .groups-section { padding: 40px 0 64px; }
+  .section-head { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 40px; margin-bottom: 32px; }
+  .display-xl { max-width: none; font-size: clamp(2.5rem, 6.4vw, 5.4rem); line-height: 1; }
+  .btn-wide { width: 100%; justify-content: center; padding-top: 16px; padding-bottom: 16px; }
+  .m-groups { display: none; }
   .section-head h2 { margin: 0; }
   /* nagy, középre zárt szekciócím – a bevezető címével azonos stílus */
   .display { max-width: 900px; font-family: var(--font-head); font-weight: 800; font-size: clamp(2.2rem, 4.4vw, 4rem); line-height: 1.04; letter-spacing: -0.03em; color: var(--navy); text-wrap: balance; }
@@ -248,17 +298,34 @@ const SHORT = {
     .why { grid-template-columns: 1fr; }
     .why { gap: 32px; }
     .steps { grid-template-columns: 1fr; gap: 20px; }
-    .intro { padding: 40px 0 32px; }
   }
   @media (max-width: 640px) {
     .hero-scroll { display: none; }
     .hero-top-shade { display: none; }
-    .grid-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-    .intro-actions { flex-direction: column; width: 100%; }
-    .intro-actions .btn, .section-head .btn, .cta-inner .btn { width: 100%; justify-content: center; }
-    .section-head .btn { margin-top: 4px; }
-    .group-card h3 { font-size: 0.9rem; -webkit-line-clamp: 3; }
-    .group-card p { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .intro { padding: 36px 0 32px; }
+    .intro-actions { flex-direction: column; }
+    .cta-inner .btn { width: 100%; justify-content: center; }
+    .groups-section { padding-top: 28px; }
+    .section-head { gap: 28px; margin-bottom: 20px; }
+    .display-xl { font-size: clamp(2rem, 10.6vw, 3rem); }
     .cta-section { padding: 44px 0; }
+    /* Mobil: egy kategória soronként, alatta húzható terméksáv (asztali rács elrejtve) */
+    .grid-groups { display: none; }
+    .m-groups { display: grid; gap: 16px; }
+    .m-group { display: block; padding: 0; overflow: hidden; }
+    .m-group-head { display: block; color: inherit; text-decoration: none !important; }
+    .m-group-media { aspect-ratio: 16 / 9; background: #fff; border-bottom: 1px solid var(--line); overflow: hidden; }
+    .m-group-media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .m-group-title { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 14px 16px 10px; }
+    .m-group-title h3 { margin: 0; font-size: 1.15rem; font-weight: 600; line-height: 1.25; color: var(--navy); }
+    .m-group-title .group-count { flex: none; margin: 0; white-space: nowrap; }
+    .m-strip { display: flex; gap: 10px; overflow-x: auto; padding: 4px 16px 16px; scroll-snap-type: x proximity; scroll-padding-left: 16px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .m-strip::-webkit-scrollbar { display: none; }
+    .m-tile { flex: 0 0 31%; min-width: 104px; scroll-snap-align: start; display: flex; flex-direction: column; gap: 6px; color: var(--navy); text-decoration: none !important; }
+    .m-tile-img { display: block; aspect-ratio: 1; border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; overflow: hidden; }
+    .m-tile-img img { display: block; width: 100%; height: 100%; object-fit: contain; padding: 6px; }
+    .m-tile-name { font-size: 0.78rem; font-weight: 500; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .m-tile-all { justify-content: center; align-items: center; text-align: center; gap: 8px; aspect-ratio: auto; padding: 10px; border: 1px dashed var(--line-strong); border-radius: var(--radius-sm); color: var(--accent); font-size: 0.8rem; font-weight: 600; align-self: flex-start; min-height: 104px; }
   }
+
 </style>
