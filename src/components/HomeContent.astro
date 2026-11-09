@@ -290,6 +290,8 @@ const SHORT = {
     display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; max-height: 100svh;
     object-fit: cover; object-position: center; background: transparent;
   }
+  /* a videó és a teal blokk találkozása: csak a vonalnál, nagyon finoman mosódik össze */
+  .hero-video::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 14px; pointer-events: none; background: linear-gradient(180deg, rgba(47, 107, 119, 0) 0%, rgba(47, 107, 119, 0.9) 100%); }
   .hero-top-shade {
     position: absolute; top: 0; left: 0; right: 0; height: 120px; pointer-events: none;
     background: linear-gradient(180deg, rgba(11, 31, 58, 0.45) 0%, rgba(11, 31, 58, 0) 100%);
@@ -323,7 +325,7 @@ const SHORT = {
   .link-arrow { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 600; font-size: 0.88rem; }
 
   /* ---- Váltakozó sávok: világos hűvösszürke háttér, fent-lent vékony fémes él ---- */
-  .band { position: relative; overflow: hidden; background: linear-gradient(180deg, #f6f3ec 0%, #efebe2 100%); }
+  .band { position: relative; overflow: hidden; background: linear-gradient(180deg, #ece2cf 0%, #e6dbc5 100%); }  /* Sand Beige */
   .band::before, .band::after { content: ''; position: absolute; left: 0; right: 0; height: 2px; background: var(--metal); z-index: 1; }
   .band::before { top: 0; }
   .band::after { bottom: 0; }

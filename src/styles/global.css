@@ -1,11 +1,11 @@
 :root {
   --bg: #ffffff;
-  --bg-2: #f4f1ea;
+  --bg-2: #efe7d7;
   --surface: #ffffff;
-  --surface-2: #f6f3ec;  /* meleg tört fehér (a teal mellé) */
-  --surface-3: #eeeae1;
-  --line: #e6e2d9;
-  --line-strong: #d2cdc2;
+  --surface-2: #f1eadb;  /* világos Sand Beige (oldalfejlécek, mezők) */
+  --surface-3: #e9dfcb;
+  --line: #e2d9c6;
+  --line-strong: #cfc5b0;
   --text: #121a26;
   --text-2: #3b4656;
   --muted: #6b7684;
