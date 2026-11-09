@@ -9,7 +9,9 @@
   --text: #121a26;
   --text-2: #3b4656;
   --muted: #6b7684;
-  --navy: #2b5bff;  /* a címek és kiemelt szavak színe: a márka kékje (korábban sötétkék) */
+  --navy: #bdd967;  /* a címek és kiemelt szavak színe: a márkaszín (a Quadris kérése) */
+  --brand: #bdd967;  /* márkaszín: főoldali blokk, záró sáv, lábléc háttere */
+  --on-brand: #10203a;  /* szöveg a márkaszínű háttéren (a fehér nem olvasható rajta) */
   --accent: #0a6cff;
   --accent-2: #0a4fc4;
   --accent-soft: rgba(10, 108, 255, 0.08);
