@@ -231,11 +231,9 @@ const groupRank = (slug) => (GROUP_ORDER.includes(slug) ? GROUP_ORDER.indexOf(sl
 
 export const groups = groupList
   .map((g) => {
-    // alkategóriák ABC sorrendben (a Quadris kérése)
     const categories = g.categories
       .map((c) => ({ ...c, count: counts.get(`${g.slug}/${c.slug}`) ?? 0 }))
-      .filter((c) => c.count > 0)
-      .sort((a, b) => a.name.localeCompare(b.name, 'hu'));
+      .filter((c) => c.count > 0);
     return { ...g, categories, count: categories.reduce((n, c) => n + c.count, 0) };
   })
   .filter((g) => g.count > 0)
