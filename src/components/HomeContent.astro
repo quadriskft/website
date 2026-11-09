@@ -3,24 +3,6 @@ import Icon from './Icon.astro';
 import { groups, groupImage, productsIn } from '../lib/catalog.js';
 
 // Mobilon a kategóriakártya alatt vízszintesen húzható sávban a csoport összes terméke (a képek lusta betöltéssel)
-// A mobil kategóriakártya alkategória-gombjai: úgy rendezve, hogy soronként minél több férjen ki
-// (becsült szélesség alapján, a leghosszabbtól kezdve az első sorba, ahová még befér). Csak itt a megjelenítés
-// sorrendje más; a kategóriaoldalak alkategória-sorrendje változatlan.
-const CHIP_ROW = 318;  // a kártya belső szélessége ~390 px-es kijelzőn
-const chipWidth = (c) => 24 + (c.name.length + String(c.count).length + 1) * 5.9;
-function packChips(cats) {
-  const rows = [];
-  for (const c of [...cats].sort((a, b) => chipWidth(b) - chipWidth(a))) {
-    const w = chipWidth(c) + 8;
-    const row = rows.find((r) => r.free >= w);
-    if (row) { row.items.push(c); row.free -= w; } else rows.push({ items: [c], free: CHIP_ROW - w });
-  }
-  return rows.flatMap((r) => r.items);
-}
-
-// A főoldal tartalma: teljes szélességű videó-hero a fejléc alatt, majd a bemutatkozó és katalógus szekciók.
-
-
 ---
   <div class="hero-video">
     <video class="hv" muted loop playsinline preload="metadata"
@@ -73,7 +55,7 @@ function packChips(cats) {
               </a>
               {g.categories.length > 1 && (
                 <ul class="m-chips">
-                  {packChips(g.categories).map((c) => (
+                  {g.categories.map((c) => (
                     <li><a class="metal-chip" href={`/termekek/${g.slug}#${c.slug}`}>{c.name} <span class="muted">{c.count}</span></a></li>
                   ))}
                 </ul>
@@ -123,16 +105,42 @@ function packChips(cats) {
     }
   }
 
-  // Mobil kategóriakártyák alkategória-gombjai: a tényleges szélességek alapján a lehető legkevesebb sorba rendezve
-  // (a legszélesebbtől kezdve az első sorba, ahová még befér), a sorok a kártya két széléig egyenletesen kitöltve.
+  // Mobil kategóriakártyák alkategória-gombjai: az eredeti alkategória-sorrendben, soronként 2 vagy 3 gomb
+  // (pl. 5 gomb: 3 + 2), a lehető legkevesebb sorban; a sorok a kártya két széléig egyenletesen kitöltve.
   const chipLists = [...document.querySelectorAll<HTMLElement>('.m-chips')];
   const chipStore = new Map(chipLists.map((ul) => [ul, [...ul.querySelectorAll<HTMLElement>('a.metal-chip')]]));
   const GAP = 7;
+  const MAX_PER_ROW = 3;
   const SCALES = [1, 0.94, 0.88, 0.84];  // ha kicsit kisebb betűvel kevesebb sor kell, azt választjuk
+  type Plan = { sizes: number[]; rows: number; singles: number; maxUsed: number };
+  const better = (x: Plan, y: Plan | null) => !y || x.rows < y.rows || (x.rows === y.rows && (x.singles < y.singles || (x.singles === y.singles && x.maxUsed < y.maxUsed)));
+  // a sorrend megtartásával, egymást követő csoportokra bontva: a legkevesebb sor, a legkevesebb egyedül álló gomb,
+  // majd a legkiegyensúlyozottabb sorszélesség
+  function planRows(widths: number[], avail: number): Plan | null {
+    let best: Plan | null = null;
+    const walk = (i: number, sizes: number[], singles: number, maxUsed: number) => {
+      if (best && sizes.length > best.rows) return;
+      if (i === widths.length) {
+        const plan = { sizes: [...sizes], rows: sizes.length, singles, maxUsed };
+        if (better(plan, best)) best = plan;
+        return;
+      }
+      let used = 0;
+      for (let n = 1; n <= MAX_PER_ROW && i + n <= widths.length; n++) {
+        used += (n > 1 ? GAP : 0) + widths[i + n - 1];
+        if (used > avail && n > 1) break;  // egy túl széles gomb egyedül még kerülhet sorba
+        sizes.push(n);
+        walk(i + n, sizes, singles + (n === 1 ? 1 : 0), Math.max(maxUsed, used));
+        sizes.pop();
+      }
+    };
+    walk(0, [], 0, 0);
+    return best;
+  }
   function layoutChips() {
     for (const ul of chipLists) {
       const chips = chipStore.get(ul)!;
-      let best: { rows: { items: HTMLElement[]; used: number }[]; scale: number } | null = null;
+      let best: { plan: Plan; scale: number } | null = null;
       for (const scale of SCALES) {
         // mérés: minden gomb külön, természetes szélességgel
         ul.classList.remove('is-packed');
@@ -141,37 +149,13 @@ function packChips(cats) {
         const cs = getComputedStyle(ul);
         const avail = ul.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
         if (avail <= 0) break;  // asztali nézetben rejtve
-        const sized = chips.map((a) => ({ a, w: Math.ceil(a.getBoundingClientRect().width) })).sort((x, y) => y.w - x.w);
-        // a legkevesebb sor keresése: k sorral próbálkozunk (az elméleti minimumtól felfelé), visszalépéses elosztással
-        const total = sized.reduce((n, c) => n + c.w + GAP, 0);
-        let rows: { items: HTMLElement[]; used: number }[] = [];
-        for (let k = Math.max(1, Math.ceil((total - GAP) / (avail + GAP))); k <= sized.length; k++) {
-          const bins: { items: HTMLElement[]; used: number }[] = Array.from({ length: k }, () => ({ items: [], used: 0 }));
-          let steps = 0;
-          const place = (i: number): boolean => {
-            if (i === sized.length) return true;
-            if (++steps > 20000) return false;
-            const c = sized[i];
-            const seen = new Set<number>();
-            for (const bin of bins) {
-              if (seen.has(bin.used)) continue;  // azonos telítettségű sorok felcserélhetők
-              seen.add(bin.used);
-              const add = (bin.items.length ? GAP : 0) + c.w;
-              if (bin.used + add > avail) continue;
-              bin.items.push(c.a); bin.used += add;
-              if (place(i + 1)) return true;
-              bin.items.pop(); bin.used -= add;
-            }
-            return false;
-          };
-          if (place(0)) { rows = bins.filter((x) => x.items.length); break; }
-        }
-        if (rows.length && (!best || rows.length < best.rows.length)) best = { rows, scale };
+        const plan = planRows(chips.map((a) => Math.ceil(a.getBoundingClientRect().width)), avail);
+        if (plan && (!best || plan.rows < best.plan.rows || (plan.rows === best.plan.rows && plan.singles < best.plan.singles))) best = { plan, scale };
       }
       if (!best) continue;
-      best.rows.sort((x, y) => y.items.length - x.items.length);
       ul.style.setProperty('--chip-scale', String(best.scale));
-      ul.replaceChildren(...best.rows.map((r) => { const li = document.createElement('li'); li.className = 'm-chip-row'; li.append(...r.items); return li; }));
+      let i = 0;
+      ul.replaceChildren(...best.plan.sizes.map((n) => { const li = document.createElement('li'); li.className = 'm-chip-row'; li.append(...chips.slice(i, i + n)); i += n; return li; }));
       ul.classList.add('is-packed');
     }
   }
