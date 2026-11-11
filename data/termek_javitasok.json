@@ -1148,7 +1148,7 @@
    "group": "zart-dobozos-es-hutos-profilok",
    "category": "zart-dobozos-es-hutos-profilok"
   },
-  "order": 42
+  "order": 40
  },
  "388008-27mm-feszito-cso-alu-profil": {
   "order": 1
@@ -1259,7 +1259,7 @@
   "order": 36
  },
  "232460-tomites-az-u-ajtoszego-profilhoz": {
-  "order": 31
+  "order": 29
  },
  "232125-dobozos-keret-elox-or-130-mm-nyitott": {
   "name": "Dobozos keret elox OR 120 mm nyitott",
@@ -3273,7 +3273,8 @@
   "specs": {
    "Anyag": null,
    "Ötvözet": "EN AW-6060"
-  }
+  },
+  "name": "260 mm I Koptató profil, natúr"
  },
  "232134-285-mm-i-koptato-profil-elox": {
   "order": 8,
@@ -3305,31 +3306,32 @@
   "specs": {
    "Anyag": null,
    "Ötvözet": "EN AW-6060"
-  }
+  },
+  "name": "50x260 mm L Belső védőprofil, natúr"
  },
  "238209-lamella-profil-200-mm-ex": {
-  "order": 12,
+  "order": 49,
   "specs": {
    "Kerület": null,
    "Ötvözet": "EN AW-6060"
   }
  },
  "238210-lamella-tarto-profil-ex": {
-  "order": 13,
+  "order": 50,
   "specs": {
    "Kerület": null,
    "Ötvözet": "EN AW-6060"
   }
  },
  "238043-kalap-profil-natur-35-87-mm": {
-  "order": 14,
+  "order": 23,
   "specs": {
    "Anyag": null,
    "Ötvözet": "EN AW-6060"
   }
  },
  "231791-15-3x26-mm-l-profil-elox": {
-  "order": 15,
+  "order": 12,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3337,7 +3339,7 @@
   }
  },
  "231165-lepcso-sarok-profil-20x20-mm-elox": {
-  "order": 16,
+  "order": 13,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3345,7 +3347,7 @@
   }
  },
  "237768-40x40x2-5-r-elox-l-profil": {
-  "order": 17,
+  "order": 14,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3353,7 +3355,7 @@
   }
  },
  "237767-60x60-l-profil-elox": {
-  "order": 18,
+  "order": 15,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3361,14 +3363,15 @@
   }
  },
  "237767-n-60x60-l-profil": {
-  "order": 19,
+  "order": 16,
   "specs": {
    "Anyag": null,
    "Ötvözet": "EN AW-6060"
-  }
+  },
+  "name": "60x60 \"L\" profil, natúr"
  },
  "236825-80x80-mm-l-profil-elox": {
-  "order": 20,
+  "order": 17,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3376,7 +3379,7 @@
   }
  },
  "238087-70x110-mm-l-kulso-elox": {
-  "order": 21,
+  "order": 18,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3384,7 +3387,7 @@
   }
  },
  "238645-kulso-l-profil-140x80mm-elox": {
-  "order": 22,
+  "order": 19,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3392,7 +3395,7 @@
   }
  },
  "237870-25x25-mm-utanfuto-sarokprofil-elox": {
-  "order": 23,
+  "order": 20,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3400,7 +3403,7 @@
   }
  },
  "237000-25x25-mm-ives-sarokprofil-elox": {
-  "order": 24,
+  "order": 21,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3408,14 +3411,15 @@
   }
  },
  "237905-n-25x35-mm-ives-sarokprofil-r50": {
-  "order": 25,
+  "order": 22,
   "specs": {
    "Anyag": null,
    "Ötvözet": "EN AW-6060"
-  }
+  },
+  "name": "25x35 mm íves sarokprofil R50, natúr"
  },
  "234235-35x35-mm-ives-sarokprofil-elox-d": {
-  "order": 26,
+  "order": 24,
   "specs": {
    "Keresztmetszet": null,
    "Anyag": null,
@@ -3424,7 +3428,7 @@
   }
  },
  "231725-belga-h-szego-25-mm-elox": {
-  "order": 27,
+  "order": 25,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3432,14 +3436,15 @@
   }
  },
  "231725-n-belga-h-szego-25-mm": {
-  "order": 28,
+  "order": 26,
   "specs": {
    "Anyag": null,
    "Ötvözet": "EN AW-6060"
-  }
+  },
+  "name": "Belga \"h\" szegő 25 mm, natúr"
  },
  "231726-b-tomiteses-ajtoszego-25-mm-elox": {
-  "order": 29,
+  "order": 27,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3447,40 +3452,42 @@
   }
  },
  "231729-b-front-tomiteses-u-ajtoszego-25-mm-elox": {
-  "order": 30,
+  "order": 28,
   "specs": {
    "Felület": "Eloxált",
    "Ötvözet": "EN AW-6060"
   }
  },
  "238066-cs-tomiteses-ajtoszego-25-mm-elox": {
-  "order": 32,
+  "order": 30,
   "specs": {
    "Felület": "Eloxált",
    "Ötvözet": "EN AW-6060"
   }
  },
  "238067-tomites-a-szego-profilhoz": {
-  "order": 33
+  "order": 31
  },
  "237846-n-tomiteses-ajtoszego-30-mm-d": {
-  "order": 34,
+  "order": 32,
   "specs": {
    "Kerület": null,
    "Keresztmetszet": null,
    "Ötvözet": "EN AW-6060"
-  }
+  },
+  "name": "Tömítéses ajtószegő 30 mm D, natúr"
  },
  "237847-n-h-ajtoszego-30-mm-d": {
-  "order": 35,
+  "order": 33,
   "specs": {
    "Kerület": null,
    "Keresztmetszet": null,
    "Ötvözet": "EN AW-6060"
-  }
+  },
+  "name": "\"h\" Ajtószegő 30 mm D, natúr"
  },
  "233837-or-tomiteses-ajtoszego-35-mm-elox": {
-  "order": 36,
+  "order": 34,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3488,17 +3495,17 @@
   }
  },
  "234002-tomites-a-szego-profilhoz-or": {
-  "order": 37
+  "order": 35
  },
  "235426-specialis-h-szego-profil": {
-  "order": 38,
+  "order": 36,
   "specs": {
    "Keresztmetszet": null,
    "Ötvözet": "EN AW-6060"
   }
  },
  "238170-or-ajto-keret-elox-70x30x65-25mm": {
-  "order": 39,
+  "order": 37,
   "specs": {
    "Gyári szálhossz [mm]": null,
    "Felület": "Eloxált",
@@ -3506,7 +3513,7 @@
   }
  },
  "237310-20-dupla-alu-zsaner": {
-  "order": 40,
+  "order": 38,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3514,7 +3521,7 @@
   }
  },
  "237712-13-dupla-alu-csiga-zsaner-u-25-mm-elox": {
-  "order": 41,
+  "order": 39,
   "specs": {
    "Kerület": null,
    "Felület": "Eloxált",
@@ -3522,17 +3529,17 @@
   }
  },
  "106731-lezaro-csiga-zsanerhoz-jobb": {
-  "order": 43
+  "order": 41
  },
  "231381-25-mm-diszlec-alu-3000-mm": {
-  "order": 44,
+  "order": 42,
   "specs": {
    "Anyag": null,
    "Ötvözet": "EN AW-6060"
   }
  },
  "236817-r50-ives-felso-profil-elox": {
-  "order": 45,
+  "order": 43,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3540,14 +3547,15 @@
   }
  },
  "236817-n-r50-ives-felso-profil": {
-  "order": 46,
+  "order": 44,
   "specs": {
    "Anyag": null,
    "Ötvözet": "EN AW-6060"
-  }
+  },
+  "name": "R50 Íves felső profil, natúr"
  },
  "231245-esocsatorna-kicsi-elox-5000": {
-  "order": 47,
+  "order": 45,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3555,14 +3563,15 @@
   }
  },
  "231245-n-esocsatorna-kicsi-5000": {
-  "order": 48,
+  "order": 46,
   "specs": {
    "Anyag": null,
    "Ötvözet": "EN AW-6060"
-  }
+  },
+  "name": "Esőcsatorna kicsi 5000, natúr"
  },
  "233176-esocsatorna-elox-nagy-7500": {
-  "order": 49,
+  "order": 47,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
@@ -3570,7 +3579,7 @@
   }
  },
  "231144-z-esoveto-alu-profil-60-mm": {
-  "order": 50,
+  "order": 48,
   "specs": {
    "Anyag": null,
    "Felület": "Eloxált",
