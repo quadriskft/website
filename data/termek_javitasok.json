@@ -2331,7 +2331,10 @@
  },
  "226001-zart-padlo-profil-30-200-mm": {
   "name": "Padló profil 200/30 mm, zárt, bordázott",
-  "order": 4
+  "order": 4,
+  "specs": {
+   "Megnevezés (gyári)": "zárt, bordázott padlóprofil"
+  }
  },
  "221902-bordazott-padlo-profil-200-40-mm": {
   "name": "Padló profil 200/40 mm, zárt, bordázott",
@@ -2343,6 +2346,9 @@
   "move": {
    "group": "aluminium-padlo-profilok",
    "category": "padlo-profilok"
+  },
+  "specs": {
+   "Kerület": null
   }
  },
  "225630-55-padlo-profil-250-mm-zart": {
