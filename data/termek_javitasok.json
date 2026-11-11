@@ -3044,7 +3044,13 @@
  },
  "221304-50x25-mm-ponyvatarto-zartszelveny-m": {
   "name": "Ponyvatartó zártszelvény 50x25 mm M",
-  "order": 7
+  "order": 7,
+  "specs": {
+   "Látható felület": null,
+   "Kerület": null,
+   "Kivitel": null,
+   "Ötvözet": "EN AW-6060"
+  }
  },
  "222005-spitz-profil-150-mm-magas-t": {
   "name": "Spitz profil 150 mm T",
