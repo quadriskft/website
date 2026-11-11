@@ -267,18 +267,30 @@ const fontCss = fallbackFace +
       const megaItem = document.querySelector('.has-mega');
       const megaTrigger = megaItem.querySelector('[data-mega-trigger]');
       // mobilon a mega statikusan, mindig kibontva látszik a menüpanelben → aria-expanded="true"
-      const syncMega = () => megaTrigger.setAttribute('aria-expanded', String(mobileMq.matches || megaItem.matches(':hover, :focus-within')));
+      const syncMega = () => megaTrigger.setAttribute('aria-expanded', String(mobileMq.matches || megaItem.classList.contains('mega-open') || megaItem.matches(':hover, :focus-within')));
       ['mouseenter', 'mouseleave', 'focusin', 'focusout'].forEach((ev) => megaItem.addEventListener(ev, () => requestAnimationFrame(syncMega)));
       mobileMq.addEventListener('change', syncMega);
       syncMega();
+      // a „Termékek” felirat nem a teljes katalógusra visz, hanem a csoportok lenyíló listáját nyitja
+      // (a teljes katalógus a listában a „Teljes katalógus →” linken érhető el)
+      megaTrigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (mobileMq.matches) return;
+        megaItem.classList.toggle('mega-open');
+        requestAnimationFrame(syncMega);
+      });
+      document.addEventListener('click', (e) => {
+        if (!megaItem.contains(e.target)) { megaItem.classList.remove('mega-open'); requestAnimationFrame(syncMega); }
+      });
 
       document.addEventListener('keydown', (e) => {
         if (e.key !== 'Escape') return;
         if (header.classList.contains('menu-open')) {
           setMenu(false);
           toggle.focus();
-        } else if (!mobileMq.matches && megaItem.matches(':focus-within')) {
+        } else if (!mobileMq.matches && (megaItem.matches(':focus-within') || megaItem.classList.contains('mega-open'))) {
           // asztali mega: Escape-re a fókusz a triggerre kerül, majd elhagyja, így a :focus-within menü bezárul
+          megaItem.classList.remove('mega-open');
           megaTrigger.focus();
           megaTrigger.blur();
           requestAnimationFrame(syncMega);
@@ -457,7 +469,7 @@ const fontCss = fallbackFace +
   }
   /* Hover-intent: egérrel 120 ms késleltetéssel nyílik, hogy az átsuhanó kurzor (vagy oldalbetöltéskor ott álló egér) ne nyissa ki azonnal; billentyűzetről azonnal */
   .has-mega:hover .mega { opacity: 1; visibility: visible; transform: none; transition-delay: 120ms; }
-  .has-mega:focus-within .mega { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
+  .has-mega:focus-within .mega, .has-mega.mega-open .mega { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
   .mega-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-bottom: 12px; margin-bottom: 10px; border-bottom: 1px solid var(--line); }
   .mega-all { font-size: 0.86rem; font-weight: 600; color: var(--accent); text-decoration: none !important; white-space: nowrap; }
   .mega-all:hover { color: var(--accent-2); }
