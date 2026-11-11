@@ -4351,5 +4351,90 @@
   "specs": {
    "Felületkezelés": "horganyzott"
   }
+ },
+ "jbx100-szerszamos-lada": {
+  "specs": {
+   "Szerelőkészlet": null
+  }
+ },
+ "jbx65-szerszamos-lada": {
+  "specs": {
+   "Szerelőkészlet": null
+  }
+ },
+ "szerszamos-lada": {
+  "specs": {
+   "Szerelőkészlet": null
+  }
+ },
+ "jvr35-mini-box-350x350x350-mm": {
+  "specs": {
+   "Megfelelőség": null
+  }
+ },
+ "jvr50-nova-box-500x400x350-mm": {
+  "specs": {
+   "Megfelelőség": null
+  }
+ },
+ "j105215-acel-tandem-sarvedo-2740x650x3500": {
+  "specs": {
+   "Felületkezelés": null
+  }
+ },
+ "j50001-ives-sarvedo-1380-880-400": {
+  "specs": {
+   "Húr (S)": null
+  }
+ },
+ "j50002-ives-sarvedo-1380-880-450": {
+  "specs": {
+   "Húr (S)": null
+  }
+ },
+ "j50002-b-ives-sarvedo-feher-csikkal-1380-880-450": {
+  "specs": {
+   "Húr (S)": null
+  }
+ },
+ "j50003-ives-sarvedo-1380-880-270": {
+  "specs": {
+   "Húr (S)": null
+  }
+ },
+ "j50003-b-ives-sarvedo-feher-csikkal-1380-880-270": {
+  "specs": {
+   "Húr (S)": null
+  }
+ },
+ "j50019-450ft-csapott-teteju-sarvedo": {
+  "specs": {
+   "Húr (S)": null
+  }
+ },
+ "j50019-b-450ft-csapott-teteju-sarvedo-feher-csikkal": {
+  "specs": {
+   "Húr (S)": null
+  }
+ },
+ "j50027-280ft-csapott-teteju-sarvedo": {
+  "specs": {
+   "Húr (S)": null
+  }
+ },
+ "j50027-b-280ft-csapott-teteju-sarvedo-feher-csikkal": {
+  "specs": {
+   "Húr (S)": null
+  }
+ },
+ "j108524-d42-es-ff-1p-sarvedotarto-cso-580-mm": {
+  "specs": {
+   "Felületkezelés": null
+  }
+ },
+ "j608031-th-42-es-sarvedotarto-cso-750-mm-3p": {
+  "specs": {
+   "Felületkezelés": null
+  }
  }
 }
