@@ -331,7 +331,7 @@
     {
      "slug": "dobozok-tarto-konzolok",
      "name": "Dobozok + tartó konzolok",
-     "count": 28
+     "count": 22
     },
     {
      "slug": "sarvedok",
@@ -9914,84 +9914,6 @@
    "category": "dobozok-tarto-konzolok",
    "supplier": "BMC Flexpar",
    "supplierCode": "C-804550",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "jbx100-szerszamos-lada",
-   "code": "",
-   "name": "JBX100 Szerszámos láda",
-   "group": "sarvedok-szerszamosladak",
-   "category": "dobozok-tarto-konzolok",
-   "supplier": "JONESCO",
-   "supplierCode": "",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "jbx400-d-szerszamos-lada",
-   "code": "",
-   "name": "JBX400 D Szerszámos láda",
-   "group": "sarvedok-szerszamosladak",
-   "category": "dobozok-tarto-konzolok",
-   "supplier": "JONESCO",
-   "supplierCode": "",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "jbx45-szerszamos-lada",
-   "code": "",
-   "name": "JBX45 Szerszámos láda",
-   "group": "sarvedok-szerszamosladak",
-   "category": "dobozok-tarto-konzolok",
-   "supplier": "JONESCO",
-   "supplierCode": "",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "jbx52-szerszamos-lada",
-   "code": "",
-   "name": "JBX52 Szerszámos láda",
-   "group": "sarvedok-szerszamosladak",
-   "category": "dobozok-tarto-konzolok",
-   "supplier": "JONESCO",
-   "supplierCode": "",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "jbx65-szerszamos-lada",
-   "code": "",
-   "name": "JBX65 Szerszámos láda",
-   "group": "sarvedok-szerszamosladak",
-   "category": "dobozok-tarto-konzolok",
-   "supplier": "JONESCO",
-   "supplierCode": "",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "szerszamos-lada",
-   "code": "",
-   "name": "Szerszámos láda",
-   "group": "sarvedok-szerszamosladak",
-   "category": "dobozok-tarto-konzolok",
-   "supplier": "JONESCO",
-   "supplierCode": "JBX80",
    "description": "",
    "specs": {},
    "images": [],

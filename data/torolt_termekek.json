@@ -1831,5 +1831,41 @@
   "code": "",
   "date": "2026-11-11",
   "reason": "a Quadris kérésére törölve"
+ },
+ "jbx100-szerszamos-lada": {
+  "name": "JBX100 Szerszámos láda",
+  "code": "",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "jbx400-d-szerszamos-lada": {
+  "name": "JBX400 D Szerszámos láda",
+  "code": "",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "jbx45-szerszamos-lada": {
+  "name": "JBX45 Szerszámos láda",
+  "code": "",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "jbx52-szerszamos-lada": {
+  "name": "JBX52 Szerszámos láda",
+  "code": "",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "jbx65-szerszamos-lada": {
+  "name": "JBX65 Szerszámos láda",
+  "code": "",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "szerszamos-lada": {
+  "name": "JBX80 Szerszámos láda",
+  "code": "",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
  }
 }
