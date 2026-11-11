@@ -331,7 +331,7 @@
     {
      "slug": "dobozok-tarto-konzolok",
      "name": "Dobozok + tartó konzolok",
-     "count": 20
+     "count": 19
     },
     {
      "slug": "sarvedok",
@@ -9823,19 +9823,6 @@
    "category": "dobozok-tarto-konzolok",
    "supplier": "Ital Accessori",
    "supplierCode": "205599",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "j504335-szerszamos-lada-500x430x350-mm",
-   "code": "",
-   "name": "J504335 Szerszámos láda 500x430x350 mm",
-   "group": "sarvedok-szerszamosladak",
-   "category": "dobozok-tarto-konzolok",
-   "supplier": "BMC Flexpar",
-   "supplierCode": "C-504335",
    "description": "",
    "specs": {},
    "images": [],
