@@ -294,60 +294,111 @@
  },
  "207316-u-90-hossztarto": {
   "name": "\"U\" 90 Hossztartó, klamnizható",
-  "order": 1
+  "order": 1,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "207317-u-108-hossztarto": {
   "name": "\"U\" 108 Hossztartó, klamnizható",
-  "order": 2
+  "order": 2,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "207327-tl-110-60-60-hossztarto-ex": {
   "name": "\"TL\" 110/60/60 Hossztartó EX, klamnizható",
-  "order": 3
+  "order": 3,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "209695-u-110-60-hossztarto-duplanutolt-ex": {
   "name": "\"U\" 110/60 Hossztartó duplanútolt EX, klamnizható",
-  "order": 4
+  "order": 4,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "202850-u-130-hossztarto-k": {
   "name": "\"U\" 130 Hossztartó K, klamnizható",
-  "order": 5
+  "order": 5,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "202386-u-130-hossztarto": {
   "name": "\"U\" 130 Hossztartó, klamnizható",
-  "order": 6
+  "order": 6,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "205162-u-80x60x5-mm-aluprofil": {
-  "order": 7
+  "order": 7,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "203432-u-90x50x50x5-mm-profil": {
-  "order": 8
+  "order": 8,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "202274-u-100x50x50x5-mm-profil": {
-  "order": 9
+  "order": 9,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "203548-u-140x60x60x7-mm-profil": {
-  "order": 10
+  "order": 10,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "202869-u-160x80x80x8-mm-profil": {
-  "order": 11
+  "order": 11,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "202387-i-70-kereszttarto": {
-  "order": 1
+  "order": 1,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "206441-i-gerenda-profil-80x60-50x8-6-mm": {
-  "order": 2
+  "order": 2,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "207319-i-90-kereszttarto": {
-  "order": 3
+  "order": 3,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "200392-i-90-60-kereszttarto-ex": {
-  "order": 4
+  "order": 4,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "2073902-i-90-csavarozhato-kereszttarto": {
-  "order": 5
+  "order": 5,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "207315-i-108-kereszttarto": {
-  "order": 6
+  "order": 6,
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
+  }
  },
  "s-2x1000x2000-mm-elox-alu-lemez-en-aw-5002": {
   "name": "S 2x1000x2000 mm Eloxált védőfóliás Alu lemez EN AW-5005",
@@ -3000,6 +3051,11 @@
    "Vastagság": "5 mm",
    "Tömeg": "1,08 kg/fm",
    "Szabványméret": "80 x 5 mm"
+  }
+ },
+ "208755-hossztarto-talpas-140-6-magas-120-10-60-8-mm": {
+  "specs": {
+   "Ötvözet": "EN AW-6005A T6"
   }
  }
 }

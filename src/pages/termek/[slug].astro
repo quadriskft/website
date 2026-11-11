@@ -23,9 +23,17 @@ const hideStock = NO_STOCK_LENGTH_GROUPS.has(product.group);
 const specs0 = Object.entries(product.specs ?? {}).filter(([k]) => !((familyOf(product.slug)?.lengths || hideStock) && /^(hossz|szálhossz|gyári hossz|gyári szálhossz)/i.test(k)));
 const hosszIdx = specs0.findIndex(([k]) => /^hossz/i.test(k));
 const szelIdx = specs0.findIndex(([k]) => /^szélesség/i.test(k));
-const specs = hosszIdx > -1 && szelIdx > -1 && hosszIdx !== szelIdx + 1
+const specs1 = hosszIdx > -1 && szelIdx > -1 && hosszIdx !== szelIdx + 1
   ? (() => { const a = specs0.slice(); const [h] = a.splice(hosszIdx, 1); a.splice(a.findIndex(([k]) => /^szélesség/i.test(k)) + 1, 0, h); return a; })()
   : specs0;
+// az ötvözet közvetlenül a felület(kezelés) sora alatt áll, ha mindkettő megvan
+const specs = (() => {
+  const oi = specs1.findIndex(([k]) => /^ötvözet$/i.test(k));
+  if (oi < 0 || !specs1.some(([k]) => /^felület/i.test(k))) return specs1;
+  const a = specs1.slice(); const [o] = a.splice(oi, 1);
+  a.splice(a.findIndex(([k]) => /^felület/i.test(k)) + 1, 0, o);
+  return a;
+})();
 // hiányzó képfájl ne kerüljön a bélyegsorba (üres/törött bélyeg helyett kimarad)
 const imageExists = (src) => typeof src === 'string' && existsSync(`${process.cwd()}/public${src}`);
 const gallery = product.images?.length > 1 ? product.images.filter(imageExists) : [];
