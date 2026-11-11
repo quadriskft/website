@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import ProductVisual from '../../components/ProductVisual.astro';
-import { products, getGroup, getCategory, productsIn, publicProduct, isProfile, familyOf, isWholeBar, DEFAULT_STOCK_LENGTH } from '../../lib/catalog.js';
+import { products, getGroup, getCategory, productsIn, publicProduct, isProfile, familyOf, isWholeBar, DEFAULT_STOCK_LENGTH, otherPlaces } from '../../lib/catalog.js';
 import { SITE, abs, absPage } from '../../lib/site.js';
 import orderForms from '../../../data/rendelesi_adatlapok.json';
 import { existsSync } from 'node:fs';
@@ -72,6 +72,8 @@ const crumbs = [
 ];
 // látható morzsamenü: Főoldal › Termékkatalógus › Főkategória › Alkategória › termék; „Vissza” = egy szinttel feljebb
 const navCrumbs = crumbs;
+// más csoportban is szereplő termék: a „Vissza” és a morzsasor oda vezet, ahonnan megnyitották
+const places = otherPlaces(product);
 const backTo = showCategory
   ? { href: `/termekek/${group.slug}#${category.slug}`, label: category.name }
   : { href: `/termekek/${group.slug}`, label: group.name };
@@ -339,9 +341,37 @@ const jsonLd = [
     </div>
     <div class="lb-stage" data-lb-stage><img alt="" data-lb-img /></div>
   </div>
+  {places.length > 0 && <script type="application/json" id="alt-places" data-slug={product.slug} data-has-cat={showCategory ? '1' : '0'} set:html={JSON.stringify(places)} />}
 </Base>
 
 <script>
+  // Több csoportban is szereplő termék: ha a látogató egy másik csoport oldaláról nyitotta meg, a „Vissza” gomb és a
+  // morzsasor abba a csoportba vezet vissza (a böngészési munkamenetben megjegyezve, frissítés után is).
+  const altEl = document.getElementById('alt-places');
+  if (altEl) {
+    const places = JSON.parse(altEl.textContent || '[]');
+    const key = `quadris-origin:${altEl.dataset.slug}`;
+    let from = null;
+    try {
+      const ref = new URL(document.referrer);
+      const m = ref.origin === location.origin && ref.pathname.match(/^\/termekek\/([^/]+)\/?$/);
+      if (m) { from = m[1]; sessionStorage.setItem(key, from); }
+      else from = sessionStorage.getItem(key);
+    } catch { /* nincs hivatkozó oldal vagy tárhely: marad az alapértelmezett hely */ }
+    const place = places.find((x) => x.g === from);
+    if (place) {
+      const href = `/termekek/${place.g}#${place.c}`;
+      const back = document.querySelector<HTMLAnchorElement>('[data-back]');
+      if (back) { back.href = href; back.title = `Vissza: ${place.cn}`; back.setAttribute('aria-label', `Vissza: ${place.cn}`); }
+      const links = [...document.querySelectorAll<HTMLAnchorElement>('.crumb-trail > a:not([data-sub-crumb])')];
+      // Főoldal › Termékkatalógus › csoport › [alkategória] › termék
+      if (links[2]) { links[2].href = `/termekek/${place.g}`; links[2].textContent = place.gn; }
+      if (altEl.dataset.hasCat === '1' && links[3]) {
+        if (place.single) { links[3].previousElementSibling?.remove(); links[3].remove(); }
+        else { links[3].href = href; links[3].textContent = place.cn; }
+      }
+    }
+  }
   import { quote, clampQty, clampLen, normalizeCuts, totalPcs, barsNeeded } from '../../scripts/quote.js';
 
   // rendelési adatlap: a kitöltött adatok (config) külön ajánlatkérő-tételként – több eltérő ajtó is kérhető

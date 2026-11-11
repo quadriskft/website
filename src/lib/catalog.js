@@ -300,6 +300,17 @@ export function getProduct(slug) {
   return productsBySlug.get(slug);
 }
 
+// A termék további megjelenési helyei (más csoport / alkategória, ahol szintén szerepel) – a termékoldal ebből
+// tudja, hová vezessen vissza, ha a terméket onnan nyitották meg
+export function otherPlaces(p) {
+  return alsoIn(p).map((k) => {
+    const [g, c] = k.split('/');
+    const group = getGroup(g);
+    const cat = group?.categories.find((x) => x.slug === c);
+    return group && cat ? { g, c, gn: group.name, cn: cat.name, single: cat.name === group.name } : null;
+  }).filter(Boolean);
+}
+
 export function getCategory(groupSlug, categorySlug) {
   return getGroup(groupSlug)?.categories.find((c) => c.slug === categorySlug);
 }
