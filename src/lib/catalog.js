@@ -115,9 +115,12 @@ const STOCK_FIRST = new Set(['kedergumik']);  // ezekben a raktári tételek el�
 const excelSlugs = new Set(catalog.products.map((p) => p.slug));
 const withStock = (p) => (STOCK_GROUPS.has(p.group) && (excelSlugs.has(p.slug) || fixes[p.slug]?.stock) && !fixes[p.slug]?.noStock ? { ...p, stock: true } : p);  // stock: kézzel raktárinak jelölve  // noStock: a Quadris kérésére nem raktári
 
+// Egyesített főcsoportok (a Quadris kérése): a forrás csoport termékei és alkategóriái a cél csoportba kerülnek
+const GROUP_MERGES = { 'ponyvarendszer-kiegeszitok': 'elhuzhato-roloponyvas-rendszer' };
 // A Quadris által törlésre jelölt termékek (data/torolt_termekek.json) sehol nem jelennek meg
 export const products = [...excelProducts, ...extendedProducts, ...cloneProducts].filter((p) => !deleted[p.slug])
-  .map(withoutSupplierCodes).map(withCarton).map(withStock);
+  .map(withoutSupplierCodes).map(withCarton).map(withStock)
+  .map((p) => (GROUP_MERGES[p.group] ? { ...p, group: GROUP_MERGES[p.group] } : p));
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
 const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik', 'elvedo-profilok': 'Élvédő profilok – PVC', 'sima-lemez': 'Natúr alumínium lemezek', 'cseppmintas-lemez': 'Cseppmintás és bordás lemezek', 'festett-lemez': 'Védőfóliás festett lemezek', 'padlo-profilok': 'Padló és padló keret profilok', 'adaico-rakoncak': 'Ada rakoncák', 'dg': 'DG rakoncák', '25-mm-mono-profilok': '25 mm mono profilok', 'aluminium-billencs-oldalfalak': 'Alumínium billencs oldalfalak – 30 mm', 'spitzprofilok': 'Spitzprofilok – építhető oldalfal', 'adaico-c-sin-acel': 'Fix tető alkatrészek', 'dobozok-tarto-konzolok': 'Szerszámosládák + tartó konzolok' };
@@ -145,6 +148,13 @@ for (const c of extended.categories ?? []) {
   const g = groupList.find((x) => x.slug === c.group);
   if (g && !g.categories.some((x) => x.slug === c.slug)) g.categories.push({ slug: c.slug, name: CATEGORY_RENAMES[c.slug] ?? c.name });
 }
+for (const [from, to] of Object.entries(GROUP_MERGES)) {
+  const i = groupList.findIndex((x) => x.slug === from);
+  const g = groupList.find((x) => x.slug === to);
+  if (i < 0 || !g) continue;
+  for (const cat of groupList[i].categories) if (!g.categories.some((x) => x.slug === cat.slug)) g.categories.push(cat);
+  groupList.splice(i, 1);
+}
 // A Quadris által kért saját alkategóriák: [csoport, slug, név, amely alkategória után kerüljön]
 const QUADRIS_CATEGORIES = [
   ['kedergumik', 'elvedo-profilok-epdm', 'Élvédő profilok – EPDM', 'elvedo-profilok'],
@@ -161,10 +171,10 @@ for (const [gs, slug, name, after] of QUADRIS_CATEGORIES) {
 const CATEGORY_COPIES = [
   ['platos-alkatreszek-es-kiegeszitok/kotoelemek', 'aluminium-alvaz-profilok/kotoelemek', 'kereszttartok'],
   // a ponyvarendszer-profilok a platós és ponyvás oldalfal profilok között is, a billencs oldalfalak előtt
-  ['ponyvarendszer-kiegeszitok/ponyvacsovek', 'ponyvas-oldalfal-profilok-es-szegok/ponyvacsovek', 'szego-profilok'],
-  ['ponyvarendszer-kiegeszitok/spitzprofilok', 'ponyvas-oldalfal-profilok-es-szegok/spitzprofilok', 'ponyvacsovek'],
-  ['ponyvarendszer-kiegeszitok/ponyvatarto-zartszelvenyek', 'ponyvas-oldalfal-profilok-es-szegok/ponyvatarto-zartszelvenyek', 'spitzprofilok'],
-  ['ponyvarendszer-kiegeszitok/spanner-profil', 'ponyvas-oldalfal-profilok-es-szegok/spanner-profil', 'ponyvatarto-zartszelvenyek'],
+  ['elhuzhato-roloponyvas-rendszer/ponyvacsovek', 'ponyvas-oldalfal-profilok-es-szegok/ponyvacsovek', 'szego-profilok'],
+  ['elhuzhato-roloponyvas-rendszer/spitzprofilok', 'ponyvas-oldalfal-profilok-es-szegok/spitzprofilok', 'ponyvacsovek'],
+  ['elhuzhato-roloponyvas-rendszer/ponyvatarto-zartszelvenyek', 'ponyvas-oldalfal-profilok-es-szegok/ponyvatarto-zartszelvenyek', 'spitzprofilok'],
+  ['elhuzhato-roloponyvas-rendszer/spanner-profil', 'ponyvas-oldalfal-profilok-es-szegok/spanner-profil', 'ponyvatarto-zartszelvenyek'],
 ];
 for (const [from, to, after] of CATEGORY_COPIES) {
   const [fg, fc] = from.split('/'), [tg, tc] = to.split('/');
@@ -251,7 +261,7 @@ export const GROUP_META = {
   'ponyvas-oldalfal-profilok-es-szegok': { icon: 'Columns3', text: 'Oldalfal rendszerek, mono profilok, szegők és billencs oldalfalak.' },
   'platos-alkatreszek-es-kiegeszitok': { icon: 'Truck', text: 'Alváz konzolok, TIR zsanérok, Z-zárak, fellépők és pótkerék tartók.' },
   'acel-es-alu-rakoncak-es-szegok': { icon: 'PanelsTopLeft', text: 'Köztes, első és hátsó rakoncák acélból és alumíniumból.' },
-  'elhuzhato-roloponyvas-rendszer': { icon: 'Blinds', text: 'Elhúzható tető- és oldalponyva rendszerek, sarokoszlopok, C-sínek.' },
+  'elhuzhato-roloponyvas-rendszer': { icon: 'Blinds', text: 'Elhúzható tető- és oldalponyva rendszerek, sarokoszlopok, C-sínek, ponyvacsövek, ponyvatartók és ponyvafeszítők.' },
   'ponyvarendszer-kiegeszitok': { icon: 'Tent', text: 'Ponyvacsövek, spitzprofilok, ponyvatartók és ponyvafeszítők.' },
   'hatso-ajtok-es-athajto-rampak': { icon: 'DoorOpen', text: 'Alumínium hátsó ajtók és áthajtó rámpák.' },
   'zart-dobozos-es-hutos-profilok': { icon: 'Snowflake', text: 'Profilok zárt dobozos és hűtős felépítményekhez, komplett készletek.' },
@@ -343,7 +353,7 @@ export function productsIn(groupSlug, categorySlug) {
 
 // Ezekben a főkategóriákban / alkategóriákban a termékek a névben szereplő méret szerint növekvő sorrendben állnak
 // (első méret, egyezésnél a második, harmadik …; pl. 20x20x3 < 25x25x2 < 30x20x1,5 < 30x20x2).
-const SIZE_SORTED = new Set(['ipari-felgyartmanyok', 'ponyvarendszer-kiegeszitok/ponyvacsovek', 'csuszasmentes-retegelt-padlo/retegelt-lemezek']);
+const SIZE_SORTED = new Set(['ipari-felgyartmanyok', 'elhuzhato-roloponyvas-rendszer/ponyvacsovek', 'csuszasmentes-retegelt-padlo/retegelt-lemezek']);
 
 function sizesOf(name) {
   const m = name.match(/\d+(?:[.,]\d+)?(?:\s*x\s*\d+(?:[.,]\d+)?)*/i);
