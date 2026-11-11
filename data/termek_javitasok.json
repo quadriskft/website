@@ -1035,14 +1035,16 @@
   "specs": {
    "Szélesség": "52 mm",
    "Magasság": "40 mm",
-   "Nyílás": "20 mm"
+   "Nyílás": "20 mm",
+   "Tömeg": null
   }
  },
  "729630-huspalya-c-sin-elox-7000-mm": {
   "specs": {
    "Szélesség": "52 mm",
    "Magasság": "40 mm",
-   "Nyílás": "20 mm"
+   "Nyílás": "20 mm",
+   "Tömeg": null
   }
  },
  "6612225-elso-oszlop-90-70-alu-elox-d": {
@@ -1990,22 +1992,22 @@
  },
  "502501-szimpla-gorgos-gumiutkozo-d100-118": {
   "specs": {
-   "Kivitel": "vízszintes görgős ütköző, horganyzott acél ház",
+   "Kivitel": null,
    "Ház (Sz × M × Mé)": "110 × 115 × 90 mm",
    "Görgő átmérő": "Ø100 mm",
    "Görgő szélesség": "80 mm",
-   "Rögzítő furatok": "4 × Ø13 mm (osztás 44 × 52 mm)",
-   "Tömeg": "3,6 kg"
+   "Rögzítő furatok": null,
+   "Tömeg": null
   },
   "name": "Szimpla görgős gumiütköző 110x115"
  },
  "502502-dupla-gorgos-gumiutkozo-222x115": {
   "specs": {
-   "Kivitel": "vízszintes, dupla görgős ütköző, horganyzott acél ház",
+   "Kivitel": null,
    "Ház (Sz × M × Mé)": "190 × 115 × 90 mm",
    "Görgők": "2 db, Ø100 mm, 80 mm szélesek",
-   "Rögzítő furatok": "4 × Ø13 mm (osztás 120 × 52 mm)",
-   "Tömeg": "5,5 kg"
+   "Rögzítő furatok": null,
+   "Tömeg": null
   },
   "name": "Dupla görgős gumiütköző 190x115"
  },
@@ -2013,7 +2015,7 @@
   "specs": {
    "Kivitel": null,
    "Hossz": "2500 mm",
-   "Tömeg": "3,700 kg",
+   "Tömeg": null,
    "Anyag": "eloxált alumínium, gumibetéttel",
    "Profil": "37 × 30 mm",
    "Furatok": "Ø5 mm, 200 mm osztással",
@@ -2024,7 +2026,7 @@
   "specs": {
    "Kivitel": null,
    "Hossz": "3000 mm",
-   "Tömeg": "4,440 kg",
+   "Tömeg": null,
    "Anyag": "eloxált alumínium, gumibetéttel",
    "Profil": "37 × 30 mm",
    "Furatok": "Ø5 mm, 200 mm osztással",
@@ -2035,7 +2037,7 @@
   "specs": {
    "Kivitel": null,
    "Hossz": "4000 mm",
-   "Tömeg": "5,920 kg",
+   "Tömeg": null,
    "Anyag": "eloxált alumínium, gumibetéttel",
    "Profil": "37 × 30 mm",
    "Furatok": "Ø5 mm, 200 mm osztással",
@@ -3588,5 +3590,616 @@
  },
  "152823-tir-zsaner-garnitura-rm": {
   "name": "TIR-zsanér garnitúra rozsdamentes"
+ },
+ "806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "806287-inox-oldalajto-zsaner-184-65-zsirzos": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "806307-rm-oldalajto-zsaner-lepcsos-140-179-mm": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "806308-horganyzott-oldalajto-zsaner-140-179-mm": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "806407-rm-oldalajto-zsaner-lepcsos-183-mm": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "808872-rm-zongora-zsaner-40x1-5x1970-mm": {
+  "specs": {
+   "Kivitel": null
+  }
+ },
+ "810489-rm-lapos-zsaner-140-4-mm-pl": {
+  "specs": {
+   "Kivitel": null,
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "812910-elox-alu-oldalajto-zsaner-lepcsos": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "832410-horganyzott-pillango-zsaner-60x60": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "832420-rm-pillango-zsaner-60x60": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "892242-rm-csavarozhato-hatsoajto-zsanerbak-csap-96-mm-pl": {
+  "specs": {
+   "Kivitel": null,
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "892343-rm-csavarozhato-hatsoajto-zsanerbak-csap-96-mm-pl": {
+  "specs": {
+   "Kivitel": null,
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "892776-rm-hatsoajto-zsanerlap-312x96-4mm-pl": {
+  "specs": {
+   "Kivitel": null,
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "896966-rm-hatsoajto-zsanerlap-bak-280-4mm-pl": {
+  "specs": {
+   "Kivitel": null,
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "896966-a-rm-hatsoajto-zsanerlap-280-4-mm-pl": {
+  "specs": {
+   "Kivitel": null,
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "899210-rm-hatsoajto-zsanerlap-bak-280-3-ts": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "899210-c-rm-hatsoajto-zsanerbak-ts": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "8bt1mb-rm-hatsoajto-zsanerlap-bak-260-3mm-mp": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Rögzítő furatok": null,
+   "Tömeg": null,
+   "Teljes hossz": null,
+   "Zsanérlap szélessége": null,
+   "Lemezvastagság": null,
+   "Bak": null
+  }
+ },
+ "714859-sullyesztett-inox-rudzar-25-16-mm-pl": {
+  "specs": {
+   "Kivitel": null,
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "719259-48d-rozsdamentes-nyomolapos-rudzar-22mm": {
+  "specs": {
+   "Kivitel": null,
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "719520-rm-27-mm-nyomolapos-rudzar-set-pl": {
+  "specs": {
+   "Kivitel": null,
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "833682-horganyzott-sullyesztett-nyelves-zar-pm": {
+  "specs": {
+   "Tömeg [kg]": null
+  }
+ },
+ "836500-d18-horg-hatsoajtozar-kit-ts": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "836821-l-d22-kontener-rudzar-rm-kit-ts": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "836821-r-d22-kontener-rudzar-rm-kit-ts": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "836931-d34-kontener-rudzar-horg-kit": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "mp-cem-inox-feszek": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Rögzítő furatok": null,
+   "Tömeg": null
+  }
+ },
+ "mp-cem-inox-feszek-mp-lem-kampo-kit": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Tömeg": null,
+   "Tartalom": null
+  }
+ },
+ "mp-cfem003-alatet-a-zarhoz": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Rögzítő furatok": null,
+   "Tömeg": null
+  }
+ },
+ "mp-fem16003-25-sullyesztett-rudzar-inox": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Rögzítő furatok": null,
+   "Tömeg": null
+  }
+ },
+ "mp-fem16003-29-sullyesztett-rudzar-inox": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Rögzítő furatok": null,
+   "Tömeg": null
+  }
+ },
+ "mp-fex16-001-nyomolapos-rudzar": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Rögzítő furatok": null,
+   "Tömeg": null
+  }
+ },
+ "mp-fex16-001-klcex31-kb3a-nyomolapos-rudzar-szett": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Tartalom": null
+  }
+ },
+ "mp-kb2a-22-mm-omega-lefogato-33-22": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Rögzítő furatok": null,
+   "Tömeg": null
+  }
+ },
+ "mp-kb2b-22-mm-nagy-omega-130-22": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Rögzítő furatok": null,
+   "Tömeg": null
+  }
+ },
+ "mp-kb2e-kit-omega-lefogato-22-mm": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Tömeg": null,
+   "Tartalom": null
+  }
+ },
+ "mp-kb3a-omega-lefogato-16-mm": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Rögzítő furatok": null,
+   "Tömeg": null
+  }
+ },
+ "mp-klc-em2-inox-feszek-kampo": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Tömeg": null,
+   "Tartalom": null
+  }
+ },
+ "mp-klc-ex31-kit-16-zarkampo-ellendarab": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Rögzítő furatok": null,
+   "Tömeg": null,
+   "Tartalom": null,
+   "Zárfészek mérete": null
+  }
+ },
+ "mp-lem-inox-kampo": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Tömeg": null,
+   "Rúdfurat": null
+  }
+ },
+ "mp22-fex22001-rm-nyomolapos-rudzar": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Rögzítő furatok": null,
+   "Tömeg": null
+  }
+ },
+ "511127-25-mm-es-pvc-tomites-g": {
+  "specs": {
+   "Tulajdonság": null
+  }
+ },
+ "511127-25-mm-es-pvc-tomites-w-b": {
+  "specs": {
+   "Tulajdonság": null
+  }
+ },
+ "511132-25-mm-es-pvc-tomites-g": {
+  "specs": {
+   "Tulajdonság": null
+  }
+ },
+ "511207-50-70-mm-es-gumi-tomites-pfg": {
+  "specs": {
+   "Tömeg [kg]": null
+  }
+ },
+ "511208-70-90-mm-es-gumi-tomites-pfg": {
+  "specs": {
+   "Kiszerelés": null,
+   "Tömeg [kg]": null,
+   "Panelvastagság [mm]": null,
+   "Rögzítőprofil": null,
+   "Hézag [mm]": null
+  }
+ },
+ "512527-55-mm-es-pvc-tomites-pl": {
+  "specs": {
+   "Kivitel": null,
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "512627-85-mm-es-pvc-tomites-pl": {
+  "specs": {
+   "Kivitel": null,
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "512827-40-mm-pvc-tomites-n-n": {
+  "specs": {
+   "Tulajdonság": null
+  }
+ },
+ "512827-40-mm-pvc-tomites-w-b": {
+  "specs": {
+   "Tulajdonság": null
+  }
+ },
+ "513627-35-mm-es-pvc-tomites-g": {
+  "specs": {
+   "Tulajdonság": null
+  }
+ },
+ "513627c-35-mm-es-pvc-tomites-b-w": {
+  "specs": {
+   "Tulajdonság": null
+  }
+ },
+ "514528-44-mm-es-pvc-terelvalaszto-tomites-g": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "516245-65-mm-es-pvc-tomites-n-n": {
+  "specs": {
+   "Tulajdonság": null
+  }
+ },
+ "517026-30-mm-es-pvc-tomites-g": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "517027-30-mm-es-pvc-tomites-b-w": {
+  "specs": {
+   "Tulajdonság": null
+  }
+ },
+ "519031-alu-lefogato-sin-3800-12-mm": {
+  "specs": {
+   "Tömeg [kg]": null
+  }
+ },
+ "501927-2-fokos-letra-th-platform": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "502210-2-fokos-letra-horg": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "502287-3-fokos-letra-thorg-steges-tk": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "5030270-2-fokos-letra-platform-th": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "504665-3-fokos-letra-horganyzott": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "504927-6-fokos-letra-th": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "508665-2-fokos-letra-horg": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "508820-1-fokos-letra-horg": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "501952-fix-thorg-oldalajto-fellepo-letra": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "502500-szimpla-gorgos-gumiutkozo-d70-85": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "552080-utkozogumi-200x80x80": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "552118-utkozogumi-150x60x60": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "552155-utkozogumi-215x50x55": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "552280-gumi-utkozogyuru-d21-5x7-5-mm": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "552594-utkozogumi-400x65x70": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "552825-kupos-utkozogumi-27-5-25": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "553065-utkozogumi-300x65x70": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "553541-kupos-utkozogumi-45-60-35": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "554540-utkozogumi-450x40x60": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "555490-utkozogumi-490x45x40": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "555575-kupos-utkozogumi-55-75-40": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "556575-kupos-utkozogumi-65-75-50": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "557575-kupos-utkozogumi-75-75-50": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "056402-2-reszes-rugos-ajtokiakaszto-szet": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "821018-rugos-ajtokitamaszto-horg-540-425-mm-ad": {
+  "specs": {
+   "Megnevezés (gyári)": null,
+   "Tömeg": null
+  }
+ },
+ "829611-rugos-ajtokitamaszto-500-270mm-ts": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "829631-rugos-ajtorogzito-horg-440-270mm-ts": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "829681-rugos-ajtorogzito-horg-545-410mm-ts": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "829691-rugos-ajtokitamaszto-500-280-inox-ts": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "837815-csapos-ajto-rogzito-kit-51-5-mm": {
+  "specs": {
+   "Tömeg [kg]": null
+  }
+ },
+ "854043-rugos-ajtorogzito-elox-alu": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "70605-d60x5-mm-huspalya-cso-elox-6000-mm": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "72298-alu-csotarto-biztosito-csappal": {
+  "specs": {
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "72299-kampo-rogzito-profil-elox": {
+  "specs": {
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "72711-elso-csoveg": {
+  "specs": {
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "72733-hatso-csoveg": {
+  "specs": {
+   "Kiszerelés": null,
+   "Tömeg": null
+  }
+ },
+ "728120-huskampo-fix-c-sinhez": {
+  "specs": {
+   "Tömeg": null,
+   "Felületkezelés": null
+  }
+ },
+ "728972-huskampo-60mm-csohoz": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "729143-sinrogzito-lancal-huspalyasinhez-rm": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "102040-inox-sarokelem-nagy": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "103925-sarok-elem-35-35-r-profilhoz": {
+  "specs": {
+   "Tömeg [kg/fm]": null,
+   "Ötvözet": null
+  }
+ },
+ "819264-250-mm-fogantyu-acel-merevitessel": {
+  "specs": {
+   "Tömeg [kg]": null
+  }
+ },
+ "820128-rugos-rigli-rm": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "820128-l-210-mm-rugos-rigli-rm": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "820129-rugos-rigli-horg": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "820129-l-247-mm-rugos-rigli-horg": {
+  "specs": {
+   "Kivitel": null,
+   "Tömeg": null
+  }
+ },
+ "891200-kis-kapaszkodo": {
+  "specs": {
+   "Tömeg": null
+  }
+ },
+ "891235-nagy-kapaszkodo": {
+  "specs": {
+   "Tömeg": null
+  }
  }
 }
