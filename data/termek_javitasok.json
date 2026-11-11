@@ -1089,7 +1089,11 @@
   "order": 16
  },
  "106282-targoncautkozo-profil-rogzito-csavar-keszlet": {
-  "order": 17
+  "order": 17,
+  "move": {
+   "group": "aluminium-alvaz-profilok",
+   "category": "targonca-utkozo"
+  }
  },
  "106731-lezaro-csiga-zsanerhoz": {
   "move": {
