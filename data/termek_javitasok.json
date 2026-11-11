@@ -1089,7 +1089,7 @@
   "order": 16
  },
  "106282-targoncautkozo-profil-rogzito-csavar-keszlet": {
-  "order": 17,
+  "order": 2,
   "move": {
    "group": "aluminium-alvaz-profilok",
    "category": "targonca-utkozo"
@@ -3067,5 +3067,8 @@
  },
  "117773-kotoelem-csavar": {
   "name": "Kötőelem csavar M10x35"
+ },
+ "201094-targonca-utkozo-profil": {
+  "order": 1
  }
 }
