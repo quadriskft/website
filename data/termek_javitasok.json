@@ -911,7 +911,8 @@
    "category": "aluminium-billencs-oldalfalak-40"
   },
   "specs": {
-   "Ötvözet": "EN AW-6060 T66"
+   "Ötvözet": "EN AW-6060 T66",
+   "Mértékegység": null
   }
  },
  "222020-h-szego-kiugros-25-mm-elox": {
@@ -2998,7 +2999,7 @@
   }
  },
  "247158-billencs-kozepso-200x30-mm-profil": {
-  "name": "Billencs felső profil 200x30 mm eloxált",
+  "name": "Billencs köztes profil 200x30 mm eloxált",
   "order": 4,
   "specs": {
    "Ötvözet": "EN AW-6060 T66"

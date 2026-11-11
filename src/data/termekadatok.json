@@ -4860,7 +4860,6 @@
    "Mértékegység": "m Version: central"
   },
   "images": [
-   "/termekkepek/243240-billencs-kozepso-200x40-mm-rajz.webp",
    "/termekkepek/243240-billencs-kozepso-200x40-mm-1.webp"
   ]
  },
@@ -4889,9 +4888,7 @@
    "Szálhossz": "6 m"
   },
   "images": [
-   "/termekkepek/245085-bill-u-szego-30-mm-40-60-elox-meretrajz.webp",
-   "/termekkepek/245085-bill-u-szego-30-mm-40-60-elox-rajz.webp",
-   "/termekkepek/245085-bill-u-szego-30-mm-40-60-elox-1.webp"
+   "/termekkepek/245085-bill-u-szego-30-mm-40-60-elox-meretrajz.webp"
   ]
  },
  "245240-billencs-also-200x40-mm": {
@@ -4907,7 +4904,6 @@
    "Mértékegység": "méter"
   },
   "images": [
-   "/termekkepek/245240-billencs-also-200x40-mm-rajz.webp",
    "/termekkepek/245240-billencs-also-200x40-mm-1.webp"
   ]
  },
@@ -4937,8 +4933,7 @@
    "Gyári szálhossz [mm]": "6100 / 7650"
   },
   "images": [
-   "/termekkepek/247158-billencs-kozepso-200x30-mm-profil-rajz.webp",
-   "/termekkepek/247158-billencs-kozepso-200x30-mm-profil-1.webp"
+   "/termekkepek/247158-billencs-koztes-profil-200x30-mm-meretrajz.webp"
   ]
  },
  "247162-bill-koztes-profil-100-30-mm-elox": {
@@ -4951,7 +4946,9 @@
    "Tömeg [kg/fm]": "1,660",
    "Gyári szálhossz [mm]": "7650"
   },
-  "images": []
+  "images": [
+   "/termekkepek/247162-bill-koztes-profil-100-30-mm-elox-meretrajz.webp"
+  ]
  },
  "247174-bill-also-hosszu-szakalas-profil-150-30-elox": {
   "source": "RE-ALL",
@@ -4998,7 +4995,6 @@
    "Mértékegység": "méter"
   },
   "images": [
-   "/termekkepek/247243-billencs-felso-200x40-mm-rajz.webp",
    "/termekkepek/247243-billencs-felso-200x40-mm-1.webp"
   ]
  },
