@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base crumbs={[['Főoldal', '/'], ['Termékkatalógus', '/pdf-katalogus']]} back={{ href: '/', label: 'Főoldal' }} title="Termékkatalógus (PDF)" description="A Quadris Kft. PDF termékkatalógusa előkészítés alatt.">
+  <section class="pdf-empty">
+    <div class="container">
+      <p>A pdf katalógust még össze kell állítani a végén</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .pdf-empty { min-height: 50vh; display: grid; place-items: center; padding: 80px 0; text-align: center; }
+  .pdf-empty p { font-size: 1.3rem; color: var(--navy); margin: 0; }
+</style>
