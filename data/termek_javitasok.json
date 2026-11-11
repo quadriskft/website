@@ -4355,16 +4355,28 @@
   "specs": {
    "Anyag": "rozsdamentes",
    "Kivitel": null
+  },
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
   }
  },
  "122850-rakomanyrogzito-kengyel-1000-dan-sv": {
   "specs": {
    "Felület": null
+  },
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
   }
  },
  "123025-terelvalaszto-falzar-2400-2700-mm-400dan": {
   "specs": {
    "Felület": "Eloxált"
+  },
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
   }
  },
  "123320-kombi-rakomanyrogzito-sin-aluminium": {
@@ -4382,6 +4394,10 @@
   "specs": {
    "Anyag": "horganyzott",
    "Kivitel": null
+  },
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
   }
  },
  "127183-talpas-terelvalaszto-rakomanyrogzito-rud-d42-alu": {
@@ -4400,36 +4416,60 @@
   "specs": {
    "Anyag": "horganyzott",
    "Kivitel": null
+  },
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
   }
  },
  "128110-padloba-heg-rak-rogz-2500-dan": {
   "specs": {
    "Anyag": "nyers",
    "Kivitel": null
+  },
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
   }
  },
  "128315-rakomanyrozito-ful-nyers": {
   "specs": {
    "Anyag": "nyers",
    "Kivitel": null
+  },
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
   }
  },
  "128510-pvc-talpas-rakomanyrogzito-500-kg": {
   "specs": {
    "Anyag": "horganyzott, PVC talppal",
    "Kivitel": null
+  },
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
   }
  },
  "129310-padloba-sullyesztehto-horg-rak-rogzito-tanyer-1000-dan": {
   "specs": {
    "Anyag": "horganyzott",
    "Kivitel": null
+  },
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
   }
  },
  "129711-rakomanyrogzito-kengyel-2500-dan-ts": {
   "specs": {
    "Anyag": "horganyzott",
    "Kivitel": null
+  },
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
   }
  },
  "121208-gyurus-rakomanyrogzito-1300-dan": {
@@ -4557,6 +4597,54 @@
   "specs": {
    "Anyag": null,
    "Szabvány": null
+  }
+ },
+ "123210-inox-rakomany-rogz-tanyer": {
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
+  }
+ },
+ "123250-terelvalaszto-falzar": {
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
+  }
+ },
+ "125311-2-reszes-rakomanyrogzito-gyuru-lefogatas": {
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
+  }
+ },
+ "126510-rakomanyrogzito-kengyel-nyers-alatettel": {
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
+  }
+ },
+ "126516-rakomanyrogzito-kengyel-td": {
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
+  }
+ },
+ "127111-3-reszes-rakomanyrogzito-oval-tanyer-kics-350kg": {
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
+  }
+ },
+ "128325-rakomanyrozito-ful-festett-fekete": {
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
+  }
+ },
+ "129111-rak-rogz-kengyel-lapka-2500-dan-ts": {
+  "move": {
+   "group": "rakomanyrogzites",
+   "category": "altalanos-platos-rakomanyrogzites"
   }
  }
 }
