@@ -331,7 +331,7 @@
     {
      "slug": "dobozok-tarto-konzolok",
      "name": "Dobozok + tartó konzolok",
-     "count": 22
+     "count": 20
     },
     {
      "slug": "sarvedok",
@@ -9914,32 +9914,6 @@
    "category": "dobozok-tarto-konzolok",
    "supplier": "BMC Flexpar",
    "supplierCode": "C-804550",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "jbz52-szerszamos-lada",
-   "code": "",
-   "name": "JBZ52 Szerszámos láda",
-   "group": "sarvedok-szerszamosladak",
-   "category": "dobozok-tarto-konzolok",
-   "supplier": "JONESCO",
-   "supplierCode": "",
-   "description": "",
-   "specs": {},
-   "images": [],
-   "documents": []
-  },
-  {
-   "slug": "jbz60-szerszamos-lada",
-   "code": "",
-   "name": "JBZ60 Szerszámos láda",
-   "group": "sarvedok-szerszamosladak",
-   "category": "dobozok-tarto-konzolok",
-   "supplier": "JONESCO",
-   "supplierCode": "",
    "description": "",
    "specs": {},
    "images": [],
