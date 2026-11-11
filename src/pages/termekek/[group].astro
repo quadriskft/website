@@ -52,7 +52,7 @@ const jsonLd = [
   </section>
 
   <div class="container layout">
-    {!single && (
+    {sections.length > 1 && (
       <aside class="sidebar">
         <nav aria-label="Kategóriák">
           <h2 class="side-title">Kategóriák</h2>
@@ -64,6 +64,13 @@ const jsonLd = [
       </aside>
     )}
     <div class="content">
+      {sections.length === 0 && (
+        <div class="empty-group card">
+          <p><strong>A termékek feltöltése folyamatban.</strong></p>
+          <p class="muted">Ha már most érdeklődik, kérjen ajánlatot vagy keressen minket.</p>
+          <p class="empty-actions"><a class="btn" href="/ajanlatkeres">Ajánlatkérés</a><a class="btn btn-ghost" href="/kapcsolat">Kapcsolat</a></p>
+        </div>
+      )}
       {sections.map((c) => (
         <section class="cat-section" id={c.slug} data-cat data-cat-name={c.name}>
           {!single && (
@@ -131,6 +138,9 @@ const jsonLd = [
 </script>
 
 <style>
+  .empty-group { padding: 28px; max-width: 640px; }
+  .empty-group p { margin: 0 0 10px; }
+  .empty-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px !important; }
   .gh { display: flex; gap: 20px; align-items: flex-start; }
   .gh h1 { margin-bottom: 8px; }
   .gh .lead { margin: 0; }

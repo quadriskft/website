@@ -50,7 +50,7 @@ import { groups, groupImage, productsIn } from '../lib/catalog.js';
                 </div>
                 <div class="m-group-title">
                   <h3>{g.name}</h3>
-                  <span class="m-count metal-chip">{g.count} termék</span>
+                  <span class="m-count metal-chip">{g.count ? `${g.count} termék` : 'Hamarosan'}</span>
                 </div>
               </a>
               {g.categories.length > 1 && (

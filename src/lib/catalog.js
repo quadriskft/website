@@ -229,11 +229,14 @@ for (const p of products) {
   for (const k of [`${p.group}/${p.category}`, ...alsoIn(p)]) counts.set(k, (counts.get(k) ?? 0) + 1);
 }
 
+// Termék nélkül is megjelenő (egyelőre üres) főcsoportok: a kártyán „Hamarosan” felirattal (a Quadris kérése)
+export const EMPTY_GROUPS = new Set(['redonyok']);
+
 // A termékcsoportok sorrendje (a Quadris kérése szerint); a listában nem szereplők utánuk, ABC sorrendben
 const GROUP_ORDER = [
   'aluminium-lemezek', 'ipari-felgyartmanyok', 'aluminium-alvaz-profilok', 'aluminium-padlo-profilok',
   'ponyvas-oldalfal-profilok-es-szegok', 'elhuzhato-roloponyvas-rendszer', 'hatso-ajtok-es-athajto-rampak', 'italszallito-kit',
-  'zart-dobozos-es-hutos-profilok', 'acel-profilok', 'platos-alkatreszek-es-kiegeszitok', 'ponyvarendszer-kiegeszitok',
+  'zart-dobozos-es-hutos-profilok', 'redonyok', 'acel-profilok', 'platos-alkatreszek-es-kiegeszitok', 'ponyvarendszer-kiegeszitok',
   'acel-es-alu-rakoncak-es-szegok', 'dobozos-felepitmeny-alkatreszek', 'rakomanyrogzites', 'sarvedok-szerszamosladak',
   'kedergumik', 'csuszasmentes-retegelt-padlo', 'gumiszonyegek', 'szellozes-tetoablakok-vilagitas', 'specialis-felepitmeny-alkatreszek',
   'uvegszalas-polieszter',
@@ -250,7 +253,7 @@ export const groups = groupList
       .filter((c) => c.count > 0 || KEEP_EMPTY.has(`${g.slug}/${c.slug}`));
     return { ...g, categories, count: categories.reduce((n, c) => n + c.count, 0) };
   })
-  .filter((g) => g.count > 0)
+  .filter((g) => g.count > 0 || EMPTY_GROUPS.has(g.slug))
   .sort((a, b) => groupRank(a.slug) - groupRank(b.slug) || a.name.localeCompare(b.name, 'hu'));
 
 const groupsBySlug = new Map(groups.map((g) => [g.slug, g]));
