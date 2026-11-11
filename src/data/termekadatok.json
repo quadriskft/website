@@ -1679,7 +1679,6 @@
    "Felület": "natúr"
   },
   "images": [
-   "/termekkepek/200392-i-90-60-kereszttarto-ex-rajz.webp",
    "/termekkepek/200392-i-90-60-kereszttarto-ex-1.webp"
   ]
  },
@@ -2051,10 +2050,9 @@
    "Falvastagság": "8,6 mm"
   },
   "images": [
-   "/termekkepek/206441-i-gerenda-profil-80x60-50x8-6-mm-rajz.webp",
+   "/termekkepek/206441-i-gerenda-profil-80x60-50x8-6-mm-1.webp",
    "/termekkepek/3d/206441-i-gerenda-profil-80x60-50x8-6-mm-1.webp",
-   "/termekkepek/3d/206441-i-gerenda-profil-80x60-50x8-6-mm-2.webp",
-   "/termekkepek/206441-i-gerenda-profil-80x60-50x8-6-mm-1.webp"
+   "/termekkepek/3d/206441-i-gerenda-profil-80x60-50x8-6-mm-2.webp"
   ]
  },
  "206941-cd-100x30-mm-alafutasgatlo-elox-profil": {
@@ -2161,7 +2159,6 @@
    "Mértékegység": "méter"
   },
   "images": [
-   "/termekkepek/207319-i-90-kereszttarto-rajz.webp",
    "/termekkepek/207319-i-90-kereszttarto-1.webp"
   ]
  },
@@ -2200,7 +2197,6 @@
    "Felület": "natúr"
   },
   "images": [
-   "/termekkepek/2073902-i-90-csavarozhato-kereszttarto-kitoltott.webp",
    "/termekkepek/2073902-i-90-csavarozhato-kereszttarto-meretrajz.webp"
   ]
  },
