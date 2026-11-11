@@ -74,6 +74,7 @@ const jsonLd = [
               {CATEGORY_NOTES[`${group.slug}/${c.slug}`] && <span class="cat-note muted">{CATEGORY_NOTES[`${group.slug}/${c.slug}`]}</span>}
             </h2>
           )}
+          {c.items.length === 0 && <p class="muted cat-empty">A termékek feltöltés alatt.</p>}
           <div class="grid grid-products">
             {c.items.map((p) => <ProductCard product={p} hideCode={codeHiddenInGroup(group.slug)} />)}
           </div>

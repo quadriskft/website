@@ -123,7 +123,7 @@ export const products = [...excelProducts, ...extendedProducts, ...cloneProducts
   .map((p) => (GROUP_MERGES[p.group] ? { ...p, group: GROUP_MERGES[p.group] } : p));
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
-const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik', 'elvedo-profilok': 'Élvédő profilok – PVC', 'sima-lemez': 'Natúr alumínium lemezek', 'cseppmintas-lemez': 'Cseppmintás és bordás lemezek', 'festett-lemez': 'Védőfóliás festett lemezek', 'padlo-profilok': 'Padló és padló keret profilok', 'adaico-rakoncak': 'Ada rakoncák', 'dg': 'DG rakoncák', '25-mm-mono-profilok': '25 mm mono profilok', 'aluminium-billencs-oldalfalak': 'Alumínium billencs oldalfalak – 30 mm', 'spitzprofilok': 'Spitzprofilok – építhető oldalfal', 'adaico-c-sin-acel': 'Fix tető alkatrészek', 'dobozok-tarto-konzolok': 'Szerszámosládák + tartó konzolok' };
+const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik', 'elvedo-profilok': 'Élvédő profilok – PVC', 'sima-lemez': 'Natúr alumínium lemezek', 'cseppmintas-lemez': 'Cseppmintás és bordás lemezek', 'festett-lemez': 'Védőfóliás festett lemezek', 'padlo-profilok': 'Padló és padló keret profilok', 'adaico-rakoncak': 'Ada rakoncák', 'dg': 'DG rakoncák', '25-mm-mono-profilok': '25 mm mono profilok', 'aluminium-billencs-oldalfalak': 'Alumínium billencs oldalfalak – 30 mm', 'spitzprofilok': 'Spitzprofilok – építhető oldalfal', 'adaico-c-sin-acel': 'Fix tető alkatrészek', 'dobozok-tarto-konzolok': 'Szerszámosládák + tartó konzolok', 'rakomanyrogzites': 'Zárt dobozos/doppelstock rakományrögzítés' };
 // Gyártói alkategóriák logója (a gyártó honlapjáról): a címben a név elé / helyett jelenik meg
 export const CATEGORY_LOGOS = {
   versus: { src: '/logok/versus-omega.svg', alt: 'Versus-Omega', text: true },
@@ -159,6 +159,7 @@ for (const [from, to] of Object.entries(GROUP_MERGES)) {
 const QUADRIS_CATEGORIES = [
   ['kedergumik', 'elvedo-profilok-epdm', 'Élvédő profilok – EPDM', 'elvedo-profilok'],
   ['hatso-ajtok-es-athajto-rampak', '4-szarnyu', '4 szárnyú', '2-szarnyu'],
+  ['rakomanyrogzites', 'altalanos-platos-rakomanyrogzites', 'Általános platós rakományrögzítés', 'rakomanyrogzites'],
 ];
 for (const [gs, slug, name, after] of QUADRIS_CATEGORIES) {
   const g = groupList.find((x) => x.slug === gs);
@@ -240,11 +241,13 @@ const GROUP_ORDER = [
 ];
 const groupRank = (slug) => (GROUP_ORDER.includes(slug) ? GROUP_ORDER.indexOf(slug) : GROUP_ORDER.length);
 
+// Üresen is megjelenő alkategóriák (a Quadris később tölti fel)
+const KEEP_EMPTY = new Set(['rakomanyrogzites/altalanos-platos-rakomanyrogzites']);
 export const groups = groupList
   .map((g) => {
     const categories = g.categories
       .map((c) => ({ ...c, count: counts.get(`${g.slug}/${c.slug}`) ?? 0 }))
-      .filter((c) => c.count > 0);
+      .filter((c) => c.count > 0 || KEEP_EMPTY.has(`${g.slug}/${c.slug}`));
     return { ...g, categories, count: categories.reduce((n, c) => n + c.count, 0) };
   })
   .filter((g) => g.count > 0)
