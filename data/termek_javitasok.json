@@ -2309,7 +2309,10 @@
  },
  "226821-21-padlo-profil-200-mm": {
   "name": "Padló profil 200/21 mm, bordázott",
-  "order": 1
+  "order": 1,
+  "specs": {
+   "Keresztmetszet": null
+  }
  },
  "227543-30-padlo-profil-200-mm": {
   "name": "Padló profil 200/30 mm Típus 1",
