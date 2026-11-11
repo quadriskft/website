@@ -76,7 +76,8 @@ const cloneProducts = Object.entries(families).filter(([id, f]) => !id.startsWit
   return rest.map((slug) => {
     const f = fixes[slug];  // a másolat saját kézi javításai (pl. név: „… jobbos”)
     return { ...base, slug, images: extra[slug]?.images ?? base.images, specs: { ...base.specs, ...(extra[slug]?.specs ?? {}), ...(f?.specs ?? {}) },
-      ...(f?.name ? { name: f.name } : {}), ...(f?.description ? { description: f.description } : {}) };
+      ...(f?.name ? { name: f.name } : {}), ...(f?.description ? { description: f.description } : {}),
+      ...(f && 'code' in f ? { code: f.code } : {}) };  // a másolatnak saját (akár üres) cikkszáma lehet
   });
 });
 

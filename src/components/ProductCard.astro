@@ -23,7 +23,7 @@ if ((fam?.id.startsWith('alu-natur-') || fam?.id.startsWith('alu-elox-')) && fam
   </a>
   {sizes.length > 0 && (
     <ul class="card-sizes" aria-label="Választható méretek">
-      {sizes.map((x) => <li><a href={`/termek/${x.slug}`}>{x.label}</a></li>)}
+      {sizes.map((x) => <li><a class="metal-chip" href={`/termek/${x.slug}`}>{x.label}</a></li>)}
     </ul>
   )}
   <div class="product-foot">
@@ -37,9 +37,9 @@ if ((fam?.id.startsWith('alu-natur-') || fam?.id.startsWith('alu-elox-')) && fam
 </article>
 
 <style>
-  .card-sizes { list-style: none; margin: 0 0 8px; padding: 0 4px; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 6px; }
-  .card-sizes a { display: block; padding: 2px 8px; border: 1px solid var(--line-strong); border-radius: 999px; font-size: 0.74rem; line-height: 1.5; color: var(--text-2); text-decoration: none !important; white-space: nowrap; font-variant-numeric: tabular-nums; }
-  .card-sizes a:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+  .card-sizes { list-style: none; margin: 0 0 8px; padding: 0 4px; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 6px; }
+  /* fémkeretes gombok, mint az alkategóriák (a keret és a fény a .metal-chip-ből jön) */
+  .card-sizes a { font-size: 0.74rem; padding: 3px 9px; white-space: nowrap; font-variant-numeric: tabular-nums; }
   .product-card { display: flex; flex-direction: column; padding: 12px; }
   .product-link { color: inherit; text-decoration: none !important; display: block; flex: 1; }
   h3 { font-size: 0.97rem; font-weight: 600; margin: 12px 4px 6px; line-height: 1.35; color: var(--navy); }

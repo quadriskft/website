@@ -3790,5 +3790,14 @@
    "3562974-alu-hatso-400-mm-rakonca-l-r": "balos",
    "3562974-alu-hatso-400-mm-rakonca-jobbos": "jobbos"
   }
+ },
+ "lapos-80x5-masolat": {
+  "name": "80x5 mm Alu lapos profil",
+  "clone": true,
+  "separate": true,
+  "members": {
+   "251742-50x5-mm-alu-lapos-profil": "50x5",
+   "80x5-mm-alu-lapos-profil": "80x5"
+  }
  }
 }

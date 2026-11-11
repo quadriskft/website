@@ -2991,5 +2991,15 @@
  },
  "s-1x1250-mm-ff-ral9016-szalag-h42": {
   "name": "1x1250 mm FF RAL9016 SZALAG H42"
+ },
+ "80x5-mm-alu-lapos-profil": {
+  "name": "80x5 mm Alu lapos profil",
+  "code": "",
+  "specs": {
+   "Szélesség": "80 mm",
+   "Vastagság": "5 mm",
+   "Tömeg": "1,08 kg/fm",
+   "Szabványméret": "80 x 5 mm"
+  }
  }
 }
