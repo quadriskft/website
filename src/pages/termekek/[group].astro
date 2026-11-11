@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import ProductCard from '../../components/ProductCard.astro';
-import { groups, GROUP_META, productsIn, groupImage, sidebarImage, CATEGORY_LOGOS, GROUP_LOGOS, codeHiddenInGroup } from '../../lib/catalog.js';
+import { groups, GROUP_META, productsIn, groupImage, sidebarImage, CATEGORY_LOGOS, GROUP_LOGOS, GROUP_DOCS, codeHiddenInGroup } from '../../lib/catalog.js';
 import { absPage } from '../../lib/site.js';
 
 export function getStaticPaths() {
@@ -64,6 +64,16 @@ const jsonLd = [
       </aside>
     )}
     <div class="content">
+      {(GROUP_DOCS[group.slug] ?? []).map((d) => (
+        <a class="group-doc card" href={d.url} target="_blank" rel="noopener" download>
+          <span class="gd-icon"><Icon name="FileText" size={28} /></span>
+          <span class="gd-body">
+            <strong>{d.title}</strong>
+            {d.text && <span class="muted">{d.text}</span>}
+          </span>
+          <span class="gd-btn btn">PDF letöltése <Icon name="Download" size={16} /></span>
+        </a>
+      ))}
       {sections.length === 0 && (
         <div class="empty-group card">
           <p><strong>A termékek feltöltése folyamatban.</strong></p>
@@ -138,6 +148,13 @@ const jsonLd = [
 </script>
 
 <style>
+  .group-doc { display: flex; gap: 16px; align-items: center; padding: 18px 20px; margin-bottom: 24px; color: inherit; text-decoration: none !important; }
+  .group-doc:hover strong { color: var(--accent); }
+  .gd-icon { flex: none; display: grid; place-items: center; width: 52px; height: 52px; border-radius: var(--radius); background: var(--accent-soft); color: var(--accent); }
+  .gd-body { display: grid; gap: 4px; flex: 1; }
+  .gd-body .muted { font-size: 0.9rem; }
+  .gd-btn { flex: none; display: inline-flex; gap: 6px; align-items: center; }
+  @media (max-width: 720px) { .group-doc { flex-wrap: wrap; } .gd-btn { width: 100%; justify-content: center; } }
   .empty-group { padding: 28px; max-width: 640px; }
   .empty-group p { margin: 0 0 10px; }
   .empty-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px !important; }

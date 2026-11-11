@@ -130,6 +130,14 @@ export const CATEGORY_LOGOS = {
   edscha: { src: '/logok/edscha.png', alt: 'Edscha Trailer Systems', text: false },
 };
 
+// Főcsoporthoz tartozó letölthető dokumentumok (pl. megrendelőlap): a csoportoldal tetején jelennek meg
+export const GROUP_DOCS = {
+  'redonyok': [
+    { title: 'Redőny-konfigurátor / megrendelőlap', url: '/dokumentumok/redony-konfigurator-megrendelolap.pdf',
+      text: 'Töltse ki a kívánt redőnyök méreteivel és kivitelével, és küldje el nekünk az ajánlatkéréshez vagy a megrendeléshez. A dokumentum méretrajzokat és profilkatalógust is tartalmaz.' },
+  ],
+};
+
 // Főcsoport logója (a gyártó weboldaláról): a csoport oldalának fejlécében és a katalógus csoportkártyáján
 export const GROUP_LOGOS = {
   'szellozes-tetoablakok-vilagitas': { src: '/logok/gnc-systems.png', alt: 'G&C Systems' },
