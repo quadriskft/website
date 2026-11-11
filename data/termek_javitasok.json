@@ -3239,5 +3239,15 @@
  },
  "201094-targonca-utkozo-profil": {
   "order": 1
+ },
+ "201092-spanner-profil": {
+  "specs": {
+   "Felület": "natúr"
+  }
+ },
+ "203101-spanner-profil": {
+  "specs": {
+   "Keresztmetszet": null
+  }
  }
 }
