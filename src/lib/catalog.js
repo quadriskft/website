@@ -245,7 +245,7 @@ const GROUP_ORDER = [
 const groupRank = (slug) => (GROUP_ORDER.includes(slug) ? GROUP_ORDER.indexOf(slug) : GROUP_ORDER.length);
 
 // Üresen is megjelenő alkategóriák (a Quadris később tölti fel)
-const KEEP_EMPTY = new Set(['rakomanyrogzites/altalanos-platos-rakomanyrogzites']);
+const KEEP_EMPTY = new Set(['rakomanyrogzites/altalanos-platos-rakomanyrogzites', 'redonyok/redonyok']);
 export const groups = groupList
   .map((g) => {
     const categories = g.categories

@@ -188,6 +188,11 @@
    "slug": "aluminium-billencs-oldalfalak-40",
    "name": "Alumínium billencs oldalfalak – 40 mm",
    "source": "Quadris kérés"
+  },
+  {
+   "group": "redonyok",
+   "slug": "redonyok",
+   "name": "Redőnyök"
   }
  ],
  "renameGroups": {

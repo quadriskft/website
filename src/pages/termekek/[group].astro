@@ -52,7 +52,7 @@ const jsonLd = [
   </section>
 
   <div class="container layout">
-    {sections.length > 1 && (
+    {(sections.length > 1 || (sections.length === 1 && sideImg)) && (
       <aside class="sidebar">
         <nav aria-label="Kategóriák">
           <h2 class="side-title">Kategóriák</h2>
