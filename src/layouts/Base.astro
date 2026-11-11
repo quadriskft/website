@@ -140,7 +140,7 @@ const fontCss = fallbackFace +
     <footer class="site-footer">
       <div class="container footer-main">
         <div class="footer-brand">
-          <a href="/" class="footer-logo" aria-label={`${SITE.name} – főoldal`}><span class="wordmark">QUADRIS</span></a>
+          <a href="/" class="footer-name">Quadris Kft.</a>
           <p class="footer-tagline">{SITE.tagline}</p>
           {SITE.address && <p class="footer-address">{SITE.address}</p>}
         </div>
@@ -587,8 +587,7 @@ const fontCss = fallbackFace +
   .footer-main {
     display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px 48px; padding-top: 56px; padding-bottom: 40px;
   }
-  .footer-logo { display: inline-flex; color: var(--on-brand); text-decoration: none !important; margin-bottom: 14px; }
-  .footer-logo .wordmark { font-size: 1.25rem; }
+  .footer-name { display: inline-block; color: var(--on-brand); text-decoration: none !important; margin-bottom: 12px; font-size: 1.35rem; font-weight: 700; }
   .footer-tagline { color: var(--on-brand); font-weight: 500; margin: 0 0 6px; max-width: 360px; }
   .footer-address { margin: 0; font-size: 0.92rem; }
   .footer-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(246, 243, 236, 0.84); margin: 4px 0 14px; }

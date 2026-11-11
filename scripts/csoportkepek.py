@@ -25,7 +25,7 @@ PHOTOS = {
     # a Quadris által küldött három kép (narancs jelölőpontok és az ADA vízjel nélkül), azonos magasságban egymás mellett
     "acel-es-alu-rakoncak-es-szegok": ["row", "../data/forras/rakonca_csoportkep_1.png", "../data/forras/rakonca_csoportkep_2.png",
                                        "../data/forras/rakonca_csoportkep_3.png"],
-    "elhuzhato-roloponyvas-rendszer": ["small", "../data/forras/roloponyvas_kategoria.png"],  # a Quadris által küldött kép (298×198)
+    "elhuzhato-roloponyvas-rendszer": ["../data/forras/roloponyvas_csoportkep_feher.jpg"],  # a korábbi kép MI-vel fehér háttérre téve (kézzel mentve, 1200×840)
     "ponyvarendszer-kiegeszitok": ["termekkepek/380184-ada-racsnis-feszito-kocka-adapterhez-r-1.webp"],
     "dobozos-felepitmeny-alkatreszek": ["termekkepek/714859-sullyesztett-inox-rudzar-25-16-mm-pl-1.webp"],
     # a Quadris által küldött két katalógusfotó (rudak és sínek) egymás mellett, MI-vel újrarajzolva; a kész kép kézzel mentve
@@ -38,11 +38,10 @@ PHOTOS = {
     # a Quadris által küldött fotó (MI-vel 4x nagyítva); a korábbi hexa mintás render a HEXA lemezeknél (retegelt_kepek.py)
     "csuszasmentes-retegelt-padlo": ["cover", "../data/forras/retegelt_csuszasmentes_csoportkep.png"],
     # a Quadris által küldött kép, a feliratos doboz előtt levágva
-    "kedergumik": ["cover", "../data/forras/kedergumi_csoportkep.png"],
+    "kedergumik": ["../data/forras/kedergumi_csoportkep_feher.jpg"],  # a korábbi kép MI-vel fehér háttérre téve (kézzel mentve, 1200×840)
     # a Quadris által küldött rámpás kép (fejléc- és alsó csík nélkül, MI-vel 4x nagyítva, élesítve) és mellette
     # a piros szegélyes 4 szárnyú hátsó ajtó (MI-vel 4x nagyítva), árnyékkal, a rámpás kép szürke hátterén
-    "hatso-ajtok-es-athajto-rampak": ["side", "../data/forras/athajto_rampak_csoportkep.png",
-                                      "../data/forras/hatso_ajto_4szarnyu_csoportkep.png"],
+    "hatso-ajtok-es-athajto-rampak": ["../data/forras/hatso_ajtok_rampak_csoportkep_feher.jpg"],  # a korábbi kép MI-vel fehér háttérre téve (kézzel mentve, 1200×840)
     # a Quadris által küldött dobozos felépítmény fotó (a háttérben álló dobozok nélkül, MI-vel nagyítva, élesítve)
     "zart-dobozos-es-hutos-profilok": ["../data/forras/dobozos_profilok_csoportkep.png"],
     # a Quadris által küldött kék italszállító fotó (oldalt nyitott ponyva, hátsó ajtók), MI-vel nagyítva, nagyban
