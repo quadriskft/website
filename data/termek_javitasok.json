@@ -2791,11 +2791,22 @@
  },
  "223350-350-mm-mono-profil-szakalas-elox": {
   "name": "Mono profil 350 mm, peremes, eloxált",
-  "order": 4
+  "order": 4,
+  "specs": {
+   "Tömeg": "3,98 kg/fm",
+   "Ötvözet": "EN AW-6060",
+   "Látható felület": null,
+   "Kerület": null
+  }
  },
  "226830-300-mm-mono-profil-elox": {
   "name": "Mono profil 300 mm, eloxált",
-  "order": 5
+  "order": 5,
+  "specs": {
+   "Ötvözet": "EN AW-6060",
+   "Látható felület": null,
+   "Kerület": null
+  }
  },
  "227075-200-mm-mono-profil-teli-szakalas-elox": {
   "name": "Mono profil 200 mm, peremes, eloxált",
