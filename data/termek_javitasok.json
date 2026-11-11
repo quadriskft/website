@@ -4646,5 +4646,14 @@
    "group": "rakomanyrogzites",
    "category": "altalanos-platos-rakomanyrogzites"
   }
+ },
+ "g-10x1000-soft-gumi": {
+  "name": "G 10x1000 puha gumi"
+ },
+ "g-10x1000x2000-soft-gumi-lap": {
+  "name": "G 10x1000x2000 puha gumi lap"
+ },
+ "g-8x1000x2000-soft-gumi-lap": {
+  "name": "G 8x1000x2000 puha gumi lap"
  }
 }

@@ -123,18 +123,18 @@ export const products = [...excelProducts, ...extendedProducts, ...cloneProducts
   .map((p) => (GROUP_MERGES[p.group] ? { ...p, group: GROUP_MERGES[p.group] } : p));
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
-const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik', 'elvedo-profilok': 'Élvédő profilok – PVC', 'sima-lemez': 'Natúr alumínium lemezek', 'cseppmintas-lemez': 'Cseppmintás és bordás lemezek', 'festett-lemez': 'Védőfóliás festett lemezek', 'padlo-profilok': 'Padló és padló keret profilok', 'adaico-rakoncak': 'Ada rakoncák', 'dg': 'DG rakoncák', '25-mm-mono-profilok': '25 mm mono profilok', 'aluminium-billencs-oldalfalak': 'Alumínium billencs oldalfalak – 30 mm', 'spitzprofilok': 'Spitzprofilok – építhető oldalfal', 'adaico-c-sin-acel': 'Fix tető alkatrészek', 'dobozok-tarto-konzolok': 'Szerszámosládák + tartó konzolok', 'rakomanyrogzites': 'Zárt dobozos/doppelstock rakományrögzítés' };
+const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik', 'elvedo-profilok': 'Élvédő profilok – PVC', 'sima-lemez': 'Natúr alumínium lemezek', 'cseppmintas-lemez': 'Cseppmintás és bordás lemezek', 'festett-lemez': 'Védőfóliás festett lemezek', 'padlo-profilok': 'Padló és padló keret profilok', 'adaico-rakoncak': 'Ada rakoncák', 'dg': 'DG rakoncák', '25-mm-mono-profilok': '25 mm mono profilok', 'aluminium-billencs-oldalfalak': 'Alumínium billencs oldalfalak – 30 mm', 'spitzprofilok': 'Spitzprofilok – építhető oldalfal', 'adaico-c-sin-acel': 'Fix tető alkatrészek', 'dobozok-tarto-konzolok': 'Szerszámosládák + tartó konzolok', 'rakomanyrogzites': 'Zárt dobozos/doppelstock rakományrögzítés', 'soft-gumi': 'Puha gumi' };
 // Gyártói alkategóriák logója (a gyártó honlapjáról): a címben a név elé / helyett jelenik meg
 export const CATEGORY_LOGOS = {
   versus: { src: '/logok/versus-omega.svg', alt: 'Versus-Omega', text: true },
   edscha: { src: '/logok/edscha.png', alt: 'Edscha Trailer Systems', text: false },
 };
 
-// Főcsoporthoz tartozó letölthető dokumentumok (pl. megrendelőlap): a csoportoldal tetején jelennek meg
+// Főcsoporthoz tartozó dokumentumok (pl. online kitölthető megrendelőlap vagy letölthető PDF): a csoportoldal tetején jelennek meg
 export const GROUP_DOCS = {
   'redonyok': [
-    { title: 'Redőny-konfigurátor / megrendelőlap', url: '/dokumentumok/redony-konfigurator-megrendelolap.pdf',
-      text: 'Töltse ki a kívánt redőnyök méreteivel és kivitelével, és küldje el nekünk az ajánlatkéréshez vagy a megrendeléshez. A dokumentum méretrajzokat és profilkatalógust is tartalmaz.' },
+    { title: 'Redőny-konfigurátor / ajánlatkérő lap', url: '/redony-konfigurator', online: true,
+      text: 'Töltse ki online a kívánt redőnyök méreteivel és kivitelével, majd töltse le a kitöltött lapot PDF-ben, és küldje el nekünk. A lap méretrajzokat és profilkatalógust is tartalmaz.' },
   ],
 };
 
@@ -301,7 +301,7 @@ for (const g of extended.groups ?? []) {
 export const HORSE_SECTIONS = [
   ['gumiszonyegek', 'istallo-szonyeg', 'Istálló- és utánfutó szőnyegek'],
   ['gumiszonyegek', 'rampa-szonyeg', 'Rámpa szőnyegek'],
-  ['gumiszonyegek', 'soft-gumi', 'Soft gumi lapok'],
+  ['gumiszonyegek', 'soft-gumi', 'Puha gumi lapok'],
   ['aluminium-padlo-profilok', 'rampa-profilok', 'Rámpa profilok'],
   ['hatso-ajtok-es-athajto-rampak', 'athajtorampa', 'Áthajtó rámpák'],
   ['szellozes-tetoablakok-vilagitas', 'tetoventilatorok', 'Tetőventilátorok'],

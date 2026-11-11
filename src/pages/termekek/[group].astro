@@ -65,13 +65,13 @@ const jsonLd = [
     )}
     <div class="content">
       {(GROUP_DOCS[group.slug] ?? []).map((d) => (
-        <a class="group-doc card" href={d.url} target="_blank" rel="noopener" download>
+        <a class="group-doc card" href={d.url} target={d.online ? undefined : '_blank'} rel={d.online ? undefined : 'noopener'} download={d.online ? undefined : true}>
           <span class="gd-icon"><Icon name="FileText" size={28} /></span>
           <span class="gd-body">
             <strong>{d.title}</strong>
             {d.text && <span class="muted">{d.text}</span>}
           </span>
-          <span class="gd-btn btn">PDF letöltése <Icon name="Download" size={16} /></span>
+          <span class="gd-btn btn">{d.online ? <>Kitöltés online <Icon name="ArrowRight" size={16} /></> : <>PDF letöltése <Icon name="Download" size={16} /></>}</span>
         </a>
       ))}
       {sections.length === 0 && (

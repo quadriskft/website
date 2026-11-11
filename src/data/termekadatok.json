@@ -5214,6 +5214,8 @@
    "Tömeg [kg/fm]": "2,176"
   },
   "images": [
+   "/termekkepek/3d/251160-40x20-mm-alu-lapos-profil-1.webp",
+   "/termekkepek/3d/251160-40x20-mm-alu-lapos-profil-2.webp",
    "/termekkepek/251160-40x20-mm-alu-lapos-profil-1.webp"
   ]
  },
@@ -5326,9 +5328,9 @@
    "Sarokrádiusz": "külső R4, belső éles"
   },
   "images": [
-   "/termekkepek/251659-80x50x4-mm-r4-alu-zartszelveny-meretrajz.webp",
    "/termekkepek/3d/251659-80x50x4-mm-r4-alu-zartszelveny-1.webp",
    "/termekkepek/3d/251659-80x50x4-mm-r4-alu-zartszelveny-2.webp",
+   "/termekkepek/251659-80x50x4-mm-r4-alu-zartszelveny-meretrajz.webp",
    "/termekkepek/251659-80x50x4-mm-r4-alu-zartszelveny-1.webp"
   ]
  },
@@ -5462,8 +5464,8 @@
    "Gyártás": "extrudált"
   },
   "images": [
-   "/termekkepek/252251-40x10-mm-alu-lapos-profil-f1.webp",
-   "/termekkepek/252251-40x10-mm-alu-lapos-profil-f2.webp",
+   "/termekkepek/3d/252251-40x10-mm-alu-lapos-profil-1.webp",
+   "/termekkepek/3d/252251-40x10-mm-alu-lapos-profil-2.webp",
    "/termekkepek/252251-40x10-mm-alu-lapos-profil-1.webp"
   ],
   "fotok": [
@@ -9820,7 +9822,8 @@
  "80x5-mm-alu-lapos-profil": {
   "source": "Quadris adatok",
   "images": [
-   "/termekkepek/3d/251742-50x5-mm-alu-lapos-profil-1.webp"
+   "/termekkepek/3d/80x5-mm-alu-lapos-profil-1.webp",
+   "/termekkepek/3d/80x5-mm-alu-lapos-profil-2.webp"
   ],
   "specs": {}
  },

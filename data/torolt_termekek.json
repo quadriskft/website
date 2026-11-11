@@ -1807,5 +1807,17 @@
   "code": "719831",
   "date": "2026-11-11",
   "reason": "a Quadris kérésére törölve"
+ },
+ "g-15x1000x2000-soft-gumi-lap": {
+  "name": "G 15x1000x2000 Soft gumi lap",
+  "code": "",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "g-8x1000-soft-gumi": {
+  "name": "G 8x1000 Soft gumi",
+  "code": "",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
  }
 }

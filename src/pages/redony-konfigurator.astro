@@ -1,0 +1,185 @@
+---
+// Redőny-konfigurátor / ajánlatkérő lap: a megrendelőlap oldalai képként, rajtuk kitölthető mezők
+// (src/data/redony_mezok.json: a mezők helye PDF-pontban); a kitöltött lap PDF-ként letölthető.
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import fields from '../data/redony_mezok.json';
+
+// oldalméretek PDF-pontban (az 1–5. oldal fekvő, a 6. álló A4)
+const PAGES = [1, 2, 3, 4, 5, 6].map((n) => (n === 6 ? { n, w: 595.2, h: 841.68 } : { n, w: 841.68, h: 595.2 }));
+const TITLES = { 1: 'Méretek és kivitel', 2: 'Kivitel (folytatás)', 3: 'Kivitel (folytatás)', 4: 'Méretrajzok', 5: 'Méretrajzok', 6: 'Profilkatalógus' };
+const pct = (v, total) => `${((v / total) * 100).toFixed(4)}%`;
+const byPage = (n) => fields.map((f, i) => ({ ...f, i })).filter((f) => f.p === n);
+---
+<Base crumbs={[['Főoldal', '/'], ['Redőnyök', '/termekek/redonyok'], ['Redőny-konfigurátor', '/redony-konfigurator']]} back={{ href: '/termekek/redonyok', label: 'Redőnyök' }} title="Redőny-konfigurátor – ajánlatkérő lap" description="Töltse ki online az alumínium redőnyök ajánlatkérő lapját a méretekkel és a kívánt kivitellel, majd töltse le PDF-ben.">
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Redőnyök</span>
+      <h1>Redőny-konfigurátor / Ajánlatkérő lap</h1>
+      <p class="lead">Töltse ki a lapot közvetlenül itt: írja be a méreteket, jelölje be a kívánt kivitelt, majd töltse le a kitöltött lapot PDF-ben, és küldje el nekünk.</p>
+    </div>
+  </section>
+
+  <div class="container rk" id="rk-app">
+    <div class="rk-bar">
+      <button type="button" class="btn btn-primary" data-rk-pdf><Icon name="Download" size={18} /> Kitöltött PDF letöltése</button>
+      <button type="button" class="btn" data-rk-clear><Icon name="Trash2" size={16} /> Kitöltés törlése</button>
+      <span class="muted rk-state" data-rk-state role="status" aria-live="polite"></span>
+    </div>
+    <p class="muted rk-hint">A kitöltés ebben a böngészőben megmarad, amíg nem törli. Kisebb kijelzőn a lap oldalra görgethető, illetve nagyítható.</p>
+
+    {PAGES.map((pg) => (
+      <section class="rk-sheet" aria-label={`${pg.n}. oldal – ${TITLES[pg.n]}`}>
+        <div class="rk-scroll">
+          <div class="rk-page" style={`--pw:${pg.w}; aspect-ratio:${pg.w} / ${pg.h}; ${pg.n === 6 ? 'max-width: 760px;' : ''}`}>
+            <img src={`/redony/oldal-${pg.n}.webp`} alt={`Redőny-konfigurátor, ${pg.n}. oldal: ${TITLES[pg.n]}`} width={pg.n === 6 ? 1571 : 2222} height={pg.n === 6 ? 2222 : 1571} loading={pg.n === 1 ? 'eager' : 'lazy'} decoding="async" />
+            {byPage(pg.n).map((f) => f.t === 'c' ? (
+              <label class="rk-c" style={`left:${pct(f.x, pg.w)};top:${pct(f.y, pg.h)};width:${pct(f.w, pg.w)};height:${pct(f.h, pg.h)}`}>
+                <input type="checkbox" data-f={f.i} aria-label="Jelölőnégyzet" /><span aria-hidden="true"></span>
+              </label>
+            ) : (
+              <input class:list={['rk-t', { 'rk-cell': f.cell, 'rk-line': f.line }]} type="text" inputmode={f.n ? 'decimal' : undefined} data-f={f.i} aria-label={f.l ?? (f.n ? 'Méret (mm)' : 'Érték')} placeholder=" " autocomplete="off"
+                style={`left:${pct(f.x, pg.w)};top:${pct(f.y, pg.h)};width:${pct(f.w, pg.w)};height:${pct(f.h, pg.h)};--fh:${f.h}`} />
+            ))}
+          </div>
+        </div>
+      </section>
+    ))}
+
+    <div class="rk-bar rk-bar-end">
+      <button type="button" class="btn btn-primary" data-rk-pdf><Icon name="Download" size={18} /> Kitöltött PDF letöltése</button>
+      <a class="btn" href="/kapcsolat">Kapcsolat</a>
+    </div>
+  </div>
+</Base>
+
+<script define:vars={{ fields }}>
+  window.__rkFields = fields;
+</script>
+<script>
+  const KEY = 'quadris-redony-konfigurator';
+  const app = document.getElementById('rk-app');
+  const fields = window.__rkFields;
+  const els = [...app.querySelectorAll('[data-f]')];
+  const state = app.querySelector('[data-rk-state]');
+
+  // --- mentés / visszatöltés (csak ebben a böngészőben) ---
+  const read = () => { try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch { return {}; } };
+  const collect = () => {
+    const v = {};
+    for (const el of els) {
+      if (el.type === 'checkbox') { if (el.checked) v[el.dataset.f] = 1; }
+      else if (el.value.trim()) v[el.dataset.f] = el.value.trim();
+    }
+    return v;
+  };
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(collect())); } catch { /* privát mód */ } };
+  const saved = read();
+  for (const el of els) {
+    const v = saved[el.dataset.f];
+    if (v === undefined) continue;
+    if (el.type === 'checkbox') el.checked = true; else el.value = v;
+  }
+  app.addEventListener('input', save);
+  app.addEventListener('change', save);
+  app.querySelector('[data-rk-clear]').addEventListener('click', () => {
+    if (!confirm('Biztosan törli a teljes kitöltést?')) return;
+    for (const el of els) { if (el.type === 'checkbox') el.checked = false; else el.value = ''; }
+    save();
+    state.textContent = 'A kitöltés törölve.';
+  });
+
+  // --- kitöltött PDF: az eredeti lapra rajzolva (pdf-lib), a mezők PDF-pontban megadott helyén ---
+  async function makePdf() {
+    const [{ PDFDocument, rgb }, fontkit] = await Promise.all([import('pdf-lib'), import('@pdf-lib/fontkit')]);
+    const [pdfBytes, fontBytes] = await Promise.all([
+      fetch('/dokumentumok/redony-konfigurator-urlap.pdf').then((r) => { if (!r.ok) throw new Error('pdf'); return r.arrayBuffer(); }),
+      fetch('/fonts/LiberationSans-Regular.ttf').then((r) => { if (!r.ok) throw new Error('font'); return r.arrayBuffer(); }),
+    ]);
+    const doc = await PDFDocument.load(pdfBytes);
+    doc.registerFontkit(fontkit.default ?? fontkit);
+    const font = await doc.embedFont(fontBytes, { subset: true });
+    const pages = doc.getPages();
+    const values = collect();
+    const ink = rgb(0.05, 0.1, 0.35);
+    for (const [idx, val] of Object.entries(values)) {
+      const f = fields[idx];
+      const page = pages[f.p - 1];
+      const H = page.getHeight();
+      if (f.t === 'c') {
+        const m = 0.9, x0 = f.x + m, x1 = f.x + f.w - m, y0 = H - f.y - m, y1 = H - f.y - f.h + m;
+        page.drawLine({ start: { x: x0, y: y0 }, end: { x: x1, y: y1 }, thickness: 1, color: ink });
+        page.drawLine({ start: { x: x0, y: y1 }, end: { x: x1, y: y0 }, thickness: 1, color: ink });
+        continue;
+      }
+      const text = String(val);
+      // a pontozott vonal letakarása (a táblázat celláiban és az aláhúzott soroknál nincs rá szükség)
+      if (!f.cell && !f.line) page.drawRectangle({ x: f.x - 0.5, y: H - f.y - f.h - 0.6, width: f.w + 1, height: f.h + 1.2, color: rgb(1, 1, 1) });
+      let size = f.cell ? Math.min(9, f.h * 0.72) : Math.min(8, f.h + 1);
+      const maxW = f.w - 1.5;
+      while (size > 3.5 && font.widthOfTextAtSize(text, size) > maxW) size -= 0.25;
+      const tw = font.widthOfTextAtSize(text, size);
+      const x = f.cell ? f.x + (f.w - tw) / 2 : f.line ? f.x + 1 : f.x + Math.max(0, f.w - tw - 0.5);
+      const y = H - f.y - f.h / 2 - size * 0.34 + (f.line ? 1.2 : 0);
+      page.drawText(text, { x: Math.max(f.x, x), y, size, font, color: ink });
+    }
+    doc.setTitle('Redőny-konfigurátor / Ajánlatkérő lap');
+    doc.setCreator('Quadris Kft.');
+    const out = await doc.save();
+    const url = URL.createObjectURL(new Blob([out], { type: 'application/pdf' }));
+    const a = Object.assign(document.createElement('a'), { href: url, download: 'redony-konfigurator-kitoltve.pdf' });
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 30000);
+  }
+  for (const btn of app.querySelectorAll('[data-rk-pdf]')) {
+    btn.addEventListener('click', async () => {
+      state.textContent = 'PDF készítése…';
+      btn.disabled = true;
+      try { await makePdf(); state.textContent = 'A kitöltött PDF letöltve.'; }
+      catch (e) { console.error(e); state.textContent = 'A PDF készítése nem sikerült – kérjük, próbálja újra.'; }
+      finally { btn.disabled = false; }
+    });
+  }
+</script>
+
+<style>
+  .rk { padding-bottom: 72px; }
+  .rk-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; margin: 4px 0 10px; }
+  .rk-bar .btn { display: inline-flex; align-items: center; gap: 8px; }
+  .rk-bar .btn-primary { background: var(--tomato); border-color: var(--tomato); color: #fff; }
+  .rk-bar .btn-primary:hover { background: var(--tomato-2); border-color: var(--tomato-2); }
+  .rk-bar-end { margin-top: 26px; }
+  .rk-hint { font-size: 0.9rem; margin: 0 0 18px; }
+  .rk-state { font-size: 0.92rem; }
+  .rk-sheet { margin: 0 0 22px; }
+  .rk-scroll { overflow-x: auto; border: 1px solid var(--line-strong); border-radius: var(--radius-sm); background: #fff; box-shadow: var(--shadow); -webkit-overflow-scrolling: touch; }
+  /* a lap arányosan méreteződik; keskeny kijelzőn nem megy 900 px alá (oldalra görgethető) */
+  .rk-page { position: relative; width: 100%; min-width: 900px; margin: 0 auto; container-type: inline-size; background: #fff; }
+  .rk-page img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; user-select: none; }
+  /* 1 PDF-pont = 100cqw / oldalszélesség */
+  .rk-t {
+    position: absolute; box-sizing: border-box; margin: 0; padding: 0 calc(100cqw / var(--pw) * 1); border: 0; border-radius: 1px;
+    font: 400 calc(100cqw / var(--pw) * min(8, var(--fh) + 1)) / 1 Arial, 'Liberation Sans', Helvetica, sans-serif; color: #0d1a59; text-align: right;
+    background: rgba(14, 79, 85, 0.07); outline: 1px dashed rgba(14, 79, 85, 0.35); outline-offset: 0;
+  }
+  .rk-t:hover { background: rgba(14, 79, 85, 0.14); }
+  .rk-t:focus { background: #fff; outline: 2px solid var(--accent); z-index: 2; }
+  .rk-t:not(:placeholder-shown) { background: #fff; outline-color: transparent; }
+  .rk-t:not(:placeholder-shown):focus { outline: 2px solid var(--accent); }
+  .rk-cell { text-align: center; font-size: calc(100cqw / var(--pw) * min(9, var(--fh) * 0.72)); background: rgba(14, 79, 85, 0.05); outline: 0; }
+  .rk-cell:not(:placeholder-shown) { background: transparent; }
+  .rk-line { text-align: left; background: transparent; outline: 0; }
+  .rk-line:not(:placeholder-shown) { background: transparent; }
+  .rk-line:hover, .rk-cell:hover { background: rgba(14, 79, 85, 0.12); }
+  .rk-c { position: absolute; cursor: pointer; }
+  /* nagyobb kattintható terület a kis négyzet körül */
+  .rk-c::before { content: ''; position: absolute; inset: -45%; }
+  .rk-c input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+  .rk-c span { position: absolute; inset: 0; border-radius: 1px; background: rgba(14, 79, 85, 0.1); }
+  .rk-c:hover span { background: rgba(14, 79, 85, 0.28); }
+  .rk-c input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .rk-c input:checked + span { background:
+    linear-gradient(45deg, transparent 43%, #0d1a59 43%, #0d1a59 57%, transparent 57%),
+    linear-gradient(-45deg, transparent 43%, #0d1a59 43%, #0d1a59 57%, transparent 57%), #fff; }
+  @media print { .rk-bar, .rk-hint { display: none; } }
+</style>
