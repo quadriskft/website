@@ -1753,5 +1753,59 @@
   "code": "",
   "date": "2026-11-11",
   "reason": "a Quadris kérésére törölve (1600 mm szélesség)"
+ },
+ "719130-pe-gyuru-22mm": {
+  "name": "PE gyűrű 22mm",
+  "code": "719130",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "719210-19a-nylon-gyuru-22mm-kicsi": {
+  "name": "NYLON gyűrű 22mm kicsi",
+  "code": "719210/19A",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "719210-20-omega-csolefogato-22mm-inox-kicsi": {
+  "name": "Omega csőlefogató 22mm INOX kicsi",
+  "code": "719210/20",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "719220-18a-rozsdamentes-kar-22-27mm-pl": {
+  "name": "Rozsdamentes kar 22/27mm PL",
+  "code": "719220/18A",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "719220-99a-719226-304-rozsdamentes-kartarto-csovezeto": {
+  "name": "+ 719226/304 Rozsdamentes kartartó+csővezető",
+  "code": "719220/99A",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "719220-99a-rozsdamentes-kartarto-22-27mm-pl": {
+  "name": "Rozsdamentes kartartó 22/27mm PL",
+  "code": "719220/99A",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "719226-304-rozsdamentes-csovezeto-22-mm-pl": {
+  "name": "Rozsdamentes csővezető 22 mm PL",
+  "code": "719226/304",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "719339-omega-csolefogato-22mm-inox": {
+  "name": "Omega csőlefogató 22mm INOX",
+  "code": "719339",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "719831-rozsdamentes-acel-gyuru-22mm-pl": {
+  "name": "Rozsdamentes acél gyűrű 22mm PL",
+  "code": "719831",
+  "date": "2026-11-11",
+  "reason": "a Quadris kérésére törölve"
  }
 }
