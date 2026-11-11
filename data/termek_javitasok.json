@@ -2739,8 +2739,8 @@
  "354424-top-kuplung": {
   "name": "Top-Kuplung",
   "move": {
-   "group": "platos-alkatreszek-es-kiegeszitok",
-   "category": "kotoelemek"
+   "group": "ponyvarendszer-kiegeszitok",
+   "category": "ponyvatarto-alkatreszek"
   }
  },
  "226795-400-mm-peremes-gumis-oldalfal-elox": {
@@ -3057,5 +3057,8 @@
   "specs": {
    "Ötvözet": "EN AW-6005A T6"
   }
+ },
+ "117772-kormos-anya-p-egyenes": {
+  "name": "Körmös anya egyenes"
  }
 }
