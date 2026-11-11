@@ -2793,31 +2793,52 @@
  },
  "227783-also-szakallas-200-mm-elox-profil": {
   "name": "Alsó szakállas profil 200 mm, eloxált",
-  "order": 1
+  "order": 1,
+  "specs": {
+   "Felület": "eloxált"
+  }
  },
  "228197-also-szakallas-100-mm-elox-profil": {
   "name": "Alsó szakállas profil 100 mm, eloxált",
-  "order": 2
+  "order": 2,
+  "specs": {
+   "Felület": "eloxált"
+  }
  },
  "227784-also-tomiteses-200-mm-elox-profil": {
   "name": "Alsó tömítéses profil 200 mm, eloxált",
-  "order": 3
+  "order": 3,
+  "specs": {
+   "Felület": "eloxált"
+  }
  },
  "227948-also-tomiteses-100-mm-elox-profil": {
   "name": "Alsó tömítéses profil 100 mm, eloxált",
-  "order": 4
+  "order": 4,
+  "specs": {
+   "Felület": "eloxált"
+  }
  },
  "227047-felso-200-mm-elox-profil": {
   "name": "Felső profil 200 mm, eloxált",
-  "order": 5
+  "order": 5,
+  "specs": {
+   "Felület": "eloxált"
+  }
  },
  "228240-felso-100-mm-elox-profil": {
   "name": "Felső profil 100 mm, eloxált",
-  "order": 6
+  "order": 6,
+  "specs": {
+   "Felület": "eloxált"
+  }
  },
  "227045-koztes-ponyvas-200-mm-elox-profil": {
   "name": "Köztes ponyvás profil 200 mm, eloxált",
-  "order": 7
+  "order": 7,
+  "specs": {
+   "Felület": "eloxált"
+  }
  },
  "225040-koztes-250-mm-elox-profil": {
   "name": "Köztes profil 250 mm, eloxált",
@@ -2829,7 +2850,10 @@
  },
  "227046-koztes-200-mm-elox-profil": {
   "name": "Köztes profil 200 mm, eloxált",
-  "order": 10
+  "order": 10,
+  "specs": {
+   "Felület": "eloxált"
+  }
  },
  "227046-ck10-koztes-200-mm-elox-profil": {
   "name": "Köztes profil 200 mm, eloxált",
@@ -2837,7 +2861,10 @@
  },
  "227785-koztes-100-mm-elox-profil": {
   "name": "Köztes profil 100 mm, eloxált",
-  "order": 12
+  "order": 12,
+  "specs": {
+   "Felület": "eloxált"
+  }
  },
  "223563-tomites-also-zaroprofilhoz": {
   "name": "Tömítés alsó záróprofilhoz",
