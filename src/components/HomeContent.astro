@@ -294,7 +294,9 @@ import { groups, groupImage, productsIn } from '../lib/catalog.js';
   .display-xl { max-width: none; font-size: clamp(2.1rem, 4.6vw, 3.8rem); line-height: 1; }
   .section-head .brand-accent { margin: 0 auto 16px; }
   /* Kategóriakártyák (asztalon rácsban, mobilon egy oszlopban): kép, középre zárt név, alkategória-gombok */
-  .m-groups { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+  /* széles kijelzőn 5 kártya egy sorban: a szekció a szokásosnál szélesebb, így a képek mérete megmarad */
+  .groups-section > .container { max-width: 1640px; }
+  .m-groups { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
   .m-block { min-width: 0; display: flex; flex-direction: column; }
   .m-block > .m-group { flex: 1 1 auto; }
   .m-group { display: block; padding: 0; overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease; }
@@ -319,6 +321,7 @@ import { groups, groupImage, productsIn } from '../lib/catalog.js';
   .m-chips :global(.m-chip-row) { display: flex; gap: 7px; }
   .m-chips :global(.m-chip-row .metal-chip) { flex: 1 1 auto; justify-content: center; }
   .m-strip { display: none; }
+  @media (max-width: 1400px) { .m-groups { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
   @media (max-width: 1180px) { .m-groups { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
   @media (max-width: 900px) { .m-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   .section-head h2 { margin: 0; }
