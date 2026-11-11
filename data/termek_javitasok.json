@@ -2353,7 +2353,11 @@
  },
  "225630-55-padlo-profil-250-mm-zart": {
   "name": "Padló profil 250/55 mm, zárt, bordázott",
-  "order": 7
+  "order": 7,
+  "specs": {
+   "Falvastagság": null,
+   "Kerület": null
+  }
  },
  "203492-autoszallito-padlo-keret-profil-30-mm": {
   "name": "Autószállító keret profil",
