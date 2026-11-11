@@ -4181,25 +4181,29 @@
   "specs": {
    "Kivitel": null,
    "Tömeg": null
-  }
+  },
+  "name": "Rugós Rigli rozsdamentes"
  },
  "820128-l-210-mm-rugos-rigli-rm": {
   "specs": {
    "Kivitel": null,
    "Tömeg": null
-  }
+  },
+  "name": "210 mm Rugós Rigli rozsdamentes"
  },
  "820129-rugos-rigli-horg": {
   "specs": {
    "Kivitel": null,
    "Tömeg": null
-  }
+  },
+  "name": "Rugós Rigli horganyzott"
  },
  "820129-l-247-mm-rugos-rigli-horg": {
   "specs": {
    "Kivitel": null,
    "Tömeg": null
-  }
+  },
+  "name": "247 mm Rugós Rigli horganyzott"
  },
  "891200-kis-kapaszkodo": {
   "specs": {
@@ -4213,5 +4217,8 @@
  },
  "828010-nyers-zsaner-bak-csavar": {
   "after": "806070-horg-kontenerajo-zsaner-lepcsos-130-61-mm"
+ },
+ "893154-rm-nagy-kapaszkodo-in": {
+  "name": "Rozsdamentes Nagy kapaszkodó IN"
  }
 }
