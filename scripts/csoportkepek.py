@@ -28,7 +28,8 @@ PHOTOS = {
     "elhuzhato-roloponyvas-rendszer": ["small", "../data/forras/roloponyvas_kategoria.png"],  # a Quadris által küldött kép (298×198)
     "ponyvarendszer-kiegeszitok": ["termekkepek/380184-ada-racsnis-feszito-kocka-adapterhez-r-1.webp"],
     "dobozos-felepitmeny-alkatreszek": ["termekkepek/714859-sullyesztett-inox-rudzar-25-16-mm-pl-1.webp"],
-    "rakomanyrogzites": ["termekkepek/123412-spanifer-l-8-m-5000-kg-dupla-kampos-1.webp"],
+    # a Quadris által küldött két katalógusfotó (rudak és sínek) egymás mellett, MI-vel újrarajzolva; a kész kép kézzel mentve
+    "rakomanyrogzites": ["../data/forras/rakomanyrogzites_csoportkep.jpg"],
     "sarvedok-szerszamosladak": ["termekkepek/j101620d-ives-sarvedo-450-1350-430-1.webp", "termekkepek/j205042-daken-arka-lada-655x450x470-mm-1.webp"],
     "specialis-felepitmeny-alkatreszek": ["termekkepek/815811-kis-negyszog-zar-1.webp"],
     "billencs-alkatreszek": ["termekkepek/146012-szivattyu-12v-1.webp"],

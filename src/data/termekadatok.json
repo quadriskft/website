@@ -9524,9 +9524,7 @@
    "Kiszerelés": "10 db/csomag"
   },
   "images": [
-   "/termekkepek/72298-alu-csotarto-biztosito-csappal-1.webp",
-   "/termekkepek/72298-alu-csotarto-biztosito-csappal-2.webp",
-   "/termekkepek/72298-alu-csotarto-biztosito-csappal-3.webp"
+   "/termekkepek/72298-alu-csotarto-biztosito-csappal-meretrajz.webp"
   ]
  },
  "72299-kampo-rogzito-profil-elox": {
@@ -9594,7 +9592,9 @@
    "Kiszerelés": "1 db/csomag"
   },
   "images": [
-   "/termekkepek/72733-hatso-csoveg-1.webp"
+   "/termekkepek/72733-hatso-csoveg-1.webp",
+   "/termekkepek/72733-hatso-csoveg-meretrajz.webp",
+   "/termekkepek/72733-hatso-csoveg-3d.webp"
   ]
  },
  "728120-huskampo-fix-c-sinhez": {
