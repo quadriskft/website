@@ -898,6 +898,9 @@
   "move": {
    "group": "ponyvas-oldalfal-profilok-es-szegok",
    "category": "aluminium-billencs-oldalfalak-40"
+  },
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
   }
  },
  "243240-billencs-kozepso-200x40-mm": {
@@ -906,51 +909,82 @@
   "move": {
    "group": "ponyvas-oldalfal-profilok-es-szegok",
    "category": "aluminium-billencs-oldalfalak-40"
+  },
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
   }
  },
  "222020-h-szego-kiugros-25-mm-elox": {
   "specs": {
    "Szélesség": "33 mm",
-   "Magasság": "61 mm"
+   "Magasság": "61 mm",
+   "Ötvözet": "EN AW-6060 T66"
   },
   "order": 13,
   "name": "H szegő kiugrós 25 mm, eloxált"
  },
  "222137-u-25-mm-szego-profil-elox": {
   "order": 1,
-  "name": "U szegő profil 25 mm, eloxált"
+  "name": "U szegő profil 25 mm, eloxált",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "222137-n-u-25-mm-szego-profil": {
   "order": 2,
-  "name": "U szegő profil 25 mm, natúr"
+  "name": "U szegő profil 25 mm, natúr",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "222528-u-szego-zartszelveny-erositessel-25-mm-elox": {
   "order": 3,
-  "name": "U szegő profil 25 mm, zártszelvény erősítéssel, eloxált"
+  "name": "U szegő profil 25 mm, zártszelvény erősítéssel, eloxált",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "226915-30-mm-szego-profil-elox": {
   "order": 4,
-  "name": "U szegő profil 30 mm, eloxált"
+  "name": "U szegő profil 30 mm, eloxált",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "226915-n-30-mm-u-szego-profil": {
   "order": 5,
-  "name": "U szegő profil 30 mm, natúr"
+  "name": "U szegő profil 30 mm, natúr",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "225455-u-35-mm-szego-profil-elox": {
   "order": 6,
-  "name": "U szegő profil 35 mm, eloxált"
+  "name": "U szegő profil 35 mm, eloxált",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "225455-n-u-35-mm-szego-profil": {
   "order": 7,
-  "name": "U szegő profil 35 mm, natúr"
+  "name": "U szegő profil 35 mm, natúr",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "226215-u-40-mm-szego-profil": {
   "order": 8,
-  "name": "U szegő profil 40 mm"
+  "name": "U szegő profil 40 mm",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "226240-tomiteses-u-szego-40-mm": {
   "order": 9,
-  "name": "U szegő profil 40 mm, tömítéses"
+  "name": "U szegő profil 40 mm, tömítéses",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "226701-tomites-40-u-szegohoz": {
   "order": 10,
@@ -958,19 +992,31 @@
  },
  "222139-h-szego-25-mm-elox": {
   "order": 11,
-  "name": "H szegő 25 mm, eloxált"
+  "name": "H szegő 25 mm, eloxált",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "222139-n-h-szego-25-mm": {
   "order": 12,
-  "name": "H szegő 25 mm, natúr"
+  "name": "H szegő 25 mm, natúr",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "223085-h-szego-kiugros-30-mm-elox": {
   "order": 14,
-  "name": "H szegő kiugrós 30 mm, eloxált"
+  "name": "H szegő kiugrós 30 mm, eloxált",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "221746-h-toldo-szego-profil-elox": {
   "order": 15,
-  "name": "H toldó szegő profil, eloxált"
+  "name": "H toldó szegő profil, eloxált",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "245085-bill-u-szego-30-mm-40-60-elox": {
   "specs": {
@@ -978,7 +1024,8 @@
    "Magasság": "60 mm (a rövidebb szár 40 mm)",
    "Belső szélesség": "30,5 mm",
    "Gerinc vastagsága": "8 mm",
-   "Szálhossz": null
+   "Szálhossz": null,
+   "Ötvözet": "EN AW-6060 T66"
   },
   "name": "Billencs U szegő 30 mm (40/60), eloxált",
   "order": 7
@@ -2769,13 +2816,17 @@
  },
  "226795-400-mm-peremes-gumis-oldalfal-elox": {
   "name": "Mono profil 400 mm, peremes, eloxált Típus 1",
-  "order": 1
+  "order": 1,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "226671-400-mm-gumis-oldalfal-elox": {
   "name": "Mono profil 400 mm, eloxált, gumis",
   "order": 3,
   "specs": {
-   "Tömeg": "3,98 kg/fm"
+   "Tömeg": "3,98 kg/fm",
+   "Ötvözet": "EN AW-6060 T66"
   }
  },
  "223367-400-mm-peremes-monoprofil-elox": {
@@ -2786,7 +2837,7 @@
    "Látható felület": null,
    "Kerület": null,
    "Állapot": null,
-   "Ötvözet": "EN AW-6060"
+   "Ötvözet": "EN AW-6060 T66"
   }
  },
  "223350-350-mm-mono-profil-szakalas-elox": {
@@ -2794,97 +2845,120 @@
   "order": 4,
   "specs": {
    "Tömeg": "3,98 kg/fm",
-   "Ötvözet": "EN AW-6060",
+   "Ötvözet": "EN AW-6060 T66",
    "Látható felület": null,
-   "Kerület": null
+   "Kerület": null,
+   "Állapot": null
   }
  },
  "226830-300-mm-mono-profil-elox": {
   "name": "Mono profil 300 mm, eloxált",
   "order": 5,
   "specs": {
-   "Ötvözet": "EN AW-6060",
+   "Ötvözet": "EN AW-6060 T66",
    "Látható felület": null,
-   "Kerület": null
+   "Kerület": null,
+   "Állapot": null
   }
  },
  "227075-200-mm-mono-profil-teli-szakalas-elox": {
   "name": "Mono profil 200 mm, peremes, eloxált",
-  "order": 6
+  "order": 6,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "227783-also-szakallas-200-mm-elox-profil": {
   "name": "Alsó szakállas profil 200 mm, eloxált",
   "order": 1,
   "specs": {
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Ötvözet": "EN AW-6060 T66"
   }
  },
  "228197-also-szakallas-100-mm-elox-profil": {
   "name": "Alsó szakállas profil 100 mm, eloxált",
   "order": 2,
   "specs": {
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Ötvözet": "EN AW-6060 T66"
   }
  },
  "227784-also-tomiteses-200-mm-elox-profil": {
   "name": "Alsó tömítéses profil 200 mm, eloxált",
   "order": 3,
   "specs": {
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Ötvözet": "EN AW-6060 T66"
   }
  },
  "227948-also-tomiteses-100-mm-elox-profil": {
   "name": "Alsó tömítéses profil 100 mm, eloxált",
   "order": 4,
   "specs": {
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Ötvözet": "EN AW-6060 T66"
   }
  },
  "227047-felso-200-mm-elox-profil": {
   "name": "Felső profil 200 mm, eloxált",
   "order": 5,
   "specs": {
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Ötvözet": "EN AW-6060 T66"
   }
  },
  "228240-felso-100-mm-elox-profil": {
   "name": "Felső profil 100 mm, eloxált",
   "order": 6,
   "specs": {
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Ötvözet": "EN AW-6060 T66"
   }
  },
  "227045-koztes-ponyvas-200-mm-elox-profil": {
   "name": "Köztes ponyvás profil 200 mm, eloxált",
   "order": 7,
   "specs": {
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Ötvözet": "EN AW-6060 T66"
   }
  },
  "225040-koztes-250-mm-elox-profil": {
   "name": "Köztes profil 250 mm, eloxált",
-  "order": 8
+  "order": 8,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "225040-n-koztes-250-mm-profil": {
   "name": "Köztes profil 250 mm, natúr",
-  "order": 9
+  "order": 9,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "227046-koztes-200-mm-elox-profil": {
   "name": "Köztes profil 200 mm, eloxált",
   "order": 10,
   "specs": {
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Ötvözet": "EN AW-6060 T66"
   }
  },
  "227046-ck10-koztes-200-mm-elox-profil": {
   "name": "Köztes profil 200 mm, eloxált",
-  "order": 11
+  "order": 11,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "227785-koztes-100-mm-elox-profil": {
   "name": "Köztes profil 100 mm, eloxált",
   "order": 12,
   "specs": {
-   "Felület": "eloxált"
+   "Felület": "eloxált",
+   "Ötvözet": "EN AW-6060 T66"
   }
  },
  "223563-tomites-also-zaroprofilhoz": {
@@ -2893,11 +2967,17 @@
  },
  "247180-billencs-also-profil-200-45-mm-30-mm-elox": {
   "name": "Billencs alsó profil 200/30 mm, eloxált",
-  "order": 1
+  "order": 1,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "247174-bill-also-hosszu-szakalas-profil-150-30-elox": {
   "name": "Billencs alsó profil 150/30 mm, hosszú peremes, eloxált",
-  "order": 2
+  "order": 2,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "247243-billencs-felso-200x40-mm": {
   "name": "Billencs felső profil 200x40 mm natúr",
@@ -2905,23 +2985,38 @@
   "move": {
    "group": "ponyvas-oldalfal-profilok-es-szegok",
    "category": "aluminium-billencs-oldalfalak-40"
+  },
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
   }
  },
  "247152-bill-felso-profil-200-30-mm-elox": {
   "name": "Billencs felső profil 200/30 mm, eloxált",
-  "order": 3
+  "order": 3,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "247158-billencs-kozepso-200x30-mm-profil": {
   "name": "Billencs középső profil 200x30 mm eloxált",
-  "order": 4
+  "order": 4,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "247162-bill-koztes-profil-100-30-mm-elox": {
   "name": "Billencs köztes profil 100/30 mm, eloxált",
-  "order": 5
+  "order": 5,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "245005-bill-400-30-mm-mono-profil-elox": {
   "name": "Billencs mono profil 400/30 mm, eloxált",
-  "order": 6
+  "order": 6,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "220233-150x25-mm-ponyvatarto-zartszelveny": {
   "name": "Ponyvatartó zártszelvény 150x25 mm",
