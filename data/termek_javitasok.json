@@ -2538,7 +2538,16 @@
  },
  "770372-bil-150ce-vezerlo-220bar": {
   "name": "Billencs vezérlő 150CE, 220 bar",
-  "order": 5
+  "order": 5,
+  "specs": {
+   "Típus": null,
+   "Vstup In (ISO 228)": null,
+   "Bemenet (ISO 228)": "G 3/4",
+   "Nádrž 1 Tank 1 ( ISO 228 )": null,
+   "Tartály 1 (ISO 228)": "G 3/4",
+   "Výstup Out (ISO 228)": null,
+   "Kimenet (ISO 228)": "G 3/4"
+  }
  },
  "771094-n-force-bil-vezerlo": {
   "name": "Billencs vezérlő N-Force",
@@ -2554,19 +2563,31 @@
  },
  "140004-t4-bolcso": {
   "name": "Bölcső T4",
-  "order": 9
+  "order": 9,
+  "specs": {
+   "Típus": null
+  }
  },
  "140005-t5-bolcso": {
   "name": "Bölcső T5",
-  "order": 10
+  "order": 10,
+  "specs": {
+   "Típus": null
+  }
  },
  "140006-t6-bolcso": {
   "name": "Bölcső T6",
-  "order": 11
+  "order": 11,
+  "specs": {
+   "Típus": null
+  }
  },
  "140008-t8-bolcso-d240": {
   "name": "Bölcső T8 D240",
-  "order": 12
+  "order": 12,
+  "specs": {
+   "Típus": null
+  }
  },
  "143100-43-mm-gombcsuklo-keszlet-kicsi": {
   "name": "Gömbcsukló készlet 43 mm, kicsi",
@@ -2578,11 +2599,17 @@
  },
  "140997-60-mm-es-gombcsuklo-keszlet": {
   "name": "Gömbcsukló készlet 60 mm",
-  "order": 15
+  "order": 15,
+  "specs": {
+   "Anyag": "acél"
+  }
  },
  "140920-80-mm-es-gombcsuklo-keszlet": {
   "name": "Gömbcsukló készlet 80 mm",
-  "order": 16
+  "order": 16,
+  "specs": {
+   "Anyag": "acél"
+  }
  },
  "146006-kabeles-tavkapcsolo": {
   "name": "Kábeles távkapcsoló",
@@ -2598,15 +2625,37 @@
  },
  "3052-munkahenger-11t-05x1230x152": {
   "name": "Munkahenger 11 t, 05x1230x152",
-  "order": 20
+  "order": 20,
+  "specs": {
+   "Rögzítés": null
+  }
  },
  "515006-22t-munkahenger": {
   "name": "Munkahenger 22 t",
-  "order": 21
+  "order": 21,
+  "specs": {
+   "Výkres Drawing": null,
+   "Rajzszám": "9850",
+   "Zdvih Stroke": null,
+   "Löket": "1500 mm",
+   "Množ. oleja (L) Amount of oil (Lt)": null,
+   "Olajmennyiség": "20,3 l",
+   "Hossz": "380 mm"
+  }
  },
  "518009-25t-munkahenger": {
   "name": "Munkahenger 25 t",
-  "order": 22
+  "order": 22,
+  "specs": {
+   "Ø stupňov (mm) Ø extensions (mm)": null,
+   "Výkres Drawing": null,
+   "Rajzszám": "12850",
+   "Zdvih Stroke": null,
+   "Löket": "1710 mm",
+   "Množ. oleja (L) Amount of oil (Lt)": null,
+   "Olajmennyiség": "28 l",
+   "Hossz": "300 mm"
+  }
  },
  "5023-munkahenger-05x1240x112-5t": {
   "name": "Munkahenger 5 t, 05x1240x112",
@@ -2662,11 +2711,17 @@
  },
  "145170-szelep1-2": {
   "name": "Szelep 1/2\"",
-  "order": 36
+  "order": 36,
+  "specs": {
+   "Típus": null
+  }
  },
  "145260-szelep-22-3-4": {
   "name": "Szelep 22, 3/4\"",
-  "order": 37
+  "order": 37,
+  "specs": {
+   "Típus": null
+  }
  },
  "146012-szivattyu-12v": {
   "name": "Szivattyú 12 V",
@@ -2702,7 +2757,10 @@
  },
  "35014251-2-400-as-billencs-elso-rakonca-r-l": {
   "name": "Billencs első rakonca 400 mm, balos-jobbos",
-  "order": 4
+  "order": 4,
+  "specs": {
+   "Kivitel": null
+  }
  },
  "352190-billencs-elso-rakonca-400-mm-j-b": {
   "name": "Billencs első rakonca 400 mm, balos-jobbos",
@@ -2734,23 +2792,38 @@
  },
  "3521699-billencs-hatso-rakonca-400-mm-b-zseb": {
   "name": "Billencs hátsó rakonca 400 mm, zsebbel, balos",
-  "order": 12
+  "order": 12,
+  "specs": {
+   "Anyag": "acél"
+  }
  },
  "3521904-billencs-hatso-rakonca-400-mm-b-zseb": {
   "name": "Billencs hátsó rakonca 400 mm, zsebbel, balos",
-  "order": 13
+  "order": 13,
+  "specs": {
+   "Anyag": "acél"
+  }
  },
  "3521698-billencs-hatso-rakonca-400-mm-j-zseb": {
   "name": "Billencs hátsó rakonca 400 mm, zsebbel, jobbos",
-  "order": 14
+  "order": 14,
+  "specs": {
+   "Anyag": "acél"
+  }
  },
  "3521903-billencs-hatso-rakonca-400-mm-j-zseb": {
   "name": "Billencs hátsó rakonca 400 mm, zsebbel, jobbos",
-  "order": 15
+  "order": 15,
+  "specs": {
+   "Anyag": "acél"
+  }
  },
  "35014051-2-400-500-as-hatso-billencs-rakonca-r-l-acel-zsebbel": {
   "name": "Billencs hátsó rakonca 400/500 mm, acél zsebbel, balos-jobbos",
-  "order": 16
+  "order": 16,
+  "specs": {
+   "Kivitel": null
+  }
  },
  "351707-bill-rakonca-500-mm-hatso-j-b": {
   "name": "Billencs hátsó rakonca 500 mm, balos-jobbos",
@@ -2790,7 +2863,10 @@
  },
  "3520902-billencs-koztes-rakonca-400-mm-zseb": {
   "name": "Billencs köztes rakonca 400 mm, zsebbel",
-  "order": 26
+  "order": 26,
+  "specs": {
+   "Anyag": "acél"
+  }
  },
  "35800-max-800-koztes-rakonca": {
   "name": "Billencs köztes rakonca MAX 800",
@@ -2798,7 +2874,10 @@
  },
  "351775-bill-rakonca-csap": {
   "name": "Billencs rakonca csap",
-  "order": 28
+  "order": 28,
+  "specs": {
+   "Anyag": "acél"
+  }
  },
  "3510460-bill-rakonca-csap-sp-41-horg": {
   "name": "Billencs rakonca csap SP.41, horganyzott",
@@ -2806,7 +2885,10 @@
  },
  "3514430-1-billencs-rakonca-szego-egyenes-r-l": {
   "name": "Billencs rakonca szegő egyenes, balos-jobbos",
-  "order": 30
+  "order": 30,
+  "specs": {
+   "Kivitel": null
+  }
  },
  "3514400-1-billencs-rakonca-szego-haromszoges": {
   "name": "Billencs rakonca szegő háromszöges",
@@ -2814,7 +2896,10 @@
  },
  "351201-potkerektarto-120-mm-tengelykozep": {
   "name": "Pótkeréktartó 120 mm tengelyközép",
-  "order": 33
+  "order": 33,
+  "specs": {
+   "Anyag": "acél"
+  }
  },
  "354424-top-kuplung": {
   "name": "Top-Kuplung",
