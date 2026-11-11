@@ -913,63 +913,63 @@
    "Szélesség": "33 mm",
    "Magasság": "61 mm"
   },
-  "order": 4,
+  "order": 13,
   "name": "H szegő kiugrós 25 mm, eloxált"
  },
  "222137-u-25-mm-szego-profil-elox": {
-  "order": 13,
+  "order": 1,
   "name": "U szegő profil 25 mm, eloxált"
  },
  "222137-n-u-25-mm-szego-profil": {
-  "order": 14,
+  "order": 2,
   "name": "U szegő profil 25 mm, natúr"
  },
  "222528-u-szego-zartszelveny-erositessel-25-mm-elox": {
-  "order": 15,
+  "order": 3,
   "name": "U szegő profil 25 mm, zártszelvény erősítéssel, eloxált"
  },
  "226915-30-mm-szego-profil-elox": {
-  "order": 11,
+  "order": 4,
   "name": "U szegő profil 30 mm, eloxált"
  },
  "226915-n-30-mm-u-szego-profil": {
-  "order": 12,
+  "order": 5,
   "name": "U szegő profil 30 mm, natúr"
  },
  "225455-u-35-mm-szego-profil-elox": {
-  "order": 9,
+  "order": 6,
   "name": "U szegő profil 35 mm, eloxált"
  },
  "225455-n-u-35-mm-szego-profil": {
-  "order": 10,
+  "order": 7,
   "name": "U szegő profil 35 mm, natúr"
  },
  "226215-u-40-mm-szego-profil": {
-  "order": 7,
+  "order": 8,
   "name": "U szegő profil 40 mm"
  },
  "226240-tomiteses-u-szego-40-mm": {
-  "order": 8,
+  "order": 9,
   "name": "U szegő profil 40 mm, tömítéses"
  },
  "226701-tomites-40-u-szegohoz": {
-  "order": 6,
+  "order": 10,
   "name": "Tömítés 40 mm U szegőhöz"
  },
  "222139-h-szego-25-mm-elox": {
-  "order": 1,
+  "order": 11,
   "name": "H szegő 25 mm, eloxált"
  },
  "222139-n-h-szego-25-mm": {
-  "order": 2,
+  "order": 12,
   "name": "H szegő 25 mm, natúr"
  },
  "223085-h-szego-kiugros-30-mm-elox": {
-  "order": 3,
+  "order": 14,
   "name": "H szegő kiugrós 30 mm, eloxált"
  },
  "221746-h-toldo-szego-profil-elox": {
-  "order": 5,
+  "order": 15,
   "name": "H toldó szegő profil, eloxált"
  },
  "245085-bill-u-szego-30-mm-40-60-elox": {
