@@ -159,7 +159,7 @@ for (const [gs, slug, name, after] of QUADRIS_CATEGORIES) {
 // Egész alkategória megjelenítése egy másik csoportban is (a termékek a helyükön maradnak):
 // [forrás "csoport/alkategória", cél "csoport/alkategória", amely alkategória után kerüljön]
 const CATEGORY_COPIES = [
-  ['platos-alkatreszek-es-kiegeszitok/kotoelemek', 'aluminium-alvaz-profilok/kotoelemek', 'hossztartok'],
+  ['platos-alkatreszek-es-kiegeszitok/kotoelemek', 'aluminium-alvaz-profilok/kotoelemek', 'kereszttartok'],
   // a ponyvarendszer-profilok a platós és ponyvás oldalfal profilok között is, a billencs oldalfalak előtt
   ['ponyvarendszer-kiegeszitok/ponyvacsovek', 'ponyvas-oldalfal-profilok-es-szegok/ponyvacsovek', 'szego-profilok'],
   ['ponyvarendszer-kiegeszitok/spitzprofilok', 'ponyvas-oldalfal-profilok-es-szegok/spitzprofilok', 'ponyvacsovek'],
