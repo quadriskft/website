@@ -1,9 +1,19 @@
 ---
 import Icon from './Icon.astro';
 import ProductVisual from './ProductVisual.astro';
-import { publicProduct, codeShown } from '../lib/catalog.js';
+import { publicProduct, codeShown, familyOf } from '../lib/catalog.js';
 
 const { product, hideCode = false } = Astro.props;
+// Natúr alumínium lemezek: a kártyán a terméken belül választható táblaméretek (pl. 1000x2000), a méret oldalára mutatva
+const fam = product.family ? familyOf(product.slug) : null;
+const sizes = [];
+if (fam?.id.startsWith('alu-natur-') && fam.rows) {
+  for (const m of fam.members) {
+    const [w, l] = fam.rows[m.slug] ?? [];
+    const label = w && l ? `${parseInt(w)}x${parseInt(l)}` : null;
+    if (label && !sizes.some((x) => x.label === label)) sizes.push({ label, slug: m.slug });
+  }
+}
 ---
 <article class="card hoverable product-card" data-name={`${product.code} ${product.name}`.toLowerCase()}>
   <a href={`/termek/${product.slug}`} class="product-link">
@@ -11,6 +21,11 @@ const { product, hideCode = false } = Astro.props;
     {product.stock && <span class="stock-badge">Raktárról rendelhető</span>}
     <h3>{product.name}</h3>
   </a>
+  {sizes.length > 0 && (
+    <ul class="card-sizes" aria-label="Választható méretek">
+      {sizes.map((x) => <li><a href={`/termek/${x.slug}`}>{x.label}</a></li>)}
+    </ul>
+  )}
   <div class="product-foot">
     <span class="muted code">{!hideCode && codeShown(product) ? `${product.codeLabel ?? 'Cikkszám'}: ${product.code}` : ' '}</span>
     <button type="button" class="add-btn" data-add-to-quote={JSON.stringify(publicProduct(product))} aria-label={`${product.name} – ajánlatkérőbe`}>
@@ -22,6 +37,9 @@ const { product, hideCode = false } = Astro.props;
 </article>
 
 <style>
+  .card-sizes { list-style: none; margin: 0 0 8px; padding: 0 4px; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 6px; }
+  .card-sizes a { display: block; padding: 2px 8px; border: 1px solid var(--line-strong); border-radius: 999px; font-size: 0.74rem; line-height: 1.5; color: var(--text-2); text-decoration: none !important; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .card-sizes a:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
   .product-card { display: flex; flex-direction: column; padding: 12px; }
   .product-link { color: inherit; text-decoration: none !important; display: block; flex: 1; }
   h3 { font-size: 0.97rem; font-weight: 600; margin: 12px 4px 6px; line-height: 1.35; color: var(--navy); }
