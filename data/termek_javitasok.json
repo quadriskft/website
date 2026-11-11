@@ -3630,7 +3630,8 @@
    "Kivitel": null,
    "Kiszerelés": null,
    "Tömeg": null
-  }
+  },
+  "name": "RM Lapos zsanér 140/4 mm"
  },
  "812910-elox-alu-oldalajto-zsaner-lepcsos": {
   "specs": {
@@ -3654,35 +3655,40 @@
    "Kivitel": null,
    "Kiszerelés": null,
    "Tömeg": null
-  }
+  },
+  "name": "RM csavarozható hátsóajtó zsanérbak+ csap 96 mm"
  },
  "892343-rm-csavarozhato-hatsoajto-zsanerbak-csap-96-mm-pl": {
   "specs": {
    "Kivitel": null,
    "Kiszerelés": null,
    "Tömeg": null
-  }
+  },
+  "name": "RM csavarozható hátsóajtó zsanérbak+ csap 96 mm"
  },
  "892776-rm-hatsoajto-zsanerlap-312x96-4mm-pl": {
   "specs": {
    "Kivitel": null,
    "Kiszerelés": null,
    "Tömeg": null
-  }
+  },
+  "name": "RM hátsóajtó zsanérlap 312x96/4mm"
  },
  "896966-rm-hatsoajto-zsanerlap-bak-280-4mm-pl": {
   "specs": {
    "Kivitel": null,
    "Kiszerelés": null,
    "Tömeg": null
-  }
+  },
+  "name": "RM hátsóajtó zsanérlap+bak 280/4mm"
  },
  "896966-a-rm-hatsoajto-zsanerlap-280-4-mm-pl": {
   "specs": {
    "Kivitel": null,
    "Kiszerelés": null,
    "Tömeg": null
-  }
+  },
+  "name": "RM hátsóajtó zsanérlap 280/4 mm"
  },
  "899210-rm-hatsoajto-zsanerlap-bak-280-3-ts": {
   "specs": {
@@ -3712,7 +3718,8 @@
    "Kivitel": null,
    "Kiszerelés": null,
    "Tömeg": null
-  }
+  },
+  "name": "Süllyesztett INOX rúdzár 25/16 mm"
  },
  "719259-48d-rozsdamentes-nyomolapos-rudzar-22mm": {
   "specs": {
@@ -3893,14 +3900,16 @@
    "Kivitel": null,
    "Kiszerelés": null,
    "Tömeg": null
-  }
+  },
+  "name": "55 mm-es PVC tömítés"
  },
  "512627-85-mm-es-pvc-tomites-pl": {
   "specs": {
    "Kivitel": null,
    "Kiszerelés": null,
    "Tömeg": null
-  }
+  },
+  "name": "85 mm-es PVC tömítés"
  },
  "512827-40-mm-pvc-tomites-n-n": {
   "specs": {
