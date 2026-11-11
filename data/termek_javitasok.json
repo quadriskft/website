@@ -2043,19 +2043,19 @@
   "name": "S 3x1500x3000 mm Eloxált védőfóliás Alu lemez EN AW-5005A H14"
  },
  "s-1-2x1250x2500mm-feher-festett-lemez-ral9016": {
-  "name": "S 1,2x1250x2500mm Fehér védőfóliás festett lemez RAL9016"
+  "name": "1,2x1250x2500mm Fehér védőfóliás festett lemez RAL9016"
  },
  "s-1-2x1500x2500mm-feher-festett-lemez-ral9016": {
-  "name": "S 1,2x1500x2500mm Fehér védőfóliás festett lemez RAL9016"
+  "name": "1,2x1500x2500mm Fehér védőfóliás festett lemez RAL9016"
  },
  "s-1-2x1500x3000mm-feher-festett-lemez-ral9016": {
-  "name": "S 1,2x1500x3000mm Fehér védőfóliás festett lemez RAL9016"
+  "name": "1,2x1500x3000mm Fehér védőfóliás festett lemez RAL9016"
  },
  "s-1-5x1500x3000mm-feher-festett-lemez-ral9010": {
-  "name": "S 1,5x1500x3000mm Fehér védőfóliás festett lemez RAL9010"
+  "name": "1,5x1500x3000mm Fehér védőfóliás festett lemez RAL9010"
  },
  "s-2x1250x2500mm-feher-festett-lemez-ral9016": {
-  "name": "S 2x1250x2500mm Fehér védőfóliás festett lemez RAL9016"
+  "name": "2x1250x2500mm Fehér védőfóliás festett lemez RAL9016"
  },
  "s-3x2000x5000-mm-alu-lemez-en-573-3-al-mg-1-h14-h24": {
   "name": "S 3x2000x5000 mm Alu lemez EN AW-5005 H14/H24",
@@ -2955,5 +2955,41 @@
  "v35991-7500-mm-tetosin-micro-trike": {
   "name": "Tetősín MICRO TRIKE 7500 mm",
   "order": 32
+ },
+ "s-1-5-2x1000x2000-mm-diamond-alu-lemez-en-aw-3003-h224": {
+  "name": "1,5/2x1000x2000 mm Diamond Alu lemez EN AW-3003 H224"
+ },
+ "s-1-5-2x1500x3000-mm-duett-cseppmintas-alu-lemez-en-aw-5754-almg3-h114": {
+  "name": "1,5/2x1500x3000 mm DUETT cseppmintás Alu lemez EN AW-5754 (AlMg3) H114"
+ },
+ "s-2-5-4x1250x2500-mm-cseppmintas-en-aw-5754-h114": {
+  "name": "2,5/4x1250x2500 mm Cseppmintás EN AW-5754 H114"
+ },
+ "s-2-7x2500x6800-mm-rizs-mintas-alu-lemez-en-aw-5086-h32": {
+  "name": "2,7x2500x6800 mm Rízs mintás Alu lemez EN AW-5086 H32"
+ },
+ "s-2-3-5x1000x2000-mm-cseppmintas-en-aw-5754-h114": {
+  "name": "2/3,5x1000x2000 mm Cseppmintás EN AW-5754 H114"
+ },
+ "s-2-3-5x1250x2500-mm-cseppmintas-en-aw-5754-h114": {
+  "name": "2/3,5x1250x2500 mm Cseppmintás EN AW-5754 H114"
+ },
+ "s-2-3-5x1500x3000-mm-cseppmintas-en-aw-5754-h114": {
+  "name": "2/3,5x1500x3000 mm Cseppmintás EN AW-5754 H114"
+ },
+ "s-2x1250x2500-mm-rizs-mintas-alu-lemez-en-aw-3003-h22": {
+  "name": "2x1250x2500 mm Rízs mintás Alu lemez EN AW-3003 H22"
+ },
+ "s-3-4-5x1250x2500-mm-cseppmintas-en-aw-5754-h114": {
+  "name": "3/4,5x1250x2500 mm Cseppmintás EN AW-5754 H114"
+ },
+ "s-4-5-5x1250x2500-mm-cseppmintas-en-aw-5754-h114": {
+  "name": "4/5,5x1250x2500 mm Cseppmintás EN AW-5754 H114"
+ },
+ "s-5-6-5x1250x2500-mm-cseppmintas-en-aw-5754-h114": {
+  "name": "5/6,5x1250x2500 mm Cseppmintás EN AW-5754 H114"
+ },
+ "s-1x1250-mm-ff-ral9016-szalag-h42": {
+  "name": "1x1250 mm FF RAL9016 SZALAG H42"
  }
 }

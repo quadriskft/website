@@ -4,10 +4,10 @@ import ProductVisual from './ProductVisual.astro';
 import { publicProduct, codeShown, familyOf } from '../lib/catalog.js';
 
 const { product, hideCode = false } = Astro.props;
-// Natúr alumínium lemezek: a kártyán a terméken belül választható táblaméretek (pl. 1000x2000), a méret oldalára mutatva
+// Natúr és eloxált alumínium lemezek: a kártyán a terméken belül választható táblaméretek (pl. 1000x2000), a méret oldalára mutatva
 const fam = product.family ? familyOf(product.slug) : null;
 const sizes = [];
-if (fam?.id.startsWith('alu-natur-') && fam.rows) {
+if ((fam?.id.startsWith('alu-natur-') || fam?.id.startsWith('alu-elox-')) && fam.rows) {
   for (const m of fam.members) {
     const [w, l] = fam.rows[m.slug] ?? [];
     const label = w && l ? `${parseInt(w)}x${parseInt(l)}` : null;
