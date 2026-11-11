@@ -396,7 +396,7 @@ const PROFILE_GROUPS = new Set([
   'aluminium-alvaz-profilok', 'acel-profilok', 'aluminium-padlo-profilok', 'ponyvas-oldalfal-profilok-es-szegok',
   'zart-dobozos-es-hutos-profilok', 'ipari-felgyartmanyok', 'kedergumik',
 ]);
-const NO_PROFILE_GROUPS = new Set(['sarvedok-szerszamosladak', 'gumiszonyegek', 'szellozes-tetoablakok-vilagitas']);
+const NO_PROFILE_GROUPS = new Set(['rakomanyrogzites', 'sarvedok-szerszamosladak', 'gumiszonyegek', 'szellozes-tetoablakok-vilagitas']);
 const HARD_NO = /dugó|végz[aá]r|kupak|(^|\s)csavar(\s|ok|$)|bilincs|adapter|készlet|(^|\s)kit(\s|$)|szett|garnitúra|kurbli|kulcs/i;
 const PROFILE_NAME = /profil|hossztartó|kereszttartó|szelvény|laposrúd|(^|\s)sín(\s|$)|sínek|tetősín|"c" sín|(^|\s)cső(\s|$)|csövek|kéder|(^|[\s-])léc(\s|$)|oszlop|tömítés|takarógumi|zsanér \d{4}/i;
 const SOFT_NO = /(^|[\s"(])(tartó|konzol|kengyel|lapka|sarokelem|összekötő|elem|zár|zsanér|görgő|kocsi|rúd|szegő)(\s|$)/i;
