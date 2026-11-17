@@ -4308,7 +4308,8 @@
  },
  "121110-kombi-rakomanyrogzito-sin-sully-acel": {
   "specs": {
-   "Megnevezés (gyári)": null
+   "Megnevezés (gyári)": null,
+   "Hossz": "3048 mm"
   }
  },
  "121127-kombi-rakomanyrogzito-sin-acel-magnelis": {
@@ -4330,25 +4331,29 @@
  },
  "121172-airline-sin-alu-elox-3000mm": {
   "specs": {
-   "Felületkezelés": "Eloxált"
+   "Felületkezelés": "Eloxált",
+   "Hossz": "3000 mm"
   }
  },
  "121824-rakomanyrogzito-rud-alu-elox": {
   "specs": {
    "Megnevezés (gyári)": null,
-   "Blokkolóerő (BC)": null
+   "Blokkolóerő (BC)": null,
+   "Hossz": "2235–2685 mm (állítható)"
   }
  },
  "122185-rakomany-rogzito-rud-airline-sinhez-1600": {
   "specs": {
    "Megnevezés (gyári)": null,
-   "Blokkolóerő (BC)": null
+   "Blokkolóerő (BC)": null,
+   "Hossz": "1600–2160 mm (állítható)"
   }
  },
  "122186-rakomany-rogzito-rud-airline-sinhez-1800": {
   "specs": {
    "Megnevezés (gyári)": null,
-   "Blokkolóerő (BC)": null
+   "Blokkolóerő (BC)": null,
+   "Hossz": "1800–2360 mm (állítható)"
   }
  },
  "122303-padloba-sullyesztehto-inox-rak-rogzito-tanyer": {
@@ -4372,7 +4377,8 @@
  },
  "123025-terelvalaszto-falzar-2400-2700-mm-400dan": {
   "specs": {
-   "Felület": "Eloxált"
+   "Felület": "Eloxált",
+   "Hossz": "2400–2700 mm (állítható)"
   },
   "move": {
    "group": "rakomanyrogzites",
@@ -4655,5 +4661,35 @@
  },
  "g-8x1000x2000-soft-gumi-lap": {
   "name": "G 8x1000x2000 puha gumi lap"
+ },
+ "121018-sl-rakomanyrogzito-rud-alu-1650-2050-mm": {
+  "specs": {
+   "Hossz": "1650–2050 mm (állítható)"
+  }
+ },
+ "121019-rakomanyrogzito-rud-alu-2050-2450-mm": {
+  "specs": {
+   "Hossz": "2050–2450 mm (állítható)"
+  }
+ },
+ "121030-rakomanyrogzito-rud-acel-2200": {
+  "specs": {
+   "Hossz": "2200 mm"
+  }
+ },
+ "121032-rakomanyrogzito-rud-acel-2500": {
+  "specs": {
+   "Hossz": "2500 mm"
+  }
+ },
+ "127159-palcas-rakomanyrogzito-sin-sully-alu-5m": {
+  "specs": {
+   "Hossz": "5000 mm"
+  }
+ },
+ "127199-palcas-rakomanyrogzito-sin-sully-alu-pvc-3m": {
+  "specs": {
+   "Hossz": "3000 mm"
+  }
  }
 }
