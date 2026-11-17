@@ -98,7 +98,7 @@ const jsonLd = [
 <Base crumbs={navCrumbs} back={backTo} title={product.code ? `${product.name} (${product.code})` : product.name} description={description} image={product.images?.[0]} type="product" jsonLd={jsonLd}>
   <div class="container">
 
-    <div class:list={['product', { 'wide-order': wideOrder }]}>
+    <div class:list={['product', { 'wide-order': wideOrder, fit: !wideOrder && !orderForm, 'multi-img': gallery.length > 1 }]}>
       <div class:list={['media', { 'has-specs': specs.length > 0 }]}>
         {heroVideo
           ? <div class="hero-video"><video autoplay muted loop playsinline preload="auto" poster={heroVideo.poster} src={heroVideo.url} aria-label={heroVideo.title}></video></div>
@@ -217,7 +217,7 @@ const jsonLd = [
             <div class="cut-rows" data-cut-rows></div>
             <button type="button" class="add-row" data-add-row><Icon name="Plus" size={18} /> Másik méret hozzáadása</button>
             <label class="cut-note-label" for="cut-note">Megjegyzés</label>
-            <textarea id="cut-note" class="input cut-note" rows="2" maxlength="300" placeholder="pl. felületkezelés, vágási tűrés, szállítási határidő…" data-cut-note></textarea>
+            <textarea id="cut-note" class="input cut-note" rows="2" maxlength="300" placeholder="Megjegyzés: pl. felületkezelés, vágási tűrés, szállítási határidő…" data-cut-note></textarea>
             <p class="cut-error" data-cut-error hidden>Adjon meg legalább egy hosszt (mm).</p>
             <div class="cut-actions">
               <span class="muted small" data-cut-total></span>
@@ -692,6 +692,44 @@ const jsonLd = [
     .media-specs { display: block; }
     .media.has-specs { position: static; }
     .details-specs, .details.only-specs { display: none; }
+  }
+  /* Asztali „egy képernyős” elrendezés: balra kép (+ kis képek) és műszaki adatok, jobbra cím és rendelési doboz.
+     A két oszlop egyforma magas, így a bal alsó és a jobb alsó doboz alja egy vonalban van; a kép kapja a műszaki
+     adatok után megmaradó helyet (kevés adat → nagyobb kép). A magasság a képernyőhöz igazodik, felső korláttal. */
+  @media (min-width: 861px) {
+    .product.fit { --fit-h: clamp(420px, calc(100dvh - var(--header-h) - 78px), 680px); align-items: stretch; min-height: var(--fit-h); padding-top: 14px; gap: 28px; }
+    .fit .media { position: static; display: flex; flex-direction: column; min-height: 0; }
+    /* hosszú jobb oszlopnál (pl. mérettábla) a kép nem nő a képernyőnél nagyobbra */
+    .fit .media :global(.product-visual), .fit .hero-video { aspect-ratio: auto; flex: 1 1 0; min-height: 170px; max-height: calc(var(--fit-h) * 0.8); }
+    .fit.multi-img .media :global(.product-visual) { min-height: calc(var(--fit-h) * 0.5); }
+    .fit .hero-video video { height: 100%; object-fit: contain; }
+    /* a nagyítás-jelzés a képdoboz bal alsó sarkában, nem külön sorban */
+    .fit .zoom-hint { position: relative; z-index: 1; flex: none; height: 22px; margin: -28px 0 6px 12px; font-size: 0.74rem; pointer-events: none; }
+    .fit .gallery { flex: none; margin-top: 6px; gap: 6px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; }
+    .fit .thumb-btn { flex: none; }
+    .fit .gallery img { width: 62px; height: 48px; }
+    .fit .media-specs { flex: none; margin-top: 10px; padding: 12px 16px; }
+    .fit .media-specs h2 { font-size: 1rem; margin: 0 0 4px; }
+    .fit .media-specs .specs tbody { display: grid; grid-template-columns: 1fr 1fr; column-gap: 24px; }
+    .fit .media-specs .specs tr { display: flex; border-bottom: 1px solid var(--line); }
+    .fit .media-specs .specs th, .fit .media-specs .specs td { padding: 4px 0; font-size: 0.86rem; border-bottom: 0; }
+    .fit .media-specs .specs th { flex: 0 0 46%; width: auto; }
+    .fit .info { display: flex; flex-direction: column; min-height: 0; }
+    .fit .info > .eyebrow { display: none; }
+    .fit .info h1 { font-size: clamp(1.4rem, 2.2vw, 1.8rem); margin: 0 0 4px; }
+    .fit .code-line { margin: 0; font-size: 0.92rem; }
+    /* a rendelési doboz az oszlop aljáig ér; a segítő sorok itt nem jelennek meg (a telefonszám a láblécben és a Kapcsolat oldalon van) */
+    .fit .order { flex: 1 1 auto; margin: 10px 0 0; padding: 14px 18px; }
+    .fit .assurances { display: none; }
+    .fit .cut-title { font-size: 1rem; margin: 0 0 2px; }
+    .fit .small { font-size: 0.8rem; margin: 6px 0 0; }
+    .fit .cut-head { margin: 8px 0 4px; font-size: 0.72rem; }
+    .fit .cut-order :global(.cut-row .input) { padding: 7px 11px; }
+    .fit .add-row { margin-top: 8px; padding: 5px 12px; font-size: 0.72rem; }
+    .fit .cut-note-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+    .fit .cut-note { min-height: 0; height: 38px; margin-top: 8px; padding-top: 7px; padding-bottom: 7px; font-size: 0.9rem; resize: none; }
+    .fit .cut-actions { margin: 8px 0 2px; }
+    .fit .order .btn { padding-top: 10px; padding-bottom: 10px; }
   }
   .detail h2 { font-size: 1.2rem; font-weight: 700; }
   .specs { width: 100%; border-collapse: collapse; }
