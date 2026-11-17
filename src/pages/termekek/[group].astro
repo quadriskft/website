@@ -117,14 +117,11 @@ const jsonLd = [
     if (on) {
       subCrumb.textContent = sec.dataset.catName;
       subCrumb.href = `#${sec.id}`;
-      back.href = groupUrl;
-      back.setAttribute('aria-label', `Vissza: ${groupCrumb.textContent}`);
-      back.title = back.getAttribute('aria-label');
-    } else {
-      back.href = home.href;
-      back.setAttribute('aria-label', home.label);
-      back.title = home.label;
     }
+    // a „Vissza” gomb alkategóriában állva is egy kattintással a főoldal termékkategóriáihoz visz
+    back.href = home.href;
+    back.setAttribute('aria-label', home.label);
+    back.title = home.label;
   };
   const updateActive = () => {
     const line = window.innerHeight * 0.3;
