@@ -73,7 +73,7 @@ import { SITE } from '../lib/site.js';
 </script>
 
 <script>
-  import { quote, clampQty, clampLen, normalizeCuts, cutsText, totalPcs, metersOf } from '../scripts/quote.js';
+  import { quote, clampQty, clampLen, normalizeCuts, cutsText, totalPcs, metersOf, cutPcs } from '../scripts/quote.js';
 
   const $ = (sel) => document.querySelector(sel);
   const list = $('[data-items]');
@@ -97,7 +97,7 @@ import { SITE } from '../lib/site.js';
   // méretsoros tétel összesítője: teljes szálas profilnál a szálak száma + a vágott darabok, egyébként darab + fm
   const fm = (i) => metersOf(i.cuts).toLocaleString('hu-HU', { maximumFractionDigits: 2 });
   const cutTotal = (i) => i.stock
-    ? `<div class="qty-total"><strong>${i.qty} szál</strong><small>${totalPcs(i.cuts)} db · ${fm(i)} fm · ${i.stock.toLocaleString('hu-HU')} mm-es szálból</small></div>`
+    ? `<div class="qty-total"><strong>${i.qty} szál</strong><small>${i.stock.toLocaleString('hu-HU')} mm-es teljes szál${cutPcs(i.cuts, i.stock) ? ` · ${cutPcs(i.cuts, i.stock)} db méretre vágva` : ''}</small></div>`
     : `<div class="qty-total"><strong>${i.qty} db</strong><small>${fm(i)} fm</small></div>`;
   const cutRow = (len = '', pcs = 1) => `<div class="cut-row">
       <label class="unit-in"><input class="input" type="number" min="1" max="30000" inputmode="numeric" aria-label="Hossz (mm)" data-cut-len value="${esc(len)}"><span>mm</span></label>

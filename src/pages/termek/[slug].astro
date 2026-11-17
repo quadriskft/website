@@ -401,7 +401,7 @@ const jsonLd = [
       }
     }
   }
-  import { quote, clampQty, clampLen, normalizeCuts, totalPcs, barsNeeded } from '../../scripts/quote.js';
+  import { quote, clampQty, clampLen, normalizeCuts, totalPcs, barsNeeded, cutPcs } from '../../scripts/quote.js';
 
   // rendelési adatlap: a kitöltött adatok (config) külön ajánlatkérő-tételként – több eltérő ajtó is kérhető
   const cform = document.querySelector('[data-config-form]');
@@ -556,7 +556,7 @@ const jsonLd = [
       const cuts = normalizeCuts(read());
       const m = cuts.reduce((n, c) => n + c.len * c.pcs, 0) / 1000;
       totalEl.textContent = !cuts.length ? ''
-        : stock ? `Szükséges: ${barsNeeded(cuts, stock)} teljes szál (${totalPcs(cuts)} db vágott darab, ${m.toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm)`
+        : stock ? `Szükséges: ${barsNeeded(cuts, stock)} teljes szál${cutPcs(cuts, stock) ? ` (ebből ${cutPcs(cuts, stock)} db méretre vágva)` : ''}`
         : `Összesen ${totalPcs(cuts)} db, ${m.toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm`;
       rows.querySelectorAll('[data-remove-row]').forEach((b) => (b.hidden = rows.children.length < 2));
     };
@@ -595,7 +595,7 @@ const jsonLd = [
       rows.innerHTML = '';
       note.value = '';
       addRow();
-      window.dispatchEvent(new CustomEvent('quote:toast', { detail: `Hozzáadva az ajánlatkérőhöz: ${product.name} (${stock ? `${barsNeeded(cuts, stock)} szál, ${totalPcs(cuts)} db vágott darab` : `${totalPcs(cuts)} db`})` }));
+      window.dispatchEvent(new CustomEvent('quote:toast', { detail: `Hozzáadva az ajánlatkérőhöz: ${product.name} (${stock ? `${barsNeeded(cuts, stock)} szál${cutPcs(cuts, stock) ? `, ebből ${cutPcs(cuts, stock)} db méretre vágva` : ''}` : `${totalPcs(cuts)} db`})` }));
     });
     addRow();
   }
@@ -638,7 +638,7 @@ const jsonLd = [
   .thumb-btn:hover { border-color: rgba(14, 79, 85, 0.4); }
   .thumb-btn.active { border-color: var(--accent); }
   /* világosszürke háttér + 1px keret: a fehér alapú, vékony vonalas műszaki rajzok is látszanak bélyegként */
-  .gallery img { display: block; width: 88px; height: 72px; object-fit: contain; background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 4px; box-sizing: border-box; }
+  .gallery img { display: block; width: 88px; height: 72px; object-fit: contain; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 4px; box-sizing: border-box; }
   .info h1 { font-size: clamp(1.7rem, 3.2vw, 2.5rem); margin: 12px 0 12px; }
   .code-line { display: flex; align-items: center; gap: 8px; color: var(--text-2); }
   .copy { border: 1px solid var(--line-strong); background: transparent; border-radius: var(--radius-btn); width: 30px; height: 30px; display: grid; place-items: center; cursor: pointer; color: var(--muted); }

@@ -117,21 +117,15 @@ export function normalizeCuts(cuts) {
 
 export const totalPcs = (cuts) => (cuts ?? []).reduce((n, c) => n + c.pcs, 0);
 
-// Hány teljes (stock mm hosszú) szál kell a vágási listához: a darabokat csökkenő hossz szerint az első szálba tesszük,
-// amelybe még beférnek (first-fit decreasing); a szálnál hosszabb darab egész szálakat foglal.
+// Hány teljes (stock mm hosszú) szál kell a vágási listához: minden kért darabhoz külön teljes szál tartozik
+// (vágás esetén is a teljes szál fizetendő, a maradékból nem számolunk másik darabot); a szálnál hosszabb darab több szálat foglal.
 export function barsNeeded(cuts, stock) {
-  const bars = [];
-  let extra = 0;
-  for (const c of [...(cuts ?? [])].sort((a, b) => b.len - a.len)) {
-    for (let i = 0; i < c.pcs; i++) {
-      if (c.len > stock) { extra += Math.ceil(c.len / stock); continue; }
-      const bar = bars.find((rest) => rest >= c.len);
-      if (bar === undefined) bars.push(stock - c.len);
-      else bars[bars.indexOf(bar)] = bar - c.len;
-    }
-  }
-  return Math.min(bars.length + extra, 99999);
+  let n = 0;
+  for (const c of cuts ?? []) n += c.pcs * Math.max(1, Math.ceil(c.len / stock));
+  return Math.min(n, 99999);
 }
+// a ténylegesen vágott darabok száma (a teljes szál hosszával megegyező tétel nem vágott)
+export const cutPcs = (cuts, stock) => (cuts ?? []).reduce((n, c) => n + (c.len % stock ? c.pcs : 0), 0);
 export const metersOf = (cuts) => (cuts ?? []).reduce((n, c) => n + c.len * c.pcs, 0) / 1000;
 
 // "3 db × 6000 mm, 2 db × 2500 mm"
