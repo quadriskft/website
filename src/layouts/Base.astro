@@ -90,6 +90,7 @@ const fontCss = fallbackFace +
             </div>
           </div>
           <a href="/kapcsolat" class:list={['nav-link', { active: isActive('/kapcsolat') }]}>Kapcsolat</a>
+          <a href="/fiok" class:list={['nav-link', 'nav-account', { active: isActive('/fiok') }]}><Icon name="User" size={20} /> <span data-account-text data-in="Fiókom" data-out="Bejelentkezés / Regisztráció">Bejelentkezés / Regisztráció</span></a>
         </nav>
 
         <div class="header-actions">
@@ -98,6 +99,10 @@ const fontCss = fallbackFace +
             <input type="search" name="q" placeholder="Keressen terméknévre vagy cikkszámra…" aria-label="Termékkeresés" aria-autocomplete="list" aria-controls="search-suggest" />
             <div class="suggest" id="search-suggest" role="listbox" hidden></div>
           </form>
+          <a href="/fiok" class="account-link" aria-label="Bejelentkezés vagy regisztráció" title="Bejelentkezés / Regisztráció" data-account-link>
+            <Icon name="User" size={20} />
+            <span class="account-label" data-account-text data-in="Fiókom" data-out="Belépés">Belépés</span>
+          </a>
           <button class="search-toggle" type="button" aria-controls="search-suggest" aria-expanded="false" aria-label="Termékkeresés">
             <Icon name="Search" size={22} class="i-open" />
             <Icon name="X" size={22} class="i-close" />
@@ -169,7 +174,7 @@ const fontCss = fallbackFace +
       </div>
       <div class="container footer-bottom">
         <span>© {new Date().getFullYear()} {SITE.name} Minden jog fenntartva.</span>
-        <span><span class="nowrap">Cégjegyzékszám: {SITE.companyRegNo}</span> · <span class="nowrap">Adószám: {SITE.taxNumber}</span></span>
+        <span class="footer-ids"><span class="nowrap">Cégjegyzékszám: {SITE.companyRegNo}</span><span class="footer-sep" aria-hidden="true"> · </span><span class="nowrap">Adószám: {SITE.taxNumber}</span></span>
       </div>
     </footer>
 
@@ -312,6 +317,22 @@ const fontCss = fallbackFace +
           requestAnimationFrame(syncMega);
         }
       });
+
+      // --- Vevői fiók: bejelentkezve a fejlécben „Fiókom”, az ajánlatkérő űrlap üres mezői előre kitöltve ---
+      const readAccount = () => { try { return JSON.parse(localStorage.getItem('quadris-fiok') || 'null'); } catch { return null; } };
+      const syncAccount = (user) => {
+        document.querySelectorAll('[data-account-text]').forEach((el) => { el.textContent = user ? el.dataset.in : el.dataset.out; });
+        const link = document.querySelector('[data-account-link]');
+        const label = user ? `Fiókom (${user.name})` : 'Bejelentkezés / Regisztráció';
+        link.title = label; link.setAttribute('aria-label', label); link.classList.toggle('is-in', Boolean(user));
+        if (!user) return;
+        for (const [id, key] of [['f-name', 'name'], ['f-company', 'company'], ['f-email', 'email'], ['f-phone', 'phone']]) {
+          const el = document.getElementById(id);
+          if (el && !el.value && user[key]) el.value = user[key];
+        }
+      };
+      setTimeout(() => syncAccount(readAccount()), 0);
+      document.addEventListener('quadris:fiok', (e) => syncAccount(e.detail));
 
       // --- Azonnali kereső a fejlécben ---
       const form = document.querySelector('.header-search');
@@ -516,6 +537,11 @@ const fontCss = fallbackFace +
   .suggest :global(.s-txt) { display: flex; flex-direction: column; min-width: 0; }
   .suggest :global(.s-all) { padding: 10px 12px; }
   .search-toggle { display: none; }
+  /* Fiók: asztalon ikon + felirat a kereső és az ajánlatkérő között; mobilon a menüben, a Kapcsolat alatt */
+  .nav-account { display: none; }
+  .account-link { flex: none; display: inline-flex; align-items: center; gap: 7px; height: 40px; padding: 0 10px; border-radius: var(--radius-btn); color: var(--hd-fg); font-size: 0.95rem; font-weight: 500; text-decoration: none !important; white-space: nowrap; transition: color 0.2s ease, background 0.2s ease; }
+  .account-link:hover { color: var(--hd-hover); background: rgba(127, 127, 127, 0.12); }
+  .account-link.is-in :global(svg) { color: var(--tomato); }
   .suggest :global(a:hover), .suggest :global(a.active) { background: var(--accent-soft); }
   .suggest :global(.s-name) { font-size: 0.92rem; font-weight: 500; }
   .suggest :global(.s-meta) { font-size: 0.78rem; color: var(--muted); }
@@ -542,6 +568,8 @@ const fontCss = fallbackFace +
   .menu-open .menu-toggle :global(.i-close) { display: block; }
 
   @media (max-width: 1200px) {
+    .account-label { display: none; }
+    .account-link { padding: 0 8px; }
     .main-nav { gap: 22px; }
     .header-search { width: 280px; }
   }
@@ -584,6 +612,11 @@ const fontCss = fallbackFace +
     /* Mobil fejléc: balra a menü, középen a logó, jobbra az ajánlatkérő; a kereső a lenyíló menü tetején */
     .header-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; }
     .header-actions { display: contents; }
+    .account-link { display: none; }
+    /* menü sorrendje mobilon: Rólunk, Kapcsolat, Fiók, majd a hosszú Termékek lista */
+    .main-nav > .nav-link { order: 1; }
+    .main-nav > .nav-account { order: 2; display: flex; align-items: center; gap: 10px; }
+    .main-nav > .has-mega { order: 3; }
     .menu-toggle { grid-column: 1; grid-row: 1; justify-self: start; }
     .logo { grid-column: 2; grid-row: 1; justify-self: center; }
     .quote-btn { grid-column: 3; grid-row: 1; justify-self: end; }
@@ -629,6 +662,12 @@ const fontCss = fallbackFace +
   .footer-muted { color: rgba(246, 243, 236, 0.84); }
   .footer-bottom { border-top: 1px solid rgba(246, 243, 236, 0.22); padding-top: 18px; padding-bottom: 22px; font-size: 0.8rem; color: rgba(246, 243, 236, 0.84); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; }
   .nowrap { white-space: nowrap; }
+  /* mobilon a cégadatok külön sorban állnak, és nem csúsznak a jobb alsó „fel” gomb alá */
+  @media (max-width: 640px) {
+    .footer-bottom { flex-direction: column; gap: 6px; padding-right: 84px; padding-bottom: 26px; font-size: 0.86rem; }
+    .footer-ids { display: flex; flex-direction: column; gap: 6px; }
+    .footer-sep { display: none; }
+  }
   @media (max-width: 860px) {
     .footer-main { grid-template-columns: 1fr 1fr; padding-top: 44px; }
     .footer-brand { grid-column: 1 / -1; }

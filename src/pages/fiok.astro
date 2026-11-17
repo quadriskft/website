@@ -1,0 +1,251 @@
+---
+// Vevői fiók: bejelentkezés, regisztráció, elfelejtett jelszó, adatok módosítása (functions/api/fiok/[[path]].js)
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+---
+<Base crumbs={[['Főoldal', '/'], ['Fiókom', '/fiok']]} back={{ href: '/', label: 'Főoldal' }} title="Bejelentkezés és regisztráció" description="Regisztráljon vagy jelentkezzen be a Quadris Kft. weboldalán: az adatai az ajánlatkérésnél előre kitöltve jelennek meg.">
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Vevői fiók</span>
+      <h1 data-acc-title>Bejelentkezés és regisztráció</h1>
+      <p class="lead" data-acc-lead>Regisztrált vevőként nem kell minden ajánlatkérésnél újra megadnia az adatait.</p>
+    </div>
+  </section>
+
+  <div class="container acc" id="acc-app">
+    <p class="acc-msg" data-acc-msg role="status" aria-live="polite" hidden></p>
+
+    <!-- Bejelentkezés / regisztráció -->
+    <div class="card acc-card" data-view="auth">
+      <div class="acc-tabs" role="tablist" aria-label="Bejelentkezés vagy regisztráció">
+        <button type="button" role="tab" id="tab-login" aria-controls="panel-login" aria-selected="true" data-tab="login">Bejelentkezés</button>
+        <button type="button" role="tab" id="tab-register" aria-controls="panel-register" aria-selected="false" data-tab="register">Regisztráció</button>
+      </div>
+
+      <form id="panel-login" role="tabpanel" aria-labelledby="tab-login" data-form="belepes" novalidate>
+        <div class="field"><label for="l-email">E-mail</label><input id="l-email" name="email" type="email" required autocomplete="username" maxlength="160" /></div>
+        <div class="field"><label for="l-password">Jelszó</label><input id="l-password" name="password" type="password" required autocomplete="current-password" maxlength="200" /></div>
+        <button class="btn btn-primary acc-submit" type="submit">Bejelentkezés</button>
+        <button type="button" class="acc-link" data-go="forgot">Elfelejtettem a jelszavam</button>
+      </form>
+
+      <form id="panel-register" role="tabpanel" aria-labelledby="tab-register" data-form="regisztracio" novalidate hidden>
+        <div class="acc-grid">
+          <div class="field"><label for="r-name">Név *</label><input id="r-name" name="name" required autocomplete="name" maxlength="120" /></div>
+          <div class="field"><label for="r-company">Cégnév *</label><input id="r-company" name="company" required autocomplete="organization" maxlength="160" /></div>
+          <div class="field"><label for="r-email">E-mail *</label><input id="r-email" name="email" type="email" required autocomplete="email" maxlength="160" /></div>
+          <div class="field"><label for="r-phone">Telefon *</label><input id="r-phone" name="phone" type="tel" required autocomplete="tel" maxlength="40" /></div>
+          <div class="field"><label for="r-tax">Adószám</label><input id="r-tax" name="taxNumber" autocomplete="off" maxlength="20" placeholder="nem kötelező" /></div>
+          <div class="field"><label for="r-password">Jelszó * <span class="muted">(legalább 8 karakter)</span></label><input id="r-password" name="password" type="password" required minlength="8" autocomplete="new-password" maxlength="200" /></div>
+        </div>
+        <div class="acc-hp" aria-hidden="true"><label for="r-website">Weboldal</label><input id="r-website" name="website" tabindex="-1" autocomplete="off" /></div>
+        <label class="acc-check"><input type="checkbox" name="consent" required /> <span>Elfogadom az <a href="/adatkezeles" target="_blank" rel="noopener">adatkezelési tájékoztatót</a>, és hozzájárulok az adataim kezeléséhez a fiókom fenntartása céljából. *</span></label>
+        <button class="btn btn-primary acc-submit" type="submit">Regisztráció</button>
+      </form>
+    </div>
+
+    <!-- Elfelejtett jelszó -->
+    <div class="card acc-card" data-view="forgot" hidden>
+      <h2>Elfelejtett jelszó</h2>
+      <p class="muted">Adja meg a regisztrált e-mail-címét, és elküldjük a jelszó beállításához szükséges hivatkozást.</p>
+      <form data-form="jelszo-kero" novalidate>
+        <div class="field"><label for="f-mail">E-mail</label><input id="f-mail" name="email" type="email" required autocomplete="email" maxlength="160" /></div>
+        <button class="btn btn-primary acc-submit" type="submit">Hivatkozás küldése</button>
+        <button type="button" class="acc-link" data-go="auth">Vissza a bejelentkezéshez</button>
+      </form>
+    </div>
+
+    <!-- Új jelszó (az e-mailben kapott hivatkozásról) -->
+    <div class="card acc-card" data-view="reset" hidden>
+      <h2>Új jelszó beállítása</h2>
+      <form data-form="jelszo-uj" novalidate>
+        <div class="field"><label for="n-password">Új jelszó <span class="muted">(legalább 8 karakter)</span></label><input id="n-password" name="password" type="password" required minlength="8" autocomplete="new-password" maxlength="200" /></div>
+        <button class="btn btn-primary acc-submit" type="submit">Jelszó mentése</button>
+      </form>
+    </div>
+
+    <!-- Bejelentkezve: adatok -->
+    <div class="acc-profile" data-view="profile" hidden>
+      <div class="card acc-card">
+        <h2>Adataim</h2>
+        <p class="muted">Ezek az adatok jelennek meg előre kitöltve az ajánlatkérő lapon.</p>
+        <form data-form="adatok" novalidate>
+          <div class="acc-grid">
+            <div class="field"><label for="p-name">Név *</label><input id="p-name" name="name" required autocomplete="name" maxlength="120" /></div>
+            <div class="field"><label for="p-company">Cégnév *</label><input id="p-company" name="company" required autocomplete="organization" maxlength="160" /></div>
+            <div class="field"><label for="p-email">E-mail</label><input id="p-email" name="email" type="email" disabled /></div>
+            <div class="field"><label for="p-phone">Telefon *</label><input id="p-phone" name="phone" type="tel" required autocomplete="tel" maxlength="40" /></div>
+            <div class="field"><label for="p-tax">Adószám</label><input id="p-tax" name="taxNumber" autocomplete="off" maxlength="20" /></div>
+          </div>
+          <details class="acc-details">
+            <summary>Jelszó módosítása</summary>
+            <div class="acc-grid">
+              <div class="field"><label for="p-password">Jelenlegi jelszó</label><input id="p-password" name="password" type="password" autocomplete="current-password" maxlength="200" /></div>
+              <div class="field"><label for="p-new">Új jelszó <span class="muted">(legalább 8 karakter)</span></label><input id="p-new" name="newPassword" type="password" minlength="8" autocomplete="new-password" maxlength="200" /></div>
+            </div>
+          </details>
+          <div class="acc-actions">
+            <button class="btn btn-primary" type="submit">Módosítások mentése</button>
+            <a class="btn btn-ghost" href="/ajanlatkeres">Ajánlatkérés <Icon name="ArrowRight" size={16} /></a>
+            <button type="button" class="btn btn-ghost" data-logout><Icon name="LogOut" size={16} /> Kijelentkezés</button>
+          </div>
+        </form>
+      </div>
+      <details class="card acc-card acc-danger">
+        <summary>Fiók törlése</summary>
+        <p class="muted">A fiók törlésével a nálunk tárolt regisztrációs adatai véglegesen törlődnek. A korábban elküldött ajánlatkéréseit ez nem érinti.</p>
+        <form data-form="torles" novalidate>
+          <div class="field"><label for="d-password">Jelszó a megerősítéshez</label><input id="d-password" name="password" type="password" required autocomplete="current-password" maxlength="200" /></div>
+          <label class="acc-check"><input type="checkbox" name="sure" required /> <span>Biztosan törlöm a fiókomat.</span></label>
+          <button class="btn acc-delete" type="submit">Fiók végleges törlése</button>
+        </form>
+      </details>
+    </div>
+
+    <div class="card acc-card" data-view="off" hidden>
+      <h2>A regisztráció hamarosan elérhető</h2>
+      <p class="muted">A vevői fiókok beállítása folyamatban van. Addig is küldhet ajánlatkérést regisztráció nélkül.</p>
+      <a class="btn btn-primary" href="/ajanlatkeres">Ajánlatkérés <Icon name="ArrowRight" size={16} /></a>
+    </div>
+  </div>
+</Base>
+
+<script>
+  const KEY = 'quadris-fiok';
+  const app = document.getElementById('acc-app');
+  const msg = app.querySelector('[data-acc-msg]');
+  const title = document.querySelector('[data-acc-title]');
+  const lead = document.querySelector('[data-acc-lead]');
+  const views = [...app.querySelectorAll('[data-view]')];
+  const resetToken = new URLSearchParams(location.search).get('reset');
+
+  const TEXT = {
+    missing: 'Kérjük, töltse ki a kötelező mezőket (érvényes e-mail-címmel).',
+    weak_password: 'A jelszónak legalább 8 karakterből kell állnia.',
+    consent: 'A regisztrációhoz el kell fogadnia az adatkezelési tájékoztatót.',
+    exists: 'Ezzel az e-mail-címmel már van fiók. Jelentkezzen be, vagy kérjen új jelszót.',
+    invalid: 'Hibás e-mail-cím vagy jelszó.',
+    locked: 'Túl sok sikertelen próbálkozás. Kérjük, próbálja újra 15 perc múlva.',
+    bad_token: 'A hivatkozás lejárt vagy érvénytelen. Kérjen újat az „Elfelejtettem a jelszavam” gombbal.',
+    not_logged_in: 'A munkamenet lejárt, kérjük, jelentkezzen be újra.',
+    not_configured: '',
+  };
+  const say = (text, kind = 'ok') => { msg.textContent = text; msg.dataset.kind = kind; msg.hidden = !text; if (text) msg.scrollIntoView({ block: 'nearest' }); };
+  const remember = (user) => {
+    try { if (user) localStorage.setItem(KEY, JSON.stringify(user)); else localStorage.removeItem(KEY); } catch { /* privát mód */ }
+    document.dispatchEvent(new CustomEvent('quadris:fiok', { detail: user }));
+  };
+  function show(name) {
+    for (const v of views) v.hidden = v.dataset.view !== name;
+    const logged = name === 'profile';
+    title.textContent = logged ? 'Fiókom' : name === 'forgot' || name === 'reset' ? 'Jelszó beállítása' : 'Bejelentkezés és regisztráció';
+    lead.hidden = logged;
+  }
+  function fillProfile(user) {
+    const f = app.querySelector('[data-form="adatok"]');
+    for (const k of ['name', 'company', 'email', 'phone', 'taxNumber']) f.elements[k].value = user[k] ?? '';
+    f.elements.password.value = ''; f.elements.newPassword.value = '';
+  }
+  async function api(route, data) {
+    const res = await fetch(`/api/fiok/${route}`, data === undefined
+      ? { credentials: 'same-origin' }
+      : { method: 'POST', credentials: 'same-origin', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+    let body = {};
+    try { body = await res.json(); } catch { /* nem JSON válasz */ }
+    return { status: res.status, ...body };
+  }
+
+  // fülek
+  const tabs = [...app.querySelectorAll('[data-tab]')];
+  const setTab = (name) => {
+    for (const t of tabs) t.setAttribute('aria-selected', String(t.dataset.tab === name));
+    app.querySelector('#panel-login').hidden = name !== 'login';
+    app.querySelector('#panel-register').hidden = name !== 'register';
+    say('');
+  };
+  tabs.forEach((t) => t.addEventListener('click', () => setTab(t.dataset.tab)));
+  app.querySelectorAll('[data-go]').forEach((b) => b.addEventListener('click', () => { say(''); show(b.dataset.go); }));
+  if (location.hash === '#regisztracio') setTab('register');
+
+  // űrlapok
+  app.querySelectorAll('form[data-form]').forEach((form) => {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      const route = form.dataset.form;
+      const data = {};
+      for (const el of form.elements) {
+        if (!el.name || el.disabled) continue;
+        data[el.name] = el.type === 'checkbox' ? el.checked : el.value;
+      }
+      if (route === 'jelszo-uj') data.token = resetToken;
+      if (route === 'adatok' && !data.newPassword) { delete data.password; delete data.newPassword; }
+      const btn = form.querySelector('[type="submit"]');
+      btn.disabled = true;
+      say('');
+      let r;
+      try { r = await api(route, data); } catch { r = { ok: false, error: 'network' }; }
+      btn.disabled = false;
+      if (r.error === 'not_configured') { show('off'); return; }
+      if (!r.ok) { say(TEXT[r.error] || 'Nem sikerült a művelet. Kérjük, próbálja újra.', 'err'); return; }
+      if (route === 'jelszo-kero') {
+        say(r.mail ? 'Ha van ilyen e-mail-címmel fiók, elküldtük rá a jelszó beállításához szükséges hivatkozást (1 óráig érvényes).' : 'A jelszó-visszaállító e-mail küldése jelenleg nem elérhető. Kérjük, vegye fel velünk a kapcsolatot.', r.mail ? 'ok' : 'err');
+        return;
+      }
+      if (route === 'torles') { remember(null); show('auth'); setTab('login'); say('A fiókját töröltük.'); return; }
+      remember(r.user);
+      fillProfile(r.user);
+      show('profile');
+      if (route === 'jelszo-uj') history.replaceState(null, '', '/fiok');
+      say({ regisztracio: 'Sikeres regisztráció – be is jelentkeztettük.', belepes: 'Sikeres bejelentkezés.', adatok: 'A módosításokat elmentettük.', 'jelszo-uj': 'Az új jelszót elmentettük.' }[route] ?? '');
+    });
+  });
+  app.querySelector('[data-logout]').addEventListener('click', async () => {
+    try { await api('kilepes', {}); } catch { /* hálózati hiba: a helyi állapotot így is töröljük */ }
+    remember(null); show('auth'); setTab('login'); say('Kijelentkezett.');
+  });
+
+  // induláskor: jelszó-hivatkozás, különben a szerver mondja meg, be van-e jelentkezve
+  (async () => {
+    if (resetToken) { show('reset'); return; }
+    let r;
+    try { r = await api('en'); } catch { return; }
+    if (r.error === 'not_configured') { show('off'); return; }
+    if (r.ok) { remember(r.user); fillProfile(r.user); show('profile'); }
+    else remember(null);
+  })();
+</script>
+
+<style>
+  .acc { max-width: 760px; padding-bottom: 72px; display: grid; gap: 18px; }
+  .acc-card { padding: 26px 28px; }
+  .acc-card h2 { margin: 0 0 6px; font-size: 1.3rem; color: var(--navy); }
+  .acc-card form { display: grid; gap: 14px; margin-top: 16px; }
+  .acc-card form[hidden] { display: none; }
+  .acc-profile { display: grid; gap: 18px; }
+  .acc-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 5px; background: var(--surface-3); border-radius: var(--radius-sm); }
+  .acc-tabs button { font: 600 1rem var(--font-body, inherit); padding: 11px 10px; border: 0; border-radius: 6px; background: transparent; color: var(--text-2); cursor: pointer; }
+  .acc-tabs button[aria-selected="true"] { background: #fff; color: var(--accent); box-shadow: 0 1px 3px rgba(18, 24, 33, 0.14); }
+  .acc-tabs button:focus-visible, .acc-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .acc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; }
+  .acc-submit { justify-self: start; min-width: 200px; justify-content: center; }
+  .acc-link { justify-self: start; padding: 0; border: 0; background: none; color: var(--accent); font: inherit; font-size: 0.94rem; text-decoration: underline; cursor: pointer; }
+  .acc-check { display: flex; gap: 10px; align-items: flex-start; font-size: 0.92rem; color: var(--text-2); line-height: 1.45; }
+  .acc-check input { margin-top: 3px; width: 18px; height: 18px; flex: none; accent-color: var(--accent); }
+  .acc-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .acc-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .acc-actions .btn { display: inline-flex; align-items: center; gap: 8px; }
+  .acc-details summary, .acc-danger summary { cursor: pointer; font-weight: 600; color: var(--navy); }
+  .acc-details .acc-grid { margin-top: 12px; }
+  .acc-danger summary { color: var(--text-2); font-weight: 500; }
+  .acc-delete { justify-self: start; background: #fff; border: 1px solid var(--tomato); color: var(--tomato-2); }
+  .acc-delete:hover { background: var(--tomato); color: #fff; }
+  .acc-msg { margin: 0; padding: 12px 16px; border-radius: var(--radius-sm); font-weight: 500; background: rgba(18, 163, 107, 0.1); color: var(--ok); border: 1px solid rgba(18, 163, 107, 0.35); }
+  .acc-msg[data-kind="err"] { background: rgba(242, 70, 46, 0.08); color: var(--tomato-2); border-color: rgba(242, 70, 46, 0.4); }
+  @media (max-width: 640px) {
+    .acc-card { padding: 20px 16px; }
+    .acc-grid { grid-template-columns: 1fr; }
+    .acc-submit { justify-self: stretch; }
+    .acc-actions .btn { flex: 1 1 100%; justify-content: center; }
+  }
+</style>

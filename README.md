@@ -46,3 +46,13 @@ npm run build    # éles változat a dist/ mappába
 ## Élesítés előtt
 
 - `src/lib/site.js`: cégadatok kitöltése, `url` = saját domain, `indexable: true`
+
+## Vevői fiókok (regisztráció / bejelentkezés)
+
+A `/fiok` oldal és a `functions/api/fiok/[[path]].js` kezeli. A fiókokat Cloudflare KV tárolja, ezért egyszeri beállítás kell:
+
+1. Cloudflare → Storage & Databases → KV → **Create namespace** (pl. `quadris-fiokok`).
+2. Pages projekt → Settings → Bindings → **Add → KV namespace**: változónév `FIOKOK`, névtér az előbb létrehozott.
+3. Új telepítés (vagy „Retry deployment”), hogy a kötés életbe lépjen.
+
+Amíg a `FIOKOK` kötés nincs beállítva, a `/fiok` oldal „A regisztráció hamarosan elérhető” üzenetet mutat. A jelszó-visszaállító e-mail az ajánlatkérésnél használt `RESEND_API_KEY` és `QUOTE_FROM` beállítással megy ki. A jelszavakat PBKDF2-SHA256 kivonatként tároljuk, a munkamenet-süti HttpOnly.
