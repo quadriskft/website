@@ -39,7 +39,7 @@ const jsonLd = [
 ];
 ---
 <Base crumbs={[['Főoldal', '/'], [group.name, `/termekek/${group.slug}`]]} back={{ href: '/#termekcsoportok', label: 'Főoldal' }} title={group.name} description={`${group.name}: ${meta.text ?? ''} ${group.count} termék – kérjen ajánlatot online a Quadristól.`} image={groupImage(group.slug) ?? undefined} jsonLd={jsonLd}>
-  <section class="page-head">
+  <section class="page-head group-head">
     <div class="container">
       <div class="gh">
         <div>
@@ -161,7 +161,11 @@ const jsonLd = [
   .gh { display: flex; gap: 20px; align-items: flex-start; }
   .gh h1 { margin-bottom: 8px; }
   .gh .lead { margin: 0; }
-  .layout { display: flex; gap: 36px; padding-top: 32px; padding-bottom: 40px; align-items: flex-start; }
+  /* tömör fejléc: az első terméksor alja görgetés nélkül is látszik egy átlagos laptopon */
+  .group-head { padding: 14px 0 12px; }
+  .group-head :global(h1) { font-size: clamp(1.4rem, 2.4vw, 1.7rem); margin: 0; }
+  .group-head :global(.lead) { margin: 2px 0 0; font-size: 0.95rem; }
+  .layout { display: flex; gap: 36px; padding-top: 16px; padding-bottom: 40px; align-items: flex-start; }
   /* alkategóriánként 4 termék egy sorban (kisebb kijelzőn 3, mobilon 2) */
   .layout :global(.grid-products) { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
   @media (max-width: 1200px) { .layout :global(.grid-products) { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
@@ -175,7 +179,7 @@ const jsonLd = [
   .sidebar a:hover { background: var(--accent-soft); color: var(--navy); }
   .content { flex: 1; min-width: 0; }
   .cat-section { margin-bottom: 44px; }
-  .cat-section h2 { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.01em; display: flex; align-items: baseline; gap: 10px; padding-bottom: 12px; margin-bottom: 18px; border-bottom: 1px solid var(--line); }
+  .cat-section h2 { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.01em; display: flex; align-items: baseline; gap: 10px; padding-bottom: 8px; margin-bottom: 12px; border-bottom: 1px solid var(--line); }
   .cat-section h2 .muted { font-size: 0.95rem; font-weight: 500; }
   .cat-section h2.cat-title { align-items: center; }
   .cat-note { font-size: 1.05rem; font-weight: 400; letter-spacing: 0; margin-left: 6px; }
