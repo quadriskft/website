@@ -98,7 +98,7 @@ const jsonLd = [
 <Base crumbs={navCrumbs} back={backTo} title={product.code ? `${product.name} (${product.code})` : product.name} description={description} image={product.images?.[0]} type="product" jsonLd={jsonLd}>
   <div class="container">
 
-    <div class:list={['product', { 'wide-order': wideOrder, fit: !wideOrder && !orderForm, 'multi-img': gallery.length > 1, 'thumbs-in': gallery.length > 1 && !orderForm && !heroVideo }]}>
+    <div class:list={['product', { 'wide-order': wideOrder, fit: !orderForm, 'multi-img': gallery.length > 1, 'thumbs-in': gallery.length > 1 && !orderForm && !heroVideo }]}>
       <div class:list={['media', { 'has-specs': specs.length > 0 }]}>
         <div class="media-frame">
         {heroVideo
@@ -131,6 +131,7 @@ const jsonLd = [
       </div>
 
       <div class="info">
+        <div class="title-block">
         <span class="eyebrow">{showCategory ? category.name : group.name}</span>
         <h1 class="product-title">{family ? family.name : product.name}</h1>
         {product.stock && <p class="stock-line">Raktárról rendelhető</p>}
@@ -139,7 +140,9 @@ const jsonLd = [
             <button type="button" class="copy" data-copy={product.code} aria-label="Cikkszám másolása"><Icon name="Copy" size={15} /></button>
           </p>
         )}
+        </div>
 
+        <div class="info-body">
         {family ? (
           <div class="order card variant-order" id="rendeles">
             <h2 class="cut-title">{family.title ?? 'Rendelhető méretek'}</h2>
@@ -211,9 +214,9 @@ const jsonLd = [
           <div class="order card cut-order" id="meretre" data-cut-order data-product={JSON.stringify(publicProduct(product))} data-stock={wholeBar ? stockMm : undefined}>
             <h2 class="cut-title">Kért méretek</h2>
             {wholeBar ? (
-              <p class="muted small">A minimális rendelési mennyiség <strong>egy teljes szál ({stockMm.toLocaleString('hu-HU')} mm)</strong>. Kérésre méretre vágjuk, de vágás esetén is a teljes szál fizetendő. Adja meg, milyen hosszúságú darabokból hány darabra van szüksége – kiszámoljuk, hány szál szükséges hozzá.</p>
+              <p class="muted small">Minimális rendelés: <strong>egy teljes szál ({stockMm.toLocaleString('hu-HU')} mm)</strong> – méretre vágjuk, de ekkor is a teljes szál fizetendő.</p>
             ) : (
-              <p class="muted small">Adja meg, milyen hosszúságú szálakból hány darabra van szüksége – méretre vágást is vállalunk.{stockLength && <> Gyári szálhossz: <strong>{stockLength}{/\d$/.test(String(stockLength)) ? ' mm' : ''}</strong>.</>}</p>
+              <p class="muted small cut-generic">Adja meg, milyen hosszúságú szálakból hány darabra van szüksége – méretre vágást is vállalunk.{stockLength && <> Gyári szálhossz: <strong>{stockLength}{/\d$/.test(String(stockLength)) ? ' mm' : ''}</strong>.</>}</p>
             )}
             <div class="cut-head" aria-hidden="true"><span>Hossz [mm]</span><span>Darab</span><span></span></div>
             <div class="cut-rows" data-cut-rows></div>
@@ -287,6 +290,18 @@ const jsonLd = [
           <li>Több tétel egy ajánlatban</li>
           {SITE.phone && <li><span class="k">Telefon</span> <a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a></li>}
         </ul>
+        {/* asztali nézetben a műszaki adatok a jobb oldalon, a rendelési doboz alatt */}
+        {specs.length > 0 && (
+          <section class:list={['card', 'detail', 'info-specs', { few: specs.length <= 4 }]}>
+            <h2>Műszaki adatok</h2>
+            <table class="specs">
+              <tbody>
+                {specs.map(([key, value]) => <tr><th scope="row">{key}</th><td>{value}</td></tr>)}
+              </tbody>
+            </table>
+          </section>
+        )}
+        </div>
       </div>
     </div>
 
@@ -695,45 +710,82 @@ const jsonLd = [
     .media.has-specs { position: static; }
     .details-specs, .details.only-specs { display: none; }
   }
-  /* Asztali „egy képernyős” elrendezés: balra kép (+ kis képek) és műszaki adatok, jobbra cím és rendelési doboz.
-     A két oszlop egyforma magas, így a bal alsó és a jobb alsó doboz alja egy vonalban van; a kép kapja a műszaki
-     adatok után megmaradó helyet (kevés adat → nagyobb kép). A magasság a képernyőhöz igazodik, felső korláttal. */
+  .info-specs { display: none; }
+  /* Asztali „egy képernyős” elrendezés (a konfigurátoros oldalak kivételével):
+     felül középen a terméknév, mellette a cikkszám; alatta balra a kép teljes magasságban,
+     jobbra felül a rendelési doboz, alatta a műszaki adatok. A jobb oszlop teteje és alja a kép keretével egy vonalban. */
   @media (min-width: 861px) {
-    .product.fit { --fit-h: clamp(380px, calc(100dvh - var(--header-h) - 76px), 680px); align-items: stretch; min-height: var(--fit-h); padding-top: 10px; gap: 28px; }
-    .fit .media { position: static; display: flex; flex-direction: column; min-height: 0; }
-    /* hosszú jobb oszlopnál (pl. mérettábla) a kép nem nő a képernyőnél nagyobbra */
-    .fit .media-frame { flex: 1 1 0; display: flex; flex-direction: column; min-height: 170px; max-height: calc(var(--fit-h) * 0.8); }
-    .fit.multi-img .media-frame { min-height: calc(var(--fit-h) * 0.5); }
+    .product.fit { --fit-h: clamp(380px, calc(100dvh - var(--header-h) - 76px), 700px); height: var(--fit-h); padding-top: 8px;
+      display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 8px 24px; align-items: stretch; }
+    .fit .info { display: contents; }
+    .fit .title-block { grid-column: 1 / -1; grid-row: 1; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 2px 20px; text-align: center; }
+    .fit .title-block .eyebrow { display: none; }
+    .fit .title-block h1 { font-size: clamp(1.3rem, 2.1vw, 1.7rem); margin: 0; }
+    .fit .code-line { margin: 0; font-size: 0.9rem; }
+    .fit .stock-line { margin: 0; font-size: 0.8rem; padding: 2px 10px; }
+    .fit .copy { width: 26px; height: 26px; }
+    .fit .media { grid-column: 1; grid-row: 2; position: static; display: flex; flex-direction: column; min-height: 0; }
+    .fit .media-frame { flex: 1 1 0; display: flex; flex-direction: column; min-height: 0; }
     .fit .media :global(.product-visual), .fit .hero-video { aspect-ratio: auto; flex: 1 1 0; min-height: 0; }
     .fit .hero-video video { height: 100%; object-fit: contain; }
-    /* a nagyítás-jelzés a képdoboz bal alsó sarkában, nem külön sorban */
     .fit .zoom-hint { position: relative; z-index: 1; flex: none; height: 22px; margin: -28px 0 6px 12px; font-size: 0.74rem; pointer-events: none; }
-    .fit .gallery { flex: none; margin-top: 6px; gap: 6px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; }
-    .fit .thumb-btn { flex: none; }
-    .fit .gallery img { width: 58px; height: 42px; }
-    .fit .media-specs { flex: none; margin-top: 8px; padding: 9px 16px 8px; }
-    .fit .media-specs h2 { font-size: 0.95rem; margin: 0 0 2px; }
-    .fit .media-specs .specs tbody { display: grid; grid-template-columns: 1fr 1fr; column-gap: 24px; }
-    .fit .media-specs .specs tr { display: flex; border-bottom: 1px solid var(--line); }
-    .fit .media-specs .specs th, .fit .media-specs .specs td { padding: 3px 0; font-size: 0.84rem; line-height: 1.35; border-bottom: 0; }
-    .fit .media-specs .specs th { flex: 0 0 46%; width: auto; }
-    .fit .info { display: flex; flex-direction: column; min-height: 0; }
-    .fit .info > .eyebrow { display: none; }
-    .fit .info h1 { font-size: clamp(1.4rem, 2.2vw, 1.8rem); margin: 0 0 4px; }
-    .fit .code-line { margin: 0; font-size: 0.9rem; }
-    .fit .copy { width: 26px; height: 26px; }
-    /* a rendelési doboz az oszlop aljáig ér; a segítő sorok itt nem jelennek meg (a telefonszám a láblécben és a Kapcsolat oldalon van) */
-    .fit .order { flex: 1 1 auto; margin: 8px 0 0; padding: 12px 18px; }
-    .fit .assurances { display: none; }
+    .fit .media-specs, .fit .assurances { display: none; }
+    .fit .info-body { grid-column: 2; grid-row: 2; display: flex; flex-direction: column; gap: 8px; min-height: 0; }
+    /* a jobb oszlop két doboza a tartalmához igazodik: a szabad helyet egyenlően kapják, így egyikben sem marad nagy üres terület */
+    .fit .order { flex: 1 0 auto; min-height: 0; overflow-y: auto; scrollbar-width: thin; margin: 0; padding: 10px 18px; }
+    /* műszaki adatok: legfeljebb a kép magasságának feléig; méretre vágásnál a rendelési doboz után megmaradó hely */
+    .fit .info-specs { display: block; flex: 1 1 auto; min-height: 58px; overflow-y: auto; scrollbar-width: thin; margin: 0; padding: 9px 16px 8px; }
+    /* mérettáblás termék: a műszaki adatok legfeljebb a magasság harmadát kapják, a többi a rendelési dobozé */
+    .fit .variant-order { flex: 1 1 0; }
+    .fit .variant-order ~ .info-specs { flex: 0 1 auto; max-height: 30%; }
+    .fit .order.cut-order > .add-row { justify-self: start; }
+    /* kevés (legfeljebb 4) adat: egy oszlopban, szellősebben */
+    .fit .info-specs.few .specs tbody { grid-template-columns: 1fr; }
+    .fit .info-specs.few .specs th, .fit .info-specs.few .specs td { padding: 5px 0; font-size: 0.9rem; }
+    .fit .info-specs.few .specs th { flex-basis: 40%; }
+    /* méretre vágás: a megjegyzés és az „Ajánlatkérőbe” gomb egy sorban, így több hely marad a műszaki adatoknak */
+    .fit .order.cut-order { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; align-content: start; }
+    .fit .order.cut-order > * { grid-column: 1 / -1; }
+    .fit .order.cut-order > .cut-note { grid-column: 1; }
+    .fit .order.cut-order > .cut-actions { grid-column: 2; align-self: end; }
+    .fit .order.cut-order > .cut-error { order: 1; }
+    .fit .order.cut-order > .muted.small:last-child { order: 2; }
+    .fit .info-specs h2 { font-size: 0.95rem; margin: 0 0 2px; }
+    .fit .info-specs .specs tbody { display: grid; grid-template-columns: 1fr 1fr; column-gap: 24px; }
+    .fit .info-specs .specs tr { display: flex; border-bottom: 1px solid var(--line); }
+    .fit .info-specs .specs th, .fit .info-specs .specs td { padding: 3px 0; font-size: 0.84rem; line-height: 1.35; border-bottom: 0; }
+    .fit .info-specs .specs th { flex: 0 0 46%; width: auto; }
+    /* kevés tartalmú rendelési doboz (csak darabszám és gomb): a tartalom a doboz közepén */
+    .fit .order:not(.cut-order):not(.variant-order) { display: flex; flex-direction: column; justify-content: safe center; padding: 18px clamp(18px, 6%, 48px); text-align: center; }
+    .fit .order:not(.cut-order):not(.variant-order) .small { margin-top: 12px; font-size: 0.86rem; }
+    /* mérettáblás termék: a táblázat kapja a maradék helyet, hosszú listánál a dobozon belül görgethető */
+    .fit .variant-order { display: flex; flex-direction: column; gap: 6px; }
+    .fit .variant-order > * { flex: none; margin-top: 0; margin-bottom: 0; }
+    .fit .variant-order > .variant-table-wrap { flex: 0 1 auto; min-height: 76px; overflow-y: auto; scrollbar-width: thin; margin: 0; }
+    .fit .variant-table { font-size: 0.86rem; }
+    .fit .variant-table th, .fit .variant-table td { padding: 4px 10px; }
+    .fit .variant-table thead th { position: sticky; top: 0; background: #fff; z-index: 1; }
+    .fit .variant-label { font-size: 0.68rem; }
+    .fit .variant-select { font-size: 0.92rem; padding: 6px 12px; }
+    .fit .note-field { margin-top: 0; gap: 3px; }
+    .fit .note-field .input { padding: 6px 12px; }
+    .fit .family-lengths { margin-top: 2px; }
+    .fit .family-lengths .lengths-hint { margin: 0 0 4px; }
+    .fit .order-note { margin: 0; font-size: 0.84rem; }
+    .fit :global(.qty button) { height: 36px; }
     .fit .cut-title { font-size: 1rem; margin: 0 0 2px; }
     .fit .small { font-size: 0.8rem; margin: 6px 0 0; }
     .fit .cut-head { margin: 8px 0 4px; font-size: 0.72rem; }
     .fit .cut-order :global(.cut-row .input) { padding: 7px 11px; }
-    .fit .add-row { margin-top: 8px; padding: 5px 12px; font-size: 0.72rem; }
+    .fit .add-row { margin-top: 6px; padding: 5px 12px; font-size: 0.72rem; }
     .fit .cut-note-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
-    .fit .cut-note { min-height: 0; height: 38px; margin-top: 8px; padding-top: 7px; padding-bottom: 7px; font-size: 0.9rem; resize: none; }
-    .fit .cut-actions { margin: 8px 0 2px; }
+    .fit .cut-note { min-height: 0; height: 36px; margin-top: 6px; padding-top: 7px; padding-bottom: 7px; font-size: 0.9rem; resize: none; }
+    .fit .cut-actions { margin: 6px 0 0; }
     .fit .order .btn { padding-top: 10px; padding-bottom: 10px; }
+  }
+  /* alacsony képernyőn (kis laptop, nagyított böngésző) az árra vonatkozó megjegyzés nem fér ki a méretre vágós / mérettáblás dobozba */
+  @media (min-width: 861px) and (max-height: 720px) {
+    .fit .cut-order > .muted.small:last-child, .fit .variant-order > .muted.small:last-child, .fit .cut-generic, .fit .variant-order > .cut-title + .muted.small { display: none; }
   }
   /* Asztalon a választható kis képek a főkép keretén belül, jobbra, elválasztó vonallal (a konfigurátoros oldalak kivételével).
      A főkép a bal oldali részt tölti ki, így a nagyítás (a főképre kattintva) nem ér a kis képekre. */
@@ -744,10 +796,6 @@ const jsonLd = [
     .thumbs-in .thumb-btn { flex: none; }
     .thumbs-in .gallery img { width: 70px; height: 54px; }
     .thumbs-in .zoom-hint { position: relative; z-index: 1; height: 22px; margin: -28px 0 6px 12px; font-size: 0.74rem; pointer-events: none; }
-  }
-  /* alacsony képernyőn (kis laptop, nagyított böngésző) az árra vonatkozó megjegyzés nem fér ki a dobozba */
-  @media (min-width: 861px) and (max-height: 720px) {
-    .fit .cut-order > .muted.small:last-child { display: none; }
   }
   .detail h2 { font-size: 1.2rem; font-weight: 700; }
   .specs { width: 100%; border-collapse: collapse; }

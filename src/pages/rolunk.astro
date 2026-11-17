@@ -5,59 +5,59 @@ import Icon from '../components/Icon.astro';
 import { SITE } from '../lib/site.js';
 
 const reasons = [
-  ['Egy partner, egy ajánlat', 'nem kell tíz beszállítótól összeszedni egy felépítmény anyagát.'],
-  ['Raktárkészlet Vecsésen', 'saját raktárkészletről szolgálunk ki, és a kiszállításban is segítünk.'],
-  ['Méretre vágás', 'a profilokat a kért hosszra vágjuk, így nem marad hulladék a műhelyben.'],
-  ['Szakmai segítség', 'ha nem biztos a választásban, segítünk megtalálni a megfelelő megoldást.'],
-  ['Egyedi igények', 'hátsó ajtót és redőnyt adatlap alapján, az Ön méretére kérhet.'],
+  ['Egy partner, egy ajánlat', 'minden egy helyről, egy ajánlatban.'],
+  ['Raktárkészlet Vecsésen', 'raktárról szolgálunk ki, a kiszállításban is segítünk.'],
+  ['Méretre vágás', 'a profilokat a kért hosszra vágjuk.'],
+  ['Szakmai segítség', 'segítünk kiválasztani a megfelelő megoldást.'],
+  ['Egyedi igények', 'hátsó ajtó és redőny adatlap alapján, méretre.'],
 ];
 ---
 <Base title="Rólunk" description={`A ${SITE.name} ${SITE.foundingYear} óta haszongépjármű-felépítmények alkatrészeinek és alapanyagainak szakkereskedője Vecsésen.`} crumbs={[['Főoldal', '/'], ['Rólunk', '/rolunk']]} back={{ href: '/', label: 'Főoldal' }}>
-  <section class="page-head">
+  <section class="page-head about-head">
     <div class="container">
-      <span class="eyebrow">Quadris Kft.</span>
-      <h1>Minden alkatrész a felépítményéhez.<br />Egy partnertől, {SITE.foundingYear} óta.</h1>
+      <h1>Minden alkatrész a felépítményéhez. Egy partnertől, {SITE.foundingYear} óta.</h1>
     </div>
   </section>
 
   <article class="container about">
-    <p class="intro">A Quadris Kft. haszongépjármű-felépítmények alkatrészeinek és alapanyagainak szakkereskedője. Felépítménygyártókat, járműépítő és javító műhelyeket, flottaüzemeltetőket szolgálunk ki Vecsésről, hogy a platótól a hűtődobozig mindent egy helyről, egy ajánlatban lehessen beszerezni.</p>
-
-    <p>{SITE.foundingYear}-ben azzal a céllal indultunk, hogy a felépítményépítőknek ne kelljen minden profilért, zárért és szerelvényért máshová fordulniuk. Azóta a kínálatunk a nyers alumínium és acél profiloktól a ponyvás, platós, dobozos és hűtős felépítmények rendszerein át a rakományrögzítésig és a kiegészítőkig mindent lefed, amire egy felépítmény megépítéséhez vagy javításához szükség van.</p>
-
-    <p>Amiben a partnereink számíthatnak ránk:</p>
-    <ul class="reasons">
-      {reasons.map(([t, d]) => <li><Icon name="CircleCheck" size={20} /><span><strong>{t}</strong> – {d}</span></li>)}
-    </ul>
-
-    <p>A felépítménygyártás változik: könnyebb szerkezetek, gyorsabb szerelés, egyre több egyedi igény. A kínálatunkat ehhez igazítjuk, az online ajánlatkérővel és a konfigurátorral pedig azt szeretnénk elérni, hogy a rendelés előkészítése percek kérdése legyen – a szakmai kérdésekben pedig továbbra is személyesen állunk rendelkezésre.</p>
-
-    <p class="contact-line">Keressen minket bizalommal: {SITE.address} · <a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a> · <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
-    <p class="actions">
-      <a class="btn cta-quote" href="/ajanlatkeres">Ajánlatkérés <Icon name="ArrowRight" size={16} /></a>
-      <a class="btn btn-ghost" href="/kapcsolat">Kapcsolat</a>
-    </p>
+    <div class="about-text">
+      <p class="intro">A Quadris Kft. haszongépjármű-felépítmények alkatrészeinek és alapanyagainak szakkereskedője. Felépítménygyártókat, járműépítő és javító műhelyeket, flottaüzemeltetőket szolgálunk ki Vecsésről, hogy a platótól a hűtődobozig mindent egy helyről, egy ajánlatban lehessen beszerezni.</p>
+      <p>A kínálatunk a nyers alumínium és acél profiloktól a ponyvás, platós, dobozos és hűtős felépítmények rendszerein át a rakományrögzítésig és a kiegészítőkig mindent lefed, amire egy felépítmény megépítéséhez vagy javításához szükség van.</p>
+      <p>A felépítménygyártás változik: könnyebb szerkezetek, gyorsabb szerelés, egyre több egyedi igény. A kínálatunkat ehhez igazítjuk, az online ajánlatkérővel és a konfigurátorral pedig azt szeretnénk elérni, hogy a rendelés előkészítése percek kérdése legyen – a szakmai kérdésekben pedig továbbra is személyesen állunk rendelkezésre.</p>
+    </div>
+    <div class="about-side">
+      <p class="side-title">Amiben a partnereink számíthatnak ránk</p>
+      <ul class="reasons">
+        {reasons.map(([t, d]) => <li><Icon name="CircleCheck" size={18} /><span><strong>{t}</strong> – {d}</span></li>)}
+      </ul>
+      <p class="contact-line">{SITE.address} · <a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a> · <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+      <p class="actions">
+        <a class="btn cta-quote" href="/ajanlatkeres">Ajánlatkérés <Icon name="ArrowRight" size={16} /></a>
+        <a class="btn btn-ghost" href="/kapcsolat">Kapcsolat</a>
+      </p>
+    </div>
   </article>
 </Base>
 
 <style>
-  .page-head h1 { max-width: 24ch; }
-  .about { max-width: 860px; padding-top: 30px; padding-bottom: 60px; }
-  .about p { margin: 0 0 18px; font-size: 1.04rem; line-height: 1.7; color: var(--text-2); }
-  .about .intro { font-size: 1.2rem; line-height: 1.6; color: var(--navy); }
-  .reasons { list-style: none; margin: 0 0 22px; padding: 0; display: grid; gap: 10px; }
-  .reasons li { display: flex; gap: 12px; align-items: flex-start; font-size: 1.02rem; line-height: 1.55; color: var(--text-2); }
+  /* tömör fejléc egy sorban, alatta széles, kéthasábos szöveg: megnyitáskor lehetőleg az egész látszik */
+  .about-head { padding: 14px 0 12px; }
+  .about-head h1 { font-size: clamp(1.3rem, 2.3vw, 1.75rem); margin: 0; }
+  .about { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 16px 48px; padding-top: 16px; padding-bottom: 32px; }
+  .about p { margin: 0 0 12px; font-size: 0.98rem; line-height: 1.6; color: var(--text-2); }
+  .about .intro { font-size: 1.1rem; line-height: 1.55; color: var(--navy); }
+  .side-title { font-weight: 700; color: var(--navy) !important; margin-bottom: 10px !important; }
+  .reasons { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 8px; }
+  .reasons li { display: flex; gap: 10px; align-items: flex-start; font-size: 0.96rem; line-height: 1.5; color: var(--text-2); }
   .reasons :global(svg) { flex: none; margin-top: 3px; color: var(--accent); }
   .reasons strong { color: var(--navy); }
-  .about .contact-line { margin-top: 6px; color: var(--navy); font-weight: 500; }
-  .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px !important; }
-  .actions .btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none !important; }
+  .about .contact-line { color: var(--navy); font-weight: 500; }
+  .actions { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 !important; }
+  .actions .btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none !important; padding-top: 10px; padding-bottom: 10px; }
   /* piros = ajánlatkérés */
   .cta-quote { background: var(--tomato); border-color: var(--tomato); color: #fff; }
   .cta-quote:hover { background: var(--tomato-2); }
-  @media (max-width: 600px) {
-    .about { padding-top: 22px; }
-    .about p, .reasons li { font-size: 1rem; }
-    .about .intro { font-size: 1.1rem; }
+  @media (max-width: 900px) {
+    .about { grid-template-columns: 1fr; }
   }
 </style>
