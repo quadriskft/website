@@ -3,6 +3,25 @@ import Icon from './Icon.astro';
 import { groups, groupImage, productsIn } from '../lib/catalog.js';
 
 // Mobilon a kategóriakártya alatt vízszintesen húzható sávban a csoport összes terméke (a képek lusta betöltéssel)
+
+// A főoldali kártyák alkategória-gombjai: rövidített / összevont feliratok (a kategóriaoldal alkategóriái nem változnak).
+// [felirat, cél alkategória, a gombhoz tartozó alkategóriák (darabszám)]
+const HOME_CHIPS = {
+  'aluminium-lemezek': [
+    ['Natúr alumínium', 'sima-lemez'], ['Cseppmintás és bordás', 'cseppmintas-lemez'],
+    ['Védőfóliás festett', 'festett-lemez'], ['Védőfóliás eloxált', 'elox-lemez'],
+  ],
+  'aluminium-alvaz-profilok': [
+    ['Keret- és aláfutásgátló profilok', 'keret-profilok', ['keret-profilok', 'alafutasgatlo-profilok']], ['Kötőelemek', 'kotoelemek'],
+    ['Hossz- és kereszttartók', 'hossztartok', ['hossztartok', 'kereszttartok']], ['Targonca ütköző', 'targonca-utkozo'],
+  ],
+};
+const chipsOf = (g) => {
+  const count = (slug) => g.categories.find((c) => c.slug === slug)?.count ?? 0;
+  return HOME_CHIPS[g.slug]
+    ? HOME_CHIPS[g.slug].map(([name, slug, sum]) => ({ name, slug, count: (sum ?? [slug]).reduce((n, x) => n + count(x), 0) }))
+    : g.categories;
+};
 ---
   <div class="hero-video">
     <video class="hv" muted loop playsinline preload="metadata"
@@ -55,7 +74,7 @@ import { groups, groupImage, productsIn } from '../lib/catalog.js';
               </a>
               {g.categories.length > 1 && (
                 <ul class="m-chips">
-                  {g.categories.map((c) => (
+                  {chipsOf(g).map((c) => (
                     <li><a class="metal-chip" href={`/termekek/${g.slug}#${c.slug}`}>{c.name} <span class="muted">{c.count}</span></a></li>
                   ))}
                 </ul>
@@ -323,9 +342,16 @@ import { groups, groupImage, productsIn } from '../lib/catalog.js';
   .m-chips :global(.m-chip-row .metal-chip) { flex: 1 1 auto; justify-content: center; }
   /* asztalon: legfeljebb 7 alkategóriánál a termékszám helyett az alkategóriák neve áll (darabszám nélkül) */
   @media (min-width: 641px) {
+/* a kategórianevek soronként egy vonalban: a név a kép alatt, kétsoros helyen középre zárva */
+    .m-group-title { justify-content: flex-start; gap: 0; padding: 12px 10px 14px; }
+    .m-group-title h3 { margin: 0; min-height: 2.4em; display: flex; align-items: center; justify-content: center; }
+    .m-count { margin: auto 0; }
     .has-subs .m-count { display: none; }
-    .has-subs .m-group-title { padding-bottom: 12px; }
-    .has-subs .m-chips { display: flex; justify-content: center; }
+    .has-subs .m-group-head { flex: none; }
+    .has-subs .m-group-title { padding-bottom: 4px; }
+    /* az alkategória-gombok a név alatti térben függőlegesen középen */
+    .has-subs .m-chips { display: flex; flex: 1 1 auto; justify-content: center; align-content: center; padding-top: 8px; }
+    .has-subs .m-chips.is-packed { justify-content: center; }
     .has-subs .m-chips .metal-chip .muted { display: none; }
   }
   .m-strip { display: none; }
