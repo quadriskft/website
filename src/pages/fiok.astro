@@ -4,9 +4,8 @@ import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 ---
 <Base crumbs={[['Főoldal', '/'], ['Fiókom', '/fiok']]} back={{ href: '/', label: 'Főoldal' }} title="Bejelentkezés és regisztráció" description="Regisztráljon vagy jelentkezzen be a Quadris Kft. weboldalán: az adatai az ajánlatkérésnél előre kitöltve jelennek meg.">
-  <section class="page-head">
+  <section class="page-head acc-head">
     <div class="container">
-      <span class="eyebrow">Vevői fiók</span>
       <h1 data-acc-title>Bejelentkezés és regisztráció</h1>
       <p class="lead" data-acc-lead>Regisztrált vevőként nem kell minden ajánlatkérésnél újra megadnia az adatait.</p>
     </div>
@@ -19,7 +18,6 @@ import Icon from '../components/Icon.astro';
     <div class="acc-auth" data-view="auth">
      <div class="card acc-card">
       <h2>Bejelentkezés</h2>
-      <p class="muted">Ha már regisztrált nálunk.</p>
       <form id="panel-login" data-form="belepes" novalidate>
         <div class="field"><label for="l-email">E-mail</label><input id="l-email" name="email" type="email" required autocomplete="username" maxlength="160" /></div>
         <div class="field"><label for="l-password">Jelszó</label><input id="l-password" name="password" type="password" required autocomplete="current-password" maxlength="200" /></div>
@@ -29,15 +27,14 @@ import Icon from '../components/Icon.astro';
      </div>
      <div class="card acc-card" id="regisztracio">
       <h2>Regisztráció</h2>
-      <p class="muted">Új vevőként: az adatai az ajánlatkérésnél előre kitöltve jelennek meg.</p>
       <form id="panel-register" data-form="regisztracio" novalidate>
-        <div class="acc-grid">
+        <div class="acc-grid acc-grid3">
           <div class="field"><label for="r-name">Név *</label><input id="r-name" name="name" required autocomplete="name" maxlength="120" /></div>
           <div class="field"><label for="r-company">Cégnév *</label><input id="r-company" name="company" required autocomplete="organization" maxlength="160" /></div>
+          <div class="field"><label for="r-tax">Adószám</label><input id="r-tax" name="taxNumber" autocomplete="off" maxlength="20" placeholder="nem kötelező" /></div>
           <div class="field"><label for="r-email">E-mail *</label><input id="r-email" name="email" type="email" required autocomplete="email" maxlength="160" /></div>
           <div class="field"><label for="r-phone">Telefon *</label><input id="r-phone" name="phone" type="tel" required autocomplete="tel" maxlength="40" /></div>
-          <div class="field"><label for="r-tax">Adószám</label><input id="r-tax" name="taxNumber" autocomplete="off" maxlength="20" placeholder="nem kötelező" /></div>
-          <div class="field"><label for="r-password">Jelszó * <span class="muted">(legalább 8 karakter)</span></label><input id="r-password" name="password" type="password" required minlength="8" autocomplete="new-password" maxlength="200" /></div>
+          <div class="field"><label for="r-password">Jelszó *</label><input id="r-password" name="password" type="password" required minlength="8" autocomplete="new-password" maxlength="200" placeholder="legalább 8 karakter" /></div>
         </div>
         <div class="acc-hp" aria-hidden="true"><label for="r-website">Weboldal</label><input id="r-website" name="website" tabindex="-1" autocomplete="off" /></div>
         <label class="acc-check"><input type="checkbox" name="consent" required /> <span>Elfogadom az <a href="/adatkezeles" target="_blank" rel="noopener">adatkezelési tájékoztatót</a>, és hozzájárulok az adataim kezeléséhez a fiókom fenntartása céljából. *</span></label>
@@ -204,20 +201,30 @@ import Icon from '../components/Icon.astro';
 <style>
   .acc { max-width: 1080px; padding-bottom: 72px; display: grid; gap: 18px; }
   /* balra a bejelentkezés, jobbra a regisztráció */
-  .acc-auth { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 18px; align-items: start; }
+  .acc-auth { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 18px; align-items: stretch; }
   .acc-auth[hidden] { display: none; }
   .acc > .acc-card { max-width: 560px; }
-  .acc-card { padding: 26px 28px; }
-  .acc-card h2 { margin: 0 0 6px; font-size: 1.3rem; color: var(--navy); }
-  .acc-card form { display: grid; gap: 14px; margin-top: 16px; }
+  /* tömör fejléc és űrlapok: a két kártya alja görgetés nélkül is látszik egy átlagos laptopon */
+  .acc-head { padding: 14px 0 12px; }
+  .acc-head h1 { font-size: 1.6rem; margin: 0; }
+  .acc-head .lead { margin: 2px 0 0; font-size: 0.95rem; }
+  .acc { padding-top: 14px; }
+  .acc-card { padding: 16px 20px; }
+  .acc-card h2 { margin: 0; font-size: 1.15rem; color: var(--navy); }
+  .acc-card form { display: grid; gap: 10px; margin-top: 10px; }
+  .acc-card .field { gap: 3px; }
+  .acc-card .field label { font-size: 0.82rem; }
+  .acc-card .field input { padding: 6px 11px; }
+  .acc-card .btn { padding-top: 9px; padding-bottom: 9px; }
+  .acc-grid3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
   .acc-card form[hidden] { display: none; }
   .acc-profile { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 18px; align-items: start; }
   .acc-profile[hidden] { display: none; }
   .acc-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  .acc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; }
+  .acc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; }
   .acc-submit { justify-self: start; min-width: 200px; justify-content: center; }
   .acc-link { justify-self: start; padding: 0; border: 0; background: none; color: var(--accent); font: inherit; font-size: 0.94rem; text-decoration: underline; cursor: pointer; }
-  .acc-check { display: flex; gap: 10px; align-items: flex-start; font-size: 0.92rem; color: var(--text-2); line-height: 1.45; }
+  .acc-check { display: flex; gap: 10px; align-items: flex-start; font-size: 0.86rem; color: var(--text-2); line-height: 1.45; }
   .acc-check input { margin-top: 3px; width: 18px; height: 18px; flex: none; accent-color: var(--accent); }
   .acc-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
   .acc-actions { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -230,10 +237,11 @@ import Icon from '../components/Icon.astro';
   .acc-msg[data-kind="err"] { background: rgba(242, 70, 46, 0.08); color: var(--tomato-2); border-color: rgba(242, 70, 46, 0.4); }
   @media (max-width: 860px) {
     .acc-auth, .acc-profile { grid-template-columns: 1fr; }
+    .acc-grid3 { grid-template-columns: 1fr 1fr !important; }
   }
   @media (max-width: 640px) {
     .acc-card { padding: 20px 16px; }
-    .acc-grid { grid-template-columns: 1fr; }
+    .acc-grid, .acc-grid3 { grid-template-columns: 1fr !important; }
     .acc-submit { justify-self: stretch; }
     .acc-actions .btn { flex: 1 1 100%; justify-content: center; }
   }
