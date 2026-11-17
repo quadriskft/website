@@ -1,13 +1,126 @@
 ---
-// Rólunk – tartalom később kerül ide
+// Rólunk – cégbemutató (saját fotók később kerülnek ide; addig a főkategóriák képei szerepelnek)
 import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { SITE } from '../lib/site.js';
+import { stats, groupImage } from '../lib/catalog.js';
+
+const productCount = `${Math.floor(stats.products / 100) * 100}+`;
+const areas = [
+  { title: 'Alumínium és acél profilok', text: 'Alváz-, padló-, oldalfal- és szegőprofilok, zártszelvények, U és L profilok, lemezek.', group: 'aluminium-alvaz-profilok' },
+  { title: 'Ponyvás és platós rendszerek', text: 'Rolós és fix ponyvarendszerek, rakoncák, oldalfalak, zárak, zsanérok.', group: 'elhuzhato-roloponyvas-rendszer' },
+  { title: 'Dobozos és hűtős felépítmények', text: 'Profilok, hátsó ajtók, áthajtó rámpák, redőnyök, zárszerkezetek.', group: 'zart-dobozos-es-hutos-profilok' },
+  { title: 'Kiegészítők', text: 'Rakományrögzítés, sárvédők, szerszámosládák, gumi- és kéderprofilok, padlólemezek, világítás, szellőzés.', group: 'rakomanyrogzites' },
+];
+const reasons = [
+  ['Egy partner, egy ajánlat', 'Nem kell tíz beszállítótól összeszedni egy felépítmény anyagát.'],
+  ['Raktárkészlet Vecsésen', 'Saját raktárkészletről szolgálunk ki, és a kiszállításban is segítünk.'],
+  ['Méretre vágás', 'A profilokat a kért hosszra vágjuk, így nem marad hulladék a műhelyben.'],
+  ['Szakmai segítség', 'Ha nem biztos a választásban, segítünk megtalálni a megfelelő profilt vagy szerelvényt.'],
+  ['Egyedi megoldások', 'Hátsó ajtót és redőnyt adatlap alapján, az Ön méretére kérhet.'],
+  ['Gyors ajánlatkérés', 'Az online listát összeállítja, mi személyre szabott árajánlattal jelentkezünk.'],
+];
+const figures = [[String(SITE.foundingYear), 'alapítás éve'], [productCount, 'termék'], [String(stats.groups), 'termékkategória'], ['1', 'partner']];
 ---
-<Base title="Rólunk" noindex crumbs={[['Főoldal', '/'], ['Rólunk', '/rolunk']]} back={{ href: '/', label: 'Főoldal' }}>
+<Base title="Rólunk" description={`A ${SITE.name} ${SITE.foundingYear} óta haszongépjármű-felépítmények alkatrészeinek és alapanyagainak szakkereskedője Vecsésen: profilok, rendszerek, szerelvények egy partnertől.`} crumbs={[['Főoldal', '/'], ['Rólunk', '/rolunk']]} back={{ href: '/', label: 'Főoldal' }}>
   <section class="page-head">
     <div class="container">
       <span class="eyebrow">Quadris Kft.</span>
-      <h1>Rólunk</h1>
-      <p class="lead">Ez az oldal hamarosan elkészül.</p>
+      <h1>Minden alkatrész a felépítményéhez.<br />Egy partnertől, {SITE.foundingYear} óta.</h1>
+      <p class="lead">A Quadris Kft. haszongépjármű-felépítmények alkatrészeinek és alapanyagainak szakkereskedője. Felépítménygyártókat, járműépítő és javító műhelyeket, flottaüzemeltetőket szolgálunk ki Vecsésről, hogy a platótól a hűtődobozig mindent egy helyről, egy ajánlatban lehessen beszerezni.</p>
     </div>
   </section>
+
+  <div class="container about">
+    <ul class="figures">
+      {figures.map(([n, label]) => <li class="card"><strong>{n}</strong><span>{label}</span></li>)}
+    </ul>
+
+    <section>
+      <h2>Amit kínálunk</h2>
+      <p class="sub">A nyers profiltól a kész szerelvényig.</p>
+      <div class="areas">
+        {areas.map((a) => (
+          <a class="card area" href={`/termekek/${a.group}`}>
+            {groupImage(a.group) && <img src={groupImage(a.group)} alt="" loading="lazy" width="800" height="560" />}
+            <div><h3>{a.title}</h3><p>{a.text}</p></div>
+          </a>
+        ))}
+      </div>
+      <p class="more"><a href="/#termekcsoportok">Mind a {stats.groups} termékkategória <Icon name="ArrowRight" size={16} /></a></p>
+    </section>
+
+    <section>
+      <h2>Miért velünk</h2>
+      <ul class="reasons">
+        {reasons.map(([t, d]) => <li><Icon name="CircleCheck" size={20} /><div><strong>{t}</strong><span>{d}</span></div></li>)}
+      </ul>
+    </section>
+
+    <section class="card vision">
+      <h2>Hová tartunk</h2>
+      <p>A felépítménygyártás változik: könnyebb szerkezetek, gyorsabb szerelés, egyedi igények. A kínálatunkat ehhez igazítjuk, az online katalógussal és a konfigurátorral pedig azt szeretnénk elérni, hogy a rendelés előkészítése percek kérdése legyen.</p>
+    </section>
+
+    <section class="cta">
+      <div>
+        <h2>Kérdése van, vagy egyedi megoldást keres?</h2>
+        <p>{SITE.address} · <a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a> · {SITE.openingHours}</p>
+      </div>
+      <div class="cta-btns">
+        <a class="btn cta-quote" href="/ajanlatkeres">Ajánlatkérés <Icon name="ArrowRight" size={16} /></a>
+        <a class="btn btn-ghost" href="/kapcsolat">Kapcsolat</a>
+      </div>
+    </section>
+  </div>
 </Base>
+
+<style>
+  .page-head h1 { max-width: 22ch; }
+  .page-head .lead { max-width: 74ch; }
+  .about { display: grid; gap: 44px; padding-top: 32px; padding-bottom: 56px; }
+  .about h2 { font-size: 1.5rem; font-weight: 700; color: var(--navy); margin: 0 0 4px; }
+  .sub { margin: 0 0 18px; color: var(--muted); }
+  .figures { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  .figures li { padding: 20px 16px; text-align: center; display: grid; gap: 2px; }
+  .figures strong { font-size: clamp(1.7rem, 3.4vw, 2.4rem); font-weight: 700; color: var(--accent); line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .figures span { font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .areas { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  .area { display: flex !important; flex-direction: column; padding: 0; overflow: hidden; color: inherit; text-decoration: none !important; transition: transform 0.2s ease; }
+  .area:hover { transform: translateY(-3px); }
+  .area img { display: block; width: 100%; aspect-ratio: 10 / 7; object-fit: cover; background: #fff; border-bottom: 1px solid var(--line); }
+  .area div { padding: 14px 16px 18px; }
+  .area h3 { margin: 0 0 4px; font-size: 1.02rem; color: var(--navy); }
+  .area p { margin: 0; font-size: 0.9rem; color: var(--text-2); line-height: 1.5; }
+  .more { margin: 14px 0 0; }
+  .more a { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; }
+  .reasons { list-style: none; margin: 14px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 28px; }
+  .reasons li { display: flex; gap: 12px; align-items: flex-start; }
+  .reasons :global(svg) { flex: none; margin-top: 2px; color: var(--accent); }
+  .reasons strong { display: block; color: var(--navy); }
+  .reasons span { display: block; font-size: 0.92rem; color: var(--text-2); line-height: 1.5; }
+  .vision { padding: 26px 28px; }
+  .vision p { margin: 8px 0 0; max-width: 80ch; color: var(--text-2); line-height: 1.6; }
+  .cta { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding: 26px 28px; border-radius: var(--radius); background: var(--navy); color: #fff; }
+  .cta h2 { color: #fff; font-size: 1.3rem; }
+  .cta p { margin: 6px 0 0; color: rgba(246, 243, 236, 0.84); font-size: 0.94rem; }
+  .cta p a { color: #fff; }
+  .cta-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cta-btns .btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none !important; }
+  /* piros = ajánlatkérés */
+  .cta-quote { background: var(--tomato); border-color: var(--tomato); color: #fff; }
+  .cta-quote:hover { background: var(--tomato-2); }
+  .cta .btn-ghost { background: transparent; color: #fff; border-color: rgba(255, 255, 255, 0.5); }
+  @media (max-width: 960px) {
+    .areas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .reasons { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 600px) {
+    .about { gap: 32px; padding-top: 22px; }
+    .figures { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .reasons { grid-template-columns: 1fr; }
+    .areas { gap: 10px; }
+    .area div { padding: 10px 12px 14px; }
+    .cta { padding: 20px 16px; }
+  }
+</style>
