@@ -5,11 +5,11 @@ import Icon from '../components/Icon.astro';
 import { SITE } from '../lib/site.js';
 
 const reasons = [
-  ['Egy partner, egy ajánlat', 'minden egy helyről, egy ajánlatban.'],
-  ['Raktárkészlet Vecsésen', 'raktárról szolgálunk ki, a kiszállításban is segítünk.'],
-  ['Méretre vágás', 'a profilokat a kért hosszra vágjuk.'],
-  ['Szakmai segítség', 'segítünk kiválasztani a megfelelő megoldást.'],
-  ['Egyedi igények', 'hátsó ajtó és redőny adatlap alapján, méretre.'],
+  ['Egy partner, egy ajánlat', 'nem kell több beszállítótól összeszedni egy felépítmény anyagát.'],
+  ['Raktárkészlet Vecsésen', 'saját raktárkészletről szolgálunk ki, és a kiszállításban is segítünk.'],
+  ['Méretre vágás', 'a profilokat a kért hosszra vágjuk, így nem marad hulladék a műhelyben.'],
+  ['Szakmai segítség', 'ha nem biztos a választásban, segítünk megtalálni a megfelelő megoldást.'],
+  ['Egyedi igények', 'hátsó ajtót és redőnyt adatlap alapján, az Ön méretére kérhet.'],
 ];
 ---
 <Base title="Rólunk" description={`A ${SITE.name} ${SITE.foundingYear} óta haszongépjármű-felépítmények alkatrészeinek és alapanyagainak szakkereskedője Vecsésen.`} crumbs={[['Főoldal', '/'], ['Rólunk', '/rolunk']]} back={{ href: '/', label: 'Főoldal' }}>
@@ -31,10 +31,6 @@ const reasons = [
         {reasons.map(([t, d]) => <li><Icon name="CircleCheck" size={18} /><span><strong>{t}</strong> – {d}</span></li>)}
       </ul>
       <p class="contact-line">{SITE.address} · <a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a> · <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
-      <p class="actions">
-        <a class="btn cta-quote" href="/ajanlatkeres">Ajánlatkérés <Icon name="ArrowRight" size={16} /></a>
-        <a class="btn btn-ghost" href="/kapcsolat">Kapcsolat</a>
-      </p>
     </div>
   </article>
 </Base>
@@ -43,12 +39,15 @@ const reasons = [
   /* tömör fejléc egy sorban, alatta széles, kéthasábos szöveg: megnyitáskor lehetőleg az egész látszik */
   .about-head { padding: 14px 0 12px; }
   .about-head h1 { font-size: clamp(1.3rem, 2.3vw, 1.75rem); margin: 0; }
-  .about { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 16px 48px; padding-top: 16px; padding-bottom: 32px; }
+  .about { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px 56px; align-items: stretch; padding-top: 16px; padding-bottom: 32px; }
   .about p { margin: 0 0 12px; font-size: 0.98rem; line-height: 1.6; color: var(--text-2); }
-  .about .intro { font-size: 1.1rem; line-height: 1.55; color: var(--navy); }
+  .about .intro { color: var(--navy); }
+  /* a két hasáb teteje és alja egy vonalban: a tartalom a rendelkezésre álló magasságot egyenletesen tölti ki */
+  .about-text, .about-side { display: flex; flex-direction: column; justify-content: space-between; }
+  .about-text p:last-child, .about-side p:last-child { margin-bottom: 0; }
   .side-title { font-weight: 700; color: var(--navy) !important; margin-bottom: 10px !important; }
-  .reasons { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 8px; }
-  .reasons li { display: flex; gap: 10px; align-items: flex-start; font-size: 0.96rem; line-height: 1.5; color: var(--text-2); }
+  .reasons { list-style: none; margin: 0 0 12px; padding: 0; flex: 1 1 auto; display: flex; flex-direction: column; justify-content: space-between; gap: 6px; }
+  .reasons li { display: flex; gap: 10px; align-items: flex-start; font-size: 0.98rem; line-height: 1.5; color: var(--text-2); }
   .reasons :global(svg) { flex: none; margin-top: 3px; color: var(--accent); }
   .reasons strong { color: var(--navy); }
   .about .contact-line { color: var(--navy); font-weight: 500; }

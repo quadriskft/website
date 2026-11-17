@@ -98,7 +98,7 @@ const jsonLd = [
 <Base crumbs={navCrumbs} back={backTo} title={product.code ? `${product.name} (${product.code})` : product.name} description={description} image={product.images?.[0]} type="product" jsonLd={jsonLd}>
   <div class="container">
 
-    <div class:list={['product', { 'wide-order': wideOrder, fit: !orderForm, 'multi-img': gallery.length > 1, 'thumbs-in': gallery.length > 1 && !orderForm && !heroVideo }]}>
+    <div class:list={['product', { 'wide-order': wideOrder, fit: !orderForm, 'multi-img': gallery.length > 1, dense: !!family && specs.length > 6, 'thumbs-in': gallery.length > 1 && !orderForm && !heroVideo }]}>
       <div class:list={['media', { 'has-specs': specs.length > 0 }]}>
         <div class="media-frame">
         {heroVideo
@@ -292,11 +292,12 @@ const jsonLd = [
         </ul>
         {/* asztali nézetben a műszaki adatok a jobb oldalon, a rendelési doboz alatt */}
         {specs.length > 0 && (
-          <section class:list={['card', 'detail', 'info-specs', { few: specs.length <= 4 }]}>
+          <section class:list={['card', 'detail', 'info-specs', { few: specs.length <= 4, many: specs.filter(([, v]) => String(v).length <= 30).length >= 9 }]}>
             <h2>Műszaki adatok</h2>
             <table class="specs">
               <tbody>
-                {specs.map(([key, value]) => <tr><th scope="row">{key}</th><td>{value}</td></tr>)}
+                {/* a rövid értékű sorok hasábokban, a hosszú szövegűek (pl. kivitel) utánuk teljes szélességben */}
+                {[...specs.filter(([, v]) => String(v).length <= 30), ...specs.filter(([, v]) => String(v).length > 30)].map(([key, value]) => <tr class:list={[{ wide: String(value).length > 30 }]}><th scope="row">{key}</th><td>{value}</td></tr>)}
               </tbody>
             </table>
           </section>
@@ -731,25 +732,30 @@ const jsonLd = [
     .fit .zoom-hint { position: relative; z-index: 1; flex: none; height: 22px; margin: -28px 0 6px 12px; font-size: 0.74rem; pointer-events: none; }
     .fit .media-specs, .fit .assurances { display: none; }
     .fit .info-body { grid-column: 2; grid-row: 2; display: flex; flex-direction: column; gap: 8px; min-height: 0; }
-    /* a jobb oszlop két doboza a tartalmához igazodik: a szabad helyet egyenlően kapják, így egyikben sem marad nagy üres terület */
+    /* A jobb oszlop két doboza a tartalmához igazodik, a tartalom mindkettőben függőlegesen középen áll.
+       A műszaki adatok mindig teljesen látszanak (nincs görgetősáv): a helyet szükség esetén a rendelési doboz adja át. */
     .fit .order { flex: 1 0 auto; min-height: 0; overflow-y: auto; scrollbar-width: thin; margin: 0; padding: 10px 18px; }
-    /* műszaki adatok: legfeljebb a kép magasságának feléig; méretre vágásnál a rendelési doboz után megmaradó hely */
-    .fit .info-specs { display: block; flex: 1 1 auto; min-height: 58px; overflow-y: auto; scrollbar-width: thin; margin: 0; padding: 9px 16px 8px; }
-    /* mérettáblás termék: a műszaki adatok legfeljebb a magasság harmadát kapják, a többi a rendelési dobozé */
-    .fit .variant-order { flex: 1 1 0; }
-    .fit .variant-order ~ .info-specs { flex: 0 1 auto; max-height: 30%; }
-    .fit .order.cut-order > .add-row { justify-self: start; }
-    /* kevés (legfeljebb 4) adat: egy oszlopban, szellősebben */
+    .fit .info-specs { display: flex; flex-direction: column; justify-content: safe center; flex: 1 0 auto; min-height: 0; overflow-y: auto; scrollbar-width: thin; margin: 0; padding: 9px 16px 8px; }
+    .fit .info-specs.few { flex-grow: 0.4; }
+    /* mérettáblás termék: a táblázat zsugorodik (a dobozon belül görgethető), a műszaki adatok teljes magasságukban maradnak */
+    .fit .variant-order { flex: 1 1 0; min-height: 0; }
+    .fit .variant-order ~ .info-specs { flex: 0 0 auto; max-height: 62%; }
+    /* kevés (legfeljebb 4) adat: egy oszlopban, szellősebben; sok adat: három oszlopban */
     .fit .info-specs.few .specs tbody { grid-template-columns: 1fr; }
     .fit .info-specs.few .specs th, .fit .info-specs.few .specs td { padding: 5px 0; font-size: 0.9rem; }
     .fit .info-specs.few .specs th { flex-basis: 40%; }
-    /* méretre vágás: a megjegyzés és az „Ajánlatkérőbe” gomb egy sorban, így több hely marad a műszaki adatoknak */
-    .fit .order.cut-order { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; align-content: start; }
+    .fit .info-specs.many { padding-top: 7px; padding-bottom: 6px; }
+    .fit .info-specs.many .specs th, .fit .info-specs.many .specs td { padding: 2px 0; font-size: 0.8rem; line-height: 1.3; }
+    .fit .info-specs .specs tr.wide { grid-column: 1 / -1; }
+    .fit .info-specs .specs tr.wide th { flex-basis: 22%; }
+    /* méretre vágás: a megjegyzés és az „Ajánlatkérőbe” gomb egy sorban; a tartalom a dobozban függőlegesen középen */
+    .fit .order.cut-order { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; align-content: safe center; }
     .fit .order.cut-order > * { grid-column: 1 / -1; }
     .fit .order.cut-order > .cut-note { grid-column: 1; }
     .fit .order.cut-order > .cut-actions { grid-column: 2; align-self: end; }
     .fit .order.cut-order > .cut-error { order: 1; }
     .fit .order.cut-order > .muted.small:last-child { order: 2; }
+    .fit .order.cut-order > .add-row { justify-self: start; }
     .fit .info-specs h2 { font-size: 0.95rem; margin: 0 0 2px; }
     .fit .info-specs .specs tbody { display: grid; grid-template-columns: 1fr 1fr; column-gap: 24px; }
     .fit .info-specs .specs tr { display: flex; border-bottom: 1px solid var(--line); }
@@ -785,6 +791,8 @@ const jsonLd = [
   }
   /* alacsony képernyőn (kis laptop, nagyított böngésző) az árra vonatkozó megjegyzés nem fér ki a méretre vágós / mérettáblás dobozba */
   @media (min-width: 861px) and (max-height: 720px) {
+    /* sok műszaki adat + mérettábla: alacsony képernyőn a táblázat helyett csak a választómező látszik (ugyanazok a méretek) */
+    .fit.dense .variant-order > .variant-table-wrap { display: none; }
     .fit .cut-order > .muted.small:last-child, .fit .variant-order > .muted.small:last-child, .fit .cut-generic, .fit .variant-order > .cut-title + .muted.small { display: none; }
   }
   /* Asztalon a választható kis képek a főkép keretén belül, jobbra, elválasztó vonallal (a konfigurátoros oldalak kivételével).
