@@ -25,23 +25,12 @@ import { SITE } from '../lib/site.js';
           <p class="muted">Az „Ajánlatkérőbe” gombbal adhat hozzá termékeket a termékoldalakon.</p>
           <a href="/#termekcsoportok" class="btn btn-primary btn-sm">Termékkategóriák <Icon name="ArrowRight" /></a>
         </div>
+        <form class="custom-row" id="egyedi" data-custom>
+          <input id="custom-name" name="name" class="input grow" required maxlength="300" aria-label="Egyedi tétel megnevezése, leírása" placeholder="Nem találja? Írja le az egyedi tételt (méret, anyag, cikkszám)…" />
+          <input id="custom-qty" name="qty" class="input qty-field" type="number" min="1" value="1" inputmode="numeric" aria-label="Mennyiség (db)" />
+          <button class="btn btn-ghost" type="submit"><Icon name="Plus" size={16} /> Hozzáadás</button>
+        </form>
       </div>
-
-      <form class="card custom-card" id="egyedi" data-custom>
-        <h2>Egyedi tétel hozzáadása</h2>
-        <p class="muted">Nem találja? Írja le (méret, anyag, gyártó, cikkszám) – beszerezzük.</p>
-        <div class="custom-row">
-          <div class="field grow">
-            <label for="custom-name">Megnevezés / leírás</label>
-            <input id="custom-name" name="name" required maxlength="300" placeholder="pl. 25 mm-es ponyvás oldalfal profil, 6 m" />
-          </div>
-          <div class="field qty-field">
-            <label for="custom-qty">Mennyiség</label>
-            <input id="custom-qty" name="qty" type="number" min="1" value="1" inputmode="numeric" />
-          </div>
-          <button class="btn btn-ghost" type="submit"><Icon name="Plus" /> Hozzáadás</button>
-        </div>
-      </form>
     </div>
 
     <form class="card form-card" data-form novalidate>
@@ -99,12 +88,14 @@ import { SITE } from '../lib/site.js';
   };
 
   // méretsoros tétel összesítője: teljes szálas profilnál a szálak száma + a vágott darabok, egyébként darab + fm
+  const fm = (i) => metersOf(i.cuts).toLocaleString('hu-HU', { maximumFractionDigits: 2 });
   const cutTotal = (i) => i.stock
-    ? `<div class="qty-total"><span><strong>${i.qty}</strong> szál</span><small>${totalPcs(i.cuts)} db vágott darab · ${metersOf(i.cuts).toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm</small><small>${i.stock.toLocaleString('hu-HU')} mm-es teljes szálból</small></div>`
-    : `<div class="qty-total"><span><strong>${i.qty}</strong> db</span><small>${metersOf(i.cuts).toLocaleString('hu-HU', { maximumFractionDigits: 2 })} fm</small></div>`;
+    ? `<div class="qty-total"><strong>${i.qty} szál</strong><small>${totalPcs(i.cuts)} db · ${fm(i)} fm · ${i.stock.toLocaleString('hu-HU')} mm-es szálból</small></div>`
+    : `<div class="qty-total"><strong>${i.qty} db</strong><small>${fm(i)} fm</small></div>`;
   const cutRow = (len = '', pcs = 1) => `<div class="cut-row">
-      <input class="input" type="number" min="1" max="30000" inputmode="numeric" placeholder="mm" aria-label="Hossz (mm)" data-cut-len value="${esc(len)}">
-      <input class="input" type="number" min="1" max="99999" inputmode="numeric" aria-label="Darab" data-cut-pcs value="${esc(pcs)}">
+      <label class="unit-in"><input class="input" type="number" min="1" max="30000" inputmode="numeric" aria-label="Hossz (mm)" data-cut-len value="${esc(len)}"><span>mm</span></label>
+      <span class="cut-x" aria-hidden="true">×</span>
+      <label class="unit-in pcs"><input class="input" type="number" min="1" max="99999" inputmode="numeric" aria-label="Darab" data-cut-pcs value="${esc(pcs)}"><span>db</span></label>
       <button type="button" class="cut-del" data-cut-del aria-label="Méret törlése">${icon.trash}</button>
     </div>`;
   const readCuts = (li) => [...li.querySelectorAll('.cut-row')].map((r) => ({ len: r.querySelector('[data-cut-len]').value, pcs: r.querySelector('[data-cut-pcs]').value }));
@@ -122,12 +113,13 @@ import { SITE } from '../lib/site.js';
           ${i.custom ? `<span class="item-name">${esc(i.name)}</span><span class="tag">Egyedi tétel</span>` : `<a class="item-name" href="/termek/${esc(i.page ?? i.slug)}">${esc(i.name)}</a>`}
           ${i.code ? `<span class="muted item-code">${esc(i.codeLabel || 'Cikkszám')}: ${esc(i.code)}</span>` : ''}
           ${i.config?.length ? `<dl class="config">${i.config.map((c) => `<div><dt>${esc(c.label)}</dt><dd>${esc(c.value)}</dd></div>`).join('')}</dl>` : ''}
-          ${i.cuts?.length ? `<div class="cuts" data-cuts>
-            <div class="cuts-head"><span>Hossz [mm]</span><span>Darab</span><span></span></div>
+          ${i.cuts?.length ? `<i class="brk"></i><div class="cuts" data-cuts>
             ${i.cuts.map((c) => cutRow(c.len, c.pcs)).join('')}
-            <button type="button" class="cuts-add" data-cut-add>${icon.plus} Másik méret</button>
+            <button type="button" class="cuts-add" data-cut-add>${icon.plus} méret</button>
           </div>` : ''}
-          <input class="note input" data-note placeholder="Megjegyzés a tételhez (pl. hossz, szín)…" value="${esc(i.note)}" maxlength="300">
+          ${i.note
+            ? `<input class="note input" data-note placeholder="Megjegyzés a tételhez…" value="${esc(i.note)}" maxlength="300">`
+            : `<button type="button" class="note-add" data-note-add>${icon.plus} megjegyzés</button>`}
         </div>
         <div class="item-side">
           ${i.cuts?.length ? cutTotal(i) : `<div class="qty">
@@ -163,6 +155,11 @@ import { SITE } from '../lib/site.js';
     if (e.target.closest('[data-remove]')) {
       quote.remove(slug);
       render();
+    }
+    const noteAdd = e.target.closest('[data-note-add]');
+    if (noteAdd) {
+      noteAdd.outerHTML = '<input class="note input" data-note placeholder="Megjegyzés a tételhez…" maxlength="300">';
+      li.querySelector('[data-note]').focus();
     }
     if (e.target.closest('[data-cut-add]')) {
       e.target.closest('[data-cut-add]').insertAdjacentHTML('beforebegin', cutRow('', 1));
@@ -304,63 +301,78 @@ import { SITE } from '../lib/site.js';
   .quote-head .lead { font-size: 1.12rem; line-height: 1.35; margin: 0; max-width: none; }
   .quote-layout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(320px, 1fr); gap: 18px; align-items: start; padding-top: 14px; padding-bottom: 0; }
   .items-col { display: grid; gap: 14px; }
-  .items-card, .custom-card, .form-card { padding: 16px 20px; }
+  .items-card, .form-card { padding: 16px 20px; }
   .items-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-  .items-head h2, .custom-card h2, .form-card h2 { font-size: 1.08rem; font-weight: 700; margin: 0; }
-  .custom-card h2 { margin-bottom: 2px; }
-  .custom-card > p { font-size: 0.88rem; margin: 0 0 8px; }
+  .items-head h2, .form-card h2 { font-size: 1.08rem; font-weight: 700; margin: 0; }
   .link-btn { display: inline-flex; align-items: center; gap: 6px; border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 0.88rem; padding: 4px; }
   .link-btn:hover { color: var(--accent); }
-  .items { list-style: none; padding: 0; margin: 16px 0 0; }
-  .items :global(.item) { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 16px; align-items: start; padding: 16px 0; border-top: 1px solid var(--line); }
-  .items :global(.thumb) { width: 64px; height: 56px; border-radius: var(--radius-sm); display: grid; place-items: center; color: #7ea3d6; background: linear-gradient(160deg, #f6f9fe, #eaf1fb); border: 1px solid var(--line); }
-  .items :global(.thumb.has-img) { background: var(--tile); }
+  /* tétel: egy tömör sor – kép, név és méretek, jobbra a mennyiség és a törlés */
+  .items { list-style: none; padding: 0; margin: 12px 0 0; }
+  .items :global(.item) { display: grid; grid-template-columns: 48px minmax(0, 1fr) auto; gap: 12px; align-items: start; padding: 10px 0; border-top: 1px solid var(--line); }
+  .items :global(.thumb) { width: 48px; height: 48px; border-radius: var(--radius-sm); display: grid; place-items: center; color: var(--muted); background: var(--surface-3); border: 1px solid var(--line); }
+  .items :global(.thumb.has-img) { background: #fff; }
   .items :global(.thumb img) { max-width: 90%; max-height: 90%; object-fit: contain; }
-  .items :global(.item-main) { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
-  .items :global(.item-name) { font-weight: 600; color: var(--navy); }
+  .items :global(.item-main) { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; min-width: 0; }
+  .items :global(.item-name) { font-weight: 600; color: var(--navy); line-height: 1.3; }
   .items :global(a.item-name:hover) { color: var(--accent); }
-  .items :global(.item-code) { font-size: 0.84rem; }
-  .items :global(.tag) { align-self: flex-start; font-size: 0.72rem; padding: 2px 8px; border-radius: 6px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
-  .items :global(.config) { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 2px 14px; margin: 8px 0 0; font-size: 0.82rem; }
+  .items :global(.item-code) { font-size: 0.8rem; white-space: nowrap; }
+  .items :global(.tag) { font-size: 0.7rem; padding: 1px 7px; border-radius: 6px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .items :global(.config) { flex: 1 1 100%; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1px 14px; margin: 4px 0 0; font-size: 0.82rem; }
   .items :global(.config div) { display: flex; gap: 6px; }
   .items :global(.config dt) { color: var(--muted); }
   .items :global(.config dt::after) { content: ':'; }
   .items :global(.config dd) { margin: 0; font-weight: 600; }
-  .items :global(.note) { margin-top: 8px; padding: 8px 12px; font-size: 0.88rem; }
-  .items :global(.cuts) { margin-top: 10px; display: grid; gap: 6px; max-width: 360px; }
-  .items :global(.cuts-head), .items :global(.cut-row) { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) 34px; gap: 8px; align-items: center; }
-  .items :global(.cuts-head) { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
-  .items :global(.cut-row .input) { padding: 7px 10px; font-size: 0.9rem; width: 100%; }
-  .items :global(.cut-del) { width: 34px; height: 34px; border: 1px solid var(--line); border-radius: var(--radius-btn); background: transparent; color: var(--muted); display: grid; place-items: center; cursor: pointer; }
-  .items :global(.cut-del:hover) { color: #d63a3a; border-color: #d63a3a; }
-  .items :global(.cuts-add) { justify-self: start; display: inline-flex; align-items: center; gap: 6px; border: 1px dashed var(--accent); color: var(--accent); background: var(--accent-soft); border-radius: var(--radius-btn); padding: 5px 10px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; }
-  .items :global(.qty-total) { display: flex; flex-direction: column; align-items: flex-end; font-size: 0.95rem; line-height: 1.3; white-space: nowrap; }
-  .items :global(.qty-unit) { display: block; text-align: right; color: var(--muted); font-size: 0.8rem; margin-top: 4px; white-space: nowrap; }
-  .items :global(.qty-total small) { color: var(--muted); font-size: 0.8rem; }
-  .items :global(.item-side) { display: flex; align-items: center; gap: 8px; }
-  .items :global(.remove) { width: 40px; height: 40px; border-radius: var(--radius-btn); border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; display: grid; place-items: center; }
-  .items :global(.remove:hover) { color: var(--danger); border-color: var(--danger); }
+  /* méretek: „6000 mm × 1 db” sorok egymás mellett, a mértékegység a mezőben */
+  .items :global(.brk) { flex: 0 0 100%; height: 0; }
+  .items :global(.cuts) { flex: 0 1 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin-top: 6px; }
+  .items :global(.cut-row) { display: inline-flex; align-items: center; gap: 6px; }
+  .items :global(.unit-in) { position: relative; display: inline-flex; }
+  .items :global(.unit-in .input) { width: 104px; height: 34px; padding: 0 36px 0 10px; font-size: 0.9rem; text-align: right; font-variant-numeric: tabular-nums; -moz-appearance: textfield; }
+  .items :global(.unit-in.pcs .input) { width: 78px; padding-right: 30px; }
+  .items :global(.unit-in .input::-webkit-outer-spin-button), .items :global(.unit-in .input::-webkit-inner-spin-button) { -webkit-appearance: none; margin: 0; }
+  .items :global(.unit-in span) { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 0.8rem; color: var(--muted); pointer-events: none; }
+  .items :global(.cut-x) { color: var(--muted); }
+  .items :global(.cut-del) { width: 28px; height: 28px; border: 0; border-radius: var(--radius-btn); background: transparent; color: var(--muted); display: grid; place-items: center; cursor: pointer; }
+  .items :global(.cut-del svg) { width: 15px; height: 15px; }
+  .items :global(.cut-del:hover) { color: var(--danger); background: rgba(214, 58, 58, 0.08); }
+  .items :global(.cut-row:only-of-type .cut-del) { display: none; }
+  .items :global(.cuts-add), .items :global(.note-add) { display: inline-flex; align-items: center; gap: 4px; height: 28px; padding: 0 8px; border: 0; border-radius: var(--radius-btn); background: transparent; color: var(--accent); font-size: 0.84rem; font-weight: 600; cursor: pointer; }
+  .items :global(.cuts-add svg), .items :global(.note-add svg) { width: 13px; height: 13px; }
+  .items :global(.cuts-add:hover), .items :global(.note-add:hover) { background: var(--accent-soft); }
+  .items :global(.note-add) { margin-left: -8px; color: var(--muted); font-weight: 500; align-self: flex-end; }
+  .items :global(.cuts + .note-add) { margin-left: 0; margin-bottom: 3px; }
+  .items :global(.note) { flex: 1 1 100%; width: 100%; max-width: 440px; margin-top: 4px; height: 34px; padding: 0 10px; font-size: 0.88rem; }
+  .items :global(.qty-total) { display: flex; flex-direction: column; align-items: flex-end; line-height: 1.3; white-space: nowrap; }
+  .items :global(.qty-total strong) { font-size: 0.98rem; color: var(--navy); }
+  .items :global(.qty-total small), .items :global(.qty-unit) { color: var(--muted); font-size: 0.78rem; }
+  .items :global(.qty-unit) { display: block; text-align: right; margin-top: 2px; white-space: nowrap; }
+  .items :global(.item-side) { display: flex; align-items: center; gap: 6px; }
+  .items :global(.remove) { width: 32px; height: 32px; border-radius: var(--radius-btn); border: 0; background: transparent; color: var(--muted); cursor: pointer; display: grid; place-items: center; }
+  .items :global(.remove:hover) { color: var(--danger); background: rgba(214, 58, 58, 0.08); }
   .empty-state { text-align: center; padding: 14px 10px 4px; display: grid; justify-items: center; gap: 0; font-size: 0.92rem; }
   .empty-state p { margin: 0 0 6px; }
   .empty-state[hidden] { display: none; }
-  .custom-row { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; }
-  .grow { flex: 1; min-width: 220px; }
-  .qty-field { width: 110px; }
+  /* egyedi tétel: egyetlen sor a tétel-kártya alján */
+  .custom-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .custom-row .input { height: 38px; padding: 0 12px; font-size: 0.9rem; }
+  .custom-row .grow { flex: 1 1 240px; min-width: 0; }
+  .custom-row .qty-field { width: 76px; text-align: center; }
+  .custom-row .btn { height: 38px; padding: 0 14px; }
   .form-card { position: sticky; top: calc(var(--header-h) + 16px); }
   .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; margin: 8px 0 10px; }
   .form-card :global(.field) { gap: 3px; }
   .form-card :global(.field label) { font-size: 0.82rem; }
-  .form-card :global(.field input), .form-card :global(.field textarea), .custom-card :global(.field input) { padding: 6px 11px; }
+  .form-card :global(.field input), .form-card :global(.field textarea) { padding: 6px 11px; }
   .form-card :global(.field textarea) { min-height: 50px; }
-  .custom-card :global(.field label) { font-size: 0.82rem; }
-  .custom-card :global(.btn) { padding: 9px 16px; }
   .full { grid-column: 1 / -1; }
   .hp { position: absolute; left: -9999px; }
   .consent { display: flex; gap: 8px; align-items: flex-start; font-size: 0.78rem; line-height: 1.45; color: var(--text-2); }
   .consent input { margin-top: 3px; accent-color: var(--accent); width: 16px; height: 16px; flex: none; }
   .form-error { color: #b42318; background: #fef3f2; border: 1px solid #fecdca; padding: 12px 14px; border-radius: var(--radius-sm); font-size: 0.92rem; }
   .form-error :global(a) { color: #b42318; font-weight: 700; text-decoration: underline; }
-  .submit { width: 100%; padding: 13px; font-size: 0.82rem; }
+  /* piros = ajánlatkérés, mint az oldal többi részén */
+  .submit { width: 100%; padding: 13px; font-size: 0.82rem; background: var(--tomato); box-shadow: 0 6px 16px -8px rgba(242, 70, 46, 0.55); }
+  .submit:hover { background: var(--tomato-2); }
   .alt-actions { display: flex; justify-content: center; gap: 16px; margin-top: 6px; flex-wrap: wrap; }
   .success { grid-column: 1 / -1; padding: 56px 24px; text-align: center; display: grid; justify-items: center; gap: 6px; }
   .success > :global(svg) { color: var(--ok); margin-bottom: 8px; }
@@ -371,13 +383,16 @@ import { SITE } from '../lib/site.js';
   }
   @media (max-width: 560px) {
     .form-grid { grid-template-columns: 1fr; }
-    .items :global(.item) { grid-template-columns: 48px minmax(0, 1fr); }
-    .items :global(.thumb) { width: 48px; height: 44px; }
-    .items :global(.item-side) { grid-column: 2; }
-    .items-card, .custom-card, .form-card { padding: 18px; }
+    .items :global(.item) { grid-template-columns: 44px minmax(0, 1fr) auto; gap: 10px; }
+    .items :global(.thumb) { width: 44px; height: 44px; }
+    .items :global(.item-side) { grid-column: 2 / -1; justify-content: space-between; }
+    .items :global(.qty-total) { flex-direction: row; align-items: baseline; gap: 8px; white-space: normal; flex-wrap: wrap; }
+    .items :global(.item) { row-gap: 4px; }
+    .items :global(.unit-in .input) { width: 92px; }
+    .items-card, .form-card { padding: 14px; }
   }
   @media print {
-    :global(.site-header), :global(.site-footer), .custom-card, .form-card, .page-head .lead, :global(.toast), .items :global(.remove), .link-btn, .items :global(.qty button) { display: none !important; }
+    :global(.site-header), :global(.site-footer), .custom-row, .form-card, .page-head .lead, :global(.toast), .items :global(.remove), .link-btn, .items :global(.qty button) { display: none !important; }
     :global(body) { background: #fff; color: #000; }
     .quote-layout { display: block; }
     .items-card { border: 0; background: none; }
@@ -386,6 +401,6 @@ import { SITE } from '../lib/site.js';
     .items :global(.qty input) { color: #000; }
     .items :global(.note) { border: 0; color: #000; padding: 0; }
     .items :global(.cut-row .input) { border: 0; padding: 0; color: #000; }
-    .items :global(.cut-del), .items :global(.cuts-add) { display: none !important; }
+    .items :global(.cut-del), .items :global(.cuts-add), .items :global(.note-add) { display: none !important; }
   }
 </style>
