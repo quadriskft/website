@@ -4,7 +4,6 @@ import { absPage } from '../lib/site.js';
 
 const STATIC = [
   ['/', '1.0', 'weekly'],
-  ['/termekek', '0.9', 'weekly'],
   ['/loszallito-felepitmenyek', '0.8', 'monthly'],
   ['/ajanlatkeres', '0.6', 'monthly'],
   ['/kapcsolat', '0.6', 'monthly'],

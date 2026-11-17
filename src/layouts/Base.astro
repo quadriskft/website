@@ -77,11 +77,10 @@ const fontCss = fallbackFace +
         <nav class="main-nav" id="main-nav" aria-label="Fő menü">
           <a href="/rolunk" class:list={['nav-link', { active: isActive('/rolunk') }]}>Rólunk</a>
           <div class="nav-item has-mega">
-            <a href="/termekek" class:list={['nav-link', { active: isActive('/termekek') || isActive('/termek') }]} aria-haspopup="true" aria-expanded="false" aria-controls="mega-termekek" data-mega-trigger>Termékek <Icon name="ChevronDown" size={16} /></a>
+            <a href="/#termekcsoportok" class:list={['nav-link', { active: isActive('/termekek') || isActive('/termek') }]} aria-haspopup="true" aria-expanded="false" aria-controls="mega-termekek" data-mega-trigger>Termékek <Icon name="ChevronDown" size={16} /></a>
             <div class="mega" id="mega-termekek">
               <div class="mega-head">
                 <span class="eyebrow">Termékcsoportok</span>
-                <a href="/termekek" class="mega-all">Teljes katalógus →</a>
               </div>
               <div class="mega-grid">
                 {groups.map((g) => (
@@ -157,7 +156,6 @@ const fontCss = fallbackFace +
         <div class="footer-col">
           <h4 class="footer-title">Információk</h4>
           <ul class="footer-list">
-            <li><a href="/termekek">Termékkatalógus</a></li>
             <li><a href="/rolunk">Rólunk</a></li>
             <li><a href="/impresszum">Impresszum</a></li>
             <li><a href="/adatkezeles">Adatkezelési tájékoztató</a></li>
@@ -272,7 +270,6 @@ const fontCss = fallbackFace +
       mobileMq.addEventListener('change', syncMega);
       syncMega();
       // a „Termékek” felirat nem a teljes katalógusra visz, hanem a csoportok lenyíló listáját nyitja
-      // (a teljes katalógus a listában a „Teljes katalógus →” linken érhető el)
       megaTrigger.addEventListener('click', (e) => {
         e.preventDefault();
         if (mobileMq.matches) return;
@@ -471,8 +468,6 @@ const fontCss = fallbackFace +
   .has-mega:hover .mega { opacity: 1; visibility: visible; transform: none; transition-delay: 120ms; }
   .has-mega:focus-within .mega, .has-mega.mega-open .mega { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
   .mega-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-bottom: 12px; margin-bottom: 10px; border-bottom: 1px solid var(--line); }
-  .mega-all { font-size: 0.86rem; font-weight: 600; color: var(--accent); text-decoration: none !important; white-space: nowrap; }
-  .mega-all:hover { color: var(--accent-2); }
   .mega-grid { display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 28px; row-gap: 2px; }
   .mega-link { display: block; padding: 8px 10px; border-radius: 6px; color: var(--text-2); font-size: 0.9rem; font-weight: 500; line-height: 1.35; text-decoration: none !important; transition: background 0.15s ease, color 0.15s ease; }
   .mega-link:hover, .mega-link:focus-visible { background: var(--accent-soft); color: var(--navy); }
