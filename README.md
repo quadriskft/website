@@ -55,4 +55,4 @@ A `/fiok` oldal és a `functions/api/fiok/[[path]].js` kezeli. A fiókokat Cloud
 2. Pages projekt → Settings → Bindings → **Add → KV namespace**: változónév `FIOKOK`, névtér az előbb létrehozott.
 3. Új telepítés (vagy „Retry deployment”), hogy a kötés életbe lépjen.
 
-Amíg a `FIOKOK` kötés nincs beállítva, a `/fiok` oldal „A regisztráció hamarosan elérhető” üzenetet mutat. A jelszó-visszaállító e-mail az ajánlatkérésnél használt `RESEND_API_KEY` és `QUOTE_FROM` beállítással megy ki. A jelszavakat PBKDF2-SHA256 kivonatként tároljuk, a munkamenet-süti HttpOnly.
+A `FIOKOK` kötés be van állítva; ha valaha hiányozna, a `/fiok` oldal űrlapjai hibaüzenetet adnak. A jelszó-visszaállító e-mail az ajánlatkérésnél használt `RESEND_API_KEY` és `QUOTE_FROM` beállítással megy ki. A jelszavakat PBKDF2-SHA256 kivonatként tároljuk, a munkamenet-süti HttpOnly.

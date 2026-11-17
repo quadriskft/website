@@ -67,7 +67,7 @@ import { SITE } from '../lib/site.js';
       const res = await fetch('/api/ajanlatkeres', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ customer: { name: d.name, company: d.company, email: d.email, phone: d.phone }, message: d.message, website: d.website, items: [] }),
+        body: JSON.stringify({ customer: { name: d.name, company: d.company, email: d.email, phone: d.phone }, message: d.message, website: d.website, items: [], kind: 'contact' }),
       });
       if (!res.ok) throw new Error(String(res.status));
       form.reset();
@@ -82,8 +82,10 @@ import { SITE } from '../lib/site.js';
 </script>
 
 <style>
-  .contact { display: grid; grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.4fr); gap: 24px; padding-top: 32px; padding-bottom: 40px; align-items: start; }
-  .contact-info { display: grid; gap: 20px; }
+  .contact { display: grid; grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.4fr); gap: 24px; padding-top: 32px; padding-bottom: 40px; align-items: stretch; }
+  /* a bal oszlop a jobb oldali űrlap magasságáig nyúlik: a céges kártya tölti ki a maradék helyet */
+  .contact-info { display: grid; gap: 20px; grid-template-rows: 1fr auto; }
+  .contact-form { align-self: start; }
   .info-card { padding: 26px; }
   .info-card h2 { font-size: 1.25rem; font-weight: 700; }
   .info-card ul { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 14px; }

@@ -4,9 +4,11 @@
 // Beállítás (Cloudflare Pages > Settings > Variables and Secrets):
 //   RESEND_API_KEY  – a Resend API kulcs (titkos)
 //   QUOTE_TO        – címzett(ek), vesszővel elválasztva
+//   CONTACT_TO      – a kapcsolati űrlap címzettje (opcionális; alapértelmezés: quadris@quadris.hu)
 //   QUOTE_FROM      – feladó (opcionális; saját domain hitelesítése után pl. "Quadris weboldal <ajanlat@quadris.hu>")
 
 const MAX_ITEMS = 500;
+const DEFAULT_CONTACT_TO = 'quadris@quadris.hu';
 const DEFAULT_FROM = 'Quadris weboldal <onboarding@resend.dev>';
 
 const json = (status, body) =>
@@ -107,18 +109,22 @@ export async function onRequestPost({ request, env }) {
   if (!env.RESEND_API_KEY || !env.QUOTE_TO) return json(503, { ok: false, error: 'not_configured' });
 
   const { subject, text, html } = buildEmail(parsed);
-  const res = await fetch('https://api.resend.com/emails', {
+  const list = (v) => String(v).split(',').map((x) => x.trim()).filter(Boolean);
+  const send = (to) => fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      from: env.QUOTE_FROM || DEFAULT_FROM,
-      to: env.QUOTE_TO.split(',').map((s) => s.trim()).filter(Boolean),
-      reply_to: parsed.customer.email,
-      subject,
-      text,
-      html,
-    }),
+    body: JSON.stringify({ from: env.QUOTE_FROM || DEFAULT_FROM, to, reply_to: parsed.customer.email, subject, text, html }),
   });
+  // a kapcsolati űrlap üzenete a cég központi címére megy; ha a levelező ezt a címzettet nem engedi
+  // (pl. a feladó domain még nincs hitelesítve), az ajánlatkérések címzettje kapja meg, hogy ne vesszen el
+  const contact = body?.kind === 'contact';
+  let res = await send(contact ? list(env.CONTACT_TO || DEFAULT_CONTACT_TO) : list(env.QUOTE_TO));
+  let via = contact ? 'contact' : 'quote';
+  if (contact && !res.ok) {
+    console.error('Kapcsolati címzett elutasítva', res.status, await res.text());
+    res = await send(list(env.QUOTE_TO));
+    via = 'fallback';
+  }
 
   if (!res.ok) {
     const detail = await res.text();
@@ -129,7 +135,7 @@ export async function onRequestPost({ request, env }) {
     } catch {}
     return json(502, { ok: false, error: 'send_failed', status: res.status, message: message.slice(0, 300) });
   }
-  return json(200, { ok: true });
+  return json(200, { ok: true, via });
 }
 
 // Diagnosztika: GET /api/ajanlatkeres – megmutatja, be vannak-e állítva a változók (értékük nélkül)
