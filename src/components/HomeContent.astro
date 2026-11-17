@@ -42,7 +42,7 @@ import { groups, groupImage, productsIn } from '../lib/catalog.js';
           const items = productsIn(g.slug);
           return (
             <div class="m-block">
-            <article class="card m-group">
+            <article class:list={['card', 'm-group', { 'has-subs': g.categories.length > 1 && g.categories.length <= 7 }]}>
               <a href={`/termekek/${g.slug}`} class="m-group-head">
                 <div class="m-group-media">
                   {groupImage(g.slug) ? <img src={groupImage(g.slug)} alt="" loading="lazy" width="800" height="560" />
@@ -141,7 +141,8 @@ import { groups, groupImage, productsIn } from '../lib/catalog.js';
     for (const ul of chipLists) {
       const chips = chipStore.get(ul)!;
       let best: { plan: Plan; scale: number } | null = null;
-      for (const scale of SCALES) {
+      // asztalon a kártyák egymás mellett állnak: ott közel azonos betűméret kell, ezért csak enyhe kicsinyítés megengedett
+      for (const scale of (matchMedia('(min-width: 641px)').matches ? SCALES.slice(0, 2) : SCALES)) {
         // mérés: minden gomb külön, természetes szélességgel
         ul.classList.remove('is-packed');
         ul.style.setProperty('--chip-scale', String(scale));
@@ -320,6 +321,13 @@ import { groups, groupImage, productsIn } from '../lib/catalog.js';
   .m-chips.is-packed { flex-direction: column; flex-wrap: nowrap; }
   .m-chips :global(.m-chip-row) { display: flex; gap: 7px; }
   .m-chips :global(.m-chip-row .metal-chip) { flex: 1 1 auto; justify-content: center; }
+  /* asztalon: legfeljebb 7 alkategóriánál a termékszám helyett az alkategóriák neve áll (darabszám nélkül) */
+  @media (min-width: 641px) {
+    .has-subs .m-count { display: none; }
+    .has-subs .m-group-title { padding-bottom: 12px; }
+    .has-subs .m-chips { display: flex; justify-content: center; }
+    .has-subs .m-chips .metal-chip .muted { display: none; }
+  }
   .m-strip { display: none; }
   @media (max-width: 1400px) { .m-groups { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
   @media (max-width: 1180px) { .m-groups { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
