@@ -98,6 +98,10 @@ const fontCss = fallbackFace +
             <input type="search" name="q" placeholder="Keressen terméknévre vagy cikkszámra…" aria-label="Termékkeresés" aria-autocomplete="list" aria-controls="search-suggest" />
             <div class="suggest" id="search-suggest" role="listbox" hidden></div>
           </form>
+          <button class="search-toggle" type="button" aria-controls="search-suggest" aria-expanded="false" aria-label="Termékkeresés">
+            <Icon name="Search" size={22} class="i-open" />
+            <Icon name="X" size={22} class="i-close" />
+          </button>
           <a href="/ajanlatkeres" class="btn btn-primary quote-btn" aria-label="Ajánlatkérő lista">
             <Icon name="ClipboardList" size={18} />
             <span class="quote-label">Ajánlatkérő</span>
@@ -246,18 +250,30 @@ const fontCss = fallbackFace +
       // --- Fejléc: görgetési állapot (átlátszó → fehér üveg), mobil menü, mega menü ---
       const header = document.querySelector('.site-header');
       const toggle = document.querySelector('.menu-toggle');
+      const searchToggle = document.querySelector('.search-toggle');
+      // mobil kereső: a nagyító a fejléc alatt nyitja a keresőmezőt; a menü és a kereső egyszerre nem lehet nyitva
+      const setSearch = (open) => {
+        header.classList.toggle('search-open', open);
+        searchToggle.setAttribute('aria-expanded', String(open));
+        const field = document.querySelector('.header-search input');
+        if (open) { header.classList.remove('menu-open'); toggle.setAttribute('aria-expanded', 'false'); field.focus(); field.select(); }
+        else { field.blur(); document.getElementById('search-suggest').hidden = true; }
+      };
       const setMenu = (open) => {
+        if (open && header.classList.contains('search-open')) setSearch(false);
         header.classList.toggle('menu-open', open);
         toggle.setAttribute('aria-expanded', String(open));
       };
+      searchToggle.addEventListener('click', () => setSearch(!header.classList.contains('search-open')));
       toggle.addEventListener('click', () => setMenu(!header.classList.contains('menu-open')));
       // kattintás a fejlécen (panelen) kívül: zár
       document.addEventListener('click', (e) => {
         if (header.classList.contains('menu-open') && !header.contains(e.target)) setMenu(false);
+        if (header.classList.contains('search-open') && !header.contains(e.target)) setSearch(false);
       });
       // asztali méretre váltva a nyitott mobil menü állapota ne ragadjon be (átlátszó hero-fejléc)
       const mobileMq = matchMedia('(max-width: 960px)');
-      mobileMq.addEventListener('change', () => { if (!mobileMq.matches) setMenu(false); });
+      mobileMq.addEventListener('change', () => { if (!mobileMq.matches) { setMenu(false); header.classList.remove('search-open'); searchToggle.setAttribute('aria-expanded', 'false'); } });
       const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
       onScroll();
       window.addEventListener('scroll', onScroll, { passive: true });
@@ -282,7 +298,10 @@ const fontCss = fallbackFace +
 
       document.addEventListener('keydown', (e) => {
         if (e.key !== 'Escape') return;
-        if (header.classList.contains('menu-open')) {
+        if (header.classList.contains('search-open')) {
+          setSearch(false);
+          searchToggle.focus();
+        } else if (header.classList.contains('menu-open')) {
           setMenu(false);
           toggle.focus();
         } else if (!mobileMq.matches && (megaItem.matches(':focus-within') || megaItem.classList.contains('mega-open'))) {
@@ -320,10 +339,10 @@ const fontCss = fallbackFace +
           return;
         }
         if (input.value.trim() !== q) return;
-        const hits = search(index, q, 8);
+        const hits = search(index, q, mobileMq.matches ? 12 : 8);
         active = -1;
         box.innerHTML = hits.length
-          ? hits.map((p) => `<a role="option" href="/termek/${p.slug}"><span class="s-name">${escapeHtml(p.name)}</span><span class="s-meta">${p.code ? escapeHtml(p.code) + ' · ' : ''}${escapeHtml(p.groupName)}</span></a>`).join('') +
+          ? hits.map((p) => `<a role="option" href="/termek/${p.slug}"><span class="s-thumb">${p.image ? `<img src="${escapeHtml(p.image)}" alt="" loading="lazy" decoding="async">` : ''}</span><span class="s-txt"><span class="s-name">${escapeHtml(p.name)}</span><span class="s-meta">${p.code ? escapeHtml(p.code) + ' · ' : ''}${escapeHtml(p.groupName)}</span></span></a>`).join('') +
             `<a class="s-all" href="/kereses?q=${encodeURIComponent(q)}">Összes találat megtekintése →</a>`
           : `<div class="s-empty">Nincs találat. <a href="/ajanlatkeres#egyedi">Kérje egyedi tételként →</a></div>`;
         box.hidden = false;
@@ -491,7 +510,12 @@ const fontCss = fallbackFace +
     background: #fff; color: var(--text); border: 1px solid var(--line); border-radius: 12px;
     box-shadow: var(--shadow); padding: 6px; z-index: 60;
   }
-  .suggest :global(a) { display: flex; flex-direction: column; padding: 9px 12px; border-radius: 6px; color: var(--text); text-decoration: none; }
+  .suggest :global(a) { display: flex; align-items: center; gap: 12px; padding: 7px 10px; border-radius: 6px; color: var(--text); text-decoration: none; }
+  .suggest :global(.s-thumb) { flex: none; width: 46px; height: 46px; border-radius: 6px; border: 1px solid var(--line); background: #fff; overflow: hidden; display: grid; place-items: center; }
+  .suggest :global(.s-thumb img) { width: 100%; height: 100%; object-fit: contain; padding: 3px; }
+  .suggest :global(.s-txt) { display: flex; flex-direction: column; min-width: 0; }
+  .suggest :global(.s-all) { padding: 10px 12px; }
+  .search-toggle { display: none; }
   .suggest :global(a:hover), .suggest :global(a.active) { background: var(--accent-soft); }
   .suggest :global(.s-name) { font-size: 0.92rem; font-weight: 500; }
   .suggest :global(.s-meta) { font-size: 0.78rem; color: var(--muted); }
@@ -560,19 +584,32 @@ const fontCss = fallbackFace +
     /* Mobil fejléc: balra a menü, középen a logó, jobbra az ajánlatkérő; a kereső a lenyíló menü tetején */
     .header-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; }
     .header-actions { display: contents; }
-    .menu-toggle { order: 1; justify-self: start; }
-    .logo { order: 2; justify-self: center; }
-    .quote-btn { order: 3; justify-self: end; }
+    .menu-toggle { grid-column: 1; grid-row: 1; justify-self: start; }
+    .logo { grid-column: 2; grid-row: 1; justify-self: center; }
+    .quote-btn { grid-column: 3; grid-row: 1; justify-self: end; }
+    /* nagyító közvetlenül az ajánlatkérő ikon bal oldalán */
+    .search-toggle { display: grid; place-items: center; grid-column: 3; grid-row: 1; justify-self: end; margin-right: 42px; width: 40px; height: 40px; padding: 0; border: 0; background: transparent; color: var(--hd-fg); cursor: pointer; }
+    .search-toggle :global(svg) { width: 24px; height: 24px; }
+    .search-toggle :global(.i-close) { display: none; }
+    .search-open .search-toggle :global(.i-open) { display: none; }
+    .search-open .search-toggle :global(.i-close) { display: block; }
+    .search-open .search-toggle { color: var(--accent); }
     .header-search {
       position: absolute; top: 100%; left: 0; right: 0; width: auto; padding: 12px 20px; background: #fff; border-bottom: 1px solid var(--line);
       opacity: 0; visibility: hidden; transform: translateY(-8px); transition: transform 0.2s ease, opacity 0.2s ease, visibility 0s linear 0.2s;
     }
-    .menu-open .header-search { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
+    .search-open .header-search { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
     .header-search :global(.search-icon) { left: 32px; color: var(--muted); }
     .header-search input { background: var(--surface-2); color: var(--text); border-color: var(--line-strong); height: 44px; }
     .header-search input::placeholder { color: var(--muted); }
-    .main-nav { top: calc(100% + 69px); max-height: calc(100vh - var(--header-h) - 69px); }
-    .suggest { position: fixed; left: 16px; right: 16px; width: auto; top: calc(var(--header-h) + 64px); }
+    .main-nav { top: 100%; max-height: calc(100vh - var(--header-h)); }
+    /* a találatok a képernyő teljes szélességében, a keresőmező alatt; hosszú listánál görgethető */
+    .suggest { position: fixed; left: 0; right: 0; width: auto; max-width: none; top: calc(var(--header-h) + 69px); max-height: calc(100dvh - var(--header-h) - 69px); overflow-y: auto; overscroll-behavior: contain;
+      border-radius: 0; border-width: 0 0 1px; padding: 6px 10px 12px; box-shadow: 0 18px 30px -18px rgba(18, 24, 33, 0.4); }
+    .suggest :global(a) { padding: 8px 6px; gap: 14px; }
+    .suggest :global(.s-thumb) { width: 56px; height: 56px; }
+    .suggest :global(.s-name) { font-size: 1rem; line-height: 1.25; }
+    .suggest :global(.s-meta) { font-size: 0.82rem; }
   }
 
   /* ---------- Lábléc: márkaszínű (Ocean Teal) háttér, fehér szöveg ---------- */
