@@ -99,7 +99,7 @@ const jsonLd = [
   <div class="container">
 
     <div class:list={['product', { 'wide-order': wideOrder }]}>
-      <div class="media">
+      <div class:list={['media', { 'has-specs': specs.length > 0 }]}>
         {heroVideo
           ? <div class="hero-video"><video autoplay muted loop playsinline preload="auto" poster={heroVideo.poster} src={heroVideo.url} aria-label={heroVideo.title}></video></div>
           : <ProductVisual product={product} eager />}
@@ -114,6 +114,17 @@ const jsonLd = [
               </button>
             ))}
           </div>
+        )}
+        {/* asztali nézetben a műszaki adatok a kép alatt, a rendelési doboz mellett (mobilon lent, a részleteknél) */}
+        {specs.length > 0 && (
+          <section class="card detail media-specs">
+            <h2>Műszaki adatok</h2>
+            <table class="specs">
+              <tbody>
+                {specs.map(([key, value]) => <tr><th scope="row">{key}</th><td>{value}</td></tr>)}
+              </tbody>
+            </table>
+          </section>
         )}
       </div>
 
@@ -278,7 +289,7 @@ const jsonLd = [
     </div>
 
     {(product.description || specs.length > 0 || product.documents?.length > 0 || videos.length > 0) && (
-      <div class="details">
+      <div class:list={['details', { 'only-specs': !(product.description || product.documents?.length > 0 || videos.length > 0) }]}>
         {product.description && (
           <section class="card detail">
             <h2>Leírás</h2>
@@ -286,7 +297,7 @@ const jsonLd = [
           </section>
         )}
         {specs.length > 0 && (
-          <section class="card detail">
+          <section class="card detail details-specs">
             <h2>Műszaki adatok</h2>
             <table class="specs">
               <tbody>
@@ -673,6 +684,15 @@ const jsonLd = [
   .assurances .k { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
   .details { display: grid; gap: 20px; margin-top: 48px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
   .detail { padding: 26px; }
+  .media-specs { display: none; margin-top: 18px; padding: 18px 22px; }
+  .media-specs h2 { font-size: 1.08rem; }
+  .media-specs .specs th, .media-specs .specs td { padding: 7px 0; font-size: 0.9rem; }
+  .media-specs .specs tr:last-child th, .media-specs .specs tr:last-child td { border-bottom: 0; }
+  @media (min-width: 861px) {
+    .media-specs { display: block; }
+    .media.has-specs { position: static; }
+    .details-specs, .details.only-specs { display: none; }
+  }
   .detail h2 { font-size: 1.2rem; font-weight: 700; }
   .specs { width: 100%; border-collapse: collapse; }
   .specs th, .specs td { text-align: left; padding: 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 0.94rem; }
