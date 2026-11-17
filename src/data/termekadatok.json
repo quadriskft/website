@@ -19368,5 +19368,19 @@
   "images": [
    "/termekkepek/121206-gyurus-rakomanyrogzito-400-dan-d40-1.webp"
   ]
+ },
+ "122263-sullyesztett-airline-sin-alu-3000mm": {
+  "images": [
+   "/termekkepek/122263-sullyesztett-airline-sin-alu-3000mm-1.webp",
+   "/termekkepek/122263-sullyesztett-airline-sin-alu-3000mm-meretrajz.webp"
+  ],
+  "specs": {
+   "Anyag": "alumínium, natúr",
+   "Hossz": "3000 mm (+5/−0)",
+   "Sínszélesség": "34 mm",
+   "Magasság": "9,6 mm",
+   "Furatátmérő": "20 mm",
+   "Furatosztás": "25 mm"
+  }
  }
 }
