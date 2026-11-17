@@ -217,7 +217,7 @@ const jsonLd = [
             <div class="cut-rows" data-cut-rows></div>
             <button type="button" class="add-row" data-add-row><Icon name="Plus" size={18} /> Másik méret hozzáadása</button>
             <label class="cut-note-label" for="cut-note">Megjegyzés</label>
-            <textarea id="cut-note" class="input cut-note" rows="2" maxlength="300" placeholder="Megjegyzés: pl. felületkezelés, vágási tűrés, szállítási határidő…" data-cut-note></textarea>
+            <textarea id="cut-note" class="input cut-note" rows="2" maxlength="300" placeholder="pl. felületkezelés, vágási tűrés, szállítási határidő…" data-cut-note></textarea>
             <p class="cut-error" data-cut-error hidden>Adjon meg legalább egy hosszt (mm).</p>
             <div class="cut-actions">
               <span class="muted small" data-cut-total></span>
@@ -692,39 +692,6 @@ const jsonLd = [
     .media-specs { display: block; }
     .media.has-specs { position: static; }
     .details-specs, .details.only-specs { display: none; }
-    /* tömör asztali elrendezés: kép, adatok és rendelés lehetőleg egy képernyőn, görgetés nélkül */
-    .product { padding-top: 14px; gap: 28px; }
-    .media :global(.product-visual) { aspect-ratio: auto; height: clamp(200px, 36vh, 380px); }
-    .hero-video { aspect-ratio: auto; height: clamp(200px, 36vh, 380px); }
-    .hero-video video { height: 100%; object-fit: contain; }
-    .zoom-hint { margin-top: 4px; font-size: 0.78rem; }
-    .gallery { margin-top: 6px; gap: 6px; }
-    .gallery img { width: 64px; height: 50px; }
-    .media-specs { margin-top: 10px; padding: 12px 16px; }
-    .media-specs h2 { font-size: 1rem; margin: 0 0 4px; }
-    /* a műszaki adatok két oszlopban: fele akkora magasság */
-    .media-specs .specs tbody { display: grid; grid-template-columns: 1fr 1fr; column-gap: 24px; }
-    .media-specs .specs tr { display: flex; border-bottom: 1px solid var(--line); }
-    .media-specs .specs th, .media-specs .specs td { padding: 4px 0; font-size: 0.86rem; border-bottom: 0; }
-    .media-specs .specs th { flex: 0 0 46%; width: auto; }
-    .info > .eyebrow { display: none; }
-    .info h1 { font-size: clamp(1.4rem, 2.2vw, 1.8rem); margin: 0 0 4px; }
-    .code-line { margin: 0; font-size: 0.92rem; }
-    .order { padding: 14px 18px; margin: 10px 0 12px; }
-    .cut-title { font-size: 1rem; margin: 0 0 2px; }
-    .small { font-size: 0.8rem; margin: 6px 0 0; }
-    .cut-head { margin: 8px 0 4px; font-size: 0.72rem; }
-    .cut-order :global(.cut-row .input) { padding: 7px 11px; }
-    .add-row { margin-top: 8px; padding: 5px 12px; font-size: 0.72rem; }
-    .cut-note-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
-    .cut-note { min-height: 0; height: 38px; margin-top: 8px; padding-top: 7px; padding-bottom: 7px; font-size: 0.9rem; }
-    .cut-actions { margin: 8px 0 2px; }
-    .order .btn { padding-top: 10px; padding-bottom: 10px; }
-    .config-grid { gap: 8px 12px; margin: 8px 0 4px; }
-    .config-field { gap: 2px; }
-    .config-field .input { padding: 6px 10px; font-size: 0.9rem; }
-    .assurances { font-size: 0.86rem; display: flex; flex-wrap: wrap; gap: 4px 18px; }
-    .assurances li, .assurances li:last-child { border: 0; padding: 0; }
   }
   .detail h2 { font-size: 1.2rem; font-weight: 700; }
   .specs { width: 100%; border-collapse: collapse; }
