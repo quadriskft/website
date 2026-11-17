@@ -150,22 +150,32 @@ const fontCss = fallbackFace +
         <div class="footer-brand">
           <a href="/" class="footer-name">Quadris Kft.</a>
           <p class="footer-tagline">{SITE.tagline}</p>
-          {SITE.address && <p class="footer-address">{SITE.address}</p>}
+          <p class="footer-about">{SITE.foundingYear} óta szállítunk alumínium és acél profilokat, zárakat, zsanérokat és további alkatrészeket jármű- és felépítménygyártóknak.</p>
+          <a href="/ajanlatkeres" class="btn footer-cta">Ajánlatkérés <Icon name="ArrowRight" size={16} /></a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-title">Termékek</h4>
+          <ul class="footer-list">
+            {groups.slice(0, 7).map((g) => <li><a href={`/termekek/${g.slug}`}>{g.name}</a></li>)}
+            <li><a href="/#termekcsoportok" class="footer-more">Összes kategória →</a></li>
+          </ul>
         </div>
         <div class="footer-col">
           <h4 class="footer-title">Elérhetőség</h4>
-          <ul class="footer-list">
-            {SITE.phone && <li><a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a></li>}
-            {SITE.email && <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>}
-            {SITE.openingHours && <li class="footer-muted">{SITE.openingHours}</li>}
-            <li><a href="/kapcsolat">Üzenetküldés</a></li>
-            <li><a href="/ajanlatkeres">Ajánlatkérő lista</a></li>
+          <ul class="footer-list footer-contact">
+            {SITE.phone && <li><Icon name="Phone" size={18} /><a class="footer-phone" href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a></li>}
+            {SITE.email && <li><Icon name="Mail" size={18} /><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>}
+            {SITE.address && <li><Icon name="MapPin" size={18} /><span>{SITE.address}</span></li>}
+            {SITE.openingHours && <li class="footer-muted"><Icon name="Clock" size={18} /><span>{SITE.openingHours.split(', ').map((t) => <span class="footer-hours">{t}</span>)}</span></li>}
           </ul>
         </div>
         <div class="footer-col">
           <h4 class="footer-title">Információk</h4>
           <ul class="footer-list">
             <li><a href="/rolunk">Rólunk</a></li>
+            <li><a href="/kapcsolat">Üzenetküldés</a></li>
+            <li><a href="/ajanlatkeres">Ajánlatkérő lista</a></li>
+            <li><a href="/fiok">Fiókom / Regisztráció</a></li>
             <li><a href="/impresszum">Impresszum</a></li>
             <li><a href="/adatkezeles">Adatkezelési tájékoztató</a></li>
             <li><a href="/adatkezeles#sutik">Sütik</a></li>
@@ -650,15 +660,27 @@ const fontCss = fallbackFace +
   /* a főoldalon a sötétkék záró sáv közvetlenül a láblécbe megy át */
   .has-hero .site-footer { margin-top: 0; border-top: 1px solid rgba(246, 243, 236, 0.22); }
   .footer-main {
-    display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px 48px; padding-top: 56px; padding-bottom: 40px;
+    display: grid; grid-template-columns: 1.25fr 1fr 1fr 1fr; gap: 36px 44px; padding-top: 60px; padding-bottom: 44px;
   }
-  .footer-name { display: inline-block; color: var(--on-brand); text-decoration: none !important; margin-bottom: 12px; font-size: 1.35rem; font-weight: 700; }
-  .footer-tagline { color: var(--on-brand); font-weight: 500; margin: 0 0 6px; max-width: 360px; }
-  .footer-address { margin: 0; font-size: 0.92rem; }
-  .footer-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(246, 243, 236, 0.84); margin: 4px 0 14px; }
-  .footer-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 0.94rem; }
-  .footer-list a { color: rgba(246, 243, 236, 0.96); text-decoration: none; }
-  .footer-list a:hover { color: var(--on-brand); text-decoration: underline; }
+  .footer-name { display: inline-block; color: var(--on-brand); text-decoration: none !important; margin-bottom: 10px; font-size: 1.5rem; font-weight: 700; }
+  .footer-tagline { color: var(--on-brand); font-weight: 600; margin: 0 0 10px; }
+  .footer-about { margin: 0 0 20px; font-size: 0.92rem; line-height: 1.55; color: rgba(246, 243, 236, 0.84); max-width: 340px; }
+  /* piros = ajánlatkérés, mint az oldal többi részén */
+  .footer-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--tomato); border-color: var(--tomato); color: #fff; text-decoration: none !important; }
+  .footer-cta:hover { background: var(--tomato-2); border-color: var(--tomato-2); color: #fff; transform: translateY(-1px); }
+  /* oszlopcím: rövid piros csík felette, mint a szekciócímeknél */
+  .footer-title { position: relative; font-size: 0.74rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(246, 243, 236, 0.84); margin: 4px 0 16px; padding-top: 14px; }
+  .footer-title::before { content: ''; position: absolute; top: 0; left: 0; width: 28px; height: 3px; border-radius: 2px; background: var(--tomato); }
+  .footer-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; font-size: 0.94rem; }
+  .footer-list a { display: inline-block; color: rgba(246, 243, 236, 0.96); text-decoration: none; transition: transform 0.2s ease, color 0.2s ease; }
+  .footer-list a:hover { color: #fff; transform: translateX(4px); }
+  .footer-list a:focus-visible, .footer-cta:focus-visible, .footer-name:focus-visible { outline: 2px solid #fff; outline-offset: 3px; border-radius: 3px; }
+  .footer-more { font-weight: 600; }
+  .footer-contact { gap: 12px; }
+  .footer-contact li { display: flex; align-items: flex-start; gap: 11px; }
+  .footer-contact li :global(svg) { flex: none; margin-top: 2px; color: rgba(246, 243, 236, 0.7); }
+  .footer-phone { font-size: 1.12rem; font-weight: 600; letter-spacing: 0.01em; }
+  .footer-hours { display: block; }
   .footer-muted { color: rgba(246, 243, 236, 0.84); }
   .footer-bottom { border-top: 1px solid rgba(246, 243, 236, 0.22); padding-top: 18px; padding-bottom: 22px; font-size: 0.8rem; color: rgba(246, 243, 236, 0.84); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; }
   .nowrap { white-space: nowrap; }
@@ -668,11 +690,13 @@ const fontCss = fallbackFace +
     .footer-ids { display: flex; flex-direction: column; gap: 6px; }
     .footer-sep { display: none; }
   }
-  @media (max-width: 860px) {
-    .footer-main { grid-template-columns: 1fr 1fr; padding-top: 44px; }
-    .footer-brand { grid-column: 1 / -1; }
+  @media (max-width: 1040px) {
+    .footer-main { grid-template-columns: 1fr 1fr; padding-top: 48px; }
   }
-  @media (max-width: 520px) {
-    .footer-main { grid-template-columns: 1fr; gap: 28px; }
+  @media (max-width: 560px) {
+    .footer-main { grid-template-columns: 1fr; gap: 32px; }
+    .footer-about { max-width: none; }
+    @media (prefers-reduced-motion: no-preference) { .footer-list a:hover { transform: none; } }
   }
+  @media (prefers-reduced-motion: reduce) { .footer-list a, .footer-cta { transition: none; } .footer-list a:hover, .footer-cta:hover { transform: none; } }
 </style>

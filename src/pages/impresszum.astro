@@ -29,13 +29,6 @@ const rows = [
       ))}
     </table>
 
-    <h2>Tárhelyszolgáltató</h2>
-    <table>
-      <tr><th scope="row">Név</th><td>{SITE.hosting.name}</td></tr>
-      <tr><th scope="row">Cím</th><td>{SITE.hosting.address}</td></tr>
-      <tr><th scope="row">Elérhetőség</th><td><a href={SITE.hosting.web} rel="noopener">{SITE.hosting.web.replace('https://', '')}</a></td></tr>
-    </table>
-
     <h2>Tájékoztató jellegű tartalom</h2>
     <p>
       A weboldalon közölt termékadatok, méretek, tömegek és képek tájékoztató jellegűek; a képek egy része illusztráció vagy
@@ -51,5 +44,14 @@ const rows = [
 
     <h2>Adatkezelés</h2>
     <p>A személyes adatok kezeléséről az <a href="/adatkezeles">adatkezelési tájékoztatóban</a> olvashat.</p>
+
+    <p class="imp-hosting">
+      <strong>Tárhelyszolgáltató:</strong> {SITE.hosting.name}, {SITE.hosting.address} · e-mail: <a href={`mailto:${SITE.hosting.email}`}>{SITE.hosting.email}</a> · web: <a href={SITE.hosting.web} rel="noopener">{SITE.hosting.web.replace('https://', '')}</a>
+    </p>
   </div>
 </Base>
+
+<style>
+  .imp-hosting { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 0.84rem; color: var(--muted); }
+  .imp-hosting a { color: inherit; text-decoration: underline; }
+</style>

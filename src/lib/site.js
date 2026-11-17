@@ -14,7 +14,7 @@ export const SITE = {
   foundingYear: 2009,
   seat: { postalCode: '2220', city: 'Vecsés', street: 'Tengely utca 8.' },
   // tárhelyszolgáltató (Eker. tv. 4. § – impresszum)
-  hosting: { name: 'Cloudflare, Inc.', address: '101 Townsend St, San Francisco, CA 94107, USA', web: 'https://www.cloudflare.com' },
+  hosting: { name: 'Cloudflare, Inc.', address: '101 Townsend St, San Francisco, CA 94107, USA', web: 'https://www.cloudflare.com', email: 'privacyquestions@cloudflare.com' },
   // e-mail kézbesítés az ajánlatkérő űrlaphoz (adatfeldolgozó)
   mailer: { name: 'Resend', web: 'https://resend.com' },
   // ÉLESÍTÉSKOR KÖTELEZŐ ÁTÁLLÍTANI: url: 'https://www.quadris.hu', indexable: true.
