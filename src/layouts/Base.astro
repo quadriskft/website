@@ -357,6 +357,35 @@ const fontCss = fallbackFace +
       const escapeHtml = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
       let active = -1;
 
+      // találat melletti „Ajánlatkérőbe” gomb: a keresőből közvetlenül a listára tehető a termék
+      let lastHits = [];
+      const plusSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>';
+      const checkSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>';
+      const addBtn = (p) => {
+        const inQuote = quote.has(p.slug);
+        return `<button type="button" class="s-add${inQuote ? ' in-quote' : ''}" data-search-add="${escapeHtml(p.slug)}" aria-label="${escapeHtml(p.name)} – ajánlatkérőbe">${inQuote ? checkSvg : plusSvg}<span>${inQuote ? 'Hozzáadva' : 'Ajánlatkérőbe'}</span></button>`;
+      };
+      box.addEventListener('click', (e) => {
+        const btn = e.target.closest('[data-search-add]');
+        if (!btn) return;
+        e.preventDefault();
+        e.stopPropagation(); // a gomb tartalma lecserélődik – a „kívülre kattintás” figyelő ne zárja be a listát
+        const p = lastHits.find((h) => h.slug === btn.dataset.searchAdd);
+        if (!p) return;
+        // változatos terméknél (méret/típus választó) a termékoldalon kell választani
+        if (p.variants) { location.href = `/termek/${p.slug}#rendeles`; return; }
+        if (quote.has(p.slug)) { showToast(`Már szerepel az ajánlatkérő listán: ${p.name}`); return; }
+        const product = { slug: p.slug, code: p.code, name: p.name, group: p.group, image: p.image,
+          ...(p.codeLabel ? { codeLabel: p.codeLabel } : {}), ...(p.unit ? { unit: p.unit, cartonM: p.cartonM } : {}), ...(p.profile ? { profile: true } : {}) };
+        // profil: egy teljes szál kerül a listára, a hossz és a darabszám az ajánlatkérő oldalon átírható
+        if (p.profile) quote.addCuts(product, [{ len: p.stock, pcs: 1 }], '', p.bar ? p.stock : 0);
+        else quote.add(product, 1);
+        btn.classList.add('in-quote');
+        btn.innerHTML = `${checkSvg}<span>Hozzáadva</span>`;
+        showToast(`Hozzáadva az ajánlatkérőhöz: ${p.name}`);
+        input.focus();
+      });
+
       const render = async () => {
         const q = input.value.trim();
         if (q.length < 2) {
@@ -372,8 +401,9 @@ const fontCss = fallbackFace +
         if (input.value.trim() !== q) return;
         const hits = search(index, q, mobileMq.matches ? 12 : 8);
         active = -1;
+        lastHits = hits;
         box.innerHTML = hits.length
-          ? hits.map((p) => `<a role="option" href="/termek/${p.slug}"><span class="s-thumb">${p.image ? `<img src="${escapeHtml(p.image)}" alt="" loading="lazy" decoding="async">` : ''}</span><span class="s-txt"><span class="s-name">${escapeHtml(p.name)}</span><span class="s-meta">${p.code ? escapeHtml(p.code) + ' · ' : ''}${escapeHtml(p.groupName)}</span></span></a>`).join('') +
+          ? hits.map((p) => `<div class="s-row"><a role="option" href="/termek/${p.slug}"><span class="s-thumb">${p.image ? `<img src="${escapeHtml(p.image)}" alt="" loading="lazy" decoding="async">` : ''}</span><span class="s-txt"><span class="s-name">${escapeHtml(p.name)}</span><span class="s-meta">${p.code ? escapeHtml(p.code) + ' · ' : ''}${escapeHtml(p.groupName)}</span></span></a>${addBtn(p)}</div>`).join('') +
             `<a class="s-all" href="/kereses?q=${encodeURIComponent(q)}">Összes találat megtekintése →</a>`
           : `<div class="s-empty">Nincs találat. <a href="/ajanlatkeres#egyedi">Kérje egyedi tételként →</a></div>`;
         box.hidden = false;
@@ -537,7 +567,7 @@ const fontCss = fallbackFace +
   .header-search input:focus::placeholder { color: var(--muted); }
   .header-search:focus-within :global(.search-icon) { color: var(--accent); }
   .suggest {
-    position: absolute; top: calc(100% + 8px); left: 0; width: max(100%, 420px); max-width: calc(100vw - 32px);
+    position: absolute; top: calc(100% + 8px); left: 0; width: max(100%, 540px); max-width: calc(100vw - 32px);
     background: #fff; color: var(--text); border: 1px solid var(--line); border-radius: 12px;
     box-shadow: var(--shadow); padding: 6px; z-index: 60;
   }
@@ -546,6 +576,13 @@ const fontCss = fallbackFace +
   .suggest :global(.s-thumb img) { width: 100%; height: 100%; object-fit: contain; padding: 3px; }
   .suggest :global(.s-txt) { display: flex; flex-direction: column; min-width: 0; }
   .suggest :global(.s-all) { padding: 10px 12px; }
+  .suggest :global(.s-row) { display: flex; align-items: center; gap: 8px; }
+  .suggest :global(.s-row > a) { flex: 1 1 auto; min-width: 0; }
+  /* piros = ajánlatkérés */
+  .suggest :global(.s-add) { flex: none; display: inline-flex; align-items: center; gap: 5px; height: 30px; padding: 0 10px; margin-right: 6px; border: 0; border-radius: 999px; background: var(--tomato); color: #fff; font-size: 0.76rem; font-weight: 600; white-space: nowrap; cursor: pointer; transition: background 0.15s ease; }
+  .suggest :global(.s-add:hover) { background: var(--tomato-2); }
+  .suggest :global(.s-add svg) { width: 13px; height: 13px; }
+  .suggest :global(.s-add.in-quote) { background: rgba(18, 163, 107, 0.12); color: var(--ok); }
   .search-toggle { display: none; }
   /* Fiók: asztalon ikon + felirat a kereső és az ajánlatkérő között; mobilon a menüben, a Kapcsolat alatt */
   .nav-account { display: none; }
@@ -665,6 +702,9 @@ const fontCss = fallbackFace +
       border-radius: 0; border-width: 0 0 1px; padding: 6px 10px 12px; box-shadow: 0 18px 30px -18px rgba(18, 24, 33, 0.4); }
     .suggest :global(a) { padding: 8px 6px; gap: 14px; }
     .suggest :global(.s-thumb) { width: 56px; height: 56px; }
+    .suggest :global(.s-add) { width: 38px; height: 38px; padding: 0; justify-content: center; margin-right: 4px; }
+    .suggest :global(.s-add span) { display: none; }
+    .suggest :global(.s-add svg) { width: 17px; height: 17px; }
     .suggest :global(.s-name) { font-size: 1rem; line-height: 1.25; }
     .suggest :global(.s-meta) { font-size: 0.82rem; }
   }
