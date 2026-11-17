@@ -697,7 +697,7 @@ const jsonLd = [
      A két oszlop egyforma magas, így a bal alsó és a jobb alsó doboz alja egy vonalban van; a kép kapja a műszaki
      adatok után megmaradó helyet (kevés adat → nagyobb kép). A magasság a képernyőhöz igazodik, felső korláttal. */
   @media (min-width: 861px) {
-    .product.fit { --fit-h: clamp(420px, calc(100dvh - var(--header-h) - 78px), 680px); align-items: stretch; min-height: var(--fit-h); padding-top: 14px; gap: 28px; }
+    .product.fit { --fit-h: clamp(380px, calc(100dvh - var(--header-h) - 76px), 680px); align-items: stretch; min-height: var(--fit-h); padding-top: 10px; gap: 28px; }
     .fit .media { position: static; display: flex; flex-direction: column; min-height: 0; }
     /* hosszú jobb oszlopnál (pl. mérettábla) a kép nem nő a képernyőnél nagyobbra */
     .fit .media :global(.product-visual), .fit .hero-video { aspect-ratio: auto; flex: 1 1 0; min-height: 170px; max-height: calc(var(--fit-h) * 0.8); }
@@ -707,19 +707,20 @@ const jsonLd = [
     .fit .zoom-hint { position: relative; z-index: 1; flex: none; height: 22px; margin: -28px 0 6px 12px; font-size: 0.74rem; pointer-events: none; }
     .fit .gallery { flex: none; margin-top: 6px; gap: 6px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; }
     .fit .thumb-btn { flex: none; }
-    .fit .gallery img { width: 62px; height: 48px; }
-    .fit .media-specs { flex: none; margin-top: 10px; padding: 12px 16px; }
-    .fit .media-specs h2 { font-size: 1rem; margin: 0 0 4px; }
+    .fit .gallery img { width: 58px; height: 42px; }
+    .fit .media-specs { flex: none; margin-top: 8px; padding: 9px 16px 8px; }
+    .fit .media-specs h2 { font-size: 0.95rem; margin: 0 0 2px; }
     .fit .media-specs .specs tbody { display: grid; grid-template-columns: 1fr 1fr; column-gap: 24px; }
     .fit .media-specs .specs tr { display: flex; border-bottom: 1px solid var(--line); }
-    .fit .media-specs .specs th, .fit .media-specs .specs td { padding: 4px 0; font-size: 0.86rem; border-bottom: 0; }
+    .fit .media-specs .specs th, .fit .media-specs .specs td { padding: 3px 0; font-size: 0.84rem; line-height: 1.35; border-bottom: 0; }
     .fit .media-specs .specs th { flex: 0 0 46%; width: auto; }
     .fit .info { display: flex; flex-direction: column; min-height: 0; }
     .fit .info > .eyebrow { display: none; }
     .fit .info h1 { font-size: clamp(1.4rem, 2.2vw, 1.8rem); margin: 0 0 4px; }
-    .fit .code-line { margin: 0; font-size: 0.92rem; }
+    .fit .code-line { margin: 0; font-size: 0.9rem; }
+    .fit .copy { width: 26px; height: 26px; }
     /* a rendelési doboz az oszlop aljáig ér; a segítő sorok itt nem jelennek meg (a telefonszám a láblécben és a Kapcsolat oldalon van) */
-    .fit .order { flex: 1 1 auto; margin: 10px 0 0; padding: 14px 18px; }
+    .fit .order { flex: 1 1 auto; margin: 8px 0 0; padding: 12px 18px; }
     .fit .assurances { display: none; }
     .fit .cut-title { font-size: 1rem; margin: 0 0 2px; }
     .fit .small { font-size: 0.8rem; margin: 6px 0 0; }
@@ -730,6 +731,10 @@ const jsonLd = [
     .fit .cut-note { min-height: 0; height: 38px; margin-top: 8px; padding-top: 7px; padding-bottom: 7px; font-size: 0.9rem; resize: none; }
     .fit .cut-actions { margin: 8px 0 2px; }
     .fit .order .btn { padding-top: 10px; padding-bottom: 10px; }
+  }
+  /* alacsony képernyőn (kis laptop, nagyított böngésző) az árra vonatkozó megjegyzés nem fér ki a dobozba */
+  @media (min-width: 861px) and (max-height: 720px) {
+    .fit .cut-order > .muted.small:last-child { display: none; }
   }
   .detail h2 { font-size: 1.2rem; font-weight: 700; }
   .specs { width: 100%; border-collapse: collapse; }
