@@ -14435,13 +14435,14 @@
   "specs": {
    "Szélesség (B)": "400 mm",
    "Ívhossz (L)": "1380 mm",
-   "Húr (S)": "880 mm (±50 mm)",
+   "Fesztáv (S)": "880 mm",
    "Anyag": "kopolimer polipropilén (PP)",
    "Szín": "matt fekete",
    "Tömeg": "1,826 kg"
   },
   "images": [
-   "/termekkepek/j50001-ives-sarvedo-1380-880-400-1.webp"
+   "/termekkepek/j50001-ives-sarvedo-1380-880-400-1.webp",
+   "/termekkepek/j50001-ives-sarvedo-1380-880-400-meretek.webp"
   ]
  },
  "j50002-b-ives-sarvedo-feher-csikkal-1380-880-450": {
