@@ -14174,6 +14174,24 @@
     "/termekkepek/j50003-ives-sarvedo-270x1380x880-eco-meretek.webp"
    ],
    "documents": []
+  },
+  {
+   "slug": "j50026-260ft-csapott-teteju-sarvedo",
+   "code": "",
+   "name": "J50026 260FT Csapott tetejű sárvédő",
+   "group": "sarvedok-szerszamosladak",
+   "category": "sarvedok",
+   "specs": {
+    "Szélesség (B)": "260 mm",
+    "Ívhossz (L)": "1450 mm",
+    "Fesztáv (S)": "870 mm"
+   },
+   "description": "",
+   "images": [
+    "/termekkepek/j50026-260ft-csapott-teteju-sarvedo-1.webp",
+    "/termekkepek/j50026-260ft-csapott-teteju-sarvedo-meretek.webp"
+   ],
+   "documents": []
   }
  ],
  "moves": {
