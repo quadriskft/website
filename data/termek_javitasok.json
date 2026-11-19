@@ -4741,7 +4741,8 @@
   "name": "J41F 550FT Csapott tetejű sárvédő"
  },
  "600-ft-csapott-teteju-sarvedo": {
-  "order": 12
+  "order": 12,
+  "name": "J43F 600FT Csapott tetejű sárvédő"
  },
  "j46f-640ft-csapott-teteju-sarvedo": {
   "order": 13
