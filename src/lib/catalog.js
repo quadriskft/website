@@ -92,7 +92,7 @@ const withoutSupplierCodes = (p) =>
 // a végén a tömeg „Súly” néven
 const MUDGUARD_SIZE = /^(belső szélesség|külső szélesség|szélesség|tetőhossz|ívhossz|hossz|fesztáv|húr|magasság|ívsugár|sugár|méret)\b/i;
 const withMudguardWeight = (p) => {
-  if (p.group !== 'sarvedok-szerszamosladak' || p.category !== 'sarvedok') return p;
+  if (p.group !== 'sarvedok-szerszamosladak' || !['sarvedok', 'ives-sarvedok'].includes(p.category)) return p;
   const entries = Object.entries(p.specs ?? {});
   const isWeight = ([k]) => /^tömeg/i.test(k);
   const isSize = ([k]) => MUDGUARD_SIZE.test(k);
@@ -138,7 +138,7 @@ export const products = [...excelProducts, ...extendedProducts, ...cloneProducts
   .map((p) => (GROUP_MERGES[p.group] ? { ...p, group: GROUP_MERGES[p.group] } : p));
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
-const CATEGORY_RENAMES = { versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik', 'elvedo-profilok': 'Élvédő profilok – PVC', 'sima-lemez': 'Natúr alumínium lemezek', 'cseppmintas-lemez': 'Cseppmintás és bordás lemezek', 'festett-lemez': 'Védőfóliás festett lemezek', 'padlo-profilok': 'Padló és padló keret profilok', 'adaico-rakoncak': 'Ada rakoncák', 'dg': 'DG rakoncák', '25-mm-mono-profilok': '25 mm mono profilok', 'aluminium-billencs-oldalfalak': 'Alumínium billencs oldalfalak – 30 mm', 'spitzprofilok': 'Spitzprofilok – építhető oldalfal', 'adaico-c-sin-acel': 'Fix tető alkatrészek', 'dobozok-tarto-konzolok': 'Szerszámosládák + tartó konzolok', 'rakomanyrogzites': 'Zárt dobozos/doppelstock rakományrögzítés', 'soft-gumi': 'Puha gumi' };
+const CATEGORY_RENAMES = { sarvedok: 'Csapott tetejű sárvédők / Flat Top', versus: 'Versus-Omega', 'egyeb-keder-es-tomitogumik': 'Kéder- és tömítőgumik', 'elvedo-profilok': 'Élvédő profilok – PVC', 'sima-lemez': 'Natúr alumínium lemezek', 'cseppmintas-lemez': 'Cseppmintás és bordás lemezek', 'festett-lemez': 'Védőfóliás festett lemezek', 'padlo-profilok': 'Padló és padló keret profilok', 'adaico-rakoncak': 'Ada rakoncák', 'dg': 'DG rakoncák', '25-mm-mono-profilok': '25 mm mono profilok', 'aluminium-billencs-oldalfalak': 'Alumínium billencs oldalfalak – 30 mm', 'spitzprofilok': 'Spitzprofilok – építhető oldalfal', 'adaico-c-sin-acel': 'Fix tető alkatrészek', 'dobozok-tarto-konzolok': 'Szerszámosládák + tartó konzolok', 'rakomanyrogzites': 'Zárt dobozos/doppelstock rakományrögzítés', 'soft-gumi': 'Puha gumi' };
 // Gyártói alkategóriák logója (a gyártó honlapjáról): a címben a név elé / helyett jelenik meg
 export const CATEGORY_LOGOS = {
   versus: { src: '/logok/versus-omega.svg', alt: 'Versus-Omega', text: true },
@@ -183,6 +183,7 @@ const QUADRIS_CATEGORIES = [
   ['kedergumik', 'elvedo-profilok-epdm', 'Élvédő profilok – EPDM', 'elvedo-profilok'],
   ['hatso-ajtok-es-athajto-rampak', '4-szarnyu', '4 szárnyú', '2-szarnyu'],
   ['rakomanyrogzites', 'altalanos-platos-rakomanyrogzites', 'Általános platós rakományrögzítés', 'rakomanyrogzites'],
+  ['sarvedok-szerszamosladak', 'ives-sarvedok', 'Íves sárvédők', 'sarvedok'],
 ];
 for (const [gs, slug, name, after] of QUADRIS_CATEGORIES) {
   const g = groupList.find((x) => x.slug === gs);

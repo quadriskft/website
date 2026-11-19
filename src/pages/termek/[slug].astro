@@ -292,7 +292,7 @@ const jsonLd = [
         </ul>
         {/* asztali nézetben a műszaki adatok a jobb oldalon, a rendelési doboz alatt */}
         {specs.length > 0 && (
-          <section class:list={['card', 'detail', 'info-specs', { few: specs.length <= 4, 'one-col': product.group === 'sarvedok-szerszamosladak' && product.category === 'sarvedok', many: specs.filter(([, v]) => String(v).length <= 30).length >= 9 }]}>
+          <section class:list={['card', 'detail', 'info-specs', { few: specs.length <= 4, 'one-col': product.group === 'sarvedok-szerszamosladak' && ['sarvedok', 'ives-sarvedok'].includes(product.category), many: specs.filter(([, v]) => String(v).length <= 30).length >= 9 }]}>
             <h2>Műszaki adatok</h2>
             <table class="specs">
               <tbody>

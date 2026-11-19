@@ -4518,7 +4518,11 @@
    "Húr (S)": null
   },
   "order": 17,
-  "name": "J50001 Íves sárvédő, 400/880/1380"
+  "name": "J50001 Íves sárvédő, 400/880/1380",
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j50002-ives-sarvedo-1380-880-450": {
   "specs": {
@@ -4526,7 +4530,11 @@
    "Fesztáv (S)": "880 mm (± 50 mm)"
   },
   "order": 22,
-  "name": "J50002 Íves sárvédő, 450/880/1380"
+  "name": "J50002 Íves sárvédő, 450/880/1380",
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j50002-b-ives-sarvedo-feher-csikkal-1380-880-450": {
   "specs": {
@@ -4534,7 +4542,11 @@
    "Fesztáv (S)": "880 mm (± 50 mm)"
   },
   "order": 23,
-  "name": "J50002/B Íves sárvédő, fehér csíkkal 450/880/1380"
+  "name": "J50002/B Íves sárvédő, fehér csíkkal 450/880/1380",
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j50003-ives-sarvedo-1380-880-270": {
   "specs": {
@@ -4547,7 +4559,11 @@
    "Húr (S)": null
   },
   "order": 16,
-  "name": "J50003/B Íves sárvédő, fehér csíkkal 270/880/1380 – csak rendelésre"
+  "name": "J50003/B Íves sárvédő, fehér csíkkal 270/880/1380 – csak rendelésre",
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j50019-450ft-csapott-teteju-sarvedo": {
   "specs": {
@@ -4754,85 +4770,193 @@
   "order": 13
  },
  "j5124018p-ives-sarvedo-405-1800-r580-wl": {
-  "order": 18
+  "order": 18,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5126503p-ives-sarvedo-405-1900-r635-wl": {
-  "order": 19
+  "order": 19,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5126190p-ives-sarvedo-430-1900-r650-wl": {
-  "order": 20
+  "order": 20,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5126530p-ives-sarvedo-430-1900-r650-3-reszes": {
-  "order": 21
+  "order": 21,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5125140p-ives-sarvedo-450-1400-r450-wl": {
-  "order": 24
+  "order": 24,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5124160p-ives-sarvedo-500-1600-500-wl": {
-  "order": 25
+  "order": 25,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5124170p-ives-sarvedo-500-1700-500": {
-  "order": 26
+  "order": 26,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5124870p-ives-sarvedo-500-1700-r550-wl": {
-  "order": 27
+  "order": 27,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5123171p-ives-sarvedo-550-1700-500": {
-  "order": 28
+  "order": 28,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5123175p-ives-sarvedo-550-1700-r550-wl": {
-  "order": 29
+  "order": 29,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5122170p-ives-sarvedo-595-1700-550": {
-  "order": 30
+  "order": 30,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5165920p-ives-sarvedo-595-2000-r550-supra": {
-  "order": 31
+  "order": 31,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5120940p-ives-sarvedo-630-1650-r580": {
-  "order": 32
+  "order": 32,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5166319p-ives-sarvedo-630-1930-r530-supra": {
-  "order": 33
+  "order": 33,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5166320p-ives-sarvedo-630-2050-580-supra": {
-  "order": 34
+  "order": 34,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5120185p-ives-sarvedo-650-1800-r580-wl": {
-  "order": 35
+  "order": 35,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5120190p-ives-sarvedo-650-1900-630": {
-  "order": 36
+  "order": 36,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5110303p-ives-sarvedo-670-2175-670": {
-  "order": 37
+  "order": 37,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5110217p-ives-sarvedo-680-p42": {
-  "order": 38
+  "order": 38,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5110070p-680-700-negyedives-sarvedo": {
-  "order": 39
+  "order": 39,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5110185p-ives-sarvedo-680-1800-r580": {
-  "order": 40
+  "order": 40,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5110190p-ives-sarvedo-680-1900-r630-wl": {
-  "order": 41
+  "order": 41,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5110225p-ives-sarvedo-680-1900-r630-3-reszes": {
-  "order": 42
+  "order": 42,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5110217p-ives-sarvedo-680-2175-r630": {
-  "order": 43
+  "order": 43,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5166823p-ives-sarvedo-680-2300-r630-wl-supra": {
-  "order": 44
+  "order": 44,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j5166825p-ives-sarvedo-680-2575-supra": {
-  "order": 45
+  "order": 45,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j50003-ives-sarvedo-270x1380x880-eco": {
-  "order": 14
+  "order": 14,
+  "move": {
+   "group": "sarvedok-szerszamosladak",
+   "category": "ives-sarvedok"
+  }
  },
  "j50026-260ft-csapott-teteju-sarvedo": {
   "order": 2
