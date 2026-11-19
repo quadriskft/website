@@ -621,7 +621,8 @@ import wordmark from '../assets/quadris-wordmark.svg?raw';
      jobbra a fiók és az ajánlatkérő egyforma magas gombként */
   @media (min-width: 961px) {
     .header-inner { gap: 0; }
-    .logo { align-items: center; height: 34px; padding-right: 30px; margin-right: 30px; border-right: 1px solid var(--hd-field-line); }
+    /* a szóembléma a bal szél és az elválasztó vonal között középen: jobbra ugyanannyi hely, mint a tartalom bal margója */
+    .logo { align-items: center; height: 34px; padding-right: 20px; margin-right: 30px; border-right: 1px solid var(--hd-field-line); }
     .main-nav { flex: none; gap: 30px; }
     .header-actions { flex: 1 1 auto; min-width: 0; gap: 10px; padding-left: 32px; }
     .header-search { flex: 0 1 460px; width: auto; min-width: 180px; margin-inline: auto; }
