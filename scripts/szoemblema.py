@@ -1,13 +1,12 @@
-# QUADRIS szóembléma: vastag, dőlt betűk körvonalként (Archivo, OFL licenc) + a jobb végén felkanyarodó aláhúzás
+# QUADRIS szóembléma: vastag, szögletes, dőlt betűk körvonalként (Kanit Black Italic, OFL licenc) + a jobb végén felkanyarodó aláhúzás
 import math
 from fontTools.ttLib import TTFont
-from fontTools.varLib.instancer import instantiateVariableFont
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
-f=TTFont('font/archivo-italic.ttf'); inst=instantiateVariableFont(f,{'wdth':104,'wght':900})
+f=TTFont('font/kanit-900i.ttf'); inst=f
 gs=inst.getGlyphSet(); cmap=inst.getBestCmap(); H=inst['OS/2'].sCapHeight
-extra=math.tan(math.radians(16))-math.tan(math.radians(10))   # a betűk 10° helyett kb. 16°-ban dőlnek
-x=0; d=[]; track=4
+extra=math.tan(math.radians(14))-math.tan(math.radians(abs(inst['post'].italicAngle)))   # a betűk kb. 14°-ban dőlnek
+x=0; d=[]; track=6
 for ch in 'QUADRIS':
     g=cmap[ord(ch)]; pen=SVGPathPen(gs,ntos=lambda v:f'{v:.0f}'); tp=TransformPen(pen,(1,0,-extra,-1,x+extra*H,H)); gs[g].draw(tp); d.append(pen.getCommands()); x+=gs[g].width+track
 W=x-track+extra*H
