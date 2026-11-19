@@ -292,7 +292,7 @@ const jsonLd = [
         </ul>
         {/* asztali nézetben a műszaki adatok a jobb oldalon, a rendelési doboz alatt */}
         {specs.length > 0 && (
-          <section class:list={['card', 'detail', 'info-specs', { few: specs.length <= 4, many: specs.filter(([, v]) => String(v).length <= 30).length >= 9 }]}>
+          <section class:list={['card', 'detail', 'info-specs', { few: specs.length <= 4, 'one-col': product.group === 'sarvedok-szerszamosladak' && product.category === 'sarvedok', many: specs.filter(([, v]) => String(v).length <= 30).length >= 9 }]}>
             <h2>Műszaki adatok</h2>
             <table class="specs">
               <tbody>
@@ -743,6 +743,10 @@ const jsonLd = [
     /* kevés (legfeljebb 4) adat: egy oszlopban, szellősebben; sok adat: három oszlopban */
     .fit .info-specs.few .specs tbody { grid-template-columns: 1fr; }
     .fit .info-specs.few .specs th, .fit .info-specs.few .specs td { padding: 5px 0; font-size: 0.9rem; }
+    /* sárvédők: minden adat egymás alatt, egy oszlopban (méretek, egyéb adatok, súly) */
+    .fit .info-specs.one-col .specs tbody { grid-template-columns: 1fr; }
+    .fit .info-specs.one-col .specs th { flex-basis: 40%; }
+    .fit .info-specs.one-col .specs tr.wide th { flex-basis: 40%; }
     .fit .info-specs.few .specs th { flex-basis: 40%; }
     .fit .info-specs.many { padding-top: 7px; padding-bottom: 6px; }
     .fit .info-specs.many .specs th, .fit .info-specs.many .specs td { padding: 2px 0; font-size: 0.8rem; line-height: 1.3; }
