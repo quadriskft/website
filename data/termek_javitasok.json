@@ -4516,27 +4516,32 @@
  "j50001-ives-sarvedo-1380-880-400": {
   "specs": {
    "Húr (S)": null
-  }
+  },
+  "order": 15
  },
  "j50002-ives-sarvedo-1380-880-450": {
   "specs": {
    "Húr (S)": null
-  }
+  },
+  "order": 20
  },
  "j50002-b-ives-sarvedo-feher-csikkal-1380-880-450": {
   "specs": {
    "Húr (S)": null
-  }
+  },
+  "order": 21
  },
  "j50003-ives-sarvedo-1380-880-270": {
   "specs": {
    "Húr (S)": null
-  }
+  },
+  "order": 13
  },
  "j50003-b-ives-sarvedo-feher-csikkal-1380-880-270": {
   "specs": {
    "Húr (S)": null
-  }
+  },
+  "order": 14
  },
  "j50019-450ft-csapott-teteju-sarvedo": {
   "specs": {
@@ -4546,7 +4551,8 @@
    "Ívhossz (L)": "1450 mm",
    "Fesztáv (S)": "900 mm (± 50 mm)",
    "Tömeg": "2,48 kg"
-  }
+  },
+  "order": 4
  },
  "j50019-b-450ft-csapott-teteju-sarvedo-feher-csikkal": {
   "specs": {
@@ -4556,7 +4562,8 @@
    "Ívhossz (L)": "1450 mm",
    "Fesztáv (S)": "900 mm (± 50 mm)",
    "Tömeg": "2,48 kg"
-  }
+  },
+  "order": 5
  },
  "j50027-280ft-csapott-teteju-sarvedo": {
   "specs": {
@@ -4566,7 +4573,8 @@
    "Ívhossz (L)": "1450 mm",
    "Fesztáv (S)": "900 mm (± 50 mm)",
    "Tömeg": "1,51 kg"
-  }
+  },
+  "order": 2
  },
  "j50027-b-280ft-csapott-teteju-sarvedo-feher-csikkal": {
   "specs": {
@@ -4576,7 +4584,8 @@
    "Ívhossz (L)": "1450 mm",
    "Fesztáv (S)": "900 mm (± 50 mm)",
    "Tömeg": "1,51 kg"
-  }
+  },
+  "order": 3
  },
  "j108524-d42-es-ff-1p-sarvedotarto-cso-580-mm": {
   "specs": {
@@ -4711,5 +4720,107 @@
   "specs": {
    "Hossz": "3000 mm"
   }
+ },
+ "260ft-csapott-teteju-sarvedo": {
+  "order": 1
+ },
+ "j5025135p-sarvedo-450ft": {
+  "order": 6
+ },
+ "j5025137p-sarvedo-450ft": {
+  "order": 7
+ },
+ "j103120d-ft-sarvedo-510-1770-510": {
+  "order": 8
+ },
+ "jx37f-510ft-csapott-teteju-sarvedo": {
+  "order": 9
+ },
+ "550ft-csapott-teteju-sarvedo": {
+  "order": 10
+ },
+ "600-ft-csapott-teteju-sarvedo": {
+  "order": 11
+ },
+ "j46f-640ft-csapott-teteju-sarvedo": {
+  "order": 12
+ },
+ "j5124018p-ives-sarvedo-405-1800-r580-wl": {
+  "order": 16
+ },
+ "j5126503p-ives-sarvedo-405-1900-r635-wl": {
+  "order": 17
+ },
+ "j5126190p-ives-sarvedo-430-1900-r650-wl": {
+  "order": 18
+ },
+ "j5126530p-ives-sarvedo-430-1900-r650-3-reszes": {
+  "order": 19
+ },
+ "j5125140p-ives-sarvedo-450-1400-r450-wl": {
+  "order": 22
+ },
+ "j5124160p-ives-sarvedo-500-1600-500-wl": {
+  "order": 23
+ },
+ "j5124170p-ives-sarvedo-500-1700-500": {
+  "order": 24
+ },
+ "j5124870p-ives-sarvedo-500-1700-r550-wl": {
+  "order": 25
+ },
+ "j5123171p-ives-sarvedo-550-1700-500": {
+  "order": 26
+ },
+ "j5123175p-ives-sarvedo-550-1700-r550-wl": {
+  "order": 27
+ },
+ "j5122170p-ives-sarvedo-595-1700-550": {
+  "order": 28
+ },
+ "j5165920p-ives-sarvedo-595-2000-r550-supra": {
+  "order": 29
+ },
+ "j5120940p-ives-sarvedo-630-1650-r580": {
+  "order": 30
+ },
+ "j5166319p-ives-sarvedo-630-1930-r530-supra": {
+  "order": 31
+ },
+ "j5166320p-ives-sarvedo-630-2050-580-supra": {
+  "order": 32
+ },
+ "j5120185p-ives-sarvedo-650-1800-r580-wl": {
+  "order": 33
+ },
+ "j5120190p-ives-sarvedo-650-1900-630": {
+  "order": 34
+ },
+ "j5110303p-ives-sarvedo-670-2175-670": {
+  "order": 35
+ },
+ "j5110217p-ives-sarvedo-680-p42": {
+  "order": 36
+ },
+ "j5110070p-680-700-negyedives-sarvedo": {
+  "order": 37
+ },
+ "j5110185p-ives-sarvedo-680-1800-r580": {
+  "order": 38
+ },
+ "j5110190p-ives-sarvedo-680-1900-r630-wl": {
+  "order": 39
+ },
+ "j5110225p-ives-sarvedo-680-1900-r630-3-reszes": {
+  "order": 40
+ },
+ "j5110217p-ives-sarvedo-680-2175-r630": {
+  "order": 41
+ },
+ "j5166823p-ives-sarvedo-680-2300-r630-wl-supra": {
+  "order": 42
+ },
+ "j5166825p-ives-sarvedo-680-2575-supra": {
+  "order": 43
  }
 }
