@@ -8630,16 +8630,16 @@
   "matchedCode": "J43F",
   "description": "J-Wing lapos tetejű (csapott) sárvédő fényes, ütésálló felülettel, extrém időjárási körülményekre.",
   "specs": {
-   "Belső szélesség [mm]": "600",
-   "Külső szélesség [mm]": "620",
-   "Hossz [mm]": "700",
-   "Fesztáv [mm]": "1250",
-   "Magasság [mm]": "625"
+   "Belső szélesség (Bi)": "600 mm",
+   "Külső szélesség (B)": "620 mm",
+   "Tetőhossz (L)": "700 mm",
+   "Fesztáv (S)": "1250 mm",
+   "Magasság (H)": "625 mm"
   },
   "images": [
    "/termekkepek/600-ft-csapott-teteju-sarvedo-1.webp",
    "/termekkepek/600-ft-csapott-teteju-sarvedo-2.webp",
-   "/termekkepek/600-ft-csapott-teteju-sarvedo-3.webp"
+   "/termekkepek/600-ft-csapott-teteju-sarvedo-meretek.webp"
   ]
  },
  "6004-munkahenger-6t-06x1245x124": {
