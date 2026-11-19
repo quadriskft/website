@@ -88,13 +88,19 @@ const withoutSupplierCodes = (p) =>
     ? { ...p, specs: Object.fromEntries(Object.entries(p.specs).filter(([k]) => !SUPPLIER_CODE_SPEC.test(k))) }
     : p;
 
-// Sárvédők: a „Tömeg” sor „Súly” néven, a műszaki adatok végén áll (a Quadris kérése)
+// Sárvédők műszaki adatai (a Quadris kérése): a méretek egy tömbben elöl, utánuk az egyéb adatok (kerék, anyag, szín …),
+// a végén a tömeg „Súly” néven
+const MUDGUARD_SIZE = /^(belső szélesség|külső szélesség|szélesség|tetőhossz|ívhossz|hossz|fesztáv|húr|magasság|ívsugár|sugár|méret)\b/i;
 const withMudguardWeight = (p) => {
   if (p.group !== 'sarvedok-szerszamosladak' || p.category !== 'sarvedok') return p;
   const entries = Object.entries(p.specs ?? {});
-  const weight = entries.filter(([k]) => /^tömeg/i.test(k));
-  if (!weight.length) return p;
-  return { ...p, specs: Object.fromEntries([...entries.filter(([k]) => !/^tömeg/i.test(k)), ...weight.map(([k, v]) => [k.replace(/^tömeg/i, 'Súly'), v])]) };
+  const isWeight = ([k]) => /^tömeg/i.test(k);
+  const isSize = ([k]) => MUDGUARD_SIZE.test(k);
+  return { ...p, specs: Object.fromEntries([
+    ...entries.filter(isSize),
+    ...entries.filter((e) => !isSize(e) && !isWeight(e)),
+    ...entries.filter(isWeight).map(([k, v]) => [k.replace(/^tömeg/i, 'Súly'), v]),
+  ]) };
 };
 
 // Gumi- és kéderprofilok: kartonra rendelhetők, a kartont nem bontjuk meg (data/kedergumi_kiszereles.json,
