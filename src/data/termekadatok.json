@@ -14393,11 +14393,11 @@
   "matchedCode": "J46F",
   "description": "J-Wing lapos tetejű (csapott) sárvédő fényes, ütésálló felülettel, extrém időjárási körülményekre.",
   "specs": {
-   "Belső szélesség [mm]": "650",
-   "Külső szélesség [mm]": "670",
-   "Hossz [mm]": "750",
-   "Fesztáv [mm]": "1360",
-   "Magasság [mm]": "720"
+   "Belső szélesség (Bi)": "650 mm",
+   "Külső szélesség (B)": "670 mm",
+   "Tetőhossz (L)": "750 mm",
+   "Fesztáv (S)": "1360 mm",
+   "Magasság (H)": "720 mm"
   },
   "images": [
    "/termekkepek/j46f-640ft-csapott-teteju-sarvedo-1.webp",
