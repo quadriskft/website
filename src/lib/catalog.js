@@ -88,6 +88,15 @@ const withoutSupplierCodes = (p) =>
     ? { ...p, specs: Object.fromEntries(Object.entries(p.specs).filter(([k]) => !SUPPLIER_CODE_SPEC.test(k))) }
     : p;
 
+// Sárvédők: a „Tömeg” sor „Súly” néven, a műszaki adatok végén áll (a Quadris kérése)
+const withMudguardWeight = (p) => {
+  if (p.group !== 'sarvedok-szerszamosladak' || p.category !== 'sarvedok') return p;
+  const entries = Object.entries(p.specs ?? {});
+  const weight = entries.filter(([k]) => /^tömeg/i.test(k));
+  if (!weight.length) return p;
+  return { ...p, specs: Object.fromEntries([...entries.filter(([k]) => !/^tömeg/i.test(k)), ...weight.map(([k, v]) => [k.replace(/^tömeg/i, 'Súly'), v])]) };
+};
+
 // Gumi- és kéderprofilok: kartonra rendelhetők, a kartont nem bontjuk meg (data/kedergumi_kiszereles.json,
 // scripts/termekadatok/sandprofile_kiszereles.py); a gyártói 1000 m feletti minimum is feltüntetve
 const huNum = (n) => n.toLocaleString('hu-HU', { maximumFractionDigits: 2 });
@@ -119,7 +128,7 @@ const withStock = (p) => (STOCK_GROUPS.has(p.group) && (excelSlugs.has(p.slug) |
 const GROUP_MERGES = { 'ponyvarendszer-kiegeszitok': 'elhuzhato-roloponyvas-rendszer' };
 // A Quadris által törlésre jelölt termékek (data/torolt_termekek.json) sehol nem jelennek meg
 export const products = [...excelProducts, ...extendedProducts, ...cloneProducts].filter((p) => !deleted[p.slug])
-  .map(withoutSupplierCodes).map(withCarton).map(withStock)
+  .map(withoutSupplierCodes).map(withMudguardWeight).map(withCarton).map(withStock)
   .map((p) => (GROUP_MERGES[p.group] ? { ...p, group: GROUP_MERGES[p.group] } : p));
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
