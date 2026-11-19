@@ -14154,6 +14154,26 @@
     "/termekkepek/386083-csattakaro-muanyag-2-csavaros-10-db-1.webp"
    ],
    "source": "ADAICO"
+  },
+  {
+   "slug": "j50003-ives-sarvedo-270x1380x880-eco",
+   "code": "",
+   "name": "J50003 Íves sárvédő, 270x1380x880 Eco",
+   "group": "sarvedok-szerszamosladak",
+   "category": "sarvedok",
+   "specs": {
+    "Kerék": "szimpla",
+    "Szélesség (B)": "270 mm",
+    "Ívhossz (L)": "1380 mm",
+    "Fesztáv (S)": "880 mm (± 50 mm)",
+    "Tömeg": "1,268 kg"
+   },
+   "description": "",
+   "images": [
+    "/termekkepek/j50003-ives-sarvedo-270x1380x880-eco-1.webp",
+    "/termekkepek/j50003-ives-sarvedo-270x1380x880-eco-meretek.webp"
+   ],
+   "documents": []
   }
  ],
  "moves": {
