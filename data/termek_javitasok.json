@@ -4524,13 +4524,15 @@
   "specs": {
    "Húr (S)": null
   },
-  "order": 22
+  "order": 22,
+  "name": "J50002 Íves sárvédő, 450/880/1380"
  },
  "j50002-b-ives-sarvedo-feher-csikkal-1380-880-450": {
   "specs": {
    "Húr (S)": null
   },
-  "order": 23
+  "order": 23,
+  "name": "J50002/B Íves sárvédő, fehér csíkkal 450/880/1380"
  },
  "j50003-ives-sarvedo-1380-880-270": {
   "specs": {
