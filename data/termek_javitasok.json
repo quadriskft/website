@@ -4540,22 +4540,42 @@
  },
  "j50019-450ft-csapott-teteju-sarvedo": {
   "specs": {
-   "Húr (S)": null
+   "Húr (S)": null,
+   "Kerék": "szimpla",
+   "Szélesség (B)": "450 mm",
+   "Ívhossz (L)": "1450 mm",
+   "Fesztáv (S)": "900 mm (± 50 mm)",
+   "Tömeg": "2,48 kg"
   }
  },
  "j50019-b-450ft-csapott-teteju-sarvedo-feher-csikkal": {
   "specs": {
-   "Húr (S)": null
+   "Húr (S)": null,
+   "Kerék": "szimpla",
+   "Szélesség (B)": "450 mm",
+   "Ívhossz (L)": "1450 mm",
+   "Fesztáv (S)": "900 mm (± 50 mm)",
+   "Tömeg": "2,48 kg"
   }
  },
  "j50027-280ft-csapott-teteju-sarvedo": {
   "specs": {
-   "Húr (S)": null
+   "Húr (S)": null,
+   "Kerék": "szimpla",
+   "Szélesség (B)": "280 mm",
+   "Ívhossz (L)": "1450 mm",
+   "Fesztáv (S)": "900 mm (± 50 mm)",
+   "Tömeg": "1,51 kg"
   }
  },
  "j50027-b-280ft-csapott-teteju-sarvedo-feher-csikkal": {
   "specs": {
-   "Húr (S)": null
+   "Húr (S)": null,
+   "Kerék": "szimpla",
+   "Szélesség (B)": "280 mm",
+   "Ívhossz (L)": "1450 mm",
+   "Fesztáv (S)": "900 mm (± 50 mm)",
+   "Tömeg": "1,51 kg"
   }
  },
  "j108524-d42-es-ff-1p-sarvedotarto-cso-580-mm": {
