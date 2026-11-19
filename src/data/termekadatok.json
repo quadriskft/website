@@ -8403,16 +8403,16 @@
   "matchedCode": "J41F",
   "description": "J-Wing lapos tetejű (csapott) sárvédő fényes, ütésálló felülettel, extrém időjárási körülményekre.",
   "specs": {
-   "Belső szélesség [mm]": "550",
-   "Külső szélesség [mm]": "570",
-   "Hossz [mm]": "630",
-   "Fesztáv [mm]": "1130",
-   "Magasság [mm]": "550"
+   "Belső szélesség (Bi)": "550 mm",
+   "Külső szélesség (B)": "570 mm",
+   "Tetőhossz (L)": "630 mm",
+   "Fesztáv (S)": "1130 mm",
+   "Magasság (H)": "550 mm"
   },
   "images": [
    "/termekkepek/550ft-csapott-teteju-sarvedo-1.webp",
    "/termekkepek/550ft-csapott-teteju-sarvedo-2.webp",
-   "/termekkepek/550ft-csapott-teteju-sarvedo-3.webp"
+   "/termekkepek/550ft-csapott-teteju-sarvedo-meretek.webp"
   ]
  },
  "552080-utkozogumi-200x80x80": {
