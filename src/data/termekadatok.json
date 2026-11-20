@@ -19401,5 +19401,18 @@
    "/termekkepek/615104-oldalajtozar-belso-500-mm-kar-jobb-1.webp",
    "/termekkepek/615104-oldalajtozar-belso-500-mm-kar-jobb-rajz.webp"
   ]
+ },
+ "615102-kulso-oldalajto-kilincs": {
+  "images": [
+   "/termekkepek/615102-kulso-oldalajto-kilincs-1.webp",
+   "/termekkepek/615102-kulso-oldalajto-kilincs-meretrajz.webp"
+  ]
+ },
+ "615103-oldalajtozar-kompetten-bal": {
+  "images": [
+   "/termekkepek/615103-oldalajtozar-kompetten-bal-1.webp",
+   "/termekkepek/615103-oldalajtozar-kompetten-bal-kar.webp",
+   "/termekkepek/615103-oldalajtozar-kompetten-bal-kilincs.webp"
+  ]
  }
 }
