@@ -4716,12 +4716,14 @@
  },
  "121018-sl-rakomanyrogzito-rud-alu-1650-2050-mm": {
   "specs": {
-   "Hossz": "1650–2050 mm (állítható)"
+   "Hossz": "1650–2050 mm (állítható)",
+   "Átmérő": "42 mm"
   }
  },
  "121019-rakomanyrogzito-rud-alu-2050-2450-mm": {
   "specs": {
-   "Hossz": "2050–2450 mm (állítható)"
+   "Hossz": "2050–2450 mm (állítható)",
+   "Átmérő": "42 mm"
   }
  },
  "121030-rakomanyrogzito-rud-acel-2200": {
