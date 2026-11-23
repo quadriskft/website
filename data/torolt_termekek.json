@@ -1981,5 +1981,23 @@
   "code": "703",
   "date": "2026-11-23",
   "reason": "a Quadris kérésére törölve"
+ },
+ "751-reflex-szalag-ponyvara-sarga": {
+  "name": "Reflex szalag ponyvára, sárga",
+  "code": "751",
+  "date": "2026-11-23",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "752-reflex-szalag-ponyvara-feher": {
+  "name": "Reflex szalag ponyvára, fehér",
+  "code": "752",
+  "date": "2026-11-23",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "753-reflex-szalag-piros-ponyvara": {
+  "name": "Reflex szalag piros ponyvára",
+  "code": "753",
+  "date": "2026-11-23",
+  "reason": "a Quadris kérésére törölve"
  }
 }
