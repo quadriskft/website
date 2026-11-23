@@ -1969,5 +1969,17 @@
   "code": "614603",
   "date": "2026-11-20",
   "reason": "a Quadris kérésére törölve"
+ },
+ "702-reflex-szalag-dobozra-feher-stx": {
+  "name": "Reflex szalag dobozra, fehér STX",
+  "code": "702",
+  "date": "2026-11-23",
+  "reason": "a Quadris kérésére törölve"
+ },
+ "703-reflex-szalag-dobozra-piros-stx": {
+  "name": "Reflex szalag dobozra, piros STX",
+  "code": "703",
+  "date": "2026-11-23",
+  "reason": "a Quadris kérésére törölve"
  }
 }
