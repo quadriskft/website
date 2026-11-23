@@ -4728,12 +4728,18 @@
  },
  "121030-rakomanyrogzito-rud-acel-2200": {
   "specs": {
-   "Hossz": "2200 mm"
+   "Hossz": "2085–2485 mm (állítható)",
+   "Átmérő": "42 mm",
+   "Végcsap": "Ø19 / Ø24 mm",
+   "Tömeg": "4,6 kg"
   }
  },
  "121032-rakomanyrogzito-rud-acel-2500": {
   "specs": {
-   "Hossz": "2500 mm"
+   "Hossz": "2360–2760 mm (állítható)",
+   "Átmérő": "42 mm",
+   "Végcsap": "Ø19 / Ø24 mm",
+   "Tömeg": "9,3 kg"
   }
  },
  "127159-palcas-rakomanyrogzito-sin-sully-alu-5m": {
