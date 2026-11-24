@@ -640,7 +640,8 @@ const jsonLd = [
   /* világosszürke háttér + 1px keret: a fehér alapú, vékony vonalas műszaki rajzok is látszanak bélyegként */
   .gallery img { display: block; width: 88px; height: 72px; object-fit: contain; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 4px; box-sizing: border-box; }
   .info h1 { font-size: clamp(1.7rem, 3.2vw, 2.5rem); margin: 12px 0 12px; }
-  .code-line { display: flex; align-items: center; gap: 8px; color: var(--text-2); }
+  .code-line { display: flex; align-items: center; gap: 8px; color: var(--text); font-size: 1.05rem; font-weight: 600; }
+  .code-line strong { font-size: 1.4rem; font-weight: 800; letter-spacing: 0.02em; line-height: 1.2; color: var(--text); background: color-mix(in srgb, var(--accent) 12%, transparent); border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent); border-radius: var(--radius-btn); padding: 2px 12px; white-space: nowrap; }
   .copy { border: 1px solid var(--line-strong); background: transparent; border-radius: var(--radius-btn); width: 30px; height: 30px; display: grid; place-items: center; cursor: pointer; color: var(--muted); }
   .copy:hover { color: var(--accent); border-color: var(--accent); }
   .copy:global(.done) { color: var(--ok); border-color: var(--ok); }
@@ -719,10 +720,11 @@ const jsonLd = [
     .product.fit { --fit-h: clamp(380px, calc(100dvh - var(--header-h) - 76px), 700px); height: var(--fit-h); padding-top: 8px;
       display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 8px 24px; align-items: stretch; }
     .fit .info { display: contents; }
-    .fit .title-block { grid-column: 1 / -1; grid-row: 1; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 2px 20px; text-align: center; }
+    .fit .title-block { grid-column: 1 / -1; grid-row: 1; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4px 20px; text-align: center; }
     .fit .title-block .eyebrow { display: none; }
     .fit .title-block h1 { font-size: clamp(1.3rem, 2.1vw, 1.7rem); margin: 0; }
-    .fit .code-line { margin: 0; font-size: 0.9rem; }
+    .fit .code-line { margin: 0; font-size: 1rem; }
+    .fit .code-line strong { font-size: clamp(1.2rem, 1.9vw, 1.5rem); }
     .fit .stock-line { margin: 0; font-size: 0.8rem; padding: 2px 10px; }
     .fit .copy { width: 26px; height: 26px; }
     .fit .media { grid-column: 1; grid-row: 2; position: static; display: flex; flex-direction: column; min-height: 0; }
