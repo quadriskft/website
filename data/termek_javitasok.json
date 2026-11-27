@@ -878,19 +878,28 @@
   "alsoIn": [
    "ipari-felgyartmanyok/cso-rud"
   ],
-  "name": "60x1,5 mm Alu cső"
+  "name": "60x1,5 mm Alu cső",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "222985-d50-mm-alu-cso": {
   "alsoIn": [
    "ipari-felgyartmanyok/cso-rud"
   ],
-  "name": "50 mm Alu cső"
+  "name": "50 mm Alu cső",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "223520-ponyvacso-35x2-mm": {
   "alsoIn": [
    "ipari-felgyartmanyok/cso-rud"
   ],
-  "name": "35x2 mm Alu cső"
+  "name": "35x2 mm Alu cső",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "245240-billencs-also-200x40-mm": {
   "name": "Billencs alsó profil 200x40 mm natúr",
@@ -2317,10 +2326,16 @@
   "name": "20x20x2 mm Alu L profil"
  },
  "250202-20x2-alu-cso": {
-  "name": "20x2 mm Alu cső"
+  "name": "20x2 mm Alu cső",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "251310-18x2-alu-cso": {
-  "name": "18x2 mm Alu cső"
+  "name": "18x2 mm Alu cső",
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "251530-18-mm-alu-rud": {
   "name": "18 mm Alu rúd"
@@ -3115,27 +3130,45 @@
  },
  "220233-150x25-mm-ponyvatarto-zartszelveny": {
   "name": "Ponyvatartó zártszelvény 150x25 mm",
-  "order": 1
+  "order": 1,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "222001-100x25-mm-ponyvatarto-zartszelveny-t": {
   "name": "Ponyvatartó zártszelvény 100x25 mm T",
-  "order": 2
+  "order": 2,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "226900-100x25-mm-ponyvatarto-zartszelveny-d": {
   "name": "Ponyvatartó zártszelvény 100x25 mm D",
-  "order": 3
+  "order": 3,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "222266-100x25-mm-ponyvatarto-zartszelveny-gk": {
   "name": "Ponyvatartó zártszelvény 100x25 mm GK",
-  "order": 4
+  "order": 4,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "223219-100x25-mm-ponyvatarto-zartszelveny-elox": {
   "name": "Ponyvatartó zártszelvény 100x25 mm, eloxált",
-  "order": 5
+  "order": 5,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "222185-100x25-mm-ponyvatarto-zartszelveny-merevitett": {
   "name": "Ponyvatartó zártszelvény 100x25 mm, merevített",
-  "order": 6
+  "order": 6,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "221304-50x25-mm-ponyvatarto-zartszelveny-m": {
   "name": "Ponyvatartó zártszelvény 50x25 mm M",
