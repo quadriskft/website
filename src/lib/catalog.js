@@ -103,6 +103,14 @@ const withMudguardWeight = (p) => {
   ]) };
 };
 
+// Profiloknál nem jelenik meg a látható felület, a kerület, a keresztmetszet és a profil típusa (a Quadris kérése);
+// a kédergumiknál a keresztmetszet marad, ott az a termék jellemzője
+const HIDDEN_PROFILE_SPEC = /^(látható felület|kerület|keresztmetszet|profil típusa)$/i;
+const withoutProfileGeometry = (p) =>
+  p.group !== 'kedergumik' && Object.keys(p.specs ?? {}).some((k) => HIDDEN_PROFILE_SPEC.test(k))
+    ? { ...p, specs: Object.fromEntries(Object.entries(p.specs).filter(([k]) => !HIDDEN_PROFILE_SPEC.test(k))) }
+    : p;
+
 // A tömeg minden terméknél „Súly” néven jelenik meg (a Quadris kérése)
 const withWeightLabel = (p) => {
   if (!Object.keys(p.specs ?? {}).some((k) => /tömeg/i.test(k))) return p;
@@ -141,7 +149,7 @@ const withStock = (p) => (STOCK_GROUPS.has(p.group) && (excelSlugs.has(p.slug) |
 const GROUP_MERGES = { 'ponyvarendszer-kiegeszitok': 'elhuzhato-roloponyvas-rendszer' };
 // A Quadris által törlésre jelölt termékek (data/torolt_termekek.json) sehol nem jelennek meg
 export const products = [...excelProducts, ...extendedProducts, ...cloneProducts].filter((p) => !deleted[p.slug])
-  .map(withoutSupplierCodes).map(withMudguardWeight).map(withWeightLabel).map(withCarton).map(withStock)
+  .map(withoutSupplierCodes).map(withoutProfileGeometry).map(withMudguardWeight).map(withWeightLabel).map(withCarton).map(withStock)
   .map((p) => (GROUP_MERGES[p.group] ? { ...p, group: GROUP_MERGES[p.group] } : p));
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
