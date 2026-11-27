@@ -5028,5 +5028,31 @@
    "Anyag": "alumínium",
    "Tömeg": "4,6 kg"
   }
+ },
+ "203183-250-25-mm-alafutasgatlo-elox-profil": {
+  "specs": {
+   "Ötvözet": "EN AW-6060",
+   "Anyag": "alumínium"
+  }
+ },
+ "205535-ives-alafutasgatlo-vegzaro-elox-profil": {
+  "specs": {
+   "Ötvözet": "EN AW-6060"
+  }
+ },
+ "206941-cd-100x30-mm-alafutasgatlo-elox-profil": {
+  "specs": {
+   "Ötvözet": "EN AW-6060"
+  }
+ },
+ "207833-100x30-mm-alafutasgatlo-elox-profil": {
+  "specs": {
+   "Ötvözet": "EN AW-6060"
+  }
+ },
+ "208477-cd2-100x30-mm-alafutasgatlo-elox-profil": {
+  "specs": {
+   "Ötvözet": "EN AW-6060"
+  }
  }
 }
