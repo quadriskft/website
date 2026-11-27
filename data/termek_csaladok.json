@@ -245,7 +245,7 @@
   "table": [
    "Szélesség",
    "Vastagság",
-   "Tömeg"
+   "Súly"
   ],
   "members": {
    "pol-frigoser-high-gloss-1-5x1900-mm": "1900 mm",
@@ -267,7 +267,7 @@
   "table": [
    "Szélesség",
    "Vastagság",
-   "Tömeg"
+   "Súly"
   ],
   "members": {
    "pol-frigoser-high-gloss-2-0x2300-mm": "2300 mm",
@@ -2138,7 +2138,7 @@
   "name": "Acél oldalfal FOX-ROCK (Heavy Duty)",
   "label": "Típus",
   "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Súly kg/folyóméterben.",
   "navigate": true,
   "table": [
    "Típus",
@@ -2181,7 +2181,7 @@
   "name": "Acél oldalfal FOXL BAK / HVAK (Heavy Duty)",
   "label": "Típus",
   "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Súly kg/folyóméterben.",
   "navigate": true,
   "table": [
    "Típus",
@@ -2288,7 +2288,7 @@
   "name": "Acél oldalfal FOXL BN / HVN (Heavy Duty)",
   "label": "Típus",
   "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Súly kg/folyóméterben.",
   "navigate": true,
   "table": [
    "Típus",
@@ -2395,7 +2395,7 @@
   "name": "Acél oldalfal FOXL B / HV (Heavy Duty)",
   "label": "Típus",
   "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Súly kg/folyóméterben.",
   "navigate": true,
   "table": [
    "Típus",
@@ -2518,7 +2518,7 @@
   "name": "Acél oldalfal FOX B / HV (Heavy Duty)",
   "label": "Típus",
   "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Súly kg/folyóméterben.",
   "navigate": true,
   "table": [
    "Típus",
@@ -2625,7 +2625,7 @@
   "name": "Acél oldalfal FHD (Heavy Duty)",
   "label": "Típus",
   "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Súly kg/folyóméterben.",
   "navigate": true,
   "table": [
    "Típus",
@@ -2667,7 +2667,7 @@
   "name": "Acél oldalfal – kiegészítő profilok (lézerhegesztett)",
   "label": "Típus",
   "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Súly kg/folyóméterben.",
   "navigate": true,
   "table": [
    "Típus",
@@ -2750,7 +2750,7 @@
   "name": "Acél oldalfal BAK / BAKS (lézerhegesztett)",
   "label": "Típus",
   "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Súly kg/folyóméterben.",
   "navigate": true,
   "table": [
    "Típus",
@@ -2833,7 +2833,7 @@
   "name": "Acél oldalfal HVAK (lézerhegesztett)",
   "label": "Típus",
   "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Súly kg/folyóméterben.",
   "navigate": true,
   "table": [
    "Típus",
@@ -2892,7 +2892,7 @@
   "name": "Acél oldalfal BN / BNS (lézerhegesztett)",
   "label": "Típus",
   "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Súly kg/folyóméterben.",
   "navigate": true,
   "table": [
    "Típus",
@@ -2975,7 +2975,7 @@
   "name": "Acél oldalfal HVN (lézerhegesztett)",
   "label": "Típus",
   "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Súly kg/folyóméterben.",
   "navigate": true,
   "table": [
    "Típus",
@@ -3042,7 +3042,7 @@
   "name": "Acél oldalfal B (lézerhegesztett)",
   "label": "Típus",
   "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Súly kg/folyóméterben.",
   "navigate": true,
   "table": [
    "Típus",
@@ -3117,7 +3117,7 @@
   "name": "Acél oldalfal HV (lézerhegesztett)",
   "label": "Típus",
   "title": "Rendelhető típusok",
-  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Tömeg kg/folyóméterben.",
+  "note": "A rendszer típusai magasság szerint. Kivitel: alap oldalfal vagy ráépíthető magasító (AK); kT / TT: kerettel, zárt profillal. Súly kg/folyóméterben.",
   "navigate": true,
   "table": [
    "Típus",
