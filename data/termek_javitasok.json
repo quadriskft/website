@@ -3149,11 +3149,17 @@
  },
  "222005-spitz-profil-150-mm-magas-t": {
   "name": "Spitz profil 150 mm T",
-  "order": 8
+  "order": 8,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "226887-spitz-profil-140-mm-magas": {
   "name": "Spitz profil 140 mm",
-  "order": 9
+  "order": 9,
+  "specs": {
+   "Ötvözet": "EN AW-6060 T66"
+  }
  },
  "223032-spitz-profil-100-mm": {
   "name": "Spitz profil 100 mm",
