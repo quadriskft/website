@@ -5054,5 +5054,48 @@
   "specs": {
    "Ötvözet": "EN AW-6060"
   }
+ },
+ "2015290-15-mm-keretprofil-elox": {
+  "specs": {
+   "Ötvözet": "EN AW-6060",
+   "Felület": "eloxált"
+  }
+ },
+ "2018290-18-mm-keretprofil-elox": {
+  "specs": {
+   "Ötvözet": "EN AW-6060",
+   "Felület": "eloxált"
+  }
+ },
+ "2018652-18-mm-keretprofil-erositett-elox": {
+  "specs": {
+   "Ötvözet": "EN AW-6060",
+   "Felület": "eloxált"
+  }
+ },
+ "202388-15-70-mm-keretprofil-elox-cd": {
+  "specs": {
+   "Ötvözet": "EN AW-6060",
+   "Felület": "eloxált"
+  }
+ },
+ "203004-30-mm-keretprofil-elox": {
+  "specs": {
+   "Ötvözet": "EN AW-6060",
+   "Felület": "eloxált"
+  }
+ },
+ "207318-keret-profil-90-18mm-elox": {
+  "specs": {
+   "Ötvözet": "EN AW-6060",
+   "Felület": "eloxált",
+   "Anyag": null
+  }
+ },
+ "233901-dobozos-ives-also-keretprofil-elox-25-mm-panelhez": {
+  "specs": {
+   "Ötvözet": "EN AW-6060",
+   "Felület": "eloxált"
+  }
  }
 }
