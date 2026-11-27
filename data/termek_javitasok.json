@@ -5037,12 +5037,17 @@
  },
  "205535-ives-alafutasgatlo-vegzaro-elox-profil": {
   "specs": {
-   "Ötvözet": "EN AW-6060"
+   "Ötvözet": "EN AW-6060",
+   "Látható felület": null,
+   "Kerület": null
   }
  },
  "206941-cd-100x30-mm-alafutasgatlo-elox-profil": {
   "specs": {
-   "Ötvözet": "EN AW-6060"
+   "Ötvözet": "EN AW-6060",
+   "Kerület": null,
+   "Keresztmetszet": null,
+   "Profil típusa": null
   }
  },
  "207833-100x30-mm-alafutasgatlo-elox-profil": {
@@ -5052,7 +5057,10 @@
  },
  "208477-cd2-100x30-mm-alafutasgatlo-elox-profil": {
   "specs": {
-   "Ötvözet": "EN AW-6060"
+   "Ötvözet": "EN AW-6060",
+   "Kerület": null,
+   "Keresztmetszet": null,
+   "Profil típusa": null
   }
  },
  "2015290-15-mm-keretprofil-elox": {
