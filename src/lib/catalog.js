@@ -103,6 +103,17 @@ const withMudguardWeight = (p) => {
   ]) };
 };
 
+// Profiloknál a tömeg „Súly” néven jelenik meg (a Quadris kérése): a profilcsoportok termékei és minden profil / zártszelvény / cső / szegő nevű termék
+const WEIGHT_PROFILE_GROUPS = new Set(['aluminium-alvaz-profilok', 'aluminium-padlo-profilok', 'ponyvas-oldalfal-profilok-es-szegok',
+  'zart-dobozos-es-hutos-profilok', 'acel-profilok', 'ipari-felgyartmanyok', 'acel-es-alu-rakoncak-es-szegok']);
+const WEIGHT_PROFILE_NAME = /profil|zártszelvény|cső(?!\p{L})|szegő/iu;
+const withProfileWeight = (p) => {
+  if (!(WEIGHT_PROFILE_GROUPS.has(p.group) || WEIGHT_PROFILE_NAME.test(p.name ?? ''))) return p;
+  if (!Object.keys(p.specs ?? {}).some((k) => /tömeg/i.test(k))) return p;
+  return { ...p, specs: Object.fromEntries(Object.entries(p.specs).map(([k, v]) =>
+    [k.replace(/^Tömeg/, 'Súly').replace(/^Fajlagos tömeg/, 'Fajlagos súly'), v])) };
+};
+
 // Gumi- és kéderprofilok: kartonra rendelhetők, a kartont nem bontjuk meg (data/kedergumi_kiszereles.json,
 // scripts/termekadatok/sandprofile_kiszereles.py); a gyártói 1000 m feletti minimum is feltüntetve
 const huNum = (n) => n.toLocaleString('hu-HU', { maximumFractionDigits: 2 });
@@ -134,7 +145,7 @@ const withStock = (p) => (STOCK_GROUPS.has(p.group) && (excelSlugs.has(p.slug) |
 const GROUP_MERGES = { 'ponyvarendszer-kiegeszitok': 'elhuzhato-roloponyvas-rendszer' };
 // A Quadris által törlésre jelölt termékek (data/torolt_termekek.json) sehol nem jelennek meg
 export const products = [...excelProducts, ...extendedProducts, ...cloneProducts].filter((p) => !deleted[p.slug])
-  .map(withoutSupplierCodes).map(withMudguardWeight).map(withCarton).map(withStock)
+  .map(withoutSupplierCodes).map(withMudguardWeight).map(withProfileWeight).map(withCarton).map(withStock)
   .map((p) => (GROUP_MERGES[p.group] ? { ...p, group: GROUP_MERGES[p.group] } : p));
 
 // Alkategóriák átnevezése (a Quadris kérésére a gyártó saját írásmódja szerint)
